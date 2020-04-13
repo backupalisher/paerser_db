@@ -1,8 +1,6 @@
 from datetime import datetime
 import file_utils as fu
 import parser_utils as pu
-from spec import spec_parser
-from erc import erc_parser
 
 
 def main():
