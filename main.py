@@ -11,16 +11,6 @@ def main():
     pu.data_analysis(data)
 
 
-def get_erc_id(data, name, value):
-    for d in data:
-        try:
-            if d[name] == value:
-                print(d['id'])
-                break
-        except:
-            pass
-
-
 if __name__ == '__main__':
     start_time = datetime.now()
     print(start_time)

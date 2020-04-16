@@ -12,9 +12,9 @@ def insert_spr_detail_options(data):
 
 def insert_detail_options(caption_spr_id, detail_option_spr_id, parent_id):
     q = db.i_request(f'WITH s as (SELECT id FROM detail_options WHERE '
-                     f'caption_spr_id = \'{caption_spr_id}\' AND detail_option_spr_id = \'{detail_option_spr_id}\'), '
+                     f'caption_spr_id = {caption_spr_id} AND detail_option_spr_id = {detail_option_spr_id}), '
                      f'i as (INSERT INTO detail_options (caption_spr_id, detail_option_spr_id, parent_id) '
-                     f'SELECT \'{caption_spr_id}\', \'{detail_option_spr_id}\', \'{parent_id}\' '
+                     f'SELECT {caption_spr_id}, {detail_option_spr_id}, {parent_id} '
                      f'WHERE NOT EXISTS (SELECT 1 FROM s) returning id) SELECT id FROM i UNION ALL SELECT id FROM s')
 
     return q[0][0]

@@ -4,7 +4,7 @@ import csv
 
 def load_file(file_name, encod):
     data = []
-    with open(os.path.join(os.path.dirname(__file__), file_name), 'r', newline='', encoding=encod) as file:
+    with open(file_name, 'r', newline='', encoding=encod) as file:
         line_read = csv.reader(file, delimiter=';', lineterminator='\n')
         for row in line_read:
             data.append(row)

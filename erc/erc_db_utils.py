@@ -17,12 +17,19 @@ def update_code(erc_code_id, name, value):
     db.i_request(f'UPDATE error_code SET {name} = \'{value}\' WHERE id = {erc_code_id}')
 
 
+# перед тем как добавить проверяем на дубликаты
 def insert_spr_error_code(spr_table, name, param):
     q = db.i_request(f'WITH s as (SELECT id FROM {spr_table} WHERE '
                      f'{name} = \'{param}\'), i as (INSERT INTO {spr_table} ({name}) SELECT \'{param}\' '
                      f'WHERE NOT EXISTS (SELECT 1 FROM s) returning id) SELECT id FROM i UNION ALL SELECT id FROM s')
 
     return q[0][0]
+
+
+# def insert_spr_error_code(spr_table, name, param):
+#     q = db.i_request(f'INSERT INTO {spr_table} ({name}) VALUE (\'{param}\') RETURNING id '
+#
+#     return q[0][0]
 
 
 def insert_link_model_error_code(model_id, error_code_id):

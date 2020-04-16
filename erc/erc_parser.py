@@ -69,8 +69,8 @@ def get_erc_id(name, value):
 
 def add_spr_data(caption, table, name, param):
     spr_erc_code_id = erc_db.insert_spr_error_code(table, name, re.sub('\'', '`', param))
-    erc_data.append({
-        'id': spr_erc_code_id,
-        caption: param
-    })
+    # erc_data.append({
+    #     'id': spr_erc_code_id,
+    #     caption: param
+    # })
     return spr_erc_code_id

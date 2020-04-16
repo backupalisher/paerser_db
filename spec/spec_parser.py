@@ -2,7 +2,7 @@ from db import db
 import re
 import file_utils as fu
 from spec import spec_db_utils as sdbu
-from global_data import spr_details_options_data
+from global_data import spr_details_options_data, detail_options_data
 
 
 def insert_options(model_id, detail_id, fn):
@@ -12,7 +12,7 @@ def insert_options(model_id, detail_id, fn):
     spr_option_value_id = 0
     detail_option_id = 0
 
-    data = fu.load_file(fn, None)
+    data = fu.load_file(fn, 'Windows-1251')
     for d in data:
         if d:
             name = d[0]
@@ -37,16 +37,18 @@ def insert_options(model_id, detail_id, fn):
                         spr_details_options_data.append((spr_option_value_id, value))
 
             if (name == 'Caption') | (name == 'Status'):
-                caption_parent_id = set_convert({k for k, v in spr_details_options_data if v == name})
+                caption_parent_id = search_detail_options_data(spr_option_name_id, spr_option_value_id)
                 if caption_parent_id < 1:
-                    caption_parent_id = sdbu.insert_detail_options(spr_option_name_id, spr_option_value_id, parent_id=None)
-                    spr_details_options_data.append((caption_parent_id, name))
+                    caption_parent_id = sdbu.insert_detail_options(spr_option_name_id, spr_option_value_id, 'Null')
+                    detail_options_data.append([caption_parent_id, spr_option_name_id, spr_option_value_id])
+                sdbu.link_detail_options(detail_id, caption_parent_id)
 
             elif name == 'SubCaption':
-                sub_caption_parent_id = set_convert({k for k, v in spr_details_options_data if v == name})
+                sub_caption_parent_id = search_detail_options_data(spr_option_name_id, spr_option_value_id)
                 if sub_caption_parent_id < 1:
                     sub_caption_parent_id = sdbu.insert_detail_options(spr_option_name_id, spr_option_value_id, caption_parent_id)
-                    spr_details_options_data.append((sub_caption_parent_id, name))
+                    detail_options_data.append([sub_caption_parent_id, spr_option_name_id, spr_option_value_id])
+                sdbu.link_detail_options(detail_id, sub_caption_parent_id)
 
             elif name == 'EndSubCaption':
                 sub_caption_parent_id = 0
@@ -66,3 +68,14 @@ def set_convert(s):
     else:
         v = list(s)[0]
     return v
+
+
+def search_detail_options_data(spr_option_name_id, spr_option_value_id):
+    result = 0
+    for item in detail_options_data:
+        if item[1] == spr_option_name_id:
+            if item[2] == spr_option_value_id:
+                result = item[0]
+                break
+
+    return result
