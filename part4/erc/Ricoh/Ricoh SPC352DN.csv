@@ -1,0 +1,580 @@
+Code;SC195-00
+Description;S/N input error Compare the product ID code of the product S/N (11 digits).
+Causes;The product ID code of the product S/N (11 digits) does not match.
+Remedy;Re-enter the product S/N.
+Code;SC230-01 ... SC230-04
+Description;FGATE*1: Does not turn ON.(01: Bk, 02: C, 03: M, 04: Y) GPIO*2 has not been asserted, although the specified time (200 ms) elapsed after setting JOB to be started and reaching the FGATE assert time. (*1)FGATE: Signals used between the controller and the engine in order to send the information about the sub scan length of the page to be printed. (*2)GPIO: A type of input/output terminal
+Causes;• Control Board • Engine Board
+Remedy;• Turn the power OFF and then ON. • Replace the Engine Board. • Replace the Controller Board.
+Code;SC231-01 ... SC231-04
+Description;FGATE*1: Does not turn OFF.(01: Bk, 02: C, 03: M, 04: Y) GPIO*2 has not been negated, although the specified time (200 ms) elapsed after detecting GPIO*assert and then reaching the expected FGATE negate time. * This is an I/O pin. Such I/O pins can be used for a variety of applications, depending on the setting. (*1)FGATE: Signals used between the controller and the engine in order to send the information about the sub scan length of the page to be printed. (*2)GPIO: A type of input/output terminal
+Causes;• Control Board • Engine Board
+Remedy;• Turn the power OFF and then ON. • Replace the Engine Board. • Replace the Controller Board.
+Code;SC270-00
+Description;Write ASIC communication error • When the Engine Board could not read the Unique ID of the Writing ASIC properly when starting this machine. • When an Error bit occurred in the communication between the Engine Board and the Writing ASIC.
+Causes;The unique ID of the write ASIC was not read normally.
+Remedy;• Turn the power OFF and then ON. • Replace the Engine Board.
+Code;SC277-00
+Description;LEDA communication error: power supply system The power supply to LEDA has been cut off due to a blown fuse or other problem.
+Causes;Blown fuse
+Remedy;• Check the FFC. • Turn the power OFF and then ON. • Replace the FFC. • Replace the Engine Board.
+Code;SC277-01 ... SC277-04
+Description;LEDA communication error (01: Bk, 02: C, 03: M, 04: Y) Communication between the LED head and engine board has failed.
+Causes;• LED Head error • Harness Error
+Remedy;• Check the FFC. • Turn the power OFF and then ON. • Replace the FFC. • Replace the LED Head • Replace the Engine Board. • Return SP2-1205-020 to the initial value
+Code;SC332-01 ... SC332-04
+Description;Toner supply feed lock (01: Bk, 02: C, 03: M, 04: Y) Under the condition that the Toner Cartridge has not reached the end, an error that no toner is supplied has been detected over n times in succession. n: The value was set at SP3-131-015.
+Causes;• Disconnected or broken Toner Supply Solenoid. (Failed to open the toner supply shutter) • Disconnection of Toner Supply Clutch • Failed PCDU. (Toner leak) • Toner clogging
+Remedy;• Check the connector connection or check for broken wire. • Replace the Toner Supply Solenoid • Replace the PCDU • Replace the Toner Cartridge.
+Code;SC364-01 ... SC364-04
+Description;Toner End Sensor output count error (01: Bk, 02: C, 03: M, 04: Y) The output count from the Toner End Sensor indicates an average of 0.
+Causes;- Bad connector contact or connector disconnected/wire broken - Failed TE Sensor - LED Head mounting error (incorrect calibration of TE Sensor)
+Remedy;- Turn the main power of the printer OFF and then ON - Check the connector connection or check for broken wire. - Replace the LED Head. - Replace the TE sensor (using the same troubleshooting procedure as for LED).
+Code;SC365-01 ... SC365-04
+Description;"Toner End Sensor upper limit sensor error (01: Bk, 02: C, 03: M, 04: Y) The Toner End Sensor still indicates that the remaining amount of toner is at the ""upper limit"", although 255 g or more toner has been consumed."
+Causes;- Stained TE Sensor surface - Failed TE Sensor
+Remedy;• Turn the main power of the printer OFF and then ON. • Check the connector connection. • Clean/replace the sensor (using the same troubleshooting procedure as for LED).
+Code;SC370-01
+Description;TM(ID) Sensor calibration error (Right)* The specular light output voltage (Vsg_reg) of the Right TM (ID) Sensor cannot be calibrated to a value in the target range. Upper limit (initially 2.97 V) Lower limit (initially 2.31V) * This is the sensor on the left as viewed from the front.
+Causes;- Disconnected TM(ID) Sensor connector/bad contact - Stained TM(ID) Sensor window - Failed TM(ID) Sensor - Image Transfer Belt loosened or out of place
+Remedy;• Check the TM(ID) Sensor • Clean the TM(ID) Sensor Detection window • Check the Image Transfer Belt • Replace the TM(ID) Sensor
+Code;SC370-02
+Description;TM(ID) Sensor calibration error (Left)* The specular light output voltage (Vsg_reg) of the Left TM(ID) Sensor cannot be calibrated to a value in the target range. Upper limit (initially 2.97 V) Lower limit (initially 2.31V)
+Causes;- Disconnected TM(ID) Sensor connector/bad contact - Stained TM(ID) Sensor window - Failed TM(ID) Sensor - Image Transfer Belt loosened or out of place
+Remedy;• Check the TM(ID) Sensor • Clean the TM(ID) Sensor Detection window • Check the Image Transfer Belt • Replace the TM(ID) Sensor
+Code;SC396-01
+Description;Drum Motor: K Error Early Detection • A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Operation Timing • When the motor rotation request or speed change request is issued, the motor is in the stopped state. Motor Stop Timing • A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;- Disconnected connector - Broken signal wire - Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the Drum Motor: K.
+Code;SC396-05
+Description;Drum Motor: CMY error Early Detection • A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Operation Timing • When the motor rotation request or speed change request is issued, the motor is in the stopped state. Motor Stop Timing • A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;- Disconnected connector - Broken signal wire - Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the Drum Motor: CMY.
+Code;SC442-01
+Description;Intermediate transfer contact Sensor error (01: Home position error, 02: Contact error, 03: Non-contact error) - Home position error: SC442-01 If the home position is not set within the T4 time after turning ON the feed motor and feed clutch, an error results. - Contact error: SC442-02 If the contact state is not set within the T3 time after turning ON the feed motor and feed clutch, an error results. - Non-contact error: SC442-03 If the non-contact state is not set within the T3 time after turning ON the feed motor and feed clutch, an error results. [Error time T3] SP value: 100 to 25500 ms Initial value: 3000 ms Note: Contact/non-contact error judgment [Error time T4] SP value: 100 to 25500 ms Initial value: 3000 ms Note: Home position error judgment
+Causes;• High motor load • Failed motor • Disconnected connector • Broken harness wire • PSU: +24 V fuse blown • Failed interlock mechanism • Failed Engine Board
+Remedy;1. Connect and disconnect the Image Transfer Unit 2. Replace the Image Transfer Unit 3. Replace the Engine Board 4. Replace the ITB (Image Transfer Belt) Contact Clutch 5. Replace the Paper Feed Motor
+Code;SC490-00
+Description;"Charging/developing: Output error The ""HVP_ERR1: Output error Sensor signal"" is monitored at 20 ms intervals. If 0 (error) is detected ten times in succession (200 ms), the following causes are suspected"
+Causes;• Failed PCDU • Failed High Voltage Power Supply (Separation) • Damaged HVP connection harness
+Remedy;• Replace the PCDU. • Replace the HVP. • Replace the harness.
+Code;SC491-01
+Description;"Primary/secondary transfer: Output error The ""HVP_ERR2: Output error Sensor signal"" is monitored at 20 ms intervals. If 0 (error) is detected fifty times in succession (1000 ms) (during bias output), the following causes are suspected"
+Causes;• Image Transfer Unit error • Transfer Roller error • Damaged HVP connection harness • Noise generated by poor contact of the power supply terminals of the Development Roller
+Remedy;• Replace the Image Transfer Unit. • Replace the Transfer Roller • Replace the HVP. • Replace the harness. • Replace the PCDU.
+Code;SC491-02
+Description;"Disconnected connector: High voltage output error The ""HVP_ERR2: Output error Sensor signal"" is monitored at 20 ms intervals. If 0 (error) is detected ten times in succession (200 ms) (during non-bias output), the following causes are suspected:"
+Causes;• HVP Connect harness disconnected • Damaged HVP connection harness
+Remedy;• Check the HVP Connect harness • Replace the HVP connection harness.
+Code;SC498-00
+Description;Temperature/humidity Sensor error • Temperature Sensor output error: Out of range between 076 V and 2.90 V • Humidity Sensor output error: 2.4 V or more
+Causes;- Unmounted Sensor (Unset connector or broken wire) - Failed Sensor
+Remedy;• Turn the power OFF and then ON. • Check that the connector is set. • Replace the Sensor. • Replace the connector.
+Code;SC508-00
+Description;By-pass bottom plate operation error The signal from the by-pass bottom plate position Sensor has not changed (that is, the signal has not changed from ON to OFF or vice versa) for two seconds or more after the start of reverse Paper Feed Unit rotation, If the error is detected three times in succession, the appropriate SC number is displayed on the operation panel unit.
+Causes;• By-pass bottom plate Sensor connector disconnected or other error • By-pass bottom plate Sensor feeler stuck or other error
+Remedy;• Turn the power OFF and then ON. • Check and replace the by-pass bottom plate Sensor connector connection. • Replace the by-pass bottom plate Sensor feeler. • Replace the Paper Feed Motor.
+Code;SC520-02
+Description;Fusing motor error Early Detection • A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Operation Timing • When the motor rotation request or speed change request is issued, the motor is in the stopped state. Motor Stop Timing A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;• Disconnected connector • Broken signal wire • Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the Fusing Motor.
+Code;SC521-01
+Description;Bank 1 motor error (Bank: paper tray unit) Early Detection • A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Stop Timing A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;• Disconnected connector • Broken signal wire • Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the bank 1 motor.
+Code;SC521-02
+Description;Bank 2 motor error (Bank: paper tray unit) Early Detection A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Stop Timing A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;• Disconnected connector • Broken signal wire • Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the bank 2 motor.
+Code;SC521-03
+Description;Bank 3 motor error (Bank: paper tray unit) Early Detection A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Stop Timing A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;• Disconnected connector • Broken signal wire • Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the bank 3 motor.
+Code;SC530-00
+Description;Cooling fan error The fan motor lock (rotating state) signal is sampled 30 times at 100 ms intervals and the fan goes into an unstable rotating state at least ten times. (No error detection occurs for two seconds after the start of the fan or after changing the speed.)
+Causes;• Failed fan motor • Disconnected connector
+Remedy;• Replace the fan motor. • Check the connector.
+Code;SC531-00
+Description;Fusing fan error The fan motor lock (rotating state) signal is sampled 30 times at 100 ms intervals and the fan goes into an unstable rotating state at least ten times. (No error detection occurs for two seconds after the start of the fan or after changing the speed.)
+Causes;• Failed fan motor • Disconnected connector
+Remedy;• Replace the fan motor. • Check the connector.
+Code;SC532-00
+Description;PSU cooling fan The fan motor lock (rotating state) signal is sampled 30 times at 100 ms intervals and the fan goes into an unstable rotating state at least ten times. (No error detection occurs for two seconds after the start of the fan or after changing the speed.)
+Causes;• Failed fan motor • Disconnected connector
+Remedy;• Replace the fan motor. • Check the connector.
+Code;SC540-00
+Description;Paper Feed Unit error Early Detection • A command to stop the rotation of the motor has been issued right after the power was turned on, but the motor is still rotating. Motor Operation Timing • When the motor rotation request or speed change request is issued, the motor is in the stopped state. Motor Stop Timing A command to stop the rotation of the motor has been issued, but the motor is still rotating.
+Causes;• Disconnected connector • Broken signal wire • Excessive motor torque
+Remedy;• Check the connector connection. • Turn the power OFF and then ON. • Replace the Paper Feed Unit.
+Code;SC541-00
+Description;Broken fusing (Center) thermopile wire AD value: 0-6 is detected for specified seconds continuously. Detection period: 500 ms, detection frequency: 10 times or more.
+Causes;• Broken thermopile wire • Bad connector contact
+Remedy;• Clear the SP: fusing SC. • Replace the connector. • Replace the thermopile.
+Code;SC542-02
+Description;Fusing lamp (Center) thermopile not reloaded 1 The heater(Center) thermopile does not reach 50 deg C 2.9 seconds after the start of heat control (during normal startup control).
+Causes;• Stained thermopile lens • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• Clean the thermopile lens. • Replace the thermopile. • Replace the Fusing Unit. • Clear the SP: fusing SC.
+Code;SC542-03
+Description;Fusing lamp (Center) thermopile not reloaded 2 The heater (Center) thermistor does not reach the reload temperature 17 seconds after the start of motor rotation.
+Causes;• Stained thermopile lens • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• Clean the thermopile lens. • Replace the thermopile. • Replace the Fusing Unit. • Clear the SP: fusing SC.
+Code;SC542-04
+Description;Fusing lamp (Center) thermopile not reloaded 3 The heater (Center) thermistor does not reach 100 deg C 7.7 seconds after the start of heat control (during low-temperature start up control).
+Causes;• Stained thermopile lens • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• Clean the thermopile lens. • Replace the thermopile. • Replace the Fusing Unit. • Clear the SP: fusing SC.
+Code;SC543-00
+Description;Fusing (Center) thermopile high-temperature detected (software) The temperature is detected to stay at 230 deg C or higher for one second.
+Causes;• Shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Failed fusing unit
+Remedy;• Replace the thermopile. • Replace the Fusing Unit. • Replace the PSU. • Replace the Engine Board. • Clear the SP: fusing SC.
+Code;SC544-00
+Description;Fusing (Center) thermopile high-temperature detected (hardware) The heating (Center) thermistor temperature becomes 250 or higher. (The hardware high temperature error Sensor flag is detected at 10 ms intervals.)
+Causes;• Damaged, shorted triac (element on the PSU) • Failed engine control board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC545-00
+Description;Fusing (Center) heater stay ON The fusing (Center) heater stays ON for 3 seconds or more when in stand-by state (or the fusing roller is not rotating).
+Causes;• Stained thermopile lens • Broken heater wire • The overtemperature prevention mechanism started working
+Remedy;• Clear the SP: fusing SC. • Clean the thermopile lens. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC547-01
+Description;"Zero-crossing error (adhered relay contact) When the fusing relay is in an OFF state, a ""zero-crossing interrupt request"" occurs in 50 ms."
+Causes;• Damaged fusing relay (adhered contact) • Failed fusing relay drive circuit
+Remedy;• Turn the main power OFF and then ON. • Replace the harness. • Replace the PC board. • Replace the PSU.
+Code;SC547-02
+Description;"Zero-crossing error (bad relay contact) If a ""zero-crossing interrupt request"" does not occur within 3 seconds when the fusing relay is in an ON state, an error results."
+Causes;• Damaged fusing relay (open contact) • Failed fusing relay drive circuit • PSU fuse (24VS) blown
+Remedy;• Turn the main power OFF and then ON. • Replace the harness. • Replace the Engine Board. • Replace the PSU. • Replace the fuse.
+Code;SC547-03
+Description;Zero-crossing error (low frequency error) The number of zero-crossing interrupts does not reach a certain value in 500 ms. The frequency of the commercial power supply line is unstable.
+Causes;The frequency of the commercial power supply line is unstable.
+Remedy;• Turn the main power OFF and then ON. • Check the commercial power supply line. • Replace the harness. • Replace the Engine Board. • Replace the PSU.
+Code;SC551-00
+Description;Broken fusing (End) thermistor wire AD value: 3F9h-3FFh is detected for specified seconds continuously. Detection period: 500 ms, detection frequency: 10 times or more
+Causes;• Broken thermistor wire • Bad connector contact
+Remedy;• Clear the SP: fusing SC. • Check the connector connection. • Replace the Fusing Unit.
+Code;SC552-03
+Description;Fusing (End) thermistor not reloaded The heating (End) thermistor does not reach 60 deg C 12.5 seconds after the start of motor rotation.
+Causes;• Deformed or floating thermistor • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• Clear the SP: fusing SC. • Replace the fusing (End) thermistor. • Replace the Fusing Unit.
+Code;SC553-00
+Description;Fusing (End) thermistor high-temperature detected (software) The temperature is detected to stay at 230 deg C or higher for one second.
+Causes;• Shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Failed fusing unit
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC554-00
+Description;Fusing (End) thermistor high-temperature detected (hardware) The heating (End) thermistor temperature becomes 250 or higher. (The hardware hightemperature error Sensor flag is detected at 10 ms intervals.)
+Causes;• Damaged, shorted triac (element on the PSU) • Failed engine control board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC557-00
+Description;Zero-crossing frequency exceeded The number of zero-crossing interrupts exceeds a certain value in 500 ms.
+Causes;The frequency of the commercial power supply line is unstable or noise occurs.
+Remedy;None
+Code;SC559-00
+Description;Fusing jam detected 3 times in succession Fusing jam is detected three times in succession.
+Causes;Paper is wrapped around the fusing roller.
+Remedy;CLEAR THE SP: FUSING SC.
+Code;SC561-00
+Description;Broken pressure (Center) thermistor wire At least ten times, the temperature is detected to stay at 0 deg C or less for 39 seconds.
+Causes;• Broken thermistor wire • Bad connector contact
+Remedy;• CLEAR THE SP: FUSING SC. • Check the connector connection. • Replace the Fusing Unit.
+Code;SC562-03
+Description;Pressure (Center) thermistor not reloaded The pressure (Center) thermistor does not reach 60 deg C 39 seconds after the start of motor rotation.
+Causes;• Deformed or floating thermistor • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• CLEAR THE SP: FUSING SC. • Replace the pressure (Center) thermistor. • Replace the Fusing Unit.
+Code;SC563-00
+Description;Pressure (Center) thermistor high-temperature detected (software) The temperature is detected to stay at 230 deg C or higher for one second.
+Causes;• Shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Failed fusing unit
+Remedy;• CLEAR THE SP: FUSING SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC564-00
+Description;Pressure (Center) thermistor high-temperature detected (hardware) The pressure (Center) thermistor temperature becomes 250 or higher. (The hardware hightemperature error Sensor flag is detected at 10 ms intervals.)
+Causes;• Damaged, shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior
+Remedy;• CLEAR THE SP: FUSING SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC571-00
+Description;Broken pressure (End) thermistor wire At least ten times, the temperature is detected to stay at 0 deg C or less for 39 seconds.
+Causes;• Broken thermistor wire • Bad connector contact
+Remedy;• CLEAR THE SP: FUSING SC. • Check the connector connection. • Replace the Fusing Unit.
+Code;SC572-03
+Description;Pressure (End) thermistor not reloaded The pressure (End) thermistor does not reach 60 deg C 38 seconds after the start of motor rotation.
+Causes;• Deformed or floating thermistor • Broken heater wire • Input voltage out of range • The overtemperature prevention mechanism started working
+Remedy;• CLEAR THE SP: FUSING SC. • Replace the pressure (End) thermistor. • Replace the Fusing Unit.
+Code;SC573-00
+Description;Pressure (End) thermistor high-temperature detected (software) The temperature is detected to stay at 230 deg C or higher for one second.
+Causes;• Shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Failed fusing unit
+Remedy;• CLEAR THE SP: FUSING SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC574-00
+Description;Pressure (End) thermistor high The pressure (End) thermistor temperature becomes 250 deg C or higher. (The hardware high-temperature error Sensor flag is detected at 10ms intervals.)
+Causes;• Damaged, shorted triac (element on the PSU) • Failed Engine Board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC632-00
+Description;Counter device error 1 After 3 attempts to send a data frame to the optional counter device via the serial communication line, no ACK signal was received within 100 ms.
+Causes;Serial line between the optional counter device, the relay board and printer control board is disconnected or damaged.
+Remedy;• Turn the main power off/on. • Check the serial communication line.
+Code;SC636-01
+Description;"IC Card Error (Expanded authentication module error) Issued when expanded authentication management is set to ""ON"" but either of the following occur. • There is no expanded authentication module in the machine. • The SD card or the file of the expanded authentication module is broken. • There is no DESS module in the machine."
+Causes;• There is no DESS module in the machine (models on which the function is optional). • There is no expanded authentication module in the machine. • The SD card or the file of the expanded authentication module is broken.
+Remedy;• Set a working SD card/expanded authentication module file. • Install the DESS module. • In the SSP mode set SP5-401-160 to 0. • In the SSP mode, set SP5-401-161 to 0. • Replace the NVRAM.
+Code;SC636-02
+Description;IC Card Error (Expanded authentication module error) The version of the expanded authentication module is not correct.
+Causes;Incorrect module version
+Remedy;Install the correct file of the expanded authentication module.
+Code;SC641-00 ... SC641-04
+Description;Communication error between BCU and Controller board. Controller board does not respond after BCU tries to communicate three times. • SC641-01: Timeout error • SC641-02: Retry over • SC641-03: Download error • SC641-04: UART error
+Causes;• Controller board software error • Connect error between BCU and Controller board • Engine board software error
+Remedy;• Check connections between Controller board and BCU. • Turn the main switch off and on.
+Code;SC650-01
+Description;Remote Service Modem Communication Error (Dialup authentication failure) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Dialup authentication failure
+Remedy;Check the following SPs. • SP5-816-156 • SP5-816-157
+Code;SC650-04
+Description;Remote Service Modem Communication Error (dialup failing because of incorrect modem configuration) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Dialup failing because of incorrect modem configuration
+Remedy;Check if the setting of SP5-816-160 is correct. If it is correct, then there is a software bug.
+Code;SC650-05
+Description;Remote Service Modem Communication Error (insufficient current or connection fault) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Insufficient current or connection fault
+Remedy;The line is not supported and nothing can be done.
+Code;SC650-13
+Description;Remote Service Modem Communication Error (RC Gate Type M was installed but modem is not present (detected during operation)) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;RC Gate Type M was installed but modem is not present (detected during operation)
+Remedy;• If a modem board is not installed, install it. • Check again if the modem driver configurations (SP5-816-160, SP5-816-165 to 171, SP5-816-165 to 171) are correct. • If the problem is not solved, replace the modem.
+Code;SC650-14
+Description;Remote Service Modem Communication Error (RC Gate Type N was installed but modem is present or wired/wireless LAN is not working correctly) • An error related to communication (dialup connection, modem board etc.) using the RC Gate was detected or an error that prevents RC Gate operation was detected at power on.  Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;RC Gate Type N was installed but modem is present or wired/wireless LAN is not working correctly
+Remedy;• If a modem board is attached, remove it. • Check if wired/wireless LAN works.
+Code;SC651-01
+Description;Illegal Remote Service Dial-up (Chat program parameter error) An unexpected error occurred when RC Gate Type M dialed up the NRS Center.
+Causes;Software bug
+Remedy;Logging only.
+Code;SC651-02
+Description;Illegal Remote Service Dial-up (Chat program execution error) An unexpected error occurred when RC Gate dialed up the NRS Center.
+Causes;Software bug
+Remedy;Logging only.
+Code;SC652-00
+Description;Remote service ID2 mismatching There was an authentication mismatch between ID2 for @Remote, the controller board, and NVRAM.
+Causes;• Used controller board installed • Used NVRAM installed (such action is not allowed.)
+Remedy;• If this occurs during RC Gate installation: Check the validity of the certificate and the NVRAM, check the machine serial number, write the common certificate, and then begin installation again. • If this occurs after RC Gate installation: Clear the RC Gate install status, check the validity of the certificate and the NVRAM, check the machine serial number, write the common certificate, and then begin installation again
+Code;SC653-00
+Description;Incorrect remote service ID2 ID2 stored in the NVRAM has either of the following problems. • Number of characters is not 17. • Includes a character that cannot be printed. • All spaces • NULL
+Causes;
+Remedy;Replace the NVRAM. Clear the RC Gate install status, write the common certificate, and then begin installation again.
+Code;SC669
+Description;EEPROM communication error An error is notified during EEPOM communication and the printer does not recover after three retries.
+Causes;
+Remedy;• Turn the power OFF and then ON. • Replace the EEPROM. • Replace the engine board.
+Code;SC670-00
+Description;Engine start up error Case 1 • /ENGRDY signal was not asserted when the machine was turned on or returned from energy saver mode. • /IPURDY signal was not asserted when the machine was turned on or returned from energy saver mode. • EC response was not received within specified time from power on. • PC response was not received within specified time from power on. • SC response was not received within specified time from power on. • Writing to Rapi driver failed (the other party not found through PCI). Case 2 • Unexpected down status was detected after /ENGRDY assertion.
+Causes;Case 1 • Engine board does not start up. Case 2 • Engine board reset unexpectedly.
+Remedy;Check the connection between the engine board and the controller board. • If it is always reproduced, replace the engine board. If the problem persists, consider replacing the controller board or other boards between them. • If reproducibility is low, multiple causes are to be considered, such as software, engine board, controller board, and PSU.
+Code;SC687-00
+Description;RAPI-PER receipt failure Even though 120 seconds have elapsed after RAPI -PES (request for image transfer) is issued, a RAPI-PER receipt is not received from the controller board.
+Causes;Defective controller board/software
+Remedy;• Turn the main power OFF and then ON. • Replace the controller board.
+Code;SC688-00
+Description;PRREQ signal not asserted The print request signal (PRREQ) signal is not asserted within the prescribed time after paper reaches the registration stand-by position.
+Causes;• Noise • Engine Board error • Controller Board error
+Remedy;• Turn the power OFF and then ON • Replace the Engine Board. • Replace the Controller Board.
+Code;SC790-00
+Description;Maximum number of banks (paper tray units) exceeded error When the power is turned ON, the number of mounted paper tray units is detected and the number exceeds three.
+Causes;The number of mounted paper tray units exceeds the specifications.
+Remedy;Reduce the number of mounted paper tray units according to the specifications.
+Code;SC816
+Description;Energy save I/O subsystem error
+Causes;• Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR. • SC816-99 occurs as a subsystem error except any error from -06 to 96.
+Remedy;"Check if the SC occurs by turning the power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Update the ""System"" firmware and the other system firmware modules to the latest version. 2. Disable the STR shift function by SP5-191-001 (Power Str Set). 3. Replace the controller board."
+Code;SC817-00
+Description;Monitor error: File detection / Digital signature error • Bootloader cannot read any of diagnostic module, kernel, or root filesystem. • In a bootloader SD card, the digital signature checking for any of diagnostic module, kernel, or root filesystem is failed.
+Causes;• Any of the following items does not exist or is broken: OS Flash ROM, Diagnostic module in SD card, Kernel, Root filesystem • Any of the following items is revised fraudulently: Diagnostic module in SD card, Kernel, Root filesystem
+Remedy;• ROM update for controller system • Use another booting SD card having a valid digital signature
+Code;SC818-00
+Description;Watchdog timer error The system program fell into a bus-hold state or an endless loop of the program interruption occurred, causing other process to stop.
+Causes;• System program defective • Controller board defective • Optional board defective
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC819-00
+Description;Kernel halt error [xxxx]: Detailed error code
+Causes;Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel.
+Remedy;"[0x5032] HAIC-P2 error HAIC-P2 decompression error (An error occurred in the ASIC compression/decompression module.) • Turn the main power off/on. • Replace the HDD. • Replace the memory • Replace the controller board. • Fix the software [0x5245] Link up error Link up transaction between Engine ASIC and Veena was not completed within 100 ms. Either one of following message appears on console if Link up error occurs. • RESUME:PCI-Express bus ROOT_DL status error • RESUME:PCI-Express bus DETUP status error Also, error code ""0x5245"" and detail code """"0x53554D45"" -> Link up error"" appears on operation panel. • Turn the main power OFF/ON. • Replace the controller board or the engine board (IPU, BCU) [0x5355] L2 status time out L2 status register between Engine ASIC and Veena was not reached the target value within 1 sec. Engine ASIC during operation was rebooted or shifted to energy saving mode. Machine reboots when SC23x, SC30x occurs. If Engine ASIC is working when rebooting (or shifting to the energy saving mode), L2 status value is not on target. The following message appears on console. SUSPEND:PCI-Express L2 Status Check Error Also, error code ""0x5355"" and detail code """"0x5350454E44"" -> L2 status time out"" appears on operation panel. • Turn the main power OFF/ON. • Replace the controller board or the engine board (IPU, BCU) [0x6261] HDD defective 6261 6420 6469 7200 00 -> ""bad dir"" Replace the HDD. [0x696e] gwinit processing end If the SCS process is ended for some reason If an unexpected error occurs at SCS processing end, gwint processing also halts (this result is judged a kernel stop error, by gwinit specification) “0x69742064” -> “init died” Turn the main power off/on. [0x766d] VM full error Occurs when too much RAM is used during system processing ""vm_pageout: VM is full"" Turn the main power off/on. [554C] SATA loader error SATA Loader detected mismatch error • Software defective • Insufficient memory • Hardware driver defective (RAM, FLASH memory) Replace the controller board. Console string Other error (characters on operation panel) System detected internal mismatch error • Software defective • Insufficient memory • Hardware driver defective (RAM, FLASH memory) • Turn the main power off/on. • Replace the controller board."
+Code;SC820-00
+Description;Self-diagnostics error: CPU [xxxx]: Detailed error code
+Causes;
+Remedy;[0001] to [06FF] [0801] to [4005] CPU error During the self-diagnosis, the controller CPU detects an error. There are 47 types of error code (0001 to 4005) depending on the cause of the error. The CPU detects an error and displays the specific error code with the program address where the error occurs. • System firmware problem • Defective controller 1. Turn the main power switch off and on. 2. Reinstall the controller system firmware. 3. Replace the controller. When the problem cannot be fixed with the above procedure, the following information displayed on the screen needs to be reported to the technical support center. - SC code - Detailed error code - Program address [0701] to [070A] CPU/Memory Error • System firmware problem • Defective RAM-DIMM • Defective controller • Reinstall the controller system software. • Replace the RAM-DIMM. • Replace the controller.
+Code;SC821-00
+Description;Self-diagnostics error: ASIC [xxxx]: Detailed error code
+Causes;
+Remedy;[0B00] ASIC register check error The write-&-verify check has occurred in the ASIC. Defective ASIC device Replace the controller board. [0D05] Comparison error of CPU and ASIC timer The CPU checks if the ASIC timer works correctly compared with the CPU timer. If the ASIC timer does not function in the specified range, this SC code is displayed. • Defective ASIC timer device • Defective CPU device Replace the controller board. 50A2] Video bridge device (ASIC) register error The CPU detects the video bridge device, but detects error data from the video bridge device. Defective I/F between the video bridge device and the controller Replace the controller board.
+Code;SC823-00
+Description;Self-diagnostics error: NIC [XXXX]: Detailed error code
+Causes;
+Remedy;[6101] MAC address check sum error The result of the MAC address check sum does not match the check sum stored in ROM. Mismatch of the storage format of MAC address stored in ROM • Defective SEEP ROM • Defective I2C bus (connection) Replace the controller board. [6104] PHY IC error The PHY IC on the controller cannot be correctly recognized. • Defective PHY chip • Defective ASIC MII I/F Replace the controller board. [6105] PHY IC loop-back error An error occurred during the loop-back test for the PHY IC on the controller. • PHY chip • Defective MAC of ASIC (SIMAC/COMIC/CELLO) • Defective I/F with the PHY board • Defective solder on the PHY board • Check the I/F of the PHY board. • Check the I/F of the controller board. • Replace the PHY board. • Replace the controller board.
+Code;SC824-00
+Description;Self-diagnostics error: NVRAM (resident) [XXXX]: Detailed error code [1401] NVRAM verify error NVRAM device is missing or NVRAM device is damaged.
+Causes;• The NVRAM device is missing. • The NVRAM device is damaged. • NVRAM backup battery exhausted • NVRAM socket damaged
+Remedy;Replace the NVRAM device.
+Code;SC827-00
+Description;Self-diagnostic error: Standard SDRAM DIMM [XXXX]: Detailed error code
+Causes;
+Remedy;[0201] Verification error Error detected during a write/verify check for the resident RAM (SDRAM DIMM). • Loose connection • Defective SDRAM DIMM • Defective controller Replace the controller board or RAM DIMM. [0202] Resident memory error The SPD values in all RAM DIMM are incorrect or unreadable. • Defective RAM DIMM • Defective SPD ROM on RAM DIMM • Defective I2C bus Replace the RAM DIMM
+Code;SC828-00
+Description;Self-diagnostic error: ROM [xxxx]: Detailed error code [0101] Check sum error 1 The boot monitor and OS program stored in the ROM DIMM is checked. If the check sum of the program is incorrect, this SC code is displayed.
+Causes;• Defective FLASH ROM device • Defective CPU device
+Remedy;• Try updating the boot monitor and OS program • Replace the controller board.
+Code;SC829-00
+Description;Self-diagnostic error: Optional RAM [xxxx]: Detailed error code
+Causes;
+Remedy;[0301] [0401] Verification error (Optional RAM slot ) Error detected during a write/verify check for the optional RAM (SDRAM DIMM). • Loose connection • Defective SDRAM DIMM • Defective controller • Turn the main power switch off and on. • Replace the SDRAM DIMM. • Replace the controller. [0302] [0402] Memory structure data error (Optional RAM slot ) The memory structure data error for the optional RAM (SDRAM DIMM) is detected during self-diagnosis. • Defective RAM DIMM • Defective SPD ROM on RAM DIMM • Defective I2C bus Replace the RAM DIMM.
+Code;SC835-00
+Description;Self-diagnostic error: Centronic device [xxxx]: Detailed error code
+Causes;
+Remedy;[1102] Verify error The loopback connector is connected but check results is an error. • IEEE1284 connector error • Centronic loopback connector defective Replace the controller board. [110C] DMA verify error The loopback connector is connected but check results is an error. • ASIC device error • IEEE1284 connector error • Centronic loopback connector is defective Replace the controller board. [1120] Loopback connector undetected Centronic loopback connector is not connected for detailed self-diagnostic test. • Centronic loopback connector not connected correctly • Centronic loopback connector is defective • ASIC device is defective • Connect the centronic loopback connector • Replace the centronic loopback connector • Replace the controller board.
+Code;SC838-00
+Description;Self-diagnostic Error: Clock Generator [xxxx]: Detailed error code [2701] Verify error A verify error occurred when setting data was read from the clock generator via the I2C bus.
+Causes;• Defective clock generator • Defective I2C bus • Defective I2C port on the CPU
+Remedy;Replace the controller board.
+Code;SC839-00
+Description;Self-diagnostic Error: Serial Flash [xxxx]: Detailed error code [9001] Serial Flash access error Serial Flash memory for certificate cannot be read/writen.
+Causes;Defective serial flash memory
+Remedy;Replace the controller board.
+Code;SC840-00
+Description;EEPROM access error • During the I/O processing, a reading error occurred. The 3rd reading failure causes this SC code. • During the I/O processing, a writing error occurred.
+Causes;• Defective EEPROM
+Remedy;
+Code;SC841-00
+Description;EEPROM read data error
+Causes;Mirrored data of the EEPROM is different from the original data in EEPROM.
+Remedy;Data in the EEPROM is overwritten for some reason.
+Code;SC842-00
+Description;Nand-Flash updating verification error SCS write error (verify error) occurred at the Nand-Flash module when remote ROM or main ROM was updated.
+Causes;Nand-Flash defective
+Remedy;Turn the main power off/on.
+Code;SC842-01
+Description;Insufficient Nand-Flash blocks (threshold exceeded) At startup, or when machine returned from low power mode, the Nand-Flash status was read and judged that the number of unusable blocks had exceeded threshold, and then SCS generated the SC code.
+Causes;Number of unusable blocks exceeded threshold for Nand-Flash
+Remedy;Replace the controller board.
+Code;SC842-02
+Description;Number of Nand-Flash block deletions exceeded At startup, or when the machined returned from low power mode, the Nand-Flash was read and judged that the number of deleted blocks had exceeded threshold, and then SCS generated this SC code.
+Causes;Number of blocks deleted exceeded threshold for Nand-Flash
+Remedy;Replace the controller board.
+Code;SC853-00
+Description;Bluetooth device connection error The Bluetooth hardware (USB type) was connected after the machine was turned on.
+Causes;The Bluetooth hardware (USB type) was connected after the machine was turned on.
+Remedy;Always connect the Bluetooth device (USB type) before the machine is turned on.
+Code;SC854-00
+Description;Bluetooth device disconnected The Bluetooth hardware (USB type) was disconnected after the machine was turned on.
+Causes;The Bluetooth hardware (USB type) was disconnected after the machine was turned on.
+Remedy;Never remove Bluetooth (USB type) after machine starts
+Code;SC855-01
+Description;Wireless LAN board error (driver attachment failure) Wireless LAN board error (wireless LAN card: 802.11 is covered)
+Causes;• Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC855-02
+Description;Wireless LAN board error (driver initialization failure) Wireless LAN board error (wireless LAN card: 802.11 is covered)
+Causes;• Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC858-00
+Description;Data encryption conversion error (Key Setting Error) A serious error occurred during an attempt to update the encryption key.
+Causes;• USB Flash, other data, corrupted • Communication error caused by electrostatic noise • Controller board defective
+Remedy;Replace the controller board.
+Code;SC858-01
+Description;Data encryption conversion error (HDD Key Setting Error) A serious error occurred during an attempt to update the encryption key.
+Causes;• USB Flash, other data, corrupted • Communication error caused by electrostatic noise • Controller board defective
+Remedy;Replace the controller board.
+Code;SC858-02
+Description;Data encryption conversion error (NVRAM Read/Write Error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;NVRAM defective
+Remedy;Replace the controller board.
+Code;SC858-30
+Description;Data encryption conversion error (NVRAM Before Replace Error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;Software error such as conversion parameters being invalid.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC858-31
+Description;Data encryption conversion error (Other Error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;Controller board defective
+Remedy;Replace the controller board.
+Code;SC859-00
+Description;Data encryption conversion HDD conversion error When the data encryption key was updated, HDD data was converted, but not correctly. Image displayed at conversion only (this SC is not displayed), but SC is displayed after machine is cycled off/on.
+Causes;• HDD conversion was set with the data encryption key update function, but the HDD was removed. • Machine lost power during data encryption key update • Electrostatic noise, or an HDD error occurred, during data encryption key update, and data was not encrypted.
+Remedy;• Check HDD connection. • Format the HDD. • If there is a problem with the HDD, it has to be replaced.
+Code;SC859-01
+Description;Data encryption conversion HDD conversion error (HDD check error) When the data encryption key was updated, HDD data was converted, but not correctly. Image displayed at conversion only (this SC is not displayed), but SC is displayed after machine is cycled off/on.
+Causes;• HDD conversion was set with the data encryption key update function, but the HDD was removed. • Machine lost power during data encryption key update • Electrostatic noise, or an HDD error occurred, during data encryption key update, and data was not encrypted.
+Remedy;• Check HDD connection. • Format the HDD. • If there is a problem with the HDD, it has to be replaced.
+Code;SC859-02
+Description;Data encryption conversion HDD conversion error (Power failure during conversion) When the data encryption key was updated, HDD data was converted, but not correctly. Image displayed at conversion only (this SC is not displayed), but SC is displayed after machine is cycled off/on. Details: NVRAM/HDD conversion is incomplete.
+Causes;Power failure occurred during encryption key update.
+Remedy;None The display after restart instructs the user to format the HDD.
+Code;SC859-10
+Description;Data encryption conversion HDD conversion error (Data read/write command error) When the data encryption key was updated, HDD data was converted, but not correctly. Image displayed at conversion only (this SC is not displayed), but SC is displayed after machine is cycled off/on. Details: Abnormal DMAC return value has been received two or more times (DMAC timeout, serial communication error etc.)
+Causes;HDD was not successfully converted during encryption key update due to HDD errors or cable noises.
+Remedy;• Check HDD connection. • Format the HDD. • If there is a problem with the HDD, it has to be replaced.
+Code;SC860-00
+Description;HDD startup error at main power on (HDD error) The HDD is connected but the driver detected the following errors. • SS_NOT_READY:/* (-2)HDD does not become READY*/ • SS_BAD_LABEL:/* (-4)Wrong partition type*/ • SS_READ_ERROR:/* (-5)Error occurred while reading or checking the label*/ • SS_WRITE_ERROR:/* (-6)Error occurred while writing or checking the label*/ • SS_FS_ERROR:/* (-7)Failed to repair the filesystem*/ • SS_MOUNT_ERROR:/* (-8)Failed to mount the filesystem*/ • SS_COMMAND_ERROR:/* (-9)Drive not responding to command*/ • SS_KERNEL_ERROR:/* (-10)Internal kernel error*/ • SS_SIZE_ERROR:/* (-11)Drive size too small*/ • SS_NO_PARTITION:/* (-12)The specified partition does not exist*/ • SS_NO_FILE:/* (-13)Device file does not exist*/ Attempted to acquire HDD status through the driver but there has been no response for 300 seconds or more.
+Causes;• Unformatted HDD • Label data corrupted • HDD defective
+Remedy;Format the HDD through SP mode.
+Code;SC862-00
+Description;Number of the defective sector reaches the maximum count 101 defective sectors are generated at the image storage area in the HDD.
+Causes;SC863 occurs during the HDD reading and defective sectors are registered up to 101.
+Remedy;• Format the HDD with SPSP5-832. • Replace the HDD.
+Code;SC863-01
+Description;HDD data read failure The data written to the HDD cannot be read normally.
+Causes;Bad sectors were generated during operation. (An error occurred in an area that does not belong to a partition, such as the disk label area.)
+Remedy;Guide for when to replace the HDD 1. When SC863 has occurred ten times or more • The interval is short. • Repeatedly occurs in the same situation (At power-on, etc.). • Startup takes a long time when the main power is turned on. 2. It takes a long time after main power on for the operation panel to become ready. HDD access may be consuming time. Normal HDD access time after main power on is about 5 seconds. If the machine is not waiting for the engine to be ready and it still takes 20 to 30 seconds or more, the HDD may be the cause. If there is a problem with the HDD, HDD-related SCs such as SC860 and SC863 will occur frequently. Print the SC log data and check them.
+Code;SC863-02 ... SC863-23
+Description;HDD data read failure The data written to the HDD cannot be read normally.
+Causes;"Bad sectors were generated during operation. (An error occurred in partition ""a"" (SC863-02) to partition ""v"" (SC863-23))."
+Remedy;Guide for when to replace the HDD 1. When SC863 has occurred ten times or more • The interval is short. • Repeatedly occurs in the same situation (At power-on, etc.). • Startup takes a long time when the main power is turned on. 2. It takes a long time after main power on for the operation panel to become ready. HDD access may be consuming time. Normal HDD access time after main power on is about 5 seconds. If the machine is not waiting for the engine to be ready and it still takes 20 to 30 seconds or more, the HDD may be the cause. If there is a problem with the HDD, HDD-related SCs such as SC860 and SC863 will occur frequently. Print the SC log data and check them.
+Code;SC864-00
+Description;HD data CRC error During HD operation, the HD cannot respond to a CRC error query. Data transfer did not execute normally while data was being written to the HD.
+Causes;HD defective
+Remedy;
+Code;SC864-01
+Description;HDD data CRC error During HDD operation, the HDD cannot respond to a CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;Bad sectors were generated during operation. (An error occurred in an area that does not belong to a partition, such as the disk label area.)
+Remedy;• Format the HDD. • Replace the HDD.
+Code;SC864-02 ... SC864-23
+Description;HDD data CRC error During HDD operation, the HDD cannot respond to a CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;"Bad sectors were generated during operation. (An error occurred in partition ""a"" (SC864-02) to partition ""v"" (SC864-23))."
+Remedy;• Format the HDD. • Replace the HDD.
+Code;SC865-00
+Description;HD access error During HDD operation, the HDD returned an error.
+Causes;The HDD returned an error that does not constitute SC863 (bad sector) or SC864 (CRC error).
+Remedy;Replace the HDD.
+Code;SC865-01
+Description;HDD access error During HDD operation, the HDD returned an error.
+Causes;The HDD returned an error that does not constitute SC863 (bad sector) or SC864 (CRC error). (An error occurred in an area that does not belong to a partition, such as the disk label area.)
+Remedy;Replace the HDD.
+Code;SC865-02 ... SC865-23
+Description;HDD access error During HDD operation, the HDD returned an error.
+Causes;"The HDD returned an error that does not constitute SC863 (bad sector) or SC864 (CRC error). (An error occurred in partition ""a"" (SC865-02) to partition ""v"" (SC865-23))."
+Remedy;Replace the HDD.
+Code;SC865-50 ... SC865-73
+Description;HDD time-out error The machine does not detect a reply from the HDD during the HDD operation.
+Causes;The HDD does not respond to the read/ write command from the machine.
+Remedy;• Check the harness connections between the controller board and HDD. • Replace the HDD.
+Code;SC866-00
+Description;SD card authentication error A license error of an application that is started from the SD card was detected.
+Causes;Invalid program data is stored on the SD card.
+Remedy;Store a valid program data on the SD card.
+Code;SC867
+Description;SD card removed The SD card was removed while the machine is on.
+Causes;An application SD card has been removed from the slot (mount point of /mnt/sd*).
+Remedy;Turn the main power OFF/ON.
+Code;SC868
+Description;SD card access error
+Causes;• SD card defective • SD controller defective
+Remedy;"Slot number is displayed on the sub code. Detail code is described in SMC print can confirm the details of the error. • -13 to -3: File system check error • Otherwise (no code, -2) : Device access error SD card that starts an application 1. Turn the main power off and check the SD card insertion status. 2. If no problem is found, insert the SD card and turn the main power on. 3. If an error occurs, replace the SD card. 4. If the error persists even after replacing the SD card, replace the controller board. SD card for users 1. In case of a file system error, reformat the SD card (using the ""SD Formatter"" made by Panasonic). In case of a device access error 1. Turn the main power off and check the SD card insertion status. 2. If no problem is found, insert the SD card and turn the main power on. 3. If an error occurs, use another SD card. 4. If the error persists even after replacing the SD card, replace the controller board."
+Code;SC870
+Description;Address Book data error When an error related to the Address Book is detected during startup or operation.
+Causes;• Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (NVRAM or HDD was replaced individually without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Check the HDD connection. • Initialize all UCS settings and address/authentication information (SP5-846-046). • Initialize the Address Book partition (SP5-832-006).
+Code;SC872-00
+Description;HDD mail reception error An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned off while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007: HDD Formatting: Mail RX Data).). • Replace the HDD. When you do the above, the following information will be initialized. • Partly received partial mail messages. • Already-read statuses of POP3-received messages (All messages on the mail server are handled as new messages).
+Code;SC873-00
+Description;HDD mail reception error An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned off while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007 : HDD Formatting: Mail RX Data). • Replace the HDD. When you do the above, the following information will be initialized. • Sender’s mail text • Default sender name/password (SMB/FTP/NCP) • Administrator mail address • Scanner delivery history
+Code;SC875
+Description;SC875- 01 D Delete all error (HDD erasure) (hddchack –i error) SC875- 02 D Delete all error (HDD erasure) (Data deletion failure) An error was detected before HDD/data erasure starts. (Failed to erase data/failed to logically format HDD)
+Causes;• HDD logical formatting failed. • The modules failed to erase data.
+Remedy;Turn the main power OFF/ON.
+Code;SC876-01
+Description;Log Data Error 1 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Damaged log data file
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-02
+Description;Log Data Error 2 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Log encryption is enabled but encryption module is not installed.
+Remedy;• Replace or set again the encryption module. • Disable the log encryption setting.
+Code;SC876-03
+Description;Log Data Error 3 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Inconsistency of encryption key between NV-RAM and HDD.
+Remedy;• Disable the log encryption setting. • Initialize LCS memory (SP5801-019). • Initialize the HDD (SP5-832-004).
+Code;SC876-04
+Description;Log Data Error 4 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Log encryption key is disabled but the log data file is encrypted. (NVRAM data corruption) • Log encryption key is enabled but the log data file is not encrypted. (NVRAM data corruption)
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-05
+Description;Log Data Error 5 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Only the NV-RAM has been replaced with one previously used in another machine. • Only the HDD has been replaced with one previously used in another machine.
+Remedy;• Attach the original NV-RAM. • Attach the original HDD. • With the configuration that caused the SC, initialize the HDD (SP5-832-004).
+Code;SC876-99
+Description;Log Data Error 99 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Other causes
+Remedy;
+Code;SC877-00
+Description;"Data Overwrite Security card error The ""Auto Erase Memory"" function of the Data Overwrite Security is set to on but it cannot be done."
+Causes;• Data Overwrite Security option SD card is broken. • Data Overwrite Security option SD card has been removed.
+Remedy;• If the SD card is broken, prepare a new Data Overwrite Security option SD card and replace the NVRAM. • If the SD card has been removed, turn the main power off and reinstall a working Data Overwrite Security option SD card.
+Code;SC878-00
+Description;TPM authentication error TPM electronic recognition failure
+Causes;• Update of system module attempted without correct update path • USB flash memory not operating correctly
+Remedy;"Replace the controller board (PCB3). Trusted Platform Module • In computing, Trusted Platform Module (TPM) is both the name of a published specification detailing a secure crypto processor that can store cryptographic keys that protect information, as well as the general name of implementations of that specification often called the ""TPM chip"" or ""TPM Security Device"" (as designated in certain Dell BIOS settings)."
+Code;SC878-01
+Description;USB flash error There is a problem in the file system of the USB flash memory.
+Causes;USB Flash system files corrupted.
+Remedy;Replace the controller board (PCB3).
+Code;SC878-02
+Description;TPM error An error occurred in either TPM or the TPM driver.
+Causes;TPM not operating correctly.
+Remedy;Replace the controller board (PCB3).
+Code;SC878-03
+Description;TCSD error An error occurred in the TPM software stack.
+Causes;• TPM, TPM software cannot start • A file required by TPM is missing
+Remedy;Replace the controller board (PCB3).
+Code;SC878-20
+Description;Random number generator self check error The unusual status is detected during the self test of generated random number seed.
+Causes;TPM defective. (The random number seed is generated by TPM)
+Remedy;1. Turn ON the main power. 2. Replace the controller board (PCB3).
+Code;SC881-01
+Description;Management area error • A problem was detected in the software • This error may even occur is an IC card option is not installed.
+Causes;• This is caused by accumulation of abnormal authentication information in the software. (User operation will not directly cause it.) • At login Example: When a job is sent to the printer/when logged on from the operation panel/when logged on from a Web browser
+Remedy;Turn the main power off/on.
+Code;SC899-00
+Description;Software performance error (signal reception end) Unknown software error occurred.
+Causes;Occurs when an internal program behaves abnormally.
+Remedy;In the case of a hardware defect • Replace the hardware. In the case of a software error • Turn the main power OFF/ON. • Try updating the firmware.
+Code;SC900-00
+Description;Electric counter error The electric total counter value is out of specification. Error is detected when increasing the total counter.
+Causes;• Unexpected NV-RAM is attached. • NV-RAM defective • NV-RAM data corrupted. • Data written to unexpected area because of external factor etc. • The count requested by the SRM on receiving PRT is not completed.
+Remedy;Replace the NV-RAM.
+Code;SC920-02
+Description;Printer application error (WORK memory cannot be acquired) Printer application error (Filter process ended abnormally) An error was detected in the application, and no further operation is possible.
+Causes;• There is a bug in the software. • The hardware configuration is not as planned (for example, insufficient memory)
+Remedy;• Turn the main power OFF/ON. • Increase the memory storage capacity.
+Code;SC921-00
+Description;Printer application error (Resident font not found) The resident fonts cannot be found at printer startup.
+Causes;The resident font file is missing.
+Remedy;Turn the main power off/on.
+Code;SC990-00
+Description;Software operation error Software attempted an unexpected operation.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;• Turn the main power off/on. • Reinstall the software of the controller and BCU board.
+Code;SC991-00
+Description;Recoverable software operation error Software attempted an unexpected operation. SC991 covers recoverable errors as opposed toCS990.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;Logging only
+Code;SC992-00
+Description;Undefined SC issued. An SC, that is not controlled by the system, occurred.
+Causes;• An SC for the previous model was used mistakenly, etc. • Basically a software bug.
+Remedy;Turn the main power OFF/ON.
+Code;SC995-01
+Description;CPM setting error 1 Comparison of machine serial number (11 digits) and machine identification code. Details: • Machine serial number cannot be identified because of BICU replacement or malfunctioning. • Machine serial number cannot be identified because of NV-RAM replacement
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Enter the machine serial number using SP5-811, and then turn the power on/off. • Attach the NV-RAM that was installed previously.
+Code;SC995-02
+Description;CPM setting error 2 Comparison of machine serial number (11 digits) and machine identification code. Details: Machine serial number cannot be identified because of NV-RAM replacement or malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Attach the NV-RAM that was installed previously. • Download data on the NV-RAM using SP5-825.
+Code;SC995-03
+Description;CPM setting error 3 Comparison of machine serial number (11 digits) and machine identification code. Details: Unable to recognize machine identification code because the controller was replaced incorrectly or is malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Replace it with a specified controller.
+Code;SC995-04
+Description;CPM setting error 4 Comparison of machine serial number (11 digits) and machine identification code.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Return the parts to the original configuration, and then replace them according to the manual.
+Code;SC997-00
+Description;Application function selection error The application selected by the operation panel key operated abnormally (No response, abnormal ending).
+Causes;Software bug (mainly the application)
+Remedy;• Check the optional RAM, DIMM, boards required by the application program. • Check if the combination of downloaded programs are correct.
+Code;SC998-00
+Description;Application start error • No application was registered to system within a specified time after the main power was turned on. (No application starts/All applications have been terminated abnormally) • Application started but cannot be drawn now for some reason.
+Causes;• Software bug (mainly the application) • The optional RAM, DIMM, boards required by the application program. Are not installed correctly.
+Remedy;• Turn the main power OFF/ON. • Check the optional RAM, DIMM, boards • Check the combination of programs • Replace the controller board.

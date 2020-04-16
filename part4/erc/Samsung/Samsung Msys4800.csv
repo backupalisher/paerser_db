@@ -1,0 +1,100 @@
+Code;01
+Description;TEL LINE CANNOT BE ENGAGED (NO DIAL TONE)
+Causes;• When you pick up the handset: 1 Check line cord connection and P3(LIU) connection. 2 Check hook switch of H/B Cradle and D2(LIU) connection. 3 Check the circuit around R2, Q1 and Q2 of LIU PBA. 4 Can’t you hear dial tone though the line is engaged? • When you press OHD key: 1 Check line cord connection. 2 Check U7(main PBA), main LIU harness, and P1(LIU PBA). 3 Check relaying operation of LIU PBA : Is the control signal of U18-49(main) high?
+Remedy;• 1 Insert it correctly into the connection jack called “line”. 2 Replace defective parts. 3 Replace LIU PBA. 4 Replace the handset. • 1 Insert it correctly into the connection jack called line. 2 Replace defective parts. 3 Replace main PBA IF the control signal of U18-49(main) is low. Replace LIU PBA if high but phone line cannot be connected
+Code;02
+Description;Cannot MF dial.
+Causes;• Check U7(main PBA), main-LIU harness, and P1(LIU PBA) • Check signals of U16-122, 123.
+Remedy;• Replace defective parts. • Replace main PBA if the signals of U16- 122(LIU_TXD) are abnormal. Replace LIU PBA if the signals of U16-123(LIU_RXD).
+Code;03
+Description;MF dial is possible but not DP dial.
+Causes;• Check DP control signal of U3-27 of LIU PBA and the circuit around R2, Q1 and Q2. • Check connection of R43 of LIU PBA.
+Remedy;• Replace LIU PBA. • Replace LIU PBA.
+Code;04
+Description;Defective fax transmission
+Causes;• Check U7(main PBA), main LIU harness, and P1(LIU PBA). • a Is the external phone hooked off? b Is the output of U2-4(LIU PBA) low? • Check ‘hook off’. : Refer to ‘TEL LINE CANNOT BE ENGAGED’. • Check the control signals of U15-122, 123. • Check transmission path.: Check output of U15-44(main PBA) and input of U3-3(LIU PBA). • Check reception path.: Check output of U3-40(LIU PBA) and input of U15-45(main PBA).
+Remedy;• Replace defective parts. • a Hook on the external phone correctly. b Replace LIU PBA if low. • Refer to TEL LINE CANNOT BE ENGAGED. • Replace main PBA if the signals of U15-122 (LIU_TXD) are abnormal. Replace LIU PBA if the signals of U15-123 (LIU_RXD) are abnormal. • Replace main PBA, if abnormal. • Replace LIU PBA if the output of U3-40 (LIU PBA) is not confirmed. Check the circuit around U6 (main PBA) if the input of U21-45 (main PBA) is not confirmed though the output of U3-40 (LIU PBA) is confirmed.
+Code;05
+Description;Defective automatic fax reception
+Causes;• Is the ring checked? Check ring pattern at U18-84(main PBA). • Refer to Defective Transmission.
+Remedy;• Replace LIU PBA if it cannot be checked. • Refer to Defective Transmission.
+Code;06
+Description;ASF feeds paper but paper is not supplied to the engine.
+Causes;• Check if actuator feed operates perfectly. • Check if paper sensor is normal.
+Remedy;• Replace actuator-feed, spring, or other defective parts. • Replace the paper sensor.
+Code;07
+Description;ASF cannot feed paper.
+Causes;• Check if stopper clutch operates perfectly. • Check if too much paper has been supplied. • Check if pickup roller rubber of the ASF is worn out.
+Remedy;• Replace stopper clutch assembly. • Supply appropriate amount of paper(130 sheets of normal copying paper). • Replace pickup roller rubber.
+Code;08
+Description;Can’t feed envelopes
+Causes;• Check the location of the envelope guide of ASF.
+Remedy;• Open the envelope guide when you feed envelopes.
+Code;09
+Description;Tilted Printing
+Causes;• Check if paper guide of the ASF is adjusted to the size of paper.
+Remedy;• Adjust paper guide to the size of paper.
+Code;10
+Description;White lines on letters or graphics.
+Causes;If nozzles in print head has a problem, white lines are marked on the print. Self-Test printing will let you know if nozzles have fallen problems.
+Remedy;1) Run ‘print control panel’ to “clean cartridge” and check if nozzles have been blocked. 2) Wipe with soft cloth the contact surfaces of ink cartridge and carriage, and check if nozzles have been cleaned properly. 3) Separate ink cartridge from carriage and combine them. Repeat it about 5 to 6 times and check if connection is proper. 4) Replace ink cartridge and check whether there’s a problem with thehead. 5) Check if head cable is inserted well into the main circuit board and then check if nozzles have problems. 6) Check if head cable is broken or torn and then check if nozzles have problems. 7) Replace the main circuit board with a new one and check if nozzles have problems.
+Code;11
+Description;When Vertical lines are printed crookedly
+Causes;Vertical lines are printed crookedly if you do not “align Vertical lines” on the printer.
+Remedy;1) Run print control panel to “align Vertical lines”, and 2) Select the best one of the above samples and enter the number. 3) This function to align Vertical lines is available both for mono and color cartridges.
+Code;12
+Description;When ink spreads on transparent film
+Causes;You selected a wrong medium on the driver or you did not use transparent film designated for inkjet.
+Remedy;1) Use only transparent film designated for inkjet when you print on transparent film by an inkjet printer. 2) Run Windows driver and select transparent film as the kind of paper if you print on Windows.
+Code;13
+Description;LCD does not display (operation panel)
+Causes;• Powered up? • VCC(+5v) M+4.5V? • Is the level of U16-130(_POR) high (more than +4V)? • Check Main to OPE harness and J3(main). • Is the level of U16-153 (_RST_OUT) high (more than +4V)? • Is the level of U18-31 (_OPE_RST) high (more than +4V)? • Check control signals of U16-124, 125(OPE_TXD, OPE_RXD).
+Remedy;• Check power.(SMPS) a Check if the cord is connected. b Check each power channel. (+5V, +11.75V, +30V) • Check power harness. • Check the circuit around U103. • Replace defective parts. • Check the state of data bus of U16.: Replace the main PBA. • Check the circuit around U18. • If signals of OPE_TXD are defective, replace the main PBA. If signals of OPE_RXD is defective, replace OPE PBA.(Refer to circuit explanation.
+Code;14
+Description;Cannot enter by keys(operation panel)
+Causes;• Refer to 4-7 of LCD does not display. • Check OPE key contacts.
+Remedy;• Refer to 4-7 of LCD does not display. • Replace OPE.
+Code;15
+Description;LF MOTOR does not operate.
+Causes;• Check the control signals of U16- 141-145. • Check input signals and driving output of U1 and U2.
+Remedy;• If control signals are not made when the other functions are normal, replace the main PBA. • If driving output is defective when input signals are normal, replace U1 and U2.
+Code;16
+Description;CR MOTOR does not operate.
+Causes;• Check the control signals of U16- 31-36. • Check input signals and driving output of U25 and U28.
+Remedy;• If control signals are not made when the other functions are normal, replace the main PBA. • If driving output is defective when input signals are normal, replace U25 and U28.
+Code;17
+Description;TX MOTOR does not operate.
+Causes;• Check the operation of the document sensor of OPE PBA. • Check the operation of TX Motor. 1 Check the control signals of U18- 105-110. 2 Check input signals and driving output of U23 and U24.
+Remedy;• If defective, replace the sensor. • 1 If control signals are not made when the other functions are normal, replace the main PBA 2 If driving output is defective when the other functions are normal, replace U23 and U24.
+Code;18
+Description;Paper Jam
+Causes;• Check sheet feeder and ejector. • Check the operation of LF motor. • Check paper exit sensor.
+Remedy;• Get rid of jammed paper. • Refer to LF motor does not operate. • If the sensor senses paper exit when it operates normally, replace the main PBA.
+Code;19
+Description;Document Jam
+Causes;• Check document feeder. • Check the operation of TX motor. 1 Check the control signals of U18- 105-110. 2 Check the input signals and driving output of U23 and U24.
+Remedy;• Remove jammed documents and insert it again. • 1 If control signals are not made when other functions are normal, replace the main PBA 2 If driving output is defective when input signals are normal, replace U23 and U24.
+Code;20
+Description;No Paper
+Causes;• Paper Empty? • U18-48 is HIGH? (+4V or over)
+Remedy;• Feed paper. • If high, replace the paper empty sensor. If low, replace the main PBA.
+Code;21
+Description;No Document
+Causes;• No document? • Check the document sensor of OPE PBA.
+Remedy;• Insert documents. • If high, replace the document sensor. If low, replace the OPE PBA.
+Code;22
+Description;No Cartridge
+Causes;• Check if ink cartridge is installed. • Check contacted part of the head. • Check head checking circuit and driver.: Check U16-8,9,10,128,154,156, U18-103 control signals and head data.
+Remedy;• Insert ink cartridge. • Clean it. • Replace the main PBA.
+Code;23
+Description;Bad Cartridge
+Causes;• Check if ink cartridge is defective. • Check the output level of U22-1.
+Remedy;• Replace ink cartridge. • If low, replace the main PBA.
+Code;24
+Description;Ink low
+Causes;• Check the amount of ink.
+Remedy;• Replace ink cartridge using cartridge key.
+Code;25
+Description;Can’t PRINT
+Causes;• Check centronics cable connection. • Check what type of print driver has been installed. • Check I/F part of parallel port. 1 Check the initial state of J2 print control signal of CON8.: No.1, 10 - 14, 31, 32, 36 2 Check input and output signal of U4. 3 Check input and output signals of U16-43 - 51 and U16-53 - 61.
+Remedy;• Connect it correctly. • Install the print driver again and reboot the system. • Replace the main PBA.

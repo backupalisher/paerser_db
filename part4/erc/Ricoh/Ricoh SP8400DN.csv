@@ -1,0 +1,816 @@
+Code;SC202-00
+Description;Polygon Motor: ON Timeout Error After the polygon motor turned on, or within 10 sec. after the rpm’s changed, the motor did not enter READY status.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective • Polygon motor drive pulse cannot be output correctly. (Polygon controller) • XSCRDY signal observation failing (Polygon controller)
+Remedy;• Turn the power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC203-00
+Description;Polygon Motor: OFF Timeout Error The XSCRDY signal (polygon ready) never becomes inactive (H) within 3 sec. after the polygon motor went OFF.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective • Polygon motor drive pulse cannot be output correctly. (Polygon controller) • XSCRDY signal observation failing (Polygon controller)
+Remedy;• Turn the power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC204-00
+Description;Polygon Motor: XSCRDY Signal Error During polygon motor rotation, the XSCRDY signal was inactive (H) for longer than one rotation of the polygon.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective
+Remedy;• Turn the power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC220-00
+Description;Laser Synchronization Detection Error: Leading Edge The laser synchronizing detection signal for the start position of the LD was not output for 200msec. after LDB unit turned on with the polygon motor rotating normally.
+Causes;• The interface harness to the synchronization detection unit damaged or not connected correctly. • Synchronization detection board defective • Beam does not enter photo detector. • Abnormality around GAVD • IDB (LED driver) defective • LDB defective • IPU defective
+Remedy;• Turn the power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC230-00
+Description;FGATE ON Error The FGATE signal did not turn ON within the given time period after the writing process started.
+Causes;• GAVD defective • Image processing ASIC defective • BCU, controller board not connected correctly or defective • Harness between BCU and LDB defective
+Remedy;• Turn the power off/on. • Replace the harness between IPU and laser unit. • Replace the IPU board. • Replace the controller board.
+Code;SC231-00
+Description;FGATE OFF Error The FGATE signal did not turn OFF within the given time period after the writing process ended.
+Causes;• GAVD defective • Image processing ASIC defective • IPU, controller board not connected correctly or defective • Harness between IPU and LDB defective
+Remedy;• Turn the power off/on. • Replace the harness between IPU and laser unit. • Replace the IPU board. • Replace the controller board.
+Code;SC240-00
+Description;LD Error • The LD error status of LD driver is asserted after the LD is initialized. • The LD driver's error signal is detected during LD initialization.
+Causes;• LD degradation (LD broken, shift of output characteristics etc.) • The interface harness damaged or not connected correctly. • LD driver defective
+Remedy;• Cycle the main power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC272-01
+Description;LD Driver Communication Error If the value is not same when the machine reads and writes the same registration at the machine start-up. If the communication parity retries three consecutive times, the SC is generated.
+Causes;• CPU defective • IPU defective • BCU defective • Harness defective
+Remedy;• Cycle the main power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC272-10
+Description;LD Driver Communication Error: Others If the “Door Open” status does not change to “Door Close” after closing the door.
+Causes;• CPU defective • IPU defective • BCU defective • Harness defective
+Remedy;• Cycle the main power off/on. • Replace the laser unit. • Replace the harness. • Replace the IPU board.
+Code;SC302-00
+Description;High Voltage Power Source: Charge: Output Error The machine detects the error detection signal “L (unexpected)” 10 times for 200 msec consecutively when monitoring the error signal every 20 msec during outputting the PWM signal.
+Causes;Hardware error • Input / Output connector is disconnected. • Input / Output harness is short-circuited. • Surface/air clearance insufficient (arc discharge) • BCU error (signal error) • HVPS defective Load error • Grounding fault of charging output, short-circuit with other outputs • Surface/air clearance insufficient in charging output path (including distance from other outputs) • Unexpected deterioration of drum and over current due to pinholes gap error between the drum and charge roller (PCU error). • Over current due to drum surface condensation • PCU is disconnected.
+Remedy;• Cycle the main power off/on. • Replace the HVPS. • Replace the harness of the HVPS. • Replace the harness of the PCU. • Replace the PCU.
+Code;SC324-01
+Description;Development Motor: Bk: Lock Lock signals are observed at 2 sec intervals during motor ON, and a High level is detected at least 20 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • Unit torque increased
+Remedy;• Replace the development motor. • Reconnect the connector. • Replace the harness. • Replace the BCU. • Replace the development unit. • Replace the driven unit.
+Code;SC360-01
+Description;TD Sensor Adjustment Error • When Mu count exceeds the judgment threshold of no developer status. • When Mu count does not satisfy the following target ranges for 3 times in a row. • Upper threshold • Lower threshold
+Causes;• TD sensor defective • Loose connection • Harness broken • Developer toner density differs from initial developer
+Remedy;• Replace the TD sensor harness. • Reconnect the TD sensor connector. • Replace the TD sensor. • Replace the development unit.
+Code;SC361-01
+Description;TD Sensor Output Error: Upper Limit (K) The following condition continuously exceeds the upper limit threshold value (SP3-211- 003). • TD sensor output: Vt (SP3-210-001) > output upper limit error threshold (SP3-211- 002)
+Causes;• TD sensor connector dropout (connection fault)
+Remedy;• Check if the TD sensor connector is connected. • Check the harness of the TD sensor (disconnection, etc.). • Replace the TD sensor.
+Code;SC362-01
+Description;TD Sensor Output Error: Lower limit (K) TD sensor output: Vt (SP3-210-001) < output lower limit error threshold (SP3-211-004) is continuously below the lower limit occurrence threshold value (SP3-211-005)
+Causes;TD sensor connector missing/dropout
+Remedy;• Check if the TD sensor connector is connected. • Check the harness of the TD sensor (disconnection, etc.). • Replace the TD sensor.
+Code;SC370-00
+Description;ID Sensor Calibration Error Regular reflection optical output voltage of the ID sensor: Vsg_reg cannot be adjusted to within target range. Upper limit (SP3-320-013: initial value 4.5V) Lower limit (SP3-320-014: initial value 3.5V)
+Causes;• ID sensor connector missing/connection fault • ID sensor detection window dirt • ID sensor malfunction
+Remedy;• Check the ID sensor connector. If it is not connected, reconnect it. • Check for dirt on the ID sensor detection window. If the detection window is dirty, clean by the predetermined method (do not wipe it dry). • If neither of the above have occurred, replace the ID sensor.
+Code;SC391-00
+Description;High Voltage Power Source: Development : Output Error When the machine detects the error detection signal “L (abnormal)” 10 times for 200 ms consecutively by monitoring the error detection signal every 20ms during output of the PWM signal used as an error detection target.
+Causes;Hardware error • Input / Output connector is disconnected. • Surface/air clearance insufficient (arc discharge) • Input / Output harness is short-circuited. • BCU error (signal error) • HVPS defective Load error • Grounding fault of charging output, short-circuit with other outputs • Surface/air clearance insufficient in charging output path (including distance from other outputs) • Unexpected deterioration of drum, and over current due to pinholes • Over current due to drum surface condensation • PCDU is not set properly.
+Remedy;• Cycle the main power off/on • Replace the harness between the BCU and HVPS. • Reconnect or replace the harness between the BCU and HVPS. • Reinstall or replace the development unit. • Check if the contact and separation movement of the transfer unit works correctly. • Replace the HVPS. • Replace the BCU.
+Code;SC396-01
+Description;Drum Motor Lock Lock signals are observed at 2 sec intervals during motor ON, and a High level is detected at least 20 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • PCU torque increased
+Remedy;• Reconnect the connector. • Replace the harness of the drum/waste toner motor. • Replace the drum/waste toner motor. • Replace the PCDU. • Replace the BCU.
+Code;SC440-00
+Description;High Voltage Power Source: Paper Transfer : Output Error The machine detects the error detection signal “L (unexpected)” 10 times for 200 msec consecutively when monitoring the error signal every 20 msec during outputting the PWM signal.
+Causes;Hardware error • Input / Output connector is disconnected. • Input / Output harness is short-circuited. • BCU error (signal error) • HVPS defective Load error • Transfer roller's impedance increases. • Transfer unit is not set properly.
+Remedy;• Cycle the main power off/on. • Reconnect or replace the harness of the HVPS (power pack). • Reconnect or replace the harness between the BCU and the HVPS. • Reset or replace the transfer unit. • Check if the contact and separation movement of the transfer unit works correctly. • Replace the HVPS. • Replace the BCU.
+Code;SC452-00
+Description;Transfer Roller Contact Motor Error When the machine does not detect the high/low signal for a specified time after the transfer roller contact motor has been turned on.
+Causes;• Motor overload, Motor defective • Connector disconnected • Harness broken • Interlock mechanism is defective.
+Remedy;• Cycle the main power off/on • Check if the contact and separation movement of the transfer unit works correctly. • Replace the transfer roller contact motor.
+Code;SC460-00
+Description;High Voltage Power Source: Separation : Output Error The machine detects the error detection signal “L (unexpected)” 10 times for 200 msec consecutively when monitoring the error signal every 20 msec during outputting the PWM signal.
+Causes;Hardware error • Input / Output connector is disconnected. • Input / Output harness is short-circuited. • Transfer unit is not set properly. • BCU error (signal error) • HVPS defective Load error • Grounding fault of separation power output, short-circuit with other outputs • Surface/air clearance insufficient in separation power output path (including distance from other outputs)
+Remedy;• Cycle the main power off/on • Reconnect or replace the harness of the HVPS (power pack). • Reconnect or replace the harness between the BCU to the HVPS. • Reset or replace the transfer unit. • Check if the contact and separation movement of the transfer unit works correctly. • Replace the HVPS. • Replace the BCU.
+Code;SC497-00
+Description;Machine Temperature Detection Thermistor Error The output of the temperature sensor is out of the following range. • 0.56 V or less (90°C or more) • 3.0 V or more (-18°C or less)
+Causes;• Imaging temperature sensor is not set (connector disconnected or broken) • Imaging temperature sensor defective
+Remedy;• Reconnect the connector. • Replace the connector. • Replace the imaging temperature sensor (thermistor).
+Code;SC498-00
+Description;Temperature and Humidity Sensor Error (Main machine) The output of the temperature/humidity sensor is out of the following range. • 0.76 V or less/ 2.90 V or more (temperature sensor) • 2.4 V or more (humidity sensor)
+Causes;• Temperature/Humidity sensor is not set (connector disconnected or broken) • Temperature/Humidity sensor defective
+Remedy;• Reconnect the connector. • Replace the connector. • Replace the temperature/humidity sensor.
+Code;SC501-01
+Description;1st Tray Lift Error The machine detects the error of the 1st paper feed tray lift motor 3 times consecutively when the 1st paper feed tray is lifted. (The message of resetting the tray is displayed when the machine detects the error consecutively 2 times or less.)
+Causes;• 1st paper feed tray limit sensor connector disconnection, malfunction or sensor's dirt. • 1st paper feed tray lift motor connector disconnection, malfunction • Foreign matter, such as paper scrap, is caught between the paper feed tray and the paper feed tray lift motor. • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter (1st paper feed tray limit sensor, 1st paper feed tray lift motor). • Check the harness. • Reset or replace the connector. • Replace the 1st paper feed unit and 1st paper feed tray. • Replace the BCU.
+Code;SC501-02
+Description;1st Tray Lowering Error The machine detects the error of the 1st paper feed tray lift motor 5 times consecutively when the 1st paper feed tray is lowered. (The message of resetting the tray is displayed when the machine detects the error consecutively 4 times or less.)
+Causes;• 1st paper feed tray limit sensor connector disconnection, malfunction or sensor's dirt. • 1st paper feed tray lift motor connector disconnection, malfunction • Foreign matter, such as paper scrap, is caught between the paper feed tray and the paper feed tray lift motor. • Paper set fault • Paper overload
+Remedy;• Reset the paper. • Remove the foreign matter (1st paper feed tray limit sensor, 1st paper feed tray lift motor). • Check the harness. • Reset or replace the connector. • Replace the 1st paper feed unit, 1st paper feed tray. • Replace the BCU.
+Code;SC502-01
+Description;2nd Tray Lift Error The machine detects the error of the 2nd paper feed tray lift motor 3 times consecutively when the 2nd paper feed tray is lifted. (The message of resetting the tray is displayed when the machine detects the error consecutively 2 times or less.)
+Causes;• 2nd paper feed tray limit sensor connector disconnection, malfunction, dirt • 2nd paper feed tray lift motor connector disconnection, malfunction • Foreign matter, such as paper scrap, is caught between the paper feed tray and the paper feed tray lift motor • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter (2nd paper feed tray limit sensor, 2nd paper feed tray lift motor). • Check the harness. • Reset or replace the connector. • Replace the 2nd paper feed unit, 2nd paper feed tray. • Replace the BCU.
+Code;SC502-02
+Description;2nd Tray Lowering Error The machine detects the error of the 2nd paper feed tray lift motor 5 times consecutively when the 2nd paper feed tray is lowered. (The message of resetting the tray is displayed when the machine detects the error consecutively 4 times or less.)
+Causes;• The 2nd paper feed tray limit sensor connector disconnection, malfunction, and dirt • 2nd paper feed tray lift motor connector disconnection, malfunction • Foreign matter, such as paper scrap, is caught between the paper feed tray and the paper feed tray lift motor • Paper set fault • Paper overload
+Remedy;• Reset the paper. • Remove the foreign matter (2nd paper feed tray limit sensor, 2nd paper feed tray lift motor). • Check the harness. • Reset or replace the connector. • Replace the 2nd paper feed unit, 2nd paper feed tray. • Replace the BCU.
+Code;SC503-11
+Description;3rd Tray Lift Error (M494) The machine detects the lift error of the tray lift motor for the PFU (M494) 3 times consecutively when the 3rd tray is lifted at the machine’s initialization. (The message of resetting the tray is displayed when the machine detects the error consecutively 2 times or less.)
+Causes;• Tray lift motor connector disconnected • Upper limit sensor harness disconnected or broken • Controller board defective • Foreign matter, such as paper scrap, is caught between the paper feed tray and the tray lift motor • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the tray lift motor. • Reset the connector. • Replace the harness. • Replace the upper limit sensor. • Replace the controller board for the optional PFU (M494). • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm.
+Code;SC503-12
+Description;3rd Tray Lowering Error (M494) The machine detects the lowering error of the tray lift motor for the PFU (M494) 3 times consecutively when the 3rd tray is lowered at the machine’s initialization. (The message of resetting the tray is displayed when the machine detects the error 2 times consecutively.)
+Causes;• Tray lift motor connector disconnected • Upper limit sensor harness disconnected or broken • Controller board defective • Paper overload • Foreign matter, such as paper scrap, is caught between the paper feed tray and the tray lift motor • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the tray lift motor. • Reset the connector. • Replace the harness. • Replace the upper limit sensor. • Replace the controller board for the optional PFU (M494). • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm.
+Code;SC503-31
+Description;3rd Tray Lift Error (LCIT: M496) • The machine detects the lift error of the tray lift motor for the LCIT (M496) 3 times consecutively when the 3rd tray is lowered at the machine’s initialization. • The machine detects the lift error of the tray lift motor for the LCIT (M496) 3 times consecutively when the 3rd tray is lifted at the machine’s initialization. (The message of resetting the tray is displayed when the machine detects the error consecutively 2 times or less.)
+Causes;• Tray lift motor connector disconnected • Limit sensor harness disconnected or broken • Controller board defective • Foreign matter, such as paper scrap, is caught between the right tray and the tray lift motor. • Paper set fault • Timing belt damage or dropout • Timing pulley damage or dropout • Base plate damaged or plate horizontality fault • Paper feed roller missing • Pickup arm damage • Foreign matter, such as paper scrap, is caught inside the right tray.
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the tray lift motor. • Reset the connector. • Replace the harness. • Replace the limit sensor. • Replace the controller board for the optional LCIT (M496). • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm. • Replace the timing belt. • Replace the timing pulley. • Replace the base plate.
+Code;SC503-32
+Description;3rd Tray Lowering Error (LCIT: M496) • The machine detects the lift error of the tray lift motor for the LCIT (M496) 3 times consecutively when the 3rd tray is lowered at the machine’s initialization. • The machine detects the lift error of the tray lift motor for the LCIT (M496) 3 times consecutively when the 3rd tray is lifted at the machine’s initialization. (The message of resetting the tray is displayed when the machine detects the error consecutively 2 times or less.)
+Causes;• Tray lift motor connector disconnected • Lower limit sensor harness disconnected or broken • Controller board defective • Foreign matter, such as paper scrap, is caught between the right tray and the tray lift motor. • Paper set fault • Timing belt damage or dropout • Timing pulley damage or dropout • Base plate damaged or plate horizontality fault • Foreign matter, such as paper scrap, is caught inside the right tray.
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the tray lift motor. • Reset the connector. • Replace the harness. • Replace the lower limit sensor. • Replace the controller board for the LCIT (M496). • Replace the tray. • Replace the timing belt. • Replace the timing pulley. • Replace the base plate.
+Code;SC503-33
+Description;3rd Tray Paper Overload Error (LCIT: M496) Both of the upper limit sensor and lower limit sensor detects the base plate 3 times consecutively at the machine’s initialization. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)
+Causes;• Paper overload • Paper set fault • Upper limit sensor harness disconnected or broken • Lower limit sensor harness disconnected or broken • Control board defective • Foreign matter, such as paper scrap, is caught inside the right tray.
+Remedy;• Reset the paper. • Remove the foreign matter. • Reset the connector. • Replace the harness. • Replace the upper limit sensor. • Replace the lower limit sensor. • Replace the controller board for the LCIT (M496).
+Code;SC503-34
+Description;"3rd Tray Paper Position Error (LCIT: M496) During left/right tray set, or when power is switched ON, or when transfer is complete, ""open"" is detected 5 times consecutively by end fence open/close detection. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 4 times or less.)"
+Causes;• Paper set fault (paper is offset from position for pushing end fence) • Foreign matter entry (foreign matter is caught in the position for pushing end fence) • Paper transport cover open/close switch error, connector missing • Harness broken • Bank controller board defective
+Remedy;• Reset the paper. • Remove the foreign matter. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional paper feed tray.
+Code;SC503-35
+Description;3rd Tray Transfer Error (LCIT: M496) • Transfer end detection error At right tray paper end (right tray lower limit detection, left tray paper detection), left tray paper is transferred to the right tray, but the left tray paper sensor is detected although a predetermined time elapsed (transfer paper missing is not detected), for 3 times consecutively. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)
+Causes;• Paper transfer motor error/connector missing • Left tray paper sensor error/connector missing • Harness broken • Bank control board defective • Paper overload • Foreign matter, such as paper scrap, is caught between the left tray and the paper tray transfer motor • Paper set fault • Timing belt damage/dropout • Timing pulley damage/dropout • Transfer fence defective • Foreign matter, such as paper scrap, is caught inside the left tray
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional paper feed tray. • Reset the paper. • Remove the foreign matter. • Replace the tray. • Replace the timing belt. • Replace the timing pulley. • Replace the end fence of the left tray.
+Code;SC503-36
+Description;"3rd Tray Transfer HP Error (LCIT: M496) • HP detection error (during transfer start) At right tray paper end (right tray lower limit detection, left tray paper detection), left tray paper is transferred to the right tray, but the transfer fence home position sensor is detected although a predetermined time elapsed (home position sensor missing cannot be detected). • HP detection error (during transfer fence HP return) During transfer fence HP not detected (stop after paper transfer, during power supply ON, during left tray set), the transfer fence is moved to HP, but the transfer fence home position sensor is not detected although a predetermined time elapsed. *If an error occurs 3 times consecutively: LCIT transmits ""3rd paper feed tray transfer HP error"" to the main machine. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)"
+Causes;• Paper transfer motor error/connector missing • Transfer fence home position sensor error/connector missing • Harness broken • Bank controller board defective • Paper overload • Foreign matter, such as paper scrap, is caught between the left tray and the paper transport motor • Paper set fault • Timing belt damage/dropout • Timing pulley damage/dropout • Transfer fence defective • Foreign matter, such as paper scrap, is caught inside the left tray
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional paper feed tray. • Reset the paper. • Remove the foreign matter. • Replace the tray. • Replace the timing belt. • Replace the timing pulley. • Replace the end fence of the left tray.
+Code;SC504-21
+Description;4th Tray Lift Error (M494) • Lift motor ascent error detection During tray initialization (upper limit not detected/lower limit detection), the tray base plate is raised to check the tray base plate position, but the upper limit sensor is not detected although a predetermined time elapsed, for 3 times consecutively. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)
+Causes;• Tray lift motor error/connector missing • Upper limit sensor error/connector missing • Harness broken • Bank controller board defective • Foreign matter, such as paper scrap, is caught between the paper feed tray and the tray lift motor • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional paper feed tray. • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm.
+Code;SC504-22
+Description;4th Tray Lowering Error (M494) • Lift motor descent error detection During tray initialization, the tray base plate is lowered to check the tray base plate position, but the upper limit sensor is detected although a predetermined time elapsed, for 3 times consecutively. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)
+Causes;• Tray lift motor error/connector missing • Upper limit sensor error/connector missing • Harness broken • Bank controller board defective • Paper overload • Foreign matter, such as paper scrap, is caught between the paper feed tray and the tray lift motor • Paper set fault
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional paper feed tray. • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm.
+Code;SC505-41
+Description;"Side LCIT Limit Detection Error (D696) • Upper limit detection error (during descent) During tray initialization (upper limit detection/lower limit not detected), the tray base plate is lowered to check the tray base plate position, but the upper limit sensor is detected although a predetermined time elapsed. • Upper limit detection error (during ascent) During tray initialization (upper limit not detected /lower limit detection), the tray base plate is raised to check the tray base plate position, but the upper limit sensor is not detected although a predetermined time elapsed. *If an error occurs for 3 times consecutively: the side LCIT transmits a ""5th paper feed tray upper limit detection error"" to the main machine. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)"
+Causes;• Tray lift motor error/connector missing • Upper limit sensor error/connector missing • Harness broken • Bank controller board defective • Paper set fault • Timing belt damage/dropout • Timing pulley damage/dropout • Base plate damage/horizontality fault • Paper feed roller missing item • Pickup arm defective • Foreign matter, such as paper scrap, is caught inside the tray
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional side LCT. • Replace the tray. • Replace the paper feed roller. • Replace the pick-up arm. • Replace the timing belt. • Replace the timing pulley. • Replace the base plate.
+Code;SC505-42
+Description;"Side LCIT Lower Limit Detection Error (D696) • Lower limit detection error (during descent) During tray initialization (upper limit not detected /lower limit eject detection), the tray base plate is lowered to check the tray base plate position, but the lower limit sensor is not detected although a predetermined time elapsed. Alternatively, at paper end, the tray base plate is lowered, but the lower limit sensor is not detected although a predetermined time elapsed. • Lower limit detection error (during ascent) During tray initialization (upper limit not detected/lower limit detection), the tray base plate is raised to check the tray base plate position, but the lower limit sensor is detected although a predetermined time elapsed. *If an error occurs for 3 times consecutively: the side LCIT transmits a ""5th paper feed tray upper limit detection error"" to the main machine. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)"
+Causes;• Tray lift motor error/connector missing • Lower limit sensor error/connector missing • Harness broken • Bank control board defective • Paper set fault • Timing belt damage/dropout • Timing pulley damage/dropout • Base plate damage/horizontality fault • Foreign matter, such as paper scrap, is caught inside the tray
+Remedy;• Reset the paper. • Remove the foreign matter. • Replace the motor. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional side LCT. • Replace the tray. • Replace the timing belt. • Replace the timing pulley. • Replace the base plate.
+Code;SC505-43
+Description;Side LCIT Paper Overload Error (D696) During tray initialization, both the upper limit and lower limit are detected for 3 times consecutively. (The message of resetting the tray is displayed when the both sensors detect the error consecutively 2 times or less.)
+Causes;• Paper overload • Paper set fault • Upper Limit sensor error/connector missing • Lower limit sensor error/connector missing • Harness broken • Bank control board defective • Foreign matter, such as paper scrap, is caught inside the tray
+Remedy;• Reset the paper. • Remove the foreign matter. • Reset the connector. • Replace the harness. • Replace the sensor. • Replace the controller board for the optional side LCT.
+Code;SC508-00
+Description;Bypass Tray Size Detection Error The paper size detected on the bypass tray is different from any of the pattern of automatic size detection.
+Causes;• Bypass Length Sensor or Bypass Width Sensor malfunction • Bypass Length Sensor or Bypass Width Sensor harness disconnected
+Remedy;• Replace the Bypass Length Sensor, or Bypass Width Sensor. • Replace the harness for Bypass Length Sensor, or Bypass Width Sensor.
+Code;SC520-01, SC520-02, SC520-03
+Description;SC520- 01 C Registration Motor: Lock SC520- 02 C Paper feed Motor: Lock SC520- 03 C Vertical Transport Motor: Lock During motor ON, after checking the motor error notification registers (err_velo and err_posi) for 500msec, the error state of either register was detected at least 5 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • Encoder defective
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC521-01, SC521-02
+Description;SC521- 01 C Duplex Entrance Motor: Lock SC521- 02 C Duplex By-pass Motor: Lock During motor ON, after checking the motor error notification registers (err_velo and err_posi) for 500msec, the error state of either register was detected at least 5 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • Encoder defective
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC522-00
+Description;Paper Exit Motor: Lock During motor ON, after checking the motor error notification registers (err_velo and err_posi) for 500msec, the error state of either register was detected at least 5 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • Encoder defective
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC530-00
+Description;Fusing Fan Lock In the motor ON state, the value of the lock sensor is checked every 100msec. If a lock signal is not obtained for 50 times consecutively.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective
+Remedy;• Replace the fusing fan. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC531-00
+Description;Development Bearing Cooling Fan Lock In the motor ON state, the value of the lock sensor is checked every 100msec. If a lock signal is not obtained for 50 times consecutively.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective
+Remedy;• Replace the development bearing cooling fan • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC533-00, SC533-01
+Description;SC533-00 D PSU Cooling Fan Lock SC533-01 D Development Bearing Cooling Fan In the motor ON state, the value of the lock sensor is checked every 100msec. If a lock signal is not obtained for 50 times consecutively.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective
+Remedy;• Replace the development bearing cooling fan. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC534-00
+Description;Development Exhaust Fan In the motor ON state, the value of the lock sensor is checked every 100msec. If a lock signal is not obtained for 50 times consecutively.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective
+Remedy;• Replace the development exhaust fan. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC535-00
+Description;Paper Exit Cooling Fan Lock In the motor ON state, the value of the lock sensor is checked every 100msec. If a lock signal is not obtained for 50 times consecutively.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective
+Remedy;• Replace the paper exit cooling fan. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC540-00
+Description;Fusing/paper Exit Motor: Lock During motor ON, after checking lock signals for 2sec, a High level was detected at least 20 times.
+Causes;• Motor defective • Connector disconnected • Harness broken • BCU defective • Unit torque increased
+Remedy;• Replace the fusing/paper exit motor. • Reset the connector. • Replace the harness. • Replace the BCU.
+Code;SC541-01
+Description;Fusing Thermopile (Center) Disconnection Below a predetermined temperature (or below CB) is detected for specified seconds continuously. Detection frequency: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the thermopile (center). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC541-02
+Description;NC Sensor (Center) Disconnection 3ED - 3FF (FB voltage: 3.243V-3.300V) is detected for specified seconds continuously (NC sensor (center): detection & compensation, NC sensor (end): detection & compensation). Detection period: 100 ms, detection frequency: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the NC sensor (center). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC541-03
+Description;NC Sensor (Center) Short-circuit AD value: 0-13 (FB voltage: 0.000V-0.041V) is detected for specified seconds continuously. Detection period: 100 ms, detection frequency: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the NC sensor (center). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC542
+Description;SC542- 02 A Fusing Thermopile (Center) Thermopile Does Not Reload When the thermopile (center) does not reach a predetermined temperature for 7 seconds consecutively. SC542- 03 A Fusing Thermopile (Center) Does Not Reload When the thermopile (center) does not reach the permission temperature of heat central reloading for specified seconds continuously. SC542- 05 C Fusing Thermopile (Center) Does Not Reload (Low Voltage) When the thermopile (center) does not reach a predetermined temperature for 7 seconds consecutively. SC542- 06 C Fusing Thermopile (Center) Does Not Reload (Low Voltage) When the thermopile (center) does not reach the permission temperature of heat central reloading for specified seconds continuously.
+Causes;• Thermopile (center) lens dirt • Thermopile (center) installed incorrectly • Thermopile (center) deformed or not installed (or mounted) properly • Outside input voltage guarantee • After excessive temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC543-00
+Description;Fusing Thermopile (Center) High Temperature Detection (Software) When the thermopile (center) detects a predetermined temperature or above for specified seconds consecutively. Detection period 100ms, detection count: 10 times or more.
+Causes;• Triac short-circuit • Engine controller defective • Fusing roller temperature sensor (center) defective • Fusing control software defective
+Remedy;• Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Replace the fusing unit.
+Code;SC544-01
+Description;Fusing High Temperature Detection (hardware) (Fusing Thermopile (Center) High Temperature Error) In the event of an error
+Causes;• Triac defective (short-circuit) • Engine controller defective • Fusing roller temperature sensor (center) defective • Fusing control software: out of control
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check the triac of the AC controller on the PSU and replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Turn the power off/on.
+Code;SC544-02
+Description;Fusing High Temperature Detection (hardware) (Non-Contact thermistor High Temperature Error) In the event of an error
+Causes;• Triac defective (short-circuit) • Engine controller defective • Fusing roller temperature sensor (center) defective • Fusing control software: out of control
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check the triac of the AC controller on the PSU and replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Turn the power off/on.
+Code;SC545-01
+Description;Fusing Central Heater Continuously Heat After waiting for full power for more than specified seconds continuously, not detected for specified seconds. • Definition of heater full power Continuously heating rate set point (maximum heating rate) • Measurement start point After reload (after heater extinguished, after rotation complete) below the standby temperature (target temperature), measurement starts after a heater heat-up request is issued. • Measurement stop condition Rotation started due to a print signal during measurement or other. • Maximum heat-up Duty (SP interlinked value) 0% is excluded.
+Causes;• Thermopile (center) lens dirt • Thermopile (center) installed incorrectly • Thermopile bracket deformation • Heater disconnection • After excessive temperature rise prevention unit operates • Outside input voltage guarantee
+Remedy;• Remove the jammed paper in the fusing unit • Check and replace the thermopile (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU board.
+Code;SC545-05
+Description;Fusing Central Heater Continuously Heat (Low Voltage) After waiting for full power for more than specified seconds continuously, not detected for specified seconds. • Definition of heater full power Continuously heating rate set point (maximum heating rate) • Measurement start point After reload (after heater extinguished, after rotation complete) below the standby temperature (target temperature), measurement starts after a heater heat-up request is issued. • Measurement stop condition Rotation started due to a print signal during measurement or other. • Maximum heat-up Duty (SP interlinked value) 0% is excluded.
+Causes;• Thermopile (center) lens dirt • Thermopile (center) installed incorrectly • Thermopile bracket deformation • Heater disconnection • After excessive temperature rise prevention unit operates • Outside input voltage guarantee
+Remedy;• Remove the jammed paper in the fusing unit • Check and replace the thermopile (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU board.
+Code;SC547-01
+Description;Zero cross Error (relay-contact soldering) In the event of an error
+Causes;• Fusing relay defective (contact soldering) • Fusing relay drive circuit fault
+Remedy;• Turn the main power supply switch OFF/ON • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and controller board, and replace harness and board if necessary
+Code;SC547-02
+Description;Zero cross Error (relay contact fault) In the event of an error
+Causes;• Fusing relay damage (contact open) • Fusing relay drive circuit fault • PSU fuse (24VS) blowout
+Remedy;• Turn the main power supply switch OFF/ON. • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and controller board, and replace harness and board if necessary. • If the PSU fuse (24VS) blows out, replace the fuse.
+Code;SC547-03
+Description;Zero cross Error (low-frequency error) In the event of an error
+Causes;Frequency instability of commercial power line
+Remedy;• Turn the main power supply switch OFF/ON. • Check the power source. • Check the connection between PSU and controller board, and replace harness and board if necessary.
+Code;SC551-01
+Description;Fusing Thermopile (Edge) Disconnection When the thermopile (edge) detects a predetermined temperature or less for specified seconds consecutively
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the thermopile (edge). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC551-02
+Description;NC Sensor (End) Disconnection 3ED - 3FF (FB voltage: 3.243V-3.300V) is detected for specified seconds continuously (NC sensor (center): detection & compensation, NC sensor (end): detection & compensation). Detection period: 100 ms, detection frequency: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Reset the NC sensor. • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC551-03
+Description;NC Sensor (End) Short-circuit AD value: 0-13 (FB voltage: 0.000V-0.041V) is detected for specified seconds continuously. Detection period: 100 ms, detection frequency: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Reset the NC sensor. • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC552-02
+Description;Fusing Thermopile (Edge) Does Not Reload When the thermopile (edge) does not reach a predetermined temperature for specified seconds consecutively
+Causes;• Thermopile (edge) lens dirt • Thermopile (edge) installed incorrectly • Thermopile modification • Outside input voltage guarantee • After excessive temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC552-03
+Description;Fusing Thermopile (Edge) Does Not Reload Heating edge reload permission temperature not reached after heater 1 ON for specified seconds
+Causes;• Thermopile (edge) lens dirt • Thermopile (edge) installed incorrectly • Thermopile modification • Outside input voltage guarantee • After excessive temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC552-05
+Description;Fusing Thermopile (Edge) Does Not Reload (Low Voltage) When the thermopile (edge) does not reach a predetermined temperature for specified seconds consecutively.
+Causes;• Thermopile (edge) lens dirt • Thermopile (edge) installed incorrectly • Thermopile modification • Outside input voltage guarantee • After excessive temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC552-06
+Description;Fusing Thermopile (Edge) Does Not Reload (Low Voltage) When the thermopile (edge) does not reach the permission temperature of heat edge reloading for specified seconds continuously.
+Causes;• Thermopile (edge) lens dirt • Thermopile (edge) installed incorrectly • Thermopile modification • Outside input voltage guarantee • After excessive temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC553-00
+Description;Fusing Thermopile (Edge) High Temperature Detection (software) Above a predetermined temperature detected for specified seconds continuously. Detection period: 100ms, detection count: 10 times or more.
+Causes;• Triac short-circuit • Engine controller defective • Fusing roller temperature sensor (center) defective • Fusing control software defective
+Remedy;• Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Reconnect the following connectors CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Replace the fusing unit.
+Code;SC554-01
+Description;Fusing Thermopile (Edge) High Temperature Detection (hardware) In the event of an error
+Causes;• Triac defective (short-circuit) • Engine controller defective • Fusing roller temperature sensor (center) defective • Fusing control software: out of control
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Turn the power off/on.
+Code;SC554-02
+Description;NC Sensor (End) High Temperature Detection (hardware) In the event of an error
+Causes;• Triac defective (short-circuit) • Engine controller defective • Fusing roller temperature sensor defective (rear) • Fusing control software: out of control
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU board. • Turn the power off/on.
+Code;SC555-01, SC555-05
+Description;SC555- 01 A Fusing Edge Heater Continuously Heat SC555- 05 C Fusing Edge Heater Continuously Heat (Low Voltage) After waiting for full power for more than specified seconds continuously, not detected for specified seconds. • Definition of heater full power Continuously heating rate set point (maximum heating rate) • Measurement start point After reload (after heater extinguished, after rotation complete) below the standby temperature (target temperature), measurement starts after a heater heat-up request is issued. • Measurement stop condition Rotation started due to a print signal during measurement or other • Maximum heat-up Duty (SP interlinked value) 0% is excluded
+Causes;• Thermopile (edge) lens dirt • Thermopile (edge) installed incorrectly • Thermistor deformation • Heater disconnection • After excess temperature rise prevention unit operation • Outside input voltage guarantee
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC557-00
+Description;Zero Cross Frequency Exceeded In the event of an error
+Causes;Frequency instability of commercial power line/Noise
+Remedy;
+Code;SC558-01
+Description;Low Input Voltage On the mains power supply, detected the input voltage that is less than the specification and is more than 50V.
+Causes;Low input of mains power supply
+Remedy;
+Code;SC559-00
+Description;"Fusing Jam Detected for 3 Times Consecutively Fusing jam (does not reach fusing exit sensor) is detected for 3 times consecutively. • Detection conditions Displays the SC559-00 at the time of integrating the counter each time fusing jam occurs, became fusing jam counter value = 3. The counter value is retained without fusing jam also reset by OFF/ON the power supply. • Control ON/OFF And enables ON / OFF is this SC, the default is set to OFF, then ON at the time of customer requirements. SP1-142-001 0: OFF (default), 1: ON (Set at the time of customer requirements) • Counter reset condition occurs fusing jam 1. Normal paper exit has been done during this continuous fusing jam, fusing jam counter is reset. 2. When ""1"" is changed to ""0"" SP1-142-001, to reset the (SP9-912-001) fusing jam counter. 3. When after displaying SC559, SC release is made, reset the (SP9912-001) fusing jam counter."
+Causes;Fusing unit paper jam
+Remedy;Remove the jam.
+Code;SC561-00
+Description;Pressure Roller Thermistor (Center) Disconnection When the pressure roller thermistor (center) detects a predetermined temperature or less for specified seconds consecutively. Detection period 100ms, detection count: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the pressure roller thermistor (center). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC562-02
+Description;Pressure Roller Thermistor (Center) Does Not Reload When the pressure roller thermistor (center) does not reach a predetermined temperature for specified seconds consecutively.
+Causes;• Thermistor dirt • Thermopile deformed or not installed (or mounted) properly • Outside input voltage guarantee • After excess temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the pressure roller thermistor (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the thermopile. • Replace the BCU.
+Code;SC562-05
+Description;Pressure Roller Thermistor (Center) Does Not Reload (Low Voltage) When the pressure roller thermistor (center) does not reach a predetermined temperature for specified seconds consecutively.
+Causes;• Thermistor dirt • Thermopile deformed or not installed (or mounted) properly • Outside input voltage guarantee • After excess temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the pressure roller thermistor (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the thermopile. • Replace the BCU.
+Code;SC563-00
+Description;Pressure Roller Thermistor (Center) High Temperature Detection (software) Above a predetermined temperature detected for specified seconds continuously. Detection period: 100ms, detection count: 10 times or more.
+Causes;• Triac short-circuit • Engine controller defective • Pressure roller thermistor (end) defective • Fusing control software defective
+Remedy;• Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU. • Replace the fusing unit.
+Code;SC564-00
+Description;Fusing High Temperature Detection (hardware (Pressure Roller Thermistor Error) In the event of an error
+Causes;• Triac short-circuit • Engine controller defective • Pressure roller thermistor (end) defective • Fusing controller software defective
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit. • Replace the BCU. • Turn the power off/on.
+Code;SC571-00
+Description;Pressure Roller Thermistor (End) Disconnection When the pressure roller thermistor (end) detects a predetermined temperature or less for specified seconds consecutively. Detection period: 100 ms, detection counts: 10 times or more.
+Causes;• Harness broken • Connector disconnected
+Remedy;• Reconnect the connectors between the fusing unit and the BCU. • Replace the pressure roller thermistor (end). • Replace the harness between the fusing unit and the BCU. • Replace the BCU.
+Code;SC572-02
+Description;Pressure Roller Thermistor (End) Does Not Reload When the temperature does not reach 40 degrees Centigrade for 100 seconds consecutively.
+Causes;• Thermistor dirt • Thermopile deformed or not installed (or mounted) properly • Outside input voltage guarantee • After excess temperature rise prevention unit operation
+Remedy;• Remove the jammed paper in the fusing unit. • Check and replace the pressure roller thermistor (end). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the thermopile. • Replace the BCU.
+Code;SC573-00
+Description;Pressure Roller Thermistor (End) High Temperature Detection (software) When the pressure roller thermistor (end) detects a predetermined temperature or above for specified second consecutively.
+Causes;• Triac short-circuit • Engine controller defective • Pressure roller thermistor (end) defective • Fusing controller software defective
+Remedy;• Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU. • Replace the fusing unit.
+Code;SC574-00
+Description;Pressure Roller Thermistor (End) High Temperature Detection (hardware) In the event of an error
+Causes;• Triac short-circuit • Engine controller defective • Pressure roller thermistor (end) defective • Fusing control: out of control
+Remedy;• Check the sensor temperature with the following SPs. If the temperature is lower than 250°C, replace the thermopile or thermistor. • SP1-141-101 (Thermopile (center)) • SP1-141-102 (Thermopile (edge)) • SP1-141-103 (Thermistor (center)) • SP1-141-104 (Thermistor (edge)) • SP1-141-151 (Thermopile (center): 200 msec before the SC is generated) • SP1-141-152 (Thermopile (edge): 200 msec before the SC is generated) • SP1-141-153 (Thermistor (center): 200 msec before the SC is generated) • SP1-141-154 (Thermistor (edge): 200 msec before the SC is generated) Note: The high temperature state of the fusing unit is detected when the temperature detected by the sensor is 250°C or more. Therefore, if the temperature of the above SPs is lower than 250°C, the thermopile or thermistor may be defective or out of position. • Check the fusing unit. • Check that the triac of the AC controller on the PSU does not short-circuit. • Replace the PSU. • Reconnect the following connectors: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the following harness: CN115 of BCU, connectors between the fusing unit and the BCU, connectors connected to the fusing unit • Replace the BCU. • Turn the power off/on.
+Code;SC589-01
+Description;Fusing center: Low Temperature Detection When the thermopile (center) detects the temperature which is 180 degrees Centigrade lower than target Temperature for 12 seconds consecutively.
+Causes;• Central heater harness disconnected • Connector defective • After excess temperature rise prevention unit (thermostat) operation
+Remedy;• Replace the jammed paper in the fusing unit. • Check and replace the thermopile (center). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC589-02
+Description;Fusing edge: Low Temperature Detection When the thermopile (edge) detects the temperature which is 180 degrees Centigrade lower than target Temperature for 12 seconds consecutively.
+Causes;• Edge heater harness disconnected • Connector defective • After excess temperature rise prevention unit (thermostat) operation
+Remedy;• Replace the jammed paper in the fusing unit. • Check and replace the thermopile (edge). • Check the power supply voltage and reconnect the cable to the outlet. • Replace the thermostat. • Replace the BCU.
+Code;SC621-01, SC621-02
+Description;SC621- 01 D Finisher communication error  C621- 02 D Mailbox communication error • When the communication line has opened and the machine is in a normal communication state, it has received a break signal from a connected device. • There is not any response within 100 ms after the data frame transmission, and retries have failed with timeout error for 3 times in a row. • When changing the baud rate after program downloading starts, the machine has failed to detect the break signal of the finisher or has failed to detect that the break has been cleared.
+Causes;• Connection error between finisher and main machine. • The finisher-related firmware is not installed properly. • The engine firmware is not installed properly. • Finisher control board defective. • BCU, or IOB defective • Communication error caused by electrostatic noise
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors in the finisher/mailbox are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Update the firmware to the latest version. 3. Check all harnesses in the mailbox or finisher. Replace any harness that is damaged. 4. Replace the BCU, or IOB. 5. Replace the controller board of the finisher or the mailbox.
+Code;SC622
+Description;Paper Bank Communication Error SC622- 11 D Paper Bank 1 Communication Error (M494) SC622- 12 D Paper Bank 1 Communication Error (M494) SC622- 31 D Paper Bank 1 Communication Error (M496) Detected an error when connecting the communication line.
+Causes;• Paper bank control board defective • BCU defective • Paper bank-main machine connection fault
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors in tray 1, 2, and optional paper tray are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Check the harness in tray 1, 2, and optional paper tray. Replace the harness if it is disconnected, or damaged. 3. Check if there are any signs of a short circuit on the Bank Main Board. If there are any defects, replace the board.
+Code;SC623-00
+Description;Paper Bank Communication Error (D696) When two trays PFU (M494) and side LICT (D696) or LCIT (M496) and side LCIT (D696) are installed, 1. When the upper stream unit (M494 or M496) recognizes the lower stream unit (D696), the break of the lower stream unit is not canceled within predetermined milliseconds. 2. After the upper stream unit (M494 or M496) recognizes the lower stream unit (D696), there is no ACK within predetermined milliseconds after transmission of a data frame to the lower stream unit, and a timeout error occurs for 3 times consecutively even if retransmission is performed.
+Causes;• Bank control board fault • Connector disconnected
+Remedy;• Turn the power off/on. • Reset the optional paper tray connecting cable. • Replace the BCU. • Replace the optional paper tray.
+Code;SC641-00
+Description;Communication error between BCU and Controller board. Controller board does not respond after BCU tries to communicate three times.
+Causes;• Controller board software error • Connection error between BCU and Controller board • Engine board software error
+Remedy;• Check connections between Controller board and BCU. • Turn the main switch off and on.
+Code;SC664-01, SC664-02, SC664-03
+Description;SC664- 01 D Access Permission Error to VODKA SRAM SC664- 02 D Write Error to VODKA SRAM SC664- 03 D VODKA Program Startup Error The machine detects the communication error between VODKA and SRAM when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU.
+Code;SC665-01
+Description;BCU-IPU Connection Error The machine detects the communication error between BCU and IPU (No FFC connection) when starting up, or recovery from energy saver mode.
+Causes;• BCU defective, IPU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Reconnect the FFC. • Replace the FFC. • Replace the BCU. • Replace the IPU.
+Code;SC665-04
+Description;BCU (IOB Module) Does Not Start The IOB does not start up when starting up, or recovery from energy saver mode.
+Causes;• No power supply to the BCU (IOB module) (power supply connector installed incorrectly, harness broken) • Board defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Reconnect the BCU power supply harness. • Replace the BCU power supply harness. • Replace the BCU.
+Code;SC665-05
+Description;Master Device Communication Error The machine detects the communication error between CPU and Slave1 when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU.
+Code;SC665-07
+Description;IPU signal Communication Error The machine detects the communication error between CPU and Slave1 when starting up, or recovery from energy saver mode.
+Causes;• BCU defective, IPU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Reconnect the FCC. • Replace the FCC. • Replace the BCU. • Replace the IPU.
+Code;SC665-08
+Description;IOB signal Communication Error The machine detects the communication error between CPU and Slave1 when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU.
+Code;SC667-01
+Description;Master Device Mode Setting Error The machine detects the CPU mode error when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU.
+Code;SC667-10
+Description;Slave1 Device Mode Setting Error The machine detects the Slave1 mode error when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU.
+Code;SC667-40
+Description;Macaron1 Mode Setting Error The machine detects the Macaron1 mode error when starting up, or recovery from energy saver mode.
+Causes;• BCU defective (Parts implementation defect, solder scrap, implemented parts defect, etc.)
+Remedy;• Turn the power off/on. • Replace the BCU. • Replace the IPU.
+Code;SC669
+Description;EEPROM Communication Error Received an error notification during EEPROM communication and does not resume after 3 retries.
+Causes;• Electrical noise • EEPROM not connected fully • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on. • Check the EEPROM. • Replace the EEPROM. • Replace the BCU.
+Code;SC669-36
+Description;EEPROM: Verify Error The machine receives an error notification during EEPROM (BCU) communication and does not resume after 2 retries. The machine detects an abnormal value in the EEPROM data when starting up, or recovery from energy saver mode.
+Causes;• Electrical noise • EEPROM not connected fully • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on. • Check the EEPROM. • Replace the EEPROM. • Replace the BCU.
+Code;SC669-37
+Description;EEPROM: Failure Detection Error The machine receives an error notification during EEPROM (BCU) communication and does not resume after 1 retries. The machine determined EEPROM failure in the EEPROM detection operation when starting up, or recovery from energy saver mode.
+Causes;• Electrical noise • EEPROM not connected fully • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on. • Check the EEPROM. • Replace the EEPROM. • Replace the BCU.
+Code;SC670-01
+Description;Engine start up error when the machine boots up • /ENGRDY signal was not asserted when the machine was turned on. • PCI I/F is not linked up when the machine returns from energy saver mode. • /IPURDY signal was not asserted when the machine was turned on or returned from energy saver mode. • EC/PC/SC response was not received within specified time from power on. • Writing to Rapi driver failed (the other party not found through PCI). • Connection defect between controller board and BCU. • BCU is down / unstable
+Causes;• BCU defective • PSU defective • Controller board defective
+Remedy;
+Code;SC670-02
+Description;Engine start up error when the machine is in operation • CPU reset by software • CPU reset by anomaly CPU • CPU reset by hardware defect / noise • Hardware defect
+Causes;Engine board reset unexpectedly.
+Remedy;
+Code;SC672-00
+Description;Controller start up error After the machine was powered on, communication between the controller and the operation panel was not established, or communication with controller was interrupted after a normal startup.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC672-10
+Description;Controller start up error After the machine was powered on, communication between the controller and the operation panel was not established.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC672-11
+Description;Controller start up error After the machine was powered on, communication between the controller and the operation panel was not established, or communication with controller was interrupted after a normal startup.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC672-12
+Description;Controller start up error Communication with controller was interrupted after a normal startup.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC672-13
+Description;Controller start up error The operation panel detected that the controller is down.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC672-99
+Description;Controller start up error The operation panel software ended abnormally.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;
+Code;SC673-10
+Description;Flair connection error of Smart Operation Panel The SC is issued only when the Smart Operation Panel is installed. The main machine does not respond to the smart operation panel with the Flair communication.
+Causes;The SP setting for the smart operation panel is mismatched.
+Remedy;• Turn the main power off/on. • Set the SP5748-201 (OpePanel Setting) to [1: ON]. Note for the phone number: There is a phone number column on the SC673-10 display, but the phone number is not displayed because of this SC feature. Other Information: When the automatic reboot cannot be performed due to the hardware failure, SC672 or SC673 is displayed. The SC call is not issued. You cannot reboot the machine manually regardless of SP5-875-002 setting.
+Code;SC682
+Description;PCU: ID Chip Communication Error SC682- 01 D Invalid Device ID SC682- 06 D Channel Error SC682- 11 D Device Error SC682- 16 D Communication Aborted (error during communication) SC682- 21 D Communication Timeout SC682- 26 D Device Stopped (logically stopped) SC682- 31 D Requested Buffer Full Received an error notification during EEPROM communication and does not resume after 3 retries.
+Causes;• Device ID date error • Mu sensor / EEPROM defective • Electrical noise • PCU is not set properly.
+Remedy;• Turn the power off/on. • Replace the PCU.
+Code;SC682-36
+Description;PCU: Verify Error Received a error notification during EEPROM communication and does not resume after 2 retries.
+Causes;• Device ID date error • Mu sensor / EEPROM defective • Electrical noise • PCU is not set properly.
+Remedy;• Turn the power off/on. • Replace the PCU.
+Code;SC687-00
+Description;PER Not Received Error Unable to receive the PER command from the controller.
+Causes;• Communication error
+Remedy;• Replace the BCU.
+Code;SC720-03
+Description;Finisher SR3230 Error Protection Device Intercept Error 1 Protection device intercept error state (fuse break) is detected.
+Causes;• Short-circuit defective • Overload defective • Motor defective • Solenoid defective
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are all the motors and the sensors. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-06
+Description;Finisher SR3230 Error Access error to NVRAM Error occurs when accessing NVRAM.
+Causes;Connection failure or malfunction of NVRAM
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. 1. Pull out and reinsert the NVRAM to check if the NVRAM is correctly inserted into the IC socket. If the SC cannot be recovered, replace the main board.
+Code;SC720-10 ... SC720-17
+Description;Finisher SR3230 Error SC720- 10 B Entrance Transport Motor Error SC720- 11 B Horizontal Transport Motor Error SC720- 13 B Transport Motor Error SC720-15 B Pre-stack Transport Motor Error SC720- 17 B Exit Motor Error
+Causes;Error Condition of -06, -10, -11, -13, -15, -17 • Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification)
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-20 ... SC720-33
+Description;Finisher SR3230 Error SC720- 20 B Lower Junction Gate Motor Error SC720- 24 B Paper Exit Guide Plate Motor Error SC720- 25 B Punch Motor Error SC720- 27 B Punch Unit Movement Motor Error SC720- 28 B Punch Registration Motor Error SC720- 30 B Jogger Motor Error SC720- 33 B Positioning Roller Shift Motor Error
+Causes;Error Condition of -20, -24, -25, -27, -28, -30, -33 • During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-34
+Description;Finisher SR3230 Error Positioning Roller Motor Error
+Causes;• Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification)
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-35
+Description;Finisher SR3230 Error Paper Stacking Holder Motor Error
+Causes;• Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification) • During movement to home, the home position could not be detected within a predetermined time (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-41
+Description;Finisher SR3230 Error Stack Feed-out Motor Error
+Causes;• Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification) • During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-42
+Description;Finisher SR3230 Error Corner Stapler Movement Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-44
+Description;Finisher SR3230 Error Corner Stapler Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined time (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-50..SC720-53
+Description;Finisher SR3230 Error SC720- 50 B Booklet Jogger Motor Error SC720- 51 B Booklet Jogging Pawl Movement Motor Error SC720- 52 B Press Folding Motor Error SC720- 53 B Bottom Fence Motor Error
+Causes;Error Condition of -50, -51, -52, -53 • During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-54
+Description;Finisher SR3230 Error Fold Roller Motor Error
+Causes;Motor driver detects an error (short-circuit and overheating) (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-60
+Description;Finisher SR3230 Error Booklet Stapler Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined time (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-70
+Description;Finisher SR3230 Error Tray Lift Motor Error
+Causes;• Motor controller detects an error (overload) (1st time is jam notification, 2nd time is SC notification). • During descent, the paper surface sensor still detects paper even after a predetermined time (t0sec) elapses (1st time is jam notification, 2nd time is SC notification). • During ascent, the paper surface sensor could not detect the paper surface even after a predetermined time (t1sec) elapses (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-71 ... SC720-74
+Description;Finisher SR3230 Error SC720- 71 B Shift Motor Error SC720- 72 B Shift Jogger Front Motor Error SC720- 73 B Shift Jogger Rear Motor Error SC720- 74 B Shift Jogger Retreat Motor Error
+Causes;Error Condition of -71, -72, -73, -74 • During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-75
+Description;Finisher SR3230 Error Return Roller Motor Error
+Causes;• Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification) • During movement to home, the home position could not be detected within a predetermined time (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-80
+Description;Finisher SR3230 Error Protection Device Intercept Error 3
+Causes;Fuse blowout is detected
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-81
+Description;Finisher SR3230 Error Shift Roller Drive Motor Error
+Causes;Motor driver detects an error (DC motor control error) (1st time is jam notification, 2nd time is SC notification)
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC720-82, SC720-83
+Description;Finisher SR3230 Error SC720- 82 B Edge Guide Motor Error SC720- 83 B Paper Guide Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-03
+Description;Finisher SR3210 (D3B8) Error Protection Device Intercept Error 1
+Causes;Fuse blowout is detected
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-10
+Description;Finisher SR3210 (D3B8) Error Entrance Transport Motor Error
+Causes;Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-11
+Description;Finisher SR3210 (D3B8) Error Proof Transport Motor Error
+Causes;Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-17
+Description;Finisher SR3210 (D3B8) Error Paper Exit Transport Motor 2 Error
+Causes;Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-24
+Description;Finisher SR3210 (D3B8) Error Paper Exit Guide Plate Open/Close Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-25
+Description;Finisher SR3210 (D3B8) Error Punch Unit Drive Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined time (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined time elapsed (1st time is jam notification, 2nd time is SC notification). • Output from the encoder could not be counted for a predetermined number of times within a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-27 ... SC722-41
+Description;Finisher SR3210 (D3B8) Error SC722- 27 B Horizontal Registration Unit Transfer Motor Error SC722- 28 B Horizontal Registration Correction Motor Error SC722- 30 B Jogger Motor Error SC722- 33 B Positioning Roller Motor Error SC722- 41 B Feedout Pawl Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse elapsed (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-42
+Description;Finisher SR3210 (D3B8) Error Stapler Transfer Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse elapsed (1st time is jam notification, 2nd time is SC notification). • During movement from home, retreat sensor ON could not be detected even after a predetermined pulse elapsed (1st time is jam notification, 2nd time is SC notification). • During initialization, retreat sensor ON was detected simultaneously when the home position is detected (1st time is jam notification, 2ndbtime is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-44
+Description;Finisher SR3210 (D3B8) Error Stapler Motor Error
+Causes;• Motor driver detects an error (short-circuit or overheating) (1st time is SC). • During movement to home, the home position could not be detected even after a predetermined time elapsed (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined time elapsed (1st time is jam notification, 2nd time is SC notification). • During motor drive, the output from the encoder could not be counted for a predetermined number of times within a predetermined time (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-45
+Description;Finisher SR3210 (D3B8) Error Stapleless Stapler Transfer Motor Error
+Causes;• Motor driver detects an error (short-circuit or overheating) (1st time is SC). • During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse elapsed (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-46
+Description;Finisher SR3210 (D3B8) Error Stapleless Stapler Motor Error
+Causes;• Motor driver detects an error (short-circuit or overheating) (1st time is SC). • During movement to home, the home position could not be detected even after a predetermined time elapsed (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined time elapsed (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-47
+Description;Finisher SR3210 (D3B8) Error Paper Guide Drive Motor Error
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-70
+Description;Finisher SR3210 (D3B8) Error Tray Lift Motor Error
+Causes;• Motor driver detects an error (short-circuit or overheating) (1st time is SC). • During descent, the paper surface sensor still detects paper even after a predetermined time (t0sec) elapses (1st time is jam notification, 2nd time is SC notification). • During ascent, the paper surface sensor could not detect the paper surface even after a predetermined time (t0sec) elapses (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC722-71, SC722-81
+Description;Finisher SR3210 (D3B8) Error SC722- 71 B Shift Motor Error SC722- 81 B Paper Guide Drive Motor
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (1st time is jam notification, 2nd time is SC notification).
+Remedy;Check if the SC occurs by opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are the motor and related HP sensor that SC occurred. 1. Check if the connector of the target part is connected securely. Reconnect the connector if it is disconnected, or loose. 2. Check the harness for the target part. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, sensors turn OFF/ON, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-01
+Description;Internal Multi-fold Unit FD3000 Error Connection Error to Downstream Unit Communication error has occurred with the serial interface of the downstream unit. This is displayed as an SC code from its initial detection.
+Causes;• Harness defective • Downstream unit defective • Controller board defective • I/F connector defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Turn the power off, disconnect the interface connector connected to the machine, connect the interface connector of the downstream unit to the machine, and then turn the power on. 2. If the downstream unit does not operate, resulting in connection error, there is a problem with the downstream unit, so repair the downstream unit. 3. Check the harness connections between the controller board and each connector. Replace the harness if it is damaged, or connect it if it is disconnected. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-03
+Description;Internal Multi-fold Unit FD3000 Error Protection Device Intercept Error 1 • Fuse (FU3) break is detected • 24-V power supply line error This is displayed as an SC code from its initial detection.
+Causes;• Fuse (FU3) is blowout • Controller board defective • 24-V harness entrapment (short circuit)
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are all the motors and the sensors. 1. Check that the harness between the PCB and motor/solenoid is not stripped or entrapped. Replace the harness if there are any defects. 2. Rotate each motor shaft by hand to check for any overload. Replace the motor if there are any defects. 3. Check if there is any unusual odor from the solenoid or any problem with its appearance. Replace the solenoid if there are any defects. 4. Check if there are any signs of a short circuit on PCB. Replace the PCB if there are any defects.
+Code;SC727-04
+Description;Internal Multi-fold Unit FD3000 Error Protection Device Intercept Error 2 • Poly-switch (FU4) break is detected • Limit line disturbances from inrush currents has occurred to the interlock system. • This is displayed as an SC code from its initial detection.
+Causes;• Poly-switch (FU4) trip (Trip refers to the phenomenon whereby an overcurrent flows into the poly-switch, resulting in high resistance.) • Controller board defective • 24-V harness entrapment (short circuit)
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. • The target parts are all the motors and the sensors. 1. Check that the harness between the PCB and the motor/solenoid is not stripped or entrapped. Replace the harness if there are any defects. 2. Rotate each motor shaft by hand to check for any overload. Replace the motor if there are any defects. 3. Check if there is any unusual odor from the solenoid or any problem with its appearance. Replace the solenoid if there are any defects. 4. Check if there are any signs of a short circuit on PCB. Replace the PCB if there are any defects.
+Code;SC727-06
+Description;Internal Multi-fold Unit FD3000 Error NVRAM Error 1 An error has occurred during an access to the NVRAM. This is displayed as an SC code from its initial detection.
+Causes;NVRAM is disconnected, or defective
+Remedy;Turn the main power OFF then ON after checking whether there are no foreign objects (such as remaining paper) in the tray. If the SC occurs again, replace the controller board.
+Code;SC727-10
+Description;Internal Multi-fold Unit FD3000 Error Transport Motor Error Motor error (Encoder error) This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor harness entrapped (short circuit or breaking of wire) • Connector disconnected • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step 1. Check if all connectors between the controller board and the motors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-12
+Description;Internal Multi-fold Unit FD3000 Error Registration Motor Error Motor error (Encoder error) This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor harness entrapped (short circuit or breaking of wire) • Connector disconnected • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-20
+Description;Internal Multi-fold Unit FD3000 Error JG Crease Motor Error 1 • Motor error (Encoder error) • The junction gate is not at the HP position. This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor/sensor harness entrapped (short circuit or breaking of wire) • Connector disconnected • Junction Solenoid HP Sensor defective • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors/sensors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-39
+Description;Internal Multi-fold Unit FD3000 Error 1st Fold Motor Error Motor error (Encoder error) This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor harness entrapped (short circuit or breaking of wire) • Connector disconnected • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-41
+Description;Internal Multi-fold Unit FD3000 Error JG Crease Motor Error 2 • Motor error (Encoder error) • Crease Roller is not at the HP position. This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor/sensor harness entrapped (short circuit or breaking of wire) Connector disconnected • Crease HP Sensor defective • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors/sensors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-71
+Description;Internal Multi-fold Unit FD3000 Error 2nd Fold Motor Error Encoder error This is reported as a jam error when detected for the first time. If it occurs again in a row, its SC code appears.
+Causes;• Motor defective • Motor harness entrapped (short circuit or breaking of wire) • Connector disconnected • Controller board defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON, submitting a job, feeding paper, opening/closing covers, and input/output check. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC727-72
+Description;Internal Multi-fold Unit FD3000 Error The power supply for the sensor is defective. The power supply for the sensor (5V_SN) is defective. This is displayed as an SC code from its initial detection.
+Causes;• Sensor harness entrapped (short circuit or breaking of wire) • Sensor defective • Controller board defective
+Remedy;Turn the main power OFF then ON after checking whether there are no foreign objects (such as remaining paper) in the tray. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if the harness is connected to the wrong sensor. Reconnect the connector if there are any defects. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 4. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC745-03
+Description;Mail Box CS3010 Error Protection Device Intercept Error 1 Protection device intercept error state (fuse break) is detected.
+Causes;• Harness short-circuit • Motor defective • Solenoid defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors/sensors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC745-04
+Description;Mail Box CS3010 Error Protection Device Intercept Error 2 Protection device intercept error state (fuse2 break) is detected.
+Causes;• Harness short-circuit • Motor defective • Solenoid defective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors/sensors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC745-80
+Description;Mail Box CS3010 Error The entrance fan motor lock is detected. The entrance fan motor lock is detected.
+Causes;• Motor defective • Harness broken • Connector disconnected • Controller board detective
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors between the controller board and the motors/sensors are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if the sensor turns OFF/ON. Replace the parts if there are any defects. 5. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC761-03, SC761-04
+Description;Bridge Unit BU3070 (D685) Error SC761- 03 B Protection Device Intercept Error 5V SC761- 04 B Protection Device Intercept Error 24V Fuse blowout occurs due to over current during power injection (output detected for longer than 2 seconds).
+Causes;• Over current of bridge unit motor • Over current due to short-circuit in PCB
+Remedy;• Replace the bridge unit or side tray. • Replace the PCB of bridge unit or side tray.
+Code;SC780-01
+Description;Bank 1 (Upper optional paper tray) Protection Device Intercept Error When original source of 5V power supply is ON, protection device intercept of 24V power system is detected.
+Causes;In 24V power supply system: • Motor defective • Solenoid defective • Harness short- circuit
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors in tray 1, 2, and optional upper tray are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Check the harness in tray 1, 2, and optional upper tray. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC781-01
+Description;Bank 2 (Lower optional paper tray) Protection Device Intercept Error When original source of 5V power supply is ON, protection device intercept of 24V power system is detected.
+Causes;In 24V power supply system: • Motor defective • Solenoid defective • Harness short- circuit
+Remedy;Remove the jammed paper or slip of paper from the tray, and check if the SC occurs by turning the main power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Check if all connectors in tray 1, 2, and optional upper/lower trays are connected securely. Reconnect the connectors if they are disconnected, or loose. 2. Check the harness in tray 1, 2, and optional upper/lower trays. Replace the harness if it is disconnected, or damaged. 3. Check if the motor runs, has no overloads, and is properly driven. Replace the parts if there are any defects. 4. Check if there are any signs of a short circuit. Replace the parts if there are any defects.
+Code;SC791-00
+Description;No Bridge Unit when Finisher is Present When power supply is switched on or paper is transported, finisher set is detected but bridge unit set is not detected. (during internal finisher connection, not detected)
+Causes;• Bridge unit not attached • Bridge unit defective
+Remedy;• Reset the bridge unit. • Turn the main power off/on.
+Code;SC792-00
+Description;No Finisher, Bridge Unit Provided When power supply is switched on, it is recognized there is no finisher, and a bridge unit is fitted.
+Causes;• Finisher connector set incorrectly • In a machine which has a bridge unit connected, a finisher is not fitted • Finisher defective
+Remedy;Connect finisher or disconnect bridge unit, and turn the main power off/on.
+Code;SC816
+Description;Energy save I/O subsystem error Energy save I/O subsystem detected some abnormality.
+Causes;• Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR. • SC816-99 occurs as a subsystem error except any error from -06 to 96.
+Remedy;"Check if the SC occurs by turning the power OFF then ON. If the SC occurs again, do the following steps. Check if the SC reoccurs by cycling the power after each step. 1. Update the ""System"" firmware and the other system firmware modules to the latest version. 2. Disable the STR shift function by SP5-191-001 (Power Str Set). 3. Replace the controller board."
+Code;SC840-00
+Description;EEPROM access error • During the I/O processing, a reading error occurred. The 3rd reading failure causes this SC code. • During the I/O processing, a writing error occurred.
+Causes;• Defective EEPROM
+Remedy;
+Code;SC841-00
+Description;EEPROM read data error Mirrored data of the EEPROM is different from the original data in EEPROM.
+Causes;Data in the EEPROM is overwritten for some reason.
+Remedy;
+Code;SC842-00
+Description;Nand-Flash updating verification error SCS write error (verify error) occurred at the Nand-Flash module when remote ROM or main ROM was updated.
+Causes;Nand-Flash defective
+Remedy;Turn the main power OFF/ON.
+Code;SC842-01
+Description;Insufficient Nand-Flash blocks (threshold exceeded) At startup, or when machine returned from low power mode, the Nand-Flash status was read and judged that the number of unusable blocks had exceeded threshold, and then SCS generated the SC code.
+Causes;Number of unusable blocks exceeded threshold for Nand-Flash
+Remedy;Replace the controller board.
+Code;SC842-02
+Description;Number of Nand-Flash block deletions exceeded At startup, or when the machined returned from low power mode, the Nand-Flash was read and judged that the number of deleted blocks had exceeded threshold, and then SCS generated this SC code.
+Causes;Number of blocks deleted exceeded threshold for Nand-Flash
+Remedy;Replace the controller board.
+Code;SC845
+Description;Hardware Error Detected when the automatic firmware update SC845- 01 D Engine Board SC845- 02 D Controller Board SC845- 03 D Operation Panel (Normal) SC845- 04 D Operation Panel (Smart Panel) SC845- 05 D FCU When updating the firmware automatically (ARFU), the firmware cannot be read or written normally, and the firmware update cannot be completed even by 3 retries.
+Causes;Hardware abnormality of the target board
+Remedy;Replace the target board. For SC845-02, HDD and memory may cause the problem. Replace the HDD or memory if the SC cannot be recovered by replacing the controller board.
+Code;SC860-00
+Description;HDD startup error at main power on (HDD error) • The HDD is connected but the driver detected the following errors. • SS_NO.T_READY:/* (-2)HDD does not become READY*/ • SS_BAD_LABEL:/* (-4)Wrong partition type*/ • SS_READ_ERROR:/* (-5)Error occurred while reading or checking the label*/ • SS_WRITE_ERROR:/* (-6)Error occurred while writing or checking the label*/ • SS_FS_ERROR:/* (-7)Failed to repair the filesystem*/ • SS_MOUNT_ERROR:/* (-8)Failed to mount the filesystem*/ • SS_COMMAND_ERROR:/* (-9)Drive not responding to command*/ • SS_KERNEL_ERROR:/* (-10)Internal kernel error*/ • SS_SIZE_ERROR:/* (-11)Drive size too small*/ • SS_NO._PARTITION:/* (-12)The specified partition does not exist*/ • SS_NO._FILE:/* (-13)Device file does not exist*/ • Attempted to acquire HDD status through the driver but there has been no response for 30 seconds or more.
+Causes;• Unformatted HDD • Label data corrupted • HDD defective
+Remedy;Format the HDD (SP5-832: HDD formatting) through SP mode.
+Code;SC865-00
+Description;HD access error During HDD operation, the HDD returned an error.
+Causes;The HDD returned an error that does not constitute SC863 (bad sector) or SC864 (CRC error).
+Remedy;Replace the HDD.
+Code;SC866-00
+Description;SD card authentication error A license error of an application that is started from the SD card was detected.
+Causes;Invalid program data is stored on the SD card.
+Remedy;Store a valid program data on the SD card.
+Code;SC867
+Description;SD card removed The SD card was removed while the machine is on.
+Causes;An application SD card has been removed from the slot (mount point of /mnt/sd*).
+Remedy;Turn the main power OFF/ON.
+Code;SC868
+Description;SD card access error
+Causes;• SD card defective • SD controller defective
+Remedy;"Slot number is displayed on the sub code. Detail code is described in SMC print can confirm the details of the error. • -13 to -3: File system check error • Otherwise (no code, -2) : Device access error SD card that starts an application 1. Turn the main power off and check the SD card insertion status. 2. If no problem is found, insert the SD card and turn the main power on. 3. If an error occurs, replace the SD card. 4. If the error persists even after replacing the SD card, replace the controller board. SD card for users 1. In case of a file system error, reformat the SD card (using the ""SD Formatter"" made by Panasonic). In case of a device access error 1. Turn the main power off and check the SD card insertion status. 2. If no problem is found, insert the SD card and turn the main power on. 3. If an error occurs, use another SD card. 4. If the error persists even after replacing the SD card, replace the controller board."
+Code;SC869
+Description;"Malfunction of the proximity sensor is detected SC869- 01 C Continuously detecting malfunction The proximity sensor keeps in a detection state and accumulated time exceeds 24 hours. The proximity sensor is disabled and is in the detection state at all times. SC869- 02 C Continuously non-detecting malfunction In the non-detection state, the following operations are detected 20 times continuously. • Pressing ""energy saver"" key or touching the operation panel • Opening/closing the plate cover or ADF • Setting the original • Opening the front cover • Opening the paper feed tray"
+Causes;The proximity sensor is disabled and is in the non-detection state at all times.
+Remedy;1. Go to the SP5-102-203 (input check SP for the proximity sensor). 2. Cover the sensor with 10 sheets of plain paper, and then execute SP to confirm if it becomes “0”. (Do not place your hand near the sensor even over the papers when covering the sensor) 3. Remove the papers from the sensor and confirm if it becomes “1”. 4. If there is no issue after the confirmation in step 2 and 3, confirm that there are no possible factors around the machine that may cause the temperature change such as heater or fan. (Deal with the issue as necessary) 5. Replace the proximity sensors and proximity sensor board if the abnormal value is detected after the confirmation in step 2 and 3. 6. Turn on the main power on and perform step 1, 2, and 3 again. 7. If SC is not solved, turn the main power off and replace the harness which connects proximity sensors and proximity sensor board. 8. If SC is still not solved, there is a possibility that the other parts of the machine such as the connector at the controller side or the harness between proximity sensor board and IPU are broken.
+Code;SC870
+Description;Address Book data error When an error related to the Address Book is detected during startup or operation.
+Causes;• Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (NVRAM or HDD was replaced individually without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;Install a device that contains address book information correctly, and turn the main power off/on. If the SC occurs again, do the following steps. 1. After installing the HDD, or SD/USB ROM, execute SP5-846-046. 2. Wait more than 3 seconds, then execute SP5-832. 3. Cycle the main power off and on. Procedure after SC870 is cleared 1. If there is backup data in an SD card or Web Image Monitor, restore the address book data. (To restore from an SD card, enter the encryption password which is the same as when you enter to back up.)
+Code;SC872-00
+Description;HDD mail reception error An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned off while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007: HDD Formatting: Mail RX Data).). • Replace the HDD. When you do the above, the following information will be initialized. • Partly received partial mail messages. • Already-read statuses of POP3-received messages (All messages on the mail server are handled as new messages).
+Code;SC873-00
+Description;HDD mail reception error An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned off while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007 : HDD Formatting: Mail RX Data). • Replace the HDD. When you do the above, the following information will be initialized. • Sender’s mail text • Default sender name/password (SMB/FTP/NCP) • Administrator mail address • Scanner delivery history
+Code;SC874
+Description;Delete all error An error occurred while data was being erased on HDD or NVRAM.
+Causes;"• Error detected in HDD data delete program • Error detected in NVRAM data delete program • The ""Delete All"" option was not set"
+Remedy;"• Turn the main power switch off and back on, and then execute ""Erase All Memory"" under UP mode again. (However, if there is a defective sector or other problem with the hard disk, the error will persist even after trying the above.) • If the ""Delete All"" option is not installed when this error occurs, install the option."
+Code;SC875
+Description;SC875- 01 D Delete all error (HDD erasure) (hddchack –i error) SC875- 02 D Delete all error (HDD erasure) (Data deletion failure) An error was detected before HDD/data erasure starts. (Failed to erase data/failed to logically format HDD)
+Causes;• HDD logical formatting failed. • The modules failed to erase data.
+Remedy;Turn the main power OFF/ON.
+Code;SC876-00
+Description;Log Data Error An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Damaged log data file. • Log encryption is enabled but encryption module is not installed. • Inconsistency of encryption key between NV-RAM and HDD. • Software bug.
+Remedy;Try the SC876-01 to -99 solutions listed below. If it is not solved, do the following steps (for when only an HDD is replaced): 1. Disconnect the HDD and turn on the main power. 2. Execute SP5-801-019. 3. Turn off the main power. 4. Connect the HDD and turn on the main power. 5. Execute SP5-832-004. 6. Turn off the main power. The following step is to configure the logging/encryption setting again. 7. Turn on the main power. 8. Set SP9-730-002 through -004 to 1. 9. Cycle the main power off and on.
+Code;SC876-01
+Description;Log Data Error 1 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Damaged log data file
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-02
+Description;Log Data Error 2 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Log encryption is enabled but encryption module is not installed.
+Remedy;• Replace or set again the encryption module. • Disable the log encryption setting.
+Code;SC876-03
+Description;Log Data Error 3 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Inconsistency of encryption key between NV-RAM and HDD.
+Remedy;• Disable the log encryption setting. • Initialize LCS memory (SP5801-019). • Initialize the HDD (SP5-832-004).
+Code;SC876-04
+Description;Log Data Error 4 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Log encryption key is disabled but the log data file is encrypted. (NVRAM data corruption) • Log encryption key is enabled but the log data file is not encrypted. (NVRAM data corruption)
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-05
+Description;Log Data Error 5 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Only the NV-RAM has been replaced with one previously used in another machine. • Only the HDD has been replaced with one previously used in another machine.
+Remedy;• Attach the original NV-RAM. • Attach the original HDD. • With the configuration that caused the SC, initialize the HDD (SP5-832-004).
+Code;SC876-99
+Description;Log Data Error 99 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Other causes
+Remedy;
+Code;SC877-00
+Description;"Data Overwrite Security card error The ""Auto Erase Memory"" function of the Data Overwrite Security is set to on but it cannot be done."
+Causes;• Data Overwrite Security option SD card is broken. • Data Overwrite Security option SD card has been removed.
+Remedy;• If the SD card is broken, prepare a new Data Overwrite Security option SD card and replace the NVRAM. • If the SD card has been removed, turn the main power off and reinstall a working Data Overwrite Security option SD card.
+Code;SC900-00
+Description;Electric counter error The electric total counter value is out of specification. Error is detected when increasing the total counter.
+Causes;• Unexpected NV-RAM is attached. • NV-RAM defective • NV-RAM data corrupted. • Data written to unexpected area because of external factor etc. • The count requested by the SRM on receiving PRT is not completed.
+Remedy;Replace the NV-RAM.
+Code;SC940-01 ... SC940-04
+Description;"SC940- 01 C 1st Paper Feed Tray Pickup Solenoid Non-Drive Error SC940- 02 C 2nd Paper Feed Tray Pickup Solenoid Non-Drive Error SC940- 03 C Bypass Pickup Solenoid Non-Drive Error SC940- 04 C Paper Exit Switching Solenoid Non-Drive Error When the solenoid is not moving, the registration value of the failure detection is ""0"" three times consecutively"
+Causes;• Connector disconnected • Harness broken • Solenoid defective SC940-01: 1st Paper Feed Tray Pickup Solenoid SC940-02: 2nd Paper Feed Tray Pickup Solenoid SC940-03: Bypass Pickup Solenoid SC940-04: Paper Exit Switching Solenoid • Driver defective (which drive the solenoid)
+Remedy;• Turn the main power off/on. • Reconnect the connector on the BCU. • Reconnect the relay connector and electronic connector. • Replace the solenoid. • Replace the BCU. • Replace the harness.
+Code;SC940-51 ... SC940-54
+Description;"SC940- 51 C 1st Paper Feed Tray Pickup Solenoid Drive Error SC940- 52 C 2nd Paper Feed Tray Pickup Solenoid Drive Error SC940- 53 C Bypass Pickup Solenoid Drive Error SC940- 54 C Paper Exit Switching Solenoid Drive Error When the solenoid is moving, the registration value of the failure detection is ""1"" three times consecutively."
+Causes;• Driver defective (which drive the solenoid)
+Remedy;• Turn the main power off/on. • Replace the BCU. • Replace the harness.
+Code;SC990-00
+Description;Software operation error Software attempted an unexpected operation.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;• Turn the main power off/on. • Reinstall the software of the controller and BCU board.
+Code;SC991-00
+Description;Recoverable software operation error Software attempted an unexpected operation. SC991 covers recoverable errors as opposed to SC990.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;Logging only
+Code;SC992-00
+Description;Undefined SC issued. An SC, that is not controlled by the system, occurred.
+Causes;• An SC for the previous model was used mistakenly, etc. • Basically a software bug.
+Remedy;Turn the main power OFF/ON.
+Code;SC994-00
+Description;Operation error caused by abnormalities that are normally undetectable. An error occurred because the number of records exceeded the limit for images managed in the service layer of the firmware.
+Causes;This can occur if there are too many application screens open on the operation panel.
+Remedy;Logging only.
+Code;SC995-01
+Description;CPM setting error 1 Comparison of machine serial number (11 digits) and machine identification code. Details: • Machine serial number cannot be identified because of BICU replacement or malfunctioning. • Machine serial number cannot be identified because of NV-RAM replacement
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Enter the machine serial number using SP5-811, and then turn the power on/off. • Attach the NV-RAM that was installed previously.
+Code;SC995-02
+Description;CPM setting error 2 Comparison of machine serial number (11 digits) and machine identification code. Details: Machine serial number cannot be identified because of NV-RAM replacement or malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Attach the NV-RAM that was installed previously. • Download data on the NV-RAM using SP5-825 (NV-RAM Data Download).
+Code;SC995-03
+Description;CPM setting error 3 Comparison of machine serial number (11 digits) and machine identification code. Details: Unable to recognize machine identification code because the controller was replaced incorrectly or is malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Replace it with the correct type of controller.
+Code;SC995-04
+Description;CPM setting error 4 Comparison of machine serial number (11 digits) and machine identification code.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Return the parts to the original configuration, and then replace them according to the manual
+Code;SC997-00
+Description;Application function selection error The application selected by the operation panel key operated abnormally (No response, abnormal ending).
+Causes;Software bug (mainly the application)
+Remedy;• Check the optional RAM, DIMM, boards required by the application program. • Check if the combination of downloaded programs are correct.
+Code;SC998-00
+Description;Application start error • No application was registered to system within a specified time after the main power was turned on. (No application starts/All applications have been terminated abnormally) • Application started but cannot be drawn now for some reason.
+Causes;• Software bug (mainly the application) • The optional RAM, DIMM, boards required by the application program. Are not installed correctly.
+Remedy;• Turn the main power OFF/ON. • Check the optional RAM, DIMM, boards • Check the combination of programs • Replace the controller board.

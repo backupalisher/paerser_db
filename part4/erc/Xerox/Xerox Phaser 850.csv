@@ -1,0 +1,312 @@
+Code;04,001.40
+Display;04,001.40: PC_DEV_FAULT_HEAD_ READ
+Description;Failure reading printhead NVRAM data: check the wiring to the printhead, I2C bus and other hardware. May also be related to ESD.
+Code;04,002.41
+Display;04,002.41: PC_DEV_FAULT_HEAD_Z EROS
+Description;Printhead NVRAM data was all 0s: has this printhead been through normalization? If so, check wiring to printhead. May also be related to ESD.
+Code;06,005.68
+Display;06,005.68
+Description;This error occurs when a printer is in Energy Star mode and a door is opened. Instead of just waking the printer up, the firmware reports a fault. Sending a file to the printer or pressing one of the front panel buttons will wake the printer up normally. There is no sevice action to correct this programming bug. Cycle the power to restart the printer.
+Code;07,001.43
+Display;07,001.43
+Description;There is a problem with the lower tray assembly or it’s installation. INSURE THE INK HAS SOLIDIFIED PRIOR TO THE REMOVAL OF THE PRINTER FROM THE LTA. Remove the printer and inspect the LTA connection. If there is any damage to the connector, replace the lower tray assembly or connector. If there is not any damage, remove and inspect the connnection to the printer. This connection is on the left side of the printer next to the left rear foot. it is mounted with two e-rings and plugs into the power control board.
+Code;07,001.65
+Display;07,001.65
+Description;There have been instances where a bad I/O Right circuit board can cause this fault code.
+Code;07,002.44
+Display;07,002.44: PM_FAULT_PROCESS_ MOTOR_STALL
+Description;"Verify process motor operation with the Process Motor diagnostic test. Also exercise processes run with the process motor; transfix, drum maintenance and head tilt. This can be caused by the power control board. The process motor may have more than one task initiated. Reset all solenoids and the pressure roller prior to cycling power."
+Code;07,003.45
+Display;07,003.45: PM_FAULT_ COMPOUND_ GEAR_SENSOR_BAD
+Description;No transistions are observed for the compound gear sensor, when the compound gear should be turning. Verify that compound gear sensor is not physically broken and is plugged in to the left I/O board. Run diagnostics to verify operation or change the sensor.
+Code;07,004.46
+Display;07,004.46: PM_FAULT_DM_CAM_ State_Error
+Description;The Drum Maintenance home sensor did not actuate or change state as expected. Run diagnostics to verify clutch and sensor operation. Also verify that the shaft is properly assembled.
+Code;07,005.47
+Display;07,005.47 PM_FAULT_DM_CAM_ POSITION_ERROR
+Description;The Drum Maintenance home sensor actuated, but not at the expected time. Inspect the maintenance drawer lift pins for wear. Run diagnostics to verify clutch and sensor operation. Also verify that the drum maintenance shaft is properly assembled.
+Code;07,006.48
+Display;07,006.48 PM_FAULT_DM_CAM UNEXPECTED_MOTION
+Description;The Drum Maintenance home sensor actuated, when no motion should have occurred. Run diagnostics to verify clutch and sensor operation. Also verify that the shaft is properly assembled.
+Code;08,001.44
+Display;08,001.44: CAP_FAULT_HOME_ SENSOR
+Description;The cap-home sensor did not see the sensor’s flag when expected. The home sensor may be faulty, or the paper- feed motor may not be operating. The cap/wipe/purge clutch may be failing, or the assembly may be jammed and unable to move. Inspect check the paper-exit drive belt and the gear on the right end of the duplex roller shaft next to the paper path motor. Ensure that the paper path is free of media. For the Phaser 860 only, run the Cap Axis Geometry and Cap Axis Drive diagnostic tests.
+Code;08,003.46
+Display;08,003.46
+Description;The cap-home sensor was activated too soon. This can occur if the cap/wipe/purge assembly was obstructed while moving up and therefore retruned to the home position too soon. Ensure that the head tilt mechanism is working properly. Run diagnostics to verify cap drive motion and alignment.
+Code;08,009.65
+Display;08,009.65
+Description;An unexpected message was received while homing the Cap/Wipe/Purge assembly, usually during system initialization. This fault is due to a failure of the Y-Axis Encoder
+Code;09,009.44
+Display;09,009.44 IL_FAULT_INK_UNPLUG
+Description;Ink well sense cable on the printhead appears to be unplugged.
+Code;11,001.60
+Display;11,001.60 DMC_PROG_FAULT(1)
+Description;Timer Event Missed. A health check routine is called every 400 milliseconds, the A/D update period, and checks that all the currently pending timer events are for some time in the future. It generates this error if it detects a timer event for some time in the past. A missed DMC interrupt, due to interrupts disabled too long by any region, is the probable cause.
+Code;11,007.66
+Display;11,007.66 DMC_PROG_FAULT(7)
+Description;Event parameter Block not Prepped. The parameter block associated with a DMC event notification was not prepped with a call to dmc_prep_event_parm_block() before the call to dmc_request_event_notification().
+Code;11,008.67
+Display;11,008.67 DMC_PROG_FAULT(8)
+Description;Bad Message ID in Event Request. The parameter block for a DMC event notification request contains an inconsistent state field in the ITC status message.
+Code;11,011.61
+Display;11,011.61
+Description;DMC event parameter block not found. The DMC library was attempting to locate an event parameter block in its linked list. The block was not found.
+Code;11,020.61
+Display;11,020.61
+Description;DMC event parameter block not found. The DMC library was attempting to locate a timer parameter block in its linked list. The block was not found.
+Code;11,022.63
+Display;11,022.63 DMC_PROG_FAULT(22)
+Description;Invalid Get Device State Argument. The ITC message base passed into dmc_get_device_stat() was not a valid DMC type, DMC_STATUS_MSG_BASE or DMCB_STATUS_MSG_BASE.
+Code;11,025.66
+Display;11,025.66 DMC_PROG_FAULT(25)
+Description;Motion Segment Too Late. The DMC ASIC interrupt to program the event control hardware for the next segment in a motion control profile occurred too late. A motion profile consists of a list of absolute times and motor register values. After the hardware writes a DSP value, the software must program the event control store hardware for the next segment in the profile. This error occurs when any region, PostScript, Network or engine disables interrrupts for a long period of time, preventing the DMC interrupt service routine from running. This may be due to an unintentional coding error or because a task took a CPU exception which is processed with interrupts disabled, taking a long time to execute.
+Code;11,029.61
+Display;11,029.61 DMC_PROG_FAULT(29)
+Description;Motion Segment Too Short. Software attempted to program a motion profile with a motion segment shorter than 750 microseconds. If this specifcation is violated the DMC interrupt service routine may not have time to reload the control store hardware event, when the system is busy.
+Code;11,033.65
+Display;11,033.65 DMC_PROG_FAULT(33)
+Description;Motion Control Event Missed. A missed control store event was detected. A health check routine is called every 400 milliseconds, the A/D update period, and checks that all the currently pending hardware motion profile events are for some time in the future. If one is pending for a time in the past, then it generates this error. A missed DMC interrupt due to interrupts disabled too long, by any region, is a probable cause.
+Code;11,034.66
+Display;11,034.66 DMC_PROG_FAULT(34)
+Description;Motion Control Done Timer Too Late. A motion control profile done event could not be programmed. It was too late for the software to program the done event for a motion profile handled by control store event hardware. This error indicates that DMC interrupts were disabled for a long period of time. Almost always, this happens when a non-engine region generates a CPU exception during printing. The operating system processes CPU exceptions with interrupts off and the processing takes a long length of time. The user should check the task name saved with this fault to identify the culprit.
+Code;11,038.61
+Display;11,038.61 DMC_PROG_FAULT(38)
+Description;A/D Input Out of Range. This error is generated during MEDUSA ASIC analog to digital calibration and indicates that one or more of the A/D mixed inputs, 5 volt, 40 volt or 3.3 volts, are out of tolerance.
+Code;11,039.62
+Display;11,039.62 DMC_PROG_FAULT(39)
+Description;Printhead NVRAM Read Failure. An attempt to read the non-volatile memory on the printhead, via the I2C interface, failed. This can happen if the wires are loose to the printhead or if the NVRAM part does not ACK the read request.
+Code;12,002.62
+Display;12,002.62 ITC_PROG_FAULT(2)
+Description;This is a secondary failure. Something failed resulting in the message stack overflowing. Unable to Send Message. The ITC send message function, itc_send_msg(), was unable to place the specified message in the destination message queue (msgQSend() returned fail code). A full message queue is most likely the cause.
+Code;13,001.40
+Display;13,001.40: TCH_JS_LEFT_OPEN
+Description;The thermistor in the left jet stack appears to be open. Check the printhead cabling. Replace the printhead.
+Code;13,002.41
+Display;13,002.41 TCH_JS_LEFT_SHORT
+Description;The thermistor in the left jet stack appears to be shorted. Check the printhead cabling. Replace the printhead.
+Code;13,003.42
+Display;13,003.42: TCH_JS_LEFT_HOT
+Description;The left jet stack heater is running away. Unplug the printer NOW! Check the printhead cabling. Replace the printhead.
+Code;13,004.43
+Display;13,004.43: TCH_JS_LEFT_SLOW
+Description;The left jet stack heater is not heating at all, or is heating too slowly. Ensure the printer is not located next to an air-conditioning duct. Check that the printhead-to-drum gap is not too close (the drum can act as a heatsink). Inspect the printer wiring. Replace the printhead.
+Code;13,011.66
+Display;13,011.66 tc_bomb(this, 11)
+Description;Bad TCH message in fault state. While in the divice fault state, the reervoir thermal manager received an unexpected message, not a turn off or a regulate command. The device fault state is entered whenever the engine firmware detects a device fault (x,xxx.4x).
+Code;13,017.47
+Display;13,017.47: TCH_JS_RIGHT_OPEN
+Description;The thermistor in the right jet stack appears to be open. Check the printhead cabling. Replace the printhead.
+Code;13,018.48
+Display;13,018.48: TCH_JS_RIGHT_SHORT
+Description;The thermistor in the right jet stack appears to be shorted. Check the printhead cabling. Replace the printhead.
+Code;13,019.40
+Display;13,019.40: TCH_JS_RIGHT_HOT
+Description;The right jet stack heater is running away. Unplug the printer NOW! Check the printhead cabling. Replace the printhead.
+Code;13,020.41
+Display;13,020.41: TCH_JS_RIGHT_SLOW
+Description;The right jet stack heater is not heating at all, or is not heating as quickly as it should.
+Code;13,033.45
+Display;13,033.45: TCH_RESERVOIR_OPEN
+Description;The thermistor in the reservoir appears to be open. Check the printhead cabling. Replace the printhead.
+Code;13,034.46
+Display;13,034.46: TCH_RESERVOIR_SHORT
+Description;The thermistor in the reservoir appears to be shorted. Check the printhead cabling. Replace the printhead.
+Code;13,035.47
+Display;13,035.47: TCH_RESERVOIR_HOT
+Description;The reservoir heater is running away. Unplug the printer NOW! Check the printhead cabling. Then replace the power supply. If the problem continues replace the printhead.
+Code;13,036.48
+Display;13,036.48: TCH_RESERVOIR_SLOW
+Description;The reservoir heater is not heating at all, or is not heating as quickly as it should. Check the printhead cabling. Replace the printhead.
+Code;13,037.61
+Display;13,037.61 TCH_RESERVOIR_ADC_ IS_BAD
+Description;The analog to digital converter appears to be bad. Try reseating the printhead data cable. Then reseat the main board. If the problem continues try replacing the main board and then the printhead.
+Code;15,000.40
+Display;15,000.40: TCD_THERMISTOR_ FAULT
+Description;The drum temperature is incorrect as sensed by the drum thermistor. Ensure that there is adequate clearance for airflow (at least 4 inches (10 cms.) on all sides) and that the room temperature is within specification.
+Code;15,001.42
+Display;15,001.42: TCD_THERMISTOR_ OPEN
+Description;The drum thermistor appears to be open. Replace the drum-temperature sensor. 15,002.43: TCD_THERMISTOR_ SHORT The drum thermistor appears
+Code;15,003.44
+Display;15,003.44: TCD_THERMISTOR_ HOT
+Description;The drum heater is running away. Unplug the printer NOW! Verify that the vent on the right side of the printer is not blocked. Ensure that the drum fan rotates and is installed correctly.
+Code;15,004.45
+Display;15,004.45: TCD_THERMISTOR_ SLOW
+Description;Most likely cause is a failed drum heater. The head to drum gap should only be checked or adjusted on the Phaser 840. The Phaser 850 and 860 have a pre-adjusted head.
+Code;16,000.40
+Display;16,000.40: TCD_THERMISTOR_ FAULT
+Description;The preheater temperature is incorrect as sensed by the a thermistor in the preheater. Ensure that there is adequate clearance for airflow (at least 4 inches (10 cms.) on all sides) and that the room temperature is correct.
+Code;16,001.43
+Display;16,001.43: TCP_THERMISTOR_ OPEN
+Description;The preheater thermistor appears to be open. Check the preheater cables on the right side of the printer. Replace the paper preheater. Replace the power supply.
+Code;16,002.44
+Display;16,002.44: TCP_THERMISTOR_ SHORT
+Description;The preheater thermistor appears to be shorted. Replace the paper preheater.
+Code;16,003.45
+Display;16,003.45: TCP_THERMISTOR_ HOT
+Description;The preheater heater is running away. Unplug the printer NOW! Check the preheater cabling. Replace the preheater.
+Code;16,004.46
+Display;16,004.46: TCP_THERMISTOR_ SLOW
+Description;The preheater is not heating at all, or is not heating as quickly as it should. Check for an open connection. Replace the paper preheater. Replace the power supply.
+Code;16,005.47
+Display;16,005.47 TCP_THERMISTOR_ADC _BAD
+Description;An inalid reading is being reported by the preheater thermistor. Verify the connections to the paper preheater, replace the paper preheater, replace the main board, and then replace the power control board.
+Code;19,001.4X
+Display;19,001.4X HC_DEV_FAULT (0x01)
+Description;Occurs during the scales and offset calibration. Any part in the chain could be responsible for the incorrect reading including the printhead electronics, the A/D electronics, the waveform generation electronics, power supply, wave amplifier (on the power control board), printhead interconnect cable.
+Code;19,002.4X
+Display;19,002.4X HC_DEV_FAULT (0x02)
+Description;Occurs when the printer is attempting to determine how many data taps the printhead uses. Any part in the chain may be responsible for the reading, including the printhead electronics, the A/D electronics, the waveform generation electronics, power supply, wave amplifier (on the power control board), and printhead interconnect cable.
+Code;19,008.63
+Display;19,008.63 HC_PROG_FAULT(8)
+Description;Incorrect Printhead Installed. The printhead installed on the printer is not the correct type the software was compiled for.
+Code;2,001.40
+Display;2,001.40: SY_DEV_FAULT_IO_ RIGHT
+Description;The engine cannot detect the presence of the right I/O board. Ensure the connections are sound.
+Code;2,002.40
+Display;2,002.40: SY_DEV_FAULT_IO_ LEFT
+Description;The engine cannot detect the presence of the left I/O board. Ensure the connections are sound.
+Code;2,002.61
+Display;2,002.61: SY_PROG_FAULT(2)
+Description;Queue Initialization failure during execution of sy_app_init() (early initialization code), the engine firmware was unable to initialize the queues used for inter-task communication. This indicates a failure in the call to function sy_creat_queues().
+Code;2,003.62
+Display;2,003.62: SY_PROG_FAULT(3)
+Description;Can’t start service diagnostic tasks, (while booting into diagnostic mode) during execution of sy_app_init() (early initialization code), the engine firmware was unable to start the service diagnostics task.
+Code;22,024.01
+Display;22,024.01
+Description;The indicates that the printhead was not parked when powered off In the 840/850 this error code may be reported in conjuction with other faults that cause the printer to reset. This code is not related to media jams.
+Code;4,003.42
+Display;4,003.42: PC_DEV_FAULT_HEAD_ ONES
+Description;Printhead NVRAM data was all 1s: has this printhead been through normalization? If so, check the wiring to the printhead.
+Code;4,004.43
+Display;4,004.43: PC_DEV_FAULT_HEAD_ CHECKSUM
+Description;Printhead NVRAM checksum failure: the data within the printhead NVRAM has been corrupted. Check the hardware and wiring. The printhead may need to be renormalized (a manufacturing function).
+Code;4,006.67
+Display;4,006.67: PC_PROG_FAULT(0x06)
+Description;This indicates that an undefined message was found by the processor. This may be caused by ESD. Check grounding and media issues.
+Code;4,013.43
+Display;4,013.43 PC_DEV_FAULT_GEAR_ GRIND
+Description;The printhead is unable to move on its tilt axis. The head is unable to move on its tilt axis, because it is colliding with something (head restraint pin, cap, poorly installed ink loader, screwdriver.) Prior to declaring this fault, the engine has attempted to move the process motor through enough revolutions to disengage the head tilt mechanism, but the motor stalled. The X-axis was then displaced to the right 3.8 mm (0.15 in.) and the disengage was repeated, but the motor stalled again. This fault is then declared.
+Code;4,014.44
+Display;4,014.44 PC_DEV_FAULT_6x6DPI_ CAL
+Description;Calibration Failure: Defined but not used.
+Code;4,015.45
+Display;4,015.45 PC_DEV_FAULT_HEAD_A DJUST_TIMEOUT
+Description;The engine spent over 20 minutes in the printhead adjust-state. The engine declares a device fault and shuts down, rather than leave a hot heater against a cold drum for an indefinite period. Remove the adjustment tools and cycle power.
+Code;4,016.46
+Display;4,016.46 PC_DEV_FAULT_HEAD_ NV_FORMAT
+Description;The printhead format number, stored in printhead NVRAM, is not understood by this version of engine firmware. Verify the correct printhead is installed. Replace the printhead.
+Code;4,016.68
+Display;4,016.68 PC_PROG_FAULT(0x10)
+Description;Bad Message in main pc_ready() loop. The main message loop in pc_ready() received an unexpected message while the printer was in ready state waiting for a command from PostScript. Typically this message is an unexpected or out of order RESULT_OK message that is the result of a previous command to one of the server tasks to accomplish some action (like tilt the head back). The odd behavior is that PC not waiting for the operation to finish.
+Code;4,017.47
+Display;4,017.47 PC_DEV_FAULT_ AMBIENT_TOO_COLD
+Description;Ambient temperature has fallen to less than 10 C. Something may be wrong with a heater.
+Code;4,018.48
+Display;4,018.48 PC_DEV_FAULT_LATE_ CLEAN_REQUEST
+Description;After the printer determined, at power-up, that the printhead was warm enough not to need cleaning, and while the printer was warming up, the printhead temperature dropped below the head-clean-needed threshold. Something may be wrong with a heater.
+Code;4,019.40
+Display;4,019.40 PC_DEV_FAULT_ 193DPI_CAL
+Description;Calibration Failure: Target Volt-Sec Area of Fast Color mode could not be achieved. Check the printhead cabling. Replace the printhead.
+Code;4,020.41
+Display;4,020.41 PC_DEV_FAULT_FTTR_H EADCAP
+Description;Declared when the printer is booted and the head/cap contact flag is set in NVRAM. The printer cannot run with the head and cap/wipe/purge unit in contact because it would be unwise to separate the two when the printhead is cold.
+Code;4,021.42
+Display;4,021.42 PC_DEV_FAULT_FTTR_D IRTYDRUM
+Description;Declared when the printer is booted and the drum is dirty. Cleaning the drum when very cold could increase the chance of gluing media to the drum surface and creating a mess around the stripper fingers.
+Code;4,023.66
+Display;4,023.66 PC_PROG_FAULT(0x17)
+Description;Dangerous Process Motor Motion Detected. The PC task is about to send a command to the process motor to print, chase, move the eccentric cam or move the dm cam, while the PC task detects that the printer is in a dangerous position from such a move (damage could result).
+Code;4,029.63
+Display;4,029.63 PC_PROG_FAULT(0x1d)
+Description;Head Cal Task Spawn Failed. An attempt to spawn the head calibrate task failed. This may be due to a low memory condition.
+Code;4,032.66
+Display;4,032.66 PC_PROG_FAULT(0x20)
+Description;Undefined result in pc_process_result(). The PC task function pc_process_result() received an undefined inter-task communication (ITC) result message from one of the tasks it communicates with. This is typically caused by out-of-order messages due to fault condtions different than what the software expects.
+Code;4,035.60
+Display;4,035.60 PC_PROG_FAULT(0x23)
+Description;Bad Status Message in pc_process_status() The PC task received a inter-task communication (ITC) status message that it did not expect.
+Code;4,040.65
+Display;4,040.65 PC_PROG_FAULT(0x28)
+Description;Re-entrant call to halt detected. This error is generated in pc_syshalt_seq(), (the soft shutdown state sequencer) when a request during the enter state is made, while the printer is already in the halt state. I/O Right has been known to cause this fault code.
+Code;4,046.62
+Display;4,046.62 PC_PROG_FAULT(0x2e)
+Description;Dangerous Process Motor Detected. The PC task is about to send a command to the process motor task to move the print head into standby, home the print head or turn the process motor while the PC task detects that the printer is in a dangerous position (damage could result) from such a move. typically this happens when a soft shutdown request is issued when the x-axis is in a position where the print head would bind against the left side ot the frame, if the process motor were moved.
+Code;4,051.67
+Display;4,051.67 PC_PROG_FAULT(0x33)
+Description;Bad Command Result during Drum warm-up processing of a PostScript command message in pc_process_message() returned SERVICE_NEEDED during the drum warm-up period. This should never happen and is flagged by pc_warmup_seq() as an error.
+Code;4,059.66
+Display;4,059.66 PC_PROG_FAULT(0x3b)
+Description;Bad Command Result during Big Drop Flush Processing of a PostScript command message in pc_process_message() returned SERVICE_NEEDED during the big drop flush. This should never happen and is flagged by do_big_drop_flush() as an error.
+Code;4,064.62
+Display;4,064.62 PC_PROG_FAULT(0x40)
+Description;Bogus Thermal State. The thermal state value stored in non-volatile memory was not valid. This error is detected in show_thermal_state() and probably indicates a corrupt NVRAM device.
+Code;4,128.63
+Display;4,128.63 PC_PROG_FAULT(0x80)
+Description;Bad Command Result waiting for Fault to clear processing of a PostScript command message returned SERVICE_NEEDED while waiting go the fault state to clear. This should never happen and is flagged by pend_waiting _for_fault_to_clear() as an error.
+Code;4,243.61
+Display;4,243.61
+Description;Some Phaser 850 printers were built with printheads that had different set points for different print modes. If the printer sees what it believes to be an invalid set point this fault occurs. Review the print options that the user is selecting and try a different print quality mode or avoid selecting different page sources within a job. Changing the printer defaults may also help, turn off 2-sided printing, turn on the Startup Page, etc. If these work-arounds are unsuccessful, replace the printhead.
+Code;5,001.41
+Display;5,001.41: YA_HOME_FAIL
+Description;Drum-home sensor failure. The drum has turned a full revolution without seeing the drum-home sensor activate. Check the Y-axis encoder and I/O Left board. Note: The Phaser 840 has a separate drum-home sensor. The Phaser 850 printer’s home sensor is part of the drum-position sensor. Run the Y-axis Encoder Diagnostic Test. (Phaser 860 only)
+Code;5,002.42
+Display;5,002.42: YA_POS_FAIL
+Description;Y-axis position failure. The drum is not where it should be. Something is blocking the motion of the drum, the y-axis belts or motor have failed, or there is a problem with the Y-axis encoder signal. Run the Y-axis Encoder and Y-axis Geometry Tests.
+Code;5,005.67
+Display;5,005.67 YA_BAD_MESSAGE_IN_ HOME
+Description;Bad ITC command in home state. The YA task received a YA_CMD_INIT command or a unrecognized command while in the home state.
+Code;5,026.61
+Display;5,026.61 YA_NO_RENDEZVOUS_ IN_IMAGE
+Description;Missed ITC message during rendezvous. The YA task failed to receive the rendezvous message to sync the drum motion to paper path motion during transfix at the end of a print. This is probably caused by the printer unexpectedly entering a fault condition and not sending a rendezvous message.
+Code;6,000.41
+Display;6,000.41: XA_FAULT_MCURRENT
+Description;"Indication that the motor coil(s) is open or shorted, or the X-axis motor fuse has opened. Follow the procedure ""Testing motor and solenoid resistances"", on page 84 of this manual. Try diagnostics to verify X-axis movement. If there is not any movement, it is propable that the fuse is defective. The fuse is located in the power control board; the whole baord should be replaced. Some Phaser 840 printers in the serial number range of B9B1372 to B9B3218 may have a problem with the Power Controller Board that will result in a fault code 6,000.41"
+Code;6,001.42
+Display;6,001.42
+Description;"Indication that the motor coil(s) is open or shorted, or the X-axis motor fuse has opened. Follow the procedure ""Testing motor and solenoid resistances"", on page 84 of this manual. Try diagnostics to verify X-axis movement. If there is not any movement, it is propable that the fuse is defective. The fuse is located in the power control board; the whole baord should be replaced."
+Code;6,002.43
+Display;6,002.43
+Description;"Indication that the motor coil(s) is open or shorted, or the X-axis motor fuse has opened. Follow the procedure ""Testing motor and solenoid resistances"", on page 84 of this manual. Try diagnostics to verify X-axis movement. If there is not any movement, it is propable that the fuse is defective. The fuse is located in the power control board; the whole baord should be replaced."
+Code;6,003.44
+Display;6,003.44
+Description;"Indication that the motor coil(s) is open or shorted, or the X-axis motor fuse has opened. Follow the procedure ""Testing motor and solenoid resistances"", on page 84 of this manual. Try diagnostics to verify X-axis movement. If there is not any movement, it is propable that the fuse is defective. The fuse is located in the power control board; the whole baord should be replaced."
+Code;6,033.66
+Display;6,033.66 XA_PROGFAULT_X6
+Description;XA Unexpected Message. The XA task received an unexpected ITC message while in the idle state.
+Code;7,035.63
+Display;7,035.63: PM_PROG_FAULT_ FUNCS(3)
+Description;Negative delay in pm_sleep_for(). A negative delay argument was passed to pm_sleep_for().
+Code;7,036.64
+Display;7,036.64: PM_PROG_FAULT_ FUNCS(4)
+Description;Unexpected message in pm_sleep_for(). An unexpected ITC message was received by pm_get_message() during processing of pm_sleep_for().
+Code;7,052.62
+Display;7,052.62: PM_PROG_FAULT_ FUNCS(20)
+Description;Bad message ID in pm_update_dmc_status(). The ITC message received and passed to pm_update_dmc status() did not match any DMC status message that the Process Motor task was expecting.
+Code;8,002.67
+Display;8,002.67 CAP_PROG_FAULT(22)
+Description;"Generic Cap Task Program Fault. This error indicates that the main CAP state sequencer, cap_main(), has entered the program fault state. There are multiple reasons that this can happen. Genereally they involve unexpected conditions while performing CAP movements; home, goto, etc."
+Code;9,001.45
+Display;9,001.45: IL_FAULT_C_ TWANGER
+Description;Malfunction of the ink-level sensor in the cyan reservoir. Replace the printhead.
+Code;9,002.46
+Display;9,002.46: IL_FAULT_M_ TWANGER
+Description;Malfunction of the ink-level sensor in the magenta reservoir. Replace the printhead.
+Code;9,003.47
+Display;9,003.47: IL_FAULT_Y_ TWANGER
+Description;Malfunction of the ink-level sensor in the yellow reservoir. Replace the printhead.
+Code;9,004.48
+Display;9,004.48: IL_FAULT_K_ TWANGER
+Description;Malfunction of the ink-level sensor in the black reservoir. Replace the printhead.
+Code;9,005.40
+Display;9,005.40: IL_FAULT_C_JAM
+Description;The cyan ink-melt heater is on, but ink does not seem to be dripping. Check that the ink stick is able to advance in the chute. An ink stick jam will be reported three times before an ink-melter fault is declared. Replace the ink loader. If the problem persists, replace the power supply.
+Code;9,006.41, 9,069.41
+Display;9,006.41 and 9,069.41: IL_FAULT_M_JAM
+Description;The magenta ink-melt heater is on, but ink does not seem to be dripping. Check that the ink stick is able to advance in the chute. An ink stick jam will be reported three times before an ink-melter fault is declared. Replace the ink loader. If the problem persists, replace the power supply.
+Code;9,007.42, 9,037.42
+Display;9,007.42 and 9,037.42: IL_FAULT_Y_JAM
+Description;The yellow ink-melt heater is on, but ink does not seem to be dripping. Check that the ink stick is able to advance in the chute. An ink stick jam will be reported three times before an ink-melter fault is declared. Replace the ink loader. If the problem persists, replace the power supply.
+Code;9,008.43, 9,101:43
+Display;9,008.43 and 9,101:43 IL_FAULT_K_JAM
+Description;The black ink-melt heater is on, but ink does not seem to be dripping. Check that the ink stick is able to advance in the chute. An ink stick jam will be reported three times before an ink-melter fault is declared. Replace the ink loader. If the problem persists, replace the power supply

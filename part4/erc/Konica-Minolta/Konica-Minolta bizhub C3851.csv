@@ -1,0 +1,556 @@
+Code;C0103
+Description;Tray 2 PC transport motor malfunction. The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;<When PF-P13 is installed> • PC transport motor (M51) • MFP board (MFPB) • PC control board (PCCB)
+Remedy;1. Check the connector between M51-PCCB PJ3 for proper connection and correct as necessary. 2. Check the connector between PCCB PJ1-relay CN153-MFPB CN7E for proper connection and correct as necessary. 3. Check the connector of M51 for proper drive coupling and correct as necessary. 4. M51 operation check • Control signal: PCCB PJ3-4 to 8 • Location of electrical component: 12-U to V 5. Replace M51. 6. Replace PCCB. 7. MFPB F8E conduction check 8. Replace MFPB.
+Code;C0104
+Description;Tray 3 PC transport motor malfunction The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;<When PF-P13 is installed> • PC transport motor (M51) • MFP board (MFPB) • PC control board (PCCB)
+Remedy;1. Check the connector between M51-PCCB PJ3 for proper connection and correct as necessary. 2. Check the connector between PCCB PJ1-relay CN154-PCCB PJ2 for proper connection and correct as necessary. 3. Check the connector between PCCB PJ1-relay CN153-MFPB CN7E for proper connection and correct as necessary. 4. Check the connector of M51 for proper drive coupling and correct as necessary. 5. M51 operation check • Control signal: PCCB PJ3-4 to 8 • Location of electrical component: 12-U to V 6. Replace M51. 7. Replace PCCB. 8. MFPB F8E conduction check 9. Replace MFPB.
+Code;C0211
+Description;Manual feed up/down abnormality • The manual tray liftup position sensor (PS14) is not turned ON (unblocked) even after the manual tray liftup motor (M7) rotates for a given period of time after the position is switched from stand by position at lift-up plate to the feed position. • The manual tray liftup position sensor (PS14) is not turned OFF (blocked) even after the manual tray liftup motor (M7) rotates for a given period of time after the position is switched from stand by position at lift-up plate to the feed position.
+Causes;• Manual tray liftup motor (M7) • Manual tray liftup position sensor (PS14) • MFP board (MFPB)
+Remedy;1. Check the connector between M7-relay CN205-relay CN203-MFPB CN25E for proper connection and correct as necessary. 2. Check the connector of M7 for proper drive coupling and correct as necessary. 3. Check the connector between PS14-relay CN203-MFPB CN25E for proper connection and correct as necessary. 4. PS14 I/O check, sensor check • Control signal: MFPB CN25E-5 (ON) • Location of electrical component: 8-C 5. M7 operation check • Control signal: MFPB CN25E-1 to 2 • Location of electrical component: 7-C 6. Replace M7. 7. MFPB F11E conduction check 8. Replace MFPB.
+Code;C1004
+Description;FNS communication error (ENG detection) <bizhub C3851FS> • In the communication between the MFP board (MFPB) and FS control board (FSCB), when the MFP board (MFPB) is receiving data, a communication error is detected. • No finisher is mounted.
+Causes;• FS control board(FSCB) • MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Check the connector between FSCB CN1-relay CN600-MFPB CN16E for proper connection and correct as necessary. 4. Check the connector between FSCB CN4-relay CN610-DCPU CN11 for proper connection and correct as necessary. 5. FSCB ICP1, ICP2 conduction check 6. Replace FSCB. 7. Replace MFPB.
+Code;C1014
+Description;FNS communication error (FNS detection) <bizhub C3851FS> In the communication between the MFP board (MFPB) and FS control board (FSCB), when the FS control board (FSCB) is receiving data, a communication error is detected.
+Causes;• FS control board (FSCB) • MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Check the connector between FSCB CN1-relay CN600-MFPB CN16E for proper connection and correct as necessary. 4. Replace FSCB. 5. Replace MFPB.
+Code;C1102
+Description;Alignment tray lift motor malfunction <bizhub C3851FS> • While the alignment tray is being lifted, the alignment tray home sensor (FSPS5) is not turned OFF (unblocked) even after the lapse of a given period of time after the alignment tray lift motor (FSM5) is turned ON. • While the alignment tray is being lowered, the alignment tray home sensor (FSPS5) is not turned ON (blocked) even after the lapse of a given period of time after the alignment tray lift motor (FSM5) is turned ON.
+Causes;• Alignment tray lift motor (FSM5) • Alignment tray home sensor (FSPS5) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM5-relay CN17-FSCB CN3 for proper connection and correct as necessary. 2. Check the connector of FSM5 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS5-FSCB CN10 for proper connection and correct as necessary. 4. FSPS5 I/O check, sensor check • Control signal: FSCB CN10-13 • Location of electrical component: 25-Q 5. FSM5 operation check • Control signal: FSCB CN3-1 to 4 • Location of electrical component: 22-Q 6. Replace FSM5. 7. Replace FSCB.
+Code;C1103
+Description;CD alignment motor/Fr malfunction <bizhub C3851FS> • The CD alignment plate home sensor/Fr (FSPS2) is not turned OFF (unblocked) even after the lapse of a given period of time after the CD alignment motor/Fr (FSM2) is turned ON at start from the home position. • The CD alignment motor/Fr (FSM2) is not drive completion after the set period of time has elapsed even after the start of driving. • The CD alignment plate home sensor/Fr (FSPS2) is not turned ON (blocked) even after the lapse of a given period of time after the CD alignment motor/Fr (FSM2) is turned ON at the initial operation.
+Causes;• CD alignment motor/Fr (FSM2) • CD alignment plate home sensor/Fr (FSPS2) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM2-relay CN22-FSCB CN10 for proper connection and correct as necessary. 2. Check the connector of FSM2 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS2-FSCB CN10 for proper connection and correct as necessary. 4. FSPS2 I/O check, sensor check • Control signal: FSCB CN10-7 • Location of electrical component: 24-Q 5. FSM2 operation check • Control signal: FSCB CN10-1 to 4 • Location of electrical component: 24-Q 6. Replace FSM2. 7. Replace FSCB.
+Code;C1108
+Description;Stapler motor home position return malfunction <bizhub C3851FS> • When the stapler unit starts driving from the home position, the stapler home sensor is not turned ON (blocked) even after the lapse of a given period of time after the stapler motor turned ON, and the stapler home sensor is not turned ON (blocked) even after the lapse of a given period of time after the stapler motor drives to the reverse direction. • When the stapler unit is returned to the home position, the stapler home sensor is not turned ON (blocked) even after the lapse of a given period of time after the stapler motor turned ON, and the stapler home sensor is not turned ON (blocked) even after the lapse of a given period of time after the stapler motor drives to the reverse direction.
+Causes;• Stapler unit • FS control board (FSCB)
+Remedy;1. Check the connector between the stapler unit-relay CN43-FSCB CN5 for proper connection and correct as necessary. 2. Check the connector of the stapler unit for proper drive coupling, and correct as necessary. 3. Stapler home sensor I/O check, sensor check • Control signal: FSCB CN5-5 • Location of electrical component: 21-W 4. Replace the stapler unit. 5. Replace FSCB.
+Code;C1109
+Description;Stapler unit malfunction <bizhub C3851FS> The stapler home sensor is not turned OFF (unblocked) even after the lapse of a given period of time after the stapler motor turned ON.
+Causes;• Stapler unit • FS control board (FSCB)
+Remedy;1. Check the connector between the stapler unit-relay CN43-FSCB CN5 for proper connection and correct as necessary. 2. Check the connector of the stapler unit for proper drive coupling, and correct as necessary. 3. Stapler home sensor I/O check, sensor check • Control signal: FSCB CN5-5 • Location of electrical component: 21-W 4. Replace the stapler unit. 5. FSCB ICP3 conduction check 6. Replace FSCB.
+Code;C1140
+Description;CD alignment motor/Rr malfunction <bizhub C3851FS> • The CD alignment plate home sensor/Rr (FSPS3) is not turned OFF (unblocked) even after the lapse of a given period of time after the CD alignment motor/Rr (FSM3) is turned ON at start from the home position. • The CD alignment motor/Rr (FSM3) is not drive completion after the set period of time has elapsed even after the start of driving. • The CD alignment plate home sensor/Rr (FSPS3) is not turned ON (blocked) even after the lapse of a given period of time after the CD alignment motor/Rr (FSM3) is turned ON at the initial operation.
+Causes;Finisher Relevant electrical parts • CD alignment motor/Rr (FSM3) • CD alignment plate home sensor/Rr (FSPS3) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM3-relay CN12-relay CN13-FSCB CN8 for proper connection and correct as necessary. 2. Check the connector of FSM3 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS3-relay CN13-FSCB CN8 for proper connection and correct as necessary. 4. FSPS3 I/O check, sensor check • Control signal: FSCB CN8-10 • Location of electrical component: 22-Q 5. FSM3 operation check • Control signal: FSCB CN8-1 to 4 • Location of electrical component: 21-Q 6. Replace FSM3. 7. Replace FSCB.
+Code;C1146
+Description;FD leading edge alignment motor malfunction <bizhub C3851FS> • The FD leading edge home sensor (FSPS1) is not turned OFF (unblocked) even after the lapse of a given period of time after the FD leading edge alignment motor (FSM1) is turned ON at start from the home position. • The FD leading edge alignment motor (FSM1) is not drive completion after the set period of time has elapsed even after the start of driving. • The FD leading edge home sensor (FSPS1) is not turned ON (blocked) even after the lapse of a given period of time after the FD leading edge alignment motor (FSM1) is turned ON at the initial operation.
+Causes;• FD leading edge alignment motor (FSM1) • FD leading edge home sensor (FSPS1) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM1-relay CN18-FSCB CN3 for proper connection and correct as necessary. 2. Check the connector of FSM1 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS1-FSCB CN5 for proper connection and correct as necessary. 4. FSPS1 I/O check, sensor check • Control signal: FSCB CN5-3 • Location of electrical component: 20-W 5. FSM1 operation check • Control signal: FSCB CN3-5 to 8 • Location of electrical component: 23-Q 6. Replace FSM1. 7. Replace FSCB.
+Code;C1147
+Description;FD trailing edge pushing motor malfunction <bizhub C3851FS> • The FD trailing edge home sensor (FSPS4) is not turned OFF (unblocked) even after the lapse of a given period of time after the FD trailing edge pushing motor (FSM4) is turned ON at start from the home position. • The FD trailing edge pushing motor (FSM4) is not drive completion after the set period of time has elapsed even after the start of driving. • The FD trailing edge home sensor (FSPS4) is not turned ON (blocked) even after the lapse of a given period of time after the FD trailing edge pushing motor (FSM4) is turned ON at the initial operation.
+Causes;• FD trailing edge pushing motor (FSM4) • FD trailing edge home sensor (FSPS4) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM4-relay CN20-FSCB CN3 for proper connection and correct as necessary. 2. Check the connector of FSM4 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS4-FSCB CN10 for proper connection and correct as necessary. 4. FSPS4 I/O check, sensor check • Control signal: FSCB CN10-10 • Location of electrical component: 24 to 25-Q 5. FSM4 operation check • Control signal: FSCB CN3-9 to 12 • Location of electrical component: 23-Q 6. Replace FSM4. 7. Replace FSCB.
+Code;C1184
+Description;Output tray paper holding motor malfunction <bizhub C3851FS> The output tray full sensor (FSPS6) is not turned ON (blocked) and no paper are ejected on the output tray even after the lapse of a given period of time after the output tray paper holding motor (FSM6) is turned ON when returning to the home position.
+Causes;• Output tray paper holding motor (FSM6) • Output tray full sensor (FSPS6) • FS control board (FSCB)
+Remedy;1. Check the connector between FSM6-relay CN39-FRCB CN9 for proper connection and correct as necessary. 2. Check the connector of FSM6 for proper drive coupling, and correct as necessary. 3. Check the connector between FSPS6-relay CN39-FRCB CN9 for proper connection and correct as necessary. 4. FSPS6 I/O check, sensor check • Control signal: FSCB CN9-8 • Location of electrical component: 24-W 5. FSM6 operation check • Control signal: FSCB CN9-12 to13 • Location of electrical component: 25-W 6. Replace FSM6. 7. FSCB PTC1 conduction check 8. Replace FSCB.
+Code;C1403
+Description;FNS control error <bizhub C3851FS> A control error is detect at the FS control board.
+Causes;FS control board (FSCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB.
+Code;C2152
+Description;"Transfer belt fault at initial position return The 1st transfer pressure sensor (PS9) is unable to detect ""switch from retraction to pressure"" or ""switch from pressure to retraction"" within a given period time after the 1st transfer pressure solenoid (SD1) turned ON during an initial position return."
+Causes;• Main motor (M1) • 1st transfer pressure solenoid (SD1) • 1st transfer pressure sensor (PS9) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS9-MFPB CN9E for proper connection and correct as necessary. 4. Check the connector between SD1-relay CN85-MFPB CN9E for proper connection and correct as necessary. 5. PS9 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-C 6. SD1 operation check • Control signal: MFPB CN9E-12 (REM) • Location of electrical component: 4-C 7. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 8. Replace M1. 9. MFPB F4E conduction check 10. Replace MFPB.
+Code;C2153
+Description;The 1st transfer pressure sensor (PS9) does not detect “switch from pressure to retraction” within a given period time after the 1st transfer pressure solenoid (SD1) turned ON.
+Causes;• Main motor (M1) • 1st transfer pressure solenoid (SD1) • 1st transfer pressure sensor (PS9) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS9-MFPB CN9E for proper connection and correct as necessary. 4. Check the connector between SD1-relay CN85-MFPB CN9E for proper connection and correct as necessary. 5. PS9 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-C 6. SD1 operation check • Control signal: MFPB CN9E-12 (REM) • Location of electrical component: 4-C 7. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 8. Replace M1. 9. MFPB F4E conduction check 10. Replace MFPB.
+Code;C2154
+Description;Transfer belt contact fault at all pressure switching The 1st transfer pressure sensor (PS9) does not detect “switch from retraction to pressure” within a given period time after the 1st transfer pressure solenoid (SD1) turned ON.
+Causes;• Main motor (M1) • 1st transfer pressure solenoid (SD1) • 1st transfer pressure sensor (PS9) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS9-MFPB CN9E for proper connection and correct as necessary. 4. Check the connector between SD1-relay CN85-MFPB CN9E for proper connection and correct as necessary. 5. PS9 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-C 6. SD1 operation check • Control signal: MFPB CN9E-12 (REM) • Location of electrical component: 4-C 7. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 8. Replace M1. 9. MFPB F4E conduction check 10. Replace MFPB.
+Code;C2155
+Description;Transfer belt contact fault after K pressure established The 1st transfer pressure sensor (PS9) is turned ON (blocked) after the lamps of given time after the 1st transfer pressure solenoid (SD1) turned OFF when the release operation is finished.
+Causes;• Main motor (M1) • 1st transfer pressure solenoid (SD1) • 1st transfer pressure sensor (PS9) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS9-MFPB CN9E for proper connection and correct as necessary. 4. Check the connector between SD1-relay CN85-MFPB CN9E for proper connection and correct as necessary. 5. PS9 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-C 6. SD1 operation check • Control signal: MFPB CN9E-12 (REM) • Location of electrical component: 4-C 7. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 8. Replace M1. 9. MFPB F4E conduction check 10. Replace MFPB.
+Code;C2156
+Description;Transfer belt spacing fault after all pressure established The 1st transfer pressure sensor (PS9) is turned OFF (unblocked) after the laps of given time after the 1st transfer pressure solenoid (SD1) turned OFF when the pressing operation is finished.
+Causes;• Main motor (M1) • 1st transfer pressure solenoid (SD1) • 1st transfer pressure sensor (PS9) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS9-MFPB CN9E for proper connection and correct as necessary. 4. Check the connector between SD1-relay CN85-MFPB CN9E for proper connection and correct as necessary. 5. PS9 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-C 6. SD1 operation check • Control signal: MFPB CN9E-12 (REM) • Location of electrical component: 4-C 7. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 8. Replace M1. 9. MFPB F4E conduction check 10. Replace MFPB.
+Code;C2253
+Description;Color PC motor failure to turn The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Color PC motor (M4) • MFP board (MFPB)
+Remedy;1. Check the connector between M4-MFPB CN4E for proper connection and correct as necessary. 2. Check the M4 connector for proper drive coupling and correct as necessary. 3. M4 operation check • Control signal: MFPB CN4E-11 to 13 • Location of electrical component: 25 to 26-C 4. Replace M4. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2254
+Description;Color PC motor turning at abnormal timing The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Color PC motor (M4) • MFP board (MFPB)
+Remedy;1. Check the connector between M4-MFPB CN4E for proper connection and correct as necessary. 2. Check the M4 connector for proper drive coupling and correct as necessary. 3. M4 operation check • Control signal: MFPB CN4E-11 to 13 • Location of electrical component: 25 to 26-C 4. Replace M4. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2255
+Description;Developing motor failure to turn (color) The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Developing motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN4E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN4E-4 to 7 • Location of electrical component: 25-C 4. Replace M3. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2256
+Description;Developing motor turning at abnormal timing (color) The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Developing motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN4E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN4E-4 to 7 • Location of electrical component: 25-C 4. Replace M3. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2259
+Description;Developing motor failure to turn (K) The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Developing motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN4E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN4E-4 to 7 • Location of electrical component: 25-C 4. Replace M3. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C225A
+Description;Developing motor turning at abnormal timing (K) The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Developing motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN4E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN4E-4 to 7 • Location of electrical component: 25-C 4. Replace M3. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2350
+Description;Toner suction fan motor malfunction The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Toner suction fan motor (FM3) • MFP board (MFPB)
+Remedy;1. Check the connectors between FM3-relay CN301-MFPB CN12E for proper connection, and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM3 operation check • Control signal: MFPB CN12E-6 (LOCK) • Location of electrical component: 26-C 4. Replace FM3. (bizhub C3851/C3351 / bizhub C3851FS) 5. MFPB F2E conduction check 6. Replace MFPB.
+Code;C2411 ... C2414
+Description;• C2411: Imaging unit/C new article release • C2412: Imaging unit/M new article release • C2413: Imaging unit/Y new article release • C2414: Imaging unit/K new article release. The status with the new unit is not cleared after the new imaging unit is set.
+Causes;• Imaging unit/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall imaging unit. 1. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 1. Replace the imaging unit. 1. Replace MFPB.
+Code;C2551, C2553
+Description;• C2551: Abnormally low toner density detected cyan TCR sensor • C2553: Abnormally low toner density detected magenta TCR sensor When sampling data is determined in TC ratio calculation control, TCR sensor output is lower than a predetermined value for a predetermined number of times in a row even though there is toner in the toner cartridge.
+Causes;• Imaging unit/Y,M,C,K • Toner supply motor/YM (M5) • Toner supply motor/CK (M6) • MFP board (MFPB)
+Remedy;1. Perform image troubleshooting procedure if image density is low. 2. Reinstall the imaging unit. 3. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 4. Check the connector between M5-MFPB CN8E for proper connection and correct as necessary. 5. Check the connector between M6-MFPB CN8E for proper connection and correct as necessary. 6. M5, M6 operation check • Control signal: MFPB CN8E-1 to 4 (M5), MFPB CN8E-5 to 8 (M6) • Location of electrical component: 23-C 7. Replace the imaging unit. 8. MFPB F5E conduction check 9. Replace MFPB.
+Code;C2552, C2554
+Description;• C2552: Abnormally high toner density detected cyan TCR sensor • C2554: Abnormally high toner density detected magenta TCR sensor TC ratio in the imaging unit, which is determined by toner replenishing amount control mechanism, is a predetermined value or more for a given number of times consecutively.
+Causes;• Imaging unit/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall imaging unit. 2. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 3. Replace the imaging unit. 4. Replace MFPB.
+Code;C2555, C2557
+Description;• C2555: Abnormally low toner density detected yellow TCR sensor • C2557: Abnormally low toner density detected black TCR sensor When sampling data is determined in TC ratio calculation control, TCR sensor output is lower than a predetermined value for a predetermined number of times in a row even though there is toner in the toner cartridge.
+Causes;• Imaging unit/Y,M,C,K • Toner supply motor/YM (M5) • Toner supply motor/CK (M6) • MFP board (MFPB)
+Remedy;1. Perform image troubleshooting procedure if image density is low. 2. Reinstall the imaging unit. 3. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 4. Check the connector between M5-MFPB CN8E for proper connection and correct as necessary. 5. Check the connector between M6-MFPB CN8E for proper connection and correct as necessary. 6. M5, M6 operation check • Control signal: MFPB CN8E-1 to 4 (M5), MFPB CN8E-5 to 8 (M6) • Location of electrical component: 23-C 7. Replace the imaging unit. 8. MFPB F5E conduction check 9. Replace MFPB.
+Code;C2556, C2558
+Description;• C2556: Abnormally high toner density detected yellow TCR sensor • C2558: Abnormally high toner density detected black TCR sensor TC ratio in the imaging unit, which is determined by toner replenishing amount control mechanism, is a predetermined value or more for a given number of times consecutively.
+Causes;• Imaging unit/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall imaging unit. 2. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 3. Replace the imaging unit. 4. Replace MFPB.
+Code;C2559, C255A, C255B, C255C
+Description;• C2559: Cyan TCR sensor adjustment failure • C255A: Magenta TCR sensor adjustment failure • C255B: Yellow TCR sensor adjustment failure • C255C: Black TCR sensor adjustment failure TCR sensor automatic adjustment does not function properly, failing to adjust to an appropriate value.
+Causes;• Imaging unit/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall imaging unit. 2. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 3. Replace the imaging unit. 4. Replace MFPB.
+Code;C2561, C2562, C2563, C2564
+Description;• C2561: Cyan TCR sensor failure • C2562: Magenta TCR sensor failure • C2563: Yellow TCR sensor failure • C2564: Black TCR sensor failure TCR sensor automatic adjustment does not function properly, failing to adjust to an appropriate value.
+Causes;• Imaging unit/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall imaging unit. 2. Check the connector between imaging unit-MFPB CN19E, CN20E for proper connection and correct as necessary. 3. Replace the imaging unit. 4. Replace MFPB.
+Code;C2650, C265B
+Description;• C2650: Main backup media access error 1 • C265B: Main backup media access error 2. Trouble detection condition • When an error is detected at the data reading process. • The re-written data, which has been read out, checked and founded as error, is read out again and found as error. • The error was found when reading out the counter value. • The main body detects that the EEPROM is not mounted.
+Causes;• MFP board (MFPB) • C2650: EEPROM/1 (EEPROM/1) • C265B: EEPROM/2 (EEPROM/2)
+Remedy;1. Make sure that EEPROM/1 and EEPROM/2 are mounted in their respective correct positions. 2. Check to see if the EEPROM is mounted in a reverse direction. 3. Check the harness from MFPB to EEPROM for proper connection and correct as necessary. 4. Replace MFPB. 5. Replace EEPROM/1 and EEPROM/2. NOTE • To replace EEPROM/2 with a new one, contact KM. 1. Replace the current EEPROM with a new one. 2. Replace the following components with new ones. When the transfer belt unit and the fusing unit have been replaced with new ones, perform [New Release] in the service mode. When the transfer roller has been replaced with a new one, perform [Counter clear]. • Imaging unit/Y,M,C,K • Transfer belt unit • Fusing unit • Transfer roller • Feed roller, separation roller (including options) • Toner filter 3. Turn ON the main power switch and check to see that warm-up is started. Make sure that malfunction codes other than C2650 or improper IU/TC placement is not detected. 4. Make the specified readjustments. 6. If the above actions do not solve the problem, contact KM.
+Code;C265A
+Description;Main backup media wrongly installation. The EEPROM/1 and EEPROM/2 are mounted in a reverse direction.
+Causes;• EEPROM/1 (EEPROM/1) • EEPROM/2 (EEPROM/2) • MFP board (MFPB)
+Remedy;1. Check to see if the EEPROM/1 and EEPROM/2 are mounted in a reverse direction. 2. Check the type of the installed EEPROM and replace it if it is a wrong one. 3. Replace EEPROM/1 and EEPROM/2. NOTE • To replace EEPROM/2 with a new one, contact KM. 4. Replace MFPB.
+Code;C2A21, C2A22, C2A23, C2A24
+Description;• C2A21: Toner cartridge/C new release failure • C2A22: Toner cartridge/M new release failure • C2A23: Toner cartridge/Y new release failure • C2A24: Toner cartridge/K new release failure. Trouble detection condition The status with the new cartridge is not cleared after the new toner cartridge is set.
+Causes;• Toner cartridge/Y,M,C,K • MFP board (MFPB)
+Remedy;1. Reinstall the toner cartridge 2. Clean the connection between the toner cartridge and the machine if dirty. 3. Check the connector between the toner cartridge-MFPB CN18E for proper connection and correct as necessary. 4. Replace the toner cartridge 5. Replace MFPB.
+Code;C3201
+Description;Fusing motor failure to turn. The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Fusing motor (M2) • MFP board (MFPB)
+Remedy;1. Check the connector between M2-MFPB CN6E for proper connection and correct as necessary. 2. Check the loading status of the fusing unit drive, and correct the error as necessary. 3. M2 operation check • Control signal: MFPB CN6E-11 to 14 • Location of electrical component: 2-C 4. Replace M2. 5. MFPB F9E conduction check 6. Replace MFPB.
+Code;C3202
+Description;Fusing motor turning at abnormal timing. The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Fusing motor (M2) • MFP board (MFPB)
+Remedy;1. Check the connector between M2-MFPB CN6E for proper connection and correct as necessary. 2. Check the loading status of the fusing unit drive, and correct the error as necessary. 3. M2 operation check • Control signal: MFPB CN6E-11 to 14 • Location of electrical component: 2-C 4. Replace M2. 5. MFPB F9E conduction check 6. Replace MFPB.
+Code;C3302
+Description;Paper cooling fan motor malfunction. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Paper cooling fan motor (FM4) • MFP board (MFPB)
+Remedy;1. Check the connector between FM4-relay CN82-MFPB CN9E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM4 operation check • Control signal: MFPB CN9E-6 (LOCK) • Location of electrical component: 3-C 4. Replace FM4. (bizhub C3851/C3351 / bizhub C3851FS) 5. MFPB F2E conduction check 6. Replace MFPB.
+Code;C3421
+Description;Fusing temperature increase malfunction (TEM1: center) • Detected temperature of the fusing temperature sensor/1 (TEM1: center and edge) does not go up a given range of temperature even after a lapse of given period of time at warm up. • The warm-up is not completed even after the set period of time has elapsed after the warm-up is started.
+Causes;• Fusing unit • C3421: Fusing temperature sensor/1 (TEM1: center) • C3426: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3426
+Description;Fusing temperature increase malfunction (TEM1: edge) • Detected temperature of the fusing temperature sensor/1 (TEM1: center and edge) does not go up a given range of temperature even after a lapse of given period of time at warm up. • The warm-up is not completed even after the set period of time has elapsed after the warm-up is started.
+Causes;• Fusing unit • C3421: Fusing temperature sensor/1 (TEM1: center) • C3426: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3722
+Description;Fusing abnormally high temperature (TEM2) Detected temperature of the fusing temperature sensor/2 (TEM2) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3722: Fusing temperature sensor/2 (TEM2) • C3725: Fusing temperature sensor/1 (TEM1: center) • C3726: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. Replace DCPS.
+Code;C3725
+Description;Fusing abnormally high temperature (TEM1: center) Detected temperature of the fusing temperature sensor/1 (TEM1: center) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3722: Fusing temperature sensor/2 (TEM2) • C3725: Fusing temperature sensor/1 (TEM1: center) • C3726: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. Replace DCPS.
+Code;C3726
+Description;Fusing abnormally high temperature (TEM1: edge) Detected temperature of the fusing temperature sensor/1 (TEM1: edge) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3722: Fusing temperature sensor/2 (TEM2) • C3725: Fusing temperature sensor/1 (TEM1: center) • C3726: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. Replace DCPS.
+Code;C3731
+Description;Fusing abnormally high temperature (Hard protector) An abnormally high temperature of the hard protector signal is detected.
+Causes;• Fusing unit • Fusing temperature sensor/1 (TEM1: center) • Fusing temperature sensor/2 (TEM2) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. Replace DCPS.
+Code;C3822
+Description;Fusing abnormally low temperature (TEM2) The fusing temperature sensor/2 (TEM2) continues to detect a temperature lower than a predetermined one for a predetermined period of time after warm-up is complete.
+Causes;• Fusing unit • C3822: Fusing temperature sensor/2 (TEM2) • C3825: Fusing temperature sensor/1 (TEM1: center) • C3826: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3825
+Description;Fusing abnormally low temperature (TEM1: center) The fusing temperature sensor/1 (TEM1: center) continues to detect a temperature lower than a predetermined one for a predetermined period of time after warm-up is complete.
+Causes;• Fusing unit • C3822: Fusing temperature sensor/2 (TEM2) • C3825: Fusing temperature sensor/1 (TEM1: center) • C3826: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3826
+Description;Fusing abnormally low temperature (TEM1: edge) The fusing temperature sensor/1 (TEM1: edge) continues to detect a temperature lower than a predetermined one for a predetermined period of time after warm-up is complete.
+Causes;• Fusing unit • C3822: Fusing temperature sensor/2 (TEM2) • C3825: Fusing temperature sensor/1 (TEM1: center) • C3826: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3922
+Description;Fusing sensor wire breaks abnormality (TEM2) • The maximum value and minimum value of detected temperature of fusing temperature sensor/2 (TEM2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature. • The maximum value and minimum value of voltage step of fusing temperature sensor/2 (TEM2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature.
+Causes;• Fusing unit • C3922: Fusing temperature sensor/2 (TEM2) • C3925: Fusing temperature sensor/1 (TEM1: center) • C3926: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3925
+Description;Fusing sensor wire breaks abnormality (TEM1: center) • The maximum value and minimum value of detected temperature of fusing temperature sensor/1 (TEM1: center) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature. • The maximum value and minimum value of voltage step of fusing temperature sensor/1 (TEM1: center) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature.
+Causes;• Fusing unit • C3922: Fusing temperature sensor/2 (TEM2) • C3925: Fusing temperature sensor/1 (TEM1: center) • C3926: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C3926
+Description;Fusing sensor wire breaks abnormality (TEM1: edge) • The maximum value and minimum value of detected temperature of fusing temperature sensor/1 (TEM1: edge) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature. • The maximum value and minimum value of voltage step of fusing temperature sensor/1 (TEM1: edge) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature.
+Causes;• Fusing unit • C3922: Fusing temperature sensor/2 (TEM2) • C3925: Fusing temperature sensor/1 (TEM1: center) • C3926: Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C392B
+Description;Fusing disconnection error detection (difference of temperature) The difference between the temperature corrected by the fusing temperature sensor/1 (TEM1: center) and the temperature detected by the fusing temperature sensor/1 (TEM1: edge) exceeds a predetermined value after warm up.
+Causes;• Fusing unit • Fusing temperature sensor/1 (TEM1: center) • Fusing temperature sensor/1 (TEM1: edge) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the upper right door. 3. Check the fusing unit-MFPB CN13E, DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. DCPS F102 conduction check 7. Replace DCPS.
+Code;C4091
+Description;Engine communication error Communication with the CTL is interrupted for one min. or longer during a stabilization sequence.
+Causes;MFP board (MFPB)
+Remedy;1. Reboot the machine. 2. Replace MFPB.
+Code;C40A1 ... C40C5
+Description;• C40A1: Mechanical controller sub-CPU communication error • C40A2: Mechanical controller PF communication data error • C40A3: Mechanical controller PF transmission timeout • C40A4: Mechanical controller PF communication pulse error • C40C3: CTL PDF transmission timeout 1 • C40C5: CTL PDF transmission timeout 2 Trouble detection condition A CPU communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. MFPB F10E conduction check 4. Replace MFPB.
+Code;C4101
+Description;Polygon motor malfunction • The polygon motor fails to turn stably even after the lapse of a given period of time after activating and changing rotation speed the polygon motor. • Motor lock signal detects HIGH for a given period time consecutively during the polygon motor is rotating.
+Causes;• PH unit • MFP board (MFPB)
+Remedy;1. Check the connector between PH unit-relay CN72-MFPB CN22E for proper connection and correct as necessary. 2. Replace the PH unit. (bizhub C3851/C3351 / bizhub C3851FS) 3. MFPB F3E conduction check 4. Replace MFPB.
+Code;C4501
+Description;Laser malfunction • SOS signal is not detected even after the lapse of a given period of time after starting the laser output. • SOS signal is not detected for a given period of time during printing.
+Causes;• PH unit • MFP board (MFPB)
+Remedy;1. Check the connector between PH unit-relay CN73-MFPB CN21E for proper connection and correct as necessary. 2. Replace the PH unit. (bizhub C3851/C3351 / bizhub C3851FS) 3. Replace MFPB.
+Code;C5102, C5103
+Description;• C5102: Main motor failure to turn • C5103: Main motor turning at abnormal timing Trouble detection condition • C5102: The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning. • C5103: The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Main motor (M1) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN6E for proper connection and correct as necessary. 2. M1 operation check • Control signal: MFPB CN6E-4 to 7 • Location of electrical component: 2-C 3. Replace M1. 4. MFPB F9E conduction check 5. Replace MFPB.
+Code;C5307
+Description;UFP fan motor failure The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• UFP fan motor (FM5) • MFP board (MFPB)
+Remedy;1. Check the connector between FM5-relay CN158-relay CN90-MFPB CN10E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM5 operation check • Control signal: MFPB CN10E-9 (LOCK) • Location of electrical component: 5-C 4. Replace FM5. 5. MFPB F2E and F4E conduction check 6. Replace MFPB.
+Code;C5351
+Description;DC power supply fan motor failure. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• DC power supply fan motor (FM1) • MFP board (MFPB)
+Remedy;1. Check the connector between FM1-relay CN304-MFPB CN12E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM1 operation check • Control signal: MFPB CN12E-15 (LOCK) • Location of electrical component: 27-C 4. Replace FM1. 5. MFPB F2E conduction check 6. Replace MFPB.
+Code;C5353
+Description;Cooling fan motor/2 failure (Europe model only) The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Cooling fan motor/2 (FM6) • MFP board (MFPB)
+Remedy;1. Check the connector between FM6-relay CN302-MFPB CN12E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM6 operation check • Control signal: MFPB CN12E-12 (LOCK) • Location of electrical component: 27-C 4. Replace FM6. 5. MFPB F2E conduction check 6. Replace MFPB.
+Code;C5357
+Description;Cooling fan motor/1 failure The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Cooling fan motor/1 (FM2) • MFP board (MFPB)
+Remedy;1. Check the connector between FM2-relay CN303-MFPB CN12E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM2 operation check • Control signal: MFPB CN12E-9 (LOCK) • Location of electrical component: 26-C 4. Replace FM2. 5. MFPB F2E conduction check 6. Replace MFPB.
+Code;C5360
+Description;Clean unit fan's failure to turn (When CU-202 is installed) The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Exhaust fan/1 (FM1) • Exhaust fan/2 (FM2) • Exhaust fan/3 (FM3) • Clean unit drive board (CUDB) • MFP board (MFPB)
+Remedy;1. Check the connector between CUDB CN1-relay CN400-MFPB CN26E for proper connection and correct as necessary. 2. Check the connector between FM1-relay CN401-CUDB CN2 for proper connection and correct as necessary. 3. Check the connector between FM2-relay CN402-CUDB CN2 for proper connection and correct as necessary. 4. Check the connector between FM3-relay CN403-CUDB CN2 for proper connection and correct as necessary. 5. Check the fan for possible overload and correct as necessary. 6. FM1 operation check • Control signal: CUDB CN2-1 (REM), CUDB CN2-3 (LOCK) • Location of electrical component: 26-L 7. FM2 operation check • Control signal: CUDB CN2-4 (REM), CUDB CN2-6 (LOCK) • Location of electrical component: 27-L 8. FM3 operation check • Control signal: CUDB CN2-7 (REM), CUDB CN2-9 (LOCK) • Location of electrical component: 27-L 9. Replace the defective fan. (FM1 / FM2 / FM3) 10. Replace CUDB. 11. MFPB F11E conduction check 12. Replace MFPB.
+Code;C5372
+Description;MFP control board CPU temperature failure Temperature failure of CPU on the MFP board was detected.
+Causes;MFP board (MFPB)
+Remedy;1. Reboot the machine. 2. Check for clogging in the ventilation path between the MFPB and the power supply cooling fan, and correct as necessary. 3. Replace MFPB.
+Code;C5501
+Description;AC signal abnormality. The zero cross signal is not input during fusing phase control.
+Causes;• Fusing unit • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check DCPS CN3-MFPB CN1E for proper connection and correct or change as necessary. 3. Check the fusing unit-DCPS CN2 for proper connection and correct or change as necessary. 4. Replace the fusing unit. 5. Replace MFPB. 6. Replace DCPS.
+Code;C5601
+Description;Engine control malfunction. Engine control malfunction is detected with port monitor control.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on the MFPB for proper connection and correct or change as necessary. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C5605, C5606
+Description;• C5605: Engine communication data error • C5606: Engine transmission timeout. Trouble detection condition A communication error is detected between CPUs.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C5610, C5611
+Description;• C5610: PH LD drive communication error • C5611: PH EEPROM communication error. Trouble detection condition • C5610: LD drive write data and read data disagree with each other a predetermined number of consecutive times. • C5611: The two-time readout data of PH unit EEPROM data keeps mismatched for a predetermined number of consecutive times.
+Causes;• PH unit • MFP board (MFPB)
+Remedy;1. Reboot the machine. 2. Check the connector between PH unit-relay CN73-MFPB CN21E for proper connection and correct as necessary. 3. Replace the PH unit. (bizhub C3851/C3351 / bizhub C3851FS) 4. Replace MFPB.
+Code;C5701
+Description;Power supply malfunction A condition is detected in which no power is being supplied to the MFP board (MFPB).
+Causes;• PH unit • Front door switch (SW2) • Right door switch (SW3) • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Check the connector between SW2, SW3-DCPS CN10 for proper connection and correct as necessary. 2. Check the connector between PH unit-relay CN73-MFPB CN21E for proper connection and correct as necessary. 3. SW2, SW3 operation check • Control signal: DCPS CN10-1 to 3 • Location of electrical component: 18-W 4. Replace the PH unit. (bizhub C3851/C3351 / bizhub C3851FS) 5. Replace DCPS. 6. MFPB F5E, F10E conduction check 7. Replace MFPB.
+Code;C6001, C6002
+Description;• C6001: DF related configuration error 1 • C6002: DF related configuration error 2. Inconsistency in the configuration with the installed DF is detected on the main body.
+Causes;• DF drive board (DFDB) • MFP board (MFPB)
+Remedy;1. Check the type of the installed DF and replace it if it is a wrong one. 2. Check the connector between DFDB J1-MFPB CN800E for proper connection and correct as necessary. 3. Replace DFDB. 4. Replace MFPB.
+Code;C6704
+Description;Image input time out Image data is not input from the scanner to the MFP board (MFPB).
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Bus Check] -> [Scanner -> Memory], and conduct the memory bus function. 2. Check the connector between the scanner unit-MFPB CN23, CN103 for proper connection and correct as necessary. 3. Replace the scanner unit. 4. Replace MFPB.
+Code;C6751
+Description;CCD clamp/gain adjustment failure. During the CCD gain adjustment, a condition in which the peak value of the output data is equal to, or less than, 64 occurs three consecutive times during retries.
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Check the connector between scanner unit-MFPB CN23, CN103 for proper connection and correct as necessary. 2. Check for possible extraneous light and correct as necessary. 3. Clean the lens, mirrors, CCD surface, and shading sheet if dirty. 4. Replace the scanner unit. 5. Replace MFPB.
+Code;C6752
+Description;ASIC clock input error (front side) When starting the machine, verification on reading and writing the predetermined value for image processing ASIC on CCD board (CCDB) was conducted, and verification failure was detected.
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Replace the scanner unit. 2. Replace MFPB.
+Code;C6756
+Description;CCD power-supply voltage malfunction. Power is not supplied to CCD after the lapse of a given period of time after the main power switch or power key is turned ON or the machine recovers from the sleep mode.
+Causes;• Scanner unit • DC power supply (DCPS) • MFP board (MFPB)
+Remedy;1. Correct the harness connection between the scanner unit-MFPB CN103 if faulty. 2. Correct the harness connection between MFPB CN3E-DCPS CN5 if faulty. 3. MFPB ICP9 conduction check 4. Replace MFPB. 5. Replace the scanner unit. 6. Replace DCPS.
+Code;C6F01
+Description;Scanner sequence trouble 1. The original transport interval becomes shorter than the predetermined value due to an original transport control error in original reading in ADF.
+Causes;• MFP board (MFPB) • DF drive board (DFDB)
+Remedy;1. Correct the harness connection between MFPB CN800E-DFDB J1 if faulty. 2. Replace DFDB. 3. Replace MFPB.
+Code;C8401
+Description;Data flash failure Data flash does not access normally.
+Causes;DF drive board (DFDB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Check the DFDB connector for proper connection and correct as necessary. 3. Rewrite the firmware. 4. Replace DFDB.
+Code;C9401
+Description;Exposure lamp lighting failure detected. The output from the CCD sensor is a predetermined value or less during CCD sensor gain adjustment.
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Check the connector between scanner unit-MFPB CN23, CN103 for proper connection and correct as necessary. 2. Check for possible extraneous light and correct as necessary. 3. Clean the lens, mirrors, CCD surface, and shading sheet if dirty. 4. Replace the scanner unit. 5. MFPB ICP7, PTC802E conduction check 6. Replace MFPB.
+Code;C9402
+Description;Exposure LED lighting abnormally. The average output value of the CCD sensor with the scanner at its standby position is a predetermined value or more at the end of a scan job.
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Check the connector between scanner unit-MFPB CN23, CN103 for proper connection and correct as necessary. 2. Check for possible extraneous light and correct as necessary. 3. Clean the lens, mirrors, CCD surface, and shading sheet if dirty. 4. Replace the scanner unit. 5. MFPB ICP7, PTC802E conduction check 6. Replace MFPB.
+Code;CA051, CA052, CA053
+Description;• CA051: Standard controller configuration failure • CA052: Controller hardware error • CA053: Controller start failure. Trouble detection condition • CA051: The controller of the MFP board (MFPB) is faulty. • CA052: A controller hardware error is detected in the network interface. • CA053: A controller start failure is detected in the controller interface.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors of the MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CC002
+Description;Vendor internal error. Error occurs inside the vendor.
+Causes;• Vendor • MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. Turn OFF and ON the power switch at the vendor side. 2. Check the connector between the vendor-MFPB CN16 for proper connection and correct as necessary. 3. Replace MFPB. 4. Replace the vendor.
+Code;CC140
+Description;Trouble related to security.
+Causes;
+Remedy;• Contact the responsible people of KM before taking some countermeasures.
+Code;CC151, CC152, CC156
+Description;• CC151: ROM contents error upon startup (MSC) • CC152: ROM contents error upon startup (IR) • CC156: DF ROM error. Trouble detection condition • CC151, CC152: A fault is detected in a sequence of ROM contents check of the MFPB during starting. • CC156: Upgrade of the firmware has not been successful.
+Causes;MFP board (MFPB)
+Remedy;1. Check the ROM version. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CC155
+Description;Finisher ROM error <bizhub C3851FS> A finisher flash ROM writing sequence is interrupted in its mid-operation due to, for example, power being shut off.
+Causes;FS control board (FSCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB.
+Code;CC163
+Description;Faulty destination • The wrong model of firmware is detected in the engine during the initial connection to the engine is being checked. • Hardware signal is not fixed when the Boot started.
+Causes;MFP board (MFPB)
+Remedy;1. Rewrite the firmware. 2. Replace MFPB. NOTE • When taking the above steps, check whether MFPB is defective or not without replacing the EEPROM. 1. Turn OFF the main power switch and replace the current MFPB with a new one. 2. Update the firmware. 3. After completing the firmware update, turn OFF and ON the main power switch and check to see that warm-up is started. 4. When the trouble cannot be solved, reinstall the removed MFPB to the original board. 3. If the above actions do not solve the problem, contact KM.
+Code;CC164
+Description;ROM contents error (MSC) The wrong model of firmware is detected in the MFP board when the main power switch is turned ON.
+Causes;MFP board (MFPB)
+Remedy;1. Check the ROM version. 2. Rewrite the firmware. 3. Replace MFPB. 4. If the above actions do not solve the problem, contact KM.
+Code;CC167
+Description;Finisher FW download communication fault (ENG detection) <bizhub C3851FS> A communication error is detected on the MFP board (MFPB) side during FW download communication between the MFP board (MFPB) and FS control board (FSCB).
+Causes;• FS control board (FSCB) • MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB. 4. Replace MFPB.
+Code;CC168
+Description;Finisher FW download communication fault (FNS detection) <bizhub C3851FS> A communication error is detected on the FS control board (FSCB) side during FW download communication between the MFP board (MFPB) and FS control board (FSCB).
+Causes;• FS control board (FSCB) • MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB. 4. Replace MFPB.
+Code;CC169
+Description;Finisher Flash ROM device error <bizhub C3851FS> An erase error or other device fault occurs during finisher flash ROM writing.
+Causes;FS control board (FSCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB.
+Code;CC170 ... CC186
+Description;• CC170: Dynamic link error during starting (AP0) • CC171: Dynamic link error during starting (AP1) • CC172: Dynamic link error during starting (AP2) • CC173: Dynamic link error during starting (AP3) • CC174: Dynamic link error during starting (AP4) • CC180: Dynamic link error during starting (LDR) • CC181: Dynamic link error during starting (IBR) • CC182: Dynamic link error during starting (IID) • CC183: Dynamic link error during starting (IPF) • CC184: Dynamic link error during starting (IMY) • CC185: Dynamic link error during starting (SPF) • CC186: Dynamic link error during starting (OAP) Trouble detection condition A dynamic link error occurs in the program on the MFP board due to an insufficient memory space available, a ROM fault, or other reason when the main power switch is turned ON.
+Causes;MFP board (MFPB)
+Remedy;"1. If the malfunction code ""C-C180"" has occurred, check to install the appropriate loadable device driver for an authentication unit which is installed to the MFP. When the appropriate loadable device driver is not installed, reinstall the appropriate loadable device driver. 2. Replace MFPB. 3. If the above actions do not solve the problem, contact KM."
+Code;CC190
+Description;Outline font load error An error occurred while loading the outline font.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-MFPB CN1, CN22 for proper connection and correct as necessary. 2. Format the hard disk. 3. Replace the hard disk. 4. Replace MFPB.
+Code;CC191
+Description;Setting parameter load error (LDR). Upon startup, the processing of the loadable device driver setting data file failed. • RAM disk file creation failed. • Reading from the flash ROM failed. • An error occurred in API of the authentication module.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, wait for 10 sec., then turn the switch ON. 2. Reinstall the loadable device driver. 3. Rewrite the firmware. 4. Replace MFPB.
+Code;CC211
+Description;Authentication device general error. When using the authentication device, authentication data is not to meet the specifications.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC212
+Description;User validation error. • An error occurred while validating the user authentication information. • The loadable device driver is not successfully installed.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. When this trouble code is generated after installing the loadable device driver, check to see if there is any file other than loadable device driver in USB memory used. If there is any file, reinstall the loadable device driver. 2. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 4. Re-register the user authentication information. 5. Replace authentication device.
+Code;CC213
+Description;User registration error/Card information setting error. • IC card advanced settings data is not correct when starting-up the authentication device. • Authentication information data is not correct when starting-up the authentication device. • IC card advanced settings data is not correct when setting the IC card advanced settings. • Authentication information data is not correct when setting the IC card advanced settings. • IC card advanced settings data is not correct when registering the authentication information. • Authentication information data is not correct when registering the authentication information. • IC card advanced settings data is not correct when editing the authentication information. • Authentication information data is not correct when editing the authentication information.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 3. Reset the authentication settings. (card type, IC card advanced settings, and etc.) 4. Re-register the user authentication information.
+Code;CC214
+Description;User information deletion error. The deletion of the user information is uncompleted.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC216
+Description;Acquisition failure of the number of trials/Initialize error of number of authentication. An error occurred during user authentication using optional authentication unit AU-102.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 3. Reset the number of authentication trials.
+Code;CC301
+Description;Authentication customize data error. • The master authentication customize data is corrupted upon startup. • Registration of authentication customize data in the main body has failed upon startup.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Reinstall the authentication customize data. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CC302
+Description;Authentication customize data version mismatch error. The authentication customize data version is later than the firmware version of the machine.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Rewrite the main body firmware with the latest one and reinstall the authentication customize data. 2. Replace MFPB.
+Code;CCC00
+Description;Public user account track information error. At the first time of startup, the nonvolatile status is reset incompletely due to any trouble (such as a shut off of the main power).
+Causes;eMMC board (eMMC)
+Remedy;1. Replace eMMC. NOTE • Contact Konica Minolta technical support if the eMMC board needs to be replaced.
+Code;CD002
+Description;JOB RAM save error. The error in save of job data to the memory/ hard disk and its read error are detected.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-MFPB CN1, CN22 for proper connection and correct as necessary. 2. Format the hard disk. 3. Replace the hard disk. 4. Replace MFPB.
+Code;CD004, CD00F
+Description;• CD004: Hard disk access error (connection failure) Unable to communicate between the hard disk and MFP board (MFPB). • CD00F: Hard disk data transfer error Data transfer from the hard disk is faulty.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-MFPB CN1, CN22 for proper connection and correct as necessary. 2. Reinstall the hard disk. 3. Replace the hard disk. 4. Replace MFPB.
+Code;CD010
+Description;Hard disk unformat. Unformatted hard disk is connected.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Format the hard disk. 2. Replace the hard disk. 3. Replace MFPB.
+Code;CD011
+Description;Hard disk out of specifications mounted. A hard disk that falls outside the specifications is connected.
+Causes;Hard disk
+Remedy;1. Check the hard disk specifications. 2. Replace the hard disk.
+Code;CD012
+Description;Mount error due to hard disk being unformatted. • The hard disk is not logically formatted after the whole data in the hard disk has been deleted by overwriting. • The hard disk that has replaced an old one is not logically formatted.
+Causes;Hard disk
+Remedy;1. Logically format the hard disk and then upgrade the firmware. 2. Replace the hard disk.
+Code;CD030
+Description;Hard disk management information reading error The machine fails to read administrative information data saved in the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD041 ... CD046
+Description;HDD command execution error. The error occurred inside the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD047 ... CD04B
+Description;HDD SCSI library error The error occurred inside the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD050
+Description;Hard disk recovery timeout. The hard disk fails to recover from the power save mode within the predetermined period of time.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-MFPB CN1, CN22 for proper connection and correct as necessary. 2. Reinstall the hard disk. 3. Format the hard disk. 4. Replace the hard disk.
+Code;CD110
+Description;Wireless LAN destination initialization error. When an initialization error occurred on the settings of the wireless LAN in upgrade kit (UK-216).
+Causes;
+Remedy;1. Check UK-216 connector for proper connection and correct as necessary. 2. Update the firmware. 3. Reinstall UK-216.
+Code;CD201, CD202, CD203
+Description;• CD201: File memory mounting error • CD202: Memory capacity discrepancy • CD203: Memory capacity discrepancy 2. condition CD201: • The file memory is not mounted. • The file has any abnormality. CD202: • File memory capacity on the MFP board (MFPB) is not enough. • File memory capacity necessary for duplex printing is not enough. CD203: File memory capacity on the MFP board (MFPB) is not enough.
+Causes;"• MFP board (MFPB) • Memory board (MEMB; UK-211)"
+Remedy;1. Check to see if MEMB on MFPB is installed correctly. 2. Replace MEMB on MFPB. 3. Replace MFPB.
+Code;CD211, CD212
+Description;• CD211: PCI-SDRAM DMA operation failure • CD212: Compression/extraction timeout detection. Trouble detection condition • CD211: Hardware related to the transfer of memory image of the MFP board (MFPB) fails to respond. • CD212: Hardware related to the BTC compression function of the MFP board (MFPB) fails to respond.
+Causes;MFP board (MFPB)
+Remedy;1. Replace MFPB.
+Code;CD241, CD242
+Description;• CD241: Encryption ASIC setting error • CD242: Encryption ASIC mounting error. Trouble detection condition • CD241: Initialization error of the encrypted ASIC is detected during the machine is starting. • CD242: The faulty of the installation of encrypted ASIC is detected during the machine is starting.
+Causes;MFP board (MFPB)
+Remedy;1. Check the MFP board connector for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CD261
+Description;USB HUB board failure. • When a failure is detected in USB HUB board included in the local interface kit. • Non-standard USB device is connected.
+Causes;• MFP board (MFPB) • USB HUB board/1 (USBHB/1: EK-P05, EK-P06) • USB HUB board/2 (USBHB/2: EK-P05, EK-P06)
+Remedy;1. Check the operation with another USB device. 2. Check the USB HUB board connector for proper connection and correct as necessary. 3. Replace the USB HUB board. 4. Replace MFPB.
+Code;CD262
+Description;Extension network adapter installation error. • When the 2nd network card settings is set to “Set” but upgrade kit (UK-216) is not installed. • Upgrade kit (UK-216) is faulty.
+Causes;
+Remedy;1. Check the settings of the Service Mode is set to “Installed.” [Service Mode] -> [Network Settings] -> [2nd Network Settings] -> [2nd network card settings] 2. Check UK-216 connector for proper connection and correct as necessary. 3. Update the firmware. 4. MFPB ICP8 conduction check 5. Reinstall UK-216.
+Code;CD271
+Description;i-Option activated and additional memory not installed. While the i-Option is activated, the additional memory included in UK-211 is not installed.
+Causes;"• MFP board (MFPB) • Memory board (MEMB; UK-211)"
+Remedy;1. Check MEMB for proper connection and correct as necessary. 2. Replace MEMB. 3. Replace MFPB.
+Code;CD272
+Description;i-Option activated and additional memory and HDD not installed. While the i-Option is activated, the additional memory included in UK-211 and the HDD are not installed.
+Causes;"• MFP board (MFPB) • Hard disk (HDD) • Memory board (MEMB; UK-211)"
+Remedy;1. Check MEMB for proper connection and correct as necessary. 2. Access [Service Mode] -> [System 2] -> [HDD] and check to see if “Installed” is selected. 3. Replace MEMB. 4. Replace the hard disk. 5. Replace MFPB.
+Code;CD313
+Description;TPM key data error. A fault occurs in the TPM key data.
+Causes;
+Remedy;1. Touch [Recover Data] displayed at the lower right portion on the trouble screen. 2. A screen confirming whether to recover data appears. 3. Select [Yes]. 4. The screen will be shifted to the data restoration screen to perform data restoration. NOTE • When the restoration is performed in a short time, data restoration screen may not be displayed. 5. Check the message which indicates that the data restoration was successfully conducted. Turn OFF the main power switch and turn it ON again more than 10 seconds after. NOTE • In case it failed to restore data, return to the trouble code screen. 6. Replace the current MFPB with a new one. NOTE • Nonvolatile data backup will be automatically performed every hour. Backup can also be performed manually with the following setting. [Service Mode] -> [Enhanced Security] -> [Memory Data Backup]
+Code;CD38E
+Description;"Nonvolatile data save error (SPI-Flash) The ""ISW download flag"" saved in the SPI-Flash has an illegal value."
+Causes;MFP board (MFPB)
+Remedy;1. Rewrite the firmware. 2. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch.
+Code;CD390
+Description;Nonvolatile data checksum error. C-D390 code is normally shown when the MFP board is replaced with a new one.
+Causes;
+Remedy;1. Wait until “Recover Data” appears. (MFP will reboot maximum 2 times by itself, it may take 5 minutes.) Touch the “Recover Data” button and follow the instructions that appear on the control panel to restore (backup) data.
+Code;CD391
+Description;Nonvolatile data save error (eMMC).
+Causes;
+Remedy;• Contact the responsible people of KM before taking some countermeasures.
+Code;CD392
+Description;Nonvolatile data save error (EEPROM). The EEPROM is replaced with a new one.
+Causes;• EEPROM/1 • EEPROM/2
+Remedy;1. Replace the following components with new ones. When the transfer belt unit and the fusing unit have been replaced with new ones, perform [New Release] in the service mode. When the transfer roller has been replaced with a new one, perform [Counter clear]. • Imaging unit/Y,M,C,K • Toner cartridge/Y,M,C,K • Transfer belt unit • Fusing unit • Transfer roller • Feed roller, separation roller (including options) 2. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 3. Set the various setting values in the service mode again.
+Code;CD3C0
+Description;New board detection. The board is replaced with a new one.
+Causes;
+Remedy;1. Wait until “Recover Data” appears. (MFP will reboot maximum 2 times by itself, it may take 5 minutes.) Touch the “Recover Data” button and follow the instructions that appear on the control panel to restore (backup) data.
+Code;CD401 ... CD413
+Description;• CD401: NACK command incorrect • CD402: ACK command incorrect • CD403: Checksum error • CD404: Receiving packet incorrect • CD405: Receiving packet analysis error • CD406: ACK receiving timeout • CD407: Retransmission timeout • CD411: Touch panel board error • CD412: Touch panel type mismatch • CD413: Electrostatic touch panel operation mode error. When abnormality is found in the communication of controller.
+Causes;MFP board (MFPB)
+Remedy;1. Check whether there is a strong electromagnetic noise source near the main body. 2. Check the connectors on MFPB for proper connection and correct as necessary. 3. Replace MFPB.
+Code;CD601, CD602, CD603
+Description;Trouble related to security.
+Causes;
+Remedy;1. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. If the above actions do not solve the problem, contact KM.
+Code;CD701, CD702, CD703
+Description;• CD701: Mechanical controller flash ROM writing error • CD702: Mechanical controller flash ROM device error • CD703: FW download communication fault Trouble detection condition CD701: A mechanical controller flash ROM writing sequence is interrupted in its mid-operation due to, for example, power being shut off. CD702: An erase error or other device fault occurs during mechanical controller flash ROM writing. CD703: Irregular data is received during FW downloading. • Places are changed in the order of write completion pulses. • A write completion pulse is received for a memory for which binary writing is not permitted. • Final checksum mismatch in FW download • Two-minute timeout (no response from CTL, the number of transfer data items less than the specified)
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CD705, CD706
+Description;• CD705: Mechanical controller sub-CPU flash ROM device error • CD706: Mechanical controller sub-CPU flash ROM error. Trouble detection condition • CD705: An erase error or other device fault occurs during mechanical controller sub-CPU flash ROM writing. • CD706: A data error is determined to exist in the mechanical controller sub-CPU flash ROM during starting.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CDC00
+Description;EEPROM fault 1. An EEPROM communication error of the main body occurs.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on the MFPB for proper connection and correct any faulty connection as necessary. 2. Replace MFPB.
+Code;CDC10
+Description;EEPROM fault 2. The engine serial number cannot be recovered.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on the MFPB for proper connection and correct any faulty connection as necessary. 2. Replace MFPB.
+Code;CDF50, CDF70, CDFA0
+Description;• CDF50: ASIC image version failure • CDF70: ASIC image access failure • CDFA0: ASIC image error. Communication error is detected between the MFP board (MFPB) and the CCD board (CCDB).
+Causes;• Scanner unit • MFP board (MFPB)
+Remedy;1. Check the connector between the scanner unit-MFPB CN23 for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Replace the scanner unit. 4. Replace MFPB.
+Code;CE001 ... CE011
+Description;• CE001: Abnormal message queue • CE003: Task error • CE004: Event error • CE005: Memory access error • CE006: Header access error • CE007: DIMM initialize error • CE009: Memory resource shortage error • CE011: Config. file access error at startup of FW
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE002
+Description;Message and method parameter failure. MFP board (MFPB) is faulty.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Turn OFF the main power switch and turn it ON again, and conduct the following setting. [Service Mode] -> [System 1] -> [Initialization] -> [Clear All Data]. 2. Format the hard disk. 3. Replace the hard disk. 4. Replace MFPB.
+Code;CE101
+Description;Browser finish detected. • The browser is automatically recovered (restarted) after the main body detected that the browser (separate process) has stopped with fault. • When the “Malfunction finish is detected over predetermined number of times” or “the browser task process is except in idle (printing, etc)”.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE201
+Description;Transmission operation log storage fault. When the transmission log storage failed, it repeats retrial until transmission operation log is stored. The trouble is detected when the retrial failed for predetermined number of times.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE202
+Description;PDL interpreter error. An error inside the EEPROM is detected during converting the PDL information.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Perform the logically format. 3. Perform [Service Mode] -> [System 1] -> [Initialization] -> [Clear All Data]. 4. Replace MFPB.
+Code;CE203
+Description;Unrecoverable error. An error does not recover even after an auto recovery.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Perform the logically format. 3. Perform [Service Mode] -> [System 1] -> [Initialization] -> [Clear All Data]. 4. Rewrite the firmware with the latest one. 5. Perform the self-diagnostic function (from main power switch ON). 6. Replace MFPB.
+Code;CE301 ... CE305
+Description;• CE301: Referring incorrect memory • CE302: Incorrect command • CE303: Finished due to error inside Qt library • CE304: Finished due to error outside Qt library • CE305: Program forced to stop. Trouble detection condition Error occurred with the process inside the MFP controller.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB. 3. Acquire the debug logs in [Service Mode] -> [Debug Settings] and analyze them.
+Code;CED01
+Description;The authentication application information does not exist in the hard disk/eMMC board in the enhanced server authentication state. With “Enhanced Server Authentication” set, no authentication application registration information is found in the hard disk or the eMMC board (eMMC).
+Causes;• eMMC board (eMMC) • Hard disk (HDD)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Check the connector between hard disk-MFPB CN1, CN22 for proper connection and correct as necessary. 3. Check the connector from eMMC to MFPB for proper connection and correct as necessary. 4. Logically format the hard disk. 5. Replace the hard disk. 6. If the above actions do not solve the problem, contact KM.
+Code;CEEE1, CEEE3
+Description;• CEEE1: MFP board (MSC) malfunction • CEEE3: MFP board (ENG) malfunction. Trouble detection condition MFP board (MFPB) is faulty.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CEEE2
+Description;Scanner section malfunction. A scanner part is faulty.
+Causes;
+Remedy;1. Replace the scanner unit.
+Code;CFB00 ... CFF2D
+Description;Abort code
+Causes;MFP board (MFPB)
+Remedy;1 Power switch Turn OFF and ON the power switch, and check if the Abort code appears again. NO When not reappearing, continuous use is carried out, and it is checked whether an abort code occurs. 2 Connector connection Check the connector for proper connection on MFPB and correct as necessary. NO It will correct, if connector connection has abnormalities. 3 Firmware Update the firmware to the latest version, and check if the Abort code appears again. NO After conducting firmware updating, check the firmware version No. and confirm that the firmware has been normally updated. 4 MFP board Replace MFPB

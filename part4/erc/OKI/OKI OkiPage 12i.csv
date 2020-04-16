@@ -1,0 +1,273 @@
+Code;-
+Display;PRINT MENU
+Description;"The current menu setting is being printed.
+ Ready ON : Executed by command entry.
+ Ready flashing : Executed by key operation."
+Code;-
+Display;XXXXXX
+Description;Message displayed when the power is turned on. When the power is turned on, the LEDs are turned on for approximately 1 second, conducting a test to verify the conditions of the LEDs and LCD.
+Code;-
+Display;INITIALIZING
+Description;"Message displayed to indicate that the controller is undergoing an initialization when the power is turned on.
+ This message is displayed after the turning on of the LEDs as described above."
+Code;-
+Display;FM LOADING
+Description;Indicates in Cold mode due to downloading to flash memory.
+Code;-
+Display;FM ERROR
+Description;Indicates that an error occurs during downloading to flash memory or deleting.
+Code;-
+Display;PRINT DEMO
+Description;"The demo page is being printed.
+ Ready LED on : Executed by command entry.
+ Ready LED blinking : Executed by key operation."
+Code;-
+Display;nnn/mmm
+Description;"When the number of copies being printed is two or more, the number of copies being printed is displayed. This massage is displayed together with another message on the first line.
+ nnn : Current page
+ mmm : Total page"
+Code;-
+Display;PRINT CLEANING
+Description;This message is displayed when the printer is performing the cleaning print.
+Code;-
+Display;CLEANING MANUAL#
+Description;"Manual loading of paper indicated by the second line message is being reequested for cleaning. The paper size(#) may be one of the following:
+ # : LETTER REQUEST, A4 SIZE REQUEST"
+Code;-
+Display;FLUSHING (PS Only)
+Description;"PostScript mode only.
+ This message is displayed during cancelling of a job. The message goes off when the job cancellation is completed."
+Code;-
+Display;RESET
+Description;The data which remained unprinted in the buffer is deleted and the printer is initialized to user default settings. The temporary DLLs, macros and user pattern are deleted.
+Code;-
+Display;RESET TO SAVE
+Description;This message is displayed when the printer cannot reset automatically to exit from the menu because there are date and DLL's and macros having temporary attributes when the printer is changed from set mode to another mode.
+Code;-
+Display;TONER LOW
+Description;"Toner is running out.
+ This message is displayed together with another message on the first line.
+ Normal operation can be continued."
+Code;-
+Display;TONER SNS
+Description;"A fault occurred with the toner sensor.
+ This message is displayed together with another message on the first line.
+ Normal operation can be continued."
+Code;-
+Display;TONER EMP
+Description;"Displays that the amount of toner is near empty (this status will appear after 100 sheets from a TONER LOW indication).
+ It is indicated by being combined with other messages in the first line.
+ Normal operation can be continued."
+Code;-
+Display;TONER EMP CHG CART
+Description;"Displays that the amount of toner is near empty.
+ After 100 sheets from a TONER LOW indication, this status will appear and the printing be stopped.
+ If pressing ON-LINE SW, other 31 sheets can be printed and stopped. And from the next time on, the printing is stopped each sheet."
+Code;-
+Display;CHG DRUM
+Description;"This message is displayed together with another message on the first line.
+ Normal operation can be continued."
+Code;-
+Display;NO PS
+Description;Unavailable printer language was designated by PJL command (warning).
+Code;-
+Display;PWR SAVE
+Description;"The printer is in the power-saving mode.
+ This message is displayed together with another message on the first line."
+Code;-
+Display;ERROR PS Adobe PS (PS Only)
+Description;"PostScript mode only.
+ This message appears when the interpreter detects an error while a job is being processed. The remainder of the job is ignored."
+Code;-
+Display;CHG DRUM
+Description;Informs drum life end. It can be temporarily released by opening and closing the cover or pressing the “ON LINE” switch, but basically, the drum must be replaced.
+Code;-
+Display;EEPROM RESET'NG
+Description;Indicates an error from the result of checking EEPROM ID No. The printer will display this for a few seconds and reset the EEPROM to the factory default for a continuous operation. It will occur with a new EEPROM.
+Code;-
+Display;ROM-SIMM ERROR
+Description;"Reformat error including CPCMCIA header of ROM-SIMM and byte sum.
+ It will be displayed for 2 seconds at power-on or just before a shift to ON LINE."
+Code;-
+Display;HOST I/F ERROR
+Description;"An error occurred in the serial I/F or network I/F.
+ This message is displayed when a parity error, a framing error or an overrun error is detected. (When an error occurred in serial I/F)"
+Code;-
+Display;COVER OPEN
+Description;The upper cover was opened.
+Code;-
+Display;COVER T2 OPEN
+Description;The High Capacity Second Paper Feeder option cover was opened.
+Code;-
+Display;tray INPUT JAM
+Description;"A jam occurred during paper hopping from the tray.
+ tray : TRAY1, TRAY2, FEEDER, MANUAL"
+Code;-
+Display;tray FEED JAM
+Description;"A jam occurred during paper feeding after completion of paper hopping from the tray.
+ tray : TRAY1, TRAY2, FEEDER"
+Code;-
+Display;tray EXIT JAM
+Description;"A jam occurred during paper ejecting.
+ tray : TRAY1, TRAY2, FEEDER, MANUAL"
+Code;-
+Display;tray SIZE ERR
+Description;"Paper of improper size is being fed from the tray.
+ tray : TRAY1, TRAY2, FEEDER, MANUAL"
+Code;-
+Display;tray PAPER OUT
+Description;"The tray has run out of paper.
+ tray : TRAY1, TRAY2, FEEDER"
+Code;-
+Display;tray #PAPER REQUEST (The indicate rotate)
+Description;"Loading of paper indicated by the first line message is requested. The paper size may be one of the followings:
+ tray : TRAY1, TRAY2, FEEDER
+ Paper : LETTER, EXECUTIV, LEGAL 14, LEGAL 13, A4 SIZE, A5 SIZE, A6 SIZE, B5 SIZE, COM-9, COM -10, MONARCH, DL ENV, C5 ENV"
+Code;-
+Display;MANUAL #REQUEST
+Description;"Manual loading of paper indicated by the first line message is requested. The paper size one of the followings:
+ LETTER, EXECUTIV, LEGAL 14, LEGAL 13, A4 SIZE, A5 SIZE, A6 SIZE, B5 SIZE, FREE SIZE, COM-10, MONARCH, DL ENV, C5 ENV"
+Code;-
+Display;REC BUFF OVERFLOW
+Description;The receive buffer is overflowing.
+Code;-
+Display;MEMORY OVERFLOW
+Description;"The page buffer is overflowing because it received too much data for printing on the page.
+ Macro buffer is overflowing.The DLL buffer is overflowing"
+Code;-
+Display;OFF-LINE emulate
+Description;"The printer is in the off-line mode. The second line indicates the emulation.
+ emulate : AUTO, PCL, PPR, FX, AdobePS, HEX"
+Code;-
+Display;ACTIVE emulate
+Description;The printer is processing data.
+Code;-
+Display;PRINTING
+Description;The printer is printing a page.
+Code;-
+Display;DATA emulate
+Description;"The printer is processing data in the on-line mode.
+ Ready ON : The data that is not printed remains in the buffer.
+ Ready flashing :The printer is receiving data or in printing process.
+ emulate : AUTO, PCL, PPR, FX, AdobePS, HEX"
+Code;-
+Display;PRINT FONTS
+Description;All fonts of the printer are being printed during self-test.
+Code;10
+Display;10
+Description;An error was detected by program ROM check.
+Code;20
+Display;20
+Description;An error was detected by font ROM check.
+Code;30
+Display;30
+Description;An error was detected by resident RAM check.
+Code;4
+Display;4
+Description;Address Error Exception (Load command, command fetch)
+Code;40
+Display;40
+Description;An error was detected by EEPROM check.
+Code;5
+Display;5
+Description;Address Error Exception (Store command)
+Code;50
+Display;50
+Description;An error was detected by optional software ROM check.
+Code;51
+Display;51
+Description;An error was detected by Flash SIMM.
+Code;52
+Display;52
+Description;PS only can't happen.
+Code;53
+Display;53
+Description;PS only undefined sys call.
+Code;6
+Display;6
+Description;Bus Error Exception (Command fetch)
+Code;60
+Display;60
+Description;An error was detected by optional RAM check.
+Code;61
+Display;61
+Description;Data bus Error between Cas and Data bus foroption DRAMs.
+Code;7
+Display;7
+Description;Bus Error Exception (Load command, store command)
+Code;70
+Display;70
+Description;A failure occurred with the Fan motor.
+Code;71
+Display;71
+Description;A failure occurred with the fuser (timeout etc.).
+Code;72
+Display;72
+Description;A failure occurred with the fuser (thermistor error).
+Code;73
+Display;73
+Description;A failure occurred with the fuser (thermistor error).
+Code;74
+Display;74
+Description;SSIO Error
+Code;77
+Display;77
+Description;"A toner sensor fault has occurred when
+ TOTAL DRAM COUNT is 30 or less."
+Code;79
+Display;79
+Description;LED Head type Error
+Code;8
+Display;8
+Description;System Call Extension
+Code;80
+Display;80
+Description;"I/F timeout occurred between the main control
+ board and the operator panel."
+Code;81
+Display;81
+Description;I/F timeout occurred between the main control board and the optional tray (High Capacity Second Paper Feeder, Power Envelope Feeder, etc.).
+Code;9
+Display;9
+Description;Break Point Exception
+Code;90
+Display;90
+Description;A watchdog timer timeout occurred.
+Code;91
+Display;91
+Description;CPU Error
+Code;A
+Display;A
+Description;Reserved Instruction Exception
+Code;B
+Display;B
+Description;Coprocessor Unusable Exception
+Code;C
+Display;C
+Description;Arithmetic Overflow Exception
+Code;F0
+Display;F0
+Description;Monitor error (double weight)
+Code;F1
+Display;F1
+Description;Monitor error (argument error)
+Code;F2
+Display;F2
+Description;Optional Timeout error
+Code;F3
+Display;F3
+Description;Optional status error
+Code;F4
+Display;F4
+Description;BG program error
+Code;F5
+Display;F5
+Description;"System timer program error.
+ Defect in the cable of the front feeder paper sensor and the 2-pin connector on the main control board.
+ Poor connection of connectors."
+Code;F6
+Display;F6
+Description;IPT2 program error
+Code;F7
+Display;F7
+Description;IPT1 program error

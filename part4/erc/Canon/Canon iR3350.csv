@@ -1,0 +1,477 @@
+Code;E000-0000
+Description;The reading of the main thermistor does not reach 30C 1 sec after the main power switch is turned on. Or, it does not reach 70C 2 sec thereafter
+Causes;The fixing film unit is faulty. The main thermistor has an open circuit. The fixing heater has an open circuit. The main power supply PCB is faulty. The DC controller PCB is faulty. To reset the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;1. Connector Is the connector of the fixing assembly connected? a. main power supply PCB (J8) <-> relay connector <-> heater b. DC controller PCB (J320) <-> relay connector <-> thermistor NO: Connect the connector. 2. Fixing film unit (thermistor) Check the interval between pin 1 and pin 2 and between pin 3 and pin 4 of the connectosr (4-pin) of the thermistor for electrical continuity. Is it W (open)? YES: The heater has an open circuit, or the thermal switch is open. Replace the fixing film unit. 4. Main power supply PCB, DC controller PCB Press the Start key. Is the drive voltage of the heater supplied by the connector J8 of the main power supply PCB? Main heater: between J8-1 (FSR1) and J8-5 (FSR COM) Sub heater: between J8-3 (FSR2) and J8-5 (FSR COM) YES: The heater drive power supply is faulty. Replace the main power supply PCB. NO: The thermistor control mechanism is faulty. Replace the DC controller PCB.
+Code;E001-0000
+Description;The main thermistor detects 250C or higher
+Causes;The fixing film unit is faulty (i.e., the thermistor has a short circuit). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service move: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;"Check the interval between pin 1 and pin 2 and between pin 3 and pin 4 of the connectors (4-pin) of the thermistor for electrical continuity. Is it 0 W (short circuit)? YES: The thermistor has a short circuit. Replace the fixing film unit. If the thermistor has a short circuit, the indication in service mode (COPIER>DISPLAY>ANALOG) will be as follows from the start: FIXC= 250°C for the main thermistor; FIX-E=310°C for the sub thermistor. 2. Main power supply PCB, DC controller PCB Try replacing the main power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E001-0001
+Description;The main thermistor or the sub thermistor detects overheating (hardware circuit detection)
+Causes;The fixing film unit is faulty (i.e., the thermistor has a short circuit). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service move: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;"Check the interval between pin 1 and pin 2 and between pin 3 and pin 4 of the connectors (4-pin) of the thermistor for electrical continuity. Is it 0 W (short circuit)? YES: The thermistor has a short circuit. Replace the fixing film unit. If the thermistor has a short circuit, the indication in service mode (COPIER>DISPLAY>ANALOG) will be as follows from the start: FIXC= 250°C for the main thermistor; FIX-E=310°C for the sub thermistor. 2. Main power supply PCB, DC controller PCB Try replacing the main power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E001-0002
+Description;The sub thermistor detects about 295C or higher
+Causes;The fixing film unit is faulty (i.e., the thermistor has a short circuit). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service move: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;"Check the interval between pin 1 and pin 2 and between pin 3 and pin 4 of the connectors (4-pin) of the thermistor for electrical continuity. Is it 0 W (short circuit)? YES: The thermistor has a short circuit. Replace the fixing film unit. If the thermistor has a short circuit, the indication in service mode (COPIER>DISPLAY>ANALOG) will be as follows from the start: FIXC= 250°C for the main thermistor; FIX-E=310°C for the sub thermistor. 2. Main power supply PCB, DC controller PCB Try replacing the main power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E002-0000
+Description;"The temperature of the fixing film is as follows: 
+ has exceeded 100C, but does not reach 115C within 1 sec thereafter. has exceeded 140C, but does not reach 150C within 1 sec thereafter. has exceeded 160C, but does not reach 165C within 1 sec thereafter"
+Causes;The fixing film unit is faulty (i.e., the main thermistor TH1 has poor contact, or the fixing heater is faulty). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>FCLEAR>ERR.
+Remedy;1. State Turn on the power switch, and clear E002/E003. Thereafter, turn off and then on the power switch. Does the fixing heater operate? NO: See “The fixing heater fails to operate.” 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit, DC controller PCB Try replacing the fixing film unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E003-0000
+Description;The main thermistor reading is lower than 140C when paper is moved
+Causes;"The fixing film unit is faulty (i.e., the main thermistor (TH1) has poor contact or has an open circuit; or, the fixing heater is faulty). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR."
+Remedy;1. State Turn on the power switch, and clear E002/E003. Thereafter, turn off and then on the power switch. Does the fixing heater operate? NO: See “The fixing heater fails to operate.” 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit, DC controller PCB Try replacing the fixing film unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E003-0001
+Description;Low fixing temperature detection after standby (by sub thermistor)
+Causes;"The fixing film unit is faulty (i.e., the main thermistor (TH1) has poor contact or has an open circuit; or, the fixing heater is faulty). The main power supply PCB is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR."
+Remedy;1. State Turn on the power switch, and clear E002/E003. Thereafter, turn off and then on the power switch. Does the fixing heater operate? NO: See “The fixing heater fails to operate.” 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit, DC controller PCB Try replacing the fixing film unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E007-0000
+Description;"An error in the rotation of the fixing film is detected.
+ The reading of the main thermistor is 100C or higher and, in addition, the fixing film sensor does not detect the rotation of the film for 6 sec or more while the fixing motor is driven"
+Causes;The fixing film sensor (PS45) is faulty. The DC controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR
+Remedy;"1. Wiring Are the wring and the connectors connected securely? DC controller PCB (J311) <-> relay connector <-> fixing film sensor NO: Connect the wiring and the connectors. 2. Fixing film sensor Check the fixing film rotation signal.When the fixing motor is rotating, is the film rotation detection signal sent by the fixing film sensor to the concoctor J311 of the DC controller PCB? Film rotation detection signal: 5V pulse signal between J311-A9 (FILM_ROT_D) and J311-A8 (GND); at intervals of 100 msec ON and 440 msec OFF NO: If the fixing film is normal, replace the sensor. 3. Fixing film unit, DC controller PCB Is there a fault in the fixing film edge rotation detection mechanism? YES: Replace the fixing film unit. NO: Replace the DC controller PCB."
+Code;E010-0000
+Description;After the main motor drive signal is generated, the clock signal does to arrive within 1.3 sec
+Causes;The main motor (M2) is faulty. the DC controller PCB is faulty.
+Remedy;"1. Connector Is the connector of the main motor connected? NO: Connect the connector. 2. Main power supply PCB Is the drive voltage (24 V) of the main motor supplied by the main power supply PCB? Main power supply PCB: between J202-1 (24VU1-SW) and J202-2 (OVU1) NO: Replace the main power supply PCB. 3. Main controller (M2), DC controller PCB Press the Start key. Is the lock signal of the main motor present at the connector J308 on the DC controller PCB? Lock signal: J318-A10 (MM_LOCK) YES: Replace the main motor. NO: Check the wiring; if normal, replace the DC controller PCB."
+Code;E014-000
+Description;After the fixing motor drive signal is generated, the clock signal does not arrive within 1.3 sec
+Causes;The fixing motor (M19) is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Is the connector of the fixing motor connected? NO: Connect the connector. 2. Main power supply PCB Is the drive voltage (24 V) of the fixing motor supplied by the main power supply PCB? Main power supply PCB: between J202-3 (24VU1-S) and J202-4 (OVU1) NO: Replace the main power supply PCB. 3. Fixing motor (M19), DC controller PCB Press the Start key. Is the lock signal of the fixing motor present at the connector (J312) on the DC controller PCB? Lock signal: J312-B4 (FSRM_LOCK*) the DC controller PCB change from 0 to about 5 V? YES: Replace the fixing motor. NO: Replace the DC controller PCB.
+Code;E019-0000
+Description;The waste toner case is full of waste toner
+Causes;The waste toner case is full. The waste toner case full detection mechanism is soiled. The waste toner sensor is faulty. The DC controller PCB is faulty. Caution To clear the error, dispose of the waste toner, and turn off and then on the main power switch.
+Remedy;1. Waste toner case full detection mechanism Remove the waste toner case, and turn off and then on the main power switch. Is 'E019' absent? YES: The waste toner case full detection assembly is soiled with toner. Clean both inside and outside of area A of the waste toner case with alcohol. Make sure that no dirt remains inside and outside the area around the round recess. 2. Waste toner full sensor, DC Controller PCB Try replacing the waste toner case full sensor. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E032-0001
+Description;The DA unit connection is disconnected (after connection).
+Causes;The DA unit is faulty. The main controller PCB is faulty.
+Remedy;1. Connector Is the DA unit connected securely? NO: Connect it securely. 2. DA controller, Main controller PCB Try replacing the DA unit. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E051-0000
+Description;At start-up, home position is not detected when the horizontal registration assembly is moved 100 mm in the direction of home position
+Causes;The horizontal home position sensor is faulty. The horizontal registration motor is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Are the connectors of the horizontal registration home position sensor and the horizontal registration motor connected? a. DC controller PCB (J304) <-> relay connector <-> horizontal registration home position sensor b. DC controller PCB (J304) <-> relay connector <-> horizontal registration motor NO: Connect the connectors. 2. Sensor lever (damage and interference), Sensor Is abnormal noise heard from the horizontal registration assembly in keeping with the motor rotation? YES: a. The horizontal registration assembly is out of place because of damage to the sensor lever. Replace the sensor lever. b. The horizontal registration assembly malfunctions because of the presence of foreign matter. Remove the foreign matter. c. The sensor is faulty and cannot detect home position. Replace the sensor. 3. Horizontal registration motor, DC controller PCB Is the horizontal registration motor control signal generated by the DC controller PCB? J304-1/2: 24 V, J304-3/4/5/6: motor excitation signal YES: The horizontal registration motor is faulty. Replace the motor. NO: Replace the DC controller PCB.
+Code;E064-0000
+Description;The presence of a high-voltage error is communicated by the composite power supply PCB (The output for primary charging, developing, or transfer has deviated from a specific level of voltage)
+Causes;The contact has poor connection. The wiring is faulty. The composite power supply PCB is faulty. The DC controller PCB is faulty. proce
+Remedy;1. Contact Is any of the contacts of the primary charging roller, developing assembly, or transfer charging roller soiled? Or, is there poor contact? YES: Clean the contact, and set it once again. 2. Wiring Is the wiring between the contacts for the following normal: DC controller PCB (J301), composite power supply PCB (J136), primary charging roller, developing assembly, transfer charging roller? a. DC controller PCB (J301) <-> composite power supply PCB (J136) b. composite power supply PCB (J130-7) <-> primary charging roller contact c. composite power supply PCB (J130-1) <-> developing assembly contact d. composite power supply PCB (FT133) <-> transfer roller contact NO: Correct the connection. 3. Composite power supply PCB, DC controller PCB Try replacing the composite power supply PCB. Is the problem corrected? YES: Yes. NO: Replace the DC controller PCB.
+Code;E100-0001
+Description;The BD signal is not detected 10 times or more within 10 msec in 5 msec after the generation of the laser drive signal
+Causes;The wiring is faulty (short circuit, open circuit). The BD PCB is faulty. The laser scanner unit is faulty. The DC controller PCB is faulty.
+Remedy;1. BD PCB Try replacing the BD PCB. Is the problem corrected? YES: End. 2. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E100-0001
+Description;The BD signal is not detected 10 times or more within 10 msec in 5 msec after the generation of the laser drive signal
+Causes;The wiring is faulty (short circuit, open circuit). The BD PCB is faulty. The laser scanner unit is faulty. The DC controller PCB is faulty.
+Remedy;1. BD PCB Try replacing the BD PCB. Is the problem corrected? YES: End. 2. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E100-0002
+Description;While the laser is ON, the BD signal cycle is outside a specific range 20 times or more continuously
+Causes;The wiring is faulty (short circuit, open circuit). The BD PCB is faulty. The laser scanner unit is faulty. The DC controller PCB is faulty.
+Remedy;1. BD PCB Try replacing the BD PCB. Is the problem corrected? YES: End. 2. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E100-0003
+Description;While the laser is ON, the horizontal sync signal cycle is outside a specific range 20 times or more
+Causes;The wiring is faulty (short circuit, open circuit). The BD PCB is faulty. The laser scanner unit is faulty. The DC controller PCB is faulty.
+Remedy;1. BD PCB Try replacing the BD PCB. Is the problem corrected? YES: End. 2. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E110-0000
+Description;The motor ready signal does not arrive within 15 sec after the laser scanner motor drive signal is generated
+Causes;The wiring is faulty (short circuit, open circuit, disconnection). The laser scanner motor (M10) is faulty. The main power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Are the connector (J312) on the DC controller PCB and the relay connector connected securely? NO: Connect the connectors securely. 2. Main power supply PCB During printing, does the voltage between J204-1 (+) and J204-2 (-) on the main power supply PCB change from 0 to about 24 V? NO: Replace the main power supply PCB. 3. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E202-0001
+Description;The scanner home position sensor does not go OFF when the scanner is moved forward by 40 mm
+Causes;The scanner home position sensor (PS400) is faulty. The scanner motor (M400) is faulty. The reader controller PCB is faulty.
+Remedy;1. State Does the scanner operate when the power is turned on? NO: See 4.2.9 The No. 1 mirror base does not operate. 2. Scanner home position sensor (PS400), Reader controller PCB Move the No. 1 mirror base by hand from home position. Does the output of the scanner home position sensor change? (J405-2 on the reader controller PCB is 5 V (in HP) or 0V (away from HP)) NO: Replace the sensor. YES: Replace the rear controller PCB.
+Code;E202-0002
+Description;The scanner home position sensor does not go ON when the scanner is moved reverse 450 mm
+Causes;The scanner home position sensor (PS400) is faulty. The scanner motor (M400) is faulty. The reader controller PCB is faulty.
+Remedy;1. State Does the scanner operate when the power is turned on? NO: See 4.2.9 The No. 1 mirror base does not operate. 2. Scanner home position sensor (PS400), Reader controller PCB Move the No. 1 mirror base by hand from home position. Does the output of the scanner home position sensor change? (J405-2 on the reader controller PCB is 5 V (in HP) or 0V (away from HP)) NO: Replace the sensor. YES: Replace the rear controller PCB.
+Code;E204-0001
+Description;While an original is being read, the image leading edge signal does not arrive from the ADF
+Causes;The ADF controller PCB is faulty. The reader controller PCB is faulty. Caution When this code occurs, no code is indicated, but the keys are locked. The code may be checked in service mode: COPIER>DISPLAY>ERR.
+Remedy;1. Read sensor (S2) Try replacing the read sensor of the ADF. Is the problem corrected? YES: End. 2. ADF controller PCB, Reader controller PCB Try replacing the ADF controller PCB. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E220-0001
+Description;A fault is detected on the inverter PCB for the scanning lamp
+Causes;The inverter PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Wiring Is the wiring from the scanning lamp to the reader controller PCB normal? NO: Connect the connector firmly, and correct or replace the wiring. 2. Inverter PCB, Reader controller PCB Try replacing the lamp inverter PCB. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E225-0000
+Description;A specific level cannot be attained for the signal during CCD gain correction at power-on
+Causes;The scanning lamp is faulty. The CCD PCB is faulty. The rear controller PCB is faulty.
+Remedy;1. Scanning lamp (LAMP1) Is the lamp ON during the initial operation after the main power switch is turned on? NO: Replace the scanning lamp. 2. CCD unit, Reader controller PCB Try replacing the CCD unit. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E225-0002
+Description;The edge gain correction level is different from the correction level for the preceding sheet by a specific level or more
+Causes;The scanning lamp is faulty. The CCD PCB is faulty. The rear controller PCB is faulty.
+Remedy;1. Scanning lamp (LAMP1) Is the lamp ON during the initial operation after the main power switch is turned on? NO: Replace the scanning lamp. 2. CCD unit, Reader controller PCB Try replacing the CCD unit. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E240-0000
+Description;A fault occurs in communication between the CPU of the main controller PCB and the CPU of the DC controller PCB
+Causes;The main controller PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Wiring Is the wiring from the min controller PCB to the DC controller PCB normal? NO: Correct the wiring. 2. DC controller PCB, Main controlled PCB Try replacing the DC controller PCB. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E243-0000
+Description;A fault occurs in the communication between the CPU of the control panel PCB and the CPU of the main controller PCB
+Causes;The control panel CPU PCB is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Is the wiring from the main controller PCB to the DC controller PCB normal? NO: Correct the wiring. 2. Control panel CPU PCB, Main controller PCB Try replacing the control panel CPU PCB. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E248-0001
+Description;A difference is discovered between the ID in EEPROM read when the main power switch is turned on and the ID in ROM upon comparison
+Causes;The EEPROM (IC403) of the reader controller PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Execute the following in service mode: COPIER>FUNCTION>CLEAR>CON. Is the proem corrected? YES: End. After executing the service mode, be sure to enter the service mode data newly. 2. EE-PROM, Reader controller PCB Try replacing the EE-PROM. Is the problem corrected? YES: End. After replacement, be sure to enter the service mode data newly. NO: Replace the rear controller PCB. After replacement, be sure to enter the service mode date newly.
+Code;E248-0002
+Description;The data read does not match the data written to EEPROM
+Causes;The EEPROM (IC403) of the reader controller PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Execute the following in service mode: COPIER>FUNCTION>CLEAR>CON. Is the proem corrected? YES: End. After executing the service mode, be sure to enter the service mode data newly. 2. EE-PROM, Reader controller PCB Try replacing the EE-PROM. Is the problem corrected? YES: End. After replacement, be sure to enter the service mode data newly. NO: Replace the rear controller PCB. After replacement, be sure to enter the service mode date newly.
+Code;E248-0003
+Description;A difference is discovered between the ID of EEPROM and the ID of ROM upon comparison while writing data
+Causes;The EEPROM (IC403) of the reader controller PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Execute the following in service mode: COPIER>FUNCTION>CLEAR>CON. Is the proem corrected? YES: End. After executing the service mode, be sure to enter the service mode data newly. 2. EE-PROM, Reader controller PCB Try replacing the EE-PROM. Is the problem corrected? YES: End. After replacement, be sure to enter the service mode data newly. NO: Replace the rear controller PCB. After replacement, be sure to enter the service mode date newly.
+Code;E261-0000
+Description;The intervals of zero-cross signals deviate from the tolerance range while the fixing heater is supplied with power
+Causes;The wiring is faulty (short circuit, open circuit). The main power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connectors Are the connector J205 on the main power supply PCB and the connector J308B on the DC controller PCB securely connected? (zero-cross signal: J205-7 <-> J308B-1) NO: Connect the connectors securely. 2. Main power supply PCB, Main controller PCB Try replacing the main power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E302-0001
+Description;During shading, the shading processing does not end on the reader controller PCB after 1 sec
+Causes;The CCD PCB is faulty. The wiring is faulty (short circuit, open circuit). The reader controller PCB is faulty.
+Remedy;"1. Connector Are the connectors (J6001/J6002) on the CCD PCB and the connectors (J5002/J5003) on the reader controller PCB connected securely? NO: Connect the connectors securely. 2. CCD unit Try replacing the CCD unit. Is the problem corrected? YES: End. 3. Reader controller PCB, Main controller PCB Try replacing the reader controller PCB. Is the problem corrected? YES: End. NO: Check the wiring; if normal, replace the main controller PCB."
+Code;E302-0002
+Description;During stream reading, the edge white addition processing does not end on the rear controller PCB after 10 sec
+Causes;The CCD PCB is faulty. The wiring is faulty (short circuit, open circuit). The reader controller PCB is faulty
+Remedy;"1. Connector Are the connectors (J6001/J6002) on the CCD PCB and the connectors (J5002/J5003) on the reader controller PCB connected securely? NO: Connect the connectors securely. 2. CCD unit Try replacing the CCD unit. Is the problem corrected? YES: End. 3. Reader controller PCB, Main controller PCB Try replacing the reader controller PCB. Is the problem corrected? YES: End. NO: Check the wiring; if normal, replace the main controller PCB."
+Code;E315
+Description;"Any of the following is true in the image processing by the main controller: 
+ The image data has a fault The encoding/decoding operation for image data has a fault The image processing element of the main controller PCB has a fault"
+Causes;The image data is faulty. The main controller PCB is faulty. The HDD is faulty.
+Remedy;"If this error occurs during normal copying or printing, the job in question (image data) is cleared when the main power switch is turned off and then on again; i.e., the machine will be reset. If this error occurs frequently, however, a fault on the main controller PCB is a possibility. Further, if this error occurs in a specific image within the MAIL BOX, damage in data may be assumed; be sure to delete the image from the MAIL BOX."
+Code;E420-0001
+Description;When the power switch of the host machine is turned on, the back-up data from the EEPROM cannot be read or the data that has been read has a fault
+Causes;The EEPROM is faulty. The ADF controller PCB is faulty.
+Remedy;
+Code;E421-0001
+Description;The back-up data cannot be written to the EEPROM, or the data that has been written has a fault
+Causes;The EEPROM has a fault. The ADF controller PCB has a fault.
+Remedy;
+Code;E422-0001
+Description;"While the ADF is in standby, the communication with its host machine is disrupted for 5 sec or more; or, while the ADF is in operation, the communication with its host machine is disrupted for 0.5 sec or more"
+Causes;The IPC communication is faulty. The communication line has an open circuit. The ADF controller PCB is faulty.
+Remedy;
+Code;E500-0000
+Description;The communication between the copier and the finisher is disrupted and is not corrected for 5 sec or less
+Causes;The copier harness is faulty. (disconnected connector, open circuit) The finisher controller PCB or the copier’s DC controller PCB is faulty.
+Remedy;
+Code;E501-0001
+Description;The communication between the finisher controller PCB and the puncher drive PCB is disrupted
+Causes;The finisher controller PCB is faulty. The puncher drive PCB is faulty.
+Remedy;
+Code;E505-0001
+Description;When the main power is turned on, the checksum of the finisher controller PCB has a fault
+Causes;The EEPROM is faulty. The finisher controller PCB is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E505-0002
+Description;When the main power is turned on, the checksum of the puncher driverPCB has a fault
+Causes;The EEPROM is faulty. The finisher controller PCB is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E510-0001
+Description;The feeding roller does not leave home position when the feed motor is driven for 2 sec
+Causes;The feed motor (M1) is faulty. The setting roller home position sensor is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E510-0002
+Description;The feeding roller does not return to home position when the feed motor is driven for 2 sec
+Causes;The feed motor (M1) is faulty. The setting roller home position sensor is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E514-0000
+Description;"At the start of the motor CW operation, the stack handling motor (M2) may be driven for a specific number of rotations; however, the stack delivery lever home position sensor (S8) does not go ON"
+Causes;The stack handling motor (M2) is faulty. The stack delivery lever home position sensor (S8) is faulty, the connector is disconnected, or an open circuit exits. The stack handling motor (M2) relay harness is faulty. The return roller is faulty
+Remedy;
+Code;E514-0001
+Description;The delivery belt does not leave home position when the stack delivery motor is driven for 3 sec
+Causes;The stack delivery motor (M3) is faulty. The delivery belt home position motor (PI7) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E514-0002
+Description;The delivery belt does not return to home position when the stack delivery motor is driven for 3 sec
+Causes;The stack delivery motor (M3) is faulty. The delivery belt home position motor (PI7) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E530-0000
+Description;The alignment motor (M4) is driven for a specific number of rotations, but the aligning plate home position sensor (S7) does not go ON. The alignment motor (M4) is driven for a specific number of rotations, but the aligning plate home position sensor (S7) does not go OFF
+Causes;The rear alignment motor (M4) is faulty. The rear aligning plate home position sensor (S7) is faulty. The rear alignment motor relay harness is faulty. The rear aligning plate is subjected to an excess load.
+Remedy;
+Code;E530-0001
+Description;The aligning plate (rear) does not leave home position when the alignment motor (rear) is driven for 3 sec
+Causes;"The alignment motor (rear; M5) is faulty. The aligning plate home position sensor (rear; PI5) is faulty. The finisher controller PCB is faulty."
+Remedy;
+Code;E530-0002
+Description;The aligning plate (rear) does not return to home position when the alignment motor (rear) is driven for 3 sec
+Causes;"The alignment motor (rear; M5) is faulty. The aligning plate home position sensor (rear; PI5) is faulty. The finisher controller PCB is faulty."
+Remedy;
+Code;E531-0000
+Description;The stapling home position sensor (S16) does not go off 0.5 sec after the stapler motor is rotated CW. The stapling home position sensor (S16) dos not go ON with 0.5 sec after the stapler motor is rotated CW and, thereafter, the sensor does not go ON within 0.5 sec after the motor is rotated in reverse
+Causes;The stapler motor (M6) is faulty. The stapling home position sensor (S16) is faulty. The stapler harness is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E531-0001
+Description;The stapler does no leave home position when the stapler/folder motor is driven for 1.5 sec
+Causes;The stapler home position sensor (PI19) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI4) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E531-0002
+Description;The stapler does not return to home position when the stapler/folder motor is driven for 1.5 sec
+Causes;The stapler home position sensor (PI19) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI4) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E531-0003
+Description;The clock signal is disrupted for 1 sec or more while the stapler/folder motor is driven
+Causes;The stapler home position sensor (PI19) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI4) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E532-0001
+Description;The stapler unit does not leave home position when the stapler slide motor is driven for 4.5 sec
+Causes;The slide home position sensor PI180 is faulty. The stapler slide motor (M8) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E532-0002
+Description;The stapler unit does not return to home position when the stapler slide motor is driven for 4.5 sec
+Causes;The slide home position sensor PI180 is faulty. The stapler slide motor (M8) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E537-0000
+Description;The aligning plate home position sensor (S6) does not go ON when the front alignment motor (M3) is driven for a specific number of rotations. The aligning plate home position sensor (S6) does not go OFF when the front alignment motor (M3) is driven for a specific number of rotations
+Causes;The front alignment motor (M3) is faulty. The front aligning plate home position sensor (S6) is faulty. The front alignment motor relay harness is faulty. The front aligning plate is subjected to an excess load.
+Remedy;
+Code;E537-0001
+Description;The aligning plate (front) does not leave home position when the alignment motor (front) is driven for 3 sec
+Causes;"The alignment motor (front; M4) is faulty. The aligning plate home position sensor (front; PI4) is faulty. The finisher controller PCB is faulty."
+Remedy;
+Code;E537-0002
+Description;The aligning plate (front) does not return to home potion when the alignment motor (front) is driven for 3 sec
+Causes;"The alignment motor (front; M4) is faulty. The aligning plate home position sensor (front; PI4) is faulty. The finisher controller PCB is faulty."
+Remedy;
+Code;E540-0001
+Description;The paper surface sensor remains unchanged 10 sec after the tray ascent/ descent motor is driven
+Causes;The paper surface sensor (PI9) is faulty. The tray ascent/descent motor clock sensor (PI17) is faulty. The tray upper limit sensor (PI15) is faulty. The tray ascent/descent motor (M6) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E540-0002
+Description;The tray upper sensor goes ON while the tray is moving up.
+Causes;The paper surface sensor (PI9) is faulty. The tray ascent/descent motor clock sensor (PI17) is faulty. The tray upper limit sensor (PI15) is faulty. The tray ascent/descent motor (M6) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E540-0003
+Description;The clock for the clock sensor is disrupted for 10 sec or more while the tray ascent/descent motor is driven
+Causes;The paper surface sensor (PI9) is faulty. The tray ascent/descent motor clock sensor (PI17) is faulty. The tray upper limit sensor (PI15) is faulty. The tray ascent/descent motor (M6) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E577-0000
+Description;The return roller does not reach home position when the delivery motor (Ml) has been driven as much as will move it to the return roller home position sensor (S3)
+Causes;The delivery motor (M1) or the finisher controller PCB is faulty. The return roller home position sensor (S3) is faulty, the harness connector is disconnected, or an open circuit exits. The delivery motor relay harness is faulty. The return roller is faulty.
+Remedy;
+Code;E577-0001
+Description;The paddle does not leave home position when the paddle motor is driven for 2 sec or more
+Causes;The paddle home position sensor (PI2) is faulty. The stack ascent/descent home point sensor Pixx0 is faulty. The paddle motor (M2) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E577-0002
+Description;The paddle does not return to home position when the paddle motor is driven for 2 sec or more
+Causes;The paddle home position sensor (PI2) is faulty. The stack ascent/descent home point sensor Pixx0 is faulty. The paddle motor (M2) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E577-0003
+Description;The stack ascent/descent guide does not leave home position when the paddle motor is driven for 2 sec or more
+Causes;The paddle home position sensor (PI2) is faulty. The stack ascent/descent home point sensor Pixx0 is faulty. The paddle motor (M2) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E577-0004
+Description;The stack ascent/descent guide does not return to home position when the paddle motor is driven for 2 sec or more
+Causes;The paddle home position sensor (PI2) is faulty. The stack ascent/descent home point sensor Pixx0 is faulty. The paddle motor (M2) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E580-0000
+Description;"The delivery tray upper limit sensor (S13) goes ON while the delivery tray ascent/descent motor (M5) is in operation.
+ The clock signal of the delivery tray ascent/descent motor clock sensor (S9) is not detected 15 times or more within 0.8 sec while the delivery tray ascent/ descent motor (M5) is in operation.
+ The delivery tray paper height sensor (S10) does not go ON 4 sec after the delivery tray ascent/descent motor (M5) starts to move up.
+ The delivery tray paper height sensor (S10) does not go OFF 4 sec after the delivery tray ascent/descent motor (M5) starts to move down"
+Causes;The delivery tray ascent/descent motor (M5) is faulty. The delivery tray paper height sensor (S10) is faulty, the harness is disconnected, or an open circuit exits. The delivery tray ascent/descent motor lock sensor (S9) is faulty, the connector is disconnected, or an open circuit exits. The delivery tray ascent/descent motor is subjected to an excess load. The finisher controller PCB is faulty.
+Remedy;
+Code;E585-0000
+Description;"At the start of the motor CCW operation, the stack handling motor (M2) may be driven for a specific number of rotations; however, the stack delivery lever home position sensor (S8) does not go ON"
+Causes;The stack handling motor (M2) is faulty. The stack delivery lever home position sensor (S8) is faulty, the connector is disconnected, or an open circuit exits. The stack handling motor (M2) relay harness is faulty. The return roller is faulty.
+Remedy;
+Code;E590-0001
+Description;The puncher does not return to home position when the puncher motor is driven for 250 msec
+Causes;The puncher home position sensor (PI1P) is faulty. The puncher motor (M1P) is faulty. The puncher motor clock sensor (PI3P) is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E590-0002
+Description;The clock from the puncher motor clock sensor is disrupted for 60 msec or more when the puncher motor is driven
+Causes;The puncher home position sensor (PI1P) is faulty. The puncher motor (M1P) is faulty. The puncher motor clock sensor (PI3P) is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E592-0001 ... E592-0005
+Description;"In the course of sensor output automatic adjustment, the light-receiving voltage is 2.5 V or less even when the light-emitting voltage is set to 4.4 V. In the course of output automatic adjustment, the light-receiving voltage is 2.5 V or more even when the light-emitting voltage is set to 0 V. In the course of sensor output automatic adjustment, the light-emitting voltage is set to 4.4 V or more
+ Horizontal registration sensor"
+Causes;The horizontal registration sensor is faulty. The puncher waste sensor is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E592-0006
+Description;"In the course of sensor output automatic adjustment, the light-receiving voltage is 2.5 V or less even when the light-emitting voltage is set to 4.4 V. In the course of output automatic adjustment, the light-receiving voltage is 2.5 V or more even when the light-emitting voltage is set to 0 V. In the course of sensor output automatic adjustment, the light-emitting voltage is set to 4.4 V or more
+ Puncher waste full sensor"
+Causes;The horizontal registration sensor is faulty. The puncher waste sensor is faulty. The puncher driver PCB is faulty.
+Remedy;
+Code;E593-0001
+Description;The puncher not leave home position when the puncher shift motor is driven for 1 sec
+Causes;The horizontal registration home position sensor (PI2P) is faulty. The puncher shift motor (M2P) is faulty. The puncher drive PCB is faulty
+Remedy;
+Code;E593-0002
+Description;The puncher does not return to home position when the puncher shift motor is driven for 1 sec
+Causes;The horizontal registration home position sensor (PI2P) is faulty. The puncher shift motor (M2P) is faulty. The puncher drive PCB is faulty
+Remedy;
+Code;E5F1-0001
+Description;The folding roller does not leave home position when the stapler/folder motor is driven for 1.5 sec
+Causes;The folding roller home position sensor (PI12) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI14) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E5F1-0002
+Description;The folding roller does to return to home position when the stapler/folder motor is driven for 3.5 sec or more
+Causes;The folding roller home position sensor (PI12) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI14) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E5F1-0003
+Description;The clock is disrupted for 1 sec or more while the stapler/folder motor is driven
+Causes;The folding roller home position sensor (PI12) is faulty. The stapler/folder motor (M7) is faulty. The stapler/folder clock sensor (PI14) is faulty. The finisher controller PCB is faulty.
+Remedy;
+Code;E601-0000
+Description;When an image is transferred between the main controller PCB and the HDD, the main controller PCB detects a fault in control information
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The DC controller PCB is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and the cable between the connector J1017 on the main controller PCB and the connector J1551 on the HDD normal? YES: End. NO: Correct the connection/cable. 2. HDD, Main controller PCB Try replacing the HDD, and download the system software. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E601-0001
+Description;When an image is transferred between the main controller PCB and the DC controller PCB, the DC controller PCB detects a fault in the control information
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The DC controller PCB is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and cable between the connector J122 on the DC controller PCB and the connector J1015 on the main controller PCB normal? NO: Correct the connection/cable. 2. DC controller PCB, Main controller PCB Try replacing the DC controller PCB. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E602-0001
+Description;A mounting fault of the HDD is detected when the HDD is started up from the BOOT ROM
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and the cable between connector J1025 of the main controller PCB and the connector J2005 of the HDD normal? NO: Correct the connector/cable. 2. System software Try re-installing the system software. Is the problem corrected? YES: End. 3. HDD, Main controller PCB Try replacing the HDD, and download the system software. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E602-0002
+Description;A data read fault of the HDD is detected when the HDD is started up from the BOOT ROM
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and the cable between connector J1025 of the main controller PCB and the connector J2005 of the HDD normal? NO: Correct the connector/cable. 2. System software Try re-installing the system software. Is the problem corrected? YES: End. 3. HDD, Main controller PCB Try replacing the HDD, and download the system software. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E604-0000
+Description;A fault is detected in the image memory
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The main controller PCB is faulty.
+Remedy;
+Code;E605-0001
+Description;A fault is detected in the battery for the image memory
+Causes;The wiring is faulty (short circuit, open circuit). The HDD is faulty. The main controller PCB is faulty.
+Remedy;
+Code;E606-0001
+Description;A mounting fault of the HDD is detected when the HDD is started up from the BOOT ROM
+Causes;The HDD is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and cable normal between the connector J1025 on the main controller PCB and the connector J2005 of the HDD? NO: Correct the connection and the cable. 2. System software Try re-installing the system software. Is the problem corrected? YES: End. 3. HDD, Main controller PCB Try replacing the HDD and downloading the system software. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E674-0000
+Description;A faulty occurs in the communication between the fax PCB and the main controller PCB
+Causes;The wiring is faulty (short circuit, open circuit). The fax PCB is faulty. The main controller PCB is faulty.
+Remedy;1. Wiring Are the connection and the cable between the connector J 1005 on the main controller PCB and the connector J31 on the FAX PCB normal? NO: Correct the connection and the cable. 2. FAX PCB, Main controller PCB Try replacing the FAX PCB. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E677-0001
+Description;A fault occurs it the combination between any of the printer boards (accessories) and the main controller PCB
+Causes;Any of the printer boards (accessories) is faulty. The main controller PCB is faulty.
+Remedy;1. Connector Is the printer board (accessory) connected correctly? NO: Correct the connection. 2. Printer board, Main controller PCB Try replacing the printer board. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E710-0001
+Description;When the main power is turned on, the communication IC (IPC) on the reader controller PCB cannot be initialized
+Causes;The DC controller PCB is faulty. The reader controller PCB is faulty. The machine controller PCB is faulty.
+Remedy;Turn off and then on the main power switch. Is the problem corrected? YES: End. NO: If E7100001, replace the reader controller PCB. If E710-002, replace the DC controller PCB. If E71-0003, replace the main controller PCB.
+Code;E710-0002
+Description;When the main power is turned on, the communication IC (IPC) on the DC controller PCB cannot be initialized
+Causes;The DC controller PCB is faulty. The reader controller PCB is faulty. The machine controller PCB is faulty.
+Remedy;Turn off and then on the main power switch. Is the problem corrected? YES: End. NO: If E7100001, replace the reader controller PCB. If E710-002, replace the DC controller PCB. If E71-0003, replace the main controller PCB.
+Code;E710-0003
+Description;When the main power is trend on, the communication IC (IPC) on the main controller PCB cannot be initialized
+Causes;The DC controller PCB is faulty. The reader controller PCB is faulty. The machine controller PCB is faulty.
+Remedy;Turn off and then on the main power switch. Is the problem corrected? YES: End. NO: If E7100001, replace the reader controller PCB. If E710-002, replace the DC controller PCB. If E71-0003, replace the main controller PCB.
+Code;E711-0001
+Description;Data is written to the error register of the communication IC (IPC) on the reader controller PCB four times or more within 1.5 sec
+Causes;The connector has poor connection. The ADF controller PCB is faulty. The finisher controller PCB is faulty. The DA unit PCB is faulty. The card reader PCB is faulty.
+Remedy;Connector, ADF controller PCB Is the interface cable between the ADF controller PCB an the reader controller PCB normal? NO: Correct the cable. YES: Replace the ADF controller PCB.
+Code;E711-0002
+Description;Data is written to the error register of the communication IC (IPC) on the DC controller PCB four times or more within 2 sec
+Causes;The connector has poor connection. The ADF controller PCB is faulty. The finisher controller PCB is faulty. The DA unit PCB is faulty. The card reader PCB is faulty.
+Remedy;connector, Finisher controller PCB Is the interface cable between the finisher controller PCB and the DC controller PCB normal? NO: Correct the cable. YES: Replace the finisher controller PCB.
+Code;E711-0003
+Description;Data is written to the error register of the communication IC (IPC) on the main controller PCB four times or more within 2 sec
+Causes;The connector has poor connection. The ADF controller PCB is faulty. The finisher controller PCB is faulty. The DA unit PCB is faulty. The card reader PCB is faulty.
+Remedy;Connector, DA unit PCB Is the interface cable between the DA unit PCB and the main controller PCB normal? NO: Correct the cable. YES: Replace the NE controller PCB.
+Code;E712-0001
+Description;The communication is not resumed 3 sec or more after data has been written to the error register of the communication IC (IPC) on the ADF controller PCB
+Causes;The connect has poor connection. The main power supply PCB is faulty. The ADF controller PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Connector Is the interface able between the ADF controller PCB and the reader controller PCB normal? NO: Correct the cable. 2. Main power supply PCB While the ADF is in operation, does the voltage between J203-2 (+) and J203-1 (-) on the main power supply PCB change from 0 to about 24 V? NO: Replace the main power supply PCB. 3. ADF controller PCB, Reader controller PCB Try replacing the ADF controller PCB. Is the problem corrected? YES: End. NO: Replace the rear controller PCB.
+Code;E712-0002
+Description;The transmission bit is not enabled 10 sec or more in the sync register of the communication IC (IPC) on e reader controller PCB
+Causes;The connect has poor connection. The main power supply PCB is faulty. The ADF controller PCB is faulty. The reader controller PCB is faulty.
+Remedy;1. Connector Is the interface able between the ADF controller PCB and the reader controller PCB normal? NO: Correct the cable. 2. Main power supply PCB While the ADF is in operation, does the voltage between J203-2 (+) and J203-1 (-) on the main power supply PCB change from 0 to about 24 V? NO: Replace the main power supply PCB. 3. ADF controller PCB, Reader controller PCB Try replacing the ADF controller PCB. Is the problem corrected? YES: End. NO: Replace the rear controller PCB.
+Code;E713-0000
+Description;The communication with the finisher is not resumed 3 sec or more after it is disrupted
+Causes;The connector has poor connection. The option power supply PCB is faulty. The finisher controller PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Is the wiring between the finisher controller PCB and the options power supply PCB and between the options power supply PCB and the DC controller PCB normal? NO: Correct the wiring. 2. Options power supply PCB Is the voltage between HJ701-6 (+) and J701-7 (-) on the options power supply PCB about 24 V? NO: Replace the options power supply PCB. 3. Finisher controller PCB, DC controller PCB Try replacing the finisher controller PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E716-0000
+Description;The ID signal is not detected within a specific period of time after the presence of a pedestal is detected
+Causes;The connector has poor connection. The main power supply PCB is faulty. The pedestal controller PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Is the wiring between the pedestal controller PCB and the main power supply PCB and between the main power supply PCB and the DC controller PCB normal? NO: Correct the wiring. 2. Main power supply PCB Is the voltage between J206-2 (+) and J206-1 (-) on the main power supply PCB about 24 V? NO: Replace the main power supply PCB. 3. Pedestal controller PCB, DC controller PCB Try replacing the pedestal controller PCB. Is the problem corrected? YES: End. NO: Replace the DC controller.
+Code;E717-0001
+Description;The communication with the DA unit is not resumed 3 sec or more after it is disrupted.
+Causes;The wiring is faulty (short circuit, open circuit). The DA unit PCB is faulty. The main controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;1. Connector Is the connection between the DA unit PCB and the main controller PCB secure? NO: Correct the connection. 2. DA unit PCB, main controller PCB Try replacing the DA unit PCB. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E719-0000
+Description;Erroneous communication with card reader (serial communication)
+Causes;
+Remedy;
+Code;E719-0001
+Description;The communication between the Card Reader-C1 or the coin vendor and the main controller PCB is disrupted
+Causes;The wiring is faulty (short circuit, open circuit). The Card Reader-C1 is faulty. The coin vendor is faulty. The main controller PCB is faulty. Caution To clear the error, execute the following in service mode: COPIER>FUNCTION>CLEAR>ERR.
+Remedy;1. Connector Is the Cad Reader-C1 or the coin vendor connected securely? NO: Connect it securely. 2. Coin vendor, Main controller PCB Try replacing the Card Reader-C1 or the coin vendor. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E719-0002
+Description;Erroneous communication with coin vender (serial communication)
+Causes;
+Remedy;
+Code;E732-0001
+Description;A fault is detected by the main controller PCB in the communication between reader controller PCB and the main controller PCB
+Causes;The connector has poor connection. The reader controller PCB is faulty.
+Remedy;1. Connector, Reader controller PCB Is the connection between the connector J1014 on the main controller PCB and the connector J409 on the reader controller PCB normal? NO: Correct the connection. YES: Replace the reader controller PCB.
+Code;E733-0001
+Description;A fault is detected by the main controller PCB in the communication between the DC controller PCB and the main controller PCB
+Causes;The connector has poor connection. The DC controller PCB is faulty.
+Remedy;1. Connector, DC controller PCB Is the connection between the connector J1015 on the main controller PCB and the conductor J316 on the DC controlled PCB normal? NO: Correct the connection. YES: Replace the DC controller PCB.
+Code;E737-0000
+Description;During self diagnosis at power-on, the DRAM check finds a fault in the main controller PCB
+Causes;The connection of the IC socket is faulty. The main controller PCB is faulty.
+Remedy;1. Connection Is the DRAM fitted to the socket securely? NO: Fit the DRAM securely. 2. DRAM, Main controller PCB Try replacing the DRAM. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E740-0001
+Description;At power-on, the LAN card has a fault
+Causes;The LAN card is faulty. The main controller PCB is faulty.
+Remedy;1. Connector Is the connection between the LAN card and the main controller PCB normal? NO: Correct the connection. 2. LAN card, Main controller PCB Try replacing the LAN card. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E740-0002
+Description;The MAC address has a fault
+Causes;The LAN card is faulty. The main controller PCB is faulty.
+Remedy;1. Connector Is the connection between the LAN card and the main controller PCB normal? NO: Correct the connection. 2. LAN card, Main controller PCB Try replacing the LAN card. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E740-0003
+Description;The LAN card cannot be read
+Causes;The LAN card is faulty. The main controller PCB is faulty.
+Remedy;1. Connector Is the connection between the LAN card and the main controller PCB normal? NO: Correct the connection. 2. LAN card, Main controller PCB Try replacing the LAN card. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E741-0000
+Description;The PCI bus has a fault
+Causes;The PCI bus has poor connection. The main controller PCB is faulty.
+Remedy;Each PCI slot may be disabled in service mode to prevent the error: BOARD>PCI1-OFF through PCI3-OFF. 1. Board Is the connection between the relay board and the main controller PCB normal? NO: Correct the connection. 2. Relay board, Main Controller PCB Try replacing the relay board. Is the problem corrected? YES: End. NO: Replace the main controller PCB.
+Code;E743-0000
+Description;The reader controller PCB detects a fault in the communication between the main controller PCB and the reader controller PCB
+Causes;The connector has poor connection. The main controller PCB has a fault.
+Remedy;1. Connector, Main controller PCB Is the connection between the connector J1014 on the main controller PCB and the connector J409 on the reader controller PCB normal? NO: Correct the connection. YES: Replace the main controller PCB.
+Code;E744-0000
+Description;The BootROM on the main controller PCB and the system software are for different models or are of different types
+Causes;The BootROM is not mounted correctly, or a fault occurred during downloading or when downloading the system software.
+Remedy;Downloading (system software) Check the types of the BootROM and the system software, and download system software of the correct type.
+Code;E803-0000
+Description;The 24V output from the composite main power supply PCB is absent for 1 sec or more
+Causes;The wiring is faulty (short circuit, open circuit). The composite power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connectors Are the connectors J204 on the main power supply PCB and the connector J300 on the DC controller PCB connected securely? NO: Connect the connectors securely. 2. Main power supply PCB Is 24 V supplied by the main power supply PCB (J204) to the DC controller PCB (J300)? (J204-5 <-> J300-5: OVU3, J204-6 <-> J300-6: OVU3, J204-7 <-> J300-7: 24VU3, J204-8 <-> J300-8: 24VU3) NO: Replace the main power supply PCB. YES: Replace the DC controller PCB.
+Code;E805-0001
+Description;"The clock signal is absent for 5 sec or more after the fan drive signal has been generated. The detail codes of the fans in question are as follows:
+ developing fan (FM1)"
+Causes;The fan wiring is faulty (short circuit, open circuit). The fan is faulty. The DC controller PCB is faulty.
+Remedy;1. Foreign matter Is there foreign matter that prevents the rotation of the fan? YES: Remove the foreign matter. 2. Wiring, Connector Are the wiring and connector of the fan normal? Developing fan (FM1): DC controller PCB (J302B) Fixing fan (FM2): DC controller PCB (J308B) Curl reducing fan (FM4): DC controller PCB (J311B) Curl reducing fan (FM5): DC controller PCB (J311B) Electrical unit fan (FM3): main controller PCB (J1028) NO: Correct the wiring and the connection. 3. Fan, DC controller PCB Try replacing the fan. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E805-0002
+Description;"The clock signal is absent for 5 sec or more after the fan drive signal has been generated. The detail codes of the fans in question are as follows:
+ fixing fan (FM2)"
+Causes;The fan wiring is faulty (short circuit, open circuit). The fan is faulty. The DC controller PCB is faulty.
+Remedy;1. Foreign matter Is there foreign matter that prevents the rotation of the fan? YES: Remove the foreign matter. 2. Wiring, Connector Are the wiring and connector of the fan normal? Developing fan (FM1): DC controller PCB (J302B) Fixing fan (FM2): DC controller PCB (J308B) Curl reducing fan (FM4): DC controller PCB (J311B) Curl reducing fan (FM5): DC controller PCB (J311B) Electrical unit fan (FM3): main controller PCB (J1028) NO: Correct the wiring and the connection. 3. Fan, DC controller PCB Try replacing the fan. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E805-0003
+Description;"The clock signal is absent for 5 sec or more after the fan drive signal has been generated. The detail codes of the fans in question are as follows:
+ curl reducing fan (FM4)"
+Causes;The fan wiring is faulty (short circuit, open circuit). The fan is faulty. The DC controller PCB is faulty.
+Remedy;1. Foreign matter Is there foreign matter that prevents the rotation of the fan? YES: Remove the foreign matter. 2. Wiring, Connector Are the wiring and connector of the fan normal? Developing fan (FM1): DC controller PCB (J302B) Fixing fan (FM2): DC controller PCB (J308B) Curl reducing fan (FM4): DC controller PCB (J311B) Curl reducing fan (FM5): DC controller PCB (J311B) Electrical unit fan (FM3): main controller PCB (J1028) NO: Correct the wiring and the connection. 3. Fan, DC controller PCB Try replacing the fan. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E805-0004
+Description;"The clock signal is absent for 5 sec or more after the fan drive signal has been generated. The detail codes of the fans in question are as follows:
+curl reducing fan (FM5)"
+Causes;The fan wiring is faulty (short circuit, open circuit). The fan is faulty. The DC controller PCB is faulty.
+Remedy;1. Foreign matter Is there foreign matter that prevents the rotation of the fan? YES: Remove the foreign matter. 2. Wiring, Connector Are the wiring and connector of the fan normal? Developing fan (FM1): DC controller PCB (J302B) Fixing fan (FM2): DC controller PCB (J308B) Curl reducing fan (FM4): DC controller PCB (J311B) Curl reducing fan (FM5): DC controller PCB (J311B) Electrical unit fan (FM3): main controller PCB (J1028) NO: Correct the wiring and the connection. 3. Fan, DC controller PCB Try replacing the fan. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E805-0005
+Description;"The clock signal is absent for 5 sec or more after the fan drive signal has been generated. The detail codes of the fans in question are as follows:
+ electrical unit fan (FM3)"
+Causes;The fan wiring is faulty (short circuit, open circuit). The fan is faulty. The DC controller PCB is faulty.
+Remedy;1. Foreign matter Is there foreign matter that prevents the rotation of the fan? YES: Remove the foreign matter. 2. Wiring, Connector Are the wiring and connector of the fan normal? Developing fan (FM1): DC controller PCB (J302B) Fixing fan (FM2): DC controller PCB (J308B) Curl reducing fan (FM4): DC controller PCB (J311B) Curl reducing fan (FM5): DC controller PCB (J311B) Electrical unit fan (FM3): main controller PCB (J1028) NO: Correct the wiring and the connection. 3. Fan, DC controller PCB Try replacing the fan. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E901-0000
+Description;The motor ready signal does not arrive within 1.3 sec after the pedestal main motor drive signal is generated
+Causes;The connector has poor connector. The pedestal main motor is faulty. The main power supply PCB is faulty. The pedestal controller PCB is faulty. The DC controller PCB is faulty.
+Remedy;1. Connector Is the wiring between the pedestal controller PCB and the main power supply PCB and between the main power supply PCB and the DC controller PCB normal? NO: Correct the wiring. 2. Main power supply PCB Is the voltage between J206-2 (+) and J206-1 (-) on the main power supply PCB about 24 V? NO: Replace the main power supply PCB. 3. Pedestal main motor Try replacing the pedestal main motor. Is the problem corrected? YES: End. 4. Pedestal controller PCB, DC controller PCB Try replacing the pedestal controller PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.

@@ -1,0 +1,252 @@
+Code;01
+Display;ERROR 01 MAIN ROM
+Description;• The control ROM is in abnormal conditions.
+Remedy;1) Replace the main PCB with a new one.
+Code;02
+Display;ERROR 02 MAIN RAM
+Description;• The control RAM is in abnormal conditions.
+Remedy;1) Replace the main PCB with a new one.
+Code;03
+Display;ERROR 03 POWER +5V POWER +35V
+Description;• The +5V (+35V) voltage is in abnormal conditions.
+Remedy;1) Replace the power supply or the main PCB with a new one.
+Code;04
+Display;ERROR 04 FLASH SAVE
+Description;• The Flash memory is in abnormal conditions.
+Remedy;1) Replace the main PCB with a new one.
+Code;05
+Display;ERROR 05 FPGA ss
+Description;• FPGA configuration error
+Remedy;1) Replace the main PCB with a new one.
+Code;06
+Display;ERROR 06 UHC 01 nnnn
+Description;Band memory configured incorrectly. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 02 nnnn
+Description;. UHC status ready turned OFF. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 03 nnnn
+Description;. Waiting for UHC bus busy cancellation. 5sec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 04 nnnn
+Description;. Waiting for UHC status Read. 5sec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 05 nnnn
+Description;. Waiting for UHC response. 5sec timeout. n=UHC No.1-8.
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 06 nnnn
+Description;. UHC status: Receiving FIFO full. Waiting for cancellation. 10sec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 07 nnnn
+Description;. UHC status: Waiting for band memory clear. 10msec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 08 nnnn
+Description;. UHC status: Waiting for head plotting area cancellation. 3sec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 09 nnnn
+Description;. UHC current coordinate setting trouble. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 10 nnnn
+Description;. Waiting for UHC plotting data write. 3sec timeout. n=UHC No.1-8
+Remedy;1) Check that UHCII PCB is inserted securely in the main PCB. 2) Turn ON/OFF the plotter and check the problem disappears. 3) Upgrade the firmware.
+Code;06
+Display;ERROR 06 UHC 11 nnnn
+Description;• Defective output of head voltage, or return of head voltage, A/D data is not available. n=UHC No.1 to 8
+Remedy;1) Check connector connection for MAINII board. 2) Check connector connection for UHCII board. 3) Check connector connection r for SLIDER-Relay board. 4) Check connector connection for SLIDER board 5) If 1 to 4 are not effective, replace one of the board.
+Code;07
+Display;ERROR 07 DFC 01
+Description;• Transfer size trouble. L1=F/W request size. L2=DFC transfer size.
+Remedy;1) Check that UHC PCB is inserted securely in the main PCB. 2) Turn power ON and OFF and check the problem disappears. 3) Upgrade the firmware.
+Code;07
+Display;ERROR 07 DFC 02
+Description;• Waiting for control command to be issued. 5sec timeout.
+Remedy;1) Check that UHC PCB is inserted securely in the main PCB. 2) Turn power ON and OFF and check the problem disappears. 3) Upgrade the firmware.
+Code;10
+Display;ERROR 10 COMMAND
+Description;• Command code other than MRL has been received.
+Remedy;1) Check connection of 1394 board or replace the board.
+Code;11
+Display;ERROR 11 PARAMETER
+Description;• Parameter that has not defined in MRL has been received.
+Remedy;1) Check the connection or replace IEEE1394 PCB.
+Code;12
+Display;ERROR 12 OFF SCALE
+Description;• Effective plotting range has been exceeded.
+Remedy;1) Set the plotting range to the plotter specification.
+Code;13
+Display;ERROR 13 MEMORY DATA
+Description;• For memory mode, each mechanical has different resolution or the same color has been specified for different mechanical.
+Remedy;1) Make sure that each mechanical has the same resolution or the same color has not been specified for different mechanical.
+Code;20
+Display;ERROR 20 I/F BOARD
+Description;• A error occurred in communication between the main PCB and the interface board.
+Remedy;1) Replace the I/F PCB with a new one. 2) Replace the main PCB with a new one.
+Code;23
+Display;ERROR 23 HOST I/F
+Description;• A time limit exceeded error occurred in communication between the host computer and the interface board.
+Remedy;1) Is the cable loose? 2) Has an error occurred on the host computer? 3) Is the application being used running normally?
+Code;24
+Display;ERROR 24 I/F INITIAL
+Description;• The I/F board is in abnormal conditions.
+Remedy;1) Replace the I/F PCBwith a new one. 2) Replace the main PCB with a new one. 3) Replace the I/F connection board with a new one.
+Code;30
+Display;ERROR 30 OPERATION
+Description;• Improper operation has been performed.
+Remedy;1) Indicate the improper operation.
+Code;34
+Display;ERROR 34 DATA REMAIN
+Description;• Operating condition is tried to be changed when data that has not yet been plotted remains.
+Remedy;1) Explain that any of the operating conditions cannot be changed if data that have not been plotted remains.
+Code;35
+Display;ERROR 35 MARK DETECT
+Description;• Register marks detection failed.
+Remedy;1) Re-detect register marks. If this fails again, execute “Paper Sensor” under “#TEST” and check the register mark sensors. If necessary, replace the register mark sensors.
+Code;36
+Display;ERROR 36 HEAD GAP
+Description;• Head gap is too small.
+Remedy;1) Turn on the power. 2) Adjust the area sensor. 3) Replace the area sensor
+Code;40
+Display;ERROR 40 MOTOR X
+Description;• The X-axis motor has been overloaded.
+Remedy;1) Turn on the power. 2) Replace X axis motor. 3) Replace a main PCB.
+Code;41
+Display;ERROR 41 MOTOR Y
+Description;• The Y-axis motor has been overloaded. • The brush of motor is in abnormal conditions.
+Remedy;1) Turn on the power. 2) Replace Y axis motor. 3) Replace a main PCB.
+Code;42
+Display;ERROR 42 X CURRENT
+Description;• Overcurrent error has arisen on the X-axis motor .
+Remedy;1) Turn on the power. 2) Replace X axis motor. 3) Replace a main PCB.
+Code;43
+Display;ERROR 43 Y CURRENT
+Description;• The slider is stopped with an obstacle. • Overcurrent error has arisen on the Y-axis motor
+Remedy;1) Remove the obstacle. 2) Turn on the power. 3) Replace Y axis motor. 4) Replace a main PCB.
+Code;44
+Display;ERROR 44 SCAN RANGE
+Description;• Out-of-range scan was attempted.
+Remedy;1) Report the problem to Development Division. Upgrade the firmware later.
+Code;50
+Display;ERROR 50 X ORIGIN
+Description;• X-axis origin detection has not been successfully carried out.
+Remedy;1) Replace a X origin sensor. 2) Replace a X axis motor.
+Code;51
+Display;ERROR 51 Y ORIGIN
+Description;• Y-axis origin detection has not been successfully carried out.
+Remedy;1) Replace a Y axis motor. 2) Replace a Y origin sensor. 3) Replace a IO PCB. 4) Replace a main PCB.
+Code;53
+Display;ERROR 53 STEP ORIGIN
+Description;• Capping or wiping origin detection failed.
+Remedy;1) Check and correct the capping or wiping mechanism. 2) Replace the capping or wiping origin sensor.
+Code;60
+Display;ERROR 60 FLASHING nnnn
+Description;. Flashing timeout. n=UHC No.1-8
+Remedy;1) Replace the slider board. 2) Replace the head FPC cable.
+Code;61
+Display;ERROR 61 TEMP ss nnnnnnnn
+Description;. Head control temperature trouble. n=UHC No.1-8
+Remedy;1) Ink level is too low. Ambient temperature is too high (remove the cause). 2) Replace the slider board. 3) Replace the head FPC cable.
+Code;70
+Display;ERROR 70 WATER LACK
+Description;• Hot water tank level is too low.
+Remedy;1) Add water.
+Code;71
+Display;ERROR 71 WATER DEVICE ss
+Description;• ss=01: Hot water tank temperature control problem. • ss=02: Hot water tank line problem. • ss=03: Head temperature problem.
+Remedy;1) Replace the water heater. 2) Correct the hot water line. 3) Replace the head.
+Code;72
+Display;ERROR 72 UV POWER OFF (Copper-iron and Inverter type power supply unit )
+Description;• The breaker of UV device is off.  • The UV interface cable is not connected to the device.
+Remedy;1) Turn on the breaker of UV device.  1) The UV interface cable connects to the device.
+Code;72
+Display;ERROR 72 UV POWER OFF (Inverter type power supply unit )
+Description;• The radiator fan of UV irradiation device is defective.  • The UV lamp control cable is broken.
+Remedy;1) Replace the UV irradiation device. 1) Replace the UV lamp control cable.
+Code;73
+Display;ERROR 73 UV DEVICE 01 ERROR 73 UV DEVICE 02
+Description;• 01: The shutter is not opened. • 02: The shutter is not closed. • The shutter switch for open/ close is defective.  • UV lamp control cable has broken of the wire.
+Remedy;1) Replace the UV irradiation device with a new one.  1) Replace the UV lamp control cable with a new one.
+Code;73
+Display;ERROR 73 UV DEVICE 01  ERROR 73 UV DEVICE 02  ERROR 73 UV DEVICE 04 (Shutter)
+Description;• 01: The shutter is not opened. • 02: The shutter is not closed. • The shutter switch for open/ close is defective. • UV lamp control cable has broken of the wire.
+Remedy;1) Replace the UV irradiation device with a new one. 1) Replace the UV lamp control cable with a new one.
+Code;73
+Display;ERROR 73 UV DEVICE 03 (Lamp.V20)
+Description;• The UV lamp is tried to relight with burning. • UV lamp cable has not connected to the terminal block. • UV lamp have not been set. • UV lamp cable has broken down or the connector is defective.
+Remedy;1) Turn the lamp on after cooling down the UV lamp. 1) Make sure that the UV lamp cable have connected to the terminal block in the UV irradiation device. 2) Make sure to set the UV lamp 1) Replace the UV lamp cable with a new one.
+Code;73
+Display;ERROR 73 UV DEVICE 03 (Lamp.Volt)
+Description;• Voltage is abnormal conditions by the UV lamp anomaly. • Voltage increase or decrease.
+Remedy;1) Replace the UV lamp with a new one.
+Code;74
+Display;ERROR 74 UV DEVICE
+Description;• The UV lamp is tried to relight with burning. • UV lamp cable has not connected to the terminal block. • UV lamp have not been set. • UV lamp cable has broken down or the connector is defective. • Voltage is abnormal conditions by the UV lamp anomaly. • Voltage increase or decrease. • UV power supply internal parts are abnormal heating.
+Remedy;1) Turn the lamp on after cooling down the UV lamp. 1) Make sure that the UV lamp cable have connected to the terminal block in the UV irradiation device. 2) Make sure to set the UV lamp 1) Replace the UV lamp cable with a new one. 1) Replace the UV lamp with a new one. 1) Replace the UV power supply unit with a new one.
+Code;74
+Display;ERROR 74 UV DEVICE (TEMP lamp is lighting)
+Description;• Malfunction of UV irradiation device cooling fan. • UV lamp control cable has broken of the wire.
+Remedy;1) Replace the UV irradiation device with a new one. 1) Replace the UV lamp control cable with a new one
+Code;74
+Display;ERROR 74 UV DEVICE (ERROR)
+Description;• UV power supply internal parts are abnormal heating.
+Remedy;1) Make sure that the air filters in the front or the rear side is not covered with objects. 2) Make sure that the rear side fan of the UV power supply is running. 3) Replace the UV power supply unit with a new one.
+Code;n01
+Display;! UV LAMP UV LAMP CHANGE :ent
+Description;• Changing time for the UV lamp.
+Remedy;1) Replace the UV lamp with new one.
+Code;n02
+Display;! UV LAMP UV LEVEL CHK :ent
+Description;• The UV lamp level has exceeded the predetermined amounts of time.
+Remedy;1) Confirm the UV lamp light level.
+Code;n03
+Display;<<LOC.>>NEAR END COLOR :KCMYcmW
+Description;• The amount of ink remaining in the ink cartridge is insufficient.
+Remedy;1) Printing can be continued in file-by-file basis by pressing the [REMOTE] key.
+Code;n04
+Display;! INK END COLOR :KCMYcmW
+Description;• There is no ink in ink cartridge.
+Remedy;1) Replace the ink cartridge of which color is shown on the LCD with a new one.
+Code;n05
+Display;INK CARTRIDGE COLOR :KCMYcmW
+Description;• The ink cartridge is not installed to the ink station.
+Remedy;1) Install the ink cartridge(s) corresponding with the color shown on the display.
+Code;n06
+Display;! CARTRIDGE CHECK COLOR :KCMYcmW
+Description;Not operated as a menu.
+Remedy;1) Confirm the ink cartridge.
+Code;n07
+Display;! INK TANK WASTE TANK FULL
+Description;• Waste ink tank is full.
+Remedy;1) Remove the waste ink tank and set an empty waste ink tank.
+Code;n08
+Display;! COVER OPEN CLOSE A COVER
+Description;• The cover is open.
+Remedy;1) Close the cover.
+Code;n09
+Display;(COVER OPEN) PRESS <ENT> KEY
+Description;• [ENTER] key check after closing the cover.
+Remedy;1) Press the [ENTER] key and restart the device.
+Code;n10
+Display;!MEDIA HEIGHT TABLE DOWN
+Description;• The area sensor detected an obstacle while jog operation is being performed.
+Remedy;1) Down the table by pressing the [ ] key on the sub panel until the LCD indicates “OK”, and then start the jog operation again. Or remove the media from the table and then press the [ENTER] key.
+Code;n11
+Display;!MEDIA HEIGHT THICK. OF MEDIA
+Description;• Area sensor detected the obstacle.
+Remedy;1) Confirm the thickness of the media and input the value again.
+Code;n12
+Display;!CAP SENSOR FAIL
+Description;• If the cam rotates half from the bottom position of the capping, capping sensor cannot be detected.
+Remedy;1) Capping sensor may have an error. 2) Sensor position or adjustment of the lowest point position may be inadequate.
+Code;n13
+Display;!ORIGIN SETTING IS OUT OF RANGE
+Description;• The origin has been set outside the printing area.
+Remedy;1) Set the origin inside the printing area.

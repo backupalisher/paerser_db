@@ -1,0 +1,512 @@
+Code;SC 101
+Description;Exposure lamp error • The standard white level is not properly detected when scanning the shading plate. (The shading data peak does not reach the specified threshold.)
+Causes;• Exposure lamp defective • Lamp stabilizer defective • Exposure lamp connector defective • Standard white plate dirty • Scanner mirror or scanner lens out of position or dirty • SBU defective
+Remedy;1. Turn the main switch off and on. 2. Turn the power key off and on. 3. Check and clean the scanner mirror(s) and scanner lens. 4. Check and clean the shading plate. 5. Replace the exposure lamp. 6. Replace the lamp stabilizer. 7. Replace the scanner mirror(s) or scanner lens. 8. Replace the SBU.
+Code;SC 120
+Description;Scanner home position error 1 • The scanner home position sensor does not detect the on condition during scanning.
+Causes;• Scanner PSU or SBU defective • Scanner motor defective • Harness between scanner PSU and scanner motor disconnected • Scanner HP sensor defective • Harness between SBU and HP sensor disconnected • Scanner wire, timing belt, pulley, or carriage defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between the scanner PSU and scanner motor. 3. Check the cable connection between the SBU and HP sensor. 4. Replace the SBU or scanner PSU. 5. Replace the scanner motor. 6. Replace the HP sensor. 7. Replace the scanner wire, timing belt, pulley, or carriage.
+Code;SC 121
+Description;Scanner home position error 2 • The scanner home position sensor does not detect the off condition during scanning.
+Causes;• Scanner PSU or SBU defective • Scanner motor defective • Harness between scanner PSU and scanner motor disconnected • Scanner HP sensor defective • Harness between SBU and HP sensor disconnected • Scanner wire, timing belt, pulley, or carriage defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between the scanner PSU and scanner motor. 3. Check the cable connection between the SBU and HP sensor. 4. Replace the SBU or scanner PSU. 5. Replace the scanner motor. 6. Replace the HP sensor. 7. Replace the scanner wire, timing belt, pulley, or carriage.
+Code;SC 122
+Description;Scanner home position error 3 • The scanner home position sensor does not detect the home position during initialization.
+Causes;• Scanner PSU or SBU defective • Scanner motor defective • Harness between scanner PSU and scanner motor disconnected • Scanner HP sensor defective • Harness between SBU and HP sensor disconnected • Scanner wire, timing belt, pulley, or carriage defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between the scanner PSU and scanner motor. 3. Check the cable connection between the SBU and HP sensor. 4. Replace the SBU or scanner PSU. 5. Replace the scanner motor. 6. Replace the HP sensor. 7. Replace the scanner wire, timing belt, pulley, or carriage.
+Code;SC 142
+Description;White level detection error • The white level cannot be adjusted within the target during auto gain control.
+Causes;• Dirty exposure glass or optics section • SBU board defective • IPU board defective • Exposure lamp defective • Lamp stabilizer defective
+Remedy;1. Turn on the main switch off and on. 2. Clean the exposure glass, white plate, mirrors, and lens. 3. Check if the exposure lamp is lit during initialization. 4. Check the harness connection between SBU and IPU. 5. Replace the exposure lamp. 6. Replace the SBU board. 7. Replace the IPU board
+Code;SC 161
+Description;IDU error • After the command is written into the DFID selfdiagnosis startup register, the correct value is not stored in the register in the specified duration. NOTE: This error is detected when the main switch is turned on. • After the negate interruption of FGATE occurs, IDU is not recognized in the specified duration. NOTE: This error is detected during scanning operations.
+Causes;• IPU board defective (defective connection between ASIC and DFID, or Defective LSYNC)
+Remedy;1. Turn the main switch off and on. 2. Replace the IPU board.
+Code;SC 195
+Description;Serial Number Mismatch • Serial number stored in the memory does not consist of the correct code.
+Causes;• NVRAM defective • BCU replaced without original NVRAM
+Remedy;Open the front cover and turn on the main switch. Check the serial number with SP5-811-002. If the stored serial number is incorrect, contact your product specialist for details of how to solve the problem.
+Code;SC 201
+Description;Polygon motor error • The polygon mirror motor does not reach the targeted operating speed within 15 seconds after turning on. • The lock signal does not become high within 15 seconds after turning off the polygon motor. • The lock signal does not become low within 0.2 second after the polygon motor reaches the targeted operating speed.
+Causes;• Polygon mirror motor error • Abnormal GAVD behavior • Cable disconnection
+Remedy;1. Turn the main switch off and on. 2. Check the cables. 3. Replace the polygon motor.
+Code;SC 220
+Description;Synch. detection signal error 1 220-001: Y 220-002: M 220-003: C 220-004: K0 220-005: K1 The front (for K&Y) or rear (for C&M) laser synchronizing detector board, which is used to determine the start timing of laser writing, does not send a signal while the polygon motor is operating normally and the LD is on.
+Causes;• Disconnection of the cable between front (K&Y) or rear (C&M) synchronizing detector board and the LD unit • Incorrect installation of front (K&Y) or rear (C&M) synchronizing detector board (the beam does not target the photo detector.) • Defective LD unit • Defective BCU • Defective +5VLD circuit
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between front (for K&Y) or rear (for C&M) synchronizing detector board and the LD unit. 3. Check or reinstall the front (for K&Y) or rear (for C&M) synchronizing detector board. 4. Replace the front (for K&Y) or rear (for C&M) synchronizing detector board. 5. Replace the laser optics housing unit. 6. Replace the BCU. 7. Replace the PSU.
+Code;SC 221
+Description;Synch. detection signal error 2 221-001: Y 221-002: M 221-003: C 221-004: K Main scan length detection is not properly completed ten consecutive times. The front (for C&M) or rear (for K&Y) laser synchronizing detector boards are used for the main scan length detection, which automatically corrects the main-scan magnification.
+Causes;• Damaged or disconnected cable between front (C&M) or rear (K&Y) laser synchronizing detector board and the LD unit • Incorrect installation of front (C&M) or rear (K&Y) synchronizing detector board (the beam does not target the photo detector.) • Defective front (C&M) or rear (K&Y) synchronizing detector board • Defective LD unit
+Remedy;After doing any of the following, print ten jobs or more to see if the same SC code is displayed: 1. Turn the main switch off and on. 2. Check or replace the cable connecting front (for C&M) or rear (for K&Y) synchronizing detector board and the LD unit. 3. Check or reinstall the front (for C&M) or rear (for K&Y) synchronizing detector board. 4. Replace the front (for C&M) or rear (for K&Y) synchronizing detector board. 5. Replace the laser optics housing unit. 6. Replace the BCU. If a synch. detector board cannot be replaced, do the following as a temporary measure: • Disable main scan length detection (SP 2-919-001)
+Code;SC 230
+Description;FGATE error 230-001: Y 230-002: M 230-003: C 230-004: K The BCU generates the FGATE signal based on the registration sensor ON timing. Then, it sends the signal to the LD units. The LD units send a feedback signal to the BCU. When the LD units start emitting laser beams, the feedback signal changes from High to Low. The SC code is generated when the BCU receives no feedback signal (stays High) from the LD unit 1 second after paper reaches the position where the laser should start writing.
+Causes;• Poor connection between BCU and LD units • Defective BCU • Defective LD unit
+Remedy;1. Turn the main switch off and on. 2. Check the cables between the LD units and the BCU. 3. Replace the laser optics housing unit. 4. Replace the BCU.
+Code;SC 231
+Description;FGATE timeout 231-001: Y 231-002: M 231-003: C 231-004: K When LD units emit laser beams to print a job, the feedback signal stays Low and becomes High after laser exposure for a page is completed. The SC code is detected in the following cases: • When the feedback signal stays Low 7 seconds after completing the laser exposure, or • When the feedback signal stays Low until the laser exposure timing for the next page in multi-page print mode.
+Causes;• Poor connection between BCU and LD units • Defective BCU • Defective LD unit
+Remedy;1. Turn the main switch off and on. 2. Check the cables between the LD units and the BCU. 3. Replace the laser optics housing unit. 4. Replace the BCU.
+Code;SC 240
+Description;LD over 240-001: Y 240-002: M 240-003: C 240-004: K The power supply for the LD unit exceeds 67 mA.
+Causes;• LD worn out (current/light output characteristics have changed.) • LD broken (short circuit)
+Remedy;1. Turn the main switch off and on. 2. Replace the laser optics housing unit.
+Code;SC 260
+Description;LD HP sensor not switched on (for K only) During homing, it takes more than five seconds to switch the HP sensor on (the sensor actuator does not cover the sensor).
+Causes;• Defective motor • Defective sensor • Mechanical problem when switching the actuator • Brown fuse (FU81) on the Power supply unit
+Remedy;1. Turn the main switch off and on. 2. Check the sensor actuator position of the LD positioning motor. 3. Replace the LD positioning motor. 4. Replace the LD home position sensor. 5. Check and/or replace the PSU.
+Code;SC 261
+Description;LD HP sensor not switched off (for K only) After the laser beam pitch was changed, it takes more than five seconds for the HP sensor to switch off.
+Causes;• Defective motor • Defective sensor • Mechanical problem when switching the actuator • Brown fuse (FU81) on the Power supply unit
+Remedy;1. Turn the main switch off and on. 2. Check the sensor actuator position of the LD positioning motor. 3. Replace the LD positioning motor. 4. Replace the LD home position sensor. 5. Check and/or replace the PSU.
+Code;SC 285
+Description;Line position adjustment (MUSIC) error Line position adjustment fails three consecutive times.
+Causes;• Pattern sampling error due to insufficient image density of patterns used for the adjustment • Inconsistency in the sampling line position adjustment pattern due to dust on the pattern, damage to the OPC drum, damage or toner dropped on the transfer belt, or a dirty or defective ID sensor
+Remedy;1. Turn the main switch off and on. 2. Check and fix the problem that causes low image density. . 3. Clean or replace the transfer belt and/or the ID sensor. 4. Replace the PCU or clean the development unit that causes toner to drop on the transfer belt.
+Code;SC 370
+Description;TD sensor [K]: Adjustment error During the developer initialization, the output value of the TD sensor is without the adjustment range (3.0 ± 0.1V).
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 371
+Description;TD sensor [Y]: Adjustment error During the developer initialization, the output value of the TD sensor is without the adjustment range (3.0 ± 0.1V).
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 372
+Description;TD sensor [C]: Adjustment erro rDuring the developer initialization, the output value of the TD sensor is without the adjustment range (3.0 ± 0.1V).
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 373
+Description;TD sensor [M] : Adjustment error During the developer initialization, the output value of the TD sensor is without the adjustment range (3.0 ± 0.1V).
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 374
+Description;Vt error [K] During the image development, Vt value is less than 0.5V.
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 375
+Description;Vt error [Y ]During the image development, Vt value is less than 0.5V.
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 376
+Description;Vt error [C] During the image development, Vt value is less than 0.5V.
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 377
+Description;Vt error [M] During the image development, Vt value is less than 0.5V.
+Causes;• Poor connection (TD sensor outputs is less than 0.5V.) • Defective TD sensor
+Remedy;1. Turn the main switch off and on. 2. Reset the related color development unit. 3. Replace the related color development unit.
+Code;SC 380
+Description;Black development motor error When the motor speed is within the target level, the motor sends a lock signal (High to Low at CN214-5) to the BCU. SC380 is detected under the following conditions: • The Lock signal stays High 2 seconds after the motor turns on. • The Lock signal stays Low 2 seconds after the motor turns off. • The Lock signal stays High for more than 2 seconds while the motor is on.
+Causes;• Defective motor • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Replace the motor. 3. Replace the BCU.
+Code;SC 381
+Description;Color development motor error When the motor speed is within the target level, the motor sends a lock signal (High to Low at CN214-5) to the BCU. SC380 is detected under the following conditions: • The Lock signal stays High 2 seconds after the motor turns on. • The Lock signal stays Low 2 seconds after the motor turns off. • The Lock signal stays High for more than 2 seconds while the motor is on.
+Causes;• Defective motor • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Replace the motor. 3. Replace the BCU.
+Code;SC 385
+Description;ID sensor VSG adjustment error Vsg is the out of adjustment range during a process control self-check. Adjustment range: 4.0 ± 0.5V
+Causes;• Defective ID sensor • Dirty ID sensor • ID sensor disconnected • Dirty drum (cleaning incomplete)
+Remedy;1. Turn the main switch off and on. 2. Clean the ID sensor and adjacent parts. 3. Check the drum cleaning condition. 4. Check the ID sensor connector. 5. Replace the ID sensor.
+Code;SC 386
+Description;Development gamma error K Any of the following conditions happens three consecutive times: . When the development gamma is out of the following range: 0.3 <Y> 6.0 . When Vk is out of the following range: -150V <Y>150V . Development gamma calculation error
+Causes;• Unsuitable toner density • Toner supply mechanism problem • Laser exposure problem • Image transfer problem
+Remedy;1. Turn the main switch off and on . 2. Check the process control self-check result (SP3-975). If the result is not .1., fix the problem according to the table in section 4.1.2. 3. Print a full color image by disabling SC detection (SP5-809-001) and check if the image quality is OK. If the image quality is not OK, fix the problem. Then, enable the SC detection again.
+Code;SC 387
+Description;Development gamma error Y Any of the following conditions happens three consecutive times: . When the development gamma is out of the following range: 0.3 <Y> 6.0 . When Vk is out of the following range: -150V <Y>150V . Development gamma calculation error
+Causes;• Unsuitable toner density • Toner supply mechanism problem • Laser exposure problem • Image transfer problem
+Remedy;1. Turn the main switch off and on . 2. Check the process control self-check result (SP3-975). If the result is not .1., fix the problem according to the table in section 4.1.2. 3. Print a full color image by disabling SC detection (SP5-809-001) and check if the image quality is OK. If the image quality is not OK, fix the problem. Then, enable the SC detection again.
+Code;SC 388
+Description;Development gamma error C Any of the following conditions happens three consecutive times: . When the development gamma is out of the following range: 0.3 <Y> 6.0 . When Vk is out of the following range: -150V <Y>150V . Development gamma calculation error
+Causes;• Unsuitable toner density • Toner supply mechanism problem • Laser exposure problem • Image transfer problem
+Remedy;1. Turn the main switch off and on . 2. Check the process control self-check result (SP3-975). If the result is not .1., fix the problem according to the table in section 4.1.2. 3. Print a full color image by disabling SC detection (SP5-809-001) and check if the image quality is OK. If the image quality is not OK, fix the problem. Then, enable the SC detection again.
+Code;SC 389
+Description;Development gamma error M Any of the following conditions happens three consecutive times: . When the development gamma is out of the following range: 0.3 <Y> 6.0 . When Vk is out of the following range: -150V <Y>150V . Development gamma calculation error
+Causes;• Unsuitable toner density • Toner supply mechanism problem • Laser exposure problem • Image transfer problem
+Remedy;1. Turn the main switch off and on . 2. Check the process control self-check result (SP3-975). If the result is not .1., fix the problem according to the table in section 4.1.2. 3. Print a full color image by disabling SC detection (SP5-809-001) and check if the image quality is OK. If the image quality is not OK, fix the problem. Then, enable the SC detection again.
+Code;SC 390
+Description;Development Bias output error The high voltage supply board (C/B) monitors the circuit and detects abnormal conditions such as a voltage leak or no output condition. If this happens, the high voltage supply board sends an error signal (High to Low at CN204- A18) to the BCU. The BCU monitors this signal every 2 ms and generates this SC code when the error condition occurs 250 consecutive times.
+Causes;• Loose connection • Defective power pack C/B output • Damaged cable • Defective development unit • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check if the harness and cables are properly connected. 3. Disconnect the high voltage supply cables from the bias terminals on the high voltage supply board C/B. Measure the DC voltage using a multi-meter. • Replace the high voltage supply board if no voltage is supplied. 4. If the result is OK at step 2, check if the high voltage supply cable or development unit is grounded. • Replace the high voltage supply cable if it damages. • Replace the development unit if it damages. 5. Check the PWM signals are sent to the high voltage supplied board from the BCU. Replace the BCU or harness between the BCU and high voltage supply board if the voltage is 0.
+Code;SC 391-01
+Description;"Charge AC: output error 391-01: K 391-02: Y 391-03: M 391-04: C The high voltage supply board sends the feedback signal (CN228-2 to 5; MCYK). The BCU monitors these feedback signals every 8 ms. If the average of the sampled data is not within the control target 30 consecutive times, this SC code is generated."
+Causes;• Power pack disconnected • Charge receptacle or terminal • Defective PCU bias input terminal • Incorrect power pack B/C output • Damaged cable • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the connector. 3. Check the PCU charge voltage input (the spring/conducting shaft) or replace the PCU. 4. Replace the power pack B/C. 5. Replace the cable. 6. Replace the BCU.
+Code;SC 392-001
+Description;Air pump motor error 391-001: MY 391-002: CK Three consecutive errors are detected in motor-driver-signal samples. The samples are collected every 0.01 second.
+Causes;• Damaged cable • Short circuit • Defective motor
+Remedy;1. Turn the main switch off and on. 2. Replace the air pump. 3. Check the circuit.
+Code;SC 440-001
+Description;Drum motor error 440-001: Black 440-002: Color No drum gear position sensor signal is detected within 0.7 second (185 mm/s), 1.0 second (125 mm/s), or 2.0 seconds (62.5 mm/s).
+Causes;• Defective PCU • Defective drum motor • Defective drum gear position sensor
+Remedy;1. Turn the main switch off and on. 2. Check and/or replace the PCU. 3. Check and/or replace the sensor.
+Code;SC 460-001
+Description;Thermistor 1 error (open circuit) When the temperature detected by thermistor 1, which is at the left (fusing unit) side of the laser optics unit, is less than -30°C for 10 seconds consecutively, the BCU determines that the circuit is opened and displays this SC code.
+Causes;• Thermistor 1 defective • Cable connection error • BCU defect
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Replace the thermistor. 4. Replace the BCU.
+Code;SC 460-002
+Description;Thermistor 1 error (short circuit) When the temperature detected by the thermistor 1, which is at the left (fusing unit) side of the laser optics unit, is higher than 70°C for 10 seconds consecutively, the BCU determines that the circuit is shorted and displays this SC code
+Causes;• Thermistor 1 defective • Cable connection error • BCU defect
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Replace the thermistor. 4. Replace the BCU.
+Code;SC 461-001
+Description;Thermistor 2 error (open circuit) When the temperature detected by the thermistor 2, which is at the right (paper feed section) side of the laser optics unit, is less than -30°C for 10 seconds consecutively, the BCU determines that the circuit is opened and displays this SC code.
+Causes;• Thermistor 2 defective • Cable connection error • BCU defect
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Replace the thermistor. 4. Replace the BCU.
+Code;SC 461-002
+Description;Thermistor 2 error (short circuit) When the temperature detected by the thermistor 2, which is at the right (paper feed section) side of the laser optics unit, is higher than 70°C for 10 seconds consecutively, the BCU determines that the circuit is shorted and displays this SC code
+Causes;• Thermistor 2 defective • Cable connection error • BCU defect
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Replace the thermistor. 4. Replace the BCU.
+Code;SC 471
+Description;Transfer belt H.P. error The transfer belt HP sensor signal does not change from Low to High (home position) or vice versa 1 second after the transfer belt contact motor turns on.
+Causes;• Transfer belt unit not set properly • Defective transfer belt H.P. sensor and/or transfer belt sensor • Defective transfer belt contact motor • Transfer belt unit problem
+Remedy;1. Turn the main switch off and on. 2. Reset the transfer belt unit. 3. Clean or replace the transfer belt sensor. 4. Replace the transfer belt contact motor. 5. Check the contact and release mechanism of the transfer belt unit.
+Code;SC 490
+Description;Transfer bias / paper attraction roller bias leak error The high voltage supply board - Transfer monitors the circuit and detects current leaks. If this happens, the high voltage supply board sends a SC signal (High to Low at CN213- 8) to the BCU. The BCU monitors this signal every 2 ms and generates this SC code when the error condition occurs 250 consecutive times.
+Causes;• Defective high voltage supply board - Transfer • Damaged transfer belt • Transfer unit • Damaged high voltage supply cables • Damaged cables between the BCU and high voltage supply board • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the transfer unit and replace the belt and/or the transfer unit if any damage is found. 3. Replace the high voltage supply board - Transfer. 4. Check and/or replace the high voltage supply cables. 5. Check and/or replace the dc cables between the BCU and high voltage supply board. 6. Replace the BCU.
+Code;SC 501
+Description;Paper Tray 1 error When the tray lift motor is turned on, if the upper limit is not detected within 10 seconds, the machine asks the user to reset the tray. If this condition occurs three consecutive times, the SC is generated.
+Causes;• Defective paper lift sensor • Defective tray lift motor • Defective bottom plate lift mechanism
+Remedy;1. Turn the main switch off and on. 2. Check if the bottom plate smoothly moves up and down manually. 3. Check and/or replace the paper lift sensor. 4. Check and/or replace the tray lift motor.
+Code;SC 502
+Description;Paper Tray 2 error When the tray lift motor is turned on, if the upper limit is not detected within 10 seconds, the machine asks the user to reset the tray. If this condition occurs three consecutive times, the SC is generated.
+Causes;• Defective paper lift sensor • Defective tray lift motor • Defective bottom plate lift mechanism
+Remedy;1. Turn the main switch off and on. 2. Check if the bottom plate smoothly moves up and down manually. 3. Check and/or replace the paper lift sensor. 4. Check and/or replace the tray lift motor.
+Code;SC 503-01
+Description;Tray 3 error (Paper Feed Unit or LCT) For the paper feed unit: When the tray lift motor is turned on, if the upper limit is not detected within 18 seconds, the machine asks the user to reset the tray. If this condition occurs three consecutive times, the SC is generated. For the LCT: This SC is generated under the following conditions: • If the upper or lower limit is not detected within 15 seconds when the tray lift motor is turned on to lift up or lower the tray • If the paper stack is not transported within a specific number of pulses after the tray motor and stack transport clutch turn on to transport the paper stack • If the end fence home position sensor stays ON for a specific number of pulses after the tray motor and stack transport clutch turn on to transport the paper stack.
+Causes;For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection For the LCT: • Defective stack transport clutch or connector disconnection • Defective tray motor or connector disconnection • Defective end fence home position sensor or connector disconnection • Defective upper limit sensor or connector disconnection • Defective tray lift motor or connector disconnection
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Check and/or replace the defective component.
+Code;SC 503-02
+Description;Tray 3 error (Paper Feed Unit or LCT) • If the following condition occurs 3 consecutive times, this SC is generated. For the paper feed unit: When the main switch is turned or when the tray is set and if the upper limit is already detected, the lift motor turns on to lower the bottom plate until the lift sensor goes off. If the motor turns on for 7 seconds or more, the machine asks the user to reset the tray. For the LCT: When the main switch is turned on or when the LCT is set, if the end fence is not in the home position (home position sensor ON), the tray lift motor stops.
+Causes;For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection For the LCT: • Defective stack transport clutch or connector disconnection • Defective tray motor or connector disconnection • Defective end fence home position sensor or connector disconnection
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Check and/or replace the defective component.
+Code;SC 504-01
+Description;Tray 4 error (3 Tray Paper Feed Unit) When the tray lift motor is turned on, if the upper limit is not detected within 18 seconds, the machine asks the user to reset the tray. If this condition occurs three consecutive times, the SC is generated.
+Causes;• Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Check and/or replace the defective component.
+Code;SC 504-02
+Description;Tray 4 error (3 Tray Paper Feed Unit) When the main switch is turned or when the tray is set and if the upper limit is already detected, the lift motor turns on to lower the bottom plate until the lift sensor goes off. If the motor turns on for 7 seconds or more, the machine asks the user to reset the tray. If this condition occurs 3 consecutive times, this SC is generated.
+Causes;• Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection
+Remedy;1. Turn the main switch off and on. 2. Check the cable connections. 3. Check and/or replace the defective component.
+Code;SC 530
+Description;Fusing fan motor error The BCU does not receive the lock signal (CN210-B5) 5 seconds after turning on the fusing fan.
+Causes;• Defective fusing fan motor or connector disconnection • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the connector and/or replace the fusing fan motor. 3. Replace the BCU.
+Code;SC 541
+Description;Heating roller thermistor error The temperature measured by the heating roller thermistor does not reach 7 °C for ten seconds.
+Causes;• Loose connection of the heating roller thermistor • Defective heating roller thermistor • Defective BCU
+Remedy;1. Check if the heating roller thermistor is firmly connected. 2. Replace the fusing unit. 3. Replace the BCU.
+Code;SC 542
+Description;Heating roller warm-up error After the main switch is turned on or the cover is closed, the heating roller temperature does not reach the ready temperature within 60 seconds during fusing unit warm-up.
+Causes;• Heating roller fusing lamp broken • Defective heating roller thermistor • Defective BCU
+Remedy;1. Check if the heating roller thermistor is firmly connected. 2. Replace the fusing unit. 3. Replace the BCU.
+Code;SC 543
+Description;Heating roller fusing lamp overheat The detected fusing temperature stays at 200°C or more for five seconds.
+Causes;• Defective PSU • Defective BCU
+Remedy;1. Replace the PSU. 2. Replace the BCU.
+Code;SC 544
+Description;Heating roller fusing lamp high temperature error During stand-by mode or a print job, the detected heating roller temperature stays at 210 °C or more for 0.1 second.
+Causes;• Defective heating roller thermistor • Defective PSU • Defective BCU
+Remedy;1. Replace the fusing unit. 2. Replace the PSU. 3. Replace the BCU.
+Code;SC 545
+Description;Heating roller fusing lamp consecutive full power When the fusing unit is not running in the Ready condition, the heating roller fusing lamp keeps on with full power for 30 consecutive seconds.
+Causes;• Heating roller thermistor out of position
+Remedy;1. Replace the fusing unit.
+Code;SC 546
+Description;Heating roller fusing lamp temperature fluctuation The heating roller temperature changes by ±20°C or more in one second. This occurs three times in one minute or two consecutive times.
+Causes;• Loose connection of the thermistor • Loose connection between the fusing unit and main frame
+Remedy;1. Check if the fusing unit is properly set and connected to the main frame. 2. Check if the heating roller thermistor connector is firmly connected. 3. Replace the fusing unit.
+Code;SC 551
+Description;Pressure roller thermistor error The measured pressure roller temperature does not reach 7°C for 30 seconds.
+Causes;• Loose connection of pressure roller thermistor • Defective pressure roller thermistor • Defective BCU
+Remedy;1. Check that the pressure roller thermistor is firmly connected. 2. Replace the fusing unit. 3. Replace the BCU.
+Code;SC 552
+Description;Pressure roller warm-up error After the main switch is turned on or the door is closed, the pressure roller temperature does not reach the ready temperature within 150 seconds during fusing unit warm-up.
+Causes;• Pressure roller fusing lamp broken • Defective pressure roller thermistor • Defective BCU
+Remedy;1. Check if the pressure roller thermistor is firmly connected. 2. Replace the fusing unit. 3. Replace the BCU.
+Code;SC 553
+Description;Pressure roller fusing lamp overheat The detected pressure roller temperature stays at 200°C or more for five seconds.
+Causes;• Defective PSU • Defective BCU
+Remedy;1. Replace the fusing unit. 2. Replace the PSU. 3. Replace the BCU.
+Code;SC 554
+Description;Pressure roller fusing lamp low temperature error During stand-by mode or printing, the detected pressure roller temperature stays at 50°C or less for five seconds.
+Causes;• Loose connection between the fusing unit and the machine • Defective pressure roller thermistor • Defective PSU • Defective BCU
+Remedy;1. Check the connection between the fusing unit and main frame. 2. Replace the fusing unit. 3. Replace the PSU. 4. Replace the BCU.
+Code;SC 555
+Description;Pressure roller fusing lamp consecutive full power When the fusing unit is not running in the Ready condition, the pressure roller fusing lamp keeps ON with full power for 100 consecutive seconds.
+Causes;• Pressure roller thermistor out of position
+Remedy;1. Replace the fusing unit.
+Code;SC 556
+Description;Pressure roller fusing lamp temperature fluctuation The pressure roller temperature changes by ±20°C or more in one second. This occurs three times in one minute or two consecutive times.
+Causes;• Loose connection of the pressure roller thermistor • Loose connection between the fusing unit and main frame
+Remedy;1. Check if the fusing unit is properly set and connected to the main frame. 2. Check if the pressure roller thermistor connector is firmly connected. 3. Replace the fusing unit.
+Code;SC 560
+Description;Zero cross error When the main switch is turned on, the machine checks how many zero-cross signals are generated during 500 ms. If the number of zero-cross signal generated is either more than 66 or less than 45 and when this condition is detected 10 consecutive times, this code is displayed.
+Causes;• Electrical noise in the supply from the power cord
+Remedy;1. Replace the PSU.
+Code;SC 620
+Description;ARDF communication error • After the ARDF is detected, the break signal occurs or communication timeout occurs.
+Causes;• Incorrect installation of ARDF • ARDF defective • IPU board defective • External noise
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection of the ARDF. 3. Shut out the external noise. 4. Replace the ARDF. 5. Replace the IPU board.
+Code;SC 621
+Description;Finisher/ mailbox communication error While the BCU communicates with an optional unit, an SC code is displayed if one of following conditions occurs. 1. The BCU receives a signal which is generated by the peripherals only just after the main switch is turned on. 2. When the BCU does not receive an OK signal from a peripheral 100ms after sending a command to it. The BCU resends the command. The BCU does not receive an OK signal after sending the command 3 times.
+Causes;• Cable problems • BCU problems • PSU problems in the machine • Main board problems in the peripherals
+Remedy;1. Turn the main switch off and on. 2. Check if the cables of peripherals are properly connected. 3. Replace the PSU if no power is supplied to peripherals. 4. Replace the BCU or main board of peripherals.
+Code;SC 622
+Description;Bank communication error While the BCU communicates with an optional unit, an SC code is displayed if one of following conditions occurs. 1. The BCU receives a signal which is generated by the peripherals only just after the main switch is turned on. 2. When the BCU does not receive an OK signal from a peripheral 100ms after sending a command to it. The BCU resends the command. The BCU does not receive an OK signal after sending the command 3 times.
+Causes;• Cable problems • BCU problems • PSU problems in the machine • Main board problems in the peripherals
+Remedy;1. Turn the main switch off and on. 2. Check if the cables of peripherals are properly connected. 3. Replace the PSU if no power is supplied to peripherals. 4. Replace the BCU or main board of peripherals.
+Code;SC 623
+Description;Duplex unit communication error While the BCU communicates with an optional unit, an SC code is displayed if one of following conditions occurs. 1. The BCU receives a signal which is generated by the peripherals only just after the main switch is turned on. 2. When the BCU does not receive an OK signal from a peripheral 100ms after sending a command to it. The BCU resends the command. The BCU does not receive an OK signal after sending the command 3 times.
+Causes;• Cable problems • BCU problems • PSU problems in the machine • Duplex control board problem
+Remedy;1. Turn the main switch off and on. 2. Check if the cable of the duplex inverter unit is properly connected. 3. Replace the PSU if no power is supplied to the peripherals. 4. Replace the duplex control board in the inverter unit.
+Code;SC 640
+Description;BCU - Controller communication error (check sum error) The check sum of the interface between the BCU and controller is not the same.
+Causes;• Defective controller • Defective PCU
+Remedy;1. Turn the main switch off and on. 2. Replace the controller. 3. Replace the BCU.
+Code;SC 641
+Description;BCU . Controller communication error (no response) The controller does not receive any response from the BCU three consecutive times when sending a signal every 100ms.
+Causes;• Loose connection • Defective controller • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the BCU and controller. 3. Replace the controller. 4. Replace the BCU.
+Code;SC 642
+Description;Communication timeout error between controller and operation panel • The operation panel does not respond to the frame sent from the controller.
+Causes;• Controller defective • Operation panel defective • External noise • Harness between controller and operation panel disconnected
+Remedy;1. Turn the main switch off an on. 2. Check the cable connection between the controller and the operation panel. 3. Shut out the external noise. 4. Replace the controller. 5. Replace the operation panel.
+Code;SC 670
+Description;No response from BCU at power on When the main power is turned on or the machine starts warming up from energy-saving mode, the controller does not receive a command signal from the BCU.
+Causes;• Loose connection • Defective controller • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the BCU and controller. 3. Replace the controller. 4. Replace the BCU.
+Code;SC 672
+Description;Controller-tooperation panel communication error at startup • After the machine is powered on, the communication between the controller and the operation panel is not established, or communication with controller is interrupted after a normal startup. • After startup reset of the operation panel, the attention code or the attention acknowledge code is not sent from the controller. • After the controller issues a command to check the communication line with the controller at 30-second intervals, the controller fails to respond twice.
+Causes;• Controller stalled • Controller board installed incorrectly • Controller board defective • Operation panel connector loose or defective
+Remedy;1. Turn the main switch off and on. 2. Check the condition of the controller board. 3. Check the condition of the operation panel. 4. Replace the controller board. 5. Replace the operation panel.
+Code;SC 680
+Description;BCU/ MUSIC communication error After the engine CPU sends a message, the Music CPU does not respond within five seconds three consecutive times.
+Causes;• Toner cartridge memory chip loose connection • Memory chip problem • Memory chip cable wiring problem
+Remedy;1. Turn the main switch off and on. 2. Check if the toner cartridge is installed correctly. 3. Replace the toner cartridge. 4. Check if the harnesses are not damaged. 5. Replace the BCU.
+Code;SC 685
+Description;SBU-IPU communication error • During data transfer, a checksum error occurs. • During any operation except initialization, the SBU sends a hardware-reset acknowledgement to the IPU.
+Causes;• Scanner unit cable connector loose • SBU board defective • IPU board defective • External noise
+Remedy;1. Turn the main switch off and on. 2. Shut out the external noise. 3. Check the cable connection of the scanner unit. 4. Replace the SBU board. 5. Replace the IPU board.
+Code;SC 686
+Description;BCU-IPU communication error • After the machine is powered on or recovering from the power save mode, timeout occurs during BCU communication. • The break signal is received after the communication is normally established with the BCU. • Timeout occurs while the communication with the BCU is retried after a communication error.
+Causes;• Board connector between BCU and controller loose • Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • BCU board defective • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between the board connector and BCU. 3. Check the cable connection between controller and bridge board. 4. Check the cable connection between bridge board and IPU. 5. Replace the BCU board. 6. Replace the IPU board. 7. Replace the controller board. 8. Replace the bridge board.
+Code;SC 687
+Description;Memory address command error The BCU does not receive a memory address command from the controller 60 seconds after paper is in the position for registration.
+Causes;• Loose connection • Defective controller • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check if the controller is firmly connected to the BCU. 3. Replace the controller. 4. Replace the BCU.
+Code;SC 690-001
+Description;GAVD I2C communica-tion error 690-001: Y 690-002: M 690-003: C 690-004: K • The I2C bus device ID is not identified during initialization. • A device-status error occurs during I2C bus communication. • The I2C bus communication is not established due to an error other than a buffer shortage.
+Causes;• Loose connection • Defective BCU • Defective LD controller board
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection. 3. Replace the laser optics housing unit. 4. Replace the BCU board.
+Code;SC 691
+Description;Scanner startup error • After the machine is powered on or recovering from the power save mode, the scanner ready signal is not verified.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board
+Code;SC 700
+Description;ARDF original pick-up malfunction • After the pick-up motor is turned on, the original stopper HP sensor is not activated.
+Causes;• Original stopper HP sensor defective • Pick-up motor defective (not rotating) • Timing belt out of position • ARDF main board defective
+Remedy;1. Turn the main switch off and on. 2. Replace the HP sensor. 3. Turn the main switch off and on. 4. Replace the pick-up motor. 5. Replace the control board.
+Code;SC 701
+Description;ARDF original pick-up/paper lift mechanism malfunction • The original pick-up HP sensor is not activated after the pick-up motor is turned on.
+Causes;• Original pick-up HP sensor defective • Pick-up motor defective • ARDF main board defective
+Remedy;1. Turn the main switch off and on. 2. Replace the pick-up motor. 3. Replace the control board. 4. Replace the HP sensor.
+Code;SC 722
+Description;Finisher jogger motor error • The jogger fences of the finisher do not return to home position within a specific time. • The finisher jogger motor does not leave home position within a given time.
+Causes;• Defective jogger H.P. sensor • Loose connection • Defective jogger motor
+Remedy;1. Turn the main switch off and on. 2. Check the connection of jogger H.P. sensor and jogger motor connectors 3. Replace the jogger H.P. sensor. 4. Replace the jogger motor.
+Code;SC 724
+Description;Finisher staple hammer motor error Stapling does not finish within 150 ms after the staple hammer motor turns on.
+Causes;• Staple jam • Loose connection • Overload caused by stapling too many pages • Defective staple hammer motor
+Remedy;1. Turn the main switch off and on. 2. Check if the staple hammer motor connector is properly connected. 3. Check if the staple jam occurs. 4. Replace the staple hammer motor.
+Code;SC 725
+Description;Finisher stack feed-out motor error The stack feed-out belt H.P. sensor does not activate within a specified time after the stack feed-out motor turns on.
+Causes;• Defective stack feedout H.P. sensor • Loose connection • Stack feed-out motor overload • Defective stack feedout motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the stack feed-out H.P. sensor and motor are properly connected. 3. Replace the stack feed-out H.P. sensor. 4. Replace the stack feed-out motor.
+Code;SC 726
+Description;Finisher shift tray 1 lift motor error • The upper stack height 1 sensor is activated consecutively (detecting paper) for 15 seconds after the shift tray starts moving up. • The upper stack height sensor 1 is deactivated consecutively (not detecting paper) for 15 seconds after the shift tray starts moving down. • When the upper tray moves from lower paper exit to the upper paper exit, the upper stack height 1 sensor is activated.
+Causes;• Loose connection • Defective upper stack height 1 sensor • Defective shift tray 1 lift motor • Motor overload
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the upper stack height 1 sensor. 4. Replace the shift tray 1 lift motor.
+Code;SC 727
+Description;Finisher stapler rotation motor error The stapler cannot return to its home position within a specified time after the stapler rotation motor starts rotating.
+Causes;• Loose connection • Defective stapler rotation motor • Motor overload
+Remedy;1. Turn the main switch off and on. 2. Check if the stapler rotation motor connector is properly connected. 3. Replace the stapler rotation motor.
+Code;SC 729
+Description;Finisher punch motor error The punch home position is not detected within 250 ms after the punch clutch turns on.
+Causes;• Loose connection • Defective punch H.P. sensor • Defective punch clutch • Defective punch hole motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of sensor, clutch and/or motor are properly connected. 3. Replace the punch H.P. sensor. 4. Replace the punch clutch. 5. Replace the punch hole motor.
+Code;SC 730
+Description;Finisher stapler motor error The stapler home position is not detected within a specified time after the staple motor turns on.
+Causes;• Loose connection • Defective stapler H.P. sensor • Defective stapler motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the stapler H.P. sensor. 4. Replace the stapler motor.
+Code;SC 731
+Description;Finisher exit guide plate motor error The exit guide plate open sensor is not activated within a specified time after the exit guide plate motor turns on.
+Causes;• Loose connection • Defective exit guide plate open sensor • Defective exit guide plate motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the exit guide plate open sensor. 4. Replace the exit guide plate motor.
+Code;SC 732
+Description;Finisher tray 1 shift motor error Tray 1 home position is not detected within a specified time after the tray 1 shift motor turns on.
+Causes;• Loose connection • Defective tray shift 1 sensor • Defective tray 1 shift motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the tray shift 1 sensor. 4. Replace the tray 1 shift motor.
+Code;SC 733
+Description;Finisher tray 2 lift motor error • The lower stack height 1 sensor is activated consecutively (detecting paper) for 15 seconds after the shift tray starts moving up. • The lower stack height sensor 1 is deactivated consecutively (not detecting paper) for 15 seconds after the shift tray starts moving down.
+Causes;• Loose connection • Defective lower stack height 1 sensor • Defective tray 2 lift motor • Motor overload
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the lower stack height 1 sensor. 4. Replace the tray 2 lift motor.
+Code;SC 734
+Description;Finisher tray 2 shift motor error Tray 2 home position is not detected within a specified time after the tray 2 shift motor turns on.
+Causes;• Loose connection • Defective tray shift 2 sensor • Defective tray 2 shift motor
+Remedy;1. Turn the main switch off and on. 2. Check if the connectors of the sensor and motor are properly connected. 3. Replace the tray shift 2 sensor. 4. Replace the tray 2 shift motor.
+Code;SC 804
+Description;Video input incomplete (K) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 805
+Description;Video input incomplete (Y) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 806
+Description;Video input incomplete (M) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 807
+Description;Video input incomplete (C) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 808
+Description;Video input incomplete (R) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 809
+Description;Video input incomplete (G) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 810
+Description;Video input incomplete (B) • The scanner is requested to transfer video data, but does not issue the video transmission end command within the defined time.
+Causes;• Board connector between controller and bridge board loose • Board connector between bridge board and IPU loose • IPU board defective • Controller board defective • Bridge board defective
+Remedy;1. Turn the main switch off and on. 2. Check the cable connection between controller and bridge board. 3. Check the cable connection between bridge board and IPU. 4. Replace the IPU board. 5. Replace the controller board. 6. Replace the bridge board.
+Code;SC 818
+Description;Watch-dog error While the system program is running, other processes do not operate at all.
+Causes;• Defective controller • Software error
+Remedy;1. Turn the main switch off and on. 2. Replace the controller. 3. See NOTE 1 at the end of the SC table
+Code;SC 819
+Description;Fatal error [696E] Process error System completely down [766D] Memory error Unexpected system memory size
+Causes;• Defective RAM DIMM • Defective ROM DIMM • Defective controller • Software error
+Remedy;1. Turn the main switch off and on. 2. Check and/or replace the RAM DIMM. 3. Check and/or replace the ROM DIMM. 4. Replace the controller. 5. See NOTE at the end of the SC table.
+Code;SC 821
+Description;0D05] Self-diagnosis error: ASIC The CPU checks if the ASIC timer works properly compared with the CPU timer. If the ASIC timer does not function in the specified range, this SC code is displayed.
+Causes;• System firmware problem • Defective RAM-DIMM • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Reinstall the controller system firmware. 3. Replace the RAM-DIMM. 4. Replace the controller board.
+Code;SC 823
+Description;Self-diagnostic error: NIB [XXXX]: Detailed error code [6101] MAC address check sum error The result of the MAC address check sum does not match the check sum stored in ROM. [6104] PHY IC error The PHY IC on the controller cannot be properly recognized. [6105] PHY IC loopback error An error occurred during the loop-back test for the PHY IC on the controller.
+Causes;• Defective controller
+Remedy;1. Turn the main switch off and on. 2. Replace the controller.
+Code;SC 824
+Description;[1401] Self-diagnosis error: Standard NVRAM The controller cannot recognize the standard NVRAM installed or detects that the NVRAM is defective.
+Causes;• Loose connection • Defective standard NVRAM • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Check the standard NVRAM is firmly inserted into the socket. 3. Replace the NVRAM. 4. Replace the controller.
+Code;SC 826
+Description;Self-diagnostic Error: RTC/ Optional NVRAM • An RTC device is recognized, and the difference between the RTC device and the CPU exceeds the defined limit. • No RTC device is recognized.
+Causes;• RTC defective • NVRAM without RTC installed • Backup battery discharged
+Remedy;1. Turn the main switch off and on. 2. Replace the NVRAM with another NVRAM with an RTC device.
+Code;SC 827
+Description;Self-diagnostic error: Standard SRAM DIMM [XXXX]: Detailed error code [0201] Verification error Error detected during a write/verify check for the standard RAM (SRAM DIMM).
+Causes;• Loose connection • Defective SRAM DIMM • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Replace the SRAM DIMM. 3. Replace the controller.
+Code;SC 828
+Description;Self-diagnostic error : ROM [XXXX]: Detailed error code [0101] Check sum error 1 The boot monitor and OS program stored in the ROM DIMM is checked. If the check sum of the program is incorrect, this SC code is displayed. [0104] Check sum error 2 All areas of the ROM DIMM are checked. If the check sum of all programs stored in the ROM DIMM is incorrect, this SC code is displayed. [0105] ROM error The ROM DIMM is not of the recognized type.
+Causes;• Defective ROM DIMM • Defective controller
+Remedy;1. Turn the main switch on and off. 2. Replace the ROM DIMM 3. Replace the controller.
+Code;SC 833
+Description;[0F21] Self-diagnostic error: I/F error The controller detects that the BCU is not properly connected.
+Causes;• Loose connection • Defective controller • Defective BCU
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the BCU and controller. 3. Replace the controller. 4. Replace the BCU.
+Code;SC 835
+Description;Self-diagnosis error: Centronics interface [XXXX]: Detailed error code [1102] Verification error The controller detects that the loop-back connector is not properly connected. [110C] DMA verification error A DMA data abnormality is detected even when the loopback connector is properly set. [1120] Loop-back connector error The loop-back connector is not set when starting the detailed self-diagnostics.
+Causes;• Loose connection • Defective loop-back connector • Defective Centronics connector • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the Centronics connector and loop-back connector. 3. Reconnect the loop-back connector. 4. Replace the controller.
+Code;SC 836
+Description;1601] Self-diagnosis error: Font ROM (standard) The data in the font ROM (standard ROM-DIMM) is damaged
+Causes;• Defective standard ROM-DIMM
+Remedy;1. Turn the main switch off and on. 2. Replace the standard ROM-DIMM.
+Code;SC 837
+Description;1602] Self-diagnosis error: Font ROM (option) The data in the font ROM (optional ROM-DIMM) is damaged
+Causes;• Defective optional ROM-DIMM
+Remedy;1. Turn the main switch off and on. 2. Replace the optional ROM-DIMM.
+Code;SC 850
+Description;Network interface error The network is unusable.
+Causes;• Defective controller
+Remedy;1. Turn the main switch off and on. 2. Replace the controller.
+Code;SC 851
+Description;IEEE1394 interface error The 1394 interface is unusable.
+Causes;• Defective IEEE1394 • Defective controller.
+Remedy;1. Turn the main switch off and on. 2. Replace the IEEE1394 interface board. 3. Replace the controller.
+Code;SC 853
+Description;Wireless LAN card not detected The wireless LAN card is not detected before communication is established, though the wireless LAN board is detected.
+Causes;• Loose connection
+Remedy;1. Check the connection.
+Code;SC 854
+Description;Wireless LAN card not detected The wireless LAN card is not detected after communication is established, though the wireless LAN board is detected.
+Causes;• Loose connection
+Remedy;1. Check the connection.
+Code;SC 855
+Description;Wireless LAN card error An error is detected in the wireless LAN card.
+Causes;• Loose connection • Defective wireless LAN card
+Remedy;1. Check the connection. 2. Replace the wireless LAN card.
+Code;SC 856
+Description;Wireless LAN card error An error is detected in the wireless LAN board.
+Causes;• Defective wireless LAN board • Loose connection
+Remedy;1. Check the connection. 2. Replace the wireless LAN board.
+Code;SC 857
+Description;USB interface error The USB interface cannot be used due to a driver error.
+Causes;• Defective USB driver • Loose connection
+Remedy;1. Check the connection. 2. Replace the controller.
+Code;SC 860
+Description;HDD: Initialization error The controller detects that the hard disk fails.
+Causes;• HDD not initialized • Defective HDD
+Remedy;1. Turn the main switch off and on. 2. Reformat the HDD. 3. Replace the HDD.
+Code;SC 861
+Description;HDD: Reboot error The HDD does not become ready within 30 seconds after the power is supplied to the HDD.
+Causes;• Loose connection • Defective cables • Defective HDD • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the HDD and controller. 3. Check and replace the cables. 4. Replace the HDD. 5. Replace the controller.
+Code;SC 863
+Description;HDD: Read error The data stored in the HDD cannot be read correctly.
+Causes;• Defective HDD • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Replace the HDD. 3. Replace the controller.
+Code;SC 864
+Description;HDD: CRC error While reading data from the HDD or storing data in the HDD, data transmission fails.
+Causes;• Defective HDD
+Remedy;1. Turn the main switch off and on. 2. Replace the HDD.
+Code;SC 865
+Description;HDD: Access error An error is detected while operating the HDD.
+Causes;• Defective HDD
+Remedy;1. Turn the main switch off and on. 2. Replace the HDD.
+Code;SC 900
+Description;Electric counter error Abnormal data is stored in the counters.
+Causes;• Defective NVRAM • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Check the connection between the NVRAM and controller. 3. Replace the NVRAM. 4. Replace the controller.
+Code;SC 990
+Description;Software performance error The software makes an unexpected operation.
+Causes;• Defective software • Defective controller • Software error
+Remedy;1. Turn the main switch off and on. 2. Reinstall the controller and/or engine main firmware. 3. See NOTE 1 at the end of the SC table
+Code;SC 997
+Description;Application function selection error • The application selected by the operation panel key does not start or ends abnormally.
+Causes;• Software (including the software configuration) defective • An option required by the application (RAM, DIMM, board) is not installed
+Remedy;1. Check the devices necessary for the application program. If necessary devices have not been installed, install them. 2. Check that application programs are correctly configured. 3. Take necessary countermeasures specific to the application program. If the logs can be displayed on the operation panel, see the logs.
+Code;SC 998
+Description;Application start error No applications start within 60 seconds after the power is turned on.
+Causes;• Loose connection of RAM-DIMM, ROMDIMM • Defective controller • Software problem
+Remedy;1. Turn the main switch off and on. 2. Check if the RAM-DIMM and ROMDIMM are properly connected. 3. Reinstall the controller system firmware. 4. Replace the controller.
+Code;SC 999
+Description;Program download error • The download (program, print data, language data) from the IC card does not execute normally.
+Causes;• Board installed incorrectly • Engine board defective • IC card defective • Incorrect IC card used (machine type/model, card version) • NVRAM defective • Loss of power during downloading NOTE 1: This error is not logged because the error occurs in the download mode (different from the normal operation mode). NOTE 2: If the machine loses power while downloading, or if the download does not normally end for some other reason, this could damage the controller board or the target PCB of the downloading and prevent subsequent downloading. If this problem occurs, the damaged PCB must be replaced.
+Remedy;1. Turn the main switch off and on. 2. If you can download necessary programs, do it by using an appropriate card. 3. If you cannot download necessary programs, use the special card and tool for downloading or replace the board having been used for the unsuccessful downloading.
+Code;SC820
+Description;Self-diagnostics error: CPU [XXXX]: Detailed error code [0001] to [06FF] CPU error [0702] [0709] [070A] CPU/Memory Error During the self-diagnostic, the controller CPU detects an error. There are 47 types of error code (0001 to 4005) depending on the cause of the error. The CPU detects an error and displays the specific error code with the program address where the error occurs).
+Causes;• System firmware problem • Defective controller • System firmware problem • Defective RAM-DIMM • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Reinstall the controller system firmware. 3. Replace the controller. When the problem cannot be fixed with the above procedure, the following information displayed on the screen needs to be fed back to a technical support center. • SC code • Detailed error code • Program address 1. Turn the main switch off and on. 2. Reinstall the controller system software. 3. Replace the RAM-DIMM. 4. Replace the controller.
+Code;SC822
+Description;Self-diagnostic error: HDD (Hard Disk Drive) [XXXX]: Detailed error code [3003] Timeout error [3004] Command error When the main switch is turned on or starting the selfdiagnostic, the HDD stays busy for the specified time or more.
+Causes;• Loose connection • Defective HDD • Defective controller
+Remedy;1. Turn the main switch off and on. 2. Check that the HDD is properly connected to the controller. 3. Replace the HDD. 4. Replace the controller.
+Code;SC829
+Description;Self-diagnosis error: optional RAM [XXXX]: Detailed error code [0302] Composition error (Slot 0) The result of checking the composition data of the RAM in Slot 0 (CN5) on the controller is incorrect. [0401] Verification error (Slot 1) The data stored in the RAM in Slot 1 does not match the data when reading. [0402] Composition error (Slot 1) The result of checking the composition data of the RAM in Slot 1 (CN6) on the controller is incorrect.
+Causes;• Not specified RAM DIMM installed • Defective RAM DIMM
+Remedy;1. Turn the main switch off and on. 2. Replace the RAM DIMM. 3. Replace the controller board.

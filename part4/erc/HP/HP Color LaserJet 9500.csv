@@ -1,0 +1,348 @@
+Code;10.XX.YY
+Display;10.XX.YY SUPPLIES ERROR
+Description;"The printer cannot read or write to at least one print cartridge or image drum memory tag, or at least one memory tag is missing.
+ XX description: 00 = e-label memory data error 10 = e-label memory is missing 20 = refilled, non-HP supply (only appears in the event log) 30 = cloned cartridge/supply (only appears in the event log) 90 = toner replenishment malfunction reported by the image drum
+ YY description: 00 = black print cartridge 01 = cyan print cartridge 02 = magenta print cartridge 03 = yellow print cartridge 05 = black image drum 06 = cyan image drum 07 = magenta image drum 08 = yellow image drum
+ When a 10.20.YY or 10.30.YY error occurs, a question mark is placed on the gas gauge of the supply or supplies with the error. These errors are noted in the event log and NON HP SUPPLY IN USE appears on the control panel. If multiple supplies have this error, a 10.XX.YY error is displayed for the first supply detected with the error. When the error corresponding to the first supply is resolved, another 10.XX.YY error is displayed for the next supply. This continues for all of the supplies errors. Note The consumables gas gauge and supplies status menu are always updated to indicate all supplies with a supplies memory error, even though the message refers to a single supply. Note 00 = memory data error might be caused when using non-HP supplies."
+Remedy;"1 In the instance of 10.00, 10.20 and 10.30 errors, check if refilled cartridges or drums are used. Replace them with HP consumables. Note If a drum or cartridge reached a “low” or “out” condition and was moved to a different printer, it might be reported as a NON HP SUPPLY. 2 Turn the printer off, and then turn the printer on again to possibly clear the error. 3 Replace the indicated supply. 4 Check the print cartridge or image drum e-label indicator for damage. Replace the print cartridge or the image drum if necessary. 5 For print cartridges, check: • connectors J16, J17, J18, and J19 on the antenna PCAs. • connectors J1001, J1006, J1007, J1008, and J1009 on the memory controller PCA. • connector J802 on the T driver PCA. 6 For image drums, check: • connectors J12, J13, J14, and J15 on the antenna PCAs. • connectors J1001, J1002, J1003, J1004, and J1005 on the memory controller PCA. • connector J802 on the T driver PCA. 7 Replace the antenna PCA for the indicated cartridge or drum. 8 Replace the T driver PCA. 9 Replace the DC controller PCA
+ In the instance of a 10.90.YY error, the image drum is reporting toner concentration-to-carrier is very low. This error might occur when non-HP supplies are used. Make sure that the toner delivery system and shutters are functioning correctly."
+Code;13.01.00
+Display;13.01.00 JAM INSIDE LOWER RIGHT DOOR or 13.01.00 JAM IN TRAY X
+Description;• A media delay jam occurred in the paper pickup area. • The media did not reach the tray 2 delivery sensor B (SR12) or the tray 3 delivery sensor B (SR14) within the specified time. • If this error reoccurs, it is a 13.01.00 JAM IN TRAY X error.
+Remedy;1 Remove the media from the lower right door, tray 2 and tray 3, and the upper right door (ITB access) if necessary. 2 Check the tray-size guides for correct settings. 3 Check the tray 2 delivery sensor B and the tray 3 delivery sensor B. for correct functionality, and check the supporting connectors to the DC controller PCA. 4 Replace the pick and feed rollers if necessary. 5 Replace the PIU.
+Code;13.03.00
+Display;13.03.00 JAM INSIDE UPPER RIGHT DOOR or 13.03.00 JAM INSIDE LOWER RIGHT DOOR
+Description;• A media delay jam occurred in the registration area. • The media from any input source did not reach the registration sensor (SR3) within the specified time. • If this error reoccurs, it is a 13.03.00 JAM INSIDE LOWER RIGHT DOOR error.error.
+Remedy;1 Remove the media from the tray 1/registration area. 2 Check that the tray 1 assembly is aligned and closes correctly. 3 Check the registration sensor for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.05.00
+Display;13.05.00 FUSER JAM LOWER LEFT DOOR or 13.05.00 JAM INSIDE FRONT DOOR
+Description;• A media delay jam occurred before the fuser. The media did not reach the fuser output sensor (PS1501) within the specified time. • If this error reoccurs, it is a 13.05.00 JAM INSIDE FRONT DOOR error.
+Remedy;1 Remove the jammed media from the ITB and the fuser area through the lower/left door or the front doors. Removing the fuser and ITB might be helpful. 2 Check the fuser output sensor (PS1501) and its flag for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.06.00
+Display;13.06.00 JAM INSIDE LOWER LEFT DOOR or 13.06.00 JAM INSIDE PAPER PATH
+Description;• A media stay jam occurred in the fuser. The media is detected at the fuser output sensor (PS1501) longer than the specified time. • If this error reoccurs, it is a 13.06.00 JAM INSIDE PAPER PATH error.
+Remedy;1 Remove the jammed media from the fuser area through the lower/ left door or the front doors. Removing the fuser might be helpful. 2 Check the fuser output sensor (PS1501) and its flag for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.07.00
+Display;13.07.00 JAM INSIDE UPPER RIGHT DOOR
+Description;• A multifeed jam occurred. • Multiple pages, with a stack height of more than 0.5 mm, arrived at the multifeed sensor (SR5) on the registration assembly.
+Remedy;1 Remove the media from the registration area. 2 Make sure that the media being used is within specifications, and that the correct media type settings for the media being used are set on the control panel. 3 Check the tray pickup and feed rollers. Replace the rollers if necessary. 4 Check the separation pad if the media is fed from tray 1. 5 Check the multifeed sensor (SR5) flag on the registration assembly for damage or binding. 6 Check the multifeed sensor (SR5) for correct functionality, and check the supporting connectors to the DC controller PCA. 7 Check connector J3101 near the multifeed sensor, intermediate connectors J3100 and J3037, and connector J121 on the DC controller PCA. 8 Replace the registration assembly. 9 Replace the DC controller PCA.
+Code;13.09.00
+Display;13.09.00 JAM INSIDE LOWER LEFT DOOR or 13.09.00 JAM INSIDE UPPER LEFT DOOR
+Description;• A media delay jam occurred. • The media did not reach the facedown output sensor (PS901) within the specified time. • If this error reoccurs, it is a 13.09.00 INSIDE UPPER LEFT DOOR error.
+Remedy;1 Remove the media from the fuser access area, the duplex diverter, or the face-down delivery area through the lower left or upper left doors. 2 Check the face-down and duplex diverters for correct functionality. 3 Check for deformed rollers. 4 Make sure that the upper and lower left doors are completely closed. 5 Check the face-down output sensor (PS901) for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.0A.00
+Display;13.0A.00 JAM INSIDE TOP OUTPUT BIN or 13.0A.00 JAM INSIDE UPPER LEFT DOOR
+Description;• A media stay jam occurred in the face-down tray. The printer detected that media is at the face-down output sensor longer than the specified time. • If this error reoccurs, it is a 13.0A.00 JAM INSIDE UPPER LEFT DOOR error.
+Remedy;1 Remove the media from the fuser access area, the duplex diverter, or the face-down delivery area through the left lower door and the left upper door. 2 Check the face-down sensor (PS901) for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.10.00
+Display;13.10.00 JAM INSIDE LOWER LEFT DOOR or 13.10.00 JAM INSIDE DUPLEXER
+Description;• A media stay jam occurred in the reversing area. • The media did not reach the duplexer media reverse sensor (SR33) within the specified time. • If this error reoccurs, it is a 13.10.00 JAM INSIDE DUPLEXER error.
+Remedy;1 Check for obstructions and residual media in the paper path in the post fuser and duplexer diverter area. 2 Make sure that the lower left door closes correctly. 3 Check the duplex diverter mechanism and the duplex diverter solenoid for correct functionality. 4 Check the duplexer media reverse sensor (SR33) for correct functionality. 5 Check the supporting connectors to the DC controller PCA.
+Code;13.11.00
+Display;13.11.00 JAM INSIDE LOWER LEFT DOOR or 13.11.00 JAM INSIDE DUPLEXER
+Description;• A media stay jam occurred in the reversing area. • The duplexer reverse sensor (SR33) detects residual media beyond the specified time. • If this error reoccurs, it is a 13.11.00 JAM INSIDE DUPLEXER error.
+Remedy;1 Check for obstructions and residual media in the paper path in the post fuser and duplexer diverter area. 2 Make sure that the lower left door closes correctly. 3 Check the duplex diverter mechanism and the duplex diverter solenoid for correct functionality. 4 Check the duplexer reverse sensor (SR33) for correct functionality. 5 Check the supporting connectors to the DC controller PCA.
+Code;13.11.05
+Display;13.11.05 JAM IN INPUT ACCESSORY
+Description;• A page is jammed in the paper path at the registration area. • A pickup delay jam occurred
+Remedy;1 Clear the jam in the indicated area. 2 Close the door so the printer attempts to clear the paper path. 3 Perform a paper-path test. 4 If the error persists, replace the paper pickup assembly.
+Code;13.11.06
+Display;13.11.06 PICKUP STATIONARY JAM
+Description;A page is jammed in the pickup area of the input accessory.
+Remedy;1 Clear the jam in the indicated area of the input device. 2 Remove the media from the right door of the printer engine.
+Code;13.11.07
+Display;13.11.07 JAM IN INPUT ACCESSORY
+Description;• A page is jammed in the right door area. • A page stopped in the registration area.
+Remedy;1 Clear the jam in the indicated area. 2 Close the door so the printer attempts to clear the paper path. 3 If the error persists, replace the vertical transfer unit.
+Code;13.11.08
+Display;13.11.08 JAM IN INPUT ACCESSORY
+Description;• A page is jammed in the paper path at the vertical transfer unit registration area. • A paper delivery delay jam occurred.
+Remedy;1 Clear the jam in the indicated area. 2 Close the door so the printer attempts to clear the paper path. 3 Make sure that the vertical transfer sensor is functional. 4 If the error persists, replace the vertical transfer sensor. 5 Replace the vertical transfer unit.
+Code;13.11.09
+Display;13.11.09 JAM IN INPUT ACCESSORY
+Description;• A page is jammed in the paper path at the right door area. • A paper delivery stationary jam occurred.
+Remedy;1 Clear the jam in the indicated area. 2 Close the door so the printer attempts to clear the paper path. 3 Replace the paper path connection unit. 4 Replace the vertical registration assembly. 5 If the error persists, replace the diverter.
+Code;13.11.10
+Display;13.11.10 RESIDUAL JAM IN DELIVERY AREA
+Description;A page is jammed in the delivery area when the power is turned on or when the front door is closed.
+Remedy;1 Clear the jam. 2 Turn the printer off, and then turn the printer on again. 3 Replace the paper path connection unit. 4 Replace the vertical registration assembly.
+Code;13.11.XY
+Display;13.11.XY JAM IN INPUT ACCESSORY
+Description;"• Media is late from tray 4.
+ Note XY can be 05, 06, 07, 08, 09, or 10."
+Remedy;1 Check for jammed media by opening tray 4 and opening the lower right door. 2 Check the paper-path transition between tray 4 and the print engine. 3 Check the tray-size guides for correct settings. 4 Replace the pickup rollers and the feed rollers if they are worn.
+Code;13.12.00
+Display;13.12.00 JAM INSIDE DUPLEXER
+Description;• A media delay jam occurred in the duplexer. • The media did not reach the duplexer media path sensor (SR31) within the specified time.
+Remedy;1 Remove the duplexer and check for correct seating, residual media, or obstructions. 2 Check the inside of the duplexer and the duplex cavity for residual media or obstructions. 3 Check the duplexer side registration guides for free movement. Replace the duplexer if necessary. 4 Check the feed rollers and the drive gear trains for damage. Replace them if necessary. 5 Check the duplexer media path sensor (SR31) for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.12.11
+Display;13.12.11 JAM IN LEFT ACCESSORY
+Description;A staple jam exists in the stapling unit.
+Remedy;1 Clear the jam. 2 Turn the printer off, and then turn the printer on again. 3 Test the staple sliding motor (M8). 4 Make sure that the stapler unit slides to the home position at power on. 5 Make sure that the staple cartridge is installed correctly. 6 Make sure that no damaged staples exist in the staple cartridge or in the stapler unit. 7 Test another staple cartridge. 8 Check all of the cable connections at the module and at the controller PCA. 9 Replace the stapler unit. 10 Replace the controller PCA.
+Code;13.12.21
+Display;13.12.21 JAM IN LEFT ACCESSORY
+Description;A jam (initial jam) exists in the flipper assembly.
+Remedy;1 Clear the jam. 2 Turn the printer off, and then turn the printer on again. 3 Clean the optical entry sensor. 4 Make sure that the entry sensor moves freely, and run the sensor check mode to test the entry sensor. 5 Calibrate the flipping sensor D/A clear. 6 Activate the reverse motor (M9) to make sure that the motor activates the assembly. 7 Make sure that the paper guide wire is positioned correctly. 8 Replace the flipper assembly. 9 Replace the controller PCA.
+Code;13.12.22
+Display;13.12.22 JAM IN LEFT ACCESSORY
+Description;A jam (stay jam) exists in the flipper assembly.
+Remedy;Perform the steps for a 13.12.21 error.
+Code;13.12.23
+Display;13.12.23 JAM IN LEFT ACCESSORY
+Description;A jam (delay jam) exists in the flipper assembly.
+Remedy;Perform the steps for a 13.12.21 error.
+Code;13.12.31
+Display;13.12.31 JAM IN LEFT ACCESSORY
+Description;A jam (initial jam) exists in the paperpath area.
+Remedy;1 Make sure that the printer and the finishing device are installed on a flat, solid surface. 2 Make sure that the printer is processing media correctly. 3 Clear the jam. 4 Turn the printer off, and then turn the printer on again. 5 Replace the controller PCA. 6 Make sure that the media in use meets specifications. 7 Replace the whole unit. 8 Replace the flipper assembly.
+Code;13.12.32
+Display;13.12.32 JAM IN LEFT ACCESSORY
+Description;A jam (stay jam) exists in the paperpath area.
+Remedy;Perform the steps for a 13.12.31 error.
+Code;13.12.33
+Display;13.12.33 JAM IN LEFT ACCESSORY
+Description;A jam (delay jam) exists in the paper-path area.
+Remedy;Perform the steps for a 13.12.31 error.
+Code;13.12.34
+Display;13.12.34 JAM IN LEFT ACCESSORY
+Description;A jam (ejectors jam) exists in the paper-path area.
+Remedy;1 Clear the jam. 2 Turn the printer off, and then turn the printer on again. 3 Make sure that the stapled jobs meet the required specifications. 4 Make sure that the number of sheets per document are within specifications. 5 Make sure that the media in use meets specifications. 6 Make sure that the stapler is the home position. 7 Replace the whole unit.
+Code;13.12.41
+Display;13.12.41 JAM IN LEFT ACCESSORY
+Description;A jam (initial jam) exists in the folding/booklet area.
+Remedy;1 Make sure that there is no media inside the output device at power on. 2 Make sure that the booklet meets specifications. 3 Clear the jam. 4 Turn the printer off, and then turn the printer on again. 5 Activate the staple-fold motor (M7) to make sure that the assembly works. 6 Perform the booklet adjustments as needed. 7 Check all cable connections at the module and at the controller PCA. 8 Replace the folding mechanism. 9 Replace the controller PCA.
+Code;13.12.42
+Display;13.12.42 JAM IN LEFT ACCESSORY
+Description;A jam (stay jam) exists in the folding/ booklet area.
+Remedy;Perform the steps for a 13.12.41 error.
+Code;13.12.43
+Display;13.12.43 JAM IN LEFT ACCESSORY
+Description;A jam (delay jam) exists in the folding/booklet area.
+Remedy;Perform the steps for a 13.12.41 error
+Code;13.12.51
+Display;JAM IN LEFT ACCESSORY
+Description;A jam (initial jam) exists in the booklet bin area.
+Remedy;1 Clear the jam. 2 Make sure that the booklet meets specifications. 3 Turn the printer off, and then turn the printer on again. 4 Activate the booklet bin sliding motor (M10) to make sure that the assembly works. 5 At power on, make sure that the booklet stopper moves completely in and out. 6 Check all cable connections at the module and at the controller PCA. 7 Replace the booklet bin. 8 Replace the controller PCA.
+Code;13.12.52
+Display;13.12.52 JAM IN LEFT ACCESSORY
+Description;A jam (stay jam) exists in the booklet bin area.
+Remedy;Perform the steps for a 13.12.51 error.
+Code;13.12.53
+Display;13.12.53 JAM IN LEFT ACCESSORY
+Description;A jam (delay jam) exists in the booklet bin area.
+Remedy;Perform the steps for a 13.12.51 error.
+Code;13.13.00
+Display;13.13.00 JAM INSIDE DUPLEXER
+Description;• A media stay jam occurred in the duplexer. • The media did not reach the duplexer media path sensor (SR31) within the specified time.
+Remedy;1 Remove the duplexer and check for correct seating, residual media, or obstructions. 2 Check the inside of the duplexer and the duplex cavity for residual media or obstructions. 3 Check the duplexer side registration guides for free movement. Replace the duplexer if necessary. 4 Check the feed rollers and the drive gear trains for damage. Replace them if necessary. 5 Check the duplex media path sensor (SR31) for correct functionality, and check the supporting connectors to the DC controller PCA. 6 If the error persists, replace the duplexer.
+Code;13.1C.00
+Display;13.1C.00 FUSER JAM LOWER LEFT DOOR
+Description;A fuser wrap jam occurred. The printer detected that media is wrapped around the fuser roller
+Remedy;1 Make sure that the media being used is within specifications, and that the correct media type settings for the media being used are set on the control panel. 2 Remove the media from the fuser through the lower left door. Removing the fuser assembly might be helpful. 3 Check the fuser output sensor (PS150) and its flag for correct functionality, and check the supporting connectors to the DC controller PCA. 4 Check the fuser rollers for damage or contamination. Verify fuser integrity by printing a demo or configuration page. 5 Replace the fuser assembly if necessary.
+Code;13.1D.00
+Display;13.1D.00 JAM INSIDE PAPER PATH
+Description;• An ITB wrap jam occurred. • The media did not reach the fuser input sensor (SR6) within the specified time.
+Remedy;1 Make sure that the media being used is within specifications, and that the correct media type settings for the media being used are set on the control panel. 2 Remove and check the ITB for residual media. 3 Check the T2 area for residual media. 4 Check the ITB for media-caused damage. Replace the ITB if necessary. 5 Check the fuser input sensor (SR6) for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;13.20.00
+Display;13.20.00 JAM INSIDE PAPER PATH
+Description;• A residual media jam occurred in the paper path. • The T2 input sensor (SR42), the fuser input sensor (SR6), and/or the fuser output sensor (PS1501) detect media when the printer doors are closed.
+Remedy;1 Check the paper path from the registration area to the T2 area and through the fuser. If there is jammed media, remove the ITB and fuser. Remove the jammed media. 2 Check the right side lower door area for residual media or jammed sensor flags. 3 Check the T2 input sensor (SR42), the fuser upstream sensor (SR6), and the fuser output sensor (PS1501) for correct flag movement and functionality. 4 Check connectors J3207 and J121 on the DC controller. 5 Check the supporting connectors to the DC controller PCA.
+Code;13.25.00
+Display;13.25.00 JAM INSIDE UPPER RIGHT DOOR
+Description;The media is detected as longer than what is configured on the control panel, as reported by the registration sensor (SR3).
+Remedy;1 Check for supported media, and that the media size for the tray is correctly set on the control panel. 2 Make sure that the software program or the driver settings are requesting the size of media that is in the tray. (This is particularly important if the tray size is set to ANY SIZE because the printer registers that the media is the size requested from the job.)
+Code;13.29.00
+Display;13.29.00 JAM INSIDE DUPLEXER
+Description;• A re-feeding jam occurred in the duplexer. • The duplexer media re-feed sensor (SR30) detects media when the printer doors are closed.
+Remedy;1 Remove the duplexer, and check the inside of the duplexer and the duplex cavity for residual media. 2 Check the duplexer media re-feed sensor (SR30) for correct functionality, and check the supporting connectors to the DC controller PCA. 3 If the error persists, replace the duplexer.
+Code;13.32.00
+Display;13.32.00 JAM IN TRAY X or 13.32.00 JAM INSIDE LOWER RIGHT DOOR
+Description;• Residual media is detected in or near tray 2 or tray 3 as indicated at power on, or when the printer is coming out of PowerSave mode. • If this error reoccurs, it is a 13.32.00 JAM INSIDE LOWER RIGHT DOOR error.
+Remedy;1 Remove the media from the pickup area of tray 2 or tray 3 through the tray or the lower right door. 2 Check the tray-size guides for correct settings. 3 Check the tray 2 media path sensor A (SR11) and the tray 2 media path sensor B (SR12) for correct functionality. Check the supporting connectors to the DC controller PCA. 4 Check the tray 3 media path sensor A (SR13) and the tray 3 media path sensor B (SR14) for correct functionality (see “Paper path jam sensors” on page 373). Check the supporting connectors to the DC controller PCA.
+Code;13.3E.00
+Display;13.3E.00 JAM INSIDE TOP OUTPUT BIN or 13.3E.00 JAM INSIDE UPPER LEFT DOOR
+Description;• Residual media is detected under the face-down output sensor (PS901). • If this error reoccurs, it is a 13.3E.00 JAM INSIDE UPPER LEFT DOOR error.
+Remedy;1 Remove the media from the facedown delivery area. 2 Check the face-down output sensor (PS901) for correct functionality, and check the supporting connectors to the DC controller PCA.
+Code;20
+Display;20 INSUFFICIENT MEMORY
+Description;• This message indicates that more data has been received from the computer than fits in the printer internal memory. • Press GO to continue printing. Only the amount of data that fits in the printer internal memory is printed. The remainder of the job is cancelled.
+Remedy;Press GO to print the transferred data (some data might be lost), and then simplify the print job or install additional memory.s
+Code;21
+Display;21 PAGE TOO COMPLEX
+Description;• The page-formatting process was not fast enough for the printer. • There might be some data lost on the page that was being formatted when the error occurred.
+Remedy;1 Press to print the transferred data (some data might be lost). 2 The page protection item appears in the CONFIGURE DEVICE - DEFAULTS - EVENTS - menu, and should be set to ON to print the page. 3 When the page is successfully printed, PAGE PROTECT=ON, should be set back to AUTO. 4 If this error appears often, simplify the print job.
+Code;22
+Display;22 EIO X BUFFER OVERFLOW
+Description;Too much data was sent to the EIO card in the specified slot (X). An improper communications protocol might be in use.
+Remedy;1 Press GO to print the transferred data (some data might be lost). 2 Check the host configurationost on
+Code;22
+Display;22 PARALLEL I/O BUFFER OVERFLOW
+Description;Too much data was sent to the parallel port.
+Remedy;1 Check for a loose cable connection, and be sure to use a high-quality cable. (Some non-HP parallel cables might be missing pin connections or might otherwise not conform to the IEEE-1284 specification.) 2 This error can occur if the print driver in use is not IEEE-1284 compliant. 3 Press to clear the error (data will be lost).
+Code;22
+Display;22 SERIAL I/O BUFFER OVERFLOW
+Description;The printer serial buffer overflowed during a busy state
+Remedy;Press GO to print the transferred data (some data might be lost)
+Code;40
+Display;40 BAD SERIAL TRANSMISSION
+Description;The printer serial buffer overflowed during a busy state
+Remedy;Press GO to print the transferred data (some data might be lost)
+Code;40
+Display;40 EIO X BAD TRANSMISSION
+Description;The connection between the printer and the EIO card in the specified slot has been abnormally broken
+Remedy;Press GO to clear the error and continue printing.
+Code;41.3
+Display;41.3 UNEXPECTED SIZE TRAY X
+Description;Tray (X) is loaded with media that is longer or shorter in the feed direction than the size configured for the tray
+Remedy;1 Check the media size definition for the specified tray. If necessary, reconfigure the media size defined for the tray. 2 Press to get to TRAY X SIZE=. Reconfigure the size in a tray so that the printer uses a tray with the size that is required for the print job. 3 If the error does not clear, turn the printer off, and then turn the printer on again. 4 If the error persists, check the tray size sensor mechanisms, the registration sensor for correct functionality, and the supporting connectors to the DC controller PCA.
+Code;41.5
+Display;41.5 UNEXPECTED TYPE TRAY X
+Description;Tray (X) is loaded with media that is not of the same type configured for the tray. Note The printer only detects media or OHTs.
+Remedy;1 Check the media type definition for the specified tray. 2 If necessary, reconfigure the media type for the tray. 3 If the error does not clear, turn the printer off, and then turn the printer on again. 4 If the error persists, check the transparency sensor for correct functionality. Check connector J3032 on the transparency sensor, intermediate connector J3027, and connector J121 on the DC controller PCA.
+Code;41.X
+Display;41.X PRINTER ERROR
+Description;"A temporary printing error occurred.
+ X description: 1 = unknown misprint error 2 = beam detect misprint 3 = media feed error (size) 5 = media feed error (type) 6 = ITB detection error"
+Remedy;1 Press GO to clear the error and continue printing. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 If the error persists, troubleshoot the laser system (41.2), the media feed mechanisms, the media size/type settings, and the ITB seating.
+Code;49.XXYY
+Display;49.XXYY PRINTER ERROR
+Description;A critical formatter firmware error occurred which caused the processor on the formatter to cease operation. Note Unique subcodes are constructed by creating a unique error of an 8-bit component ID (XX) and an 8-bit component specific error (YY). The component ID and component specific error are useful in determining which part of the firmware failed.
+Remedy;Note The printer 49 errors are usually not fixed by replacing the formatter. 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Make sure that the customer is using a known good software program, good driver, good cabling, and good connections. 3 Print a configuration page to make sure that the printer has the most recent release of formatter firmware. If necessary, flash the printer with new firmware. 4 Check all of the accessory hardware, such as memory DIMMs and EIO devices, on the formatter by removing them. (Removing the hardware eliminates them as possible causes of the error.) 5 If the error persists, the formatter might need to be replaced.
+Code;50.X
+Display;50.X
+Description;"A fuser error occurred. Power cycle the printer to continue.
+ X description: 1 = low fuser temperature 2 = fuser detected not coming to operating temperature after a jam or open door 3 = high fuser temperature 6 = open fuser heating circuit between the fuser and low-voltage power supply 7 = fuser pressure release mechanism failure"
+Remedy;1 Remove the fuser and check it for damage or jammed media. 2 Make sure that the printer is plugged into appropriate ac voltage. 3 Turn the printer off, let it cool for 10 minutes, and then turn the printer on again to possibly clear the error. 4 Replace the fuser. 5 Check the fuser/print engine electrical connectors J3019 for damage. 6 Check connector J1501 on the fusing sensor PCA and connector J115 on the DC controller PCA. 7 Check for a fuser drive or fuser motor failure. Replace if necessary. 8 Replace the power supply unit. 9 Replace the DC controller PCA.
+Code;51.XY
+Display;51.XY PRINTING ERROR
+Description;"A laser scanner assembly laser error occurred.
+ X description: 1 = beam detect error 2 = laser error Y description 0 = no color K = black C = cyan M = magenta Y = yellow"
+Remedy;CAUTION When servicing the printer with the top cover off, cover the top of the printer to prevent light leaks which might blind the laser/scanner beam detect sensors. 1 Check the FFCs for damage, and make sure that they are correctly centered and seated in the connectors. Replace the FFCs if necessary. 2 The following are color-specific steps: • K laser Check connector J3012 on the laser driver PCA, connector J3056 on the scanner motor, connector J3061 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. • C laser Check connector J3011 on the laser driver PCA, connector J3059 on the scanner motor, connector J3062 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. • M laser Check connector J3010 on the laser driver PCA, connector J3053 on the scanner motor, connector J3063 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. • Y laser Check connector J3009 on the laser driver PCA, connector J3050 on the scanner motor, connector J3064 on the beam detect PCA, connectors J812 and J817 on the T driver PCA, and connector J108 on the DC controller PCA. 3 Check FFC connectors J103 and J106 on the DC controller PCA, J9002 on the formatter cage, and J801 on the T driver PCA. 4 Replace the necessary laser scanner unit. 5 Replace the T driver PCA. 6 Replace the DC controller PCA.
+Code;52.X
+Display;52.X PRINTER ERROR
+Description;"A laser scanner assembly error occurred.
+ X description: 1 = scanner error 2 = scanner startup error 3 = scanner rotation error Y description 0 = no color K = black C = cyan M = magenta Y = yellow"
+Remedy;CAUTION When servicing the printer with the top cover off, cover the top of the printer to prevent light leaks which might blind the laser/scanner beam detect sensors. 1 The following are color-specific steps: .. K laser Check connector J3012 on the laser driver PCA, connector J3056 on the scanner motor, connector J3061 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. .. C laser Check connector J3011 on the laser driver PCA, connector J3059 on the scanner motor, connector J3062 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. .. M laser Check connector J3010 on the laser driver PCA, connector J3053 on the scanner motor, connector J3063 on the beam detect PCA, connectors J812 and J815 on the T driver PCA, and connector J110 on the DC controller PCA. .. Y laser Check connector J3009 on the laser driver PCA, connector J3050 on the scanner motor, connector J3064 on the beam detect PCA, connectors J812 and J817 on the T driver PCA, and connector J108 on the DC controller PCA. 2 Check FFC connectors J103 and J106 on the DC controller PCA, J9002 on the formatter cage, and J801 on the T driver PCA. 3 Check the FFCs for damage, and make sure that they are correctly centered and seated in the connectors. Replace the FFCs if necessary. 4 Replace the necessary laser scanner unit. 5 Replace the T driver PCA. 6 Replace the DC controller PCA.
+Code;53.10.05
+Display;53.10.05 PRINTER ERROR
+Description;A DIMM is installed in both the 168- pin DIMM slot 4 and in the 100-pin DIMM slot 5.
+Remedy;This is an invalid configuration. DIMMs cannot be installed in both slots at the same time. Remove one of the DIMMs, or move one of the DIMMs to a different slot.
+Code;53.XY.ZZ
+Display;53.XY.ZZ PRINTER ERROR
+Description;"A problem exists with the printer memory.
+ X DIMM type: 1 = RAM
+ Y device location: 1 = DIMM slot 1 2 = DIMM slot 2 3 = DIMM slot 3 4 = DIMM slot 4
+ ZZ error number: 0 = unsupported memory 1 = unrecognized memory 2 = unsupported memory 3 = failed RAM test 4 = exceeded maximum RAM size 5 = invalid DIMM speed"
+Remedy;Turn the printer off, and then replace the DIMM that caused the error.
+Code;54.XX
+Display;54.XX PRINTER ERROR
+Description;The printer 54 errors indicate sensor abnormalities. Sensor abnormalities are caused by failed or blocked sensors, or sensors reporting results outside an expected range. Note Some 54 errors do not stop the printing process, and are only noted in the event log but not on the control panel. XX description 00 = ITB misalignment (check the event log for a 54.27 error and cycle power to recover) 01 = environmental temperature sensor output is abnormal (appears only in the event log) 05 = OHT sensor failure (appears only in the event log) 06 = density sensor failure Note For errors 11 through 14, the density is set to the highest or lowest possible value. This usually occurs because the calibration patches are not on the ITB correctly. These errors appear only in the event log. 11 = yellow density sensor (the engine detects abnormality in the yellow density control and the engine default is used) 12 = magenta density sensor (the engine detects abnormality in the magenta density control and the engine default is used) 13 = cyan density sensor (the engine detects abnormality in the cyan density control and the engine default is used) 14 = black density sensor (the engine detects abnormality in the black density control and the engine default is used) Note Errors 15 through 18 only appear in the event log and printing continues. 15 = yellow CPR sensor (the engine cannot detect the yellow CPR pattern on the ITB) 16 = magenta CPR sensor (the engine cannot detect the magenta CPR pattern on the ITB) 17 = cyan CPR sensor (the engine cannot detect the cyan CPR pattern on the ITB) 18 = black CPR sensor (the engine cannot detect the black CPR pattern on the ITB) 20 = CPR sensor (output is abnormal or the engine cannot detect any of the CPR patterns on the ITB) Note Errors 21 through 24 indicate a toner concentration sensor failure. 21 = yellow image drum t/d ratio sensor 22 = magenta image drum t/d ratio sensor 23 = cyan image drum t/d ratio sensor 24 = black image drum t/d ratio sensor 27 = ITB misalignment sensor Note 27 = ITB misalignment sensor appears in the event log, but it might appear as a 54.00 error on the control panel. 28 = clean density/CPR sensor warning (only appears in the event log) Note For error 28, the CLEAN SENSORS 54.28.01 (density sensor is dirty) or CLEAN SENSORS 54.28.02 (CPR sensor is dirty) appears on the event log. 29 = clean density/CPR sensor failed (only appears in the event log and CLEAN SENSORS appears on the control panel) 30 = halftone calibration error .
+Remedy;• 54.01 procedure: 1 Check that all of the environmental requirements are met. 2 Turn the printer off, and then turn the printer on again. 3 Check connector K3013 on the temperature/humidity sensor, intermediate connector J3085, and connector J807 on the T driver PCA. 4 Replace the temperature/humidity sensor. 5 Replace the T driver PCA. 6 Replace the DC controller PCA. • 54.06, 54.11, 54.12, 54.13, 54.14, and 54.30 procedure: 1 Check the cleaning blade and ITB for evidence of a cleaning blade failure (which might cause the density calibration to fail). 2 Check the right door actuated cleaning mechanism for correct functionality. 3 Select CALIBRATE NOW and PRINT STOP TEST on the control panel to check correct formations of the calibration swatches on the ITB. If the swatches are light or missing a color, check the T1 components, image drum, and print cartridge for the missing or light color. Also, check for malformed or too light swatches, stray toner from cleaning failures, and ITB damage. 4 Check connector J3014 at the density sensor, intermediate connector J3072 and J3080, and connector J808 on the T driver PCA. 5 Replace the density/color registration sensor assembly. 6 Replace the T driver PCA. 7 Replace the DC controller PCA. • 54.05 procedure: 1 Clean the OHT sensor. 2 Check the transparency sensor for correct functionality. 3 Check connectors J3032 on the transparency sensor, intermediate connector J3027, and connector J121 on the DC controller PCA. • 54.15, 54.16, 54.17, 54.18, and 54.20 procedure 1 Check the color and the tray 1 dependent items for the specified color. 2 Defeat the right side upper door (ITB access) interlocks and check during a calibration that the density patches are formed correctly on the ITB. 3 Print a laser alignment page to check for adjustable CPR problems. 4 Check the cleaning blade and ITB for evidence of a cleaning blade failure (which might cause the density calibration to fail), and check the ITB for damage. 5 Check the right door actuated cleaning mechanism for correct functionality. 6 Select CALIBRATE NOW and PRINT STOP TEST on the control panel to check correct formations of the calibration swatches on the ITB (set to 7,000 milliseconds for a CPR pattern check). If the swatches are light or missing a color, check the T1 components, image drum, and print cartridge for the missing or light color. Also, check for malformed or too light swatches, stray toner from cleaning failures, and ITB damage. 7 Check the ITB for smooth belt rotation and belt travel. Replace the ITB if movement problems or damage exists. 8 Check connector J3073 and J3074 at the CPR sensors, intermediate connector J3080, and connector J808 on the T driver PCA. 9 Replace the DC controller PCA. 10 Replace the density/color registration sensor assembly. 11 Replace the T driver PCA. • 54.21, 54.22, 54.23, and 54.24 procedure 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Check the indicated image drum for damaged high-voltage contacts, and check the contacts for continuity to the high-voltage power supply. 3 Check the image drum highvoltage pins on the print engine. 4 Check the following connectors: a Yellow: J3040 and J804 on the T driver PCA. b Magenta: J3038 and J804 on the T driver PCA. c Cyan: J3044 and J805 on the T driver PCA. d Black: J3042 and J805 on the T driver PCA. 5 Replace the indicated image drum. (Make sure that the printer is turned off, and then turned on again after the image drum is replaced.). 6 Replace the T driver PCA. 7 Replace the DC controller PCA. • 54.27 and 54.00 procedure 1 Remove the ITB and check the belt for correct alignment and movement. 2 Replace the ITB and seat it correctly. 3 Check connector J3075 and J618 on the P driver PCA. 4 Replace the ITB. 5 Replace the P driver PCA. 6 Replace the DC controller PCA. • 54.28 procedure 1 Make sure that the density/color sensor shutter is in the open position when the front right door is closed. 2 Open and close the front right door to clean the sensor assembly. 3 Adjust or replace the sensor cleaning assembly that is actuated by the front right door. 4 Replace the density/color registration sensor assembly. • 54.29 procedure 1 Check the right door actuated cleaning mechanism for correct functionality. 2 Adjust or replace the sensor cleaning assembly that is actuated by the front right door. 3 Replace the density/color registration sensor assembly.
+Code;55.XX
+Display;55.XX PRINTER ERROR
+Description;• The engine is not communicating with the formatter. • The communication link between the formatter and the DC controller PCA is lost.
+Remedy;1 Turn the printer off, and then turn the printer on again to clear the error. 2 Turn the printer off and reseat the formatter. 3 Print a configuration page to make sure that the formatter has the latest firmware image. If it does not, perform a flash upgrade. 4 Check the connectors on the FFC between the formatter cage and the DC controller PCA. 5 Replace the DC controller PCA. 6 Replace the formatter.
+Code;56.X
+Display;56.X PRINTER ERROR
+Description;A temporary printer error occurred.
+Remedy;1 Turn the printer off, and then turn the printer on again to clear the error. 2 Turn the printer off and reseat the formatter. 3 Print a configuration page to make sure that the formatter has the latest firmware image. If it does not, perform a flash upgrade. 4 Check the connectors on the FFC between the formatter cage and the DC controller PCA. 5 Replace the DC controller PCA. 6 Replace the formatter.
+Code;57.X0
+Display;57.X0 PRINTER ERROR
+Description;"The printer detects that a fan motor has failed.
+ X description: 1 = cartridge fan (FM 3) 3 = low-voltage power supply fan (FM5) 5 = face-up delivery paper path fans (FM1 or FM6) 6 = paper-path fan (FM2) 7 = fuser fan (FM4) 9 = ozone/exhaust fan (FM7)"
+Remedy;1 Turn the printer off, and then turn the printer on again to clear the error. 2 Check the indicated fan, and check for correct movement of the blades and motor. 3 Check the connectors that apply to the X error: 1: J3078 and J820 on the T driver PCA. 3: J3 on the low-voltage power supply, and J102 on the DC controller PCA. 5: J3079 and J3087 at the fans, intermediate connector J086, and J811 on the T driver PCA. 6: J818 on the T driver PCA. 7: J819 on the T driver PCA. 9: J3089 at the fan, and J823 on the T driver PCA. 4 Check connector J1 on the lowvoltage power supply, J210 and J202 on the high-voltage power supply, J608 and J612 on the P driver PCA, and J806 on the T driver PCA. 5 Replace the fan if voltage is supplied to it at power on and it fails. See chapter 6. 6 Replace the T driver PCA. 7 Replace the DC controller PCA if X = 3 (FM5)
+Code;58.X0
+Display;58.X0 PRINTER ERROR
+Description;"• A printer error occurred where a memory tag CPU error was detected • Cycle power to continue.
+ X description: 1 = N/A 2 = air temperature sensor 3 = CPU 4 = power supply"
+Remedy;1 Turn the printer off, and then turn the printer on again to clear the error. 2 If the error persists, reseat the print cartridges and the image drums. 3 Check the memory tag on the consumables for damage. Replace the consumable if it is damaged. 4 Check the antenna assemblies for each consumable, and the connections to the memory board. 5 Replace the memory board. 6 Replace the DC controller PCA.
+Code;59.XY
+Display;59.XY PRINTER ERROR
+Description;"The printer detects a motor that fails to turn or fails to turn at speed.
+ X description: 0 = motor error (not possible for the HP color LaserJet 9500) 1 = motor startup error 2 = motor rotation error 3 = fuser motor startup error 4 = fuser motor rotation error 5 = image drum motor startup error 6 = image drum motor rotation error 8 = developer motor failure 9 = ITB motor startup error A = ITB motor rotation error D = registration motor starting error E = registration motor rotation error Note 59.XY errors with X = A, D, or E noted in the log appear as 59.10.00, 59.13.00, and 59.14.00 respectively (59.XX.YY), where XX is a decimal conversion of the hexadecimal control panel display error.
+ Note Print cartridge motor errors are indicated as REMOVE AND SHAKE <COLOR> CARTRIDGE. Y description 0 = no color K = black C = cyan M = magenta Y = yellow"
+Remedy;"Note If turning the printer off and on again does not resolve the 59.00 or 59.A0 error, remove and reinstall the image transfer cleaner.
+ • Print cartridge motor errors (remove and shake)
+ There are no 59 errors associated with the print cartridge motor errors. When the engine reports a fail to rotate for these motors, the error REMOVE AND SHAKE <COLOR> CARTRIDGE appears. 1 Remove and check the indicated print cartridge. Check the engine for damaged drive linkages. 2 Gently shake the print cartridge, reseat it, and turn the printer on. 3 Turn the printer off, and then turn the printer on again to clear the error. 4 Use the hardware diagnostic tools from the control panel to test each motor for correct functionality. 5 Check connector J1 on the lowvoltage power supply, J210 and J202 on the high-voltage power supply, J608 and J612 on the P driver PCA, and J806 on the T driver PCA. 6 Replace the print cartridge and the drive linkages if necessary. Note Make sure that the print cartridges, when stored, were not exposed to high temperatures. 7 Check connector 814 on the T driver PCA. 8 Check the color-appropriate connectors: • K: J3046 near the motor • C: J3047 near the motor • M: J3048 near the motor • Y: J3049 near the motor 9 Replace the T driver PCA. 10 Replace the DC controller PCA.
+ • Fuser motor errors
+ 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Remove and check the fuser for jammed media and damaged drive gears. 3 Perform a motor diagnostics test. 4 Check connector J3035 at the fuser motor and connector J116 on the DC controller PCA. 5 Check the fuser drive train for correct movement. Replace the fuser drive train if necessary. 6 Replace the fuser motor. 7 Replace the DC controller PCA.
+ • Image drum motor errors
+ 1 Gently shake the print cartridge, reseat it, and turn the printer on. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Remove and check the indicated image drum, and check the engine for damaged drive linkages. 4 Reseat the image drum. 5 Replace the image drum and the drive linkages if necessary. 6 Check connector J1 on the lowvoltage power supply, J210 and J202 on the high-voltage power supply, J608 and J612 on the P driver PCA, and J806 on the T driver PCA. Note Make sure that the print cartridges, when stored, were not exposed to high temperatures. 7 Check FFC connectors J104 and J105 on the DC controller PCA, and connectors J601 and J616 on the P driver PCA (especially if the printer has been serviced recently). 8 Make sure that the FFC is centered and that it is completely inserted into the connector. Replace the FFC if it is damaged. 9 Check the color-appropriate connectors: • K: J610 and J613 on the P driver PCA, J701K for the encoder, and J3097 on the motor. • C: J607 and J614 on the P driver PCA, J701C for the encoder, and J3095 on the motor. • M: J605 and J615 on the P driver PCA, J701M for the encoder, and J3093 on the motor. • Y: J603 and J617 on the P driver PCA, J701Y for the encoder, and J3091 on the motor. 10 Check the process cartridge drive assembly encoders and motors for correct functionality. Replace the encoders and motors if necessary. 11 Replace the process cartridge drive assembly. 12 Replace the DC controller PCA. • Registration motor errors 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Use the hardware diagnostic tools from the control panel to test the registration motor for correct functionality. 3 Check the registration motor drive linkages for correct functionality. Replace the linkages if necessary 4 Check connector J3036 at the registration motor and connector J117 on the DC controller PCA. 5 Replace the registration motor. 6 Replace the DC controller PCA.
+ • Developer motor errors
+ 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Remove and check the indicated image drum, and check the engine for damaged drive linkages. 3 Reseat the image drum and turn the printer on. 4 Use the hardware diagnostic tools from the control panel to test each motor for correct functionality. 5 Replace the image drum and the drive linkages if necessary. 6 Check connector J1 on the lowvoltage power supply, J210 and J202 on the high-voltage power supply, J608 and J612 on the P driver PCA, and J806 on the T driver PCA. 7 Check FFC connectors J104 and J105 on the DC controller PCA, and connectors J601 and J616 on the P driver PCA (especially if the printer has been serviced recently). 8 Make sure that the FFC is centered and that it is completely inserted into the connector. Replace the FFC if it is damaged. 9 Check the color-appropriate connectors: • K: J609 on the P driver PCA, and J3096 on the motor. • C: J606 on the P driver PCA, and J3094 on the motor. • M: J604 on the P driver PCA, and J3092 on the motor. • Y: J602 on the P driver PCA, and J3090 on the motor. 10 Check the process cartridge drive assembly encoders and motors for correct functionality. 11 Replace the process cartridge drive assembly. 12 Replace the DC controller PCA. • Registration motor error 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Check the registration assembly for damage or jammed media. 3 Check the gear train on the registration drive assembly for correct functionality. 4 Use the hardware diagnostic tools from the control panel to test each motor for correct functionality. 5 Check connector J3036 on the registration motor, and connector J117 on the DC controller PCA. 6 Use the hardware diagnostic tools from the control panel to test each motor for correct functionality. 7 Check connector J3036 on the registration motor, and connector J117 on the DC controller PCA. 8 Replace the registration motor. 9 Replace the DC controller PCA.
+ • ITB motor error
+ 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Partially remove the ITB. 3 Turn the fly wheel on the right side to check the ITB for damage and correct movement. Check the drive linkages from the ITB motor for damage. Replace any damaged hardware. 4 Reseat the ITB and raise the green lever. 5 Use the hardware diagnostic tools from the control panel to test the ITB motor for correct functionality. 6 Remove and reseat the secondary transfer roller and the cleaning blade/toner collection bottle. 7 Check connector J1 on the lowvoltage power supply, J210 and J202 on the high-voltage power supply, J608 and J612 on the P driver PCA, and J806 on the T driver PCA. 8 PCA (especially if the printer was recently serviced). 9 Make sure that the FFC is centered and that it is completely inserted into the connector. Replace the FFC if it is damaged. 10 Check connector J3098 at the motor, and connector J611 on the P driver PCA. 11 Check FFC connector J104 on the DC controller PCA, and FFC connector J601 on the P driver. • T2 clutch error 1 Turn the printer off, and then turn the printer on again to clear the error. 2 Use the hardware diagnostic tools from the control panel to test each motor for correct functionality. 3 Remove and reseat the secondary transfer roller and the cleaning blade/toner collection bottle. 4 Check the secondary transfer assembly for damage or jammed media. 5 Check connector J3030 on the secondary transfer assembly, intermediate connector J3026, and connector J121 on the DC controller PCA. 6 Replace the secondary transfer assembly. 7 Replace the DC controller PCA."
+Code;60.X
+Display;60.X PRINTER ERROR
+Description;"The tray number specified by X is lifting media to the top of the tray for proper feeding but an obstruction is preventing the tray from lifting correctly.
+ X description:
+ 2: tray 2 cassette lifter 3: tray 3 cassette lifter 4: tray 4 cassette tray 8: tray 2 pickup roller lifter 9: tray 3 pickup roller lifter"
+Remedy;1 Check the indicated media tray for correct functionality of all of the parts. Replace the media tray if necessary. 2 Check connector J11 near the pickup motor, connector J12 near the pickup roller up/down motor, and connector J13 near the lifter motor. 3 Check intermediate connector J3001, and connector J120 on the DC controller PCA. 4 Check the connectors for the media-size detection switches J52, J54, J3076, and J3077. 5 Replace the paper pickup assembly. 6 Replace the DC controller PCA.
+Code;64.X
+Display;64.X PRINTER ERROR
+Description;A scan buffer (video DMA) error occurred.
+Remedy;1 Turn the printer off, and then turn the printer on again to clear the error. 2 Perform a cold reset. 3 Turn the printer off, remove all of the extra memory and EIO devices, and turn the printer on again. 4 Replace the formatter or the firmware DIMM.
+Code;66.12.11
+Display;66.12.11 OUTPUT DEVICE FAILURE
+Description;A stapler carriage motor failure (M8) occurred.
+Remedy;1 Make sure that the stapler cartridge is seated in the stapler unit correctly. 2 Activate the staple sliding motor (M8) by performing a mechanical test. 3 Make sure that the stapler unit slides to the home position. 4 Replace the stapler unit. 5 Replace the controller PCA. 6 Replace the whole unit.
+Code;66.12.31
+Display;66.12.31 OUTPUT DEVICE FAILURE
+Description;A home position timeout (M1) occurred.
+Remedy;1 Check all of the cable connections at the controller PCA. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Activate the delivery motor (M1) by performing a mechanical test. 4 Replace the controller PCA. 5 Replace the whole unit.
+Code;66.12.32
+Display;66.12.32 OUTPUT DEVICE FAILURE
+Description;A home position timeout for aligning paddles occurred.
+Remedy;Perform the steps for a 66.12.31 error.
+Code;66.12.33
+Display;66.12.33 OUTPUT DEVICE FAILURE
+Description;A delivery motor (M6) failure occurred.
+Remedy;Perform the steps for a 66.12.31 error.
+Code;66.12.34
+Display;66.12.34 OUTPUT DEVICE FAILURE
+Description;A front aligning plate motor (M4) failure occurred.
+Remedy;1 Check all of the cable connections at the controller PCA. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Activate the front and back aligning plate motors (M4 and M5) by performing a mechanical test. 4 Adjust the front jogger by performing a calibration procedure. 5 Replace the controller PCA. 6 Replace the whole unit.
+Code;66.12.35
+Display;66.12.35 OUTPUT DEVICE FAILURE
+Description;A back aligning plate motor (M5) failure occurred.
+Remedy;Perform the steps for a 66.12.34 error.
+Code;66.12.36
+Display;66.12.36 OUTPUT DEVICE FAILURE
+Description;A stacker bin fluctuation motor (M6) failure occurred.
+Remedy;1 Check all of the cable connections at the controller PCA. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Activate the stacker bin fluctuation motor (M6) by performing a mechanical test. 4 Make sure that the stacker bin moves up and down at the poweron sequence. 5 Send two pages through as a test. 6 Replace the controller PCA. 7 Replace the whole unit.
+Code;66.12.41
+Display;66.12.41 OUTPUT DEVICE FAILURE
+Description;A staple-fold motor (M7) failure occurred.
+Remedy;1 Check all of the cable connections at the controller PCA. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Activate the staple-fold motor (M7) by performing a mechanical test. 4 Perform a booklet adjustment as needed. 5 Replace the folding mechanism. 6 Replace the controller PCA.
+Code;66.12.51
+Display;66.12.51 OUTPUT DEVICE FAILURE
+Description;A booklet bin slide motor (M10) failure occurred.
+Remedy;1 Check all of the cable connections at the controller PCA. 2 Turn the printer off, and then turn the printer on again to clear the error. 3 Activate the booklet bin slide motor (M10) by performing a mechanical test. 4 At power on, make sure that the booklet stopper moves completely in and out. 5 Replace the booklet bin. 6 Replace the controller PCA.
+Code;68.X
+Display;68.X PERMANENT STORAGE ERROR
+Description;"An error occurred in the printer nonvolatile memory (NVRAM), and one or more printer settings is reset to its factory default. Printing can continue, but there might be some unexpected functions because an error occurred in permanent storage.
+ X description: 0 = onboard NVRAM 1 = removable disk (flash or hard)"
+Remedy;1 Pressing GO should clear the error. 2 Perform a cold reset. 3 Turn the printer off, remove all of the extra memory and EIO devices, and then turn the printer on again. 4 For 68.1 errors, remove files from the hard disk by using the control panel or Web Jetadmin. 5 Reinitialize the hard disk drive. 6 Perform a NVRAM initialization.
+Code;68.X
+Display;68.X PERMANENT STORAGE FULL
+Description;"The printer NVRAM is full. Some saved settings in the NVRAM might reset to the factory defaults. Printing can continue, but there might be some unexpected functions because an error occurred in permanent storage.
+ X description: 0 = onboard NVRAM 1 = removable disk (flash or hard)"
+Remedy;1 Pressing GO should clear the error. 2 Perform a cold reset. 3 Turn the printer off, remove all of the extra memory and EIO devices, and then turn the printer on again. 4 For 68.1 errors, remove files from the hard disk by using the control panel or Web Jetadmin. 5 Reinitialize the hard disk drive. 6 Perform a NVRAM initialization.
+Code;68.X
+Display;68.X PERMANENT STORAGE WRITE FAIL
+Description;"The printer NVRAM is failing to write. Printing can continue, but there might be some unexpected functions because an error occurred in permanent storage.
+ X = description: 0 = onboard NVRAM 1 = removable (flash or hard)"
+Remedy;1 Pressing GO should clear the error. 2 Perform a cold reset. 3 Turn the printer off, remove all of the extra memory and EIO devices, and then turn the printer on again. 4 For 68.1 errors, remove files from the hard disk by using the control panel or Web Jetadmin. 5 Reinitialize the hard disk drive. 6 Perform a NVRAM initialization.
+Code;69.X
+Display;69.X PRINTER ERROR
+Description;"A temporary printer error occurred.
+ 00 (duplex D-roller is not detected at the home position) 01 (duplex slide adjustment failure)"
+Remedy;Turn the printer off, reseat the duplexer, and then turn the printer on again to clear the error. 2 Remove the duplexer and check for proper seating, residual media, or obstructions. 3 Check the inside of the duplexer and the duplex capacity for residual media or obstructions. 4 Check the duplexer-side registration guides for correct functionality. Replace the duplexer if necessary. 5 Check the feed rollers and drive gear trains for damage. Replace them if necessary.
+Code;79.XXXX
+Display;79.XXXX PRINTER ERROR
+Description;A critical hardware error occurred.
+Remedy;Turn the printer off, and then turn the printer on again to clear the error.
+Code;8X.YYYY
+Display;8X.YYYY
+Description;The EIO accessory card in slot X has encountered a critical error as specified by YYYY.
+Remedy;1 Turn the printer off. 2 Remove the EIO accessory card. Reseat the card securely into the specified slot. 3 Turn the printer on again. 4 Insert the card into a different slot. 5 If the error persists, the EIO accessory card might need to be replaced.

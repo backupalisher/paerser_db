@@ -1,0 +1,162 @@
+Code;0001
+Description;Internal RAM The read/write of the RAM on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA
+Code;0002
+Description;SRAM The read/write of the SRAM on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA
+Code;0004
+Description;Flash ROM The program area in the Flash ROM is sum-checked, and it could not be read, causing an error.
+Remedy;• Reinstall the Firmware (Printer and Boot Firmware). • If the Error continues, replace the Main PCA
+Code;0008
+Description;PIO The read/write of a specific Parallel I/O (PIO) was tested and an error was detected.
+Remedy;• Replace the Main PCA
+Code;0010
+Description;NVRAM Problems with the NVRAM detected.
+Remedy;• If multiple errors have occurred that include the NVRAM error, try to resolve the other errors first. After resolving the other errors (except NVRAM), switch the Printer Off. • Switch the Printer On again and only the NVRAM error recovery will be performed. • If System Error Code 11Ax appears when the Printer is turned On. • Replace NVRAM • Replace Main PCA
+Code;0020
+Description;FPGA (Main PCA) The read/write of the FPGA-ATG (Band Memory) and FPGA-RSM (Mask Memory) registers on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA
+Code;0040
+Description;FPGA (Carriage PCA) The read/write of the FPGA-PTC (Print Timing Controller) and FPGA-PDD (Print Data Distributor) registers on the Carriage PCA was diagnosed and an error was detected.
+Remedy;• Replace the Carriage PCA • Make sure that the Carriage Cable is correctly connected. • Replace the Main PCA
+Code;0080
+Description;ASIC CONF (Main PCA) The program load from the Flash ROM on the Main PCA to the FPGA on the Main PCA or sum-check was not performed correctly and an error occurred.
+Remedy;• Reload the ASIC program from the IC Card. • Replace the Main PCA
+Code;0100
+Description;ASIC CONF (Carriage PCA) The program load from the Flash ROM on the Main PCA to the ASIC on the Carriage PCA or sum-check was not performed correctly and an error occurred.
+Remedy;• Reload the ASIC program from the IC Card. • Make sure that the Carriage Cable is correctly connected. • Replace the Carriage PCA • Replace the Main PCA
+Code;0200
+Description;DRAM The read/write of the image band memory on the Main PCA was diagnosed and an error was detected
+Remedy;• Replace the Main PCA
+Code;0400
+Description;USB Register The read/write of the USB controller on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA
+Code;0800
+Description;Power Supply (+36V, +24V, +12V) The power supplies of +36, +24 and +12 V were diagnosed and could not be detected.
+Remedy;• Open the Electronics Cover and check LED 11 and LED 13. • If both LED 11 and LED 13 are OFF, then try the following: – Check the Interlock Switches to make sure they are installed/connected correctly. Make sure that the Rear Cover lips (that activate the Interlock Switches) are not bent and that the Rear Cover is closed correctly. – If the Interlock Switches are installed and connected correctly, then replace the Main PCA • If both LED 11 and LED 13 are ON, then try the following: – Check whether the correct voltages are supplied from the power source (refer to the table below). If the correct voltages are not supplied, then replace the Power Supply Unit – It is possible that this error occurred because of a faulty Main PCA. Replace the Main PCA – Check whether the motors have been short-circuited by testing +24 V. If +24 V is not supplied then replace both Scan-Axis/Paper-Axis Motors. If error continues, replace the Main PCA
+Code;1110
+Description;GA_ATG Block Clear Error The ATG band memory block erase does not end. This error is checked during Boot-Up sequence and printing.
+Remedy;• Replace the Main PCA
+Code;1111
+Description;GA_ATG DMA Transfer Error There is a problem in the data path. This error is checked during printing.
+Remedy;• Make sure that the host PC and the Printer are connected correctly via a USB Cable. • Replace the Main PCA
+Code;112x
+Description;Vacuum Fan Error x = 0: The Vacuum Fan (Wiping Side) has failed. x = 1: The Vacuum Fan (Center of the Platen) has failed. x = 2: The Vacuum Fan (Capping Side) has failed.
+Remedy;• Make sure that the failing Vacuum Fan Cable is connected correctly and is not damaged • Replace the failing Vacuum Fan • If the error continues, replace the Add-On (HEB2) Control PCA (for errors where x = 0 or 1) and the Main PCA (for errors where x = 2, 3 or 4).
+Code;1140
+Description;Flash ROM Write Error A time-out error occurs when the NVRAM contents are being saved in the flash memory in Maintenance Mode and erasing does not end.
+Remedy;• Replace the Main PCA
+Code;1150
+Description;Home Position Sensor Error The Carriage cannot be moved to it’s home position.
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Printer Sensors"". Then execute the ""Home Position"" option, which will display the state of the home position sensor. If the home position is detected, ""1"" will be displayed on the Front Panel. If the home position is not detected, manually move the Carriage and check the Front Panel to see if the ""1"" is displayed. • Make sure the Home Position Sensor Cable is connected correctly and is not damaged. • Replace the Home Position Sensor. • Replace the Main PCA"
+Code;1160
+Description;Wiping Error When the Wiping Motor has been running for a while, the sensor fails to detect that the Motor has made one turn.
+Remedy;• If the Wiper does not turn once: – Check manually by turning the Wiper Gears to see if the Wiper turns. If it does not turn then replace the Wiping Station. – Check whether 24 V is supplied to the Main PCA with the circuit tester. If the Wiper Motor does not turn even though the 24 V is supplied, there is a possibility of a failure in the Wiper Motor. Replace the Wiping Station . Page 8-145. – Make sure the Wiper Sensor Cable is connected correctly and is not damaged. – If the error continues, replace the Main PCA • If the Wiper does turn once: – Check whether the Wiper Sensor can be switched ON and OFF by manually rotating the Wiper. Check whether the lever type switch is not loose. – Make sure the Wiper Sensor Cable is connected correctly and is not damaged. – Make sure that the Wiper Sensor is clean. – If the error continues, replace the Main PCA
+Code;1170
+Description;Temperature Sensor Error The Temperature Sensor detects abnormal temperatures (-10C or lower or 85C or higher).
+Remedy;• Make sure that the Printer is in an environment where the temperature is between -10oC and 85oC. • Make sure the Ambient Temperature Sensor Cable is connected correctly and is not damaged. • Replace the Main PCA
+Code;1180
+Description;Capping Motor Error Capping Motor over current is detected.
+Remedy;"• When the ambient temperature is very low, the Pump Motor Tube becomes hard and the load on the Capping Motor is increased. Make sure that the Printer is in an environment where the temperature is not below -10oC or higher than +85oC. • The Capping Station has a Torque Limiter for up and down operation so that the Capping Station does not experience any over current. • Apply grease on the shaft of the Capping Station Gear so that it helps with rotation. • Enter the Motors Menu (in Maintenance Mode) and open Solenoids L and R. Access the Pump Motors and check whether the Motor Drive Circuit and Motor work correctly by manually rotating the Motor. When the home position is set to ""0"", it is clear that the home position has not been adjusted and that capping is not available. • Make sure that the Capping Station cables are connected correctly and are not damaged • If the Capping Motor cannot be rotated, replace the Capping Station . Page 8-120. • Make sure the Cap Sensor Cable is connected correctly and is not damaged. • Replace the Main PCA"
+Code;119x
+Description;Head Relay Variable Supply Error Output voltages of the Head Relay Board are abnormal.
+Remedy;• Check whether 36V is supplied to the Main PCA. If not, then: – Make sure that the Rear Cover is closed. – Replace Power Supply Unit • Preset the Head Relay Board Voltage from the Diagnostic Menu. Use a circuit tester to check the voltages of the channels that have an error. • If the voltage is supplied, it means that the voltage check circuit is defective. Replace the Main PCA • If the voltage is not supplied, replace the Head Relay Board • There is a possibility of a short circuit off the Head Relay Board output line. Perform a short circuit test on the Main PCA. • Make sure the Carriage Trailing Cable is connected correctly and is not damaged.
+Code;11Ax
+Description;NVRAM Error The data in the NVRAM is incorrect.
+Remedy;• Switch the Printer OFF and ON again and check if the error still appears. • If the error continues, skip the Power-ON Self-Diagnostic by keeping the Cancel Key pressed and powering ON the Printer. Perform NVRAM Initialization (. Page 4-47) and then perform Restore Calibs (. Page 4-48). Switch the Printer OFF and ON again and check if the error still appears. • If the error continues, restore the Printer to defaults settings. Switch the Printer OFF and ON again and check if the error still appears. • Check whether the NVRAM is mounted on the Main PCA correctly. If necessary, replace the NVRAM • If the error continues, replace the Main PCA
+Code;11C0
+Description;Cap Position Error The Carriage position sensors have detected more than a 2mm gap during the capping operation.
+Remedy;• Make sure that the Encoder Strip is not stained. • Make sure that the Encoder Sensor is mounted correctly and that the cable is connected correctly. • Make sure that the Trailing Cable is connected correctly. • Replace the Carriage PCA • If the error continues, replace the Main PCA
+Code;11D0
+Description;Cooling Fan Error When the Printhead temperature reaches above 43C, the Printer will check whether the temperature drops below 43C during printing. This error will appear if the temperature does not drop below 43C after 10 minutes.
+Remedy;• Make sure that the Printhead Cooling Fans are working correctly. If the Printhead Cooling Fans are not working correctly, replace them • Make sure that the Printer Cooling Fans are connected and working correctly.
+Code;11E0
+Description;Long Term Storage Error This error is displayed when the Printer has been left switched OFF for more than 31 days.
+Remedy;"• This error can be avoided if the ""Store Ink System"" procedure is performed before turning the Printer OFF for long periods. • To clear this error: – Turn the Printer ON in error skip mode by holding down the Cancel and Shift keys and pressing the ON button. – Enter the Password to clear the internal error flag: Shift and OK. – Switch the Printer OFF and then ON again."
+Code;120x
+Description;Printhead Drive IC Error The Piezo Drive IC on a Printhead is too hot (85C or higher) or too low (- 10C or lower).
+Remedy;• Check whether the temperature of the Printhead voltage circuit on the Carriage PCA is extremely hot. If it is extremely high, check the short-circuit of the Printhead and the Printhead Cable using a tester. The Short-circuit may have been caused by the incorrect insertion of the Printhead Cable, internal failure of the Printhead or by a foreign object attached to the Carriage PCA. • Replace the Printhead • Replace the Carriage PCA
+Code;121x
+Description;Printhead Temperature Error The Printhead temperature is too high (85C or higher) or too low (-10C or lower). x = 0: Printhead Number 1 (Black). x = 1: Printhead Number 2 (Light Magenta). x = 2: Printhead Number 3 (Light Cyan). x = 3: Printhead Number 4 (Yellow). x = 4: Printhead Number 5 (Magenta). x = 5: Printhead Number 6 (Cyan).
+Remedy;• Check the failing Printhead to make sure that it is not damaged and that the cable are correctly connected • Replace the Carriage PCA • Replace the Printhead
+Code;1220
+Description;Edge Sensor Error The Printer has problems detecting the edge of the Media.
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Printer Sensors"". Then execute the ""Line Sensor"" option, and check if the Line Sensor is functioning correctly by inserting a white piece of paper underneath it. If the Line Sensor responds, then it is functioning correctly. • If the Line Sensor does not respond to the white piece of paper, then replace the Line Sensor . Page 8-106. • Replace the Carriage PCA"
+Code;123x
+Description;Sub-Tank Sensor Error (Full or Half) The Full and Half Sensors on the Sub-Tanks are defective. x = 0: Printhead Number 1 (Black). x = 1: Printhead Number 2 (Light Magenta). x = 2: Printhead Number 3 (Light Cyan). x = 3: Printhead Number 4 (Yellow). x = 4: Printhead Number 5 (Magenta). x = 5: Printhead Number 6 (Cyan).
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Sub Tank Sensor"". Then execute ALL the ""Full x"" and ""Half x"" options, and check if the Sub-Tank Sensors are functioning correctly. Manually move the Sub-Tank Sensor Plate and if the Sensor responds, it means that it is working correctly. • If any of the Sub-Tank Sensors fail to respond, then replace the corresponding Sub-Tank Sensor . Page 8-115. • Make sure that the Sub-Tank Sensor Relay Cables (Left/Right) and the Sub- Tank Sensor Cables are connected correctly and are not damaged. • Replace the Main PCA"
+Code;124x
+Description;Ink Supply Sensor Error The Ink Supply Sensor does not change even though the specified time has passed after driving the Ink Supply Motor for the Sub-Tank. x = 0: Printhead Number 1 (Black). x = 1: Printhead Number 2 (Light Magenta). x = 2: Printhead Number 3 (Light Cyan). x = 3: Printhead Number 4 (Yellow). x = 4: Printhead Number 5 (Magenta). x = 5: Printhead Number 6 (Cyan).
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Sub Tank Sensor"". Then, execute the ""XX Ink Pump"" option for each color, and check if the Ink Supply Sensor is functioning correctly. Manually move the gear and if the Sensor responds, it means that it is working correctly. • If any of the Ink Supply Sensors fail to respond, then replace the corresponding Ink Supply Station . Page 8-110. • Enter the Motors Menu (in Maintenance Mode) and set the ""X Pump Motor"" option to ""Normal"" to drive the Ink Supply Motor. When the Sub- Tank is already full, it will not be checked and therefore ink should be discharged. Once the motor drive has been checked, set it ""Stop"" immediately. Repeat the process with the other colors. • If any Ink Supply Motor fails, then replace the corresponding Ink Supply Station . Page 8-110. • Replace the Main PCA"
+Code;125x
+Description;Sub-Tank Supply Error The Sub-Tank Sensor does not switch to less than half even though ink has been consumed. x = 0: Printhead Number 1 (Black). x = 1: Printhead Number 2 (Light Magenta). x = 2: Printhead Number 3 (Light Cyan). x = 3: Printhead Number 4 (Yellow). x = 4: Printhead Number 5 (Magenta). x = 5: Printhead Number 6 (Cyan).
+Remedy;"• Enter the Motors Menu (in Maintenance Mode) and set the ""Solenoid L"" and ""Solenoid R"" options to ""Closed"" to cut the outside air. Now set the ""Cap Stat Motor"" to ""Prime"" to discharge the ink from the Sub-Tank and check if the Ink Supply Motor drives by turning the power ON again when there is a little bit of ink left. If the Motor is not driven, replace the corresponding Cable or Ink Supply Station. • Check whether the Sub-Tank Sensor Plate works correctly and is not blocked by any foreign object. • Enter the Sensors Menu (in Maintenance Mode) and select ""Sub Tank Sensor"". Then, execute the ""XX Ink Pump"" option for each color, and check if the Ink Supply Sensor is functioning correctly. Manually move the gear and if the Sensor responds, it means that it is working correctly. • If any of the Ink Supply Sensors fail to respond, then replace the corresponding Ink Supply Station . Page 8-110. • Replace the Main PCA"
+Code;126x
+Description;Trailing Cable Connection Error The Trailing Cable connected to the one of the following connectors is faulty. x = 0: Connector 9. x = 1: Connector 10. x = 2: Connector 11. x = 3: Connector 12.
+Remedy;• Reconnect the Trailing Cable to the Carriage PCA and the Main PCA. • Make sure that the Trailing Cable is not damaged. • Replace the Carriage PCA • If the error continues, replace the Main PCA
+Code;1270
+Description;Feed Motor Error Over-current problem in the Feed Motor Drive Circuit.
+Remedy;• Check the short-circuit of the internal cable of the Feed/Rewind Motor and Feed Motor Relay Cable. • Check the short-circuit of the Feed Motor. • Replace the Add-On (HEB2) Control PCA
+Code;1280
+Description;Take-Up-Reel Motor Error Over-current problem in the Take-Up-Reel Motor Drive Circuit.
+Remedy;• Check the short-circuit of the internal cable of the Feed/Take-Up-Reel Motor and Take-Up-Reel Motor Relay Cable. • Check the short-circuit of the Take-Up-Reel Motor. • Replace the Add-On (HEB2) Control PCA
+Code;1290
+Description;End of Life of Part Reached The end of life of the Prime Assembly has been reached since it has been working for more than 58 hours.
+Remedy;• Replace the Prime Assembly . Page 8-121.
+Code;12Ax
+Description;End of Life of Part Reached The end of life of the Pump Tube has been reached since it has been working for more than 73 hours.
+Remedy;• Replace the Ink Pump Assembly
+Code;170X
+Description;Servo Motor Error The Paper-Axis or the Scan-Axis Motor moves the Carriage, but the input from the Linear Encoder Sensor does not change. x = 0: Feed System. x = 1: Carriage System. x = 2: Servo Unit.
+Remedy;• Make sure that there is no paper jam blocking the Carriage path. • Make sure that the corresponding cables are connected correctly to Connectors CN14 and CN17 on the Main PCA. • Make sure that the Linear Encoder Sensor Cable is connected correctly to the Carriage PCA. • Make sure that the Encoder Strip is not damaged or scratched. • Make sure that the pinchwheels rotate correctly. • Make sure that the Carriage gears work correctly • Replace the Main PCA • If the error continues, replace the Paper-Axis or Scan-Axis Motors.
+Code;2000
+Description;Add-On (HEB2) Control PCA Problems with the Add-On (HEB2) Control PCA detected.
+Remedy;• Make sure the HEB2 Board Interface Cable is connected correctly and is not damaged • Replace the Add-On (HEB2) Control PCA • If the error continues, replace the Main PCA
+Code;4000
+Description;Cap Position Adjustment Value This error appears when the Cap Position Adjustment Value is set to zero.
+Remedy;• To clear this error: – Turn the Printer ON in error skip mode by holding down the Cancel and Shift keys and pressing the ON button. – Enter the Password to enter the Maintenance Mode menu: Shift and OK. – Set the correct Cap Position value (so that it is not set at 0.0 mm)
+Code;F_es: 0001
+Description;Operation Code Exception
+Remedy;1. Replace the Main PCA . 2. Upgrade the Printer Firmware.
+Code;F_es: 0002
+Description;Slot Illegal Exception
+Remedy;1. Replace the Main PCA . 2. Upgrade the Printer Firmware.
+Code;F_es: 0003
+Description;Address Exception
+Remedy;1. Replace the Main PCA . 2. Upgrade the Printer Firmware.
+Code;F_es: 0004
+Description;DMA Error
+Remedy;1. Replace the Main PCA . 2. Upgrade the Printer Firmware.
+Code;F_es: 0005
+Description;NMI Occurrence (WatchDog Error)
+Remedy;1. Replace the Main PCA . 2. Upgrade the Printer Firmware.
+Code;H01
+Description;System Error Abnormal operation of the Heater Relay Assembly.
+Remedy;• Replace the Heater Relay Assembly
+Code;H02
+Description;Relay Board Error The Heater Board and the Relay Board are not connected together.
+Remedy;• Make sure that the Heater Board is connected correctly to the Relay Board via the Relay Cable. • Replace the Heater Relay Assembly
+Code;H03
+Description;Front Heater Temperature Error Temperature read by the Front Heater is abnormal (lower than -10C or higher than 70C).
+Remedy;• Make sure that the Heater Relay Assembly is connected correctly to the Front Heater. • Replace the Heater Relay Assembly • Replace the Front Heater
+Code;H04
+Description;Rear Heater Temperature Error Temperature read by the Rear Heater is abnormal (lower than -10C or higher than 70C).
+Remedy;• Make sure that the Heater Relay Assembly is connected correctly to the Rear Heater. • Replace the Heater Relay Assembly • Replace the Rear Heater
+Code;H05
+Description;Center Heater Temperature Error Temperature read by the Center Heater is abnormal (lower than -10C or higher than 70C).
+Remedy;• Make sure that the Heater Relay Assembly is connected correctly to the Center Platen. • Replace the Heater Relay Assembly • Replace the Center Platen
+Code;H06
+Description;Front Heater Time-out Error The temperature of the Front Heater does not reach the preset temperature even after 15 minutes.
+Remedy;• Make sure that the Voltage alternation switch located at the back of the Printer is set correctly to the AC voltage being used. • Make sure that the Fuse (F2) on the Heater Relay Assembly has not blown. If the fuse has blown, replace it. • Make sure that the Heater Board is connected correctly to the Relay Board via the Relay Cable. • Make sure that the Heater Relay Assembly is connected correctly to the Front Heater. • Replace the Heater Relay Assembly • Replace the Front Heater
+Code;H07
+Description;Rear Heater Time-out Error The temperature of the Rear Heater does not reach the preset temperature even after 15 minutes.
+Remedy;• Make sure that the Voltage alternation switch located at the back of the Printer is set correctly to the AC voltage being used. • Make sure that the Fuse (F2) on the Heater Relay Assembly has not blown. If the fuse has blown, replace it. • Make sure that the Heater Board is connected correctly to the Relay Board via the Relay Cable. • Make sure that the Heater Relay Assembly is connected correctly to the Rear Heater. • Replace the Heater Relay Assembly • Replace the Rear Heater
+Code;H08
+Description;Center Heater Time-out Error The temperature of the Center Heater does not reach the preset temperature even after 15 minutes.
+Remedy;• Make sure that the Voltage alternation switch located at the back of the Printer is set correctly to the AC voltage being used. • Make sure that the Fuse (F2) on the Heater Relay Assembly has not blown. If the fuse has blown, replace it. • Make sure that the Heater Board is connected correctly to the Relay Board via the Relay Cable. • Make sure that the Heater Relay Assembly is connected correctly to the Center Platen. • Replace the Heater Relay Assembly • Replace the Center Platen Heater
+Code;H09
+Description;Operation Panel Switch Error The specified switch is not pressed for 30 seconds or more when the diagnostics that verifies the switch action is executed.
+Remedy;• Replace the Heater Relay Assembly
+Code;H10
+Description;Zero Cross Error This error occurs when the diagnostics for the AC Relay is executed.
+Remedy;• Make sure that the Heater Board is connected correctly to the relays on the Heater Block Assembly • Make sure that the Heater Board is connected correctly to the Relay Board via the Relay Cable. • Replace the Heater Relay Assembly

@@ -1,0 +1,464 @@
+Code;SC101-00
+Description;Exposure Lamp Error
+Causes;The scanner has scanned the white plate, but cannot detect the certain white level. • Defective exposure lamp • Defective exposure lamp stabilizer • Defective power source harness • Defective signal harness • High-voltage cable leak • Defective darkness starting characteristic
+Remedy;Turn the main power OFF and then ON.
+Code;SC101-01
+Description;Exposure Lamp Error
+Causes;The scanner has scanned the white plate, but cannot detect the certain white level. • Defective exposure lamp • Defective exposure lamp stabilizer • Defective power source harness • Defective signal harness • High-voltage cable leak • Defective darkness starting characteristic
+Remedy;Turn the main power OFF and then ON.
+Code;SC120
+Description;Scanner home position error 1
+Causes;The scanner home position sensor does not detect the scanner leaving the home position. • Defective scanner home position sensor • Defective scanner home position sensor harness • Defective scanner motor driver • Defective scanner motor
+Remedy;Turn the main power OFF and then ON.
+Code;SC121
+Description;Scanner home position error 2
+Causes;The scanner home position sensor does not detect the scanner coming back to the home position. • Defective scanner home position sensor • Defective scanner home position sensor harness • Defective scanner motor driver • Defective scanner motor
+Remedy;Turn the main power OFF and then ON.
+Code;SC230-00
+Description;FGATE*1 : Does not turn ON. (*1)FGATE: Signals used between the controller and the engine in order to send the information about the sub scan length of the page to be printed.
+Causes;GPIO*2 has not been asserted, although the specified time (200 ms) elapsed after setting JOB to be started and reaching the FGAT assert time. • Engine board defective • ASIC defective • Controller board defective • Harness disconnection (*2)GPIO: A type of input/output terminal
+Remedy;Turn the main power OFF and then ON.
+Code;SC231-00
+Description;FGATE*1: Does not turn OFF. (*1)FGATE: Signals used between the controller and the engine in order to send the information about the sub scan length of the page to be printed.
+Causes;GPIO*2 has not been negated, although the specified time (200 ms) elapsed after detecting GPIO*assert and then reaching the expected FGATE negate time. • Engine board defective • Write ASIC defective • Controller board defective • Harness disconnection (*2)GPIO: A type of input/output terminal
+Remedy;Turn the main power OFF and then ON.
+Code;SC270-00
+Description;Write ASIC communication error
+Causes;The unique ID of the write ASIC was not read normally. • Engine board defective • Write ASIC defective
+Remedy;• Turn the main power OFF and then ON. • Engine Board
+Code;SC277-00
+Description;LEDA communication error
+Causes;The head type data was read three times in succession (277-00) • Defective ASIC • Defective LEDA (277-10) • LEDA power source error
+Remedy;• Turn the main power OFF and then ON. • Replace the LED head
+Code;SC277-10
+Description;LEDA communication error
+Causes;The head type data was read three times in succession (277-00) • Defective ASIC • Defective LEDA (277-10) • LEDA power source error
+Remedy;• Turn the main power OFF and then ON. • Replace the LED head
+Code;SC302
+Description;High voltage output error: Charge unit /Development unit
+Causes;This SC is issued if the BCU detects a short in the power pack 10 times consecutively.
+Remedy;Open circuit (+) / Short circuit (-) • Turn the main power OFF and then ON. • Replace the controller board. • Check the connector connection.
+Code;SC332-00
+Description;Toner supply transfer lock
+Causes;This SC is issued if the error that the toner is not supplied is detected n times consecutively (n: SP2-931-005) on the condition that the toner cartridge is not in end • Overload on the toner transferring part (clogging of toner) • Screw for detecting PCDU does not turn • Detector element (sensor) defective: light leak • Supplying pick does not engage • Defective Supplying clutch • Defective Drive mechanism of screw for supplying toner cartridge
+Remedy;• Turn the main power OFF and then ON.
+Code;SC364-00
+Description;TE sensor output count error
+Causes;When the average value of the toner end sensor output count is 0 n times consecutively (n: SP2-931-003) • Connector contact failure/disconnected/broken • Detector element (sensor) does not emit light • Detecting surface inside the developing device is stained
+Remedy;• Turn the main power OFF and then ON.
+Code;SC440-00
+Description;High voltage output error: Transfer unit
+Causes;This SC is issued if the BCU detects a short in the power pack 10 times consecutively.
+Remedy;Open circuit (+) / Short circuit (-) • Turn the main power OFF and then ON. • Replace the controller board. • Check the connector connection.
+Code;SC498-00
+Description;Temperature/humidity Sensor error
+Causes;• Temperature sensor output error: Out of range between 0.76 V and 2.90 V • Humidity sensor output error: 2.4 V or more • Unmounted sensor (Disconnected connector or broken wire) • Failed sensor
+Remedy;• Turn the main power OFF and then ON. • Check that the connector is set. • Set the sensor. • Replace the sensor. • Replace the connector.
+Code;SC508-00
+Description;By-pass bottom plate operation error
+Causes;The signal from the by-pass bottom plate position sensor has not changed (the signal has not changed from ON to OFF or vice versa) for 4 seconds or more after the start of reverse Paper Feed Unit rotation, If the error is detected three times in succession, the SC number is displayed on the operation panel. • By-pass bottom plate sensor connector disconnected or other error • By-pass bottom plate sensor feeler stuck or other error
+Remedy;• Check and replace the by-pass bottom plate sensor connector connection. • Replace the by-pass bottom plate sensor feeler. • Replace the Paper Feed Motor. • Replace the harness. • Replace the BCU.
+Code;SC520-00
+Description;Main motor error
+Causes;When the main motor is driven, the lock (state of rotation) signal is checked every 100 milliseconds. If the machine detects the lock signal in the High status 20 times in succession, it reports this error. • The main motor incurs too much load from a defective unit. • The main motor is defective.
+Remedy;• Replace the defective unit or the motor
+Code;SC530-00
+Description;Fusing fan error
+Causes;The fan motor lock (rotating state) signal is sampled at 100 ms intervals and the machine fails to receive the lock signal 50 times in succession. • Failed fan motor • Disconnected connector
+Remedy;• Replace the fan motor. • Check the connector. • Replace the harness. • Replace the IOB.
+Code;SC531-00
+Description;Development Cooling fan error
+Causes;The fan motor lock (rotating state) signal is sampled at 100 ms intervals and the machine fails to receive the lock signal 50 times in succession. • Failed fan motor • Disconnected connector • Harness disconnection • Defective IOB
+Remedy;• Replace the fan motor. • Check the connector. • Replace the harness. • Replace the IOB.
+Code;SC532-00
+Description;PSU Cooling fan error
+Causes;The fan motor lock (rotating state) signal is sampled at 100 ms intervals and the machine fails to receive the lock signal 50 times in succession. • Failed fan motor • Disconnected connector • Harness disconnection • Defective IOB
+Remedy;• Replace the fan motor. • Check the connector. • Replace the harness. • Replace the IOB.
+Code;SC541-00
+Description;Broken fusing (Center) thermistor wire
+Causes;The condition whereby the temperature is -20 deg C or less for 5 seconds has been detected 10 times or more. • Broken thermistor wire • Bad connector contact
+Remedy;• Clear the SP: fusing SC. • Check the connector connection. • Replace the fusing (Center) thermistor.
+Code;SC542-01
+Description;Fusing lamp (Center) thermistor not reloaded 1
+Causes;The heater thermistor has increased by less than 2.0 degrees in 1.5 seconds 5 times in a row. • Deformed or floating thermistor • Input voltage out of range
+Remedy;• Clear the SP: fusing SC. • Replace the thermistor.
+Code;SC542-02
+Description;Fusing lamp (Center) thermistor not reloaded 2
+Causes;The heater (Center) thermistor does not reach the reload temperature 50 seconds after the start of motor rotation. • Fusing lamp disconnected • The overtemperature prevention mechanism started working
+Remedy;• Clear the SP: fusing SC. • Replace the thermistor.
+Code;SC543-00
+Description;Fusing (Center) thermopile high-temperature detected (software)
+Causes;The temperature is detected to stay at 245 deg C or higher for one second. • Shorted triac • Failed Engine Board
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board.
+Code;SC544-00
+Description;Fusing (Center) thermopile high-temperature detected (hardware)
+Causes;The hardware high-temperature error sensor flag is detected. • Damaged triac (shorted) • Failed engine control board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior • The PWM signal is continuously supplied from the IH inverter (due to a software or temperature sensor error).
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC545-00
+Description;Fusing (Center) lamp stays ON
+Causes;The thermistor (center) has not detected the target temperature, even after the fusing lamp stays ON for more than 30 seconds after reloading. • Deformed or floating thermistor • Broken fusing lamp wire • The overtemperature prevention mechanism started working
+Remedy;• Clear the SP: fusing SC. • Replace the fusing thermistor. • Replace the fusing (Center) lamp.
+Code;SC547-01
+Description;Zero-crossing error (adhered relay contact)
+Causes;"When the fusing relay is in an OFF state, a ""zero-crossing interrupt request"" occurs in 50 ms. Damaged fusing relay (adhered contact)"
+Remedy;• Turn the main power OFF and then ON. • Replace the harness. • Replace the PC board. • Replace the PSU.
+Code;SC547-02
+Description;Zero-crossing error (bad relay contact)
+Causes;"If a ""zero-crossing interrupt request"" does not occur when the fusing relay is in an ON state, an error results. - Damaged fusing relay (open contact) - Failed fusing relay drive circuit - PSU fuse (24VS) blown"
+Remedy;• Turn the main power OFF and then ON. • Replace the harness. • Replace the Engine Board. • Replace the PSU. • Replace the fuse.
+Code;SC547-03
+Description;Zero-crossing error (low frequency error)
+Causes;The number of zero-crossing interrupts does not reach a certain value in 500 ms. The frequency of the commercial power supply is unstable.
+Remedy;• Turn the main power OFF and then ON. • Check the commercial power supply. • Replace the harness. • Replace the Engine Board. • Replace the PSU.
+Code;SC551-00
+Description;Broken fusing (End) thermistor wire
+Causes;At least ten times, the temperature is detected to stay at -20 deg C or less for 5 seconds. • Broken thermistor wire • Bad connector contact
+Remedy;• Clear the SP: fusing SC. • Check the connector connection. • Replace the fusing (End) thermistor.
+Code;SC553-01
+Description;Fusing (End) thermistor high-temperature detected (software)
+Causes;In a condition of 235 degrees C or higher temperature, the temperature has increased more than 10 degrees C per 1 second, the heater has continuously reached 100% (maximum) duty, and the center thermistor has detected the failure to reach the target temperature by 11 degrees C. • Shorted triac • Failed Engine Board
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board.
+Code;SC553-02
+Description;Fusing (End) thermistor high-temperature detected (software)
+Causes;The temperature is detected to stay at 245 deg C or higher for one second. • Shorted triac • Failed Engine Board
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board.
+Code;SC554-00
+Description;Fusing (End) thermistor high-temperature detected (hardware)
+Causes;The hardware high-temperature error sensor flag is detected. • Damaged triac (shorted) • Failed engine control board • Failed fusing thermopile • Failed fusing thermistor • Abnormal fusing control software behavior • The PWM signal is continuously supplied from the IH inverter (due to a software or temperature sensor error).
+Remedy;• Clear the SP: fusing SC. • Replace the PSU. • Replace the Engine Board. • Replace the fusing thermopile. • Replace the Fusing Unit.
+Code;SC557-00
+Description;Zero-crossing frequency exceeded
+Causes;The number of zero-crossing interrupts exceeds a certain value in 500 ms. The frequency of the commercial power supply line is unstable or noise occurs.
+Remedy;None
+Code;SC559-00
+Description;Fusing jam detected 3 times in succession
+Causes;Fusing jam is detected three times in succession. Paper is wrapped around the fusing roller.
+Remedy;Clear the SP: fusing SC.
+Code;SC641-00
+Description;• Communication error: Engine (Timeout error) • Communication error: Engine (Retry error)
+Causes;• There is no response from the engine even after the timeout period specified during the communication has elapsed. • The communication has failed when sending the normal mode (ESIF_LECI_NORMAL) command even after exceeding the maximum number of command transmission retry. • Controller board/software defective • The connection between the controller board and engine board is faulty. • Engine board/software defective
+Remedy;• Check the connection between the controller board and engine board. • Turn the main power off/on.
+Code;SC653-00
+Description;Incorrect remote service ID2
+Causes;"If the serial number*1 for producing ID2*2 has any of the following problems: • Blank • Contains control characters • Cannot be read *1: The serial number refers to ""Machine Serial Set"" (SP5-811-001). *2: ID2 refers to ""Machine No. Setting"" (SP5-811-003). • The serial number was not specified at the factory. • The NV memory is corrupted and cannot be read. • The NV memory has been corrupted while writing data into it."
+Remedy;• Turn the main power off/on. If the problem persists, the hardware is faulty.
+Code;SC669-01 ... SC669-26
+Description;EEPROM communication error
+Causes;An error is notified during EEPROM communication and the printer does not recover after three retries. 669 - 1 ID error during EEPROM OPEN 669 - 2 Channel error during EEPROM OPEN 669 - 3 Device error during EEPROM OPEN 669 - 4 Communication interrupted error during EEPROM OPEN 669 - 5 Communication timeout error 669 - 6 Not operating error during EEPROM OPEN 669 - 7 Buffer full during EEPROM OPEN 669 - 8 No error code during EEPROM OPEN 669 - 9 ID error 669 - 10 No error code during EEPROM Close 669 - 11 ID error during EEPROM data write 669 - 12 Channel error during EEPROM data write 669 - 13 Device error during EEPROM data write 669 - 14 Communication interrupted error during EEPROM data write 669 - 15 Communication timeout error 669 - 16 Not operating error during EEPROM data write 669 - 17 Buffer full during EEPROM data write 669 - 18 No error code during EEPROM data write 669 - 19 ID error during EEPROM data read 669 - 20 Channel error EEPROM data read 669 - 21 Device error during EEPROM data read 669 - 22 Communication interrupted error during EEPROM data read 669 - 23 Communication timeout error 669 - 24 Not operating error during EEPROM data rea• Electromagnetic noise • EEPROM errord 669 - 25 Buffer full during EEPROM data read 669 - 26 No error code during EEPROM data read • Electromagnetic noise • EEPROM error
+Remedy;• Turn the main power OFF and then ON. • Replace the BCU
+Code;SC669-36
+Description;EEPROM communication error
+Causes;The EEPROM data has been transferred to the SRAM twice in succession, but the two sets of transferred data do not match. 669 - 36 EEPROM SRAM OPEN: Verified error • Electromagnetic noise • EEPROM error
+Remedy;• Turn the main power OFF and then ON.
+Code;SC670-00
+Description;Engine start up error
+Causes;• The /ENGRDY signal is not detected even after the specified time has elapsed after turning the main power on or restoring from energy saver mode. • The /ENGRDY signal is detected, but it is negated at an unexpected occasion*. * Expected negation occurs when turning the power off, switching to the energy saver mode (after the engine automatically goes off), and rebooting the machine. • The engine board does not start up. • The connection between the controller board and engine board is faulty.
+Remedy;Check the connection between the engine board and the controller board. • If this problem always occurs, replace the engine board. If the problem persists, consider replacing the controller board or other boards between them. • If this problem occasionally occurs, multiple causes are to be considered, such as the software, engine board, controller board, and PSU.
+Code;SC681
+Description;Device ID is not identified (toner cartridge)
+Causes;An error is notified during the ID identification after three retries. 681 - 1 Device ID error (Incorrect ID) 681 - 6 Channel error 681 - 11 Device ID error (No ID chip) 681 - 16 Communication Error 681 - 21 Communication timeout 681 - 26 The device has stopped its operation 681 - 31 The requested buffer is full 681 - 36 EEPROM SRAM OPEN: Verification error
+Remedy;• Turn the main power OFF and then ON. • Replace the toner cartridge (ID chip)
+Code;SC682
+Description;Device ID is not identified (PCDU)
+Causes;An error is notified during the ID identification after three retries. 682 - 1 Device ID error (Incorrect ID) 682 - 6 Channel error 682 - 11 Device ID error (No ID chip) 682 - 16 Communication Error 682 - 21 Communication timeout 682 - 26 The device has stopped its operation 682 - 31 The requested buffer is full 682 - 36 EEPROM SRAM OPEN: Verification error
+Remedy;• Turn the main power OFF and then ON. • Replace the PCDU (ID chip)
+Code;SC688-00
+Description;PRREQ signal not asserted
+Causes;The print request signal (PRREQ) signal is not asserted within the prescribed time after paper reaches the registration stand-by position, • Noise • Engine Board error
+Remedy;• Turn the main power OFF and then ON. • Replace the Engine Board.
+Code;SC790-00
+Description;Maximum number of banks (paper tray units) exceeded
+Causes;When the power is turned ON, the number of mounted paper tray units is detected and the number exceeds three. The number of mounted paper tray units exceeds the specifications.
+Remedy;Reduce the number of mounted paper tray units according to the specifications.
+Code;SC816-00
+Description;Energy save I/O subsystem error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-01
+Description;Subsystem error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-02
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-03
+Description;Transition to STR was denied.
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-04
+Description;Interrupt in kernel communication driver
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-05
+Description;Preparation for transition to STR failed.
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-06
+Description;Preparation for transition to STR failed.
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-07
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-08
+Description;Sysarch (LPUX_ENGINE_TIMERCTRL) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-09
+Description;Sysarch (LPUX_RETURN_FACTOR_STR) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-10
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-11
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-12
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-13
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-14
+Description;Memory address error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-15
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-16
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-17
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-18
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-19
+Description;Double open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-20
+Description;open() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-22
+Description;Parameter error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-23
+Description;read() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-24
+Description;read() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-25
+Description;read() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-26
+Description;write() communication retry error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-27
+Description;write() communication retry error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-28
+Description;write() communication retry error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-29
+Description;write() communication retry error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-30
+Description;write() communication retry error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-35
+Description;read() error
+Causes;
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC816-36... SC816-94
+Description;Subsystem error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (nonresponse). • Error was detected during preparation for transition to STR.
+Remedy;"• Turn the main power off/on.
+ • Replace the controller board."
+Code;SC818-00
+Description;Watchdog timer error
+Causes;• The system program fell into a bus-hold state or an endless loop of the program interruption occurred, causing other process to stop. • System program defective • Controller board defective • Optional board defective
+Remedy;• Turn the main power off/on. • Replace the controller board. • Replace the optional devices.
+Code;SC833-00
+Description;[0F31] Self-diagnostic error: Engine I/F ASIC Self-diagnostic error: Video I/F
+Causes;Engine I/F: ASIC register error The /CONFIG_DONE signal is not detected even after the specified time has elapsed after turning the power on or restoring from energy saver mode. Downloading of the Config data to FPGA has failed.
+Remedy;Replace the controller board.
+Code;SC833-00
+Description;[0F10] Fsync input timeout
+Causes;After the /PRREQ signal is detected, the /FSYNC(/FGATE) signal of the first color is not detected even after the specified time has elapsed. Connector, harness defective FGATE control error EGB defective
+Remedy;
+Code;SC842-01
+Description;Nand-Flash bad block number exceeding the threshold
+Causes;When starting-up the machine or re-stating it from the energy saving, the machine reads the state of the NAND-Flash and detects that there are defective blocks whose amount exceeds the threshold. This means that the life of the NAND-Flash is near-end. Near-end Life of NAND-Flash
+Remedy;Replace the controller board as soon as possible.
+Code;SC850-00
+Description;Network I/F error
+Causes;The access to the network work is unavailable due to an error in the printer driver.
+Remedy;
+Code;SC855-00
+Description;Wireless LAN board error (driver attachment failure)
+Causes;Wireless LAN board error (wireless LAN card: 802.11 is covered) • Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC855-02
+Description;Wireless LAN board error (driver initialization failure)
+Causes;Wireless LAN board error (wireless LAN card: 802.11 is covered) • Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC856-00
+Description;Fax board error
+Causes;Fax board error • The connection between the Fax board and controller board is faulty. • Defective Fax board.
+Remedy;• Turn the main power off/on. • Reinstall the Fax board. • Replace the Fax board.
+Code;SC870-06
+Description;Address Book data error (Initialization: Failed to generate a file to store information required for LDAP search.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-07
+Description;Address Book data error (Initialization: Failed to initialize entries required for machine operation.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-08
+Description;Address Book data error (Machine configuration: HDD is present but the space for storing the Address Book is unusable.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-09
+Description;Address Book data error (Machine configuration: Inconsistency in the NVRAM area used for storing settings required for Address Book configuration.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-10
+Description;Address Book data error (Machine configuration: Cannot make a directory for storing the Address Book in the SD/USB FlashROM.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-11
+Description;Address Book data error (On startup: Inconsistency in Address Book entry number.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-20
+Description;Address Book data error (File I/O: Failed to initialize file.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-21
+Description;Address Book data error (File I/O: Failed to generate file.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-22
+Description;Address Book data error (File I/O: Failed to open file.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-23
+Description;Address Book data error (File I/O: Failed to write to file.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-24
+Description;Address Book data error (File I/O: Failed to read file.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-25
+Description;Address Book data error (File I/O: Failed to check file size.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-26
+Description;Address Book data error (File I/O: Failed to delete data.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-27
+Description;Address Book data error (File I/O: Failed to add data.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-30
+Description;Address Book data error (Search: Failed to obtain data from cache when searching in the machine Address Book. delivery destination/sender.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-31
+Description;Address Book data error (Search: Failed to obtain data from cache during LDAP search.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC870-41
+Description;Address Book data error (Cache: Failed to obtain data from cache.)
+Causes;When an error related to the Address Book is detected during startup or operation. • Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (Controller board was replaced without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Turn the main power switch off and on. • Initialize the Address Book (SP5-846-050). • If the above solution does not cause the machine to recover to SC870-07, replace the controller board.
+Code;SC900-00
+Description;Electronic counter error
+Causes;The value provided by the electronic total counter is outside the normal range. • Unexpected NVRAM installed • Defective NVRAM • NVRAM data corruption • Data is stored in an unexpected area due to external causes. • The count requests made by SRM upon receiving the PRT have not yet been processed.
+Remedy;Install an NVRAM device designed specifically for the model.
+Code;SC920
+Description;Printer application error
+Causes;A serious application error that stops the machine from operating is detected. • 920-00 At PM startup, no response was returned within the specified period of time. • 920-01 A time-out occurred during PM operation. • 920-02 WORK memory acquisition failed. • 920-03 The filter process cannot be started. • 920-04 The filter process was aborted.
+Remedy;Turn the main power switch off and on.
+Code;SC990-00
+Description;Software performance error
+Causes;The software attempted to make an unexpected operation. • Incorrect argument • Incorrect internal parameter • Insufficient working memory • Abnormal performance caused by an error that cannot be detected in normal SC detection due to hardware specifications.
+Remedy;• Turn the main power switch off and on. • Reinstall the software of the controller board. • Reinstall the software of the engine board.
+Code;SC991-00
+Description;Software continuity error
+Causes;The software has attempted to perform an unexpected operation. (However, the process can continue running if recovery processing is carried out.) • Incorrect argument • Incorrect internal parameter • Insufficient working memory • May have resulted from an error that cannot be detected by the hardware using normal SC detection.
+Remedy;Not required
+Code;SC992-00
+Description;Undefined SC error
+Causes;An error that is not controlled by the system occurred (the error does not come under any other SC code). A SC code used in the previous machine was applied erroneously.
+Remedy;Turn the main power switch off and on.
+Code;SC995
+Description;CPM setting error
+Causes;Comparison of machine serial number (11 digits) and machine identification code. Details: • Machine serial number cannot be identified because of BCU replacement or malfunctioning. • Machine serial number cannot be identified because of NV-RAM replacement Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Replace the board(s) to match the CPM of the controller and BCU boards. • Turn the main power switch off and on.
+Code;SC997-00
+Description;Application function selection error
+Causes;• The application has not responded to the set command created by SCS within a certain period of time. • The application selected ended abnormally. Software bug
+Remedy;• Check whether an option required by the application (RAM, DIMM, board) is installed properly. • Check whether downloaded applications are correctly configured. (Take necessary countermeasures specific to the application in which the error occurs. In some applications, the logs can be taken from the monitor. If this option is available, analyze the logs.)
+Code;SC998-00
+Description;Application start error
+Causes;• After power on, no application program is registered to the system within a predetermined period of time. (No application starts or ends normally.) • Even if they are started, all applications have become unable to be rendered due to an unknown defect. • Software bug • An option required by the application (RAM, DIMM, board) is not installed properly
+Remedy;• Turn the main power switch off and on. • Check whether an option required by the application (RAM, DIMM, board) is installed properly. • Check whether downloaded applications are correctly configured. • Replace the Controller Board.

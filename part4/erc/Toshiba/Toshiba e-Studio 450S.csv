@@ -1,0 +1,740 @@
+Code;842
+Description;Service Scanner
+Causes;This error indicates that a scanner communications failure.
+Remedy;1 Scanner control card to flatbed inteconnect card cable Check for correct installation of the scan control to flatbed interconnect card cable. 2 Motor drive card to flatbed interconnect card cable Check for correct installation of the motor driver card to flatbed interconnect card cable. 3 Motor driver card Flatbed interconnect card If the cables are good and are properly connected, replace the following FRUs in the order shown: • Flatbed interconnect card assembly • Motor driver card assembly
+Code;843
+Description;Service Scanner
+Causes;This error indicates that a problems has been detected with the flatbed carriage mechanical hardware. It may also indicate interference between the flatbed CCD assembly and a metal bracket.
+Remedy;1 Flatbed scanner CCD drive shafts Check to make sure that both of the CCD drive shafts are correctly installed. If correct, go to step 2. 2 Flatbed CCD module assembly ribbon cable Check to make sure that the flatbed CCD module assembly is connected correctly to both the CCD module and J2 on the scanner control card. If correct, go to step 3. 3 Flatbed CCD module assembly Check the flatbed CCD assembly for any signs of damage and for proper mechanical operation. If any problems are found, replace the flatbed CCD assembly. If the flatbed CCD assembly is replaced, it is necessary to perform scanner registration. See “Scanner registration”. 4 Flatbed CCD scan motor/ cable Flatbed interface card Check for correct installation of the CCD scan motor cable to both the motor and to the flatbed interface card at CN2. Enter the Diagnostics Menu (turn on MFP while holding 3 and 6), select SCANNER TESTS, and select Feed Tests.If the motor does not turn during the scanner Feed Test, check for any signs of binds or mechanical problems. Repair as necessary. If no problem is found, go to step 5. 5 Flatbed home sensor cable Flatbed home sensor Flatbed interface card Check to make sure that the home sensor cable is correctly installed to both the home sensor and to CN4 on the flatbed interface card. Check for correct operation of the home sensor. If it does not operate correctly, replace the FRUs in the following order: • Flatbed interface card. See “Flatbed interconnect card removal”. • Flatbed home sensor. See “Home sensor removal”. If the problem persists, go to step 6. 6 Mechanical interference with the flatbed CCD assembly Check for mechanical interference with the flatbed CCD assembly and the metal locating bracket. Remove the glass slit. See “Scanner flatbed glass holder assembly removal”. The bracket is located near the home position, to the left side of the flatbed. 1. Move the flatbed CCD assembly a few inches to the right of home. 2. Bend the bracket upwards 1–2 mm. 3. Move the flatbed CCD assembly back to the home position and check for clearnace between the bracket and the edge of the flatbed CCD assembly. If this does not fix the problem, got to step 7. 7 Flatbed scanner assembly If the 843.00 error code continues to be displayed, replace the complete flatbed scanner assembly. See “Flatbed scan assembly removal”. Note: If the flatbed scanner assembly is replaced, it is necessary to perform scanner registration. See “Scanner registration”.
+Code;845.00
+Description;Service Image Processing Unit
+Causes;This error code indicates a failure of the image processing ASIC.
+Remedy;Replace the scanner control card (SCC). 1 Scanner control card Replace the scanner control card. See “Scanner control card removal”.
+Code;848.00
+Description;Modem/Config ID Mismatch
+Causes;There is no modem installed on a modem version of the MFP.
+Remedy;Check to see if a modem card is installed in the MFP. If no modem is installed, install a modem card. If the modem is installed: 1 Modem Install a modem.
+Code;848.01
+Description;Modem/Config ID Mismatch
+Causes;Modem is present on a no modem version of the MFP.
+Remedy;Remove the modem that has been installed as this MFP does not support a modem. 1 Modem Remove the modem installed in the printer.
+Code;900
+Description;RIP Software
+Causes;
+Remedy;1 Printer POR Turn the printer off and on several times. If Error Code 900 continues to display, go to step 2. 2 System board Turn the machine off and on several times, waiting a few minutes between power on and power off. If Error Code 900 continues to display, go to step 3. 3 Factory defaults Restore factory defaults. See “EP Defaults”. This resets the non-critical areas of the user NVRAM. If Error Code 900 continues to display, go to step 4. 4 Sub error codes With Error Code 900 displayed, press and 2. Record the complete list of Sub Error Codes on the display, then call your next level of support or call Toshba.
+Code;900.90
+Description;947 Modem Init Failed
+Causes;Defective modem hardware.
+Remedy;Replace the modem card. 1 Modem Replace the modem.
+Code;901
+Description;Engine flash error
+Causes;Indicates that the flash which the system board code is programmed into is bad. Replace the system board.
+Remedy;Replace the system board.
+Code;902
+Description;Engine software error
+Causes;These errors indicate an unrecoverable system software error.
+Remedy;Replace the system board.
+Code;903
+Description;Paperport link driver error
+Causes;These errors indicate an unrecoverable system software error.
+Remedy;Replace the system board.
+Code;904
+Description;Interface violation by RIP
+Causes;These errors indicate an unrecoverable system software error.
+Remedy;Replace the system board.
+Code;905
+Description;Interface violation by Paperport device
+Causes;These errors indicate an unrecoverable system software error.
+Remedy;Replace the system board.
+Code;906
+Description;RIP interface driver error
+Causes;These errors indicate an unrecoverable system software error.
+Remedy;Replace the system board.
+Code;910
+Description;DC pick motor acceleration stall (autocompensator motor).
+Causes;
+Remedy;• Check autocompensator cable connectors • Check autocompensator for binds
+Code;911
+Description;DC pick motor excessive PWM
+Causes;
+Remedy;• Check system board • Check autocompensator motor
+Code;912
+Description;DC pick motor underspeed error
+Causes;
+Remedy;• Check system board • Check autocompensator
+Code;913
+Description;DC pick motor overspeed error
+Causes;
+Remedy;• Check system board • Check autocompensator
+Code;914
+Description;DC pick motor no encoder feedback
+Causes;
+Remedy;Check autocompensator assembly
+Code;917
+Description;Problem with transfer— transfer servo start error.
+Causes;• Check HVPS • Check system board • Check HVPS/input sensor/toner sensor cable.
+Remedy;
+Code;920.01
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode (standby control only. Fuser page count between 0 and 99,999.
+Causes;• Bad thermistor, circuit or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage. • Low wattage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.02
+Description;Hot roll fell too far below the desired temperature while in standby. Fuser page between 0 and 99,999.
+Causes;• Bad thermistor, circuit or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage. • Low wattage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.03
+Description;Hot roll too cool when checking for slope change in standby. Fuser page count between 0 and 99,999.
+Causes;• Bad thermistor, circuit or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage. • Low wattage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.04
+Description;Hot roll too cool when heating to desired temperature after slope change (standby control only). Fuser page count between 0 and 99,999.
+Causes;• Bad thermistor, circuit or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage. • Low wattage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.06
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser page count between 0 and 99,999.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.07
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count between 0 and 99,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Abrupt change in temperature that has disrupted control. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.11
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode. Fuser page count between 100,000 and 199,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.12
+Description;Hot roll fell too far below the desired temperature while printing. Fuser page count between 100,000 and 199,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.13
+Description;Hot roll too cool while checking for slope change. Fuser page count between 100,000 and 199,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.14
+Description;Hot roll too cool when heating to desired temperature after slope change. Fuser page count between 100,000 and 199,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx.
+Code;920.16
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser page count between 100,000 and 199,999.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.17
+Description;Fuser has been below the desired temperature for too long while the media is in the nip. Fuser page count between 100,000 and 199,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll. • Abrupt change in temperature that has disrupted control.
+Remedy;See 920.xx
+Code;920.21
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode. Fuser page count between 200,000 and 299,999.
+Causes;• Bad thermistor, circuit, or cabling. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.22
+Description;Hot roll fell too far below the desired temperature while printing. Fuser page count between 200,000 and 299,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.23
+Description;Hot roll too cool while checking for slope change. Fuser page count between 200,000 and 299,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.24
+Description;Hot roll too cool when heating to desired temperature after slope change. Fuser page count between 200,000 and 299,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.26
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended tim. Fuser page count between 200,000 and 299,999.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.27
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count between 200,000 and 299,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll. • Abrupt change in temperature that has disrupted control.
+Remedy;See 920.xx
+Code;920.31
+Description;Under temperature during steady state control. Fuser page count between 300,000 and 399,999.
+Causes;• Bad thermistor, circuit, or cabling. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.32
+Description;Hot roll fell too far below desired temperature while printing. Fuser page count between 300,000 and 399,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.33
+Description;Hot roll too cool while checking for slope change. Fuser page count between 300,000 and 399,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.34
+Description;Hot roll too cool when heating to desired temperature after slope change. Fuser page count between 300,000 and 399,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.36
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser page count between 300,000 and 399,999.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.37
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count between 300,000 and 399,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll. • Abrupt change in temperatures that has disrupted control.
+Remedy;See 920.xx
+Code;920.41
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode. Fuser page count between 400,000 and 499,999.
+Causes;• Bad thermistor, circuit, or cabling. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.42
+Description;Hot roll fell too far below the desired temperature while printing. Fuser page count between 400,000 and 499,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.43
+Description;Hot roll too cool while chickens for slope change. Fuser page count between 400,000 and 499,999.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.44
+Description;Hot roll too cool when heating to desired temperature after slop change. Fuser page count between 400,000 and 499,999
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.46
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser page count between 400,000 and 499,999.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.47
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count between 400,000 and 499,999.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll. • Abrupt change in temperatures that has disrupted control.
+Remedy;See 920.xx
+Code;920.51
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode. Fuser page count more than 500,000.
+Causes;• Bad thermistor, circuit, or cabling. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.52
+Description;Hot roll fell too far below desired temperature while printing. Fuser page count more than 500,000.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.53
+Description;Hot roll too cool while checking for slope change. Fuser page count more than 500,000.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.54
+Description;Hot roll too cool when heating to desired temperature after slope change. Fuser page count more than 500,000.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.56
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser count more than 500,000.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.57
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count more than 500,000.
+Causes;Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll. • Abrupt change in temperatures that has disrupted control.
+Remedy;See 920.xx
+Code;920.91
+Description;Hot roll took too long to heat up after transitioning to new enhanced mode. Fuser page count not available.
+Causes;• Bad thermistor, circuit, or cabling. • Fuser not receiving AC power. • Poor supply line voltage. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.92
+Description;Hot roll fell too far below desired temperature while printing. Fuser page count not available.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.93
+Description;Hot roll too cool while checking for slope change. Fuser page count not available.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.94
+Description;Hot roll too cool when heating to desired temperature after slope change. Fuser page count not available.
+Causes;• Bad thermistor, circuit, or cabling. • Noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Incorrect hot roll.
+Remedy;See 920.xx
+Code;920.96
+Description;Fuser is not increasing in temperature even though the lamp has been on for an extended time. Fuser page count not available.
+Causes;• Fuser is not receiving AC power. • Poor supply line voltage.
+Remedy;See 920.xx
+Code;920.97
+Description;Fuser has been below the desired temperature for too long while media is in the nip. Fuser page count not available.
+Causes;• Bad thermistor, circuit, or cabling. • Very noisy thermistor signal. • Fuser not receiving AC power. • Poor supply line voltage. • Excessive load on the fuser. • Low voltage or incorrect lamp. • Abrupt change in temperatures that has disrupted control.
+Remedy;See 920.xx
+Code;920.xx
+Description;Fuser Error
+Causes;
+Remedy;"1 Fuser lamp Fuser lamp AC cable Observe the lamp through the left near side of the printer. It may be necessary to remove the redrive assembly to observe the lamp turning on and off. If the lamp does not come on do the following: • If not previously removed, remove the redrive assembly. See “Redrive assembly removal”8. • Remove the fuser assembly. See “Fuser assembly removal”. • Make sure the correct type of lamp is installed (voltage and wattage). • Verify that the fuser to fuser lamp cable is installed correctly to the fuser top cover assembly. If incorrect, install correctly; if correct, go to step 2. 2 AC line voltage CAUTION: When taking measurements for AC power, observe all safety precautions. Check the AC line voltage to make sure it is within operating specification. If incorrect, inform the customer; if correct, go to step 3. 3 LVPS CAUTION: When taking measurements for AC power, observe all safety precautions. Unplug the AC line cord from the printer and pull the LVPS out far enough to access CN1 on the LVPS board (see “Low voltage power supply removal”9). Disconnect the LVPS to fuser AC cable, plug in the line cord, turn the printer on and measure the voltage between CN1-1 and CN1-3 on the connector (see the connector locations at “Low voltage power supply”). If incorrect, replace the LVPS assembly (see “Low voltage power supply removal”9); if correct, go to step 4. 4 Fuser lamp Fuser top cover assembly Fuser connect cable (fuser to fuser lamp cable) Check continuity of the fuser to fuser AC cable, fuser top cover assembly, and fuser lamp by checking the continuity between the two pins on the fuser lamp AC cable connector: • If there is continuity, go to step 5. • If there is no continuity, check the continuity of the fuser to fuser lamp AC cable. If incorrect, replace the lamp, if incorrect, replace the fuser top cover assembly. Note: If the fuser lamp is replaced, allow the fuser assembly to cool or a 925.xx error may be displayed. 5 LVPS LVPS to fuser AC cable CAUTION: When taking measurements for AC power, observe all safety precautions. Check the AC line voltage between the pins on the fuser end of the LPVS to fuser AC cable. If the voltage is correct, unplug the AC power cord from the LVPS cable. If the voltage is correct, unplug the AC power cord from the LVPS, pull the LVPS out far enough to be able to check the voltage between CN-1 and CN1-3 on the LVPS board. Plug in the power cord, turn the printer on and check the voltage. If correct, replace the LVPS to fuser AC cable; if incorrect, replace the LVPS assembly. Note: If the fuses in the LVPS are blown, the LVPS assembly must be replaced. 6 Fuser top cover assembly (thermistor, thermistor cable) Fuser to system board DC cable Check to make sure that the thermistor is installed correctly to J5 on the fuser control card. If installed correctly check the cable for any signs of damage. If any problems are found, replace the fuser top cover assembly. If no problem is found, check the fuser to system board DC cable for correct installation at J1 on the fuser control card. If no problem is found, check the fuser to system board cable for correct installation at J10 on the system board. 7 Error code 920.06 displayed LVPS System board System board to LVPS cable Carefully check the installation of the LVPS to system board cable to J27 on the system board and to CN2 on the LVPS. If the cable is not seated or installed properly, reseat the cable and retry the printer. If the cable is installed correctly, replace the following FRUs in the order shown: • LVPS assembly. See “Low voltage power supply removal”9. • System board assembly. See “System board and inner shield removal —model 500S”1. • LVPS to system board cable. 8 Fuser assembly If no problem is found up to this point, then replace the following in the order shown: • Fuser assembly. See “Fuser assembly removal”. • System board assembly. See “System board and inner shield removal —model 500S”1. • LVPS. See “Low voltage power supply removal”."
+Code;922.02
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count between 0 and 99,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;"1 Fuser lamp Remove the fuser assembly and check to make sure the correct fuser lamp has been installed. If the correct lamp has been installed, go to step 2. Note: If the fuser lamp is replaced, allow the fuser assembly to cool or a 925.xx error code could be displayed. 2 AC line voltage CAUTION: When taking measurements for AC power, observe all safety precautions. Check the AC line voltage to make sure it is within operating specification. If incorrect, inform the customer; if correct, go to step 3. 3 LVPS CAUTION: When taking measurements for AC power, observe all safety precautions. Unplug the AC line cord from the printer and pull the LVPS out far enough to access CN1 on the LVPS board (see “Low voltage power supply removal”). Disconnect the LVPS to fuser AC cable, plug in the line cord, turn the printer on and measure the voltage between CN1-1 and CN1-3 on the connector (see the connector locations at “Low voltage power supply”). If incorrect, replace the LVPS assembly (see “Low voltage power supply removal”); if correct, go to step 4. 4 LVPS LVPS fuser AC cable CAUTION: When taking measurements for AC power, observe all safety precautions. Disconnect the AC line cord from the printer. Disconnect the LVPS to fuser cable from the fuser to fuser lamp cable. Plug the AC line cord into the printer and check the AC line voltage between the pins on the fuser end of the LVPS to fuser AC cable. If the voltage is correct, unplug the AC power cord from the LVPS cable and pull the LVPS out far enough to be able to check the voltage between CN-1 and CN-3 on the LVPS board. Plug in the power cord, turn the printer on and check the voltage. If correct, replace the LVPS to fuser AC cable; if incorrect, replace the LVPS assembly. See “Low voltage power supply removal”. Note: If the fuses in the LVPS are blown, the LVPS assembly must be replaced. 5 Fuser top cover assembly (thermistor, thermistor cable) Fuser to system board DC cable Check to make sure that the thermistor is installed correctly to J5 on the fuser control card. If installed correctly check the cable for any signs of damage. If any problems are found, replace the fuser top cover assembly.“Fuser narrow media sensor removal”. If no problem is found, check the fuser to system board DC cable for correct installation at J1 on the fuser control card. If no problem is found, check the fuser to system board cable for correct installation at J10 on the system board. If no problem is found, go to step 6. 6 Fuser assembly If no problem is found up to this point, then replace the following in the order shown: • Fuser assembly. See “Fuser assembly removal”. • System board assembly. See “System board and inner shield removal —model 500S”. • LVPS. See “Low voltage power supply removal”."
+Code;922.03
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count between 0 and 99,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.04
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count between 0 and 99,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.06
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count between 0 and 99,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.07
+Description;Fuser has taken too long to reach desired temperature after increasing interrupt gap. Fuser page count between 0 and 99,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.12
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count between 100,000 and 199,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.13
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count between 100,000 and 199,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.14
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count between 100,000 and 199,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.15
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count between 100,000 and 199,999.
+Causes;The control code has been lost.
+Remedy;See 922.02
+Code;922.16
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count between 100,000 and 199,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.17
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count between 100,000 and 199,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.22
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count between 200,000 and 299,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.23
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count between 200,000 and 299,999.
+Causes;Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.24
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count between 200,000 and 299,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.25
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count between 200,000 and 299,999.
+Causes;The control code has been lost.
+Remedy;See 922.02
+Code;922.26
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count between 200,000 and 299,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.27
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count between 200,000 and 299,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.32
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count between 300,000 and 399,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.33
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count between 300,000 and 399,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.34
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count between 300,000 and 399,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.35
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count between 300,000 and 399,999.
+Causes;The control code has been lost.
+Remedy;See 922.02
+Code;922.36
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count between 300,000 and 399,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.37
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count between 300,000 and 399,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.42
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count between 400,000 and 499,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.43
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count between 400,000 and 499,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.44
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count between 400,000 and 499,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.45
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count between 400,000 and 499,999.
+Causes;The control code has been lost.
+Remedy;See 922.02
+Code;922.46
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count between 400,000 and 499,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.47
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count between 400,000 and 499,999.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Excessive load on the fuser. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.52
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count stopped at 500,000 to preserve data.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.53
+Description;Hot roll reached final lamp detection temperature but took longer than largest time in lookup table. Fuser page count stopped at 500,000 to preserve data.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.54
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count stopped at 500,000 to preserve data.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.55
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count stopped at 500,000 to preserve data.
+Causes;The control code has been lost.
+Remedy;See 922.02
+Code;922.56
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count stopped at 500,000 to preserve data.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.57
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count stopped at 500,000 to preserve data.
+Causes;• Low wattage or incorrect lamp. • Excessive load on the fuser. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.92
+Description;Hot roll took too long to reach the beginning lamp detection temperature. Fuser page count not available.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.93
+Description;Hot roll reached ‘final lamp detection temperature’ but took longer than largest time in lookup table. Fuser page count not available.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage
+Remedy;See 922.02
+Code;922.94
+Description;Hot roll timed out in trying to reach the final lamp detection temperature. Fuser page count not available.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.95
+Description;After hot roll lamp detection, did not roll over to steady state control in time. Fuser page count not available.
+Causes;Control code has been lost.
+Remedy;See 922.02
+Code;922.96
+Description;Hot roll did not reach operating temperature in time (new enhanced control). Fuser page count not available.
+Causes;• Low wattage or incorrect lamp. • Bad thermistor, circuit, or cabling. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;922.97
+Description;Fuser has taken too long to reach desired temperature after increasing interpage gap. Fuser page count not available.
+Causes;• Low wattage or incorrect lamp. • Excessive load on the fuser. • Fuser not receiving sufficient AC power. • Poor supply line voltage.
+Remedy;See 922.02
+Code;923.01
+Description;Fuser over temperature. Fuser page count between 0 and 99,999.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;"1 Fuser assembly Check for any signs of overheating in the fuser assembly. Check the hot roll, hot roll bearings, and the area around the thermistor for any signs of excessive heat. If a problem is found, replace the thermistor. If no problem is found, go to step 2. 2 Fuser top cover assembly (thermistor) Turn the printer off and disconnect the fuser to system board cable from J10 on the system board. Check the resistance between pins J10-3 and J10-4. The resistance should be greater than 100K ohms. If correct, go to step 3; if incorrect, disconnect the thermistor cable from J5 on the fuser board and measure the resistance between the two pins on the thermistor cable. If incorrect, replace the fuser top cover assembly (see “Fuser narrow media sensor removal”); if correct, replace the fuser to system board cable. 3 System board Fuser top cover assembly Check the voltage on J10-3 ground on the system board. The voltage should measure approximately +3.3 V dc. If the voltage is correct, replace the fuser top cover assembly. See “Fuser narrow media sensor removal”. If incorrect, replace the system board. See “System board and inner shield removal —model 500S""."
+Code;923.11
+Description;Fuser over temperature. Fuser page count between 100,000 and 199,999.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;923.21
+Description;Fuser over temperature. Fuser page count between 200,000 and 299,999.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;923.31
+Description;Fuser over temperature. Fuser page count between 300,000 and 399,999.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;923.41
+Description;Fuser over temperature. Fuser page count between 400,000 and 499,999.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;923.51
+Description;Fuser over temperature. Fuser page count stopped at 500,000 to preserve data.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;923.91
+Description;Fuser over temperature. Fuser page count not available.
+Causes;• Short in the thermistor circuit. • Noisy thermistor signal • Fuser is actually overheating due to hardware faults.
+Remedy;See 923.01
+Code;924.01
+Description;Open thermistor check failure. Fuser page count between 0 and 99,999.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;"1 Fuser assembly Fuser to system board cable Check the thermistor cable for correct installation to J5 on the fuser card. If installed correctly, check for correct installation of J10 on the system board. If all cables are installed correctly, go to step 2. 2 Fuser top cover assembly (thermistor/thermistor cable assembly) Turn the printer off and disconnect the thermistor cable from J5 on the fuser board. Measure the resistance between the two pins on the thermistor cable, if the resistance measures infinity (open circuit), replace the fuser top cover assembly. 3 Fuser to system board cable. System board Fuser assembly Reconnect the thermistor cable to J5 on the fuser board. Disconnect the fuser to system board cable from J10 on the system board and measure the resistance between J10-3 and J10-4 on the cable. If the resistance measures infinity (open circuit) check the continuity of pins 3 and 4 of the cable. If correct, replace the fuser assembly. See “Fuser assembly removal”. If incorrect, replace the fuser to system board cable. Note: If the error code still displays, replace the system board. See “System board and inner shield removal —model 500S""."
+Code;924.11
+Description;Open thermistor check failure. Fuser page count between 100,000 and 199,999.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;924.21
+Description;Open thermistor check failure. Fuser page count between 200,000 and 299,999.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;924.31
+Description;Open thermistor check failure. Fuser page count between 300,000 and 399,999.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;924.41
+Description;Open thermistor check failure. Fuser page count between 400,000 and 499,999.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;924.51
+Description;Open thermistor check failure. Fuser page count over 500,000.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;924.91
+Description;Open thermistor check failure. Fuser page count not available.
+Causes;• Noisy thermistor signal. • Intermittent connection. • Thermistor cable not connected or thermistor actually open.
+Remedy;See 924.01
+Code;925.01
+Description;Lamp detection performed and found error. Fuser page count between 0 and 99,999.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;1 Fuser lamp If the fuser is 220 V machine a 115 V fuser may be installed. If the printer is not a 115 V model, then go to step 2. If the printer is a 220 V model, then check to make sure that the correct lamp is installed. Note: If the fuser lamp is replaced, allow the fuser to cool or a 925.xx error could be displayed. 2 AC power source Check the AC power source to make sure it meets specifications. If the AC power source does not meet specifications, inform the customer. If it meets specifications, go to step 3. 3 Fuser lamp Turn the printer off and allow the fuser assembly to cool. After the fuser assembly cools down, turn the printer on. If you receive the same error code, replace the fuser lamp. See “Fuser lamp removal”. Note: If the fuser lamp is replaced, allow the fuser to cool or a 925.xx error could be displayed.
+Code;925.02
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count between 0 and 99,999.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.11
+Description;Lamp detection performed and found error. Fuser page count between 100,000 and 199,999.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.12
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count between 100,000 and 199,999.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.21
+Description;Lamp detection performed and found error. Fuser page count between 200,000 and 299,999.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.22
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count between 200,000 and 299,999.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.31
+Description;Lamp detection performed and found error. Fuser page count between 300,000 and 399,999.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.32
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count between 300,000 and 399,999.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.41
+Description;Lamp detection performed and found error. Fuser page count between 400,000 and 499,999.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.42
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count between 400,000 and 499,999.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.51
+Description;Lamp detection performed and found error. Fuser page count stopped at 500,000 to preserve data.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.52
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Fuser page count stopped at 500,000 to preserve data.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;925.91
+Description;Lamp detection performed and found error. Writes to the fuser information chip have been disabled due to a previous write failure.
+Causes;• 115 V lamp in 220 V printer. • Lamp has excessive wattage.
+Remedy;See 925.01
+Code;925.92
+Description;Too hot to do lamp detection and NVRAM bit indicates previous wrong lamp detected. Writes to the fuser information chip have been disabled due to a previous write failure.
+Causes;Attempting to POR machine after receiving a 925.01.
+Remedy;See 925.01
+Code;927.00
+Description;Service fan error.
+Causes;• Loose connector. • External blockage of the fan, preventing it from turning. • Bad fan.
+Remedy;"1 Main fan Check the main fan to make sure it is plugged into J4 on the system board. If the fan cable id correctly connected to J4, check the cable and the cable connector for any signs of damage. If damaged, replace the main fan assembly. See “Main fan removal”1. If undamaged, go to step 2. 2 Main fan Turn the printer off and check the main fan for any signs of blockage of the fan blades. If there is any sign of blockage, remove the blockage. 3 Main fan blades turn during POR, then stop. Fan will not run when trying to print. Main fan System board Measure the voltage at J4-1 on the system board. The voltage should measure approximately +2.5 V dc. If incorrect, replace the main fan. See “Main fan removal”1. If that does not fix the problem, replace the system board. See “System board and inner shield removal —model 500S""1. 4 Main fan blades do not turn Measure the voltage at J4-3. The voltage should measure +14.4 V dc with the fan running full and approximately 7.0 V dc when running half speed. If incorrect, replace the main fan. See “Main fan removal”1. If this does not fix the problem, replace the system board. See “System board and inner shield removal — model 500S”1."
+Code;927.01
+Description;Main fan stalled.
+Causes;• External blockage of fan • Fan may not turn due to internal fan problem.
+Remedy;"1 Main fan Check the main fan to make sure it is plugged into J4 on the system board. If the fan cable id correctly connected to J4, check the cable and the cable connector for any signs of damage. If damaged, replace the main fan assembly. See “Main fan removal”1. If undamaged, go to step 2. 2 Main fan Turn the printer off and check the main fan for any signs of blockage of the fan blades. If there is any sign of blockage, remove the blockage. 3 Main fan blades turn during POR, then stop. Fan will not run when trying to print. Main fan System board Measure the voltage at J4-1 on the system board. The voltage should measure approximately +2.5 V dc. If incorrect, replace the main fan. See “Main fan removal”1. If that does not fix the problem, replace the system board. See “System board and inner shield removal —model 500S""1. 4 Main fan blades do not turn Measure the voltage at J4-3. The voltage should measure +14.4 V dc with the fan running full and approximately 7.0 V dc when running half speed. If incorrect, replace the main fan. See “Main fan removal”1. If this does not fix the problem, replace the system board. See “System board and inner shield removal — model 500S”1."
+Code;927.02
+Description;Cartridge fan stalled.
+Causes;• Loose connector. • External blockage of the fan, preventing it from turning. • Bad fan.
+Remedy;1 Cartridge fan Check to make sure the cartridge is plugged into J5 on the system board. If properly plugged in, go to step 2. 2 Cartridge fan Check for any signs of blockage in the fan. If any is found, remove and retry the printer. If no problem is found, go to step 3. 3 Cartridge fan System board Replace the following FRUs in the order shown: • Cartridge fan • System board. See “System board and inner shield removal —model 500S”1.
+Code;927.03
+Description;Main fan took too long to ramp up.
+Causes;• Loose connector. • External blockage of the fan, preventing it from turning. • Bad fan.
+Remedy;"1 Main fan Check the main fan to make sure it is plugged into J4 on the system board. If the fan cable id correctly connected to J4, check the cable and the cable connector for any signs of damage. If damaged, replace the main fan assembly. See “Main fan removal”1. If undamaged, go to step 2. 2 Main fan Turn the printer off and check the main fan for any signs of blockage of the fan blades. If there is any sign of blockage, remove the blockage. 3 Main fan blades turn during POR, then stop. Fan will not run when trying to print. Main fan System board Measure the voltage at J4-1 on the system board. The voltage should measure approximately +2.5 V dc. If incorrect, replace the main fan. See “Main fan removal”1. If that does not fix the problem, replace the system board. See “System board and inner shield removal —model 500S""1. 4 Main fan blades do not turn Measure the voltage at J4-3. The voltage should measure +14.4 V dc with the fan running full and approximately 7.0 V dc when running half speed. If incorrect, replace the main fan. See “Main fan removal”1. If this does not fix the problem, replace the system board. See “System board and inner shield removal — model 500S”."
+Code;927.04
+Description;Main fan underspeed or stalled during speed adjustment state.
+Causes;• Corrupted feedback signal. • Fan input voltage may be too low.
+Remedy;
+Code;927.05
+Description;Main fan overspeed during speed adjustment state.
+Causes;• Corrupted feedback signal. • Fan input voltage may be too low.
+Remedy;
+Code;927.06
+Description;Main fan capture data is invalid and speed control is at maximum in fan control idle state.
+Causes;Corrupted or non-existent feedback signal.
+Remedy;
+Code;927.07
+Description;Main fan capture data is invalid and speed control is at maximum in fan control adjustment state.
+Causes;Corrupted feedback signal.
+Remedy;
+Code;929.00
+Description;Toner sensor error—a problem has been detected with the toner sensor.
+Causes;• Check the toner sensor • Check cable • Check system board
+Remedy;
+Code;929.66
+Description;An error has been detected. No home windows has been detected.
+Causes;• Check toner cartridge. • Check toner sensor
+Remedy;
+Code;929.67
+Description;No toner sensor transition.
+Causes;• Check toner sensor • Check toner cartridge
+Remedy;
+Code;930.00
+Description;An incorrect printhead has been detected
+Causes;Check the printhead
+Remedy;
+Code;932.00
+Description;Printhead lost HSYNC.
+Causes;• Check printhead • Check cables and connections • Check system board
+Remedy;
+Code;933.00
+Description;Mirror motor locked, no first HSYNC received.
+Causes;• Check printhead • Check cables and connectors • Check system board.
+Remedy;
+Code;934.00
+Description;Mirror motor lost lock
+Causes;• Check printhead • Check cables and connections • Check system board
+Remedy;
+Code;936.00
+Description;Mirror moor not up to speed
+Causes;• Check printhead • Check system board
+Remedy;
+Code;936.10
+Description;No hall effect detected at motor start. Motor is type 0.
+Causes;• Check cable connections • Defective motor • Severe gear blinds in gearbox assembly • System board
+Remedy;
+Code;936.11
+Description;No hall effect detected at motor start. Motor is type 1.
+Causes;• Check cable connections • Defective motor • Severe gear binds in gearbox assembly. • System board
+Remedy;
+Code;936.20
+Description;Failed to stop within timeout, motor is type 0.
+Causes;• Defective motor • Defective system board
+Remedy;
+Code;936.21
+Description;Failed to stop within timeout, motor is type 1.
+Causes;• Defective motor • Defective system board
+Remedy;
+Code;936.30
+Description;No lock detected at motor start for motor ID. Motor is type 0.
+Causes;• Check for paper jams • Gear binds • Defective motor • Check motor cable and connections
+Remedy;
+Code;936.31
+Description;No lock detected at motor start for motor ID. Motor is type 1.
+Causes;• Check for paper jams • Gear binds • Defective motor • Check motor cable and connections
+Remedy;
+Code;936.60
+Description;No lock detected at normal motor start. Motor is type 0.
+Causes;• Check for paper jams • Gear binds • Defective motor • Check motor cable and connections
+Remedy;
+Code;936.61
+Description;No lock detected at normal motor start. Motor is type 1.
+Causes;• Check for paper jams • Gear binds • Defective motor. • Defective motor cable • Cable connections
+Remedy;
+Code;936.9
+Description;Stall detected during speed control. Motor is type 0.
+Causes;• Defective cable • Check cable connections • Defective motor • Paper jams
+Remedy;
+Code;936.91
+Description;Stall detected during speed control. Motor is type 1.
+Causes;• Defective cable • Check cable connections • Defective motor • Paper jams
+Remedy;
+Code;937.4
+Description;Overspeed detected during speed control. Motor is type 0.
+Causes;• Faulty motor sensor • Faulty system board
+Remedy;
+Code;937.41
+Description;Overspeed detected during speed control. Motor is type 1.
+Causes;• Faulty motor sensor • Faulty system board
+Remedy;
+Code;937.5
+Description;Overspeed detected during position control. Motor is type 0.
+Causes;• Faulty motor sensor • Faulty system board
+Remedy;
+Code;937.51
+Description;Overspeed detected during position control. Motor is type 1.
+Causes;• Faulty motor sensor • Faulty system board
+Remedy;
+Code;937.7
+Description;Loss of lock detected by higher level code. Motor is type 0.
+Causes;• Defective motor cable • Defective main drive motor • Paper jams
+Remedy;
+Code;937.71
+Description;Loss of lock detected by higher level code. Motor is type 1.
+Causes;• Defective motor cable • Defective main drive motor • Paper jams
+Remedy;
+Code;937.80
+Description;Driver over temperature detection. Motor is type 0.
+Causes;• Excessive gear loading in gearbox assembly
+Remedy;
+Code;939.00
+Description;RIP–engine communications lost.
+Causes;System board
+Remedy;POR the printer several times, if the error code continues to be displayed, replace the system board.
+Code;940.00
+Description;LVPS zero-crossing test failed.
+Causes;• Incorrect LVPS installed • Noisy AC power source • LVPS to system board cable loose
+Remedy;Check to make sure the correct LVPS assembly has been installed. If the correct supply is installed, check to make sure the LVPS to system board cable is installed correctly. If correct, replace the LVPS assembly.
+Code;947.00
+Description;PQET RAM test incomplete, PQET RAM test did not complete, PQET RAM test failed MARCH0 PQET RAM test failed MARCH1 PQET RAM test busy failure
+Causes;PQET failed to pass RAM tests on the system board
+Remedy;Replace the system board.
+Code;948.00
+Description;Pel clock check failed
+Causes;System board
+Remedy;Replace the system board.
+Code;949.00
+Description;Delay line calibration failure
+Causes;System board
+Remedy;Replace the system board.
+Code;950.00
+Description;NVRAM mismatch
+Causes;EPROM mismatch failure
+Remedy;This error code indicates a mismatch between the System Board assembly and the interface card assembly. Warning: In the event of replacement of any one of the following components: • Flatbed interconnect card • System board assembly • Interface card assembly Only replace one component at a time. Replace the required component, and perform a POR before replacing a second component listed above. If this procedure is not followed, the printer will be rendered inoperable. Never replace two or more of the components listed above without a POR after installing each one, or the printer will be rendered inoperable. Warning: Never install and remove components listed above as a method of troubleshooting components. Once a component has been installed in a machine, it cannot be used in another machine. It must be returned to the manufacturer.
+Code;951.00
+Description;
+Causes;
+Remedy;Replace the system board. Warning: When replacing any one of the following components: • Flatbed interconnect card • System board assembly • Interface card assembly Only replace one component at a time. Replace the required component, and perform a POR before replacing a second component listed above. If this procedure is not followed, the printer will be rendered inoperable. Never replace two or more of the components listed above without a POR after installing each one, or the printer will be rendered inoperable. Warning: Never install and remove components listed above as a method of troubleshooting components. Once a component has been installed in a printer, it cannot be used in another printer. It must be returned to the manufacturer.
+Code;952.00
+Description;NV failure:n
+Causes;CRC error has occurred. This is recoverable.
+Remedy;Perform POR to clear the error.
+Code;953.00
+Description;
+Causes;
+Remedy;Replace the operator panel right cover assembly.
+Code;954.00
+Description;
+Causes;
+Remedy;Replace the interface card. Warning: When replacing any one of the following components: • Flatbed interconnect card • System board assembly • Interface card assembly Only replace one component at a time. Replace the required component, and perform a POR before replacing a second component listed above. If this procedure is not followed, the printer will be rendered inoperable. Never replace two or more of the components listed above without a POR after installing each one, or the printer will be rendered inoperable. Warning: Never install and remove components listed above as a method of troubleshooting components. Once a component has been installed in a printer, it cannot be used in another printer. It must be returned to the manufacturer.
+Code;955.00
+Description;Code CRC
+Causes;CRC failure or ECC code failure on the system board.
+Remedy;Replace the system board.
+Code;956.00
+Description;System board
+Causes;This error indicates a system board processor failure.
+Remedy;Replace the system board.
+Code;957.00
+Description;System board
+Causes;This error indicates a system board processor failure.
+Remedy;Replace the system board.
+Code;958.00
+Description;Nand failure
+Causes;Printer has performed more than 100 “shift and replace” operations as a result of EC bit corrections.
+Remedy;Replace the system board
+Code;980.00
+Description;Unreliable communications to Paperport device
+Causes;The engine is experiencing unreliable communications to the specified device
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;981.00
+Description;Interface protocol violation by engine
+Causes;The engine protocol violation detected by the specified device.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;982.xx
+Description;Paperport communication error
+Causes;Communications error detected by the specified device.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;983.00
+Description;Invalid command received by device
+Causes;Invalid command received by the specified device.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;984.00
+Description;Invalid command parameter received by device
+Causes;Invalid command parameter received by the specified device.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;990.00
+Description;General device equipment check
+Causes;Indicates an equipment check condition has occurred in the specified device, but the device is unable to identify the exact component failure.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;991.00
+Description;Device system card failed basic assurance test
+Causes;The specified device has detected an equipment check in its system card.
+Remedy;Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.

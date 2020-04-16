@@ -1,0 +1,272 @@
+Code;195
+Description;Serial Number Error The serial number stored in the memory (EGB) is not correct.
+Causes;EEPROM defective. EGB replaced without original EEPROM.
+Remedy;1. Check the serial number. 2. If the stored serial number is incorrect, contact your supervisor.
+Code;202
+Description;Polygon motor error 1: ON timeout The polygon mirror motor does not reach the targeted operating speed within 5 sec. after turning on or changing speed
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective. Laser optics unit defective. IPU (EGB) defective.
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;203
+Description;Polygon motor error 2: OFF timeout The polygon mirror motor does not leave the READY status within 3 sec. after the polygon motor switched off.
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective. Laser optics unit defective. IPU (EGB) defective.
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;204
+Description;Polygon motor error 3: XSCRDY signal error The SCRDY_N signal remains HIGH for 200 ms while the LD unit is firing.
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective. Laser optics unit defective. IPU (EGB) defective.
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;220
+Description;Laser Synchronizing Detection Error: [K]/[Y] The laser synchronizing detection signal for LDB [K]/[Y] is not output after the LDB unit has turned on while the polygon motor is rotating normally.
+Causes;Disconnected cable from the laser synchronizing detection unit or defective connection. Defective laser synchronizing detector. Defective LDB. Defective EGB.
+Remedy;1. Check the connectors. 2. Replace the laser optics unit. 3. Replace the EGB.
+Code;222
+Description;Laser Synchronizing Detection Error: [M]/[C] The laser synchronizing detection signal for LDB [M]/[C] is not output after the LDB unit has turned on while the polygon motor is rotating normally.
+Causes;Disconnected cable from the laser synchronizing detection unit or defective connection. Defective laser synchronizing detector. Defective LDB. Defective EGB.
+Remedy;1. Check the connectors. 2. Replace the laser optics unit. 3. Replace the EGB.
+Code;240
+Description;LD error The IPU (EGB) detects a problem at the LD unit.
+Causes;Worn-out LD. Disconnected or broken harness of the LD.
+Remedy;1. Replace the laser optics unit.
+Code;300
+Description;High voltage power output error The measured voltage is not correct when the EGB measures each charge output (charge, development, image transfer belt unit, and transfer unit).
+Causes;Disconnected or defective high voltage harness. Defective high voltage power supply. Defective EGB.
+Remedy;1. Check or replace the harnesses. 2. Replace the high voltage power supply board 3. Replace the EGB. 4. Replace the AIOs.
+Code;396
+Description;Black drum motor error The LOCK signal error is detected when the EGB monitors the black drum motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;Disconnected or defective motor harness. Motor slips due to excessive load.
+Remedy;1. Check the harness from the black drum motor. Replace it if necessary.
+Code;397
+Description;Color drum motor error The LOCK signal error is detected when the EGB monitors the color drum motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;Disconnected or defective motor harness. Motor slips due to excessive load.
+Remedy;1. Check the harness from the color drum motor. Replace it if necessary.
+Code;445
+Description;ITB (Image Transfer Belt) Unit Error Home Position Error The ITB contact sensor does not detect the home position of the ITB for 5 seconds after the ITB unit initialization has been done. ITB (Image Transfer Belt) Unit: Contact Position Error The ITB contact sensor does not detect the contact position of the ITB for 5 seconds after the ITB unit has moved to the contact position. ITB (Image Transfer Belt) Unit: No-contact Position Error The ITB contact sensor does not detect the home position of the ITB for 5 seconds after the ITB unit has moved to no-contact position.
+Causes;Defective ITB contact motor. Defective ITB contact sensor. Defective ITB unit.
+Remedy;1. Replace the ITB contact motor. 2. Replace the ITB contact sensor. 3. Replace the ITB unit.
+Code;480
+Description;Agitator Motor Error The agitator motor error is detected twice for 10 msec during the initialization at power-on or after the cover is closed.
+Causes;Disconnected or defective harness. Defective agitator motor.
+Remedy;1. Check or replace the harness. 2. Replace the agitator motor.
+Code;500
+Description;Transport/Fusing Motor Error The LOCK signal error is detected when the EGB monitors the transport/fusing motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;Disconnected or defective motor harness. Motor slips due to excessive load.
+Remedy;1. Check the harness from the transport/fusing motor. Replace it if necessary.
+Code;530
+Description;LSU Fan Motor Error A LOCK signal is not detected for more than ten seconds while the motor START signal is on and if this error occurs twice consecutively, this SC is issued.
+Causes;Disconnected or defective motor harness. Defective LSU fan motor.
+Remedy;1. Check or replace the motor harness. 2. Replace the LSU fan motor.
+Code;531
+Description;Fusing Fan Motor Error A LOCK signal is not detected for more than ten seconds while the motor START signal is on and if this error occurs twice consecutively, this SC is issued.
+Causes;Disconnected or defective motor harness. Defective LSU fan motor.
+Remedy;1. Check or replace the motor harness. 2. Replace the fusing fan motor.
+Code;532
+Description;Air Intake Fan Motor Error A LOCK signal is not detected for more than ten seconds while the motor START signal is on and if this error occurs twice consecutively, this SC is issued.
+Causes;• Disconnected or defective motor harness. • Defective air intake fan motor
+Remedy;1. Check or replace the motor harness. 1. Replace the air intake fan motor.
+Code;541
+Description;Thermistor Error The thermistor output is less than 0°C for 7 seconds.
+Causes;Disconnected thermistor. Defective harness connection.
+Remedy;"1. Check the harness connection of the thermistor. 2. Replace the fusing unit. • Execute ""SC Reset; Fusing SC"" with SP5-810-001 to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;542
+Description;Print Ready Temperature Error The heating roller temperature increase during a set time is not correct. The fusing temperature does not reach the print ready temperature within a set time after the fusing lamp has turned on.
+Causes;Defective thermistor. Incorrect power supply input at the main power socket. Defective fusing lamp.
+Remedy;"1. Check the voltage of the wall outlet. 2. Replace the fusing unit 3. Replace the fusing lamp. • Execute ""SC Reset; Fusing SC"" with SP5-810-001 to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;543
+Description;High Temperature Detection Error This SC is issued if one of following conditions occurs: The thermistor (center) detects 255°C or thermistor (end) detects 245°C. The thermistor (center) detects a 3°C increment or more for five seconds at 220°C or more or the thermistor (end) detects a 4°C increment or more for five seconds at 210°C or more.
+Causes;Defective I/O control (EGB). Defective EGB.
+Remedy;"1. Replace the EGB • Execute ""SC Reset; Fusing SC"" with SP5-810-001 to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;545
+Description;Heating Lamp Full-Power Error The fusing lamp is fully-powered for a certain time while the fusing unit stays in the stand-by mode and is not rotating.
+Causes;Deformed thermistor. Thermistor not in the correct position. Defective fusing lamp.
+Remedy;"1. Replace the fusing unit. 2. Replace the fusing lamp. • Execute ""SC Reset; Fusing SC"" with SP5-810-001 to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;547
+Description;Zero Cross Error The zero cross signal is not detected for three seconds even though the fusing lamp relay is on after turning on the main power or closing the front door.
+Causes;Defective fusing lamp relay
+Remedy;"1. Turn the main power switch off and on. • Execute ""Fuser SC Reset"" with SOM to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;548
+Description;Low Temperature Error The center thermistor detects 100°C or less for 4 seconds.
+Causes;Defective fusing lamp. Defective thermistor
+Remedy;"1. Replace the fusing unit. 2. Replace the fusing lamp. • Execute ""SC Reset; Fusing SC"" with SP5-810-001 to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;557
+Description;Zero Cross Frequency Error The detection error occurs ten times consecutively in ten zero cross signal detections. This error is defined when the detected zero cross signal is 17 or less/27 or more for 0.2 seconds.
+Causes;Defective fusing lamp relay. Unstable input power source.
+Remedy;1. Check the power supply source. 2. Replace the fusing unit.
+Code;559
+Description;"Consecutive Fusing Jam The paper jam counter for the fusing unit reaches 3. The paper jam counter is cleared if the paper is fed correctly. This SC is activated only when this function is enabled with ""Engine Maintenance"" (default ""OFF"")."
+Causes;Defective fusing unit. Defective fusing control.
+Remedy;1. Clear this SC to send a command after a jam removal. 2. Turn off this function after a jam removal.
+Code;641
+Description;Controller to engine communication error. The controller receives no response from the engine board.
+Causes;• Defective controller • Defective engine board
+Remedy;1. Check the connection between the controller and the engine board. 2. Replace the engine board if the error is frequent. 3. Replace the controller board if the error is frequent.
+Code;652
+Description;Remote Service ID2 Mismatch Error 1 ID2 for the device did not match the ID2 stored in NVRAM. This error can occur if the controller has been replaced with the Cumin ID2 set for another machine, or if the NVRAM has been replaced with the NVRAM from another machine.
+Causes;• If this error occurs when Cumin is set up, check the Cumin documentation and make sure that the NVRAM is compatible, set the common authentication, then try again. • If this error occurs after Cumin has been set, clear the Cumin setting, check the Cumin documentation and make sure that the NVRAM is compatible, set the common authentication, then try again.
+Remedy;
+Code;653
+Description;Remote Service ID2 Mismatch Error 2 One of the following problems exist with the ID2 stored in NVRAM: • ID2 has less than 17 digits • A non-printable character exists in ID2 • ID2 is all spaces • ID2 is NULL
+Causes;1. Replace NVRAM. 2. Clear the Cumin setting, set the common authentication, then try again.
+Remedy;1. Replace NVRAM. 2. Clear the Cumin setting, set the common authentication, then try again.
+Code;669
+Description;EEPROM Error An unexpected value exists in the initialization flag of the EEPROM.
+Causes;EEPROM not initialized. Defective EEPROM.
+Remedy;1. Initialize the EEPROM. 2. Replace the EEPROM. 3. Replace the EGB.
+Code;670
+Description;Engine startup error The EGB fails to respond within the prescribed time when the machine is turned on.
+Causes;• Connections between EGB and controller board are loose, disconnected, or damaged • EGB defective • Controller board defective
+Remedy;
+Code;671
+Description;Engine board mismatch error Engine board and controller mismatch detected.
+Causes;• Wrong engine board installed • Wrong controller board installed
+Remedy;1. Check the type of EGB and controller board. 2. Replace the EGB. 3. Replace the controller board.
+Code;690
+Description;GAVD Communication Error The ID of the GAVD is not identified during initialization.
+Causes;Defective EGB
+Remedy;1. Replace the EGB.
+Code;816
+Description;Energy save I/O subsystem error An error was detected in the signal from the ASIC (controller board) which controls the STR (Suspend to RAM) function. Note: STR is a feature of this machine that minimizes energy consumption while the machine is in the energy saver mode.
+Causes;-5 SCS • Reboot the machine. • Replace the controller board. -39 Sub System Error occurred during system start up. -50 Hardware Printer version only. Not used for this machine. -67 NCS (Network Control Service) An error occurred in the access control port list: • Number of registrations exceeded 125 • Data notifications exceeded 12 • Data extension incorrect -79 Sub System Message mismatch. -90 Hardware/System A forced system reset (WDOG) occurred.
+Remedy;
+Code;819
+Description;Fatal kernel error
+Causes;0x5032 HAIC-P2 decompression error Error occurred in the compression/decompression module of ASIC in HAIC-P2. • HDD defective • System memory defective • Controller board defective 0x6261 HDD Defective There is no response from HDD. The power supply to the HDD may have been interrupted suddenly. • Re-format HDD. • Replace HDD. 554C USB loader defect USB loader is detected as defective.
+Remedy;
+Code;820
+Description;Self-diagnostic error Self-diagnostic Error: CPU: ASIC Interrupt Error 0612 Self-diagnostic Error: CPU: ASIC Interrupt Error
+Causes;• System program defective • Controller board defective • Optional board defective • Controller firmware defective
+Remedy;
+Code;833
+Description;Self-diagnostic error: Engine I/F ASIC
+Causes;0F30 Device ID for ASIC can not be detected. Register error for ASIC. 0F31 ASIC register error. 0F41 The read/write check done for resident RAM on the EGB can not be done correctly. 50B1 Can not initialize or read the bus connection. 50B2 Value of the SSCG register is incorrect. • One or more EGB connections loose, damaged, defective • EGB defective
+Remedy;
+Code;842
+Description;Verify error at NAND-Flash update A verify error occurred while writing to NAND-Flash when the ROM is being updated locally or remotely.
+Causes;• Do the procedure again. • If not successful after two attempts, the machine will issue SC819.
+Remedy;
+Code;851
+Description;IEEE1394 I/F error There is an incorrect setting in the driver that prevented correct operation of the interface.
+Causes;• Check and correct the driver settings. • Network (PHY) LINK module defective • PCI interface defective • IEEE1394 I/F board defective • Controller board defective
+Remedy;
+Code;853
+Description;Wireless LAN Error 1 During machine start-up, the machine can access the board that holds the wireless LAN, but not to the wireless LAN card.
+Causes;• Wireless LAN card missing (removed) • Wireless LAN connection loose
+Remedy;
+Code;854
+Description;Wireless LAN Error 2 During machine operation, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (Bluetooth).
+Causes;• Wireless LAN card missing (removed) • Wireless LAN connection loose
+Remedy;
+Code;855
+Description;Wireless LAN Error 3 An error is detected on the wireless LAN card.
+Causes;• Wireless LAN card defective • Wireless LAN card connection incorrect
+Remedy;
+Code;856
+Description;Wireless LAN error 4 An error is detected on the wireless LAN board.
+Causes;• Wireless LAN board defective • PCI connector to EGB loose
+Remedy;
+Code;857
+Description;USB I/F Error The USB driver is not stable and caused an error.
+Causes;• Poor USB card connection • Replace the controller board
+Remedy;
+Code;858
+Description;Data Encryption Error 1 These are errors of the HDD Data Encryption Option.
+Causes;0 Key Acquisition Key can be acquired. • Replace the controller board. 1 HDD Key Setting Error The key is acquired but the HDD can not be set. • Turn the machine power off/on several times. • Replace the controller board. 2 NVRAM Read Error NVRAM data conversion fails (mismatch with nvram.conf). • Replace the NVRAM. 30 NVRAM Before Replace Error An error which may be recovered after recycling the power occurs before replacing NVRAM. Turn the machine power off/on several times. Replace the controller board. 31 Other Error An unexpected error occurs while data is being converted. This error is the same as SC991. See SC991 below.
+Remedy;
+Code;859
+Description;Data Encryption Error 2 These are errors of the HDD Data Encryption Option.
+Causes;8 HDD Check Error Data conversion is attempted with no HDD unit present. • Confirm that HDD unit installed correctly. • Initialize HDD with SP5832-1. Note: After installation, a new HDD should be formatted with SP5832-1. 9 Power Loss During Data Conversion Data conversion stops before NVRAM/HDD data is converted. • Format HDD with SP5832-1. 10 Data Read Command Error More than two illegal DMAC communications are returned. • HDD defective • Format HDD with SP5832-1. • Replace HDD.
+Remedy;
+Code;860
+Description;HDD startup error at power on HDD is connected but a driver error is detected. -or- The driver does not respond with the status of the HDD within 30 s.
+Causes;• HDD is not initialized. • Level data corrupted • HDD is defective.
+Remedy;
+Code;861
+Description;HDD re-try failure At power on the HDD is detected. Power supply to the HDD is interrupted after the system has entered the energy save mode, but after the HDD has been awakened from the energy save mode it does not return to the ready status within 30 sec.
+Causes;• Harness between HDD and controller board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Remedy;
+Code;863
+Description;HDD data read failure The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Causes;• HDD defective
+Remedy;
+Code;864
+Description;HDD data CRC error During HDD operation, the HDD cannot respond to a CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;• HDD defective
+Remedy;
+Code;865
+Description;HDD access error HDD responded to an error during operation for a condition other than those for SC863, 864.
+Causes;• HDD defective
+Remedy;
+Code;866
+Description;SD card error 1: Confirmation error The machine detected an electronic license error in the application on the SD card in the controller slot immediately after the machine was turned on.
+Causes;• Program missing from the SD card
+Remedy;
+Code;867
+Description;SD card error 2: SD card removed The SD card in the boot slot when the machine was turned on was removed while the machine was on.
+Causes;• Insert the SD card • Turn the machine’s power off/on
+Remedy;
+Code;868
+Description;SD card error 3: SD card access An error occurred while an SD card was used.
+Causes;• SD card not inserted correctly • SD card defective • Controller board defective • To reformat the SC card, use SD Formatter Ver 1.1.
+Remedy;
+Code;870
+Description;Address book data error Address book data on the hard disk was detected as abnormal when it was accessed from either the operation panel or the network. The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective.
+Causes;• Turn the machine power off/on. If this does not solve the problem, do the Procedure below. • HDD defective
+Remedy;
+Code;872
+Description;HDD mail receive data error An HDD error was detected immediately after power on, or the machine detected that the HDD was not operating correctly (data read or write) while receiving mail. The HDD may be defective or the machine was accidentally powered off while the HDD was being accessed.
+Causes;• Reformat the mail RX data on the HDD with SP5832-7 • Replace the HDD
+Remedy;
+Code;873
+Description;HDD mail send data error An error was detected on the HDD immediately after the machine was turned on, or power was turned of while the machine was using the HDD.
+Causes;• Do SP5832-007 (Format HDD – Mail TX Data) to initialize the HDD. • Replace the HDD.
+Remedy;
+Code;874
+Description;Delete All error 1: HDD A data error was detected for the HDD/NVRAM after the Delete All option was used. Note: The source of this error is the Data Overwrite Security Unit running from the DOS SD card.
+Causes;• Turn the main switch off/on, do the operation again. • Install the Data Overwrite Security Unit again. • HDD defective
+Remedy;
+Code;875
+Description;Delete All error 2: Data area An error occurred when the machine deleted data from the HDD. Note: The source of this error is the Data Overwrite Security Unit running from the DOS SD card.
+Causes;• Turn the main switch off/on and try the operation again.
+Remedy;
+Code;876
+Description;Log data errors
+Causes;876-1 Log data error 1 An error was detected in the handling of the log data at power on or during machine operation. This can be caused by switching the machine off while it is operating. • Initialize the HDD with SP5832-4 876-2 Log data error 2 HDD encryption unit not installed. • Install the HDD encryption unit. 876-3 Log data error 3 Invalid log encryption key due to defective NVRAM data. • Initialize the HDD with SP5832-4 • Request customer's system administrator to disable HDD encryption with the User Tool. 876-4 Log data error 4 Erratic HDD encryption due to defective NVRAM data. • Initialize HDD with SP5832-4 876-5 Log data error 5 • Re-install the previous NVRAM or HDD. • Initialize the HDD with SP5832-4. 876-99 Log data error 6 An error other than Log Data Errors 1 to 5 occurred. • Request assistance from your supervisor.
+Remedy;
+Code;877
+Description;Security SD card error An error occurred, preventing successful execution of the Data Overwrite Security function, even though it has been set up and enabled.
+Causes;• Security card is not inserted completely into the SD card slot • Security card has been removed from the SD card slot. • Security card is damaged. Note: • If the SD card has been removed (or was not installed correctly), switch the machine off, insert the SD card, then switch on the machine again. • If the SD card has been damaged, procure a new SD card, replace the NVRAM, then do the DOS and HDD encryption installation.
+Remedy;
+Code;878
+Description;TPM authentication error The system firmware could not be authenticated by the TMP security chip.
+Causes;• System firmware updated incorrectly. • Flash ROM on controller board defective. • Replace controller board.
+Remedy;
+Code;900
+Description;Electrical total counter error The total counter contains something that is not a number.
+Causes;• NVRAM incorrect type • NVRAM defective • NVRAM data scrambled • Unexpected error from external source
+Remedy;
+Code;920
+Description;Printer error 1 An internal application error was detected and operation cannot continue.
+Causes;• Software defective • Turn the machine power off/on, or change the controller firmware • Insufficient memory
+Remedy;
+Code;921
+Description;Printer Error 2 When the printer application started, the font designated for use could not be found on the SD card.
+Causes;• The font is not on the SD card
+Remedy;
+Code;990
+Description;Software error 1 The software performs an unexpected function and the program cannot continue.
+Causes;• Firmware defective: re-boot • Update firmware
+Remedy;
+Code;991
+Description;Software error 2 The software performs an unexpected function. However, unlike SC990, recovery processing allows the program to continue.
+Causes;• Software defective, re-boot
+Remedy;
+Code;992
+Description;Erratic SC error There was an unusual operation by the software because of: • An incorrect argument in the program. • An incorrect internal parameter. • Work memory not sufficient. • An error occurred that could not be detected by other SC codes.
+Causes;• Turn the main power switch off/on. • Go into the SP mode. Do SP7901 to display details about SC992 (software file name, line number, and variable), and inform your supervisor of the results
+Remedy;
+Code;997
+Description;Cannot select application function An application did not start after the user pushed the correct key on the operation panel.
+Causes;• Software bug • A RAM or DIMM option required for the application is not installed or not installed correctly.
+Remedy;
+Code;998
+Description;Application cannot start Register processing does not operate for an application within 60 s after the machine power is turned on. No applications start correctly, and all end abnormally.
+Causes;• Software bug • A RAM or DIMM option needed for the application not installed, or not installed correctly • Controller board defective
+Remedy;

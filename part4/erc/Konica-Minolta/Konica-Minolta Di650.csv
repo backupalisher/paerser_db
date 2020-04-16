@@ -1,0 +1,684 @@
+Code;E22-03
+Description;"Fan abnormality
+ An error for BINFF_EM signal is detected when 2 seconds have passed since FM12 (developer cooling) has turned ON. The error does not clear after 2 seconds from OFF/ON operation."
+Causes;FM12 (developer cooling) PRCB (printer control board)
+Code;E23-04
+Description;"PCL connection abnormality
+ Failure of PCL connection is detected."
+Causes;PCL
+Code;E46-01
+Description;"Image control abnormality
+ During image write, APC cannot be performed for sub-scanning beam correction. The 12 VDC power for driving the laser is not supplied. The laser does not turn ON due to defective laser, or MPC value is different. The index sensor cannot detect the laser because the polygon mirror does not rotate, the index sensor is displaced, or the index sensor is defective."
+Causes;Write section ICB (image control board) power connector
+Code;E46-02
+Description;"Image control abnormality
+Illegal address of FIFO for scanner. During image read, image data compression is not completed normally."
+Causes;ICB (image control board) Expansion memory
+Code;E46-03
+Description;"Image control abnormality
+ Illegal address of FIFO for printer. During image read, image data decompression is not completed normally."
+Causes;ICB (image control board) Expansion memory
+Code;E46-05
+Description;"Image control abnormality
+ The FIFO of the compression / expansion chip caused an error interrupt."
+Causes;
+Code;E46-06
+Description;"Image control abnormality
+ Decompression error of image data."
+Causes;ICB (image control board) Expansion memory
+Code;E46-08
+Description;"Image control abnormality
+ When APC is performed, the index sensor output does not change."
+Causes;Write section ICB (image control board) power connector
+Code;E46-12
+Description;"Image control abnormality
+ Compression of the read image and decompression in the page memory are not completed within the specified time after negation of SVV."
+Causes;ICB (image control board)
+Code;E46-13
+Description;"Image control abnormality
+ During image read, image data compression from the scanner to the memory is not completed within the specified time. Image data decompression from the scanner to the page memory is not completed within the specified time. SVV is not detected within the specified time."
+Causes;PRCB (printer control board) ICB (image control board)
+Code;E46-14
+Description;"Image control abnormality
+ During image read, image data decompression from the memory to the printer is not completed within the specified time. Image data output from the page memory to the printer is not completed within the specified time. PVV is not detected within the specified time."
+Causes;PRCB (printer control board) ICB (image control board)
+Code;E46-15
+Description;"Image control abnormality
+ During image write, improper processing was performed. For example, the decompression device was accessed although there was no resource."
+Causes;ICB (image control board) ICB program
+Code;E46-16
+Description;"Image control abnormality
+ During image read, improper processing was performed. For example, the compression device was accessed although there was no resource."
+Causes;ICB (image control board) ICB program
+Code;E46-17
+Description;"Image control abnormality
+ During image processing, a filter coefficient could not be generated properly."
+Causes;ICB (image control board) ICB program
+Code;E46-19
+Description;"Image control abnormality
+ During access to the memory device, a software error was detected."
+Causes;ICB (image control board) ICB program
+Code;E46-21
+Description;"Image control abnormality
+ Decompression from the memory to the page memory is not completed within the specified time. Compression from the page memory to the memory is not completed within the specified time. Decompression from the memory to the page memory is not completed within the specified time. Compressed data transfer between memories is not completed within the specified time."
+Causes;PRCB (printer control board) ICB (image control board) ICB program
+Code;E46-23
+Description;"Image control abnormality
+ During image read, SVV is not turned OFF within the specified time and therefore preparation for next page scanning cannot be started."
+Causes;PRCB (printer control board) ICB (image control board) ICB program
+Code;E46-24
+Description;"Image control abnormality
+ Shading correction error (GA error)"
+Causes;ICB (image control board) ICB program
+Code;E46-25
+Description;"Image control abnormality
+ AOC/AGC error • The light blocking cover and lens cover are removed from the scanner section. • The A/D converter board connector is disconnected. • The power cable of A/D converter board is disconnected. • The IC protector on the A/D converter board is blown out. • The exposure lamp intensity is excessive. • The exposure lamp does not light."
+Causes;ADB (A/D conversion board) L1 (exposure lamp)
+Code;E46-26
+Description;"Image control abnormality
+ Correction data saved on a resolution basis is not found."
+Causes;ICB (image control board)
+Code;E46-27
+Description;"Image control abnormality
+ The density correction γ curve cannot be generated properly."
+Causes;ICB (image control board)
+Code;E46-29
+Description;"Image control abnormality
+ Calibration start error."
+Causes;ICB (image control board) ICB program
+Code;E46-30
+Description;"Image control abnormality
+ Calibration end error"
+Causes;ICB (image control board) ICB program
+Code;E46-31
+Description;"Image control abnormality
+ An attempt was made to perform APC initial sampling before completion of MPC."
+Causes;ICB (image control board) ICB program
+Code;E46-32
+Description;"Image control abnormality
+ An attempt was made to perform MPC during APC."
+Causes;ICB (image control board) ICB program
+Code;E46-33
+Description;"Image control abnormality
+ An attempt was made to perform sub-scan beam correction before completion of APC or MPC."
+Causes;ICB (image control board) ICB program
+Code;E46-34
+Description;"Image control abnormality
+ An attempt was made to perform sub-scan beam interval correction although the image write clock was abnormal."
+Causes;ICB (image control board) ICB program
+Code;E46-35
+Description;"Image control abnormality
+ Dual page memory area error Due to the image area abnormality on the memory, image is not decompressed on the memory."
+Causes;ICB (image control board) ICB program
+Code;E46-80
+Description;"Image control abnormality
+ The message queue was insufficient or destroyed."
+Causes;ICB (image control board)
+Code;E46-81
+Description;"Image control abnormality
+ The parameter value is too large."
+Causes;ICB (image control board)
+Code;E46-82
+Description;"Image control abnormality
+ The ID of message queue source task is undefined."
+Causes;ICB (image control board) Expansion memory contact failure
+Code;E46-83
+Description;"Image control abnormality
+ The message reception event is undefined."
+Causes;ICB (image control board) Expansion memory
+Code;E46-90
+Description;"Image control abnormality
+ The access to the memory is illegal."
+Causes;ICB (image control board) Expansion memory
+Code;E46-91
+Description;"Image control abnormality
+ The header read address is illegal."
+Causes;ICB (image control board) Expansion memory
+Code;E46-99
+Description;"Image control abnormality
+ E-RDH memory initialization error E-RDH memory may not be connected properly."
+Causes;ICB (image control board) Expansion memory
+Code;E50-01
+Description;"Communication abnormality
+ Main body drive serial input error 1. Serial data is not received from the main body drive section within 0.5 second after reception of power-on ACK."
+Causes;PRCB (printer control board)
+Code;E50-02
+Description;"Communication abnormality
+Main body drive serial input error 2. Serial data is not received from the main body drive section within 0.5 second after reception of power-on ACK."
+Causes;PRCB (printer control board)
+Code;E50-03
+Description;"Communication abnormality
+ Main body drive serial input error 3. Serial data is not received from the main body drive section within 0.5 second after reception of power-on ACK."
+Causes;PRCB (printer control board)
+Code;E50-04
+Description;"Communication abnormality
+ Main body drive serial input error 4. Serial data is not received from the main body drive section within 0.5 second after reception of power-on ACK."
+Causes;PRCB (printer control board)
+Code;E50-05
+Description;"Communication abnormality
+ Drive board communication reception error detection fault. A reception error occurred during reception of drive board serial data, or a data checksum error or ID information error occurred four consecutive times although a resent request had been issued three times."
+Causes;PRCB (printer control board) Drive boards
+Code;E50-10
+Description;"Communication abnormality
+ Image control board communication error. Initial data is not received from ICB (image control board) within 10 seconds after power-on."
+Causes;PRCB (printer control board) ICB (image control board)
+Code;E50-11
+Description;"Communication abnormality
+ Image control board communication serial reception error detection fault."
+Causes;ICB (image control board)
+Code;E56-02
+Description;"Operation panel abnormality
+ Communication between the ICB (image control board) and OB1 (operation board 1) does not start within 30 seconds after SW2 (sub power) turns ON."
+Causes;ICB (image control board) OB1 (operation board 1)
+Code;E70-1
+Description;"FN-112/6/ 121/10 abnormality
+ Communication error"
+Causes;FNSCB (FNS control board) Connector
+Code;E70-2
+Description;"FN-112/6/ 121/10 abnormality
+Start response error."
+Causes;FNSCB (FNS control board) Connector
+Code;E80-01
+Description;"Communication abnormality
+ No response from PRCB (printer control board) for 5 seconds after SW2 (sub power) is turned ON."
+Causes;PRCB (printer control board)
+Code;E80-02
+Description;"Communication abnormality
+Communication abnormality in PRCB (printer control board)."
+Causes;PRCB (printer control board)
+Code;E80-03
+Description;"Communication abnormality
+ Communication abnormality in operation unit."
+Causes;OB1 (operation board /1)
+Code;E90-01
+Description;"AADU stand abnormality
+ DU drive serial input error 1. Serial data from ADUDB (ADU drive board) (ID=0) cannot be received from ACK within 0.5 second when SW2 (sub power) turns ON."
+Causes;ADUDB (ADU drive board)
+Code;E90-02
+Description;"AADU stand abnormality
+ADU drive serial input error 2. Serial data from ADUDB (ADU drive board) (ID=7) cannot be received from ACK within 0.5 second when SW2 (sub power) turns ON."
+Causes;ADUDB (ADU drive board)
+Code;F-77-15
+Description;"FN-112/6/ 121/10/115 abnormality
+ M1 (FNS conveyance) does not reach the prescribed speed within the specified time after the start of its operation."
+Causes;FNS CB (FNS control board) M1(FNS conveyance)
+Code;F13-01
+Description;"Drive
+Error detection signal is detected continuously for one second when two seconds have passed since M1 (paper feed) has turned ON."
+Causes;M1 (paper feed) PRCB (printer control board)
+Code;F13-02
+Description;"Drive
+ Error detection signal is detected continuously for one second when two seconds have passed since M101 (LT paper feed) has turned ON."
+Causes;M101 (LT paper feed) LTDB (LT drive board)
+Code;F18-10
+Description;"Tray 1
+ Error detection signal for M16 (tray up drive /1) is detected while M16 is turned ON."
+Causes;M16 (tray up drive /1) PRCB (printer control board) PS2 (tray upper limit/1)
+Code;F18-11
+Description;"Tray 1
+PS2 (tray upper limit/1) does not turn ON within 20 seconds (Di551/Di650)/ 36 seconds (Di5510/Di7210) since the lifting motion triggered by activating M16 (tray up drive /1) has started while PS2 is turned OFF."
+Causes;M16 (tray up drive /1) PRCB (printer control board) PS2 (tray upper limit/1)
+Code;F18-20
+Description;"Tray 2
+ Error detection signal for M17 (tray up drive /2) is detected while M17 is turned ON."
+Causes;M17 (tray up drive /2) PRCB (printer control board) PS8 (tray upper limit/2)
+Code;F18-21
+Description;"Tray 2
+PS8 (tray upper limit/2) does not turn ON within 20 seconds (Di551/Di650)/ 27 seconds (Di5510/Di7210)since the lifting motion triggered by activating M17 (tray up drive /2) has started while PS8 is turned OFF."
+Causes;M17 (tray up drive /2) PRCB (printer control board) PS8 (tray upper limit/2)
+Code;F18-30
+Description;"Tray 3 
+ Error detection signal for M18 (tray up drive /3) is detected while M18 is turned ON."
+Causes;M18 (tray up drive /3) PRCB (printer control board) PS14 (tray upper limit/3)
+Code;F18-31
+Description;"Tray 3
+ PS14 (tray upper limit/3) does not turn ON within 20 seconds since the lifting motion triggered by activating M18 (tray up drive /3) has started while PS14 is turned OFF."
+Causes;M18 (tray up drive /3) PRCB (printer control board) PS14 (tray upper limit/3)
+Code;F18-40
+Description;"Tray 4
+ Error detection signal for M19 (tray up drive /4) is detected while M19 is turned ON."
+Causes;M19 (tray up drive /4) PRCB (printer control board) PS20 (tray upper limit/4)
+Code;F18-41
+Description;"Tray 4
+ PS20 (tray upper limit/4) does not turn ON within 20 seconds since the lifting motion triggered by activating M19 (tray up drive /4) has started while PS20 is turned OFF."
+Causes;M19 (tray up drive /4) PRCB (printer control board) PS20 (tray upper limit/4)
+Code;F18-50
+Description;"LCT
+ Error detection signal for M100 (LT up/ down) is detected continuously for one second while M100 is turned ON."
+Causes;M100 (LT up/down) LTDB (LT drive board) PS101 (LT lower limit detection) PS109 (LT upper limit detection)
+Code;F18-51
+Description;"LCT
+PS109 (LT upper limit detection) or PS101 (LT lower limit detection) does not turn ON within 35 seconds since the lifting or descent motion triggered by activating M100 (LT up/down) has started while PS109 or PS101 is turned OFF."
+Causes;M100 (LT up/down) LTDB (LT drive board) PS101 (LT lower limit detection) PS109 (LT upper limit detection)
+Code;F18-60
+Description;"By-pass feed
+ PS34 (tray upper limit/BP) or PS35 (tray lower limit/BP) does not turn ON within 10 seconds since the upward or downward motion triggered by activating M20 (up/down/BP) has started while PS34 or PS35 is turned OFF."
+Causes;M20 (up/down/BP) PRCB (printer control board) PS34 (tray upper limit/BP) PS35 (tray lower limit/BP)
+Code;F21-01
+Description;"Wire cleaning abnormality
+ The lock signal for M14 (charger cleaning) is not detected when more than 25 seconds have passed since the return motion (back to front) of M14 has started."
+Causes;M14 (charger cleaning) PRCB (printer control board)
+Code;F21-02
+Description;"Wire cleaning abnormality
+The lock signal for M14 (charger cleaning) is detected within 2 seconds since the return motion (back to front) of M14 has started."
+Causes;M14 (charger cleaning) PRCB (printer control board)
+Code;F21-03
+Description;"Wire cleaning abnormality
+ The lock signal for M14 (charger cleaning) is not detected when more than 25 seconds have passed since the return motion (back to front) of M14 has started while re-try process is in motion after lock detection."
+Causes;M14 (charger cleaning) PRCB (printer control board)
+Code;F21-05
+Description;"Wire cleaning abnormality
+The lock signal for M10(transfer/separation cleaning) is not detected when more than 25 seconds have passed since the return motion (back to front) of M10 has started."
+Causes;M10 (transfer/separation cleaning) ADUDB (ADU drive board) PRCB (printer control board)
+Code;F21-06
+Description;"Wire cleaning abnormality
+ The lock signal for M10 (transfer/separation cleaning) is detected within 2 seconds since the return motion (back to front) of M10 has started."
+Causes;M10 (transfer/separation cleaning) ADUDB (ADU drive board) PRCB (printer control board)
+Code;F21-07
+Description;"Wire cleaning abnormality
+ The lock signal for M10 (transfer/separation cleaning) is not detected when more than 25 seconds have passed since the return motion (back to front) of M10 has started while re-try process is in motion after lock detection."
+Causes;M10 (transfer/separation cleaning) ADUDB (ADU drive board) PRCB (printer control board)
+Code;F22-01
+Description;"Fan abnormality
+ An error for SFAN_EM signal is detected when 2 seconds have passed since FM4 (developing suction) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM4 (developing suction) PRCB (printer control board)
+Code;F22-02
+Description;"Fan abnormality
+An error for CLEAN_EM signal is detected when 2 seconds have passed since FM5 (cleaner cooling) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM5 (cleaner cooling) ADUDB (ADU drive board) PRCB (printer control board)
+Code;F23-01
+Description;"Motor abnormarity
+ An error for TONERM_EM signal is detected when 7 seconds have passed since M13 (toner bottle) has turned ON."
+Causes;M13 (toner bottle) PRCB (printer control board)
+Code;F23-02
+Description;"Motor abnormarity
+An error for DEVM_EM signal is detected when more than 1 second has passed since M3 (developing) has turned ON."
+Causes;M3 (developing) PRCB (printer control board)
+Code;F23-03
+Description;"Motor abnormarity
+ An error for DRUM_EM signal is detected when more than 3 seconds have passed since M2 (drum) has turned ON."
+Causes;M2 (drum) PRCB (printer control board)
+Code;F28-01
+Description;"High-voltage power error
+ 5 consecutive charging ON/OFF operations have been executed since the charging error detection signal has been detected while charging is turned ON."
+Causes;HV (high-voltage unit)
+Code;F28-02
+Description;"High-voltage power error
+5 consecutive transfer ON/OFF operations have been executed since the transfer error detection signal has been detected while transfer is turned ON."
+Causes;HV (high-voltage unit)
+Code;F28-03
+Description;"High-voltage power error
+ 5 consecutive separation ON/OFF operations have been executed since the separation error detection signal has been detected while separation is turned ON."
+Causes;HV (high-voltage unit)
+Code;F29-01
+Description;"Process abnormality
+ Dirt correction failure of the Dmax sensor during maximum density adjustment. If this error is detected 10 successive times, the error code is displayed."
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-03
+Description;"Process abnormality
+Control patches are not output while Dmax correction is in process. (No output from the Dmax sensor.)"
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-04
+Description;"Process abnormality
+ Dirt correction failure of the γ sensor during γ adjustment. If this error is detected 10 successive times, the error code is displayed."
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-05
+Description;"Process abnormality
+ Control patches are not output while γ correction is in process. (No output from the γ sensor.)"
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-06
+Description;"Process abnormality
+ A recurrence error occurred when carry out γ curve for γ correction."
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-07
+Description;"Process abnormality
+ Dirt correction failure of the γ sensor during dot diameter adjustment. If this error is detected 10 successive times, the corresponding error code is displayed."
+Causes;TSCB (toner control sensor board) PRCB (printer control board)
+Code;F29-08
+Description;"Process abnormality
+ The dot diameter correction ended with error value."
+Causes;TCSB (toner control sensor board) PRCB (printer control board)
+Code;F32-01
+Description;"Fan abnormality
+ An error for SUC_EM signal is detected when 2 seconds have passed since FM3 (conveyance suction) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM3 (conveyance suction) ADUDB (ADU drive board) PRCB (printer control board)
+Code;F32-02
+Description;"Fan abnormality
+An error for FIXFAN1_EM signal is detected when 2 seconds have passed since FM8 (main unit cooling / 2) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM8 (main cooling /2) PRCB (printer control board)
+Code;F32-02
+Description;"Fan abnormality
+ An error for FIXFAN3_EM signal is detected when 2 seconds have passed since FM6 (paper exit fan /F) has turned ON. The error does not clear after 2 seconds from OFF/ON operation."
+Causes;FM6 (paper exit fan /F) PRCB (printer control board)
+Code;F32-03
+Description;"Fan abnormality
+ An error for FIXFAN2_EM signal is detected when 2 seconds have passed since FM7 (paper exit /R) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM7 (paper exit /R) PRCB (printer control board)
+Code;F32-04
+Description;"Fan abnormality
+ An error for FIXFAN3_EM signal is detected when 2 seconds have passed since FM6 (paper exit /F) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation. An error for FIXFAN1_EM signal is passed since FM8 (main body cooling fan /2) has turned ON. The error does not clear after 2 seconds from OFF/ON operation."
+Causes;FM6 (paper exit /F) PRCB (printer control board)
+Code;F33-01
+Description;"Motor abnormality
+ Error detection signal is detected continuously for 1 second when 2 seconds have passed since M5 (conveyance) has turned ON."
+Causes;M5 (conveyance) PRCB (printer control board)
+Code;F34-01
+Description;"High fixing temperature abnormality
+TH1 (fixing temperature /1) detects more than 220°C for five consecutive times in 1 second cycle."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F34-02
+Description;"High fixing temperature abnormality
+ The output voltage of TH1 (fixing temperature /1) and TH2 (fixing temperature /2) is detected as abnormally high at the comparator circuit (more than 228°C)."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F35-01
+Description;"Low fixing temperature abnormality
+ TH1 (fixing temperature /1) has not reached the predefined temperature when the specified time has passed since the fixing ON control has been processed after SW2 (sub power) is turned on."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F35-02
+Description;"Low fixing temperature abnormality
+TH1 (fixing temperature /1) detects less than 120°C for 5 consecutive times in 1 second cycle while the fixing ON control is processed after warm-up operation is complete."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F35-03
+Description;"Low fixing temperature abnormality
+ The output voltage of TH1 (fixing temperature /1) is detected as abnormality low at the comparator circuit (less than -6°C)."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F36-01
+Description;"Fixing sensor abnormality
+ TH1 (fixing temperature /1) has not reached 50°C when the specified time has passed since the fixing ON control has been processed after SW2 (sub power) is turned on."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F36-02
+Description;"Fixing sensor abnormality
+The output voltage of TH2 (fixing temperature /2) is detected as abnormality low (less than -6°C) or abnormally high (more than 240.5°C) at the comparator circuit."
+Causes;PRCB (printer control board) DCPS (DC power supply unit) L2 (fixing heater lamp/1) L3 (fixing heater lamp/2) TH1 (fixing temperature /1) TH2 (fixing temperature /2)
+Code;F41-01
+Description;"Scanner abnormality
+ PS61 (scanner HP) does not turn ON within 5 seconds since M11 (scanner) has turned ON."
+Causes;M11 (scanner) PS61 (scanner HP) SCDB (scanner drive board) PRCB (printer control board)
+Code;F41-02
+Description;"Motor abnormality
+The lock signal for M15 (polygon) is not detected within 25 seconds from the switch drive when M15 starts or when switching the rotation speed."
+Causes;M15 (polygon) PMDB (polygon drive board) PRCB (printer control board)
+Code;F42-01
+Description;"Fan abnormality
+ An error for EM signal is detected when 2 seconds have passed since FM9 (scanner cooling) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM9 (scanner cooling) SCDB (scanner drive board) PRCB (printer control board))
+Code;F42-02
+Description;"Fan abnormality
+An error for WRFAN1_EM signal is detected when 2 seconds have passed since FM2 (write section cooling) has turned ON. The error does not clear after 2 seconds from the OFF/ON operation."
+Causes;FM2 (write section cooling) PRCB (printer control board)
+Code;F46-40
+Description;"Image control abnormality
+ Hard disk initialization abnormality Hard disk failure, or poor connection of connectors"
+Causes;ICB (image control board) ICB program HDD (hard disk drive)
+Code;F46-41
+Description;"Image control abnormality
+ Job information could not be stored on the hard disk."
+Causes;ICB (image control board) ICB program HDD (hard disk drive)
+Code;F46-42
+Description;"Image control abnormality
+ A route could not be opened during hard disk job automatic deletion."
+Causes;ICB (image control board) ICB program HDD (hard disk drive)
+Code;F46-43
+Description;"Image control abnormality
+ Hard disk access failure Hard disk failure or poor connection of connectors"
+Causes;ICB (image control board) ICB program HDD (hard disk drive)
+Code;F46-50
+Description;"Image control abnormality
+ Communication error is detected during the tandem operation."
+Causes;ICB (image control board) ICB program Around the tandem cable
+Code;F46-51
+Description;"Image control abnormality
+ An error is detected during the data transfer of tandem image."
+Causes;ICB (image control board) ICB program Around the tandem cable
+Code;F46-60
+Description;"Image control abnormality
+ Adjustment of the sub-scan beam interval is not completed within the specified number of time for the following reason: • Defective index sensor • Abnormal 12 VDC power supply • M15 (polygon) driving failure"
+Causes;Write section
+Code;F46-61
+Description;"Image control abnormality
+ Scanning started before completion of original auto skew correction. (Skew correction was not in time)."
+Causes;PRCB (printer control board) PS311 (original mis-centering /F) PS311 (original mis-centering /R)
+Code;F46-62
+Description;"Image control abnormality
+ Printing started before correction of auto paper mis-centering. (Mis-centering correction was not in time)."
+Causes;PS1 (paper mis-centering detection PS)
+Code;F46-63
+Description;"Image control abnormality
+ AGC was retried because of reduction in exposure lamp intensity, but no error occurred."
+Causes;L1 (exposure lamp)
+Code;F46-64
+Description;"Image control abnormality
+ The PWM γ curve could not be generated properly."
+Causes;TCSB (toner control sensor board)
+Code;F52-01
+Description;"Fan abnormality
+ FM13 (power supply cooling) EM signal was abnormal 2 seconds after turning ON FM13. 2 seconds after turning FM13 OFF and ON again, the signal is still abnormal."
+Causes;FM13 (power supply cooling) DCPS (DC power supply unit)
+Code;F52-02
+Description;"Fan abnormality
+The MAINFAN_EM signal was abnormal 2 seconds after turning ON FM1 (main body cooling /1). 2 seconds after turning OFF and ON again, the signal is still abnormal."
+Causes;FM1 (main body cooling /1) PRCB (printer control board)
+Code;F53-01
+Description;"Motor abnormality
+ 5 seconds or later after turning ON M4 (fixing), an abnormal MAINM_EM signal has been detected for 1 consecutive second."
+Causes;M4 (fixing) PRCB (printer control board)
+Code;F62-01
+Description;"Fan Abnormality
+ FM301 (original conveyance motor cooling) EM signal was abnormal 2 seconds after turning ON FM301. 2 seconds after turning FM301 OFF and ON again, an abnormal detection signal is detected."
+Causes;SCDB (scanner drive board) FM301 (original conveyance motor cooling)
+Code;F77-1
+Description;(FN-112/ 6/121/10/ 115) After M702 (shift) starts operation, the shift unit does not reach the shift position or the HP within the specified time.
+Causes;FNSCB (FNS control board) M702 (shift) PS718 (shift HP)
+Code;F77-1
+Description;(OT-104) PS702 (shift HP) does not turn ON within the predefined time after M703 (shift) starts operation.
+Causes;SFCB (SF control board) M703 (shift) PS702 (shift HP)
+Code;F77-11
+Description;"FN-112/6/ 121/10/115 abnormality
+ (FN-112/ 6/121/10) After M714 (stapler /F) starts operation, PS731 (stapler HP/F) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) RB (relay board) M714 (stapler /F) PS731 (stapler HP/F)
+Code;F77-11
+Description;"FN-112/6/ 121/10/115 abnormality
+ (OT-104) After M724 (stapler /F) starts operation, PS734 (stapler HP/F) does not turn ON within the predefined time."
+Causes;FNSCB (FNS control board) RB (relay board) M714 (stapler /F) PS731 (stapler HP/F)
+Code;F77-12
+Description;"FN-112/6/ 121/10/115 abnormality
+ (FN-112/ 6/121/10) After M709 (stapler /R) starts operation, PS730 (stapler HP/R) does not turn ON within the specified time."
+Causes;FNS CB (FNS control board) M724 (stapler /F) PS734 (stapler HP/F)
+Code;F77-12
+Description;"FN-112/6/ 121/10/115 abnormality
+ (OT-104) After M722 (stapler /R) starts operation, PS731 (stapler HP/R) does not turn ON within the predefined time."
+Causes;FNS CB (FNS control board) M722 (stapler /R) PS731 (stapler HP/R)
+Code;F77-13
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M715 (clincher /F) starts operation, PS733 (clincher HP/F) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) RB (relay board) M715 (clincher /F) PS733 (clincher HP/F)
+Code;F77-14
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M710 (clincher /R) starts operation, PS732 (clincher HP/R) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) M710 (clincher /R) PS732 (clincher HP/R)
+Code;F77-2
+Description;(FN-112/ 6/121/10/ 115) After M703 (tray up/down) starts operation, PS702 (tray upper limit) or PS707 (stapler paper exit upper limit) does not turn ON within the specified time.
+Causes;FNSCB (FNS control board) M703 (tray up/down) PS702 (tray upper limit) PS707 (stapler paper exit upper limit)
+Code;F77-2
+Description;(OT-104) The machine and FNS stop immediately. RL (main) is turned OFF.
+Causes;SFCB (SF control board) M702 (tray up/down) PS703 (tray upper limit) PS704 (tray lower limit)
+Code;F77-21
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M718 (folding stopper) starts operation, PS723 (folding stopper HP) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) RB (relay board) M718 (folding stopper) PS723 (folding stopper HP)
+Code;F77-22
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M716 (alignment /L) starts operation, PS724 (alignment HP/L) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) RB (relay board) M716 (alignment /L) PS724 (alignment /L)
+Code;F77-25
+Description;"FN-112/6/ 121/10/115 abnormality
+ PS22(folding knife HP) does not go ON within the specified time after M19(folding knife) starts operation of HP detection."
+Causes;FNS CB (FNS control board) M19 (folding knife) PS22 (folding knife HP)
+Code;F77-26
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M720 (folding conveyance) starts operation, it does not reach the prescribed speed within the specified time."
+Causes;FNSCB (FNS control board) M720 (folding conveyance)
+Code;F77-3
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M705 (alignment /U) starts operation, PS708 (alignment HP/U) does not turn OFF within the specified time, or does not turns ON after OFF."
+Causes;FNSCB (FNS control board) RB (relay board) M705 (alignment /U) PS708 (alignment HP/U)
+Code;F77-4
+Description;"FN-112/6/ 121/10/115 abnormality
+After M707 (paper feed roller) starts operation, it does not reach the prescribed speed within the specified time."
+Causes;FNSCB (FNS control board) M707 (paper exit roller)
+Code;F77-41
+Description;"Cover Inserter B/E abnormality
+ After M202 (tray up/down /L) starts operation, PS209 (tray upper limit /L) or PS210 (tray lower limit /L) do not turn ON within the specified time."
+Causes;FNSCB (FNS control board) PIDB (PI drive board) M202 (tray up/down /L) M209 (tray upper limit /L) PS210 (tray lower limit /L)
+Code;F77-42
+Description;"Cover Inserter B/E abnormality
+ After M201 (tray up/down/ U) starts operation, PS204 (tray upper limit /U) or PS205 (tray lower limit /U) do not turn ON within the specified time."
+Causes;FNSCB (FNS control board) PIDB (PI drive board) M201 (tray up/down /U) PS204 (tray upper limit /U) PS205 (tray lower limit /U)
+Code;F77-43
+Description;"Cover Inserter B/E abnormality
+ After M203 (PI conveyance) starts operation, it does not reach the prescribed speed within the specified time."
+Causes;FNSCB (FNS control board) M203 (PI conveyance)
+Code;F77-44
+Description;"PK-5 abnormality
+ PS803 (punch shift HP) does not turn ON within the specified time after M802 (punch shift) operation has been started."
+Causes;FNSCB (FNS control board) PKDB (PK drive board) M801 (punch) PS803 (punch HP)
+Code;F77-46
+Description;"ZK-2/3 Akit abnormality
+ EM signal abnormality is detected within the specified time after FM701 (stacker fan) is turned ON."
+Causes;RB (relay board) FNSCB (FNS control board) FM701 (stacker fan)
+Code;F77-47
+Description;"FNS/PK-5 abnormality
+ Communication abnormality occurred between FNS and PK-5. Abnormality remains even when retry operation is executed four times."
+Causes;RB (relay board) FNSCB (FNS control board) PKDB (PK drive board)
+Code;F77-5
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M708 (paper exit opening) starts operation, its open/close operation does not finish within the specified time. PS712 (paper exit opening HP) does not turn ON or OFF."
+Causes;FNSCB (FNS control board) M708 (paper exit opening) PS712 (paper exit opening HP)
+Code;F77-52
+Description;"ZK-2/3 abnormality
+ PS3 (1st stopper HP) does not turn ON within the specified time after M2 (1st stopper) has searched the HP."
+Causes;PZCB (PZ control board) M2 (1st stopper) PS3 (1st stopper HP)
+Code;F77-53
+Description;"ZK-2/3 abnormality
+ PS2 (2nd stopper HP) does not turn ON within the specified time after M3 (2nd stopper) has searched the HP."
+Causes;PZCB (PZ control board) M3 (2nd stopper) PS2 (2nd stopper HP)
+Code;F77-54
+Description;"PK-2/5 abnormality
+ After MC801 (punch) starts operation, PS801 (punch HP) does not turn ON within the specified time."
+Causes;FNSCB (FNS control board) PKDB (PK drive board) M801 (punch) PS801 (punch HP)
+Code;F77-55
+Description;"ZK-2/3 abnormality
+ PS4 (punch shift HP) does not turn ON within the specified time after M5 (punch shift) has started to search the HP."
+Causes;M5 (punch shift) PS4 (punch shift HP) PZCB (PZ control board)
+Code;F77-56
+Description;"ZK-2/3 abnormality
+ Abnormality is found in EM signal of M10 (conveyance motor fan) within the specified time after M10 has been turned ON, and the abnormality remains even when retry operation is executed 3 times after it is turned OFF."
+Causes;M10 (conveyance motor fan) PZCB (PZ control board)
+Code;F77-57
+Description;"ZK-2/3 abnormality
+ M4 (punch) does not turn OFF within the specified time after it has started the operation."
+Causes;M4 (punch) PZCB (PZ control board)
+Code;F77-58
+Description;"ZK-2/3 abnormality
+ After M8 (Punch switching motor) searches home position, MS2 (Punch switching MS) does not switch from ON to OFF/OFF to ON."
+Causes;M8 (Punch switching motor) MS2 (Punch switching MS) PZCB (PZ control board)
+Code;F77-6
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M711 (stapler movement) starts operation, PS711 (stapler movement HP) does not turn OFF, or does not turn ON after OFF."
+Causes;FNSCB (FNS control board) RB (relay board) M711 (stapler movement) PS711 (stapler movement HP)
+Code;F77-7
+Description;"FN-112/6/ 121/10/115 abnormality
+ After M704 (clincher rotation) starts operation, PS714 (clincher rotation HP) does not turn OFF, or does not turn ON after OFF."
+Causes;FNSCB (FNS control board) RB (relay board) M704 (clincher rotation) PS714 (clincher rotation HP)
+Code;F77-8
+Description;"FN-112/6/ 121/10/115 abnormality
+ (FN-112/ 6/121/10) After M706 (stapler rotation) starts operation, PS713 (stapler rotation HP) does not turn OFF, or does not turn ON after OFF."
+Causes;FNSCB (FNS control board) RB (relay board) M706 (stopler rotation /R) PS713 (stapler rotation HP)
+Code;F77-8
+Description;"FN-112/6/ 121/10/115 abnormality
+ (OT-104) After M704 (stapler rotation) starts operation, PS714 (stapler rotation HP) does not turn ON, or does not turn ON after OFF."
+Causes;FNS CB (FNS control board) M704 (stapler rotation) PS714 (stapler rotation HP)
+Code;F77-81
+Description;"FN-112/6/ 121/10/115 abnormality
+ After MC712 (gate drive) starts operation, PS716 (gate HP) does not turn ON within the specified time or does not turn OFF after ON."
+Causes;FNSCB (FNS control board) RB (relay board) M712 (gate drive) PS716 (gate HP)
+Code;F77-91
+Description;"FN-112/6/ 121/10/115 abnormality
+ Communication abnormality in FNS CB (FNS control board) when sub-CPU receives data."
+Causes;FNS CB (FNS control board)
+Code;F77-92
+Description;"FN-112/6/ 121/10/115 abnormality
+ Communication abnormality in FNS CB (FNS control board) when main CPU receives data"
+Causes;FNS CB (FNS control board)
+Code;F80-11
+Description;"ISW abnormality
+ When SW2 (sub power) was turned ON, an area which had not been written by ISW was detected in the printer control program."
+Causes;PRCB program
+Code;F80-30
+Description;"ISW abnormality
+When data is transferred by ISW, normal header information cannot be received within the specified time."
+Causes;Printer cable PC parallel port
+Code;F80-31
+Description;"ISW abnormality
+ When data is transferred by ISW, a checksum error or header error was detected in the downloaded data."
+Causes;Printer cable Program file error
+Code;F80-32
+Description;"ISW abnormality
+ When data is transferred by ISW, data cannot be written to the flash ROM properly."
+Causes;Printer cable Program transfer destination board
+Code;F80-40
+Description;"ISW abnormality
+ When SW2 (sub power) was turned ON, an area which had not been written by ISW was detected in the FNS program."
+Causes;FNS program
+Code;F80-41
+Description;"ISW abnormality
+ When SW2 (sub power) was turned ON, an area which had not been written by ISW was detected in the FNS program."
+Causes;ZU program
+Code;F92-01
+Description;"AADU stand abnormality
+ The FM10 (ADU reverse motor cooling) EM signal was abnormal 2 seconds after turning ON of FM10. 2 seconds after turning FM10 OFF and ON again, the signal is still abnormal."
+Causes;FM10 (ADU reverse motor cooling) ADUDB (ADU drive board) PRCB (Printer control board)
+Code;SC77-01
+Description;"FN-113/122 abnormality
+ The Shift Home Position Sensor (PC10) does not go HIGH even after the lapse of a given period of time after M8 has been energized (to start returning the Elevator Tray to its home position). The Shift Home Position Sensor (PC10) does not go LOW even after the lapse of a given period of time after M8 has been energized (to start moving the Elevator Tray for job offset)."
+Causes;PC10 (Shift Home Position Sensor) PC11 (Shift Motor Pulse Sensor) M8 (Shift Motor) PWB-A (Control Board)
+Code;SC77-02
+Description;"FN-113/122 abnormality
+The Elevator Tray Upper Limit Sensor PQ (PWB-F) does not go LOW even after the lapse of a given period of time after M7 has been energized (to start raising the Elevator Tray). The Elevator Tray Upper Limit Switch (S2) or Elevator Tray Lower Limit Switch (S3) remains actuated for a given period of time after M7 has been energized."
+Causes;PWB-F (Elevator Tray Upper Limit Sensor PQ) S2 (Elevator Tray Upper Limit Switch) S3 (Elevator Tray Lower Limit Switch) M7 (Elevator Motor) PWB-A (Control Board)
+Code;SC77-03
+Description;"FN-113/122 abnormality
+ The CD Aligning Home Position Sensor (PC9) does not go HIGH even after the lapse of a given period of time after M5 has been energized (to start returning the Aligning Plate to its home position)."
+Causes;PC9 (CD Aligning Home Position Sensor) M5 (CD Aligning Motor) PWB-A (Control Board)
+Code;SC77-04
+Description;"FN-113/122 abnormality
+ The Exit Roll Home Position Sensor (PC13) does not go HIGH even after the lapse of a given period of time after M13 has been energized (to start spacing/pressure sequence)."
+Causes;PC13 (Exit Roll Home Position Sensor) M13 (Exit Roller/Rolls Spacing Motor) PWB-A (Control Board)
+Code;SC77-05
+Description;"FN-113/122 abnormality
+ The Storage Roller Home Position Sensor (PC12) does not go HIGH even after the lapse of a given period of time after M12 has been energized (to start spacing/pressure sequence)."
+Causes;PC12 (Storage Roller Home Position Sensor) M12 (Storage Roller/ Rolls Spacing Motor) PWB-A (Control Board)
+Code;SC77-06
+Description;"FN-113/122 abnormality
+ The Staple Home Position Sensor (PC14) does not go HIGH even after the lapse of a given period of time after M6 has been energized (to start returning the Stapling Unit to its home position)."
+Causes;PC14 (Staple Home Position Sensor) M6 (Stapling Unit Moving Motor) PWB-A (Control Board)
+Code;SC77-11
+Description;"FN-113/122 abnormality
+ Stapling Motor 2 is not deenergized even after the lapse of a given period of time after it has been energized (to start a stapling sequence)."
+Causes;PWB-A (Control Board) Stapling Unit 2
+Code;SC77-12
+Description;"FN-113/122 abnormality
+ Stapling Motor 1 is not deenergized even after the lapse of a given period of time after it has been energized (to start a stapling sequence)."
+Causes;PWB-A (Control Board) Stapling Unit 1
+Code;SC77-54
+Description;"FN-113/122 abnormality
+ The Punch Motor Pulse Sensor (PC15) does not go from LOW to HIGH, or vice versa, even after the lapse of a given period of time after M11 has been energized."
+Causes;PC15 (Punch Motor Pulse Sensor) M11 (Punch Motor) PWB-A (Control Board)
+Code;SC77-55
+Description;"FN-113/122 abnormality
+ The Hole Punch Position Switch (S4) is not actuated or deactuated even after the lapse of a given period of time after M14 has been energized. *1 : U.S.A. and Canada only"
+Causes;Punch Unit M14 (Hole Position Selector Motor) PWB-A (Control Board)
+Code;SC77-81
+Description;"FN-113/122 abnormality
+ The Transport Unit Entrance Switching Sensor (PC23) does not go from LOW to HIGH even after the lapse of a given period of time after M17 has been energized to select the U path. The Transport Unit Entrance Switching Sensor (PC23) does not go from HIGH to LOW even after the lapse of a given period of time after M17 has been energized to select the straight path."
+Causes;PC23 (Transport Unit Entrance Switching Sensor) M17 (Transport Unit Entrance Switching Motor) PWB-A (Control Board)

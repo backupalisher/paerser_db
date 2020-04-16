@@ -1,0 +1,161 @@
+Code;300
+Description;"Charge Corona Output Error
+ The charge-corona feedback voltage was less than 1 V for more than 200 ms."
+Causes;Replace the charge corona unit. • Replace the high voltage cable. • Clean or replace the corona wire. • Check the CGB power pack fuse, connection. • Replace the CGB power pack.
+Code;305
+Description;"Charge Corona Wire Cleaner Error
+ The charge wire cleaner did not a) come from the home position within 5 s, or b) did not go back to the home position in 3.7 s or less. This is because of wire cleaner overload."
+Causes;• Switch the main power switch off/on. • Check the wire cleaner unit for a blockage or broken parts.
+Code;330
+Description;"Writing ASIC Signal Error
+ At power on, the stamp function could not start."
+Causes;• Check the setting of SP5137. If the stamp option is installed, this SP must be enabled. If the stamp option is not installed, this SP must be disabled. • Check the stamp board connections. • Replace the defective stamp board.
+Code;360
+Description;"Hard Disk Connection Error
+ The machine could not detect the HDD connection."
+Causes;• Check the connections between the HDD and hard disk controller. • Check the HDD power connector. • Replace the HDD. • Replace the MCU.
+Code;361
+Description;Hard Disk Read Errors
+Causes;• Do SP4960-1 (HDD Media Check). • Do SP4906 003 to format the HDD. • If formatting the HDD fails, replace the HDD.
+Code;362
+Description;"IMAC (Image Memory Access Controller) error
+ During data transfer in memory at the IPU, an error occurred during data compression with ASIC (IMAC). The ASIC controls data compression."
+Causes;• Update the firmware. • If the firmware update does not stop the problem, replace the IPU board. • Update all software modules if this problem continues.
+Code;380
+Description;"MSU Output Error
+ Just after the machine was switched on, it could not detect that the MSU (Memory Super-charger Unit) was set."
+Causes;• Replace the IPU.
+Code;392
+Description;"Development Bias Error
+ The development bias feedback voltage was less than 0.5 V for longer than 200 ms while the PWM duty value was more than 5% (indicating a development bias leak)."
+Causes;• Check the MCU connectors. • Check the harness on the MCU for damage. • Replace the high voltage cable. • Replace the CGB power pack.
+Code;400
+Description;"ID Sensor Auto Adjustment Error
+ Vsg did not get to 4±0.2 V when the ID sensor was adjusted automatically in the SP mode."
+Causes;• Clean the ID sensor. • Check the ID sensor harness and connector. • Replace the ID sensor. • Replace the MCU. • Replace the development unit. • Replace the CGB power pack.
+Code;401
+Description;"ID Sensor Vsg Error
+ The Vsg level was detected lower than 2.5 V two times."
+Causes;• Clean the ID sensor. • Check the ID sensor harness and connector. • Replace the ID sensor. • Replace the MCU. • Replace the development unit. • Replace the CGB power pack.
+Code;402
+Description;"ID Sensor Vsp Error
+ The Vsp level was detected at 0 V or more than 2.5 V for 2 consecutive copies."
+Causes;• Under the left upper cover, make sure that the hex screw of the main drive gear of the drum is tight. • Clean the ID sensor. • Check the ID sensor harness and connector. • Replace the ID sensor. • Replace the MCU. • Replace the development unit. • Replace the CGB power pack.
+Code;440
+Description;"Transfer Output Error
+ A high voltage feedback voltage of less than 1.0 V was detected for 200 ms."
+Causes;• Check and replace the high voltage cable if necessary. • Replace the CGB power pack.
+Code;460-1
+Description;"DC Separation Corona Output Error
+ A dc separation feedback voltage of less than 1.0 V was detected after more than 200 ms while the PWM duty value was more than 15%."
+Causes;• Check and replace the high voltage cable if necessary. • Replace the CGB power pack.
+Code;508
+Description;"Cutter Error
+ The left and right cutter HP sensors stayed on or off more than 2 seconds."
+Causes;• Check the connections of the HP sensors on the left and right side. • Replace the HP sensors.
+Code;520
+Description;"Main Motor Error
+ The lock signal goes LOW after the motor starts and gets to the set speed. If the main motor lock signal stayed HIGH for 5 seconds during motor operation, the motor stopped because of overloading."
+Causes;• Check that the motor drive path is not overloaded. • Replace the motor harness. • Replace the motor.
+Code;521
+Description;"Drum Motor Error
+ The lock signal goes LOW after the motor starts and gets to the set speed. If the drum motor lock signal stayed HIGH for 5 seconds during motor operation, the motor stopped because of overloading."
+Causes;• Check that the motor drive path is not overloaded. • Replace the motor.
+Code;522
+Description;"Fusing Unit Drive Motor
+ Error The lock signal goes LOW after the motor starts and gets to the set speed. If the fusing motor lock signal stayed HIGH for 5 seconds during motor operation, the motor stopped because of overloading."
+Causes;• Check that the motor drive path is not overloaded. • Replace the motor.
+Code;530
+Description;"Fusing Unit Ventilation Fan Error
+ The lock signal goes LOW after the motor starts and gets to the set speed. If the fan motor lock signal stayed HIGH for 5 seconds during motor operation, the motor stopped because of overloading."
+Causes;• Check that the motor is not overloaded. • Replace the motor.
+Code;541-1
+Description;"Fusing Thermistor Error 1
+ • The measured temperature of the hot roller stayed below 7C (44.6F) for 60 seconds after the machine was switched on. -or- • During machine operation the hot roller temperature fell to and stayed at 7C (44.6F) for 40 seconds."
+Causes;• Make sure that the thermistor is set correctly. • Make sure that the thermistor cable is connected. • Replace the thermistor.
+Code;541-2
+Description;"Fusing Thermistor Error 2
+ The analog voltage input from the hot roller temperature was less than 2 V for three measurements. The thermistor has short-circuited."
+Causes;• Replace the thermistor.
+Code;542
+Description;"Fusing Temperature Warm-up Error
+ The hot roller did not get to the ready temperature within 4 minutes 30 sec.: • After the machine was switched on. • After the upper unit or roll feeder drawer was closed. • During warm-up."
+Causes;• Check the fusing lamp connections. • Replace the fusing lamp. • Replace the MCU. • Check the hot roller thermistor. Make sure that it is straight and does not touch the hot roller.
+Code;543
+Description;"Fusing Lamp Overheated: Error 1 (Software)
+ A fusing temperature more than 230 °C (446°F) was detected 3 times (measured at 180 ms intervals). Note: A shorted triac or other problem could cause the fusing lamp to stay on."
+Causes;• Replace the MCU.
+Code;544
+Description;"Fusing Lamp Overheated: Error 2 (Hardware)
+ A short circuit in the triac on the MCU caused the fusing temperature control to stop or operate incorrectly. A special circuit on the MCU monitors the temperature of the board. The temperature around the board was more than 235C. 544-1 Latch Signal On (50 ms) 544-2 Signal On (1 s)"
+Causes;• Replace the MCU.
+Code;545
+Description;"Fusing Lamp Overheated: Error 3
+ After it got to the ready temperature, the fusing lamp stayed on at full power for 50 seconds while the hot roller did not turn."
+Causes;Correct the position of the thermistor on the hot roller. Replace the fusing lamp harness. Replace the MCU.
+Code;546-1
+Description;"Fusing Temperature Error 1
+ Fusing temperature goes up and down quickly, more than 20°C (68°C) at 1 sec. intervals."
+Causes;• Check the thermistor connection. • Check the fusing lamp connections. • Replace the MCU.
+Code;546-2
+Description;"Fusing Temperature Error 2
+ Temperature goes up and down during a long interval, by 20°C (68°C) more than 3 times during a 60 sec. interval."
+Causes;• Check the thermistor connection. • Check the fusing lamp connections. • Replace the MCU.
+Code;547
+Description;"Zero-Cross Signal Errors
+ The zero-cross signal from the ac power supply makes a trigger pulse to control the supply of power. It automatically detects 50/60 Hz."
+Causes;• Check that the frequency of the power supply to the machine is correct. • Replace the PSU. • Replace the MCU
+Code;548
+Description;"Fusing Lamps Disconnected
+ The fusing temperature did not get to 100°C within 2 min. after the machine was switched on."
+Causes;• Check the fusing lamp harness connections. • Replace the fusing lamps. • Replace the AC drive board.
+Code;549-1
+Description;"Pressure Roller Thermistor Error 1
+ Fusing temperature control detected that the analog voltage output by the pressure roller thermistor was more than 5V. The pressure roller thermistor is disconnected."
+Causes;• Check the thermistor connection. • Replace the thermistor. • Replace the MCU.
+Code;549-2
+Description;"Pressure Roller Thermistor Error 2
+ (2 times at 1.5 sec. intervals) that the analog voltage output by the pressure roller thermistor was less than 0.2 V. The pressure roller thermistor has short-circuited."
+Causes;• Check the thermistor connection. • Replace the thermistor. • Replace the MCU.
+Code;601
+Description;"Communication Error Between IPU and CIS
+ A break signal was detected after the communication connection. A communication error was sent back 3 times."
+Causes;• Update the software. • Replace the MCU.
+Code;605
+Description;"Communication Error Between Controller and ECU
+ One of these problems occurred: • Serial communication error • Serial data overflowed in the receive data buffer."
+Causes;• Replace the MCU.
+Code;630
+Description;"CSS Communication Error (Japan Only)
+ The machine sent a report on its condition, but CSS detected an error. There is a problem on the telephone line between the machine location and the CSS center."
+Causes;• No action necessary.
+Code;632
+Description;"MK1 Communication Error 1: No Answer to ACK
+ The optional counter device did not send an ACK signal 100 ms after one frame was sent, even after the same data was sent 3 times."
+Causes;• Check the serial line harnesses and connectors at the counter device, the relay board, and the controller. • Replace the counter device. • Replace the MCU.
+Code;633
+Description;"MK1 Communication Error 2: BREAK Received
+ A LOW break signal was received while the optional counter device was connected to the communication circuit."
+Causes;• Check the serial line harnesses and connectors at the counter device, the relay board, and the controller. • Replace the counter device. • Replace the MCU.
+Code;900
+Description;"Electrical Total Counter
+ The electrical counter is not connected."
+Causes;• Replace NVRAM chips.
+Code;901
+Description;"Mechanical Total Counter
+ The mechanical counter is not connected."
+Causes;• Check the mechanical counter connection. • Replace the mechanical counter.
+Code;980
+Description;HDD Access Error
+Causes;• Update the MCU firmware
+Code;981
+Description;HDD Response Errors
+Causes;• Check the HDD Connectors. • Check the HDD and make sure that it is not loose. • Update the MCU firmware. • Replace the HDD.
+Code;991
+Description;"Software Error 1: SCU
+ There was an unusual operation by the software because of: • An incorrect argument in the program. • An incorrect internal parameter. • Work memory not sufficient. • An error occurred that could not be detected by other SC codes."
+Causes;• Set the main power switch to .off. then to .on.. • Go into the SP mode. • Input .0. for SP7405 to display the data for SC991, which includes the software file name, line number, and variable.
+Code;992
+Description;"Software Error 2: ECU
+ There was an unusual operation by the software because of: • An incorrect argument in the program. • An incorrect internal parameter. • Work memory not sufficient. • An error occurred that could not be detected by other SC codes."
+Causes;• Set the main power switch to .off. then to .on.. • Go into the SP mode. • Input .0. for SP7405 to display the data for SC992, which includes the software file name, line number, and variable.

@@ -1,0 +1,287 @@
+Code;E000-0001
+Description;"Fixing temperature rising error
+ The detected temperature of the Main Thermistor failed to reach the specified temperature at temperature rising control."
+Remedy;"1. Go through the following to clear the error: CLEAR > ENGIN > ERRCLR in Service Mode; then, turn OFF and then ON the power. 2. Check the connector connection. (J206 on the DC Controller PCB, J101 on the Power Supply PCB) 3. Replace the Fixing Assembly. 4. Replace the DC Controller PCB (PCB1)."
+Code;E001-0000
+Description;"Detection of overheating of Fixing Assembly
+ The Main Thermistor detected 250 deg C or higher for 200 msec or longer on end."
+Remedy;"1. Go through the following to clear the error: CLEAR > ENGIN > ERRCLR in Service Mode; then, turn OFF and then ON the power. 2. Check the connector connection. (J206 on the DC Controller PCB, J101 on the Power Supply PCB) 3. Replace the Fixing Assembly. 4. Replace the DC Controller PCB (PCB1)."
+Code;E001-0001
+Description;"Detection of overheating of Fixing Assembly
+ The hardware circuit detected overheating of the Main Thermistor or Sub Thermistor for 30 msec or longer."
+Remedy;"1. Go through the following to clear the error: CLEAR > ENGIN > ERRCLR in Service Mode; then, turn OFF and then ON the power. 2. Replace the DC Controller PCB (PCB1)."
+Code;E001-0002
+Description;"Detection of overheating of Fixing Assembly
+ The Sub Thermistor detected 295 deg C or higher for 200msec or longer on end."
+Remedy;"1. Go through the following to clear the error: CLEAR > ENGIN > ERRCLR in Service Mode; then, turn OFF and then ON the power. 2. Check the connector connection. (J206 on the DC Controller PCB, J101 on the Power Supply PCB) 3. Replace the Fixing Assembly. 4. Replace the DC Controller PCB (PCB1)."
+Code;E002-0000
+Description;"Error in temperature rising of Fixing Assembly
+ 1. The Main Thermistor detected a temperature lower than 115 deg C for 400 msec or longer on end 6.0 seconds after the Main Thermistor detected 100 deg C. 
+ 2. The Main Thermistor detected a temperature lower than 150 deg C for 400 msec or longer on end 6.0 seconds after the Main Thermistor detected 140 deg C."
+Remedy;1. The Main Thermistor detected a temperature lower than 115 deg C for 400 msec or longer on end 6.0 seconds after the Main Thermistor detected 100 deg C. 2. The Main Thermistor detected a temperature lower than 150 deg C for 400 msec or longer on end 6.0 seconds after the Main Thermistor detected 140 deg C.
+Code;E003-0000
+Description;"Detection of fixing low temperature during printing
+ The Main Thermistor detected a temperature lower than 80 deg C for 200 msec or longer on end, or the Sub Thermistor detected a temperature lower than 60 deg C for 200 msec or longer on end."
+Remedy;"1. Go through the following to clear the error: CLEAR > ENGIN > ERRCLR in Service Mode; then, turn OFF and then ON the power. 2. Check the connector connection. (J206 on the DC Controller PCB, J101 on the Power Supply PCB) 3. Replace the Fixing Assembly. 4. Replace the DC Controller PCB (PCB1)."
+Code;E004-0000
+Description;"Thermistor disconnection detection error
+ Connector disconnection was detected for 30 msec on end."
+Remedy;1. Check the connector connection. (J206 on the DC Controller PCB, J101 on the Power Supply PCB) 2. Replace the Fixing Assembly. 3. Replace the DC Controller PCB (PCB1).
+Code;E010-0001
+Description;"Main Motor (M2) rotation error
+ Detection was performed every 100 msec since the start of drive and there had been no lock detection signal in 2 seconds."
+Remedy;1. Check the connector between the Main Motor and the DC Controller PCB (J203). 2. Replace the Main Motor (M2). 3. Replace the DC Controller PCB (PCB1).
+Code;E010-0002
+Description;"Main Motor (M2) rotation error
+ Detection was performed every 100msec during the drive (after the lock detection) and the lock signal was not detected 5 times in a row (in 500 msec)."
+Remedy;1. Check the connector between the Main Motor and the DC Controller PCB (J203). 2. Replace the Main Motor (M2). 3. Replace the DC Controller PCB (PCB1).
+Code;E013-0001
+Description;"Error in rotation of Waste Toner Motor (M3)
+ Lock detection flag was monitored every 2msec, and the same level was detected 600 times in a row."
+Remedy;1. Check the connector connection between the Waste Toner Motor and the DC Controller PCB (J209). 2. Replace the Waste Toner Motor (M3). 3. Replace the DC Controller PCB (PCB1).
+Code;E014-0001
+Description;"Fixing Motor (M1) rotation error
+ Detection was performed every 100 msec since the start of drive and there had been no lock detection signal in 2 seconds."
+Remedy;1. Check the connector connection between the Fixing Motor and the DC Controller PCB (J203). 2. Replace the Fixing Motor (M1). 3. Replace the DC Controller PCB (PCB1)
+Code;E014-0002
+Description;"Fixing Motor (M1) rotation error
+ Detection was performed every 100 msec during the drive (after the lock detection) and the lock signal was not detected 5 times in a row (in 500 msec)."
+Remedy;1. Check the connector connection between the Fixing Motor and the DC Controller PCB (J203). 2. Replace the Fixing Motor (M1). 3. Replace the DC Controller PCB (PCB1).
+Code;E014-0003
+Description;"Fixing Motor (M1) pressure release error
+ Pressure release had never been detected in 3.0 seconds."
+Remedy;1. Check the connector connection between the Fixing Motor and the DC Controller PCB (J203). 2. Replace the Fixing Motor (M1). 3. Replace the DC Controller PCB (PCB1).
+Code;E014-0004
+Description;"Fixing Motor (M1) pressurization error
+ Pressurization had never been detected in 3.0 seconds"
+Remedy;1. Check the connector connection between the Fixing Motor and the DC Controller PCB (J203). 2. Replace the Fixing Motor (M1). 3. Replace the DC Controller PCB (PCB1).
+Code;E020-0000
+Description;"Detection of toner clog between the Hopper and the Developing Assembly
+ When the Developing Assembly Toner Sensor (TS2) detected ""toner absent"" and the Hopper Toner Sensor (TS1) detected ""toner-present"", the Hopper Motor (M6) was rotated 194 times with intermissions of 1 second, but the Developing Assembly Toner Sensor (TS2) could not detect ""toner-present"". * If paper is being fed, the error occurs after the paper has been delivered."
+Remedy;1. Check rotation of the Hopper Motor Gear. (If it is rotating, the sensor may not be detecting correctly. In that case, execute Service Mode>CLEAR>ENGIN>TNRINST to supply toner to the Developing Assembly.) 2. Replace the Developing Assembly Toner Sensor (TS2). 3. Replace the Hopper Toner Sensor (TS1). 4. Replace the DC Controller PCB (PCB1).
+Code;E024-0000
+Description;"Connector disconnection of the Developing Assembly Toner Sensor (TS2) or the DC Controller PCB (J209)
+ Developing Assembly Toner Sensor (TS2) connection detection signals were not detected 10 times in a row in 100 msec. * If paper is being fed, the error occurs after the paper has been delivered."
+Remedy;1. Check the connection of the Connector (J209). 2. Replace the Developing Assembly Toner Sensor (TS2). 3. Replace the DC Controller PCB (PCB1).
+Code;E024-0001
+Description;"Detection of disconnection of the Developing Assembly Toner Sensor (TS2)
+ At normal speed: Developing Assembly Toner Sensor (TS2) signals were detected 7500 times in a row at intervals of 100 msec. At low speed: Developing Assembly Toner Sensor (TS2) signals were detected 4500 times in a row at intervals of 100 msec."
+Remedy;1. Check the connection of the Connector (J209). 2. Correct the wiring. 3. Replace the Developing Assembly Toner Sensor (TS2).
+Code;E025-0000
+Description;"Connector disconnection of the Hopper Toner Sensor (TS1) or the DC Controller PCB (J211)
+ Hopper Toner Sensor (TS1) connection detection signals were not detected 10 times in a row in 100 msec. * If paper is being fed, the error occurs after the paper has been delivered."
+Remedy;1. Check the connection of the Connector (J211). 2. Replace the Hopper Toner Sensor (TS1). 3. Replace the DC Controller PCB (PCB1).
+Code;E025-0001
+Description;"Bottle Motor (M5) error
+ The lock detection flag of the Bottle Motor (M5) was monitored at intervals of 2 msec, and the same level was detected 800 times in a row. * If paper is being fed, the error occurs after the paper has been delivered."
+Remedy;1. Replace the Bottle Motor (M5). 2. Replace the DC Controller PCB (PCB1).
+Code;E110-0001
+Description;"Laser Scanner Motor error
+ After startup of the Laser Scanner Motor, the speed lock signal of the Laser Scanner Motor never showed lock status although a specified period of time had passed. *When the same status was detected again after executing an error retry."
+Remedy;1. Check the Laser Scanner Unit connector. 2. Replace the Laser Scanner Unit. 3. Replace the DC Controller PCB (PCB1).
+Code;E110-0002
+Description;"Laser Scanner Motor error
+ After the speed lock of the Laser Scanner Motor had been settled, the speed lock signals showed unlocked status 10 times in a row at intervals of 100 msec. *When the same status was detected again after executing an error retry."
+Remedy;1. Check the Laser Scanner Unit connector. 2. Replace the Laser Scanner Unit. 3. Replace the DC Controller PCB (PCB1).
+Code;E110-0003
+Description;"Laser Scanner Motor error
+ The speed lock signal of the Laser Scanner Motor never showed lock status although 6.5 seconds (when switching from low speed to normal speed) or 8 seconds (when switching from normal speed to low speed) have passed. *When the same status was detected again after executing an error retry."
+Remedy;1. Check the Laser Scanner Unit connector. 2. Replace the Laser Scanner Unit. 3. Replace the DC Controller PCB (PCB1).
+Code;E196-0000
+Description;"EEPROM access error
+ During communication with EEPROM, a communication error occurred, and the error was not cleared although a retry was executed three times. * If paper is being fed, the error occurs after the paper has been delivered."
+Remedy;1. Replace the DC Controller PCB (PCB1).
+Code;E197-0000
+Description;"Laser Driver PCB communication error
+ Error in communication with the Laser Driver PCB (communication data failure)"
+Remedy;1. Check the Laser Scanner Unit connector. 2. Replace the Laser Scanner Unit. 3. Replace the DC Controller PCB (PCB1).
+Code;E197-0001
+Description;"Laser Driver PCB communication error
+ Error in communication with the Laser Driver PCB (serial communication failure)"
+Remedy;1. Check the Laser Scanner Unit connector. 2. Replace the Laser Scanner Unit. 3. Replace the DC Controller PCB (PCB1).
+Code;E202-0000
+Description;"CIS home position detection error
+ 1. Error when moving to the left side for HP check operation 
+ 2. Error when moving to the right side for HP check operation"
+Remedy;1. Disconnect and then connect the Flexible Cable (Reader Controller PCB (PCB3) - Main Controller PCB (PCB2) 31pin). 2. Replace the Flexible Cable. 3. Replace the CIS HP Sensor (PS24). 4. Replace the Reader Motor (M10). 5. Replace the Reader Controller PCB (PCB3). 6. Replace the Main Controller PCB (PCB2).
+Code;E240-0000
+Description;"Controller communication error
+ A serial communication error was detected during normal operation"
+Remedy;1. Check the connector connection. (All connectors on the DC Controller PCB, J8112 on the Main Controller PCB) 2. Replace the DC Controller PCB (PCB1).
+Code;E240-0001
+Description;"Controller communication error
+ A serial communication error was detected during printing."
+Remedy;1. Check the connector connection. (All connectors on the DC Controller PCB, J8112 on the Main Controller PCB) 2. Replace the DC Controller PCB (PCB1).
+Code;E246-0001
+Description;System error
+Remedy;Contact the service company office
+Code;E246-0002
+Description;System error
+Remedy;Contact the service company office
+Code;E246-0003
+Description;System error
+Remedy;Contact the service company office
+Code;E246-0005
+Description;System error
+Remedy;Contact the service company office
+Code;E247-0001
+Description;System error
+Remedy;Contact the service company office
+Code;E261-0000
+Description;"Zero cross signal error
+ When the relay is ON, the zero cross signal failed to be detected for 500 msec or longer. *When the same status was detected again after executing an error retry."
+Remedy;1. Check the connector connection. (All connectors on the DC Controller PCB) 2. Replace the DC Controller PCB (PCB1).
+Code;E350-0000
+Description;System error
+Remedy;Contact the service company office
+Code;E350-0001
+Description;System error
+Remedy;Contact the service company office
+Code;E350-0002
+Description;System error
+Remedy;Contact the service company office
+Code;E350-0003
+Description;System error
+Remedy;Contact the service company office
+Code;E350-3000
+Description;System error
+Remedy;Contact the service company office
+Code;E354-0001
+Description;System error
+Remedy;Contact the service company office
+Code;E354-0002
+Description;System error
+Remedy;Contact the service company office
+Code;E355-0000
+Description;System error
+Remedy;Contact the service company office
+Code;E355-0004
+Description;System error
+Remedy;Contact the service company office
+Code;E355-0005
+Description;System error
+Remedy;Contact the service company office
+Code;E530-8001
+Description;"Front Alignment Motor (M4) error
+ At initialization of the Front Alignment Plate, the Front Alignment Plate failed to move from the Front Alignment Plate HP Sensor (S4) although the Front Alignment Motor (M4) was driven for 10 mm."
+Remedy;1. Check the connector connection of the Front Alignment Plate HP Sensor (S4) or the Front Alignment Motor (M4). 2. Check for open circuit of the Harness of the Front Alignment Plate HP Sensor (S4) or the Front Alignment Motor (M4). 3. Replace the Front Alignment Plate HP Sensor (S4). 4. Replace the Front Alignment Motor (M4). 5. Replace the Finisher Controller PCB.
+Code;E530-8002
+Description;"Front Alignment Motor (M4) error
+ At initialization of the Front Alignment Plate, the Front Alignment Plate failed to be detected by the Front Alignment Plate HP Sensor (S4) although the Front Alignment Motor (M4) was driven for 0.78 seconds."
+Remedy;1. Check the connector connection of the Front Alignment Plate HP Sensor (S4) or the Front Alignment Motor (M4). 2. Check for open circuit of the Harness of the Front Alignment Plate HP Sensor (S4) or the Front Alignment Motor (M4). 3. Replace the Front Alignment Plate HP Sensor (S4). 4. Replace the Front Alignment Motor (M4). 5. Replace the Finisher Controller PCB.
+Code;E531-8001
+Description;"Staple Motor (M9) error 
+ The Stapler failed to move from the Staple HP Sensor (S11) within the staple execution time (0.45sec)."
+Remedy;1. Check the connector connection of the Staple Unit. 2. Check for open circuit of the Harness of the Staple Unit. 3. Replace the Staple Unit. 4. Replace the Finisher Controller PCB.
+Code;E531-8002
+Description;"Staple Motor (M9) error
+ After execution of staple operation, the motor was operated in the positive direction, but the Staple Unit could not be detected by the Staple HP Sensor (S11) within 0.46 seconds. Then, the motor was rotated in the negative direction, but the Staple Unit could not be detected by the Staple HP Sensor (S11) within 0.46sec."
+Remedy;1. Check the connector connection of the Staple Unit. 2. Disconnect the Harness of the Staple Unit. 3. Replace the Staple Unit. 4. Replace the Finisher Controller PCB.
+Code;E537-8001
+Description;"Rear Alignment Motor (M5) error
+ At initialization of the Rear Alignment Plate, the Rear Alignment Plate failed to move from the Rear Alignment Plate HP Sensor (S5) although the Rear Alignment Motor (M5) was driven for 10 mm."
+Remedy;1. Check the connector connection of the Rear Alignment Plate HP Sensor (S5) or the Rear Alignment Motor (M5). 2. Check for open circuit of the Harness of the Rear Alignment Plate HP Sensor (S5) or the Rear Alignment Motor (M5). 3. Replace the Rear Alignment Plate HP Sensor (S5). 4. Replace the Rear Alignment Motor (M5). 5. Replace the Finisher Controller PCB.
+Code;E537-8002
+Description;"Rear Alignment Motor (M5) error
+ At initialization of the Rear Alignment Plate, the Rear Alignment Plate failed to be detected by the Rear Alignment Plate HP Sensor (S5) although the Rear Alignment Motor (M5) was driven for 0.78sec."
+Remedy;1. Check the connector connection of the Rear Alignment Plate HP Sensor (S5) or the Rear Alignment Motor (M5). 2. Check for open circuit of the Harness of the Rear Alignment Plate HP Sensor (S5) or the Rear Alignment Motor (M5). 3. Replace the Rear Alignment Plate HP Sensor (S5). 4. Replace the Rear Alignment Motor (M5). 5. Replace the Finisher Controller PCB.
+Code;E540-8001
+Description;"Stack Tray Shift Motor (M8) error
+ The Stack Tray Shift Motor (M8) was driven for 4 seconds, but the Stack Tray shifting operation could not be completed."
+Remedy;1. Check the connector connection of the Stack Tray Paper Height Sensor (S9) or the Stack Tray Shift Motor (M8). 2. Check for open circuit of the Harness of the Stack Tray Paper Height Sensor (S9) or the Stack Tray Shift Motor (M8). 3. Replace the Stack Tray Paper Height Sensor (S9). 4. Replace the Stack Tray Shift Motor (M8). 5. Replace the Finisher Controller PCB.
+Code;E575-8002
+Description;"Gripper Motor (M7) error
+ The gripper unit does not leave the gripper unit home position when the Gripper Motor (M7) has been driven for 3.8 seconds."
+Remedy;1. Check the connector connection of the Gripper HP Sensor (S7) or the Gripper Motor (M7). 2. Check for open circuit of the Harness of the Gripper HP Sensor (S7) or the Gripper Motor (M7). 3. Replace the Gripper HP Sensor (S7). 4. Replace the Gripper Motor (M7). 5. Replace the Finisher Controller PCB.
+Code;E575-8004
+Description;"Gripper Motor (M7) clock error
+ When the Gripper Motor (M7) was operated, the Gripper Encoder Sensor (S8) detected rotation of 400 clocks or more."
+Remedy;1. Check the connector connection of the Gripper Encoder Sensor (S8) or the Gripper Motor (M7). 2. Check for open circuit of the Harness of the Gripper Encoder Sensor (S8) or the Gripper Motor (M7). 3. Replace the Gripper Encoder Sensor (S8). 4. Replace the Gripper Motor (M7). 5. Replace the Finisher Controller PCB.
+Code;E577-8001
+Description;"Paddle Motor (M3) error
+ Although the Paddle Motor (M3) was driven for 175 steps, the Paddle failed to move from the Paddle HP Sensor (S3)."
+Remedy;1. Check the connector connection of the Paddle HP Sensor (S3) or the Paddle Motor (M3). 2. Check for open circuit of the Harness of the Paddle HP Sensor (S3) or the Paddle Motor (M3). 3. Replace the Paddle HP Sensor (S3). 4. Replace the Paddle Motor (M3). 5. Replace the Finisher Controller PCB.
+Code;E577-8002
+Description;"Paddle Motor (M3) error
+ The Paddle Motor (M3) was driven for 2 seconds, but the Paddle could not be detected by the Paddle HP Sensor (S3)."
+Remedy;1. Check the connector connection of the Paddle HP Sensor (S3) or the Paddle Motor (M3). 2. Check for open circuit of the Harness of the Paddle HP Sensor (S3) or the Paddle Motor (M3). 3. Replace the Paddle HP Sensor (S3). 4. Replace the Paddle Motor (M3). 5. Replace the Finisher Controller PCB.
+Code;E583-8001
+Description;"Tray Auxiliary Guide Motor (M6) error
+ The Tray Auxiliary Guide Motor (M6) was driven for 30 mm, but the Tray Auxiliary Guide failed to move from the Tray Auxiliary Guide HP Sensor (S6)."
+Remedy;1. Check the connector connection of the Tray Auxiliary Guide HP Sensor (S6) or the Tray Auxiliary Guide Motor (M6). 2. Check for open circuit of the Harness of the Tray Auxiliary Guide HP Sensor (S6) or the Tray Auxiliary Guide Motor (M6). 3. Replace the Tray Auxiliary Guide HP Sensor (S6). 4. Replace the Tray Auxiliary Guide Motor (M6). 5. Replace the Finisher Controller PCB.
+Code;E583-8002
+Description;"Tray Auxiliary Guide Motor (M6) error
+ The Tray Auxiliary Guide Motor (M6) was driven for 1.8 seconds, but the Tray Auxiliary Guide could not be detected by the Tray Auxiliary Guide HP Sensor (S6)."
+Remedy;1. Check the connector connection of the Tray Auxiliary Guide HP Sensor (S6) or the Tray Auxiliary Guide Motor (M6). 2. Check for open circuit of the Harness of the Tray Auxiliary Guide HP Sensor (S6) or the Tray Auxiliary Guide Motor (M6). 3. Replace the Tray Auxiliary Guide HP Sensor (S6). 4. Replace the Tray Auxiliary Guide Motor (M6). 5. Replace the Finisher Controller PCB.
+Code;E719-0000
+Description;"Error in communication with the Copy Card Reader-F1 (serial communication)
+ Card Reader was not connected at department management setting."
+Remedy;1. Check the connection with the Card Reader. 2. Remove the Card Reader, and execute the following: service mode > #CLEAR > ERR > E719.
+Code;E736-0000
+Description;"Fax Board mismatch error
+ Combination of the Fax Board type and the country was mismatched"
+Remedy;This error occurred in the following cases. - Fax Board for non-Chinese models was installed to a Chinese model. - Fax Board for Chinese models was installed to a non-Chinese model. - For Chinese models, replace the Fax Board with that for Chinese models. - For non-Chinese models, replace the Fax Board with that for non- Chinese models
+Code;E804-0000
+Description;"Power Supply Cooling Fan (FM4) error
+ A lock signal was detected for 5 seconds while the Power Supply Cooling Fan (FM4) was being stopped. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Power Supply Cooling Fan (FM4). 3. Replace the DC Controller PCB (PCB1).
+Code;E804-0001
+Description;"Error in rotation of the Power Supply Cooling Fan (FM4)
+ A lock signal could not be detected for 5 seconds while the Power Supply Cooling Fan (FM4) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Power Supply Cooling Fan (FM4). 3. Replace the DC Controller PCB (PCB1).
+Code;E805-0000
+Description;"Heat Exhaust Fan (Rear) (FM6) error
+ A lock signal was detected for 5 seconds while the Heat Exhaust Fan (Rear) (FM6) was being stopped. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J212) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Heat Exhaust Fan (Rear) (FM6). 3. Replace the DC Controller PCB (PCB1).
+Code;E805-0001
+Description;"Error in rotation of the Heat Exhaust Fan (Rear) (FM6)
+ A lock signal could not be detected for 5 seconds while the Heat Exhaust Fan (Rear) (FM6) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J212) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Heat Exhaust Fan (Rear) (FM6). 3. Replace the DC Controller PCB (PCB1).
+Code;E805-0002
+Description;"Heat Exhaust Fan (Front) (FM5) error
+ A lock signal was detected for 5 seconds while the Heat Exhaust Fan (Front) (FM5) was being stopped. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J212) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Heat Exhaust Fan (Front) (FM5). 3. Replace the DC Controller PCB (PCB1).
+Code;E805-0003
+Description;"Error in rotation of the Heat Exhaust Fan (Front) (FM5)
+ A lock signal was detected for 5 seconds while the Heat Exhaust Fan (Front) (FM5) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J212) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Heat Exhaust Fan (Front) (FM5). 3. Replace the DC Controller PCB (PCB1).
+Code;E820-0000
+Description;"Developing Cooling Fan (Front) (FM7) error
+ A lock signal was detected for 5 seconds while the Developing Cooling Fan (Front) (FM7) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Developing Cooling Fan (Front) (FM7). 3. Replace the DC Controller PCB (PCB1).
+Code;E820-0001
+Description;"Error in rotation of the Developing Cooling Fan (Front) (FM7)
+ A lock signal could not be detected for 5 seconds while the Developing Cooling Fan (Front) (FM7) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Developing Cooling Fan (Front) (FM7). 3. Replace the DC Controller PCB (PCB1).
+Code;E820-0002
+Description;"Developing Cooling Fan (Rear) (FM8) error
+ A lock signal was detected for 5 seconds while the Developing Cooling Fan (Rear) (FM8) was being stopped. *The same status was detected again after executing an error retry"
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Developing Cooling Fan (Rear) (FM8). 3. Replace the DC Controller PCB (PCB1).
+Code;E820-0003
+Description;"Error in rotation of the Developing Cooling Fan (Rear) (FM8)
+ A lock signal was detected for 5 seconds while the Developing Cooling Fan (Rear) (FM8) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J209) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Developing Cooling Fan (Rear) (FM8). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0000
+Description;"Delivery Cooling Fan (Front) (FM3) error
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Front) (FM3) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Front) (FM3). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0001
+Description;"Error in rotation of the Delivery Cooling Fan (Front) (FM3)
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Front) (FM3) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Front) (FM3). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0002
+Description;"Delivery Cooling Fan (Center) (FM2) error
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Center) (FM2) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Center) (FM2). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0003
+Description;"Error in rotation of the Delivery Cooling Fan (Center) (FM2)
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Center) (FM2) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Center) (FM2). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0004
+Description;"Delivery Cooling Fan (Rear) (FM1) error
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Rear) (FM1) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Rear) (FM1). 3. Replace the DC Controller PCB (PCB1).
+Code;E822-0005
+Description;"Error in rotation of the Delivery Cooling Fan (Rear) (FM1)
+ A lock signal was detected for 5 seconds while the Delivery Cooling Fan (Rear) (FM1) was being driven. *The same status was detected again after executing an error retry."
+Remedy;1. Disconnect and then connect the connector (J210) on the DC Controller PCB (PCB1) to check the connection. 2. Replace the Delivery Cooling Fan (Rear) (FM1). 3. Replace the DC Controller PCB (PCB1).

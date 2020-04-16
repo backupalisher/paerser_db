@@ -1,0 +1,128 @@
+Code;10.10.00
+Display;10.10.00 ERROR
+Description;The product cannot read or write to the print cartridge e-label, or the e-label is missing from the print cartridge.
+Remedy;1. Verify that a genuine HP print cartridge is installed in the product. 2. Install another print cartridge. 3. Verify that the memory tag PCA is installed in the product. 4. Verify that the memory tag connector is firmly seated in connector J1703 on the ECU. You might have to remove the main cooling fan to see this connection.
+Code;10.91.00
+Display;10.91.00 CARTRIDGE ERROR
+Description;An error has occurred in the cartridge
+Remedy;1. Open the cartridge door. 2. Remove the print cartridge, and then reinstall it. 3. Close the cartridge door. 4. Turn the product off and then on. 5. Verify that a genuine HP print cartridge is installed in the product. 6. Install another print cartridge. 7. Verify that the memory tag PCA is installed in the product. 8. Verify that the memory tag connector is firmly seated in connector J1703 on the ECU. You might have to remove the main cooling fan to see this connection.
+Code;10.XX.YY
+Display;10.XX.YY SUPPLY MEMORY ERROR
+Description;The product cannot read or write to the print cartridge memory tag, or the memory tag is missing. 10.00.0Y = memory is defective 10.10.0Y = memory is missing
+Remedy;1. Open the cartridge door. 2. Remove the print cartridge, and then reinstall it. 3. Close the cartridge door. 4. Turn the product off and then on. 5. Verify that a genuine HP print cartridge is installed in the product. 6. Verify that the memory tag PCA is installed in the product. 7. Verify that the memory tag connector is firmly seated in connector J1703 on the ECU. You might have to remove the main cooling fan to see this connection. 8. Install another print cartridge
+Code;11.XX
+Display;11.XX INTERNAL CLOCK ERROR
+Description;The real time clock has experienced an error. XX = 01: Dead clock battery XX = 02: Dead real time clock
+Remedy;Printing can continue, but a prompt appears every time you turn on the product. To resolve the issue: 1. Power cycle the product to see if the prompt clears. 2. If possible, print a configuration page to record product information, and then perform an NVRAM initialization routine. If the initialization routine is successful, you must re-enter several configuration parameters (such as the page count and the serial number). 3. If the error persists, replace the formatter PCA.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN <LOCATION>
+Description;A jam has occurred in the specified location. • 13.JJ.NT JAM INSIDE REAR DOOR • 13.JJ.NT JAM IN FUSER • 13.JJ.NT JAM INSIDE TOP COVER • 13.JJ.NT JAM IN TRAY 1 • 13.JJ.NT JAM IN TRAY <X> • 13.JJ.NT JAM IN TRAY 2 • 13.JJ.NT JAM INSIDE DUPLEXER
+Remedy;Remove the jammed paper. If the message persists after you have cleared all jams, a sensor might be stuck or broken.
+Code;13.JJ.NT
+Display;13.JJ.NT PAPER JAM OPEN INPUT TRAYS
+Description;A jam has occurred in a tray.
+Remedy;1. Open each tray and check for jammed paper. 2. Open the cartridge door. 3. Remove the print cartridge and any paper. 4. Reinstall the print cartridge and close the cartridge door. 5. Close all trays. 6. Remove the jammed paper. 7. If the message persists after you have cleared all jams, a sensor might be stuck or broken.
+Code;21
+Display;21 PAGE TOO COMPLEX
+Description;The data in the print job is too complex.
+Remedy;1. Press the OK button to print the transferred data (some data might be lost). 2. If this message displays often, simplify the print job or install more memory.
+Code;22
+Display;22 EIO X BUFFER OVERFLOW
+Description;Too much data was sent to the EIO card in the specified slot [X]. An improper communications protocol might be in use. Note: EIO 0 is reserved for the HP Jetdirect embedded print server
+Remedy;1. Press the OK button to clear the message. (The job does not print.) 2. Check the host configuration. If the message persists, contact an HPauthorized service or support provider.
+Code;22
+Display;22 EMBEDDED I/O BUFFER OVERFLOW
+Description;Too much data was sent to the product's internal HP Jetdirect.
+Remedy;Press the OK button to continue printing. Some data might be lost.
+Code;22
+Display;22 USB I/O BUFFER OVERFLOW
+Description;Too much data was sent to the USB port.
+Remedy;Press the OK button to clear the error message. (The job does not print.)
+Code;40
+Display;40 EIO X BAD TRANSMISSION
+Description;The connection has been broken between the product and the EIO card in the specified slot [X]. Note: EIO 0 is reserved for the HP Jetdirect embedded print server.
+Remedy;Press the OK button to clear the error message and continue printing.
+Code;40
+Display;40 EMBEDDED I/O BAD TRANSMISSION
+Description;The connection has been broken between the product and HP Jetdirect print server.
+Remedy;1. Print the configuration and Embedded JetDirect pages to verify that the card status is “Ready,” and that the protocol reads “Ready.” 2. Verify that all the configuration parameters (IP address, configuration method, and domain) are correct. 3. Verify that you are using a working network cable. 4. Verify you can “ping” a network address from the product. 5. Verify that the HP JetDirect print server has the latest firmware. HP JetDirect firmware is part of the product firmware.
+Code;41.3
+Display;41.3 UNEXPECTED SIZE IN TRAY 1
+Description;You have configured Tray 1 for a different size of paper than the print job requires. NOTE: This error can be caused by a multi feed problem. Open, and then close, the cartridge door to clear the error message. If the error persists, and the tray is correctly configured, try cleaning the Tray 1 pickup roller (or you might have to replace the roller).
+Remedy;Reload the tray with the correct paper size. If another tray contains the correct size, the product prompts you to press the OK button to use another tray.
+Code;41.3
+Display;41.3 UNEXPECTED SIZE IN TRAY <X>
+Description;You have configured the tray for a different size of paper than the print job requires. NOTE: This error can be caused by a multi feed problem. Open, and then close, the cartridge door to clear the error message. If the error persists, and the tray is correctly configured, try cleaning the Tray 1 pickup roller (or you might have to replace the roller).
+Remedy;1. Reload the tray with the correct paper size. 2. Make sure the paper size that is specified in the software program, the printer driver, and the control panel are all the same. 3. Press the OK button and scroll to the TRAY <X> SIZE = <Size> option. Reconfigure the size in a tray to match the size required for the print job. 4. If the error does not clear, turn the product off and then on. 5. If the message persists, contact an HPauthorized service or support provider.
+Code;41.X
+Display;41.X ERROR
+Description;A temporary printing error occurred.
+Remedy;1. Press the OK button to see if the page will print. If necessary, turn the product off and then on. 2. Verify that the correct size paper is loaded in the input tray. 3. Verify that the loaded paper meets HP specifications. If the paper sticks together, the paper defect sensors will detect a sheet of paper longer than what is expected in the product. 4. Verify that all paper size settings on the control panel, in the print driver settings, and in the software program match.
+Code;49.XXXX
+Display;49.XXXX ERROR
+Description;A critical firmware error has occurred that caused the processor on the formatter to cease operation. This error can be caused by invalid print commands, corrupt data, or invalid operations. Sometimes electrical “noise” in the cable can corrupt data during transmission to the product. Other causes can be poor-quality cables, poor connections, or home-grown programs. On rare occasions, the formatter is at fault.
+Remedy;1. Turn off the product, and then turn it on. 2. Press the stop button to clear the print job from the product memory. 3. Turn off the product, and then turn it on. 4. Print a document from a different software program. If the job prints, return to the first program and try to print a different file. If the message displays only with a certain program or print job, contact the software vendor for assistance. 5. If the message persists with different software programs and print jobs, disconnect the cables to the product that connect it to the network or computer. 6. Turn off the product. 7. Remove all EIO devices from the product. 8. Turn on the product. 9. If the error no longer exists, replace each EIO device one at a time, making sure to turn the product off and on again as you install each device. 10. Replace an EIO device if you determine that it causes the error.
+Code;50.X
+Display;50.X FUSER ERROR
+Description;A fuser error has occurred. The values for X are listed below. • 50.1: Low fuser temperature of thermistor (TH1) • 50.2: Fuser warm-up service • 50.3: High fuser temperature of thermistor (TH1) • 50.4: Faulty fuser (drive circuit failure) • 50.8: Lower fuser temperature of thermistor (TH2) • 50.9: High fuser temperature of thermistor (TH2)
+Remedy;1. Power cycle the product to determine if the error is persistent. 2. Verify that the correct fuser model is installed in the product. 3. Verify that the correct voltage fuser is installed in the product. 4. 50.2 errors: Make sure that the connectors J8002 and J1505 are fully seated on the ECU, and connector J18 is fully seated on the fuser. 5. 50.1, 50.3, 50.8, and 50.9 errors: Make sure that the connectors J18 and J1608 are fully seated on the ECU. 6. 50.8 errors: Remove the fuser and make sure that there is no residual media or toner has built up on the fuser. 7. 50.4 errors: Make sure that the power to the product meets the specifications for the product. NOTE: If the power supplied to the product is outside the specifications, the fuser temperature control circuit will not properly work, causing a fuser malfunction. Make sure that the connector J1002 and J1505 are fully seated on the ECU. If the error persists, replace the ECU. 8. If the error persists, replace the fuser.
+Code;51.XY
+Display;51.XY ERROR
+Description;A laser/scanner error has occurred.
+Remedy;1. From the DIAGNOSTICS menu, run the laser/scanner motor component test. Verify that you can hear the motor rotate. 2. If you cannot hear the motor rotate, verify that connector J1702 and connector J1505 are fully seated on the DC controller PCA (ECU). 3. Verify that the connector J100 on the laser/scanner assembly is securely attached. 4. If the error persists, replace the laser/ scanner assembly.
+Code;52.XY
+Display;52.XY ERROR
+Description;A laser/scanner error has occurred. X = 0, Y = 0: scanner error X = 2, Y = 0: scanner rotation error
+Remedy;1. From the DIAGNOSTICS menu, run the laser/scanner motor component test. Verify that you can hear the motor rotate. 2. If you cannot hear the motor rotate, verify that connector J1702 and J1505 are fully seated on the DC controller PCA (ECU). 3. Verify that the connector J12 on the laser/scanner assembly is securely attached. 4. If the error persists, replace the laser/ scanner assembly.
+Code;53.X0.01
+Display;53.X0.01 ERROR
+Description;The product does not support the DIMM.
+Remedy;Replace the DIMM with one that the product supports
+Code;55.XX.YY
+Display;55.XX.YY DC CONTROLLER ERROR
+Description;A temporary printing error occurred.
+Remedy;1. Turn the product off and then on. 2. Remove any third-party memory or USB device, and then turn the product off and then on. 3. Remove and then reinstall the formatter. 4. If the error persists, remove the formatter and perform an engine test. If the engine test page fails to print, replace the DC controller (part of the ECU). If the engine test page prints, replace the formatter.
+Code;56.X
+Display;56.X ERROR
+Description;The input device is unknown. 56.1 = unknown input device
+Remedy;1. Turn the product off and then on. 2. Reinstall all the input devices. 3. Remove all non-HP paper handling devices
+Code;57.XX
+Display;57.XX ERROR
+Description;A temporary printing error occurred in one of the two product fans (main fan FM1 or sub fan FM2). 57.03: sub fan FM2 error 57.04: main fan FM1 error
+Remedy;1. Turn the product off and then on. 2. Verify that the main fan connection at connector J1606 on the DC controller PCA (ECU) is firmly seated. 3. Verify that the sub fan connection at connector J1505 on the DC controller PCA (ECU) is firmly seated. 4. Turn the printer on and verify each fan is spinning. 5. Replace the main fan or the sub fan if they are not operational.
+Code;58.XX
+Display;58.XX ERROR
+Description;A product error has occurred where a memory tag CPU error was detected, or there is a problem with the air sensor or power supply. • 58.02 = check environmental sensor TH3 • 58.04 = check low-voltage power supply (ECU)
+Remedy;Make sure the line voltage and current source meet the electrical specifications for the product. To resolve problems with the power supply: 1. Remove the product from any UPS supplies, additional power supplies, or power strips. Plug the product into a wall outlet and see if this resolves the problem. 2. If the product is already plugged into a wall outlet, try another power source in the building that is independent of the one being used. 3. Replace the ECU.
+Code;59.XY
+Display;59.XY ERROR
+Description;A temporary printing error occurred. • 59.30 = fuser motor start up error (M8002) • 59.40 = fuser motor rotation error (M8002) • 59.50 = main motor start up error (M8001) • 59.60 = main motor rotation error (M8001)
+Remedy;59.30 and 59.40 errors 1. Turn the product off and then on. 2. Make sure that connectors J8002 and J1504 are fully seated on the ECU. 3. Use the COMPONENT TEST (in the DIAGNOSTICS menu) to test the fuser motor functionality. If necessary, replace the motor (M8002). 59.50 and 59.60 errors 1. Make sure that connector J1503 is fully seated on the ECU. 2. Use the COMPONENT TEST (in the DIAGNOSTICS menu) to test the main motor functionality. If necessary, replace the motor (M8001).
+Code;68.X
+Display;68.X PERMANENT STORAGE FULL
+Description;The permanent storage is full. Some settings might have been reset to the factory defaults.
+Remedy;1. If the error does not clear, turn the product off and then on. 2. Print a configuration page and check the product settings to determine which values have changed. 3. To clean up permanent storage, turn the product off, and then press and hold the Menu button while turning the product on. 4. If the message persists, contact an HPauthorized service or support provider.
+Code;68.X
+Display;68.X PERMANENT STORAGE WRITE FAIL
+Description;The storage device is failing to write. Printing can continue, but there might be some unexpected behaviors because an error occurred in permanent storage.
+Remedy;Press the OK button to continue. If the error does not clear, turn the product off and then on.
+Code;68.X
+Display;68.X STORAGE ERROR SETTINGS CHANGED
+Description;An error occurred in the product permanent storage and one or more product settings has been reset to its factory default.
+Remedy;Press the OK button to resume printing. Print a configuration page, a menu map, and check the product settings to determine which values have changed. If the error does not clear, turn the product off and then on.
+Code;69.X
+Display;69.X ERROR
+Description;Duplexer mechanism has failed.
+Remedy;Turn the product off and then on.
+Code;79.XXXX
+Display;79.XXXX ERROR
+Description;The product detected a critical hardware error.
+Remedy;1. Press the stop button to clear the print job from the product memory. Turn the product off and then on. 2. Try printing a job from a different program. If the job prints, go back to the first program and try printing a different file. If the message displays only with a certain program or print job, contact the software vendor for assistance. If the message persists with different programs and print jobs, try these steps. 1. Turn the product off. 2. Disconnect all cables to the product that connect it to the network or computer. 3. Remove all the memory DIMMs or thirdparty DIMMs from the product. Then reinstall the memory DIMM. 4. Remove the EIO device from the product. 5. Turn the product on. If the error no longer exists, follow these steps. 1. Install the DIMM and EIO device one at a time, making sure to turn the product off and then on as you install each device. 2. Replace the DIMM or EIO device that you determine caused the error. 3. Reconnect all cables that connect the product to the network or computer.
+Code;8X.YYYY
+Display;8X.YYYY EIO ERROR
+Description;The EIO accessory card in slot [X] has encountered a critical error.
+Remedy;1. Turn the product off and then on. 2. Turn the product off, reseat the EIO accessory in slot [X], and then turn the product on. 3. Turn the product off, remove the EIO accessory from slot [X], install it in a different EIO slot, and then turn the product on. 4. Replace the EIO accessory in slot [X].
+Code;8X.YYYY
+Display;8X.YYYY EMBEDDED JETDIRECT ERROR
+Description;The embedded HP Jetdirect print server has encountered a critical error.
+Remedy;Turn the product off and then on.

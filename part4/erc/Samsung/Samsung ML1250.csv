@@ -1,0 +1,85 @@
+Code;01
+Display;Wrong Print Position
+Description;Printing begins at wrong position on the paper.
+Causes;Wrong sense time caused by defective feed sensor actuator.
+Remedy;Replace the defective actuator
+Code;02
+Display;JAM 0
+Description;1. Paper is not exited from the cassette. 2. Jam-0 occurs if the paper feeds into the printer.
+Causes;1. Check the Solenoid by using DCU diagnostic mode 06. 2. Check if the pad is loose due to bad sealing of the side-pad. 3. Check the surface of the roller-pickup for foreign matter. 4. If continuous clusters occur, check whether the assembly slot between shaft-pickup and housing-pickup become open or is broken away. 5. If the paper feeds into the printer rand Jam 0 occurs, perform DCU to check feed-sensor of the sensor board.
+Remedy;1. Replace the solenoid. 2. Replace the side-pad Assembly L or R, if necessary. 3. Clean with soft cloth dampened with IPA(Isopropyl Alcohol) or water. 4. Replace the Housing-Pickup and/or Shaft-Pickup.
+Code;03
+Display;JAM 1
+Description;1. Recording paper is jammed in front of or inside the fuser. 2. Recording paper is stuck in the discharge roller and in the fuser just after passing through the Actuator-Feed.
+Causes;1. If the recording paper is jammed in front of or inside the fuser. (Perform DCU diagnostic code of) 2. If the recording paper is stuck in the discharge roller and the fuser just after passing through the Actuator- Feed, Feed Actuator may be defective.
+Remedy;1. Replace the SMPS. (Service Parts : Figure 10, chapter 5) 2. Reassemble the Actuator-Feed and Spring-Actuator if the returning is bad.
+Code;04
+Display;JAM 2
+Description;1. Recording paper is jammed in front of or inside the fuser. 2. Recording paper is stuck in the discharge roller and in the fuser just after passing through the Actuator-Feed.
+Causes;1. If the paper is completely fed out of the printer, but Jam 2 occurs : Exit sensor is defective. • After the paper is completely discharged, actuator Exit should return to the original position to shut the photo-sensor. Sometimes it takes longer hour than it should and does not return. 2. If the paper is rolled in the Fuser Roller: • This occurs when a Guide claw is broken away or transformed. • It occurs when the Spring of a Guide claw is broken away or transformed. • It occurs when the Heat-Roller or Pressure-Roller is seriously contaminated with the toner. 3. Paper is accordion in the fuser.
+Remedy;1. Check if the exit sensor actuator is defective. • Check if the actuator exit is unformed (Check if the lever part is unformed in shape). • Check whether burrs occur in the assembly part of the actuator exit or not and if the actuator is smoothly operated. • Check if foreign matters and wire get caught in the actuator exit's operation. 2. If the paper is stuck in the fuser : disassemble the fuser and remove the jammed paper, and clean the surface of the pressure roller with dry gauze. 3. Remove the jammed paper after disassembling the fuser : Clean the surface of the pressure roller with dry gauze. • Remove the toner particles stained on the rib. • Check the assemblage and performance of the exit.
+Code;05
+Display;Multi-Feeding
+Description;Multiple sheets of paper are fed at once.
+Causes;1. Solenoid malfunction(the solenoid does not work properly): Perform DCU mode : solenoid check 06. 2. Pad-Friction is contaminated with foreign matter.(oil...) 3. The face of paper is blended.
+Remedy;1. Replace the solenoid if necessary. 2. Clean the pad friction with soft clothe dampened with IPA(Isopropyl Alcohol). 3. Use the smooth paper.
+Code;06
+Display;Paper rolled in the fuser
+Description;If contaminated at intervals of 57mm on the back of a paper.
+Causes;1. Contamination of the pressure roller. (Background, Hot off set)
+Remedy;1. Disassemble the fuser, clean the area between the Heat-roller and Thermistor and remove the foreign matter of the pressure roller. 2. If background appears badly in the printing, fix it by referring to the solutions for background.
+Code;07
+Display;OPC
+Description;Paper is rolled up in the OPC.
+Causes;1. Paper is too much thin. 2. The face of paper is curled.
+Remedy;1. Recommend to use normal paper. 2. How to remove the rolled paper in the OPC. • Remove the paper while turning the OPC against the ongoing direction. • Clean fingerprints on the OPC softly with soft cloth dampened with IPA(Isopropyl Alcohol) or tissue.
+Code;08
+Display;All LEDs blinking (Fuser Error)
+Description;1. All the lamps on the operator panel blink. 2. Gear of the fuser does not work and breaks away melt away. When printing, motor breaks away from its place due to defective fuser gear.
+Causes;1. Check if the thermostat, AC wire and Heat Lamp is open. 2. Check if the thermistor sensor is in place. 3. Check if the heat lamp works properly. 4. Check if the overheat circuit works properly. 5. The fuser gear is defective due to melting away.
+Remedy;1. If the thermostat is open replace the fuser and check following items. 2. If the thermistor sensor device is located deep in the sponge, replace the fuser. 3. Check if the circuit of overheat mode works properly. 4. Run DCU mode : Perform DCU diagnostic code 10.
+Code;09
+Display;All LEDs blinking (Scan Error)
+Description;1. All lamps on the operator panel blink.
+Causes;DCU Mode : Perform DCU diagnostic code 05. If the DCU error code 95 is displayed, replace LSU.
+Remedy;Replace LSU. If you cannot solve the problem after you replace LSU, replace the main board.eak
+Code;10
+Display;Not function of the gear of the fuser due to melting away
+Description;The motor breaks away from its place due to gear melting away.
+Causes;DCU Mode : Check if the Error States '60' '62' '68' occur. Check the operation of Fuser Erasing Lamp On/Off with the Error Code Check -10-.
+Remedy;1. Replace the Fuser. 2. Replace the Main Control board.
+Code;11
+Display;Paper Empty
+Description;The paper lamp on the operator panel is on even when paper is loaded in the cassette.
+Causes;1. Bending or deformation of the actuator of the paper sensor. 2. The function of the sensor board is defective Perform DCU mode: Perform DCU diagnostic code 8.
+Remedy;1. Replace the defective actuator. 2. Replace the sensor board.
+Code;12
+Display;Paper Empty without indication
+Description;The paper lamp on the operator panel does not come on when the paper cassette is empty.
+Causes;1. Bending or deformation of the actuator of the paper sensor. 2. The function of the sensor board is defective Perform. DCU mode : Perform DCU diagnostic code 8.
+Remedy;1. Replace the defective actuator. 2. Replace the sensor board.
+Code;13
+Display;Cover Open
+Description;The ERROR lamp is on even when the print cover is closed.
+Causes;1. The hook lever in the top cover may be defective. 2. Check the connector and circuit of the cover switch department in the Main Control board. Perform DCU mode : If Error state '64' occurs, Check the related codes of the Cover Open Error.
+Remedy;1. Replace the hook lever, if defective. 2. Check the insertion of the Cover Open Sensor Connect. 3. Replace the Main Control board or Cover Open Sensor.
+Code;14
+Display;No lamp on when the cover is open
+Description;The ERROR lamp does not come on even when the printer cover is open
+Causes;1. Check the connector(CN8) and circuit of the cover switch department in the Main Control board. Perform DCU mode : If Error state '64' occurs, Check the related codes of the Cover Open Error
+Remedy;1. Check the insertion of the Cover Open Sensor Connect. 2. Replace the Main Control board or Cover Open Sensor.
+Code;15
+Display;Defective motor operation
+Description;Main motor is not driving when printing, and paper does not feed into the printer, resulting 'Jam 0'.
+Causes;1. Motor harness or sub PCB may be defective. 2. Perform DCU diagnostic code 00 and Check the motor operation.
+Remedy;1. Check the motor harness, replace it, if defective. 2. Replace the SMPS, if necessary.
+Code;16
+Display;No Power
+Description;When system power is turned on, all lamps on the operator panel do not come on.
+Causes;1. Check if the power input and SMPS output are normal. 2. Check the inferiority of LED-Panel on the front-cover if the LED of Panel does not appear after normal warmingup.
+Remedy;1. Replace the power supply cord or SMPS. (Service Parts : Figure 10, chapter 5) 2. Replace the control board. 3. Replace the LED-panel.
+Code;17
+Display;Vertical Line Getting Curved
+Description;When printing, vertical line gets curved.
+Causes;1. If the supply of +24v is unstable in the Main Control board linking with LSU, check drive by DCU Mode: LSU Check -05- LSU Motor on.
+Remedy;1. Replace LSU. 2. Replace the Main Control board.

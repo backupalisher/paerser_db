@@ -1,0 +1,160 @@
+Code;A01
+Description;Master feed error
+Causes;201 Master-positioning sensor does not go ON even after the write pulse motor is activated during the master-positioning, master-cut, or master-loading operation. 258 Master end tape detected twice in a row.
+Remedy;Open the master-making unit and rewind the master material on the master roll, and then reset the master, or turn OFF the power and power back ON.
+Code;A02
+Description;Master loading error
+Causes;Pull out the print cylinder and set it back.
+Remedy;509 Master-loading sensor was OFF when the master was checked at a specified drum angle during the master-loading operation.
+Code;A04
+Description;Master disposal error
+Causes;303 Check Print Drum - Master removal error / Master disposal jam.
+Remedy;Pull out the print drum and push it back in.
+Code;A05
+Description;Master present in the master disposal area
+Causes;304 Master disposal box check request after master removal error or master disposal jam. 312 Master disposal jam sensor was ON at the start of the master making.
+Remedy;Pull out master disposal box and place it back after removing the jammed master in the master disposal area, or turn OFF the power and power back ON.
+Code;A07
+Description;Paper feed error
+Causes;4 10 Paper-ejection sensor was OFF when the paper should have arrived. (Paper misfeed).
+Remedy;
+Code;A09
+Description;Paper ejection error
+Causes;4 11 Paper-ejection sensor was ON when the paper should have left the paper-ejection sensor.
+Remedy;
+Code;A10
+Description;AF original feed error
+Causes;103 Original jammed under Original IN sensor. 107 Original does not arrive to the Original IN sensor.
+Remedy;
+Code;A16
+Description;Waiting for the master to be removed from the drum
+Causes;525 Waiting for the master to be removed from the print cylinder (drum).
+Remedy;Pull out the print cylinder (drum), remove the master around it and insert it back.
+Code;A17
+Description;Cutter error
+Causes;205 Master positioning sensor is ON after master cutting and Print drum returns back to Position-A. (Master cut error) 209 Cutter HP switch is OFF when master making started or when the master material was set.
+Remedy;Open the Master making unit, remove the master and close the master making unit.
+Code;A34
+Description;Requesting for the master to be reset
+Causes;206 When the Master making unit safety switch turned from OFF to ON, the Master position sensor was ON. (Master setting error) 218 Requesting for the leading edge of the master material to be set in the master making unit.
+Remedy;Open the Master making unit, re-insert the master material into the master making unit.
+Code;C01
+Description;Replace ink cartridge
+Causes;512 The ink sensor did not go ON even when inking was performed for a preset duration. (No ink detected.) 563 Ink remaining amount is zero from the information on the RF-Tag. 574 Inkless error was detected 5 times consecutively on one same ink cartridge.
+Remedy;Remove the empty ink cartridge and replace with a new one.
+Code;C02
+Description;Replace master roll
+Causes;200 The master end was detected twice in succession at 10-milliseconds intervals during master transport. (Master material is fully used from the master roll.) 240 Master remaining amount is zero from the RF-Tag information. 253 Masterless error was detected twice consecutively on one same master-roll.
+Remedy;Remove the empty master roll and replace with a new one.
+Code;C03
+Description;Master disposal box full
+Causes;311 The master disposal software counter counted maximum. (Master disposal box full by the software count.)
+Remedy;Remove master disposal box from the machine, throw away the disposed master from the disposal box and return the disposal box in the machine after an interval of over 5 seconds.
+Code;D01
+Description;Print drum not set
+Causes;526 Print drum is not set in the machine (drum connection signal, drum safety switch, and drum set sensor are OFF.) 527 Print drum connection signal is OFF when the print drum was inserted in the machine. 528 Print drum safety switch is OFF when the print drum was inserted in the machine.
+Remedy;Set the print drum in the machine.
+Code;D03
+Description;Ink cartridge not set
+Causes;533 Ink bottle set switch is OFF.
+Remedy;Install ink cartridge in the print drum.
+Code;D04
+Description;Incorrect ink cartridge
+Causes;534 Incorrect ink cartridge is used. 560 Ink RF-Tag is not detected on ink bottle. 561 Ink RF-Tag communication error (communication with the ink cartridge was interfered by noise). 562 Incorrect information on the Ink RF-Tag. 564 Detected a mismatch in the Ink RF-Tag serial number. 575 RF-Tag software error.
+Remedy;Replace with correct ink cartridge.
+Code;D05
+Description;Master not set
+Causes;237 Master RF-TAG missing
+Remedy;Insert leading edge of the master material into the master entrance and close the master making unit.
+Code;D06
+Description;Paper separation unit not set
+Causes;4 27 Paper separation unit safety switch is OFF.
+Remedy;Set the Paper separation unit in place so the sfety switch is pressed.
+Code;D07
+Description;Master disposal box not set
+Causes;310 Master disposal box set sensor is OFF.
+Remedy;Set master disposal box in the machine.
+Code;D08
+Description;Master making unit not set
+Causes;224 Master making unit is opened. (Master making unit safety switch is OFF).
+Remedy;Set the Master making unit in place.
+Code;D10
+Description;Master removal unit not set
+Causes;314 Master removal safety switch is OFF.
+Remedy;Set the Master removal unit in place.
+Code;D12
+Description;Print drum not fully inserted
+Causes;529 Print drum set sensor stays OFF even after the print drum set signal and print drum safety switch went ON. 530 Either the print drum set signal or print drum safety switch is OFF while the other is ON. (Print drum not fully inserted in position.)
+Remedy;Insert the Print drum firmly in the machine.
+Code;D17
+Description;Incorrect master roll
+Causes;236 Incorrect master roll. 238 Master roll RF-Tag communication error. (Communication interrupted by noise) 239 Incorrect information on the Master roll RF-Tag. 241 Mismatch in the Master roll RF-Tag serial number information. 256 Master roll RF-Tag software error.
+Remedy;Set correct master roll in the machine.
+Code;E03
+Description;Setup wizard
+Causes;046 Setup wizard not finished.
+Remedy;Complete the setup wizard.
+Code;F01
+Description;No master on print cylinder (drum)
+Causes;015 There is no master on the print drum at the start of printing.
+Remedy;Make a new master with an original.
+Code;F05
+Description;Print quantiy under Minimum Print Quantity
+Causes;019 In master making, the print quantity selected is less than the minimum print quantity.
+Remedy;Enter print quantity value over the programmed minimum value.
+Code;H1
+Description;Ink color setting
+Causes;H1-566 Select the same color as the Print Cylinder (Drum) currently in use.
+Remedy;Enter the required parameter value.
+Code;H4
+Description;Master sensitivity setting
+Causes;H4-242 Select the master sensitivity parameter.
+Remedy;Enter the required parameter value.
+Code;P01
+Description;Main motor lock
+Causes;520 Main encoder sensor does not go ON/OFF within 10 milliseconds after the main motor activates. 521 Position-A sensor status does not change even after main motor activates for 1 drum rotation. 536 Print drum failed to stop at Position-A. 537 Print drum failed to stop at Position-B. 582 Print drum angle cannot be detected even though the Position-A sensor detected the Print drum 3 times.
+Remedy;Press Reset Key
+Code;P03
+Description;Clamp motor lock
+Causes;500 Clamp sensor is OFF after the completion of the clamp unit initialization or home positioning movement. 501 Clamp sensor does not go OFF within 1 second from the time the clamp motor operates. 502 Clamp sensor does not go ON within 2.5 seconds from the time the clamp motor operates. 504 At the start of Clamp plate open action, the detection of clamp sensors is OFF. 505 At the start of print drum Position-A compensation movement, the detection of clamp@sensor is OFF. 506 At the start of Clamp unit Home-positioning movement, the detection of clamp sensor is ON. 507 Clamp sensor is OFF after the clamp open action is completed. 508 Clamp sensor is ON after the Position-A compensating movement is completed.
+Remedy;Press Reset Key
+Code;P04
+Description;Ink overflow
+Causes;513 The overflow sensor is ON for a set number of times in succession during the 10-millisecond interval overflow-sensor check.
+Remedy;Press Reset Key after correcting the ink overflow condition. (No ink on the ink overflow sensor.)
+Code;P12
+Description;Master disposal area motor lock
+Causes;300 Overload on the Master removal motor.
+Remedy;Press Reset Key.
+Code;P13
+Description;Cutter motor lock
+Causes;221 The cutter HP switch and cutter stop position switch are both ON at the same time. 231 Cutter HP switch does not go OFF within 500 milliseconds after the cutter operation started from the HP position. 232 Cutter stop position switch does not go ON even after 2 seconds after the cutting movement started. 233 Cutter stop position switch does not go OFF even after 500 milliseconds after the cutter HP movement started. 234 Cutter HP switch does not go ON even after 2 seconds from the cutter HP movement started.
+Remedy;Press Reset Key.
+Code;P14
+Description;Scanner error
+Causes;104 Offset adjustment error. 125 A/D reference adjustment unfinished in time. 126 Gain adjustment not unfinished in time.
+Remedy;Press Reset key or turn the power OFF and ON.
+Code;P19
+Description;Master making area motor lock
+Causes;207 TPH position sensor status did not change even after the TPH pressure motor activated for 2 seconds.
+Remedy;Press Reset key or turn the power OFF and ON.
+Code;P24
+Description;Inking motor lock
+Causes;539 Inking-motor FG sensor status does not change within 20 milliseconds after the inking-motor is activated.
+Remedy;Press Reset key or turn the power OFF and ON.
+Code;P96
+Description;Data not input
+Causes;171 TPH resistance value not input.
+Remedy;Input the parameters using test mode.
+Code;P97
+Description;PC card access error
+Causes;9 39 PC card not inserted. 94 0 PC card device data double ID error (data error as PCMCIA card). 94 1 PC device error (not detected as PC card). 94 2 File production error (same file name already exists). 94 3 PC card not formatted correctly. 944 PC card ID error. 94 5 PC card error (detected as PC card, but unable to make access). 946 PC card capacity error (not enough blank area). 99 0 File does not exist in the specified drive. 99 1 Accessed into a non-opened file). 99 2 File pointer to save the data is already in use. 99 3 Read address is not correctly set up. 994 File delete arror (file is not correctly deleted).
+Remedy;Turn power OFF and ON.
+Code;P98
+Description;Hardware error
+Causes;002 No reply from optional neoROSA. If neoROSA signal is detected at machine power ON, but if the PCB communication terminates and P98-069 error is detected, the error point is rewrote to this P98-002 error message. 005 Hardware error 006 EEPROM check-sum error 025 Possible defective RF PCB (Unsuccessful initial communication with RF PCB). 034 Unable to write on EEPROM on the machine. (Cannot access EEPROM). 035 CRC error on EEPROM on the machine (Defective EEPROM data). 038 Machine information between the EEPROM and PCB does not match. 039 Incorrect EEPROM. 041 5 volt power not available. Possibility of faulty 5 volt fuse. 045 5 volt power does not go OFF when the machine tries to go into sleep mode. 063 Test mode setting is beyond the adjustable range. 064 Communication error between neoROSA and MCTL PCB. 065 Communication error between neoROSA and MCTL PCB (01) - on MCTL PCB side. 067 Communication error between neoROSA and MCTL PCB (03) - on MCTL PCB side. 068 Communication error between neoROSA and MCTL PCB (04) - on MCTL PCB side. 069 Communication error between neoROSA and MCTL PCB (05) - on MCTL PCB side. 070 Communication error between neoROSA and MCTL PCB (06) - on MCTL PCB side. 071 Communication error between neoROSA and MCTL PCB (07) - on MCTL PCB side. 072 Communication error between neoROSA and MCTL PCB (08) - on MCTL PCB side. 073 Communication error between neoROSA and MCTL PCB (09) - on MCTL PCB side. 074 Communication error between neoROSA and MCTL PCB (10) - on neoROSA side. 075 Communication error between neoROSA and MCTL PCB (11) - on neoROSA side. 076 Communication error between neoROSA and MCTL PCB (12) - on neoROSA side. 077 Communication error between neoROSA and MCTL PCB (13) - on neoROSA side. 078 Communication error between neoROSA and MCTL PCB (14) - on neoROSA side. 079 Communication error between neoROSA and MCTL PCB (15) - on neoROSA side. 080 Communication error between neoROSA and MCTL PCB (16) - on neoROSA side. 081 Communication error between neoROSA and MCTL PCB (17) - on neoROSA side. 082 Communication error between neoROSA and MCTL PCB (18) - on neoROSA side. 083 Communication error between neoROSA and MCTL PCB (19) - on neoROSA side. 084 Communication error between neoROSA and MCTL PCB (20) - on neoROSA side. 098 Machine serial number information does not match between the backup data and EEPROM. 119 Defective image PCB (memory check error on the image processing IC). 121 Scanner adjustment error (IFLG does not change within set time). 122 Scanner adjustment error (IMFLGdoes not change within set time). 245 Timeout error on master transfer during master-making (related to Write pulse motor). 9 21 USB controller chip does not reply. May need to replace neoROSA. 9 34 Communication error between MCTL PCB and RF PCB. (on RF PCB side) 9 35 Communication error between MCTL PCB and RF PCB. (on MCTL PCB side) 9 37 Serial number not set. 9 38 EEPROM version down. 947 24V-A does not go ON. (possibility of 24v fuse broken on A-series) 94 8 24V-B does not go ON. (possibility of 24v fuse broken on B-series) 949 4 2V-A does not go OFF. 9 50 4 2V-B does not go OFF. 9 52 Check-sum error on neoROSA PCB flash memory. 9 53 Write error on the neoROSA PCB flash memory. 96 0 Read error on the neoROSA PCB flash memory. 96 1 Flash memory on neoROSA PCB not used.
+Remedy;Turn power OFF and ON.
+Code;P99
+Description;Software error
+Causes;509 Master-loading sensor was OFF when the master was checked at a specified drum angle during the master-loading operation.
+Remedy;Pull out the print cylinder and set it back.

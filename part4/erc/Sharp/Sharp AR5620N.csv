@@ -1,0 +1,200 @@
+Code;CH Blink
+Description;Developing cartridge not installed. The developing cartridge is not installed. Communication with the CRUM cannot be made in initial check of the CRUM.
+Causes;Developing unit disconnection MCU PWB abnormality CRUM chip abnormality
+Remedy;Check installation of the developing unit. Replace the MCU PWB.
+Code;CH ON
+Description;Side door open. The side door is open.
+Causes;Side door sensor abnormality MCU PWB abnormality
+Remedy;Check that all the side doors are closed. Replace the MCU PWB.
+Code;E7 01
+Description;Duplex model memory error/ Image data error. 1. The memory capacity for the duplex model machine is wrong. Insufficient memory capacity. 2. Duplex setting is set for a single surface model.
+Causes;1. The memory capacity on the MCU PWB is wrong. 2. Setting for a single surface model is wrong.
+Remedy;1. Use SIM26-39 to check to confirm that the memory capacity is 64MB. If it is not 64MB, replace the MCU PWB. 2. If SIM26-04 is set to 1, change the setting to 0. If it is 0, replace the MCU PWB.
+Code;E7 02
+Description;LSU trouble. The BD signal from the LSU cannot be detected in a certain cycle. (Always OFF or always ON)
+Causes;LSU connector or LSU harness defect or disconnection Polygon motor rotation abnormality Laser beams are not generated. MCU PWB abnormality.
+Remedy;Check connection of the LSU connector. Execute SIM 61-03 to check the LSU operations. Check that the polygon motor rotates normally. Check that the laser emitting diode generates laser beams. Replace the LSU unit. Replace the MCU PWB.
+Code;E7 06
+Description;Image data decode error. Image expansion error
+Causes;MCU PWB abnormality USB cable trouble
+Remedy;Replace the MCU PWB. Replace the USB cable.
+Code;E7 10
+Description;Shading trouble (Black correction). The CCD black scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable CCD unit abnormality MCU PWB abnormality.
+Remedy;Check connection of the CCD unit flat cable. Check the CCD unit.
+Code;E7 11
+Description;Shading trouble (White correction). The CCD white scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable Dirt on the mirror, the lens, and the reference white plate Copy lamp lighting abnormality CCD unit abnormality MCU PWB abnormality (When occurred in the SPF scan position.) Improper installation of the mirror unit
+Remedy;Clean the mirror, the lens, and the reference white plate. Check lighting and the light quantity of the copy lamp (SIM05-03). Check the CCD unit. Check the MCU PWB.
+Code;E7 16
+Description;Abnormal laser output. When the laser output is stopped, HSYNC is detected.
+Causes;Laser abnormality MCU PWB abnormality.
+Remedy;Replace the LSU. Replace the MCU PWB.
+Code;F2 40
+Description;ATC sensor value abnormality
+Causes;Connector connection trouble Toner cartridge installation trouble Sensor breakdown
+Remedy;Connect the connector again. Install the developing unit again. Replace the developing unit with a normal one.
+Code;F2 64
+Description;Toner supply abnormality. When toner near end is detected with the toner supply time of 50% or less. When the toner supply time exceeds 300%.
+Causes;ATC sensor abnormality Toner supply abnormality
+Remedy;Replace the toner cartridge. Replace the developing unit.
+Code;F2 70
+Description;•Improper cartridge (Destination error, life cycle error) •Identific t ion error •Model error •Type error •Destination error •Data abnormality •Misc error Detail •The destination of the machine differs from that of the CRUM. •The trade mark code of the CRUM differs. •The company code of the CRUM differs. •The boot program model code does not coincide with the CRUM model code. •When the CRUM type is other than genuine/ conversion/production rotation. •The machine destination differs from the CRUM destination.
+Causes;CRUM chip defect Improper toner cartridge.
+Remedy;Replace the toner cartridge.
+Code;F2 74
+Description;CRUM chip communication error. An error occurs during communication between the MCU and the CRUM chip. The CRUM identification error occurs.
+Causes;CRUM chip abnormality Developing unit disconnection MCU PWB abnormality
+Remedy;Replace the toner cartridge. Check installation of the developing unit. Use SIM16 to cancel. Replace the MCU PWB.
+Code;H3 00
+Description;Heat roller high temperature detection (MAIN). The fusing temperature exceeds 245C°.
+Causes;Thermistor abnormality Control PWB abnormality Fusing section connector disconnection.
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp keeps ON. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H3 01
+Description;Heat roller high temperature detection (SUB). The fusing temperature exceeds 245°C.
+Causes;Sub thermistor abnormality Heater lamp abnormality Thermostat abnormality Main PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When normally lighting. Check the sub thermistor and its harness. Check the sub thermistor input circuit on the MAIN PWB. When not normally lighting. Check the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H4 00
+Description;Heat roller low temperature detection. When the fusing temperature is 150C° or less in 55 sec from starting warming-up. When the warm-up complete temperature is not reached in 30 sec from reaching 150C°. When the fusing temperature is less than 100C° in 20 sec from the ready state. When the fusing temperature is less than 80C° for more than 300ms in the ready state or in printing. When the fusing temperature is less than 80C° for more than 300ms in the standby mode at a low temperature.
+Causes;Thermistor abnormality Heater lamp abnormality Thermostat abnormality Control PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp does not light up. Check for disconnection of the heater lamp and the thermostat. Check the interlock switch. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H5 01
+Description;5 continuous POUT not-reached error. When 5 continuous not-reached jams to the paper exit sensor (POUT) occur. The jam counter is backed up and it is used in a job after turning on the power.
+Causes;Jam paper is not removed from the fusing unit. (Jam paper remains.) Paper exit sensor breakdown or harness connection trouble Fusing unit installation trouble
+Remedy;Check for jam paper remaining in the fusing unit. (winding, etc.) Check the POUT sensor harness, and check installation of the fusing unit. Use SIM14 to clear the self diag display.
+Code;L1 00
+Description;Scanner feed trouble. Though the specified steps of motor pulses are outputted, the mirror home position sensor remains ON.
+Causes;Mirror unit abnormality The scanner wire is disconnected. The origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not feed. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L3 00
+Description;Scanner return trouble. Though the specified steps of motor pulses are outputted, the mirror home position sensor does not turn ON.
+Causes;Mirror unit abnormality Scanner wire disconnection Origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not return. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L4 01
+Description;Main motor lock detection. The main motor does not rotate. After rotation of the main motor, the motor lock signal is detected for 1 sec or more. During rotation of the main motor, the motor lock signal is detected for 1 sec. When the main motor is stopped, the motor lock signal is not detected for 5sec or more. (Though the motor is stationary, it is judged as stable rotation.)
+Causes;Main motor unit abnormality Improper connection or disconnection the main motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 25-01 to check the main motor operations. Check connection of the main motor harness/connector. Replace the main motor. Replace the MCU PWB.
+Code;L4 31
+Description;Fusing fan lock detection. The fusing fan does not rotate. Sampling is performed in 50msec interval, and the normal signal cannot be detected 5 times continuously in 1 sec.
+Causes;Fan trouble or harness contact trouble and disconnection
+Remedy;Use SIM05-02 to check the operations of the fusing fan motor. Heck connection of the fan harness and the connector. Replace the fan. Replace the MCU PWB.
+Code;L4 32
+Description;PSFAN lock detection. The PSFAN does not rotate. Sampling is performed in 50msec interval, and the normal signal cannot be detected 5 times continuously in 1 sec.
+Causes;Fan trouble or harness contact trouble and disconnection
+Remedy;Check connection of the fan harness and the connector. Replace the fan. Replace the MCU PWB.
+Code;L6 10
+Description;Polygon motor lock detection Detail The polygon motor does not rotate After beginning to rotate the polygon motor, the motor lock signal is detected for 20sec or more. During rotation of the polygon motor, the motor lock signal is detected for 1sec.
+Causes;Polygon motor unit abnormality Improper connection or disconnection of the polygon motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 61-3 to check the polygon motor operations. Check connection of the polygon motor harness/connector. Replace the polygon motor.. Replace the MCU PWB.
+Code;U2 04
+Description;EEPROM read/write error (Serial communication error)
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U2 11
+Description;Counter check sum error (EEPROM). Check sum error of the counter area in the EEPROM
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U2 12
+Description;Adjustment value check sum error (EEPROM). Check sum error of the adjustment value area in the EEPROM
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;CH Blink
+Description;Developing cartridge not installed. The developing cartridge is not installed. Communication with the CRUM cannot be made in initial check of the CRUM.
+Causes;Developing unit disconnection MCU PWB abnormality CRUM chip abnormality
+Remedy;Check installation of the developing unit. Replace the MCU PWB.
+Code;CH ON
+Description;Side door open. The side door is open.
+Causes;Side door sensor abnormality MCU PWB abnormality
+Remedy;Check that all the side doors are closed. Replace the MCU PWB.
+Code;E7 01
+Description;Duplex model memory error/ Image data error. 1. The memory capacity for the duplex model machine is wrong. Insufficient memory capacity. 2. Duplex setting is set for a single surface model.
+Causes;1. The memory capacity on the MCU PWB is wrong. 2. Setting for a single surface model is wrong.
+Remedy;1. Use SIM26-39 to check to confirm that the memory capacity is 64MB. If it is not 64MB, replace the MCU PWB. 2. If SIM26-04 is set to 1, change the setting to 0. If it is 0, replace the MCU PWB.
+Code;E7 02
+Description;LSU trouble. The BD signal from the LSU cannot be detected in a certain cycle. (Always OFF or always ON)
+Causes;LSU connector or LSU harness defect or disconnection Polygon motor rotation abnormality Laser beams are not generated. MCU PWB abnormality.
+Remedy;Check connection of the LSU connector. Execute SIM 61-03 to check the LSU operations. Check that the polygon motor rotates normally. Check that the laser emitting diode generates laser beams. Replace the LSU unit. Replace the MCU PWB.
+Code;E7 06
+Description;Image data decode error. Image expansion error
+Causes;MCU PWB abnormality USB cable trouble
+Remedy;Replace the MCU PWB. Replace the USB cable.
+Code;E7 10
+Description;Shading trouble (Black correction). The CCD black scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable CCD unit abnormality MCU PWB abnormality.
+Remedy;Check connection of the CCD unit flat cable. Check the CCD unit.
+Code;E7 11
+Description;Shading trouble (White correction). The CCD white scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable Dirt on the mirror, the lens, and the reference white plate Copy lamp lighting abnormality CCD unit abnormality MCU PWB abnormality (When occurred in the SPF scan position.) Improper installation of the mirror unit
+Remedy;Clean the mirror, the lens, and the reference white plate. Check lighting and the light quantity of the copy lamp (SIM05-03). Check the CCD unit. Check the MCU PWB.
+Code;E7 16
+Description;Abnormal laser output. When the laser output is stopped, HSYNC is detected.
+Causes;Laser abnormality MCU PWB abnormality.
+Remedy;Replace the LSU. Replace the MCU PWB.
+Code;F2 40
+Description;ATC sensor value abnormality
+Causes;Connector connection trouble Toner cartridge installation trouble Sensor breakdown
+Remedy;Connect the connector again. Install the developing unit again. Replace the developing unit with a normal one.
+Code;F2 64
+Description;Toner supply abnormality. When toner near end is detected with the toner supply time of 50% or less. When the toner supply time exceeds 300%.
+Causes;ATC sensor abnormality Toner supply abnormality
+Remedy;Replace the toner cartridge. Replace the developing unit.
+Code;F2 70
+Description;•Improper cartridge (Destination error, life cycle error) •Identific t ion error •Model error •Type error •Destination error •Data abnormality •Misc error Detail •The destination of the machine differs from that of the CRUM. •The trade mark code of the CRUM differs. •The company code of the CRUM differs. •The boot program model code does not coincide with the CRUM model code. •When the CRUM type is other than genuine/ conversion/production rotation. •The machine destination differs from the CRUM destination.
+Causes;CRUM chip defect Improper toner cartridge.
+Remedy;Replace the toner cartridge.
+Code;F2 74
+Description;CRUM chip communication error. An error occurs during communication between the MCU and the CRUM chip. The CRUM identification error occurs.
+Causes;CRUM chip abnormality Developing unit disconnection MCU PWB abnormality
+Remedy;Replace the toner cartridge. Check installation of the developing unit. Use SIM16 to cancel. Replace the MCU PWB.
+Code;H3 00
+Description;Heat roller high temperature detection (MAIN). The fusing temperature exceeds 245C°.
+Causes;Thermistor abnormality Control PWB abnormality Fusing section connector disconnection.
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp keeps ON. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H3 01
+Description;Heat roller high temperature detection (SUB). The fusing temperature exceeds 245°C.
+Causes;Sub thermistor abnormality Heater lamp abnormality Thermostat abnormality Main PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When normally lighting. Check the sub thermistor and its harness. Check the sub thermistor input circuit on the MAIN PWB. When not normally lighting. Check the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H4 00
+Description;Heat roller low temperature detection. When the fusing temperature is 150C° or less in 55 sec from starting warming-up. When the warm-up complete temperature is not reached in 30 sec from reaching 150C°. When the fusing temperature is less than 100C° in 20 sec from the ready state. When the fusing temperature is less than 80C° for more than 300ms in the ready state or in printing. When the fusing temperature is less than 80C° for more than 300ms in the standby mode at a low temperature.
+Causes;Thermistor abnormality Heater lamp abnormality Thermostat abnormality Control PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp does not light up. Check for disconnection of the heater lamp and the thermostat. Check the interlock switch. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H5 01
+Description;5 continuous POUT not-reached error. When 5 continuous not-reached jams to the paper exit sensor (POUT) occur. The jam counter is backed up and it is used in a job after turning on the power.
+Causes;Jam paper is not removed from the fusing unit. (Jam paper remains.) Paper exit sensor breakdown or harness connection trouble Fusing unit installation trouble
+Remedy;Check for jam paper remaining in the fusing unit. (winding, etc.) Check the POUT sensor harness, and check installation of the fusing unit. Use SIM14 to clear the self diag display.
+Code;L1 00
+Description;Scanner feed trouble. Though the specified steps of motor pulses are outputted, the mirror home position sensor remains ON.
+Causes;Mirror unit abnormality The scanner wire is disconnected. The origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not feed. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L3 00
+Description;Scanner return trouble. Though the specified steps of motor pulses are outputted, the mirror home position sensor does not turn ON.
+Causes;Mirror unit abnormality Scanner wire disconnection Origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not return. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L4 01
+Description;Main motor lock detection. The main motor does not rotate. After rotation of the main motor, the motor lock signal is detected for 1 sec or more. During rotation of the main motor, the motor lock signal is detected for 1 sec. When the main motor is stopped, the motor lock signal is not detected for 5sec or more. (Though the motor is stationary, it is judged as stable rotation.)
+Causes;Main motor unit abnormality Improper connection or disconnection the main motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 25-01 to check the main motor operations. Check connection of the main motor harness/connector. Replace the main motor. Replace the MCU PWB.
+Code;L4 31
+Description;Fusing fan lock detection. The fusing fan does not rotate. Sampling is performed in 50msec interval, and the normal signal cannot be detected 5 times continuously in 1 sec.
+Causes;Fan trouble or harness contact trouble and disconnection
+Remedy;Use SIM05-02 to check the operations of the fusing fan motor. Heck connection of the fan harness and the connector. Replace the fan. Replace the MCU PWB.
+Code;L4 32
+Description;PSFAN lock detection. The PSFAN does not rotate. Sampling is performed in 50msec interval, and the normal signal cannot be detected 5 times continuously in 1 sec.
+Causes;Fan trouble or harness contact trouble and disconnection
+Remedy;Check connection of the fan harness and the connector. Replace the fan. Replace the MCU PWB.
+Code;L6 10
+Description;Polygon motor lock detection Detail The polygon motor does not rotate After beginning to rotate the polygon motor, the motor lock signal is detected for 20sec or more. During rotation of the polygon motor, the motor lock signal is detected for 1sec.
+Causes;Polygon motor unit abnormality Improper connection or disconnection of the polygon motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 61-3 to check the polygon motor operations. Check connection of the polygon motor harness/connector. Replace the polygon motor.. Replace the MCU PWB.
+Code;U2 04
+Description;EEPROM read/write error (Serial communication error)
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U2 11
+Description;Counter check sum error (EEPROM). Check sum error of the counter area in the EEPROM
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U2 12
+Description;Adjustment value check sum error (EEPROM). Check sum error of the adjustment value area in the EEPROM
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.

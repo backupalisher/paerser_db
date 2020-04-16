@@ -1,0 +1,204 @@
+Code;A01
+Display;A01-xxx Master Mis-Feed Pull Out Master Making Unit and Rewind Master Roll, then Reset Master in Place.
+Description;A01 [Master feed error]
+Causes;201 Master-positioning sensor does not go ON even after the write pulse motor is activated during the master-positioning, master-cut, or master-loading operation. 202 Master-positioning sensor does not go OFF even when the write pulse motor is reversed during the master-positioning or at start of master-making operation. 211 Master-positioning sensor is ON during standby. 214 Master-positioning sensor is ON at the start of master making. 215 Even though the Write pulse motor stopped, the pulse count did not match with the programmed pulse count
+Code;A02
+Display;A02-xxx Master Loading Error Pull Out Print Cylinder and Discard Master.
+Description;A02 [Master loading error]
+Causes;509 Master-loading sensor was OFF when the master was checked at a specified drum angle during the master-loading operation.
+Code;A04
+Display;A04-xxx Master Disposal Error Pull Out Print Cylinder and Discard Master.
+Description;A04 [Master disposal error]
+Causes;303 Check Print Drum - Master removal error / Master disposal jam.
+Code;A05
+Display;A05-xxx Master Jammed in Disposal Unit Pull Out Master Disposal Box and Remove Jammed Master
+Description;A05 [Master present in the master disposal area]
+Causes;304 Master disposal box check request after master removal error or master disposal jam. 312 Master disposal jam sensor was ON at the start of the master making.
+Code;A07
+Display;A07 [Paper feed error]
+Description;A07 [Paper feed error]
+Causes;409 Paper-ejection sensor was OFF when the paper should have arrived, and the paper sensor was ON when the machine stopped (Paper misfeed). 412 Paper sensor was OFF when a paper misfeed was detected (paper misfeed). 418 The paper sensor was ON at the start of machine operation when the START button was pressed.
+Code;A08
+Display;A08 [Paper jam on print drum]
+Description;A08 [Paper jam on print drum]
+Causes;410 Paper-ejection sensor was OFF when paper should have arrived, and the paper sensor was OFF when the machine stopped (paper jam on the print drum).
+Code;A09
+Display;A09 [Paper ejection error]
+Description;A09 [Paper ejection error]
+Causes;411 Paper-ejection sensor was ON when the paper should have left the paper-ejection sensor. 417 Paper-ejection sensor was ON at the start of machine operation when the START button was pressed.
+Code;A10
+Display;A10 [AF original feed error]
+Description;A10 [AF original feed error]
+Causes;102 The original is pulled out from the AF unit before the scanning is completed. 103 Original jammed under Original IN sensor. 107 Original does not arrive to the Original IN sensor.
+Code;A16
+Display;A16-xxx Master Remains on Print Cylinder (Drum) Pull Out Print Cylinder and Remove Master
+Description;A16 [Waiting for the master to be removed from the drum]
+Causes;525 Waiting for the master to be removed from the print cylinder (drum).
+Code;A17
+Display;A17-xxx System Error in Master Making Unit Take Out Master and then Close Master Making Unit Cover
+Description;A17 [Cutter error]
+Causes;209 Cutter HP switch is OFF when master-making starts, when the master material is set in the master making unit, or when the machine goes into idle condition. 213 Master material is not set in position when the machine goes into idle condition.
+Code;A34
+Display;A34-xxx Master Not Set in Place Insert Lead Edge of Master into Master Entrance and Close Master Making Unit
+Description;A34 [Requesting for the master to be reset]
+Causes;218 Reqesting for the leading edge of the master material to be set in the master making unit.
+Code;B22
+Display;B22-xxx !! Job Separator is OFF !! Turn On Power Switch of it
+Description;B22 [Job separator: Power off]
+Causes;721 With the [Tape separation] function set ON, no power is supplied to the job separator when start key is pressed. 727 After cluster-A signal turned ON, BUSY-signal stayed [L] more than 7 seconds. (Power to job separator was turned OFF while the tape is being ejected.)
+Code;B23
+Display;B23-xxx No Paper Tape in Job Separator Replace Tape Roll
+Description;B23 [Job separator: No tape]
+Causes;722 With the [Tape separation] function set ON, no tape detected in the job separator when the start key is pressed. 723 No tape remains in job separator upon completion of the tape-ejection operation.
+Code;B24
+Display;B24-xxx Paper Tape Jam in Job Separator Remove Paper Tape
+Description;B24 [Job separator: Tape jam]
+Causes;724 Tape jam detected when the start key is pressed with the [Tape separation] function set to ON. 725 The tape-jam detection signal is [H] for more than 1.2 seconds after cluster-A signal turns ON. (Tape misfeed). 726 Job separator tape-jam detection signal is [L] when the BUSY signal changes from [L] to [H] (or after 7 sec. at [L]) after the cluster-A signal goes ON. (Tape misfeed).
+Code;B31
+Display;B31-xxx !! No Linked Printer Detected !! Check Cable Connection and Power Supply for Linked Printer
+Description;B31 [Network cable not connected]
+Causes;916 Network cable is not connected when the machine is powered ON.
+Code;B32
+Display;B32-xxx !! No Linked Printer Detected !! Check Cable Connection and Power Supply for Linked Printer
+Description;B32 [NIC - Communication error]
+Causes;917 Communication error on the network. 920 Error detected by Network Interface Card (NIC) - NAK (no acknowledgement was received). No reply from the other end, TCP/IP error, communication interrupted, etc.
+Code;B33
+Display;B33-xxx No IP Address Assigned to This Printer Contact Your Network Administrator
+Description;B33 [IP address set up error]
+Causes;931 DHCP is ON, but DHCP server is not found.
+Code;C01
+Display;C01-xxx No Ink Replace Ink Cartridge
+Description;C01 [Replace ink cartridge]
+Causes;512 The ink sensor did not go ON even when inking was performed for a preset duration. (No ink detected.) 563 Ink remaining amount is zero from the information on the RF-Tag. 574 Inkless error was detected 5 times consecutively on one same ink cartridge.
+Code;C02
+Display;C02-xxx No Master Replace Master Roll
+Description;C02 [Replace master roll]
+Causes;200 The master end was detected twice in succession at 10-milliseconds intervals during master transport. (Master material is fully used from the master roll.) 240 Master remaining amount is zero from the RF-Tag information. 253 Masterless error was detected twice consecutively on one same master-roll.
+Code;C03
+Display;C03-xxx Master Disposal Box is Full Empty Master Disposal Box
+Description;C03 [Master disposal box full]
+Causes;308 Master FULL sensor never went ON during the master compress action. (Mater disposal box full.) 311 The master disposal software counter counted 30 disposed masters. (Master disposal box full by the software count.)
+Code;C04
+Display;C04-xxx Add Paper
+Description;C04 [No paper on the Standard paper Feed Tray]
+Causes;402 Paper detection sensor is OFF (not detecting paper).
+Code;D01
+Display;D01-xxx Set Print Cylinder (Drum) in Place
+Description;D01 [Print drum not set]
+Causes;526 Print drum is not set in the machine (drum connection signal, drum safety switch, and drum set sensor are OFF.) 527 Print drum connection signal is OFF when the print drum was inserted in the machine. 528 Print drum safety switch is OFF when the print drum was inserted in the machine. 529 Print drum set sensor is OFF when the print drum was inserted in the machine (time-out: 5 seconds). 530 Print drum connection signal does not go OFF within 5 seconds after the print drum safety switch went OFF when the print drum was pulled out. Or, the print drum safety switch does not go ON within 5 seconds after the print drum connection signal went ON when the print drum was inserted in the machine.
+Code;D02
+Display;D02-xxx Wrong-Type Print Cylinder Installed Replace with Correct Type
+Description;D02 [Incorrect print drum]
+Causes;532 Incorrect print drum is used.
+Code;D03
+Display;D03-xxx Install Ink Cartridge
+Description;D03 [Ink cartridge not set]
+Causes;533 Bottle set switch is OFF.
+Code;D04
+Display;D04-xxx Wrong-type Ink Cartridge Installed or Cannot Read Ink Info Replace Ink Cartridge or Contact dealer/Riso office
+Description;D04 [Incorrect ink cartridge]
+Causes;534 Incorrect ink cartridge is used. 560 Ink RF-Tag is not detected on ink bottle. 561 Ink RF-Tag communication error (communication with the ink cartridge was interfered by noise). 562 Wrong ink cartridge information on the Ink RF-Tag. 564 Detected a mismatch in the Ink RF-Tag serial number. 575 RF-Tag software error.
+Code;D05
+Display;D05-xxx Set Master in Place
+Description;D05 [Master not set]
+Causes;210 Master material is set in the machine before RF-Tag was detected by the machine.
+Code;D07
+Display;D07-xxx Set Master Disposal Box in Place
+Description;D07 [Master disposal box not set]
+Causes;310 Master disposal unit safety switch is OFF.
+Code;D08
+Display;D08-xxx Set Master Making Unit in Place
+Description;D08 [Master making unit not set]
+Causes;224 Master making unit is opened. (Master making unit safety switch is OFF).
+Code;D13
+Display;D13-xxx Rear Cover of Main Body is Off Call Service
+Description;D13 [Rear cover not closed]
+Causes;009 The rear cover is opened. (Rear cover safety switch is OFF).
+Code;D17
+Display;D17-xxx Wrong-type Master Installed or Cannot Read Master Info Replace Master Roll or Contact dealer/Riso office
+Description;D17 [Incorrect master roll]
+Causes;236 Incorrect master roll. 237 Master roll RF-Tag not detected. 238 Master roll RF-Tag communication error. (Communication interrupted by noise) 239 Incorrect information on the Master roll RF-Tag. 241 Mismatch in the Master roll RF-Tag serial number information. 256 Master roll RF-Tag software error.
+Code;D23
+Display;D23-xxx Close the AF Cover
+Description;D23 [AF Cover Not Closed]
+Causes;177 The AF cover is opened.
+Code;E02
+Display;E02-xxx !!Maintenance!! Call Service
+Description;E02 [Maintenance call]
+Causes;011 Master counter reached the value set for the maintenance call (value set by test mode). [The message appears when either the power is turned ON, the unit is reset, or when the machine operation ended.] 012 Copy counter reached the value set for the maintenance call (value by set test mode). [The message appears when either the power is turned ON, the unit is reset, or when the machine operation ended.]
+Code;F01
+Display;F01-xxx No Master on Print Cylinder (Drum) Make a New Master
+Description;F01 [No master on print cylinder (drum)]
+Causes;015 There is no master on the print drum at the start of printing.
+Code;F05
+Display;F05-xxx Enter Print Quantity Over The Programmed Minimum Value
+Description;F05 [Print quantiy under Minimum Print Quantity]
+Causes;019 In master making, the print quantity selected is less than the minimum print quantity.
+Code;F21
+Display;F21-xxx
+Description;F21 [Next Original not set on AF for Multi-Up]
+Causes;032 Next original is not set on AF when multi-up is selected.
+Code;H1
+Display;H1-566 Select the same color as the Print Cylinder (Drum) currently in use.
+Description;H1 [Ink color setting]
+Causes;Enter the required parameter value.
+Code;H4
+Display;H4-242 Select the standard density to be applied during master-making.
+Description;H4 [Master Density]
+Causes;Enter the required parameter value.
+Code;P01
+Display;P01-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P01 [Main motor lock]
+Causes;520 Main encoder sensor does not go ON/OFF within 10 milliseconds after the main motor activates. 521 Position-A sensor status does not change even after 3,033 pulses after the main motor activates. 524 Clamp unit is not at the home position while the print drum is in operation (except during master disposal). 537 Print drum failed to stop at Position-A.
+Code;P02
+Display;P02-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P02 [Elevator motor lock]
+Causes;400 Both the upper and lower limit sensors are ON at the same time. 401 Overload current was detected in the elevator motor. 404 The lower-limit sensor does not go OFF within 2 seconds after the elevator motor operates in the raising direction from the lower-limit position. 405 The upper-limit sensor does not go ON within 12 seconds after the elevator motor operates in the raising direction. 406 The upper-limit sensor does not go OFF within 2 seconds after the elevator motor operates in the lower direction from the upper-limit position. 407 The lower-limit sensor does not go ON within 12 seconds after the elevator motor operates in the lowering direction. 408 The upper-limit sensor is OFF continuously for over 2 seconds during operation of the elevator servo action to raise the feed tray.
+Code;P03
+Display;P03-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P03 [Clamp motor lock]
+Causes;500 Clamp sensor is OFF after the completion of the clamp unit initialization or home positioning movement. 501 Clamp sensor does not go OFF within 1 second from the time the clamp motor operates. 502 Clamp sensor does not go ON within 2.5 seconds from the time the clamp motor operates. 504 At the start of Clamp plate open action, the detection of clamp sensors is OFF. 505 At the start of print drum Position-A compensation movement, the detection of clamp@sensor is OFF. 506 At the start of Clamp unit Home-positioning movement, the detection of clamp sensor is ON. 507 Clamp sensor is OFF after the clamp open action is completed. 508 Clamp sensor is ON after the Position-A compensating movement is completed. 515 The Drum is not in the Position-A nor in the Position-B when the Clamp motor starts to operate.
+Code;P04
+Display;P04-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P04 [Ink overflow]
+Causes;513 The overflow sensor is ON for a set number of times in succession during the 10-millisecondinterval overflow-sensor check.
+Code;P05
+Display;P05-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P05 [Vertical print positioning pulse motor lock]
+Causes;603 The vertical-centering sensor does not switch ON even when the vertical-positioning pulse motor activated in the image-down direction for 5.0 seconds during vertical home positioning movement. 604 The vertical-centering sensor does not switch OFF even when the vertical-positioning pulse motor activated in the image-up direction for 5.0 seconds during vertical home positioning movement. 605 Even though the vertical positioning motor stopped according to the vertical centering sensor detection, the stopping position does not correspond with the programmed position. 612 The print positioning key is pressed with vertical-print-position information undefined.
+Code;P08
+Display;P08-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P08 [Communication error with CI]
+Causes;951 The file is not a correct RINC data.
+Code;P12
+Display;P12-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P12 [Master disposal area motor lock]
+Causes;301 Master compression motor lock when moving compression plate up. 302 The master compression HP sensor does not go OFF within 3 seconds after the master compression motor rotates in the reverse direction. 305 Master compression HP sensor does not go ON within 1 second after the master compression motor operates in the return direction. 306 Master compression HP sensor does not go OFF within 3 seconds after the master compression motor operates in the compress direction. 309 Master-compression-motor encoder sensor count did not change as the master compression motor activated in the compress direction and moved out from the home position. 313 The master compression HP sensor does not go ON even after 1 second after the master compression motor rotates in the compress direction. 316 Master-compression-motor encoder sensor count did not change within 10 milliseconds after the master compression motor activated.
+Code;P13
+Display;P13-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P13 [Cutter motor lock]
+Causes;205 Master-positioning sensor is ON when the print drum rotates through the preset angle following master cutting. 221 The cutter HP switch and cutter stop position switch are both ON at the same time. 222 Cutter HP switch does not go ON within 450 milliseconds after the cutter home positioning operation started. 231 Cutter HP switch does not go OFF within 500 milliseconds after the cutter operation started from the HP position. 232 Cutter stop position switch does not go ON even after 2 seconds after the cutting movement started. 233 Cutter stop position switch does not go OFF even after 500 milliseconds after the cutter HP movement started. 234 Cutter HP switch does not go ON even after 2 seconds from the cutter HP movement started.
+Code;P17
+Display;P17-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P17 [Solenoid counter not connected]
+Causes;020 Master counter (solenoid counter) is not connected. 021 Copy counter (solenoid counter )is not connected.
+Code;P20
+Display;P20-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P20 [Paper-ejection-section motor lock]
+Causes;437 Paper-ejection encoder sensor status does not change within 10 milliseconds after the paperejection motor is activated.
+Code;P24
+Display;P24-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P24 [Inking motor lock]
+Causes;539 Inking-motor FG sensor status does not change within 20 milliseconds after the inking-motor is activated.
+Code;P93
+Display;P93-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P93 [NET-C / NET-D hardware error]
+Causes;932 No reply from the network interface card while accessing to the network interface card.
+Code;P96
+Display;P96-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P96 [Data not input]
+Causes;171 TPH resistance value not input. 172 Scanner adjustment not completed.
+Code;P98
+Display;P98-xxx !!System Error!! Press Reset Key If Recovery has Failed, Call Service
+Description;P98 [Hardware error]
+Causes;002 No reply from optional SH3M PCB. If SH PCB signal is detected at machine power ON, but if the PCB communication terminates and P98-069 error is detected, the error point is rewrote to this P98-002 error message. 005 Hardware error 006 EEPROM check-sum error 025 Defective RF PCB (Unsuccessful initial communication with RF PCB). 034 Unable to write on EEPROM on the machine. (Cannot access EEPROM). 035 CRC error on EEPROM on the machine (Defective EEPROM data). 039 Incorrect EEPROM. 053 Unsuccessful data readout from the Memory setting (program, mode, user paper). 054 Unsuccessful data writing of the Memory setting (program, mode, user paper). 063 Test mode setting is beyond the adjustable range. 064 Communication error between SH PCB and MCTL PCB. 065 Communication error between SH PCB and MCTL PCB (01) - on MCTL PCB side. 067 Communication error between SH PCB and MCTL PCB (03) - on MCTL PCB side. 068 Communication error between SH PCB and MCTL PCB (04) - on MCTL PCB side. 069 Communication error between SH PCB and MCTL PCB (05) - on MCTL PCB side. 070 Communication error between SH PCB and MCTL PCB (06) - on MCTL PCB side. 071 Communication error between SH PCB and MCTL PCB (07) - on MCTL PCB side. 072 Communication error between SH PCB and MCTL PCB (08) - on MCTL PCB side. 073 Communication error between SH PCB and MCTL PCB (09) - on MCTL PCB side. 074 Communication error between SH PCB and MCTL PCB (10) - on SH PCB side. 075 Communication error between SH PCB and MCTL PCB (11) - on SH PCB side. 076 Communication error between SH PCB and MCTL PCB (12) - on SH PCB side. 077 Communication error between SH PCB and MCTL PCB (13) - on SH PCB side. 078 Communication error between SH PCB and MCTL PCB (14) - on SH PCB side. 079 Communication error between SH PCB and MCTL PCB (15) - on SH PCB side. 080 Communication error between SH PCB and MCTL PCB (16) - on SH PCB side. 081 Communication error between SH PCB and MCTL PCB (17) - on SH PCB side. 082 Communication error between SH PCB and MCTL PCB (18) - on SH PCB side. 083 Communication error between SH PCB and MCTL PCB (19) - on SH PCB side. 084 Communication error between SH PCB and MCTL PCB (20) - on SH PCB side. 119 Defective image PCB (memory check error on the image processing IC). 121 Scanner adjustment error (1) 122 Scanner adjustment error (2) 245 Timeout error on master transfer during master-making (related to Write pulse motor). 246 Timeout error on master transfer during master-making (related to Load pulse motor). 934 Communication error between MCTL PCB and RF PCB. (on RF PCB side) 935 Communication error between MCTL PCB and RF PCB. (on MCTL PCB side) 938 EEPROM version down.

@@ -1,0 +1,804 @@
+Code;104
+Display;SYSTEM HALT (*) 104 : +35V RECVR
+Description;35 V Power recovery error (Control PCB trouble) 28.5 V or less on 35 V power checking (pwr35chk) of Motor operation
+Remedy;1. Replace the Power Supply PCB 1 (the Y-bar side) with a new one. 2. Replace the Main PCB with a new one.
+Code;108
+Display;ERROR 108 HD CONNECT [12345678 12345678
+Description;Head connection error (Head connection can not be confirmed) Designated head connection can not be confirmed with the headchk
+Remedy;1. Disconnect and connect the FFC located between the Slider PCB and the SL-Relay PCB. Also, confirm that Insulating Sheets have been inserted between six FFCs. 2. Disconnect and connect the FFC of the Print Head. 3. Replace the Slider PCB with a new one. 4. Replace the FFC of the Print Head. 5. Replace the FFC located between the Slider PCB and the SL-Relay PCB. 6. Replace the Print Head with a new one. 7. Replace the SL-Relay PCB with a new one. 8. Replace the Main PCB with a new one.
+Code;108
+Display;ERROR 108 HD THERMIS [12345678 12345678]
+Description;Head thermistor (Head temperature can not be measured) Designated head temperature can not be measured with the headchk (Lower than -30 or higher than 100)
+Remedy;1. Disconnect and connect the FFC located between the Slider PCB and the SL-Relay PCB. Also, confirm that Insulating Sheets have been inserted between six FFCs. 2. Disconnect and connect the FFC of the Print Head. 3. Replace the Slider PCB with a new one. 4. Replace the FFC of the Print Head. 5. Replace the FFC located between the Slider PCB and the SL-Relay PCB. 6. Replace the Print Head with a new one. 7. Replace the SL-Relay PCB with a new one. 8. Replace the Main PCB with a new one.
+Code;10a
+Display;SYSTEM HALT (*) 10a : HDC INIT
+Description;Slider PCB initializing error (FPGA) (Control PCB trouble) At SL-relay PCB initializing (hardchk) of Initializing process, NG in case of initializing error.
+Remedy;1. Check the connector connection of Slider PCB. 2. Check the connector connection between Slider PCB ~ Main PCB. (Slider PCB ~ SL-Relay PCB ~ Main PCB) 3. Replace the Slider PCB with a new one. 4. Replace the Main PCB with a new one.
+Code;10b
+Display;SYSTEM HALT (*) 10b : HPC INIT
+Description;SL-Relay PCB initializing error (FPGA) Connection check error of SL-Relay PCB (hardchk)
+Remedy;
+Code;10e
+Display;SYSTEM HALT (*) 10e :FROM CLEAR
+Description;F-ROM CLEAR error (F-ROM clear unable) F-ROM is not clearable on Parameter writing, FW down loading and Log clearing. (fls_secclr)
+Remedy;1. Execute the memory check (F-ROM) of [#TEST]. 2. Upload the parameter and initialize all parameters with [#PARAMETER]. 3. Replace the Main PCB with a new one.
+Code;10f
+Display;SYSTEM HALT (*) 10f : FROM WRITE
+Description;FROM WRITE error (F-ROM writing unable) F-ROM is not clearable on Parameter writing, FW down loading and Log clearing. (fls_secclr)
+Remedy;1. Execute the memory check (F-ROM) of [#TEST]. 2. Upload the parameter and initialize all parameters with [#PARAMETER]. 3. Replace the Main PCB with a new one.
+Code;110
+Display;SYSTEM HALT (*) 110 : PCB KEY
+Description;No keyboard PCB The ID of Keyboard PCB is not readable. For JFX, 3 PCBs of the keyboard PCB are mounted. • Keyboard PCB Assy. 1: Front operation unit • Keyboard PCB Assy. 2: Maintenance operation unit • Keyboard PCB Assy. 3: X-drive unit
+Remedy;1. Check the connections between the Keyboard PCB and the Main PCB (X-axis Control PCB), and then disconnect and connect the FFCs. 2. Check if the Cover Sensor Short Assy. is connected. 3. Confirm that there is neither damage nor disconnection on the FFCs of the above routes. 4. Replace the FFCs of the above routes. 5. Replace the Keyboard PCB with a new one. 6. Replace the Main PCB or the X-axis Control PCB with a new one.
+Code;112
+Display;SYSTEM HALT (*) 112 : PCB CARTRIG
+Description;No cartridge PCB The ID of Cartridge PCB is not readable.s
+Remedy;1. Check the connections between the Cartridge PCB, the Carrier IO PCB and the Main PCB, and then disconnect and connect the FFCs or the like. 2. Check if the Short Assy. of each PCB is connected. 3. Make sure that there is neither damaged nor disconnected on the FFCs or the like of the above routes. 4. Replace the FFCs or the like of the above routes. 5. Replace the Cartridge PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;114
+Display;SYSTEM HALT (*) 114 : PCB PUMP
+Description;No pump PCB The ID of Pump PCB is not readable.
+Remedy;1. Check the connections between the Pump PCB, the Carrier IO PCB and the Main PCB, and then disconnect and connect the FFCs or the like. 2. Check if the Short Assy. of each PCB is connected. 3. Make sure that there is neither damaged nor disconnected on the FFCs or the like of the above routes. 4. Replace the FFCs or the like of the above routes. 5. Replace the Pump PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;115
+Display;SYSTEM HALT (*) 115 : PCB MAIN-F1
+Description;Main PCB F1 fuse disconnected. On Slider PCB initializing (hardchk) of Initializing operation, NG in case of +35V power supply authorized state.
+Remedy;1. Replace the Main PCB with a new one. 2. Replace the SL-Relay PCB with a new one.
+Code;116
+Display;SYSTEM HALT (*) 116 : PCB MAIN-F2
+Description;Main PCB F2 fuse disconnected. On IO PCB fuse checking (hardchk) of Initializing operation, Main PCB F1 fuse disconnected, in case of SIOC_IO1.
+Remedy;1. Replace the Main PCB with a new one. 2. Replace the Carrier IO PCB with a new one.
+Code;117
+Display;SYSTEM HALT (*) 117 : PCB MAIN-F3
+Description;Main PCB F3 fuse disconnected. On IO PCB fuse checking (hardchk) of Initializing operation, Main PCB F1 fuse disconnected, not in case of SIOC_IO1.
+Remedy;1. Replace the Main PCB with a new one. 2. Replace the Fan PCB with a new one.
+Code;11b
+Display;SYSTEM HALT (*) 11b : SLDR FPC L
+Description;Slider PCB FFC Not LOW (0) On Slider PCB initializing (hardchk) of Initializing operation, NG in case of +5V power supply authorized state. (FFC connection check)
+Remedy;1. Check the connector connection of Slider PCB. 2. Check the connector connection between Slider PCB ~ Main PCB. (Slider PCB ~ SL-Relay PCB ~ Main PCB) 3. Replace the Slider PCB with a new one. 4. Replace the Main PCB with a new one. 5. Replace the Power Supply PCB with a new one.
+Code;11c
+Display;SYSTEM HALT (*) 11c : SLDR FPC H
+Description;Slider PCB FFC Not HIGH (1) On Slider PCB initializing (hardchk) of Initializing operation, NG in case of +5V power supply forbidden state. (FFC connection check)
+Remedy;1. Check the connector connection of Slider PCB. 2. Check the connector connection between Slider PCB ~ Main PCB. (Slider PCB ~ SL-Relay PCB ~ Main PCB) 3. Replace the Slider PCB with a new one. 4. Replace the Main PCB with a new one. 5. Replace the Power Supply PCB with a new one.
+Code;11d
+Display;SYSTEM HALT (*) 11d : PCB SLRY-F1
+Description;SL-Relay PCB F1 fuse disconnected. On SL-Relay PCB initializing (hardchk) of Initializing operation, NG in case of
+Remedy;1. Replace the SL-Relay PCB with a new one. 2. Replace the Slider PCB with a new one.
+Code;11e
+Display;SYSTEM HALT (*) 11e : PCB SLRY
+Description;No SL-Relay PCB On Initializing process, NG in case of no SLRelay PCB at SL-Relay PCB initializing (hardchk).
+Remedy;1. Check the connector connection of SL-Relay PCB. 2. Check the connector connection between SL-Relay PCB ~ Main PCB. (SL-Relay PCB ~ Main PCB) 3. Replace the SL-Relay PCB with a new one. 4. Replace the Main PCB with a new one. 5. Replace the Power Supply PCB with a new one.
+Code;11f
+Display;SYSTEM HALT (*) 11f : PCB SLIDER
+Description;No slider PCB On Initializing process, NG in case of no Slider PCB at SL-Relay PCB initializing (hardchk).
+Remedy;1. Check the connector connection of Slider PCB. 2. Check the connector connection between Slider PCB ~ Main PCB. (Slider PCB ~ SL-Relay PCB ~ Main PCB) 3. Replace the Slider PCB with a new one. 4. Replace the Main PCB with a new one. 5. Replace the Power Supply PCB with a new one.
+Code;120
+Display;SYSTEM HALT (*) 120 : LCD THERM
+Description;LCD thermistor IC RW error (Control PCB trouble) Reading/Writing failure (DS1847::rdwr) For JFX, 3 PCBs of the keyboard PCB are mounted. • Keyboard PCB Assy. 1: Front operation unit • Keyboard PCB Assy. 2: Maintenance operation unit • Keyboard PCB Assy. 3: X-drive unit
+Remedy;1. Check the connector connection of Keyboard PCB. 2. Check the connector connection between Keyboard PCB ~ Main PCB. 3. Replace the Keyboard PCB with a new one. 4. Replace the Carrier IO PCB with a new one. 5. Replace the Station PCB with a new one. 6. Replace the Main PCB or the X-axis Control PCB with a new one. 7. Replace the Power Supply PCB with a new one.
+Code;122
+Display;ERROR 122 CHECK:SDRAM
+Description;Insufficient PRAM PRAM size is not sufficient at FW upgrading (fw_updmsg).
+Remedy;1. Update F/W. 2. Confirm the connection between the PRAM PCB and the Main PCB. 3. Replace the PRAM PCB with a new one. 4. Replace the Main PCB with a new one.
+Code;122
+Display;SYSTEM HALT (*) 122 : PRAM NONE
+Description;No PRAM PCB When PRAM size is 0 in the process of prttask() task starting.
+Remedy;1. Update F/W. 2. Check the connection between PRAM PCB and Main PCB. 3. Replace the PRAM PCB with a new one. 4. Replace the Main PCB with a new one.
+Code;123
+Display;SYSTEM HALT (*) 123 : PRAM DATA
+Description;PRAM data error When a data error occurs in the CPU PCB SDRAM test at starting the task “prttask()”.
+Remedy;1. Execute and confirm [#TEST]->[MEMORYcheck]-> [S-RAM]. 2. Update F/W. 3. Check the connection between PRAM PCB and Main PCB. 4. Replace the PRAM PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;124
+Display;SYSTEM HALT (*) 124 : PRAM ADDR
+Description;PRAM address error When an address error occurs in the CPU PCB SDRAM test at starting the task “prttask()”.
+Remedy;1. Execute and confirm [#TEST]->[MEMORYcheck] -> [S-RAM]. 2. Update F/W. 3. Check the connection between PRAM PCB and Main PCB. 4. Replace the PRAM PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;125
+Display;SYSTEM HALT (*) 125 : EEPROM READ
+Description;EEPROM read trouble Troubles in the EEPROM reading process (eeprom_seq::busy) System parameter and Operation parameter.
+Remedy;1. Update F/W. 2. Upload the parameter and initialize parameter with #PARAMETER. 3. Check the connection state between Main PCB ~ Station PCB. 4. Replace the Main PCB with a new one. 5. Replace the Station PCB (maintenance part) with a new one.
+Code;126
+Display;SYSTEM HALT (*) 126 : EEPROM WR
+Description;EEPROM write trouble Troubles in the EEPROM writing process (eeprom_seq::write) System parameter and Operation parameter.
+Remedy;1. Update F/W. 2. Upload the parameter and initialize parameter with #PARAMETER. 3. Replace the Main PCB with a new one.
+Code;127
+Display;SYSTEM HALT (*) 127 : POWER OFF
+Description;Power OFF detection error (Not to OFF) Power OFF process is conducted in the Power ON/OFF control without pushing down the power button.
+Remedy;1. Check the connection state between power button and Keyboard PCB. 2. Check the connector connection between Keyboard PCB ~ Main PCB. (Keyboard PCB ~ Carrier IO PCB ~ Main PCB) 3. Check the connector connection of Power Supply PCB. 4. Check if there is no error on the power path from the AC Inlet. 5. Replace the Power Supply PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;128
+Display;ERROR 128 HDC FIFO OVER
+Description;HDC FIFO OVER error (Data transmission speed is too fast Control PCB trouble) HDC FIFO OVERRUN is detected at the scan slider process (ScanSlider)
+Remedy;1. Check the parameter (Is the scan parameter the default value?) 2. Update F/W. 3. Check if there is no data error from RIP. 4. To make sure, repeat RIP. 5. Disconnect and connect the FFC located between the Main PCB and the SL-Relay PCB. 6. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. 7. Also, confirm that Insulating Sheets have been inserted between six FFCs. 8. Replace the FFC located between the Main PCB and the SL-Relay PCB. 9. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 10. Replace the Slider PCB with a new one. 11.Replace the SL-Relay PCB with a new one. 12. Replace the Main PCB with a new one.
+Code;128
+Display;ERROR 128 HDC FIFO UNDER
+Description;HDC FIFO UNDER error (Data transmission speed is too slow Control PCB trouble) HDC FIFO UNDERRUN is detected at the scan slider process (ScanSlider)
+Remedy;1. Check the parameter (Is the scan parameter the default value?) 2. Update F/W. 3. Check if there is no data error from RIP. 4. To make sure, repeat RIP. 5. Disconnect and connect the FFC located between the Main PCB and the SL-Relay PCB. 6. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. 7. Also, confirm that Insulating Sheets have been inserted between six FFCs. 8. Replace the FFC located between the Main PCB and the SL-Relay PCB. 9. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 10. Replace the Slider PCB with a new one. 11.Replace the SL-Relay PCB with a new one. 12. Replace the Main PCB with a new one.
+Code;129
+Display;ERROR 129 BATTERY EXCHANGE
+Description;Battery dead (RTC battery dead is detected.) Proper information of Printer or Time (Dedicated IC) unusable on Printer initializing process (opinit).
+Remedy;1. Replace a battery equipped on the Main PCB with new one. (CR2032) * The new battery should be the same product or the equivalent. * Discard the old battery according to the instruction from the maker.
+Code;12a
+Display;ERROR 12a HDC SPEED
+Description;HDC speed error (Ink discharge is too late) HDC drawing speed error is detected in the scan slide process (ScanSlider). Head discharge is too late. Slider Y is too slow or discharging timing is too late.
+Remedy;1. Check if the scan parameter is the default value. 2. Check if the scan acceleration of the maintenance parameter is the default value. 3. Check if the head parameter is the default value. 4. Update F/W.
+Code;12b
+Display;ERROR 12b HEAD ROM WR
+Description;Head ROM WR (Failures in writing to IC) Failures in writing the head adjust parameter. (HEADROM::write)
+Remedy;1. Confirm that adjusted value is within the predetermined values and write the adjusted value again. 2. Replace the Head ID PCB with a new one. 3. Replace the Main PCB with a new one.
+Code;12e
+Display;ERROR 12e P-HEAD INIT
+Description;TTEC head configuration error (Failures in initializing Head) Failures in wave transferring to the head (wvset) or initializing the head (TTEC_HD::init).
+Remedy;1. Check AL lank. 2. Disconnect and connect the FFC located between the Slider PCB and the SL-Relay PCB. Also, confirm that Insulating Sheets have been inserted between six FFCs. 3. Disconnect and connect the FFC of the Print Head. 4. Replace the Slider PCB with a new one. 5. Replace the FFC of the Print Head. 6. Replace the FFC located between the Slider PCB and the SL-Relay PCB. 7. Replace the SL-Relay PCB with a new one. 8. Replace the Print Head with a new one. 9. Replace the Main PCB with a new one.
+Code;12e
+Display;ERROR 12e HEAD TIMING
+Description;Failures in head setting (Trouble at (TTEC_HD::wave) wave form setting and at checking in the initial operation or in the head wave form setting before starting the scan.) Head data error : WARN_HEDDATA Head wf A error: WARN_HEDWVDA Head wf B error: WARN_HEDWVDB Head wf C error: WARN_HEDWVDC Head wf D error: WARN_HEDWVDD Head wf E error : WARN_HEDWVDE
+Remedy;1. Check AL lank. 2. Disconnect and connect the FFC located between the Slider PCB and the SL-Relay PCB. Also, confirm that Insulating Sheets have been inserted between six FFCs. 3. Disconnect and connect the FFC of the Print Head. 4. Replace the Slider PCB with a new one. 5. Replace the FFC of the Print Head. 6. Replace the FFC located between the Slider PCB and the SL-Relay PCB. 7. Replace the SL-Relay PCB with a new one. 8. Replace the Print Head with a new one. 9. Replace the Main PCB with a new one.
+Code;130
+Display;ERROR 130 HD DATA SEQ
+Description;Head data transferring sequence error
+Remedy;1.Disconnect and connect the FFC located between the Slider PCB and the SL-Relay PCB. Also, confirm that Insulating Sheets have been inserted between six FFCs. 2. Disconnect and connect the FFC of the Print Head. 3. Replace the Slider PCB with a new one. 4. Replace the FFC of the Print Head. 5. Replace the FFC located between the Slider PCB and the SL-Relay PCB. 6. Replace the Print Head with a new one. 7. Replace the SL-Relay PCB with a new one. 8. Replace the Main PCB with a new one.
+Code;133
+Display;SYSTEM HALT (*) 133 : PCB STATION
+Description;Station PCB undetectable
+Remedy;1. Check the connector connection of Station PCB. (CN4: Cascade Short / CN7: including Cover Sensor Short Assy.) 2. Check the connector connection between Station PCB ~ Main PCB. (Station PCB ~ Fan ~ Main PCB) 3. Replace the Station PCB (maintenance part) with a new one. 4. Replace the Fan PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;135
+Display;SYSTEM HALT (*) 135 : PCB HOTWT
+Description;Hot Water Control PCB undetectable
+Remedy;1. Check the connector connection of Hot Water Control PCB. 2. Check the connector connection between Hot Water Control PCB ~ Main PCB. (Hot Water Control PCB ~ Carrier IO PCB ~ Main PCB) 3. Replace the Hot Water Control PCB with a new one. 4. Replace the Carrier IO PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;136
+Display;SYSTEM HALT (*) 136 : PCB ZPCB
+Description;Z-PCB undetectable
+Remedy;1. Check the connector connection of Z-PCB. (CN3/13: including Cover Sensor Short Assy.) 2. Check the connector connection between Z-PCB ~ Main PCB. 3. Replace the Z-PCB with a new one. 4. Replace the SL-Relay PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;13c
+Display;SYSTEM HALT (*) 13c : PCB SLRLY-F2
+Description;SL-Relay PCB F1 fuse disconnected. On IO PCB fuse checking (hardchk) of Initializing operation, in case of SL-Relay PCB fuse (+35V) disconnected. (HPC IO)
+Remedy;1. Replace the SL-Relay PCB with a new one. 2. Replace the Slider PCB with a new one. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;13d
+Display;SYSTEM HALT (*) 13d : PCB SLRLY-F3
+Description;SL-Relay PCB F1 fuse disconnected. On IO PCB fuse checking (hardchk) of Initializing operation, in case of SL-Relay PCB fuse (+5V) disconnected. (HPC IO)
+Remedy;1. Replace the SL-Relay PCB with a new one. 2. Replace the Slider PCB with a new one. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;13e
+Display;SYSTEM HALT (*) 13e : PCB STATION-F1
+Description;Station PCB fuse (F1) disconnected.
+Remedy;1.Replace the Station PCB (maintenance part) with a new one. 2. Replace the Main PCB with a new one. 3. Replace the Power Supply PCB with a new one.
+Code;13f
+Display;SYSTEM HALT (*) 13f : PCB STATION-F2
+Description;Station PCB fuse (F2) disconnected.
+Remedy;1.Replace the Station PCB (maintenance part) with a new one. 2. Replace the Main PCB with a new one. 3. Replace the Power Supply PCB with a new one.
+Code;140
+Display;SYSTEM HALT (*) 140 : PCB STATION-F3
+Description;Station PCB fuse (F3) disconnected.
+Remedy;1.Replace the Station PCB (maintenance part) with a new one. 2. Replace the Main PCB with a new one. 3. Replace the Power Supply PCB with a new one.
+Code;141
+Display;SYSTEM HALT (*) 141 : BFC INIT
+Description;Connection check error of SL-Relay PCB
+Remedy;1. Check the connections between the SL-Relay PCB and the Main PCB, and then disconnect and connect the FFCs or the like. 2. Check if the Short Assy. of each PCB is connected. 3. Make sure that there is neither damaged nor disconnected on the FFCs or the like of the above routes. 4. Replace the FFCs or the like of the above routes. 5. Replace the SL-Relay PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;145
+Display;SYSTEM HALT (*) 145 : MAIN CN6,9 CHK
+Description;Check error of the Main PCB connecting FFC. (hardchk)
+Remedy;1. Check the FFC connections between the following PCBs, and then disconnect and connect the connectors. • Main PCB (CN6) ~ Carrier IO PCB (CN3) • Main PCB (CN9) ~ Fan PCB (CN3) 2. Replace the above FFCs. 3. Replace the Fan PCB with a new one. 4. Replace the Carrier IO PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;146
+Display;SYSTEM HALT (*) 146 : MAIN CN5 CHK
+Description;Check error of the Main PCB connecting FFC. (hardchk)
+Remedy;1. Check the FFC connections between the following PCBs, and then disconnect and connect the connectors. • Main PCB (CN5, 7) ~ SL-Relay PCB 1,2 (CN2) 2. Replace the above FFCs. 3. Replace the SL-Relay PCB with a new one. 4. Replace the Main PCB with a new one.
+Code;147
+Display;SYSTEM HALT (*) 147 : PCB FAN2
+Description;An error occurs on the Fan PCB *For JFX, 4 Fan PCBs are used. • Fan PCB Assy. 1: Main control Unit • Fan PCB Assy. 2: Wipe control unit • Fan PCB Assy. 3~4: X-drive unit
+Remedy;1. Make sure the connection of Fan PCB. 2. Make sure the connection of Cover Sensor Short Assy. or Cascade Short Assy.. 3. Check the connection between Fan PCB and Main PCB. 4. Replace the Fan PCB with a new one. 5. Replace the cable or the like between the Fan PCB and Main PCB. 6. Replace the Main PCB with a new one.
+Code;148
+Display;SYSTEM HALT (*) 148 : PCB STATION2
+Description;An error occurs on the Station PCB
+Remedy;1. Make sure the connection of Station PCB. 2. Make sure the connection of Cover Sensor Short Assy. or Cascade Short Assy.. 3. Check the connection between Station PCB and Main PCB. 4. Replace the Station PCB with a new one. 5. Replace the cable or the like between the Station PCB and Main PCB. 6. Replace the Main PCB with a new one.
+Code;161
+Display;ERROR 161 HDLP OVERFLOW
+Description;FFC where the set value to HDCHDLP register is overflowing in excess of H’fff. HDLP set value gets larger when the driving frequency of scanning parameter is small. It happens when HDLP set value exceeds H’fff being the upper limit of HDC.
+Remedy;1. Set the value of driving frequency of scanning parameter larger.
+Code;201
+Display;ERROR 201 COMMAND
+Description;Command error Other data than commands is received
+Remedy;1. Check if the output set of the PC matches the set of the machine side? 2. Change the profile. 3. Check if there is no parameter error? 4. Check if there is no trouble on the USB Cable? •Make sure the connection between the Main PCB and USB Cable. •Make sure the connection of USB Junction PCB. 5. Replace the USB Cable. 6. Replace the USB Junction PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;202
+Display;ERROR 202 PARAMETER
+Description;Parameter error Parameter out of the numeral value range is received
+Remedy;1. Check if the output set of the PC matches the set of the machine side? 2. Change the profile. 3. Check if there is no parameter error? 4. Check if there is no trouble on the USB Cable? •Make sure the connection between the Main PCB and USB Cable. •Make sure the connection of USB Junction PCB. 5. Replace the USB Cable. 6. Replace the USB Junction PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;203
+Display;ERROR 203 Ment Command
+Description;Maintenance command Operation of a maintenance command fails *Non-disclosed command Parameter Up/Download and time setting (LcAeMent [M0xfe])
+Remedy;1. Check the PRM file. 2. Check the number of each parameter. (if PRM matches up to the machine.)
+Code;303
+Display;SYSTEM HALT (*) 303 : PCB MAIN ET
+Description;Main PCB Ethernet IC trouble (cboot)
+Remedy;1.Replace the Main PCB with a new one.
+Code;304
+Display;ERROR 304 USB INIT ERR
+Description;USB initialization error (Failures in initializing USB device) Failures in initializing the USB device in the initializing process (rtcptsk) of the command-receiving task
+Remedy;1. Check if there is no parameter error? 2. Check if there is no trouble on the USB Cable? •Make sure the connection between the Main PCB and USB Cable. •Make sure the connection of USB Junction PCB. 3. Replace the USB Cable. 4. Replace the USB Junction PCB with a new one. 17 5.Replace the Main PCB with a new one.
+Code;305
+Display;ERROR 305 USB TIME OUT
+Description;USB time-out (Occurrence of time-out error on USB device) Failure of obtaining device request (usb_req_getdes) or status transmission [Maintenance Mode] (stinftsk)
+Remedy;1. Check if there is no parameter error? 2. Check if there is no trouble on the USB Cable? •Make sure the connection between the Main PCB and USB Cable. •Make sure the connection of USB Junction PCB. 3. Replace the USB Cable. 4. Replace the USB Junction PCB with a new one. 5.Replace the Main PCB with a new one.
+Code;401
+Display;ERROR 401 MOTOR X
+Description;X Servo error (Excessive load to the X-motor)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the X-direction smoothly in the power-off condition. 3. Make sure no stain on the Linear Encoder. 4. Make sure no torsion on the Y-bar. 5. Check if there is no trouble on the Timing Belt. 6. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 7. Check the FFC between each PCB and Shortconnectors connected on the PCB. 8. Replace the XL/XR-axis Motor with a new one.
+Code;402
+Display;ERROR 402 MOTOR Y
+Description;Y Servo error (Excessive load to the Y-motor)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the Y-direction smoothly in the power-off condition. 3. Check if there is no trouble on the Timing Belt. 4. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 5. Check the FFC between each PCB and Shortconnectors connected on the PCB. 6. Replace the Y-axis motor with a new one.
+Code;403
+Display;ERROR 403 X CURRENT
+Description;X-motor current (Over current error of X-motor is detected.)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the X-direction smoothly in the power-off condition. 3. Check if there is no trouble on the Timing Belt. 4. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 5. Check the FFC between each PCB and Shortconnectors connected on the PCB. 6. Replace the XL/XR-axis Motor with a new one.
+Code;404
+Display;ERROR 404 Y CURRENT
+Description;Y-motor current (Over current error of Y-motor is detected.)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the Y-direction smoothly in the power-off condition. 3. Check if there is no trouble on the Timing Belt. 4. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 5. Check the FFC between each PCB and Shortconnectors connected on the PCB. 6. Replace the Y-axis Motor with a new one.
+Code;406
+Display;SYSTEM HALT (*) 406 : WIPER ORG
+Description;Wiper origin undetectable Wiper origin detection process (Mentsta_base::wipe)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST] -> [WIPER]. (Confirm that the ON/OFF display is switched by moving the wiper back and forth.) 2. Check the assembly and connector connection of Wiper Origin Sensor. 3. Check that the wiper moves back and forth smoothly in manual. 4. Replace the Wiper Back/Forth Origin Sensor with a new one. 5. Replace the Wiper Back/Forth Motor with a new one. 6. Replace the Station PCB (maintenance part) with a new one. 7. Replace the Main PCB with a new one.
+Code;407
+Display;SYSTEM HALT (*) 407 : WIPER TO
+Description;Wiper operation trouble Wiper escape process (Mentsta_base::wipe)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST] -> [WIPER]. (Confirm that the ON/OFF display is switched by moving the Wiper back and forth.) 2. Check the assembly and connector connection of Wiper Origin Sensor. 3. Check that the Wiper moves back and forth smoothly in manual. 4. Replace the Wiper Back/Forth Origin Sensor with a new one. 5. Replace the Wiper Back/Forth Motor with a new one. 6. Replace the Station PCB (maintenance part) with a new one. 7. Replace the Main PCB with a new one.
+Code;415
+Display;SYSTEM HALT (*) 415 : INVERTOR-1
+Description;In case of power OFF of option blower, or in case of alarm on inverter inside option blower
+Remedy;1. Check the power of option blower. 2. Restart after the power OFF. 3. Make sure that there is no clogging in the Suction Table. 4. Check the filter of blower, and then clean or replace it. 5. Return the inverter setting parameters to the original, which have been set at shipping from a factory, and then input it again. 6. Replace the inverter with a new one.
+Code;417
+Display;ERROR 417 SCAN MAIN PCB FUSE
+Description;The Main PCB fuse is in the blown-out condition.
+Remedy;1. Replace the Main PCB with a new one.
+Code;419
+Display;ERROR 419 SCAN HEAD TEMP
+Description;Abnormal head temperature (high) When the scan execution check is performed or the flushing is executed, the head temperature (head_tempw) is checked and indicated if the temperature is high.
+Remedy;1. Check the installation environment of machine. 2. Check the hot water temperature. (Comparing the printer indication with the measured value.) 3. Confirm that dry printing is not so frequently. 4. Check the assembling of thermistor located at both sides of the Head Assy. and the connector connection. 5. Replace the Slider PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;41a
+Display;ERROR 41a Z JOG CTRL
+Description;An error occurs in the Z-axis controlling.
+Remedy;1. Check if any error occurs on the Z-axis motor and Zaxis Brake. 2. Check if there is no trouble on the Z-linear Scale. 3. Replace the Z-axis Motor with a new one. 4. Replace the Z-axis Brake with a new one. 5. Replace the Encoder PCB with a new one. 6. Replace the Z-PCB with a new one.
+Code;41b
+Display;ERROR 41b Z MTR BUSY
+Description;It fails in the Z-axis stop waiting.
+Remedy;1. Replace the Z-PCB with a new one. 2. Replace the Main PCB with a new one.
+Code;41b
+Display;SYSTEM HALT (*) 41b : Z MTR BUSY
+Description;Z-motor or Z-sensor trouble Z-axis not stopped even after the specified time
+Remedy;1. Check the connector connection of motor and sensor. 2. Check the Z-axis Brake. 3. Execute the [#TEST SENSOR TEST] to check if the following sensor is normal. • Z-axis Up/Down Sensor (x2) • Z-origin Sensor • Z-axis Encoder PCB 4. Execute the [#TEST AGEING] to check if the up/down motion of Z-axis Sensor is normal. 5. Replace the Motor and Sensor with a new one. 6. Replace the cables of Motor and Sensor. 7. Replace the Z-PCB with a new one. 8. Replace the Main PCB with a new one.
+Code;41c
+Display;ERROR 41c X MOVE NOT YET
+Description;Feed compensation result out of the threshold value On the drawing feed compensation, it is still not within the threshold value even after the compensation is repeated by the parameter specified times. (Default value: 100 um)
+Remedy;1. Set the threshold value of compensation parameter wider.
+Code;422
+Display;ERROR 422 IN POSITION NG (R)
+Description;Right and left axis out of the in-position The axis is still out of the in-position even after the time specified by the servoparameter prior to the feed elapses, so that it starts the scan following the time-out.
+Remedy;1. Check the in-position threshold value of servoparameter.
+Code;423
+Display;ERROR 423 IN POSITION NG (R)
+Description;Right axis out of the in-position after the specified time
+Remedy;1. Check the in-position threshold value of servoparameter.
+Code;424
+Display;ERROR 424 IN POSITION NG (L)
+Description;Left axis out of the in-position after the specified time
+Remedy;1. Check the in-position threshold value of servoparameter.
+Code;509
+Display;SYSTEM HALT (*) 509 : HDC POSCNT
+Description;HDC position counter error Difference between the encoder and the Y position is larger than 50 in the Origin check process (LINER_ENC::orgchk).
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST] -> [Y-ORIGIN]. 2. Execute [#TEST]->[CHECK ENCODER]. 3. Check the assembly of Y-scale, and confirm that there is neither dirt nor scratch. 4. Check in manual if the Head Assy. (carriage) moves left and right smoothly. 5. Check the connector connection of Y-origin Sensor and Linear Encoder. 6. Replace the Y-origin Sensor or Linear Encoder with a new one. 7. Replace the Y-axis Motor with a new one. 8. Replace the Slider PCB with a new one. 9. Replace the Main PCB with a new one.
+Code;50a
+Display;ERROR 50a Y ORIGIN
+Description;Y-origin error (Origin of Y-axis can not be detected)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [Y-ORIGIN]. 2. Check the assembling of Y-origin Sensor on the Head Assy. and Y-origin dog on the right side of unit. 3. Check the connection of connector of the Y-origin Sensor. 4. Replace the Y-origin Sensor with a new one. 5. Replace the Slider PCB with a new one. 6. Replace the Y-axis Motor with a new one. 7. Replace the Main PCB with a new one.
+Code;50e
+Display;ERROR 50e HEAD TEMP [12345678 12345678]
+Description;Abnormal head temperature (high) When the scan execution check is performed or the flushing is executed, the head temperature (head_tempw) is checked and indicated if the temperature is high.
+Remedy;1. Check the installation environment of machine. 2. Check the hot water temperature. (Comparing the printer indication with the measured value.) 3. Confirm that dry printing is not so frequently. 4. Check the assembling of thermistor located at both sides of the Head Assy. and the connector connection. 5. Replace the Slider PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;50f
+Display;ERROR 50f L-SCALE BLACK
+Description;Liner Scale error
+Remedy;1. Check the assembly position of Linear Scale and Encoder PCB Assy.. 2. Check Linear Scale (scratches or dirtiness or so.) 3. Replace the Linear Scale with a new one. 4. Replace the Encoder PCB Assy. with a new one.
+Code;510
+Display;ERROR 510 X ORIGIN
+Description;X-origin error (Origin of X-axis can not be detected)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [X-ORIGIN R]/[X-ORIGIN R]. 2. Check the assembling of X-origin Sensor under the right and left of table and X-origin Dog on the right and left of the rear of printer. 3. Check the connection of connector of the X-origin Sensor. 4. Replace the X-origin Sensor L/R with a new one. 5. Replace the Fan PCB (Secondary main) with a new one. 6. Replace the XL/XR-axis Motor with a new one. 7. Replace the Main PCB with a new one.
+Code;511
+Display;ERROR 511 Z ORIGIN
+Description;Z-origin error (Origin of Z-axis can not be detected)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [Z ORIGIN]. 2. Check the Z-origin Sensor and Dog on the carriage of printer part. 3. Check the connection of connector of the Z-origin Sensor. 4. Replace the Z-origin Sensor with a new one. 5. Replace the Z-PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;513
+Display;ERROR 513 !MEDIA HEIGHT
+Description;Head collision warning (Possibility of collision of Print Head and media is detected.) When the sensor is reset, the following is displayed. (MEDIA JAM) [PRESS <ENT> KEY] (The operation is continued at drawing.)
+Remedy;1. Check the state of the Jam Detection Sensor. 2. Check the connector connection of the Jam Sensor and check the connection route. 3. Replace the Jam Detection Sensor (L/R) with a new one. 4. Replace the Slider PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;514
+Display;ERROR 514 MEDIA JAM
+Description;Occurrence of Media jam When the sensor is reset, the following is displayed. (MEDIA JAM) [PRESS <ENT> KEY] (Data is cleared and the origin is detected if it is in printing.)
+Remedy;1. Check the state of the Jam Detection Sensor. 2. Check the connector connection of the Jam Sensor and check the connection route. 3. Replace the Jam Detection Sensor (L/R) with a new one. 4. Replace the Slider PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;515
+Display;ERROR 515 DETECTION ERROR
+Description;Trouble on the Gap Pin Unit. It is displayed when the work detection fails in [HEAD HEIGHT]-> [THICKNESS CHECK]. The work is too thick. It is displayed when the work detection fails in [HEAD HEIGHT]-> [THICKNESS CHECK].
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [CAP PIN]. 2. Check the Gap Sensor on the Head and the Gap Upper/ Lower Dog. 3. Check the connection of connector of the Gap Sensor. 4. Replace the Gap Sensor with a new one. 5. Replace the Main PCB with a new one. 1. Execute and confirm [#TEST]->[SENSOR TEST]-> [CAP PIN]. 2. Check the Gap Sensor on the Head and the Gap Upper/ lower Dog. 3. Check the connection of connector of the Gap Sensor. 4. Replace the Gap Sensor with a new one. 5. Replace the Main PCB with a new one.
+Code;516
+Display;SYSTEM HALT (*) 516 : PL ENC SNS(R)
+Description;X-encoder (right) sensitivity failure (Sensitivity failure signal is detected more that the times specified by parameter.)
+Remedy;1. Make sure no dust nor stain on the X-encoder. 2. Check the connector connection of X-encoder. 3. Check the assembling (height and tilting or the like) of X-encoder. 4. Make sure no dust nor stain on the Linear Scale. 5. Replace the X-encoder with a new one. 6. Check the connection between X-encoder and Main PCB. 7. Replace the Read Head of X-encoder with a new one. 8. Replace the Fan PCB with a new one. 9. Replace the X-control PCB with a new one.
+Code;516
+Display;SYSTEM HALT (*) 516 : PL ENC SNS(L)
+Description;X-encoder (left) sensitivity failure (Sensitivity failure signal is detected more that the times specified by parameter.)
+Remedy;1. Make sure no dust nor stain on the X-encoder. 2. Check the connector connection of X-encoder. 3. Check the assembling (height and tilting or the like) of X-encoder. 4. Make sure no dust nor stain on the Linear Scale. 5. Replace the X-encoder with a new one. 6. Check the connection between X-encoder and Main PCB. 7. Replace the Read Head of X-encoder with a new one. 8. Replace the Fan PCB with a new one. 9. Replace the X-control PCB with a new one.
+Code;601
+Display;ERROR 601 INK NEAREND YYMMCCKK KKCCMMYY
+Description;Ink near end (A small amount of ink left)
+Remedy;"(When the message is still displayed even after a new Ink Cartridge or an empty Ink Cartridge is charged;) 1. Execute and confirm [#TEST]->[SENSOR TEST]-> [INK END]. 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one."
+Code;602
+Display;ERROR 602 INK END YYMMCCKK KKCCMMYY
+Description;Ink end (No ink left)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [INK END]. 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;603
+Display;ERROR 603 NO CARTRDG YYMMCCKK KKCCMMYY
+Description;No cartridge (Cartridge is not installed)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [INK PACK]. 2. Check the peripheral and the assembly of the Presence Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;605
+Display;ERROR 605 !REPLACE WIPER
+Description;Wiper lifetime (Wiping times exceeding the specified number.) Wiping times (Ink parameter 1 No44) Specified number: Ink parameter 2 No34 x Wiper replacement level (ope parameter: Def [10]) *Clearable by the implementation of wiper replacement of the station maintenance (ink1 44).
+Remedy;1. Replace the Wiper with a new one.
+Code;606
+Display;ERROR 606 WRNG INK IC
+Description;Ink Cartridge IC reading error Displayed when an error occurs in error checking in the Ink IC writing process (Inkcatrg::wrc). Cartridge IC transmission failure: WARN_CICWRER1 Cartridge verify failure: WARN_CICWRER2 Cartridge IC failure: WARN_CICWRER3
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4. Replace the Cartridge PCB with a new one. 5. Replace the Carrier IO PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;609
+Display;ERROR 609 WRNG INK IC YYMMCCKK KKCCMMYY
+Description;The term of validity of ink cartridge has expired. (DSPink_exp_)
+Remedy;1. Check and replace the Ink Cartridge with a new one.
+Code;60a
+Display;ERROR 60a NON-ORIGNL YYMMCCKK KKCCMMYY
+Description;The ink cartridge is not a genuine cartridge. (DSPnot_orign)
+Remedy;1. Check and replace the Ink Cartridge with a new one.
+Code;60b
+Display;ERROR 60b WIPER TANK FULL
+Description;Wiper tank warning A great deal of ink is in the Wiper Tank. Displayed when the Wiper Nozzle Suction Pump exceeds the 2,500 times [Fixed] (Mentenance::hwipe) Cleared by execution of Wiper Tank replacement. Ink parameter 1 No46 (Wiper Pump suction times)
+Remedy;1. Execute the Wiper Tank replacement again.
+Code;613
+Display;ERROR 613 NEGA.PRESS CTRL
+Description;Negative pressure control Start error Negative pressure control starting phase (Specified time: 5 minutes)
+Remedy;
+Code;614
+Display;ERROR 614 POSI.PRESS CTRL
+Description;Positive pressure control Start error Positive pressure control starting phase (Specified time: 5 minutes)
+Remedy;
+Code;615
+Display;ERROR 615 NEGA.PRS KEEP LOW
+Description;Negative pressure unable to maintain at the proper air pressure phase
+Remedy;
+Code;616
+Display;ERROR 616 NEGA.PRS KEEP OVER
+Description;Negative pressure unable to maintain at the proper air pressure phase
+Remedy;
+Code;617
+Display;ERROR 617 POSI.PRS KEEP LOW
+Description;Positive pressure unable to maintain at the proper air pressure phase
+Remedy;
+Code;618
+Display;ERROR 618 POSI.PRS KEEP OVER
+Description;Positive pressure unable to maintain at the proper air pressure phase
+Remedy;
+Code;619
+Display;ERROR 619 NEGA.PRS.SENSOR NG
+Description;Negative Pressure Sensor value abnormal at the proper air pressure phase
+Remedy;1. Check the connections and paths of tube visually. 2. Check the air pressure. ([#TEST] -> [PRESSURE CHECK]) * On the ink fully charged condition, pay attention to the ink leakage. 3. Check the air pump. ([#TEST] -> [#AGEING] -> [PRS.PUMP]) 4. Check (or replace) the connection of Negative (Positive) Pressure Sensor. 5. Check each connection between PCBs. (Slider PCB ~ SL Relay PCB ~ Main PCB) 6. Replace some of the PCBs above.
+Code;619
+Display;ERROR 619 POSI.PRS.SENSOR NG
+Description;Positive Pressure Sensor value abnormal at the proper air pressure phase
+Remedy;1. Check the connections and paths of tube visually. 2. Check the air pressure. ([#TEST] -> [PRESSURE CHECK]) * On the ink fully charged condition, pay attention to the ink leakage. 3. Check the air pump. ([#TEST] -> [#AGEING] -> [PRS.PUMP]) 4. Check (or replace) the connection of Negative (Positive) Pressure Sensor. 5. Check each connection between PCBs. (Slider PCB ~ SL Relay PCB ~ Main PCB) 6. Replace some of the PCBs above.
+Code;61a
+Display;ERROR 61a FLT CONNECT MMMMCCCC YYYYKKKK
+Description;Fluid Level Magnetic Sensor connecting failure Fluid Level Low Sensor detected after charged.
+Remedy;1. Check the assembly of the Fluid Level Magnetic Sensor. 2. Check the connection between Fluid Level Magnetic Sensor and Main PCB. 3. Replace the Fluid Level Magnetic Sensor with a new one. 4. Replace the Main PCB with a new one.
+Code;61b
+Display;ERROR 61b INK ROUTE MMMMCCCC YYYYKKKK
+Description;Ink delivering failure at charging and cleaning (Warning indication only) Fluid Level Low Sensor staying in ON and no ink filled in Sub-tank even after a certain period of ink delivering.
+Remedy;Replace with a cartridge not in near end and execute the sub-tank maintenance. Execute the followings if still recurred or not improved. 1. Check the condition of Sub-tank making a pair. 2. Check the ink path. 3. Confirm no block at the Air Filter. 4. Execute the ink charging.
+Code;61c
+Display;ERROR 61c INK SUPPLY MMMMCCCC YYYYKKKK
+Description;Ink delivering failure at ink supplying in drawing (Warning indication only) Fluid Level Low Sensor staying in ON and no ink filled in Sub-tank even after a certain period of ink delivering.
+Remedy;Replace with a cartridge not in near end and execute the sub-tank maintenance. Execute the followings if still recurred or not improved. 1. Check the condition of Sub-tank making a pair. 2. Check the ink path. 3. Confirm no block at the Air Filter. 4. Execute the ink charging.
+Code;61c
+Display;ERROR 61c FLT MOTION MMMMCCCC YYYYKKKK
+Description;Sub-tank float sticking in upside after ink discharging LOW not detected by float in no ink condition
+Remedy;Execute the sub-tank maintenance, or the discharging process again. Execute the followings if it is still recurrent or not improved. 1. Check the condition of Sub-tank making a pair. 2. Check the ink path. 3. Confirm no block at the Air Filter. 4. Execute the ink charging.
+Code;61c
+Display;ERROR 61c TNK REMAIN MMMMCCCC YYYYKKKK
+Description;Residual ink controlling failure in drawing (Warning indication only) Residual ink indicated by float not in corresponding to actual residual ink within sub-tank. (For example, although the float of sub-tank is indicating MIDDLE, the residual ink is 2 cc or less.) The following causes are assumable. • Nozzle missing (no ink used) • Float sticking in Middle
+Remedy;Execute the sub-tank maintenance, or the discharging process again. Execute the followings if it is still recurrent or not improved. 1. Check the condition of Sub-tank making a pair. 2. Check the ink path. 3. Confirm no block at the Air Filter. 4. Execute the ink charging.
+Code;61d
+Display;SYSTEM HALT (*) 61d: INK UPSTREAM GRD
+Description;Ink reversed flow preventing executed When the ink reaches the Fluid Level High Sensor or further within the Sub-tank, the guard process setting it to the positive pressure and pushing the ink back is executed. After executed, this error is indicated and the system gets down.
+Remedy;1. Turn the power OFF once, and then restart it a few minutes later. 2. Check the Sub-tank visually whether a back current occurs or not.
+Code;61e
+Display;ERROR 61e S TANKHi-Lo MMMMCCCC YYYYKKKK
+Description;Ink amount of sub-tank not in equal (Warning indication only) Indicated in case of ink supplied only to one side and no further ink supplied in auto ink supplying
+Remedy;Execute the sub-tank maintenance, or the discharging process again. Execute the followings if it is still recurrent or not improved. 1. Check the condition of Sub-tank making a pair. 2. Check the ink path. 3. Confirm no block at the Air Filter. 4. Execute the ink charging.
+Code;61f
+Display;ERROR 61f Catridge Valve Close
+Description;Supplying pump operation attempted with the Cartridge Valve closed (Warning indication only)
+Remedy;Insert a usable cartridge. Execute the followings if still recurred or not improved. 1. Reinsert the Cartridge. 2. Check the connection of Cartridge Valve. (Poor contact/wrong connection) 3. Check the wiring of Ink Pump.
+Code;705
+Display;ERROR 705 WATER LACK
+Description;Hot Water Tank water level error (Shortage of hot water) * Take fully care not to be burned at works. Be sure to work after the water temperature cools down sufficiently.
+Remedy;1. Check the water amount of the pot, and then check the followings if hot water decreases so fast. •Check if there is no water leakage? •Check if the Hot Water Hose is in the correct position? •Check if the rubber packing of the pot has not been degraded? •Check if the thermostat dial is in the proper position? 2. Check the assembly of the Float Sensor and the connector connection. 3. Replace the Hot Water Control PCB with a new one. 4. Replace the Carrier IO PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;705
+Display;ERROR 705 WATER TANK TEMP LOW
+Description;Hot Water Tank temperature error (Abnormal temperature in Hot Water Tank) No temperature increment in the Hot Water Tank for a certain period.
+Remedy;1. Check the fuse blown out. (Electric current fuse) 2. Make sure that the thermostat dial is in the proper position. 3. Check the assembly of the Heater and the connector connection. 4. Check the assembly of the Thermo Coupler and the connector connection. 5. Replace the Hot Water Control PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;705
+Display;ERROR 705 WATER TANK ROUTE
+Description;Hot Water Tank route error (Time-out of Hot Water Pump)
+Remedy;1. Confirm that there is no water leaking in the water route. 2.Make sure that the Hot Water Hose is installed at the correct position. 3. Check the assembly of the Hot Water Motor and the connector connection. 4. Replace the Hot Water Motor with a new one. 5. Replace the Hot Water Control PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;705
+Display;ERROR 705 WATER HEAD TEMP
+Description;Hot Water Head temperature error (Abnormal temperature of Head) More than half of integral times is NG.
+Remedy;1. Check the peripheral (Thermistor) condition. 2. Confirm the hot water circulation of each Head is normal. 3. Replace the Head with a new one. 4. Replace the Slider PCB with a new one. 5. Replace the Main PCB with a new one.
+Code;705
+Display;SYSTEM HALT (*) 705 : FW/WATER Intv
+Description;A certain time elapsed under no hot water control while the heater was keeping ON. (uvTmrCtrl)
+Remedy;1. Confirm that the Antifreeze liquid is not empty nor a small amount left in the pot. 2. Confirm that the Temperature fuse and the Electric current fuse are not brown out. 3. Check the connections of electronic components within the Hot Water Unit. 4. Check if the floating of Float Sensor is movable up and down. 5. Check visually if the circulation of hot water is in normal. 6. Replace the Thermo Coupler Assy. with a new one. 7. Replace the Float Sensor with a new one. 8. Replace the Hot Water Motor with a new one. 9. Replace the Hot Water Control PCB with a new one. 10. Replace the Main PCB with a new one.
+Code;706
+Display;ERROR 706 UV NOT READY
+Description;UV Lamp attempted to radiate in preparation (Check before scanning. Scanning attempted before completion of UV preparation)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]PWR (LEAK)
+Description;Leakage current of 100 mA or more detected
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]PWR (H)
+Description;Current abnormal (High) 120% or more of Output set (Criterion 600 mA at Output set 500 mA)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[\x1:\xf ]PWR (L)
+Description;Current abnormal (Low) 50% or less of Output set (Criterion 250 mA at Output set 500 mA)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]TEMP (DRV H)
+Description;Driving part overheat 130°C or higher detected inside UV head
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]TEMP (H)
+Description;Light source temperature abnormal (High) 90°C or higher detected inside UV head
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]TEMP (L)
+Description;Light source temperature abnormal (Low) 5°C or lower detected inside UV head
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]FAN (STOP)
+Description;UV-Fan in stopping state
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]FAN (H)
+Description;Fan rotation abnormal (High) 7000 rpm or faster of UV-Fan detected
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]FAN (L)
+Description;Fan rotation abnormal (Low) 2000 rpm or slower of UV-Fan detected
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]UNIT
+Description;Unit error Error in UV Head
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]BOARD
+Description;Control PCB trouble Control PCB stop in operation
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;ERROR 706 UV[*:**]SC I/F
+Description;UV Unit communication error
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706: UV[*:**]PWR(LEAK)
+Description;UV-LED unit: Leakage current abnormal (100 mA) Contents of [*:**] are as follows: *1 Unit No. 0: Control PCB 1~4:UV-LED Device *2 Detailed error cod
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]PWR (H)
+Description;UV-LED Unit: Current abnormal (High) 120% of output set: Criterion 600 mA at Output set 500 mA
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]PWR (L)
+Description;UV-LED Unit: Current abnormal (Low) 50% of output set: Criterion 250 mA at Output set 500 mA
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]TEMP(DRV H)
+Description;UV-LED Unit: Driving part overheat (130 °C)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]TEMP (H)
+Description;UV-LED Unit: Light source temperature abnormal (High: 90 °C)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]TEMP (L)
+Description;UV-LED Unit: Light source temperature abnormal (Low: 5 °C)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]FAN(STOP)
+Description;UV-LED Unit: Fan rotation abnormal (Stopped)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]FAN (H)
+Description;UV-LED Unit: Fan rotation abnormal (High: 7000 rpm)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]FAN (L)
+Description;UV-LED Unit: Fan rotation abnormal (Low: 2000 rpm)
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]UNIT
+Description;UV-LED Unit: Unit error
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]BOARD
+Description;UV-LED Unit: Control PCB trouble
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;706
+Display;SYSTEM HALT (*) 706:UV[*:**]SC I/F
+Description;UV-LED Unit: Communication error
+Remedy;1. Check the cable connected to the UV-LED Device. 2. Check the LED state of UV-LED Device. 3. Replace the UV Control PCB with a new one. (Check the fusing of fuse, and then replace it.) 4. Check and clean the Filter. 5. Replace the Filter with a new one. 6. Check if any contact failure occurs by turning the switch of UV-LED Device to ON/OFF. 7. Replace the UV-LED Device with a new one. 8. Replace the cable connected to the UV-LED Device.
+Code;801
+Display;SYSTEM HALT (*) 801 : (C)OPCODE
+Description;System error (CPU exception: OP code error)
+Remedy;1. Check the peripheral temperature of Main PCB, and then check if the error is caused by the thermo runaway of CPU. 2. Make sure that there is no device generating strong radio wave in the vicinity. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;802
+Display;SYSTEM HALT (*) 802 : (C)SLOT
+Description;System error (CPU exception: Slot instruction error)
+Remedy;1. Check the peripheral temperature of Main PCB, and then check if the error is caused by the thermo runaway of CPU. 2. Make sure that there is no device generating strong radio wave in the vicinity. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;803
+Display;SYSTEM HALT (*) 803 : (C)CPU ADDR
+Description;System error (CPU exception: CPU address error)
+Remedy;1. Check the peripheral temperature of Main PCB, and then check if the error is caused by the thermo runaway of CPU. 2. Make sure that there is no device generating strong radio wave in the vicinity. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;804
+Display;SYSTEM HALT (*) 804 : (C)DMA ADDR
+Description;System error (CPU exception: DMA address error)
+Remedy;1. Check the peripheral temperature of Main PCB, and then check if the error is caused by the thermo runaway of CPU. 2. Make sure that there is no device generating strong radio wave in the vicinity. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;805
+Display;SYSTEM HALT (*) 805 : (C)ZERO DIV
+Description;System error (CPU exception: Division by 0)
+Remedy;1. Check the peripheral temperature of Main PCB, and then check if the error is caused by the thermo runaway of CPU. 2. Make sure that there is no device generating strong radio wave in the vicinity. 3. Replace the Main PCB with a new one. 4. Replace the Power Supply PCB with a new one.
+Code;806
+Display;SYSTEM HALT (*) 806 : FW/SIO bit
+Description;FW error (Serial control F/W error (bit control))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;807
+Display;SYSTEM HALT (*) 807 : FW/SIO wbsy
+Description;FW error (Serial control F/W error (WR BUSY))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;808
+Display;SYSTEM HALT (*) 808 : FW/STP-MTR
+Description;FW error (Step Motor stop waiting)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;809
+Display;SYSTEM HALT (*) 809 : FW/XY param
+Description;FW error (XY-axis Motor resolution conversion parameter error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80a
+Display;SYSTEM HALT (*) 80a : FW/Y RANGE
+Description;FW error (Y movable range error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80b
+Display;SYSTEM HALT (*) 80b : FW/ctrltsk
+Description;FW error (Motor control task error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80c
+Display;SYSTEM HALT (*) 80c : FW/PUMP W
+Description;FW error (Suction Pump stop waiting time over at capping)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80d
+Display;SYSTEM HALT (*) 80d : FW/SERVO IT
+Description;FW error (Servo interruption error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80e
+Display;SYSTEM HALT (*) 80e : FW/FROM prm
+Description;FW error (FROM PARAM error (F/W BUG))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;80f
+Display;SYSTEM HALT (*) 80f : FW/SIO vch
+Description;FW error (Virtual serial CH setting error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;810
+Display;SYSTEM HALT (*) 810 : FW/KEY RDI
+Description;FW error (No keyboard RDI)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;811
+Display;SYSTEM HALT (*) 811 : FW/SIO read
+Description;FW error (Serial control F/W error (RD BUSY))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;812
+Display;SYSTEM HALT (*) 812 : FW/CRTRG NO
+Description;FW error (Cartridge number error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;813
+Display;SYSTEM HALT (*) 813 : FW/WIPER RN
+Description;FW error (Wiper operation range error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;814
+Display;SYSTEM HALT (*) 814 : FW/drivinfm
+Description;FW error (drivinfm() information obtaining error
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;815
+Display;SYSTEM HALT (*) 815 : FW/SIO rsrc
+Description;FW error (Serial control F/W error (material control))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;816
+Display;SYSTEM HALT (*) 816 : FW/FROM WRC
+Description;FW error (FROM write control error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;817
+Display;SYSTEM HALT (*) 817 : FW/SaveArea
+Description;FW error (Save area error (size over))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;818
+Display;SYSTEM HALT (*) 818 : FW/EEP SIZE
+Description;FW error (EEPROM size over)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;81a
+Display;SYSTEM HALT (*) 81a : FW/HROM SIZ
+Description;FW error (HDROM size over)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;826
+Display;SYSTEM HALT (*) 826 : FW/SV MDL
+Description;FW error (Servo module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;827
+Display;SYSTEM HALT (*) 827 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;828
+Display;SYSTEM HALT (*) 828 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;829
+Display;SYSTEM HALT (*) 829 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82a
+Display;SYSTEM HALT (*) 82a : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82b
+Display;SYSTEM HALT (*) 82b : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82c
+Display;SYSTEM HALT (*) 82c : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82d
+Display;SYSTEM HALT (*) 82d : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82e
+Display;SYSTEM HALT (*) 82e : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;82f
+Display;SYSTEM HALT (*) 82f : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;830
+Display;SYSTEM HALT (*) 830 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;831
+Display;SYSTEM HALT (*) 831 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;832
+Display;SYSTEM HALT (*) 832 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;833
+Display;SYSTEM HALT (*) 833 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;834
+Display;SYSTEM HALT (*) 834 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;835
+Display;SYSTEM HALT (*) 835 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;836
+Display;SYSTEM HALT (*) 836 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;837
+Display;SYSTEM HALT (*) 837 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;838
+Display;SYSTEM HALT (*) 838 : FW/SV MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;839
+Display;SYSTEM HALT (*) 839 : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;83a
+Display;SYSTEM HALT (*) 83a : FW/PRN MDL
+Description;FW error (Print module error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Disconnect and connect the FFC located between the FFC Junction PCB and the SL-Relay PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 4. Disconnect and connect the FFC located between the SL-Relay PCB and the Slider PCB. Also, confirm that insulating sheets have been inserted between six FFCs. 5. Replace the FFC located between the FFC Junction PCB and the SL-Relay PCB. 6. Replace the FFC located between the SL-Relay PCB and the Slider PCB. 7. Replace the Main PCB with a new one.
+Code;901
+Display;ERROR 901 OPERATION
+Description;The set of function features is attempted to change in such condition that data has been received but not drawn yet.
+Remedy;Explain a user the operation method. (Carry out the followings if the error still occurs) 1. Execute and confirm [#TEST]->[KEYBOARD]. (Check that there is no hang-up nor subduction on Key Tops at the same time.) 2. Replace the Keyboard PCB with a new one. 3. Replace the Keyboard FFC (Keyboard PCB ~ Carrier IO PCB). 4. Replace the Main PCB with a new one.
+Code;901
+Display;ERROR 901 NO HEAD SELCT
+Description;Head has not been selected. (Displayed when the Head has not been selected in the charging process (fillup) and the cleaning process (cleanhdslct))
+Remedy;(When the error cannot be solved by the procedures described in the left) 1. Update F/W. 2. Replace the Main PCB with a new one.
+Code;901
+Display;ERROR 901 InkType :MCYKKYCM
+Description;Type of an inserted Ink Cartridge is different. Displayed in (Filling process (fillup))
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4. Replace the Cartridge PCB with a new one. 5. Replace the Carrier IO PCB with a new one. 6. Replace the Main PCB with a new one.
+Code;901
+Display;ERROR 901 REMAIN INK :MCYKKYCM
+Description;Insufficient ink left in an Ink Cartridge. (Displayed when the residue is insufficient by the cartridge check (inksys::cancel) in the charging process (fillup).)
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]-> [INK END]. 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6. Replace the Carrier IO PCB with a new one. 7. Replace the Main PCB with a new one.
+Code;902
+Display;ERROR 902 DATA REMAIN
+Description;Improper operations were performed on the Operation Panel.
+Remedy;(Carry out the followings if the error still occurs) 1. Execute and confirm [#TEST]->[KEYBOARD]. (Check that there is no hang-up nor subduction on key tops at the same time.) 2. Replace the Keyboard PCB with a new one. 3. Replace the Keyboard FFC (Keyboard PCB ~ Carrier IO PCB). 4. Replace the Main PCB with a new one.
+Code;906
+Display;ERROR 906 NOT FILLUP
+Description;Ink has not been charged. (All cartridges)
+Remedy;1. Remove the cartridges once and install them again. (All cartridges) 2. Check the ink route with eyes that ink flows correctly. (Between cartridges and heads)
+Code;908
+Display;ERROR 908 RANGE OVER XY
+Description;Drawing data is out of range
+Remedy;1. Allocate the data within the drawing range.
+Code;909
+Display;ERROR 909 RANGE OVER X
+Description;Drawing data is out of range
+Remedy;1. Allocate the data within the drawing range.
+Code;90a
+Display;ERROR 90a RANGE OVER Y
+Description;Drawing data is out of range
+Remedy;1. Allocate the data within the drawing range.
+Code;90b
+Display;ERROR 90b OTHER INKSET SELECT
+Description;The same ink set is selected. (No change to the ink set) Warning indication in [MAINTENANCE]-> [INKSET]
+Remedy;1. Select Ink set different from Current ink set.
+Code;90c
+Display;ERROR 90c InkColor :MCYKKYCM
+Description;The cartridge matching up to the ink set has not been inserted to the correct position. Check before ink charging. (fillup_inkchk)
+Remedy;Insert the Ink Cartridge to the correct position. If the problem still cannot be solved, check the followings. 1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check or replace the connector connection of ID Contact PCB with a new one. 3. Check FFCs and connector connections between Cartridge PCB and Main PCB. 4. Replace some of the PCBs above.
+Code;nc01
+Display;<LOCAL> NO CARTRDG YYMMCCKK KKCCMMYY
+Description;Ink Cartridge uncharged
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]->[INK PACK]. 2. Check the peripheral and the assembly of the Presence Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6.Replace the Main PCB with a new one.
+Code;nc02
+Display;<LOCAL> INK NEAREND YYMMCCKK KKCCMMYY
+Description;A small amount of ink left in an Ink Cartridge
+Remedy;"(When the message is still displayed even after a new Ink Cartridge or an empty Ink Cartridge is charged;) 1. Execute and confirm [#TEST]->[SENSOR TEST]->[INK END]. 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6. Replace the Main PCB with a new one."
+Code;nc03
+Display;<LOCAL> INK END YYMMCCKK KKCCMMYY
+Description;Ink end
+Remedy;1. Execute and confirm [#TEST]->[SENSOR TEST]->[INK END]. 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the End Sensor. 4. Replace the Presence/Near End Sensor with a new one. 5. Replace the Cartridge PCB with a new one. 6.Replace the Main PCB with a new one.
+Code;nc04
+Display;<LOCAL> Expiration YYMMCCKK KKCCMMYY
+Description;Ink Cartridge expiration
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4.Replace the Main PCB with a new one.
+Code;nc05
+Display;<LOCAL> INK TYPE YYMMCCKK KKCCMMYY
+Description;Type of inserted Ink Cartridge is different.
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4.Replace the Main PCB with a new one.
+Code;nc06
+Display;<LOCAL> ColorofINK YYMMCCKK KKCCMMYY
+Description;The color of Ink Cartridge inserted is different from the color to be set.
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4.Replace the Main PCB with a new one.
+Code;nc07
+Display;<LOCAL> NON-ORIGNL YYMMCCKK KKCCMMYY
+Description;Non-MIMAKI genuine Ink Cartridge charged
+Remedy;1. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 2. Check the connection of the ID Contact PCB. 3. Replace the ID Contact PCB Assy. with a new one. 4.Replace the Main PCB with a new one.
+Code;nc08
+Display;<LOCAL> WRNG INK IC YYMMCCKK KKCCMMYY
+Description;IC chip of Ink Cartridge unreadable properly
+Remedy;1. Clean the IC Contact Plate of the Ink Cartridge side. 2. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 3. Check the connection of the ID Contact PCB. 4. Replace the ID Contact PCB Assy. with a new one. 5.Replace the Main PCB with a new one.
+Code;nc09
+Display;MAINTENANCE WARNING Replace P.Cure Lamp
+Description;Time for replacement of the Post Cure lamp
+Remedy;1. Replace the lamp.

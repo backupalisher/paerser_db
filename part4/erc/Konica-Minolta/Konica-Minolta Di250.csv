@@ -1,0 +1,141 @@
+Code;C0000
+Description;"Main Motor malfunction
+ The Lock signal remains HIGH for a continuous 1-sec. period while the Main Motor remains energized."
+Remedy;1 Main Motor operation check: the voltage across PJ1-3 of the Main Motor and GND changes from DC5 V to DC0 V when the Side Cover is opened and closed. YES Check various parts for possible overload. Change Main Motor. NO Change Master Board.
+Code;C0010
+Description;"I/C Motor malfunction
+ The Lock signal remains HIGH for a continuous 1-sec. period while the I/C Motor remains energized."
+Remedy;1 I/C Motor operation check: the voltage across PJ2-3 of the I/C Motor and GND changes from DC5 V to DC0 V when the Side Cover is opened and closed. YES Check various parts for possible overload. Change I/C Motor. NO Change Master Board.
+Code;C0045
+Description;"Cooling Fan Motor malfunction
+ The Lock signal remains HIGH or LOW for a continuous 1-sec. period or more while the Cooling Fan Motor remains energized."
+Remedy;1 Cooling Fan Motor operation check: the voltage across CN6-8 on the side of Master Board and GND changes from DC0 V to DC24 V when the Power Switch is turned ON. YES Change Cooling Fan Motor. NO Change Master Board.
+Code;C004C
+Description;"Ozone Fan Motor malfunction
+ The Lock signal remains HIGH or LOW for a continuous 1-sec. period or more while the Ozone Fan Motor remains energized."
+Remedy;1 Ozone Fan Motor operation check: the voltage across CN18-3 on the side of Master Board and GND changes from DC0 V to DC24 V when the Power Switch is turned ON. YES Change Ozone Fan Motor. NO Change Master Board.
+Code;C004E
+Description;"Power Unit Cooling Fan Motor malfunction
+ The Lock signal remains HIGH or LOW for a continuous 1-sec. period or more while the Power Unit Cooling Fan Motor remains energized."
+Remedy;1 Power Unit Cooling Fan Motor operation check: the voltage across CN2-3 on the side of Master Board and GND changes from DC0 V to DC24 V when the Power Switch is turned ON. YES Change Power Unit Cooling Fan Motor. NO Change Master Board.
+Code;C0070
+Description;"Main Hopper Toner Replenishing Motor malfunction
+ • The Toner Bottle Home Position Sensor remains blocked (L) for a continuous 2-sec. period or more while the Main Hopper Toner Replenishing Motor remains energized. • The Toner Bottle Home Position Sensor remains unblocked (H) for a continuous 6-sec. period or more while the Main Hopper Toner Replenishing Motor remains energized."
+Remedy;1 Main Hopper Toner Replenishing Motor operation check: • Remove the Lower Rear Cover. • Unlock the Toner Bottle Lock Lever. • Block the Toner Bottle Cover Sensor. • Turn the Toner Bottle a half turn by hand. The Toner Bottle turns when the Toner Bottle Cover Sensor is unblocked under the above conditions. YES Check step 3. 2 Main Hopper Toner Replenishing Motor operation check: the voltage across CN43-2 on the side of Master Board and GND changes from DC0 V to DC24 V when step 1 is performed. YES Change Main Hopper Toner Replenishing Motor. NO Change Master Board. 3 Toner Bottle Home Position Sensor operation check through I/O check YES Change Master Board. NO Change Toner Bottle Home Position Sensor.
+Code;C0214
+Description;"Abnormal image transfer voltage
+ The image transfer voltage remains more than 100 V for a continuous 0.1-sec. period or more while the PC Drum remains stationary (except while an F2 operation is being run)."
+Remedy;1 The voltage across CN11-1 on the side of Power Supply Unit and GND is DC24 V. The voltage across CN11-2 on the side of Power Supply Unit and GND is DC5 V. NO Change Power Supply Unit. 2 The voltage across CN17-12 on the side of Master Board and GND remains DC1.2 V or less while the malfunction code is being displayed. YES Change Master Board. 3 The voltage across CN17-15 on the side of Master Board and GND remains DC0.9 V or more while the malfunction code is being displayed. YES Change Master Board. NO Change High Voltage Unit.
+Code;C0500
+Description;"Warming-up failure
+ The temperature of the Fusing Rollers does not reach the required level even after the lapse of a given period of time during a warm-up cycle. • From room temperature to 100 °C: Within 65 sec. • From 100 °C to 140 °C: Within 30 sec. • From 140 °C to 170 °C: Within 20 sec. • From 170 °C to the completion of warming-up: Within 22 sec."
+Remedy;1 Fusing Roller Heater Lamp turns ON when the Side Cover is opened and closed. NO Check step 3 and onward. 2 The resistance of Fusing Roller Thermistor (across CN25-2 and 3 on the Fusing Unit end) is infinity. YES Change Fusing Roller Thermistor. NO Change Master Board. 3 There is continuity across CN3-1 and 2 on the Fusing Unit end. YES Check step 7. 4 Fusing Roller Heater Lamp is conducting. NO Change Fusing Roller Heater Lamp. 5 Fusing Roller Thermostat is conducting. NO Change Fusing Roller Thermostat. 6 Fusing Roller Heater Lamp Fuse is conducting. NO Change Fusing Roller Heater Lamp Fuse. 7 There is continuity across 1A and 1B, and across 2A and 2B, when Side Cover Interlock Switch 2 is actuated. YES Change Power Supply Unit. Change Master Board. NO Change Side Cover Interlock Switch 2.
+Code;C0510
+Description;"Abnormally low fusing temperature
+ • The fusing temperature remains 105 °C or less for a continuous 0.1-sec. period or more during the standby state or printing. • The fusing temperature remains a level lower than the following temperature for a continuous 2-min. period or more during the low-temperature standby state. 35-cpm copier: 105 °C 25-cpm copier: 80 °C 20-cpm copier (U.S.A. and Canada only): 80 °C"
+Remedy;1 Fusing Roller Heater Lamp turns ON when the Side Cover is opened and closed. NO Check step 3 and onward. 2 The resistance of Fusing Roller Thermistor (across CN25-2 and 3 on the Fusing Unit end) is infinity. YES Change Fusing Roller Thermistor. NO Change Master Board. 3 There is continuity across CN3-1 and 2 on the Fusing Unit end. YES Check step 7. 4 Fusing Roller Heater Lamp is conducting. NO Change Fusing Roller Heater Lamp. 5 Fusing Roller Thermostat is conducting. NO Change Fusing Roller Thermostat. 6 Fusing Roller Heater Lamp Fuse is conducting. NO Change Fusing Roller Heater Lamp Fuse. 7 There is continuity across 1A and 1B, and across 2A and 2B, when Side Cover Interlock Switch 2 is actuated. YES Change Power Supply Unit. Change Master Board. NO Change Side Cover Interlock Switch 2.
+Code;C0520
+Description;"Abnormally high fusing temperature
+ The fusing temperature remains 230 °C or more for a continuous 0.1-sec. period or more."
+Remedy;1 Fusing Roller Thermistor is dirty. YES Clean. 2 The circuit across CN25-2 and -3 on the Fusing Unit end is shorted. YES Change Fusing Roller Thermistor. NO Change Master Board.
+Code;C0650
+Description;"Faulty Scanner Home Position Sensor 1
+ <The Power Switch is turned ON, Original Cover lowered, or Start key pressed when the Scanner is at its home position> • The Scanner Home Position Sensor 1 is not unblocked (H) even when the Scanner moves 10 mm to the left. • The Scanner Home Position Sensor 1 is not blocked (L) even when the Scanner moves 4 mm to the right after the Scanner Home Position Sensor 1 has been unblocked (H). <The Power Switch is turned ON, Original Cover lowered, or Start key pressed when the Scanner is at any position other than home> • The Scanner Home Position Sensor 1 is not blocked (L) even when the Scanner moves 469.5 mm to the right."
+Remedy;"1 Scanner Motor operation check: Select functions in the following order: Tech. Rep. Mode - Movement Check - Scanner; set +1000 in Relative Position?h and touch Set?h; the Scanner moves at this time. YES Check step 3 and onward. 2 The Scanner can be moved manually. YES Change Scanner Motor. Change BCR Board. Change MFB2 Board. Change Master Board. NO Correct drive coupling. 3 C0651 is displayed. YES Check step 7 and onward. 4 Scanner Home Position Sensor 1 operation check through I/O check YES Check to see if Scanner Home Position Sensor 1 is blocked as the Scanner is moved. If it is checked okay, change Master Board. 5 Scanner Home Position Sensor 1 operation check: the voltage across CN11BCR-1 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. NO Change Scanner Home Position Sensor 1. 6 Scanner Home Position Sensor 1 operation check: the voltage across CN1BCR-26 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. YES Change BCR Board. NO Change MFB2 Board. Change Master Board. 7 Scanner Home Position Sensor 2 operation check through I/O check YES Check to see if Scanner Home Position Sensor 2 is blocked as the Scanner is moved. If it is checked okay, change Master Board. 8 Scanner Home Position Sensor 2 operation check: the voltage across CN12BCR-1 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. NO Change Scanner Home Position Sensor 2. 9 Scanner Home Position Sensor 2 operation check: the voltage across CN1BCR-27 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. YES Change BCR Board. NO Change MFB2 Board. Change Master Board."
+Code;C0651
+Description;"Faulty Scanner Home Position Sensor 2
+ When the Start key is pressed with a document loaded in the Document Feed Tray of the ADF, Scanner Home Position Sensor 2 is not blocked (L) even when the Scanner moves 463 mm to the left after the sensor has been unblocked (H)."
+Remedy;"1 Scanner Motor operation check: Select functions in the following order: Tech. Rep. Mode - Movement Check - Scanner; set +1000 in Relative Position?h and touch Set?h; the Scanner moves at this time. YES Check step 3 and onward. 2 The Scanner can be moved manually. YES Change Scanner Motor. Change BCR Board. Change MFB2 Board. Change Master Board. NO Correct drive coupling. 3 C0651 is displayed. YES Check step 7 and onward. 4 Scanner Home Position Sensor 1 operation check through I/O check YES Check to see if Scanner Home Position Sensor 1 is blocked as the Scanner is moved. If it is checked okay, change Master Board. 5 Scanner Home Position Sensor 1 operation check: the voltage across CN11BCR-1 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. NO Change Scanner Home Position Sensor 1. 6 Scanner Home Position Sensor 1 operation check: the voltage across CN1BCR-26 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. YES Change BCR Board. NO Change MFB2 Board. Change Master Board. 7 Scanner Home Position Sensor 2 operation check through I/O check YES Check to see if Scanner Home Position Sensor 2 is blocked as the Scanner is moved. If it is checked okay, change Master Board. 8 Scanner Home Position Sensor 2 operation check: the voltage across CN12BCR-1 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. NO Change Scanner Home Position Sensor 2. 9 Scanner Home Position Sensor 2 operation check: the voltage across CN1BCR-27 on BCR Board and GND is DC0 V when the sensor is blocked and DC5 V when the sensor is unblocked. YES Change BCR Board. NO Change MFB2 Board. Change Master Board."
+Code;C0990
+Description;LCC Lift-Up Motor failure to turn
+Remedy;1 The voltage across CN1A-15 on LCC Control Board and GND is DC24 V. YES Change LCC Lift-Up Motor. Change LCC Control Board. Change Control Board. Change Master Board. 2 Fuse is conducting. YES Change Power Supply Unit. NO Change fuse.
+Code;C0991
+Description;Lift 1 ascent motion failure
+Remedy;1 Lift-Up Sensor 1 operation check through I/O check YES Check step 3 and onward. 2 Lift-Up Sensor 1 operation check: the voltage across CN4A-6 on LCC Control Board and GND is DC5 V when the sensor is blocked and DC0 V when the sensor is unblocked. YES Change LCC Control Board. Change Control Board. Change Master Board. NO Check actuator. Change Lift-Up Sensor 1. 3 LCC Lift-Up Motor operation check: LCC Lift- Up Motor turns after the cassette has been slid into the copier. YES Change Master Board. 4 LCC Lift-Up Motor operation check: the voltage across CN5A-1 on LCC Control Board and GND changes from DC0 V to DC24 V while step 3 is being performed. YES Change LCC Lift-Up Motor. NO Change LCC Control Board. Change Control Board. Change Master Board.
+Code;C0995
+Description;LCC Transport Motor failure to turn
+Remedy;1 The voltage across CN1A-15 on LCC Control Board and GND is DC24 V. YES Change LCC Transport Motor. Change LCC Control Board. Change Control Board. Change Master Board. 2 Fuse is conducting. YES Change Power Supply Unit. NO Change fuse.
+Code;C0999
+Description;Lift 2 ascent motion failure
+Remedy;1 Lift-Up Sensor 2 operation check through I/O check YES Check step 3 and onward. 2 Lift-Up Sensor 2 operation check: the voltage across CN4A-9 on LCC Control Board and GND is DC5 V when the sensor is blocked and DC0 V when the sensor is unblocked. YES Change LCC Control Board. Change Control Board. Change Master Board. NO Check actuator. Change Lift-Up Sensor 2. 3 LCC Lift-Up Motor operation check: LCC Lift- Up Motor turns after the cassette has been slid into the copier. YES Change Master Board. 4 LCC Lift-Up Motor operation check: the voltage across CN5A-2 on LCC Control Board and GND changes from DC0 V to DC24 V while step 3 is being performed. YES Change LCC Lift-Up Motor. NO Change LCC Control Board. Change Control Board. Change Master Board.
+Code;C099D
+Description;LCC communication error
+Remedy;1 LCC Control Board and Master Board are connected properly. YES Change LCC Control Board. Change Control Board. Change Master Board. NO Correct connection.
+Code;C0B00
+Description;Transport Motor drive malfunction
+Remedy;
+Code;C0B20
+Description;Stapling Unit Moving Motor drive malfunction
+Remedy;
+Code;C0B30
+Description;CD Aligning Motor drive malfunction
+Remedy;
+Code;C0B38
+Description;Shift Motor drive malfunction
+Remedy;
+Code;C0B48
+Description;Exit Roller/Rolls Spacing Motor drive malfunction
+Remedy;
+Code;C0B4A
+Description;Storage Roller/Rolls Spacing Motor drive malfunction
+Remedy;
+Code;C0B4D
+Description;Paper Holding Tray Motor drive malfunction
+Remedy;
+Code;C0B4E
+Description;Finisher Tray Motor drive malfunction
+Remedy;
+Code;C0B50
+Description;Stapling Motor 1 drive malfunction / Stapling Motor drive malfunction
+Remedy;
+Code;C0B54
+Description;Stapling Motor 2 drive malfunction
+Remedy;
+Code;C0B73
+Description;Punch Motor drive malfunction
+Remedy;
+Code;C0B78
+Description;Hole Position Selector Motor drive malfunction (U.S.A. and Canada)
+Remedy;
+Code;C0B80
+Description;Shift Motor drive malfunction
+Remedy;
+Code;C0BA0
+Description;Elevator Motor drive malfunction
+Remedy;
+Code;C0F32
+Description;"Faulty ATDC Sensor
+ The value of data read by the ATDC Sensor is faulty. (ATDC Sensor reading is 19 % or more, or 7 % or less.)"
+Remedy;1 ATDC Sensor and Master Board are connected properly. NO Correct connection. 2 The voltage across PJ6PU1-5 on Power Supply Unit and GND is DC5 V. YES Change I/C. Change Master Board. NO Change Power Supply Unit.
+Code;C0F33
+Description;"ATDC adjustment failure
+ • In an F8 (ATDC control voltage automatic adjustment) operation, the adjustment of ATDC control voltage is not completed within 1 min. after the ATDC Sensor sampling. • In an F8 operation, the control voltage falls outside the range of 5.39 V to 8.15 V."
+Remedy;1 ATDC Sensor and Master Board are connected properly. NO Correct connection. 2 The voltage across PJ6PU1-5 on Power Supply Unit and GND is DC5 V. YES Change I/C. Change Master Board. NO Change Power Supply Unit.
+Code;C1038
+Description;"Engine connection error
+ • The system fails in checking initial engine connection when the Power Switch is turned ON. • The system succeeded in checking initial connection when the Power Switch was turned ON; then it fails in rechecking initial connection through the execution of a software reset when a communications error occurs during operation."
+Remedy;1. Check the connection between Master Board and MFB2 Board. 2. Reset the malfunction and turn OFF and ON the Power Switch. 3. Change MFB2 Board. Change Master Board.
+Code;C1300
+Description;"Polygon Motor malfunction
+ <Faulty start detection> • The Lock signal is not detected at any time during a given period of time 1 sec. after the Polygon Motor has been energized. <Faulty Lock signal detection> • No Lock signals are detected at any time during the 1-sec. period which starts 1 sec. after the first Lock. <Out-of-timing Lock detection> • The Lock signal is not detected for a continuous 0.5sec. period while the Polygon Motor is in the stabilized turning state. <Abnormal Lock detection> • The Lock signal remains ON for a continuous 5-sec. period while the Polygon Motor remains deenergized."
+Remedy;1. Reset the malfunction and turn OFF and ON the Power Switch. 2. Check the connection between PH Assy and Master Board. 3. Change PH Assy. Change Master Board.
+Code;C133A
+Description;"Communications error (G/A)
+ Communications with the gate array for expansion I/O (the IC mounted on the Master Board) fail"
+Remedy;1. Reset the malfunction and turn OFF and ON the Power Switch. 2. Check the connection between each of the following and Master Board. A. 2nd Drawer paper source unit B. 3rd Drawer paper source unit C. 4th Drawer paper source unit D. 5th Drawer paper source unit E. OT-102 F. JS-201 3. Disconnect the connection between the copier and A to F and then turn OFF and ON the Power Switch.- If the malfunction code display persists, change Master Board. - If the malfunction is no longer detected, connect the connectors sequentially and turn OFF and ON the Power Switch. When C133A is detected, check the connector of the corresponding paper source unit and, if it is intact, change the PWB-A of the unit.
+Code;C133B
+Description;"Communications error (option I/F)
+ The connection status of a finishing option is changed after the power has been turned ON."
+Remedy;1. Reset the malfunction and turn OFF and ON the Power Switch. 2. Check the connection between Master Board (copier) and Control Board (Finisher). 3. Unplug the connector between Master Board and Control Board and turn OFF and ON the Power Switch. - If the malfunction code display persists, change Master Board. - If the malfunction is no longer detected, change Control Board.
+Code;C13C0
+Description;"I/C initialization failure
+ After failing to blow the imaging cartridge fuse two consecutive times, the I/C is determined to be new."
+Remedy;1. Reinstall I/C, reset the malfunction, and turn OFF and ON the Power Switch. 2. Check the connection between I/C fuse and Master Board. 3. Change Master Board.
+Code;C13D0
+Description;"Faulty EEPROM
+ EEPROM, in which no initial data is written, is found."
+Remedy;1. Reset the malfunction, turn OFF and ON the Power Switch, and unplug the power cord and plug it back in. 2. Check the connection between IC3 of Master Board and EEPROM. 3. Change Master Board. 4. Change EEPROM. For the precautions to be observed when changing the EEPROM, see DIS/ REASSEMBLY, ADJUSTMENT.
+Code;C13F0
+Description;"HSYNC detection failure
+ • The SOS falling edge is not detected for 0.2 sec. or more after the Polygon Motor has been energized and laser output started. • No SOS falling edges are detected while VIA remains ON."
+Remedy;1. Reset the malfunction and turn OFF and ON the Power Switch. 2. Check the connection between PH Assy and Master Board. 3. Change PH Assy. Change Master Board.

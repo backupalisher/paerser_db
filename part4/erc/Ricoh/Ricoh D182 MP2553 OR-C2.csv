@@ -1,0 +1,956 @@
+Code;SC101-01
+Description;Lamp Error (Scanning) The white level peak did not reach the prescribed threshold when the white plate was scanned.
+Causes;• LED defective • IDB (LED driver) defective • SBU defective • IPU defective • Power/signal harness defective • Condensation in scanner unit • Mirrors or lenses dirty or positioned incorrectly • White plate dirty or installed incorrectly
+Remedy;1. Turn the power off/on. 2. Perform the following operations: • Reconnect the power/signal harness. • Reattach/clean the mirrors/lenses. • Reattach/clean the white plate. • Reattach/clean the scanner guide plate. 3. Replace the following parts: • Replace the LED board. • Replace the IDB board or SIO board. • Replace the SBU board. • Replace the IPU board. • Replace the power/signal harness.
+Code;SC101-02
+Description;Lamp Error (LED illumination adjustment) LED error was detected.
+Causes;• LED defective • IDB (LED driver) defective • Power/signal harness defective
+Remedy;1. Turn the power off/on. 2. Perform the following operations: • Reconnect the power/signal harness. 3. Replace the following parts: • Replace the LED board. • Replace the IDB board or SIO board. • Replace the power/signal harness.
+Code;SC102
+Description;LED Illumination Adjustment Error The white level peak reached the prescribed threshold when the white plate was scanned after a specified number of adjustments.
+Causes;• LED defective • IDB (LED driver) defective • SBU defective • IPU defective • Power/signal harness defective
+Remedy;1. Turn the power off/on. 2. Reconnect the power/signal harness. 3. Replace the following parts: • Replace the LED board. • Replace the SBU board. • Replace the IDB board or SIO board. • Replace the IPU board. • Replace the power/signal harness.
+Code;SC120
+Description;Scanner Home Position Error 1 The scanner home position sensor does not go OFF. Details: Error detection timing • During homing (when the machine is turned ON or when it returns from energy save mode) • During an automatic adjustment (when the machine is turned ON or when it returns from energy save mode) • During a scan from the ADF or exposure glass.
+Causes;• Scanner motor driver defective • Scanner motor defective • Scanner HP sensor defective • Harness defective • Timing belt, pulley, wire, or carriage not installed correctly
+Remedy;Replace the following parts: • Replace the HP sensor • Replace the scanner motor • Replace the harness.
+Code;SC121
+Description;Scanner Home Position Error 2 The scanner home position sensor does not go ON. Details: Error detection timing • During homing • During an automatic adjustment • During a scan from the ADF or exposure glass.
+Causes;• Scanner motor driver defective • Scanner motor defective • Scanner HP sensor defective • Harness defective • Timing belt, pulley, wire, or carriage not installed correctly
+Remedy;Replace the following parts: • Replace the home position sensor • Replace the scanner motor • Replace the harness.
+Code;SC141
+Description;Black level detection error The black level cannot be adjusted within the target during auto gain control.
+Causes;• SBU defective • IPU defective • Power/signal harness defective
+Remedy;1. Turn the power off/on. 2. Reconnect the power/signal harness. 3. Replace the following parts: • Replace the SBU board. • Replace the IPU board. • Replace the power/signal harness.
+Code;SC142
+Description;White level detection error The white level cannot be adjusted to the second target level within the target during auto gain control.
+Causes;• SBU defective • LED defective • IDB (LED driver) defective • IPU defective • Power/signal harness defective • Scanner drive error • Condensation in scanner unit • Mirrors or lenses dirty or positioned incorrectly • White plate dirty or installed incorrectly
+Remedy;1. Turn the power off/on. 2. Perform the following operations: • Reconnect the power/signal harness. • Reattach/clean the mirrors/lenses. • Reattach/clean the white plate. 3. Replace the following parts: • Replace the SBU board. • Replace the LED board. • Replace the IDB board. • Replace the IPU board. • Replace the SIO board. • Replace the power/signal harness.
+Code;SC144
+Description;SBU Communication Error • Connection to SBU cannot be confirmed. (Connection detection error) • Cannot communicate with the SBU, or the communication result is abnormal.
+Causes;• SBU defective • The other side of the communication (BCU, IPU etc.) defective • Power/signal harness defective
+Remedy;1. Turn the power off/on. 2. Reconnect the power/signal harness. 3. Replace the following parts: • Replace the SBU board. • Replace the IPU board. • Replace the BCU board. • Replace the power/signal harness.
+Code;SC161-01
+Description;IPU Error (LSYNC abnormal) An error occurred during the self-diagnostic test performed every time the machine is turned on, or returns to full operation from energy save mode.
+Causes;• IPU (or BCU) board defective (ASIC-BREIT connection failure, LSYNC abnormal, etc.) • Cable between SBU and IPU (or BCU) defective
+Remedy;• Replace the IPU (or BCU) board. • Check the cable between SBU and IPU (or BCU)
+Code;SC165
+Description;Copy data security unit error
+Causes;• The copy data security option is enabled in the User Tools but the option board is detected as missing or defective. • The copy data security option was detected as defective when the machine was turned on or returned from energy save mode. • Copy data security unit board not installed correctly • Copy data security unit board defective
+Remedy;• Reinstall the copy data security unit board. • Replace the copy data security unit board.
+Code;SC195
+Description;Machine serial number error Comparison of the product identification code in the machine serial number (11 digits).
+Causes;The product identification code in the machine serial number (11 digits) does not match.
+Remedy;Re-enter the machine serial number.
+Code;SC202
+Description;Polygon Motor: ON Timeout Error After the polygon motor turned on, or within T1 sec. after the rpm’s changed, the motor did not enter READY status.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective • Polygon motor drive pulse cannot be output correctly. (Polygon controller) • XSCRDY signal observation failing (Polygon controller)
+Remedy;• Turn the power off/on • Replace the laser unit or polygon motor • Replace the polygon harness • Replace the IPU board
+Code;SC203
+Description;Polygon Motor: OFF Timeout Error The XSCRDY signal (polygon ready) never becomes inactive (H) within 3 sec. after the polygon motor went OFF.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective • Polygon motor drive pulse cannot be output correctly. (Polygon controller) • XSCRDY signal observation failing (Polygon controller)
+Remedy;• Turn the power off/on • Replace the laser unit or polygon motor • Replace the polygon harness • Replace the IPU board
+Code;SC204
+Description;Polygon Motor: XSCRDY Signal Error During polygon motor rotation, the XSCRDY signal was inactive (H) for longer than one rotation of the polygon.
+Causes;• The interface harness to the polygon motor driver damaged or not connected correctly. • Polygon motor or polygon motor driver defective
+Remedy;• Turn the power off/on • Replace the laser unit or polygon motor • Replace the polygon harness • Replace the IPU board
+Code;SC220
+Description;Laser synchronization detection error: LD0 The laser synchronizing detection signal for the start position of the LD was not output for 500 msec. after LDB unit turned on with the polygon motor rotating normally.
+Causes;• The interface harness to the synchronization detection unit damaged or not connected correctly. • Synchronization detection board defective • Beam does not enter photo detector. • Abnormality around GAVD • IDB (LED driver) defective • LDB defective • IPU defective
+Remedy;• Turn the power off/on • Replace the laser unit or polygon motor • Replace the polygon harness • Replace the IPU board
+Code;SC230
+Description;FGATE ON error The FGATE signal did not turn ON within 1 sec. after the writing process started.
+Causes;• GAVD defective • Image processing ASIC defective • IPU, controller board not connected correctly or defective • Harness between IPU and LDB defective
+Remedy;• Turn the power off/on • Replace the IPU board • Replace the controller board
+Code;SC231
+Description;FGATE OFF error The FGATE signal did not turn OFF within 9 sec. after the writing procesended.
+Causes;• GAVD defective • Image processing ASIC defective • IPU, controller board not connected correctly or defective • Harness between IPU and LDB defective
+Remedy;• Turn the power off/on. • Replace the IPU board. • Replace the controller board.
+Code;SC240
+Description;LD error: During LD lighting /During initialization of P-MAC
+Causes;• LD degradation (LD broken, shift of output characteristics etc.) • The interface harness damaged or not connected correctly. • LD driver defective
+Remedy;• Cycle the main power off/on • Replace the LD unit • Replace the harness • Replace the IPU board
+Code;SC270
+Description;GAVD communication error When machine starts or cancels the energy saving
+Causes;• GAVD defective • CPU defective • BCU defective
+Remedy;• Cycle the main power off/on • Replace the IPU board • Replace the controller board • Replace the BCU board • Set the FCC between BCU - IPU
+Code;SC302
+Description;Charge level output error The PWM output level was detected higher than 50% after 10 consecutive samplings.
+Causes;• high voltage power supply board defective • Harness of the high voltage power supply board (power pack) is loose, broken. • PCU connection loose or broken
+Remedy;• Cycle the main power off/on • Replace the high voltage power supply board • Replace the harness of the power pack. • Replace the harness of the PCU. • Replace the PCU.
+Code;SC355
+Description;ID sensor error • One of the following conditions occurred when the ID sensor pattern was calibrated during printing: Vsp > 2.5V, Vsg < 2.5V, Vsp = 0V, Vsg = 0V • The following conditions occurred simultaneously when the ID sensor pattern was calibrated during printing: Vsg = 5V, PWM = 0 (LED current drop) • Error occurred during automatic adjustment of Vsg: Vsg output did not attain 4V, even with PWM = 1023 (maximum current for LED) Vsg output was greater than 4V, even with PWM=1 (no current for the LED)
+Causes;• ID sensor dirty or defective • ID sensor harness disconnected, or connector damaged • BCU defective • High voltage power supply board (power pack) defective • Scanning system or image creation system malfunction
+Remedy;• Replace the ID sensor harness. • Replace the ID sensor. • Replace the harness of the high voltage power supply board (power pack). • Replace the harness of the BCU. • Replace the BCU.
+Code;SC389
+Description;TD sensor error 1 TD sensor output was less than 0.5V, or more than 0.5V 10 times in succession. If the fax unit is installed, this SC is issued immediately. If the fax unit is not installed, this SC is issued after the prescribed number of copies has printed.
+Causes;• TD sensor abnormal • Poor connection of the TD sensor harness
+Remedy;• Replace the TD sensor. • Replace the harness of the TD sensor.
+Code;SC390
+Description;TD sensor error 2 The TD sensor outputs less than 0.5V or more than 4.0V 10 times consecutively during copying. Note: If the fax option is installed, this SC is issued immediately. If the fax option is not installed, this SC is issued after the prescribed number of pages is copied.
+Causes;• TD sensor abnormal • Poor connection of the TD sensor harness
+Remedy;• Replace the TD sensor. • Replace the harness of the TD sensor.
+Code;SC391
+Description;Development bias leak The PWM output level was detected higher than 50% after 10 consecutive samplings.
+Causes;• high voltage power supply board defective • High voltage power supply board (power pack) harness loose, broken. • PCU connection loose or broken
+Remedy;• Cycle the main power off/on • Replace the harness of the high voltage power supply board (power pack). • Replace the PCU.
+Code;SC392
+Description;TD sensor initial setting error Initialization of the new PCU unit failed (the drum and development roller did not start rotating)
+Causes;• ID sensor defective • TD sensor defective • Developing roller does not rotate • OPC drum does not rotate
+Remedy;• Replace the the ID sensor. • Replace the TD sensor.
+Code;SC401
+Description;Transfer positive electrode current error A transfer roller current leak signal is detected. (The current feedback signal for the transfer roller was not detected within the correct time.)
+Causes;• High voltage supply board set incorrectly or defective • Transfer roller set incorrectly or damaged • Transfer unit set incorrectly
+Remedy;• Cycle the main power off/on • Check the high voltage supply board is set correctly. • Check the harness of the high voltage supply board. • Replace the high voltage supply board. • Check the transfer roller is set correctly. • Replace the transfer roller. • Check the transfer unit is set correctly.
+Code;SC402
+Description;Transfer negative electrode current error A transfer roller current leak signal is detected. The current feedback signal for the transfer roller is not detected within the correct time.
+Causes;• Transfer roller set incorrectly or damaged • High voltage supply board set incorrectly or defective
+Remedy;• Cycle the main power off/on • Check the high voltage supply board is set correctly. • Check the harness of the high voltage supply board. • Replace the high voltage supply board. • Check the transfer roller is set correctly. • Replace the transfer roller.
+Code;SC411
+Description;Separation bias leak error A separation bias leak signal was detected.
+Causes;• High voltage supply board set incorrectly or detective • Discharge plate set incorrectly or detective
+Remedy;• Cycle the main power off/on • Check the harness of the high voltage supply board. • Replace the high voltage supply board. • Replace the harness. • Replace the discharge plate.
+Code;SC490
+Description;Toner supply motor leak errorr More than 1 ampere supplied to the toner supply motor for longer than 200 ms.
+Causes;• Toner supply motor defective
+Remedy;• Replace the toner transport motor.
+Code;SC500
+Description;Main motor lock. The machine detected motor lock (motor is not operating correctly)
+Causes;• An obstruction has blocked operation of the main motor • Main motor harness loose or broken • Main motor or main motor driver board defective • Overload on the main motor
+Remedy;• Replace the harness of the main motor. • Replace the motor. • Replace the main motor driver board. • Check for the blockages in the main motor mechanism.
+Code;SC501
+Description;Paper Tray1 error • When the tray lift motor rotates counterclockwise, (if the upper limit is not detected within 10 seconds), the machine asks the user to reset the tray. • When the tray lift motor rotates clockwise, (if the upper limit is not detected within 1.5 seconds), the machine asks the user to reset the tray. If one of these conditions occurs three consecutive times, the SC is generated.
+Causes;• Disconnected or defective paper lift sensor • Disconnected or defective tray lift motor • Defective bottom plate lift mechanism • Too much paper in the tray • Defective BCU
+Remedy;• Check if the paper is not loaded too much. • Check if the bottom plate smoothly moves up and down manually. • Check and/or replace the tray lift motor/ paper lift sensor. • Replace the BCU.
+Code;SC502
+Description;Paper Tray2 error • When the tray lift motor rotates counterclockwise, (if the upper limit is not detected within 10 seconds), the machine asks the user to reset the tray. • When the tray lift motor rotates clockwise, (if the upper limit is not detected within 1.5 seconds), the machine asks the user to reset the tray. If one of these conditions occurs three consecutive times, the SC is generated.
+Causes;• Disconnected or defective paper lift sensor • Disconnected or defective tray lift motor • Defective bottom plate lift mechanism • Too much paper in the tray • Defective BCU
+Remedy;• Check if the paper is not loaded too much. • Check if the bottom plate smoothly moves up and down manually. • Check and/or replace the tray lift motor/ paper lift sensor. • Replace the BCU.
+Code;SC503
+Description;Tray 3 error (Paper Feed Unit or LCT) This SC is generated if the following condition occurs 3 consecutive times. For the paper feed unit: • When the tray lowers, the tray lift sensor does not go off within 15 sec. For the LCT: • When the main switch is turned on or when the LCT is set, if the end fence is not in the home position (home position sensor ON), the tray lift motor stops. • If the upper limit does not go off for 8 seconds even the tray lift motor turns on to lower the tray after the upper limit has been detected at power on.
+Causes;For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection For the LCT: • Defective stack transport clutch or connector disconnection • Defective tray motor or connector disconnection • Defective end fence home position sensor or connector disconnection
+Remedy;• Check the cable connections. • Check and/or replace the defective component. • Replace the BCU.
+Code;SC504
+Description;Tray 4 error (3 Tray Paper Feed Unit) This SC is generated if the following condition occurs 3 consecutive times. • When the tray lowers, the tray lift sensor does not go off within 1.5 sec.
+Causes;• Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection
+Remedy;• Check the cable connections. • Check and/or replace the defective component. • Replace the BCU.
+Code;SC508
+Description;By-pass bottom plate error The signal from the by-pass tray HP sensor does not change for 1.0 second after the by-pass motor has rotated counterclockwise. If this condition occurs three consecutive times, the SC is generated.
+Causes;• Disconnect or defective harness of the by-pass motor • Defective or disconnected connection for the by-pass motor. • Defective by-pass motor • Disconnect or defective harness of the by-pass HP sensor • Defective or disconnected connection for the by-pass HP sensor. • Defective by-pass HP sensor
+Remedy;• Check the cable connections. • Check and/or replace the defective component. • Replace the BCU. • Cycle the main power off/on
+Code;SC530
+Description;Fusing exhaust fan motor error • This fan is located on the left side of the machine, next to the PSU. The machine does not detect the motor lock signal for 10 seconds while the motor is running.
+Causes;• An obstruction has blocked operation of the main motor • Main motor harness loose or broken
+Remedy;• Turn the main power switch OFF and then ON again. • Replace the fan.
+Code;SC531
+Description;Duplex fan motor error • This fan is located on the front of the machine, near the fusing unit. The machine does not detect the motor lock signal for 10 seconds while the motor is running.
+Causes;• An obstruction has blocked operation of the main motor • Main motor harness loose or broken
+Remedy;• Turn the main power switch OFF and then ON again. • Replace the fan.
+Code;SC532
+Description;CTL fan motor error The machine does not detect the motor lock signal for 10 seconds while the motor is running.
+Causes;• An obstruction has blocked operation of the main motor. • Main motor harness loose or broken
+Remedy;• Turn the main power switch OFF and then ON again. • Replace the fan.
+Code;SC541
+Description;Fusing thermistor open (center) The temperature of the hot roller remained below 0°C for 5 sec at the center of the hot roller.
+Causes;• Fusing thermistor out of its position because of incorrect installation • Fusing thermistor disconnected or defective • Power supply not within rated range (15% or more below rating)
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check the power supply source.
+Code;SC542-01
+Description;Fusing central thermopile does not reload Temperature gradient detection:Temperature rise of 2 seconds is detected by five consecutive four degrees or less
+Causes;• Fusing thermistor defective or out of position • Fusing thermistor modification/float • Outside input voltage guarantee
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check that the input voltage is within acceptable limits. • Replace the fusing unit. • Repace the BCU. • Replace the fusing lamp in the case of disconnection.
+Code;SC542-03
+Description;Fusing central thermopile does not reload • Time out (Non-rotating roller): Reload temperature not reached in 28 seconds after the fusing lamp control start • Time out (Rotating roller): Reload temperature not reached in 46 seconds after the fusing lamp control start
+Causes;• Disconnection of the fusing lamp • After excessive temperature rise prevention unit operation
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check that the input voltage is within acceptable limits. • Replace the fusing unit. • Repace the BCU. • Replace the fusing lamp in the case of disconnection.
+Code;SC543
+Description;Fusing overheat error 1 (center) The fusing thermistor detected a fusing temperature over 230°C for 1 sec. at the center of the hot roller.
+Causes;• TRIAC short on PSU (PSU defective) • BCU defective • Power supply voltage unstable
+Remedy;• Replace the PSU. • Replace the BCU. • Replace the fusing unit.
+Code;SC544
+Description;Fusing overheat error 2 (center) A fusing temperature over 250°C is detected at the center of the hot roller by the fusing temperature monitor circuit in the BCU board. The power was interrupted for more than 0.3 sec.
+Causes;• TRIAC short on PSU (PSU defective) • BCU defective • Fusing thermistor defective • Power supply voltage unstable
+Remedy;• Replace the PSU. • Replace the BCU. • Replace the fusing unit.
+Code;SC545
+Description;Fusing overheat error 3 (center) After warmup, the center of the hot roller attained full operating temperature and maintained this temperature for 29 sec. without the hot roller rotating.
+Causes;• Center hot roller thermistor installed incorrectly, disconnected. • Center hot roller thermistor defective
+Remedy;• Check the hot roller thermistor is set correctly. • Replace the hot roller thermistor. • Replace the BCU. • Check that the input voltage is within acceptable limits. • Replace the fusing unit. • Replace the fusing lamp in the case of disconnection.
+Code;SC547-01
+Description;Zero cross error (relay-contact soldering) The zero cross signal is detected for 0.05 seconds three times even though the fusing lamp relay is off when turning on the main power.
+Causes;• Fusing relay damage (contact open) • Fusing relay drive circuit fault • PSU fuse (24VS) blowout
+Remedy;• Turn the main power supply switch OFF/ON. • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and control board, and replace harness and board if necessary. • If the PSU fuse (24VS) blows out, replace the PSU.
+Code;SC547-02
+Description;Zero cross error (relay contact fault) The zero cross signal is not detected for 3 seconds even though the fusing lamp relay is on after turning on the main power or closing the front door.
+Causes;• Fusing relay damage (contact open) • Fusing relay drive circuit fault • PSU fuse (24VS) blowout
+Remedy;• Turn the main power supply switch OFF/ON. • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and control board, and replace harness and board if necessary. • If the PSU fuse (24VS) blows out, replace the PSU.
+Code;SC547-03
+Description;Zero cross error (low-frequency error) • In the event of an error
+Causes;• Fusing relay damage (contact open) • Fusing relay drive circuit fault • PSU fuse (24VS) blowout
+Remedy;• Turn the main power supply switch OFF/ON. • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and control board, and replace harness and board if necessary. • If the PSU fuse (24VS) blows out, replace the PSU.
+Code;SC547-04
+Description;Zero cross error (input signal error) • In the event of an error
+Causes;• Fusing relay damage (contact open) • Fusing relay drive circuit fault • PSU fuse (24VS) blowout
+Remedy;• Turn the main power supply switch OFF/ON. • If the fusing relay is damaged, replace the PSU. • Check the connection between PSU and control board, and replace harness and board if necessary. • If the PSU fuse (24VS) blows out, replace the PSU.
+Code;SC551
+Description;Fusing thermistor open (end) The temperature of the hot roller remained below 0°C for 5 sec. at the end of the hot roller.
+Causes;• Fusing thermistor out of its position because of incorrect installation • Fusing thermistor disconnected or defective • Power supply not within rated range (15% or more below rating)
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check the power supply source.
+Code;SC552-01
+Description;Fusing end thermopile does not reload Temperature gradient detection:Temperature rise of 2 seconds is detected by five consecutive four degrees or less
+Causes;• Fusing thermistor defective or out of position • Fusing thermistor modification/float • Outside input voltage guarantee
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check that the input voltage is within acceptable limits • Replace the fusing unit • Repace the BCU
+Code;SC552-03
+Description;Fusing end thermopile does not reload • Time out (Non-rotating roller): Reload temperature not reached in 28 seconds after the fusing lamp control start • Time out (Rotating roller): Reload temperature not reached in 46 seconds after the fusing lamp control start
+Causes;• Disconnection of the fusing lamp • After excessive temperature rise prevention unit operation
+Remedy;• Check the fusing thermistor is set correctly. • Replace the fusing thermistor. • Check that the input voltage is within acceptable limits • Replace the fusing unit • Repace the BCU
+Code;SC553
+Description;Fusing overheat error 1 (end) The fusing thermistor detected a fusing temperature over 230°C for 1 sec. at the center of the hot roller.
+Causes;• TRIAC short on PSU (PSU defective) • BCU defective • Power supply voltage unstable
+Remedy;• Replace the PSU. • Replace the BCU. • Replace the fusing unit.
+Code;SC554
+Description;Fusing overheat error 2 (end) A fusing temperature over 250°C is detected at the center of the hot roller by the fusing temperature monitor circuit in the BCU board. The power was interrupted for more than 0.3 sec.
+Causes;• TRIAC short on PSU (PSU defective) • BCU defective • Fusing thermistor defective • Power supply voltage unstable
+Remedy;• Replace the PSU. • Replace the BCU. • Replace the fusing unit.
+Code;SC555
+Description;Fusing overheat error 3 (end) After warmup, the center of the hot roller attained full operating temperature and maintained this temperature for 29 sec. without the hot roller rotating.
+Causes;• Center hot roller thermistor installed incorrectly, disconnected. • Center hot roller thermistor defective
+Remedy;• Check the hot roller thermistor is set correctly. • Replace the hot roller thermistor. • Replace the BCU. • Check that the input voltage is within acceptable limits. • Replace the fusing unit. • Replace the fusing lamp in the case of disconnection.
+Code;SC557
+Description;Zero Cross Frequency Exceeded The waveform of the zero cross signal was detected out of range.
+Causes;Electrical noise on the power supply line
+Remedy;Check the power supply source.
+Code;SC559
+Description;Fusing Jam Detected for 3 Times Consecutively Consecutive fusing unit paper jams
+Causes;"Three consecutive paper jams occurred in the fusing unit. The paper jam counter for the fusing unit reaches 3 times. The paper jam counter clears after the paper feeds correctly. Note: This SC is issued only if SP1159 is set to ""1""."
+Remedy;• Clean the fusing entrance/exit guides • Replace the fusing unit. • Replace the hot roller strippers
+Code;SC620-01
+Description;ADF Communication error After ADF connection was recognized on startup, an error is detected. (disconnection detection)
+Causes;• ADF connection fault • ADF defection • IPU board defection • Noise contamination
+Remedy;• Check the ADF cable connection • Replace the ADF • Replace the IPU board
+Code;SC620-02
+Description;ADF Communication error. After ADF connection was recognized on startup, an error is detected. (Retry out due to communication error)
+Causes;• ADF connection fault • ADF defection • IPU board defection • Noise contami
+Remedy;• Check the ADF cable connection • Replace the ADF • Replace the IPU board
+Code;SC621
+Description;Finisher communication error • Detected an error when connecting the communication line. • Received a communication error notification from the URAT.
+Causes;• Finisher control board defective. • BCU defective • Connection fault between finisher and main machine.
+Remedy;• Reconnect the Finisher interface cable • Replace the BCU • Replace the finisher • Turn the power off/on
+Code;SC622
+Description;Paper bank communication error • Detected an error when connecting the communication line. • Received a communication error notification from the URAT.
+Causes;• Paper bank control board defective • BCU defective • Paper bank-main machine connection fault
+Remedy;• Reconnect the optional paper tray connection cable • Replace the BCU • Replace the optional paper tray • Turn the power off/on
+Code;SC632-00
+Description;Counter device error 1 After 3 attempts to send a data frame to the optional counter device via the serial communication line, no ACK signal was received within 100 ms.
+Causes;Serial line between the optional counter device, the relay board and copier control board is disconnected or damaged.
+Remedy;• Turn the main power off/on. • Check the serial communication line.
+Code;SC633-00
+Description;Counter device error 2 After communication was established, the controller received the brake signal from the accounting device.
+Causes;Serial line between the optional counter device, the relay board and copier control board is disconnected or damaged.
+Remedy;• Turn the main power off/on. • Check the serial communication line.
+Code;SC634-00
+Description;Counter device error 3 A backup RAM error was returned by the counter device.
+Causes;Counter device control board or the backup battery of counter device defective
+Remedy;• Replace the counter device control board. • Replace the backup battery.
+Code;SC635-00
+Description;Counter device error 4 A backup battery error was returned by the counter device.
+Causes;Counter device control board or the backup battery of counter device defective
+Remedy;• Replace the counter device control board. • Replace the backup battery.
+Code;SC636-01
+Description;"IC Card Error (Expanded authentication module error) Issued when expanded authentication management is set to ""ON"" but either of the following occur. • There is no expanded authentication module in the machine. • The SD card or the file of the expanded authentication module is broken. • There is no DESS module in the machine."
+Causes;• There is no DESS module in the machine (models on which the function is optional). • There is no expanded authentication module in the machine. • The SD card or the file of the expanded authentication module is broken.
+Remedy;• Set a working SD card/expanded authentication module file. • Install the DESS module. • In the SSP mode set SP5-401-160 to 0. • In the SSP mode, set SP5-401-161 to 0. • Replace the NVRAM.
+Code;SC636-02
+Description;IC Card Error (Version error) The version of the expanded authentication module is not correct.
+Causes;Incorrect module version
+Remedy;Install the correct file of the expanded authentication module.
+Code;SC636-11
+Description;"IC Card Error (OSM user code file error) • The correct ""usercode"" file could not be found in the root folder of the SD card. • The ""usercode"" file on the SD card could not be read."
+Causes;"• The ""usercode"" file does not exist on the SD card. • The ""usercode"" file on the SD card is an invalid file. • Data in the ""usercode"" file on the SD card is invalid. • ""usercode"" file was not moved when moving the application to another SD card"
+Remedy;"Use the user code configuration tool for OSM users (Idissuer.exe) to create the ""usercode"" and store it in the root folder of the SD card containing the IC card module (eccm.mod)."
+Code;SC637-01
+Description;Tracking Information Notification Error (Tracking application error) Tracking information was lost.
+Causes;• Tracking SDK application error • Internal notification error
+Remedy;Turn the main power off/on.
+Code;SC637-02
+Description;Tracking Information Notification Error (Management server error) Tracking information was lost.
+Causes;Communication with tracking management server failed. • Network error • tracking management server error • Tracking SDK application error
+Remedy;Turn the main power off/on.
+Code;SC650-01
+Description;Remote Service Modem Communication Error (Dialup authentication failure) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Dialup authentication failure
+Remedy;Check the following SPs. • SP5-816-156 • SP5-816-157
+Code;SC650-04
+Description;Remote Service Modem Communication Error (dialup failing because of incorrect modem configuration) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Dialup failing because of incorrect modem configuration
+Remedy;Check if the setting of SP5-816-160 is correct. If it is correct, then there is a software bug.
+Code;SC650-05
+Description;Remote Service Modem Communication Error (insufficient current or connection fault) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;Insufficient current or connection fault
+Remedy;The line is not supported and nothing can be done.
+Code;SC650-13
+Description;Remote Service Modem Communication Error (RC Gate Type Mwas installed but modem is not present (detected during operation)) • An error related to communication (dialup connection, modem board etc.) using the RC Gate Type M was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;RC Gate Type Mwas installed but modem is not present (detected during operation)
+Remedy;• If a modem board is not installed, install it. • Check again if the modem driver configurations (SP5-816-160, SP5-816-165 to 171, SP5-816-165 to 171) are correct. • If the problem is not solved, replace the modem.
+Code;SC650-14
+Description;Remote Service Modem Communication Error (RC Gate Type N was installed but modem is present or wired/wireless LAN is not working correctly) • An error related to communication (dialup connection, modem board etc.) using the RC Gate was detected or an error that prevents RC Gate operation was detected at power on. • Displayed only when an error is detected while RC Gate is operating. • SC is not issued if an error occurs during RC Gate installation (because it can be referenced using SP).
+Causes;RC Gate Type N was installed but modem is present or wired/wireless LAN is not working correctly
+Remedy;• If a modem board is attached, remove it. • Check if wired/wireless LAN works.
+Code;SC651-01
+Description;Illegal Remote Service Dial-up (Chat program parameter error) An unexpected error occurred when RC Gate Type M dialed up the NRS Center.
+Causes;Software bug
+Remedy;Logging only.
+Code;SC651-02
+Description;Illegal Remote Service Dial-up (Chat program execution error) An unexpected error occurred when RC Gate dialed up the NRS Center.
+Causes;Software bug
+Remedy;Logging only.
+Code;SC652-00
+Description;Remote service ID2 mismatching There was an authentication mismatch between ID2 for @Remote, the controller board, and NVRAM.
+Causes;• Used controller board installed • Used NVRAM installed (such action is not allowed.)
+Remedy;• If this occurs during RC Gate installation: Check the validity of the certificate and the NVRAM, check the machine serial number, write the common certificate, and then begin installation again. • If this occurs after RC Gate installation: Clear the RC Gate install status, check the validity of the certificate and the NVRAM, check the machine serial number, write the common certificate, and then begin installation again.
+Code;SC653-00
+Description;Incorrect remote service ID2 ID2 stored in the NVRAM has either of the following problems. • Number of characters is not 17. • Includes a character that cannot be printed. • All spaces • NULL
+Causes;Replace the NVRAM.
+Remedy;Clear the RC Gate install status, write the common certificate, and then begin installation again.
+Code;SC669-01
+Description;EEPROM OPEN: ID error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-02
+Description;EEPROM OPEN: Channel error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-03
+Description;EEPROM OPEN: Device error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-04
+Description;EEPROM OPEN: Communication abort error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-05
+Description;EEPROM OPEN: Communication timeout error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-06
+Description;EEPROM OPEN: Operation stopped error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-07
+Description;EEPROM OPEN: Buffer full
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-08
+Description;EEPROM OPEN: No error code
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-09
+Description;EEPROM CLOSE: ID error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-10
+Description;EEPROM CLOSE: No error code
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-11
+Description;EEPROM Data write: ID error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-12
+Description;EEPROM Data write: Channel error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-13
+Description;EEPROM Data write: Device error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-14
+Description;EEPROM Data write: Communication abort error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-15
+Description;EEPROM Data write: Communication timeout error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-16
+Description;EEPROM Data write: Operation stopped error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-17
+Description;EEPROM Data write: Buffer full
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-18
+Description;EEPROM Data write: No error code
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-19
+Description;EEPROM Data read: ID error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-20
+Description;EEPROM Data read: Channel error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-21
+Description;EEPROM Data read: Device error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-22
+Description;EEPROM Data read: Communication abort error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-23
+Description;EEPROM Data read: Communication timeout error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-24
+Description;EEPROM Data read: Operation stopped error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-25
+Description;EEPROM Data read: Buffer full
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-26
+Description;EEPROM Data read: No error code
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC669-36
+Description;EEPROM SRAM OPEN: Verified error
+Causes;Received a error notification during EEPROM communication and doesnot resume after 3 retries. • Electrical noise • EEPROM not connected fully • EEPROM not installed • EEPROM damaged • BCU damaged
+Remedy;• Turn the power off/on • Reconnect the EEPROM • Replace the EEPROM • Replace the BCU
+Code;SC670-00
+Description;Engine start up error • Case 1 • /ENGRDY signal was not asserted when the machine was turned on or returned from energy saver mode. • /IPURDY signal was not asserted when the machine was turned on or returned from energy saver mode. • EC response was not received within specified time from power on. • PC response was not received within specified time from power on. • SC response was not received within specified time from power on. • Writing to Rapi driver failed (the other party not found through PCI). • Case 2 • Unexpected down status was detected after /ENGRDY assertion.
+Causes;• Case 1 • Engine board does not start up. • Case 2 • Engine board reset unexpectedly.
+Remedy;Check the connection between the engine board and the controller board. • If it is always reproduced, replace the engine board. If the problem persists, consider replacing the controller board or other boards between them. • If reproducibility is low, multiple causes are to be considered, such as software, engine board, controller board, and PSU.
+Code;SC672-10
+Description;Controller start up error After the machine was powered on, communication between the controller and the operation panel was not established.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;• Turn the main power off/on. • Check the connection of the controller board. • Replace the controller board. • Check the control panel harness.
+Code;SC672-11
+Description;Controller start up error After the machine was powered on, communication between the controller and the operation panel was not established, or communication with controller was interrupted after a normal startup.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;• Turn the main power off/on. • Check the connection of the controller board. • Replace the controller board. • Check the control panel harness.
+Code;SC672-12
+Description;Controller start up error Communication with controller was interrupted after a normal startup.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;• Turn the main power off/on. • Check the connection of the controller board. • Replace the controller board. • Check the control panel harness.
+Code;SC672-13
+Description;Controller start up error The operation panel detected that the controller is down.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;• Turn the main power off/on. • Check the connection of the controller board. • Replace the controller board. • Check the control panel harness.
+Code;SC672-99
+Description;Controller start up error The operation panel software ended abnormally.
+Causes;• Controller stalled • Board installed incorrectly • Controller board defective • Operation panel connector loose, broken, or defective • Controller late
+Remedy;• Turn the main power off/on. • Check the connection of the controller board. • Replace the controller board. • Check the control panel harness.
+Code;SC687
+Description;PER Not Received Error Unable to receive the PER command from the controller.
+Causes;• Electrical noise • Controller board defective
+Remedy;• Turn the power off/on • Replace the controller Board
+Code;SC701-03
+Description;Paper Feed Motor Driver Error (ARDF)
+Causes;Detection of error signal from motor driver • Encoder disconnection • Encoder connector dropout • Encoder defective • Overload • Motor deterioration
+Remedy;• Replace the harness • Check the harness connection • Replace the motor
+Code;SC701-08
+Description;Paper Exit Motor Driver Error (ARDF)
+Causes;Detection of error signal from motor driver • Encoder disconnection • Encoder connector dropout • Encoder defective • Overload • Motor deterioration
+Remedy;• Replace the harness • Check the harness connection • Replace the motor
+Code;SC702-01
+Description;Protection Device Intercept Error 1 (ARDF) When original source 5V power supply is ON, protection device intercept of 24V power supply system is detected.
+Causes;Any of feed motor, transport motor, reverse solenoid, paper feed solenoid, paper feed clutch and FAN motor defective, a harness shortcircuit occurs, and the protection device of the 24V power supply system intercepts.
+Remedy;• Replace the ARDF main board. • Replace the short-circuited parts.
+Code;SC702-02
+Description;Protection Device Intercept Error 2 (ARDF) When original source 5V power supply is ON, protection device intercept of 24V OUT power supply system is detected.
+Causes;Solenoid defective or harness short-circuit occurs in 24VOUT power supply system.
+Remedy;• Replace the ARDF main board. • Replace the short-circuited parts.
+Code;SC702-03
+Description;Protection Device Intercept Error 3 (ARDF) When original source 5V power supply is ON, protection device intercept of 5VE power supply system is detected.
+Causes;Sensor defective or a harness short-circuit occur in 5VE power supply system.
+Remedy;• Replace the ARDF main board. • Replace the short-circuited parts.
+Code;SC721-03
+Description;Protection Device Intercept Error 1 (1000-sheet finisher) Fuse blowout is detected
+Causes;Over current (board defective, harness short-circuit, solenoid defective)
+Remedy;• Replace the harness. • Replace the solenoid. • Replace the finisher main board.
+Code;SC721-10
+Description;Transport Motor 1 Error (1000-sheet finisher) Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Causes;• Motor defective • Connector disconnected • Overload • Encoder error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the finisher main board.
+Code;SC721-11
+Description;Transport Motor 2 Error (1000-sheet finisher) Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Causes;• Motor defective • Connector disconnected • Overload • Encoder error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the finisher main board.
+Code;SC721-17
+Description;Paper Eject Motor 2 Error (1000-sheet finisher) Motor driver detects an error state (DC motor control error) (1st time is jam notification, 2nd time is SC notification).
+Causes;• Motor defective • Connector disconnected • Overload • Encoder error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the finisher main board.
+Code;SC721-24
+Description;Paper Exit Guide Plate Open/Close motor Error (1000-sheet finisher) • During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). • The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1.
+Causes;• Motor defective • Connector disconnected • Overload • Encoder error • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-25
+Description;Punch Drive Motor Error (1000-sheet finisher) • During movement to home, the home position could not be detected within a predetermined time (t0 sec) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined time (t1 sec) elapsed (1st time is jam notification, 2nd time is SC notification). • Output from the encoder could not be counted for a predetermined number of times within a predetermined time (t0 sec) (1st time is jam notification, 2nd time is SC notification). • The time to return to home without fail, the time coming from home, and the time for which the encoder output can be counted during normal operation, are taken as t0, t1 and t2.
+Causes;• Motor defective • Connector disconnected • Overload • Encoder error • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-27
+Description;Punch Displacement Motor Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Connector disconnected • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-28
+Description;Punch Horizontal Registration Detection Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Connector disconnected • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-30
+Description;Jogger Motor 1 Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Connector disconnected • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-33
+Description;Strike Roller Motor Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Connector disconnected • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-41
+Description;Release Motor Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Connector disconnected • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-42
+Description;Stapler Displacement Motor Error (1000-sheet finisher) • During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined pulse (p1 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). • During movement from home, retreat sensor ON could not be detected even after a predetermined pulse (p2 pulse) elapsed (1st time is jam notification, 2nd time is SC notification). • During initialization, retreat sensor ON was detected simultaneously when the home position is detected (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0, p1 and p2.
+Causes;• Motor defective • Connector disconnected • Overload • Home position sensor error • Retreat sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-44
+Description;Stapler Motor Error (1000-sheet finisher) • During movement to home, the home position could not be detected even after a predetermined time (t0 sec) elapsed (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected even after a predetermined time (t1 sec) elapsed (1st time is jam notification, 2nd time is SC notification). • During motor drive, the output from the encoder could not be counted for a predetermined number of times within a predetermined time (t0 sec) (1st time is jam notification, 2nd time is SC notification). The time to return to home without fail, the time coming from home, and the time for which the encoder output can be counted during normal operation, are taken as t0, t1 and t2.
+Causes;• Needle jam • Motor defective • Connector disconnected • Overload • Home position sensor error • Encoder error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-52
+Description;Folding Plate Drive Motor Error (1000-sheet finisher) • Motor driver detects an error (short-circuit and overheating) (1st time is SC). • During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1.
+Causes;• Motor defective • Connector disconnected • Overload • Home position sensor (folding blade HP) error • Home position sensor (folding cam HP) error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-53
+Description;Rear End Fence Displacement Motor Error (1000-sheet finisher) • During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1.
+Causes;• Motor defective • Reset the connector. • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-58
+Description;Bundle Transport 1 Release Motor Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Reset the connector. • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-59
+Description;Bundle Transport 2 Release Motor Error (1000-sheet finisher)
+Causes;• During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1. • Motor defective • Reset the connector. • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-70
+Description;Tray 1 Lift Motor Error (1000-sheet finisher) • Motor driver detects an error (short-circuit or overheating) (1st time is SC). • During descent, the paper surface sensor still detects paper even after a predetermined time (t0sec) elapses (1st time is jam notification, 2nd time is SC notification). • During ascent, the paper surface sensor could not detect the paper surface even after a predetermined time (t0sec) elapses (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1.
+Causes;• Motor defective • Reset the connector. • Overload • Paper surface sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-71
+Description;Shift Motor 1 Error (1000-sheet finisher) • During movement to home, the home position could not be detected within a predetermined pulse (p0 pulse) (1st time is jam notification, 2nd time is SC notification). • During movement from home, the home position was detected for longer than a predetermined pulse (p1 pulse) (1st time is jam notification, 2nd time is SC notification). The return pulse to home and pulse coming from home during normal operation are calculated and measured. The pulses which are 1.5-2 times the normal operation pulse are taken as p0 and p1.
+Causes;• Motor defective • Reset the connector. • Overload • Home position sensor error
+Remedy;• Replace the motor. • Reset the connector. • Replace the harness. • Replace the home position sensor • Replace the finisher main board.
+Code;SC721-80
+Description;Folding Transport Motor Error (1000-sheet finisher) • Motor driver detects an error (short-circuit or overheating) (1st time is SC)
+Causes;• Motor defective • Connector disconnected • Overload
+Remedy;• Replace the motor • Reset the connector • Replace the solenoid • Replace the finisher main board.
+Code;SC770
+Description;Shift motor error (D583) The shift motor HP sensor does not detect any change for 1.86 seconds after the shift motor has turned on at power on or during its operation.
+Causes;• Defective shift motor • Defective shift motor HP sensor
+Remedy;• Replace the shift motor • Replace the shift motor HP sensor
+Code;SC791
+Description;No bridge unit when finisher is present When power supply is switched on or paper is transported, finisher set is detected but bridge unit set is not detected. (during internal finisher connection, not detected)
+Causes;• Bridge unit not attached • Bridge unit defective
+Remedy;• Reset the bridge unit • Turn the power off/on
+Code;SC792
+Description;No finisher, bridge unit provided When power supply is switched on, it is recognized there is no finisher, and a bridge unit is fitted.
+Causes;• Finisher connector set fault • In a machine which has a bridge unit connected, a finisher is not fitted • Finisher defective
+Remedy;Connect finisher or disconnect bridge unit, and turn the power off/on
+Code;SC793-01
+Description;Front jogger motor error with 1-bin tray (D586) The machine does not detect a correct signal from the front jogger fence HP sensor while the front jogger motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective front jogger motor • Loosen connection • Motor overload • Defective front jogger fence HP sensor
+Remedy;• Reset the connector • Replace the front jogger fence HP sensor. • Replace the front jogger motor.
+Code;SC793-02
+Description;Rear jogger motor error with 1-bin tray (D586) The machine does not detect a correct signal from the rear jogger fence HP sensor while the rear jogger motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective front jogger motor • Loosen connection • Motor overload • Defective front jogger fence HP sensor
+Remedy;• Reset the connector • Replace the front jogger fence HP sensor. • Replace the front jogger motor.
+Code;SC793-03
+Description;Pick-up roller contact motor error with 1-bin tray (D586) The machine does not detect a correct signal from the pick-up roller HP sensor while the pick-up roller contact motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective pick-up roller contact motor • Loosen connection • Motor overload • Defective pick-up roller HP sensor
+Remedy;• Reset the connector • Replace the pick-up roller HP sensor. • Replace the pick-up roller contact motor.
+Code;SC793-04
+Description;Exit guide plate motor error with 1-bin tray (D586) The machine does not detect a correct signal from the exit guide plate HP sensor while the exit guide plate motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective exit guide plate motor • Loosen connection • Motor overload • Defective exit guide plate HP sensor
+Remedy;• Reset the connector • Replace the exit guide plate HP sensor. • Replace the exit guide plate motor.
+Code;SC793-05
+Description;Output tray motor error with 1-bin tray (D586) The machine does not detect a correct signal from the stack height detection lever sensor while the output tray motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective output tray motor • Loosen connection • Motor overload • Defective stack height detection lever sensor
+Remedy;• Reset the connector • Replace the stack height detection lever sensor. • Replace the output tray motor.
+Code;SC793-06
+Description;Stack height detection lever motor error with 1-bin tray (D586) The machine does not detect a correct signal from the stack height detection lever HP sensor while the stack height detection lever motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective stack height detection lever motor • Loosen connection • Motor overload • Defective stack height detection lever HP sensor • Defective stack height detection lever sensor
+Remedy;• Reset the connector • Replace the stack height detection lever sensor. • Replace the output tray motor.
+Code;SC793-07
+Description;Punch drive motor error with 1-bin tray (D586) The machine does not detect a correct signal from the punch position sensor while the punch drive motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective punch drive motor • Loosen connection • Motor overload • Defective punch position sensor
+Remedy;• Reset the connector • Replace the punch position sensor. • Replace the punch drive motor.
+Code;SC793-08
+Description;Punch movement motor error with 1-bin tray (D586) The machine does not detect a correct signal from the punch position sensor while the punch movement motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective punch movement motor • Loosen connection • Motor overload • Defective punch position sensor
+Remedy;• Reset the connector • Replace the punch position sensor. • Replace the punch movement motor.
+Code;SC793-09
+Description;Paper position sensor unit motor error with 1-bin tray (D586) The machine does not detect a correct signal from the paper position detection unit HP sensor while paper position sensor unit motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective paper position sensor unit motor • Loosen connection • Motor overload • Defective paper position detection unit HP sensor
+Remedy;• Reset the connector • Replace the paper position detection unit HP sensor. • Replace the paper position sensor unit motor.
+Code;SC793-11
+Description;Stapler unit motor error with 1-bin tray (D586) The machine does not detect a correct signal from the stapler unit motor HP sensor while the stapler unit motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective stapler unit motor • Loosen connection • Motor overload • Defective stapler unit motor HP sensor
+Remedy;• Reset the connector • Replace the stapler unit HP sensor. • Replace the stapler unit motor.
+Code;SC793-12
+Description;Shift roller motor error with 1-bin tray (D586) The machine does not detect a correct signal from the shift roller HP sensor while the shift roller motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective shift roller motor • Loosen connection • Motor overload • Defective shift roller HP sensor
+Remedy;• Reset the connector • Replace the shift roller HP sensor. • Replace the shift roller motor.
+Code;SC794-01
+Description;Front jogger motor error without 1-bin tray (D586) The machine does not detect a correct signal from the front jogger fence HP sensor while the front jogger motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective front jogger motor • Loosen connection • Motor overload • Defective front jogger fence HP sensor
+Remedy;• Reset the connector • Replace the front jogger fence HP sensor. • Replace the front jogger motor.
+Code;SC794-02
+Description;Rear jogger motor error without 1-bin tray (D586) The machine does not detect a correct signal from the rear jogger fence HP sensor while the rear jogger motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective front jogger motor • Loosen connection • Motor overload • Defective front jogger fence HP sensor
+Remedy;• Reset the connector • Replace the front jogger fence HP sensor. • Replace the front jogger motor.
+Code;SC794-03
+Description;Pick-up roller contact motor error without 1-bin tray (D586) The machine does not detect a correct signal from the pick-up roller HP sensor while the pick-up roller contact motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective pick-up roller contact motor • Loosen connection • Motor overload • Defective pick-up roller HP sensor
+Remedy;• Reset the connector • Replace the pick-up roller HP sensor. • Replace the pick-up roller contact motor.
+Code;SC794-04
+Description;Exit guide plate motor error without 1-bin tray (D586) The machine does not detect a correct signal from the exit guide plate HP sensor while the exit guide plate motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective exit guide plate motor • Loosen connection • Motor overload • Defective exit guide plate HP sensor
+Remedy;• Reset the connector • Replace the exit guide plate HP sensor. • Replace the exit guide plate motor.
+Code;SC794-05
+Description;Output tray motor error without 1-bin tray (D586) The machine does not detect a correct signal from the stack height detection lever sensor while the output tray motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective output tray motor • Loosen connection • Motor overload • Defective stack height detection lever sensor
+Remedy;• Reset the connector • Replace the stack height detection lever sensor. • Replace the output tray motor.
+Code;SC794-06
+Description;Stack height detection lever motor error without 1-bin tray (D586) The machine does not detect a correct signal from the stack height detection lever HP sensor while the stack height detection lever motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective stack height detection lever motor • Loosen connection • Motor overload • Defective stack height detection lever HP sensor • Defective stack height detection lever sensor
+Remedy;• Reset the connector • Replace the stack height detection lever sensor. • Replace the output tray motor.
+Code;SC794-07
+Description;Punch drive motor error without 1-bin tray (D586) The machine does not detect a correct signal from the punch position sensor while the punch drive motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective punch drive motor • Loosen connection • Motor overload • Defective punch position sensor
+Remedy;• Reset the connector • Replace the punch position sensor. • Replace the punch drive motor.
+Code;SC794-08
+Description;Punch movement motor error without 1-bin tray (D586) The machine does not detect a correct signal from the punch position sensor while the punch movement motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective punch movement motor • Loosen connection • Motor overload • Defective punch position sensor
+Remedy;• Reset the connector • Replace the punch position sensor. • Replace the punch movement motor.
+Code;SC794-09
+Description;Paper position sensor unit motor error without 1-bin tray (D586) The machine does not detect a correct signal from the paper position detection unit HP sensor while paper position sensor unit motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective paper position sensor unit motor • Loosen connection • Motor overload • Defective paper position detection unit HP sensor
+Remedy;• Reset the connector • Replace the paper position detection unit HP sensor. • Replace the paper position sensor unit motor.
+Code;SC794-10
+Description;Stapler motor error. The machine does not detect a correct signal from the stapler motor HP sensor while thestapler motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Staple jam • Defective stapler motor • Loosen connection • Motor overload • Defective stapler motor HP sensor
+Remedy;• Remove the jammed staple. • Reset the connector • Replace the stapler motor HP sensor. • Replace the stapler motor.
+Code;SC794-11
+Description;Stapler unit motor error without 1-bin tray (D586) The machine does not detect a correct signal from the stapler unit motor HP sensor while the stapler unit motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective stapler unit motor • Loosen connection • Motor overload • Defective stapler unit motor HP sensor
+Remedy;• Reset the connector • Replace the stapler unit HP sensor. • Replace the stapler unit motor.
+Code;SC794-12
+Description;Shift roller motor error without 1-bin tray (D586) The machine does not detect a correct signal from the shift roller HP sensor while the shift roller motor is operating. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Defective shift roller motor • Loosen connection • Motor overload • Defective shift roller HP sensor
+Remedy;• Reset the connector • Replace the shift roller HP sensor. • Replace the shift roller motor.
+Code;SC816-01
+Description;Subsystem error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-02
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-03
+Description;Transition to STR was denied.
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-04
+Description;Interrupt in kernel communication driver
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-05
+Description;Preparation for transition to STR failed.
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-07
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-08
+Description;Sysarch (LPUX_ENGINE_TIMERCTRL) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-09
+Description;Sysarch (LPUX_RETURN_FACTOR_STR) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-10
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-11
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-12
+Description;Sysarch (LPUX_GET_PORT_INFO) error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-13
+Description;open() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-14
+Description;Memory address error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-15
+Description;open() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-19
+Description;Double open() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-20
+Description;open() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-22
+Description;Parameter error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-23
+Description;read() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-24
+Description;read() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-25
+Description;write () error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-26
+Description;write() communication retry error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-29
+Description;read() communication retry error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-35
+Description;read() error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC816-36
+Description;Subsystem error
+Causes;Energy save I/O subsystem detected some abnormality. • Energy save I/O subsystem defective • Energy save I/O subsystem detected a controller board error (non-response). • Error was detected during preparation for transition to STR.
+Remedy;• Turn the main power off/on. • Replace the controller board.
+Code;SC841-00
+Description;EEPROM read data error Compared the data from 3 areas of the EEPROM mirror data with the original data and all 3 of them were different from the original data.
+Causes;Data in the specific area of the EEPROM has been modified.
+Remedy;
+Code;SC842-00
+Description;Nand-Flash updating verification error During remote ROM update or ROM update, the SCS detected a write error (verify error) regarding the data written to the Nand-Flash.
+Causes;Nand-Flash damaged
+Remedy;Turn the main power off/on.
+Code;SC842-01
+Description;Nand-Flash bad block number exceeding the threshold When the status of the Nand-Flash was checked at power-on or when returning from energy saver mode, the number of bad blocks exceeded the threshold.
+Causes;Nand-Flash bad block number exceeding the threshold
+Remedy;Replace the controller board.
+Code;SC842-02
+Description;Number of times of Nand-Flash block erase exceeding the threshold When the status of the Nand-Flash was checked at power-on or when returning from energy saver mode, the number of times the block was erased exceeded the threshold.
+Causes;Number of times of Nand-Flash block erase exceeding the threshold
+Remedy;Replace the controller board.
+Code;SC853-00
+Description;Bluetooth device connection error The Bluetooth hardware (USB type) was connected after the machine was turned on.
+Causes;The Bluetooth hardware (USB type) was connected after the machine was turned on.
+Remedy;Turn the main power with the Bluetooth hardware (USB type) connected.
+Code;SC854-00
+Description;Bluetooth device disconnected The Bluetooth hardware (USB type) was disconnected after the machine was turned on.
+Causes;The Bluetooth hardware (USB type) was disconnected after the machine was turned on.
+Remedy;Turn the main power with the Bluetooth hardware (USB type) connected.
+Code;SC855-01
+Description;Wireless LAN board error (driver attachment failure) Wireless LAN board error (wireless LAN card: 802.11 is covered)
+Causes;• Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC855-02
+Description;Wireless LAN board error (driver initialization failure) Wireless LAN board error (wireless LAN card: 802.11 is covered)
+Causes;• Defective wireless LAN board • Loose connection
+Remedy;• Turn the main power off/on. • Replace wireless LAN board
+Code;SC857-00
+Description;USB I/F Error The USB interface is unusable because of a driver error.
+Causes;USB driver error (There are three causes of USB error: RX error/CRC error/STALL. SC is issued only in the case of STALL.)
+Remedy;• Check USB connection. • Replace the controller board.
+Code;SC858-01
+Description;Data encryption conversion error (HDD Key Setting Error) A serious error occurred during an attempt to update the encryption key.
+Causes;• Data in the USB Flash etc. corrupted • Communication error because of electromagnetic interference etc. • Controller board defective
+Remedy;Replace the board.
+Code;SC858-02
+Description;Data encryption conversion error (NVRAM read/write error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;NVRAM defective
+Remedy;Replace the board.
+Code;SC858-30
+Description;Data encryption conversion error (NVRAM Before Replace error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;Software error such as conversion parameters being invalid.
+Remedy;Replace the board.
+Code;SC858-31
+Description;Data encryption conversion error (Other Error) A serious error occurred after data conversion during an attempt to update the encryption key.
+Causes;Controller board defective
+Remedy;Replace the board.
+Code;SC859-01
+Description;Data encryption conversion HDD conversion error (HDD check error) HDD was not converted correctly during an attempt to update the encryption key. Only an error screen is displayed and no SC is issued during conversion. This SC is issued after machine restart.
+Causes;• HDD conversion was selected in the Encryption key update function but the machine was turned on with the HDD removed. • Power failure occurred during encryption key update. • HDD was not successfully converted during encryption key update due to HDD errors or cable noises.
+Remedy;• Check HDD connection. • Format the HDD. • If there is a problem with the HDD, it has to be replaced.
+Code;SC859-02
+Description;Data encryption conversion HDD conversion error (Power failure during conversion) HDD was not converted correctly during an attempt to update the encryption key. Only an error screen is displayed and no SC is issued during conversion. This SC is issued after machine restart. Details: NVRAM/HDD conversion is incomplete.
+Causes;Power failure occurred during encryption key update.
+Remedy;The display after restart instructs the user to format the HDD.
+Code;SC859-10
+Description;Data encryption conversion HDD conversion error (Data read/write command error) HDD was not converted correctly during an attempt to update the encryption key. Only an error screen is displayed and no SC is issued during conversion. This SC is issued after machine restart. Details: Abnormal DMAC return value has been received two or more times (DMAC timeout, serial communication error etc.)
+Causes;HDD was not successfully converted during encryption key update due to HDD errors or cable noises.
+Remedy;• Check HDD connection. • Format the HDD. • If there is a problem with the HDD, it has to be replaced.
+Code;SC860-00
+Description;HDD startup error at main power on (HDD error) • The HDD is connected but the driver detected the following errors. • SS_NOT_READY:/* (-2)HDD does not become READY*/ • SS_BAD_LABEL:/* (-4)Wrong partition type*/ • SS_READ_ERROR:/* (-5)Error occurred while reading or checking the label*/ • SS_WRITE_ERROR:/* (-6)Error occurred while writing or checking the label*/ • SS_FS_ERROR:/* (-7)Failed to repair the filesystem*/ • SS_MOUNT_ERROR:/* (-8)Failed to mount the filesystem*/ • SS_COMMAND_ERROR:/* (-9)Drive not responding to command*/ • SS_KERNEL_ERROR:/* (-10)Internal kernel error*/ • SS_SIZE_ERROR:/* (-11)Drive size too small*/ • SS_NO_PARTITION:/* (-12)The specified partition does not exist*/ • SS_NO_FILE:/* (-13)Device file does not exist*/ • Attempted to acquire HDD status through the driver but there has been no response for 30 seconds or more.
+Causes;• Unformatted HDD • Label data corrupted • HDD defective
+Remedy;Format the HDD through SP mode.
+Code;SC865-00
+Description;HDD access error During HDD operation, the HDD returned an error.
+Causes;The HDD returned an error that does not constitute SC863 (bad sector) or SC864 (CRC error).
+Remedy;Replace the HDD.
+Code;SC866-00
+Description;SD card authentication error A license error of an application that is started from the SD card was detected.
+Causes;Invalid program data is stored on the SD card.
+Remedy;Store a valid program data on the SD card.
+Code;SC867-00
+Description;SD card removed The SD card that starts an application was removed from the slot.
+Causes;The SD card that starts an application was removed from the slot (mount point of /mnt/sd0).
+Remedy;Turn the main power off/on.
+Code;SC868-00
+Description;SD card access error The SD controller returned an error during operation. (Error occurred at the mount point of /mnt/sd0)
+Causes;• SD card defective • SD controller defective
+Remedy;"• Reformat the SD card (using the ""SD Formatter"" made by Panasonic).* • Check the SD card insertion status. • Replace the SD card. • Replace the controller board."
+Code;SC868-01
+Description;SD card access error The SD controller returned an error during operation. (Error occurred at the mount point of /mnt/sd1)
+Causes;• SD card defective • SD controller defective
+Remedy;"SD card that starts an application • Turn the main power off and check the SD card insertion status. • If no problem is found, insert the SD card and turn the main power on. • If an error occurs, replace the SD card. • SD card for users • In case of a file system error, reformat the SD card (using the ""SD Formatter"" made by Panasonic).* • In case of a device access error, turn the main power off and check the SD card insertion status. • If no problem is found, insert the SD card and turn the main power on. • If an error occurs, use another SD card. • If the error persists"
+Code;SC868-02
+Description;SD card access error The SD controller returned an error during operation. (Error occurred at the mount point of /mnt/sd1)
+Causes;• SD card defective • SD controller defective
+Remedy;"SD card that starts an application • Turn the main power off and check the SD card insertion status. • If no problem is found, insert the SD card and turn the main power on. • If an error occurs, replace the SD card. • SD card for users • In case of a file system error, reformat the SD card (using the ""SD Formatter"" made by Panasonic).* • In case of a device access error, turn the main power off and check the SD card insertion status. • If no problem is found, insert the SD card and turn the main power on. • If an error occurs, use another SD card. • If the error persists"
+Code;SC870
+Description;When an error related to the Address Book is detected during startup or operation.
+Causes;• Software bug • Inconsistency of Address Book source location (machine/delivery server/LDAP server) • Inconsistency of Address Book encryption setting or encryption key (NVRAM or HDD was replaced individually without formatting the Address Book) • Address Book storage device (SD/HDD) was temporarily removed or hardware configuration does not match the application configuration. • Address Book data corruption was detected.
+Remedy;• Check the HDD connection. • Initialize all UCS settings and address/authentication information (SP5-846-046). • Initialize the Address Book partition (SP5-832-006).
+Code;SC872-00
+Description;HDD mail reception error. An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned of while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007). • Replace the HDD. When you do the above, the following information will be initialized. • Partly received partial mail messages. • Already-read statuses of POP3-received messages (All messages on the mail server are handled as new messages).
+Code;SC873-00
+Description;HDD mail reception error An error was detected on the HDD immediately after the machine was turned on.
+Causes;• HDD defective • Power was turned of while the machine used the HDD.
+Remedy;• Format the HDD (SP5-832-007). • Replace the HDD. When you do the above, the following information will be initialized. • Default sender name/password (SMB/FTP/NCP) • Administrator mail address • Scanner delivery history
+Code;SC875-01
+Description;Delete all error (HDD erasure) (hddchack –i error) An error was detected before HDD/data erasure starts. (Failed to erase data/failed to logically format HDD)
+Causes;• HDD logical formatting failed. • The modules failed to erase data.
+Remedy;Turn the main power off/on.
+Code;SC875-02
+Description;Delete all error (HDD erasure) (Data deletion failure) An error was detected before HDD/data erasure starts. (Failed to erase data/failed to logically format HDD)
+Causes;• HDD logical formatting failed. • The modules failed to erase data.
+Remedy;Turn the main power off/on.
+Code;SC876-01
+Description;Log Data Error 1 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Damaged log data file
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-02
+Description;Log Data Error 2 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Log encryption is enabled but encryption module is not installed.
+Remedy;• Replace or set again the encryption module. • Disable the log encryption setting.
+Code;SC876-03
+Description;Log Data Error 3 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Inconsistency of encryption key between NV-RAM and HDD.
+Remedy;• Disable the log encryption setting. • Initialize LCS memory (SP5801-019). • Initialize the HDD (SP5-832-004).
+Code;SC876-04
+Description;Log Data Error 4 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Log encryption key is disabled but the log data file is encrypted. (NVRAM data corruption) • Log encryption key is enabled but the log data file is not encrypted. (NVRAM data corruption)
+Remedy;Initialize the HDD (SP5-832-004).
+Code;SC876-05
+Description;Log Data Error 5 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;• Only the NV-RAM has been replaced with one previously used in another machine. • Only the HDD has been replaced with one previously used in another machine.
+Remedy;• Attach the original NV-RAM. • Attach the original HDD. • With the configuration that caused the SC, initialize the HDD (SP5-832-004).
+Code;SC876-99
+Description;Log Data Error 99 An error was detected in the handling of the log data at power on or during machine operation.
+Causes;Other causes
+Remedy;
+Code;SC877-00
+Description;"Data Overwrite Security card error The ""Auto Erase Memory"" function of the Data Overwrite Security is set to on but it cannot be done."
+Causes;• Data Overwrite Security option SD card is broken. • Data Overwrite Security option SD card has been removed.
+Remedy;• If the SD card is broken, prepare a new Data Overwrite Security option SD card and replace the NVRAM. • If the SD card has been removed, turn the main power off and reinstall a working Data Overwrite Security option SD card.
+Code;SC880-00
+Description;MLB error Reply to MLB access was not returned within a specified time.
+Causes;MLB defective
+Remedy;• Replace the MLB. • Remove the MLB.
+Code;SC881-01
+Description;Authentication area error • Software error detected. • This error may occur even if IC card option (ERIE/AYU/Greenland etc.) is not installed.
+Causes;• This is caused by accumulation of abnormal authentication information in the software. (User operation will not directly cause it.) • Occurs when authentication is done. Example: When a job is sent to the printer/when logged on from the operation panel/when logged on from a Web browser
+Remedy;Turn the main power off/on.
+Code;SC899-00
+Description;Software performance error (signal reception end)
+Causes;Occurs when an internal program behaves abnormally.
+Remedy;In case of a hardware defect • Replace the hardware. In case of a software error • Turn the main power off/on. • Try updating the firmware.
+Code;SC900-00
+Description;Electric counter error The electric total counter value is out of specification. Error is detected when increasing the total counter.
+Causes;• Unexpected NVRAM is attached. • NVRAM defective • NV-RAM data corrupted. • Data written to unexpected area because of external factor etc. • The count requested by the SRM on receiving PRT is not completed.
+Remedy;Replace the NVRAM.
+Code;SC901
+Description;Mechanical total counter error The counter was moved during standby or while it is operating, possibly damaging the connector.
+Causes;Counter defective
+Remedy;Check the connection of the mechanical counter
+Code;SC920
+Description;When an error is detected in the application, which makes continued operation impossible.
+Causes;• Software bug • Unexpected hardware configuration (such as insufficient memory)
+Remedy;Turn the main power off/on.
+Code;SC921-00
+Description;Printer application error (Resident font not found). Resident font was not found at printer startup.
+Causes;Preinstalled font files not found.
+Remedy;Turn the main power off/on.
+Code;SC925
+Description;NetFile function error The NetFile file management on the HDD cannot be used, or a NetFile management file is corrupted and operation cannot continue.
+Causes;• HDD defective • HDD inconsistency caused by power failure during HDD access, etc. • Software bug
+Remedy;"If another SC related to HDD errors (SC860 to SC865) is issued at the same time, the HDD is the cause. Solve the other SC. • If SC860 to SC865 is not issued • Turn the main power off/on. • If this does not work, initialize the HDD NetFile partition (SP5-832-011). Approval by the customer is required because received fax message waiting to be delivered and documents waiting to be captured will be lost. Procedure: 1. Go into the User Tools mode and do ""Delivery Settings"" to print all received fax documents that are scheduled for delivery. Then erase them. 2. In the User Tools mode, do Document Management> Batch Delete Transfer Documents. 3. Do SP5832-011, then turn the machine power off and on. • If this does not solve the problem, initialize all partitions of the HDD (SP5-832-001), then turn the machine power off and on. Approval by the customer is required because documents and Address Book information in the HDD will be lost. Received fax messages stored are protected but the order may be changed. • If this does not solve the problem, replace the HDD."
+Code;SC990-00
+Description;Software operation error Software attempted an unexpected operation.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;• Turn the main power off/on. • Reinstall the software of the controller and BICU board.
+Code;SC991-00
+Description;Recoverable software operation error Software attempted an unexpected operation. SC991 covers recoverable errors as opposed toCS990.
+Causes;• Parameter error • Internal parameter error • Insufficient work memory • Operation error caused by abnormalities that are normally undetectable.
+Remedy;Logging only
+Code;SC992-00
+Description;Undefined SC issued. An SC, that is not controlled by the system, occurred.
+Causes;• An SC for the previous model was used mistakenly, etc. • Basically a software bug.
+Remedy;Turn the main power off/on.
+Code;SC995-01
+Description;CPM setting error 1 Comparison of machine serial number (11 digits) and machine identification code. Details: • Machine serial number cannot be identified because of BICU replacement or malfunctioning. • Machine serial number cannot be identified because of NV-RAM replacement
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Enter the machine serial number using SP5-811, and then turn the power on/off. Attach the NV-RAM that was installed previously.
+Code;SC995-02
+Description;CPM setting error 2 Comparison of machine serial number (11 digits) and machine identification code. Details: Machine serial number cannot be identified because of NV-RAM replacement or malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;• Attach the NV-RAM that was installed previously. • Download data on the NV-RAM using SP5-825.
+Code;SC995-03
+Description;CPM setting error 3 Comparison of machine serial number (11 digits) and machine identification code. Details: Unable to recognize machine identification code because the controller was replaced incorrectly or is malfunctioning.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Replace it with a specified controller.
+Code;SC995-04
+Description;CPM setting error 4 Comparison of machine serial number (11 digits) and machine identification code.
+Causes;Machine serial number (11 digits) or machine identification code does not match.
+Remedy;Return the parts to the original configuration, and then replace them according to the manual.
+Code;SC997-00
+Description;Application function selection error The application selected by the operation panel key operated abnormally (No response, abnormal ending).
+Causes;Software bug (mainly the application)
+Remedy;• Check the optional RAM, DIMM, boards required by the application program. • Check if the combination of downloaded programs are correct.
+Code;SC998-00
+Description;Application start error • No application was registered to system within a specified time after the main power was turned on. (No application starts/All applications have been terminated abnormally) • Application started but cannot be drawn now for some reason.
+Causes;• Software bug (mainly the application) • The optional RAM, DIMM, boards required by the application program. Are not installed correctly.
+Remedy;• Turn the main power off/on. • Check the optional RAM, DIMM, boards • Check the combination of programs • Replace the controller board.

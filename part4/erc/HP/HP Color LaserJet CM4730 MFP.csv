@@ -1,0 +1,353 @@
+Code;10.XX.YY
+Display;10.XX.YY Supplies Error
+Description;"A 10.XX.YY Supplies Error indicates either an error with one of the print cartridges or a notification of Override at out or Color Supply Out settings. The values of XX are: • 00 = memory error on supply • 10 = memory tag missing • 30 = non-HP supply in use • 32 = unauthorized supply in use • 70 = cartridge-out override activated (Override In Use) • 71 = monochrome printing after color cartridge out activated (Printing Black Only) • 80 = cartridge-out override deactivated because user limit reached (Override Not In Use) • 81 = monochrome printing after color cartridge out deactivated (Not Printing Black Only) • 88 = cartridge-out override deactivated because maximum use/wear limit reached (Override Not In Use) • 89 = cartridge-out override deactivated because cartridge out of toner (Override Not In Use) • 90 = replace cartridge (Replace <color> Cartridge) • 92 = cartridge not engaged
+ For errors 70 through 92, the main description appears only in the event log and is not posted on the control panel. The control-panel message is indicated in parentheses. The values of YY are: • 00 = black print cartridge • 01 = cyan print cartridge • 02 = magenta print cartridge • 03 = yellow print cartridgep"
+Remedy;"10.00.YY / 10.10.YY / 10.30.YY / 10.32.YY messages
+ 1. Turn the MFP off and then back on. 2. Swap the color cartridge indicated with a cartridge in another slot to determine whether the error follows the cartridge or stays with the slot. If the error follows the cartridge, replace that cartridge. Otherwise, proceed to step 3. 3. Reset the connectors between the memory PCB (J4001) and the DC controller (J1021). 4. Replace the memory PCB. 5. Replace the DC controller PCB. Calibrate the printer after replacing the DC controller.
+ 10.70.YY / 10.80.YY / 10.88.YY / 10.89.YY messages • When Override at out is selected in the Replace Supplies menu AND a print cartridge reaches an out state, a 10.70.YY message is posted in the event log and the MFP continues to print. • When the print cartridge subsequently reaches one of the three thresholds set for override, one of the following errors is posted to the event log and the MFP will not continue to print. • 10.80.YY = user limit • 10.88.YY = HP predefined maximum use/wear. • 10.89.YY = out of toner
+ 10.71.YY / 10.81.YY messages • When Autocontinue black is selected in the Color Supply Out menu and a color print cartridge reaches an out state, a 10.71.YY message is posted in the event log and the MFP continues to print in black-only mode. • When the black cartridge subsequently reaches the out state, a 10.81.YY message is posted to the event log and the MFP will not continue to print unless Override at out is set. 
+ 10.90.YY / 10.92.YY messages 1. Turn the MFP off and then on. 2. Reseat the print cartridge. 3. Replace the indicated print cartridge"
+Code;11.XX
+Display;11.XX Internal clock error
+Description;"This message is displayed when there is a problem with the real-time clock on the formatter board.
+ 11.01 = Dead clock battery 11.02 = Dead real-time clock"
+Remedy;Replace the formatter assembly.
+Code;13.01.00
+Display;13.01.00 JAM IN TRAY 1
+Description;Paper is jammed in tray 1.
+Remedy;1. Use Help to see step-by-step information. 2. Clean the pickup roller. If it is worn or damaged, replace it. 3. Clean or replace the separation pad. 4. Upgrade formatter and DC controller firmware. 5. Check all cable connections to/from DC controller. 6. Replace the paper pickup drive assembly. 7. Replace the paper feed assembly.
+Code;13.01.11
+Display;13.01.11 JAM INSIDE LOWER RIGHT DOOR
+Description;There is a paper jam inside the lower right door, or the paper did not feed from the paper tray.
+Remedy;1. Follow the onscreen help to clear the jam. 2. It might be a no-pick jam. Check the tray 3 and 4 paper pickup and paper feed rollers. Reseat the rollers if necessary. Replace the rollers if they are worn or damaged. 3. Ensure that paper is loaded correctly in the paper tray. 4. Try exchanging paper trays to isolate the problem.
+Code;13.02.00
+Display;13.02.00 JAM INSIDE RIGHT DOORS
+Description;Paper is jammed inside the right doors. The trailing edge was not detected by sensor SR12 after the specified time.
+Remedy;1. Follow the onscreen help to clear the jam. Touch OK to continue. 2. Check for obstructions in the paper feed assembly. 3. Ensure that paper is loaded correctly in the paper tray. 4. Try exchanging paper trays to isolate the problem. 5. If paper jams in the paper feed assembly, replace the assembly after checking for any obstruction.
+Code;13.05.00
+Display;13.05.00 JAM INSIDE RIGHT DOORS
+Description;Paper is jammed inside the right doors. The trailing edge was not detected by sensor SR12 after the specified time.
+Remedy;1. Follow the onscreen help to clear the jam. 2. Check for obstructions in the paper feed assembly. 3. Ensure that paper is loaded correctly in the paper tray. 4. Try exchanging paper trays to isolate the problem. 5. If paper jams in the paper feed assembly, replace the assembly after checking for any obstruction.
+Code;13.06.00
+Display;13.06.00 JAM INSIDE UPPER RIGHT DOOR
+Description;There is a paper jam inside the right doors.
+Remedy;Follow the onscreen instructions to find and remove the jammed media.
+Code;13.09.00
+Display;13.09.00 JAM INSIDE FRONT SMALL DOOR
+Description;Paper is jammed inside the front small door.
+Remedy;1. Follow the onscreen help to clear the jam. 2. Check for obstructions inside the output accessory bridge. 3. Try printing a simplex job to isolate the issue. 4. Remove and reinstall the output accessory bridge. Check for paper after removal.
+Code;13.11.00
+Display;13.11.00 JAM INSIDE UPPER RIGHT DOOR
+Description;Paper is jammed inside the upper right door. There is a jam in the oblique roller area between sensor SR8001 (paper reversing sensor) and SR12 (top of page sensor), or in the fuser.
+Remedy;1. Follow the onscreen help to clear the jam. 2. Check for obstructions in the fuser. 3. Check for obstructions in the duplexer. 4. Ensure that media meets specifications. 5. Ensure that the ETB rollers roll freely. 6. Ensure that there is no obstruction at the bottom of the ETB.
+Code;13.12.07
+Display;13.12.07 Jam In Stapler
+Description;The stapler could not finish its cycle but was able to return to the home position If the stapler drive does not return to home position (HP) during the normal cycle, the stapler/stacker driver signals M1304 (stapler motor) to rotate once in reverse. If the HP signal is now detected, the stapler/ stacker driver sends a signal to the formatter that a staple jam is present.
+Remedy;1. Remove the staple cartridge and any loose staples or staples that might be obstructing stapler movement. 2. Remove one sheet of staples from staple cartridge and try again. 3. Inspect the staple cartridge for damage. Replace the staple cartridge if it is damaged. 4. Verify that genuine HP staples are being used. NOTE: Staples come preloaded in the staple cartridge and cannot be ordered separately as a refill from HP. 5. If none of the above corrects problem, replace the stapler/stacker unit.
+Code;13.12.08
+Display;13.12.08 Jam In Left Accessory
+Description;Stay jam in accumulator. Paper sensor PS 1302 stayed activated longer than expected. This signal is generated by sensor PS1302 (delivery sensor). PS1302 is located just before the delivery rollers. In order to reach or see the sensor arm, lift the upper delivery rollers and upper paper-path guide plate. You will now be able to see and toggle the sensor arm activating PS1302.
+Remedy;1. Remove any jammed paper obstructing the paper path to the delivery rollers. 2. Turn the MFP off then on. 3. If the error persists, replace the stapler/ stacker unit.
+Code;13.12.09
+Display;13.12.09 Jam In Left Accessory
+Description;Stay jam. Inlet-paper sensor PS1501 remained activated longer than expected. This signal is generated by sensor PS1501 (paper-inlet sensor). PS1501 is located under the lower entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Slide the mailbox device away from the MFP and remove any paper found entering the mailbox device or exiting the MFP. 2. Slide the mailbox back into the MFP and check for an error. 3. If the error persists, turn the MFP off then on. 4. If none of the above corrects the problem, replace the MBM unit.
+Code;13.12.09
+Display;13.12.09 Jam In Left Accessory
+Description;Stay jam at the entrance to the stapler/ stacker. Sensor PS1301 stayed activated longer than expected. This signal is generated by sensor PS1301 (paper-inlet sensor). PS1301 is located under the lower-entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Slide the stapler/stacker away from the MFP and remove any paper found entering the stapler/stacker or exiting the MFP. 2. Slide the stapler/stacker back into the unit and check for an error. 3. If the error persists, turn the MFP off then on. 4. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;13.12.10
+Display;13.12.10 Jam In Left Accessory
+Description;Delay jam. Paper did not arrive at the paperinlet sensor PS1501 within the expected time. This signal is generated from sensor PS1501 (paper-inlet sensor). PS1501 is located under the lower entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Remove the paper jam. 2. Open a new ream of paper and replace the paper in the paper tray. Try running the job again. If jamming stops, the problem is most likely excessive paper curl leaving the fuser. This is caused by damp paper from high humidity or poor-quality paper. 3. If the error persists with the new ream of paper, replace the MBM unit.
+Code;13.12.10
+Display;13.12.10 Jam In Left Accessory
+Description;Delay jam in entry. Paper did not arrive at the paper-inlet sensor PS1301 within the expected time. This signal is generated from sensor PS1301 (paper-inlet sensor). PS1301 is located under the lower entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Remove the paper jam. 2. Open a new ream of paper and replace the paper in the paper tray. Try running the job again. If jamming stops, the problem is most likely excessive paper curl leaving the fuser. This is caused by damp paper from high humidity or poor-quality paper. 3. If the error persists with the new ream of paper, replace the stapler/stacker unit.
+Code;13.12.11
+Display;13.12.11 Jam In Left Accessory
+Description;Initial jam. At power on, paper was present at the entrance of the MBM at sensor PS1501. This signal is generated by sensor PS1501 (paper-inlet sensor). PS1501 is located under the lower entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Remove any paper found in the entrance guides of the MBM that might be activating PS1501. 2. Turn the MFP off then on. 3. If the error persists, replace the MBM unit.
+Code;13.12.11
+Display;13.12.11 Jam In Left Accessory
+Description;Initial jam. At power on, paper was present at the entrance of the stapler/stacker at sensor PS1301. This signal is generated by sensor PS1301 (paper-inlet sensor). PS1301 is located under the lower entrance guide plate with the sensor arm extending up through the guide plate and into the paper path.
+Remedy;1. Remove any paper found in the entrance guides. 2. Turn the MFP off then on. 3. If the error persists, replace the stapler/ stacker unit.
+Code;13.13.00
+Display;13.13.00 JAM INSIDE RIGHT DOORS
+Description;Paper is jammed inside the right doors. The front edge did not reach sensor SR1 within the specified time after reaching sensor SR12.r unit.
+Remedy;1. Follow the onscreen help to clear the jam. 2. Check for obstructions near the fuser inlet. 3. Ensure that paper is loaded correctly in the paper tray. 4. Try exchanging paper trays to isolate the problem. 5. Replace the fuser.
+Code;13.21.00
+Display;13.21.00 JAM IN TRAY X
+Description;There is a paper jam inside the upper right door or inside the fusing unit.
+Remedy;Follow the onscreen instructions to find and remove the jammed media.
+Code;13.30.00
+Display;13.30.00 JAM INSIDE DRAWER BELOW TRAY 1
+Description;Paper is jammed inside the drawer.
+Remedy;1. Follow the onscreen help to clear the jam. 2. It might be a no-pick jam. Check the tray 3 and 4 paper pickup and paper feed rollers. Reseat the rollers if necessary. Replace the rollers if they are worn or damaged. 3. Ensure that paper is loaded correctly in the paper tray. 4. Try exchanging paper trays to isolate the problem.
+Code;13.31.00
+Display;13.31.00 JAM INSIDE UPPER RIGHT DOOR
+Description;Paper is jammed inside the upper right door. There is a jam in the oblique roller area between sensor SR8001 (paper reversing sensor) and SR12 (top of page sensor).
+Remedy;1. Follow the onscreen help to clear the jam. 2. Ensure that media meets specifications. 3. Ensure that the ETB rollers roll freely. 4. Ensure that there is no obstruction at the bottom of the ETB.
+Code;13.XX.YY
+Display;13.XX.YY JAM IN OUTPUT AREA
+Description;There is a paper jam in the output area.
+Remedy;Follow the onscreen instructions to find and remove the jammed media.
+Code;13.XX.YY
+Display;13.XX.YY Jam In Paper Path
+Description;"There is a jam in the paper path. 
+ 13.12.00 = jam in paper path 13.20.00 = jam in paper path 13.21.00 = jam in paper path"
+Remedy;1. Step through the onscreen instructions. 2. If paper is folding into an accordion shape, make sure the shutter on each print cartridge opens as you close the ETB and each cartridge is turning correctly. Replace defective print cartridges or drive motors. 3. Clean the attaching roller at the bottom of the ETB and make sure that the spring is holding it in place. 4. Upgrade formatter and DC controller firmware, which can be found in a single . 5. Replace the paper pickup PCB. 6. Check all cable connections to/from the DC controller. 7. Replace the ETB if it is not moving paper correctly. Calibrate the printer.
+Code;13.XX.YY
+Display;13.XX.YY JAM INSIDE OUTPUT ACCESSORY BRIDGE
+Description;Paper is jammed inside the output accessory bridge.
+Remedy;1. Follow the onscreen help to clear the jam. 2. Check for obstructions inside the output accessory bridge. 3. Try printing a simplex job to isolate the issue. 4. Remove and reinstall the output accessory bridge. Check for paper after removal.
+Code;20
+Display;20 INSUFFICIENT MEMORY
+Description;The MFP received more data than can fit in the available memory. You might have tried to transfer too many macros, soft fonts, or complex graphics.
+Remedy;Touch OK to print the transferred data (some data might be lost), and then simplify the print job or install additional memory.
+Code;21
+Display;21 PAGE TOO COMPLEX
+Description;The page formatting process was not fast enough for the MFP.
+Remedy;Touch OK to print the transferred data (some data might be lost). If this message appears often, simplify the print job.
+Code;22
+Display;22 EIO X BUFFER OVERFLOW
+Description;Too much data was sent to the EIO card in the specified slot (x). An incorrect communications protocol might be in use.
+Remedy;1. Touch OK to continue printing. 2. Power cycle the MFP. 3. Resend the print job. 4. If the error still occurs, replace the EIO card in slot X.
+Code;22
+Display;22 EMBEDDED I/O BUFFER OVERFLOW
+Description;Too much data was sent to the embedded HP Jetdirect print server.
+Remedy;1. Touch OK to continue printing. 2. Power cycle the MFP. 3. Resend the print job. 4. If the error still occurs, replace the formatter.
+Code;30.00.01
+Display;30.00.01
+Description;Scanner communication error. The formatter is unable to communicate with the scanner.
+Remedy;1. Reseat the 256 MB memory DIMM on the back side of the formatter. 2. Reseat the flat cable from the formatter to connector CN101 on the scanner controller PCB. 3. Replace the 256 MB memory DIMM on the back side of the formatter. 4. Replace the flat cable from the formatter to connector CN101 on the scanner controller PCB. 5. Replace the formatter. 6. Replace the scanner controller PCB.
+Code;30.01.01
+Display;30.01.01
+Description;The flatbed scanner cover is open. This is a status message only.
+Remedy;1. Ensure the flatbed cover is closed. 2. If the message persists, check that the scanner-open sensor at the left-rear of the scanner moves up and down correctly. If not, replace the scanneropen- sensor holder assembly. 3. Replace the scanner-open sensor.
+Code;30.01.02
+Display;30.01.02
+Description;A paper jam has occurred in the ADF paper path.
+Remedy;1. Open the scanner jam-release cover and check all areas for jammed paper or labels that might be blocking a sensor. 2. Check that the mylar strip and holder are installed correctly. 3. Use the ADF sensor tests to ensure the ADF paper-present and ADF topof- page sensor flags move freely and the sensors are working properly. 4. If the jams persist, reseat the ADF pickup roller assembly. 5. Replace the ADF assembly.
+Code;30.01.03
+Display;30.01.03
+Description;The ADF could not pick up the paper. If the paper does not pass the paper-presence sensor, it will be reported as an ADF paperpick error.
+Remedy;"1. Check that the ADF jam-access door is fully seated. 2. Check the movement of the ADF driver gear on the ADF jam-access door to make sure it engages with the ADF input motor. A grinding noise can sometimes be heard when the paper is initially picked; this indicates the gear is not fully seated against the motor. In this case, replace the ADF pickup gear."
+Code;30.01.06
+Display;30.01.06
+Description;The scanner fan, located at the base of the scanner assembly, has failed. It operates whenever the scanner lamp is illuminated or whenever the scanner flatbed motor is rotating. The fan also operates during the MFP initialization sequence.
+Remedy;1. During the MFP initialization sequence, listen to the fan to determine if it is operating. 2. Verify that the connector CN108 on the scanner controller PCB is firmly seated. Also make sure that the connection for the fan in the base of the scanner assembly is firmly seated. 3. If all the connections are secure but the fan is not operating, replace the fan. 4. If the error persists, replace the scan control board.
+Code;30.01.07
+Display;30.01.07
+Description;A communication error has occurred in the scanner.
+Remedy;1. Reseat the 256 MB memory DIMM on the back side of the formatter. 2. Reseat the flat cable from the formatter to connector CN101 on the scanner controller PCB. 3. Replace the 256 MB memory DIMM on the back side of the formatter. 4. Replace the flat cable from the formatter to connector CN101 in the scanner controller PCB. 5. Replace the formatter. 6. Replace the scanner controller PCB.
+Code;30.01.08
+Display;30.01.08
+Description;Carriage home-position error. The carriage did not pass the home-position sensor within the allotted amount of time.
+Remedy;1. Ensure that the customer is not pressing on the glass while copying. The can occur when someone places a book on the surface of the glass and presses on the ADF cover with more than 33 pounds of pressure. 2. If the error persists, replace the scanner flatbed unit assembly. The most common cause for this error is a loose belt. The belt cannot be accurately tensioned in the field, thus requiring the scanner flatbed unit to be replaced.
+Code;30.01.10
+Display;30.01.10
+Description;The ADF fan is not operating. This fan operates only during the ADF scan process.
+Remedy;1. Remove the ADF rear cover and watch the fan during a scan from the ADF. 2. Verify that the fan connection CN304 on the ADF intermediate PCB is firmly seated. 3. If the fan does not rotate, replace the ADF assembly.
+Code;30.01.15
+Display;30.01.15
+Description;The scanner initialization failed.
+Remedy;1. Verify that all covers are installed correctly and that the ADF and ADF jam cover are closed. 2. Check all sensors on the scanner to ensure they are not blocked. 3. Replace the scanner optical assembly. 4. If the error persists, replace the scanner flatbed assembly.
+Code;30.01.18
+Display;30.01.18
+Description;An error occurred on the scanner PCB.
+Remedy;1. Ensure all connectors on the scan control board are seated fully. 2. Ensure the MFP has at least version 26 of the scan control board firmware. 3. Replace the scan control board.
+Code;30.01.19
+Display;30.01.19
+Description;An error has occurred in the scanner lamp.
+Remedy;1. Test the lower lamp using the scanner test located in the Diagnostics menu. 2. Replace the scanner flatbed assembly.
+Code;30.01.22
+Display;30.01.22
+Description;A fatal hardware error has occurred in the scanner.
+Remedy;1. Ensure the MFP is connected to a working power source. 2. Ensure all connectors on the scan control board are firmly seated. 3. Ensure the flat cable from the formatter to the scanner is firmly seated. 4. Replace the scanner flatbed assembly.
+Code;30.01.23
+Display;30.01.23
+Description;A scanner calibration error has occurred.
+Remedy;1. Print a calibration target from the Diagnostics menu and calibrate the scanner. 2. If the error continues, replace the scanner flatbed assembly.
+Code;30.01.24
+Display;30.01.24
+Description;The ADF jam-access door is open.
+Remedy;1. Ensure the ADF jam-access door is closed. 2. If the error persists, ensure the sensor connector CN302 on the ADF intermediate PCB is firmly seated. 3. Ensure connectors CN301 on the ADF intermediate PCB and CN105 on the scan control board are firmly seated. 4. Replace the ADF assembly. 5. Replace the scan control board.
+Code;30.01.25
+Display;30.01.25
+Description;A general error has occurred in the scanner ADF. This error is most likely a memory corruption error.
+Remedy;1. Reseat the 256 MB memory DIMM on the back side of the formatter. 2. Replace the 256 MB memory DIMM on the back side of the formatter. 3. Replace the formatter.
+Code;30.01.29
+Display;30.01.29
+Description;The ADF output bin is full.
+Remedy;1. Remove all media from the ADF output bin. 2. If the message persists, ensure the sensor connector CN303 on the ADF intermediate PCB is firmly seated. 3. Ensure connectors CN301 on the ADF intermediate PCB and CN105 on the scan control board are firmly seated. 4. Replace the ADF assembly. 5. Replace the scan control board.
+Code;30.01.36
+Display;30.01.36
+Description;The scanning firmware upgrade failed. The MFP automatically tires to upgrade the firmware again the next time the MFP is power cycled.
+Remedy;1. Turn the MFP off and then on to try to clear the message. 2. If the error persists, resend the firmware upgrade. 3. If the error continues, replace the scan control board.
+Code;40
+Display;40 BAD EIO X TRANSMISSION
+Description;The connection between the MFP and the EIO card in the specified slot has been broken.
+Remedy;1. Touch OK to continue printing. 2. Power cycle the MFP. 3. Resend the print job. 4. If the error still occurs, replace the EIO card in slot X.
+Code;40
+Display;40 BAD SERIAL TRANSMISSION
+Description;A serial data error (parity, framing, or line overrun) occurred as data was being sent by the computer.
+Remedy;Touch OK to clear the error message. (Data will be lost.)
+Code;40
+Display;40 EMBEDDED I/O BAD TRANSMISSION
+Description;A connection with the embedded Jetdirect print server has been broken.
+Remedy;1. Touch OK to continue printing. 2. Power cycle the MFP. 3. Resend the print job. 4. If the error still occurs, replace the formatter.
+Code;41.3
+Display;41.3 LOAD TRAY XX <TYPE> <SIZE>
+Description;This is typically caused if two or more sheets of media stick together in the MFP or if the tray is not adjusted correctly.
+Remedy;1. Make sure the correct settings are set for the trays. 2. Run a paper path diagnostic test to determine if all sensors are working correctly. 3. Replace the paper feed assembly.
+Code;41.3
+Display;41.3 LOAD TRAY XX <TYPE> <SIZE>
+Description;The specified tray is loaded with media that is longer or shorter in the feed direction than the size adjusted for the tray.
+Remedy;1. Make sure the correct settings are set for the trays. 2. Run a paper path diagnostic test to determine if all sensors are working correctly. 3. Replace the paper feed assembly.
+Code;41.5
+Display;41.5 Unexpected Type In Tray <X>
+Description;The printer senses a different media type in the media path than configured in the tray.
+Remedy;1. Make sure the correct settings are set for the trays. 2. Run a paper path diagnostic test to determine if all sensors are working correctly. 3. Replace the paper feed assembly.
+Code;49.XXXXX
+Display;49.XXXXX ERROR
+Description;A critical firmware error has occurred that caused the processor on the formatter to abort operation. This type of error can be caused by invalid print commands, corrupt data, or invalid operations. In some cases, electrical noise in the cable can corrupt data during transmission to the printer. Other causes include poor-quality parallel cables, poor-connections, or home-grown programs. On rare occasions, the formatter is at fault.
+Remedy;1. Turn the MFP off and then on. 2. Press Stop to clear the print job from the printer memory. 3. Turn the MFP off and then on. 4. Try printing a job from a different software program. If the job prints, go back to the first program and try printing a different file. If the message appears only with a certain software program or print job, contact the software vendor for assistance. 5. If the message persists with different software programs and print jobs, disconnect all of the cables to the printer that connect it to the network or computer. 6. Turn the MFP off. 7. Remove all memory DIMMs or thirdparty DIMMs from the printer. (Do not remove the firmware Compact Flash.) 8. Ensure that the formatter is securely seated. 9. Remove all EIO devices from the printer. 10. Turn the MFP on. 11. If the error no longer exists, install each DIMM and EIO device one at a time, making sure to turn the printer off and on again as you install each device. 12. Replace a DIMM or EIO device if you determine that it causes the error. 13. Remember to reconnect all of the cables that connect the printer to the network or computer. 14. Upgrade formatter and DC controller firmware, which can be found in a single . 15. If the error persists, upgrade the firmware compact flash card. 16. Replace the formatter and calibrate the printer. NOTE: Formatter failures producing 49 errors are extremely rare. Formatter replacement is probably not required.
+Code;50.X
+Display;50.X FUSER ERROR
+Description;A fuser error has occurred. The following are specific fuser errors: 50.1: A low fuser temperature error has occurred in the main thermistor. 50.2: A fuser warmup service error has occurred. 50.3: A high fuser temperature error has occurred in the main thermistor. 50.6: An open fuser error has occurred. 50.7: A fuser pressure release mechanism failure has occurred. 50.8: Low fuser sub-thermistor temperature 50.9: High fuser sub-thermistor temperature The error might be due to an inadequate power supply, inadequate line voltage, or a problem with the fuser.
+Remedy;1. Turn the MFP off and allow it to cool down. 2. Reinstall the fuser, and check the connector (J5001) that connects the fuser and the printer. Replace the connector if it is damaged. 3. Replace the fuser. 4. Check all cable connections to/from the DC controller. 5. Replace the low-voltage power supply PCB.
+Code;51.1Y
+Display;51.1Y Printer Error
+Description;A laser error has occurred. 51.10 = Black 51.11 = Cyan 51.12 = Magenta 51.13 =Yellow
+Remedy;1. Turn the MFP off and then on. 2. If possible, run the scanner test diagnostic for the laser scanner indicated. 3. Reseat the connectors (J1002 - Y, J1003 - C, J1004 - M, J1005 - K) between the laser/scanner and DC controller PCB. 4. Upgrade formatter and DC controller firmware, which can be found in a single. 5. Replace the defective laser/scanner assembly. Calibrate the printer after replacing the laser/ scanner.
+Code;51.2Y
+Display;51.2Y Printer Error
+Description;A laser beam error has occurred. 51.20 = Black 51.21 = Cyan 51.22 = Magenta 51.23 = Yellow
+Remedy;1. Turn the MFP off and then on. 2. If possible, run the scanner test diagnostic for the laser scanner indicated. 3. Upgrade formatter and DC controller firmware, which can be found in a single. 4. Reseat the connectors (J1002 - Y, J1003 - C, J1004 - M, J1005 - K) between the laser/scanner and DC controller PCB. 5. Replace the defective laser/scanner assembly. Calibrate the printer after replacing the laser/ scanner.
+Code;52.XY
+Display;52.XY ERROR
+Description;"A printer error has occurred. 
+ X Description 00 = Scanner error 01 = Scanner startup error 02 = Scanner rotation error Y Description 0 = Black 1 = Cyan 2 = Magenta 3 = Yellow"
+Remedy;1. Turn the MFP off and then on. 2. Upgrade formatter and DC controller firmware, which can be found in a single . 3. Reseat the connectors between the laser/scanner and DC controller PCB. 4. Replace the defective laser/scanner assembly. Calibrate the printer after replacing the laser/ scanner.
+Code;53.XY.ZZ
+Display;53.XY.ZZ CHECK RAM DIMM SLOT <X>
+Description;"A memory error has occurred. 
+ X DIMM Type 1 = RAM 
+ Y Device Location 1 = DIMM Slot 1 2 = DIMM Slot 2 
+ ZZ Error Number 00 = Unsupported memory 01 = Unrecognized memory 02 = Unsupported memory size 03 = Failed RAM test 04 = Exceeded maximum RAM size 05 = Invalid DIMM speed"
+Remedy;If prompted to do so, press OK to continue. The printer should come to the ready state, but will not make full use of all memory installed. Otherwise: 1. Turn the MFP off. 2. Verify that all memory meets specifications and is correctly seated. 3. Turn the MFP on. 4. If the problem persists, replace the DIMM card in the slot indicated.
+Code;54.XX
+Display;54.XX Printer Error
+Description;54 errors indicate sensor abnormalities. Sensor abnormalities are caused by failed or black sensors, or sensors that report results outside of an expected range. NOTE: Some 54 errors do not stop the printing process and are noted on the event log but not on the control panel. 54.01 = environmental temperature sensor output is abnormal (appears only in the event log) 54.05 = Media sensor failure (appears only in the event log) 54.07 = yellow drum phase (home) position sensor 54.08 = magenta drum phase (home) position sensor 54.09 = cyan drum phase (home) position sensor 54.0A = black drum phase (home) position sensor 54.0B = Density Sensor Out of Range 54.0C = Halftone Calibration 54.0D = Halftone Calibration Diffusion 54.0F = CPR Out of Range NOTE: Errors 07 through 0F appear only in the event log and printing continues.
+Remedy;"54.01 procedure: 1. Check that all of the environmental requirements are met. 2. Turn the MFP off and then on. 3. Check connector J5201 on the environmental sensor and connector J1010 on the DC controller. 4. Replace the environmental sensor. 5. Replace the DC controller. 
+ 54.05 procedure: 1. Check connector J4201 on the paper feed assembly and connector J1013 on the DC controller. 2. Replace the paper feed assembly. 3. Replace the DC controller. 
+ 54.07, 54.08, 54.09, 54.0A procedure: 1. Check connector J1022 on the DC controller to the drum home position sensor for the color indicated. 2. Replace the main drive assembly. 3. Replace the DC controller.
+ 54.0B, 54.0C, 54.0D, 54.0F procedure: The last two digits indicate the color (00 = black, 01 = cyan, 02 = magenta, 03 = yellow) 1. Check for correct formation of the calibration swatches on the ETB. If the swatches are light or missing a color, check the primary transfer components (cartridge, main drive assembly, HVPS) for the missing or light color. 2. Check the cartridge and replace if necessary. 3. Check connectors J4401A/J4401B on the color misregistration sensor to J1012 on the DC controller. 4. Replace the paper feed assembly. 5. Replace the DC controller."
+Code;55.XX.YY
+Display;55.XX.YY DC CONTROLLER ERROR
+Description;A printer command error has occurred. Values of XX are: 01 - DC controller memory error 02 - DC controller memory error 03 - No engine response 04 - Communication error 05 - RFU error
+Remedy;"01 – 02 errors Replace the DC controller. 
+ 03 – 04 errors 1. Reseat formatter 2. Check all connectors on the DC controller. 3. Upgrade formatter and DC controller firmware, which can be found in a single. 4. Replace the DC controller PCB.
+ 05 errors 1. Upgrade the DC controller PCB firmware. 2. Replace the DC controller PCB firmware."
+Code;56.XX
+Display;56.XX ERROR
+Description;A printer error has occurred. 56.01 = Input device 56.02 = Output device
+Remedy;1. Turn the MFP off and then on. 2. Remove all input and output devices and reinstall them. 3. Check all connectors to the input/ output devices that are installed. Replace any damaged connectors.
+Code;57.XX
+Display;57.XX ERROR
+Description;A printer fan error has occurred. 57.01 = Delivery fan 57.03 = Sub power supply fan 57.04 = Cartridge fan 57.05 = Duplex fan 57.06 = Control fan 2 57.07 = Control fan 1 57.08 = ETB fan 57.0A = Power supply fan 57.09 = Fuser fan
+Remedy;1. Turn the MFP off and then on. 2. Check the fan for obstructions. 3. Ensure the fan rotates. 4. Ensure the fan connector is seated properly. 5. Replace the indicated fan.
+Code;58.XX
+Display;58.XX ERROR
+Description;"A memory tag error was detected.
+ XX Description 58.03 = Memory controller PCB 58.04 = Memory controller PCB power supply"
+Remedy;1. Turn the MFP off and then on. 2. Check the connectors on the memory controller (J4001, J9630) and the DC controller PCB (J1021). 3. Replace the memory PCB. 4. Replace the E label contacts.
+Code;59.XY
+Display;59.XY ERROR
+Description;"A printer motor error has occurred.
+ X Description 0 = Motor error 1 = Motor startup error 2 = Motor rotation error 3 = Fuser motor startup error 4 = Fuser motor rotation error 5 = Image drum motor startup error 6 = Image drum motor rotation error 9 = ETB motor startup error A = ETB motor rotation error B = Developing disengaging motor startup error C = Developing disengaging motor rotation error Y Description 0 = Black or N/A 1 = Cyan 2 = Magenta 3 = Yellow"
+Remedy;"1. Turn the MFP off and then on. 2. Note: This message might also display if the transfer unit is missing or incorrectly installed. Ensure that the transfer unit is correctly installed. 
+ ETB motor error 1. Run the component test to verify that the ETB is working correctly. 2. Clean the ETB unit intermediate connector J4613. 3. Reconnect the connector J4613 between the ETB and the printer, and J1011 on the DC controller PCB. 4. Replace the ETB. 
+ Fuser motor error 1. Reconnect the connectors J4605 for the fuser motor and J1024 on the DC controller PCB. 2. Run the component test to verify that the fuser motor is working correctly. 3. Replace the fuser motor.
+ Print cartridge motor error
+ 1. Run the component test to verify that the print cartridge motor is working correctly. 2. Reconnect the print cartridge connector on the DC controller PCB (J1018 for magenta and black, J1017 for cyan and yellow). On the motor itself, reconnect the connectors (J4603 for magenta, J4604 for black, J4601 for yellow, and J4602 for cyan). 3. Replace the drum drive assembly for the indicated print cartridge. 
+ Developing disengaging motor error 1. Run the component test to verify that the print developing disengaging motor is working correctly. 2. Reconnect the connectors J468 and J1020 between the developing disengaging motor and the DC controller PCB. 3. Replace the developing disengaging motor."
+Code;60.X
+Display;60.X ERROR
+Description;A tray lifting error has occurred, where X is the number of the tray. This typically happens when a tray is overfilled or the media is not properly aligned. 60.2 = tray 2 60.3 = tray 3 60.4 = tray 4
+Remedy;1. Turn the MFP off and then on. 2. Verify that the tray is not overfilled and that media is aligned in the tray properly. 3. For tray 2, verify that connector J93 on the DC controller is firmly seated. This connector is for the lift motor. 4. Verify that connector J4618 is securely connected, and then check connector J1015 on the DC controller. 5. For trays 3 and 4, verify that connectors J8226 and 8211 on the paper deck driver PCB are securely connected. 6. If a loud clicking sound is heard while the MFP restarts, reinstall the lifter motor assembly and ensure that the gears are seated properly. Also ensure that the cassette pickup roller is properly installed. If the lifter motor assembly is damaged, replace the assembly and check for any obstruction.
+Code;62
+Display;62 NO SYSTEM
+Description;No system was found.
+Remedy;1. Turn the MFP off and then on. 2. Reseat the firmware compact flash, making sure that it is in the first slot. 3. Replace the firmware compact flash and the formatter.
+Code;64
+Display;64 ERROR
+Description;A scan buffer error occurred.
+Remedy;Turn the MFP off, and then turn the MFP on.
+Code;65.00.15
+Display;65.00.15 Output Device Failure
+Description;"After the MFP boot process, the external device requested a new boot process. This can happen during an upgrade; the 24 V power goes off momentarily, which makes the stapler/stacker think it is initializing again. NOTE: During an upgrade of the external device, if the connection with the device is lost for 9 minutes, the firmware crashes with a 66.00.15 error and forces the user to reboot. It will then display a Resend external accessory firmware message."
+Remedy;1. Turn off the MFP. 2. Disconnect the communication cable between the output device and the MFP. 3. Check the connection pins for damage. 4. Reconnect the communication cable to the MFP, making sure the connector is properly screwed down in. 5. Turn on the printer. 6. Reload the latest firmware bundle. 7. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;65.12.01
+Display;65.12.01 Output Device Failure
+Description;The paddle (retainer) motor M1301 was not able to move the sensor flag to the home position detected by sensor PS1305. This signal is generated by sensor PS1305 (paddle home-position sensor). Sensor PS1305 is located on the rear frame of the stapler/stacker, between the two DC motors: M1301 Paddle motor, and M1303 Feed Motor.
+Remedy;1. Turn the MFP off then on. 2. Reinstall the stapler/stacker. 3. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;65.12.02
+Display;65.12.02 Output Device Failure
+Description;Jogger-motor malfunction. The jogger home position could not be sensed by sensor PS1304. This signal is generated by sensor PS1304 (jogger home-position sensor). Sensor PS1304 is located on the jogger assembly and can be accessed after removing the front, rear, and top covers of the stapler/ stacker.
+Remedy;1. Check for anything that might be obstructing or restricting the movement of the jogger guides. 2. Turn the MFP off then on. 3. Reinstall the stapler/stacker. 4. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;65.12.03
+Display;65.12.03 Output Device Failure
+Description;Staple-motor malfunction. The staple motor was unable to return to the home position as read by sensor PHOl1. This signal is generated by sensor PHOl1 (stapler home-position sensor). PHOl1 is located in the stapler assembly and cannot be serviced. If the stapler drive does not return to home position (HP) during the normal cycle, the stapler/stacker driver signals M1304 (stapler motor) to rotate once in reverse. If the HP signal is not detected, the stapler/stacker driver sends a signal to the formatter that the staple motor has malfunctioned.
+Remedy;"1. Check for a staple jam in the stapler; remove any jammed staples. 2. Turn the MFP off then on. 3. If none of the above corrects the problem, replace the stapler/stacker unit."
+Code;65.12.34
+Display;65.12.34 Output Device Failure
+Description;Cooling fan failure. This failure is detected by the MBM driver board. If the rotation speed of the cooling fan is not normal for 5 seconds or longer, the MBM control board notifies the formatter of the problem.
+Remedy;1. Turn the MFP off then on. 2. Reinstall the MBM. 3. If none of the above corrects the problem, replace the MBM unit.
+Code;65.12.34
+Display;65.12.34 Output Device Failure
+Description;Cooling fan failure. This failure is detected by the stapler/ stacker control board. If the rotation speed of the cooling fan is not normal for 5 seconds or longer, the stapler/stacker control board notifies the formatter of the problem.
+Remedy;1. Turn the MFP off then on. 2. Reinstall the stapler/stacker. 3. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;65.12.35
+Display;65.12.35 Output Device Failure
+Description;Stapler malfunction. The stapler self-prime sensor PHOl2 did not activate. This signal is generated by sensor PHOl2 (staple-ready sensor). Sensor PHOl2 is located in the stapler assembly and cannot be serviced. When a new staple cartridge is installed, the stapler goes through the stapling motion 11 times in order to advance the first staple to the proper stapling position. If the staples are not advanced after 11 attempts, the control board notifies the formatter that self-priming has failed.
+Remedy;1. Verify that genuine HP staples are being used and that the staples are the correct type for this stapler. NOTE: Staples come preloaded in the staple cartridge and cannot be ordered separately as a refill from HP. 2. Replace the staple cartridge. 3. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;65.12.99
+Display;65.12.99 Output Device Disconnected
+Description;When the printer was turned on, the MBM lost communication with the MFP.
+Remedy;1. Turn off the MFP. 2. Disconnect the communication cable between the output device and the MFP. 3. Reconnect the communication cable to the MFP, making sure that the connector is properly. 4. Turn on the MFP. If the problem persists, replace the MBM.
+Code;65.12.99
+Display;65.12.99 Output Device Disconnected
+Description;When the printer was turned on, the stapler/ stacker lost communication with the MFP.
+Remedy;1. Turn off the MFP. 2. Disconnect the communication cable between the output device and the MFP. 3. Reconnect the communication cable to the MFP, making sure that the connector is properly attached. 4. Turn on the MFP. If the problem persists, replace the stapler/stacker.
+Code;66.12.33
+Display;66.12.33 Output Device Failure
+Description;The delivery-roller lift motor could not reach the home position as detected by sensor PS1303. This signal is generated by sensor PS1303 (delivery-roller disengaging sensor). PS 1303 is located behind the front cover and to the left of the stapler assembly.
+Remedy;1. Turn the MFP off then on. 2. Reinstall the stapler/stacker. 3. If none of the above corrects the problem, replace the stapler/stacker unit.
+Code;68.X
+Display;68.X PERMANENT STORAGE FULL
+Description;"A non-volatile storage device is full. Touch OK to clear the message. Printing can continue, but there may be unexpected behavior.
+ X Description 68.0 = onboard NVRAM 68.1 = removable disk (flash or hard)"
+Remedy;1. Touch OK to continue. 2. For 68.0 errors, turn the printer off then on. 3. If a 68.0 error persists, perform an NVRAM initialization. 4. For 68.1 errors, use the HP Web Jetadmin software to delete files from the disk drive or flash card. 5. For 68.1 errors that persist, reinitialize the hard disk or flash card.
+Code;68.X
+Display;68.X PERMANENT STORAGE WRITE FAIL
+Description;"A non-volatile storage device is full. Touch OK to clear the message. Printing can continue, but there may be unexpected behavior.
+ X Description 68.0 = onboard NVRAM 68.1 = removable disk (flash or hard)"
+Remedy;1. Touch OK to continue. 2. For 68.0 errors, turn the printer off then on. 3. If a 68.0 error persists, perform an NVRAM initialization. 4. For 68.1 errors, use the HP Web Jetadmin software to delete files from the disk drive or flash card. 5. For 68.1 errors that persist, reinitialize the hard disk or flash card.
+Code;68.X
+Display;68.X STORAGE ERROR SETTINGS CHANGED
+Description;One or more printer settings saved in the non-volatile storage device is invalid and has been reset to its factory default. Touch OK to clear the message. Printing can continue, but there may be unexpected behavior. 68.0 = onboard NVRAM 68.1 = removable disk (flash or hard)
+Remedy;1. Touch OK to continue. 2. For a 68.0 error, turn the printer off then on. 3. If a 68.0 error persists, perform an NVRAM initialization. 4. For 68.1 errors, use the HP Web Jetadmin software to delete files from the disk drive or flash card. 5. For 68.1 errors that persist, reinitialize the hard disk or flash card.
+Code;69.X
+Display;69.X ERROR
+Description;A printer error has occurred. 69.0 = duplexer not functioning 69.1 = duplexer not functioning
+Remedy;1. Check if the duplexer connector (J2003) is connected to the duplexer. 2. Check the connector (J1030) on the DC controller PCB. 3. Replace the duplexer.
+Code;8X.YYYY
+Display;8X.YYYY EIO ERROR
+Description;The EIO accessory card has encountered a critical error, as specified by YYYY.
+Remedy;Try the following actions to clear the message. 1. Turn the MFP off, and then turn the MFP on. 2. Turn the MFP off, reseat the EIO accessory, and then turn the MFP on. 3. Replace the EIO accessory.
+Code;99.XX.YY
+Display;99.XX.YY
+Description;This error occurs during a Remote Firmware Upgrade (RFU). The upgrade might have failed due to a failing component or because the existing firmware is the same as the firmware in the RFU.
+Remedy;1. Turn the MFP off and then on. 2. Try to perform an RFU on the MFP again. 3. If the RFU fails, check the description in the engine event log. The event log identifies the type of 99 error. If it is failing due to the firmware being the latest available, no upgrade is necessary and the error should be ignored. 4. Ensure the connections are secure at the formatter and the output devices.

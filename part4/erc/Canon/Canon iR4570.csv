@@ -1,0 +1,745 @@
+Code;E000-0001
+Description;"The temperature of the fixing assembly is abnormally high.
+ While startup control is under way, the reading of the main thermistor is less than 30 deg C continuously for 200 msec or more 1 sec after the start of power supply. While startup control is under way, the reading of the main thermistor is less than 70 deg C continuously for 200 msec or more 2 sec after the start of power supply. While startup control is under way, the reading of the main thermistor is less than 120 deg C continuously for 200 msec 6 sec after the start of power supply. The startup control does not end 30 sec after the start of power supply."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the main thermistor. Replace the DC controller PCB.
+Code;E001-0000
+Description;"The temperature of the fixing assembly is abnormally high.
+ The reading of the main thermistor is 250 deg C or more continuously for 200 msec."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the main thermistor. Replace the DC controller PCB.
+Code;E001-0001
+Description;"The temperature of the fixing assembly is abnormally high.
+The hardware circuit detects overheating of the main or sub thermistor for 200 msec."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the DC controller PCB.
+Code;E001-0002
+Description;"The temperature of the fixing assembly is abnormally high.
+ The reading of the sub thermistor is 295 deg C or more continuously for 200 msec."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the sub thermistor. Replace the DC controller PCB.
+Code;E002-0000
+Description;"The rise in temperature of the fixing assembly is faulty
+ While startup control is under way, the reading of the main thermistor is less than 115 deg C continuously for 400 msec 1.3 sec after it has indicated 100 deg C. While startup control is under way, the reading of the main thermistor is less than 150 deg C continuously for 400 msec 1.3 sec after it has indicated 140 deg C."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the main thermistor. Replace the DC controller PCB.
+Code;E003-0000
+Description;"The fixing temperature is too low after a standby state.
+ While regular temperature control is under way, the reading of the main thermistor is less than 140 deg C continuously for 400 msec or more."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the main thermistor. Replace the DC controller PCB.
+Code;E007-0000
+Description;"The rotation of the fixing film is faulty.
+ While the fixing motor is rotating, the marker signal is not detected for 6 sec with the reading of the main thermistor indicating 100 deg C or more."
+Remedy;Reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR. Replace the main thermistor. Replace the DC controller PCB.
+Code;E010-0001
+Description;"The rotation of the main motor is faulty.
+ Detection is executed every 100 msec after the start of motor rotation; however, the drive detection signal is absent for 2 sec."
+Remedy;Replace the main motor. Replace the DC controller PCB.
+Code;E010-0002
+Description;"The rotation of the main motor is faulty.
+During motor rotation, detection is executed every 100 msec; however, the drive signal is absent 5 times in sequence."
+Remedy;Replace the main motor. Replace the DC controller PCB.
+Code;E014-0001
+Description;"The rotation of the fixing motor is faulty.
+ Detection is executed every 100 msec after the start of motor rotation; however, the drive detection signal is absent for 2 sec"
+Remedy;Replace the fixing motor. Replace the DC controller PCB.
+Code;E014-0002
+Description;"The rotation of the fixing motor is faulty.
+During motor rotation, detection is executed every 100 msec; however, the drive signal is absent 5 times in sequence."
+Remedy;Replace the fixing motor. Replace the DC controller PCB.
+Code;E019-0000
+Description;"The waste toner case is full, or the waste toner case full sensor is faulty
+ When the waste toner case is identified as being full for 2000 prints continuously, an alert is issued; thereafter, the case is identified as being full continuously for 100 prints"
+Remedy;Replace the waste toner sensor. Replace the DC controller PCB.
+Code;E020-0000
+Description;"The path between the sub hopper and the developing assembly is clogged with toner.
+ The developing assembly toner sensor detects the absence of toner, while the sub hopper toner sensor detects the presence of toner. With the developing clutch turned on, the hopper feedscrew motor is rotated for 1 sec intermittently 194 times; still, the developing assembly toner sensor does not detect the presence of toner."
+Remedy;Replace the developing assembly toner sensor. Replace the sub hopper toner sensor. Replace the DC control PCB.
+Code;E024-0000
+Description;"The developing assembly connector is disconnected.
+ The connection detection signal is absent continuously for 100 msec."
+Remedy;Replace the developing assembly toner sensor. Connect the connector. Replace the DC controller PCB.
+Code;E025-0000
+Description;"The hopper motor or the bottle motor is faulty.
+ The sub hopper toner sensor connection detection signal is absent for 100 msec 10 times in sequence."
+Remedy;Replace the sub hopper toner sensor. Connect the connector. Replace the detection PCB.
+Code;E025-0001
+Description;"The hopper motor or the bottle motor is faulty.
+While the hopper motor is rotating, the motor error lock signal is detected continuously 4 times every 56 msec. Or, while the bottle motor is rotating, the motor error lock signal is detected 22 times in sequence every 10 msec."
+Remedy;Replace the hopper motor. Replace the bottle motor. Replace the DC controller PCB.
+Code;E032-0001
+Description;"The NE controller counter malfunctions.
+ An open circuit is detected for the count pulse signal."
+Remedy;"Turn off the main power, and check the cable for an open circuit; then, turn the main power back on."
+Code;E064-0001
+Description;"The voltage of the power supply is faulty (high-voltage error).
+ The value read from the EEPORM is outside a specific range."
+Remedy;Turn off and then back on the main power. Replace the EEPROM.
+Code;E064-0002
+Description;"The voltage of the power supply is faulty (high-voltage error).
+While output is being generated, the AD value of the primary DC voltage is 230 (DEC) or more for 100 msec 2 times in sequence. (However, after output, it is not detected for 100 msec.)"
+Remedy;Replace the high-voltage power supply. Replace the DC controller PCB.
+Code;E064-0003
+Description;"The voltage of the power supply is faulty (high-voltage error).
+ While output is being generated, the AD value of the developing DC voltage is 224 (DEC) or more for 10 msec 2 times in sequence. (However, after output, it is not detected for 100 msec.)"
+Remedy;Replace the high-voltage power supply. Replace the DC controller PCB.
+Code;E064-0004
+Description;"The voltage of the power supply is faulty (high-voltage error).
+ While output is being generated, the AD value of the transfer output current is 205 (DEC) or more for 100 msec 2 times in sequence. (However, after output, it is not detected for 100 msec.)"
+Remedy;Replace the high-voltage power supply. Replace the controller PCB.
+Code;E064-0005
+Description;"The voltage of the power supply is faulty (high-voltage error).
+ While output is being generated, the AD value of the transfer output voltage is 0 (DEC) for 100 msec 2 times in sequence. (However, after output, it is not detected for 100 msec.)"
+Remedy;Replace the high-voltage power supply. Replace the DC controller PCB.
+Code;E100-0001
+Description;"The BD interval is outside a specific range.
+ After the machine has become ready for image formation (i.e., the scanner motor is ready for operation, and the laser has been turned on), an error has occurred 50 times or more (BD error)."
+Remedy;Replace the laser unit. Replace the DC controller PCB. Check the wiring.
+Code;E110-0001
+Description;"The scanner motor is faulty.
+ The scanner motor speed lock signal does not indicate a locked state a specific period of time after the scanner motor has been started."
+Remedy;Replace the laser unit. Replace the DC controller PCB. Check the wiring.
+Code;E110-0002
+Description;"The scanner motor is faulty.
+The speed lock signal indicates a deviation 10 times in sequence at intervals of 10 msec after the signal has indicated a locked state."
+Remedy;Replace the laser unit. Replace the DC controller PCB. Check the wiring.
+Code;E110-0003
+Description;"The scanner motor is faulty.
+ With the image clock switched over, the scanner motor speed lock signal does not indicate a locked state 6.5 sec after a switchover is made from low to normal speed or 8 sec after a switchover is made from normal to low speed"
+Remedy;Replace the laser unit. Replace the DC controller PCB. Check the wiring.
+Code;E191-0000
+Description;"There is an error in the communication with the high-voltage power supply
+ The data transmission/reception does not end normally 500 msec after the most recent transmission/reception of data ended normally."
+Remedy;Replace the high-voltage power supply. Replace the DC controller PCB.
+Code;E202-0001
+Description;"There is an error in the detection of the CIS home position.
+ The attempt to detect the home position fails when the CIS is moved forward"
+Remedy;Disconnect and then connect the harness connector. Replace the following as necessary: scanner home position sensor, scanner motor, reader controller PCB.
+Code;E202-0002
+Description;"There is an error in the detection of the CIS home position.
+The attempt to detect the home position fails when the CIS is moved back."
+Remedy;Disconnect and then connect the harness connector. Replace the following as necessary: scanner home position sensor, scanner motor, reader controller PCB.
+Code;E225-0001
+Description;"The light intensity of the CIS is faulty.
+ During shading operation, the intensity is below a specific level."
+Remedy;Disconnect and then connect the flexible cable. Replace the following as necessary: flexible cable, CIS, reader controller PCB.
+Code;E225-0002
+Description;"The light intensity of the CIS is faulty.
+During DF stream reading, the sheet-to-sheet light intensity is faulty."
+Remedy;Disconnect and then connect the flexible cable. Replace the following as necessary: flexible cable, CIS, reader controller PCB.
+Code;E227-0001
+Description;"The reader unit power supply is faulty.
+ At time of power-on, the 24-V port is off."
+Remedy;Disconnect and then connect the power supply harness connector. Replace the power supply.
+Code;E227-0002
+Description;"The reader unit power supply is faulty.
+At the start of a job, the 24-V port is off."
+Remedy;Disconnect and then connect the power supply harness connector. Replace the power supply.
+Code;E227-0003
+Description;"The reader unit power supply is faulty.
+ At the end of a job, the 24-V port is off."
+Remedy;Disconnect and then connect the power supply harness connector. Replace the power supply.
+Code;E227-0004
+Description;"The reader unit power supply is faulty.
+ When a load is being driven, the 24-V port is off."
+Remedy;Disconnect and then connect the power supply harness. Replace the power supply.
+Code;E248-0000
+Description;"The backup memory is faulty.
+ [Cause] A check error has occurred on the backup SRAM board. [Location] bottom ROM [Timing of Detection] once when the boot ROM is started up"
+Remedy;1. Check the presence/absence of a backup SRAM PCB. 2. Disconnect and then connect the backup SRAM PCB. 3. Replace the backup SRAM PCB with a new one.
+Code;E248-0001
+Description;"The backup memory is faulty.
+An error has occurred at power-on."
+Remedy;Replace the reader controller PCB.
+Code;E248-0002
+Description;"The backup memory is faulty.
+ An error has occurred during a write operation."
+Remedy;Replace the reader controller PCB.
+Code;E248-0003
+Description;"The backup memory is faulty.
+ An error has occurred during a read operation following a write operation."
+Remedy;Replace the reader controller PCB.
+Code;E261-0000
+Description;"The zero-cross signal is faulty.
+ When the relay is on, the zero-cross signal is not detected for 500 msec or more."
+Remedy;Replace the AC driver PCB. Replace the DC controller PCB.
+Code;E315-0007
+Description;"There is an error in image data.
+ There is an error in JBIG encoding."
+Remedy;Turn off and then back on the power.
+Code;E315-000d
+Description;"There is an error in image data.
+There is an error in JBIG decoding."
+Remedy;Turn off and then back on the power.
+Code;E400-0001
+Description;"DF communication error
+ Check sum error"
+Remedy;Disconnect and then connect the connector. Replace the reader controller PCB. Replace the ADF controller PCB.
+Code;E400-0002
+Description;"DF communication error
+Reception status error"
+Remedy;Disconnect and then connect the connector. Replace the reader control PCB. Replace the ADF control PCB.
+Code;E400-0003
+Description;"DF communication error
+ Reception interrupt error"
+Remedy;Disconnect and then connect the connector. Replace the reader controlled PCB. Replace the ADF controller PCB.
+Code;E490-0001
+Description;"Wrong DF
+ The installed DF is not of a supported type."
+Remedy;Install an ADF that is compatible with the machine.
+Code;E500-0001
+Description;"Finisher communication error
+ Data communication could not be performed normally. It has been retried three times in vain."
+Remedy;Replace the finisher controller PCB. Replace the DC controller PCB.
+Code;E503-0001
+Description;fault in communicatio n with the finisher (Finisher-Q3/ Q4)
+Remedy;
+Code;E503-0002
+Description;fault in communicatio n between finisher and saddle unit
+Remedy;Replace the finisher controller PCB. Replace the saddle controller PCB. Check the cable.
+Code;E503-0003
+Description;fault in communicatio n betweenf inisher and punch unit
+Remedy;Replace the finisher controller PCB. Replace the punch drive PCB. Check the cable.
+Code;E505-0001
+Description;"fault in the backup memory of the finisher (common among all finishers)
+ fault in the data stored in backup memory"
+Remedy;Turn off the main power. Check the wiring of the DC controller PCB and the finisher controller, and check the fuse of the 24-V power supply. Thereafter, turn the main power back on.
+Code;E505-0002
+Description;"fault in the backup memory of the finisher (common among all finishers)
+fault in the EEPROM data of the punch unit"
+Remedy;Replace the punch driver PCB. Replace the finisher controller PCB.
+Code;E514-0001
+Description;"fault in stack delivery motor (Finisher-S1)
+ When the stack retaining spacer is returned to home position, the belt escape home position sensor does not go on within 1.5 sec."
+Remedy;Replace the finisher controller PCB. Replace the stack delivery motor. Check the stack delivery drive mechanism.
+Code;E514-0001
+Description;"fault in trailing edge assist motor (Finisher-Q3/ Q4)
+ The home position sensor does not go off even when the trailing edge assist motor has rotated for a specific period of time."
+Remedy;Replace the finisher control PCB. Replace the trailing edge assist motor.
+Code;E514-0002
+Description;fault in stack delivery motor (Finisher-S1)When the stack retaining spacer is shifted from home position, the belt escape home position sensor does not go off within 1.5 sec.
+Remedy;Replace the finisher controller PCB. Replace the stack delivery motor. Check the stack delivery drive mechanism.
+Code;E514-0002
+Description;"fault in trailing edge assist motor (Finisher-Q3/ Q4)
+The home position sensor does not go on even after the trailing edge assist motor has rotated for a specific period of time."
+Remedy;Replace the finisher control PCB. Replace the trailing edge assist motor.
+Code;E519-0001
+Description;"Gear change motor error (Finisher-Q3/ Q4)
+ The home position sensor does not go off even when the gear change motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the gear change motor. Check the gear change mechanism.
+Code;E519-0002
+Description;"Gear change motor error (Finisher-Q3/ Q4)
+The home position sensor does not go on even when the gear change motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the gear change motor. Check the gear change mechanism.
+Code;E530-0001
+Description;"Front alignment error (Finisher-Q3/ Q4)
+ The home position sensor does not go off even when the front alignment motor has been rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the front alignment motor. Check the front aligning plate drive mechanism. Check the front alignment home position sensor.
+Code;E530-0002
+Description;"Front alignment error (Finisher-Q3/ Q4)
+The home position sensor does not go on even when the front alignment motor has been rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the front alignment motor. Check the front aligning plate drive mechanism. Check the front alignment home position sensor.
+Code;E530-8001
+Description;"Rear alignment error (Finisher-S1)
+ The home position sensor does not go on within 2000 msec after the start of operation when the rear aligning plate is shifted to home position."
+Remedy;Replace the finisher controlled PCB. Replace the rear alignment motor. Check the rear aligning plate drive mechanism. Check the rear alignment home position sensor.
+Code;E530-8002
+Description;"Rear alignment error (Finisher-S1)
+The home position sensor does not go off within 1000 msec after the start of operation when the rear aligning plate is shifted from home position."
+Remedy;Replace the finisher controlled PCB. Replace the rear alignment motor. Check the rear aligning plate drive mechanism. Check the rear alignment home position sensor.
+Code;E531-0001
+Description;"Stapler error (Finisher-Q3/Q4)
+ The home position sensor does not go off even when the stapler motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the stapler. Check the harness.
+Code;E531-0002
+Description;"Stapler error (Finisher-Q3/Q4)
+The home position sensor does not go on even when the stapler motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the stapler. Check the harness.
+Code;E531-8001
+Description;"Stapler error (Finisher-S1)
+ At time of staple jam recovery, the home position sensor does not go on with 500 msec after the start of reverse rotation of the stapler motor"
+Remedy;Replace the finisher controller PCB. Replace the stapler. Check the harness.
+Code;E531-8002
+Description;"Stapler error (Finisher-S1)
+The home position sensor does not go off within 500 msec after the stapler motor has been started."
+Remedy;Replace the finisher controller PCB. Replace the stapler. Check the harness.
+Code;E532-0001
+Description;"Stapler shift error (Finisher-Q3/ Q4)
+ The home position sensor does not go off even after the stapler shift motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the stapler shift motor. Check the stapler shift home position sensor. Check the harness.
+Code;E532-0002
+Description;"Stapler shift error (Finisher-Q3/ Q4)
+The home position sensor does not go on even when the stapler shift motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the stapler shift motor. Check the stapler shift home position sensor. Check the harness.
+Code;E532-8001
+Description;"Stapler shift error (Finisher-S1)
+ The stapler slide home position sensor does not go on within 11 sec when the stapler is shifted to home position."
+Remedy;Replace the finisher controller PCB. Replace the stapler shift motor. Check the stapler shift home position sensor. Check the harness.
+Code;E532-8002
+Description;"Stapler shift error (Finisher-S1)
+The stapler slide home position sensor does not go off within 1.0 sec when the stapler is shifted from home position."
+Remedy;Replace the finisher controller PCB. Replace the stapler shift motor. Check the stapler shift home position sensor. Check the harness.
+Code;E535-0001
+Description;"Swing cam error (Finisher-S1)
+ The home position sensor does not go off within 1000 msec after the start of operation when the swing arm is shifted from home position."
+Remedy;Replace the finisher controller PCB. Replace the swing cam motor. Check the swing cam home position sensor. Check the harness.
+Code;E535-0001
+Description;"Swing cam error (Finisher-Q3/ Q4)
+ The home position sensor does not go off even when the swing motor has rotated for a specific period of time."
+Remedy;Replace the finisher controller PCB. Replace the swing cam motor. Check the swing cam home position sensor. Check the harness.
+Code;E535-0002
+Description;"Swing cam error (Finisher-S1)
+The home position sensor does not go off within 1.0 sec when the stack delivery roller swing arm is moved from home position."
+Remedy;Replace the finisher controller PCB. Replace the swing cam motor. Check the swing cam home position sensor. Check the harness.
+Code;E535-0002
+Description;"Swing cam error (Finisher-Q3/ Q4)
+The home position sensor does not go on even when the swing motor has rotated for a specific period of time"
+Remedy;Replace the finisher controller PCB. Replace the swing cam motor. Check the swing cam home position sensor. Check the harness.
+Code;E537-0001
+Description;"Rear alignment error (Finisher-Q3/ Q4)
+ The home position sensor does not go on within 2000 msec after the start of operation when the read aligning plate is moved to home position."
+Remedy;Replace the finisher controller PCB. Replace the rear alignment motor. Check the rear aligning plate drive mechanism. Check the rear alignment home position sensor.
+Code;E537-0002
+Description;"Rear alignment error (Finisher-Q3/ Q4)
+The home position sensor does not go off within 1000 msec after the start of operation when the rear aligning plate is moved form home position."
+Remedy;Replace the finisher controller PCB. Replace the rear alignment motor. Check the rear aligning plate drive mechanism. Check the rear alignment home position sensor.
+Code;E537-8001
+Description;"Front alignment error (Finisher-S1)
+ The home position sensor does not go on within 2.0 sec when the front aligning plate is moved to home position."
+Remedy;Replace the finisher controller PCB. Replace the front alignment motor. Check the front aligning plate drive mechanism. Check the front alignment home position sensor.
+Code;E537-8002
+Description;"Front alignment error (Finisher-S1)
+The home position sensor dos not go off within 1.0 sec when the front aligning plate is shifted from home position."
+Remedy;Replace the finisher controller PCB. Replace the front alignment motor. Check the front aligning plate drive mechanism. Check the front alignment home position sensor.
+Code;E540-0002
+Description;"Upper tray ascent/descent motor error (Finisher -Q3/ Q4)
+ Upper tray ascent/descent motor clock error"
+Remedy;Replace the No. 1 tray shift motor. Replace the finisher controller PCB. Check the tray ascent/descent mechanism.
+Code;E540-0003
+Description;"Upper tray ascent/descent motor error (Finisher -Q3/ Q4)
+Area error"
+Remedy;Replace the No. 1 tray area sensor PCB. Replace the finisher controller PCB.
+Code;E540-0004
+Description;"Upper tray ascent/descent motor error (Finisher -Q3/ Q4)
+ Safety switch activation"
+Remedy;Check the No. 1 tray closed detecting switch. Replace the finisher controller PCB.
+Code;E540-8002
+Description;"Stack tray motor error (Finisher-S1)
+ The operation to detect the paper surface of the stack tray does not end within 1.0 sec."
+Remedy;Replace the finisher controller PCB. Replace the tray ascent/ descent motor. Check the stack tray drive mechanism. Check the paper surface sensor.
+Code;E540-8003
+Description;"Stack tray motor error (Finisher-S1)
+An abnormal combination of sensor states has been detected."
+Remedy;Replace the finisher controller PCB. Check the stack tray upper limit sensor. Check the stack tray lower limit sensor. Check the stack tray upper paper surface sensor. Check the stack tray lower paper surface sensor.
+Code;E542-0002
+Description;"Lower tray ascent/descent motor error (Finisher-Q3/ Q4
+ Lower tray ascent/descent motor clock error"
+Remedy;Replace the No. 2 tray shift motor. Replace the finisher controller PCB. Check the tray ascent/descent mechanism.
+Code;E542-0003
+Description;"Lower tray ascent/descent motor error (Finisher-Q3/ Q4
+Area error"
+Remedy;Replace the No. 2 tray shift area sensor PCB. Replace the finisher controller PCB.
+Code;E577-8001
+Description;"Paddle error (Finisher-S1)
+ The paddle home position sensor does not go on within 1.5 sec when the paddle is shifted to home position."
+Remedy;Check the paddle motor. Check the paddle home position sensor. Replace the finisher controller PCB.
+Code;E577-8002
+Description;"Paddle error (Finisher-S1)
+The paddle home position sensor does not go off within 1.0 sec when the paddle is moved to home position."
+Remedy;Check the paddle motor. Check the paddle home position sensor. Replace the finisher controller PCB.
+Code;E584-0001
+Description;"Shutter unit error (Finisher-Q3/ Q4)
+ The shutter open sensor does not go off (i.e., the shutter does not close)."
+Remedy;Check the stack edging motor. Check the open/ close clutch. Check the shutter home position sensor. Replace the finisher controller PCB.
+Code;E584-0002
+Description;"Shutter unit error (Finisher-Q3/ Q4)
+The shutter open sensor does not go on (i.e., the shutter does not open)."
+Remedy;Check the stack edging motor. Check the open/ close clutch. Check the shutter home position sensor. Replace the finisher controller PCB.
+Code;E590-0001
+Description;"Punch motor error
+ The punching home position is not detected even when the puncher motor has been driven for 20 msec."
+Remedy;Check the punch motor. Check the punch motor clock sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E590-0002
+Description;"Punch motor error
+The punch home position sensor is not defected even after the motor has stopped at time of punch motor initial operation."
+Remedy;Check the punch motor. Check the punch motor clock sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E591-0001
+Description;"Punch dust sensor error
+ Error in light-receiving voltage while light is emitted"
+Remedy;Check the waste paper case full sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E591-0002
+Description;"Punch dust sensor error
+Error in light-receiving voltage while light is not emitted"
+Remedy;Check the waste paper case full sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0001
+Description;"Paper trailing edge sensor/ horizontal sensor error
+ Error in light-receiving voltage when light is emitted (trailing edge sensor)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0002
+Description;"paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (trailing edge sensor)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch drive PCB. Replace the finisher controller PCB.
+Code;E592-0003
+Description;"Power trailing edge sensor/ registration sensor
+ Error in light-receiving voltage when light is emitted (horizontal registration sensor 1)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0004
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (horizontal registration sensor 1)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0005
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is emitted (horizontal registration sensor 2)"
+Remedy;Check the paper training edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0006
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (horizontal registration sensor 2)"
+Remedy;Check the paper training edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller.
+Code;E592-0007
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is emitted (horizontal registration sensor 3)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-0008
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (horizontal registration sensor 3)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch drive PCB. Replace the finisher controller PCB
+Code;E592-0009
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (horizontal registration sensor 4)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch driver PCB. Replace the finisher controller PCB.
+Code;E592-000A
+Description;"Paper trailing edge sensor/ registration sensor error
+ Error in light-receiving voltage when light is not emitted (horizontal registration sensor 4)"
+Remedy;Check the paper trailing edge sensor. Check the horizontal registration sensor. Check the punch drive PCB. Replace the finisher controller PCB.
+Code;E593-0001
+Description;"Punch shift motor error
+ The light-receiving voltage home position sensor does not go off when light is emitted."
+Remedy;Check the horizontal registration motor. Check the horizontal registration home position sensor. Check the punch driver PCB. Replace the finisher controller PCB. Check the punch shift mechanism.
+Code;E593-0002
+Description;"Punch shift motor error
+The light-receiving voltage home position sensor does not go on when light is not emitted."
+Remedy;Check the horizontal registration motor. Check the horizontal registration home position sensor. Check the punch driver PCB. Replace the finisher controller PCB. Check the punch shift mechanism.
+Code;E5F-0001
+Description;"Saddle switch error
+ The inlet cover switch has been identified as being open for 1 sec or more after the start of printing or the start of initial rotation with the following sensors identifying their respective covers as being closed: - inlet cover sensor (PI9S) - nt cover open/closed sensor (PI2S) - delivery cover sensor (PI3S) Or, the front over switch (MS2S) or the delivery cover switch (MS3S) is open. Inlet cover switch (MS1S)/front cover switch (MS2S)/ delivery cover switch (MS3S) Check the inlet cover switch. Check the inlet cover sensor. Check the front cover open/ closed sensor. Check the delivery cover sensor. Replace the finisher controller"
+Remedy;Check the inlet cover switch. Check the inlet cover sensor. Check the front cover open/ closed sensor. Check the delivery cover sensor. Replace the finisher controller PCB.
+Code;E5F-0002
+Description;"Saddle switch error
+The front cover switch has been identified as being open from the start of printing or the start of initial rotation with the following sensors identifying their respective covers as being closed. - inlet cover sensor (PI9S) - front cover open/closed sensor (PI2S) - delivery cover sensor (PI3S) - front cover switch (MS2S)/ delivery cover switch (MS3S) Check the front cover switch. Check the inlet cover sensor. Check the front cover open/ closed sensor. Check the delivery cover sensor. Replace the finisher controller"
+Remedy;Check the front cover switch. Check the inlet cover sensor. Check the front cover open/ closed sensor. Check the delivery cover sensor. Replace the finisher controller PCB.
+Code;E5F-0003
+Description;"Saddle switch error
+ The delivery cover switch has been identified as being open after the start of printing or the start of initial rotation of the host machine with the following sensors identifying their respective covers as being closed: - inlet cover sensor (PI9S) - front cover open/closed sensor (PI2S) - delivery cover sensor (PI3S) - delivery cover switch (MS3S)"
+Remedy;Check the delivery cover switch. Check the inlet cover sensor. Check the inlet cover sensor. Check the front cover open/closed sensor. Check the delivery cover sensor. Replace the finisher controller PCB.
+Code;E5F0-0001
+Description;"Saddle paper positioning plate error
+ The paper positioning plate home position sensor does to go on when the paper positioning motor has been driven for 1.33 sec. Paper positioning plate motor (M4S)/paper positioning plate home position sensor (P17S)"
+Remedy;Check the paper positioning plate motor. Check the paper positioning plate home position sensor. Replace the finisher controller PCB. Check the paper positioning plate drive mechanism.
+Code;E5F0-0002
+Description;"Saddle paper positioning plate error
+The paper positioning plate home position sensor doest not go off when the paper positioning plate motor has been driven for 1 sec. Paper positioning plate motor (M4S)/paper positioning plate home position sensor (P17S)"
+Remedy;Check the paper positioning plate motor. Check the paper positioning plate home position sensor. Replace the finisher controller PCB. Check the paper positioning plate drive mechanism.
+Code;E5F1-0001
+Description;"Saddle paper folding error
+ The number of detection pulses of the paper folding motor clock sensor has dropped below a specific value. Paper folding motor (M2S)/ paper folding motor clock sensor (P14S)"
+Remedy;Check the paper folding motor. Check the paper folding motor clock sensor. Replace the finisher controller PCB. Check the paper folding plate drive mechanism.
+Code;E5F1-0002
+Description;"Saddle paper folding error
+The state of the paper folding home position sensor doest not change when the paper folding motor has been driven for 3 sec. Paper folding motor (M2S)/ paper folding motor clock sensor (P14S"
+Remedy;Check the paper folding motor. Check the paper folding motor clock sensor. Replace the finisher controller PCB. Check the paper folding plate drive mechanism.
+Code;E5F2-0001
+Description;"Saddle guide error
+ The guide home position sensor does not go on when the guide motor has been driven for 0.455 sec. Guide motor (M3S)/guide home position sensor (PI13S)"
+Remedy;Check the guide motor. Check the guide home position sensor. Replace the finisher controller PCB. Check the guide drive mechanism.
+Code;E5F2-0002
+Description;"Saddle guide error
+The guide home position sensor does not go off when the guide motor has been driven for 1 sec. Guide motor (M3S)/guide home position sensor (PI13S)"
+Remedy;Check the guide motor. Check the guide home position sensor. Replace the finisher controller PCB. Check the guide drive mechanism.
+Code;E5F3-0001
+Description;"Saddle alignment error
+ The aligning plate home position sensor does not go on when the alignment motor has been driven for 0.5 sec. (at time of initialization, 1.67 sec.) Alignment motor (M5S)/ aligning plate home position sensor (PI5S)"
+Remedy;Check the alignment motor. Check the alignment home position sensor. Check the aligning plate drive mechanism. Replace the finisher controller PCB.
+Code;E5F3-0002
+Description;"Saddle alignment error
+The aligning plate home position sensor does not go off when the alignment motor has been driven for 1 sec. Alignment motor (M5S)/ aligning plate home position sensor (PI5S)"
+Remedy;Check the alignment motor. Check the alignment home position sensor. Check the aligning plate drive mechanism. Replace the finisher controller PCB.
+Code;E5F4-0001
+Description;"Saddle rear stapling error
+ The stitching home position sensor does not go on when the stitch motor (rear) has been rotated in reverse for 0.5 sec or more. Stitch motor (rear; M6S)/ stitching home position sensor (rear; MS5S)"
+Remedy;Replace the stitcher (rear). Check the harness. Replace the finisher controller PCB.
+Code;E5F4-0002
+Description;"Saddle rear stapling error
+The stitching home position sensor does not go off when the stitch motor (rear) has been rotated in normal direction for 0.5 sec or more. Stitch motor (rear; MS)/ stitching home position sensor (rear; MS5S)"
+Remedy;Replace the stitcher (rear). Check the harness. Replace the finisher controller PCB.
+Code;E5F5-0001
+Description;"Saddle front stapling error
+ The stitching home position sensor does not go on when the stitch motor (front) has been rotated in reverse for 0.5 sec or more. Stitch motor (front; M7S)/ stitching home position sensor (front; MS7S)"
+Remedy;Replace the stitcher (front). Check the harness. Replace the finisher controller PCB.
+Code;E5F5-0002
+Description;"Saddle front stapling error
+The stitching home position sensor does not go off when the switch motor (front) has been rotated in normal direction for 0.5 sec or more. Stitch motor (front; M7S)/ stitching home position sensor (front; MS7S)"
+Remedy;Replace the stitcher (front). Check the harness. Replace the finisher controller PCB.
+Code;E5F6-0001
+Description;"Saddle butting error
+ The paper butting plate home position sensor does not go on when the paper butting plate motor has been driven for 0.3 sec. Paper butting plate motor (M8S)/paper butting plate home position sensor (PI14S)"
+Remedy;Check the paper butting plate motor. Check the paper butting plate home position sensor. Replace the finisher controller PCB.
+Code;E5F6-0002
+Description;"Saddle butting error
+The paper butting plate home position sensor does not go off when the paper butting plate motor has been driven for 80 msec or more. Paper butting plate motor (M8S)/paper butting plate home position sensor (PI14S)"
+Remedy;Check the paper butting plate motor. Check the paper butting plate home position sensor. Replace the finisher controller PCB.
+Code;E5F6-0003
+Description;"Saddle butting error
+ The number of detection pulses of the paper butting plate motor has dropped below a specific value. paper butting plate motor (M8S)/paper butting plate motor clock sensor (PI1S)
+ Check the paper butting plate motor. Check the paper butting plate motor clock sensor. Replace the finisher controller"
+Remedy;Check the paper butting plate motor. Check the paper butting plate motor clock sensor. Replace the finisher controller PCB.
+Code;E5F6-0004
+Description;"Saddle butting error
+ The paper butting plate leading edge sensor does not go off when the paper butting plate motor has been driven for 80 msec. Paper butting plate motor (M8S)/paper butting plate leading edge sensor (PI15S)"
+Remedy;Check the paper butting plate motor. Check the paper butting plate leading edge sensor. Replace the finisher controller PCB.
+Code;E5F6-0005
+Description;"Saddle butting error
+ The paper butting plate leading edge sensor does not go on when the paper butting plate motor has been driven for 0.3 sec. Paper butting plate more (M8S)/paper butting plate leading edge sensor (PI15S)"
+Remedy;Check the paper butting plate motor. Check the paper butting plate leading edge sensor. Replace the finisher controller PCB.
+Code;E5F8-0001
+Description;"Saddle connector error
+ The connector of the paper butting plate home position sensor has been identified as being disconnected. Connector of guide home position sensor (PI13S)"
+Remedy;Connect the connector of the guide home position sensor. Check the harness. Replace the finisher controller PCB.
+Code;E5F8-0002
+Description;"Saddle connector error
+The connector of the paper butting plate home position sensor has been identified as being disconnected. Connector of paper butting plate home position sensor (PI14S)"
+Remedy;Connect the connector of the paper butting plate home position sensor. Check the harness. Replace the finisher controller PCB.
+Code;E5F8-0003
+Description;"Saddle connector error
+ The connector of the paper butting plate leading edge sensor has been identified as being disconnected. Connector of paper butting plate leading edge sensor (PI15S)"
+Remedy;Connect the connector of the paper butting plate leading edge sensor. Check the harness. Replace the finisher controller PCB.
+Code;E602-0001
+Description;"There is an error on the hard disk.
+ [Cause] An HDD detection error has occurred. The HDD cannot be detected. The HDD does not become ready. The HDD returns an error. [Detection] while boot ROM is in session BARSAC startup, mounting (usrIde) [Timing of Detection] once at startup"
+Remedy;
+Code;E602-0002
+Description;"There is an error on the hard disk.
+[Cause] There is no startup file. The program for the main CPU does not exist on the HDD or in BOOTDEV/BOOT, and so on. [Detection] while boot ROM is in use at time of system file loading (usrIde) [Timing of Detection] once at startup"
+Remedy;
+Code;E602-0003
+Description;"There is an error on the hard disk.
+ [Cause] An HD write abort error has occurred. The sectors for BOOTDEV on the HD cannot be read. [Detection] BARSAC (all; at time of bootable startup) [Timing of Detection] once at startup"
+Remedy;
+Code;E602-0006
+Description;"There is an error on the hard disk.
+ [Cause] A subbootable that matches the PDL type does not exit in BOOTDEV/BOOT. [Detection] during loading of sub boot in oclibroot [Timing of Detection] once at bootable startup"
+Remedy;
+Code;E602-0007
+Description;"There is an error on the hard disk.
+ [Cause] An ICC profile that matches the PDL type does not exist in BOOTDEV/PDL. [Detection] beginning of oclibroot; judgment based on functions of PDL team that are called in [Timing of Detection] once at bootable startup"
+Remedy;
+Code;E602-01XX
+Description;"There is an error on the hard disk.
+ /DOSDEV is faulty"
+Remedy;
+Code;E602-02XX
+Description;"There is an error on the hard disk.
+ /FSTDEV is faulty."
+Remedy;
+Code;E602-03XX
+Description;"There is an error on the hard disk.
+ /DOSDEV2 is faulty."
+Remedy;
+Code;E602-04XX
+Description;"There is an error on the hard disk.
+ /FSTPDEV is faulty."
+Remedy;
+Code;E602-05XX
+Description;"There is an error on the hard disk.
+ /DOSDEV3 is faulty."
+Remedy;
+Code;E602-06XX
+Description;"There is an error on the hard disk.
+ /PDLDEV is faulty."
+Remedy;
+Code;E602-07XX
+Description;"There is an error on the hard disk.
+ /DOSDEV4 is faulty."
+Remedy;
+Code;E602-08XX
+Description;"There is an error on the hard disk.
+ /BOOTDEV is faulty."
+Remedy;
+Code;E602-09XX
+Description;"There is an error on the hard disk.
+ /DOSDEV5 is faulty."
+Remedy;
+Code;E602-FFXX
+Description;"There is an error on the hard disk.
+ There is an error in a partition that cannot be identified."
+Remedy;
+Code;E604-0000
+Description;"The image memory is faulty or is inadequate.
+ The memory size does not match the model."
+Remedy;Increase the memory.
+Code;E609-0008
+Description;"There is an error on the HDD.
+ At startup, the HDD fails to reach a specific temperature level within a specific period of time."
+Remedy;Replace the hard disk. Replace the DC controller PCB.
+Code;E609-0009
+Description;"There is an error on the HDD.
+At time of sleep recovery, the temperature fails to reach a specific level."
+Remedy;Replace the hard disk. Replace the DC controller PCB.
+Code;E610
+Description;"The HDD coding key is faulty.
+ The SRM/PCB is faulty. The battery has become exhausted, leading to loss of SRAM contents."
+Remedy;"Try step 1); if it fails, try step 2). 1) Turn off and then back on the power switch to generate the key once again. 2) If the same error still continues, replace the board on which the SRAM is mounted. (Keep in mind that doing so will lead to loss of all user data.)"
+Code;E674-0001
+Description;"An error has occurred in communication between the fax control PCB (2-line) and main controller PCB.
+ An attempt to set mode for the fax device has failed."
+Remedy;1. Check the connection of the cable between the fax control PCB (2-line) and the main controller PCB. 2. Replace the ROM DIMM of the fax control PCB (2-line). 3. Replace the fax control PCB (2- line). 4. Replace the main controller PCB.
+Code;E710-0001
+Description;"There is an error in the initialization of the IPC.
+ The machine fails to become ready 3 sec or less after the IPC chip startup."
+Remedy;Check the cable.
+Code;E710-0002
+Description;"There is an error in the initialization of the IPC.
+When the main power is turned on, the communication IC (IPC) on the DC controller PCB cannot be initialized."
+Remedy;Check the cable.
+Code;E711-0001
+Description;"There is an error in the IPC communication.
+ The occurrence of an error has been recorded in the error register of the IPC chip 4 times or more within 1.5 sec."
+Remedy;Check the cable.
+Code;E711-0002
+Description;"There is an error in the IPC communication.
+The occurrence of an error has been recorded in the error register of the IPC chip 4 times or more within 2 sec."
+Remedy;Check the cable.
+Code;E713-0000
+Description;"There is an error in the communication with the finisher.
+ The communication with the finisher does not resume within 5 sec after it has been disrupted."
+Remedy;Check the cable. Replace the DC controller PCB. Replace the finisher controller PCB.
+Code;E716-0000
+Description;"There is an error in the communication with the pedestal.
+ After the presence of a pedestal has been detected, the communication fails to be normal for 5 sec"
+Remedy;Check the cable. Replace the DC controller PCB. Replace the pedestal drive PCB.
+Code;E717-0001
+Description;"There is an error in the communication with the NE controller.
+ The NE controller is not connected at power on, although it was connected before the power was turned off because of an error."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E717-0002
+Description;"There is an error in the communication with the NE controller.
+An IPC error has occurred while the NE controller is in operation. There is an open circuit for the IPC. An error has occurred, and the IPC communication remains disabled"
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E719-0001
+Description;"There is a coin vendor error.
+ The coin vendor is not connected when the power is turned on, although it was connected before the power was turned off because of an error."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E719-0002
+Description;"There is a coin vendor error.
+While the coin vendor is in operation, an IPC error has occurred, IPC has developed an open circuit, or an error preventing recovery of IPC communication has occurred. An open circuit has been detected in the line for the pickup/delivery signal. An illegal signal has been detected."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E719-0003
+Description;"There is a coin vendor error.
+ While the unit price is being checked at startup, an error occurs in the communication with the coin vendor."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E719-0011
+Description;"There is a coin vendor error.
+ An error has occurred at new card reader startup. The new card reader is not connected when the power is turned off, although it was connected when the power was turned off."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E719-0012
+Description;"There is a coin vendor error.
+ An IPC error has occurred at new card reader startup. There is an IPC open circuit. An error has occurred that prevents recovery of IPC communication."
+Remedy;"Check the cable; thereafter, reset the condition in service mode: COPIER>FUNCTION>CLEAR> ERR."
+Code;E730-1001
+Description;"There is a PDL software error
+ An initialization error has occurred."
+Remedy;1. Execute PDL resetting. 2. Turn on the power once again.
+Code;E730-100A
+Description;"There is a PDL software error
+An error that may be critical to the system (e.g., failed initialization) has occurred."
+Remedy;1. Execute PDL resetting. 2. Turn on the power once again.
+Code;E730-9004
+Description;"There is a PDL software error
+ There is an error in the communication (PAI) with an external controller."
+Remedy;1. Turn on the power once main. 2. Check the connection of the open I/F board and the cable. 3. Replace the board for the external controller open I/F. 4. Replace the main board.
+Code;E730-9005
+Description;"There is a PDL software error
+ There is a fault in the connector of the vide cable to the external controller"
+Remedy;1. Turn on the power once main. 2. Check the connection of the open I/F board and the cable. 3. Replace the board for the external controller open I/F. 4. Replace the main board.
+Code;E730-A006
+Description;"There is a PDL software error
+ The PDL board does not respond. A subbootable is faulty or absent"
+Remedy;1. Execute PDL resetting. 2. Turn on the power once again. 3. Check the connection of the SURF board. 4. Re-install the firmware. 5. Replace the main board.
+Code;E730-A007
+Description;"There is a PDL software error
+ There is a mismatch between the control software of the machine and the PDL control software in regard to version."
+Remedy;1. Execute PDL resetting. 2. Turn on the power once again. 3. Execute system formatting (all), and reinstall the system.
+Code;E730-B013
+Description;"There is a PDL software error
+ There is corruption in the font data."
+Remedy;1. Turn on the power once again. 2. Re-install the software. 3. Execute system formatting (all), and reinstall the system.
+Code;E732-0001
+Description;"There is an error in the communication with the scanner
+ There is a DDI-S communication error."
+Remedy;1. Check the connector used to connect the scanner. 2. Check the power supply of the scanner (to see if initialization takes place at startup). 3. Replace the reader controller, scanner board, or main board as necessary.
+Code;E733-0000
+Description;"There is an error in the communication with the printer.
+ At startup, communication with the printer fails."
+Remedy;1. Check the connector used to connect to the printer. 2. Check the power supply of the printer (to see if initialization takes place at startup). 3. Replace the DC controller or the main board.
+Code;E733-0001
+Description;"There is an error in the communication with the printer.
+There is a DDI-P communication error"
+Remedy;1. Check the connection with the printer. 2. Check the power supply of the printer (to see if initialization takes place at startup). 3. Replace the DC controller or the main board.
+Code;E740-0002
+Description;"There is an error on the Ether board.
+ The MAC address is illegal."
+Remedy;Replace the LAN card.
+Code;E743-0000
+Description;"There is an error in the DDI communication.
+ An SCI error has occurred. The received data is faulty. A reception timeout condition has occurred. An SEQ timeout error has occurred."
+Remedy;Disconnect and then connect the flexible cable used to connect the reader unit and the printer unit. Replace the following as necessary: flexible cable, reader controller PCB, main controller PCB.
+Code;E744-0001
+Description;"There is an error in the language file/boot ROM.
+ The version of the language file on the HDD and that of the bootable do not match."
+Remedy;Download a language file of the correct version.
+Code;E744-0002
+Description;"There is an error in the language file/boot ROM.
+The size of the language file on the HDD is too large."
+Remedy;Download a language file of the correct version.
+Code;E744-0003
+Description;"There is an error in the language file/boot ROM.
+ There is no language file on the HDD indicated by config.txt for a switchover."
+Remedy;Download a language file of the correct version.
+Code;E744-0004
+Description;"There is an error in the language file/boot ROM.
+ An attempt to switchover to a language on the HDD fails"
+Remedy;Download a language file of the correct version.
+Code;E744-1000
+Description;"There is an error in the language file/boot ROM.
+ The boot ROM that is mounted is of the wrong type."
+Remedy;Replace the boot ROM with one of the model in question.
+Code;E744-2000
+Description;"There is an error in the language file/boot ROM.
+ The engine ID indicated by the software ID is illegal."
+Remedy;Replace it with a software ID of the correct model.
+Code;E745-0001
+Description;"There is a fault on the TokeRing board.
+ An attempt at PCI initialization has failed."
+Remedy;1. Disconnect and then connect the TokeRing board. 2. Replace the TokeRing board.
+Code;E745-0002
+Description;"There is a fault on the TokeRing board.
+The MAC address is faulty"
+Remedy;1. Replace the TokenRing board.
+Code;E745-0003
+Description;"There is a fault on the TokeRing board.
+ There is an error in the acquisition/setting of board information."
+Remedy;1. Replace the TokenRing board.
+Code;E745-0004
+Description;"There is a fault on the TokeRing board.
+ There is a connection error"
+Remedy;1. Check the connection of the cable. 2. Replace the cable. 3. Check the power source of the MAU. 4. Replace the MAU. 5. Replace the TokenRing board.
+Code;E745-0005
+Description;"There is a fault on the TokeRing board.
+ Other Errors"
+Remedy;
+Code;E746-0003
+Description;"The accessories board is of the wrong type
+ At startup, a board for a different model has been detected."
+Remedy;Replace the UFR board of the correct type (model).
+Code;E748-1001
+Description;"There is a mismatch between controller board and SDRAM size.
+ There is a mismatch between the control board and the SDRAM."
+Remedy;Check the correct combination between board and SDRAM.
+Code;E805-0000
+Description;"There is a fan error.
+ While the fan is at rest, the lock signal has been detected for 5 sec. While the fan is in operation, the lock signal is not detected for 5 sec"
+Remedy;Replace the fan. Replace the DC controller PCB.

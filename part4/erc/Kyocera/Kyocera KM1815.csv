@@ -1,0 +1,84 @@
+Code;C0150
+Description;Backup memory read/write problem (engine board (KP-5238))  • Read and write data does not match.
+Causes;Defective backup RAM or engine board (KP-5238).
+Remedy;Replace the engine board (KP-5238) and check for correct operation.
+Code;C0160
+Description;Backup memory data problem (engine board (KP-5238))  • Data in the specified area of the backup memory does not match the specified values.
+Causes;Problem with the backup memory data. Defective backup RAM.
+Remedy;Turn interlock switch off and back on and run maintenance item U020 to set the contents of the backup memory data again. If the C0160 is displayed after re-setting the backup memory contents, replace the backup RAM or engine board (KP-5238).
+Code;C0170
+Description;Accounting count problem  • When the power is turned on, the total count and the scan count are abnormal both on the main board (KP5191) and the engine board (KP-5238).
+Causes;Defective main board (KP-5191) or engine board (KP-5238).
+Remedy;Replace the main board (KP-5191) or engine board (KP-5238) and check for correct operation.
+Code;C0180
+Description;Machine number mismatch  • When the power is turned on, the machine number does not match between the main board (KP-5191) and the engine board (KP-5238).
+Causes;Defective main board (KP-5191) or engine board (KP-5238).
+Remedy;Replace the main board (KP-5191) or engine board (KP-5238) and check for correct operation.
+Code;C0210
+Description;Communication problem between the main board (KP-5191) and engine board (KP-5238)  • When the power is turned on, the machine does not detect the low level of SBSY and the high level of SDIR for three seconds.
+Causes;Poor contact in the connector terminals. Defective main board (KP-5191) or engine board (KP-5238).
+Remedy;Check the connection of connectors YC7 on the main board (KP-5191) and YC3 on the engine board (KP-5238), and the continuity across the connector terminals. Repair or replace if necessary. Replace the main board (KP-5191) or engine board (KP-5238) and check for correct operation.
+Code;C0220
+Description;Communication problem between the main board (KP-5191) and operation board  • There is no reply after 20 retries at communication.
+Causes;Poor contact in the connector terminals. Defective main board (KP-5191) or operation board.
+Remedy;Check the connection of connectors YC13 on the main board (KP-5191) and YC3 on the operation board, and the continuity across the connector terminals. Repair or replace if necessary. Replace the main board (KP-5191) or operation board and check for correct operation.
+Code;C0800
+Description;Image processing problem  • JAM05 is detected twice.
+Causes;Defective engine board (KP-5238).
+Remedy;Replace the engine board (KP-5238) and check for correct operation.
+Code;C2000
+Description;Main motor problem  • LOCK ALM signal remains high for 1 s, 1 s after the main motor has turned on.
+Causes;Poor contact in the main motor connector terminals. Defective main motor rotation control circuit. Defective drive transmission system.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, remedy or replace the cable. Replace the main motor. Check if the rollers and gears rotate smoothly. If not, grease the bushings and gears. Check for broken gears and replace if any.
+Code;C3100
+Description;Scanner carriage problem  • The home position is not correct when the power is turned on or copying the document placed on the contact glass.
+Causes;Poor contact of the connector terminals. Defective scanner home position sensor. Defective engine board (KP-5238) or scanner board (KP-5063). Defective scanner motor.
+Remedy;Check the connection of connectors YC10, 11 on the engine board (KP-5238) and the continuity across the connector terminals. Repair or replace if necessary. Replace the scanner home position sensor. Replace the engine board (KP-5238) or scanner board (KP-5063) and check for correct operation. Replace the scanner motor.
+Code;C3200
+Description;Exposure lamp problem  • In indicator check before starting copying, the average value in scanning of the shading plate with the CCD is 128 or more.
+Causes;Defective scanner board (KP-5063). Defective exposure lamp or inverter board. Incorrect shading position. Poor contact of the connector terminals.
+Remedy;Replace the scanner board (KP-5063) and check for correct operation. Replace the exposure lamp or inverter board. Adjust the position of the contact glass (shading plate). If the problem still occurs, replace the scanner home position sensor. Check the connection of connector YC7 on the scanner board (KP-5063), and the continuity across the connector terminals. Repair or replace if necessary.
+Code;C4000
+Description;Polygon motor synchronization problem  • The polygon motor does not reach the stable speed within 15 s of the START signal turning on.
+Causes;Poor contact in the polygon motor connector terminals. Defective polygon motor. Defective engine board (KP-5238).
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, remedy or replace the cable. Replace the LSU. Replace the engine board (KP-5238) and check for correct operation.
+Code;C4010
+Description;Polygon motor steady-state problem  • The polygon motor rotation is not stable for 5 s after the polygon motor rotation has been stabilized.
+Causes;Poor contact in the polygon motor connector terminals. Defective polygon motor. Defective engine board (KP-5238).
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, remedy or replace the cable. Replace the LSU. Replace the engine board (KP-5238) and check for correct operation.
+Code;C6000
+Description;Broken fixing heater wire • In fixing warm-up, the time to reach 50C/122 F exceeds 13.5 s, the time to reach 100C/212 F exceeds 10 s, the time to reach the primary stabilization exceeds 10 s or the time to reach the secondary stabilization exceeds 24 s.
+Causes;Poor contact in the thermistor connector terminals. Thermistor installed incorrectly. Thermal cutout triggered. Heater lamp installed incorrectly. Broken heater lamp wire.
+Remedy;Check the connection of connector YC4 on the power supply board and the continuity across the connector terminals. Repair or replace if necessary. Check and reinstall if necessary. Check for continuity. If none, replace the thermal cutout. Check and reinstall if necessary. Check for continuity. If none, replace the heater lamp.
+Code;C6020
+Description;Abnormally high fixing unit thermistor temperature  • The fixing temperature exceeds 230C/446 F for 40 ms.
+Causes;Shorted thermistor. Broken heater control circuit on the power supply board.
+Remedy;Measure the resistance. If it is 0 Ω, replace the thermistor. Replace the power supply board and check for correct operation.
+Code;C6050
+Description;Abnormally low fixing unit thermistor temperature • The fixing temperature remains below 90C/194F for 1 s.
+Causes;Poor contact in the thermistor connector terminals. Broken thermistor wire. Thermistor installed incorrectly. Thermal cutout triggered. Heater lamp installed incorrectly. Broken heater lamp wire.
+Remedy;Check the connection of connector YC4 on the power supply board and the continuity across the connector terminals. Repair or replace if necessary. Measure the resistance. If it is ∞Ω, replace the thermistor. Check and reinstall if necessary. Check for continuity. If none, replace the thermal cutout. Check and reinstall if necessary. Check for continuity. If none, replace the heater lamp.
+Code;C6400
+Description;Zero-crossing signal problem  • The engine board (KP-5238) does not detect the zero-crossing signal for the time specified below. At power-on: 3 s Others: 5 s
+Causes;Poor contact in the connector terminals. Defective power supply board. Defective engine board (KP-5238).
+Remedy;Check the connection of connectors YC7 on the engine board (KP-5238) and YC2 on the power supply board, and the continuity across the connector terminals. Repair or replace if necessary. Check if the zero-crossing signal is output from YC2-11 on the power supply board. If not, replace the power supply board. Replace the engine board (KP-5238) if C6400 is detected while YC2-11 on the power supply board outputs the zerocrossing signal.
+Code;C7800
+Description;Broken external temperature thermistor  • The input voltage is 0.5 V or less.
+Causes;Poor contact in the operation board connector terminals. Defective external temperature thermistor.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, remedy or replace the cable. Replace the operation board and check for correct operation.
+Code;C7810
+Description;Short-circuited external temperature thermistor  • The input voltage is 4.5 V or more.
+Causes;Poor contact in the operation board connector terminals. Defective external temperature thermistor.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, remedy or replace the cable. Replace the operation board and check for correct operation.
+Code;C7980
+Description;Waste toner reservoir overflow problem (when the total number of copies is less than 100 thousand sheets)  • After E31 is displayed, 1,000 sheets are copied. Or waste toner exceeds 5 g.
+Causes;Defective waste toner sensor or engine board (KP5238).
+Remedy;Shake the process unit from side to side and turn the power switch off and then on. If the problem cannot be solved, replace the process unit. After replacing the process unit, turn the power switch off and then on. If the problem cannot be solved, replace the waste toner sensor or the engine board (KP- 5238).
+Code;C7990
+Description;Waste toner reservoir overflow problem (when the total number of copies is 100 thousand sheets or more)  • After E31 is displayed, 1,000 sheets are copied. Or waste toner exceeds 5 g.
+Causes;Defective waste toner sensor or engine board (KP5238).
+Remedy;Shake the process unit from side to side and turn the power switch off and then on. If the problem cannot be solved, replace the process unit. After replacing the process unit, turn the power switch off and then on. If the problem cannot be solved, replace the waste toner sensor or the engine board (KP- 5238).
+Code;CF--
+Description;Controller system error  • After “Call for Servece person” is indicated, the error can be cleared by turning the power switch off and then on.
+Causes;Defective main board (KP-5191).
+Remedy;If this error occurs again even after the power switch is turned off and then on again, replace the main board (KP-5191) and check for correct operation.

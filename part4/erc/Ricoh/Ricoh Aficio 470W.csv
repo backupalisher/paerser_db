@@ -1,0 +1,206 @@
+Code;SC192
+Description;"AMDP download error
+ The AMDP ROM enable signal could not be detected within 8 ms after program download to the AMDP started. Program download failed three times consecutively."
+Causes;• AMDP program defective. • IC card defective • IPU defective
+Code;SC302
+Description;"Charge Corona Output Error
+ Charge corona feedback voltage of less than 1V was detected for more than 200 s."
+Causes;• Charge power pack is defective. • High voltage cable is defective. • Poor connection of the power pack connector. • Dirty charge corona unit caused leakage.
+Code;SC303
+Description;"Charge corona wire cleaner error
+ 1) Wire cleaner motor feedback voltage of less than 0.1 V was detected for more than 1s. 2) Corona wire cleaning did not complete within 80 s. 3) Charge wire cleaner did not return to the home position. 4) Cleaner does not move from the home position."
+Causes;Wire cleaner motor connector disconnected. Wire cleaner motor connector disconnected. Wire cleaner motor is operating without a load. Wire cleaner stops due to an overload. Wire cleaner motor drive circuit malfunction.
+Code;SC306
+Description;"Charge grid output error
+ Control PWM duty value is higher than 1% (FB less than 1V) for more than 200 ms (a grid current leak)."
+Causes;• CBG power pack is defective. • High voltage cable is defective. • Poor connection of the power pack connector. • Dirty charge corona unit causing leakage
+Code;SC330
+Description;"Writing ASIC signal error
+ At power on, the stamp function could not execute successfully twice."
+Causes;• SP5137 setting incorrect • Stamp board defective • Poor stamp board connection
+Code;SC353
+Description;"ID sensor malfunction
+ SC353-1 Vsp is 0V or more than 2.5 V SC353-2 Vsg is 0V or more than 2.5 V SC353-3 Edge pattern voltage (2.5 V) cannot be detected SC353-4 LED drive current (PWM value) is over 1000 or fixed at 0. SC353-5 Vsg cannot be adjusted to 4 ±0.2V within 20 s."
+Causes;• ID sensor defective • ID sensor connector defective • IOB malfunction • CBG power pack defective • Dirty ID sensor • VDB defective • LPH defective
+Code;SC360
+Description;"Hard disk connection error
+ The connection of the optional HDDs could not be confirmed."
+Causes;• Hard disk connectors disconnected. • Hard disk defective. • IPU board defective
+Code;SC361
+Description;Hard disk read error
+Causes;
+Code;SC362
+Description;"IMAC (Image Memory Access Controller) error
+ At the IPU, an error was detected during data compression with the GAIMAC ASIC or during data transfer to memory."
+Causes;• Software error, IPU defective. Update the firmware. If this does not solve the problem, replace the IPU board.
+Code;SC365
+Description;"Image processing parameter error
+ An image processing data file not stored in the memory was required when writing started due to software error."
+Causes;Software error. Replace software (all three firmware modules).
+Code;SC391
+Description;"Development bias error
+ A development bias feedback voltage of less than 0.25V was detected for more than 200 ms while the PWM duty value was more than 1% (development bias leak)."
+Causes;• Bias power pack defective • Bias cable defective • Poor bias cable connection • Bias leak
+Code;SC401
+Description;"Transfer corona leak error
+ A transfer corona feedback voltage of less than 0.25V was detected for more than 200 ms."
+Causes;• T&S power pack defective. • Transfer corona cable defective. • Poor transfer corona cable connection. • Dirty T&S corona unit caused leak
+Code;SC411
+Description;"DC separation corona current leak
+ A dc separation feedback voltage of less than 0.5V was detected after more than 200 ms while the PWM duty value was more than 17%."
+Causes;• T&S power pack defective. • Paper separation current cable defective. • Poor paper separation current cable connection.
+Code;SC440
+Description;"Drum drive motor lock
+ The motor lock signal is on longer than 5 s while the drum drive motor is on."
+Causes;• Drive mechanism overload. • Motor defective.
+Code;SC441
+Description;"Development drive motor lock
+ SC441-1 Development drive motor lock signal is low longer than 5 s when the development motor stops. SC441-2 Development drive motor lock signal is high longer than 5 s when the development motor rotates."
+Causes;• Drive mechanism overload • Motor defective • Motor disconnected
+Code;SC506
+Description;"Registration motor lock
+ The registration motor lock signal is high longer than 5 s during operation."
+Causes;• Drive mechanism overload. • Motor defective.
+Code;SC508
+Description;"Cutter 1 home position error 1
+ Both left and right home position switches of the upper cutter were on just after the main switch was turned on, or just after the upper feed tray was opened and closed."
+Causes;• Right or left home position switch defective.
+Code;SC509
+Description;"Cutter 1 home position error 2
+ SC509-1 Left home position switch stays on 300 ms after the cutter starts moving from left to right. SC509-2 Right home position switch stays on 300 ms after the cutter starts moving from right to left."
+Causes;• Cutter motor cable disconnected • Cutter motor overload • Motor defective
+Code;SC510
+Description;"Cutter 1 home position error 3
+ SC510-1 Right home position switch stays off 1 s after the cutter starts moving from left to right. SC510-2 Left home position switch stays off 1 s after the cutter starts moving from right to left."
+Causes;• Cutter motor cable disconnected • Cutter motor overload • Motor defective
+Code;SC511
+Description;"Cutter 2 home position error 1
+ Both left and right home position switches of the lower cutter were on just after the main switch was turned on, or just after the lower feed tray was opened and closed."
+Causes;• Right or left home position switch defective.
+Code;SC512
+Description;"Cutter 2 home position error 2
+ SC512-1 Left home position switch stays on 300 ms after the cutter starts moving from left to right. SC512-2 Right home position switch stays on 300 ms after the cutter starts moving from right to left."
+Causes;• Cutter motor cable disconnected • Cutter motor overload • Motor defective
+Code;SC513
+Description;"Cutter 2 home position error 3
+ SC513-1 The right home position switch stays off 1 s after the cutter starts moving from left to right. SC513-2 The left home position switch stays off 1 s after the cutter starts moving from right to left."
+Causes;• Cutter motor cable disconnected • Cutter motor overload • Motor defective
+Code;SC541
+Description;"Fusing thermistor open
+ The fusing temperature detected by the thermistor was below 7 °C for 10 s."
+Causes;• Fusing thermistor defective • Thermistor cable disconnected
+Code;SC542
+Description;"Fusing temperature warm-up error
+ SC542-1 After switching on the machine, or after opening and closing the machine, during warmup the hot roller did not attain the ready temperature within 5 minutes. SC542-2 After the ready temperature, the hot roller did not reach the target control temperature within 5 minutes."
+Causes;• Fusing lamp defective • IOB board defective • MCU board defective
+Code;SC543
+Description;"Fusing overheat error 1 (software)
+ A fusing temperature of over 215 °C (419°F) was detected for 5 s"
+Causes;• IOB board defective • MCU board defective • PSU defective
+Code;SC544
+Description;"Fusing overheat error 2 (hardware)
+ The BICU detects an overhead error even if the software overheat protection does not work."
+Causes;• IOB board defective • MCU board defective • PSU board defective
+Code;SC545
+Description;"Fusing lamp overheat error 3
+ After reaching the ready temperature, the hot roller does not rotate, and the fusing lamp stays on at full power for 50 s."
+Causes;• Hot roller thermistor not positioned correctly
+Code;SC546
+Description;"Unstable fusing temperature
+ SC546-1 Fusing temperature rapidly fluctuating. Temperature fluctuates greater than 20°C (68°C) at 1 second intervals. SC546 -2 Fusing temperature fluctuating over a long interval. Temperature fluctuates 20°C (68°C) more than 3 times during 60 s interval."
+Causes;• Poor thermistor connection
+Code;SC547
+Description;"Zero-cross signal malfunction
+ SC547-1 Abnormal mains frequency was detected more than 10 times. SC547-2 No zero-cross signal detected for 1 second. SC547-3 No zero-cross signal detected for 2.5 s after the main switch is turned on."
+Causes;• Electrical noise on the power line. • PSU defective.
+Code;SC549
+Description;"Pressure roller thermistor abnormal
+ SC547-1 During fusing motor rotation, pressure roller temperature detected lower than 7°C (44.6°F) for 5 s. SC547-2 Pressure roller temperature detected higher than 235°C (455°F) for 5 s."
+Causes;• SC547-1: Thermistor disconnected or connector damaged. • SC547-2: Thermistor shorted or connector damaged.
+Code;SC550
+Description;"Left fusing pressure motor home position error 1
+ The left pressure motor did not return to home position 9 s after the left pressure motor started."
+Causes;• Motor drive mechanism overload. • Motor defective. • Pressure home position sensor defective.
+Code;SC551
+Description;"Left fusing pressure motor home position error 2
+ The left pressure motor was still at the home position 1.5 s after the start signal turned on."
+Causes;• Motor drive mechanism overloaded. • Motor defective. • Pressure home position sensor defective or disconnected.
+Code;SC552
+Description;"Right fusing pressure motor home position error 1
+ The right pressure motor did not return to home position 9 s after the right pressure motor started."
+Causes;• Motor drive mechanism overloaded. • Motor defective. • Pressure home position sensor defective.
+Code;SC553
+Description;"Right fusing pressure motor home position error 2
+ The right pressure motor was still at the home position 1.5 s after the start signal turned on."
+Causes;• Motor drive mechanism overloaded. • Motor defective. • Pressure home position sensor defective or disconnected.
+Code;SC554
+Description;"Fusing drive motor error
+ The fusing drive motor lock signal stayed on (remained HIGH) for 5 s."
+Causes;• Fusing motor drive mechanism overloaded. • Motor defective.
+Code;SC600
+Description;"Operation panel/MCU communication error
+ The operation panel and MCU are not communicating."
+Causes;• Loose harness • MCU defective
+Code;SC601
+Description;"IPU/CIS communication error
+ The IPU and CIS are not communicating."
+Causes;• MCU defective • Loose harness
+Code;SC602
+Description;"Communication error between IPU and HDC
+ The IPU and HDC (hard disk controller chip mounted on the IPU) are not communicating."
+Causes;• IPU board defective • HDC mounted on IPU incorrectly
+Code;SC603
+Description;"IPU/AMDP communication error
+ The IPU and AMDP are not communicating after 6 AMDP data transmissions."
+Causes;• IPU defective.
+Code;SC605
+Description;"BICU/MCU error
+ The BICU and MCU are not communicating due to a serial data communication error or a serial data receive buffer overflow."
+Causes;• MCU defective
+Code;SC951
+Description;"F gate signal error
+ The paper is ejected with no image (or a partial image) because the FGATE signal that triggers image writing failed to switch off after 60 s."
+Causes;• Software defective. Replace the software (all three firmware modules). • MCU defective • IPU defective
+Code;SC953
+Description;"Scanner image setting error
+ The IPU did not issue the signal required for the scanner to start image processing."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC954
+Description;The IPU did not issue the signal required to start image rocessing for the printing mode.
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC955
+Description;"Memory Setting Error
+ Settings required for memory to start image processing are not sent from the IPU."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC964
+Description;"Scanner start signal error
+ The scanner receives another start signal after scanning has already started."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC965
+Description;"Print start signal error
+ The printer received another print start signal after print job has already started."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC980
+Description;"HDD access error
+ Incorrect parameter sent to the HDC (hard disk controller chip mounted on the IPU) from the BICU."
+Causes;• Software defective. Replace the software (all three firmware modules). • MCU defective
+Code;SC981
+Description;"HDD response error
+ No response from the hard disk within 5 s after the BICU chip on the main board sent read/write commands to the HDD controller."
+Causes;• Software defective. Replace the software (all three firmware modules). • HDD defective or poor connection due to vibration
+Code;SC982
+Description;"MSU error
+ MSU (Memory System Unit) memory configuration does not meet specifications."
+Causes;Hard disk capacity is insufficient (does not meet specification).
+Code;SC984
+Description;"IMAC initialization failure
+ A hard disk was accessed when the context table RAM of the IMAC (Image Memory Access Controller) is initialized at the beginning of the copy cycle."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC997
+Description;"HDD Read Error
+ Memory could not be swapped during long original scanning."
+Causes;• Software defective. Replace the software (all three firmware modules).
+Code;SC998
+Description;"NVRAM Error
+ An error occurred in the NVRAM."
+Causes;• NVRAM not installed correctly • MCU board defective

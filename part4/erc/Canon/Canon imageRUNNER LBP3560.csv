@@ -1,0 +1,186 @@
+Code;E000 0000
+Description;Fixing startup failure
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Turn OFF the power supply switch, and remove the Fixing Assembly. Measure the resistance value between the connector (FSRTH) at the Fixing Assembly side and grounding. If the resistance value is not between 368k ohm and 512k ohm (normal temperature), replace the Fixing Assembly. 3) If the connector at the Fixing Assembly side does not have induction while the assembly is removed, replace the assembly. 4) Replace the Engine Controller PCB.
+Code;E001 0000
+Description;Abnormal high temperature in fixing (The main thermistor detected a temperature of higher than 255 degree C.)
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Turn OFF the power supply switch, and remove the Fixing Assembly. Measure the resistance value between the connector (FSRTH) at the Fixing Assembly side and grounding. If the resistance value is 1k ohm or lower, replace the Fixing Assembly. 3) Replace the Engine Controller PCB.
+Code;E001 0001
+Description;Abnormal high temperature in fixing (The sub thermistor detected a temperature of higher than 290 degree C.
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Turn OFF the power supply switch, and remove the Fixing Assembly. Measure the resistance value between the connector (FSRTH) at the Fixing Assembly side and grounding. If the resistance value is 1k ohm or lower, replace the Fixing Assembly. 3) Replace the Engine Controller PCB.
+Code;E003 0000
+Description;Abnormal low temperature in fixing (The main thermistor detected a temperature of lower than 120 degree C for more than 1 second when 20 seconds elapsed after start of the power distribution to the heater.)
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Turn OFF the power supply switch, and remove the Fixing Assembly. Measure the resistance value between the connector (FSRTH) at the Fixing Assembly side and grounding. If the resistance value is not between 368k ohm and 512k ohm (normal temperature), replace the Fixing Assembly. 3) If there is no induction between the connector (ACN) at the Fixing Assembly side and the connector (ACH) while the assembly is removed, replace the assembly. 4) Replace the Engine Controller PCB.
+Code;E003 0001
+Description;Abnormal low temperature in fixing (The sub thermistor detected a temperature of lower than 80 degree C for more than 2 seconds when 20 seconds elapsed after start of the power distribution to the heater.)
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Turn OFF the power supply switch, and remove the Fixing Assembly. Measure the resistance value between the connector (FSRTH) at the Fixing Assembly side and grounding. If the resistance value is not between 368k ohm and 512k ohm (normal temperature), replace the Fixing Assembly. 3) If there is no induction between the connector (ACN) at the Fixing Assembly side and the connector (ACH) while the assembly is removed, replace the assembly. 4) Replace the Engine Controller PCB.
+Code;E004 0000
+Description;Fixing assembly drive circuit failure
+Remedy;1) Reconnect the connector on the Engine Controller PCB. 2) Check the source of power supply for the printer. When using the power supply from the power generator and the like, improve the source of power supply. Note: If the frequency of power supply is not the specified range (40Hz to 70Hz), the fixing temperature control is not executed normally, so this might cause the damage. 3) Replace the Engine Controller PCB.
+Code;E012 0000
+Description;Black drum motor error (Failure in drum motor initial operation) The target speed was not reached within a specified time after startup of the motor.
+Remedy;1) Reconnect the connector on the Main Motor 2) Replace the Engine Controller PCB.
+Code;E012 0001
+Description;Black drum motor error (Failure in drum motor rotation) The motor rotated out of the target speed during rotation after the target speed was reached.
+Remedy;1) Reconnect the connector on the Main Motor 2) Replace the Engine Controller PCB.
+Code;E014 0000
+Description;Fixing Motor initial operation error
+Remedy;1) Reconnect the connector on the Fixing Motor 2) Replace the Fixing Motor
+Code;E014 0001
+Description;Fixing Motor rotation error
+Remedy;1) Reconnect the connector on the Fixing Motor 2) Replace the Fixing Motor
+Code;E066 0000
+Description;Environment sensor failure
+Remedy;Replace the environment sensor.
+Code;E06F 0068
+Description;EEPROM access failure
+Remedy;Replace the EEPROM.
+Code;E100 0000
+Description;Optical Unit malfunction
+Remedy;1) Reconnect the connector on the Laser Scanner Unit. 2) Replace the Laser Scanner Unit.
+Code;E110 0000
+Description;Optical assembly error (Scanner motor initial operation failure)
+Remedy;1) Reconnect the connector on the Laser Scanner Unit. 2) Replace the Laser Scanner Unit.
+Code;E196 0000
+Description;DCON error
+Remedy;1) Replace the Engine Controller PCB.
+Code;E196 0003
+Description;An Engine Controller which is not compatible with the Main Controller has been detected.
+Remedy;Replace the Engine Controller PCB.
+Code;E245 1011
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 1012
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 1013
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 1021
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 1022
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 1023
+Description;Host machine FRAM write error
+Remedy;Replace the host machine FRAMs 1 and 2.
+Code;E245 2012
+Description;FLASH write error
+Remedy;Replace the FLASH PCB.
+Code;E245 2022
+Description;FLASH write error
+Remedy;Replace the FLASH PCB.
+Code;E602 0001
+Description;Insufficient HDD capacity
+Remedy;Replace the HDD.
+Code;E602 0002
+Description;Bootable load failure A Bootable CD was not contained. A Bootable CD was damaged.
+Remedy;Burn the Bootable CD again.
+Code;E602 0006
+Description;Bootable load failure A Bootable CD was not contained. A Bootable CD was damaged.
+Remedy;Burn the Bootable CD again.
+Code;E602 0007
+Description;The contents cannot be detected.
+Remedy;Create Bootable again.
+Code;E602 0008
+Description;There is not enough free space in the alternative block of NAND Flash
+Remedy;1) Start service mode. 2) Clear the error from the service mode menu. 3) Reboot the machine to stop the error code. 4) Export the user information from the old NAND Flash. 5) Replace the Controller Board. (Change the NAND Flash.) 6) Import the user information to the new NAND Flash.
+Code;E602 0009
+Description;The power supply was interrupted due to power failure or disconnection of the power plug. The MEAP area in the Flash ROM (NAND ROM) became read-only and cannot be written. MEAP cannot be started.
+Remedy;Initialize the MEAP area in Flash ROM (NAND ROM) by enabling the MEAP recovery menu from service mode or special management mode and rebooting the machine. Since the installed MEAP applications and their management information are all cleared, MEAP needs to be reinstalled.
+Code;E602 1102
+Description;/APL_MEAP error (The file systemcannot be initialized properly.)
+Remedy;
+Code;E602 1112
+Description;/APL_MEAP error (device access error EROFS)
+Remedy;
+Code;E602 1113
+Description;/APL_MEAP error (device access error EIO)
+Remedy;
+Code;E602 1302
+Description;/APL_KEEP error (The file systemcannot be initialized properly.)
+Remedy;
+Code;E602 1312
+Description;/APL_KEEP error (device access error EROFS)
+Remedy;
+Code;E602 1313
+Description;/APL_KEEP error (device access error EIO)
+Remedy;
+Code;E602 1602
+Description;/APL_CDS error (The file systemcannot be initialized properly.)
+Remedy;
+Code;E602 1612
+Description;/APL_CDS error (device access error EROFS)
+Remedy;
+Code;E602 1613
+Description;/APL_CDS error (device access error EIO)
+Remedy;
+Code;E604 0000
+Description;Memory capacity error ?(Lack of memory capacity?)
+Remedy;Check the memory capacity inserted to each slot.
+Code;E616 0001
+Description;Installed MEAP applications have been deleted.
+Remedy;
+Code;E721 0001
+Description;Printer engine which is not supported by the controller is connected.Printer engine of a different model is connected.
+Remedy;Connect with the printer engine appropriate to the model.
+Code;E730 C000
+Description;The memory cannot be obtained at initialization.
+Remedy;Turn OFF and then ON the power.
+Code;E730 C001
+Description;An error occurred when accessing the HDD.
+Remedy;Turn OFF and then ON the power.
+Code;E730 D000
+Description;The memory cannot be obtained at initialization.
+Remedy;Turn OFF and then ON the power.
+Code;E730 D001
+Description;An error occurred when accessing the HDD.
+Remedy;Turn OFF and then ON the power.
+Code;E733 0001
+Description;Error in printer communication (illegal communication after establishing communication, parity error)
+Remedy;1) Turn OFF and then ON the power. 2) Replace the Engine Controller PCB.
+Code;E733 0003
+Description;Error in printer communication (mismatch of country setting)
+Remedy;1) Turn OFF and then ON the power. 2) Replace the Engine Controller PCB.
+Code;E733 0004
+Description;Error in printer communication (undefined command error)
+Remedy;1) Turn OFF and then ON the power. 2) Replace the Engine Controller PCB.
+Code;E733 0006
+Description;Error in printer communication (unknown communication error)
+Remedy;1) Turn OFF and then ON the power. 2) Replace the Engine Controller PCB.
+Code;E740 0002
+Description;An invalid MAC address has been detected.
+Remedy;1) Check the Mac address. 2) Write the address to the Mac address. 3) Replace the board.
+Code;E740 0004
+Description;LAN Controller Chip access error
+Remedy;1) Check around the LAN Chip. 2) Replace the board.
+Code;E744 0900
+Description;Model code mismatch
+Remedy;Change to proper bootable. Check the supported series or model of the firmware, and burn the correct series or model of firmware. Replace the Main Controller Board.
+Code;E744 1000
+Description;Mismatch of the series or model of the firmware sent at the time of downloading
+Remedy;Change to proper bootable. Check the supported series or model of the firmware, and burn the correct series or model of firmware. Replace the Main Controller Board.
+Code;E744 1100
+Description;Falsification of the Main Controller Board has been detected.
+Remedy;Change to proper bootable. Check the supported series or model of the firmware, and burn the correct series or model of firmware. Replace the Main Controller Board.
+Code;E748 2012
+Description;Failed to rewrite due to no more alternative block of Flash ROM (NAND) available.
+Remedy;Replace the Controller board.
+Code;E748 4000
+Description;G-Chip loopback ended in timeout.
+Remedy;Replace the Main Controller
+Code;E748 4020
+Description;Unknown device has been detected on PCI.
+Remedy;Replace the Controller board.
+Code;E760 0000
+Description;CPU exception occurred.
+Remedy;Turn on the power again.
+Code;E805 0001
+Description;Fan1 failure
+Remedy;Replace the Fan1
+Code;E805 0002
+Description;Fan2 failure
+Remedy;Replace the Fan2
+Code;E808 0001
+Description;Low-voltage power supply failure
+Remedy;Replace the Low-voltage power supply unit.

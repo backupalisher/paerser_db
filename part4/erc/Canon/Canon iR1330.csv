@@ -1,0 +1,40 @@
+Code;E000
+Description;The error history indicates any of the following error codes 4 times: E001, E002, E003.
+Causes;Clear the error.
+Remedy;"1) Clear the error. Execute ‘#4 PRINTER RESET” under ‘#7 PRINTER’ in service mode to clear the error.; then, turn back on the power."
+Code;E001-000
+Description;The main thermistor detects 230°C/446°F or higher for 1 sec or more.
+Causes;- The fixing film unit is faulty (thermistor short circuit). The power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;"1. Malfunction Turn off the power; wait for 10 min, and turn it on. Is the problem corrected? YES: End. 2. Fixing film unit Check the connector (4-pin) of the thermistor for electrical continuity: 1-2 and 3-4. Is it 0 Ohm? YES: Replace the fixing film unit. 3. Power supply PCB, DC controller PCB Try replacing the power supply PCB. Is the problem corrected? NO: Replace the DC controller PCB."
+Code;E001-001
+Description;The sub thermistor detects 300°C/572°F or higher for 0.2 sec or more.
+Causes;- The fixing film unit is faulty (thermistor short circuit). The power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;"1. Malfunction Turn off the power; wait for 10 min, and turn it on. Is the problem corrected? YES: End. 2. Fixing film unit Check the connector (4-pin) of the thermistor for electrical continuity: 1-2 and 3-4. Is it 0 Ohm? YES: Replace the fixing film unit. 3. Power supply PCB, DC controller PCB Try replacing the power supply PCB. Is the problem corrected? NO: Replace the DC controller PCB."
+Code;E002-000
+Description;During printing, the main thermistor detects 0°C/32°F or lower for 1 sec or more continuously. About 10 sec or later after power-on/start of printing, the main thermistor detects less than 120°C/248°F for 1 sec or more continuously.
+Causes;- The fixing film unit is faulty (main thermistor fault, sub thermistor fault, thermal fuse blow, fixing heater fault). The power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;"1. Malfunction Turn off the power; wait for 10 min, and turn on the power. Is the problem corrected? YES: End. 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit Try replacing the fixing film unit. Is the problem corrected? YES: End. 4. Power supply PCB, DC controller PCB Try replacing the power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E002-001
+Description;After power-on/start of printing, the reading of the main thermistor does not reach the target value -15°C/11°F or higher within 75 sec. About 10 sec or later after the heater is supplied with power, the sub thermistor detects less than 75°C/167°F for 2 sec or more continuously.
+Causes;- The fixing film unit is faulty (main thermistor fault, sub thermistor fault, thermal fuse blow, fixing heater fault). The power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;"1. Malfunction Turn off the power; wait for 10 min, and turn on the power. Is the problem corrected? YES: End. 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit Try replacing the fixing film unit. Is the problem corrected? YES: End. 4. Power supply PCB, DC controller PCB Try replacing the power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E003
+Description;During printing, the main thermistor detects less than 120°C/248°F for 1 sec or more continuously.
+Causes;- The fixing film unit is faulty (main thermistor fault, thermal fuse blow, fixing heater fault). The power supply PCB is faulty. The DC controller PCB is faulty.
+Remedy;"1. Malfunction Turn off the power; wait for 10 min, and turn on the power. Is the problem corrected? YES: End. 2. Wiring Is the wiring from the DC controller PCB to the fixing film unit normal? NO: Correct the wiring. 3. Fixing film unit Try replacing the fixing film unit. Is the problem corrected? YES: End. 4. Power supply PCB, DC controller PCB Try replacing the power supply PCB. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E100
+Description;About 1.5 sec after the scanner drive signal output, the BDI* signal is not detected 3 times or more for 1.0 sec. While the laser is ON, the BD signal cycle is not as indicated for 0.5 or more continuously.
+Causes;- The laser driver/BD PCB is faulty (laser activation failure, BD detection fault). The DC controller PCB is faulty. The image processor PCB is faulty.
+Remedy;1. Wiring Is the wiring from the DC controller PCB to the laser scanner unit normal? NO: Correct the wiring 2. Laser scanner unit Try replacing the laser scanner unit. Is the problem corrected? YES: End. 3. DC controller PCB, Image processor PCB Try replacing the DC controller PCB. Is the problem corrected? YES: End. NO: Replace the image processor PCB.
+Code;E110
+Description;The scanner fails to reach the target speed of rotation 10 sec after the laser scanner motor reaches constant speed state.
+Causes;- The laser scanner motor is faulty. The DC controller PCB is faulty.
+Remedy;1. Laser scanner unit, DC controller PCB Try replacing the laser scanner unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E805
+Description;While the fan is rotating, fan lock state is detected for 10 sec or more continuously.
+Causes;- The fan is faulty. The DC controller PCB is faulty. The image processor PCB is faulty.
+Remedy;1. Foreign matter Is there any foreign matter that hinders the rotation of the heat discharge fan? YES: Remove the foreign matter. 2. Wiring, Connection Are the wiring and connection (connectors) of the fan normal? NO: Correct them. 3. Fan Try replacing the fan. Is the problem corrected? YES: End. 4. DC controller PCB/Image processors PCB Try replacing the DC controller PCB. Is the problem corrected? YES: End. NO: Replace the image processor PCB.
+Code;E810
+Description;The case that the toner bottle is detected, but not the cartridge.
+Causes;- The DC controller PCB is faulty. The cartridge is faulty.
+Remedy;"1. High-voltage contact (between machine and the developing unit) Is the high-voltage spring used to supply high voltage to the developing unit soild? YES: Clean it. 2. High-voltage contact (between high-voltage spring and DC controller PCB; J207) Is the connection between the high-voltage spring and the DC controller PCB(J207) normal? NO: Correct the connection. If the problem cannot be corrected, replace the faulty part. 3. Developing unit, DC controller PCB Replace the developing unit. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."

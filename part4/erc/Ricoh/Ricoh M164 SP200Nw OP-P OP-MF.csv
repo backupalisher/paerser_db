@@ -1,0 +1,104 @@
+Code;SC100
+Description;CIS Lamp/Scanner Motor Error (C6)
+Causes;A problem occurred with the CIS or scanner motor in the flatbed scanner: • After CIS power check • After shading • After CIS failed to return to home position
+Remedy;• Check the scanner harness connection • Replace the scanner
+Code;SC202
+Description;Polygon Motor On Timeout Error (C1)
+Causes;No lock signal was received within 10 sec. after the polygon motor turned on.
+Remedy;• Check the laser unit harness connection • Replace the laser unit
+Code;SC203
+Description;Polygon Motor Off Timeout Error (C2)
+Causes;The lock signal did not go HIGH (inactive) within 20 sec. after the polygon motor turned off.
+Remedy;• Check the laser unit harness connection • Replace the laser unit
+Code;SC204
+Description;Polygon Motor Lock Signal Error (C3)
+Causes;Four samplings within 200 ms revealed that the polygon motor lock signal remained HIGH beyond the prescribed number of revolutions.
+Remedy;• Check the laser unit harness connection • Replace the laser unit
+Code;SC220
+Description;Beam Synchronization Error (C4)
+Causes;Top cover (or maintenance cover) is down and locked, and the polygon motor is locked, but laser synchronization could not be achieved within 40 msec.
+Remedy;• Check the laser unit harness connection • Replace the laser unit
+Code;SC268
+Description;Laser Scanning Unit thermistor error (C0)
+Causes;After the main power switch ON, writing thermistor temperature is detected at 100ms intervals an ... • Less than -30 degrees Celsius is detected for more than 4 seconds (Thermistor defective). • More than 105 degrees Celsius is detected for more than 1 second (Thermistor short).
+Remedy;• Check the laser unit harness connection • Replace the laser unit
+Code;SC491
+Description;Bias Leak (C5)
+Causes;A bias leak has occurred for the drum charge, development charge, or transfer charge. PWM signals are sampled at 20 msec. intervals. This SC is issued if 10 PWM samplings within 200 msec. are abnormal. • HVPS harness loose, broken, defective • HVPS board defective • AIO terminal defective
+Remedy;• Cycle the machine off/on • Check all the harness connections of the HVPS • Check spring-loaded AIO terminal installation behind the HVPS. • Replace HVPS.
+Code;SC500
+Description;Main Motor Error (C6)
+Causes;One of the following problems occurred: • The machine failed to detect a LOCK signal within two sec. after the main motor was turned on. • The machine failed to detect a LOCK release signal with 2 sec. after the main motor was turned off.
+Remedy;• Cycle the machine off/on • Check the areas around motor and main drive train for a physical obstruction (paper scraps, etc.). • Clean the main motor drive train. • Replace the Main motor
+Code;SC541
+Description;Fusing Unit Thermistor Error (Fatal Error) (C7)
+Causes;No temperature was detected within 5 sec. after the machine was turned on (temperature was less than 0°C).
+Remedy;• Check the Fusing unit thermistor if it’s disconnected, broken or not set correctly • Check the Fusing lamp if it’s disconnected, broken or not set correctly • Replace Fusing unit
+Code;SC542
+Description;Fusing Reload Temperature Error (Fatal Error) (C8)
+Causes;After starting up or during operation the machine detected after 5 readings at 1.5 sec. intervals that the hot roller was 5°C below the reload (operating) temperature. • Unstable input voltage • Fusing thermistor deformed or out of position • Fusing lamp harness loose, broken, defective • Fusing lamp defective • Fusing unit defective
+Remedy;• Use high quality power source • Check the Fusing thermistor position and it’s harness connection • Check the Fusing lamp and it’s harness connection • Replace Fusing unit
+Code;SC543
+Description;High Temperature Error - Software (Fatal Error) (C9)
+Causes;The temperature inside the fusing unit exceeded 225°C (437°F) for more than 1 sec. • After this error has occurred three times, the machine will shut down and must be released with the Smart Organizing Monitor and serviced by a service technician. • Main board defective • PSU defective (TRIAC short)
+Remedy;• Check all PCB harness connection • Check or replace PSU • Replace Main board
+Code;SC544
+Description;High Temperature Error- Hardware (Fatal Error) (c1)
+Causes;The machine detected the CPU port LOW twice at 100 ms intervals and issued this SC. This check is always done to check for overheating, even if SC543 does not detect the problem.
+Remedy;• Check or replace Fusing unit • Check or replace PSU • Replace Main board
+Code;SC545
+Description;Fusing Lamp Remains ON Error (Fatal Error) (c2)
+Causes;The heating element of the fusing lamp remained at full power longer than 9 sec. after the reload temperature was detected. • Fusing thermistor harness connector loose, broken, defective • Fusing thermistor warped or positioned incorrectly • Fusing lamp harness connector loose, broken, defective
+Remedy;• Check Fusing thermistor position and it’s harness connection • Check Fusing lamp and it’s harness connection
+Code;SC547
+Description;Zero cross Error (r2)
+Causes;Power supply frequency is unstable. HVP or PSU failure.
+Remedy;• Reset by turning the power OFF/ON. • Use high quality power supply. • Replace the HVP or PSU.
+Code;SC551
+Description;Edge thermistor error (Fatal Error) (r1)
+Causes;In the condition of relay ON, the end thermistor on the fusing detects less than 0 degrees Celsius for more than 5 seconds.
+Remedy;• Check Fusing thermistor position and it’s harness connection • Check Fusing lamp and it’s harness connection • Replace Fusing unit
+Code;SC556
+Description;Temperature deviation error (Fatal Error)
+Causes;More than 1 degree Celsius temperature difference (between Center – End thermistor) is detected for 1.5 seconds 5 times in a row.
+Remedy;• Check Fusing thermistor position and it’s harness connection • Check the input voltage if it’s out of the limit • Replace Fusing unit
+Code;SC557
+Description;Zero cross Frequency Over
+Causes;Power supply frequency is unstable.
+Remedy;No error message will be issued on this SC. A log of this SC will be logged in the SOM service mode SC
+Code;SC559
+Description;Fusing Unit Third Jam Error (Fatal Error) (c3)
+Causes;The exit sensor failed to detect the leading edge of the paper within the prescribed time and triggered a jam alert. • After this error has occurred three times, the machine will shut down automatically and cannot be re-started until the machine has been serviced by a service technician.
+Remedy;• Check the paper transport path for any physical obstructions (paper scraps, etc.) • Make sure the fusing unit has been installed correctly
+Code;SC560
+Description;Low input voltage (-21 and -27 model only)
+Causes;When the input voltage is extremely low (Lower than 140V).
+Remedy;"• Can be reset by turning the power OFF/ON. • Use high quality power supply. • Execute ""Fuser SC Reset"" after solving a fusing unit problem. Otherwise, the machine will continue to issue this SC code and cannot be operated."
+Code;SC650
+Description;Modem Error
+Causes;Modem chip defective.
+Remedy;• Replace fax board.
+Code;SC669
+Description;EEPROM Communication Error (c5)
+Causes;A read/write error occurred with the EEPROM on the main board.
+Remedy;• Cycle the machine off/on • EEPROM defective, replace main board.
+Code;SC670
+Description;Engine Communication Error (c9)
+Causes;The engine failed to communicate with the firmware. Firmware update failure.
+Remedy;• Cycle the machine off/on and update the firmware again • Replace Main board
+Code;SC688
+Description;No CTL_PRREQ_N Signal (c4)
+Causes;Paper failed to feed after the machine reached the reload temperature because the main board did not issue a PRREQ signal.
+Remedy;• Check all Main board harness connection • Replace Main board
+Code;SC820
+Description;Controller Error
+Causes;Unexpected error.
+Remedy;Cycle the machine off/on.
+Code;SC828
+Description;ROM Checksum or Data Lost Error (c8)
+Causes;A firmware type error or checksum error occurred.
+Remedy;• Update firmware
+Code;SC871
+Description;Flash ROM Write Error (c7)
+Causes;The flash memory is defective or there is a problem with the fax board cable.
+Remedy;• Check the harness connection between fax board and main board. • Replace Main board or Fax board

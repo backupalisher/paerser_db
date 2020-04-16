@@ -1,0 +1,1228 @@
+Code;01xxxxxx-xxx
+Display;
+Description;Warning
+Remedy;
+Code;03xxxxxx-xxx
+Display;
+Description;Error
+Remedy;
+Code;1000 ... 100C
+Display;Ink Level: Check Not much ink is left. Prepare to replace the ink.
+Description;Ink tank near-empty (continued use allowed) The remaining volume of ink is diminishing (below the pin check level). (XX: Target color display) Last 2 digits of error code: 00:Bk, 01:Y, 02:M, 03:C, 04:PM, 05:PC, 06:MBk1, 07:MBk2, 08:GY, 09:PGY, 0A:R, 0B:B, 0C:G
+Remedy;1. Replace the tank (continued usage allowed). 2. If the problem persists after the tank has been replaced, the remaining ink detection system is at fault. (Replace the supply unit or check catching wire or connection status of harness.)
+Code;100F
+Display;End of paper feed. Cannot feed paper any more.
+Description;The limit of forced paper feeding. The media reached to a pinchroller at feeding backfeed media manually. (not an error or a failure)
+Remedy;The message is cleared automatically after displaying for 2sec. Confirmation of Paper detection sensor/ Media sensor sensor (I/O mode)
+Code;1010
+Display;Problem with Printhead L/R Chk printing results
+Description;Head non-ejection warning (Check printout/ possible to continue printing) See 280C for detection criteria.
+Remedy;1. Check image quality. (Unless there are problems with the image quality, there is no need to replace the printhead.) 2. Replace the printhead.
+Code;1012
+Display;Problem with Printhead R Chk printing results
+Description;Printhead R non-ejection warning (doublehead model) (Check printout/ possible to continue printing) See 280C for detection criteria.
+Remedy;1. Check image quality. (Unless there are problems with the image quality, there is no need to replace the printhead.) 2. Replace the printhead.
+Code;1013
+Display;Problem with Printhead L Chk printing results
+Description;Printhead L non-ejection warning (doublehead model) (Check printout/ possible to continue printing) See 280C for detection criteria.
+Remedy;1. Check image quality. (Unless there are problems with the image quality, there is no need to replace the printhead.) 2. Replace the printhead.
+Code;1015
+Display;This type of paper is not compatible with HP-GL/2.
+Description;"HP-GL2 error: out of the scope of paper support [Warning Indication] or [Pause] have been selected for [Paper Mismatch Detection]. The paper that is being fed does not support HP-GL/2 printing; that is, a paper type that does not have a required print mode has been set."
+Remedy;When [Warning Indication] is selected Replace with appropriate paper. When [Pause] is selected 1. Press the [Online] button to force printing. Caution) Due to use of image process table (LUT) defined for HP-GL/2 compatible paper different from the specified paper, you might have a problem in quality of image. 2. Press the [Stop] button to cancel printing.
+Code;1021
+Display;Papr Type Mismatch
+Description;Paper mismatch (type) With [Warning Indication] is selected for [Paper Mismatch Detection], the type of loaded paper mismatches the specified type. Or, with [Pause] is selected for [Paper Mismatch Detection], the [Online] button was pressed to execute forced printing.
+Remedy;Continued printing is allowed. Check driver setting. Replace with appropriate paper.
+Code;1022
+Display;Papr Type Mismatch
+Description;Paper mismatch (type) With [Warning Indication] is selected for [Paper Mismatch Detection], the type of loaded paper mismatches the specified type. Or, with [Pause] is selected for [Paper Mismatch Detection], the [Online] button was pressed to execute forced printing.
+Remedy;Continued printing is allowed. Check driver setting. Replace with appropriate paper.
+Code;1030
+Display;GARO W1221
+Description;(Image mode)Unknown command A character that is located within bounds of a group character or end parameter character but that is not defined as a command has been detected during Image mode command decoding.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1031
+Display;GARO W1222
+Description;(Image mode) Invalid parameter count (no parameters) A numeric field has not been identified as being numeric during Image mode command decoding.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1032
+Display;GARO W1223
+Description;(Image mode) Required item missing A character out of bounds has been detected where a group or end parameter character ought to exist, during Image mode command decoding.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1034
+Display;GARO W1225
+Description;(Image mode)Other warning A character other than <ESC> has been detected right after the image mode analysis module entered Image mode or when the decoding of a single command ended.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1035
+Display;GARO W1231
+Description;(Setup mode)Unknown command A command character string other than RESET, SET, OPCMT0 and OPCMT2 has been detected in a PJL command.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1036
+Display;GARO W1232
+Description;(Setup mode)Invalid parameter count Too many or too few parameters have been detected during Setup mode command decoding.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1037
+Display;GARO W1233
+Description;(Setup mode) Required item missing The exit parameter is missing in the EnterGAROMode command and the UniversalExitLanguage command used in Setup mode.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1038
+Display;GARO W1234
+Description;(Setup mode)Data out of bounds A character string that is not defined as an environmental variable has been detected. An unknown environmental variable has been detected. A character string that is not defined as an environmental variable value has been detected. The value of an unknown environmental variable has been detected.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;1039
+Display;GARO W1235
+Description;(Setup mode) Other warning A character string other than the @PJL prefix has been detected while the analysis module was idle.
+Remedy;1. Identify the model. 2. If the error has occurred with RIP, try with the printer driver. 3. Try in an alternative environment (I/ F, PC).
+Code;103A
+Display;GARO W1226
+Description;(Image mode) Image processing table error No image processing table is being transmitted, a required image processing table is unavailable, or an image processing table contains a value out of bounds.
+Remedy;1. Retransmit. 2. Check with a different interface choice. 3. Try by printing other data. 4. With RIP, print from the print driver. Supplement: If this error occurs, the print result would appear blank.
+Code;1040
+Display;GL2: W0501 The memory is full.
+Description;"HP/GL2 error; Insufficient memory capacity The size of drawing data exceeds the processing capacity."
+Remedy;1. Reduce the size of rendering data. 2. Replace with HP RTL data for manipulation with On The Fly*. *: On The Fly: The method to transmit data in sequence from paper. The software that generates HP-GL/2 data has this option to specify. Select this option to save the memory usage of the printer.
+Code;1041
+Display;GL2: W0502 The parameter is out of range.
+Description;"HP/GL2 error; invalid parameter Data having an invalid number of types of parameters that follow the command has been detected."
+Remedy;Verify the data and fix it.
+Code;1043
+Display;GL2: W0504 This command is not supported.
+Description;"HP/GL2 error; Invalid command A command that is not defined in HP-GL/2 or HP RTL is included."
+Remedy;Verify the data and fix it.
+Code;1047
+Display;GL2: W0903 The memory is full.
+Description;"HP/GL2 error; replot buffer overflow Data storage buffers have run short."
+Remedy;1. Reduce the size of rendering data. 2. Replace with HP RTL data for manipulation with On The Fly*. *: On The Fly: The method to transmit data in sequence from paper. The software that generates HP-GL/2 data has this option to specify. Select this option to save the memory usage of the printer.
+Code;1048
+Display;GL2: W0904 The memory is full.
+Description;"HP/GL2 error; polygon buffer overflow The size of drawing data exceeds the processing capacity."
+Remedy;1. Reduce the size of rendering data. 2. Replace with HP RTL data for manipulation with On The Fly*. *: On The Fly: The method to transmit data in sequence from paper. The software that generates HP-GL/2 data has this option to specify. Select this option to save the memory usage of the printer.
+Code;1049
+Display;Before borderless printing, move the blue platen switch.
+Description;When print data with borderless printing specification has been received, platen shutter was closed.
+Remedy;Open the platen shutter.
+Code;1050
+Display;Blue platen switch is dirty. Please clean the switch.
+Description;Cleaning of platen shutter is necessary. When reading the platen shutter in multisensor, borderless printing data has been received in unstable output condition.
+Remedy;Clean the platen shutter.
+Code;1051
+Display;Paper Too Small
+Description;Paper mismatch (size) Size clip warning With [Warning Indication] selected for [Paper Mismatch Detection] in the menu settings, the size of paper loaded is smaller than that of specified from driver.
+Remedy;Continued printing allowed. Check driver settings. Replace with appropriate paper.
+Code;1052
+Display;Borderless printng not possible. Check supported paper.
+Description;Borderless printing not available (unsupported size) With [Warning Indication] selected for [Paper Mismatch Detection] in the menu settings, borderless printing data is received, but roll paper not supporting borderless printing has been loaded.
+Remedy;Replace with appropriate paper.
+Code;1053
+Display;Paper position not suitable for borderless printing.
+Description;Borderless printing not available (physical) With [Warning Indication] selected for [Paper Mismatch Detection] in the menu settings, borderless printing data is received, but roll paper loaded is more than 1mm off the predefined position for the pre-ejection opening at the counter-HP side.
+Remedy;Reload/ replace the roll paper.
+Code;1054
+Display;PaprWidth Mismatch
+Description;Paper mismatch (size) With [Warning Indication] selected for [Paper Mismatch Detection] in the menu settings, the width of roll paper loaded and that of specified by data do not match.
+Remedy;Continued printing allowed. Check driver settings. Replace with appropriate paper.
+Code;1056 ... 1062
+Display;Move the blue platen switch No.XX to the right.
+Description;The multisensor detected that the platen shutter used for pre-ejection was closed. Detection timing: -At paper loading -At start of first printing (after upper cover is opened and closed, or recovery from sleep mode, or the power is turned on with paper loaded) The following list shows the last 2 digits of error codes and the corresponding messages. 56:No.2, 57:No.3, 58:No.459:No.5, 5A:No.6, 5B:No.75C:No.8, 5D:No.9, 5E:No.105F:No.11, 60:No.12, 61:No.13, 62:No.14
+Remedy;Move the platen shutter relevant to the message to the right, to open it.
+Code;1100
+Display;Prepare for maint cart replacement.
+Description;Maintenance cartridge near-full (continued usage allowed) Near-full has been detected from the dot count and the usage period (drying time). <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Prepare a maintenance cartridge.
+Code;1101
+Display;Replace part soon.
+Description;Mist count near-full Waste ink near-full has been detected from the dot count.
+Remedy;Check the parts counter and replace the target unit or Refresh Service Kit. Initialize the parts counter for the target unit after the replacement.
+Code;1400 ... 140C
+Display;No ink left. Press OK and replace ink tank. Ink tank is empty. Replace the ink tank.
+Description;Ink tank empty (continued use allowed) The ink tank has run out of ink, but a certain volume of ink is reserved in the subtank. (The reserved volume of ink is put to use after the remaining ink falls below the pin check level.) Displayed only on models having a subtank. (XX: Display applicable colors) Last 2 digits: 00:Bk, 01:Y, 02:M, 03:C, 04:PM, 05:PC, 06:MBk1, 07:MBk2, 08:GY, 09:PGY, 0A:R, 0B:B, 0C:G
+Remedy;1. Replace the tank. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;1410 ... 141C
+Display;No ink tank loaded. Check ink tank.
+Description;Ink tank not installed (continued use allowed) The ink tank is not installed but a sufficient volume of ink is left in the subtank. Displayed only on models having a subtank. This occurs in cases such as when the ink tank cover is opened during printing, and the ink tank is removed. (XX: Displays applicable colors) Last 2 digits: 10:Bk, 11:Y, 12:M, 13:C, 14:PM, 15:PC, 16:MBk1, 17:MBk2, 18:GY, 19:PGY, 1A:R, 1B:B, 1C:G
+Remedy;1. Mount the tank. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;200A
+Display;Paper size not detected. Press Load/Eject and reload the paper. Paper size not detected. Reload paper. Paper size not detected. Press OK and reload the paper.
+Description;Paper size detection failure Cannot detect the paper width (poorly positioned paper).
+Remedy;
+Code;200B
+Display;Paper size not detected. Reload paper.
+Description;Paper size detection failure Paper is invalidly positioned on the platen.
+Remedy;
+Code;200C
+Display;Paper size not detected. Press Load/Eject and reload the paper. Paper size not detected. Reload paper. Paper size not detected. Lift the release lever and reload the paper.
+Description;Paper size detection failure Cannot detect the leading edge of the paper. The leading edge of paper has been located by coarse detection but not by a second round of fine detection (up to 300 mm) (semi-transparent paper).
+Remedy;
+Code;200E
+Display;This paper cannot be used. Check supported paper sizes. This paper cannot be used. Check supported paper sizes. Load/Eject: Change Paper
+Description;Paper is too small The width and length of paper detected are shorter than the supported size (1.5% margin).
+Remedy;1. Check paper conditions (soiling, tear-offs, residual paper chips, residual trimming cuts, folds)/size. 2. Has the paper been fed successfully (without slippage under a load or any influence)? 3. Has the LF adjustment value set correctly? 4. Hasn't the loaded paper shrunk to below its margin in the particular environment?
+Code;200F
+Display;This paper cannot be used. Check supported paper sizes. This paper cannot be used. Check supported paper sizes. Load/Eject: Change Paper
+Description;Paper mismatch (size) Paper is too large -The width and length of paper detected are longer than the supported size (1.5% margin). -Cannot detect the leading edge of paper even when the paper has been fed by 1300 mm for roll paper and by the size mentioned above for cut sheet. -Cannot detect the width of paper even when the paper is fed by the size mentioned above.
+Remedy;1. Check paper conditions (soiling, tear-offs, residual paper chips, residual trimming cuts, folds)/size. 2. Has the paper been fed successfully (without slippage under a load or any influence)? 3. Has the LF adjustment value set correctly? 4. Hasn't the loaded paper shrunk to below its margin in the particular environment?
+Code;2010
+Display;Paper loaded askew. Press Load/Eject and reload the paper.
+Description;Skew (skewed right) Paper is determined skewed as its edge is read by the multisensor.
+Remedy;Reload the paper.
+Code;2015
+Display;Cannot cut paper. Press Load/Eject and reload the paper.
+Description;Cutting failure/jam detected due to a cutting failure An idle cutter unit or a cutter blade that is too blunt to cut sheet has been detected by the paper leading edge detection sequence.
+Remedy;
+Code;2016
+Display;No sheets. Press Load/Eject and reload the paper.
+Description;Paper loosened out of position while printing The trailing edge of paper has been detected at least 20 mm shorter than the length of cut forms detected.
+Remedy;Reload the paper.
+Code;2016
+Display;Paper jam. Press Load/Eject and reload the paper.
+Description;Jam while picking up, ejecting or printing on paper (A sequence of removing jams with the pinch roller released is required) Virtually all recovery errors that could occur in connection with paper pickup are handled.
+Remedy;1. Open and close the release lever to reload the paper. 2. Remove the paper once and then refeed it.
+Code;2017
+Display;Paper size not detected. Lift the release lever and reload the paper.
+Description;Paper (right) side detection error 1. Multisensor error on light quantity adjustment 2. The read reference paper edge is 5 mm or more apart from its theoretical position. 3. Cannot locate the edge of reference paper.
+Remedy;
+Code;2018
+Display;Paper size not detected. Lift the release lever and reload the paper.
+Description;Paper (left) side detection error The non-reference edge of paper has been located by coarse detection but not by a second round of fine detection.
+Remedy;
+Code;2019
+Display;Cannot cut paper. Lift the release lever and reload the paper.
+Description;Cutting failure/jam detected due to a cutting failure An idle cutter unit or a cutter blade that is too blunt to cut sheet has been detected by the paper leading edge detection sequence. Or, cutter unit home position detection was failed.
+Remedy;
+Code;201A
+Display;Paper not aligned with right guide. Press OK and then reload the roll paper.
+Description;When loading cut sheet, paper (right) side detection was failed.
+Remedy;The error is cleared by releasing the release lever. After that, load paper to the correct position.
+Code;201B
+Display;Roll paper is not securely in contact with roll holder. Press OK, then re-attach the roll paper.
+Description;When loading roll paper, paper (right) side detection was failed.
+Remedy;Paper is ejected automatically, and by pressing the [OK] button the error is cleared. After that, load paper to the correct position.
+Code;201C
+Display;Paper jam Push the release lever back.
+Description;While printing, paper width was detected to have fluctuated beyond the predefined value. Failure of detecting right edge of the paper (cut paper, in printing).
+Remedy;By releasing the release lever, move to the loading sequence, and load paper to the correct position.
+Code;201D
+Display;Paper jam Remove the paper after cutting at the top of feed slot. Push the release lever back.
+Description;While printing, paper width was detected to have fluctuated beyond the predefined value. Failure of detecting right edge of the paper (cut paper, in printing).
+Remedy;1. Cut the paper near the feed slot, and remove the paper. 2. Release the release lever, and load the paper to the correct position.
+Code;201E
+Display;Media Type not compatible with cassette. Check Media Type. Stop: Stop Printing
+Description;Paper mismatch (cut sheet) Cassette pickup has been specified for paper that does not support cassette pickup.
+Remedy;Check the cassette pick-up setting/ paper type.
+Code;2405
+Display;Borderless printng not possible. Lift the release lever and reload the paper. Online: Print
+Description;Invalid paper loading position (borderless printing) The position at which paper is loaded is unfit for borderless printing. Data with a borderless print specification has been received while the left or right edge of roll paper was off the center of the borderless print idle ejection port at the completion of roll paper pickup.
+Remedy;Reload the roll paper. Check spacers
+Code;2406
+Display;Borderless printng not possible. Check paper size setting. Online: Print Load/Eject: Change Paper
+Description;Borderless print data not printable (logic) Borderless print data was received at the start of printing and one or more of the following requirements are met at the same time: -A feeder slot other than one for roll paper has been specified in the data. -A paper type that does not support borderless printing has been set on the data. -Banner printing has been specified on the data at the same time. -A paper size that does not support borderless printing has been specified in a job for which paper had already been fed.
+Remedy;Reset the driver and RIP.
+Code;2407
+Display;Borderless printng not possible. Paper stretched or shrank. Confirm usage cond. of the paper.
+Description;It occurs when all of the following conditions are met at start of printing. -Borderless printing data has been received. -Roll paper has been loaded, and its paper width and edge position recognized at loading are within the supported range of borderless printing. -As a result of right/left side edge detection after start of print processing, it was detected as beyond the supported range of borderless printing.
+Remedy;Reset /replace the roll paper. Confirm and explain usage environment.
+Code;2408
+Display;Borderless printng not possible. Check supported paper.
+Description;At the start of borderless printing, roll paper whose size doesn't support borderless printing has been loaded.
+Remedy;Replace with appropriate paper.
+Code;2409
+Display;Paper position is not suitable for borderless printing. Check paper position. Print to normal printing. Stop printing.
+Description;Invalid paper loading position (suspended job/ borderless printing) All of the following conditions were met. -Borderless printing data has been received. -Roll paper whose paper loading position is not suitable for borderless printing has been loaded. -The right or left edge of roll paper is more than 1mm off the prescribed position of the pre-ejection opening.
+Remedy;"Reload/ replace the roll paper. Check roll paper. 1) Select ""Normal printing. (No borderless printing)"" and enforce printing. Borderless print setting is ignored. Print with default margin. Default margin depends on selected feeding trays and media type. 2) Select ""Stop printing"" or press ""stop button""to stop printing. 3) Select ""replace printing"" or release releasing lever."
+Code;240A
+Display;Borderless printing is not possible. Check supported paper. Check paper position. Print to normal printing. Stop printing.
+Description;Borderless printing is not possible (suspended job/ unsupported size). All of the following conditions are met. -Borderless printing data has been received. -Roll paper not supporting borderless printing has been loaded.
+Remedy;"Reload/ replace the roll paper. Check roll paper. 1) Select ""Normal printing. (No borderless printing)"" and enforce printing. Borderless print setting is ignored. Print with default margin. Default margin depends on selected feeding trays and media type. 2) Select ""Stop printing"" or press ""stop button""to stop printing. 3) Select ""replace printing"" or release releasing lever."
+Code;2500 ... 250C
+Display;Ink tank is empty. Press OK and replace ink tank. No ink left. Replace ink tank.
+Description;Ink tank empty (continued use not allowed) The ink tank has run out of ink. (The reserved volume of ink is put to use after the remaining ink falls below the pin check level.) (In the small LCD, the lower arrow points to the color in question.) The last 2 digits signify applicable colors. 00:Bk, 01:Y, 02:M, 03:C, 04:PM, 05:PC, 06:MBk1, 07:MBk2, 08:GY, 09:PGY, 0A:R, 0B:B, 0C:G
+Remedy;1. Replace the tank. 2. If the problem persists after the tank has been replaced, the remaining ink detection system is at fault (replace the supply unit or check the bundled wires).
+Code;2510 ... 251C
+Display;Ink level is unknown. Check ink level. Press Online to start printing.
+Description;Remaining ink level unknown (continued use allowed) The level of ink remaining in the tank is detected when the tank cover is closed. Consumption has exceeded the original ink capacity (mismatch detected). Refill ink may have been used. (In the small LCD, the lower arrow points to the color in question.) The last 2 digits signify applicable colors. 10:Bk, 11:Y, 12:M, 13:C, 14:PM, 15:PC, 16:MBk1, 17:MBk2, 18:GY, 19:PGY, 1A:R, 1B:B, 1C:G
+Remedy;Replace the ink tank.
+Code;2520 ... 252C
+Display;No ink tank loaded. Press OK and check ink tank. No ink tank loaded. Check ink tank.
+Description;Ink tank not installed (continued use not allowed) On a model that is furnished with a subtank, this error is indicated if the subtank has run out of ink and the state of an ink tank not being installed is detected. The last 2 digits signify applicable colors. 20:Bk, 21:Y, 22:M, 23:C, 24:PM, 25:PC, 26:MBk1, 27:MBk2, 28:GY, 29:PGY, 2A:R, 2B:B, 2C:G
+Remedy;1. Remove and then reinstall the tank. 2. Replace the tank. 3. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;2540 ... 254C
+Display;Ink tank error. Press OK and replace ink tank.
+Description;Ink tank ID error The type of ink tank is wrong. The last 2 digits signify applicable colors. 40:Bk, 41:Y, 42:M, 43:C, 44:PM, 45:PC, 46:MBk1, 47:MBk2, 48:GY, 49:PGY, 4A:R, 4B:B, 4C:G
+Remedy;1. Replace the tank. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;2560 ... 256C
+Display;Ink tank error. Press OK and replace ink tank.
+Description;Ink tank EEPROM error There is an error in tank EEPROM. The last 2 digits signify applicable colors. 60:Bk, 61:Y, 62:M, 63:C, 64:PM, 65:PC, 66:MBk1, 67:MBk2, 68:GY, 69:PGY, 6A:R, 6B:B, 6C:G
+Remedy;1. Replace the tank. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;2570 ... 257C
+Display;Ink insufficient. Press OK and replace ink tank.
+Description;Ink tank short on ink A suction operation was attempted, but there is not enough ink left in the tank for the operation (iPF8000 series, iPF9000 series). Reference) About 5 mL to 40 mL of ink may have been left in the tank when this warning occurs. 70:Bk, 71:Y, 72:M, 73:C, 74:PM, 75:PC, 76:MBk1, 77:MBk2, 78:GY, 79:PGY, 7A:R, 7B:B, 7C:G
+Remedy;1. Replace the tank. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;2580 ... 258C
+Display;Ink insufficient. Press OK and replace ink tank. Ink insufficient. Replace ink tank.
+Description;Ink tank short on ink A suction operation was attempted, but there is not enough ink left in the tank for the operation. (In the small LCD, the lower arrow points to the color in question.) Reference) About 5 mL to 40 mL of ink may have been left in the tank when this warning occurs. 80:Bk, 81:Y, 82:M, 83:C, 84:PM, 85:PC, 86:MBk1, 87:MBk2, 88:GY, 89:PGY, 8A:R, 8B:B, 8C:G
+Remedy;1. Replace the ink. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;2590 ... 259C
+Display;Ink insufficient. Press OK and replace ink tank. Ink insufficient. Replace ink tank.
+Description;Ink tank short on ink A print operation was attempted, but there is not enough ink left in the tank for the operation. (In the small LCD, the lower arrow points to the color in question.) Reference) About 5 mL to 40 mL of ink may have been left in the tank when this warning occurs. 90:Bk, 91:Y, 92:M, 93:C, 94:PM, 95:PC, 96:MBk1, 97:MBk2, 98:GY, 99:PGY, 9A:R, 9B:B, 9C:G (*1) 259C: 03810208-259C
+Remedy;1. Replace the ink. 2. Failure of remaining ink detection system. (Replace the supply unit /check the bundled wires.)
+Code;259C ... 25A8
+Display;Ink insufficient. Press OK and replace ink tank. Ink insufficient. Press OK and replace ink tank.
+Description;Ink insufficient in inktank. The amount of ink left in the inktank is insufficient for printing. (In the small LCD, the lower arrow points to the correspondence color.) Reference) There are the cases that about 5ml to 40ml ink is left in a inktank at warning occurs. 9C:Bk,9D:C,9E:M,9F:Y,A0:PC,A1:PM,A 2:MBk1,A3:MBk2, A4:GY,A5:PGY,A6:R,A7:G,A8:B (*2) 259C: 03810104-259C
+Remedy;1. Replace inktank 2. Failure of detecting the ink amount left in the inktank. (Replace the supply unit /check the bundled wires.)
+Code;25B7
+Display;Close the ink tank cover. Unable to detect ink level correctly. Unable to detect ink level correctly.
+Description;The remaining ink falls below the pin check level while ink tank cover is open.
+Remedy;Close the ink tank cover. Note) It does not recover if the cover is open when replacing the ink tank with a valid one. If removing the ink tank with lower ink remains (LIR) than Supply Pin in this situation, an error is detected. Also when keeping printing in this situation, if empty subtank corresponding to the ink tank with LIR is detected, the error shifts from ink tank with LIR to empty subtank.
+Code;260E
+Display;Hardware error. 03130031-260E Turn off printer, wait, then turn on again.
+Description;Gap detection failure Carriage gap calibration has not been carried out, or gap detection is disabled by corrupt calibration data.
+Remedy;1. Check to see if the multisensor reference plate (white patch for batch correction) is not soiled and perform GAP CALIB (if soiled, adjust the part after replacing it). 2. Replace the multisensor and perform GAP CALIB. 3. Replace the carriage unit and perform GAP CALIB.
+Code;260F
+Display;Gap error. Turn off printer.
+Description;Gap reference plane error Request to replace an abnormal reference plane sheet (only in Service mode).
+Remedy;Check the multisensor reference plate (for soiling and faulty mounting).
+Code;2800
+Display;No printhead Install printhead.
+Description;Printhead [X] non-existing [X]: Double-head model : The R-head does not exist. Single-head model: The head does not exit.
+Remedy;1. Check the status of the printhead mounted. 2. Mount the long flexible cable and check the status of the cable being locked.
+Code;2801
+Display;Printhead error Open top cover and replace the printhead.
+Description;Printhead [X] DI correction failure [X]: Double-head model: R head DI correction failure Single-head model: Head DI correction failure
+Remedy;Replace the printhead.
+Code;2802
+Display;Printhead error Open top cover and replace the printhead.
+Description;An invalid printhead has been mounted in [X]. [X]: Double-head model: Invalid head mounted on the R-side Single-head model: Invalid head mounted
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.)
+Code;2803
+Display;Printhead error Open top cover and replace the printhead.
+Description;Printhead [X] EEPROM error [X]: Double-head model: R head EEPROM error Single-head model: Head EEPROM error
+Remedy;Replace the printhead.
+Code;2804
+Display;PHeads: wrong pos. Open top cover and check the printhead positions.
+Description;Printheads mounted in L/R opposite positions L printhead is mounted on R side.
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.) The L/R printheads cannot be interchanged.
+Code;2805
+Display;Printhead error. Open top cover and replace the printhead.
+Description;The specified time has been passed in lower printhead temperature than the specified temperature.
+Remedy;1. Acclimate to room temperature. 2. Replace the printhead. 3. Replace the main controller PCB. 4. Replace the CR board.
+Code;2807
+Display;PHeads: wrong pos. Open top cover and check the printhead positions.
+Description;Printhead mounted in L/R opposite positions. R printhead is mounted on L side.
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.) The L/R printheads cannot be interchanged.
+Code;2808
+Display;No left printhead Install left printhead.
+Description;Printhead L non-existing
+Remedy;1. Check the status of the printhead mounted. 2. Mount the long flexible cable and check the status of the cable being locked.
+Code;2809
+Display;Left printhead error Open top cover and replace the left printhead.
+Description;Printhead L DI correction failure
+Remedy;Replace the printhead.
+Code;280A
+Display;Left printhead error Open top cover and replace the left printhead.
+Description;Invalid printhead L has been mounted.
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.)
+Code;280B
+Display;Left printhead error Open top cover and replace the left printhead.
+Description;Printhead L EEPROM error
+Remedy;Replace the printhead.
+Code;280C, 280D, 280E
+Display;PHead needs cleaning. Press Online to clear error. The printhead requires cleaning. The printhead requires cleaning. Online=Print Stop=Stop Printing
+Description;Printhead R non-ejection warning (Check printhead) Printing paused/ continued printing allowed The level of error is decided as shown in the table below, based on the number of non-ejecting nozzles per color (per chip) and the number of nozzles unable to back up. Depending on the firmware version, the specifications vary as shown in the table below.
+Remedy;1. Check image quality. (Unless there are problems with the image quality, there is no need to replace the printhead.) 2. Replace the printhead.
+Code;2811
+Display;Printhead error Open top cover and replace the left printhead.
+Description;Incompatible printhead version
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.)
+Code;2812
+Display;Right printhead error Open top cover and replace the right printhead.
+Description;Incompatible printhead R version
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.)
+Code;2813
+Display;Left printhead error Open top cover and replace the left printhead.
+Description;Incompatible printhead L version
+Remedy;Replace with a valid printhead. (An error has occurred but the printhead itself is not damaged, so communication has been maintained properly.)
+Code;2816
+Display;Maintenance cartridge problem. Replace the maintenance cartridge.
+Description;Maintenance cartridge EEPROM error Communication is enabled but the information is corrupted. <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Replace the maintenance cartridge.
+Code;2817
+Display;Maintenance cartridge problem. Replace the maintenance cartridge.
+Description;Maintenance cartridge ID error A maintenance cartridge for another model has been mounted. <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Replace the maintenance cartridge. (The maintenance cartridge was capable of normal communication when the error occurred.)
+Code;2818
+Display;No maintenance cartridge. Check the maintenance cartridge.
+Description;Maintenance cartridge not found Cannot communicate, or cannot detect a maintenance cartridge. <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Remove and reinstall, or replace the maintenance cartridge.
+Code;2819
+Display;Maintenance cartridge full. Replace the maintenance cartridge.
+Description;Maintenance cartridge full Maintenance cartridge full is detected from the dot count and the usage period (drying time). <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Replace the maintenance cartridge. Reference) The absorber may appear whitish or weigh light, depending on the usage conditions.
+Code;281A
+Display;Prepare for maint cart replacement
+Description;Maintenance cartridge near-full (continued usage allowed) Near-full has been detected from the dot count and the usage period (drying time). <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Prepare a maintenance cartridge.
+Code;281B
+Display;No MaintenanceCartridge capacity. Replacethe maintenancecartridge.
+Description;The maintenance cartridge before cleaning does not have an enough capacity (reusable). Near-full has been detected from the dot count and the usage period (drying time). <Maintenance cartridge detection timings> The presence of a maintenance cartridge is detected at the following timings: 1. Before printing/during printing (twice per second)/at the end of printing/ between pages 2. Before a recovery operation/during a recovery operation (twice per second)/ before opening of the ink supply valve 3. When the cartridge is removed and inserted following the occurrence of an error or warning.
+Remedy;Replace the maintenance cartridge. The maintenance cartridge can be put to reuse after the end of cleaning. Reference) The absorber may appear whitish or weigh light, depending on the usage conditions.
+Code;2820
+Display;Cannot adjust printhead. Press Online to clear the error and readjust printhead.
+Description;Head registration unadjustable The adjustment value has gone out of bounds during automatic head adjustment.
+Remedy;Check the nozzle check pattern
+Code;2821
+Display;Cannot adjust band. Press Online to clear the error and readjust the band.
+Description;LF unadjustable A detected value has gone out of bounds while performing automatic band adjustment.
+Remedy;1. Adjustment is not possible with transparent/semi-transparent paper. Replace with paper having similar substrate and perform automatic band adjustment or manual adjustment. 2. Make detailed band adjustment (automatic). 3. Check the nozzle check pattern. 4. Initialize the system settings/paper preferences and then add additional paper and perform automatic band adjustment (detailed). If the paper preferences are initialized, all the paper setting would be reset to their factory defaults.
+Code;2822
+Display;Cannot adjust eccentric. Press Online to clear the error.
+Description;Eccentricity uncorrectable (which does not occur when in User mode) A detected value has gone out of bounds while making adjustment.
+Remedy;1. Check the paper type: Replace with photo glossy paper (UF120). 2. Check the paper for soiling, tear and other defects. Having run LF tuning, update the additional paper.
+Code;2823
+Display;Hardware error. 03010000-2823 Turn off printer, wait, then turn on again.
+Description;Head check error
+Remedy;
+Code;2824
+Display;Cannot adjust optic axis. Press Online to clear the error.
+Description;Optical axis unadjustable (which does not occur when in User mode) An adjustment pattern has not been printed. The optical axis deviates from the correct position by -/+3 mm or more.
+Remedy;Check the paper (paper type check).
+Code;2825
+Display;This type of media is not compatible with HP-GL/2.
+Description;Paper type not compatible with HP-GL/2 has been specified.
+Remedy;Check the paper.
+Code;2826
+Display;LFNG XXX XXX XXX XXX press OK key (XXXX is a measured value.)
+Description;When executing LF unevenness auto diagnostic processing, the multisensor read value has gone outside the predefined scope (Service mode only).
+Remedy;Check the paper. Check the multisensor.
+Code;2827, 2828, 2829
+Display;Execute printhead cleaning. If this message is still displayed, replace Printhead.
+Description;Printhead non-discharge error (Replace printhead/ continued printing not allowed) At start of printing the number of nonejecting nozzles is more than 320 per color (1 chip). 2827: Both L and R, or single printhead model 2828: R printhead 2829: L printhead * For the detailed head non-ejection errors, see section 280C. (If Setting of SERVICE MODE > SETTING >HEAD WARNING is off, the error code is 280E.)
+Remedy;1. Execute cleaning. 2. Replace printhead.
+Code;282A
+Display;CR MOTOR TUNING ERROR :PRESS OK
+Description;Carriage motor identification processing (rotation adjustment) failed (for Service mode)
+Remedy;Error is cleared by OK button. 1. Check installation of carriage or carriage belt. 2. Clean the carriage main rail (Do not oil it.) 3. Replace the carriage motor.
+Code;282B
+Display;CR VIBRATION ERROR :PRESS OK
+Description;When processing carriage motor identification (rotation adjustment), carriage vibration has been detected (for Service mode).
+Remedy;Error is cleared by OK button. 1. Check installation of carriage or carriage belt. 2. Clean the carriage main rail (Do not oil it.) 3. Replace the carriage motor.
+Code;282D
+Display;Left printhead error. Turn off printer, wait, then turn on again.
+Description;Printhead error detected (L head only). Displayed when an abnormal temperature rise of printhead has been detected to prompt you to restart.
+Remedy;After restarting, replace the printhead L.
+Code;282E
+Display;Printhead error Turn off printer, wait, then turn on again.
+Description;Temperature rising detected by particular ink pre-injection before printing was judged abnormal.
+Remedy;1. Replace the printhead. 2. Replace the main controller PCB.
+Code;2830
+Display;Left printhead error. Open top cover and replace the left printhead.
+Description;Printhead error detected (L head only). Displayed when restarting after detection of error 282D to prompt you to replace printhead L.
+Remedy;Replace the printhead L.
+Code;2832
+Display;Hardware error 03130031-2832 Turn off printer, wait, then turn on again.
+Description;VHT leak detection error of right printhead or of a single printhead, in case of VHT exceeds rated value or falls below the rated value.
+Remedy;iPF6300/6400 Series iPF8300/8400/9400 Series Replace right or left printhead.
+Code;2833
+Display;Hardware error 03130031-2833 Turn off printer, wait, then turn on again.
+Description;VHT leak detection error of left printhead, in case of VHT exceeds rated value or falls below the rated value.
+Remedy;iPF6300/6400 Series iPF8300/8400/9400 Series Replace right or left printhead.
+Code;2834
+Display;Unknown printhead. Open top cover and re-install printhead.
+Description;Printhead contact failure is detected after the printhead installation.
+Remedy;1. Remove and reinstall the printhead. 2. Replace the printhead. 3. Replace the carriage unit. 4. Replace the main controller PCB.
+Code;2835
+Display;Cannot recognize print head R. Open the top cover and reinsert the printhead R.
+Description;Printhead contact failure is detected after the printhead installation.
+Remedy;1. Remove and reinstall the printhead. 2. Replace the printhead. 3. Replace the carriage unit. 4. Replace the main controller PCB.
+Code;2836
+Display;Cannot recognize print head L. Open the top cover and reinsert the printhead L.
+Description;Printhead contact failure is detected after the printhead installation.
+Remedy;1. Remove and reinstall the printhead. 2. Replace the printhead. 3. Replace the carriage unit. 4. Replace the main controller PCB.
+Code;2901
+Display;Mail box nearly full. Delete unwanted data. The mail box is nearly full. Delete
+Description;The available size of the permanent area of the hard disk space has fallen to less than 1 GB.
+Remedy;Reorganize data.
+Code;2902
+Display;Mail box full. Now printing without saving data.
+Description;The hard disk has run out of free space, disabling copy printing or error recovery.
+Remedy;Reorganize data.
+Code;2905
+Display;Mail box full. Delete unwanted data on your computer to resume printing. Press Stop to cancel printing. The mail box is full. Delete unwanted data from your computer to continue.
+Description;A job save has been executed when the available size of the permanent area of the hard disk space was lost. Cancel the job.
+Remedy;Reorganize data.
+Code;2906
+Display;Mail box full. Cannot save. Delete unwanted data on your computer to resume printing. Press Stop to cancel printing. Too many jobs for mail box. Delete unwanted data from your computer to continue.
+Description;The 101st job has been received when 100 jobs are already saved in the permanent area of the hard disk space.
+Remedy;Reorganize data.
+Code;2907
+Display;Mail box full. Delete unwanted data. Maximum jobs stored. Delete unwanted data.
+Description;100 jobs are already saved in the permanent area of the hard disk space (Warning).
+Remedy;Reorganize data.
+Code;2908
+Display;Hard disk error. Press OK to reformat
+Description;HDD format error
+Remedy;1. Format as instructed by the on-panel message. 2. Replace the HDD.
+Code;2909
+Display;File read error. Turn off printer, wait a while, and turn it on again. Invalid files will be deleted.
+Description;HDD file error
+Remedy;Restart the printer. (The file in error is deleted, but the printer will recover normally when it is restarted.)
+Code;290A
+Display;Hardware error. 03130031-290A Turn off printer, wait, then turn on again.
+Description;HDD not connected. HDD was not detected at startup.
+Remedy;Connect the HDD/ Check the harness. Replace the HDD.
+Code;2918
+Display;Power On Again Cassette Sensor Detection Error
+Description;Cassette detection sensor detection failure (cassette presence/absence sensor) No cassette has been detected during cassette pickup.
+Remedy;1. Check to see if the cassette itself is properly loaded. 2. Check and replace the sensor (I/O mode).
+Code;291A
+Display;Roll sensor cannot detect. Turn on printer again.
+Description;Roll sensor detection failure Could not detect the roll unit.
+Remedy;1. Check the roll unit, and remove, install or replace the roll unit. 2. Check I/O mode (roll unit detection).
+Code;291B
+Display;Hardware error. 03130031-291B Turn off printer, wait, then turn on again.
+Description;Lift shift timeout A lift operation has been executed, but no sensor has been detected or a sensor has remained detected.
+Remedy;1. Switch off the printer, then back on. 2. The carriage cannot travel to the lift drive position. 3. The lift drive cam is not engaged. 4. Faulty lift drive sensor 5. Faulty lift drive motor
+Code;291D
+Display;Hardware error. 03130031-291D Turn off printer, wait, then turn on again.
+Description;Spur cam sensor detection failure
+Remedy;Check the spur cam sensor in I/O mode. -If OK, check the lifter drive system. -If NG, replace the sensor.
+Code;2920
+Display;Media Take-up error. Check the paper. Press Online to clear error.
+Description;Cannot take up paper An error check has been made on paper after the paper had been fed 1850 mm, but the media take-up unit was not driven at all in that interval (up to about 3700 mm [when run immediately after the start of detection]).
+Remedy;1. Check to see if the media take-up unit is switched on with the lock lever down. 2. Check the connection between the main unit and the media take-up unit. 3. Check to see if the wait roller is properly set. 4. Check to see if the media take-up detection sensor is shielded by paper when it is presented. 5. Faulty media take-up detection sensor 6. Faulty Media take-up motor
+Code;2921
+Display;Rewinding error. Check for jam at indicated position. Press Online to clear error. Rewinding error. Check for jam at indicated position.
+Description;Continued rewinding error The media take-up unit has continued rewinding for 10 seconds, with the media take-up paper detection sensor turned on, at printer power-on and at the start of printing.
+Remedy;1. Check to see if any obstacle is placed at the media take-up paper detection sensor position. 2. Faulty media take-up paper detection sensor 3. Faulty media take-up button 4. Faulty media take-up motor
+Code;2930
+Display;Cutting Mode not Automatic. Remove stacker and print again or cancel and change settings. Print again Cancel
+Description;Stacker is not ready. - The power supply is not supplied to the stacker. - The distance between the stacker and printer is not appropriate. - The stacker is not joined. - Stacker initial error
+Remedy;Continue or stop the print. If the preparation of the stacker isn't performed, the error occurs again.
+Code;2931
+Display;Cutting Mode not Automatic. Remove stacker and print again or cancel and change settings. Print again Cancel
+Description;When the stacker is usable condition, the printing has been started at the setting of cut-off or cutline print or eject or manual mode.
+Remedy;Print again after separating the distance between the stacker and printer enoughly, or cancel print.
+Code;2E00
+Display;Load Roll Media
+Description;Paper mismatch (roll paper) No roll paper have been fed when a job with a roll paper specification is received.
+Remedy;Load roll paper.
+Code;2E01
+Display;Roll printing is selected. Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper) Roll Paper have not been fed when an internal print job having a roll paper specification started (during internal printing).
+Remedy;Load roll paper.
+Code;2E02
+Display;Sheet printing is selected. Press Load/Eject and load sheets.
+Description;Paper mismatch (cut sheet) No cassette paper has been loaded when data having a cut sheet specification is received.
+Remedy;Load cut sheet.
+Code;2E03
+Display;Load Papr in Cas Press Online.
+Description;Paper mismatch (cut sheet) Not cut sheet have been loaded in cassettes when data having a cassette specification is received.
+Remedy;Feed paper as instructed by the onscreen guidance.
+Code;2E04
+Display;Manual(Front) (Paper type) (Paper size) Load Paper Stop Printing
+Description;Paper mismatch (cut sheet) No manually fed paper has been fed when a job having a front paper feed specification is received.
+Remedy;Feed paper manually from the front as instructed by the on-screen guidance.
+Code;2E05
+Display;Manual(Top) (Paper type) (Paper size) Load Paper Stop Printing
+Description;Paper mismatch (cut sheet) No manually fed paper has been fed when a job having a top paper feed specification is received. Paper mismatch (cut sheet) Not cut sheet have been loaded in cassettes when data having a cassette specification is received.(When paper type/ size is not determined)
+Remedy;Feed paper manually from the top as instructed by the on-screen guidance. Load cut sheet.
+Code;2E08
+Display;Wrong paper size. Check paper size setting on computer. Online: Print Stop: Stop Printing
+Description;Paper mismatch (size) (roll paper) The width of data and that of the actually loaded paper do not match.
+Remedy;Check the paper that is actually loaded on the printer and the paper size setting of the driver.
+Code;2E09
+Display;Insufficient paper for job Online: Print Stop: Stop Printing Load/Eject: Change Paper
+Description;Short on roll paper All of the following conditions have been met at the start of printing: -[ON] has been selected for [Remaining Roll Paper Detection]. -Among the paper size settings coded in the print data, the paper length exceeds the remaining length of roll paper.
+Remedy;Replace the roll paper.
+Code;2E0A
+Display;Roll printing is selected, but sheets are loaded. Press Load/Eject and remove the sheets.
+Description;Paper mismatch (roll paper) Print data having a roll paper print specification has been received at the completion of manual feed paper pickup.
+Remedy;Check the paper that is actually loaded on the paper and the paper feed setting of the driver.
+Code;2E0B
+Display;Cassette printing is selected. Press Load/Eject and remove manually loaded sheets.
+Description;Paper mismatch (cut sheet) Print data having a cassette print specification has been received at the completion of manual feed paper pickup.
+Remedy;Check the paper that is actually loaded on the paper and the paper feed setting of the driver.
+Code;2E0C
+Display;Manual printing is selected, but a roll is loaded. Press Load/Eject and remove the roll.
+Description;Paper mismatch (cut sheet) 1. Print data having a manual feed print specification has been received at the completion of roll paper pickup. 2. Print data having a manual feed print specification has been received when there is roll paper printout. 3. Cut sheet data has been received when the media take-up unit is in use.
+Remedy;Check the paper that is actually loaded on the paper and the paper feed setting of the driver.
+Code;2E0E
+Display;No Roll Feed Unit. Turn printer off and install roll feed unit.
+Description;Roll paper unit not installed The unit has received print data having a roll paper print specification when it had started without a roll unit being connected to it.
+Remedy;1. Check the roll unit, and remove, install or replace the roll unit. 2. Check I/O mode (roll unit detection).
+Code;2E0F
+Display;Top cover is open. Turn off printer, wait a while, and turn it on again.
+Description;The top cover is abnormally open.
+Remedy;Check the cover. Check the sensor (I/O mode).
+Code;2E10
+Display;Ink tank cover is open. Turn off printer, wait a while, and turn it on again.
+Description;Ink tank cover error open (continued use allowed) The ink tank cover opened while performing any operation, such as printing and suctioning.
+Remedy;Close the ink tank cover. Check the sensor (I/O mode).
+Code;2E11
+Display;Carriage Cover is open.
+Description;Carriage cover open error A carriage cover open has been detected.
+Remedy;Close the carriage cover. Check the sensor (I/O mode).
+Code;2E12
+Display;Rel lever is in wrong position. Turn off printer, wait, then turn on again.
+Description;Faulty release lever The state of the release lever up (released) has been detected.
+Remedy;Push down the release lever. Check the sensor.
+Code;2E14
+Display;Wrong paper size. Check paper size setting on computer. Online: Print Stop: Stop Printing
+Description;Paper mismatch (size or width) The paper size specified for the [Print to meet the paper width] setting of the driver on receiving print data and the width of the roll paper actually fed did not match.
+Remedy;Check the paper that is actually loaded on the printer and the paper size setting of the driver.
+Code;2E15
+Display;Wrong paper type. Stop: Stop Printing Load/Eject: Change Paper.
+Description;Paper mismatch (type) (on adjustment) The second and subsequent sheets of paper have been fed as a paper type different from the first sheet when LF adjustment was made with cut sheet.
+Remedy;Equalize the paper types for the first and second sheets with each other in adjustment printing.
+Code;2E15
+Display;Wrong paper type. Check paper type setting in driver. Online: Print Stop: Stop Printing
+Description;Paper mismatch (type) At the start of printing, paper type specified in the job and the type of paper actually loaded do not match, and [Stop] has been selected for [Paper Mismatch Detection].
+Remedy;Check the paper that is actually loaded on the printer and the driver paper type setting.
+Code;2E15
+Display;Wrong paper feed slot for this paper type. Press Load/Eject and reload the paper.
+Description;Paper mismatch (type) A paper type that cannot be fed from the specified feeder slot has been specified.
+Remedy;Check the feeder slot/cassette pick-up setting.
+Code;2E16
+Display;Wrong paper type. Check paper type setting on computer. Online: Print Stop: Stop Printing
+Description;Paper mismatch (type) The data type defined in the data and the type of actually loaded paper do not match. Following the transmission of data in the GARO format, all of the following conditions have been met at the start of printing: -The paper type that has been set in the job and the type of actually fed paper do not match. -[Stop] has been selected for [Paper Mismatch Detection].
+Remedy;Check the paper that is actually loaded on the printer and the driver paper type setting.
+Code;2E17
+Display;No cassette detected. Check the cassette.
+Description;Cassette not installed
+Remedy;1. Check to see if the cassette itself is properly loaded. 2. Check and replace sensor (I/O mode).
+Code;2E18
+Display;Cannot load. Press Load/Eject and reload the paper.
+Description;Paper not fed as far as the platen
+Remedy;
+Code;2E19
+Display;Cannot load. Press Load/Eject and reload the paper.
+Description;Feeding error LF out of synchronization for cut sheet
+Remedy;Refeed the paper.
+Code;2E1A
+Display;Cannot load. Press Load/Eject and reload the paper.
+Description;Feeding error LF out of synchronization for cut sheet
+Remedy;Refeed the paper.
+Code;2E1B
+Display;The roll is empty. Load/Eject: Change Paper
+Description;No roll paper available (trailing edge of roll paper detected) -Trailing edge of paper has been detected by paper sensor in a roll paper operation. -LF out of synchronization on roll paper. (Detected the spool no longer rotating.)
+Remedy;1. Replace the roll paper. 2. Check paper sensor R (I/O mode). 3. Is the paper fed successfully (under a negative load or any other influence)?
+Code;2E1C
+Display;Paper jam. Press Load/Eject and reload the paper.
+Description;Jam while ejecting paper (A sequence of removing jams with the pinch roller released is required) A jam has been detected while ejecting paper.
+Remedy;1. Open and close the release lever to reload the paper. 2. Remove the paper once
+Code;2E1D
+Display;Cannot load. Press Load/Eject and reload the paper.
+Description;Feeding error LF out of synchronization for cut sheet
+Remedy;Refeed the paper.
+Code;2E1F
+Display;"Cannot print as specified. Press Load/Eject and replace paper with A2/ 16.6""x23.4"" (vertical) or larger"
+Description;Paper mismatch (size) The second and subsequent sheets of paper have been fed as a paper size different from the first sheet when adjustment was made with cut sheet. The paper size setting in effect at the start of an internal print session has fallen below the minimum size specified for that internal print session. [XXX x YYY]: Required minimum size The second and subsequent sheets of paper have been fed as a paper size different from the first sheet when adjustment was made with cut sheet. [XXX x YYY]: Required minimum size
+Remedy;Check the paper that is actually loaded on the printer and the paper size setting of the driver.
+Code;2E20
+Display;Wrong paper type. Lift the release lever and reload the paper. Stop: Stop Printing
+Description;Paper mismatch (type) (on adjustment) The second and subsequent sheets of paper have been fed as a paper type different from the first sheet when LF adjustment was made from a cassette.
+Remedy;Equalize the paper types for the first and second sheets with each other in adjustment printing.
+Code;2E21
+Display;Hardware error. 03130000-2E21 Turn off printer, wait, then turn on again.
+Description;IEEE1394 interface error Any error has been detected while initializing IEEE1394 at startup.
+Remedy;1. Restart the printer. 2. Remove and reinsert the IEEE1394 board and then restart the printer. 3. Replace the IEEE1394 board.
+Code;2E22
+Display;Media Type not compatible with cassette. Check Media Type. Stop: Stop Printing
+Description;Paper mismatch (cut sheet) Cassette pickup has been specified for paper that does not support cassette pickup
+Remedy;Check the cassette pick-up setting/ paper type
+Code;2E23
+Display;Hardware error. 03130031-2E23 Turn off printer, wait, then turn on again.
+Description;Cutter unit failure At startup or completion of paper jam handling, when attempting to get the cutter which is in other position than HP back to HP, the home position sensor timed out without response.
+Remedy;1. Remove paper slip (foreign matter) attached to the cutter home position sensor. 2. Check the cutter driving circuit and the cutter unit. When FU3902 blows out on PF510/ 5100/610, -Replace the main controller PCB When FU2802 blows out on iPF6300 series/ 6400 series -Replace the main controller PCB.
+Code;2E24
+Display;Roll feed unit err Turn off printer and check roll feed unit
+Description;Faulty roll paper unit Failed to detect the cam in the roll unit while no paper was loaded.
+Remedy;Check the roll cam sensor (I/O mode).
+Code;2E25
+Display;Cannot detect papr Remove paper and press Load/Eject. Cannot detect papr Remove paper and press OK.
+Description;Jam while picking up, ejecting or printing on paper (JAM2). After loading of roll paper or cut sheet was loaded successfully, Paper detection sensor/ Media sensor sensor detected no paper (JAM2).
+Remedy;
+Code;2E27
+Display;Cannot load. Press Load/Eject and reload the paper. Paper jam. Press Load/Eject and reload the paper.
+Description;Feeding error (nip release required) LF out of synchronization (feed motor won't rotate) has been detected. Jam while picking up, ejecting or printing on paper (A sequence of removing jams with the pinch roller released is required)(JAM1) Virtually all recovery errors that could occur in connection with paper pickup are handled.
+Remedy;1. Open and close the release lever to reload the paper. 2. Remove the paper once and then refeed it.
+Code;2E30
+Display;The paper is too small.
+Description;Paper mismatch (size) With [Pause] selected for [Paper Mismatch Detection] in the menu setting, paper size for the paper loaded was smaller than the size specified by data.
+Remedy;Continued printing allowed. Check driver setting Replace with appropriate paper.
+Code;2E31
+Display;Insufficient paper for job
+Description;All of the following conditions have been met at the start of external printing: -[ON] has been selected for [Remaining Roll Paper Detection]. -Among the paper size settings coded in the print data, the paper length exceeds the remaining length of roll paper. -Automatic roll feed to another roll paper slot which is not the current feeding path, out of the 2 slots the printer has, is not available.
+Remedy;Replace the roll paper.
+Code;2E32
+Display;Insufficient paper for job
+Description;All of the following conditions have been met at the start of external printing: -[ON] has been selected for [Remaining Roll Paper Detection]. -Among the paper size settings coded in the print data, the paper length exceeds the remaining length of roll paper. -Automatic roll feed to another roll paper slot which is not the current feeding path, out of the 2 slots the printer has, is not available.
+Remedy;Replace the roll paper.
+Code;2E33
+Display;Roll Paper (Paper type) (Paper size) Load Roll Paper Stop Printing. Roll 1(Upper) (Paper type) (Paper size) Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper) No roll paper has been fed when a job with a roll paper specification is received. Paper mismatch (roll paper) No roll paper has been fed when a job with a roll paper specification is received. When paper has not been loaded on either upper or lower slot, and the feeding slot is set to [Automatic] in the job setting, an error of upper roll occurs.
+Remedy;"Load roll paper. 1. Select ""load a roll"" and follow instruction on the panel. 2. Select ""stop printing,"" or stop printing by pressing stop button. 3. Release the release lever and load the paper."
+Code;2E34
+Display;Roll 2 (Lower) (Paper type) (Paper size) Press Load/Eject and load a roll. Roll 2 (Lower) is selected. Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper) No roll paper has been fed when a job with a roll paper specification is received. When no paper has been loaded on either upper or lower slot, and the feeding slot is set to [Automatic] in the job setting, an error of upper roll (2E33) occurs. Paper mismatch (roll paper) No roll paper has been fed when a job with a roll paper specification is received. When no paper has been loaded on either upper or lower slot, and the feeding slot is set to [Automatic] in the job setting, an error of upper roll (2E33) occurs. * This is a message that appears when paper type/ size specification does not exist due to HPGL format etc.
+Remedy;Load roll paper.
+Code;2E35
+Display;Roll printing is selected.
+Description;Paper mismatch (roll paper) No roll paper has been fed when performing internal printing.
+Remedy;Load roll paper.
+Code;2E36
+Display;Roll printing is selected. Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper) (lower) No roll paper was fed when internal printing with the specified roll paper (lower) was started.
+Remedy;Load roll paper.
+Code;2E37
+Display;Roll printing is selected. Roll 1 (Upper) is selected. Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper) (Upper) No roll paper has been fed when a job with roll paper specification is received. Paper mismatch (roll paper) No roll paper was fed when the job specified with upper roll paper was received.
+Remedy;"Load roll paper. 1. Select ""load a roll"" and follow instruction on the panel. 2. Select ""stop printing,"" or stop printing by pressing stop button. 3. Release the release lever and load the paper. (This step 3 is only for 800/ 8000/9000 series.)"
+Code;2E38
+Display;Roll 2 (Lower) is selected. Press Load/Eject and load a roll.
+Description;Paper mismatch (roll paper)(Lower) No roll paper has been fed when a job with lower roll paper specification is received.
+Remedy;Load roll paper.
+Code;2E39
+Display;The Roll 2 (Lower) is empty. Lift the release lever and replace the roll.
+Description;No roll paper available (trailing edge of roll paper detected) -Detected that cut sheet sized paper has been fed at the roll paper feeding slot. -The trailing edge of paper was detected by the Paper detection sensor/ Media sensor sensor during operation in which roll paper was used. -The spool stopped rotating during paper loading or printing (XX: Upper roll paper/ Lower roll paper)
+Remedy;1. Replace the roll paper -Check paper sensor R (I/O mode). 2. Is the paper fed successfully (under a negative load or any other influence)?
+Code;2E3A
+Display;Roll1 jammed. Manually rewind the roll all the way and press OK.
+Description;During upper roll paper feeding operation, the paper was fed with the roll feed sensor detecting the paper, but the paper detection sensor/ media sensor sensor could not detect the paper and the operation timed out.
+Remedy;Manually rewind the paper and reload.
+Code;2E3B
+Display;Roll 2 (Lwr) jammed. Manually rewind the roll all the way and press OK.
+Description;During lower roll paper feeding operation, the paper was fed with the roll feed sensor detecting the paper, but the paper detection sensor/ media sensor sensor could not detect the paper and the operation timed out.
+Remedy;Manually rewind the paper and reload.
+Code;2E3C
+Display;Paper jam. Lift the release lever.
+Description;During operations with cut sheet, the state of the paper detection sensor/ media sensor sensor has become invalid.
+Remedy;Reload the paper.
+Code;2E3D
+Display;Roll 1 (upper) jam Lift the release lever.
+Description;During operations with upper roll paper, the paper was fed with the roll paper detection sensor and the roll feeding sensor detecting the paper, but the state of the paper detection sensor/ media sensor sensor became invalid.
+Remedy;Reload the paper.
+Code;2E3E
+Display;Roll 2 (lower) jam Lift the release lever.
+Description;During operations with lower roll paper, the paper was fed with the roll paper detection sensor and the roll feeding sensor detecting the paper, but the state of the paper detection sensor/ media sensor sensor became invalid.
+Remedy;Reload the paper.
+Code;2E3F
+Display;Paper jam. Lift the release lever.
+Description;When either upper or lower roll paper is in operation, the states of the roll paper detection sensor, roll feeding sensor, and paper detection sensor/ media sensor sensor became invalid.
+Remedy;Reload the paper.
+Code;2E40
+Display;Cannot print as selected. Another roll is in use. [Stop]: Stop printing
+Description;Print data having lower roll paper specification has been received while upper roll printout remains.
+Remedy;Remove the printout of upper roll, and print again.
+Code;2E41
+Display;Cannot print as selected. Another roll is in use. [Stop]: Stop printing
+Description;Print data having upper roll paper specification has been received while lower roll printout remains.
+Remedy;Remove the printout of lower roll, and print again.
+Code;2E42
+Display;MediaType Mismatch
+Description;Paper mismatch (type/ restart printing of suspended job) It occurs when all of the following conditions are met: -[Stop] selected for [Paper Mismatch Detection] in menu settings. -[Change Paper] button was pressed for suspended jobs from host. -The paper type that has been set in the job and the type of actually fed paper do not match.
+Remedy;Continued printing allowed. Replace with appropriate paper.
+Code;2E45
+Display;MediaType Mismatch
+Description;Paper mismatch (type/ restart printing of suspended job) It occurs when all of the following conditions are met: -[Stop] selected for [Paper Mismatch Detection] in menu settings. -The paper width that has been set with data and the paper width of actually fed paper do not match.
+Remedy;Continued printing allowed. Check the driver settings. Replace with appropriate paper.
+Code;2E47
+Display;Cutter Position Error
+Description;Cut Failure The cutter is not at home position when restart from jam. Also paper feeding was detected.
+Remedy;Check around the cutter unit.
+Code;2F11
+Display;CR error Call for Service.
+Description;An operation order has been issued while the carriage suffered a hardware error.
+Remedy;
+Code;2F12
+Display;LF error Call for Service.
+Description;LF error -An operation order has been received while the LF suffered a hardware error. -The target position could not be reached within a predicted operation time +3 seconds during an LF operation. -The sensor could not be detected during an LF operation involving sensor detection.
+Remedy;1. Replace the feed roller encoder sensor. 2. Replace the feed motor. <Supplement> -If the carriage travels heavily near the stop position, a mechanical load error may be suspected. -If any other symptom is observed, a feeding sensor may be at fault.
+Code;2F13
+Display;Hardware error. 03130031-2F13 Turn off printer, wait, then turn on again.
+Description;A/D converter external trigger output stop (Hardware error 1)
+Remedy;
+Code;2F14
+Display;Hardware error. 03130031-2F14 Turn off printer, wait, then turn on again.
+Description;ASIC register not writable (Hardware error 2) Could not write to the ASIC register on the main controller PCB.
+Remedy;Replace the main controller PCB.
+Code;2F16
+Display;Hardware error. 03130031-2F16 Turn off printer, wait, then turn on again.
+Description;Mist fan error The rotation of the mist fan is not detectable.
+Remedy;1. Check the bundled wires in the mist fan drive circuit. 2. Replace the mist fan unit. 3. Replace the main controller PCB.
+Code;2F17
+Display;Hardware error. 03130031-2F17 Turn off printer, wait, then turn on again.
+Description;Platen fan lock detection error The lock signal has been supplied continuously for 3 seconds or longer, 10 seconds after the platen fan started rotating.
+Remedy;1. Check the bundled wires in the platen suction fan drive circuit. 2. Replace the platen suction fan unit. 3. Replace the main controller PCB.
+Code;2F1F
+Display;Hardware error. 03130031-2F1F Turn off printer, wait, then turn on again.
+Description;Purge sensor error (recovery purge motor HP detection error) The recovery system has been driven but no sensor interrupt occurs. The recovery system has been driven to close the cap, but the cap has not been capped successfully.
+Remedy;
+Code;2F20
+Display;Hardware error. 03130031-2F20 Turn off printer, wait, then turn on again.
+Description;Cap motor cam positioning error The recovery system has been driven but no sensor interrupt occurs. The recovery system has been driven to close the cap, but the cap has not been capped successfully.
+Remedy;
+Code;2F21
+Display;Rel lever is in wrong position. Turn off printer, wait, then turn on again.
+Description;Pinch roller open detected with the pinch roller locked.
+Remedy;1. Restart with the pinch roller closed. 2. Check the sensor in I/O DISPLAY in Service mode (Check the pinch roller pressure release detection SW/ the release lever lock sensor.)
+Code;2F22
+Display;Hardware error. 03130031-2F22 Turn off printer, wait, then turn on again.
+Description;Pump shift timeout The target position could not be reached within a predicted operation time +3 seconds during pump operation or no sensor has been detected during a pump operation involving sensor detection.
+Remedy;<Supplement> -If the carriage travels heavily towards the stop position: A mechanical load error may be suspected. -Otherwise: The sensor in the purge unit may be at fault.
+Code;2F23
+Display;Hardware error. 03130031-2F23 Turn off printer, wait, then turn on again.
+Description;Purge motor error A PWM duty of 100% has lasted for 200 msec in a pump operation.
+Remedy;<Supplement> -If the motor could not be run at all or has resulted in an error after moving by a slight distance: A. A mechanical load error may be suspected. B. The motor or drive circuit may be at fault. -If the carriage has run more or less out of control and resulted in an error: A. The encoder sensor may be at fault.
+Code;2F24
+Display;Cannot cut paper. Lift the release lever and reload the paper.
+Description;Cutter shift timeout The cutter failed to reach the home position in time during a cutting operation
+Remedy;
+Code;2F25
+Display;Hardware error. 03130031-2F25 Turn off printer, wait, then turn on again.
+Description;Carriage motor HP not detectable Detected only for the wide format. For the narrow format, the carriage motor HP can be detected when the carriage hits the wall in a full scan following the detection of the HP.
+Remedy;Check the carriage HP sensor in I/O mode. <Supplement> -If the motor could not be run at all: A. A mechanical load error may be suspected. B. The motor or drive circuit may be at fault. -If the carriage has resulted in an error after moving at a constant speed: A. The carriage HP sensor may be at fault. -If the carriage has run more or less out of control and resulted in an error: A. The encoder sensor may be at fault.
+Code;2F26
+Display;Hardware error. 03130031-2F26 Turn off printer, wait, then turn on again.
+Description;Carriage operation disabled -A PWM duty of 100% has lasted for 200 msec in a carriage operation -A collision has been detected in a carriage operation (with the speed predicted from the PWM output value having a deviation of 25 ips or more from the actual speed).
+Remedy;<Supplement> -If the motor could not be run at all or has resulted in an error after moving by a slight distance: A. A mechanical load error may be suspected. B. The motor or drive circuit may be at fault. -If the carriage has run more or less out of control and resulted in an error: A. encoder sensor may be at fault.
+Code;2F27
+Display;Hardware error. 03130031-2F27 Turn off printer, wait, then turn on again.
+Description;Carriage shift timeout The target position could not be reached within a predicted operation time +3 seconds during carriage operation.
+Remedy;<Supplement> -If the carriage travels heavily towards the stop position, a mechanical load error may be suspected.
+Code;2F28
+Display;Hardware error. 03130031-2F28 Turn off printer, wait, then turn on again.
+Description;Lift shift timeout A lift operation has been executed, but no sensor has been detected or a sensor has remained detected.
+Remedy;1. Switch off the printer, then back on. 2. The carriage cannot travel to the lift drive position. 3. The lift drive cam is not engaged. 4. Faulty lift drive sensor 5. Faulty lift drive motor
+Code;2F29
+Display;Hardware error. 03030000-2F29 Turn off printer, wait, then turn on again.
+Description;LF feeding motor timeout (cut sheet) -The target position could not be reached within a predicted operation time +3 seconds during an LF operation. -The sensor could not be detected during an LF operation involving sensor detection.
+Remedy;1. Replace the feed roller encoder sensor. 2. Replace the feed motor. <Supplement> -If the carriage travels heavily near the stop position, a mechanical load error may be suspected. -If any other symptom is observed, a feeding sensor may be at fault.
+Code;2F2A
+Display;Hardware error. 03130031-2F2A Turn off printer, wait, then turn on again.
+Description;Cannot detect the LF home position The LF home position could not be detected on LF homing during initialization.
+Remedy;1. Check the sensor (I/O mode check). 2. Replace the feed roller encoder sensor. 3. Replace the encoder film. 4. Replace the feed motor/belt/ adjust the belt tension. 5. Replace the long flexible cable. <Supplement> -If the motor could not be run at all: A. A mechanical load error may be suspected. B. The motor or drive circuit may be at fault. -If the carriage has resulted in an error after moving at a constant speed: The feed roller HP sensor may be at fault. -If the carriage has run more or less out of control and resulted in an error, the encoder sensor may be at fault. When FU2802 blows out on iPF6300/ 6400 series -Replace the main controller PCB.
+Code;2F2B
+Display;Hardware error. 03130031-2F2B Turn off printer, wait, then turn on again.
+Description;LF operation failure (LF operation disabled) A pump duty of 100% has lasted for 200 msec during LF operation.
+Remedy;1. Replace the feed roller encoder sensor. 2. Replace the feed motor. <Supplement> -If the motor could not be run at all or has resulted in an error after moving by a slight distance: A. A mechanical load error may be suspected. B. The motor or drive circuit may be at fault. -If the carriage has run more or less out of control and resulted in an error, the encoder sensor may be at fault. When FU2802 blows out on iPF6300/ 6400 Series -Replace the main controller PCB.
+Code;2F2C
+Display;Hardware error. 03130031-2F2C Turn off printer, wait, then turn on again.
+Description;Cassette shift timeout -The target position could not be reached within a predicted operation time + 3 seconds during cassette operation. -No sensor has been detected during a pump operation involving sensor detection.
+Remedy;<Supplement> -If the carriage travels heavily near the stop position, a mechanical load error may be suspected. -Otherwise, the cassette unit sensor may be at fault.
+Code;2F2D
+Display;Cassette not working. Turn off printer, wait, then turn on again.
+Description;Cassette operation disabled A PWM duty of 100% has lasted for 200 msec in a cassette operation.
+Remedy;1. Check the cassette motor and the drive circuit. 2. Check the cassette encoder sensor.
+Code;2F2E
+Display;Hardware error. 03130031-2F2E Turn off printer, wait, then turn on again.
+Description;Roll shift timeout No sensor has been detected during a roll operation involving sensor detection.
+Remedy;
+Code;2F2F
+Display;Hardware error. 03800500-2F2F Turn off printer, wait, then turn on again.
+Description;Non-ejection detection error As a result of nozzle checking made by the head management sensor unit: 1. All 640 nozzles in a nozzle line are nondischarging. 2. At least 50 nozzles have been found mismatched in a nozzle line of 640 nozzles since the last session of detection.
+Remedy;1. Check whether any foreign matter such as paper slip exists on the head management sensor optical axis. 2. Light interception due to ink accumulation.-> Remove the ink/ Replace the unit. 3. Check the head management sensor's connector connection 4. If Service mode nozzle check pattern printing is no problem, replace the head management sensor unit. Reference 1) As for the detection condition 1. above, in the iPF650/750, iPF6300/6350, and iPF8300 series or later, the error codes are broken up into 2F40,2F41,2F42,2F43,2F44, and 2F47 depending on the non-ejection conditions. Reference 2) Error 2F2F,2F40,2F41,2F42,2F43,2F44, and 2F47 are detected in the following order. 1. Determines signal level (2F47) of head management sensor 2. Determines complete non-ejection of all colors (2F40) 3. Determines multiple mismatches (2F2F) 4. Determines complete non-ejection of a single color (2F41) 5. Determines complete non-ejection of one line (2F42) 6. Determines complete non-ejection of 640 nozzles (2F43) 7. Determines non-ejection of more than 320 nozzles (2F44) Reference 3) The amount of change (between non-ejecting and ejecting nozzle counts) from the last session of nozzle checking is defined as the amount of mismatch.
+Code;2F30
+Display;Hardware error. 03800500-2F30 Turn off printer, wait, then turn on again.
+Description;Non-ejection detecting position error No detectable region has been found during non-ejection position adjustment.
+Remedy;
+Code;2F32
+Display;Multi-sensor error Turn off printer, wait a while, then turn it on again.
+Description;Faulty multisensor Light quantity adjustment of multisensor failed. Or, outside light entered during multisensor light quantity adjustment.
+Remedy;1. Retry the adjustment with the effect of outside light, such as that of the afternoon sun, being removed. 2. Check the position at which the multisensor is installed. 3. Replace the multisensor.
+Code;2F33
+Display;Use another paper. Press Online to clear the error.
+Description;Unadjustable because of transparent paper Paper are unidentifiable on automatic adjustment (transparent/semi-transparent paper).
+Remedy;Change to appropriate paper.
+Code;2F34
+Display;Cannot calibrate. Press OK and try calibration again.
+Description;Color calibration error The adjustment value has gone out of bounds during calibration.
+Remedy;1. Check to see if the loaded paper permit calibration. 2. Check calibrated printed matter for soiling and other defects. 3. Check the nozzle pattern
+Code;2F35
+Display;Calibration There is a problem with the multi-sensor. Press OK to cancel calibration.
+Description;Faulty multisensor (on calibration) A failure to calibrate has been detected from the parts counter.
+Remedy;1. Check the parts counter in service mode and replace the multisensor unit. 2. Initialize the counter for the replacement unit mounted. (It is recommended to estimate the usage status of other units coming to the end of their service life and replace them as needed.)
+Code;2F37
+Display;ERROR E173-2F37 Call for service
+Description;Linear scale error No signal is available from the carriage encoder when the printhead is driven.
+Remedy;
+Code;2F38
+Display;Top cover is open. Turn off printer, wait a while, and turn it on again.
+Description;The top cover is abnormally open.
+Remedy;Check the cover. Check the sensor (I/O mode).
+Code;2F3A
+Display;Hardware error. 03130031-2F3A Turn off printer, wait, then turn on again.
+Description;Ink Supply Valve Open/Closed motor timeout error
+Remedy;1. Replace the ink supply unit. 2. Replace the main controller PCB.
+Code;2F3B
+Display;Hardware error. 03130031-2F3B Turn off printer, wait, then turn on again.
+Description;CS communication error An irrecoverable communication error has occurred communicating between the CS chip mounted on the ink tank and the main unit.
+Remedy;1. Remove and insert the ink tank, or replace the ink tank. 2. Check bundled wires in the ink tank unit and the main controller PCB. 3. Replace the main controller PCB.
+Code;2F3C
+Display;Hardware error. 03130031-2F3C Turn off printer, wait, then turn on again.
+Description;LF nip sensor error. When executing nip automatic operation, one of the following conditions is met. -The sensor detected nip closed after the nip completed opening operation. -The sensor detected nip open after the nip completed closing operation.
+Remedy;Check the lift cam sensor/ pressure release switch (I/O mode)
+Code;2F3D
+Display;Hardware error. 03130031-2F3D Turn off printer,wait, then turn on again.
+Description;HP pre-ejection pump motor overload error
+Remedy;Replace the HP maintenance jet tray unit.
+Code;2F3E
+Display;Hardware error. 03130031-2F3E Turn off printer,wait, then turn on again.
+Description;HP pre-ejection pump motor shift timeout
+Remedy;Replace the HP maintenance jet tray unit
+Code;2F3F
+Display;Hardware error. 03130031-2F3F Turn off printer,wait, then turn on again.
+Description;An error other than overload error or shift timeout error has been detected for the HP pre-ejection pump motor.
+Remedy;Replace the HP maintenance jet tray unit.
+Code;2F40
+Display;Hardware error. 03800500-2F40 Turn off printer,wait, then turn on again.
+Description;When the result of non-ejection detection is as follows. When non-ejection has been detected for all nozzles of all colors -The error code assuming a problem in the supply system/ purge system/ main controller PCB (electric).
+Remedy;
+Code;2F41
+Display;Hardware error. 03800500-2F41 Turn off printer,wait, then turn on again.
+Description;When the result of non-ejection detection is as follows: Complete non-ejection of nozzles in 1 to 5 chip(s). (A line EVEN/ A line ODD/ B line EVEN/ B line ODD Total of 2560 nozzles x 1 to 5 chip(s) complete non-ejection) -Error code assuming a problem in the ink supply system/ purge system.
+Remedy;
+Code;2F42
+Display;Hardware error. 03800500-2F42 Turn off printer,wait, then turn on again.
+Description;When the result of non-ejection detection is as follows: Complete non-ejection of one line in 1chip. (In either A line or B line, a complete nonejection of 1280 nozzles) -Error code assuming broken flexible cable or contact failure (heat enable line).
+Remedy;
+Code;2F43
+Display;Hardware error. 03800500-2F43 Turn off printer,wait, then turn on again.
+Description;When the result of non-ejection detection is as follows: Complete non-ejection (640 nozzles) of EVEN line or ODD line. -Error code assuming broken flexible cable or contact failure (data line).
+Remedy;
+Code;2F44
+Display;Hardware error. 03800500-2F44 Turn off printer,wait, then turn on again.
+Description;When the result of non-ejection detection is as follows: More than half of 640 nozzles in EVEN line or ODD line have non-ejection (more than 320 nozzles). -Error code assuming a head failure such as broken heater board of head.
+Remedy;
+Code;2F46
+Display;Hardware error. 03130031-2F46 Turn off printer,wait, then turn on again.
+Description;The shutter HP sensor did not respond at startup and at switching of platen shutter at printing.
+Remedy;Check the platen shutter HP sensor (I/ O Display). Check/ replace the platen shutter drive unit or sensor
+Code;2F47
+Display;Hardware error. 3800500-2F47 Turn off printer,wait, then turn on again.
+Description;The optical axis of the head management sensor unit has been intercepted for some reasons. The amount of LED luminescence and the level of detection signal of diode light receiving sensitivity has gone beyond the predefined range. (determines the level of APCCHK)(It's not a problem of printhead or ink supply system.)
+Remedy;1. Check whether any foreign matter such as paper slip exists on the head management sensor optical axis. 2. Light interception due to ink accumulation.-> Remove the ink/ Replace the unit. 3. Check connection of the head management sensor's connector. 4. Main controller PCB (Check the fuse/ Replace the PCB.) 5. A large amount of ink mist has been attached to optical element. 6. Replace the head management sensor.
+Code;2F48
+Display;Hardware error. 03130031-2F48 Turn off printer, wait, then turn on again.
+Description;VHT (heater drive drive power supply for printhead) error VHT has gone below or above the rating.
+Remedy;iPF6300 series 1. Replace the printhead. 2. Replace the main controller PCB. iPF8300 series 1. Replace the printhead. 2. Replace the CR relay board. 3. Check/ replace the long flexible cable. 4. Replace the main controller PCB.
+Code;2F49, 2F50, 2F51
+Display;Hardware error. 03130031-xxxx Turn off printer, wait, then turn on again.
+Description;Printhead short-circuited detected. Prior to VH power on, it has been detected that the printhead had been damaged due to paper jam etc, and ink went inside the terminal area causing near short-circuit. 2F49: L side printhead 2F50: R side printhead 2F51: LR both printhead
+Remedy;iPF6300 series 1. Replace the printhead 2. Replace the main controller PCB. iPF8300 series 1. Replace the printhead 2. Replace the CR relay board 3. Check/ replace the long flexible cable. 4. Replace the main controller PCB.
+Code;2F4A
+Display;Hardware error. 03130031-2F4A Turn off printer, wait, then turn on again
+Description;main controller PCB error.
+Remedy;Replace the main controller PCB.
+Code;2F4D
+Display;Hardware error. 03130031-2F4D Turn off printer, wait, then turn on again.
+Description;VHT leak detection error of left printhead, in case of VHT exceeds rated value or falls below the rated value.
+Remedy;For iPF6400 series, 1. Replace the printhead. 2. Replace the main controller PCB. For iPF8400/9400 series, 1. Replace the printhead. 2. Replace the CR relay board. 3. Check and replace the long flexible cable printed circuit. 4. Replace the main controller PCB.
+Code;2F4F
+Display;Hardware error. 03130031-2F4F Turn off printer, wait, then turn on again.
+Description;VHT leak detection error of right and left printhead or a single printhead, in case of VHT exceeds rated value or falls below the rated value.
+Remedy;
+Code;2F52
+Display;Hardware error. 03130031-2F52 Turn off printer, wait, then turn on again.
+Description;Detected that a carriage unit of a legacy model has been mounted (iPF8300/6300/ 6350 only).
+Remedy;Replace with an appropriate carriage unit. 1. Replace with an appropriate carriage unit. 2. Replace the printhead. 3. Replace the main controller PCB
+Code;2F53
+Display;Hardware error. 03130031-2F53. Turn off printer,wait, then turn on again.
+Description;Supply valve motor error of the left ink tank. Drove supply valve motor. The movement was not detected.
+Remedy;iPF8400/9400 Series 1. Replace the left ink tank unit. 2. Replace the main controller PCB.
+Code;2F54
+Display;Hardware error. 03130031-2F54. Turn off printer,wait, then turn on again.
+Description;Supply valve motor error of the right ink tank. Drove supply valve motor. The movement was not detected.
+Remedy;iPF8400/9400 Series 1. Replace the right ink tank unit. 2. Replace the main controller PCB.
+Code;2F60
+Display;Spectrophotometer Unit not connected. Turn off power and attach Spectrophotometer Unit.
+Description;Spectrophotometer unit won't return signals.
+Remedy;1. Install spectrophotometer unit. 2. Replace signal line. 3. Replace connection. 4. Replace spectrophotometer unit PCB.
+Code;2F61
+Display;Hardware error 038A0002-2F61 Turn off printer, wait a while, then turn it on again.
+Description;UART communication error. (Data transfer volume in consistency, checksum error etc.)
+Remedy;1. Replace signal line. 2. Replace connection. 3. Replace spectrophotometer unit PCB
+Code;2F62
+Display;Hardware error 038A0002-2F62 Turn off printer, wait a while, then turn it on again.
+Description;When transmitting specified pulses to spectrophotometer carriage motor, the spectrophotometer carriage unit won't respond to spectrophotometer carriage HP sensor.
+Remedy;1. Replace spectrophotometer unit PCB. 2. Replace lines around spectrophotometer carriage unit. 3. Replace spectrophotometer carriage motor.
+Code;2F63
+Display;Hardware error 038A0002-2F63 Turn off printer, wait a while, then turn it on again.
+Description;The spectrophotometer up-down unit upper detection sensor won't respond when a predefined pulse is sent to the spectrophotometer up-down unit motor.
+Remedy;1. Replace spectrophotometer updown unit motor. 2. Replace spectrophotometer updown unit upper detection sensor. 3. Re-install delivery guide. 4. Replace the spectrophotometer unit PCB.
+Code;2F65
+Display;Hardware error 038A0002-2F65 Turn off printer, wait a while, then turn it on again.
+Description;When a predefined pulse is sent to the spectrophotometer up-down unit motor, the spectrophotometer up-down unit lower detection sensor in spectrophotometer unit won't respond.
+Remedy;1. Replace spectrophotometer updown unit motor. 2. Replace spectrophotometer updown unit lower detection sensor. 3. Re-install delivery guide. 4. Replace the spectrophotometer unit PCB.
+Code;2F66
+Display;Hardware error 038A0002-2F66 Turn off printer, wait a while, then turn it on again.
+Description;Media dry fan won't return signals.
+Remedy;1. Replace fan 2. Replace signal lines 3. Replace the spectrophotometer unit PCB.
+Code;2F67
+Display;Hardware error 038A0002-2F67 Turn off printer, wait a while, then turn it on again.
+Description;Embedded FlashROM read/ write error
+Remedy;Replace the spectrophotometer unit PCB.
+Code;2F68
+Display;Hardware error 038A0002-2F68 Turn off printer, wait a while, then turn it on again.
+Description;Spectrophotometer EEPROM read/write error
+Remedy;Replace the spectrophotometer unit PCB.
+Code;2F69
+Display;Hardware error 038A0002-2F69 Turn off printer, wait a while, then turn it on again.
+Description;Write/read error at RAM check
+Remedy;Replace the spectrophotometer unit PCB.
+Code;2F6A
+Display;Hardware error 038A0002-2F6A Turn off printer, wait a while, then turn it on again.
+Description;Firmware update failed.
+Remedy;1. Update firmware again 2. Replace the spectrophotometer unit PCB.
+Code;2F6B
+Display;Hardware error 038A0002-2F6B Turn off printer, wait a while, then turn it on again.
+Description;Initialization after power on of CPU at spectrophotometer unit side failed.
+Remedy;Replace the spectrophotometer unit PCB.
+Code;2F6C
+Display;Hardware error. 03130031-2F6C. Turn off printer, wait, then turn on again.
+Description;Failed self-testing.
+Remedy;Replace the spectrophotometer unit PCB.
+Code;2F70
+Display;Hardware error. 03130031-2F70. Turn off printer, wait, then turn on again.
+Description;Indication at ink priming error in both subtanks.
+Remedy;For iPF6400 Series, 1. Replace both of the inktank units. 2. Replace the main controller PCB.
+Code;2F71
+Display;Hardware error. 03130031-2F71. Turn off printer, wait, then turn on again.
+Description;Indication at ink priming error in the left subtank.
+Remedy;For iPF6400 Series, 1. Replace the left inktank unit. 2. Replace the main controller PCB.
+Code;2F72
+Display;Hardware error. 03130031-2F72. Turn off printer, wait, then turn on again.
+Description;Indication at ink priming error in the right subtank.
+Remedy;For iPF6400 Series, 1. Replace the right subtank 2. Replace the main controller PCB.
+Code;2F80
+Display;Spectrophotometer sensor is not mounted. Please check if the sensor is mounted properly and press OK.
+Description;Spectrophotometer sensor won't return signals.
+Remedy;1. Install Spectrophotometer sensor. 2. Check cables. 3. Replace spectrophotometer sensor. 4. Replace the spectrophotometer unit PCB.
+Code;2F81
+Display;Spectrophotometer Unit Calibration white tile error. Clean the tile then mount it and press OK.
+Description;After white calibration, the spectrophotometer sensor returned a value other than predetermined value.
+Remedy;1. Clean white tile. 2. Mount white tile. 3. Replace spectrophotometer sensor.
+Code;2F82
+Display;Delivery guide of SP unit is not mounted. Check if the guide is mounted properly and press OK.
+Description;While the spectrophotometer up-down unit upper detection sensor and spectrophotometer top cover open/closed detection sensor are detecting, the interlock switch remains OFF.
+Remedy;1. Mount delivery guide. 2. Replace the spectrophotometer unit PCB. 3. Replace spectrophotometer updown unit upper detection sensor.
+Code;2F83
+Display;Backing plate error in the spectrophotometer unit. Clean the backing plate. Install the backing plate to the unit. Then press [OK].
+Description;No signal retuned from backing plate. The signal from the backing plate is beyond threshold.
+Remedy;1. Clean the backing plate. 2. Replace the spectrophotometer unit PCB. 3. Replace the spectrophotometer sensor.
+Code;2F85
+Display;SP unit up and down cover is open. Close it and press OK
+Description;Spectrophotometer top cover open/closed detection sensor won't respond.
+Remedy;1. Close spectrophotometer top cover. 2. Replace spectrophotometer top cover open/closed detection sensor. 3. Replace the spectrophotometer unit PCB.
+Code;2F86
+Display;SP unit cover is open. Close it and then press OK.
+Description;Spectrophotometer cover open/closed detection sensorwon't respond.
+Remedy;1. Close spectrophotometer cover. 2. Replace cover sensor. 3. Replace the spectrophotometer unit PCB.
+Code;2F87
+Display;Colorimetric readout error. Please press OK and execute color measuring again.
+Description;When executing color measuring, the spectrophotometer sensor returned a value other than predetermined value was returned.
+Remedy;1. Operate paper feed adjustment. 2. Change the patch size to large. 3. Printer support (In case of printing failure). 4. Replace spectrophotometer sensor
+Code;2F88
+Display;Colorimetric readout error. Please press OK and execute color measuring again.
+Description;When reading the positioning bar, a value other than predetermined value was returned.
+Remedy;1. Operate paper feed adjustment. 2. Printer support (In case of printing failure). 3. Replace spectrophotometer sensor.
+Code;2F89
+Display;Colorimetric readout error. Please press OK and execute color measuring again
+Description;1) No shifting amount detected from the positioning bar reading value. 2) Position shifting exceeded the threshold value. 3) Skew exceeded the threshold value.
+Remedy;1. Operate paper feed adjustment. 2. Printer support (In case of printing failure). 3. Replace spectrophotometer sensor
+Code;2F90
+Display;
+Description;"Detected 3V of abnormal power out from the printhead. (Latch up current flows at head logic and temporarily the print head falls into abnormal state ; it is possible to recover by power on and off.)"
+Remedy;
+Code;2FA0
+Display;It is recommended to clean the white calibration board to prevent it from possible dirt
+Description;Inform the calibration timing of the spectrophotometer sensor.
+Remedy;Calibrate the spectrophotometer sensor.
+Code;4001
+Display;ERROR E146-4001 Call for service.
+Description;Borderless/flow pre-ejection/mist recovery count full
+Remedy;Check the parts counter and replace the target unit or Refresh Service Kit. Initialize the parts counter for the target unit after the replacement.
+Code;401A
+Display;ERROR E602-401A Call for service.
+Description;HDD failure Failed to read and write to and from the HDD.
+Remedy;1. Restart in service mode. 2. Remove and install HDD 3. Replace HDD. Switch on service mode after the replacement.
+Code;401B
+Display;ERROR E602-401B Call for service.
+Description;Poor HDD connection The HDD and the HDD controller are not indefinable.
+Remedy;1. Restart in service mode. 2. Remove and install HDD 3. Replace HDD. Switch on service4. Replace HDD controller or the main controller PCB. Restart after the replacement.
+Code;401C
+Display;ERROR E198-401C Call for service.
+Description;Faulty RTC Any error other than the two errors mentioned below has been detected while initializing the RTC at startup.
+Remedy;1. Restart the printer in service mode. 2. Replace the main controller PCB.
+Code;401D
+Display;ERROR E198-401D Call for service.
+Description;RTC low battery error A battery error has been detected while initializing the RTC at startup.
+Remedy;1. Restart the printer in service mode. 2. Check the RTC battery. 3. Replace the main controller PCB.
+Code;401E
+Display;ERROR E198-401E Call for service.
+Description;RTC clock stop The RTC has been detected idle while initializing the RTC at startup.
+Remedy;1. Restart the printer in service mode. 2. Replace the main controller PCB.
+Code;4027
+Display;Hardware error. 03130031-4027 Turn off printer, wait, then turn on again.
+Description;Lift shift timeout error A lift operation has been executed, but no sensor has been detected or a sensor has remained detected.
+Remedy;1. Switch off the printer, then back on. 2. The carriage cannot travel to the lift drive position. 3. The lift drive cam is not engaged. 4. Faulty lift drive sensor 5. Faulty lift drive motor 6. Replace the main controller PCB.
+Code;4034
+Display;ERROR E196-4034 Call for service.
+Description;Multisensor unit version error A different version of multisensor is installed. This would not occur in an ordinary user environment.
+Remedy;
+Code;4037
+Display;ERROR E173-4037 Call for service.
+Description;Linear scale error No signal is available from the carriage encoder when the printhead is driven.
+Remedy;
+Code;403E
+Display;ERROR E161-403E Call for service.
+Description;Head abnormal temperature rise (printhead 1 (R), or A model) Either of the two Di sensors maintained for each printhead chip (color-specific) has been detected at 120 degrees C or higher or -10 degrees C or lower.
+Remedy;
+Code;403F
+Display;ERROR E161-403F Call for service.
+Description;Head abnormal temperature rise (printhead 2 (L)) Either of the two Di sensors maintained for each printhead chip (color-specific) has been detected at 120 degrees C or higher or -10 degrees C or lower.
+Remedy;
+Code;4040
+Display;ERROR E196-4040 Call for service.
+Description;Checksum error The checksum of a file transmitted on execution of the firmware update is unmatched.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Replace the main controller PCB.
+Code;4041
+Display;ERROR E196-4041 Call for service.
+Description;Flash erase error Failed to erase flash ROM on execution of the firmware update.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Replace the main controller PCB.
+Code;4042
+Display;ERROR E196-4042 Call for service.
+Description;Flash write error Failed to write flash ROM on execution of the firmware update.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Replace the main controller PCB.
+Code;4042
+Display;Unknown file. Check file format. Turn off printer, wait a while, then turn it on again.
+Description;MIT data transfer failure Failed to write MIT data on its transmission.
+Remedy;"1. Execute ""Initialize Paper Type"" from the system settings. (Note: All paper information will be reset to its factory defaults and additional Paper deleted.) 2. Upgrade the firmware in download mode. 3. Replace the main controller PCB."
+Code;4043
+Display;ERROR E196-4043 Call for service.
+Description;Firmware update failure error Failed to allocate a work area on RAM on firmware update.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Replace the main controller PCB.
+Code;4044
+Display;ERROR E196-4044 Call for service.
+Description;EEPROM size error Size information about the firmware data transmitted on firmware update and the size of actually transmitted data do not match.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Check the firmware transfer environment (IF changes, PC). 4. Replace the main controller PCB.
+Code;4045
+Display;ERROR E196-4045 Call for service.
+Description;Engine EEPROM write error An EEPROM read/write failure has been detected in the engine portion of the firmware.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Restart the printer in service mode to clear the error. 3. Replace the main controller PCB.
+Code;4046
+Display;ERROR E141-4046 Call for service.
+Description;Recovery part revolutions reaching 50,000 cycles or more Recovery part operations have reached a predetermined count.
+Remedy;Check the parts counter and replace required parts. (Replacement of the parts coming to the end of their useful lives is recommended.) Initialize the counter for the replacement unit mounted. The iPF5000/500/600 have a counter problem fixed. Identify the firmware version and start in download mode to upgrade the firmware to Ver.1.13 or later from any earlier release.
+Code;4047
+Display;ERROR E144-4047 Call for service.
+Description;Carriage count error Supply part operations have reached a predetermined count.
+Remedy;Check the parts counter and replace the target unit or Refresh Service Kit. Initialize the parts counter for the target unit after the replacement.
+Code;4048
+Display;ERROR E144-4048 Call for service.
+Description;Non-discharging nozzles on initial filling An unallowable number of nondischarging nozzles have been detected at the completion of initial filling.
+Remedy;
+Code;4049
+Display;Unknown file. Check file format. Turn off printer, wait a while, then turn it on again.
+Description;Wrong transfer ROM data model Files for a different model have been transferred on firmware update.
+Remedy;1. Restart the printer in service mode to clear the error (this error won't occur when FUT is used). 2. Start in download mode to upgrade the firmware. 3. Replace the main controller PCB.
+Code;404A
+Display;ERROR E194-404A Call for service.
+Description;Non-ejection count error A non-ejection part operation counter has reached a specified limit.
+Remedy;Check the parts counter and replace the target unit or Refresh Service Kit. Initialize the parts counter for the target unit after the replacement.
+Code;404B
+Display;ERROR E199-404B Call for service.
+Description;Temperature/humidity sensor error When temperature 0 and humidity 0% are detected, the detection mechanism is considered failed and an error message is displayed.
+Remedy;1. Restart the printer in service mode to clear the error. 2. Identify the firmware version and update the firmware to the last release if it is earlier than Ver.1.31 (firmware defect). 3. Remove and reinsert the temperature/humidity sensor PCB connector 4. Replace the temperature/humidity sensor PCB.
+Code;404C
+Display;ERROR E196-404C Call for service.
+Description;Serial number information mismatch A mismatch has been detected between the serial number information stored in the EEPROM on the main controller PCB and that stored in the EEPROM on the MTC relay PCB at startup.
+Remedy;1. Check to see if the correct PCB is mounted, since a PCB of the wrong model may have been mistakenly mounted during servicing. 2. Invoke service mode to implement PCB replacement.
+Code;404D
+Display;ERROR E196-404D Call for service.
+Description;Machine ID information mismatch A mismatch has been detected between the model ID information stored in the EEPROM on the main controller PCB and that stored in the EEPROM on the MTC relay PCB at startup.
+Remedy;1. Check to see if the correct PCB is mounted, since a PCB of the wrong model may have been mistakenly mounted during servicing. 2. Invoke service mode to implement PCB replacement.
+Code;404E
+Display;ERROR E196-404E Call for service.
+Description;An EEPROM read/ write error has been detected in the controller portion of the firmware.
+Remedy;1. Start in download mode to upgrade the firmware. 2. Start in service mode to clear the error. 3. Replace the main controller PCB.
+Code;404F
+Display;ERROR E144-404F Call for service.
+Description;Pump revolutions full The number of HP pre-ejection pump revolution has reached the defined value.
+Remedy;Clear the counter in service mode after having replaced the HP pre-ejection tray unit.
+Code;4050
+Display;Error E161-4050 Call for service. For iPF6000, 03800500-4050.
+Description;"Non-ejection detection error The timing of ""ink priming sequence"" is fallowing. -At installation of a new model printer -At reinstallation after the second transportation. -At replacement of the printhead"
+Remedy;
+Code;405A
+Display;Error E602-405A Call for service.
+Description;Incorrect capacity HDD model is connected.
+Remedy;Replace HDD
+Code;405B
+Display;Error E602-405B Call for service.
+Description;Mismatched HDD model is connected.
+Remedy;Replace HDD
+Code;4061
+Display;The paper loaded askew. Remove the paper.
+Description;Postion ditection of askew loaded paper.
+Remedy;
+Code;xx01xxxx-xxxx
+Display;
+Description;Jam-related
+Remedy;
+Code;xx03xxxx-xxxx
+Display;
+Description;Cover-related
+Remedy;
+Code;xx06xxxx-xxxx
+Display;
+Description;Media-related
+Remedy;
+Code;xx13xxxx-xxxx
+Display;
+Description;Controller-related
+Remedy;
+Code;xx1Axxxx-xxxx
+Display;
+Description;HDD-related
+Remedy;
+Code;xx32xxxx-xxxx
+Display;
+Description;Media-related
+Remedy;
+Code;xx34xxxx-xxxx
+Display;
+Description;PDL-related
+Remedy;
+Code;xx80xxxx-xxxx
+Display;
+Description;Printhead-related
+Remedy;
+Code;xx81xxxx-xxxx
+Display;
+Description;Inktank-related
+Remedy;
+Code;xx83xxxx-xxxx
+Display;
+Description;Inktank-related
+Remedy;
+Code;xx84xxxx-xxxx
+Display;
+Description;Maintenance cartridge-related
+Remedy;
+Code;xx86xxxx-xxxx
+Display;
+Description;Print-related
+Remedy;
+Code;xx87xxxx-xxxx
+Display;
+Description;Cutter-related
+Remedy;
+Code;xx89xxxx-xxxx
+Display;
+Description;Media take-up unit-related
+Remedy;
+Code;xx90xxxx-xxxx
+Display;
+Description;Version up-related
+Remedy;

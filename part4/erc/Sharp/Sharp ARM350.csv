@@ -1,0 +1,364 @@
+Code;C1-00
+Description;MC trouble Main charger output abnormality (Output open) Trouble signal is outputted from the high voltage transformer.
+Causes;The main charger is not installed properly. The main charger is not assembled properly. Disconnection of connector of high voltage transformer. High voltage harness disconnection or breakage.
+Remedy;Use the diag mode or DIAG to check the main charger output. Check for disconnection of the main charger. Replace the high voltage unit.
+Code;CE-00
+Description;A communication error other than the above is generated, such as NIC cable disconnection
+Causes;
+Remedy;
+Code;CE-01
+Description;The print server card (AR-NC5J) is broken down or is not installed.
+Causes;
+Remedy;
+Code;CE-02
+Description;The specified mail server or FTP server is not found.
+Causes;
+Remedy;
+Code;CE-03
+Description;Communication with the specified server is interrupted during image transmission.
+Causes;
+Remedy;
+Code;CE-04
+Description;The account name or the password for the FTP server is invalid.
+Causes;
+Remedy;
+Code;CE-05
+Description;The directory of the FTP server is invalid.
+Causes;
+Remedy;
+Code;E6-10
+Description;CIS shading trouble (Black correction) The CIS black scan level is abnormal when the lamp is off.
+Causes;Abnormal harness installation to CIS unit CIS unit abnormality Scanner PWB abnormality
+Remedy;Check CIS unit harness. Check CIS unit. Check scanner PWB.
+Code;E6-11
+Description;CSI shading trouble (White correction) The CIS white reference plate scan level is abnormal when the lamp is on.
+Causes;Abnormal harness installation to CIS unit Dirt on the white reference plate. CIS lighting error CIS unit installation trouble CIS unit abnormality Scanner PWB abnormality
+Remedy;Clean the white reference plate. Check CIS light quantity (SIM 5-3) and lighting. Check CIS unit harness. Check scanner PWB.
+Code;E6-14
+Description;CIS communication trouble Communication trouble (clock sync) between scanner PWB and CIS-ASIC
+Causes;Abnormal harness installation to CIS unit CIS unit abnormality Scanner PWB abnormality
+Remedy;Check CIS unit harness. Check CIS unit. Check scanner PWB.
+Code;E7-02
+Description;Laser trouble BD signal from LSU is kept OFF, or ON.
+Causes;The connector of LSU or the harness in LSU is disconnected or broken. The polygon motor does not rotate normally. The laser home position sensor in LSU is shifted. The proper voltage is not supplied to the power line for laser. Laser emitting diode trouble PCU PWB trouble Controller PWB trouble
+Remedy;Check for disconnection of the LSU connector. Use DIAG (SIM 61-1) to check LSU operation. Check that the polygon motor rotates normally or not. Check light emission of laser emitting diode. Replace the LSU unit. Replace the PCU PWB. Replace the Controller PWB.
+Code;E7-03
+Description;HDD trouble HDD does not operate properly in the machine with HDD installed.
+Causes;HDD is not installed properly to the Controller PWB. HDD does not operate properly in the Controller PWB. Controller PWB trouble
+Remedy;Check installation of HDD to the Controller PWB. Check connection of the harness of HDD to the Controller PWB. Use DIAG (SIM 62-2, -3) to check read/write of HDD. Replace HDD. Replace Controller PWB.
+Code;E7-06
+Description;Decode error trouble A decode error occurs during making of an image.
+Causes;Data error during input from PCI to PM. PM trouble Data error during image compression/ transfer. Controller PWB abnormality
+Remedy;Check insertion of the PWB. (PCI bus) If the error occurred in a FAX job, check installation of the FAX PWB. For the other cases, check the Controller PWB. Replace the Controller PWB.
+Code;E7-10
+Description;Shading trouble (Black correction) CCD black scan level abnormality when the copy lamp is off.
+Causes;Abnormal installation of flat cable to CCD unit. CCD unit abnormality Scanner PWB abnormality
+Remedy;Check installation of CCD unit flat cable. Check CCD unit. Check scanner PWB.
+Code;E7-11
+Description;Shading trouble (White correction) CCD white reference plate scan level abnormality when the copy lamp is ON.
+Causes;Abnormal installation of flat cable to CCD unit. Dirt on mirror, lens, white reference plate Copy lamp lighting abnormality Abnormal installation of CCD unit CCD unit abnormality Scanner PWB abnormality
+Remedy;Clean mirror, lens, and white reference plate. Check copy lamp light quantity (SIM 5-3) and lighting. Check CCD unit. Check scanner PWB.
+Code;E7-14
+Description;CCD communication trouble Communication trouble (clock sync) between scanner PWB and CCD-ASIC
+Causes;Abnormal installation of harness to CCD unit CCD unit abnormality Scanner PWB abnormality
+Remedy;Check CCD unit harness. Check CCD unit. Check scanner PWB.
+Code;E7-50
+Description;LSU connection trouble An LSU which does not conform to the machine is installed.
+Causes;PCU PWB trouble LSU trouble
+Remedy;Check LSU PWB. Check PCU PWB. Check connection of the connector and the harness between PCU and LSU.
+Code;E7-80
+Description;Communication trouble (ICU detection) between ICU and scanner Communication establishment error/Fleming/ Parity/Protocol error
+Causes;Defective connection of slave unit PWB connector Defective harness between slave unit PWB and Controller PWB Slave unit PWB mother board connector pin breakage
+Remedy;Check connector and harness of slave unit PWB and Controller PWB. Check grounding of machine.
+Code;E7-90
+Description;PCU communication trouble Communication establishment error/Fleming/ Parity/Protocol error
+Causes;Defective connection of slave unit PWB connector Defective harness between slave unit PWB and Controller PWB Slave unit PWB mother board connector pin breakage
+Remedy;Check connector and harness of slave unit PWB and Controller PWB. Check grounding of machine.
+Code;EE-EL
+Description;Auto developer adjustment trouble (Over-toner) The sample data is at 68 or below when auto developer adjustment is performed.
+Causes;Toner concentration sensor trouble Charging voltage, developing voltage abnormality Insufficient toner concentration Developing unit trouble PCU PWB trouble
+Remedy;Use DIAG (SIM25-2) to perform auto developer adjustment.
+Code;EE-EU
+Description;Auto developer adjustment trouble (Under-toner) The sample data is of 168 or above when auto developer adjustment is performed.
+Causes;Insufficient toner concentration Charging voltage, developing voltage abnormality Insufficient toner concentration Developing unit trouble PCU PWB trouble
+Remedy;Use DIAG (SIM25-2) to perform auto developer adjustment.
+Code;F1-00
+Description;Finisher (AR-FN6) communication trouble Communication cable test error after turning on the power or exiting from DIAG. Communication error with the finisher
+Causes;Improper connection or disconnection of connectors and harness between the machine and the finisher. Finisher control PWB trouble Control PWB (PCU) trouble Malfunction by noises
+Remedy;Canceled by turning OFF/ON the power. Check connectors and harness in the communication line. Replace the finisher control PWB or PCU PWB.
+Code;F1-00
+Description;Mail-bin stacker (AR-MS1) communication trouble Communication cable test error after turning on the power or exiting from DIAG. Communication error with the Mail-bin stacker.
+Causes;Improper connection or disconnection of connector and harness between the machine and the Mail-bin stacker. Mail-bin stacker control PWB trouble Control PWB (PCU) trouble Malfunction by noises
+Remedy;Canceled by turning OFF/ON the power. Check harness and connector in the communication line. Replace the Mail-bin stacker PWB or PCU PWB.
+Code;F1-02
+Description;Mail-bin stacker (AR-MS1) transport motor abnormality Transport motor trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Mail-bin stacker control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation
+Code;F1-02
+Description;Mail-bin stacker (AR-MS1) transport motor abnormality Transport motor trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Mail-bin stacker control PWB trouble
+Remedy;Use DIAG (SIM3-21) to check the transport motor operation.
+Code;F1-03
+Description;Console finisher (AR-FN7) paddle motor trouble Paddle motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-06
+Description;Console finisher (AR-FN7) slide motor trouble Slide motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-08
+Description;Finisher (AR-FN6) staple shift motor trouble Staple motor drive trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check operations of the staple motor.
+Code;F1-10
+Description;Finisher (AR-FN6) stapler motor trouble Stapler motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-10
+Description;Console finisher (AR-FN7) stapler motor trouble Stapler motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-11
+Description;Finisher (AR-FN6) bundle exit motor trouble Bundle exit motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-11
+Description;Console finisher (AR-FN7) bundle exit motor trouble Bundle exit motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-12
+Description;Mail-bin stacker (AR-MS1) gate trouble Gate operation abnormality
+Causes;Gate lock Mail-bin stacker control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation
+Code;F1-12
+Description;Mail-bin stacker (AR-MS1) gate trouble Gate operation abnormality
+Causes;Gate lock Mail-bin stacker control PWB trouble
+Remedy;Use DIAG (SIM3-21) to check the transport gate operation.
+Code;F1-15
+Description;Finisher (AR-FN7) lift motor trouble Lift motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-19
+Description;Finisher (AR-FN7) front alignment motor trouble Front alignment motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-20
+Description;Finisher (AR-FN6) rear alignment motor trouble Rear alignment motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-20
+Description;Finisher (AR-FN7) rear alignment motor trouble Rear alignment motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-30
+Description;Console finisher (AR-FN7) communication trouble Communication cable test error after turning on the power or exiting from DIAG. Communication error with the console finisher
+Causes;Improper connection or disconnection of connector and harness between the machine and the console finisher. Console finisher control PWB trouble Control PWB (PCU) trouble Malfunction by noises
+Remedy;Canceled by turning OFF/ON the power. Check connectors and harness in the communication line. Replace the console finisher control PWB or PCU PWB.
+Code;F1-31
+Description;Console finisher (AR-FN7) fold sensor trouble Sensor input value abnormality
+Causes;Sensor breakage harness breakage Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-2) to check the sensor operation.
+Code;F1-32
+Description;Communication trouble between the console finisher (AR-FN7) and the punch unit (AR-PN1). Communication err between the console finisher and the punch unit.
+Causes;Improper connection or disconnection of connector and harness between the console finisher and the punch unit. Console finisher control PWB trouble Control PWB (PCU) trouble Malfunction by noise
+Remedy;Canceled by turning OFF/ON the power. Check connectors and harness in the communication line. Replace the console finisher control PWB.
+Code;F1-33
+Description;Console finisher (AR-FN7) punch (AR-PN1) side registration motor trouble Punch side registration motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-34
+Description;Console finisher (AR-FN7) punch (AR-PN1) motor trouble Punch motor operation abnormality
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-35
+Description;Console finisher (AR-FN7) punch (AR-PN1) side registration sensor trouble Sensor input value abnormality
+Causes;Sensor breakage Harness disconnection Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-2) to check the sensor operation.
+Code;F1-36
+Description;Console finisher (AR-FN7) punch (AR-PN1) timing sensor trouble Sensor input value abnormality
+Causes;Sensor breakage Harness disconnection Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-2) to check the sensor operation.
+Code;F1-37
+Description;Console finisher (AR-FN7) backup RAM trouble Backup RAM contents are disturbed.
+Causes;Console finisher control PWB trouble Malfunction by noise
+Remedy;Replace the console finisher control PWB.
+Code;F1-38
+Description;Console finisher (AR-FN7) punch (AR-PN1) backup RAM trouble Punch unit backup RAM contents are disturbed.
+Causes;Punch control PWB trouble Malfunction by noise
+Remedy;Replace the punch control PWB.
+Code;F1-80
+Description;Mail-bin stacker (AR-MS1) power abnormality The 24V power is not supplied to the Mail-bin stacker PWB.
+Causes;Improper connection or disconnection of connector and harness Mail-bin stacker control PWB trouble Power unit (AR-DC1) trouble
+Remedy;Use DIAG (SIM3-2) to check the sensor.
+Code;F1-80
+Description;Mail-bin stacker (AR-MS1) power abnormality The 24V power is not supplied to the Mail-bin stacker PWB.
+Causes;Improper connection or disconnection of connector and harness Mail-bin stacker control PWB trouble Power unit (AR-DC1) trouble
+Remedy;Use DIAG (SIM3-20) to check the sensor operation.
+Code;F1-81
+Description;Console finisher transport motor abnormality Transport motor trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Console finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation.
+Code;F1-87
+Description;Finisher (AR-FN6) staple rotation motor trouble Front staple rotation motor trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Finisher control PWB trouble
+Remedy;Use DIAG (SIM3-3) to check the motor operation
+Code;F2-00
+Description;Toner control sensor abnormality Toner control sensor output open
+Causes;Connector harness trouble Connector disconnection
+Remedy;Check connection of the toner control sensor. Check connection of connector and harness to the main PWB. Check for disconnection of harness.
+Code;F2-02
+Description;Toner supply abnormality Toner control sensor output value becomes under-toner too earlier.
+Causes;Connector harness trouble Toner control sensor trouble The toner cartridge seal is not removed
+Remedy;Check connection of the connector in the toner motor section. Check connection of connector and harness to the main PWB. Check for disconnection of harness. Toner control sensor output check DIAG (SIM25-1) Remove the toner cartridge seal.
+Code;F2-04
+Description;Improper cartridge (life cycle error, etc.) An improper process cartridge is inserted.
+Causes;IC chip trouble Improper cartridge
+Remedy;IC chip trouble Improper cartridge
+Code;F2-05
+Description;CRUM error Communication with IC chip cannot be made.
+Causes;IC chip trouble Improper cartridge
+Remedy;Insert a proper cartridge.
+Code;F2-39
+Description;Process thermistor trouble Process thermistor open
+Causes;Process thermistor trouble Process thermistor harness disconnection PCU PWB trouble
+Remedy;Check connection of harness and connector of the process thermistor. Check PCU PWB.
+Code;F3-12
+Description;Machine no. 1 tray lift-up trouble PED does not turn ON in the specified time. LUD does not turn ON in the specified time.
+Causes;PED/LUD trouble No. 1 tray lift-up trouble Check connection of harness between the PCVU PWB, lift-up unit, and paper feed unit.
+Remedy;Check PED, LUD, and their harness and connectors. Check the lift-up unit.
+Code;F3-22
+Description;Multi purpose tray lift-up trouble MCPED does not turn ON in the specified time. MCLUD does not turn ON in the specified time.
+Causes;MCPED/MCLUD trouble Multi purpose tray lift-up motor trouble Harness disconnection f the PCU PWB, the lift-up unit, and the paper feed unit.
+Remedy;Check MCPED, PCLUD, and their harness and connectors. Check the lift-up unit.
+Code;F6-00
+Description;Communication trouble (ICU detection) between ICU and FAX Communication establishment error/Fleming/ Parity/Protocol error
+Causes;Slave unit PWB connector disconnection Harness abnormality between slave unit PWB and ICU PWB. Slave unit PWB mother board connector pin breakage Slave unit ROM abnormality/No ROM/ Reverse insertion of ROM/ROM pin breakable
+Remedy;Check connector harness between slave unit PWB and ICU PWB. Check grounding of machine. Check slave unit PWB ROM.
+Code;F6-01
+Description;FAX expansion flash memory abnormality (ICU detection) Expansion flash memory with SRAM backup data is installed
+Causes;SRAM backup data is detected in expansion flash memory. Expansion flash memory in which SRAM data are backed up with SIM 66-19 is installed.
+Remedy;Restore backup data to SRAM with SIM 66- 20, and clear expansion flash memory with SIM 66-10. If data are unnecessary, clear expansion flash memory with SIM 66- 10.
+Code;F6-04
+Description;FAX modem operation abnormality FAX PWB modem chip operation abnormality
+Causes;The boot test pin in the FAX PWB is shorted and normal operation is tried. Modem chip operation abnormality in FAX PWB
+Remedy;Turn on the power again without shorting the boot test pin in the FAX PWB. Replace FAX PWB.
+Code;F7-01
+Description;FAX board EEPROM read/write error EEPROM access error (read/write)
+Causes;EEPROM trouble FAX PWB EEPROM access circuit trouble
+Remedy;Replace FAX PWB.
+Code;F9-02
+Description;PRT Centro port check error Controller Centro port trouble
+Causes;Centro port trouble Controller PWB trouble
+Remedy;Replace the Controller PWB.
+Code;F9-03
+Description;NIC port check error
+Causes;NIC port trouble NIC PWB trouble Controller PWB trouble
+Remedy;Replace the NIC PWB. Replace the Controller PWB.
+Code;H2-xx
+Description;thermistor open Fusing unit not installed Thermistor is open. (An input voltage of 2.92V or above is detected.) Fusing unit not installed
+Causes;Thermistor trouble Control PWB trouble Fusing section connector disconnection AC power trouble Fusing unit not installed
+Remedy;Check harnesses and connectors from the thermistor to the control PWB. Use DIAG (SIM14) to clear the self diag display.
+Code;H3-xx
+Description;Fusing section high temperature trouble The fusing temperature exceeds 242°C. (An input voltage of 0.27V or above is detected.)
+Causes;thermistor trouble Control PWB trouble Fusing section connector disconnection AC power trouble
+Remedy;Use DIAG (SIM5-2) to check the heater lamp Blinking operation. If the heater lamp blinks normally: Check the thermistor and its harness. Check the thermistor input circuit in the control PWB. If the heater lamp keep lighting: Check the AC PWB and the lamp control circuit in the control PWB. Use DIAG (SIM14) to cancel the trouble
+Code;H4-xx
+Description;Fusing section low temperature trouble •The set temperature is not reached within the specified time (normally 3 min) when warming up or resetting from pre-heating. •Under the ready state. (An input voltage of 1.21V or below is detected 5 times continuously.)
+Causes;thermistor trouble Heater lamp trouble Control PWB trouble Thermostat trouble AC power trouble Interlock switch trouble
+Remedy;Use DIAG (SIM5-2) to check the heater lamp Blinking operation. If the heater lamp blinks normally: Check the thermistor and its harness. Check the thermistor input circuit in the control PWB. If the heater lamp does not light: Check for heater lamp disconnection and thermostat disconnection. Check the interlock switch. Check the AC PWB and the lamp control circuit in the control PWB. Use DIAG (SIM14) to cancel the trouble.
+Code;H5-01
+Description;5-time continuous POD1 not-reaching jam detection 5-time continuous POD1 not-reaching jam detection
+Causes;A fusing section jam is not properly removed. (Jam paper remains.) POD1 sensor trouble, or harness disconnection Improper installation of fusing unit
+Remedy;Check jam paper in the fusing section. (winding, etc.) Check POD1 sensor harness, and check the fusing unit installation. Use DIAG (SIM14) to cancel the trouble.
+Code;L1-00
+Description;Scanner feed trouble Scanner feed is not completed within the specified time.
+Causes;Scanner unit abnormality Scanner wire disconnection
+Remedy;Check scanning with SIM 1-1.
+Code;L3-00
+Description;Scanner return trouble Scanner return is not completed within the specified time.
+Causes;Scanner unit abnormality Scanner wire disconnection
+Remedy;Check scanning with SIM 1-1.
+Code;L4-01
+Description;Main motor lock detection The motor lock signal is detected for 1.5sec during rotation of the main motor.
+Causes;main motor trouble Check connection of harness between the PCU PWB and the main motor. Control circuit trouble
+Remedy;Use DIAG (SIM25-1) to check the main motor operation. Check harness and connector between the PCU PWB and the main motor.
+Code;L4-02
+Description;Drum motor lock detection The motor lock signal is detected for 1.5sec during rotation of the drum motor.
+Causes;Drum motor trouble Improper connection of harness between the PCU PWB and the drum motor. Control circuit trouble
+Remedy;Use DIAG (SIM25-1) to check the drum motor operation. Check harness and connector between the PCU PWB and the drum motor.
+Code;L6-10
+Description;Polygon motor lock detection It is judged that the polygon motor lock signal is not outputted. Lock signal is checked in the interval of 10sec after starting the polygon motor, and it is judged that the polygon motor does not rotate normally.
+Causes;The LSU connector or harness in the LSU is disconnected or broken. Polygon motor trouble
+Remedy;Use DIAG (SIM61-1) to check the polygon motor operation. Check connector and harness connection. Replace LSU.
+Code;L8-01
+Description;No fullwave signal Full wave signal is not detected.
+Causes;The PCU PWB connector or the power unit harness is disconnected or broken. PCU PWB trouble Power unit trouble
+Remedy;Check connection of the harness and connector. Replace PCU PWB. Replace the power unit.
+Code;L8-02
+Description;Full wave signal width abnormality It is judged as full wave signal frequency abnormality. (When the detection cycle is judged as 69Hz or above or 42.5Hz or below)
+Causes;The connector or harness of the PCU PWB and the power PWB is disconnected. PCU PWB trouble Power unit trouble
+Remedy;Check connection of the harness and connector. Replace the PCU PWB. Replace the power unit.
+Code;PF-00
+Description;RIC copy inhibit signal is received. Copy inhibit command from RIM (host) is received.
+Causes;Judged by the host.
+Remedy;Inform to the host.
+Code;U1-01
+Description;FAX Battery abnormality Backup SRAM battery voltage fall
+Causes;Battery life Battery circuit abnormality
+Remedy;Check that the battery voltage is about 2.5V or above. Check the battery circuit.
+Code;U102
+Description;RTC read abnormality (common with FAX, on ICU PWB) The value read from RTC on ICU PWB is [EE]h (abnormal).
+Causes;RTC circuit abnormality Battery voltage fall Battery circuit abnormality
+Remedy;Set the time again with key operation, and check that time advances properly. Check RTC circuit. Check that battery voltage is about 2.5V or above. Check battery circuit.
+Code;U2-00
+Description;EEPROM read/write error (Controller) EEPROM write error
+Causes;EEPROM trouble EEPROM is not initialized. Controller PWB EEPROM access circuit trouble
+Remedy;Check that EEPROM is properly inserted. Save the counter/adjustment values with the DIAG simulation. Use DIAG (SIM16) to cancel U2 trouble. Replace the Controller PWB.
+Code;U2-11
+Description;Counter check sum error (Controller) Counter data area check sum error
+Causes;EEPROM trouble Control circuit trouble by noise Controller PWB EEPROM access circuit trouble
+Remedy;Check that EEPROM is properly inserted. Save the counter/adjustment values with the DIAG simulation. Use DIAG (SIM16) to cancel U2 trouble. Replace the Controller PWB.
+Code;U2-12
+Description;Adjustment value check sum error (Controller) Adjustment data area check sum error
+Causes;EEPROM trouble Control circuit trouble by noise Controller PWB EEPROM access circuit trouble
+Remedy;Check that EEPROM is properly inserted. Save the counter/adjustment values with the DIAG simulation. Use DIAG (SIM16) to cancel U2 trouble. Replace the Controller PWB.
+Code;U2-80
+Description;EEPROM read/write error (Scanner) Scanner EEPROM write error
+Causes;EEPROM abnormality EEPROM which is not initialized is installed. Hang of control circuit due to noises Scanner PWB EEPROM access circuit abnormality
+Remedy;Check that EEPROM is set properly. Record counter/adjustment values with the simulation to protect the data from being deleted. Cancel U2 trouble with SIM 16. Replace scanner PWB.
+Code;U2-81
+Description;Memory check sum error (Scanner) Scanner memory check sum error
+Causes;EEPROM trouble Control circuit freeze by noises Scanner PWB EEPROM access circuit trouble
+Remedy;Check that EEPROM is set properly. Record counter/adjustment values with the simulation to protect the data from being deleted. Cancel U2 trouble with SIM 16. Replace scanner PWB.
+Code;U2-90
+Description;EEPROM read/write error (PCU) PCU EEPROM write error
+Causes;EEPROM trouble EEPROM is not initialized. Hang of control circuit due to noises PCU PWB EEPROM access circuit trouble
+Remedy;Check that EEPROM is properly inserted. Save the counter/adjustment values with the DIAG simulation. Use DIAG (SIM16) to cancel U2 trouble. Replace the Controller PWB.
+Code;U2-91
+Description;Memory check sum error (PCU) PCU memory check sum error
+Causes;EEPROM trouble EEPROM is not initialized. PCU PWB EEPROM access circuit trouble Uninitialized EEPROM installed.
+Remedy;Check that EEPROM is properly inserted. Save the counter/adjustment values with the DIAG simulation. Use DIAG (SIM16) to cancel U2 trouble. Replace the Controller PWB.
+Code;U6-00
+Description;Desk/LCC communication trouble Desk/LCC communication error Communication cable test error after turning on the power or exiting DIAG.
+Causes;Improper connection or disconnection of connector and harness Desk control PWB trouble Control PWB (PCU) trouble Noise or interference
+Remedy;Canceled by turning OFF/ON the power. Check connection of the harness and connector in the communication line.
+Code;U6-01
+Description;Desk/LCC No. 1 tray lift-up trouble Desk/LCC No. 1 tray lift-up trouble
+Causes;Sensor trouble Desk control PWB trouble Gear breakage Lift-up motor trouble
+Remedy;Use DIAG (SIM4-2) to check the lift-up sensor detection. Use DIAG (SIM4-3) to check the lift-up motor operation.
+Code;U6-02
+Description;Desk No. 2 tray/LCC1 lift-up trouble Desk No. 2 tray/LCC lift-up trouble
+Causes;Sensor trouble Desk control PWB trouble Gear breakage Lift-up motor trouble
+Remedy;Use DIAG (SIM4-2) to check the lift-up sensor detection. Use DIAG (SIM4-3) to check the lift-up motor operation.
+Code;U6-03
+Description;Desk No. 3 tray/LCC2 lift-up trouble
+Causes;Sensor trouble Desk control PWB trouble Gear breakage Lift-up motor trouble
+Remedy;Use DIAG (SIM4-2) to check the lift-up sensor detection. Use DIAG (SIM4-3) to check the lift-up motor operation.
+Code;U6-10
+Description;Desk/LCC transport motor trouble Desk/LCC transport motor operation trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to the motor Desk control PWB trouble
+Remedy;Use DIAG (SIM4-3) to check the transport motor operation.
+Code;U7-00
+Description;RIC communication trouble RIC communication trouble Communication cable test error after turning on the power or exiting DIAG.
+Causes;Disconnection of connector and harness RTC control PWB trouble Control PWB (Controller) trouble Noise or interference
+Remedy;Canceled by turning OFF/ON the power. Check connector and harness in the communication line.

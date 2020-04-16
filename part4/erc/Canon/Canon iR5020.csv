@@ -1,0 +1,391 @@
+Code;E000-000
+Description;"The main thermistor (TH1) has poor contact or an open circuit. The thermal switch (TP1) has an open circuit. The fixing heater has an open circuit. The AC driver is faulty. The DC controller PCB is faulty.
+ After the main power switch is turned on, the temperature detected by the main thermistor does not reach 70°C.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E001-0001
+Description;"The main thermistor (TH1) has a short circuit. The sub thermistor (TH2) has detected overheating. The AC driver is faulty. The DC controller PCB is faulty.
+ The main thermistor or the sub thermistor has detected about 230°C or higher for 2 sec.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E001-0002
+Description;"The main thermistor (TH1) has a short circuit. The sub thermistor (TH2) has detected overheating. The AC driver is faulty. The DC controller PCB is faulty.
+ The main thermistor has detected 230°C or higher (hard circuit detection).
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E001-0003
+Description;"The main thermistor (TH1) has a short circuit. The sub thermistor (TH2) has detected overheating. The AC driver is faulty.
+ The DC controller PCB is faulty.The sub thermistor has detected about 236°C or higher.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E002-0000
+Description;"The main thermistor (TH1) has poor contact or an open circuit. The thermal switch (TP1) has an open circuit. The AC driver is faulty. The DC controller is faulty.
+ The temperature of the upper fixing roller does not reach 100°C within 2 min after it has exceeded 70°C.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E003-0000
+Description;"The main thermistor (TH1) has poor contact or an open circuit. The thermal switch (TP1) has an open circuit. The fixing heater has an open circuit. The AC driver is faulty. The DC controller PCB is faulty.
+ The temperature detected by the main thermistor is 70°C for 2 sec or more after it has reached 100°C.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E004-0000
+Description;"The AC driver has a short circuit. The DC controller PCB is faulty.
+ The AC driver is found to have a short circuit (hard circuit detection).
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E005-0000
+Description;"The fixing web has been taken up. The fixing web length sensor (PS45) is faulty. The DC controller PCB is faulty.
+ The length of fixing web that has been taken up is in excess of the specified length.
+ After replacing the fixing web, be sure to reset the two web counters in service mode: COPIER>COUNTER>MISC>FIX-WEB and COPIER> COUNTER>DRBL-1>FX-WEB"
+Code;E010-0000
+Description;"The main motor (M2) is faulty. The DC controller PCB is faulty.
+ The clock pulses do not arrive for 2 secs or more after the main motor drive signal (MMFG) has been generated."
+Code;E012-0000
+Description;"The drum motor (M1) is faulty. The DC controller PCB is faulty.
+ The clock pulses do not arrive for 2 secs or more after the drum motor drive signal (DMFG) has been generated."
+Code;E013-0000
+Description;"The waste toner feedscrew is faulty. The water toner clock sensor (MSW2) is faulty. The DC controller PCB is faulty.
+ The rotation of the waste toner feedscrew goes out of order, and the switch (MSW2) is pressed multiple times during a specific period of time."
+Code;E014-0000
+Description;"The fixing motor (M19) is faulty. The DC controller PCB is faulty.
+ The motor clock signal is detected for 2 secs or more continuously after the fixing motor drive signal has been generated."
+Code;E020-0000
+Description;"The hopper connector is left disconnected. The hopper motor (M9/M10) is faulty. The toner sensor (TS1/TS2) is faulty. The DC controller PCB is faulty.
+ During printing, the toner supply signal is '0' (absence of toner) for 2 mins."
+Code;E032-0001
+Description;"The copy data controller or the remote diagnostic device is faulty. The Main controller PCB is faulty.
+ Although once connected, the copy data controller or the remote diagnostic device has become disconnected."
+Code;E061-0001
+Description;"The laser shutter is faulty. The laser unit is faulty. The potential measurement PCB is faulty. The DC controller PCB is faulty.
+ As the result of potential control, the drum surface potential (VL2) of the white background is about 200 V (generating solid black images)."
+Code;E061-0002
+Description;"The laser shutter is faulty. The laser unit is faulty. The potential measurement PCB is faulty. The DC controller PCB is faulty.
+ The primary charging output used for print output and the drum surface potential after laser output has been made are about 200 V (generating solid black images)."
+Code;E100-0001
+Description;"The BD PCB is faulty. The laser unit is faulty. The laser driver PCB is faulty. The wiring is faulty (short circuit, open circuit). The DC controller PCB is faulty.
+ In 100 msec after the laser drive signal has been generated, the BD signal is not detected 50 times or more within 40 msecs."
+Code;E100-0002
+Description;"The BD PCB is faulty. The laser unit is faulty. The laser driver PCB is faulty. The wiring is faulty (short circuit, open circuit). The DC controller PCB is faulty.
+ While the laser is on, the BD signal cycle is found to be outside a specific range 10 times or more."
+Code;E110-0001
+Description;"The laser scanner motor (M15) is faulty. The wiring is faulty (short circuit, open circuit). The DC controller PCB is faulty
+ • After the laser scanner motor drive signal has been generated, the motor ready signal (LMRDY*) does not arrive for 15 secs or more. (stop - full speed, half-speed - full speed) • During the period of 'full speed ® half speed', the motor ready signal does not arrive for 60 secs or more after the speed change signal has been generated. • During the period of 'full speed rotation', the motor ready signal is not detected 50 times or more (t intervals of 100 msec)."
+Code;E121-0001
+Description;"The controller cooling fan (FM4) is faulty. The wiring is faulty (short circuit, open circuit). The DC controller PCB is faulty.
+ Although the controller cooling fan (FM4) is being driven, the clock signal (FM4CLK) does not arrive for 5 secs or more."
+Code;E196
+Description;"The EEPROM on the DC controller PCB is faulty. The location of the EEPROM is wrong. The DC controller PCB is faulty.
+ 1abb: When data is written to the EEPROM, the data written and the data read do not match. 2abb: When the ID read into the EEPROM and the ID into the ROM are compared, a mismatch is found. 3abb: When ID in the EEPROM and the ID in the ROM are compared after the main power switch is turned on, a mismatch is found. a: chip Nos. 0 through 5 (0: IC104, 1: IC105, 2: IC109, 3: IC110, 4: IC127, 5: IC130) bb: chip faulty address (bit)"
+Code;E202-0001
+Description;"The scanner HP sensor (PS39) is faulty. The scanner motor (M3) is faulty. The reader controller PCB is faulty.
+ The scanner HP sensor does not turn off even when the scanner has been moved 40 mm forward after the main power switch has been turned on or the Start key has been pressed."
+Code;E202-0002
+Description;"The scanner HP sensor (PS39) is faulty. The scanner motor (M3) is faulty. The reader controller PCB is faulty.
+ The scanner HP sensor does not turn on even when the scanner has been moved 450 mm in reverse."
+Code;E204-0001
+Description;"The ADF controller PCB is faulty. The reader controller PCB is faulty.
+ During printing, the image leading edge signal does not arrive from the ADF."
+Code;E220-0001
+Description;"The lamp inverter PCB is faulty. The reader controller PCB is faulty.
+ The lamp inverter PCB is found to have a fault."
+Code;E225-0000
+Description;"The scanning lamp (xenon tube) is faulty. The inverter PCB is faulty. The CCD/AP PCB is faulty. The reader controller PCB is faulty.
+ A specific signal level cannot be attained by CCD gain correction at power-on."
+Code;E225-0002
+Description;"The scanning lamp (xenon tube) is faulty. The inverter PCB is faulty. The CCD/AP PCB is faulty. The reader controller PCB is faulty.
+ The edge gain correction value changed more than a specific level compared with the correction value used for the preceding sheet."
+Code;E240-0000
+Description;"The main controller PCB. The DC controller PCB is faulty.
+ An error has occurred in the communication between the main controller PCB and the CPU of the DC controller PCB."
+Code;E240-010B
+Description;"The main controller PCB. The DC controller PCB is faulty.
+ An error occurred in the sequence during printing."
+Code;E243-0000
+Description;"The control panel CPU PCB is faulty. The main controller PCB is faulty.
+ An error has occurred in communication between the CPU of the control panel CPU PCB and the main controller PCB."
+Code;E248-0001
+Description;"The EEPROM on the reader controller PCB is faulty. The reader controller PCB is faulty.
+ The ID read into the EEPROM when the main power switch has been turned on and the ID in the ROM do not match."
+Code;E248-0002
+Description;"The EEPROM on the reader controller PCB is faulty. The reader controller PCB is faulty.
+ When data is written into EEPROM, the data written and the data read do not match."
+Code;E248-0003
+Description;"The EEPROM on the reader controller PCB is faulty. The reader controller PCB is faulty.
+ When data is written, the ID in the EEPROM and the ID in the ROM are found not to match."
+Code;E302-0001
+Description;"The CCD/AP PCB is faulty. The wiring is faulty (short circuit, open circuit). The reader controller PCB is faulty.
+ During shading, the reader controller PCB does not end shading in 1 sec."
+Code;E302-0002
+Description;"The CCD/AP PCB is faulty. The wiring is faulty (short circuit, open circuit). The reader controller PCB is faulty.
+ In stream reading, the edge white accumulation (processing) does not end after a period of 10 secs."
+Code;E315-0007
+Description;"Main controller PCB, Hard disk drive
+ When a start command is seen to the encoder of the compression/ extension element of the main controller, an end interrupt does not occur after 4 sec."
+Code;E315-0010
+Description;"Main controller PCB, Hard disk drive
+ When a start command is sent to the compression/extension element of the main controller at time of decoding, an end interrupt does not occur after 4 sec."
+Code;E412-0001
+Description;"The cooling fan (FM1) is faulty. The ADF controller PCB is faulty.
+ While the cooling fan is being driven, the lock signal (FMLCK) arrives for 100 msec or more."
+Code;E420-0001
+Description;"The EEPROM is faulty. The ADF controller PCB is faulty.
+ When the host machine's power switch is turned on, the backup data of the EEPROM cannot be read or the data, if read, has an error."
+Code;E421-0001
+Description;"The EEPROM is faulty. The ADF controller PCB is faulty.
+ Backup data cannot be written to the EEPROM or the data, if written, has an error."
+Code;E422-0001
+Description;"The IPC communication has an error. The communication line has an open circuit. The ADF controller PCB is faulty.
+ While the machine is in standby, the communication with the host machine has been interrupted for 5 secs or more. or, while the machine is in operation, the communication with the host machine has been interrupted for 0.5 sec or more."
+Code;E500-0001
+Description;"The finisher controller PCB is faulty. The DC controller PCB is faulty.
+ The communication between the host machine and the finisher has been interrupted; this error is detected by the host machine."
+Code;E503-0002
+Description;"The saddle stitcher controller PCB is faulty. The finisher controller PCB is faulty.
+ The communication between the saddle stitcher controller PCB and the finisher controller PCB has been interrupted."
+Code;E504-0001
+Description;"The height sensor (PS1) is faulty. The finisher controller PCB is faulty.
+ Communication between the height sensor and the finisher controller PCB is not possible, or communication data has an error."
+Code;E504-0002
+Description;"The height sensor (PS1) is faulty. The finisher controller PCB is faulty.
+ Communication between the height sensor and the finisher controller PCB is not possible for a specific period of time."
+Code;E504-0003
+Description;"The height sensor (PS1) is faulty. The finisher controller PCB is faulty.
+ At time of power-on, the connector of the height sensor is found to be disconnected."
+Code;E504-0004
+Description;"The height sensor (PS1) is faulty. The finisher controller PCB is faulty.
+ When the height sensor is being adjusted using the DIP switch, an error occurred during the adjustment."
+Code;E505-0001
+Description;"The EEPROM is faulty. The finisher controller PCB is faulty. The puncher driver PCB is faulty.
+ When the power switch is turned on, the check sum of the EEPROM on the finisher controller PCB is found to have an error."
+Code;E505-0002
+Description;"The EEPROM is faulty. The finisher controller PCB is faulty. The puncher driver PCB is faulty.
+ When the power switch is turned on, the check sum of the EEPROM on the puncher driver PCB is found to have an error."
+Code;E512-0001
+Description;"The delivery motor clock sensor (PI10) is faulty. The delivery motor (M2) is faulty. The finisher controller PCB is faulty
+ When operation starts, as many clocks as needed do not arrive from the delivery motor clock sensor."
+Code;E512-0002
+Description;"The delivery motor clock sensor (PI10) is faulty. The delivery motor (M2) is faulty. The finisher controller PCB is faulty
+ No clock pulse arrives while paper is being moved over a distance of 200 mm."
+Code;E530-0001
+Description;"The alignment plate home position sensor (PI6) is faulty. The alignment motor (M3) is faulty. The finisher controller PCB is faulty.
+ The alignment plate does not leave home position when the alignment motor has been driven for 2 secs."
+Code;E530-0002
+Description;"The alignment plate home position sensor (PI6) is faulty. The alignment motor (M3) is faulty. The finisher controller PCB is faulty.
+ The alignment plate does not return to home position when the alignment motor has been driven for 2 secs."
+Code;E531-0001
+Description;"The stapler home position detecting switch (MS7) is faulty. The stapler motor (M6) is faulty. The finisher controller PCB is faulty.
+ The stapler does not leave home position when the stapler motor has been driven for 0.5 sec."
+Code;E531-0002
+Description;"The stapler home position detecting switch (MS7) is faulty. The stapler motor (M6) is faulty. The finisher controller PCB is faulty.
+ The stapler does not return to home position when the stapler motor has been driven for 0.5 sec."
+Code;E532-0001
+Description;"The stapler shift home position sensor (PI7) is faulty. The stapler shift motor (M4) is faulty. The finisher controller PCB is faulty.
+ The stapler unit does not leave home position when the stapler shift motor has been driven for 4 secs."
+Code;E532-0002
+Description;"The stapler shift home position sensor (PI7) is faulty. The stapler shift motor (M4) is faulty. The finisher controller PCB is faulty.
+ The stapler unit does not return to home position when the stapler shift motor has been driven for 4 secs."
+Code;E535-0001
+Description;"The swing motor clock sensor (PI20) is faulty. The swing guide open sensor (PI18) is faulty. The safety area switch (MS3) is faulty. The swing guide closed detecting switch 2 (MS6) is faulty. The swing motor (M7) is faulty. The finisher controller PCB is faulty.
+ The swing guide closed detecting switch 2 does not turn on when the swing motor has been rotated CCW for 1 sec."
+Code;E535-0002
+Description;"The swing motor clock sensor (PI20) is faulty. The swing guide open sensor (PI18) is faulty. The safety area switch (MS3) is faulty. The swing guide closed detecting switch 2 (MS6) is faulty. The swing motor (M7) is faulty. The finisher controller PCB is faulty.
+ While the tray is moving up, the tray upper limit detection switch is found to be on."
+Code;E535-0003
+Description;"The swing motor clock sensor (PI20) is faulty. The swing guide open sensor (PI18) is faulty. The safety area switch (MS3) is faulty. The swing guide closed detecting switch 2 (MS6) is faulty. The swing motor (M7) is faulty. The finisher controller PCB is faulty.
+ When the tray lift motor is driven, clock pulses do not arrive from the clock sensor 1/2 for 200 msecs."
+Code;E584-0001
+Description;"The shutter open sensor (PI5) is faulty. The safety area detecting switch (MS3) is faulty. The shutter closed detecting switch (MS4) is faulty. The No. 2 feed motor (M8) is faulty. The finisher controller PCB is faulty.
+ The shutter closed detecting switch does not turn on when the No. 2 feed motor has been rotated CCW for 1 sec or more"
+Code;E584-0002
+Description;"The shutter open sensor (PI5) is faulty. The safety area detecting switch (MS3) is faulty. The shutter closed detecting switch (MS4) is faulty. The No. 2 feed motor (M8) is faulty. The finisher controller PCB is faulty.
+ The shutter open sensor does not turn on when the No. 2 feed motor has been rotated CCW for 1 sec."
+Code;E584-0003
+Description;"The shutter open sensor (PI5) is faulty. The safety area detecting switch (MS3) is faulty. The shutter closed detecting switch (MS4) is faulty. The No. 2 feed motor (M8) is faulty. The finisher controller PCB is faulty.
+ While the tray lift motor is in operation, the shutter closed detecting switch is found to be off when the tray 1/2 is at OFF position of the safety area detecting switch."
+Code;E590-0001
+Description;"The punch home position sensor (PI3P) is faulty. The punch motor (M1P) is faulty. The punch driver PCB is faulty.
+ The puncher does not leave home position when the punch motor has been driven for 200 msecs."
+Code;E590-0002
+Description;"The punch home position sensor (PI3P) is faulty. The punch motor (M1P) is faulty. The punch driver PCB is faulty.
+ The puncher does not return to home position when the punch motor has been driven for 200 msecs."
+Code;E593-0001
+Description;"The horizontal registration home position sensor (PI1P) is faulty. The horizontal registration motor (M1P) is faulty. The punch driver PCB is faulty.
+ The puncher does not leave home position when the horizontal registration motor has been driven for 4 secs."
+Code;E593-0002
+Description;"The horizontal registration home position sensor (PI1P) is faulty. The horizontal registration motor (M1P) is faulty. The punch driver PCB is faulty.
+ The puncher does not return to home position when the horizontal registration motor has been driven for 4 secs."
+Code;E5F0-0001
+Description;"The paper positioning plate home position sensor (PI7S) is faulty. The paper positioning plate motor (M4S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper positioning plate home position sensor does not turn on when the paper positioning plate motor has been driven for about 1.3 secs."
+Code;E5F0-0002
+Description;"The paper positioning plate home position sensor (PI7S) is faulty. The paper positioning plate motor (M4S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper positioning plate home position sensor does not turn off 1 sec after the paper positioning plate motor has been driven for 1 sec."
+Code;E5F1-0001
+Description;"The folding motor clock sensor (PI4S) is faulty. The paper folding home position sensor (PI21S) is faulty. The folding motor (M2S) is faulty. The saddle stitcher controller PCB is faulty.
+ The number of detection pulses of the folding motor clock sensor drops below a specific value."
+Code;E5F1-0002
+Description;"The folding motor clock sensor (PI4S) is faulty. The paper folding home position sensor (PI21S) is faulty. The folding motor (M2S) is faulty. The saddle stitcher controller PCB is faulty.
+ The state of the paper folding home position sensor does not change when the folding motor has been driven for 3 secs."
+Code;E5F2-0001
+Description;"The guide home position sensor (PI13S) is faulty. The guide motor (M3S) is faulty. The saddle stitcher controller PCB is faulty.
+ The guide home position sensor does not turn on when the guide motor has been driven for about 0.5 sec."
+Code;E5F2-0002
+Description;"The guide home position sensor (PI13S) is faulty. The guide motor (M3S) is faulty. The saddle stitcher controller PCB is faulty.
+ The guide home position sensor does not turn off when the guide motor has been driven for 1 sec."
+Code;E5F3-0001
+Description;"The alignment home position sensor (PI5S) is faulty. The alignment motor (M5S) is faulty. The saddle stitcher controller PCB is faulty.
+ The alignment plate home position sensor does not turn on when the alignment motor has been driven for 0.5 sec (initially, driven for about 1.7 sec)."
+Code;E5F3-0002
+Description;"The alignment home position sensor (PI5S) is faulty. The alignment motor (M5S) is faulty. The saddle stitcher controller PCB is faulty.
+ The alignment plate home position sensor does not turn off when the alignment motor has been driven for 1 sec."
+Code;E5F4-0001
+Description;"The stitch home position sensor (rear, MS5S) is faulty. The stitch motor (rear, M6S) is faulty. The saddle stitcher controller PCB is faulty.
+ The stitcher home position sensor (rear) does not turn off when the stitch motor (rear) has been rotated CW for 0.5 sec or more.faulty."
+Code;E5F4-0002
+Description;"The stitch home position sensor (rear, MS5S) is faulty. The stitch motor (rear, M6S) is faulty. The saddle stitcher controller PCB is faulty.
+ The stitch home position sensor (rear) does not turn on when the stitch motor (rear) has been rotated CCW for 0.5 sec or more."
+Code;E5F5-0001
+Description;"The stitch home position senor (front, MS7S) is faulty. The stitch motor (front, M7S) is faulty. The saddle stitcher controller PCB is faulty.
+ The stitch home position sensor (front) does not turn off when the stitch motor (front) has been rotated CW for 0.5 sec or more."
+Code;E5F5-0002
+Description;"The stitch home position senor (front, MS7S) is faulty. The stitch motor (front, M7S) is faulty. The saddle stitcher controller PCB is faulty.
+ The stitch home position sensor (front) does not turn on when the stitch motor (front) has been rotated CCW for 0.5 sec or more."
+Code;E5F6-0001
+Description;"The paper push-on plate motor clock sensor (PI1S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate motor (M8S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper push-on plate home position sensor does not turn on when the paper push-on plate motor has been driven for 0.3 sec or more."
+Code;E5F6-0002
+Description;"The paper push-on plate motor clock sensor (PI1S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate motor (M8S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper push-on plate home position sensor does not turn off when the paper push-on plate motor has been driven for 0.3 sec or more."
+Code;E5F6-0003
+Description;"The paper push-on plate motor clock sensor (PI1S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate motor (M8S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper push-on plate leading edge position sensor does not turn off when the paper push-on plate motor has been driven for 0.3 sec or more."
+Code;E5F6-0004
+Description;"The paper push-on plate motor clock sensor (PI1S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate motor (M8S) is faulty. The saddle stitcher controller PCB is faulty.
+ The number of detection pulses of the paper push-on plate motor clock sensor drops below a specific value."
+Code;E5F6-0005
+Description;"The paper push-on plate motor clock sensor (PI1S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate motor (M8S) is faulty. The saddle stitcher controller PCB is faulty.
+ The paper push-on plate leading edge sensor does not turn on when the paper push-on plate motor has been driven for 0.3 sec or morere."
+Code;E5F8-0001
+Description;"The guide home position sensor (PI13S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The saddle stitcher controller PCB is faulty.
+ The connector of the guide home position sensor is found to be disconnected."
+Code;E5F8-0002
+Description;"The guide home position sensor (PI13S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The saddle stitcher controller PCB is faulty.
+ The connector of the paper home positioning plate home position sensor is found to be disconnected."
+Code;E5F8-0003
+Description;"The guide home position sensor (PI13S) is faulty. The paper push-on plate home position sensor (PI14S) is faulty. The paper push-on plate leading edge position sensor (PI15S) is faulty. The saddle stitcher controller PCB is faulty.
+ The connector of the paper push-on plate leading edge position sensor is found to be discontented."
+Code;E5F9-0001
+Description;"The inlet cover switch (MS1S) is faulty. The front cover switch (MS2S) is faulty. The delivery cover switch (MS3S) is faulty. The saddle stitch controller PCB is faulty.
+ When the inlet cover, front cover, and the delivery cover are found to be closed, the inlet cover switch detects an open condition for 1 sec or more from the start of the initial rotation of the host machine or the start of printing."
+Code;E5F9-0002
+Description;"The inlet cover switch (MS1S) is faulty. The front cover switch (MS2S) is faulty. The delivery cover switch (MS3S) is faulty. The saddle stitch controller PCB is faulty.
+ When the inlet cover, front cover, and delivery cover are found to be closed, the front cover switch detects an open condition for 1 sec or more after the start of the initial rotation of the host machine or the start of printing."
+Code;E5F9-0003
+Description;"The inlet cover switch (MS1S) is faulty. The front cover switch (MS2S) is faulty. The delivery cover switch (MS3S) is faulty. The saddle stitch controller PCB is faulty.
+ When the inlet cover, front cover, and delivery cover are found to be closed, the delivery cover switch detects an open condition for 1 sec or more from the start of the initial rotation of the host machine or the start of printing."
+Code;E601-0000
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The DC controller PCB is faulty. The main controller PCB is faulty.
+ The main controller PCB has detected an error in control data while an image was transmitted between the main controller PCB and the hard disk drive."
+Code;E601-0001
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The DC controller PCB is faulty. The main controller PCB is faulty.
+ The main controller PCB has found an error in the control data in transfer of images between main controller PCB and the DC controller PCB."
+Code;E602-0001
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The main controller PCB is faulty.
+ A mount error was detected when the hard disk was started up from the boot ROM."
+Code;E602-0002
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The main controller PCB is faulty.
+ A data read error (from the hard disk) was detected when the hard disk was started from the boot ROM."
+Code;E602-0003
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The main controller PCB is faulty.
+ A a sector error is found on the hard disk."
+Code;E602-0004
+Description;"The wiring is faulty (short circuit, open circuit). The hard disk drive is faulty. The main controller PCB is faulty.
+ A an error is found in the read/write address for the hard disk."
+Code;E607-0000
+Description;"The hard disk fan (FM7) is faulty. The wiring is faulty (short circuit, open circuit). The DC controller PCB is faulty.
+ While the hard disk fan (FM7) is being driven, the clock signal (FM7CLK) does not arrive for 5 secs or more."
+Code;E677-0001
+Description;"The various printer board (accessories) are faulty. The main controller PCB is faulty.
+ An error has occurred in the communication between the various printer boards (accessories) and the main controller PCB."
+Code;E710-0001
+Description;"The DC controller PCB is faulty. The reader controller PCB is faulty. The main controller PCB is faulty.
+ When the main power is turned on, the IPC (IC5021) on the reader controller PCB cannot be initialized."
+Code;E710-0002
+Description;"The DC controller PCB is faulty. The reader controller PCB is faulty. The main controller PCB is faulty.
+ When the main power is turned on, the IPC (IC120) on the DC controller PCB cannot be initialized."
+Code;E710-0003
+Description;"The DC controller PCB is faulty. The reader controller PCB is faulty. The main controller PCB is faulty.
+ When the main power is turned on, the IPC (IC1003) on the main controller PCB cannot be initialized."
+Code;E711-0001
+Description;"The connector is not connected properly. The remote diagnostic device PCB is faulty. The copy data controller PCB is faulty. The ADF controller PCB is faulty. The ADF controller PCB is faulty. The finisher controller PCB is faulty.
+ Data has been written to the error register of the IPC (IC5021) on the reader controller PCB four times or more within 1.5 secs."
+Code;E711-0002
+Description;"The connector is not connected properly. The remote diagnostic device PCB is faulty. The copy data controller PCB is faulty. The ADF controller PCB is faulty. The ADF controller PCB is faulty. The finisher controller PCB is faulty.
+ Data has been written to the error register of the IPC (IC120) on the DC controller PCB four times or more within 2 secs."
+Code;E711-0003
+Description;"The connector is not connected properly. The remote diagnostic device PCB is faulty. The copy data controller PCB is faulty. The ADF controller PCB is faulty. The ADF controller PCB is faulty. The finisher controller PCB is faulty.
+ Data has been written to the error register of the IPC (IC1003) of the main controller PCB four times or more within 2 secs."
+Code;E712-0001
+Description;"The connector is not connected properly. The ADF 24-V power supply is faulty. The ADF controller PCB is faulty. The reader controller PCB is faulty.
+ Communication does not resume in 3 secs after data has been written to the error register of the communication IC (IPC) of the ADF controller PCB."
+Code;E712-0002
+Description;"The connector is not connected properly. The ADF 24-V power supply is faulty. The ADF controller PCB is faulty. The reader controller PCB is faulty.
+ The transmission bit is not enabled after a period of 10 sec at the sync register of the IPC (IC5021) on the reader controller PCB."
+Code;E713-0000
+Description;"The connector is not connected properly. The finisher accessories power supply PCB is faulty. The finisher controller PCB is faulty. The DC controller PCB is faulty.
+ The communications IC (IPC) on the finisher controller has gone out of order."
+Code;E717-0001
+Description;"The wiring is faulty (short circuit, open circuit). The copy data controller or the remote diagnostic device is faulty. The main controller PCB is faulty.
+ The copy data controller or the NE controller is out of order or an open circuit has been detected.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E719-0001
+Description;"The wiring is faulty (short circuit, open circuit). The coin vendor is faulty. The main controller PCB is faulty.
+ The communication between the coin vendor and the main controller PCB has been interrupted.
+ The error must be reset in service mode (COPIER>FUNCTION> CLEAR>ERR)."
+Code;E732-0001
+Description;"The connector has poor contact. The reader controller PCB is faulty.
+ The main controller PCB has detected an error in the communication between the reader controller PCB and the main controller PCB."
+Code;E732-9999
+Description;"The connector has poor contact. The reader controller PCB is faulty.
+ In a printer mode, a read unit is detected by the main controller PCB."
+Code;E733-0001
+Description;"The connector has poor contact. The DC controller PCB is faulty.
+ The main controller PCB has detected an error in the communication between the DC controller PCB and the main controller PCB."
+Code;E740-0001
+Description;"The LAN card is faulty. The main controller PCB is faulty.
+ An error is detected on the LAN card at power-on (with the card inserted)."
+Code;E740-0002
+Description;"The LAN card is faulty. The main controller PCB is faulty.
+ A MAC address is found to be faulty."
+Code;E740-0003
+Description;"The LAN card is faulty. The main controller PCB is faulty.
+ The LAN card register cannot be read."
+Code;E741-0000
+Description;"The PCI bus connection is not proper. The main controller PCB is faulty.
+ An error has occurred in the PCI bus."
+Code;E743-0000
+Description;"The connector has poor contact. The main controller PCB is faulty.
+ The reader controller PCB has detected an error in the communication between the main controller PCB and the reader controller PCB."
+Code;E744-0001
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the language file and the main controller have a version mismatch"
+Code;E744-0002
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the language file is found to be too large."
+Code;E744-0003
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the language file is absent."
+Code;E744-0004
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the language file cannot be read."
+Code;E744-1000
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the bottom ROM product name is found to be a mismatch"
+Code;E744-2000
+Description;"The boot ROM and the firmware have a mismatch of model or type:
+ at time of start-up, the serial number of the serial number PCB is an undefined code."
+Code;E804-0000
+Description;"The wiring is faulty (short circuit, open circuit). The DC power supply fan (FM6) is faulty. The DC controller PCB is faulty.
+ While the DC power supply fan is being driven, the clock signal (FM6CLK) does not arrive for 5 secs or more."
+Code;E805-0001
+Description;"The wiring is faulty (short circuit, open circuit). The feed fan (FM1) is faulty. The heat discharge fan (FM3) is faulty. The DC controller PCB is faulty.
+ While the heat discharge fan is being driven, the clock signal (FM3CLK) does not arrive for 5 secs or more."
+Code;E805-0002
+Description;"The wiring is faulty (short circuit, open circuit). The feed fan (FM1) is faulty. The heat discharge fan (FM3) is faulty. The DC controller PCB is faulty.
+ While the feed fan is being driven, the clock signal (FM1CLK) does not arrive for 5 secs or more."
+Code;E824-0000
+Description;"The wiring is faulty (short circuit, open circuit). The primary charging assembly cooling fan (FM2) is faulty. The DC controller PCB is faulty.
+ While the primary charging assembly cooling fan is being driven, the clock signal (FM2CLK) does not arrive for 5 secs or more. PCB."

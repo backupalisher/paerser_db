@@ -1,0 +1,296 @@
+Code;E000
+Description;"The fixing assembly fails to warm up normally
+ • The fixing assembly fails to reach the target temperature 180 sec after the start of warm-up."
+Remedy;"Thermistor 1) Is the thermistor soiled? YES: Clean the thermistor. Is the thermistor in even contact with the fixing upper roller? NO: Mount the thermistor correctly. Turn off the power switch, and remove the fixing assembly. Measure the resistance between connectors J50B-2 (FSRTH) and J50B- 3 (GNDTH) on the fixing assembly side. Is it between 120k and 290k Ohm NO: Check the wiring from J222 on the DC controller PCB to the thermistor; if normal, replace the thermistor. Main heater 2) With the fixing assembly removed, is there electrical continuity between connectors J50-3 (FSRN1) and J50-5 (FSRL1) on the fixing assembly side? NO: Replace the main heater. Sub heater 3) With the fixing assembly removed, is there electrical continuity between connectors J50-4 (FSRN2) and J50-5 (FSRL2) on the fixing assembly side? NO: Replace the sub heater. Thermal switch, DC controller PCB 4) Remove the fixing assembly, and detach the wiring cover. Is there electrical continuity between the terminals of the thermal switch? NO: Replace the thermal switch. YES: Replace the DC controller PCB"
+Code;E001
+Description;"The fixing assembly suffers from abnormally high temperature
+ • The fixing temperature exceeds about 230°C during standby or during copying operation."
+Remedy;"Thermistor 1) Turn off the power switch, and remove the fixing assembly. Then, measure the resistance between connectors J50B-2 (FSRTH) and J50B-3 (GNDTH) of the fixing assembly side. Is the resistance 1k Ohm or less? NO: Check the wiring from J222 on the DC controller PCB to the thermistor; if normal, replace the thermistor. Power supply assembly, DC controller PCB 2) Replace the power supply assembly. Is the problem corrected? YES: End. NO: Replace the DC controller PCB."
+Code;E003
+Description;"The fixing assembly suffers from abnormally low temperature.
+ • The fixing temperature drops below 120°C after it has reached the target temperature."
+Remedy;"Thermistor 1) Is the thermistor soiled? YES: Clean the thermistor. Is the thermistor in even contact with the fixing upper roller? NO: Mount the thermistor correctly. Turn off the power switch, and remove the fixing assembly. Measure the resistance between connectors J50B-2 (FSRTH) and J50B- 3 (GNDTH) on the fixing assembly side. Is it between 120k and 290k Ohm NO: Check the wiring from J222 on the DC controller PCB to the thermistor; if normal, replace the thermistor. Main heater 2) With the fixing assembly removed, is there electrical continuity between connectors J50-3 (FSRN1) and J50-5 (FSRL1) on the fixing assembly side? NO: Replace the main heater. Sub heater 3) With the fixing assembly removed, is there electrical continuity between connectors J50-4 (FSRN2) and J50-5 (FSRL2) on the fixing assembly side? NO: Replace the sub heater. Thermal switch, DC controller PCB 4) Remove the fixing assembly, and detach the wiring cover. Is there electrical continuity between the terminals of the thermal switch? NO: Replace the thermal switch. YES: Replace the DC controller PCB"
+Code;E009
+Description;"The type of fixing assembly is wrong
+ • The rated voltage of the machine and the rated voltage of the fixing assembly do not match."
+Remedy;Fixing assembly 1) Is the fixing assembly rated at a voltage different from that of the power supply? YES: Replace the fixing assembly so that its voltage matches the fixing assembly. Power supply assembly, DC controller PCB 2) Replace the power supply assembly. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E010
+Description;"The main motor fails to start up normally
+ • The revolution of the main motor fails to reach a specific revolution."
+Remedy;Connector 1) Is connector J12 of the main motor and connector J218 on the DC controller PCB connected correctly? YES: Connect them correctly. Switch, Door switch of sensor PCB 2) Disconnect connectors J205 and J221 from the DC controller PCB. Is there electrical continuity between J205-3 (+24 V) and J221-1 (+24 VB) on the harness side when the door switch (SW1401) is turned on? NO: Replace the switch/sensor PCB. Main motor, DC controller PCB 3) Can the main motor be rotated using a printer driver checker? NO: Replace the main motor.
+Code;E011
+Description;"The main motor fails to rotate normally
+ • The revolution of the main motor deviates from a specific revolution."
+Remedy;Connector 1) Is connector J12 of the main motor and connector J218 on the DC controller PCB connected correctly? YES: Connect them correctly. Switch, Door switch of sensor PCB 2) Disconnect connectors J205 and J221 from the DC controller PCB. Is there electrical continuity between J205-3 (+24 V) and J221-1 (+24 VB) on the harness side when the door switch (SW1401) is turned on? NO: Replace the switch/sensor PCB. Main motor, DC controller PCB 3) Can the main motor be rotated using a printer driver checker? NO: Replace the main motor.
+Code;E040
+Description;"The holding lifter (multifeeder) is faulty
+ • When the multifeeder is selected, the holding plate position sensor (PS1302) does not detect the holding plate despite the holding plate solenoid (SL2) activation signal from the DC controller PCB."
+Remedy;Holding plate drive assembly 1) Is there any damaged part in the holding plate drive assembly? YES: Replace any damaged part. Holding plate position sensor 2) Check the condition of the sensor using the printer driver checker. Is the result good? NO: Replace the multifeeder tray PCB. Holding plate solenoid, DC controller PCB 3) Disconnect connector J1302 of the holding plate solenoid, and measure the resistance between connectors J1302-1 and J1302-2 on the harness side. Is the resistance about 100 Ohm NO: Replace the holding plate solenoid. YES: Replace the DC controller PCB.
+Code;E043
+Description;"Paper Deck Feed motor (faulty)
+ • The motor of the paper deck does not operate normally."
+Remedy;
+Code;E054
+Description;"The duplex feed roller drive mechanism of the duplex unit is faulty.
+ • The duplex driver PCB detects that the horizontal registration guide exceeded its maximum travel distance after the detection of the horizontal registration guide home position has started."
+Remedy;Duplex feed roller 1 home position sensor lever 1) Is the duplex feed roller 1 home position sensor lever damaged? YES: Replace the lever. Duplex feed roller gear 2) Is the duplex feed roller gear worn or chipped? YES: Replace the worn/chipped gear. Duplex driver PCB 3) Are connectors J2003, J2004, and J2007 on the duplex driver PCB connected securely? NO: Connect them securely. Duplex feed roller 1 home position sensor 4) Try replacing the duplex feed roller 1 home potion sensor. Is the problem corrected? YES: End. Duplex feed clutch 5) Disconnect connector J2003 of the duplex feed clutch, and measure the resistance between connectors J2003-1 and J2003-2 on the harness side. Is it about 140 Ohm Duplex motor, Duplex motor driver PCB 6) Try replacing the duplex motor. Is the problem corrected? NO: Replace the duplex driver PCB.
+Code;E055
+Description;"The horizontal registration guide drive mechanism of the duplex unit is faulty.
+ • The duplex driver PCB detects that the horizontal registration guide exceeded its maximum travel distance after the detection of the horizontal registration guide home position has started."
+Remedy;Horizontal registration guide 1) Is the horizontal registration guide mounted correctly? NO: Mount it correctly. Horizontal registration guide home position sensor lever 2) Is the horizontal registration guide home position sensor lever damaged? YES: Replace the lever. Horizontal registration guide drive gear 3) Is the horizontal registration guide drive gear worn/chipped? YES: Replace the worn/chipped gear. Duplex driver PCB 4) Are connectors J2006 and J2005 on the duplex driver PCB connected securely? NO: Connect them securely. Horizontal registration guide home position sensor 5) Try replacing the horizontal registration guide home position. Is the problem corrected? YES: Replace the sensor. Horizontal registration motor, Duplex drive motor PCB 6) Try replacing the horizontal registration motor. Is the problem corrected? YES: End. NO: Replace the duplex driver PCB.
+Code;E100
+Description;"The BD of the scanner unit is faulty.
+ • The scanner motor fails to reach a specific revolution within 10 sec after it has started to rotate. • The BD PCB detects an error for 2.5 sec or more after the scanner motor has started to rotate at a specific speed."
+Remedy;Condensation 1) Leave the machine alone for 10 to 20 min. Is the problem corrected? YES: End. BD signal line connector 2) Are connector J6 on the BD PCB and connector J206 on the DC controller PCB connected securely? NO: Connect them securely. Laser driver signal line connector 3) Are connector J1001 on the laser driver PCB and connector J202 on the DC controller PCB connected securely? NO: Connect the connectors securely. Laser scanner assembly, DC controller PCB 4) Try replacing the laser scanner assembly. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E102
+Description;"The laser is faulty.
+ • The intensity of the laser fails to reach a specific level."
+Remedy;Condensation 1) Leave the machine alone for 10 to 20 min. Is the problem corrected? YES: End. BD signal line connector 2) Are connector J6 on the BD PCB and connector J206 on the DC controller PCB connected securely? NO: Connect them securely. Laser driver signal line connector 3) Are connector J1001 on the laser driver PCB and connector J202 on the DC controller PCB connected securely? NO: Connect the connectors securely. Laser scanner assembly, DC controller PCB 4) Try replacing the laser scanner assembly. Is the problem corrected? YES: End. NO: Replace the DC controller PCB.
+Code;E110
+Description;"The laser scanner motor is faulty.
+ • The scanner motor fails to reach a specific revolution within 10 sec after it has started to rotate. • The BD PCB detects an error for 2.5 sec or more after the scanner motor has started to rotate at a specific revolution."
+Remedy;Scanner motor drive line 1) Are connector J1 on the scanner driver PCB, relay connector J18, and connector J207 on the DC controller PCB connected securely? Scanner motor driver, DC controller PCB 2) Can the scanner motor be rotated using a printer driver checker? NO: Replace the laser scanner. YES: Replace the DC controller PCB.
+Code;E202
+Description;"The scanner home position cannot be detected. • The original scanner home position sensor (PS101) is faulty. • The original scanner motor (PM1)/ original scanner motor driver PCB is faulty.
+ • The scanner fails to return to the home position after it has started to operate."
+Remedy;"1) When E202 is indicated, is the scanner at home position? NO: See “The scanner fails to move forward/in reverse?” Original scanner home position sensor (PS1) 2) When the scanner is over PS1, is a 5-VDC output present at J117B- 8 on the reader controller PCB? NO: Check the wiring from the reader controller PCB to PS1; if normal, replace PS1. Wiring 3) Check the wiring from J113 of the reader controller PCB to J303/ 302 on the original scanner motor driver PCB. Is there a fault? YES: Correct the wiring. Original scanner motor driver PCB 4) Try replacing the original scanner motor driver PCB. Is the problem corrected? YES: End. Original scanner motor (PM1), Reader controller PCB 5) Try replacing the original scanner motor (PM1). Is the problem corrected? YES: End. NO: Replace the reader controller PCB."
+Code;E203
+Description;"The original scanner motor driver PCB or the original scanner motor is faulty.
+ • The original scanner home position is detected during a ""back scan"" in which the original scanner need not return to its home position. • The original scanner goes out of synch during a ""back scan"" in which it returns to its home position."
+Remedy;1) When E203 is indicated, does the scanner move? NO: See “The scanner fails to move forward/in reverse. Original scanner motor driver PCB, Original scanner motor 1) When the scanner starts to move forward, do the voltage between J303-B1 (RST) and J303-B4 (GND) of the original scanner motor driver PCB and between J303-B2 (MOVE*) and J303-B4 (GND) change from 5 to 0 V? YES: Try replacing the original scanner motor driver PCB. If the problem is not corrected, replace the original scanner motor. NO: Replace the reader controller PCB.
+Code;E211
+Description;"The scanning lamp (fluorescent lamp) thermistor has an open circuit.
+ • At a 0°C or lower condition, the temperature fails to reach 10°C after supplying the scanning lamp heater with power for 2 min."
+Remedy;1) Disconnect connector J115 of the reader controller PCB, and measure the resistance between connectors J115-5 (GND) and J115-6 (FL-THE) on the harness side. Is it 10 W or less or 100k W or more? NO: The reader controller PCB is faulty. Go to step 4). YES: Go to step 2). Lamp heater 2) Disconnect connector J2039 of the lamp heater, and measure the resistance between connectors J2039-2 (GND) and J2039-3 (FLTHE) of the lamp heater. Is the resistance 100 W or less or 100k W or more? YES: Replace the lamp heater. Flat cable and connector (poor contact) 3) Are connectors J115 of the reader controller PCB, connectors J2037 and J2035 of the flat cable, and connector J2039 of the lamp heater connected securely? NO: Connect them securely. Reader controller PCB 4) When the machine is turned on, is the voltage between HJ122-1 (GNDU) and J122-2 (+38 V) on the harness side of the connector of the reader controller PCB 38 V? NO: See “The reader unit DC power supply is absent.” YES: Replace the reader controller PCB.
+Code;E215
+Description;"The thermistor has a short circuit.
+ • The thermistor of the scanning lamp heater registers 170°C or higher when the fluorescent lamp signal (FLON) is off (including power-on)."
+Remedy;1) Disconnect connector J115 of the reader controller PCB, and measure the resistance between connectors J115-5 (GND) and J115-6 (FL-THE) on the harness side. Is it 10 W or less or 100k W or more? NO: The reader controller PCB is faulty. Go to step 4). YES: Go to step 2). Lamp heater 2) Disconnect connector J2039 of the lamp heater, and measure the resistance between connectors J2039-2 (GND) and J2039-3 (FLTHE) of the lamp heater. Is the resistance 100 W or less or 100k W or more? YES: Replace the lamp heater. Flat cable and connector (poor contact) 3) Are connectors J115 of the reader controller PCB, connectors J2037 and J2035 of the flat cable, and connector J2039 of the lamp heater connected securely? NO: Connect them securely. Reader controller PCB 4) When the machine is turned on, is the voltage between HJ122-1 (GNDU) and J122-2 (+38 V) on the harness side of the connector of the reader controller PCB 38 V? NO: See “The reader unit DC power supply is absent.” YES: Replace the reader controller PCB.
+Code;E216
+Description;"The scanning lamp (fluorescent lamp) fails to turn on in 15 sec.
+ • The light intensify sensor does not detect light from the scanning lamp in 15 sec."
+Remedy;Scanning lamp (life) 1) Try replacing the scanning lamp. Is the problem corrected? YES: End. Inverter PCB, Reader PCB 2) Try replacing the inverter PCB. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E217
+Description;"The scanning lamp heater is out of order.
+ • When the scanning lamp heater is controlled to a specific temperature, its temperature does not exceed a specific setting when it has been supplied with power for 3 min or more."
+Remedy;Lamp heater 1) Try replacing the lamp heater. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E219
+Description;"• The scanning lamp (fluorescent) has reached the end of its life.
+ • The scanning lamp thermistor detects 150°C or higher when the scanning lamp is on."
+Remedy;Scanning lamp (life) 1) Try replacing the scanning lamp. Is the problem corrected? YES: End. Inverter PCB, Reader PCB 2) Try replacing the inverter PCB. Is the problem corrected? YES: End. NO: Replace the reader controller PCB.
+Code;E220
+Description;"The scanning lamp (fluorescent) is faulty.
+ • The light of the scanning lamp fails to reach a specific level of intensity within 10 sec after it has been turned on."
+Remedy;Scanning lamp 1) Is the scanning lamp mounted correctly? NO: Mount the scanning lamp correctly. (Caution) 2) Try replacing the scanning lamp. Is the problem corrected? YES: Replace the scanning lamp. Inverter PCB 3) Are connectors J1002 and J1003 on the inverter PCB and connector J129 on the reader controller PCB connected securely? NO: Connect the connectors securely. YES: Replace the inverter PCB. Caution: • If you have to remove the scanning lamp and mount it back, be sure to execute the following in service mode: Function>MISC-R>USELAMP. • If you have mounted a new scanning lamp, be sure to execute the following in service mode: Function>MISC-R>LAMP-ADJ for light intensity adjustment and then Function>CCD>CCD-ADJ.
+Code;E400
+Description;"The communication with the ADF has an error.
+ • No signal is returned by the ADF 1 sec or more after communication with the ADF has started."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E401
+Description;"• The pickup motor (M1) fails to rotate. • The pickup roller sensor (S5) is faulty.
+ • A flag is attached to the spindle of the pickup motor (M1), and the rotation of the motor is monitored with reference to the flag (blocking the pickup roller sensor S5). The pickup roller sensor fails to turn on and off twice or more in within 1 sec."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E402
+Description;"• The belt motor (M3) fails to rotate. • The belt motor clock senor (S10) is faulty.
+ • The number of feeder motor clock puleses within 200 msec is below a specific value."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E403
+Description;"• The feed motor (M2) fails to rotate. • The feed motor clock sensor (S9) is faulty.
+ • The number of belt motor clock pulses is below a specific value for 200 msec."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E404
+Description;"• The delivery motor (M5) fails to rotate. • The delivery motor clock sensor (S13) is faulty.
+ • The number of delivery motor clock puleses within 200 msec is below a specific value."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E421
+Description;"Communication with the ADF is faulty
+ •The communication with the ADF remains interrupted for 5 sec or more."
+Remedy;Perfrom the work according to the instructions in the service manual of the feeder.
+Code;E500
+Description;"Finisher Data communication
+ • The communication between the machine and the finisher is interrupted. This error is detected by the machine."
+Remedy;
+Code;E503-03
+Description;"Communication error
+ • The communication with the saddle stitcher is interrupted."
+Remedy;
+Code;E504-01
+Description;"Height sensor (PS1)
+ • The communication between the height sensor and the finisher controller PCB fails. Or, an error exists in the communication data."
+Remedy;
+Code;E504-02
+Description;"Height sensor (PS1)
+ • The communication between the sensor and the finisher controller PCB fails for a specific period of time or more."
+Remedy;
+Code;E504-03
+Description;"Height sensor (PS1)
+ • The connector is found to be disconnected at poweron."
+Remedy;
+Code;E504-04
+Description;"Height sensor (PS1)
+ • An error occurs when the sensor is adjusted using the DIP switch."
+Remedy;
+Code;E505-01
+Description;"Back-up RAM
+ • An error exits in the check sum at power-on."
+Remedy;
+Code;E512-01
+Description;"• Delivery motor (M2) • Delivery motor clock sensor (PI10)
+ • The delivery motor clock sensor does not send the target number of clock pulses at the start of operation."
+Remedy;
+Code;E512-02
+Description;"• Delivery motor (M2) • Delivery motor clock sensor (PI10)
+ • The clock pulses sent while paper is being moved fall short of an equivalent of 200 mm in length."
+Remedy;
+Code;E513-01
+Description;"• Alignment motor (M3) • Alignment plate home position sensor (PI6)
+ • The alignment plate does to leave the alignment home position sensor when the alignment motor is driven for 2 sec."
+Remedy;
+Code;E513-02
+Description;"• Alignment motor (M3) • Alignment plate home position sensor (PI6)
+ • The alignment plate does not return to the alignment home position when the alignment motor is driven for 2 sec."
+Remedy;
+Code;E531-01
+Description;"• Stapler motor (M6) • Stapler motor home position detecting switch (MS7)
+ • The stapler does not leave the stapler home position when the stapler motor is driven for 0.5 sec."
+Remedy;
+Code;E531-02
+Description;"• Stapler motor (M6) • Stapler motor home position detecting switch (MS7)
+ • The stapler does not leave the stapler home position when the stapler motor is driven for 0.5 sec."
+Remedy;
+Code;E532-01
+Description;"• Stapler drive motor (M4) • Stapler drive home position sensor (PI7)
+ • The stapler drive home position sensor does not turn off when the stapler drive motor is driven for 4 sec."
+Remedy;
+Code;E532-02
+Description;"• Stapler drive motor (M4) • Stapler drive home position sensor (PI7)
+ • The stapler drive home position is not detected when the stapler drive motor is driven for 4 sec."
+Remedy;
+Code;E535-01
+Description;"• Delivery motor (M2) • Swing guide closed detecting switch (MS6)
+ • The swing guide closed detecting switch does not turn on when the delivery motor is rotated in reverse for 1 sec."
+Remedy;
+Code;E535-02
+Description;"• Delivery motor (M2) • Swing guide open sensor (PI18)
+ • The swing guide open detecting sensor does not turn on when the delivery motor is rotated in reverse for 1 sec."
+Remedy;
+Code;E535-03
+Description;"• Safety area switch (MS3) • Swing guide closed detection switch (MS6)
+ • The swing guide closed detecting switch is found to be off when the tray 1/2 is in the safety area switch OFF position."
+Remedy;
+Code;E540-01
+Description;"• Tray lift motor (M5) • Tray lift motor clock sensor 1/ 2 (PI19/PI9) • Tray home position sensor (PI8)
+ • The lift operation does not end within 15 sec when the tray lift motor is driven. • The tray home position is not detected when the tray lift motor is driven for 15 sec."
+Remedy;
+Code;E540-02
+Description;"• Tray upper limit detecting switch (MS4)
+ • The tray upper limit detecting switch is found to be on while the tray is moving up."
+Remedy;
+Code;E540-03
+Description;"• Tray lift motor (M5) • Tray lift motor clock sensor 1/ 2 (PI19/PI9)
+ •The clock sensor 1/2 does not send clock pulses for 200 msec when the tray lift motor is driven."
+Remedy;
+Code;E584-01
+Description;"• Feed motor (M1) • Shutter closed detecting switch (MS4)
+ • The shutter closed detecting switch does not turn on when the feed motor is rotated in reverse for 1 sec or more."
+Remedy;
+Code;E584-02
+Description;"• Feed motor switch (M1) • Shutter closed detecting switch (MS4)
+ • The shutter open sensor does not turn on when the feed motor is rotated in reverse for 1 sec or more."
+Remedy;
+Code;E584-03
+Description;"• Safety area detecting switch (MS3) • Shutter closed detecting switch (MS4)
+ • The shutter closed detecting switch is found to be off when the tray 1/2 is in the safety area switch OFF position."
+Remedy;
+Code;E606
+Description;"The HDD is faulty.
+ • The HDD cannot be recognized normally at power-on. • An error occurs while writing to or reading from the HDD.B?"
+Remedy;Connector (poor contact) 1) Are connectors J701 and J702 of the HDD and connectors J306 and J307 of the relay PCB connected securely? NO: Connect the connectors securely. Relay PCB 2) Is connector J301 of the relay PCB and J1017 of the system controller PCB connected securely? NO: Connect them securely. HDD, System controller PCB 3) Try replacing the HDD. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E676
+Description;"The PDL PCB has a communication error.
+ • The communication with the PDL PCB fails in initialization sequence. • The registration of the PDL-unique menu fails. • While PDL is in operation, a check sum error of the received packet is detected. • While PDL is in operation, a format error in the received packet is detected. • There is no response in the course of a check on the PDL board operation."
+Remedy;Connector (poor contact) 1) Is the PDL PCB securely connected to J303 of the relay PCB? NO: Connect it securely. Relay PCB 2) Are connector J301 of the relay PCB and connector J1017 of the system controller PCB connected securely? NO: Connect the connectors securely. PDL PCB, System controller PCB 3) Try replacing the PDL PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E677
+Description;"The PDL PCB is faulty.
+ • An error occurs on the PDL board."
+Remedy;Connector (poor contact) 1) Is the PDL PCB securely connected to J303 of the relay PCB? NO: Connect it securely. Relay PCB 2) Are connector J301 of the relay PCB and connector J1017 of the system controller PCB connected securely? NO: Connect the connectors securely. PDL PCB, System controller PCB 3) Try replacing the PDL PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E710
+Description;"The initialization of the IPC fails.
+ • At power-on or during sleep return, initialization communication with the finisher fails."
+Remedy;1) Turn off and then on the power. Is the problem corrected? YES: End. If the problem occurs frequently, check the communication cable to the finisher. Connector (poor contact) 2) Is the connection between the machine and the finisher secure? NO: Make the connection secure. Communication cable 3) Try replacing the communication cable to the finisher. Is the problem corrected? YES: End. Finisher controller PCB, System controller PCB 4) Try replacing the finisher controller PCB of the finisher. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E711
+Description;"An IPC register error occurs.
+ • An error occurs frequently in the communication between the finisher and the machine."
+Remedy;1) Turn off and then on the power. Is the problem corrected? YES: End. If the problem occurs frequently, check the communication cable to the finisher. Connector (poor contact) 2) Is the connection between the machine and the finisher secure? NO: Make the connection secure. Communication cable 3) Try replacing the communication cable to the finisher. Is the problem corrected? YES: End. Finisher controller PCB, System controller PCB 4) Try replacing the finisher controller PCB of the finisher. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E712
+Description;"An error occurs in IPC communication.
+ • In communication with the ADF, four or more errors occur in 1.5 sec or more."
+Remedy;1) Turn off and then on the power. Is the problem corrected? YES: End. If the problem occurs frequently, check the communication cable to the finisher. Connector (poor contact) 2) Is the connection between the machine and the finisher secure? NO: Make the connection secure. Communication cable 3) Try replacing the communication cable to the finisher. Is the problem corrected? YES: End. Finisher controller PCB, System controller PCB 4) Try replacing the finisher controller PCB of the finisher. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E713
+Description;"An IPC finisher error occurs.
+ • The communication between the finisher and the machine remiains interrupted for 3 sec."
+Remedy;1) Turn off and then on the power. Is the problem corrected? YES: End. If the problem occurs frequently, check the communication cable to the finisher. Connector (poor contact) 2) Is the connection between the machine and the finisher secure? NO: Make the connection secure. Communication cable 3) Try replacing the communication cable to the finisher. Is the problem corrected? YES: End. Finisher controller PCB, System controller PCB 4) Try replacing the finisher controller PCB of the finisher. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E731
+Description;"The PDL PCB PCI error occurs.
+ • The PDL PCB cannot be recognized at power-on."
+Remedy;Connector (poor contact) 1) Are the network PCB, PDL PCB, relay PCB, system controller PCB, and image processor PCB connected securely? NO: Connect them securely. Relay PCB 2) Try replacing the relay PCB. Is the problem corrected? YES: End. PDL PCB 3) Try replacing the PDL PCB. Is the problem corrected? YES: End. Network PCB 4) Try replacing the network PCB. Is the problem corrected? YES: End. Image processor PCB, System controller PCB 5) Try replacing the image processor PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E732
+Description;"A controller reader communication error occurs.
+ • An error occurs in the communication between the controller unit and the reader unit."
+Remedy;Communication cable 1) Is the communication cable between the reader and the controller connected securely? NO: Connect the cable securely. 2) Try replacing the communication cable. Is the problem corrected? YES: Replace the communication cable. Reader unit power supply 3) Is the reader unit power supply normal? NO: See “The reader unit power supply is absent.” Interface PCB 4) Are connectors J102 of the interface PCB and J132 of the reader controller PCB connected securely? NO: Connect the connectors securely. 5) Try replacing the interface PCB. Is the problem corrected? YES: Replace the interface PCB. Reader controller PCB 6) Try replacing the reader controller PCB. Is the problem corrected? YES: Replace the reader controller PCB. NO: Replace the image processor PCB.
+Code;E733
+Description;"A controller printer unit communication error occurs.
+ • The PPRDY signal cannot be detected from the printer unit 15 sec after the end of start-up sequence."
+Remedy;Connector (poor contact) 1) Is the controller unit mounted to the printer unit securely? NO: Mount it correctly. 2) Are connector J1015 on the system controller PCB and connector J501 on the image processor PCB connected securely? NO: Connect the connectors securely. Printer unit power supply 3) Does the printer unit execute initialization when the power is turned on? NO: See “The printer unit power supply is absent.” DC controller PCB 4) Can the printer unit be operated using the printer checker driver? NO: Replace the DC controller PCB Controller unit 5) Try replacing the image processor PCB. Is the problem corrected? YES: Replace the image processor PCB. NO: System controller PCB
+Code;E734
+Description;"An image processor PCB check error occurs.
+ • The image processor PCB cannot be recognized normally."
+Remedy;Connector (poor contact) 1) Are the network PCB, PDL PCB, relay PCB, system controller PCB, and image processor PCB connected securely? NO: Connect them securely. Relay PCB 2) Try replacing the relay PCB. Is the problem corrected? YES: End. PDL PCB 3) Try replacing the PDL PCB. Is the problem corrected? YES: End. Network PCB 4) Try replacing the network PCB. Is the problem corrected? YES: End. Image processor PCB, System controller PCB 5) Try replacing the image processor PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E735
+Description;"An EIF PCI error occurs.
+ • The image processor PCB cannot be recognized normally."
+Remedy;Connector (poor contact) 1) Are the network PCB, PDL PCB, relay PCB, system controller PCB, and image processor PCB connected securely? NO: Connect them securely. Relay PCB 2) Try replacing the relay PCB. Is the problem corrected? YES: End. PDL PCB 3) Try replacing the PDL PCB. Is the problem corrected? YES: End. Network PCB 4) Try replacing the network PCB. Is the problem corrected? YES: End. Image processor PCB, System controller PCB 5) Try replacing the image processor PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E736
+Description;"A fax PCB communication error occurs.
+ • The communication with the FAX PCB fails."
+Remedy;Connector (poor contact) 1) Are connector J304 and J305 on the relay PCB and relay connector J803 connected securely? NO: Connect the connectors securely. 2) Are connector J301 on the relay PCB and connector J1017 on the system controller PCB connected securely? NO: Connect the connectors securely. FAX PCB 3) Replace the FAX PCB. Is the problem corrected? YES: Replace the FAX PCB. NO: Replace the system controller PCB.
+Code;E737
+Description;"A main memory error occurs.
+ • Writing to the main memory fails at power-on."
+Remedy;DIMM (controller) 1) Is the DIMM in the controller fitted to the socket firmly? NO: Fit it firmly. 2) Try replacing the DIMM in the controller. Is the problem corrected? YES: Replace the DIMM. NO: Replace the system controller PCB.
+Code;E738
+Description;"A network interface initialization error occurs.
+ • Initialization of the network PCB fails at power-on."
+Remedy;Connection (poor contact) 1) Is the network PCB connected to the relay PCB securely? NO: Connect it securely. Relay PCB 2) Is connector J301 of the relay PCB connected to connector J1017 of the system controller PCB securely? NO: Connect the connector securely. Network PCB 3) Try replacing the network PCB. Is the problem corrected? YES: End. Relay PCB, System controller PCB 4) Try replacing the relay PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E739
+Description;"A network interface communication error occurs.
+ • The communication with the network PCB fails at power-on."
+Remedy;
+Code;E741
+Description;"A network PCI error occurs.
+ • The network PCB cannot be recognized at power-on"
+Remedy;Connection (poor contact) 1) Is the network PCB connected to the relay PCB securely? NO: Connect it securely. Relay PCB 2) Is connector J301 of the relay PCB connected to connector J1017 of the system controller PCB securely? NO: Connect the connector securely. Network PCB 3) Try replacing the network PCB. Is the problem corrected? YES: End. Relay PCB, System controller PCB 4) Try replacing the relay PCB. Is the problem corrected? YES: End. NO: Replace the system controller PCB.
+Code;E804
+Description;"A printer power supply cooling fan error occurs.
+ • An error occurs in the rotation of the printer power supply cooling fan (FAN2)"
+Remedy;Connector (poor contact) 1) Is connector J216 on the DC controller PCB connected securely? NO: Connect it securely. Printer unit power supply cooling fan (FM2) 2) Disconnect J210 of the DC controller PCB. Does the voltage between connectors J216-1 (FAN2D) and J2163 (GND) of the DC controller PCB change from 0 to about 18 V immediately after the power switch is turned on? YES: Replace the printer unit power supply cooling fan. NO: Replace the DC controller PCB.
+Code;E805
+Description;"A fixing assembly/scanner fan error occurs.
+ • An error occurs in the rotation of the fixing assembly fan (FAN4)"
+Remedy;Connector (poor contact) 1) Are connector J225 on the DC controller PCB and relay connectors J25 and J26 connected securely? NO: Connect the connectors securely. Fixing assembly fan (FAN4) 2) Disconnect J225 from the DC controller PCB. Does the voltage between connectors J225-1 (FAN4D) and J225-03 (GND) on the DC controller PCB change from 0 to about 18 V immediately after the power switch is turned on? YES: Replace the fixing assembly fan (FM4). NO: Replace the DC controller PCB.
+Code;E807
+Description;"A fixing assembly/scanner fan error occurs.
+ • An error occurs in the rotation of the fixing assembly/scanner fan (FAN1)."
+Remedy;Connector (poor contact) 1) Is connector J208 on the DC controller PCB connected securely? NO: Connect the connector securely. Fixing/scanning fan (FAN1) 2) Disconnect J208 of the DC controller PCB. Does the voltage between connectors J208-1 (FAN1D) and J208-3 (GND) change from 0 to about 18 V immediately after the power switch is turned on? YES: Replace the fixing/scanner fan (FM1). NO: Replace the DC controller PCB.
+Code;E826
+Description;"A multifeeder cooling fan error occurs.
+ • An error occurs in the rotation of the multifeeder tray fan (FAN5)."
+Remedy;Connector (poor contact) 1) Are connector J229 on the DC controller PCB and relay connectors J34 and J35 connected securely? NO: Connect the connectors securely. Multifeeder tray fan (FM5) 2) Disconnect J229 from the DC controller PCB. Does the voltage between connectors J229-1 (FAN5D) and J229-3 (GND) on the DC controller PCB change from 0 to bout 18 V immediately after the power switch is turned on? YES: Replace the multifeeder tray fan (FM5). NO: Replace the DC controller PCB.
+Code;E827
+Description;"A controller power supply fan error occurs
+ • An error occurs in the rotation of controller power supply fan (FAN6)."
+Remedy;
+Code;E903
+Description;"Paper Deck Lifter (faulty)
+ • The communication with the paper deck is interrupted."
+Remedy;

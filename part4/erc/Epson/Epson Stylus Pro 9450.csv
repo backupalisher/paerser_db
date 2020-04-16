@@ -1,0 +1,205 @@
+Code;00000101
+Description;"Life end of the CR Motor (includes the Ink Tubes)
+ The number of Carriage movement cycles reached the specified upper limit. • Stylus Pro 7400/7450/7800/7880/7880C: 3,700,000 cycles • Stylus Pro 9400/9450/9800/9880/9880C: 6,300,000 cycles If the printer is used continuously ignoring the error, it may cause the following defective conditions. • The Ink Tubes become cracked causing leakage of ink • Malfunction of the Carriage due to wear of the internal part of the CR Motor"
+Causes;
+Remedy;1. Check the life count of the CR Motor Press the [Menu] button - PRINTER STATUS menu - SERVICE LIFE - CR MOTOR. • When the life is still remaining Replace the BOARD ASSY., MAIN • When the life has expired or close to the end-of-life Replace the CR MOTOR ASSY. 2. As the lifespan of the CR Motor means the lifespan of the printer, the whole printer mechanism checks and corresponding maintenance works must be carried out. Especially, the following items should be carefully checked or performed. • Check the Head FFC for any damage such as break, scratch, etc. • Check the CR Timing Belt and the PF Timing Belt for any damage. • Check if abnormal sounds are produced from the sliding surfaces of the Guide Rail and the bearings of the Carriage Unit (wear of the bearings). • Check if the paper dust or any other dust accumulates on the paper path. If it does, clean it as indicated.
+Code;00010000
+Description;"PF Encoder check error
+ The printer causes this error and stops operation if it cannot detect the encoder pulse signals at intervals of the specified time during the power-on initialization operation or while the PF Motor is driving."
+Causes;• The PF Encoder connector is disconnected. • The PF Motor connector is disconnected. • The Encoder harness on the PF side is broken. • The wiring of the A and B phases are wrong (opposite) • The wiring of the motor is wrong (opposite) • The PF Motor shorted out. • The PF Motor is energized continuously and kept rotating abnormally. • The fuse for the motor driver is blown. (on the Main Board) • The Main Board is damaged. (+42V/+24V remote control is broken) • The Power Supply Board is damaged (42V is OFF).
+Remedy;1. Clean dirt or paper dust on the Loop Scale and check if it is damaged. 2. Reconnect the PF Encoder connector or the PF Motor connector securely. 3. Execute the PF Timing Belt Tension Adjustment . 4. Replace the PF Encoder Sensor . 5. Replace the PF MOTOR ASSY. . 6. Replace the BOARD ASSY., MAIN .
+Code;00010001
+Description;"The PF Motor is out-of-step.
+ The printer causes this error and stops operation if it cannot detect the specifiedlength encoder pulse signals within a fixed time period or when abnormally long or short pulse signals are detected while the PF Motor is rotating."
+Causes;
+Remedy;1. Clean dirt or paper dust on the Loop Scale and check if it is damaged. 2. Replace the PF Encoder Sensor . 3. Replace the PF MOTOR ASSY. 4. Replace the BOARD ASSY., MAIN .
+Code;00010002
+Description;"Overcurrent occurred on the PF Motor.
+ The printer causes this error and stops operation if an abnormal electric current beyond the prescribed range is detected at the PF Motor drive circuit on the BOARD ASSY.,MAIN while the PF Motor is rotating or when a current beyond the prescribed range is required to be supplied to the motor."
+Causes;
+Remedy;1. Clean dirt or paper dust on the Loop Scale and check if it is damaged. 2. Replace the PF MOTOR ASSY. . 3. Replace the BOARD ASSY., MAIN .
+Code;00010003
+Description;"The PF Motor out of position time-out error
+ The printer causes this error and stops operation if it detects that the paper could not be moved to the target position within a fixed time period while the PF Motor stopping operation."
+Causes;
+Remedy;1. Clean dirt or paper dust on the Loop Scale and check if it is damaged. 2. Execute the PF Timing Belt Tension Adjustment . 3. Replace the PF Encoder Sensor . 4. Replace the PF MOTOR ASSY. 5. Replace the BOARD ASSY., MAIN .
+Code;00010004
+Description;"CR Encoder check error
+ The printer causes this error and stops operation if it cannot detect the encoder pulse signals at intervals of the specified time during the power-on initialization operation or while the CR Motor is driving."
+Causes;• CR Encoder FFC is disconnected. • The CR Motor connector is disconnected. • The FFC of the encoder on the CR side is broken. • The wiring of the A and B phases are wrong (opposite) • The wiring of the CR Motor is wrong (opposite) • The CR Motor shorted out. • The fuse for the motor driver is blown. (on the Main Board)
+Remedy;1. Reattach the Timing Fence for detecting the encoder securely and correctly. 2. Clean dirt or paper dust on the Timing Fence and check if it is damaged. 3. Reconnect the CR Encoder FFC or the CR Motor connector securely. 4. Execute the CR Timing Belt Tension Adjustment . 5. Replace the CR Encoder Sensor . 6. Replace the CR MOTOR ASSY. 7. Replace the BOARD ASSY., MAIN .
+Code;00010005
+Description;"CR Motor is out of step.
+ The printer causes this error and stops operation if it cannot detect the specifiedlength encoder pulse signals within a fixed time period or when abnormally long or short pulse signals are detected while the CR Motor is rotating."
+Causes;• The connector of the Cutter Solenoid is disconnected. • The fuse for the Solenoid is blown. (on the Main Board) • CR Motor failure • The CR Motor driver is damage. (42 V is shorted) • The temperature fuse of the Cutter Solenoid is blown (the Cutter Solenoid does not work and the Carriage cannot be unlocked.)
+Remedy;1. Reattach the Timing Fence for detecting the encoder securely and correctly. 2. Clean dirt or paper dust on the Timing Fence and check if it is damaged. 3. Reconnect the Cutter Solenoid connector securely and correctly. 4. Execute the CR Timing Belt Tension Adjustment . 5. Replace the CR Encoder Sensor . 6. Replace the CR MOTOR ASSY. . 7. Replace the CUTTER SOLENOID ASSY. . 8. Replace the BOARD ASSY., MAIN .
+Code;00010007
+Description;"The CR Motor out of position time-out error
+ The printer causes this error and stops operation if it detects that the Carriage could not be moved to the target position within a fixed time period while the CR Motor stopping operation is performed."
+Causes;The Carriage movement cannot be finished due to the remaining pulses smaller than those generated by the motor out-of-step state.
+Remedy;1. Reattach the Timing Fence for detecting the encoder securely and correctly. 2. Clean dirt or paper dust on the Timing Fence and check if it is damaged. 3. Execute the CR Timing Belt Tension Adjustment . 4. Replace the CR Encoder Sensor . 5. Replace the CR MOTOR ASSY. . 6. Replace the BOARD ASSY., MAIN .
+Code;00010008
+Description;"Servo interrupt watchdog time-out error
+ The printer causes this error and stops operation if it detects a watchdog time-out on the DC motor drive circuit (CPU or ASIC) while the CR or PF Motor is driving."
+Causes;
+Remedy;CPU or ASIC failure can be considered as the cause of the error, replace the Main Board Assy. Replace the BOARD ASSY., MAIN .
+Code;00010009
+Description;"System interrupt watchdog time-out error
+ The printer causes this error and stops operation if it detects an out-of-control state or cache failure in the CPU or ASIC while the BOARD ASSY.,MAIN is processing a print data."
+Causes;
+Remedy;CPU or ASIC failure can be considered as the cause of the error, replace the Main Board Assy. Replace the BOARD ASSY., MAIN .
+Code;0001000A
+Description;"Carriage home position detection error
+ The printer causes this error and stops operation if it cannot detect the Carriage home position or cannot detect it within a fixed time period during the power-on initialization operation or while performing home position detecting operation during printing."
+Causes;
+Remedy;1. Clean dirt or foreign materials on the CR HP Sensor and check if it is damaged. 2. Replace the CR HP Sensor . 3. Replace the BOARD ASSY., MAIN .
+Code;0001000C
+Description;"PG home position detection error
+ The printer causes this error and stops operation if it cannot detect the PG home position during the power-on initialization operation or while performing platen gap changing operation after paper is set."
+Causes;• The PG HP Sensor connector is disconnected. • The Pump Motor connector is disconnected. • The Pump Motor harness is broken. • PG HP Sensor failure • Pump Motor failure • The PG drive gears are damaged. • The fuse for the motor driver is blown. (on the Main Board)
+Remedy;1. Reconnect the PG HP Sensor connector or the Pump Motor connector securely. 2. Replace the PG HP Sensor . 3. Replace the PUMP CAP ASSY. .
+Code;00010014
+Description;"Failure of pressurizing
+ The printer causes this error and stops operation if it detects an abnormal condition of the Pressure Sensor (air leak from the pressurizing mechanism) during the power-on initialization operation or while performing ink supply operation."
+Causes;• Pressure Motor failure • The connector of the Pressure Motor, Regulator Solenoid or Pressure Sensor is disconnected. • The harness of the Pressure Motor, Regulator Solenoid or Pressure Sensor is broken. • Regulator Solenoid failure (does not become ON) • Pressure Sensor failure • The Pressure Tube is disconnected. • The fuse for the Solenoid or the motor driver is blown. (on the Main Board)
+Remedy;1. Reconnect the connectors of the Pressure Motor, Regulator Solenoid or Pressure Sensor securely. 2. Connect the Pressure Tube. 3. Replace the PUMP ASSY., SUPPLY . 4. Replace the BOARD ASSY., MAIN .
+Code;0001001B
+Description;"Head driver (TG) temperature error
+ The printer causes this error and stops operation if it detects an abnormal internal temperature of the printhead by the thermistor in the head while performing printing operation without firing ink from the nozzles."
+Causes;• The printhead internal temperature rises because of a printing operation without firing ink. • A breakdown of the printhead • Poor contact, short or disconnection of the tape electric wires • Main Board failure. (A/D of the CPU is damaged)
+Remedy;1. Check if the printer can recover from the error by turning it OFF and back ON. 2. Replace the PRINT HEAD . 3. Replace the BOARD ASSY., MAIN .
+Code;0001001D
+Description;"CR servo parameter error
+ The printer causes this error and stops operation when it detects that a voltage beyond the prescribed range is output to the CR Motor."
+Causes;
+Remedy;1. Clean dirt or paper dust on the Timing Fence and check if it is damaged. 2. Execute the CR Timing Belt Tension Adjustment . 3. Replace the CR Encoder Sensor . 4. Replace the CR MOTOR ASSY. . 5. Replace the BOARD ASSY., MAIN .
+Code;0001001E
+Description;"PF servo parameter error
+ The printer causes this error and stops operation when it detects that a voltage beyond the prescribed range is output to the PF Motor."
+Causes;
+Remedy;1. Clean dirt or paper dust on the Loop Scale and check if it is damaged. 2. Execute the PF Timing Belt Tension Adjustment . 3. Replace the PF Encoder Sensor . 4. Replace the PF MOTOR ASSY. . 5. Replace the BOARD ASSY., MAIN .
+Code;00010020
+Description;"CSIC reading/writing error
+ The printer causes this error and stops operation if it cannot load the information from the CSIC or write new information on the CSIC while running a power-ON/ OFF sequence or opening/closing the I/C Cover, or after finishing to print one page."
+Causes;
+Remedy;"1. Reconnect the CSIC FFC. 2. The memory chip on the ink cartridge is defective. (replace the ink cartridge) 3. Poor contact with the memory chip. • Replace the HOLDER ASSY., IC, RIGHT . • Replace the HOLDER ASSY., IC, LEFT . 4. Replace the BOARD ASSY., SUB; B ., Replace the BOARD ASSY., SUB; C . 5. Replace the BOARD ASSY., MAIN ."
+Code;00010023
+Description;"RTC analyzing error
+ The printer causes this error and stops operation when it detects that the absolute date and time stored on the NVRAM is incorrect."
+Causes;
+Remedy;1. Start up the printer in the Serviceman mode, and correct the date and time setting using the “RTC & USB ID & IEEE1394 ID” Basic Adjustment menu provided in the Adjustment Program. 2. Remove and reinstall the lithium battery. 3. Replace the lithium battery. Be sure to perform the RTC setting. 4. Replace the BOARD ASSY., MAIN .
+Code;00010026
+Description;"RTC communication error
+ The printer causes this error and stops operation when it detects that the RTC circuit on the BOARD ASSY.,MAIN malfunctions (operates in test mode)."
+Causes;
+Remedy;1. Turns the printer OFF and remove the lithium battery. Leave the printer for a few seconds and then reinsert the battery and turn the printer ON. 2. Repeat Step 1 until the printer stops causing the error at power-on. 3. Start up the printer in the Serviceman mode, and set the date and time using the “RTC & USB ID & IEEE1394 ID” Basic Adjustment menu provided in the Adjustment Program.
+Code;00010027
+Description;"Pressure pump micro air-leak error
+ The printer causes the error and stops operation if the Pressure Sensor becomes “LOW” state while performing a inspection of the Pressure Motor by “1.4.6.1 Self Testing Menu (SELF TESTING)” . This error occurs only when the printer is in the SELF TESTING mode. If a micro air leak from the Pressure Motor is suspected because the motor works frequently or constantly, the SELF TESTING function allows you to check it for micro air leak before the printer causes a Service Call 00010014 for leakage of air."
+Causes;• Micro air leak from the Pressure Motor. • The Pressure Tube is disconnected. • The pressure inside the pressurizing mechanism dropped within 90 seconds after finishing the last pressurizing operation.
+Remedy;1. Connect the Pressure Tube. 2. Replace the PUMP ASSY., SUPPLY .
+Code;00010028
+Description;"Head error
+ The printer causes this error and stops operation when it detects an undefined NMI in the CPU or the printhead is damaged."
+Causes;
+Remedy;Replace the PRINT HEAD .
+Code;0001002A
+Description;"CR ASIC ECU error
+ • Malfunction of the firmware (invalid rewriting of the register) • The Main Board is damaged."
+Causes;
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;0001002D
+Description;"The Cleaning Unit reached its end of life.
+ The pump counter reached the prescribed upper limit (182,000P)."
+Causes;
+Remedy;Replace the Cleaning Unit and reset the life counter of the unit using the Adjustment Program.
+Code;00010035
+Description;Pump phase detection error
+Causes;A position of the pump cannot be detected after the Pump Motor rotates the prescribed number of times, or the Pump Phase Sensor is faulty. Or the fuse for the motor driver power is blown (on the Main Board).
+Remedy;Check if the printer can recover from the error by turning it OFF and back ON. If the error occurs again, replace the Pump Cap Assy. or replace the Main Board Assy. .. Replace the PUMP CAP ASSY. . .. Replace the BOARD ASSY., MAIN .
+Code;00010036
+Description;Type-B board installation error
+Causes;A Type-B board lower than level 2 is installed.
+Remedy;Remove the installed Type-B board.
+Code;00010037
+Description;Head thermistor error
+Causes;• The head thermistor is faulty. • The temperature of the thermistor is lower than minus 20 degrees C or higher than 100 degrees C. • The Head FFC is disconnected, or its contact is poor.
+Remedy;1. Check the connection status of the Head FFC and correct it if necessary. 2. Replace the PRINT HEAD .
+Code;00010038
+Description;Transistor thermistor error
+Causes;• The transistor thermistor is faulty. • The temperature of the thermistor is lower than minus 20 degrees C or higher than 100 degrees C.
+Remedy;Replace the BOARD ASSY., MAIN .
+Code;0001003E
+Description;Pressure Sensor failure
+Causes;• The Pressure Sensor is ON when an ink pressurizing operation is not performed. (disconnection of the Pressure Sensor connector, malfunction of the Pressure Sensor, or Main Board failure) • The inside pressure cannot be reduced to the same level as atmospheric pressure. (valve failure, Regulator Solenoid failure, Pressure Tube failure, or Main Board failure)
+Remedy;1. Reconnect the Pressure Sensor connector securely. 2. Connect the Pressure Tube. 3. Replace the PUMP ASSY., SUPPLY . 4. Replace the BOARD ASSY., MAIN .
+Code;0001003F
+Description;The Pressure Motor reached its end of life.
+Causes;The cumulative number of steps of the Pressure Motor reached the prescribed upper limit
+Remedy;Replace the PUMP ASSY., SUPPLY ., and reset the life counter of the Pressure Pump Unit using the Adjustment Program.
+Code;00010040
+Description;Printing position error
+Causes;• Exact detection of printing positions is impossible due to dirt or scratches on the Timing Fence or the CR Encoder. • Malfunction of the program
+Remedy;1. Replace the SCALE, CR . 2. Replace the CR Encoder Sensor . 3. Execute the CR Encoder Sensor Adjustment . 4. Installing Firmware
+Code;00020000
+Description;"NVRAM error
+ The printer causes this error and stops operation when it detects that parameters stored on the NVRAM are corrupted."
+Causes;NVRAM erasing or writing error (every 2-byte is checked)
+Remedy;Replace the BOARD ASSY., MAIN .
+Code;00020002
+Description;"SDRAM error
+ The printer causes this error and stops operation when it detects a bit error by the SDRAM memory check performed during the power-on sequence."
+Causes;• SDRAM reading/writing error • SDRAM failure • The address/data bus on the Main Board is broken or its contact is poor.
+Remedy;Replace the BOARD ASSY., MAIN .
+Code;00020003
+Description;"Boot program sum error
+ The printer causes this error and stops operation when it detects that the boot program of the firmware is corrupted. This error occurs only when turning the power ON."
+Causes;• Failed to install the program. • Flash ROM failure • SDRAM failure • The address/data bus on the Main Board is broken or its contact is poor.
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;0002000A
+Description;"Program load error
+ A sum check error on the program area of the RAM"
+Causes;• Malfunction of the program • SDRAM failure • The address/data bus on the Main Board is broken or its contact is poor.
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;0002000B
+Description;"The internal memory is insufficient.
+ This error occurs when the cache area is judged as insufficient. The cache insufficient condition is likely to be caused by using the work area of the memory with unmatched interface mode settings or invalid commands. The printer stops operation when the error occurs."
+Causes;Malfunction of the program
+Remedy;1. Check the interface mode setting 2. Installing Firmware 3. Replace the BOARD ASSY., MAIN .
+Code;0DXXXXXX
+Description;An error code for debugging
+Causes;• Board failure • SDRAM failure • Cold soldering of the Flash ROM, ASIC, or CPU. • Malfunction of the program • Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;0EXXXXXX
+Description;"A time-lag of the RTC timer
+ This error occurs when the printer failed to communicate with the RTC chip on the Main Board. • 0Exxyyzz: xx = Location where a compare error occurred (00 = LTMR1, 01 = LTMR0, 02 = MIN counter) yy = Setting value (writing value) zz = Setting result (a value read when comparing)"
+Causes;
+Remedy;Start up the printer in the Serviceman mode, and set the date and time setting using the “RTC & USB ID & IEEE1394 ID” Basic Adjustment menu provided in the Adjustment Program.
+Code;100000E0
+Description;CPU address error (misalignment of loading)
+Causes;• Board failure • CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;10000100
+Description;CPU address error (misalignment of storing)
+Causes;• Board failure • CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;10000180
+Description;CPU reserved command code exception error
+Causes;• Board failure • CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;100001A0
+Description;CPU slot undefined command exception error
+Causes;• CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;100001C0
+Description;The AC power is shut off.
+Causes;• A power failure • The power code is disconnected. • Power Supply Board failure • Main Board failure • The CPU detected NMI with “1” indicated for the NMIINO of the ASIC.
+Remedy;1. Turn the printer OFF to reconnect the power code and turn it ON. 2. Replace the P/S BOARD ASSY. . 3. Replace the BOARD ASSY., MAIN .
+Code;100005C0
+Description;CPU DMA address error
+Causes;• Board failure • CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .
+Code;10000XXX
+Description;CPU error
+Causes;• Board failure • CPU cold soldering • Malfunction of the program, Failed to generate commands for the printer
+Remedy;1. Installing Firmware 2. Replace the BOARD ASSY., MAIN .

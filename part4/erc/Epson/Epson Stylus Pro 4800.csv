@@ -1,0 +1,280 @@
+Code;00000101
+Description;"CR Motor life
+ Indicates that the number of CR Motor passes has reached the specified value. The printer will develop the following problems and stop operation if printing is continued in this condition. • Ink leakage through cracks in Ink Tube. • Poor movement of Carriage Unit due to CR Motor internal wear."
+Causes;
+Remedy;1. Check the number of times that the CR Motor has shuttled at “VIEW COUNTER“ from Maintenance Mode 2, look for the measured number on the chart, and replace the corresponding parts.
+Code;00010000
+Description;"PF Motor Encoder check error
+ During initial operation at power on or during PF Motor operation, there may be a case where the encoder pulse signal can not be recognized at specified intervals. In such a case, this message is displayed and the printer stops operating."
+Causes;• Disconnected connector for the PF Encoder Sensor. • Disconnected connector for the PF Motor. • Broken wire for the PF Motor Encoder. • Inverted wiring for A and B pulses. • Inverted wiring for the PF Motor. • PF Motor short • PF Motor continuous excitation (voltage applied continuously, motor revolutions unusual) • Broken power supply fuse for the PF motor driver (on the Main Board )
+Remedy;
+Code;00010001
+Description;"PF Motor out of step
+ During PF Motor operation, there may be a case where the encoder pulse signal within the specified range is not input within a specified period of time or the pulse width is extremely long or short. In such a case, the PF Motor is judged to be out-of-step, so that this message is displayed and the printer stops operating.B"
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the Loop Scale. 2. Perform the PF Timing Belt Tension Adjustment 3. Replace the PF Encoder Sensor 4. Replace the Motor Assy., PF 5. Replace the C593 MAIN Board
+Code;00010002
+Description;"PF Motor over current
+ During PF Motor operation, there may be a case where an abnormal current out of the specified limits is detected in the PF Motor drive circuit on the C511 MAIN Board or a current exceeding the specified value is required. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the Loop Scale. 2. Replace the Motor Assy., PF 3. Replace the C593 MAIN Board
+Code;00010003
+Description;"PF Motor in-position time-out
+ At PF stop processing in PF Motor control, there may be a case where the paper can not move to the final target position within a specified period of time. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the Loop Scale. 2. Perform the PF Timing Belt Tension Adjustment 3. Replace the PF Encoder Sensor 4. Replace the Motor Assy., PF 5. Replace the C593 MAIN Board
+Code;00010004
+Description;"CR Motor Encoder check error
+ During initial operation at power on or during CR Motor operation, there may be a case where the encoder pulse signal is not input at specified intervals. In such a case, this message is displayed and the printer stops operating."
+Causes;• Disconnected FFC for the CR Encoder Sensor. • Disconnected connector for the CR Motor. • Broken wire for the CR Motor Encoder Sensor. • Inverted wiring for A and B pulses. • Inverted wiring for the CR Motor. • CR Motor short • Broken power supply fuse for the PF motor driver (on the Main Board )
+Remedy;1. Check to see if the CR Scale for detection of the encoder pulse is removed. 2. Check for dirt, paper dust or damage to the CR Scale. 3. Check if connection of the CR Encoder Sensor connector or Motor Assy., CR connector. 4. Perform the CR Timing Belt Tension Adjustment 5. Replace the CR Encoder Sensor 6. Replace the Motor Assy., CR 7. Replace the C593 MAIN Board
+Code;00010005
+Description;"CR Motor out of step
+ During CR Motor operation, there may be a case where the encoder pulse signal within the specified range is not input within a specified period of time or the pulse width is extremely long or short. In such a case, the CR Motor is judged to be out-of-step, so that this message is displayed and the printer stops operating."
+Causes;• Defective CR Motor. • CR Motor driver damage (42V system short) • Broken temperature fuse for Cutter Solenoid.
+Remedy;1. Check to see if the CR Scale for detection of the encoder pulse is removed 2. Check for dirt, paper dust or damage to the CR Scale. 3. Perform the CR Timing Belt Tension Adjustment 4. Replace the CR Encoder Sensor 5. Replace the CR_HP Sensor 6. Replace the Motor Assy., CR 7. Replace the C593 MAIN Board 8. Replace the Cutter Solenoid.
+Code;00010006
+Description;"CR Motor over current
+ During CR Motor operation, there may be a case where an abnormal current out of the specified limits is detected in the CR Motor drive circuit on the C511 MAIN Board or a current exceeding the specified value is required. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the CR Scale. 2. Perform the CR Timing Belt Tension Adjustment 3. Replace the CR_HP Sensor 4. Replace the Motor Assy., CR 5. Replace the C593 MAIN Board
+Code;00010007
+Description;"CR Motor in-position time-out
+ At Carriage Unit stop processing in CR Motor control, there may be a case where the Carriage Unit can not move to the final target position within a specified period of time (as per pulse detection). In such a case, this message is displayed and the printer stops operating."
+Causes;There are pulses smaller than out-of-step pulse remaining without completing paper feed.
+Remedy;1. Check to see if the CR Scale for detection of the encoder pulse is removed. 2. Check for dirt, paper dust or damage to the CR Scale. 3. Perform the CR Timing Belt Tension Adjustment 4. Replace the CR Encoder Sensor 5. Replace the CR_HP Sensor 6. Replace the Motor Assy., CR 7. Replace the C593 MAIN Board
+Code;00010008
+Description;"Servo interrupt watchdog time-out
+ During the CR Motor or PF Motor operation, there may be a case where watch dog time-out is detected in the DC motor control circuit or on the ASIC. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;Since the cause is deemed to be a defective CPU or ASIC, replace the C593 MAIN Board .
+Code;00010009
+Description;"System interrupt watchdog time-out
+ In the data processing stage on the C511 MAIN Board, there may be a case where runaway or defective cash occurs on CPU or ASIC. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;If not cleared by turning the power OFF and back ON, the CPU or ASIC is deemed defective, so replace the C593 MAIN Board .
+Code;0001000A
+Description;"CR axis detection error
+ During initial operation at power on or during printing operation, there may be a case where the home position can not be detected at the home position detection timing or within a specified period of time. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the CR_HP Sensor. 2. Replace the CR_HP Sensor 3. Replace the C593 MAIN Board
+Code;0001000C
+Description;"PG axis detection error
+ During initial operation at power on or during platen gap fluctuation (change) operation after paper setting, there may be a case where the PG home position can not be detected. In such a case, this message is displayed and the printer stops operating."
+Causes;• Disconnected connector for the PG Phase Sensor. • Disconnected connector for the PG Motor. • Broken wire for the PG Motor. • Defective PG Phase Sensor. • Defective PG Motor. • Damage to wheel linkage of PG drive gears • Power supply fuse for PG/PO Motor driver is broken on the MAIN Board.
+Remedy;1. Connect PG Phase Sensor or PG Motor connector correctly. 2. Replace the PG Phase Sensor 3. Replace the Motor Assy., PG 4. Replace the C593 MAIN Board
+Code;0001000F
+Description;"CR Motor PWM output faulty
+ There may be a case where a current exceeding the specified value flows during CR Motor operation. In such a case, this message is displayed and the printer stops operating. This error can be displayed in the following case: an abnormal load which does not reach the level causing an out-of-step phenomenon ""00010005"" in the carriage drive system has occurred and the running speed of the motor has been detected to be too low (by the encoder), so that the current is increased to raise the running speed of the motor. Thus, this message appears to prevent the CR Motor from being overheated."
+Causes;
+Remedy;1. Check the load on the CR Motor. • Running load of CR Motor (check by manual operation) • Measure the resistance value of the CR Motor. (19.3 ± 10% [Ohm]) • Damage to or wear in the CR Driven Pulley • Damaged or worn bearing of the Carriage Unit • Flaws in the CR Rail caused by roller running • Tension of the CR timing belt 2. Replace the Motor Assy., CR If the CR Motor is found in short mode, replace the C593 MAIN Board at the same time. 3. Replace the C593 MAIN Board unnin
+Code;00010010
+Description;"PF Motor PWM output faulty
+ There may be a case where a current exceeding the specified value flows during PF Motor operation. In such a case, this message is displayed and the printer stops operating. This error can be displayed in the following case: an abnormal load which does not reach the level causing an out-of-step phenomenon ""00010001"" in the paper feed drive system has occurred and the running speed of the motor has been detected to be too low (by the encoder), so that the current is increased to raise the running speed of the motor. Thus, this message appears to prevent the PF Motor from being overheated."
+Causes;
+Remedy;1. Check the load on the PF Motor. • Measure the resistance value of the PF Motor. (17.9 ± 15% [Ohm]) If the PF Motor is found in short mode, replace the C593 MAIN Board at the same time. • Running load of PF Motor (check by manual operation) • Rotation load of PF Roller 2. Replace the Motor Assy., PF 3. Replace the C593 MAIN Board
+Code;00010012
+Description;"CR overload (high sensitivity) error
+ PWM has been being output for a certain period of time. This can be made when load on the CR Motor is slightly increased."
+Causes;
+Remedy;1. Check the load on the CR Motor. • Running load of CR Motor (check by manual operation) • Measure the resistance value of the PF Motor. If the CR Motor is found in short mode, replace the C593 MAIN Board at the same time. • Damage to or wear in the CR Driven Pulley • Damaged or worn bearing of the Carriage Unit • Flaws in the CR Rail caused by roller running • Tension of the CR timing belt 2. Replace the Motor Assy., CR 3. Replace the C593 MAIN Board
+Code;00010013
+Description;"PR overload (high sensitivity) error
+ PWM has been being output for a certain period of time. This can be made when load on the PF Motor is slightly increased."
+Causes;
+Remedy;1. Check the load on the PF Motor. • Measure the resistance value of the PF Motor. If the PF Motor is found in short mode, replace the C593 MAIN Board at the same time. • Running load of PF Motor (check by manual operation) • Rotation load of PF Motor 2. Replace the Motor Assy., PF 3. Replace the C593 MAIN Board
+Code;0001001B
+Description;"Head driver (TG) temperature error
+ During printing operation (empty jetting of ink), there may be a case where the temperature inside the Print Head has risen above the specified value and the thermistor in the Print Head detects it as abnormal temperature. In such a case, this message is displayed and the printer stops operating."
+Causes;• Print Heat increase due to empty jetting of ink • Faulty contact of Head FFC, broken Head FFC or disconnected Head FFC. • Print Head broken down.
+Remedy;1. Turn off the power to the printer once and turn it on again and check for recovery. 2. If the same error occurs immediately, replace the Printhead
+Code;0001001D
+Description;"CR servo parameter error
+ There may be a case where a voltage exceeding the specified value is about to be applied to the CR Motor. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the CR Scale 2. Perform the CR Timing Belt Tension Adjustment 3. Replace the CR Encoder Sensor 4. Replace the Motor Assy., CR 5. Replace the C593 MAIN Board
+Code;0001001E
+Description;"PF servo parameter error
+ There may be a case where a voltage exceeding the specified value is about to be applied to the PF Motor. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;1. Check for dirt, paper dust or damage to the Loop Scale. 2. Perform the CR Timing Belt Tension Adjustment. 3. Replace the PF Encoder Sensor. 4. Replace the Motor Assy., PF 5. Replace the C593 MAIN Board
+Code;00010020
+Description;"CSIC reed/right error
+ This message is displayed and the printer is stopped when information from the Ink Cartridge CSIC cannot be obtained or the latest ink information for the CSIC cannot be written when turning the power ON/ OFF, opening/closing the I/C Cover or at completion of printing 1 page."
+Causes;
+Remedy;"1. Connect CR_FFC 2. Defective CSIC Board (Replace the Ink Cartridge.) 3. Faulty contact with the CSIC Replace the ""I/H Left Unit"" or ""I/H Right Unit"". (Refer to I/H Left Unit / I/H Lever Sensor (Left) , or I/H Right Unit / I/H Lever Sensor (Right) ) 4. Replace the C511_SUB-B Board , Replace the C593_SUB-C Board 5. Replace the C593 MAIN Board"
+Code;00010022
+Description;"Ink type error (setting on printer body side)
+ ""Ink type: neutral"" is set even though an ink type other than dye/pigment or ""CSIC detection: OFF"" has been set."
+Causes;
+Remedy;1. Install the correct Ink Cartridge. 2. Raise the Ink Lever and set the Ink type (NPD) by SERVICE CONFIG of Maintenance Mode 2 . NOTE: If setting is performed with the Ink Lever in the set position, initialization will start and the service request error will occur again.
+Code;00010023
+Description;"RTC analysis error
+ There may be a case where the absolute time data stored on NVRAM indicates an impossible date or hour. In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;"• Execute one of the followings: • Turn on the printer in Maintenance Mode 2 , and execute ""RTC&USB ID&IEEE1394 ID” to set the date using basic adjustment in adjustment program. • Remove the lithium battery once and install it again. • Replace the lithium battery with a new one. (After replacement, be sure to execute RTC setting in one of the methods above.) • Replace the C593 MAIN Board"
+Code;00010025
+Description;"CSIC ROM communication error
+ There may be a case where an error occurs in communication with the CSIC and C593 Main Board. In such a case, this message is displayed and the printer stops operating."
+Causes;• Faulty contact of Ink Cartridge
+Remedy;"1. Install the correct Ink Cartridge. 2. Defective CSIC Board (Replace the Ink Cartridge.) 3. Faulty contact with the CSIC Replace the ""I/H Left Unit"" or ""I/H Right Unit"". (Refer to I/H Left Unit / I/H Lever Sensor (Left) , or I/H Right Unit / I/H Lever Sensor (Right) ) 4. Replace the C511_SUB-B Board and the C593_SUB-C Board 5. Replace the C593 MAIN Board"
+Code;00010026
+Description;"RTC communication error
+ There may be a case where the RTC circuit on the Main Board operates incorrectly (is operated as test mode). In such a case, this message is displayed and the printer stops operating."
+Causes;
+Remedy;"1. Remove the battery once with the power turned off and after waiting for a while, install the battery again and turn the power on. 2. Repeat Step1 above until this error does not occur at power-on. • Start up the printer in Maintenance Mode 2 , execute ""RTC&USBID&IEEE1394ID"" to set the date using basic adjustment in the the adjustment program."
+Code;00010028
+Description;"Head error
+ Print Head has been damaged or undefined NMI was detected at CPU."
+Causes;
+Remedy;Replace the Printhead
+Code;00010029
+Description;"Unidentified NMI
+ CPU has detected undefined NMI."
+Causes;
+Remedy;If this error is not cleared even when the power is turned off once and on again, replace the C593 MAIN Board
+Code;0001002A
+Description;CR ASIC ECU error
+Causes;• Faulty firmware (irregular overwriting of register, etc.) • Damaged drive circuit board (break in pattern, etc.)
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0001002B
+Description;PF ASIC ECU error
+Causes;• Faulty firmware (irregular overwriting of register, etc.) • Damaged drive circuit board (break in pattern, etc.)
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0001002D
+Description;Cleaning Unit work life error
+Causes;Pump counter (8P x 1000 = 8,000P) has reached its regulated value.
+Remedy;"Replace the Cleaning Unit and reset the Cleaning Unit work life counter. (Reset When Cleaning Unit Change .) NOTE: Refer to Table 3-4 ""Corrective Actions for Displayed Warnings "" about the Cleaning Unit components."
+Code;0001002F
+Description;"360 DPI writing time out error
+ At ASIC reset, cannot restore position held before reset or carriage interference, etc."
+Causes;
+Remedy;Recover by turning power OFF and back ON.
+Code;00010030
+Description;Multi Sensor failure
+Causes;Multi Sensor is damaged
+Remedy;1. Check if the connection between the Multi Sensor and C593 MAIN Board, and correct it if abnormal. 2. Replace the Multi Sensor
+Code;00010031
+Description;ASF phase detection error
+Causes;• ASF home position cannot be detected even though Pump Motor turns at designated amount. • ASF Phase Sensor is damaged. • Power supply fuse for ASF/Pump Motor driver is broken on the MAIN Board.
+Remedy;1. Check if the ASF phase detection wheel rotates smoothly, and correct it if abnormal. 2. Replace the ASF Phase Sensor 3. Replace the C593 MAIN Board
+Code;00010032
+Description;ASF drive switch error
+Causes;
+Remedy;
+Code;00010033
+Description;Eject phase detection error
+Causes;Home position for paper eject switching cannot be detected even though PG Motor turns at designated amount, or Paper eject phase sensor is damaged.Or power supply fuse for PG/PO Motor driver is broken on the MAIN Board.
+Remedy;1. Check if the Paper Eject Unit rotates correctly and correct it if abnormal. 2. Replace the Paper Eject Phase Sensor 3. Replace the C593 MAIN Board
+Code;00010034
+Description;Eject movement error
+Causes;Floating of paper eject roller due to paper jam or foreign object.
+Remedy;Recover by turning power OFF and back ON after removing paper or foreign object.
+Code;00010035
+Description;Pump phase detection error
+Causes;Pump position cannot be detected even though Pump Motor turns at designated amount, or Pump Phase Sensor is damaged.Or power supply fuse for ASF/Pump Motor driver is broken on the MAIN Board.
+Remedy;Check whether or not recovery can be done by turning power OFF and back ON. If error recurs, replace the Pump Phase Sensor .Or replace the C593 MAIN Board .
+Code;00010036
+Description;Type-B board installation error
+Causes;Type-B Board lower than Level 2 is installed.
+Remedy;Remove installed Type-B Board.
+Code;00010037
+Description;Head thermistor error
+Causes;• The head thermistor is failing. • Thermistor temperature is at -20°C or less or at 100°C or more. • The Head FFC is disconnected or has poor contact.
+Remedy;"1. Check if the ""Harness, Head"" is connected correctly, and correct it if abnormal. 2. Replace the Printhead"
+Code;00010038
+Description;Transistor thermistor error
+Causes;• The transistor thermistor* is failing. • Thermistor temperature is at -20°C or less or at 100°C or more.
+Remedy;Replace the C593 MAIN Board Note * : A temperature detection part that is attached to the heatsink (address numbers: Q12, Q13, Q14, Q15), which controls ON/OFF status of the head driving voltage, with screws. This part is located at the address “TH1“ on the Main Board.
+Code;00010039
+Description;"PG adjustment value incorrect overwrite error
+ Writing to the PG adjustment value area of NVRAM was done improperly, or an improper value was read."
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble.
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0001003A
+Description;"PG adjustment value outside range error
+ A value outside the correction range was written to the PG adjustment value area of NVRAM, or an improper value was read."
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • An unsuitable F/W is installed
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0001003B
+Description;Cutter installation error 1
+Causes;CR lock cannot be released by PG2.6 after cutter replacement. The cutter or cutter pusher is not properly set.
+Remedy;1. Turn off the printer power. 2. Check the cutter installation condition and correct it if abnormal.
+Code;0001003C
+Description;Cutter installation error 2
+Causes;CR lock cannot be released by PG1.2 even after 3 attempts with the cutter replacement problem detection movement. The cutter or cutter pusher is not properly set.
+Remedy;1. Turn off the printer power. 2. Check the cutter installation condition and correct it if abnormal.
+Code;0001003D
+Description;Cutter installation error 3
+Causes;CR lock cannot be released by PG1.2 the next time the power is turned on if power was turned off during cutter replacement. The cutter or cutter pusher is not properly set.
+Remedy;1. Turn off the printer power. 2. Check the cutter installation condition and correct it if abnormal.
+Code;00020000
+Description;"NVRAM error
+ There may be a case where the parameter data in NVRAM is broken. In such a case, this message is displayed and the printer stops operating."
+Causes;• NVRAM erase error • Write error (Check in 2 bytes)
+Remedy;Replace the C593 MAIN Board
+Code;00020002
+Description;"SDRAM error
+ In memory check of SDRAM executed at power on, there may be a case where a bit error is detected. In such a case, this message is displayed and the printer stops operating."
+Causes;SDRAM Read/Write error
+Remedy;Replace the C593 MAIN Board
+Code;00020003
+Description;"BOOT program SUM error
+ There may be a case where the boot program of firmware is broken. In such a case, this message is displayed and the printer stops operating. (Only at power on)"
+Causes;• Faulty installation • Defective flash memory
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;00020009
+Description;Flash memory SUM error
+Causes;• Firmware has not been installed in flash memory. • Flash memory is faulty.
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0002000A
+Description;"Program load error
+ SUM check error for program area on RAM."
+Causes;• Program problem • SDRAM failure
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0002000B
+Description;"Internal memory shortage error
+ This error appears when the cash area is insufficient. There may be a case where the assigned work area varies with the I/F mode and I/F mode setting does not agree or decoding of a command is impossible. Then the work area is consumed up, thus memory runs short. In such a case, this message is displayed and the printer stops operating."
+Causes;• Program problem
+Remedy;1. Check I/F mode. 2. Installing Firmware 3. Replace the C593 MAIN Board
+Code;0003xxxx
+Description;Debug error code
+Causes;• Defective circuit board. • Defective SDRAM. • Defective Flash memory. • Faulty ASIC soldering. • Faulty CPU soldering. • Program trouble • Generation error.
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0Dxxxxxx
+Description;Debug error code
+Causes;• Defective circuit board. • Defective SDRAM. • Defective Flash memory. • Faulty ASIC soldering. • Faulty CPU soldering. • Program trouble • Generation error.
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;0Exxxxxx
+Description;"RTC timer off error
+ This error occurs when attempting unsuccessfully to communicate with RTC chip on the MAIN Board. 0Exxyyzz : xx: Compare error location (00=LTMR1, 01=LTMR0, 02=MIN counter) yy: Setting value (writing value) zz: setting result (value read during comparing)"
+Causes;
+Remedy;"1. Turn the printer off and back on. 2. Turn on the printer in Maintenance Mode 2 , and execute ""RTC&USB ID&IEEE1394 ID” to set the date using basic adjustment in adjustment program."
+Code;100000E0
+Description;CPU address error (load misalignment)
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;10000100
+Description;CPU address error (storage misalignment)
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;10000180
+Description;CPU reserve command code exception error
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;100001A0
+Description;CPU slot illegal command exception error
+Causes;• Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;100001C0
+Description;AC disruption
+Causes;• Power outage (=Instant blackout) • Unplugged from electric outlet • Power Supply Board failure • MAIN Board failure.
+Remedy;1. Turn the power OFF, remove and insert the grounded electrical outlet firmly, and turn the power back ON again. 2. Replace the Power Supply Board 3. Replace the C593 MAIN Board
+Code;100005C0
+Description;CPU DMA address error
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board
+Code;10000xxx
+Description;CPU error
+Causes;• Defective circuit board • Faulty CPU soldering • Program trouble • Generation error
+Remedy;1. Installing Firmware 2. Replace the C593 MAIN Board

@@ -1,0 +1,128 @@
+Code;195
+Description;Serial Number Error The serial number stored in the memory (EGB) is not correct.
+Causes;• EEPROM defective • EGB replaced without original EEPROM
+Remedy;1. Check the serial number. 2. If the stored serial number is incorrect, contact your supervisor.
+Code;202
+Description;Polygon motor error 1: ON timeout The polygon mirror motor does not reach the targeted operating speed within 5 sec. after turning on or changing speed.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective • IPU (EGB) defective
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;203
+Description;Polygon motor error 2: OFF timeout The polygon mirror motor does not leave the READY status within 3 sec. after the polygon motor switched off.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective • IPU (EGB) defective
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;204
+Description;Polygon motor error 3: XSCRDY signal error The SCRDY_N signal remains HIGH for 200 ms while the LD unit is firing.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective • IPU (EGB) defective
+Remedy;1. Replace the interface harness of the laser optics unit. 2. Replace the laser optics unit. 3. Replace the EGB (Engine Board).
+Code;220
+Description;Laser Synchronizing Detection Error: [K]/[Y] The laser synchronizing detection signal for LDB [K]/[Y] is not output after the LDB unit has turned on while the polygon motor is rotating normally.
+Causes;• Disconnected cable from the laser synchronizing detection unit or defective connection • Defective laser synchronizing detector • Defective LDB • Defective EGB
+Remedy;1. Check the connectors. 2. Replace the laser optics unit. 3. Replace the EGB.
+Code;222
+Description;Laser Synchronizing Detection Error: [M]/[C] The laser synchronizing detection signal for LDB [M]/[C] is not output after the LDB unit has turned on while the polygon motor is rotating normally.
+Causes;• Disconnected cable from the laser synchronizing detection unit or defective connection • Defective laser synchronizing detector • Defective LDB • Defective EGB
+Remedy;1. Check the connectors. 2. Replace the laser optics unit. 3. Replace the EGB.
+Code;240
+Description;LD error The IPU (EGB) detects a problem at the LD unit.
+Causes;• Worn-out LD • Disconnected or broken harness of the LD.
+Remedy;1. Replace the laser optics unit.
+Code;300
+Description;High voltage power output error The measured voltage is not correct when the EGB measures each charge output (charge, development, image transfer belt unit, and transfer unit).
+Causes;• Disconnected or defective high voltage harness • Defective high voltage power supply • Defective EGB
+Remedy;1. Check or replace the harnesses. 2. Replace the high voltage power supply board 3. Replace the EGB.
+Code;396
+Description;Black drum motor error The LOCK signal error is detected when the EGB monitors the black drum motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;• Disconnected or defective motor harness. • Motor slips due to excessive load
+Remedy;1. Check the harness from the black drum motor. Replace it if necessary.
+Code;397
+Description;Color drum motor error The LOCK signal error is detected when the EGB monitors the color drum motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;• Disconnected or defective motor harness. • Motor slips due to excessive load
+Remedy;1. Check the harness from the color drum motor. Replace it if necessary.
+Code;400
+Description;TM sensor error The CPU detected a low voltage of the positive reflection output under the threshold in the TM sensor.
+Causes;• TM sensors are dirty. • A solid print out due to an electrostatic charging error • The TM sensor is defective.
+Remedy;1. Clean the TM sensors. 2. Replace the TM sensors. 3. Check the image transfer unit. 4. Turn the power Off and On.
+Code;445
+Description;ITB (Image Transfer Belt) Unit: Home Position Error The ITB contact sensor does not detect the home position of the ITB for 5 seconds after the ITB unit initialization has been done. ITB (Image Transfer Belt) Unit: Contact Position Error The ITB contact sensor does not detect the contact position of the ITB for 5 seconds after the ITB unit has moved to the contact position. ITB (Image Transfer Belt) Unit: No-contact Position Error The ITB contact sensor does not detect the home position of the ITB for 5 seconds after the ITB unit has moved to no-contact position.
+Causes;• Defective ITB contact motor • Defective ITB contact sensor • Defective ITB unit
+Remedy;1. Replace the ITB contact motor. 2. Replace the ITB contact sensor. 3. Replace the ITB unit.
+Code;480
+Description;Agitator Motor Error The agitator motor error is detected twice for 10 msec during the initialization at power-on or after the cover is closed.
+Causes;• Disconnected or defective harness • Defective agitator motor
+Remedy;1. Check or replace the harness. 2. Replace the agitator motor.
+Code;490
+Description;ITB (Image Transfer Belt) Unit Set Error The TM sensor does not detect the reflection from the ITB.
+Causes;• No ITB unit in the machine • Dirty TM sensor
+Remedy;1. Check the installation of the ITB unit. 2. Clean the TM sensor.
+Code;500
+Description;Transport/Fusing Motor Error The LOCK signal error is detected when the EGB monitors the transport/fusing motor state. (This monitoring is done immediately after power-on, when the motor starts rotating, and immediately after the motor stops.)
+Causes;• Disconnected or defective motor harness. • Motor slips due to excessive load
+Remedy;1. Check the harness from the transport/fusing motor. Replace it if necessary.
+Code;530
+Description;LSU Fan Motor Error A LOCK signal is not detected for more than ten seconds while the motor START signal is on and if this error occurs twice consecutively, this SC is issued.
+Causes;• Disconnected or defective motor harness. • Defective LSU fan motor
+Remedy;1. Check or replace the motor harness. 2. Replace the LSU fan motor.
+Code;531
+Description;Fusing Fan Motor Error A LOCK signal is not detected for more than ten seconds while the motor START signal is on and if this error occurs twice consecutively, this SC is issued.
+Causes;• Disconnected or defective motor harness. • Defective LSU fan motor
+Remedy;1. Check or replace the motor harness. 2. Replace the fusing fan motor.
+Code;541
+Description;Thermistor Error The thermistor output is less than 0°C for 7 seconds.
+Causes;• Disconnected thermistor • Defective harness connection
+Remedy;"Defective harness connection 1. Check the harness connection of the thermistor. 2. Replace the fusing unit. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;542
+Description;Print Ready Temperature Error. • The heating roller temperature increase during a set time is not correct. • The fusing temperature does not reach the print ready temperature within a set time after the fusing lamp has turned on.
+Causes;• Defective thermistor • Incorrect power supply input at the main power socket • Defective fusing lamp
+Remedy;"1. Check the voltage of the wall outlet. 2. Replace the fusing unit 3. Replace the fusing lamp. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;543
+Description;High Temperature Detection Error This SC is issued if one of following conditions occurs: • The thermistor (center) detects 255C or thermistor (end) detects 245C. • The thermistor (center) detects a 3C increment or more for five seconds at 220C or more or the thermistor (end) detects a 4C increment or more for five seconds at 210C or more.
+Causes;• Defective I/O control (EGB) • Defective EGB
+Remedy;"1. Replace the EGB • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;545
+Description;Heating Lamp Full-Power Error The fusing lamp is fully-powered for a certain time while the fusing unit stays in the stand-by mode and is not rotating.
+Causes;• Deformed thermistor • Thermistor not in the correct position • Defective fusing lamp
+Remedy;"1. Replace the fusing unit. 2. Replace the fusing lamp. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;547
+Description;Zero Cross Error The zero cross signal is not detected for three seconds even though the fusing lamp relay is on after turning on the main power or closing the front door.
+Causes;• Defective fusing lamp relay
+Remedy;"1. Turn the main power switch off and on. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated. The power should be turned off and on after the recovery procedure."
+Code;548
+Description;Low Temperature Error The center thermistor detects 100°C or less for 4 seconds.
+Causes;• Defective fusing lamp • Defective thermistor
+Remedy;"1. Replace the fusing unit. 2. Replace the fusing lamp. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;557
+Description;Zero Cross Frequency Error The detection error occurs ten times consecutively in ten zero cross signal detections. This error is defined when the detected zero cross signal is 17 or less/27 or more for 0.2 seconds.
+Causes;• Defective fusing lamp relay • Unstable input power source
+Remedy;"1. Check the power supply source. 2. Replace the fusing unit. 3. Turn the main power switch off and on. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated. The power should be turned off and on after the recovery procedure."
+Code;559
+Description;"Consecutive Fusing Jam The paper jam counter for the fusing unit reaches 3. The paper jam counter is cleared if the paper is fed correctly. This SC is activated only when this function is enabled with ""Engine Maintenance"" (default ""OFF"")."
+Causes;• Defective fusing unit • Defective fusing control
+Remedy;"1. Clear this SC to send a command after a jam removal. 2. Turn off this function after a jam removal. • Execute ""Engine Maintenance Menu"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;669
+Description;EEPROM Error An unexpected value exists in the initialization flag of the EEPROM
+Causes;• EEPROM not initialized • Defective EEPROM
+Remedy;1. Initialize the EEPROM. 2. Replace the EEPROM. 3. Replace the EGB.
+Code;690
+Description;GAVD Communication Error The ID of the GAVD is not identified during initialization. The chip ID of the GAVD cannot be detected by the machine at power-on.
+Causes;• Defective EGB
+Remedy;1. Replace the EGB.
+Code;819
+Description;Service Cycle Power • Incorrect combination of EGB and controller board. • An unexpected error occurs in the EEPROM on the controller board.
+Causes;• Controller board defective
+Remedy;1. Install the correct EGB and controller boards for this machine. 2. Replace the controller board
+Code;823
+Description;USB/ Network Device Error An interface error in the USB connection or NIB connection occurs.
+Causes;• Controller board detective
+Remedy;1. Replace the controller board.
+Code;824
+Description;EEPROM Error An EEPROM check error at power-on occurs.
+Causes;• Controller board detective
+Remedy;1. Replace the controller board.
+Code;827
+Description;On-Board Memory Check Error An on-board memory check error at power-on occurs.
+Causes;• Controller board detective
+Remedy;1. Replace the controller board.
+Code;828
+Description;ROM Checksum Error
+Causes;A ROM checksum error at power-on occurs.
+Remedy;1. Replace the controller board.

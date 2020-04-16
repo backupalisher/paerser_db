@@ -1,0 +1,54 @@
+Code;202
+Description;Polygon motor on timeout error The polygon mirror motor does not reach the targeted operating speed within 10 sec. after turning.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective 1. Turn the main power off/on the machine. 2. Replace the interface harness of the laser optics unit. 3. Replace the laser optics unit.
+Code;203
+Description;Polygon motor off timeout error The polygon mirror motor does not leave the READY status within 20 sec. after the polygon mirror motor switched off.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective 1. Turn the main power off/on the machine. 2. Replace the interface harness of the laser optics unit. 3. Replace the laser optics unit.
+Code;204
+Description;Polygon motor lock signal error The signal remains HIGH for 200 ms (or 4times in 50msec polling) while the polygon mirror motor is rotating.
+Causes;• Polygon motor/driver board harness loose or disconnected • Polygon motor/driver board defective • Laser optics unit defective 1. Turn the main power off/on the machine. 2. Replace the interface harness of the laser optics unit. 3. Replace the laser optics unit.
+Code;220
+Description;Beam Synchronize error The laser synchronizing detection signal for LD is not output within 400msec after the LD unit has turned on.
+Causes;• Disconnected cable from the laser synchronizing detection unit or defective connection • Defective laser synchronizing detector • Defective LD • Defective ECB 1. Check the connectors. 2. Replace the laser optics unit. 3. Replace the ECB.
+Code;268
+Description;Video thermistor error At power on, the temperature sensor in the optics unit detected a temperature lower than -30° C for more than 4 sec. -or- It detected a temperature higher than 105°C for more than 1sec.
+Causes;• Thermistor disconnected (causes extremely low temperature reading) • Thermistor damaged and short circuited (causes extremely high temperature reading) 1. Turn the machine's main power off, and then on. 2. Replace the thermistor.
+Code;491
+Description;Bias leak An error signal is detected for 0.2 seconds when changing the development unit.
+Causes;• Defective transfer roller • Defective high voltage power pack 1. Turn the machine's main power off, and then on.
+Code;500
+Description;Main motor error The machine does not detect a main motor lock signal within 2sec after the main motor started to rotate. -or- The machine does not release a main motor lock signal within 2sec after the main motor switched off. -or- The machine detects a main motor lock signal every 100ms for seven times consecutively, after the main motor started to rotate stably.
+Causes;• Overload of • Torque load overload • Defective main motor • Disconnect or defective motor harness 1. Turn the machine's main power off, and then on. 2. Check or replace the main motor if the torque load is normal. 3. Replace the motor harness.
+Code;530
+Description;Fusing Fan Motor Error The FAN lock signal - High for 10 seconds, after the fan motor started to rotate.
+Causes;• Disconnected or defective motor harness. 1. Turn the machine's main power off, and then on.
+Code;541
+Description;Fuser thermistor error The thermistor output is less than 0°C for 5 seconds after the fusing lamp turns ON.
+Causes;"• Disconnected or defective thermistor • Disconnected or defective fusing lamp 1. Check the harness connection of the thermistor. 2. Replace the fusing unit. • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;542
+Description;"Fuser reload error This SC is issued if one of following conditions occurs: The fusing temperature rises 8°C or less in 1.5 seconds; and this continues 5 times consecutively. -or- The fusing temperature has not reached 45°C within 9 seconds (after the fusing lamp comes ON while the machine is warming-up). -or- The fusing unit does not attain reload temperature within 35 s. (normal temperature) or 65 s (lower temperature – the thermistor output is less than 18°C) after the fusing temperature control starts."
+Causes;• Defective or deformed thermistor • Incorrect power supply input at the main power socket 1. Defective fusing lamp
+Code;543
+Description;High temperature error (Software) • The detected temperature stays at 225°C for 1 second, and this consecutively occurs 10 times.
+Causes;"• Defective ECB • Defective PSU 1. Replace the ECB 2. Replace the PSUt unit. • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;544
+Description;High temperature error (Hardware) • During stand-by mode or a print job, the detected heating roller temperature reaches 250° C.
+Causes;"• Defective ECB • Defective PSU 1. Replace the ECB 2. Replace the PSU • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;545
+Description;Fusing Lamp Overheat Error The fusing lamps remained ON at full capacity for more than 9 s after the fusing temperature attains reload temperature.
+Causes;"• Deformed thermistor • Thermistor not in the correct position • Defective fusing lamp 1. Replace the fusing unit. 2. Replace the fusing lamp. • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;547
+Description;Zero cross error • The zero cross signal is detected three times even though the fusing lamp relay is off when turning on the main power. • The zero cross signal is not detected for 3 seconds even though the fusing lamp relay is on after turning on the main power or closing the front door. • The detection error occurs twice or more in 11 zero cross signal detections. This error is defined when the detected zero cross signal is less than 45. • The zero cross signal is not detected three times while the main power remains ON.
+Causes;• Defective fusing relay • Defective fusing relay circuit • Shorted +24V fuse on the PSU • Unstable power supply. 1. Check the power supply source. 2. Replace the +24V fuse on the PSU. 3. Replace the PSU
+Code;557
+Description;Zero cross frequency error The zero cross signal is detected ten times while the fusing lamp relay remains ON after turning on the main power.
+Causes;"• Defective fusing lamp relay • Defective drive circuit of the fusing lamp relay • Unstable input power source 1. Check the power supply source. 2. Replace the fusing unit. • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;559
+Description;"Fuser 3times jam error The paper jam counter for the fusing unit reaches 3. The paper jam counter is cleared if the paper is fed correctly. This SC is activated only when this function is enabled with ""Engine Maintenance"" (default ""OFF"")."
+Causes;"• Defective fusing unit • Defective fusing control 1. Clear this SC to send a command after a jam removal. 2. Turn off this function after a jam removal. • Execute ""Reset Fusing Unit SC"" to recover the machine after completing the recovery procedure. Otherwise, the machine continues to issue this SC code and cannot be operated."
+Code;669
+Description;EEPROM communication error An unexpected value exists in the initialization flag of the EEPROMe PSUt unit.
+Causes;• EEPROM not connected • Defective EEPROM 1. Installing the EEPROM. 2. Replacing the EEPROM.
+Code;688
+Description;CTL_PRREQ_N signal does not come. The ECB does not receive a memory address command from the controller 20 seconds after paper is in the position for registration.
+Causes;• Defective controller board • Communication error 1. Turn the machine's main power off, and then on. 2. Check if the controller board is firmly connected to the ECB.

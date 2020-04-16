@@ -1,0 +1,436 @@
+Code;A01
+Description;Master feed error
+Causes;201 The master-positioning sensor does not go ON even when the master is fed the preset amount after the write pulse motor and load pulse motor are activated during the masterpositioning operation. 202 The master-positioning sensor does not go OFF even when the write pulse motor is reversed during the master-positioning operation. 211 The master-positioning sensor was ON during standby. 214 The master-positioning sensor was ON at the start of master making. 215 Faulty gate-array control for the write pulse motor or load pulse motor
+Remedy;Master-making-unit sensor: OFF -> ON, then master-positioning sensor OFF (or switch the power on again)
+Code;A02
+Description;Master loading error
+Causes;509 The master-loading sensor was OFF when the master was checked at a specified angle during the master-loading operation.
+Remedy;Master-manufacturing unit sensor: OFF -> ON
+Code;A03
+Description;Cutting error
+Causes;206 Cutting was performed after the cutting operation was repeated.
+Remedy;Print-drum set sensor: OFF -> ON
+Code;A04
+Description;Master-disposal error
+Causes;303 OFF/OFF in master-disposal jam sensor check at 120°/180° 304 The master-disposal jam sensor was ON upon completion of master-disposal operation.
+Remedy;Print-drum set sensor: OFF -> ON
+Code;A05
+Description;Master present in the master-disposal section
+Causes;312 The master-disposal jam sensor was ON at the start of master making operation.
+Remedy;Master-disposal-unit set sensor: OFF C25-> ON, and master-disposal jam sensor: ON (Or switch the power on again.)
+Code;A06
+Description;Check paper-feed tray
+Causes;403 The paper-feed-tray upper or lower safety switch was OFF.
+Remedy;The paper-feed-tray lower/upper safety switch goes ON. (Or switch the power on again.)
+Code;A07
+Description;Paper-feed error
+Causes;409 The paper-ejection sensor was OFF when the paper should have arrived, and the paper sensor was ON at 180°, just before stopping. 412 The paper sensor was OFF three times in succession when a paper misfeed was detected (paper misfeed). 418 The paper sensor was ON at the start of operation.
+Remedy;Turn the paper sensor OFF and reset the jam (or switch the power on again).
+Code;A08
+Description;Paper jam on print drum
+Causes;410 The paper-ejection sensor was OFF when paper should have arrived, and the paper sensor was OFF at 180° just before stopping. 421 The paper sensor was ON when the paper should have left the paper sensor during feeding of long paper in long-length paper mode (paper longer than 555 mm). Error command (Main unit: Jam error) received from the multi-tray unit After paper-sensor turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper-sensor did not turn OFF. (Multi-tray feed sensor 1 to 3: OFF and 4: ON and paper sensor: ON) or (Multi-tray feed sensor 4: ON and paper sensor: ON at
+Remedy;Print-drum set sensor: OFF -> ON (Or switch the power on again.)
+Code;A09
+Description;Paper-ejection error
+Causes;411 The paper-ejection sensor was ON when the paper should have left the paper-ejection sensor. 417 The paper-ejection sensor was ON at the start of operation.
+Remedy;Turn the paper-ejection sensor OFF and reset the jam, or switch the power on again.
+Code;A10
+Description;ADF original feed error
+Causes;102 Original-registration-sensor remaining jam 103 Original-IN-sensor remaining jam 104 Original-OUT-sensor remaining jam 105 Original-registration-sensor non-arrival jam 106 Original-IN-sensor non-arrival jam 107 Original-OUT-sensor non-arrival jam 109 An original feed error occurred, due to opening the ADF. 162 No original in ADF during ADF master making.
+Remedy;Turn the ADF original detection sensor OFF, and reset the jam.
+Code;A16
+Description;Awaiting master removal
+Causes;525 Awaiting master removal
+Remedy;Print-drum set sensor: OFF -> ON
+Code;A17
+Description;Cutter error
+Causes;209 The cutter home-position switch was OFF during master setting at the start of master making.
+Remedy;"Master-loading set unit: OFF -> ON; master-detection sensor: OFF"
+Code;A18
+Description;Print-drum unlocked
+Causes;528 The print-drum lock position sensor is OFF and the print-drum lock cam sensor is ON, while the print-drum sensor safety switch is ON.
+Remedy;Print-drum safety switch: OFF -> ON
+Code;B01
+Description;Keycard counter: No card
+Causes;730 Keycard counter: No card
+Remedy;Insert Card
+Code;B02
+Description;Sorter: Error command 1
+Causes;702 An error command was received (Serviceman-call error) from the sorter.
+Remedy;Check Sorter
+Code;B03
+Description;Sorter: Error command 2
+Causes;703 An error command was received (Jam error) from the sorter.
+Remedy;Remove jammed paper
+Code;B04
+Description;Sorter: Error command 3
+Causes;707 An error command was received (Open error) from the sorter.
+Remedy;Close the cover
+Code;B05
+Description;Sorter: Error command 4
+Causes;709 An error command was received (others) from the sorter.
+Remedy;Check the sorter
+Code;B06
+Description;Multi-tray: Main-unit error
+Causes;804 An error command was received (Main unit: Serviceman-call error) from the multi-tray unit. Even after 10 ms after the multi-tray transfer motor was turned ON, multi-tray feed limit sensor did not count any pulses.
+Remedy;Jam reset or switch power on again
+Code;B07
+Description;Multi-tray: Main-unit error
+Causes;825 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 3 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 4 did not turn ON. (Multi-tray feed sensor 1, 2: 826 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 4 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn ON. (Multi-tray feed sensor 1, 2: OFF and 3, 4 827 Error command received (Main unit: Jam error) from the multi-tray unit. After paper sensor turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn OFF. (Multi-tray feed sensor 1, 2: OFF and 3, 4: ON, and p 828 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 4 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn ON. (Multi-tray feed sensor 1 to 3: OFF and 4:
+Remedy;Sensor on paper-feed path -> OFF, jam reset, or switch the power on again
+Code;B08
+Description;Multi-tray: Main-unit error
+Causes;805 Error command received (Main unit: Open error) from the multi-tray unit. Multi-tray transfer unit was opened.
+Remedy;Jam reset or switch power on again
+Code;B09
+Description;Multi-tray: Main-unit error
+Causes;816 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 1 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 2 did not turn ON. (Multi-tray feed sensor 1stayed ON) or (multi-tray feed senosr 1: ON at power ON) 817 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 2 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 3 did not turn ON. (Multi-tray feed sensor 1,2 stayed ON) or (multi-tray feed senosr 1, 2: ON at power ON) 818 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 3 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 4 did not turn ON. (Multi-tray feed sensor 1 to 3 stayed ON) or (multi-tray feed senosr 1 to 3: ON at power ON) 819 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 4 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn ON. (Multi-tray feed sensor 1 to 4 stayed ON) or (multi-tray feed senosr 1 to 4: ON at power ON) 820 Error command received (Main unit: Jam error) from the multi-tray unit. After paper sensor turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 1 to 4 and paper sensor did not turn OFF. (Multi-tray feed sensor 1 to 4, and paper sensor stayed ON) or (multi-tray feed senosr 1 to 4 and paper 821 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 2 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 3 did not turn ON. (Multi-tray feed sensor 1: OFF, 2: ON) or (multi-tray feed senosr 2: ON at power ON) 822 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 3 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 4 did not turn ON. (Multi-tray feed sensor 1: OFF, 2, 3: ON) or (multi-tray feed senosr 2, 3: ON at power ON) 823 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 4 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn ON. (Multi-tray feed sensor 1: OFF, 2 to 4: ON) or (multi-tray feed senosr 2 to 4: ON at power ON) 824 Error command received (Main unit: Jam error) from the multi-tray unit. After paper sensor turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the paper sensor did not turn OFF. (Multi-tray feed sensor 1: OFF, 2 to 4: ON, paper sensor: ON) or (multi-tray feed senosr 2 to 4: ON and paper sensor: ON at power ON) 825 Error command received (Main unit: Jam error) from the multi-tray unit. After multi-tray feed sensor 3 turns ON, and multi-tray transfer motor rotates a certain amount of pulses, the multi-tray feed sensor 4 did not turn ON. (Multi-tray feed sensor 1, 2: OFF, 3: ON) or (multi-tray feed senosr 3: ON at power ON)
+Remedy;Sensor on paper-feed path -> OFF, jam reset, or switch the power on again
+Code;B10
+Description;Multi-tray: Tray-1 error
+Causes;806 Error command received (Tray 1: Serviceman-call error) from the multi-tray unit. Even after 5 sec after multi-tray 1 elevator motor turned ON, counting of multi-tray feed limit sensor did not change.
+Remedy;Jam reset or switch power on again
+Code;B11
+Description;Multi-tray: Tray-1 error
+Causes;807 Error command received (Tray 1: Jam error) from the multi-tray unit. Paper misfeed from tray 1. 842 Main unit misfeed when paper fed from tray 1
+Remedy;Reset tray
+Code;B12
+Description;Multi-tray: Tray-1 error
+Causes;808 Error command received (Tray 1: No-paper error) from the multi-tray unit.
+Remedy;Load paper
+Code;B13
+Description;Multi-tray: Tray-1 error
+Causes;809 Error command received (Tray 1: Open error) from the multi-tray unit.
+Remedy;Set tray
+Code;B14
+Description;Multi-tray: Tray-1 error
+Causes;810 Error command received (Tray 1: Check-tray error) from the multi-tray unit.
+Remedy;Jam reset or switch power on again
+Code;B16
+Description;Multi-tray: Tray-2 error
+Causes;811 Error command received (Tray 1: Serviceman-call error) from the multi-tray unit. Even after 5 sec after multi-tray 1 elevator motor turned ON, counting of multi-tray feed limit sensor did not change.
+Remedy;Jam reset or switch power on again
+Code;B17
+Description;Multi-tray: Tray-2 error
+Causes;812 Error command received (Tray 1: Jam error) from the multi-tray unit. Paper misfeed from tray 1. 843 Misfeed when paper is fed from tray 2
+Remedy;Reset tray
+Code;B18
+Description;Multi-tray: Tray-2 error
+Causes;813 Error command received (Tray 2: No-paper error) from the multi-tray unit.
+Remedy;Load paper
+Code;B19
+Description;Multi-tray: Tray-2 error
+Causes;814 Error command received (Tray 2: Open error) from the multi-tray unit.
+Remedy;Set tray
+Code;B20
+Description;Multi-tray: Tray-2 error
+Causes;815 Error command received (Tray 2: Check-tray error) from the multi-tray unit. Multi-feed tray 2 limit SW is ON.
+Remedy;Jam reset or switch power on again
+Code;B21
+Description;Data storage: Read/write error
+Causes;714 Data-storage file-name error 715 Data-storage access error 716 Other data-storage error
+Remedy;Switch power ON again.
+Code;B22
+Description;Job separator: Power off
+Causes;"721 With the “Tape separation” function set ON, no power is supplied to the job separator when start key is pressed. 727 After cluster-A signal turned ON, BUSY-signal stayed ""L"" more than 4 sec."
+Remedy;Check and switch ON the power of job separator.
+Code;B23
+Description;Job separator: No tape
+Causes;722 With the “Tape separation” function set ON, no tape remains when the start key is pressed. 723 No tape remains upon completion of the tape-ejection operation.
+Remedy;Check and set paper tape in job separator.
+Code;B24
+Description;Job separator: Tape jam
+Causes;724 Tape remains when the start key is pressed with the “Tape separation” function set to ON. 725 The tape-jam detection signal is “H” within 500 ms after the cluster-A signal turns ON (tape misfeed). 726 The tape-jam detection signal is “L” when the BUSY signal changes from “L” to “H” (or after 5 sec. at “L”) after the cluster-A signal goes ON (tape misfeed).
+Remedy;Check and remove the jammed paper from job separator.
+Code;B25
+Description;Sorter: Error command 5
+Causes;704 Error command (Full error) received from the sorter
+Remedy;Remove the paper from sorter.
+Code;B26
+Description;Sorter: Error command 6
+Causes;705 Error command (Paper on bin error) received from the sorter
+Remedy;Remove the paper from sorter.
+Code;B27
+Description;Sorter: Error command 7
+Causes;706 Error command (Staple error) received from the sorter
+Remedy;Clear the stapler jam.
+Code;B28
+Description;Sorter: Error command 8
+Causes;708 Error command (Size error) received from the sorter
+Remedy;Remove paper from sorter.
+Code;C01
+Description;Replace ink cartridge
+Causes;512 The ink sensor did not go ON even when inking was performed for the preset period.
+Remedy;Ink-cartridge set sensor: OFF -> ON
+Code;C02
+Description;Replace master roll
+Causes;200 The master end was detected twice in succession at 10-ms intervals during master transport.
+Remedy;"Master-making unit sensor: OFF -> ON; master detection sensor: OFF -> ON"
+Code;C03
+Description;Master-disposal box full
+Causes;308 The compression detection position was reached before the master-compressionmotor limit-sensor count reached the specified level, after the master compression motor turned ON in the compression direction.
+Remedy;Disposal-box safety switch: OFF for 5 s -> ON
+Code;D01
+Description;Print drum not set
+Causes;526 The print-drum set signal was OFF. 527 The print-drum safety switch was OFF.
+Remedy;"Print-drum safety switch: ON; Print-drum set signal: ON"
+Code;D02
+Description;Incorrect print drum
+Causes;532 The incorrect print drum was used.
+Remedy;Replace with the correct print drum.
+Code;D03
+Description;Ink cartridge not set
+Causes;533 The ink-cartridge set sensor was OFF.
+Remedy;Ink-cartridge set sensor: ON
+Code;D04
+Description;Incorrect ink cartridge
+Causes;534 The incorrect ink cartridge was used.
+Remedy;Replace with the correct ink cartridge.
+Code;D05
+Description;Master not set
+Causes;210 The master detection sensor was OFF (blocked).
+Remedy;Master detection sensor: ON
+Code;D07
+Description;Master-disposal box not set
+Causes;310 The disposal-box safety switch was OFF.
+Remedy;Disposal-box safety switch: ON
+Code;D08
+Description;Master-disposal unit not set
+Causes;311 The disposal-top-cover sensor was OFF (receiving).
+Remedy;Disposal-top-cover sensor: ON
+Code;D09
+Description;Master making unit not set
+Causes;212 The master-making-unit sensor was OFF (receiving).
+Remedy;Master-making-unit sensor: ON
+Code;D10
+Description;Scanner table not set
+Causes;213 The flatbed set switch was OFF.
+Remedy;Flatbed set switch: ON
+Code;D11
+Description;Front cover not set
+Causes;535 The front-cover switch was OFF.
+Remedy;Front-cover switch: ON
+Code;D12
+Description;Feed-joint pass. Cover not set.
+Causes;551 Feed-joint pass. The cover safety switch was OFF.
+Remedy;Feed-joint pass. Cover safety switch: ON.
+Code;E01
+Description;Replace battery
+Causes;010 The battery voltage was less than 2.5 V when the power was switched ON (battery replacement).
+Remedy;Jam reset
+Code;E02
+Description;Maintenance call
+Causes;011 The master counter reached the value set in test mode when the power was ON, the unit was reset, or operation ended. 012 The copy counter reached the value set in test mode when the power was ON, the unit was reset, or operation ended. 022 The maintenance counter inside the print drum reached the value set in test mode when the power was ON, the unit was reset, or operation ended.
+Remedy;Jam reset
+Code;F01
+Description;No master on drum
+Causes;015 There was no master on the print drum at the start of printing.
+Remedy;Close, reset, or change mode.
+Code;F02
+Description;Master image larger than paper size
+Causes;018 The paper size did not match the image on the print drum at the start of printing. 016 Printing was attempted using a non-standard paper size.
+Remedy;Stop, reset, or start.
+Code;F04
+Description;Original not set
+Causes;013 The original was not set when multi-page mode was started.
+Remedy;Set original.
+Code;F05
+Description;Print quantity under minimum print quantity
+Causes;019 mode.
+Remedy;Set a print quantity over the minimum print quantity.
+Code;F07
+Description;Drum position error
+Causes;014 The print drum was not centered at the start of master making.
+Remedy;Press centering key.
+Code;F08
+Description;Paper size / Original size: Mismatch
+Causes;017 A paper size (write size) corresponding to the original size (read size) was not set for Triple-Tray Source selection.
+Remedy;Change the paper size or original size.
+Code;F10
+Description;Master image larger than paper size: 2
+Causes;021 The paper size did not match the image on the print drum at the start of test printing.
+Remedy;Stop, reset, or start test printing.
+Code;F11
+Description;Master image larger than paper size: 3
+Causes;023 The paper size did not match the image on the print drum at the start of master making, when the paper loaded into the paper-feed tray was changed.
+Remedy;Set the paper size (master size) in the paper-feed tray.
+Code;F12
+Description;Original size irregular: Triple-Tray Source
+Causes;024 A non-standard-size original was set at the start of operation with the Triple-Tray Source selected.
+Remedy;Close or reset.
+Code;F16
+Description;ADF cannot be used for QT-4
+Causes;039 The original was set on the ADF when operation was started with QT-4 set.
+Remedy;Remove the original from the ADF.
+Code;F17
+Description;Change in drum size
+Causes;027 A different size print-drum size was set.
+Remedy;Set the print-drum size.
+Code;F18
+Description;Incorrect zoom rate
+Causes;043 The paper size did not match the original size*reproduction size when the mastermaking operation was started with the manual tray selected.
+Remedy;Change reproduction size, or start master-making operation.
+Code;F19
+Description;Master image larger than paper size: 4
+Causes;040 The paper size set did not match that of the actual paper loaded when the paper in tray 1 was replaced.
+Remedy;Set the paper size for tray 1.
+Code;F20
+Description;Master image larger than paper size: 5
+Causes;041 The paper size set did not match that of the actual paper loaded when the paper in tray 2 was replaced.
+Remedy;Set the paper size for tray 2.
+Code;F21
+Description;ADF multi-up: Original not set
+Causes;032 The next original was not in place for ADF multi-up.
+Remedy;Set the original on the ADF, or stop the ADF multi up.
+Code;F22
+Description;FB multi-up: Original not set
+Causes;033 The next original was not in place for flatbed multi-up.
+Remedy;Place the original on the flatbed, or stop the FB multi up.
+Code;F23
+Description;Communication error: D to P
+Causes;044 Communication error in remote mode (D to P mode)
+Remedy;Jam reset
+Code;F24
+Description;Auto-reproduction size selection: Unable
+Causes;038 The reproduction size was not consistant with the operable range when operation was started with the auto reproduction size.
+Remedy;Set the reproduction size manually.
+Code;F25
+Description;Incorrect image resolution
+Causes;045 Data was received with a inconsistent image resolution (D to P mode).
+Remedy;Jam reset or start key
+Code;F26
+Description;Incorrect paper size: Long-paper mode
+Causes;413 The paper sensor was ON when paper should have left the paper sensor without the long-length paper mode set (the paper was a long-lenth paper). 419 The paper left the paper sensor too soon with the long-length paper mode set (the paper was not a long-length paper).
+Remedy;"Check the paper size. Press ""OK"" or ""RESET"" to clear the message."
+Code;F30
+Description;Multiple paper feed
+Causes;420 Multiple paper feed was detected during operation (when no paper-ejection jam error occurs). 425 Paper conforming to data obtained in the light-transmission check was fed in multiple. 426 Paper was fed in multiple during the light-transmission check. 427 Paper conforming to data obtained in the paper-sensor OFF check was fed in multiple. 428 Paper was fed in multiple during the paper-sensor OFF check.
+Remedy;"Check the printed copies. Press ""OK"" or ""RESET"" to clear the message."
+Code;F31
+Description;Auto-stack tray error
+Causes;830 The HP sensor does not go ON during paper-guide home positioning. 837 The HP sensor does not go OFF when the paper guides are moved. 838 The HP sensor does not go ON during paper-stopper home positioning. 839 The HP sensor does not go OFF when the paper stopper is moved.
+Remedy;"Check the paper guides or press the start key. Press ""OK"" or ""RESET"" to clear the message"
+Code;F32
+Description;Data storage area full
+Causes;713 Insufficient memory available when data is written to the data-storage area
+Remedy;"Check the available storage area. Press ""OK"" or ""RESET"" to clear the message."
+Code;F33
+Description;Master image size / Drum size: Mismatch
+Causes;047 The master size did not match the drum size when P-to-P master making was started. 048 The master size did not match the drum size when D-to-P master making was started.
+Remedy;Check the print drum size, or start making master by pressing the start key.
+Code;F37
+Description;ADF cannot be used in book mode
+Causes;050 The original was set on the ADF with book mode set when master making was started.
+Remedy;"Set the original on the flatbed, or cancel book mode. Press ""OK"" or ""RESET"" to clear the message."
+Code;F40
+Description;No paper in paper-feed tray: Triple-Tray Source
+Causes;060 No-paper error occurred during proof printing with the straight feed tray selected from the Triple-Tray Source.
+Remedy;Load paper.
+Code;F41
+Description;No paper in tray 1: Triple-Tray Source
+Causes;060 No-paper error occurred during proof printing with Tray 1 selected from the Triple-Tray Source.
+Remedy;Load paper.
+Code;F42
+Description;No paper in tray 2: Triple-Tray Source
+Causes;060 No-paper error occurred during proof printing with Tray 2 selected from the Triple-Tray Source.
+Remedy;Load paper.
+Code;T01
+Description;Main motor lock
+Causes;520 The main motor limit sensor does not go ON/OFF for more than 16 pulses while the main motor is operating, even after the elapse of 100 ms. 521 The position-A sensor does not go ON/OFF, between two detections of position-B, while the main motor is operating. 522 The position-B sensor does not go ON/OFF while the motor is operating, even when 3033 pulses are received at the Main FG. 523 Main-motor overload current 524 The clamp unit is not at the home position while the print drum is operating (Clamp sensor C: OFF, except during master disposal). 536 The drum failed to stop at position A. (over-run) 537 The drum failed to stop at position B. (over-run) 538 The print drum is not locked during operation. (Print-drum lock position sensor: OFF)
+Remedy;Jam reset
+Code;T02
+Description;Elevator motor lock
+Causes;400 Both the upper and lower limit sensors were ON. 401 An overload current was detected in the elevator motor. 404 The lower-limit sensor does not go OFF within 2 s after the elevator motor operates in the raising direction from the lower-limit position. 405 The upper-limit sensor does not go ON within 12 s after the elevator motor operates in the raising direction. 406 The upper-limit sensor does not go OFF within 2 s after the elevator motor operates in the lower direction from the upper-limit position. 407 The lower-limit sensor does not go ON within 12 s after the elevator motor operates in the lowering direction. 408 The upper-limit sensor is OFF continuously for at least 2 s during operation of the elevator servo.
+Remedy;Jam reset or switch on power again
+Code;T03
+Description;Clamp motor lock
+Causes;500 Clamp sensor C turns OFF following clamp unit initialization. 501 Clamp sensors A and B do not change within 800 ms when the clamp motor operates in reverse during clamp unit initialization (clamp sensor A starts at OFF). 502 Clamp sensors A and B do not change within 800 ms when the clamp motor operates in the forward direction during clamp unit initialization (clamp sensor A starts at ON). 503 Clamp sensor C does not go OFF within 800 ms when the clamp moves from the home position. 504 The clamp does not move from the home position to the open position within 800 ms during the operation of the clamp. 505 The clamp does not move from the open position to the position-A compensation position within 800 ms during the operation of the clamp. 506 The clamp does not move from the position-A compensation position to the clamp close position within 800 ms during the clamp operation. 507 The command does not coincide with the current position when clamp operation is started. 508 The command does not coincide with the stop position when clamp operation is stopped.
+Remedy;Jam reset or switch on power again
+Code;T04
+Description;Overflow
+Causes;513 The overflow sensor was ON for a set number of times in succession during the 10- ms-interval overflow-sensor check.
+Remedy;Jam reset or switch on power again
+Code;T05
+Description;Print-positioning pulse-motor lock
+Causes;603 The vertical-centering sensor does not switch OFF -> ON even when the vertical-positioning pulse motor is moved 12 mm in the ON direction. 604 The vertical-centering sensor does not switch ON -> OFF even when the vertical-positioning pulse motor is moved 12 mm in the OFF direction. 610 Timeout error during the vertical-print-position return operation 614 Vertical-print-position returning time out error 616 The one-step-positioning key was pressed with vertical-print-position information undefined.
+Remedy;Jam reset or switch on power again
+Code;T06
+Description;Horizontal pulse-motor lock
+Causes;605 The horizontal-centering sensor does not switch OFF -> ON even when the horizontal pulse motor is moved 12 mm in the ON direction. 606 The horizontal-centering sensor does not switch ON -> OFF even when the horizontal pulse motor is moved 12 mm in the OFF direction. 611 Timeout error during horizontal-print-position return operation 615 Horizontal-print-position returning time out error 617 The one-step-positioning key was pressed with the horizontal-print-position information undefined.
+Remedy;Jam reset or switch on power again
+Code;T07
+Description;Digitizer error
+Causes;001 Communication error with the digitizer CPU
+Remedy;Switch power on again
+Code;T08
+Description;Computer interface error
+Causes;002 Communication error with the computer interface
+Remedy;Switch power on again
+Code;T09
+Description;Option error (paper eject)
+Causes;003 Communication error with the sorter 700 Sorter communication: CTS does not switch to L within 3000 ms after the power is switched ON. 701 Sorter communication: The type status was not returned within 200 ms after the initialization command was sent. 710 Sorter communication: Transmission timeout 711 Sorter communication: CTS does not change. 712 Sorter communication: The retry command was sent but not received. 720 Sorter communication: The retry command was received two times in successtion.
+Remedy;Switch power on again
+Code;T10
+Description;Option error (paper feed)
+Causes;800 The multi-tray unit is connected, but the power is OFF. 801 The type status was not returned from the multi-tray unit when the power was switched ON. 802 The Standby OK command was not returned when printing started. 803 The status was not returned from the multi-tray unit. 840 An undefined multi-tray-unit command was received. 841 CAN controller initialization failed.
+Remedy;Switch power on again
+Code;T11
+Description;Pressure-control motor
+Causes;600 Timeout error for reducing pressure (OFF -> ON) during print-pressure home positioning 601 Timeout error for increasing pressure (ON -> OFF) during print-pressure home positioning 602 The print-pressure limit sensor does not change during print-pressure operation. 620 Print-pressure operation was called with the print-pressure motor locked. 621 Incorrect print-pressure operation timing (print-pressure operation command was received when the print-pressure should not change.) 622 Sensor A is ON and sensor B is OFF during movement from area A to area D. 623 Either sensor A or sensor B is ON during movement from area D to area A. 624 The current area data is undefined. 625 The target area data is undefined. 626 Timeout during relative print-pressure movement
+Remedy;Jam reset or switch on power again
+Code;T12
+Description;Master-disposal-section motor lock
+Causes;300 Master-disposal-motor overload-current detection is ON. 305 The master compression sensor does not go ON within 6.5 s after the master compression motor operates in the return direction. 306 Master compression sensor does not go OFF within 2 s after the master compression motor operates in the compress direction. 307 The master compression sensor does not go ON within 6.5 s after the master compression motor operates in the compress direction, and the master-compression-motor limit sensor cannot count up until the compression-limit position. 309 The master-compression-motor limit sensor does not change within 200 ms during compression operation.
+Remedy;Jam reset or switch on power again
+Code;T13
+Description;Cutter motor lock
+Causes;203 Cutter HP SW does not go OFF within 100 ms after the cutter motor is activated. 204 Cutter HP SW does not go OFF -> ON within 300 ms after the cutter motor is activated. 205 The master-positioning sensor is ON when the print drum rotates through the preset angle following cutting, and the master-positioning sensor is still ON when the print drum rotates through the preset angle following repeat cutting.
+Remedy;Jam reset or switch on power again
+Code;T14
+Description;Flatbed error
+Causes;112 The FB/ADF HP sensor does not go OFF within the set time. 113 The FB/ADF HP sensor does not go ON within the set time. 114 Incorrect main-unit setting data 115 The scanner operation is not completed within the set time. 116 Timeout error for waiting black shading compensation 117 Timeout error for waiting white shading compensation 118 Scanner operation command was received when it should not move. (400/300 DPI) 140 Communication error from the scanner unit (NAK twice, undefined error, etc.) 141 Communication timeout error from the scanner unit (Receive timeout) 142 The scanner unit detects a sequence error from the Risograph. 150 Timeout error for receiving the Risograph scanner command 151 The Risograph received an undefined command from the scanner. 152 The Risograph detected a communication sequence error from the scanner. 153 Risograph scanner communication error (ACK, NAK, or received-channel error) 154 The Risograph could not send data to the scanner within the set time. 160 Scanner connection error
+Remedy;Switch power on again
+Code;T15
+Description;ADF error
+Causes;004 Communication error with the ADF/CPU units 100 Original IN sensor adjustment error 101 ADF-EEPROM error 108 ADF guide potentiometer error 110 ADF operation not completed within the set time 120 Communication error from the ADF unit (NAK twice, undefined error, etc.) 121 Communication timeout error from the ADF unit (Receive timeout) 122 The ADF unit detects a sequence error from the Risograph. 130 Timeout error for receiving the Risograph ADF command 131 The Risograph received an undefined command from the ADF unit. 132 The Risograph detected a communication sequence error from the ADF unit. 133 Risograph ADF communication error (ACK, NAK, or received-channel error) 134 The Risograph could not send to the ADF within the set time. 161 ADF connection error
+Remedy;Switch power on again
+Code;T17
+Description;Solenoid counter not connected
+Causes;020 The solenoid counter is not connected.
+Remedy;Set the solenoid counter connection signal to ON
+Code;T19
+Description;Thermal-pressure motor lock
+Causes;207 The TPH pressure sensor does not go OFF within 2 s after the thermal-pressure motor activates in the counterclockwise direction. 208 The TPH pressure sensor does not go ON within 2 s after the thermal-pressure motor activates in the counterclockwise direction. 216 The TPH pressure sensor does not go OFF within 2 s after the thermal-pressure motor activates in the clockwise direction. 217 The TPH pressure sensor does not go ON within 2 s after the thermal-pressure motor activates in the clockwise direction.
+Remedy;Jam reset or switch power on again
+Code;T20
+Description;Paper-ejection-section motor lock
+Causes;414 The paper-ejection-wing home sensor does not go ON within the set time after the paperejection- wing motor activates in the clockwise direction during paper-ejection wing home positioning. 415 The paper-ejection-wing home sensor does not go OFF within 250 ms after the paper ejection wing motor activates in the counterclockwise direction from home position during paper ejection wing positioning. 416 An overload current was detected in the paper-ejection motor. 424 The paper-ejection limit sensor gives fewer than 20 pulses within 100 ms.
+Remedy;Jam reset
+Code;T22
+Description;Scanner lock not released
+Causes;514 Failed to stop at position B during print-drum locking 515 Failed to stop at position B during print-drum locking when switching ON 516 The print-drum lock position sensor does not go OFF within 500 ms after the printdrum locking motor activates. 517 The print-drum lock cam sensor does not go ON within 1 s after the print-drum locking motor activates. 518 The print-drum lock position sensor does not go ON within 500 ms after the print-drum locking motor activates. 519 The print-drum lock cam sensor does not go OFF within 1 s after the print-drum locking motor activates. 529 The print-drum lock-position sensor and print-drum lock cam sensor are both ON. 530 The print-drum lock cam sensor does not go ON within 2 s after the print-drum locking motor activates during drum lock initialization. 531 The print-drum lock position sensor does not go ON within 2 s after the print-drum locking motor activates during drum lock initialization. 549 The print-drum lock-position sensor does not go ON during locking of the print-drum lock unit. 550 The print-drum lock-position sensor is OFF while the print drum is not set.
+Remedy;Jam reset or switch power on again
+Code;T23
+Description;Scanner lock not released
+Causes;111 In scanner lock mode
+Remedy;Release the scanner lock in test mode
+Code;T24
+Description;Inking motor lock
+Causes;539 Inking-motor current overload
+Remedy;Jam reset or switch power on again
+Code;T25
+Description;No battery
+Causes;026 The residual battery voltage is below 2.3 V when the power is ON.
+Remedy;Switch power on again
+Code;T95
+Description;MCTL PCB backup error
+Causes;056 NVRAM check-sum error in the MCTL PCB 059 Serial-number data sent from SH-PCB does not match the MCTL PCB serial-number data.
+Remedy;Switch power on again
+Code;T96
+Description;Drum H/W error
+Causes;552 Print-drum data backup error
+Remedy;Pull out the print drum or switch the power on again
+Code;T98
+Description;Hardware error
+Causes;005 Type-code error 029 Straight paper feed (multi-tray unit) is not set. 030 Tray 1 (multi-tray unit) is not set. 031 Tray 2 (multi-tray unit) is not set. 036 SH-PCB-to-MCTL-PCB communication error 046 The DIMM capacity does not match. 051 Touch-panel communication error 052 EEPROM read error 053 Memory settings (program, mode, user paper), failed to read the save data 054 Memory settings (program, mode, user paper), failed to write save data 055 The type code from SH-PCB does not match the type data from the MCTL PCB. 056 NVRAM check-sum error in the MCTL PCB 057 SRAM backup error in the SH-PCB 058 All SH-PCB serial-number data is zero. 063 The test-mode setting data stored was set outside the adjustment range. 064 An undefined command was sent in communication between SH-PCB and MCTL PCB. 065 Communication error 01 between SH-PCB and MCTL PCB (MCTL PCB side) 066 Communication error 02 between SH-PCB and MCTL PCB (MCTL PCB side) 067 Communication error 03 between SH-PCB and MCTL PCB (MCTL PCB side) 068 Communication error 04 between SH-PCB and MCTL PCB (MCTL PCB side) 069 Communication error 05 between SH-PCB and MCTL PCB (MCTL PCB side) 070 Communication error 06 between SH-PCB and MCTL PCB (MCTL PCB side) 071 Communication error 07 between SH-PCB and MCTL PCB (MCTL PCB side) 072 Communication error 08 between SH-PCB and MCTL PCB (MCTL PCB side) 073 Communication error 09 between SH-PCB and MCTL PCB (MCTL PCB side) 074 Communication error 10 between SH-PCB and MCTL PCB (MCTL PCB side) 075 Communication error 11 between SH-PCB and MCTL PCB (SH-PCB side) 076 Communication error 12 between SH-PCB and MCTL PCB (SH-PCB side) 077 Communication error 13 between SH-PCB and MCTL PCB (SH-PCB side) 078 Communication error 14 between SH-PCB and MCTL PCB (SH-PCB side) 079 Communication error 15 between SH-PCB and MCTL PCB (SH-PCB side) 080 Communication error 16 between SH-PCB and MCTL PCB (SH-PCB side) 081 Communication error 17 between SH-PCB and MCTL PCB (SH-PCB side) 082 Communication error 18 between SH-PCB and MCTL PCB (SH-PCB side) 083 Communication error 19 between SH-PCB and MCTL PCB (SH-PCB side) 084 Communication error 20 between SH-PCB and MCTL PCB (SH-PCB side) 085 User settings (properties, test-mode adjustment values), failed to read save data 086 User settings (properties, test-mode adjustment values), failed to write save data 087 Memory settings (program, mode, user paper), no save data set 088 User settings (properties, test-mode adjustment values), no save data set 089 Dip-SW (No.1) of SH-PCB is ON. 090 Machine code of memory settings (program, mode, user paper) does not match. 091 Check sum of memory settings (program, mode, user paper), does not match. 092 Machine code of User settings (properties, test-mode adjustment values), does not match. 093 Check sum of user settings (properties, test-mode adjustment values), does not match. 094 Communication sequence error between SH-PCB and MCTL PCB (MCTL side) 095 Check sum of user settings (properties, test-mode adjustment values), does not match during stand-by. 096 Check sum of memory settings (program, mode, user paper), does not match, during standby. 097 Test mode adjustments memorized in the drum is outside the adjustment range. 219 The TPH size code does not match the type-code data. 220 The TPH resolution code does not match the type-code data. 422 The transmitter adjustment DA setting reached the upper limit during text-mode No. 457 Auto Multi-Paper-Feed Det. Adj. 423 The transmitter adjustment DA setting reached the lower limit during text-mode No. 457 Auto Multi-Paper-Feed Det. Adj. 540 Print-drum communication: Gate-layout timeout 541 Print-drum communication: ROM-writing-complete timeout 614 Print-pressure jig: Outside the adjustment range
+Remedy;Switch power on again

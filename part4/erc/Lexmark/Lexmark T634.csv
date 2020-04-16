@@ -1,0 +1,99 @@
+Code;900
+Description;RIP Software
+Remedy;1 Printer POR Turn the printer off and on several times. If Error Code 900 continues to display, go to step 2. 2 System board Make sure the system board is properly seated in connector J7 on the interconnect board. Turn the machine off and on several times, waiting a few minutes between power on and power off. If Error Code 900 continues to display, go to step 3. 3 Factory defaults Restore factory defaults. See “Restore EP Factory Defaults”. This resets the non-critical areas of the user NVRAM. If Error Code 900 continues to display, go to step 4. 4 Sub error codes With Error Code 900 displayed, press Select and Return. Record the complete list of Sub Error Codes on the display. Check the “Base printer sub error codes”. If none of the Sub Error Codes are listed, then call your next level of support or call Lexmark.
+Code;901
+Description;Engine Flash
+Remedy;Indicates that the flash which the system board code is programmed into is bad. Replace the system board.
+Code;902 ... 906
+Description;902 General Engine Software Error 903 Paperport Link Driver Error 904 Interface Violation by RIP 905 Interface Violation by Paperport Device 906 RIP Interface Driver Error
+Remedy;These errors indicate an unrecoverable system software error. Replace the system board.
+Code;910 ... 914
+Description;910 DC Pick Motor DC Pick Motor Stall 911 DC Pick Motor Excessive PWM 912 DC Pick Motor below speed 913 DC Pick Motor over speed 914 DC Pick Motor: No encoder feedback
+Remedy;1 Tray x Option system board or compensator assembly or autoconnect cable Check the autoconnect cables and connectors for damage. Replace if necessary. Check the cables for continuity. If incorrect, replace the compensator assembly cable. If the cables, connectors, and connections are good, replace the FRUs in the following order: • Autocompensator assembly option • Option system board.
+Code;917
+Description;Transfer Roll Indicates a problem in the transfer roll area.
+Remedy;1 Transfer roll assembly Check the transfer roll for toner buildup, surface damage to the roll, oil, or other contaminants on the surface of the roll. Replace the transfer roll as necessary. 2 Left transfer arm assembly Check the left transfer roll arm assembly to make sure it is fastened and locked in the down position. If the arm is not locked down, make sure the arm is not broken and locks into the EP frame correctly. Check the left transfer arm assembly spring for proper operation. 3 Right transfer arm assembly Check the right transfer arm assembly to make sure it is fastened and locked in the down position. If the arm is not locked down, make sure the arm is not broken and locks into the EP frame correctly. Check the right transfer arm assembly spring for proper operation. For any background problems, ensure the contact to the HVPS board is correct and that there is approximately 0 ohms resistance between the transfer roll shaft and the HVPS contact. If correct, go to “Print quality—background”. 4 HVPS—917 Error code Check the voltage at J22-3. The voltage changes from +24 V dc with the printer idle to 0 V dc when the printer runs the print test. If the voltage is incorrect, check the continuity of line J22-3 in the front cable harness to the HVPS. If there is no continuity, replace the cable harness. If there is continuity, replace the HVPS. If the problem continues, replace the system board.
+Code;920 ... 925
+Description;920 Fuser Error Indicates that the fuser is below temperature when printing. 921 Fuser Error Indicates that the fuser is below standby temperature when the printer is idle 922 Fuser Error Fuser failed to reach standby temperature 923 Fuser Error Fuser is too hot during printing or when printer is idle. 924 Fuser Error An open circuit has been detected in the Fuser Thermistor Circuit 925 Fuser Error Wrong fuser lamp installed.
+Remedy;Cold fuser service check Error codes 920, 921, and 922 may display for a cold fuser failure. A 920 error caused by low line voltage can sometimes be cleared by turning the machine off and then on again. A 925 service error indicates the wrong fuser lamp is installed. Be sure the correct type of fuser lamp is installed. If the correct lamp is installed and a 925 error remains, the problem may be due to the following: • The fuser may have reached standby temperature too quickly. • The line voltage may be above the maximum rating for the printer. Note: A 920, 921 or 922 fuser error may be caused by an incorrectly mounted thermistor. 1 Fuser lamp (incorrect lamp/ 925 Service Error) Install the correct voltage and wattage lamp or fuser assembly. See “Fuser assembly removal”. If the correct fuser lamp is installed and the 925 error remains, the fuser may have reached standby temperature too quickly. Check that the line voltage is not exceeding the maximum rating for the printer. 2 Fuser lamp fuser top cover assembly Observe the lamp through the left side frame. If the lamp does not come on, do the following: • Remove the redrive assembly. • Remove the fuser assembly, disconnect the LVPS to fuser AC cable from the fuser assembly, and remove the fuser. See “Fuser assembly removal”. • Verify that the lamp is installed correctly. If correct, check the continuity of the fuser top cover assembly by verifying the lamp contacts on the right contact assembly. If incorrect, check continuity of the fuser lamp. If incorrect, replace the lamp. If correct, replace the fuser top cover assembly. 3 LVPS LVPS to fuser AC cable CAUTION: When taking measurements for AC power, observe all safety precautions. Measure the AC line voltage between the two connectors on the fuser end of the LVPS to fuser AC cable. If the voltage is incorrect, turn the power off, and remove the LVPS. Measure the AC line voltage between pins CN1-1 and CN1-3 on the board. If correct, check the continuity of the LVPS to fuser AC cable. If incorrect, replace the cable. If the AC line voltage at CN1 is incorrect, check fuse F2. If the fuse is blown, replace the fuse. If the fuse is not blown, replace the LVPS assembly. 4 Fuser top cover assembly (assembly includes thermistor and thermal fuses) Disconnect the thermistor cable from the fuser control board at J6. Resistance: • HOT J2-1–J2-2 <10K ohms • COLD approximately 450K ohms If the resistance is incorrect, replace the fuser top cover assembly. If the resistance is correct, check each pin of J6 to ground. If there is continuity, replace the fuser cover assembly. See “Fuser cover removal”. Hot fuser service check Error Code 923: Indicates the fuser is too hot during printing or when the printer is idle. Error code 924: Indicates an open circuit has been detected in the fuser thermistor circuit. Note: Check the fuser sub error codes to help diagnose between a 923 and 924 error. 1 Fuser cover assembly (assembly includes thermistor and thermal fuses) Check for damage to the thermistor assembly. If damage is found, replace the fuser top cover assembly. If no damage is found, check the resistance of the thermistor between pins J6-1 and J6-2 on the cable. • HOT < 10K ohms • COLD = approximately 450K ohms If the resistance is incorrect, replace the fuser top cover assembly. If the resistance is correct, check each pin of J6 to ground. If there is continuity, replace the fuser cover assembly. See “Fuser cover removal”. 2 Fuser assembly Check for continuity between J6-1 and J1-2 and between J6-2 and J1-3. If incorrect, replace the fuser assembly. If correct, go to step 3. 3 Fuser to system board DC cable Check the continuity of the cable. If incorrect, replace the cable. If correct, go to step 4. 4 System board Measure the voltage on J14-3 on the system board. The voltage should change from approximately +2.5 V dc with the thermistor cold to approximately +1.6 V dc when the thermistor is hot. If incorrect, replace the system board. If correct, go to step 5. 5 Fuser hot roll Fuser hot roll bearings Fuser backup roll bearings Fuser backup roll Fuser mechanical parts Examine the fuser assembly for signs of overheating or damage. Check the hot roll and backup roll for signs of excessive toner, label glue, labels, or other contaminants. If problems are found, replace the fuser assembly.
+Code;927
+Description;Fan Stalled This is an indication that a printer fan has stalled.
+Remedy;1 Main fan Manually spin the fan and check that it rotates freely. Check the cable connection to the system board, J7 for correct installation. 2 Main fan to system board cable Check the continuity of the cable. If incorrect, replace the cable. 3 Error code 927 (fan runs) Check the voltage at J7-1 on the system board. The voltage measures +5 V dc (static) 0 V dc (fan running). If incorrect, replace the main fan. If this does not fix the problem, replace the system board. 4 Error code 927 (fan not running) Check the voltage at J7-3 on the system board. The voltages are: • +22 V dc to +24 V dc (printer and fan running) • +12 V dc to +15 V dc (printer not running—fan running about half speed). If incorrect, replace the system board. If this does not fix the problem, replace the main fan.
+Code;929
+Description;Toner Sensor The toner sensor is not operating properly, the developer drive assembly is not operating properly or the print cartridge is defective.
+Remedy;1 Developer drive assembly Incorrect operation of the developer drive assembly can cause the printer to display a 929 error code (Toner Sensor). Check the developer drive assembly for correct installation, any sign of worn, loose, or broken parts. 2 Front harness cable Check the toner sensor portion of the front harness cable to make sure it is properly seated into the toner sensor. If correct at both the sensor and system board (J22), check the continuity of the cable. If incorrect, replace the cable. 3 Toner sensor The toner sensor cable is part of the front harness and part of connector J22 on the system board. Check the voltage at J22-11. It reads approximately +5 V dc. If incorrect, replace the system board. If correct, check the voltage at J22-12. It reads approximately +5 V dc with the system board removed from the printer. If incorrect, replace the system board. If correct, replace the toner sensor assembly. A bad ground connection between J22-13 on the system board and pin 3 on the toner sensor results in a 929 service error.
+Code;930
+Description;Printhead Error
+Remedy;The wrong printhead may be installed. If you have not replaced the system board recently, replace the correct printhead. If the problem remains, replace the system board. If you have recently replaced the system board and you still have a 930 error, the wrong system board may be installed. Replace the system board with the correct system board.
+Code;931 ... 935
+Description;931-935 Printhead Error 932 - Printhead: Lost Hsync 933 - Mirror Motor Locks/Lost Hsync 934 - Mirror Motor Lost Lock 935 - Mirror Motor unable to reach operating speed.
+Remedy;1 Error code 931 No first HYSNC Signal Error Code 932 Lost HYSNC These errors usually indicate a failure in the HYSNC signal to the printhead. Check the continuity of the cables connected to J5 and J4 on the system board. If incorrect, replace the defective cable. The voltage at J4-1 measures approximately +5 V dc. If incorrect, replace the system board. The voltage at J5-7 measures approximately +24 V dc. If incorrect, replace the system board. If correct, replace the printhead assembly. 2 Error Code 934 Mirror motor lost lock Error Code 935 Mirror motor unable to reach operating speed These error codes indicate a problem with the mirror motor circuit in the printhead assembly or the mirror motor cable to the system board cable or system board assembly. Check the continuity of the mirror motor cable connected to J5 on the system board. If incorrect, replace the cable. The voltage at J5-7 measures approximately +24 V dc. If incorrect, replace the system board. If correct, replace the FRUs in the following order: • System board • Printhead assembly
+Code;936, 937
+Description;936 - Main Drive Motor initial lock failure 937 - Main Drive Motor lost lock
+Remedy;1 Main drive assembly (excessive noise or vibration) Remove the controller board and run a Diagnostic Print Test in the continuous mode. Check the main drive assembly for any excessive noise or vibration. Determine if the noise is in the main drive, toner cartridge, fuser, or main drive gearbox. Look for any loose or worn parts in the developer drive assembly, main drive gearbox, or fuser. Repair as necessary. 2 Main drive motor assembly (excessive noise, gears ratcheting and so on) A service error code 936 - Transport Motor may be displayed. Check the voltage at J24-6 on the system board. It measures approximately +5 V dc when the motor is not running and goes to 0 V dc when the motor is running. If incorrect, replace the system board. If this does not fix the problem, replace the main drive motor. 3 Main drive motor cable Check the continuity of the main drive motor cable. If incorrect, replace the cable. 4 Motor does not turn, no gear error code 936 or user message 201 Paper Jam displays. Check the voltages at J24 on the system board. J24-11 +24 V dc J24-8 +5 V dc 0 V dc J24-7 +5 V dc 0 V dc J24-6 +5 V dc +2.5 V dc J24-5 +5 V dc 0 V dc J24-4 +5 V dc +5 V dc J24-1 +5 V dc 0 V dc If the voltage is incorrect, replace the FRUs in the following order: • Main drive motor assembly • System board
+Code;940
+Description;Service LV Power Supply
+Remedy;The low voltage power supply zero crossover test failed. Check the LVPS for correct installation. Make sure the connector on the LVPS assembly is firmly seated with the connector on the interconnect card connector. This error may also be caused by a noisy AC input power source. • Be sure the correct LVPS has been installed. • If all the above are correct, replace the LVPS assembly.
+Code;948
+Description;PEL Clock Error
+Remedy;Indicates the pel clock check failed. Replace the system board.
+Code;949
+Description;Delay Line Calibration Failure
+Remedy;Indicates a delay line calibration failure. Replace the system board.
+Code;950
+Description;NVRAM Mismatch
+Remedy;1 Interconnect board Note: Before replacing the interconnect board, make absolutely sure you have the correct FRU number for the interconnect board that should go into your printer. Warning: Any time the interconnect board assembly is replaced, the Configuration ID must be reset in NVRAM on the interconnect board. See “Setting configuration ID”. Unplug the machine and replace the interconnect board assembly. Turn the printer on. If a 950 error still displays, replace the system board assembly.
+Code;951
+Description;NVRAM Secure NVRAM Missing
+Remedy;Replace the system board.
+Code;953
+Description;NVRAM Chip Failure
+Remedy;Indicates the NVRAM chip on the interconnect board has failed. Replace the interconnect board.
+Code;954
+Description;NVRAM CRC Failure
+Remedy;Indicates the NVRAM experienced a CRC failure. Replace the interconnect board.
+Code;955
+Description;Code CRC <loc>
+Remedy;Replace the system board. Where <loc> = CRC Failure or ECC Failure on the system board.
+Code;956, 957, 959
+Description;System Board
+Remedy;Error codes 956 thru 959 are system board failures. Perform a power on reset (POR). If this does not fix the problem, replace the system board. • 956 = Processor failure • 957 = ASIC failure • 959 = SRAM failure
+Code;958
+Description;NAND Failure
+Remedy;Before proceeding when a 958 NAND failure displays, perform a power on reset (POR) to see if the ECC error correction code can reflash NAND. If this does not fix the problem, replace the system board.
+Code;960
+Description;RAM Memory Error
+Remedy;Indicates a DRAM Memory Error on the system board. Replace the system board.
+Code;961
+Description;RAM in Slot 2 is Bad
+Remedy;If another SDRAM memory DIMM is installed in slot 1, turn the power off, switch the DIMM in slot 1 to slot 2. If the memory in slot 2 now works correctly, replace the failing DIMM that was in slot 2. If this does not fix the problem, replace the system board. If another DIMM is not available, replace the memory option. If this does not fix the problem, replace the system board.
+Code;962
+Description;RAM in Slot 1 is Bad
+Remedy;If another SDRAM memory DIMM is installed in slot 2, turn the power off, switch the DIMM in slot 2 to slot 1. If the memory in slot 1 now works correctly, replace the failing DIMM that was in slot 1. If this does not fix the problem, replace the system board. If another DIMM is not available, replace the memory option. If this does not fix the problem, replace the system board.
+Code;964
+Description;Emulation Error
+Remedy;Indicates a failure within the Download Emulation which is programmed into the code overlay card. The specific error is as follows: 964 - Download Emulation CRC Failure. Checksum Failure
+Code;975 ... 979
+Description;Network Card x
+Remedy;The following errors indicate a failure with the network card in the specified slot. (x=any card installed in slots 1 or 2.) • 975 - Unrecognizable Network Card x. Replace network card x. • 976 - Unrecoverable software error in network card x. • 978 - Bad checksum while programming network card x. Replace network card x. • 979 - Flash parts failed while programming network card x. If the printer is a network model, replace the system board.
+Code;980
+Description;<device> Comm
+Remedy;The engine is experiencing unreliable communications to the specified device.
+Code;981
+Description;<device>
+Remedy;The engine protocol violation detected by the specified device.
+Code;982
+Description;<device> Comm
+Remedy;Communications error detected by the specified device.
+Code;983
+Description;<device>
+Remedy;Invalid command received by the specified device.
+Code;984
+Description;<device>
+Remedy;Invalid command parameter received by the specified device. Note: Service errors 980 thru 984 <device> can be one of the following: system board, duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;990
+Description;<device>
+Remedy;Indicates an equipment check condition has occurred in the specified device, but the device is unable to identify the exact component failure. Note: <device> can be one of the following: duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.
+Code;991
+Description;<device> Card
+Remedy;The specified device has detected an equipment check in its system card. Note: <device> can be one of the following: duplex, tray x (1, 2, 3, 4, or 5), envelope feeder or output bin.

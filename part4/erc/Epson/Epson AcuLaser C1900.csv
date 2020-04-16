@@ -1,0 +1,100 @@
+Code;0017 ... 0258
+Description;0017 CPU error (undefined interruption) 0081 CPU error (TLB modification exception) 0082 CPU error (TLB miss exception [Load/Fetch]) 0083 CPU error (TLB miss exception [Store]) 0084 CPU error (address error exception [Load/Fetch]) 0085 CPU error (address error exception [Store]) 0086 CPU error (bus error exception [Fetch]) 0087 CPU error (bus error exception [Load/Store]) 0088 CPU error (SYSCALL exception) 0089 CPU error (Break exception) 0090 CPU error (reserving command exception) 0091 CPU error (unused coprocessor exception) 0092 CPU error (FPU exception) 0093 CPU error (TLB exception) 0094 CPU error (XTLB exception) 0095 CPU error (cache exception) 0096 CPU error (Trap exception) 0097 CPU error (FPU exception) 0098 CPU error (watch exception) 0128 ~ 0254 CPU error (undefined trap) 0255 CPU error (NMI exception) 0256 CPU error (divide by 0) 0257 CPU error (arithmetic overflow) 0258 CPU error (break occurrence)
+Causes;
+Remedy;Turn off the power to the printer once and turn it on again and check to see if the same error occurs again. If it occurs again, replace the Main Controller with a new one.
+Code;0800 ... 1021
+Description;0800 IPL error (controller defect) 0998 Engine communication error (only when power-on) 0999 Engine flash ROM has no program data 1002 Standard RAM error (standard size is undefined, etc.) 1010 Verification error 1020 RAM error (slot 0) 1021 RAM error (slot 1)
+Causes;
+Remedy;Turn off the power to the printer once and turn it on again and check to see if the same error occurs again. If it occurs again, replace the Main Controller with a new one.
+Code;1120 ... 2000
+Description;1120 ROM checksum error (bit 0 to 7) (program) 1121 ROM checksum error (bit 8 to 15) (program) 1122 ROM checksum error (bit 16 to 23) (program) 1123 ROM checksum error (bit 24 to 31) (program) 1200 EEPROM writing error 1210 EEPROM writing times limit 1400 Engine initialization error 1500 CCNV hardware error 1550 Initialization hardware error for SRAM for compression 1600 Video series hardware error (including PWM IC calibration error) 1610 Video series hardware error (VCNV error) 1800 Illegal SPD (not appeared in Tanager) 1999 Other hardware errors 2000 Software error
+Causes;
+Remedy;Turn off the power to the printer once and turn it on again and check to see if the same error occurs again. If it occurs again, replace the Main Controller with a new one.
+Code;6016
+Description;Polygon motor error When the Polygon Motor does not operate, or the laser diode (LD) does not emit the laser beam.
+Causes;• Print Head Unit • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Replace the print head unit. - - 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E004
+Description;Engine board error When a communication error in the Engine Board (PWB-A) is detected
+Causes;• Engine Board (PWB-A)
+Remedy;1 Replace the PWB-A.
+Code;E005
+Description;Flash ROM error When an abnormality in contents of flash ROM on the Engine Board (PWB-A) is detected.
+Causes;• Engine Board (PWB-A)
+Remedy;1 Replace the PWB-A.
+Code;E008
+Description;Main motor error When the Main Motor (M1) does not operate at turning on the power switch.
+Causes;• Main Motor (M1) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the operation of M1. M1_REM 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E011
+Description;Exhaust fan error When the Exhaust Fan Motor (M6) does not operate at turning on the main switch.
+Causes;• Exhaust Fan Motor (M6) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the operation of M6. M6_REM 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E012
+Description;Power coolant fan error When the Power Coolant Fan Motor (M4) does not operate at turning on the main switch.
+Causes;• Power Supply Cooling Fan Motor (M4) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the operation of M4. M4_REM 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E014
+Description;Fuser cooling fan error When the Fuser Cooling Fan Motor (M5) does not operate at turning on the main switch.
+Causes;• Fuser Cooling Fan Motor (M5) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the operation of M5. M5_REM 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E018
+Description;Laser error When the Polygon Motor does not operate, or the laser diode (LD) does not emit the laser beam.
+Causes;• Print Head Unit • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Replace the print head unit. - - 2 Replace the PU. - - 3 Replace the PWB-A.
+Code;E020
+Description;Secondary transfer roller pressing/separation error When pressing or separation of the Secondary Transfer Roller is impossible.
+Causes;• Transfer Roller Pressure Solenoid (SL2) • Transfer Roller Pressure Position Detection Sensor (PC7) • Engine Board (PWB-A)
+Remedy;1 Check the operation of PC7. PC7_ON 2 Replace the pressing/separation mechanism parts of the Secondary Transfer Roller. - - 3 Check the operation of SL2. SL2_REM 4 Replace the PWB-A.
+Code;E021
+Description;Transfer belt cleaner clearance error When pressing or separation of the Transfer Belt Cleaner is impossible.
+Causes;• Cleaner Pressure Flapper Solenoid (SL4) • Belt Cleaner Position Detect Sensor (PC9) • Engine Board (PWB-A)
+Remedy;1 Check the operation of PC9. PC9_ON 2 Replace the pressing/separation mechanism parts of the Belt Cleaner. - - 3 Check the operation of SL4. SL4_REM 4 Replace the PWB-A.
+Code;E022
+Description;Transfer belt rotation error When the transfer belt of the Intermediate Transfer Belt Unit does not operate.
+Causes;
+Remedy;1 Replace the transfer belt unit.
+Code;E023
+Description;Developing rack rotation error When the Toner Cartridge Rack does not turn.
+Causes;• Rack motor (M2) • Rack Clutch (CL1) • Rack Black Position Detection Sensor (PC4) • Engine Board (PWB-A)
+Remedy;1 Check the operation of PC4. PC4_ON 2 Check the operation of M2. CL1_REM 3 Check the operation of CL1. - 4 Replace the PWB-A.
+Code;E024
+Description;Fuser roller / warming up error When 80C is not reached in 100 seconds after start of warming up. When the fusing roller temperature has dropped and remained below 70C for 10 seconds during standby.
+Causes;• Fusing Roller Heater Lamp (H1) • Pressure Roller Heater Lamp (H2) • Thermostat (TS1) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the continuity of H1 and H2. NO Replace the H1, H2. - 2 Check the continuity of TS1. NO Replace the TS1. - 3 Check to see if the resistance of TH1 is infinite. (Between CN18-1 and 2 on thermistor side) YES Clean TH1 or replace the Fuser Unit. HEATER NO Replace the PU. Replace the PWB-A.
+Code;E025
+Description;Fusing roller / low temperature error When 80C is not reached in 100 seconds after start of warming up. When the fusing roller temperature has dropped and remained below 70C for 10 seconds during standby.
+Causes;• Fusing Roller Heater Lamp (H1) • Pressure Roller Heater Lamp (H2) • Thermostat (TS1) • Engine Board (PWB-A) • Power Supply Unit (PU)
+Remedy;1 Check the continuity of H1 and H2. NO Replace the H1, H2. - 2 Check the continuity of TS1. NO Replace the TS1. - 3 Check to see if the resistance of TH1 is infinite. (Between CN18-1 and 2 on thermistor side) YES Clean TH1 or replace the Fuser Unit. HEATER NO Replace the PU. Replace the PWB-A.
+Code;E026
+Description;Fusing roller / high temperature error When the Fusing Roller temperature is 220°C or higher for 0.1 second. When between 40 seconds and 50 seconds after start of warming up of the Fusing Roller, the Fusing Roller temperature does not rise for one second by 5°C from that at start of fuser warming up.
+Causes;• Thermistor (TH1) • Engine Board (PWB-A)
+Remedy;1 Check to see if TH1 is shorted. (Between CN18-1 and 2 on thermistor side) YES Clean TH1. HEATER Replace the Fuser Unit. NO Replace the PU. Replace the PWB-A.
+Code;E027
+Description;Fusing roller / thermistor error When the Fusing Roller temperature is 220°C or higher for 0.1 second. When between 40 seconds and 50 seconds after start of warming up of the Fusing Roller, the Fusing Roller temperature does not rise for one second by 5°C from that at start of fuser warming up.
+Causes;• Thermistor (TH1) • Engine Board (PWB-A)
+Remedy;1 Check to see if TH1 is shorted. (Between CN18-1 and 2 on thermistor side) YES Clean TH1. HEATER Replace the Fuser Unit. NO Replace the PU. Replace the PWB-A.
+Code;E033
+Description;Transparency detection sensor error Transparency is not detected.
+Causes;• OHP Sensor (PC3A) • Engine Board (PWB-A)
+Remedy;1 Check the operation of PC3A. PC3_REM 2 Replace the PWB-A.
+Code;E041
+Description;Memory counter error EEPROM error detection
+Causes;• EEPROM • Engine Board (PWB-A)
+Remedy;1 Replace the EEPROM. - - 2 Replace the PWB-A.
+Code;E042
+Description;Memory data error EEPROM error detection
+Causes;• EEPROM • Engine Board (PWB-A)
+Remedy;1 Replace the EEPROM. - - 2 Replace the PWB-A.
+Code;E043
+Description;Memory access error EEPROM error detection
+Causes;• EEPROM • Engine Board (PWB-A)
+Remedy;1 Replace the EEPROM. - - 2 Replace the PWB-A.
+Code;E044
+Description;Memory installation error EEPROM error detection
+Causes;• EEPROM • Engine Board (PWB-A)
+Remedy;1 Replace the EEPROM. - - 2 Replace the PWB-A.
+Code;E998
+Description;Engine communication error Any error has occurred in communication through the video interfere between the Main Board and the Engine Board.
+Causes;• Main Board (C494MAIN) • Engine Board (PWB-A)
+Remedy;1 Check the connection between Main Board and Engine Board. - - 2 Replace the Main Board (C494MAIN). - - 3 Replace the Engine Board (PWB-A).

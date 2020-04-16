@@ -1,0 +1,148 @@
+Code;-
+Display;OFF-SCALE
+Description;Data sent has exceeded the effective area.
+Remedy;Reduce the size of data so that it falls within the effective area.
+Code;-
+Display;DATA RECEIVED DURING COPYING!
+Description;Another data is received during the execution of copying.
+Remedy;Re-send data from the host computer after the completion of copying.
+Code;00
+Display;ERROR 00 MAIN ROM
+Description;Hash check error has arisen on the main ROM.
+Remedy;Replace the CPU circuit board with a new one.
+Code;01
+Display;ERROR 01 SERVO ROM
+Description;Abnormal handshaking (no response) has occurred onthe Sub CPU.
+Remedy;Replace the SUB CPU with a proper one.(In the case of socket type) Replace the CPU circuit board with a new one.
+Code;02
+Display;ERROR 02 MAIN RAM
+Description;Read/write error has arisen on the main RAM.
+Remedy;Replace the CPU circuit board with a new one.
+Code;04
+Display;ERROR 04 EEPROM
+Description;Hash check error has arisen on the EEPROM. (Hash check is performed for the system parameter area.)
+Remedy;Initialize the EEPROM. 1: Turn the power on with the [<], [>] held pressed. 2: Record all the parameters. 3: Execute the initialization of the parameters. 4: If the parameters recorded are correct, re-establish them. 5: If the error should recur even after the parameters have been reestablished, replace the CPU circuit board with a new one.
+Code;06
+Display;ERROR 06 BUFFER
+Description;Receiving buffer is in abnormal conditions.
+Remedy;Replace the CPU circuit board with a new one.
+Code;08
+Display;ERROR 08 POWER
+Description;Supply voltage for driving the motor is abnormal.
+Remedy;Check the supply voltage. Replace the power circuit board with a new one. Replace the driver circuit board with a new one.
+Code;10
+Display;ERROR 10 COMMAND
+Description;Unbreakable command code is received
+Remedy;Check the communication conditions. Perform a loopback test to check whether the device normally operates. If the device maloperates, replace the CPU circuit board with a new one.
+Code;11
+Display;ERROR 11 PARAMETER
+Description;A parameter that is outside the specified range of values is received.
+Remedy;Check the communication conditions. Perform a loopback test to check whether the device normally operates. If the device maloperates, replace the CPU circuit board with a new one.
+Code;12
+Display;ERROR 12 DEVICE
+Description;Cutting (plotting) cannot be initiated since an amount of data exceeding the capacity of the receiving buffer is sent from thehost computer and no plot start command is present in the receiving buffer. Device command is abnormal.
+Remedy;Check the communication conditions. Perform a loopback test to check whether the device normally operates. If the device maloperates, replace the CPU circuit board with a new one. Send an amount of data within the capacity of the receiving buffer from the host computer. If the device normally operates with the data, check the host computer. Check the communication conditions. Perform a loopback test to check whether the device normally operates. If the device maloperates, replace the CPU circuit board with a new one.
+Code;13
+Display;ERROR 13 POLYGON
+Description;Polygon data sent exceeds the capacity of polygon buffer.
+Remedy;Reduce the amount of polygon data.
+Code;20
+Display;ERROR 20 I/O
+Description;Energizing has been carried in a wrong order. Communication conditions are defective.
+Remedy;Turn off first the power to the plotter and host computer. Then, turn on the power to the host computer. Finally, turn on the power to the plotter. Check the communication conditions. Perform a loopback test to check whether the device normally operates. If the device maloperates, replace the CPU circuit board with a new one.
+Code;23
+Display;ERROR 23 LOOPBACK S
+Description;Signal line is in abnormal conditions.
+Remedy;Connect the loopback connector. Replace the CPU circuit board with a new one.
+Code;24
+Display;ERROR 24 LOOPBACK R
+Description;No interruption takes place in data receiving.
+Remedy;Connect the loopback connector. Replace the CPU circuit board with a new one.
+Code;25
+Display;ERROR 25 LOOPBACK T
+Description;No interruption takes place during data sending.
+Remedy;Connect the loopback connector. Replace the CPU circuit board with a new one.
+Code;26
+Display;ERROR 26 LOOPBACK D
+Description;Data received is defective.
+Remedy;Connect the loopback connector. Replace the CPU circuit board with a new one.
+Code;30
+Display;ERROR 30 OPERATION
+Description;An erroneous operation has been taken (such that SELF TEST is executed while the device is engaged in self test or COPY is executed while the device is engaged in copying).
+Remedy;Point out the wrong operation. Replace the keyboard with a new one. Replace the CPU circuit board with a new one.
+Code;31
+Display;ERROR 31 NO DATA
+Description;No data is present in the receiving buffer though 'COPY' operation is executed.
+Remedy;Explain the user that 'COPY' is only effective when data is present in the receiving buffer.
+Code;32
+Display;ERROR 32 TOO LARGE
+Description;COPY has been executed after receiving data of which amount exceeds the capacity of the receiving buffer.
+Remedy;Explain the user that 'COPY' of data of which amount exceeds the capacity of the receiving buffer is not permitted.
+Code;40
+Display;ERROR 40 X OVERLOAD
+Description;Load applied to servo-motor X has increased to an abnormal level.
+Remedy;Replace the servo-motor X with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;41
+Display;ERROR 41 Y OVERLOAD
+Description;Load applied to servo-motor Y has increased to an abnormal level.
+Remedy;Replace the servo-motor Y with a new one. Replace the CPU circuit board with a new one.
+Code;42
+Display;ERROR 42 X OVERCURRENT
+Description;Overcurrent error of servo-motor X has been detected. (The mean current exceeds the rated current of the motor.)
+Remedy;Replace the servo-motor X with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;43
+Display;ERROR 43 Y OVERCURRENT
+Description;Overcurrent error of servo-motor Y has been detected. (The mean current exceeds the rated current of the motor.)
+Remedy;Replace the servo-motor Y with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;46
+Display;ERROR 46 PEN SENSOR
+Description;FPC circuit board is improperly positioned. Head circuit board is defective. CPU circuit board is defective
+Remedy;Properly re-position the FPC circuit board. Replace the head circuit board with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;50
+Display;ERROR 50 X-SENSOR
+Description;X-sensor is defective. Light shielding plate has been improperly installed. Cable has disconnected. CPU circuit board is defective.
+Remedy;Replace the X-sensor with a new one. Re-install the light shielding plate properly. Replace the cable and the connector respectively with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;51
+Display;ERROR 51 Y SENSOR
+Description;Y-sensor is defective. Light shielding plate has been improperly installed. Cable has disconnected. CPU circuit board is defective.
+Remedy;Replace the Y-sensor with a new one. Re-install the light shielding plate properly. Replace the cable and the connector respectively with a new one. Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;52
+Display;ERROR 52 O-ORIGIN
+Description;O-axis origin detection failure
+Remedy;Check the origin label. Check the origin sensor. Replace the driver circuit board with a new one.
+Code;53
+Display;ERROR 53 Z-ORIGIN
+Description;Z-axis travel cannot be performed.
+Remedy;Check the vertical motion of the cutter and roller.
+Code;62
+Display;ERROR 62 VACUUM/TILT
+Description;Thermal relay is fed with an overcurrent. Faulty blower.
+Remedy;Check the installation of the thermal relay. Replace the blower with a new one.
+Code;70
+Display;ERROR 70 O-OVERLOAD
+Description;Load applied to O-axis motor has increased to an abnormal level.
+Remedy;Inspect the O-axis speed-reduction components. Replace the CPU circuit board with a new one. Replace the head circuit board and driver circuit board.
+Code;71
+Display;ERROR 71 O-OVERCURRENT
+Description;Overcurrent error on O-axis motor
+Remedy;Inspect the O-axis speed-reduction components. Replace the CPU circuit board with a new one. Replace the head circuit board and driver circuit board.
+Code;72
+Display;ERROR 72 CUTTER Z LOAD
+Description;Load applied to Z-axis motor has increased to an abnormal level.
+Remedy;Replace the CPU circuit board with a new one. Replace the head circuit board and driver circuit board.
+Code;73
+Display;ERROR 73 ROLLER Z LOARD
+Description;Load applied to Z-axis motor of marking roller has increased to an abnormal level.
+Remedy;Replace the CPU circuit board with a new one. Replace the driver circuit board with a new one.
+Code;75
+Display;ERROR 75 SUM CHECK
+Description;A sum check mismatch has occurred in the firmware read.
+Remedy;Start over the version updating. Change the version up file.
+Code;80
+Display;ERROR 80 FORMAT
+Description;An improper version up file is used.
+Remedy;Obtain the correct version up file to try to update the version again.
+Code;90
+Display;ERROR 90 F / W
+Description;Sub CPU fault.
+Remedy;Replace the CPU circuit board with a new one.

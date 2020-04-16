@@ -1,0 +1,359 @@
+Code;230
+Description;"FGATE error
+ The PFGATE ON signal does not assert within 1 second. The PFGATE ON signal still assert within 7 seconds, after processing the image in a normal job"
+Causes;• Defective engine board • Defective controller board • Disconnect harness
+Code;302
+Description;"Charge roller current leak
+ The PWM duty output exceeded 60% for longer than 200 ms, indicating a leak in the charge roller current."
+Causes;• Cartridge (charge roller) defective • High voltage supply board defective • Defective cartridge connection
+Code;320
+Description;"Polygon motor error
+ The polygon motor did not enter the lock state within 10 sec. after it switched on. -or- Once the polygon motor was detected in the lock state after started to rotate, within 0.2 sec. it entered the unlock state. -or- After the polygon motor switched off, it did not enter unlock state within 3 sec."
+Causes;• Polygon motor • Polygon motor cable
+Code;322
+Description;"1st beam laser synchronization error
+ With all doors closed the polygon motor is locked and not rotating, or the laser synchronization detector could not detect 1st beam laser detection signal within 500 ms."
+Causes;• Laser synchronization detector board out of position • Laser synchronization detector board or cable defective • Laser synchronization mirror out of position • LD unit defective • Engine board defective
+Code;323
+Description;"LD drive current exceeded
+ The LD driver detected an error for 50 ms."
+Causes;• LD unit defective
+Code;326
+Description;"2nd beam laser synchronization error
+ With all doors closed the polygon motor is locked and not rotating, or the laser synchronization detector could not detect 2nd beam laser detection signal within 500 ms."
+Causes;• Laser synchronization detector board out of position • LD unit defective • Engine board defective
+Code;391
+Description;"Development bias leak
+ A development bias leak signal was detected for 200 ms."
+Causes;• High voltage supply board defective • Defective cartridge connection
+Code;500
+Description;"Main motor error
+ The machine does not detect a main motor lock signal within 700 ms after the main motor started to rotate. -or- The machine detects a main motor lock signal within 500 ms after the main motor started to rotate, after that, the main motor lock signal does not detect within 200ms. -or- The machine does not detect a main motor lock signal within 200 ms after the main motor switched off."
+Causes;• Main motor defective • Mechanical overload on the drive mechanism
+Code;541
+Description;"Fusing thermistor error
+ The fusing temperature did not rise higher than 20°C within 10 sec. after the main motor switched off. -or- The fusing temperature was detected lower than 0oC for over 1 sec. after the power relay switched on."
+Causes;• Thermistor disconnected, defective • Fusing lamp disconnected, defective • Fuse blown • Power supply board defective • Fusing unit connected improperly
+Code;542
+Description;"Fusing temperature warm-up error
+ Just before reaching warm-up temperature, the fusing temperature did not rise above 80°C within 15.5 sec. after the power relay switched on."
+Causes;• Thermistor defective • Fusing lamp open • Fusing thermostat open • Power supply board Defective • Defective connection of the fusing unit
+Code;543
+Description;"Fusing overheat error – software
+ The fusing temperature was detected higher than 235°C for longer than 200 ms."
+Causes;• Fusing thermistor defective. • Power supply board defective
+Code;544
+Description;"High temperature detection: Hard
+ The thermister detects a high temperature signal"
+Causes;• Defective thermister • Defective fusing unit, PSU, engine board
+Code;545
+Description;"Fusing lamp remains on
+ The fusing lamp remained on longer than 12 sec. after the fusing unit reached optimum temperature and the main motor switched off."
+Causes;• Fusing thermistor defective • Power supply board defective • Defective connection of the fusing unit
+Code;546
+Description;"Unstable fusing temperature
+ During standby, the fusing temperature went below 60°C twice or went above 60°C three times within 500 ms. A 60°C increase in fusing temperature was detected at five 1-sec. intervals within 60 sec. before reaching fusing temperature."
+Causes;• Fusing thermistor defective • Power supply board defective • Defective connection of the fusing unit
+Code;547
+Description;"Zero cross signal error
+ Zero cross signals of wavelength 50-60 Hz were not detected within 5 sec after the fusing relay switched on. -or- Zero cross interrupts did not issue at the prescribed 3 sec. intervals."
+Causes;• Power supply board defective • Defective mains power supply condition
+Code;559
+Description;"Fusing unit jam
+ Three consecutive paper lag jams (paper failed to arrive) were detected in the fusing unit. -or- During printing of the 1st side during duplexing, the paper did not arrive at the duplex entrance sensor three times."
+Causes;• Fusing unit installed incorrectly • Fusing unit defective
+Code;590
+Description;"Fan motor error
+ The machine does not lock for 3sec during rotating the fusing fan motor."
+Causes;• Fan motor disconnected, defective • Fan motor harness loose, broken, defective
+Code;591
+Description;"PSU fan error
+ The machine does not lock for 3sec during rotating the PSU fan motor."
+Causes;• Defective PSU fan
+Code;620
+Description;"GAVD communication error
+ The machine detects an error data of the ASIC."
+Causes;• Defective engine board • Defective ASIC
+Code;622
+Description;"Paper tray unit communication error
+ Three consecutive errors occur during polling, after the paper tray unit is successful I2C communication."
+Causes;• Disconnect harnesses
+Code;632
+Description;"Counter device error 1
+ After 3 attempts to send a data frame to the optional counter device via the serial communication line, no ACK signal was received within 100 ms."
+Causes;• Serial line between the optional counter device, the relay board and copier control board is disconnected or damaged • Make sure that SP5113 is set to enable the optional counter device. 1. Check if the setting of the SP5113 is correctly set. 2. Check the connection between the main machine and optional counter device.
+Code;633
+Description;"Counter device error 2
+ After communication is established, the controller receives the brake signal from the accounting device."
+Causes;• Serial line between the optional counter device, the relay board and copier control board is disconnected or damaged • Make sure that SP5113 is set to enable the optional counter device. 1. Check if the setting of the SP5113 is correctly set. 2. Check the connection between the main machine and optional counter device.
+Code;634
+Description;"Counter device error 3
+ A backup RAM error was returned by the counter device."
+Causes;• Counter device control board defective • Backup battery of counter device defective Replace the counter device.
+Code;635
+Description;"Counter device error 4
+ A backup battery error was returned by the counter device."
+Causes;• Counter device control board defective • Backup battery of counter device defective Replace the counter device.
+Code;636
+Description;SDK Application Recognition Module
+Causes;• Module management is set for ON but the module was not recognized. • SDK application not recognized. • Module SD card defective, or recognition file corrupted • DESS (Data Encryption Security Service) module not present Note: DESS is the data encryption module built into the GW controller board.
+Code;641
+Description;"Engine to controller communication error
+ no answer"
+Causes;• Examine the connection between the controller and the engine board. • Replace the engine board if the error is frequent.
+Code;650
+Description;Communication error of the remote service modem (Cumin-M)
+Causes;
+Code;651
+Description;"Incorrect dial up connection
+ -001: Program parameter error -002: Program execution error"
+Causes;An unexpected error occurs when the modem (Cumin-M) tries to call the center with a dial up connection. • Caused by a software bug No action required because this SC does not interfere with operation of the machine.
+Code;652
+Description;Remote service: ID2 confict
+Causes;
+Code;653
+Description;Remote service: ID2 fraudct
+Causes;
+Code;669
+Description;"EEPROM Error
+ The EEPROM was not connected at power on, or read/write operations on the EEPROM failed."
+Causes;• EEPROM connected improperly • EEPROM missing
+Code;670
+Description;Engine response error
+Causes;• Engine board installed incorrectly • Engine board defective • Controller board defective
+Code;674
+Description;Controller data transfer error
+Causes;
+Code;687
+Description;"PER-command error
+ The machine does not receive PAPI-PER command for specific time, after PAPI-PES was issued."
+Causes;• Defective controller
+Code;688
+Description;"PAPI-PES error
+ The machine does not receive PAPI-PES command after paper is in registration."
+Causes;• Defective controller • Poor communication
+Code;816
+Description;"Energy saving I/O sub-system error
+ The energy saving I/O sub-system detects an error."
+Causes;• Controller board defective
+Code;817
+Description;"Monitor error
+ This is a file detection and electronic file signature check error when the boot loader attempts to read the self-diagnostic module, system kernel, or root system files from the OS Flash ROM, or the items on the SD card in the controller slot are false or corrupted."
+Causes;"• OS Flash ROM data defective; change the controller firmware • SD card data defective; use another SD card"
+Code;818
+Description;Watchdog error
+Causes;
+Code;819
+Description;"Fatal kernel error
+ Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel."
+Causes;• System program defective • Controller board defective • Optional board defective • Replace controller firmware
+Code;820
+Description;"Self-Diagnostic Error: CPU
+ The central processing unit returned an error during the self-diagnostic test."
+Causes;• Controller board defectivewas issued. • Software defective
+Code;821
+Description;"Self-diagnostic error 2: ASIC
+ The ASIC provides the central point for the control of bus arbitration for CPU access, for option bus and SDRAM access, for SDRAM refresh, and for management of the internal bus gate."
+Causes;• ASIC (controller board defective)
+Code;822
+Description;Self-diagnostic error 3: HDD
+Causes;
+Code;823
+Description;"Self-diagnostic Error: NIC
+ The network interface board returned an error during the self-diagnostic test."
+Causes;• Network interface board defective • Controller board defective
+Code;824
+Description;"Self-diagnostic error 4: NVRAM
+ NVRAM device does not exist, NVRAM device is damaged, NVRAM socket damaged"
+Causes;• NVRAM defective • Controller board defective • NVRAM backup battery exhausted • NVRAM socket damaged
+Code;826
+Description;"Self-diagnostic Error: NVRAM/ Optional NVRAM
+ The NVRAM or optional NVRAM returned an error during the selfdiagnostic test."
+Causes;• Make sure NVRAM is seated correctly in its socket • Replace the NVRAM on the controller board
+Code;827
+Description;"Self-diagnostic Error: RAM
+ The resident RAM returned a verify error during the self-diagnostic test."
+Causes;• Update controller firmware again • Replace RAM DIMM
+Code;828
+Description;"Self-diagnostic error 7: ROM
+ Measuring the CRC for the boot monitor and operating system program results in an error. A check of the CRC value for ROMFS of the entire ROM area results in an error."
+Causes;• Software defective • Controller board defective • ROM defective
+Code;829
+Description;"Self-diagnostic Error: Optional RAM
+ The optional RAM returned an error during the self-diagnostic test."
+Causes;• Replace the optional memory board • Controller board defective
+Code;833
+Description;Self-diagnostic error: Engine I/F ASIC
+Causes;Replace the engine board. • ASIC for system control could not be detected. After the PCI configuration, the device ID for the ASIC could not be checked. Replace the mother board or check the harness connection. • Could not initialize or read the bus connection. • Value of the SSCG register is incorrect.
+Code;834
+Description;Self-diagnostic error: Engine I/F ASIC (Option memory)
+Causes;
+Code;835
+Description;Self-diagnostic error: Centronics device
+Causes;
+Code;838
+Description;"Self-diagnostic error: Clock Generator
+ A verify error occurred when setting data was read from the clock generator via the I2C bus."
+Causes;• Replace the controller board
+Code;839
+Description;Self-diagnostic error: Serial Flash
+Causes;
+Code;840
+Description;EPROM access error
+Causes;
+Code;841
+Description;EPROM read error
+Causes;
+Code;842
+Description;Nand-Flash update verify error
+Causes;
+Code;851
+Description;"IEEE 1394 I/F error
+ Driver setting incorrect and cannot be used by the 1394 I/F."
+Causes;"• NIB (PHY), LINK module defective; change the Interface Board • Controller board defective"
+Code;853
+Description;"Wireless LAN error 1
+ During machine start-up, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (802.11b or Bluetooth)."
+Causes;• Wireless LAN card missing (was removed)
+Code;854
+Description;"Wireless LAN error 2
+ During machine operation, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (802.11b or Bluetooth)."
+Causes;• Wireless LAN card missing (was removed)
+Code;855
+Description;"Wireless LAN error 3
+ An error was detected on the wireless LAN card (802.11b or Bluetooth)."
+Causes;• Wireless LAN card defective • Wireless LAN card connection incorrect
+Code;856
+Description;"Wireless LAN error 4
+ An error was detected on the wireless LAN card (802.11b or Bluetooth)."
+Causes;• Wireless LAN card defective • PCI connector (to the mother board) loose
+Code;857
+Description;"USB I/F Error
+ The USB driver is not stable and caused an error."
+Causes;• Bad USB card connectionc test. • Replace the controller board
+Code;858
+Description;HDD Encryption unit error 1
+Causes;A serious error occurs when data is encrypted to update an encryption key with the HDD encryption unit. [Number] shows a suffix number of SC code. • [0], [1], [30]: Replace the controller board. • [2]: Replace the NVRAM.
+Code;859
+Description;HDD Encryption unit error 2ory)
+Causes;A serious error occurs when the HDD data is encrypted to update an encryption key with the HDD encryption unit. [Number] shows a suffix number of SC code. • [8]: Install the HDD correctly or initialize the HDD. • [9]: Initialize the HDD. • [10]: Replace the HDD or replace the controller board.
+Code;860
+Description;"HDD startup error at main power on
+ HDD is connected but a driver error is detected. The driver does not respond with the status of the HDD within 30 s."
+Causes;• HDD is not initialized • Level data is corrupted • HDD is defective
+Code;861
+Description;"HDD re-try failure
+ At power on the HDD was detected. Power supply to the HDD was interrupted after the system entered the energy save mode, but after the HDD was awakened from the energy save mode it did not return to the ready status within 30 sec."
+Causes;• Harness between HDD and controller board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Code;862
+Description;Bad sector Maximam
+Causes;• HDD defective
+Code;863
+Description;"HDD data read failure
+ The data written to the HDD cannot be read normally, due to bad sectors generated during operation."
+Causes;• HDD defective Note: If the bad sectors are generated at the image partition, the bad sector information is written to NVRAM, and the next time the HDD is accessed, these bad sectors will not be accessed for read/ write operation.
+Code;864
+Description;"HDD data CRC error
+ During HDD operation, the HDD cannot respond to an CRC error query. Data transfer did not execute normally while data was being written to the HDD."
+Causes;• HDD defective
+Code;865
+Description;"HDD access error
+ HDD responded to an error during operation for a condition other than those for SC863, 864."
+Causes;• HDD defective
+Code;866
+Description;"SD card error 1: Confirmation
+ The machine detects an electronic license error in the application on the SD card in the controller slot immediately after the machine is turned on. The program on the SD card contains electronic confirmation license data. If the program does not contain this license data, or if the result of the check shows that the license data in the program on the SD card is incorrect, then the checked program cannot execute and this SC code is displayed."
+Causes;• Program missing from the SD card • Download the correct program for the machine to the SD card
+Code;867
+Description;"SD card error 2: SD card removed
+ The SD card in the boot slot when the machine was turned on was removed while the machine was on."
+Causes;• Insert the SD card, then turn the machine off and on.
+Code;868
+Description;"SD card error 3: SC card access
+ An error occurred while an SD card was used."
+Causes;• SD card not inserted correctly • SD card defective • Controller board defective • Note: If you want to try to reformat the SC card, use SD Formatter Ver 1.1.
+Code;870
+Description;"Address book data error
+ Address book data on the hard disk was detected as abnormal when it was accessed from either the operation panel or the network. The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective."
+Causes;• HDD defective. • Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. Note: If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;872
+Description;"HDD mail receive data error
+ The machine detected that the HDD was not operating correctly at power on. The machine detected that the HDD was not operating correctly (could neither read nor write) while processing incoming email"
+Causes;• HDD defective. • Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. Note: If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;873
+Description;"HDD mail send data error
+ An error was detected on the HDD immediately after the machine was turned on, or power was turned off while the machine used the HDD."
+Causes;• HDD defective. • Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. Note: If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;874
+Description;"Delete All error 1: HDD
+ A data error was detected for the HDD/ NVRAM after the Delete All option was used. Note: The source of this error is the Data Overwrite Security Unit B660 running from an SD card."
+Causes;• Turn the main switch off/on and try the operation again. • Install the Data Overwrite Security Unit again. For more, see section “1. Installation”. • HDD defective
+Code;875
+Description;"Delete All error 2: Data area
+ An error occurred while the machine deleted data from the HDD. Note: The source of this error is the Data Overwrite Security Unit B660 running from an SD card."
+Causes;• Turn the main switch off/on and try the operation again.
+Code;876
+Description;"Log data abnormal
+ An error was detected in the handling of the log data at power on or during machine operation. This can be caused by switching the machine off while it is operating."
+Causes;• Software error. Update the firmware • NVRAM defective • HDD defective
+Code;877
+Description;HDD Data Overwrite Security SD card error
+Causes;Defective SD card (M352) SD card (M352) not installed • Replace the NVRAM and then install the new SD card (M352). • Check and reinstall the SD card (M352).
+Code;878
+Description;TPM system authentication error
+Causes;Incorrect updating for the system firmware Defective flash ROM on the controller board • Replace the controller board.
+Code;880
+Description;"File Format Converter (MLB) error
+ A request to get access to the MLB was not answered within the specified time."
+Causes;• MLB defective, replace the MLB
+Code;881
+Description;User Authentication error
+Causes;
+Code;899
+Description;Malfunctioning software End of signal reception
+Causes;
+Code;900
+Description;"Electrical total counter error
+ The total counter contains something that is not a number."
+Causes;• NVRAM incorrect type • NVRAM defective • NVRAM data scrambled • Unexpected error from external source
+Code;910 ... 914
+Description;External Controller error
+Causes;
+Code;915
+Description;Egret Controller error 6
+Causes;
+Code;919
+Description;"External Controller Down Error
+ While EAC (External Application Converter), the conversion module, was operating normally, the receipt of a power line interrupt signal from the FLUTE serial driver was detected, or BREAK signal from the other station was detected."
+Causes;• Power outage at the EFI controller • EFI controller was rebooted • Connection to EFI controller loose
+Code;920
+Description;"Printer error 1
+ An internal application error was detected and operation cannot continue."
+Causes;"• Software defective; turn the machine off/on, or change the controller firmware • Insufficient memory"
+Code;921
+Description;"Printer font error
+ A necessary font is not found in the SD card. The SD card data is corrupted."
+Causes;• Check that the SD card has the correct data
+Code;925
+Description;Net file application failure
+Causes;
+Code;990
+Description;"Software error 1
+ The software performs an unexpected function and the program cannot continue."
+Causes;Software defective, re-boot
+Code;991
+Description;"Software error 2
+ The software performs an unexpected function. However, unlike SC990, recovery processing allows the program to continue"
+Causes;Software defective, re-boot
+Code;992
+Description;Undefined error
+Causes;Defective software program • An error undetectable by any other SC code occurred
+Code;994
+Description;Operation Panel Management Records Exceeded
+Causes;An error occurred because the number of records exceeded the limit for images managed in the service layer of the firmware. This can occur if there are too many application screens open on the operation panel. No action required because this SC does not interfere with operation of the machine.
+Code;997
+Description;Application Selection Error
+Causes;"An application did not start after pressing the appropriate key on the operation panel. • Software bug; change the firmware for the application that failed • A RAM or DIMM option required by the application is not installed or not installed correctly."
+Code;998
+Description;Application start error
+Causes;"• Software defective; change the firmware for the application that failed • An option required by the application (RAM, DIMM, board) is not installed"

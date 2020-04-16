@@ -1,0 +1,296 @@
+Code;195
+Description;Product number error The input product number (11 digits) is not equal to the product identification code.
+Causes;The input product number (11 digits) is not proper.
+Remedy;Enter the product number again.
+Code;202
+Description;Polygon motor error 1: ON timeout The polygon mirror motor did not reach the targeted operating speed within T1 seconds after turning on or changing speed. * T1 = Time within which polygon rotation should become stable.
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective
+Remedy;•Turn the Power Switch Off and On. • Connect the harness properly. • Replace the Polygon motor/driver board.
+Code;203
+Description;Polygon motor error 1: OFF timeout The polygon mirror motor did not leave READY status within 3 seconds after polygon motor switched off.
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective
+Remedy;• Turn the Power Switch Off and On. • Connect the harness properly. • Replace the Polygon motor/driver board.
+Code;204
+Description;Polygon motor error 1: XSCRDY signal error The “H” status of XSCRDY signal is detected 4 times consecutively during the writing process.
+Causes;Polygon motor/driver board harness loose or disconnected. Polygon motor/driver board defective
+Remedy;• Turn the Power Switch Off and On. • Connect the harness properly. • Replace the Polygon motor/driver board.
+Code;220
+Description;Laser synchronization detection error: LD0 The laser synchronizing detection signal for the start position of the LD is not output within 500 ms after the LDB unit turns on with the polygon motor rotating normally.
+Causes;Disconnected cable from the laser synchronizing detection unit or defective connection. efective laser synchronizing detector. Laser beam does not go into the photo detector. Defective GAVD. Defective LD Driver. Defective LDB. Defective BCU.
+Remedy;• Turn the Power Switch Off and On.
+Code;221
+Description;Laser synchronization detection error: except LD0 The laser synchronizing detection signal for the start position of the other LDs are not output within 500 ms after LDB unit turns on with the polygon motor rotating normally.
+Causes;Laser beam does not go into the photo detector. Defective GAVD. Defective LD Driver. Defective LDB. Defective BCU.
+Remedy;• Turn the Power Switch Off and On.
+Code;230
+Description;FGATE ON error The FGATE signal did not assert within 1 second. (The BCU generates the FGATE signal and sends it to the LD unit when the registration sensor switches on.)
+Causes;Defective GAVD and PCI bridge ASIC. Defective BCU. Defective controller board. Defective harness between BCU and LDB.
+Remedy;• Turn the Power Switch Off and On. • Connect the harness properly. • Replace the harness. • Replace LD unit. • Replace the controller board.
+Code;231
+Description;FGATE OFF error The FGATE signal did not go off within 10 seconds after the machine finished writing. (The BCU generates the FGATE signal and sends it to the LD unit when the registration sensor switches on.)
+Causes;Defective GAVD and PCI bridge ASIC
+Remedy;• Turn the Power Switch Off and On. • Replace the controller board.
+Code;240
+Description;LD error The IPU detected a problem at the LD unit.
+Causes;Defective LD unit. Disconnect harness. Disconnect LD Driver.
+Remedy;• Connect the harness properly. • Replace the LD unit.
+Code;312
+Description;Charge roller current leak The PWM duty output exceeded 50% for longer than 200 ms, indicating a leak in the charge roller current.fective BCU.
+Causes;Cartridge (charge roller) defective. High voltage supply board defective. Disconnect harness.
+Remedy;• Turn the Power Switch Off and On. • Connect the harness properly. • Replace the AIO unit. • Replace the High voltage power supply board.
+Code;320
+Description;Development Bias leak The PWM duty output exceeded 50% for longer than 200 ms, indicating a leak in the charge roller current.
+Causes;Bias applying section leak. High voltage supply board defective. Disconnect harness. Development Bias CN loose
+Remedy;• Connect the harnesses properly. • Replace the AIO. • Replace High voltage power supply board.
+Code;440
+Description;Primary Transfer PP output leak The PWM duty output exceeded 50% for longer than 200 ms, indicating a leak in the charge roller current.
+Causes;High voltage supply board defective. Disconnect harness. Development Bias CN loose
+Remedy;• Connect the harnesses properly. • Replace the AIO. • Replace High voltage power supply board.
+Code;500
+Description;Main motor lock The machine does not detect a main motor lock signal within 1 second after the main motor starts to rotate. -or- The machine does not detect a main motor lock signal for 250 ms continuously while the main motor is rotating.
+Causes;Mechanical overload on the drive mechanism. Main motor defectivess.
+Remedy;• Remove foreign materials on the drive mechanism. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the main motor.
+Code;530
+Description;Exhaust fan motor error The CPU detects an exhaust fan lock signal for more than 2 seconds.
+Causes;Mechanical overload on the Exhaust fan mechanism. Exhaust fan harness loose or broken
+Remedy;• Remove foreign materials on the drive mechanism. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the Exhaust fan.
+Code;531
+Description;Reverse Fan Motor error The CPU detects a Reverse fan lock signal for more than 2 seconds.и#0
+Causes;Mechanical overload on the Reverse fan mechanism. Reverse fan harness loose or broken
+Remedy;• Remove foreign materials from the reverse fan. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the reverse fan.
+Code;532
+Description;PSU Fan Motor error The CPU detects a PSU fan lock signal for more than 2 seconds.
+Causes;Mechanical overload on the PSU fan mechanism. PSU fan harness loose or broken
+Remedy;• Remove foreign materials from the PSU fan. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the PSU fan.
+Code;533
+Description;PSU2 Fan Motor error The CPU detects a PSU2 fan lock signal for more than 2 seconds
+Causes;Mechanical overload on the PSU2 fan mechanism. PSU2 fan harness loose or broken
+Remedy;• Remove foreign materials from the PSU2 fan. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the PSU2 fan.
+Code;534
+Description;AIO Fan Motor error The CPU detects an AIO fan lock signal for more than 2 seconds.
+Causes;Mechanical overload on the AIO fan mechanism. AIO fan harness loose or broken
+Remedy;• Remove foreign materials from the AIO fan. • Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the AIO fan.
+Code;541
+Description;Fusing thermistor error The fusing temperature remains lower than 0C for over 7 seconds after the power relay switches on.
+Causes;Thermistor disconnected. Defective thermistor. Fusing unit connected improperlyor
+Remedy;• Connect the fusing unit properly. • Connect the thermistor. • Replace the thermistor. • This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP5810-01 can reset this SC.
+Code;542
+Description;Fusing temperature warm-up error 1: Thermistor detects that the rate of heat increase is less than 7 degrees per 2 seconds consecutively 5 times. 2: The fusing temperature did not reach the standby temperature within 24 seconds at the center of the hot roller after the main switch turned on. This SC will appear when condition 1 and 2 occur at the same time.
+Causes;Defective thermistor. Thermistor improper installation. Defective fusing lamp
+Remedy;• Install the thermistor properly. • Replace the thermistor. • Replace the fusing lamp. • This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP5810-01 can reset this SC.
+Code;543
+Description;Fusing overheat error - software1 The detected temperature stays at 235°C for 1 second, and this consecutively occurs 10 times.
+Causes;Defective Triac. Defective IOB. Defective engine board
+Remedy;• Replace the Controller board. • This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP5810-01 can reset this SC.
+Code;544
+Description;Fusing overheat error - Hard 1 The thermistor detects over 250 C.
+Causes;Defective Triac. Defective IOB. Defective engine board. Fusing control error
+Remedy;• Replace the Controller board. • This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP5810-01 can reset this SC.
+Code;545
+Description;Fusing lamp remains on 1 The fusing lamps remained ON at full capacity for more than 12 seconds after the fusing temperature attains reload temperature.
+Causes;Fusing thermistor defective. Defective fusing lamp. Thermostat actuation
+Remedy;• Replace the fusing thermistor. • Replace the fusing lamp. • Replace the thermostat. • This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP5810-01 can reset this SC.
+Code;547
+Description;Zero cross signal detection error Zero cross signal is detected consecutively 4 times (for 200 ms) at power on with fusing relay being off. -or- Zero cross interrupts did not issue at the prescribed 3 second intervals. -or- The detection error occurs twice or more in 10 zero cross signal detections. This error is defined when the detected zero cross signal is less than 45.
+Causes;Defective fusing relay. Defective fusing relay circuit. Shorted +24V fuse on the PSU. Unstable AC power. AC line noise. As for an error due to a high frequency noise interference, this SC will not appear. In this case, SC557 will appear and output the log only.
+Remedy;• Turn the Power Switch Off and On. • Replace the PSU.
+Code;557
+Description;Zero cross frequency error Zero cross signals of wavelength 50-60 Hz were not detected within 5 seconds after the fusing relay switched on.
+Causes;AC line noise (High frequency)
+Remedy;• No action needed. • This SC will perform logging only. The machine will start up normally.
+Code;559
+Description;"Fuser 3 times jam error The paper jam counter for the fusing unit reaches 3. The paper jam counter is cleared if the paper is fed correctly. This SC is activated only when this function is enabled with ""Engine Maintenance"" (default ""OFF"")."
+Causes;Paper jams at the fusing roller
+Remedy;• This SC cannot be reset by turning the power off and on. • This SP should be reset by a CE. • SP1159 determines whether SC559 is issued. The default is off. SC559 is not issued after three consecutive jams in the paper unit. If SP1159 is set to on, turning the machine power off/on does not reset the jam counter.
+Code;622
+Description;Paper tray unit communication error bank 1 Three consecutive errors occur during polling, after the paper tray unit has successful I2C communication.
+Causes;1. Disconnect harnesses 2. Defective Paper tray unit 3. Defective engine board 4. External noise
+Remedy;• Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the Paper tray unit. • Replace the engine board.
+Code;623
+Description;Paper tray unit communication error bank 2 Three consecutive errors occur during poll`ing, after the paper tray unit has successful I2C communication.
+Causes;Turn the Power Switch Off and On. Connect the harnesses properly. Replace the Paper tray unit.
+Remedy;• Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the Paper tray unit.
+Code;624
+Description;Paper tray unit communication error bank 3 Three consecutive errors occur during polling, after the paper tray unit has successful I2C communication.
+Causes;Disconnect harnesses. Defective Paper tray unit. External noise
+Remedy;• Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the Paper tray unit.
+Code;625
+Description;Paper tray unit communication error bank 4 Three consecutive errors occur during polling, after the paper tray unit has successful I2C communication.
+Causes;Disconnect harnesses. Defective Paper tray unit. External noise
+Remedy;• Turn the Power Switch Off and On. • Connect the harnesses properly. • Replace the Paper tray unit.
+Code;641
+Description;Engine-Controller Communication Error: Non-Response There was no response to a frame sent from the controller board to the engine. There is still no response after resending frames 3 times in 100 milliseconds
+Causes;Engine board defective. Engine board harness loose, broken, defective. External noise
+Remedy;1. Turn the machine power Off and On. 2. Keep away from noise sources. 3. Replace the engine board harness. 4. Replace the engine board.
+Code;669
+Description;EEPROM communication error The EEPROM was not connected at power on, or read/write operations on the EEPROM failed. Retrying 3 times after the error detection cannot recover from the error.
+Causes;External noise. Defective EEPROM
+Remedy;• Turn the Power Switch Off and On. • Replace the engine board (Replace the EEPROM).
+Code;670
+Description;Engine startup error The engine board fails to respond within 70 seconds when the machine is turned on.
+Causes;Connections between the engine board and the controller board are loose, disconnected, or damaged
+Remedy;1. Connect the harnesses properly or replace the new one. 2. Replace the engine board. 3. Replace the controller board.
+Code;671
+Description;Illegal engine board detection error The machine code sent from the engine board is incorrect when the machine is turn on.
+Causes;Installing another machine's engine board. Defective engine board. Incorrect NVRAM on the engine board
+Remedy;1. Install the proper NVRAM. 2. Replace the engine board with proper one.
+Code;681
+Description;RFID communication error Machine cannot communicate with the RFID. Retrying 3 times after the error detection when communicating with a RF tag cannot recover from the error.
+Causes;Defective Reader/Writer. Disconnect harnesses. External noise. Defective RFID tag or no ID tag. Defective RFID unit.
+Remedy;• Replace the RFID unit. • Replace the AIO unit. • Turn the Power Switch Off and On.
+Code;683
+Description;RFID unit check error When the unit checking is performed, a transmission error is detected more than 3 times.
+Causes;External noise
+Remedy;• Reset the AIO unit. • Open and close the front cover.
+Code;688
+Description;CTL_PRREQ_N signal does not come. The PRREQ signal is not received for 130 seconds after paper reaches the registration waiting point.
+Causes;External noise. Defective engine board
+Remedy;• Turn the Power Switch Off and On. • Replace the engine board.
+Code;690
+Description;GAVD communication error The machine detects an error in the data of the ASIC.
+Causes;Defective GAVD. Defective CPU. Defective BCU.
+Remedy;• Turn the Power Switch Off and On. • Replace the engine board.
+Code;790
+Description;Bank over stacking error More than 4 PTUs installed.
+Causes;Excess bank stack
+Remedy;Decrease the number of PTUs to within 4.
+Code;819
+Description;Fatal kernel error Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel.
+Causes;System program defective. HDD defective. Controller board defective. Optional board defective.
+Remedy;1. Replace the controller firmware. 2. Replace the Controller board. 3. Replace the optional board or HDD.
+Code;820
+Description;Self-Diagnostic Error: CPU The central processing unit returned an error during the self-diagnostic test.
+Causes;Controller board defective. Software defective.
+Remedy;1. Replace the software. 2. Replace the controller board.
+Code;833
+Description;Self-diagnostic error 8: Engine I/F ASIC
+Causes;ASIC (engine board defective) 0F30 0F31 0F41 ASIC for system control could not be detected. After the PCI configuration, the device ID for the ASIC could not be checked. 1. Replace the engine board. 50B1 The system control could not initialize or read the bus connection. 1. Check for loose connections at the engine board. 2. Replace the engine board. 50B2 Value of the SSCG register is incorrect. 1. Check for loose connections at the engine board. 2. Replace the engine board.
+Remedy;
+Code;851
+Description;IEEE 1394 I/F error Driver setting incorrect and cannot be used by the 1394 I/F.
+Causes;NIB (PHY), LINK module defective. Controller board defective.
+Remedy;1. Change the interface board. 2. Replace the controller board.
+Code;853
+Description;Wireless LAN Error 1 During machine start-up, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (802.11b or Bluetooth).
+Causes;Wireless LAN card missing (was removed). Improper installation of the Wireless LAN card.
+Remedy;1. Turn the power switch Off and On. 2. Install the wireless LAN card properly.
+Code;854
+Description;Wireless LAN Error 2 During machine operation, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (802.11b or Bluetooth).
+Causes;Wireless LAN card missing (was removed) during operation
+Remedy;1. Once turn off the oower, reinstall the wireless LAN card, and then turn on the power. 2. Insert the wireless LAN card firmly.
+Code;855
+Description;Wireless LAN error 3 An error was detected on the Wireless LAN card (802.11b or Bluetooth).
+Causes;Wireless LAN card defective. Wireless LAN card connection incorrect
+Remedy;1. Connect the wireless LAN card correctly. 2. Replace the wireless LAN card.
+Code;856
+Description;Wireless LAN error 4 An error was detected on the wireless LAN card (802.11b or Bluetooth).
+Causes;Wireless LAN card defective. PCI connector (to the mother board) loose
+Remedy;1. Connect the PCI connector firmly. 2. Replace the wireless LAN card.
+Code;857
+Description;USB I/F Error The USB driver is not stable and caused an error.
+Causes;Bad USB card connection. Defective controller board.
+Remedy;1. Connect the USB card correctly. 2. Replace the controller board.
+Code;858
+Description;Data encryption conversion error
+Causes;-0 Data encryption conversion error • Key acquisition error A serious error occurred during data encryption. 1. Replace the controller board.  -1Data encryption conversion error • HDD key setting error A serious error occurred during data encryption. 1. Turn the machine power Off and On. 2. If the error reoccurs, replace the controller board. -2 Data encryption conversion error • NVRAM read/write error A serious error occurred during data encryption. 1. Replace the NVRAM. -30 Data encryption conversion error • NVRAM error A serious error occurred during data encryption. 1. Turn the machine power Off and On. 2. If the error reoccurs, replace the controller board. -31 Data encryption conversion error • Other errors A serious error occurred during data encryption. 1. See SC991.
+Remedy;
+Code;859
+Description;HDD data encryption errorn error
+Causes;-08 HDD check error: The HDD is not correctly installed. • No HDD installed • Unformatted HDD • The encryption key on the controller is different from the one on the HDD • Install the HDD correctly. • Initialize the HDD. -09 Power failure during the data encryption: The data encryption (NVRAM and HDD) has not been completed. Power failure during the data encryption 1. Initialize the HDD. -10 Data read/write error. The DMAC error is detected twice or more. Same as SC863
+Remedy;
+Code;860
+Description;HDD startup error at main power on HDD is connected but a driver error is detected. The driver does not respond with the status of the HDD within 30 s.
+Causes;HDD is not initialized. Level data is corrupted. HDD is defective
+Remedy;1. Format the HDD. Replace the HDD.
+Code;861
+Description;HDD re-try failure At power on the HDD was detected. Power supply to the HDD was interrupted after the system entered the energy save mode, but after the HDD was awakened from the energy save mode it did not return to the ready status within 30 sec.
+Causes;Harness between HDD and controller board disconnected, defective. HDD power connector disconnected. HDD defective. Controller board defective.
+Remedy;1. Turn the machine power Off and On. 2. Connect the HDD and the Controller board properly. 3. Connect the HDD power connector. 4. Replace the HDD. 5. Replace the controller board.
+Code;863
+Description;HDD data read failure The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Causes;HDD defective
+Remedy;1. Replace the HDD.
+Code;864
+Description;HDD data CRC error During HDD operation, the HDD cannot respond to an CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;HDD defective
+Remedy;1. Replace the HDD.
+Code;865
+Description;HDD access error HDD responded to an error during operation for a condition other than those for SC863, 864.
+Causes;HDD defective.
+Remedy;1. Replace the HDD.
+Code;866
+Description;SD card error 1: Confirmation The machine detects an electronic license error in the application on the SD card in the controller slot immediately after the machine is turned on. The program on the SD card contains electronic confirmation license data. If the program does not contain this license data, or if the result of the check shows that the license data in the program on the SD card is incorrect, then the checked program cannot execute and this SC code is displayed.
+Causes;Program missing from the SD card
+Remedy;1. Download the correct program for the machine to the SD card.
+Code;867
+Description;SD card error 2: SD card removed The SD card in the boot slot when the machine was turned on was removed while the machine was on.
+Causes;SD card is removed
+Remedy;1. Insert the SD card, then turn the machine off and on
+Code;868
+Description;SD card error 3: SD card access An error occurred while an SD card was used.
+Causes;SD card not inserted correctly. SD card defective. Controller board defective.
+Remedy;1. Insert SD card correctly. 2. Reformat the SD card. • If you want to try to reformat the SD card, use SD Formatter Ver. 1.1. 1. Replace the SD card. 2. Replace the controller board.
+Code;870
+Description;Address book data error Address book data on the hard disk was detected as abnormal when it was accessed from either the operation panel or the network. The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective.
+Causes;HDD defective.
+Remedy;1. Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. • If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;872
+Description;HDD mail receive data error The machine detected that the HDD was not operating correctly at power on. The machine detected that the HDD was not operating correctly (could neither read nor write) while processing incoming email
+Causes;The machine power was turned off during the HDD access. HDD defective.
+Remedy;1. Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. • If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;873
+Description;HDD mail send data error An error was detected on the HDD immediately after the machine was turned on, or power was turned off while the machine used the HDD.
+Causes;HDD defective.
+Remedy;1. Initialize the HDD with SP5832. If this does not solve the problem, replace the HDD and initialize with SP5832. • If you turn off the machine while the HDD is being accessed, this can damage the HDD.
+Code;874
+Description;Delete All error 2: Data area An error occurred while the machine deleted data from the HDD.
+Causes;The HDD deleting program detected an error. An error detected during the NVRAM data or others deleting processes.
+Remedy;1. Turn the main switch Off and On and try the operation again.
+Code;875
+Description;Delete All error 1: HDD A data error was detected for the HDD/NVRAM after the Delete All option was used.
+Causes;HDD defective
+Remedy;1. Turn the main switch off/on and try the operation again. 2. Install the Data Overwrite Security Unit again. For more, see section “1. Installation”.
+Code;876
+Description;Log data abnormal (1)
+Causes;"-01 Log Data Error 1 • Damaged log data file in the HDD 1. Initialize the HDD with SP5-832-004. -02 Log Data Error 2 • An encryption module not installed 1. Replace or set again the encryption module. 2. Disable the log encryption setting with SP9-730-004 (""0"" is off.). -03 Log Data Error 3 • Invalid log encryption key due to defective NVRAM data 1. Initialize the HDD with SP5-832-004. 2. Disable the log encryption setting with SP9-730-004 (""0"" is off.) -04 Log Data Error 4 • Unusual log encryption function due to defective NVRAM data 1. Initialize the HDD with SP5-832-004. -05 Log Data Error 5 • Installed NVRAM or HDD which is used in another machine. 1. Reinstall the previous NVRAM or HDD. 2. Initialize the HDD with SP5-832-004. -99 Log Data Error 99 • Other than the above causes 1. Ask your supervisor."
+Remedy;
+Code;877
+Description;Data Overwrite Security SD card error The all delete function did not execute but the Data Overwrite Security Unit (D362) is installed and activated.
+Causes;SD card defective
+Remedy;1. Insert the SD card correctly. 2. Replace the NVRAM. 3. Reinstall the DOS from the SD card.
+Code;878
+Description;TPM electronic recognition error The main machine firmware failed to recognize TPM because USB flash is not operating or a system module was updated incorrectly.
+Causes;Controller board defective
+Remedy;Replace the controller board.
+Code;900
+Description;Electrical total counter error
+Causes;NVRAM incorrect typNVRAM defectiveNVRAM data scrambled. Unexpected error from external source
+Remedy;1. Replace the NVRAM.
+Code;920
+Description;Printer error 1 An internal application error was detected and operation cannot continue.
+Causes;Software defective. Insufficient memory
+Remedy;1. Turn the machine Off and On. 2. Change the Controller firmware.
+Code;921
+Description;Printer error 2 When the application started, the necessary font was not on the SD card.
+Causes;Font not on the SD card
+Remedy;1. Copy the necessary font on the SD card.
+Code;990
+Description;Software performance error The software attempted to perform an unexpected operation due to: 1) software bug 2) incorrect internal parameter 3) insufficient working memory
+Causes;Software defective
+Remedy;1. Turn the machine power Off and On. 2. Reinstall the controller and/or main firmware.
+Code;991
+Description;Software continuity error The software attempted to perform an unexpected operation. However, unlike SC990, the object of the error is continuity of the software.
+Causes;Software defective
+Remedy;1. No operation required. • This SC code does not appear on the panel, and is only logged.
+Code;992
+Description;Unexpected Software Error Software encountered an unexpected operation not defined under any SC code.
+Causes;Software defective. An error undetectable by any other SC code occurredxpect.
+Remedy;1. Turn the machine Off and On.
+Code;995
+Description;CPM setting error
+Causes;-01 • Defective BCU • NVRAM Replacement error 1. Install the previous NVRAM. 2. Input the serial number with SP5-811-004, and turn the main power switch off and on. -02 • Defective NVRAM • Defective controller 1. Update the controller firmware. 2. Install a new NVRAM, and turn off and on the main power switch after SC995-002 has occurred. -03 • Incorrect type controller installed • Defective controller 1. Replace the controller with the correct type. -04 • Incorrect model controller installed. 1. Replace the controller with the correct model.
+Remedy;
+Code;998
+Description;Application start error No applications start within 60 sec. after the power is turned on.
+Causes;Loose connection of RAM-DIMM, ROM-DIMM. Software problem. Controller board defective.
+Remedy;"1. Check the setting of SP5875-001. If the setting is set to ""1 (OFF)"", change it to ""0 (OFF)"". 2. Connect the RAM-DIMM, ROM-DIMM correctly. 3. Reinstall the controller system firmware. 4. Replace the controller board."

@@ -1,0 +1,267 @@
+Code;SC101
+Description;Lamp failure (broken or persistently on) Type: 3 - Description - When the lamp regulator detects that the exposure lamp is not turned on or is not turned off, the scanner IPU informs the SCU of this. - Detection Timing - Failure to go on (break) is detected when the lamp is turned on. Failure to go off (persistently on) is detected when the lamp is turned off.
+Causes;• Lamp regulator defective • Exposure lamp open • Optics thermoswitch open SP-Log: 7-402-1
+Code;SC120
+Description;Scanner HP sensor abnormal - Stays off Type: 3 - Description - The scanner IPU board notifies the SCU when the home position sensor does not go on even though the scanner carriage has been returned to the home position during the scanner carriage homing process of the power-on sequence. - Detection Timing - When the power switch is turned on and the scanner homing operation starts
+Causes;• Scanner HP sensor defective SP-Log: 7-402-1
+Code;SC121
+Description;Scanner HP sensor abnormal - Stays on Type: 3 - Description - The scanner IPU board notifies the SCU when the home sensor does not go on even though the scanner carriage has been retracted from the home position during the scanner carriage homing process of the power-on sequence. - Detection Timing - When the power switch is turned on and the scanner homing operation starts
+Causes;• Scanner HP sensor defective • Scanner motor defective SP-Log: 7-402-1
+Code;SC130
+Description;Scanner start abnormal Type: 3 - Description - The scanner IPU board notifies the SCU when the next scan start signal is received before the scanner carriage has returned to the home position. - Detection Timing - During scanning
+Causes;• Scanner IPU board SP-Log: 7-402-1
+Code;SC170
+Description;VPU abnormal 1 Type: 3 - Description - The scanner IPU board notifies the SCU when the feedback data for the black level (mask area at the front end of the CCD) E/O is not in the proper range at power-on. - Detection Timing - When the power switch is turned on
+Causes;• Scanner IPU board SP-Log: 7-402-1
+Code;SC171
+Description;VPU abnormal 2 Type: 3 - Description - The scanner IPU board notifies the SCU when feedback data for the white level is not in the proper range at power-on. - Detection Timing - When the power switch is turned on
+Causes;• Scanner IPU board SP-Log: 7-402-1
+Code;SC172
+Description;VPU abnormal 3 Type: 3 - Description - The scanner IPU board notifies the SCU when the white shading data is not in the proper range after the white level has been adjusted (SP4-435). - Detection Timing - When the above SP mode is performed
+Causes;• Scanner IPU board SP-Log: 7-402-1
+Code;SC191
+Description;Bar code scanning error Type: 2 - Description - The bar code on the scanner guide plate is scanned by the CCD and stored in the SCSI buffer memory. The scanner IPU board reads the data and performs a pattern analysis on the data. If the scanner IPU board determines that the image pattern is not an appropriate bar code pattern, it notifies the SCU of a bar code scanning error. - Detection Timing - When the power switch is turned on
+Causes;• Non-standard bar code label SP-Log: 7-402-1
+Code;SC192
+Description;Bar code number mismatch Type: 2 - Description - The SCU compares the bar code data read by the CCD and analyzed by the scanner IPU board with the machine identification number stored in the machine. If they do not match, the SCU determines that there is a bar code number mismatch. - Detection Timing - When the power switch is turned on
+Causes;• SCU (System Control Unit) SP-Log: 7-402-1
+Code;SC193
+Description;IDU failure Type: 2 - Description - The IDU board diagnostics notify the scanner IPU board that it is faulty at power-on. Then the scanner IPU board notifies the SCU of this. - Detection Timing - When the power switch is turned on
+Causes;• IDU SP-Log: 7-402-1
+Code;SC196
+Description;Extended IPU abnormal Type: 4 - Description - The extended IPU board diagnostics notify the scanner IPU board when its image processing ASIC on the extended IPU board is faulty at power-on. Then the scanner IPU board notifies the SCU of this. This check is not made if the extended IPU board is not installed. - Detection Timing - When the power switch is turned on
+Causes;• Extended IPU SP-Log: 7-402-1
+Code;SC197
+Description;Extended IPU connection abnormal (A189 machine only) Type: 4 - Description - The SCU detects when the extended IPU is not connected. - Detection Timing - When the power switch is turned on
+Causes;• Extended IPU • SCU (System Control Unit) SP-Log: 7-402-1
+Code;SC301
+Description;Charge current leak Type: 2 - Description - The main control board notifies the SCU that the charge current from the high-voltage power pack does not reach the target due to such causes as a leak or power pack failure. - Detection Timing - When the charge current is applied
+Causes;• High voltage power supply • Leak locations SP-Log: 7-402-3
+Code;SC320
+Description;Polygon motor abnormal Type: 2 - Description - The main control board notifies the SCU when the polygon motor driver does not reach a defined number of rotations within a predetermined period of time. - Detection Timing - When starting the preparation for writing
+Causes;• Polygon motor SP-Log: 7-402-3
+Code;SC322
+Description;Laser synchronizing signal error Type: 5 - Description - The main control board notifies the SCU when image transfer is aborted and the image transfer buffer (FIFO) on the printer main board is full or in an error condition. - Detection Timing - During the image transfer process
+Causes;• Laser synchronizing detector board • Main control board • LD control board SP-Log: 7-402-3
+Code;SC323
+Description;LD drive current over (LD error) Type: 2 - Description - The main control board notifies the SCU of LD overcurrent. - Detection Timing - During LD writing
+Causes;• LD control board SP-Log: 7-402-3
+Code;SC325
+Description;Magnification correction error Type: 5 - Description - When the polygon motor is activated, a laser synchronizing detection output cannot be detected within a certain time between the laser synchronizing detector boards 1 and 2. The main control board notifies the SCU when the detection fails three times. - Detection Timing - At the activation of the polygon motor
+Causes;• Laser synchronizing detector board • Main control board • LD control board SP-Log: 7-402-3
+Code;SC341
+Description;Development motor abnormal Type: 2 - Description - The main control board notifies the SCU when the development motor does not start up within a predetermined period of time or does not output the LOCK signal for more than a predetermined period of time during the rotation. - Detection Timing - During the rotation of the development motor
+Causes;• Development motor • Main control board SP-Log: 7-402-3
+Code;SC360
+Description;Development bias abnormal Type: 2 - Description - The main control board notifies the SCU that the development bias output from the high-voltage power pack does not reach the target due to such causes as a leak or power pack failure. - Detection Timing - During output of the development bias
+Causes;• High voltage power supply • Leak locations SP-Log: 7-402-3
+Code;SC361
+Description;Revolver HP sensor abnormal - Stays off Type: 2 - Description - The main control board notifies the SCU when the revolver home position sensor does not go on even though the revolver was sent to the home position during the revolver homing process. - Detection Timing - During the development revolver homing process
+Causes;• Revolver unit • Revolver HP sensor SP-Log: 7-402-3
+Code;SC362
+Description;Revolver HP sensor abnormal - Stays on Type: 2 - Description - The main control board notifies the SCU when the revolver home sensor does not go off even though the revolver was moved from the home position to an appropriate color. - Detection Timing - During copying
+Causes;• Revolver unit • Revolver HP sensor SP-Log: 7-402-3
+Code;SC363
+Description;Revolver setting error Type: 2 - Description - The cartridge detector detects that there is no cartridge when the revolver stops rotating. - Detection Timing - When the revolver stops rotating at the black development position
+Causes;• Revolver unit • Cartridge sensor • Toner cartridge SP-Log: 7-402-3
+Code;SC380
+Description;Drum potential sensor calibration error Type: 5 - Description - During calibration, the drum is floated (disconnected from ground) and biases of dc -200 V and dc -800 V are applied. The main control board notifies the SCU when the potential sensor output value for either bias is not within a predetermined tolerance. - Detection Timing - During the forced process control self check or the initial process control self check
+Causes;• Drum potential sensor • Main control board SP-Log: 7-402-3
+Code;SC382
+Description;VD adjustment error (charging failure - the target is not reached within 40 trials) Type: 5 - Description - The main control board notifies the SCU when VD does not come within ±5 V of the target after 40 trials in the VD check mode during the potential control process. - Detection Timing - During the process control self check
+Causes;• High voltage power supply • Main control board SP-Log: 7-402-3
+Code;SC383
+Description;Vpl adjustment error (exposure potential does not reach the target within 40 trials) Type: 5 - Description - The main control board notifies the SCU when Vpl does not come within ±5 V of the target after 40 trials in the Vpl check mode during the potential control process. - Detection Timing - During the process control self check
+Causes;• LD control board • Main control board SP-Log: 7-402-3 Vpl is the voltage on areas of the drum exposed by the laser at the testing intensity. This is done during the process control self check.
+Code;SC384
+Description;LD writing error (the response from the 12th grade of the pattern is out of range) Type: 5 - Description - The main control board notifies the SCU when the potential is out of tolerance (0 < V12 < 300) at the creation of the potential control pattern (12th grade). - Detection Timing - During the process control self check
+Causes;• LD control board • Main control board SP-Log: 7-402-3
+Code;SC385
+Description;ID sensor initial adjustment error (Vsg adjustment error) Type: 3 - Description - The main control board notifies the SCU when the Vsg adjustment is repeated three times and the Vsg value read by the ID sensor is out of the specified range (4.0 ±0.1 V). - Detection Timing - During the process control self check
+Causes;• ID sensor • Main control board SP-Log: 7-402-3
+Code;SC386
+Description;Vmin abnormal Type: 5 - Description - The main control board notifies the SCU when Vmin for black is out of range (between 0.01 V and 0.20 V) and Vmin for color is out of range (between 1.5 V and 2.2 V) at the creation of the 12-grade patterns during process control. - Detection Timing - During the process control self check
+Causes;• LD control board • Main control board SP-Log: 7-402-3
+Code;SC387
+Description;Potential control Vsg (Vsg_ave) abnormal Type: 5 - Description - The main control board notifies the SCU when the average of the Vsg readings (Vsg for potential control) taken by the ID sensor in one drum rotation is out of the specified range (4.0 ±0.3 V). - Detection Timing - During the process control self check - Possible Causes - • LD control board
+Causes;• Main control board SP-Log: 7-402-3
+Code;SC388
+Description;Toner control Vsg (Vsg_ptn) abnormal Type: 5 - Description - The main control board notifies the SCU when the average of the Vsg readings (Vsg for toner supply control) taken by the ID sensor at the three points on the drum is out of the specified range (between Vsg_ave –0.2 V and Vsg_ave +0.4 V). - Detection Timing - During the process control self check
+Causes;• ID sensor • Main control board SP-Log: 7-402-3
+Code;SC400
+Description;Belt transfer charge abnormal Type: 2 - Description - The main control board notifies the SCU that the belt transfer charge output from the high voltage power pack does not reach the target due to such causes as a leak or power pack failure. - Detection Timing - When the belt transfer charge is active
+Causes;• High voltage power supply • Leak locations SP-Log: 7-402-4
+Code;SC440
+Description;Main motor abnormal Type: 2 - Description - The main control board notifies the SCU when the main motor does not start up within a predetermined period of time or does not output the LOCK signal for more than a predetermined period of time during the rotation. - Detection Timing - During the rotation of the main motor
+Causes;• Main motor • Main control board SP-Log: 7-402-4
+Code;SC441
+Description;Drum motor abnormal Type: 2 - Description - The main control board notifies the SCU when the drum motor does not start up within a predetermined period of time or does not output the LOCK signal for more than a predetermined period of time during the rotation. - Detection Timing - During the rotation of the drum motor
+Causes;• Drum motor • Main control board SP-Log: 7-402-4
+Code;SC450
+Description;Paper transfer charge abnormal Type: 2 - Description - The main control board notifies the SCU that the paper transfer charge output value from the high voltage power pack does not reach the target due to such causes as a leak or power pack failure. - Detection Timing - When the paper transfer charge is active
+Causes;• High voltage power supply • Leak locations SP-Log: 7-402-4
+Code;SC452
+Description;Transfer belt H.P. not detected Type: 2 - Description - The main control board notifies the SCU that the belt H.P. sensor does not detect the belt mark (does not go on) while the transfer belt is moving at normal speed. - Detection Timing - During normal-speed rotation of the transfer belt
+Causes;• Transfer belt H.P. sensor • Main control board SP-Log: 7-402-4
+Code;SC453
+Description;Transfer belt H.P. sensor abnormal - Stays on Type: 2 - Description - The main control board notifies the SCU that the belt H.P. sensor does not go off while the transfer belt is moving at normal speed. - Detection Timing - During normal-speed rotation of the transfer belt
+Causes;• Transfer belt H.P. sensor • Main control board SP-Log: 7-402-4
+Code;SC495
+Description;Thermo sensor abnormal Type: 5 - Description - The voltage read by the thermosensor on I/O control board 1 is out of the specified range (between 0.2 V and 3.5 V) for a successive 30 times. - Detection Timing - When the power switch is turned on When the front cover is closed
+Causes;• Thermosensor • Main control board SP-Log: 7-402-4
+Code;SC496
+Description;Humidity sensor abnormal Type: 5 - Description - The voltage read by the humidity sensor on I/O control board is out of the specified range (between 0.2 V and 3.5 V) for a successive 30 times. - Detection Timing - When the power switch is turned on When the front cover is closed
+Causes;• Humidity sensor • Main control board SP-Log: 7-402-4
+Code;SC501
+Description;Tray upper limit sensor disabled (1st bank) Type: 4 - Description - The paper tray unit diagnostics notify the main control board when the 1st bank upper limit sensor does not operate. - Detection Timing - When the power switch is turned on When the paper tray unit operates
+Causes;• Paper tray unit • Main control board SP-Log: 7-402-5
+Code;SC502
+Description;Tray upper limit sensor disabled (2nd bank) Type: 4 - Description - The paper tray unit diagnostics notify the main control board when the 2nd bank upper limit sensor does not operate. - Detection Timing - When the power switch is turned on When the paper tray unit operates
+Causes;• Paper tray unit • Main control board SP-Log: 7-402-5
+Code;SC503
+Description;Tray upper limit sensor disabled (3rd bank) Type: 4 - Description - The paper tray unit diagnostics notify the main control board when the 3rd bank upper limit sensor does not operate. - Detection Timing - When the power switch is turned on When the paper tray unit operates
+Causes;• Paper tray unit • Main control board SP-Log: 7-402-5
+Code;SC522
+Description;Side fence jogger H.P. sensor abnormal - Stays off Type: 4 - Description - The main control board notifies the SCU when the jogger H.P. sensor does not go on even though the jogger was returned to the home position during the duplex tray side fence jogger homing process of the power-on sequence. - Detection Timing - During the duplex tray side fence jogger homing process of the power-on sequence
+Causes;• Side fence jogger H.P. sensor SP-Log: 7-402-5
+Code;SC523
+Description;Side fence jogger H.P. abnormal - Stays on Type: 4 - Description - The main control board notifies the SCU when the jogger H.P. sensor does not go off even though the jogger was moved from the home position during the duplex tray side fence homing process. - Detection Timing - During the duplex tray side fence jogger homing process
+Causes;• Side fence jogger H.P. sensor SP-Log: 7-402-5
+Code;SC524
+Description;End fence jogger H.P. sensor abnormal - Stays off Type: 4 - Description - The main control board notifies the SCU when the jogger H.P. sensor does not go on even though the jogger was returned to the home position during the duplex tray end fence jogger homing process of the power-on sequence. - Detection Timing - During the duplex tray end fence jogger homing process of the power-on sequence
+Causes;• End fence jogger H.P. sensor SP-Log: 7-402-5
+Code;SC525
+Description;End fence jogger H.P. sensor abnormal - Stays on Type: 4 - Description - The main control board notifies the SCU when the jogger H.P. sensor does not go off even though the jogger was moved from the home position during the duplex tray end fence jogger homing process. - Detection Timing - During the duplex tray end fence jogger homing process
+Causes;• End fence jogger H.P. sensor SP-Log: 7-402-5
+Code;SC541
+Description;Fusing (hot roller) thermistor open Type: 1 - Description - When the fusing (hot roller) thermistor outputs an analog value corresponding to 0°C, the main control board determines that the fusing thermistor is broken and notifies the SCU of this. - Detection Timing - Always
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC542
+Description;Fusing (hot roller) warm-up error Type: 1 - Description - The main control board notifies the SCU when the fusing (hot roller) thermistor does not output an analog value corresponding to the ready temperature within 12 minutes after the power switch is turned on. - Detection Timing - When the power switch is turned on
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC543
+Description;Fusing (hot roller) overheat Type: 1 - Description - When the fusing (hot roller) thermistor outputs an analog value corresponding to 200°C, the main control board detects an overheat and notifies the SCU of it. - Detection Timing - At all times
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC544
+Description;Fusing (hot roller) low temperature Type: 1 - Description - The main control board notifies the SCU when the fusing (hot roller) thermistor outputs an analog value corresponding to 90°C after it had previously reached the ready temperature. - Detection Timing - Always
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC545
+Description;Fusing (hot roller) ready temperature abnormal Type: 1 - Description - The main control board notifies the SCU when the fusing (hot roller) thermistor outputs an analog value corresponding to a temperature lower than the ready temperature for 6 minutes or more after it had previously reached the ready temperature. - Detection Timing - Always
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC547
+Description;Fusing (hot roller) temperature does not increase Type: 1 - Description - The main control board notifies the SCU when the output of the fusing (hot roller) thermistor increases by no more than 3°C for a minute during warming up after the power switch is turned on. - Detection Timing - When the power switch is turned on
+Causes;• Fusing (hot roller) thermistor • Main control board SP-Log: 7-402-5
+Code;SC551
+Description;Pressure roller thermistor open Type: 1 - Description - When the pressure roller thermistor outputs an analog value corresponding to 0°C, the main control board determines that the pressure roller thermistor is broken and notifies the SCU of it. - Detection Timing - Always
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC552
+Description;Pressure roller warm-up error Type: 1 - Description - The main control board notifies the SCU when the pressure roller thermistor does not output an analog value corresponding to the ready temperature within 12 minutes after the power switch is turned on. - Detection Timing - When the power switch is turned on
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC553
+Description;Pressure roller overheat Type: 1 - Description - When the pressure roller thermistor outputs an analog value corresponding to 200°C, the main control board judges an overheat and notifies the SCU of this. - Detection Timing - Always
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC554
+Description;Pressure roller low temperature Type: 1 - Description - The main control board notifies the SCU when the pressure roller thermistor outputs an analog value corresponding to 70°C after it had already reached the ready temperature. - Detection Timing - At all times
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC555
+Description;Pressure roller ready temperature abnormal Type: 1 - Description - The main control board notifies the SCU when the pressure roller thermistor outputs an analog value corresponding to a temperature lower than the ready temperature for 6 minutes or more after it had already reached the ready temperature. - Detection Timing - At all times
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC557
+Description;Pressure roller temperature does not increase Type: 1 - Description - The main control board notifies the SCU when the output of the pressure roller thermistor increases by no more than 3°C for a minute during warming up after the power switch is turned on. - Detection Timing - When the power switch is turned on
+Causes;• Pressure roller thermistor • Main control board SP-Log: 7-402-5
+Code;SC558
+Description;Zero cross signal abnormal Type: 1 - Description - The main control board notifies the SCU when the number of zero cross signals generated within a certain period of time does not reach a predetermined number. - Detection Timing - At all times
+Causes;• Main control board SP-Log: 7-402-5
+Code;SC600
+Description;Communication error between the SCU and operation panel boards Type: 3 - Description - The input value used by the SCU to send the test signal to the operation panel does not match the expected value. - Detection Timing - When the power switch is turned on When the operation panel is used
+Causes;• SCU (System Control Unit) SP-Log: 7-402-6
+Code;SC601
+Description;Communication error between SCU and scanner IPU boards Type: 3 - Description - The SCU detects a communication error in the scanner module during communication with the scanner IPU board based on the SCSI connection protocol. - Detection Timing - At all times
+Causes;• Scanner IPU • SCU (System Control Unit) • SCSI cable SP-Log: 7-402-6
+Code;SC603
+Description;Communication error between SCU and printer main control board Type: 3 - Description - The SCU detects a communication error in the printer module during communication with the main control board based on the SCSI connection protocol. - Detection Timing - Always
+Causes;• Main control board • SCU (System Control Unit) • SCSI cable SP-Log: 7-402-6
+Code;SC604
+Description;Communication error between scanner and IDU Type: 2 - Description - The scanner IPU board detects a communication error in the IDU during communication with the IDU based on the IDU connection protocol. - Detection Timing - When the power switch is turned on When the IDU is active
+Causes;• Scanner IPU • IDU SP-Log: 7-402-6
+Code;SC605
+Description;Printer internal communication error Type: 2 - Description - (1) When the Fgate signal (LD on/off control) is not sent. (2) When the sequence reaches an impossible value. (3) When the Fgate OFF command is received for a process that has not started - Detection Timing - Always
+Causes;• Main control board SP-Log: 7-402-6
+Code;SC606
+Description;Printer SCSI communication error Type: 2 - Description - The main control board detects an error or hardware-related noise during communication between the SCU or SCN and the main control board. - Detection Timing - Always
+Causes;• Main control board • SCU (System Control Unit) • Scanner IPU • SCSI cable SP-Log: 7-402-6
+Code;SC607
+Description;Serial communication error between SCU and printer Type: 2 - Description - A hardware-related communication error occurs for a successive three times or a communication time-out occurs during optical-fiber serial communication between the SCU and the main control board. - Detection Timing - When the power switch is turned on When the main counter is active
+Causes;• Main control board • SCU (System Control Unit) • Fiber cable SP-Log: 7-402-6
+Code;SC620
+Description;Communication error between scanner and ADF Type: 4 - Description - When the scanner IPU board detects a communication error in the ADF during communication with the ADF based on the ASAP optical-fiber connection protocol, it notifies the SCU of this. - Detection Timing - When the power switch is turned on When the ADF prepares for operation
+Causes;• Scanner IPU • ADF main board SP-Log: 7-402-6
+Code;SC621
+Description;Communication error between printer and sorter Type: 2 - Description - When the main control board detects a communication error in the sorter during communication with the sorter based on the ASAP optical-fiber connection protocol, it notifies the SCU of this. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Main control board • Sorter main board • Fiber cable SP-Log: 7-402-6
+Code;SC625
+Description;Communication error between scanner and projector Type: 4 - Description - When the scanner IPU board detects a communication error in the projector during communication with the projector based on the projector optical-fiber connection protocol, it notifies the SCU of this. - Detection Timing - When the power switch is turned on When the projector prepares for operation
+Causes;• Scanner IPU • Projector control board • Fiber cable SP-Log: 7-402-6
+Code;SC626
+Description;Communication error between printer and bank Type: 4 - Description - When the main control board detects a communication error in the paper bank unit during communication with the paper bank unit based on the ASAP optical-fiber connection protocol, it notifies the SCU of this. - Detection Timing - When the power switch is turned on When the paper bank unit is active
+Causes;• Main control board • Bank interface board • Fiber cable SP-Log: 7-402-6
+Code;SC630
+Description;RDS communication error Type: 3 – Japan only –
+Causes;
+Code;SC720
+Description;Sorter transport motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter transport motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Sorter transport motor SP-Log: 7-402-7
+Code;SC721
+Description;Bin drive motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter bin drive motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Bin drive motor SP-Log: 7-402-1
+Code;SC722
+Description;Sorter jogger motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter jogger motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Sorter jogger motor SP-Log: 7-402-7
+Code;SC724
+Description;Sorter grip motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter grip motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Sorter grip motor SP-Log: 7-402-7
+Code;SC725
+Description;Stapler motor abnormal Type: 4 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter stapler motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Stapler motor SP-Log: 7-402-7
+Code;SC731
+Description;Shift motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter shift motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Shift motor SP-Log: 7-402-7
+Code;SC732
+Description;Lift motor abnormal Type: 2 - Description - The sorter diagnostics notify the main control board of an anomaly with the sorter lift motor. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the sorter is active
+Causes;• Lift motor SP-Log: 7-402-7
+Code;SC741
+Description;Paper bank unit abnormal Type: 4 - Description - The paper bank unit diagnostics notify the main control board of an anomaly with the paper bank unit. Then the main control board notifies the SCU of it. - Detection Timing - When the power switch is turned on When the paper bank unit is active
+Causes;• Bank interface board SP-Log: 7-402-7
+Code;SC790
+Description;Projector lamp does not go on Type: 4 - Description - The projector diagnostics notify the scanner IPU board when the projector lamp does not go on although the ON command is issued. Then the scanner IPU board notifies the SCU of it. - Detection Timing - When the projector is started up
+Causes;• Projector control board SP-Log: 7-402-7
+Code;SC791
+Description;Projector lamp does not go off Type: 4 - Description - The projector diagnostics notify the scanner IPU board when the projector lamp does not go off although the OFF command is issued. Then the scanner IPU board notifies the SCU of it. - Detection Timing - When the projector is stopped
+Causes;• Projector control board SP-Log: 7-402-7
+Code;SC792
+Description;Projector lamp overheat Type: 4 - Description - The projector diagnostics notify the scanner IPU board that the projector lamp has overheated. Then the scanner IPU board notifies the SCU of it. - Detection Timing - When the projector is active
+Causes;• Projector control board SP-Log: 7-402-7
+Code;SC900
+Description;Main counter disabled Type: 2 - Description - Communication error between the main counter and main control board - Detection Timing - When counter information is uploaded or downloaded
+Causes;• Main counter • Main control board • SCU harness SP-Log: 7-402-9
+Code;SC901
+Description;Inconsistent main counter and backup counter Type: 2 - Description - This SC is displayed when the difference between the main and backup counter values is more than ±5. - Detection Timing - When the power switch is turned on When the Counter key is pressed
+Causes;• Main counter SP-Log: 7-402-9
+Code;SC902
+Description;SCU-SCSI communication error Type:1 - Description - This SC occurs when the power switch is turned on and neither the scanner IPU board nor main control board is recognized or when an initial error occurs in the SCSI driver. - Detection Timing - Always
+Causes;• SCU • SCSI cable SP-Log: 7-402-6
+Code;SC903
+Description;Serial communication error Type: 1 - Description - This SC is displayed when a counter serial I/O error is detected on the optics fiber cable between the SCU and the main control board for a successive five times. - Detection Timing - Always
+Causes;• SCU • Main control board • Fiber cable SP-Log: 7-402-6
+Code;SC920
+Description;SCU/RAM board abnormal Type: 2 - Description - The SCU executes the read/write test for the RAM board on the SCU and the read/write operation is not successfully done. This SC is not displayed just after the read/write test because the CPU enters the hold state. It is displayed after the power switch is turned off and on. - Detection Timing - When the power switch is turned on
+Causes;• RAM board SP-Log: 7-402-9
+Code;SC931
+Description;Printer NV-RAM abnormal Type: 1 - Description - When the main control board detects that illegal NV-RAM data has been loaded from the SCU, it notifies the SCU of an anomaly. - Detection Timing - When the power switch is turned on
+Causes;• RAM board (Battery) • Main control board SP-Log: 7-402-9
+Code;SC990
+Description;I/O control board 1 abnormal Type: 2 - Description - This SC is displayed when a serial/parallel I/O error is detected in the I/O control board 1 for a successive five times. - Detection Timing - Always
+Causes;• I/O control board 1 • Corona unit setting error • Connector/harness • Main control board SP-Log: 7-402-9
+Code;SC991
+Description;I/O control board 2 abnormal Type: 2 - Description - This SC is displayed when a serial/parallel I/O error is detected in the I/O control board 2 for a successive five times. - Detection Timing - Always
+Causes;• I/O control board 2 • Corona unit setting error • Connector/harness • Main control board SP-Log: 7-402-9

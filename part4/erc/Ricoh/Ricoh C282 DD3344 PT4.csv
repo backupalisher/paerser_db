@@ -1,0 +1,84 @@
+Code;E-00
+Description;Clamper Motor Failure The MPU cannot detect the clamper position sensor signal (open or closed) within 3.0 seconds after the clamper motor turns on.
+Causes;Clamper drive Clamper sensors Clamper motor MPU board Main motor encoder Master eject position sensor
+Code;E-01
+Description;Cutter error: The cutter HP sensor does not turn on within 3.0 seconds after the cutter motor turns on.
+Causes;Cutter drive Cutter switch Cutter motor
+Code;E-02
+Description;Paper Table Drive error: The paper height sensor or the table lower limit sensor does not turn on within 7.5 seconds after the table motor turns on. Paper height sensor 1 or 2 does not turn on within 1 second after the paper height sensor 1 or 2 turn on.
+Causes;Paper table drive Paper table motor Paper height sensor 1 or 2 Paper table lower limit sensor Gears Paper table spring
+Code;E-04
+Description;Thermal Head Overheat: Temperature of the thermal head is greater than 65°C when the Start key is pressed.
+Causes;Overheat (wait for the thermal head to cool down) Thermal head
+Code;E-06
+Description;Main Motor Lock: The CPU cannot detect the master eject position sensor (drum HP) signal within 5.0 seconds after the main motor turns on.
+Causes;Main motor drive Main motor Motor drive board Master eject position sensor
+Code;E-09
+Description;Thermal Head Thermistor Open: The thermistor output voltage is over 2.817 volts.
+Causes;Thermal head thermistor Thermal head connector
+Code;E-10
+Description;Thermal Head Energy Pulse error: The CPU detects an abnormal ID signal from the thermal head energy control pulse.
+Causes;Thermal head connector Thermal head MPU
+Code;E-12
+Description;Pressure Plate error: The pressure plate home position sensor does not turn on within 6 seconds during initialization. Both the pressure plate home position and pressure plate limit sensors turn on when the main SW is turned on. The pressure plate home position sensor does not turn off when the pressure plate limit sensor does not turn on within 4.5 seconds when compressing the ejected master.
+Causes;Pressure plate drive Pressure plate motor Plate position sensors Master eject error
+Code;E-13
+Description;Scanner error: The scanner HP sensor does not turn on within 14.0 seconds after the main switch turns on. On the Initial Movement, the Scanner HP sensor does not turn off when the scanner moves 20.0 mm towards the scanning position. On the Initial Movement, the Scanner HP sensor does not turn on within 2.0 seconds after the main switch turns on.
+Causes;Scanner drive Scanner HP sensor Scanner motor
+Code;E-14
+Description;SBU error: The MPU board cannot communicate with SBU or communication data is not expected. The value of the SBU white level adjustment is out of the correct range. The value of the SBU black level adjustment is out of the correct range. The power of LED lamp is not enough.
+Causes;SBU defective SIO defective PSU defective MPU defective Harness broken Connector disconnected
+Code;E-15
+Description;LED Power error: The error signal from the LED board is detected. The PWM of the LED cannot be adjustmed.
+Causes;SBU defective SIO defective CIS unit defective MPU defective Harness broken Connector disconnected
+Code;E-22
+Description;2nd Feed Start Timing Sensor error: The 2nd feed start timing sensor does not activate before the master eject position sensor activates.
+Causes;Drum sensors Feeler
+Code;E-23
+Description;Master Eject Position Sensor (Drum HP) error: The master eject position sensor does not activate before the feed start timing sensor activates.
+Causes;Drum sensors Feeler
+Code;E-24
+Description;Feed Start Timing Sensor error: The feed start timing sensor does not activate before the 2nd feed timing sensor activates.
+Causes;Drum sensors Feeler
+Code;E-40
+Description;Thermal Head ID error: The CPU detects an abnormal ID signal from the thermal head.
+Causes;Different thermal head MPU Thermal head connector disconnected
+Code;E-44
+Description;MSU error
+Causes;Replace the MPU.
+Code;E-50
+Description;NVRAM data version disagreement: Data for the uploading NVRAM is not expected data for the machine.
+Causes;Replace the MPU.
+Code;E-51
+Description;Flash Rom error: The data in the flash ROM is not complete.
+Causes;Replace the MPU.
+Code;E-54
+Description;ASIC error: The ASIC on the MPU cannot reboot at turning on the machine. The ASIC on the MPU stop working, and then cannot recover during the machine operation.
+Causes;MPU defective
+Code;E-55
+Description;FPGA error: The FPGA on the MPU detects the SBU clock error.
+Causes;SBU defective MPU defective
+Code;E-61
+Description;Auto Off Switch error: The main switch does not turn off for more than 6.0 seconds.
+Causes;Auto off switch defective Auto off switch connector disconnected
+Code;E-70
+Description;DF Gate error: The DF gate signal is not turned on for 10 seconds after the original has been transported from the original registration point. The DF gate signal is not turned off for 30 seconds after the machine has detected the ON signal from the DF gate.
+Causes;Encoder defective Harness broken Connector disconnected Overload to ADF drive motor ADF drive motor defective
+Code;E-71
+Description;DF Mismatch error: The machine detects that the installed ADF is not a correct option for this machine when the ADF is activated.
+Causes;Install the correct ADF. ADF drive board defective
+Code;E-72
+Description;DF Feed Motor error: The machine detects the error signal from the DF feed motor.
+Causes;Overload to DF feed motor DF feed motor defective
+Code;E-73
+Description;DF Transport Motor error: The machine detects the error signal from the DF transport motor.
+Causes;Overload to DF transport motor DF transport motor defective
+Code;E-74
+Description;DF Circuit Breaker error 1: One of electrical components (24 V) in the ADF is defective or connector is disconnected.
+Causes;One of following units is defective. • DF feed motor • DF transport motor • Inverter solenoid • Pick-up solenoid • DF feed clutch • Cooling fan
+Code;E-75
+Description;DF Circuit Breaker error 2: One of electrical components (24 V-Out) in the ADF is defective or connector is disconnected.
+Causes;
+Code;E-76
+Description;DF Circuit Breaker error 3: One of electrical components (5 V) in the ADF is defective or connector is disconnected.
+Causes;Original set sensor defective Connector disconnected

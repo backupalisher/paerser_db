@@ -1,0 +1,66 @@
+Code;C01
+Description;Main motor abnormality: The main motor is not rotating normally.
+Remedy;"Check item: Main motor • Motor check • Connector check (CN233, CN16-B) • Harness check Main motor board Check if the LED on the main motor board lights without flickering. MAIN board • Board check • Connector check (CN16-B) • Harness check PLL lock signal Check if the PLL lock signal CN16-B-Pin4 output from the MAIN board is always level “L”. Voltage supplied to CPU Check if the voltage supplied to the CPU input terminal IC33-Pin32 is always ""L"". Parts to be replaced: Main motor MAIN board"
+Code;C26
+Description;Peak detection error: Lighting of the exposure lamp (white reference) is not detected when power is turned ON.
+Remedy;Check item: CIS unit Connector check MAIN board • Board check • Connector check (P105) • Harness check Parts to be replaced: CIS unit MAIN board
+Code;C41
+Description;Thermistor or heater abnormality at power-ON: Abnormality of service call the thermistor is detected when power is turned ON or the temperature of the fuser roller does not rise in a specified period of time after power is turned ON.
+Remedy;Check item: Thermistor • Connector check • Check if the center, side and edge thermistors are in contact with the surface of the fuser roller properly. • Harness check Heater • Connector check • Check if the heater is broken. • Check if the thermostat is blown. MAIN board • Board check • Connector check (CN17) • Harness check Switching regulator Connector check (J509 and J510) Parts to be replaced: CIS unit MAIN board Clear the status counter After repairing the matter which caused the error [C41], perform the following: (1) Turn ON the power while pressing the [Clear/Stop] button, then enter the setting mode. (2) Input “400”, then press [START]. (3) Change the current status counter value “1” or “2” to “0”, then press [OK] (to cancel [C41]). (4) Turn the power OFF and then back ON. Make sure that the equipment enters the normal ready state.
+Code;C43
+Description;Thermistor abnormality during warming up or in ready status after abnormality judgment
+Remedy;Check item: Thermistor • Connector check • Check if the center, side and edge thermistors are in contact with the surface of the fuser roller properly. • Harness check Heater • Connector check • Check if the heater is broken. • Check if the thermostat is blown. MAIN board • Board check • Connector check (CN17) • Harness check Parts to be replaced: MAIN board Clear the status counter After repairing the matter which caused the error [C43], perform the following: (1) Turn ON the power while pressing the [Clear/Stop] button, then enter the setting mode. (2) Input “400”, then press [START]. (3) Change the current status counter value “4” to “0”, then press [OK] (to cancel [C43]). (4) Turn the power OFF and then back ON. Make sure that the equipment enters the normal ready state.
+Code;C44
+Description;Heater abnormality after abnormality judgment: The temperature of the fuser roller has exceeded the range of control (in this case, the main switch turns OFF automatically) or does not even reach the range.
+Remedy;Check item: Thermistor • Connector check • Check if the center, side and edge thermistors are in contact with the surface of the fuser roller properly. • Harness check Heater • Connector check • Check if the heater is broken. • Check if the thermostat is blown. MAIN board • Board check • Connector check (CN17) • Harness check Parts to be replaced: MAIN board Clear the status counter Change the current status counter value (setting mode: 400) “5”, “7” or “9” to “0” for [C44], taking the same procedure as that for [C41]. * The status counter value is as follows in the following cases. Change them to “0” respectively. • The error occurred during warming-up: “5” • The error occurred after the equipment has become ready: “7” • The temperature detected by the center thermistor is 230°C or higher: “9” • The temperature detected by the side thermistor is 230°C or higher: “9” • The temperature detected by the edge thermistor is 230°C or higher: “9” only during printing.
+Code;C45
+Description;Thermistor abnormality during printing: Abnormality of the thermistor is detected during printing.
+Remedy;Check item: Edge thermistor • Connector check • Check if the edge thermistor is in contact with the surface of the fuser roller properly. • Harness check MAIN board • Board check • Connector check (CN17) • Harness check Parts to be replaced: MAIN board Clear the status counter Change the current status counter value (setting mode: 400) “6” to “0”.
+Code;C97
+Description;High-voltage transformer abnormality: Leakage of the main charger is detected.
+Remedy;(1) Is the main charger installed securely? (2) Check if the spring of high-voltage supply contact point is deformed. (3) Check if the needle electrode is broken or the main charger grid is deformed. (4) Check if any foreign matters is on the needle electrode or the main charger grid. (5) Is the transfer/separation charger installed securely? (6) Check if the transfer/separation charger wire is broken or unhooked. (7) Check if any foreign matter is on the transfer/separation charger wire.
+Code;C9A
+Description;Flash ROM writing error
+Remedy;Replace the MAIN board.
+Code;CA1
+Description;Polygonal motor abnormality: The polygonal motor is not rotating normally.
+Remedy;Check item: Laser optical unit • Connector check (CN24) • Harness check MAIN board • Board check • Connector check (CN24) • Harness check Parts to be replaced: Laser optical unit MAIN board
+Code;CA2
+Description;H-Sync detection error: H-Sync detection PC board cannot detect laser beams.
+Remedy;Check item: Laser optical unit • Connector check (CN21, CN22) • Harness check MAIN board • Board check • Connector check (CN21, CN22) • Harness check Parts to be replaced: Laser optical unit MAIN board
+Code;CE5
+Description;Temperature/humidity sensor abnormality
+Remedy;(1) Check if the connector CN31 on the MAIN board or the connector of the temperature/humidity sensor is disconnected. (2) Check if the harness between the MAIN board and the temperature/humidity sensor is disconnected. (3) Replace the temperature/humidity sensor. (4) Replace the MAIN board.
+Code;CE9
+Description;Drum thermistor abnormality
+Remedy;(1) Check if there is any abnormality on the connector between the equipment and the process unit. (2) Check if the harness between the MAIN board and the connector of the process unit is disconnected. (3) Check if the harness inside of the process unit and the harness of the drum thermistor are disconnected. (4) Check if the connector CN23 on the MAIN board, or the connector of the drum thermistor is disconnected. (5) Replace the drum thermistor. (6) Replace the MAIN board.
+Code;E01
+Description;Paper exit jam Jam not reaching the exit sensor: The paper which has passed through the fuser unit does not reach the exit sensor.
+Remedy;Check item: Side cover Remove the paper if there is any paper on the transport path. Exit sensor • Sensor check • Connector check (CN17, J510, and J511) • Harness check Registration roller clutch • Connector check (CN26-B, J525, and J530) • Harness check MAIN board • Board check • Connector check (CN17, CN26-B) • Harness check Paper alignment Check if the aligning amount is appropriate. An [E01] error occurs both when the amount is too large and too small. Parts to be replaced: Exit sensor Registration roller clutch Registration roller Replace it if it is worn out. MAIN board
+Code;E02
+Description;Paper exit jam Stop jam at the exit sensor: The trailing edge of the paper does not pass the exit sensor after its leading edge has reached this sensor.
+Remedy;Check item: Side cover Remove the paper if there is any paper on the transport path. Exit sensor • Sensor check • Connector check (CN17, J510, and J511) • Harness check Registration roller clutch • Connector check (CN26-B, J525, and J530) • Harness check MAIN board • Board check • Connector check (CN17, CN26-B) • Harness check Paper alignment Check if the aligning amount is appropriate. An [E01] error occurs both when the amount is too large and too small. Parts to be replaced: Exit sensor Registration roller clutch Registration roller Replace it if it is worn out. MAIN board
+Code;E03
+Description;Power-ON jam: The paper is remaining on the paper transport path when power is turned ON
+Remedy;Check item: Side cover Remove the paper if there is any paper on the transport path. Registration sensor • Sensor check • Connector check (CN26-B, J525, and J530) • Harness check Exit sensor • Sensor check • Connector check (CN17, J510, and J511) • Harness check MAIN board • Board check • Connector check (CN26-B, CN17) • Harness check Parts to be replaced: Registration sensor Exit sensor MAIN board
+Code;E09
+Description;Jam at the registration area due to registration timeout error
+Remedy;
+Code;E12
+Description;Bypass misfeeding (Paper not reaching the registration sensor): The paper fed from the bypass tray does not reach the registration sensor.
+Remedy;Check item: Side cover Remove the paper if there is any paper in front of the registration sensor. Registration sensor • Sensor check • Connector check (J526, J532, and J533) • Harness check Bypass pickup solenoid • Check if the solenoid is working. • Connector check (J526, J532, and J533) • Harness check Bypass paper sensor • Sensor check • Connector check (J526, J532, and J533) • Harness check MAIN board • Board check • Connector check (CN26-A) • Harness check Parts to be replaced: Registration sensor Bypass pickup solenoid Bypass pickup roller Replace it if it is worn out. Bypass paper sensor MAIN board
+Code;E13
+Description;Drawer misfeeding (Paper not reaching the registration sensor): The paper fed from the drawer does not reach the registration sensor.
+Remedy;Check item: Side cover Remove the paper if there is any paper in front of the registration sensor. Registration sensor • Sensor check • Connector check (J526, J532, and J533) • Harness check Pickup solenoid • Check if the solenoid is working. • Connector check (J526, J532, and J533) • Harness check MAIN board • Board check • Connector check (CN26-A) • Harness check Parts to be replaced: Registration sensor Pickup solenoid Pickup roller Replace it if it is worn out. MAIN board
+Code;E40
+Description;Right side cover open jam: The right side cover has opened during printing.
+Remedy;Check item: Right side cover Remove the paper if there is any paper, and then close the cover. Right side cover opening/closing switch • Connector check (J515) • Harness check Power supply unit Check the connector for 24 V power supply. MAIN board • Board check • Connector check (CN31) • Harness check Parts to be replaced: Right side cover opening/closing switch MAIN board
+Code;E41
+Description;Front cover open jam: The front cover has opened during printing.
+Remedy;Check item: Front cover Close the cover. Front cover opening/closing switch • Connector check (J515) • Harness check Power supply unit Check the connector for 24 V power supply. MAIN board • Board check • Connector check (CN31) • Harness check Parts to be replaced: Front cover opening/closing switch MAIN board
+Code;F07
+Description;Engine connection abnormality
+Remedy;(1) Check the version of the system firmware. (2) Check the version of the engine firmware. (3) Initialize the value of adjustment/setting mode codes by executing setting mode code 655. (4) Replace the MAIN board.
+Code;F09
+Description;EEPROM error
+Remedy;(1) Replace the EEPROM. (2) Replace the MAIN board.

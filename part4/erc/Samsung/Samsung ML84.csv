@@ -1,0 +1,196 @@
+Code;1-010
+Description;black vertical stripes in the printing.
+Causes;1. LSU 2. Developer cartridge.
+Remedy;1. Clean the LSU window. 2. Disassemble LSU and remove foreign matter from the mirror. 3. Replace the developer cartridge if defective.
+Code;1-020
+Description;White vertical voids in the image.
+Causes;1. LSU 2. Developer cartridge 3. Fuser 1. Foreign matter on LSU mirror. 2. Foreign matter or toner particles between the developer roller and blade. 3. In case of a defective fuser, voids occur periodically at the top of a black image.
+Remedy;1. Clean the LSU window with a recommended cleaner. 2. Disassemble LSU and remove foreign material on the mirror. 3. Replace the developer cartridge if defective. 4. Open rear cover and check for fuser rib contamination. Clean if necessary.
+Code;1-030
+Description;Dark or blurry horizontal stripes occur in the printing periodically.
+Causes;Developer cartridge. 1. Bad Developer roller contacts. 2. The rollers may be stained. -Abnormal image periodicity: 37 mm = Charge roller 31 mm = Supply roller 94 mm = OPC drum non-periodical = Blade
+Remedy;1. Check all voltages, and adjust as necessary. 2. If black stripes occur at 37mm intervals, check the Charge roller contacts. Clean if necessary, and check position of roller. 3. If blurry black stripes occur at 31mm intervals, disassemble and reassemble the Supply roller contacts. 4. If black stripes occur at 94mm intervals, replace the Developer. - Black stripes may occur due to static electricity. - Black or white stripes may occur due to bad OPC contact stud. In this case, disassemble the gear plate and remove any grease or contamination from the OPC stud. 5. If black stripes occur at irregular intervals, the Blade is defective. Replace the Developer.
+Code;1-040
+Description;Dark or blurry black or white spots occur periodically.
+Causes;1. Developer cartridge. 2. Abnormal transfer voltage. 3. The Transfer roller life is near its end. 1. If dark or blurry black spots occur periodically , the rollers in the Developer may contaminated with foreign matter or paper particles. (Charge roller : 37mm interval, OPC drum : 94mm interval). 2. If faded areas or voids occur in a black image at intervals of 94mm, or black spots occur elsewhere, the OPC drum surface is damaged. 3. If a black image is partially broken, the transfer voltage is abnormal or the Transfer roller lifetime has expired.
+Remedy;1. Cause 1 : Clean the rollers thoroughly. If the OPC drum is stained, clean with a soft cloth dampened in alcohol. 2. Cause 2 : Clean the rollers thoroughly. If problem persists, replace the Developer. 3. Cause 3 : Check transfer voltage, and adjust if necessary. If problem persists, replace the Developer.
+Code;1-050
+Description;The printed image is light, but free of ghosting.
+Causes;1. The Toner is nearly empty. 2. Bad contacts on the Developer roller. 3. Ambient temperature is low. 4. Poor contact at the high voltage terminals of the Developer or Engine board due to Toner particle contamination. 5. Agitator gear in the Developer is defective.
+Remedy;1. Cause 1 : Check the weight of the Developer cartridge, and replace if necessary. When the life of the Cartridge is expired, the weight will be as follows: ML-C800 : 900 grams +- 20 grams ML-C810 : 1050 grams +- 20 grams 2. Cause 2 : Disassemble and reassemble the Developer roller contacts. 3. Cause 3 : In low ambient temperatures, wait one hour after printer is powered on before printing. 4. Cause 4 : Disassemble and clean any main board components stained with Toner or paper particles. 5. Cause 5 : Check that the two hopper gears are visible from the side of the Developer. If not, replace the Developer.
+Code;1-051
+Description;The printed image is light, but not ghosting.
+Causes;Engine board. 1. Charge voltage(=MHV) on the Engine board exceeds 1350V - 1450V. (Perform DCU diagnostic mode 01 to measure the voltage) 2. No power to the Supply roller or Blade in the Developer.
+Remedy;"Check the following parts : U201(KA324), Q211(C1008), T202(Transformer), Resistors, Diodes and etc. in the output and feedback section. Charge voltage(=MHV) Check point: U201; while operating, #12/#13 2.5-2.9V, #14 5.5-8.5V while idling, #13 2.7V, #12/#14 0V Q201 operating voltage; Base 2-2.5V, Emitter 0-1V, Collector 30-60V U203; #1 0V input, #2 0V output"
+Code;1-052
+Description;The printed image is light, with no ghosting.
+Causes;1. Engine board 2. Main body. 1. Engine board bias (290V - 310V) and supply voltage (490V - 510V) may be low. (Perform DCU diagnostic mode 04 to measure the voltage) 2. Strong ambient light at the manual feeder entrance.
+Remedy;"1. Check the following parts : U201(KA324), Q204(D526-Y), T204(Transformer), U203(SN7407N) Resistors, Diodes and etc. in the output and feedback section 2-1. Check if contrast mode is set to ‘Light’. 2-2. Relocate printer or attach OPC cover sheet, part number JC72-49093A. Remark Bias and supply voltage check point: U203; #9 pulse input, #8 pulse output"
+Code;1-060
+Description;The printed image is dark.
+Causes;Engine board. No Charge voltage in the Engine board. (Perform DCU diagnostic mode 01 to measure the voltage)
+Remedy;"Check the following parts : U201(KA324), Q211(C1008), Q201(D526-Y), T202(Transformer), U203(SN7407N), Resistors, Diodes and etc. in the output and feedback region. Clean the high voltage terminal on the Engine and its PBA. Refer to the following information. U201(KA324)'s pin #12, #13 ; 2.5-2.9 V, pin #14 ; 5.5-8.5 V For standby, pin #13 ; 2.7V, pin #12 & #14 ; 0V Q201's operaing voltage ; base=+2-2.5 V, emitter=0-1 V collector=30-60 V U203(7407N)'s pin #1 ; 0V input, pin #2 ; 0V output Remark R201 - R209 temperature instability, changed to metal film type after Feb. 1997, PCB ver. 5.0."
+Code;1-061
+Description;Entire black page is printed.
+Causes;Engine board. 1. No supply or bias voltage at the Engine board. (Perform DCU diagnostic mode 04 to measure the voltage)
+Remedy;"Check the following parts : U201(KA324), Q204(D526-Y), T204(Transformer), U203(SN7407N) Resistors, Diodes and etc. in the output and feedback section Refer to the following information. U203(7407N)'s pin #9 ; pulse input, pin #8 ; pulse output"
+Code;1-062
+Description;A black page prints.
+Causes;Engine board. 1. Voltages higher than normal. (supply : 490V - 510V, bias : 290V - 310V)
+Remedy;"2-1. Check the following parts : U201(KA324), Q204(D526-Y), T204(Transformer), U203(SN7407N) Resistors, Diodes and etc. in the output and feedback section Refer to the following information. U203(7407N)'s pin #9 ; pulse input, pin #8 ; pulse output 2-2. Check developer contacts for contamination by toner particles."
+Code;1-063
+Description;When printing, especially in high temperature, the printer sounds abnormal and the printed image is dark
+Causes;Engine board. Transfer voltage is maximum.
+Remedy;"Check the following parts : U201(KA324), Q205(A708), Q206(C1008), Q202(KSD526-Y), Q203(KSD526-Y)), VR201, T201 and T203, U203(SN7407) Resistors and Diodes and etc. in the output and feedback section Remark Transfer voltage check point: Q203 operating voltage; Base 2-2.5V, Emitter 0-1V, Collector 30-60V U203; #11 pulse input, #10 pulse output"
+Code;1-070
+Description;Print density uneven from left to right
+Causes;1. Transfer roller pressure 2. Developer cartridge. The pressure of the left and right springs of the Transfer roller may be unbalanced, the springs are damaged, the Transfer roller is improperly installed, or the transfer roller bushing or holder is damaged.
+Remedy;1. Cause 1 : Replace defective roller or springs. 2. Cause 2 : Check transfer voltage or replace the Transfer roller.
+Code;1-080
+Description;Background appears in the printing.
+Causes;1. Engine board 2. Developer cartridge 3. Transfer roller 4. Operating environment. 1-1. Transfer voltage low (in excess of approx. 10% below spec) 1-2. Supply and /or bias voltage high. 1-3. Negative transfer voltage is not correct. 1-4. Erasing lamp is defective (causing approx. 20% residual image) 2. Unauthorized recording paper has been used. 3. Abnormal ambient temperature or humidity.
+Remedy;1-1. Refer to Error Code 1-060. 1-2. Refer to Error Code 1-061. 1-3. Refer to Error Code 1-090 and 1-091. 1-4. If the erasing lamp does not turn on or off properly, check the lamp PCB and Q1/Q10 on the engine board. The erasing lamp should be on when CPU pin 35 is 0V. (Check the voltage after you remove the developer and manually activate the top cover switch). Replace the lamp if it does not come on. 2. Use the recommended type of recording paper. 3. If the printer is used in abnormal ambient conditions for a long time, print errors may occur.
+Code;1-090
+Description;Ghost occurs at 94mm intervals
+Causes;1. Developer cartridge 2. Main body. 1. Contamination of high voltage terminals in the main body, engine board, and/or developer. 2. Transfer roller lifetime has expired. 3. No using recommended recording paper. 4. The erasing lamp defective.
+Remedy;1. Open top cover and disassemble the unit and clean contamination components. 2. After replacing the transfer roller, make sure the transfer voltage is normal. 3. Use a recommended type of recording paper. 4. If the erasing lamp does not turn on and off properly, check the lamp PCB and Q1/Q10 in the engine board. The erasing lamp should be on when CPU pin 35 is 0V. (Check the voltage by removing the developer and activating the top cover switch)
+Code;1-090-1
+Description;Ghost occurs at 94mm intervals
+Causes;Operating environment. 1. Strong light, such as direct sunlight, entering the manual feeder, causing a horizontal ghost on the printed page. 2. Abnormally low temperature and humidity. In this case, ghost occurs on the entire page and the print density is too light.
+Remedy;"1. If strong light enters the manual feeder ; Change the orientation or location of the printer or attach the OPC sheet cover. 2. If the operating temperature and relative humidity are too low, try waiting about 1 hour after power on before using printer"
+Code;1-091
+Description;When xerographic paper is used in ADF, ghost occurs at 94mm intervals
+Causes;Engine board. No minus(-) transfer voltage output from the engine board. (Normal voltage: 850-1250V with 100 Mohm load)
+Remedy;Check the following parts : U201(KA324), Q207(A708), Q202(KSD526-Y), T201, U203(sn7407) Resistors and Diodes and etc. in the output and feedback section
+Code;1-092
+Description;When xerographic paper is used in ADF, ghost occurs at 94mm intervals
+Causes;Engine board. The (+) transfer voltage may be abnormal when performing DCU 13 with 100 Mohm load on the transfer voltage output. (Normal voltage: 900V (+5/-5V) DCU 14, 1450-1550V DCU 13).
+Remedy;
+Code;1-093
+Description;When printing on card stock or transparencies using manual feeder, ghost occurs at 94mm intervals
+Causes;1. Improper paper type selected in menu setup 2. Engine board.1. When printing on card stock or transparencies, higher transfer voltage is required. Select Thick mode on paper type menu using panel or software application. 2. Defective transfer voltage circuit in the engine board.
+Remedy;1. Select Thick Mode on paper type menu using panel or software application to print on card stock or transparencies. 2. If the transfer voltage circuit in the engine board is out of specification, refer to Error Code 1-091
+Code;1-094
+Description;Ghost occurs in printing at 56mm intervals
+Causes;Fuser. The heat roller and pressure roller in the fuser are contaminated with toner or paper particles.
+Remedy;Open the rear cover and check if the heat roller is stained. If stained, disassemble the fuser and clean the rollers with a soft cloth dampened with alcohol. If ghost still occurs, replace the fuser.
+Code;1-095
+Description;White ghost occurs in the black image printing at 94mm or 46mm intervals.
+Causes;1. Developer cartridge 2. Engine board. 1. The life of the developer may expired. 2. Abnormal transfer voltage.
+Remedy;1. Measure the weight of the developer and replace if the weight is less than 1000g +/-20g. 2. Check the transfer voltage and adjust if necessary.
+Code;1-100
+Description;Partially blank image, either periodically or non-periodically.
+Causes;"1. Transfer roller 2. Developer cartridge. 1. Unequal pressure on the left and right transfer roller springs; the springs are damaged; the transfer roller is improperly installed; or the transfer roller bushing or holder is damaged. 2. If a black image prints light or gradually becomes light at intervals of 47mm, the transfer roller is defective. 3. If there is a partial blank image on left and right side of the page: 1) The life of the transfer roller has expired. 2) Abnormal transfer voltage. 3) The life of the developer has expired."
+Remedy;1. Replace the defective components. 2. Replace the transfer roller. 3-1. Replace the transfer roller. 3-2. Measure the transfer voltage. If the voltage is abnormal, disassemble the main board and clean the components stained with toner or paper particles. 3-3. Measure the weight of the developer. If the weight is less than 1000g, replace the developer.
+Code;1-110
+Description;Background too dark
+Causes;1. Developer cartridge 2. Main body. 1. Toner leakage due to improperly sealed developer. 2. Transfer roller length out of spec. (216.5 mm) 3. The inside of the unit is contaminated with toner or paper particles.
+Remedy;1. Clean the unit thoroughly. If problem still occurs, replace the developer. 2. If the roller is shorter than the recording paper or severely stained, replace. 3. Clean contaminated components
+Code;1-111
+Description;The back of the page is stained at 47mm intervals.
+Causes;Transfer roller. Transfer roller is contaminated.
+Remedy;Clean the transfer roller thoroughly. Replace if contaminated severely
+Code;1-120
+Description;Blank page is printed.
+Causes;Bad ground contacts in OPC and/or developer. 1. Bad ground contacts in OPC and/or developer. 2. Improper OPC ground connection.
+Remedy;1. Clean the contaminated contacts 2. Open the cover and check/repair the connection
+Code;1-121
+Description;One or more blank pages are printed. When the printer turns on, several blank pages print.
+Causes;Video controller. 1. Defective engine board 2. Defective oscillator or CPU in video controller
+Remedy;"1. Perform the engine self test using DCU. If blank page prints, the engine board is defective. If the printer works normally, refer to next solution (2). If the engine board is defective, check the connectivity on the control board, CPU pin 23, and R33. 2. If blank page is prints once time or continuously, check that the video controller oscillates properly at 30.075 MHz. (Low ; less than 0.7V, more than ; 3.5V) 3. If black pages print continuously when the printer turns on, check the CPU and 4. replace if defective."
+Code;1-130
+Description;Incomplete or missing characters.
+Causes;Video controller. 1. Port connections defective. 2. Defective oscillators in the Video Controller. 3. Defective CPU in the video controller
+Remedy;1. Check that the port and related parts are properly connected and soldered. 2. Check the oscillators(30.075MHz, 40.0MHz) on the Video Controller. 3. Replace video controller CPU.
+Code;1-140
+Description;When printing on xerographic paper from cassette, the printed image is diffused.
+Causes;Engine board. Defective the Fuser(Heat lamp) control circuit in the engine board.
+Remedy;Refer to solution 2-1 under Error Code 3-011.
+Code;1-141
+Description;When printing on card stock or transparencies using manual feeder, the printed image is diffused.
+Causes;1. Improper paper type menu setup 2. Engine board. 1. When printing on card stock or transparencies, higher transfer voltage is required. 2. Defective transfer voltage circuit in the engine board.
+Remedy;1-1. Select ‘Thick Mode’ on paper type menu using panel or software application to print on card stock or transparencies. 1-2. Check the fuser control circuit. Refer to Solution 2-1 under Error Code 3-011. 2. Check the transfer voltage and adjust if necessary.
+Code;2-010
+Description;Printing begins in wrong position on the paper.
+Causes;Feed sensor actuator, LSU, Pick-up ass’y, Bracket-dust, Solenoid, Video Controller. 1. Wrong sense time caused by a deformed feed sensor actuator. 2. Skew: Bad LSU-assembling Unbalance pressure of the Pick-up ass’y Defective mechanical parts 3. Top margin: Eearly feeding by the Solenoid Wrong OP1 sensor position Wrong Video Controller connectivity
+Remedy;1. Replace the deformed actuator. 2. Reassemble or replace the LSU. Reassemble or replace the Pick-up ass’y. Reassemble or replace the defective mechanical parts. (fore example, Bracket-dust). 3. Replace the Solenoid Check OP1 Check the Video Controller or its connectivity
+Code;2-020
+Description;1. Recording paper does not feed into the printer. 2. Recording paper feeds, and ‘Jam 0’ occurs.
+Causes;Engine board. 1. If the paper does not feed into the printer, the feed clutch driving circuit in the engine board may be defective. 2. If the paper feeds into the printer and ‘Jam 0’ occurs, the feed sensor OP1 on the engine board may be defective.
+Remedy;1. Check for the solenoid driving circuit using DCU diagnostic mode 06 a) Check for 24V on D1 cathode. If 24V is not present, check Q9. If Q9 is good, check Q6 and its related parts. If they work normally, check for 24V output from SMPS. b) Measure the feed clutch resistance. Replace if not approximately 60 ohms. c) Check Q4. If Q4 is OK, the collector and base should be 0V and 0.7V DC to GND, respectively. 2. Check Feed sensor OP1 and related parts. a) Replace Feed sensor actuator of defective. b) When OP1 sensor is blocked, CPU pin 46 should be over 3.5V. When sensor is not blocked, the pin should be below 0.7V. One side of R16 in OP1 transmitter should be 5V, and the other end 1.2V. If normal, check OP1 receiver. If not shorted, replace CPU.
+Code;2-030
+Description;Recording paper jammed in the output area (inside the fuser), or multiple sheets of paper are fed at once.
+Causes;Engine board. 1. If the paper is stopped in front of or inside fuser: a) Feed sensor OP1 or feed actuator may be defective. b) Exit sensor SW1 defective, or deformed exit actuator may be defective. 2. In case of multi-feeding, refer to Error Code 2-050.
+Remedy;1-a. Check Feed Sensor OP1. Refer to Error Code 2-020. Replace Feed Actuator if deformed. 1-b. Check SW1 contents. In operating mode, CPU pin 48 should be below 0.7V. If not, check SW1 contact resistance. Replace SW1 if over 100 ohms. If the switch works normally, check R30 and R43. If deformed, replace the Exit Sensor Actuator. 2. In case of multi feeding, refer to Error Code 2-050.
+Code;2-040
+Description;Paper is completely fed out of the printer, but Jam2 occurs, or the paper is stuck in the fuser roller.
+Causes;1. Engine board 2. Fuser. 1. If Jam2 occurs after the paper is completely fed out of the printer, the exit sensor contact may be bad or the exit sensor actuator may be deformed.
+Remedy;1-1. Check if the exit sensor actuator is deformed, and replace if required. 1-2. Check the exit sensor switch contact and related parts. Refer to Error Code 2-030. 2. If the paper is stuck in the fuser, disassemble the fuser and remove the jammed paper, and clean the surface of the pressure roller with a soft cloth, dampened with alcohol.
+Code;2-050
+Description;Multiple sheets of paper feeding at once.
+Causes;Engine board. 1. Solenoid malfunction. 2. Feed clutch armature does not engage the pick-up housing in the pick-up ass’y.
+Remedy;1. If the solenoid does not work properly: 1-1. Measure the resistance of the feed clutch coil. If below 40 ohms (normal:55-60 ohm), replace. 1-2. Check Q4 C/E short, and replace as necessary. (If C and E are shorted, multiple sheets of paper feed when the printer powers on.) 1-3. Check if the solenoid spring returned to the original state. Replace if the return force is weak. 2. If the clutch works properly, but the armature does not engage the pick-up housing in the pick-up ass’y, bend the armature to pick up properly.
+Code;3-010
+Description;FUSER ERROR message displayed on the monitor screen.
+Causes;1. Fuser 2. Engine board. 1-1. Thermostat, AC wire, or heat lamp may be open. 1-2. Thermistor may be open.(Use DCU error code 60 and 62). 2-1. Abnormal heat lamp on/off 2-2. Malfunction of the overheat circuit
+Remedy;1-1. Check thermostat, AC wire, and heat lamp. If the thermostat is open, check also R34, R47, and Q8. 1-2. If thermistor is open, check the wire. If the wire is good, check Q8. Q8 collector should be 0.2V, base 0.7V. 2-1. Check Q3 and its related parts in the order shown below. (Q3 on, and 0V and 24V respectively with lamp off. 1) Check Q3 C-E, B-E, B-C, and replace if shorted. If the voltage between B and E is below 0.7V, replace. 2) When lamp is on, if the base is 0V, check CPU pin 38. 3) If collector is 0V and lamp not on, check PC151, Q101, and parts. 2-2. Check the overheat circuit. When U5 pin 7 is below 0.5V, the overheat circuit should activate and the lamp turns off. In normal mode, pin 6 is approximately 2.6V, pin 5 is over 2.6V, and pin 7 is over 4V. If not, check all related parts.
+Code;3-011
+Description;When printing, motor jams due to the defective fuser gear.
+Causes;1. Fuser 2. Engine board. Fuser control temperature set too high. Overheat circuit not operating properly. PC151 or Q3 defective.
+Remedy;1-1. Thermostat 1-2. Thermistor sensor 2-1. R57 and R58 = 3.3k and 1k, respectively. 2-2. Q3 C/E short. 2-3. Replace PC151 if pins 4 and 6 are shorted. 2-4. Replace Q101 if T1 and T2 are shorted. 2-5. Overheat circuit: Refer to solution 2-2 under Error Code 3-010.
+Code;3-020
+Description;SCANNER ERROR message displayed on the LCD on or monitor screen.
+Causes;1. Defective LSU 2. Defective Q5 or CPU
+Remedy;"1. Perform DCU diagnostic mode 05. If DCU error code 95 is displayed, replace LSU. If you cannot solve the problem after you replace LSU, follow the steps below: 2-1. When you press ENTER key in DCU mode ‘05’, if the LSU motor does not run, check Q5. Q5 collector and base are 0V and 0.7V respectively. If Q5 is normal, check CPU pin 40 and related parts. If the motor drives properly, and CPU pin 25 is not below 0.5V replace R26 and CPU. 2-2. When you press UP key in DCU mode ‘05’, if On and Off lamps do not turn on, check CPU pins 28 and 41, and related parts. Normally pin 28 is over 3.5V when high, and below 0.7V when low; pin 41 is below 0.7V when low. If transformer works normally, replace CPU."
+Code;3-030
+Description;PAPER EMPTY message when paper is present in the cassette.
+Causes;1. Paper sensor actuator 2. Engine board. 1. Paper sensor actuator deformed or broken. 2. Photo sensor OP2 on the engine board may be defective.
+Remedy;1. Replace actuator. 2. CPU pin 49 should be over 3.5VDC when OP2 sensor is blocked, and below 0.7VDC when the sensor is not blocked. One end of R23 in the transmitter of OP2 should be 5VDC, and the other end 1.2VDC, each measured to GND. If the resistance is normal, check for short circuit of OP2 receiver. If OP2 is normal, replace CPU.
+Code;3-031
+Description;When the cassette is empty, PAPER EMPTY message does not display.
+Causes;1. Paper sensor actuator 2. Engine board. 1. Paper sensor actuator may be deformed or broken. 2. Malfunction of the photo sense circuit on the engine board.
+Remedy;Refer to Error Code 3-030.
+Code;3-040
+Description;COVER OPEN message is displayed while the cover is closed.
+Causes;1. Hook lever in the top cover 2. Engine board. 1. The hook lever may be damaged or deformed. 2. Malfunction of micro switch SW151 and its related parts on the engine board.
+Remedy;1. If the hook lever is damaged or deformed, replace. 2. Check SW151 and related circuitry. - Check SMPS 24V output. - Check D4 anode when SW151 is pressed, D4 anode will be below 3.5V when SW151 is open. R38 and R39. - If D4 anode is over 3.5V, check CPU pin 48 for a short to GND. If not shorted, replace CPU.
+Code;3-041
+Description;COVER OPEN message is not displayed when cover is open
+Causes;1. Hook lever in the top cover 2. Engine board. 1. The hook lever may be damaged or deformed. 2. Malfunction of micro switch SW151 and its related parts on the engine board.
+Remedy;Refer to Error Code 3-040
+Code;3-050
+Description;ENGINE ERROR or PLEASE WAIT message on the LCD of the operator panel or monitor screen.
+Causes;1. Harness between the engine and control boards. 2. Engine board. Defective interface between the engine and control boards(DCU error code 78)
+Remedy;1. Check the harness between the engine and control boards. 2-1. Check if the engine board works properly when the printer resets. U5 pin 1 should be below 0.7V for about 122 ms after power on, then remain over 3.5V. - Check U5 pin 2 = approx. 3.8V. If so, check R54 or R55. - Check U5 pin 3 = approx. 4V. If so, check R53, R56, or C35. - If the voltages are normal, and U5 pin 1 is below 0.7V, replace U5. - If all are normal, check CPU pin 55. If OK, replace CPU. 2-2. Check X1 oscillation (6.94407MHz). 2-3. Replace EPROM in the Engine board. 2-4. If all above are OK, replace CPU.
+Code;3-060
+Description;While printing, ‘MEMORY OVERFLOW’ message displays on monitor screen.
+Causes;Control boards. Insufficient printer memory.
+Remedy;Install optional SIMM memory in the control boards.
+Code;3-070
+Description;While initializing, ‘Warming’ message displays on monitor screen.
+Causes;Engine board. Motor Drive Circuit
+Remedy;Check the U1(SMA7029M) or JP64
+Code;3-080
+Description;Main motor not driving while printing, and paper not feeding into printer, resulting ‘JAM 0’.
+Causes;Engine board. 1. Motor harness may be defective. 2. R7 changed value. 3. U1 defective.
+Remedy;1. Check the motor harness. If defective or damaged, replace. 2. Check R7=5.6kohm or 1kohm. Replace with 5.6Kohm. 3-1. Perform DCU diagnostic mode 00 and check the motor. 3-2. In DCU mode 00, check for pulses at U1 pin 5 and pin 14. If not, check related parts. 3-3. In DCU mode 00, check U1 pins 2 and 11 are over 4V. If the pins are below 1V, check Q2, D3 and D8. 3-4. If all above are OK, replace U1.
+Code;3-090
+Description;While operating, high level sound
+Causes;LSU, Motor bracket, Impella, Developer, gear, Fuser, foreign substance, etc. 1. LSU motor , Main motor bracket or wiring Developer or Fuser gears Foreign substance
+Remedy;Replace the LSU Check Main motor bracket or wiring Pick-up ass’y’s rolls Reassemble or replace the Developer and the Fuser
+Code;3-100
+Description;When system power is turned on, the printer does not turn on.
+Causes;Engine board. 1-1. Harness between engine and control boards. 1-2. Defective harness between the control board and panel. 1-3. Fuse F151 2-1. Fuse F101
+Remedy;1-1. Check the harness between engine and control boards. If defective or damaged, replace. 1-2. Check the harness between control board and operator panel. If defective or damaged, replace. 1-3. Check F151 on the engine board. If open, measure the resistance between 5V and ground. If below50ohm, it is shorted. 2-1. Check F101 on the engine board. If open, check : - open R114 - Q102 shorted D-S, G-D, G-S - Defective DB101
+Code;3-110
+Description;When printing, vertical line gets curved.
+Causes;LSU and Engine board. 1. For LSU, +24V supply is unstable in the Engine board 2. Difference according LSU vendors.
+Remedy;If the Q9 is KSE171, replace it to KSB1151. Check the capacitor between CN3#5 and JP60: 100nF. Check the resistor between Q5#collector and JP92: 12.1Kohm
+Code;3-120
+Description;When turning on, all LED are continuously lightening.
+Causes;Fuser, LSU, Engine board. 1. Fuser error 2. Paper is broken behind transfer roller. 3. Connectivity between Engine board and Video Controller.
+Remedy;1. Replace the Fuser. 2. Replace the LSU. 3. Check the wiring between the Engine board and the Video Controller.
+Code;3-130
+Description;When printing, image is irregular.
+Causes;LSU, Motor Bracket. 1. LSU hexahedron period 2. Motor bracket gears
+Remedy;1. Replace the LSU. 2. Replace the Motor bracket ass’y.

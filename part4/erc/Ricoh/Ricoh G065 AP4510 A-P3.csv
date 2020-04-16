@@ -1,0 +1,231 @@
+Code;302
+Description;Charge roller current leak A charge roller current leak signal was detected.
+Causes;• Charge roller damaged • High voltage supply board defective • PCU harness defective or disconnected
+Code;304
+Description;Charge roller current correction error The charge roller bias correction is performed twice even if the maximum charge roller bias (–2kV) is applied to the roller.
+Causes;• ID sensor defective
+Code;320
+Description;Polygon motor error The polygon motor does not reach the ready state (it does not reach operating speed within 25 seconds after the polygon motor on signal, or the lock signal is still activated for more than 2 seconds after the polygon motor off signal).
+Causes;• Harness at the polygon mirror motor disconnected or defective • Polygon motor or polygon motor driver defective • Polygon motor drive pulse not output correctly • LOCK signal could not be detected
+Code;321
+Description;F-GATE error (no laser writing signal) The laser writing signal (F-GATE) does not go LOW for more than 30 seconds after the paper reaches the registration sensor.
+Causes;• BICU board defective • PCI harness between the controller board and the BICU defective or disconnected
+Code;322
+Description;1st laser synchronization error The LD1 synchronization signal cannot be detected by the main scan synchronization detector board even after the laser diodes are activated.
+Causes;• Poor harness connection between the laser synchronization detector board and the LD unit. • Laser synchronization detector board out of position and angle of reflection not correct • Laser synchronization detector board defective • LD unit defective
+Code;323
+Description;LD (Laser Diode) drive current too high The LD drive board applies more than 110 mA to the LD.
+Causes;• LD unit defective (not enough power, due to aging) • Poor connection between the LD unit and the BICU board • BICU defective
+Code;326
+Description;2nd laser synchronization error The LD2 synchronization signal cannot be detected by the main scan synchronization detector board even after the laser diodes are activated.
+Causes;• Poor connection between the laser synchronization detector board and the LD unit. • Laser synchronization detector board out of position • Laser synchronization detector board defective • LD unit defective
+Code;327
+Description;LD unit H.P. error 1 The LD unit H.P. sensor does not detect the on condition when the LD unit moves to its home position.
+Causes;• H.P. sensor/harness defective • LD unit home position sensor defective • LD positioning motor harness defective • LD unit movement blocked because of incorrect connector routing
+Code;328
+Description;LD unit H.P. error 2 The LD unit H.P. sensor does not detect an off condition when the LD unit moves from its home position.
+Causes;• H.P. sensor/harness defective • LD positioning/harness motor defective • LD unit movement blocked because of incorrect connector routing
+Code;329
+Description;LD unit beam pitch adjusted incorrectly The LD unit H.P. sensor does not detect the ON condition while changing the LD unit position to correct the LD position or to adjust the dpi.
+Causes;• After initialization of the SP modes, SP2109-03 or SP2109-04 was not executed. • The harness is blocking the LD drive (PCB), preventing adjustment of the pitch
+Code;350
+Description;ID sensor pattern test error One of the following ID sensor output voltages was detected twice consecutively when checking the ID sensor pattern. Vsp>=2.5 V Vsg<=2.5 V Vsp = 0 V
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • High voltage supply board defective • ID sensor dirty • Defect at ID sensor pattern writing area of the drum
+Code;351
+Description;ID sensor Vsg test error When ID sensor checks the drum surface, VSG = 0, or PWM = 0
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connection • I/O board (IOB) defective • Scanning system defective • High voltage supply board defective • ID sensor dirty • Defect at the ID sensor pattern writing area of the drum
+Code;352
+Description;ID sensor edge detect pattern error At 800 ms intervals, the value of the ID sensor edge pattern voltage was not 2.5 V for 2 consecutive attempts.
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • High voltage supply board defective • Dirty ID sensor • Defect at the ID sensor pattern writing area of the drum
+Code;353
+Description;LED current abnormal at initialization during ID sensor adjustment 353 C At ID sensor initialization, one of the following is detected: At PWM = 255, VSG < 4.0 V At PWM = 0, VSG>=4.0 V
+Causes;• ID sensor defective • ID sensor harness defective • ID sensor connector defective • Poor ID sensor connection • I/O board (IOB) defective • Exposure system defective • High voltage supply board defective • Dirty ID sensor
+Code;354
+Description;ID sensor adjustment timeout error VSG out of the adjustment target range (4.0 ± 0.2 V) within 20 s at VSG initialization.
+Causes;• ID sensor defective • ID sensor harness defective • ID sensor connector defective • I/O board (IOB) defective • Exposure system defective • Poor ID sensor connector connection • High voltage supply board defective • Dirty ID sensor
+Code;390
+Description;TD sensor error: Test value abnormal TD sensor output voltage is less than 0.5 V or more than 4.8 V after 10 consecutive times during printing.
+Causes;• TD sensor defective • TD sensor not connected or connector damaged • Poor connection between the TD sensor and the I/O board (IOB) • I/O board (IOB) defective • Toner supply defective
+Code;391
+Description;TD sensor error: Auto adjust error At initialization of the TD sensor, VT < 1.8 V or VT > 4.8 V.
+Causes;• TD sensor abnormal • TD sensor disconnected • Poor TD sensor connection • I/O board (IOB) defective • Toner supply defective
+Code;395
+Description;Development bias abnormal A development bias leak signal is detected. High voltage output to the development unit exceeded the upper limit (65%) for 60 ms.
+Causes;• High voltage supply board defective • Poor connection at the development bias terminal • Poor connection at the high voltage supply board
+Code;401
+Description;Transfer roller bias output abnormal A transfer roller current leak signal is detected.
+Causes;• High voltage supply board defective • Poor cable connection or defective cable • Transfer connector defective
+Code;402
+Description;Transfer roller open error The transfer roller current feedback signal is not detected.
+Causes;• High voltage supply board defective • Transfer connector cable defective • Transfer connector defective • Poor PCU connection
+Code;403
+Description;Transfer belt H.P. abnormal H.P. is not detected after the T/S clutch is switched on twice.
+Causes;• Main motor/drive malfunction • Transfer belt contact clutch defective • Transfer belt position sensor defective • Harness disconnected
+Code;405
+Description;Transfer belt position abnormal The transfer belt does not separate from the drum during ID sensor pattern checking.
+Causes;• Main motor/drive malfunction • Transfer belt position sensor defective • Poor transfer belt position sensor connection • Transfer belt contact clutch defective
+Code;440
+Description;Main motor abnormal (1) During motor rotation before the start of printing, the H.P. of the T/S clutch is detected, the main motor lock signal (PLL) goes low, and 5 retries are not successful, resulting in an internal lock. (2) A main motor lock signal is not detected within 2 seconds after the main motor turns on.
+Causes;• Too much load on the drive mechanism • Main motor defective
+Code;450
+Description;Feed/Development motor abnormal (1) During motor rotation before the start of printing, the motor lock signal (PLL Lock) goes low, 5 retries are not successful, resulting in an internal lock. (2) A motor lock signal is not detected within 2 s after the main motor turns on.
+Causes;• Feed/development motor defective
+Code;490
+Description;Exhaust fan motor lock An exhaust fan motor lock signal is detected within 5 seconds after the exhaust fan motor turns on.
+Causes;• Too much load on the drive mechanism • Exhaust fan motor defective or a loose object is interfering with the fan • Poor fan motor connector connection
+Code;492
+Description;Cooling fan motor lock A cooling fan motor lock signal is detected within 5 seconds after the cooling fan motor turns on.
+Causes;• Too much load on the drive mechanism • Cooling fan motor defective or a loose object is interfering with the fan • Poor fan motor connector connection
+Code;501
+Description;1st tray lift malfunction Paper height sensor does not activate after the tray lift motor is on for 10 s. If the main power switch is turned on when the paper is already at feed height, the paper height position is detected again, and the paper height sensor should deactivate within 5 s after the paper bottom plate starts to drop. If it does not deactivate within 5 s after 4 consecutive attempts, a message prompts the user to reset Tray 1. After two attempts to release the error by re-setting the paper tray, then this SC is issued.
+Causes;• Lift motor malfunction or disconnected • Height sensor abnormal, or connector loose • Loose paper or object between the tray and motor • Pick-up arm malfunction
+Code;502
+Description;2nd tray lift malfunction Paper height sensor does not activate after the tray lift motor is on for 10 s. If the main power switch is turned on when the paper is already at feed height, the paper height position is detected again, and the paper height sensor should deactivate within 5 s after the paper bottom plate starts to drop. If it does not deactivate within 5 s after 4 consecutive attempts, a message prompts the user to reset Tray 1. After two attempts to release the error by re-setting the paper tray, then this SC is issued.
+Causes;• Lift motor abnormal or disconnected • Height sensor defective or disconnected • Loose paper or object between the tray and motor • Pick-up arm malfunction
+Code;503
+Description;3rd tray lift malfunction (optional paper tray unit) Paper height sensor does not activate after the tray lift motor is on for 13 s. If the main power switch is on when the paper is already at the feed height, the paper height position is detected again, and the paper height sensor should de-activate within 5 s after the paper bottom plate starts to drop. If it does not deactivate within 5 s after four consecutive attempts, the tray lift motor halts. After two attempts to reset the paper tray, this SC is issued and tray control halts.
+Causes;• Tray lift motor defective or disconnected • Height sensor defective or disconnected
+Code;504
+Description;4th tray lift malfunction (optional paper tray unit) Paper height sensor does not activate after the tray lift motor is on for 13 s. If the main power switch is on when the paper is already at the feed height, the paper height position is detected again, and the paper height sensor should de-activate within 5 s after the paper bottom plate starts to drop. If it does not deactivate within 5 s after four consecutive attempts, the tray lift motor halts. After two attempts to reset the paper tray, this SC is issued and tray control halts.
+Causes;• Tray lift motor defective or disconnected • Height sensor defective or disconnected
+Code;506
+Description;Paper tray unit main motor lock (optional paper tray) A main motor lock signal is detected for more than 50 ms during rotation.
+Causes;• Paper tray unit main motor defective • Paper tray unit main motor connection loose • Too much load on the drive mechanism
+Code;507
+Description;LCT main motor lock (optional LCT) A main motor lock signal is detected for more than 50 ms during rotation.
+Causes;• LCT main motor defective • Paper tray unit main motor connection loose • Too much load on the drive mechanism
+Code;510
+Description;LCT tray malfunction • LCT lift sensor does not activate within 18 seconds after the LCT lift motor turns on. • After paper end, LCT lift sensor does not activate within 4 s after 4 consecutive attempts. • After lowering, tray motor does not switch off within 5 s.
+Causes;• LCT lift motor defective or disconnected. • Upper limit sensor defective or disconnected • Pick-up solenoid defective or disconnected • Paper end sensor defective
+Code;541
+Description;Fusing thermistor open • The fusing temperature detected by the thermistor was below 7°C (44.6°F) for 5 seconds • 2 seconds after reaching 45°C (113°F) the temperature does not reach an additional 15oC (59°F) after checking twice.
+Causes;• Fusing thermistor disconnected • Fusing thermistor connector defective • Fusing thermistor damaged or warped • Fusing temperature signal –15% less than the standard input voltage
+Code;542
+Description;Fusing temperature warm-up error • Fusing temperature does not reach fusing standby temperature of 45°C (113°F) within 14 s at main power on or closing the front cover. • 20 seconds after reaching 50°C the fusing roller does not reach warm-up temperature.
+Causes;• Fusing lamp defective • Poor fusing unit connector • Thermistor warped or broken • Thermostat has tripped • BICU defective • Power supply board defective
+Code;543
+Description;Fusing overheat error (software detection) Fusing temperature of over 230°C (446°F) is detected for 5 s by the fusing thermistors at center or either end of the fusing roller.
+Causes;• Power supply unit defective • I/O board (IOB) defective • BICU defective • Fusing thermistor defective
+Code;544
+Description;Fusing overheat error (hardware circuit detection) Dual-monitor circuitry of the BICU detects an extremely high temperature of 240°C (464°F) and trips the relay circuit off.
+Causes;• Power supply unit defective • I/O board (IOB) defective • BICU defective • Fusing thermistor defective
+Code;545
+Description;Fusing lamp remains on After reaching warm-up temperature with main motor on, the end fusing lamp remains on at full power for 15 s, or the center fusing lamp remains on at full power for 10s
+Causes;• Thermistor out of position.
+Code;546
+Description;Fusing ready temperature unstable After reaching warm-up temperature, temperature fluctuations of 50°C (122°F) within 1 s occur 2 times or more.
+Causes;• Thermistor connection loose • Fusing unit connector loose
+Code;547
+Description;Zero cross signal malfunction The applied power supply ac frequency detection is over 66 Hz or below 45 Hz, and the zero cross signals are not detected within 500 ms after the main power on.
+Causes;• Power supply board defective • Noise on the ac power line
+Code;548
+Description;Fusing unit installation error The machine cannot detect the fusing unit when the front cover and right cover are closed.
+Causes;• Fusing unit is not installed, or is installed incorrectly • Fusing unit connection loose
+Code;620
+Description;Communication timeout error between BICU and finisher or mailbox The BICU does not receive a response after 3 attempts within 100 ms to send data to the finisher or mailbox.
+Causes;• Serial line connecting BICU and finisher unstable • External noise • BICU board and finisher main board connection defective or loose • Finisher main board defective • BICU board defective
+Code;621
+Description;Communication timeout error between BICU and finisher or mailbox A break (low) signal is received from the finisher or the mailbox.
+Causes;• Serial line connecting BICU and finisher unstable • External noise
+Code;623
+Description;Communication timeout error between BICU and paper tray unit The BICU does not receive a response after 3 attempts within 100 ms to send data to the paper tray unit.
+Causes;• Serial line connecting BICU and paper tray unit unstable • External noise • BICU board and paper tray main board connection defective or loose • Paper tray main board defective • BICU board defective
+Code;624
+Description;Communication break error between BICU and paper tray unit The BICU cannot communicate with the paper tray unit because it has received a break signal.
+Causes;• Serial line connecting BICU and paper tray unit unstable • External noise • BICU board and LCT main board connection defective or loose • Optional paper feed unit interface board defective • BICU board defective
+Code;626
+Description;Communication timeout error between BICU and LCT. The BICU does not receive a response after 3 attempts within 100 ms to send data to the LCT.
+Causes;• Serial line connecting BICU and LCT unit unstable • External noise • BICU board and LCT main board connection defective or loose • LCT interface board defective • BICU board defective
+Code;627
+Description;Communication break error between BICU and LCT. The BICU cannot communicate with the LCT unit because it has received a break signal.
+Causes;• Serial line connecting BICU and LCT unit unstable • External noise • BICU board and LCT main board connection defective or loose • LCT interface board defective • BICU board defective
+Code;640
+Description;BICU control data transfer sumcheck error. A sampling of control data sent from the BICU to the controller reveals a sumcheck error. Only the logging count is performed.
+Causes;• Controller board defective • External noise • BICU board defective
+Code;641
+Description;BICU control data transfer abnormal Data send from BICU to controller failed after 3 attempts.
+Causes;• Controller board defective • External noise • BICU board defective
+Code;690
+Description;GAVD block I2C bus error An error is detected in the GAVD communication I2C control register of the GABIC2.
+Causes;• I2C bus on BICU defective
+Code;691
+Description;GAVD FCI block I2C bus error An error is detected in the FCI communication I2C control register of the GABIC2.
+Causes;• I2C bus on BICU defective
+Code;692
+Description;CDIC GAVD block I2C bus error An error is detected in the CDIC communication I2C control register of the GABIC2.
+Causes;• I2C bus on BICU defective
+Code;722
+Description;Finisher jogger motor error The finisher jogger H.P. sensor does not return to the home position, or move out of the home position, within the specified time.
+Causes;• Jogger H.P. sensor defective • Jogger motor defective
+Code;724
+Description;Finisher staple hammer motor error Stapling not complete within 600 ms after the staple hammer motor turns on.
+Causes;• Staple jam • Stapler overload caused by trying to staple too many sheets • Staple hammer motor defective
+Code;725
+Description;Finisher stack feed-out motor error The stack feed-out belt H.P. sensor does not activate within the specified time after the stack feed-out motor turns on.
+Causes;• Stack feed-out H.P. sensor defective • Stack feed-out motor overload • Stack feed-out motor defective
+Code;726
+Description;Finisher shift tray 1 lift motor error • Tray shift does not finish within the specified time after the shift motor turns on • Stack height sensor does not activate within the specified time after the shift tray lift motor turns on.
+Causes;• Shift motor defective or overloaded • Shift tray lift motor defective or overloaded
+Code;727
+Description;Finisher stapler rotation motor error The H.P. sensor does not switch on or off within the specified time, i.e. stapler rotation does not finish within the specified time after the staple rotation motor turns on, or the stapler does not return to its H.P. within the specified time after stapling finishes.
+Causes;• Stapler rotation motor defective or overloaded • Stapler rotation motor connection loose or connector defective
+Code;729
+Description;Finisher punch motor error After the punch motor turns on, the punch H.P. sensor does not activate within the specified time.
+Causes;• Punch motor defective or overloaded • Punch H.P. sensor defective • Punch motor connection loose or connector defective
+Code;730
+Description;Finisher stapler positioning motor error The stapler H.P. sensor does not switch on or off within the specified time, i.e. after the stapler motor turns on, the stapler does not return to its H.P. within the specified time, or the stapler H.P. sensor does not activate within the specified time after the stapler motor turns on.
+Causes;• Stapler positioning motor defective or overloaded • Stapler H.P. sensor defective • Stapler positioning motor connection loose or connector defective
+Code;731
+Description;Finisher exit guide open/close motor error. After the finisher exit guide open/close motor is turned on, the open/close sensor does not activate within the specified time.
+Causes;• Finisher exit guide open/close motor defective • Open/close sensor defective
+Code;732
+Description;Finisher upper tray shift motor error The upper tray shift motor does not stop within the specified time.
+Causes;• Upper tray shift motor defective or overloaded • Upper tray shift sensor defective
+Code;733
+Description;Finisher lower tray lift motor error The stack height sensor does not activate within the specified time, i.e. the lower tray lift motor does not stop.
+Causes;• Lower tray lift motor defective or overloaded • Upper stack height sensor defective • Lower tray lower limit sensor defective
+Code;734
+Description;Finisher lower tray shift motor error The lower tray shift sensor does not activate with the specified time, i.e. the lower tray shift motor driving the lower tray does not stop.
+Causes;• Lower tray shift motor defective or overloaded • Lower tray shift sensor defective
+Code;820
+Description;Self-Diagnostic Error: CPU The central processing unit returned an error during the self-diagnostic test.
+Causes;• Controller board defective • Software defective
+Code;821
+Description;Self-Diagnostic Error: ASIC The ASIC returns an error during the self-diagnostic test at power on because the ASIC and CPU timer interrupts were compared and determined to be out of range.
+Causes;• Controller board defective
+Code;824
+Description;Self-diagnostic Error: NVRAM The resident non-volatile RAM returns an error during the selfdiagnostic test at power on.
+Causes;• NVRAM damaged or abnormal • Backup battery has discharged • NVRAM socket damaged
+Code;827
+Description;Self-diagnostic Error: RAM The resident RAM returned a verify error during the self-diagnostic test at power on.
+Causes;• Memory malfunction
+Code;828
+Description;Self-diagnostic Error: ROM The resident read-only memory returned an error during the selfdiagnostic test at power on.
+Causes;• Controller board defective • Firmware defective
+Code;900
+Description;Electronic total count error • The value of the total count has already exceeded its limit (9,999,999) • During counting, a defect was detected at the mechanical counter.
+Causes;• NVRAM defective
+Code;951
+Description;F-GATE error at write request After the IPU receives an F-GATE signal, it receives another F-GATE signal (software timeout error)
+Causes;• Software defective • BICU defective
+Code;954
+Description;Printer setting error The IPU does not respond with the settings required to start printer image processing.
+Causes;• Software defective
+Code;955
+Description;Memory setting error The IPU does not respond with the settings required to start memory image processing.
+Causes;• Software defective
+Code;966
+Description;No ready signal from the polygon motor. At the start of printing, no ready signal is received for the polygon motor from the LD unit.
+Causes;• Defective polygon mirror motor
+Code;984
+Description;Print image data transfer error. The image transfer from the controller to the engine via the PCI bus does not end within 15 s after startup.
+Causes;• Controller board defective • BICU defective • Connectors between BICU and controller loose or defective
+Code;986
+Description;Software write parameter setting error. An unstable area at the storage destination in the settings table is set NULL for the parameter received by the write module.
+Causes;• Software defective
+Code;990
+Description;Software performance error The software attempted to perform an unexpected operation.
+Causes;• Software defective • Internal parameter incorrect • Insufficient working memory • When this SC occurs, the file name, address, and data will be stored in NVRAM. Note the above data and the situation in which this SC occurs. Report this information to the technical control center.
+Code;991
+Description;Software continuity error The software attempted to perform and unexpected operation. Unlike SC990, continuity of the software is the problem.
+Causes;• Software bug • Internal parameter incorrect • Insufficient working memory

@@ -1,0 +1,100 @@
+Code;C011
+Description;Backup memory data problem  • Data in the specified area of the backup memory does not match the specified values.
+Causes;Defective main PCB.
+Remedy;Replace the main PCB and check for correct operation.
+Code;C021
+Description;Operation unit PCB communication problem (20 cpm copier only)  • There is no reply after 20 retries at communication.
+Causes;Defective main PCB.
+Remedy;Replace the main PCB and check for correct operation.
+Code;C034
+Description;Finisher communication problem  • Communication errors from the communication microcomputer on the main PCB: No communication: there is no reply after 3 retries. Abnormal communication: a communication error (parity or checksum error) is detected five times in succession.
+Causes;Poor contact of the connector terminals. Defective copier main PCB. Defective finisher main PCB.
+Remedy;Check the connection of connectors CN17 and CN18 on the main PCB and the finisher main PCB, and the continuity across the connector terminals. Repair or replace if necessary. Replace the main PCB and check for correct operation. Replace the finisher main PCB and check for correct operation.
+Code;C040
+Description;DIMM problem  • Information on DIMM cannot be read out correctly at power-on.
+Causes;Poor contact of the memory board
+Remedy;Check the insertion of the memory board**. **: Optional for the 15 cpm copier only.
+Code;C041
+Description;Bitmap problem  • There is a problem with the data or address bus of the bitmap DRAM.
+Causes;Poor contact of the DIMM.
+Remedy;Check the insertion of the DIMM into connector CN2 on the memory board (for the 15 cpm copier). Check the insertion of the DIMM into connector CN34 on the main PCB (for the 20 cpm copier).
+Code;C043
+Description;DMA problem  • DMA transmission of compressed, decompressed, rotated, relocated or blanked-out image data does not complete within the specified period of time.
+Causes;Defective main PCB.
+Remedy;Replace the main PCB and check for correct operation.
+Code;C100
+Description;Exposure lamp problem  • Check the CCD input value for the lighting status of the exposure lamp 100 ms after the exposure lamp is lit and the carriage is moved to the shading position. If the exposure lamp does not light, turn off the lamp. After 500 ms, light the lamp again and, a further 500 ms later, check the CCD input. The exposure lamp does not light after 5 retries.
+Causes;Poor contact of the connector terminals. Defective exposure lamp. Defective main PCB. Incorrect shading position. CCD PCB output problem.
+Remedy;Check the connection of connectors CN24, CN23, CN22 and CN3 on the main PCB, and the continuity across the connector terminals. Repair or replace if necessary. Replace the exposure lamp or inverter PCB. Replace the main PCB and check for correct operation. Adjust the position of the contact glass (shading plate). If the problem still occurs, replace the scanner home position switch. Replace the ISU.
+Code;C104
+Description;Optical system problem  • After AGC, correct input is not obtained at CCD.
+Causes;Poor contact of the connector terminals. CCD PCB output problem. Defective main PCB.
+Remedy;Check the connection of connectors CN23, CN22 and CN3 on the main PCB, and the continuity across the connector terminals. Repair or replace if necessary. Replace the ISU. Replace the main PCB and check for correct operation.
+Code;C200
+Description;Drive motor problem  • LOCK ALM signal remains high for 1 s, 1 s after the drive motor has turned on.
+Causes;Poor contact of the drive motor connector terminals. Defective drive motor rotation control circuit. Defective drive transmission system.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the drive motor. Check if the rollers and gears rotate smoothly. If not, grease the bushings and gears. Check for broken gears and replace if any.
+Code;C310
+Description;Scanner carriage problem  • The home position is not correct when the power is turned on or at the start of copying using the contact glass.
+Causes;Poor contact of the connector terminals. Defective scanner home position switch. Defective main PCB. Defective scanner motor.
+Remedy;Check the connection of connectors CN28 and CN25 on the main PCB and the continuity across the connector terminals. Remedy or replace if necessary. Replace the scanner home position switch. Replace the main PCB and check for correct operation. Replace the scanner motor.
+Code;C400
+Description;Polygon motor synchronization problem  • The polygon motor does not reach a stable speed within 19 s of the polygon motor remote signal turning on.
+Causes;Poor contact of the polygon motor connector terminals.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable.
+Code;C401
+Description;Polygon motor steady-state problem  • The polygon motor rotation is not stable for 400 ms after the polygon motor rotation has been stabilized.
+Causes;Poor contact of the polygon motor connector terminals. Defective power source PCB.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Check if 24 V DC is present at CN3-1 and CN3-2 on the power source PCB. If not, replace the power source PCB.
+Code;C420
+Description;BD steady-state problem  • The VTC detects a BD error for 800 ms after the polygon motor rotation has been stabilizad.
+Causes;Poor contact of the laser scanner unit connector terminals. Defective LSU. Defective main PCB.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the LSU. Replace the main PCB and check for correct operation.
+Code;C510
+Description;Main charger problem  • MC ALM signal is detected continuously for 800 ms when MC REM signal is turned on.
+Causes;Poor contact of the high-voltage transformer PCB connector terminals. Defective high-voltage transformer PCB. Leakage during main charging. Deformed high-voltage transformer PCB terminal spring.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the high-voltage transformer PCB. Check and clean the main charger assembly. Replace the spring.
+Code;C610
+Description;Broken fixing heater wire  • Warm-up does not end within 90 s.  • The secondary stabilization fixing temperature drops to 100°C/212°F or below.  • The fixing temperature remains below 40˚C/104˚F for 7 s or longer after the fixing heaters have been turned on.
+Causes;Fixing heater installed incorrectly. Broken fixing heater wire. Poor contact in the fixing unit thermistor connector terminals. Broken fixing unit thermistor wire. Fixing unit thermistor installed incorrectly. Fixing unit thermostat triggered.
+Remedy;Check and reinstall if necessary. Check for continuity. If none, replace fixing heater. Check the connection of connector CN12 on the main PCB and the continuity across the connector terminals. Remedy or replace if necessary. Measure the resistance. If it is ∞Ω, replace the fixing unit thermistor. Check and reinstall if necessary. Check for continuity. If none, replace the fixing unit thermostat. Check the operation of the cooling fan and repair if necessary.
+Code;C620
+Description;Abnormally low fixing unit thermistor temperature  • The fixing temperature remains below 100˚C/212˚F for 10 s during copying.
+Causes;Fixing heater installed incorrectly. Broken fixing heater wire. Poor contact in the fixing unit thermistor connector terminals. Broken fixing unit thermistor wire. Fixing unit thermistor installed incorrectly.
+Remedy;Check and reinstall if necessary. Check for continuity. If none, replace fixing heater. Check the connection of connector CN12 on the main PCB and the continuity across the connector terminals. Remedy or replace if necessary. Measure the resistance. If it is ∞Ω, replace the fixing unit thermistor. Check and reinstall if necessary. Check for continuity. If none, replace the fixing unit thermostat. Check the operation of the cooling fan and repair if necessary.
+Code;C630
+Description;Abnormally high fixing unit thermistor temperature  • The fixing temperature exceeds 240˚C/464˚F for 10 s.
+Causes;Fixing unit thermostat triggered. Shorted fixing unit thermistor. Broken fixing heater control circuit on the power source PCB.
+Remedy;Measure the resistance. If it is 0 Ω, replace the fixing unit thermistor. Replace the power source PCB.
+Code;C710
+Description;Toner sensor problem  • The sensor output voltage is outside the range of 0.5 to 4.5 V during toner control.  • The toner sensor control voltage cannot be set within the setting range when maintenance item U130 is run.
+Causes;Defective toner sensor. Poor contact of the toner sensor connector terminals. Developer problem.
+Remedy;Replace the toner sensor. Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the developer.
+Code;C730
+Description;Broken external temperature thermistor wire  • The input voltage is above 4.5 V.
+Causes;Poor contact of the humidity sensor PCB connector terminals. Defective external temperature thermistor.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the humidity sensor PCB.
+Code;C731
+Description;Short-circuited external temperature thermistor • The input voltage is below 0.5 V.
+Causes;Poor contact of the humidity sensor PCB connector terminals. Defective external temperature thermistor.
+Remedy;Reinsert the connector. Also check for continuity within the connector cable. If none, repair or replace the cable. Replace the humidity sensor PCB.
+Code;C740
+Description;Image formation unit connector insertion problem  • Absence of the image formation unit is detected continuously for 1500 ms while there is no error on the copier.
+Causes;Image formation unit connector inserted incorrectly. Defective image formation unit connector.
+Remedy;Reinsert the image formation unit connector if necessary. Replace the image formation unit.
+Code;C817
+Description;Finisher front side registration motor problem
+Causes;A problem is detected with the front side registration motor.
+Remedy;See the finisher service manual.
+Code;C818
+Description;Finisher rear side registration motor problem
+Causes;A problem is detected with the rear side registration motor.
+Remedy;See the finisher service manual.
+Code;C819
+Description;Finisher trailing edge registration motor problem
+Causes;A problem is detected with the trailing edge registration motor.
+Remedy;See the finisher service manual.
+Code;C821
+Description;Finisher stapler motor problem
+Causes;A problem is detected with the stapler motor.
+Remedy;See the finisher service manual.

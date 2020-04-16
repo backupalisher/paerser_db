@@ -1,0 +1,200 @@
+Code;001
+Display;Service call 001:Error
+Description;Machine Check Exception Hardware fault detected. (Board defectiveness or Shortage of power supply volume)
+Causes;
+Remedy;Replace OWL/SPA board.
+Code;002 ... 007
+Display;Power off/on 002:Error ~ 006:Error 007:Error
+Description;CPU Exception
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace ARC/OWL/ SPA board.
+Code;020
+Display;Service call 020:Error
+Description;CU Program ROM Hash Check Error
+Causes;Is program ROM DIMM set properly? Is error recovered by replacing program ROM DIMM? (the case of a device which program ROM is set to DIMM Slot.)
+Remedy;Reset ROM DIMM Replace program ROM DIMM. Replace OWL/SPA board.
+Code;023
+Display;Service call 023:Error
+Description;CU Font ROM Hash Check Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace OWL/SPA board.
+Code;030
+Display;Service call 030:Error
+Description;CU RAM Check Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace ARC/OWL/ SPA board.
+Code;031
+Display;Service call 031:Error
+Description;CU Optional RAM Check Error
+Causes;Is RAM DIMM set properly? Is error recovered by replacing RAM DIMM?
+Remedy;Reset RAM DIMM. Replace RAM DIMM. Replace ARC/OWL/ SPA board.
+Code;035
+Display;Service call 035:Error
+Description;CU Optional RAM Spec Error CU RAM DIMM is not adjust to the specification.
+Causes;Is RAM DIMM genuin? Is RAM DIMM set properly? Is error recovered by replacing RAM DIMM?
+Remedy;Use genuine RAM DIMM. Reset RAM DIMM. Replace RAM DIMM. Replace OWL/SPA board.
+Code;040
+Display;Service call 040:Error
+Description;CU EEPROM Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace ARC/OWL/ SPA board.
+Code;041
+Display;Service call 041:Error
+Description;CU Flash Error Flash ROM Error on the CU board.
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace ARC/OWL/ SPA board.
+Code;042 ... 044
+Display;Service call 042:Error ~ 044:Error
+Description;Flash File System Error
+Causes;Failed access to Flash set directly on CU board.
+Remedy;Run forced initialization of Flash.(Note that NICF/ W and Mac address is deleted. After the initialization, it is need to download NIC-F/W and/or Mac address by Maintenance utility.) In the case of before CU-F/W G1.26/X1.26, Press “+”, “-”, “CANCEL” to turn power ON. And after CU-F/W G1.27/X1.27, execute FLASH FORMAT of MAINTENANCE MENU of SYSTEM MAINTENANCE MENU. Release buttons when [FLASH FORMAT] appears, wait until [ONLINE] (2min) and Replace ARC/OWL/ SPA board if symptom does not change.
+Code;051
+Display;Service call 051:Error
+Description;CU Fan Error Abnormal CPU cooling fan on CU board.
+Causes;Is CU Fan connector set properly? Is error recovered by replacing fan?
+Remedy;Connect properly. Replace fan. Replace OWL/SPA board.
+Code;070
+Display;Power off/on 070:Error
+Description;PSE firmware fault detected.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON. Replace OWL/SPA board.
+Code;072
+Display;Power off/on 072:Error xx
+Description;Engine I/F Error I/F error between PU-CU.
+Causes;Is CU assembly set properly? Is error recovered by replacing ARC/OWL board?
+Remedy;Set properly. Replace ARC/OWL/ SPA board. Replace PU board (RSN)
+Code;073
+Display;Power off/on 073:Error xxxxxxxx
+Description;Video Error Fault detected when image data is extended.
+Causes;Is CU assembly set properly? Fault again? Is CU assembly set properly?
+Remedy;Set properly. Replace to highperformance PC or drop resolution of data and print again. Replace ARC board Set properly. Replace OWL/SPA board.
+Code;074, 075
+Display;Power off/on 074:Error xxxxxxxx 075:Error xxxxxxxx
+Description;Video Error Fault detected when image data is extended.
+Causes;Is CU assembly set properly?
+Remedy;Set properly. Replace ARC/OWL/ SPA board.
+Code;104
+Display;Service call 104:Error
+Description;Engine EEPROM setting check is OK when power ON. Then detect read/ write error.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU board (RSN)
+Code;105
+Display;Service call 105:Error
+Description;Read/ write error in the setting check of engine EEPROM when power on.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU board (RSN)
+Code;106
+Display;Service call 106:Error
+Description;Abnormal engine control logic.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU board (RSN)
+Code;121
+Display;Service call 121:Error
+Description;High-voltage power supply I/F error.
+Causes;Is cable between PU board and high-voltage power unit connected properly? Is there no improperly connections?
+Remedy;Connect properly. Check improper connections for high-voltage. Replace high-voltage power supply?
+Code;122
+Display;Service call 122:Error
+Description;Low-voltage power supply fan error. Low-voltage power supply temperature error.
+Causes;Is fan in low-voltage power supply unit operating? Is fan connector connected properly?
+Remedy;Check connections for connector of fan. Replace low-voltage power supply. Replace fan motor. Replace low-voltage power supply.
+Code;123
+Display;Service call 123:Error
+Description;Abnormal environment humidty / Not connected humidity sensor.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace humidity sensor
+Code;124
+Display;Service call 124:Error
+Description;Abnormal environment temperature.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace humidity sensor
+Code;127
+Display;Service call 127:Error
+Description;Error detected at the fuser unit cooling fan.
+Causes;Is fan connector connected properly? Does error reoccur?
+Remedy;Connect properly again. Replace fan motor Replace PU board (RSN)
+Code;131 ... 134
+Display;Service call 131:Error ~ 134:Error
+Description;LED head fault detected. (131 = Y, 132 = M, 133 = C, 134 = K)
+Causes;Is LED head properly set? Does error reoccur?
+Remedy;Set properly for LED head unit. Turn power ON again. Replace LED head unit
+Code;142
+Display;Service call 142:Error
+Description;Error detented at ID position of Up/ Down
+Causes;Is ID unit set properly? Does error reoccur?
+Remedy;Reset ID unit. Turn power ON again. Replace ID Up/Down sensor.
+Code;150 ... 153
+Display;Service call 150:Error ~ 153:Error
+Description;ID unit fuse cannot be disconnected. (150 = Y, 151 = M, 152 = C, 153 = K)
+Causes;Is ID unit setting proper? Does error reoccur? Is error recovered by replacing PRD board?
+Remedy;Reset ID unit. Turn power ON again. After check connections of cable between PRD board and PU board, replace PRD board. Replace PU board (RSN)
+Code;154
+Display;Service call 154:Error
+Description;Belt unit fuse cannot be disconnected.
+Causes;Is belt unit setting proper? Does error reoccur?
+Remedy;Reset belt unit. Turn power ON again. Check cable connections and, replace PU board(RSN)
+Code;155
+Display;Service call 155:Error
+Description;Fuser unit fuse cannot be disconnected.
+Causes;Is fuser unit set properly? Does error reoccur?
+Remedy;After cleaning for fuser connector, reset. Turn power ON again. Check cable connections and replace PU board (RSN)
+Code;160 ... 163
+Display;Service call 160:Error ~ 163:Error
+Description;Error detected by toner sensor. (160 = Y, 161 = M, 162 = C, 163 = K) It does not occure in factory default setting.
+Causes;Is toner cartridge setting? Is toner lock lever setting? Does error reoccur?
+Remedy;Set toner cartridge. Turn a lock lever of toner to a fixed position. Replace toner sensor or assembly.
+Code;170, 171
+Display;Service call 170:Error 171:Error
+Description;Short circuit in fuser thermistor or open detected.
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;172, 173
+Display;Service call 172:Error 173:Error
+Description;Abnormal temperature detected by fuser thermistor (high-temp or low temp.)
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;181, 182
+Display;Service call 181:Error 182:Error
+Description;Option unit I/F error. (181 = Duplex Unit, 182 = Option Tray)
+Causes;Does error reoccur?
+Remedy;Turn power ON again. After checking connection parts of connector, replace option unit.
+Code;190
+Display;Power off/on 190:Error
+Description;System Memory Overflow.
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Add option RAM DIMM.
+Code;200 ... 202
+Display;Service call 200:Error ~ 202:Error
+Description;PU Firmware download Error.
+Causes;Error occurered while writing over the PU firmware.
+Remedy;Turn the printer OFF/ON, and retry to download the PU firmware again. (Usually, the procedure (PU firmware download) which isn’t done, so this is not occur.)
+Code;203 ... 214
+Display;Power off/on 203:Error 204:Error 207:Error 208:Error 210:Error ~ 214:Error F0C:Error F0D:Error FFE:Error FFF:Error
+Description;An error was detected of the CU program. (203~214 is not occure in usual operating.)
+Causes;Reinstall the CU board. Is the error message displayed again?
+Remedy;After turn power OFF, check connections between CU board and PU board. Then turn power ON again.
+Code;209
+Display;Power off/on 209:Download Error
+Description;Media Table download Error.
+Causes;Downloading Media Table to PU has failure.(Related to Custom Media Type)
+Remedy;Turn the printer OFF/ON, and retry to download the PU firmware, again. (Usually, the procedure isn’t done, so this is not occur.)
+Code;220
+Display;Service call 220:Error
+Description;False setting of a record medium detected by a print statistics.
+Causes;Take off the HDD or replaced?
+Remedy;Reset original HDD.
+Code;901, 902
+Display;Power off/on 901:Error 902:Error
+Description;Short or open in belt thermistor detected.
+Causes;Is belt thermistor cable setting proper? Does error reoccur?
+Remedy;Connect cable set properly again. Turn power ON again. Replace belt thermistor.
+Code;903, 904
+Display;Power off/on 903:Error 904:Error
+Description;Abnormal temperature detected by belt thermistor (high-temp or low temp.)
+Causes;Is belt thermistor cable setting proper? Does error reoccur?
+Remedy;Connect cable set properly again. Turn power ON again. Replace belt thermistor and leave aside for 30 min. Then turn power ON again.
+Code;F0C, F0D, FFE, FFF
+Display;Power off/on 203:Error 204:Error 207:Error 208:Error 210:Error ~ 214:Error F0C:Error F0D:Error FFE:Error FFF:Error
+Description;An error was detected of the CU program. (203~214 is not occure in usual operating.)
+Causes;Reinstall the CU board. Is the error message displayed again?
+Remedy;After turn power OFF, check connections between CU board and PU board. Then turn power ON again.

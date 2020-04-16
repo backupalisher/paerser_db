@@ -1,0 +1,66 @@
+Code;E7 01
+Description;Duplex model memory setup error, memory not-detected error
+Causes;The memory is not set properly or the memory capacity is not set to the duplex setup (6M). Cancel method: Set SIM 26-39 code number to 2.
+Code;E7 03
+Description;HSYNC not detected.
+Causes;LSU (laser diode, reception element, APC circuit) trouble LSU drive circuit (ASIC) trouble
+Code;E7 04
+Description;CCD white level trouble
+Causes;CCD drive circuit (CCD PWB, ASIC harness) trouble Copy lamp lighting trouble (Copy lamp, invertor PWB
+Code;E7 05
+Description;CCD black level trouble
+Causes;CCD drive circuit (CCD PWB, ASIC, harness) trouble
+Code;E7 12
+Description;Shading trouble (White correction)
+Causes;Dirt on white plate for scanning white level
+Code;E7 14
+Description;ASIC connection trouble
+Causes;Improper connection between CPU and ASIC (pattern cut, improper connection of lead pin)
+Code;E7 15
+Description;Copy lamp disconnection trouble
+Causes;Copy lamp or copy lamp drive circuit (invertor PWB) trouble Copy lamp disconnection
+Code;F6 10
+Description;FAX PWB trouble
+Causes;Communication trouble between the MCU and the FAX board or between the FAX board and the FAX panel Cancel method: Turn OFF/ON the power. Check connections.
+Code;F6 80
+Description;Communication trouble with FAX PWB (Protocol)
+Causes;Error in data reception from the FAX board to the MCU. Occurs when the message header of the message format is other than F. Cancel method: Turn OFF/ON the power.
+Code;F6 81
+Description;Communication trouble with FAX PWB (Parity)
+Causes;Error in data reception from the FAX board to the MCU. Occurs when the odd number parity set with SMR (serial mode register) differs from the reception data. Cancel method: Turn OFF/ON the power.
+Code;F6 82
+Description;Communication trouble with FAX PWB (Overrun)
+Causes;Error in data reception from the FAX board to the MCU Occurs when the next data reception is completed with RDRF (Receive Data Register Full) flag of SS (Reserial status register) set to 1. Cancel method: Turn OFF/ON the power.
+Code;F6 84
+Description;Communication trouble with FAX PWB (Framing)
+Causes;Error in data reception from the FAX board to the MCU. Occurs when the stop bit is 0. (The stop bit must be 1.) Cancel method: Turn OFF/ON the power.
+Code;F6 88
+Description;Communication trouble with FAX PWB (Time-out)
+Causes;Occurs when time is out without response in data communication between the FAX board and the MCU. Cancel method: Turn OFF/ON the power.
+Code;H2 00
+Description;Thermistor open detection
+Causes;The fusing thermistor is open.
+Code;H3 00
+Description;Heat roller abnormally high temperature
+Causes;The fusing temperature rises above 240°C.
+Code;H4 00
+Description;Heat roller abnormally low temperature
+Causes;The fusing temperature does not reach 185°C within 27 sec of turning on the power, or the fusing temperature keeps at 140°C.
+Code;L1 00
+Description;Feeding is not completed within the specified time after starting feeding.
+Causes;When the mirror base is returned for the specified time (6 sec) in mirror initializing after turning on the power, the mirror home position sensor (MHPS) does not turn OFF. Or when the mirror base is fed for the specified time (about 6 sec) after start of copy return, the mirror home position sensor (MHPS) does not turn OFF.
+Code;L3 00
+Description;Return is not completed within the specified time.
+Causes;When the mirror base is returned for the specified time (6 sec) in mirror initializing after turning on the power, the mirror home position sensor (MHPS) does not turn ON.Or when the mirror base is returned for the specified time (about 6 sec) after start of copy return, the mirror home position sensor (MHPS) does not turn ON.
+Code;L4 01
+Description;Main motor lock
+Causes;When the main motor encoder pulse is not detected for 100msec.
+Code;L6 10
+Description;Polygon motor lock
+Causes;The lock signal (specified rpm signal) does not return within a certain time (about 20sec) from starting the polygon motor rotation
+Code;U2 01
+Description;Counter sum check error
+Causes;When the counter check sum value stored in the EEPROM is abnormal.
+Code;U2 04
+Description;EEPROM serial communication error
+Causes;When a communication trouble occurs with the EEPROM.

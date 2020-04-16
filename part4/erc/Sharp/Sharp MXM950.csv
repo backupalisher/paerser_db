@@ -1,0 +1,936 @@
+Code;A0-01
+Description;PCU ROM abnormality
+Causes;The firmware is not normally uploaded due to interruption of the power, etc.
+Remedy;Use Sim. 49-1 to execute firmware upload.
+Code;A0-02
+Description;SCU ROM abnormality
+Causes;The firmware is not normally uploaded due to interruption of the power, etc.
+Remedy;Use Sim. 49-1 to execute firmware upload.
+Code;A0-03
+Description;OPU ROM abnormality
+Causes;The firmware is not normally uploaded due to interruption of the power, etc.
+Remedy;Use Sim. 49-1 to execute firmware upload.
+Code;A0-10
+Description;Controller ROM error. CTL and the image ROM firmware combination error
+Causes;CTL and the image ROM firmware combination error.
+Remedy;Check the firmware combination of CTL and the image ROM.
+Code;A0-11
+Description;IF version discrepancy (CTL-PCU). CTL and the PCU firmware combination error
+Causes;CTL and the PCU firmware combination error
+Remedy;Check the firmware combination of CTL and the PCU.
+Code;A0-12
+Description;IF version discrepancy (CTL-SCU). Firmware combination error between the CTL and the SCU
+Causes;Firmware combination error between the CTL and the SCU.
+Remedy;Check the firmware combination of the CTL and the SCU.
+Code;A0-13
+Description;IF version discrepancy (CTL-OPU). Firmware combination error between the CTL and the OPU
+Causes;Firmware combination error between the CTL and the OPU
+Remedy;Check the firmware combination between the Cal and the OPU.
+Code;A0-20
+Description;Machine level error (CTL detection). Combination error of the machine production / modification level and firmware
+Causes;Combination error of the machine production / modification level and firmware.
+Remedy;Check the combination of the machine production / modification level and the firmware.
+Code;A0-21
+Description;Machine level error (PCU detection). Combination error of the machine production / modification level and firmware
+Causes;Combination error of the machine production / modification level and firmware.
+Remedy;Check the combination of the machine production / modification level and the firmware.
+Code;A0-22
+Description;Machine level error (SCU detection). Combination error of the machine production / modification level and firmware
+Causes;Combination error of the machine production / modification level and firmware.
+Remedy;Check the combination of the machine production / modification level and the firmware.
+Code;C1-00
+Description;Charger trouble. Main charger output abnormality (output open) / The trouble signal is outputted from the high voltage transformer
+Causes;The main charger is not installed properly. The main charger is not assembled properly. The connector of the high voltage transformer is disconnected. The high voltage harness is disconnected or broken.
+Remedy;Use Sim. 8-2 to check the operation of the main charger. Check for disconnection of the main charger. Replace the high voltage unit.
+Code;C1-01
+Description;Charger cleaner trouble. The charger cleaner shift is not completed within the specified time
+Causes;Charger unit trouble. RE sensor, HP sensor, motor, PCU PWB, harness connection trouble.
+Remedy;Check connection of the charger unit, the PCU PWB, and the harness.
+Code;E6-10
+Description;Shading trouble black correction (SPF). The CCD black scan level is abnormal when the copy lamp is turned off
+Causes;Installation failure of the harness to the CCD unit CCD unit abnormality, DSPF PWB abnormality.
+Remedy;Check installation of the harnesses to the CCD unit. Check the CCD unit and the DSPF PWB.
+Code;E6-11
+Description;Shading trouble white correction (SPF). The CCD white reference plate scan level is abnormal when the copy lamp is turned on
+Causes;Installation failure of the harness to the CCD unit Dirt on themirror, the lens, and the reference white plate. Copy lamp lighting trouble. CCD unit abnormality, DSPF PWB abnormality. Shading Sim. not executed / Shading ROM abnormality.
+Remedy;Check installation of the harnesses to the CCD unit. Check installation of the harnesses to the copy lamp unit. Clean the mirror, the lens, and the reference white plate. Check the CCD unit and the DSPF PWB.
+Code;E6-14
+Description;CCD-ASIC abnormality (SPF). The written register value cannot be read out
+Causes;DSPF PWB abnormality
+Remedy;Check the DSPF PWB.
+Code;E7-00
+Description;System memory trouble (The Tandem memory is not guaranteed.). The system memory cannot be accessed
+Causes;Expansion memory installation state abnormality. Data garble.
+Remedy;Check installation of the system expansion memory. Check memory read /write with Sim. 60-01. Replace the expansion memory. (If it is installed.) Replace the MFPC PWB.
+Code;E7-01
+Description;System data trouble. Data abnormality
+Causes;Image transfer abnormality
+Remedy;Check connection of the connector of the MFPC PWB and the W-ICU PWB. Replace the W-ICU PWB. Replace the MFPC PWB.
+Code;E7-03
+Description;HDD trouble. HDD breakdown HDD connection trouble File management area data abnormality (when FAT is broken.)
+Causes;The ICU PWB is not properly installed to the HDD. The HDD does not operate normally. ICU PWB abnormality.
+Remedy;Check installation of the HDD to the W-ICU PWB. Check connection of the harness to the HDD of the WICU PWB. Check read /write of HDD with Sim. 62-2, 3. Replace the HDD. Replace the W-ICU PWB. Replace the MFPC PWB.
+Code;E7-04
+Description;HDD-ASIC trouble. An error occurs in the HDD-ASIC self test when booting
+Causes;HDD-ASIC abnormality
+Remedy;Check installation of the HDD-ASIC of the ICU PWB. Replace the ICU PWB.
+Code;E7-05
+Description;W-ICU memory trouble. The W-ICU memory cannot be accessed
+Causes;W-ICU expansion memory installation abnormality. Data garble. Insufficient memory capacity.
+Remedy;Check instillation the expansion memory. Check read / write memory with Sim. 60-01. Replace the expansion memory. (If it is installed.) Replace the W-ICU PWB.
+Code;E7-06
+Description;Decode error trouble. A decode error occurs when making images
+Causes;Compression data abnormality. HDD installation abnormality. Data garble in image compression / transfer. MPFC PWB abnormality, or W-ICU PWB abnormality.
+Remedy;Check installation of the PWB. (PCI bus) If the job when the error occurred was FAX, check installation of the FAX PWB. For the other cases, check installation of the MFPC PWB, W-ICU PWB, and the HDD PWB. Replace the W-ICU PWB. Replace the MFPC PWB.
+Code;E7-08
+Description;W-ICU memory specification error (ICU1). A DIMM of a different specification is detected on the W-ICU memory slot
+Causes;A DIMM of a different specification is installed to the WICU memory slot. (Support memory: ROW=13bit, Column=10bit)
+Remedy;Check the DIMM which is installed.
+Code;E7-09
+Description;W-ICU memory combination error (ICU1). Combination error of the W-ICU memory slot installation
+Causes;A DIMM installed to the default slot is not 512MB. A DIMM installed to the expansion slot is not 256MB.
+Remedy;Check combination of DIMM installation.
+Code;E7-10
+Description;Shading trouble (Black correction). CCD black scan level abnormality when the copy lamp is turned off
+Causes;Installation failure of the harness to the CCD unit CCD unit abnormality, SCU PWB abnormality.
+Remedy;Check installation of the harnesses to the CCD unit. Check the CCD unit. Check the SCU PWB.
+Code;E7-11
+Description;Shading trouble (White correction). CCD white reference plate scan level abnormality when the copy lamp is turned on
+Causes;Installation failure of the harness to the CCD unit Dirt on the mirror, lens, and the reference white plate. Copy lamp lighting abnormality. CCD unit abnormality, SCU PWB abnormality.
+Remedy;Check installation of the harnesses to the CCD unit. Check installation of the harnesses to the copy lamp unit. Clean the mirror, the lens, and the referencewhite plate. Check the CCD unit and the SCU PWB.
+Code;E7-14
+Description;CCD-ASIC abnormality (OC). The written register value cannot be read
+Causes;SCU PWB abnormality
+Remedy;Check the SCU PWB.
+Code;E7-18
+Description;W-ICU memory specification error (ICU2). DIMM of different specification is detected in the W-ICU memory slot
+Causes;DIMM of different specification is inserted to the W-ICU memory slot. (Support memory: ROW=13bit, Colum=10bit part)
+Remedy;Check the installed DIMM.
+Code;E7-19
+Description;W-ICU memory combination error (ICU2). Combination error of the W-ICU memory slot installation
+Causes;DIMM of other than 256MB is inserted into the default slot. DIMM of other than 512MB is inserted to the expansion slot.
+Remedy;Check the installation combination of DIMM.
+Code;E7-20
+Description;LSU BD detection trouble. The BD signal of the LSU is not detected
+Causes;Optical axis shift. BK laser deterioration, power down. BD PWB abnormality. Disconnection or improper insertion of the harness and the connector between the LD / BD PWB and the LSU control PWB.
+Remedy;Check the LSU operation with Sim. 61-1. Check connection of PWB and the harness in the LSU. Replace the LSUcnt, BD PWB. If the trouble is not canceled, replace the LSU.
+Code;E7-21
+Description;LSU LD deterioration trouble. Laser is not lighted normally.
+Causes;Laser deterioration, power fall. Disconnection or insertion failure of the harness or connector between the LD PWB and the LSUcnt PWB.
+Remedy;Use Sim. 61-1 to check the operation of the LSU. Check connection of the harness in each PWB in the LSU. Replace the LSUcnt PWB. If the trouble is not canceled, replace the LSU.
+Code;E7-27
+Description;LSU configuration check error. LSU PWB control PWB FPGA configuration trouble
+Causes;Communication connector connection trouble between the PCU PWB and the LSU cnt PWB. Harness trouble between the PSU PWB and the LSU cnt PWB (interface PWB). PCU PWB trouble or LSU cnt PWB (interface PWB) trouble.
+Remedy;Check connection of the connector and the harness between the PCU PWB and the LSU cnt PWB (interface PWB). If the trouble is not canceled, replace the LSUcnt PWB, or replace the PCU PWB.
+Code;E7-28
+Description;LSU control ASIC connection abnormality. Access error between the CPU on the PCU PWB and the LSU control ASIC
+Causes;Communication connector connection trouble between the PCU PWB and the LSUcnt PWB (interface PWB). Harness trouble between the PCU PWB and the LSUcnt PWB. PCU PWB or LSUcnt PWB (interface PWB) trouble.
+Remedy;Check connection of the connector and the harness between the PCU PWB and the LSUcnt PWB (interface PWB). If the trouble still remains, replace the LSUcnt PWB and the PCU PWB.
+Code;E7-29
+Description;LSU ASIC frequency abnormality. The external oscillator used in the LSU ASIC and the internal oscillation circuit abnormality
+Causes;Abnormality in the oscillator on the LSU ASIC PWB, the oscillator circuit resistor and capacitor, the LSU ASIC itself.
+Remedy;Replace the LSUcnt PWB.
+Code;E7-35
+Description;CIS-ASIC communication trouble. Communication trouble between the CPU in the PCU PWB and the CIS-ASIC (clock synchronization)
+Causes;Harness trouble between the PCU PWB and the PEDCis PWB. PEDCis PWB trouble, PCU PWB trouble. Insertion failure of the drawer connector of the PS unit.
+Remedy;Check the harness between the PCU PWB and the PEDCis PWB. Check the PEDCis PWB. Check the PCU PWB. If the trouble is not canceled, replace the PEDCis PWB, or replace the PCU PWB.
+Code;E7-36
+Description;CIS-ASIC black level detection abnormality. The scan level of the white reference plate is abnormal when the lamp is lighted
+Causes;Improper installation of the CIS unit. Harness trouble between CIS unit and PEDCis PWB. Abnormality of CIS unit or PEDCis PWB. Dirt on the black reference plate.
+Remedy;Check installation of the CIS unit. Check the harness between the CIS unit and the PEDCis PWB. Clean the black reference plate. If the trouble is not canceled, replace the CIS unit, or replace the PEDCis PWB.
+Code;E7-37
+Description;CIS-ASIC white level detection abnormality. The scan level of the white reference plate is abnormal when the lamp is lighted
+Causes;Improper installation of the CIS unit. Harness trouble between CIS unit and PEDCis PWB. Abnormality of CIS unit or PEDCis PWB. Dirt on the white reference plate.
+Remedy;Check installation of the CIS unit. Check the harness between the CIS unit and the PEDCis PWB. Clean the white reference plate. If the trouble cannot be canceled, replace the CIS unit or the PEDCis PWB.
+Code;E7-55
+Description;PWB information sum error (engine detection). EEPROM PWB information sum error
+Causes;EEPROM device trouble. EEPROM device contact trouble. Device access error due to noises.
+Remedy;Replace the PWB.
+Code;E7-60
+Description;Controller connection trouble. Unknown PWB identification information is detected on the controller PWB
+Causes;The PWB/ firmware which is not supported by the machine specifications is connected.
+Remedy;Check the firmware kind and the version. Controller PWB abnormality
+Code;E7-61
+Description;Controller connection trouble (engine). Controller connection trouble. Compatibility trouble between the controller and the engine.
+Causes;Combination error between the controller PWB and the engine.
+Remedy;Check the controller PWB. Check combination between the controller PWB and the engine.
+Code;E7-62
+Description;Controller connection trouble (scanner). Compatibility trouble between the controller and the scanner.
+Causes;Combination error between the controller PWB and the engine.
+Remedy;Check combination between the controller PWB and the scanner.
+Code;E7-63
+Description;Controller connection trouble (Operation). Compatible trouble between the controller and the operation.
+Causes;Combination error between the controller PWB and the operation.
+Remedy;Check the controller PWB. Check combination between the controller PWB and the operation.
+Code;E7-65
+Description;PWB information sum error (controller detection). EEPROM PWB information sum error
+Causes;EEPROM device trouble. EEPROM device contact trouble. Device access error due to noises.
+Remedy;Replace the PWB.
+Code;E7-70
+Description;Scanner connection trouble. Unknown PWB identification information is detected on the SCU PWB
+Causes;The PWB / firmware which is not supported by the machine specifications is connected.
+Remedy;Check the firmware kind and the version. Check the SCU PWB.
+Code;E7-71
+Description;DSPF connection trouble. An unknown PWB identification information is detected in the DSPF PWB/ combination abnormality with the SCU PWB
+Causes;PWB / firmware which does not support the machine specifications is connected.
+Remedy;Firmware kind / Version check. DSPF PWB trouble.
+Code;E7-75
+Description;PWB information sum error (scanner detection). EEPROM PWB information sum error
+Causes;EEPROM device trouble. EEPROM device contact trouble. Device access error due to noises.
+Remedy;Replace the SCU PWB.
+Code;E7-80
+Description;Communication trouble between the ICU and the scanner (ICU detection). Communication establishment error, framing error, parity error, protocol error
+Causes;Slave unit PWB connector connection trouble. Slave unit PWB and ICU PWB harness trouble. Slave unit PWB mother board connector pin breakage.
+Remedy;Check connection of the connector and the harness between the slave unit PWB and the ICU PWB. Check grounding of the machine.
+Code;E7-90
+Description;Communication trouble between the ICU and the PCU. (ICU detection). Communication establishment error, framing error, parity error, protocol error
+Causes;Slave unit PWB connector connection trouble. Slave unit PWB and ICU PWB harness trouble. Slave unit PWB mother board connector pin breakage.
+Remedy;Check connection of the connector and the harness between the slave unit PWB and the ICU PWB. Check grounding of the machine.
+Code;EE-EL
+Description;Auto development adjustment trouble (Overtone abnormality) <Detected only when Sim. 25-2, no trouble memory, only display>. The sample level is 76 or less or the control voltage is 208 or above
+Causes;Toner density sensor trouble, charging voltage / developing voltage trouble, toner density trouble, developing unit trouble, PCU PWB trouble.
+Remedy;Execute the auto development adjustment with Sim. 25-2.
+Code;EE-EU
+Description;Auto development adjustment trouble (Undertone abnormality) <Detected only when Sim. 25-2, no trouble memory, only display). The sample level is 178 or above or the control voltage is 51 or less
+Causes;Toner density sensor trouble, charging voltage / developing voltage trouble, toner density trouble, developing unit trouble, PCU PWB trouble.
+Remedy;Execute the auto development adjustment with Sim. 25-2.
+Code;F1-00
+Description;Machine detection after-process system communication trouble. Communication line test error when turning ON the power or after canceling the exclusive simulation. Communication error with the finisher.
+Causes;Contact failure or disconnection of the connector and harness between the PCU and the finisher. Finisher control PWB trouble. Control PWB (PCU) trouble. Malfunction due to noises.
+Remedy;Canceled by turning OFF/ON the power. Check the connector and the harness of the communication line. Replace the finisher control PWB, or replace the PCU PWB.
+Code;F1-01
+Description;Jogger motor trouble. Jogger shift motor abnormality in the finisher staple compiler
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the jogger motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-02
+Description;Upper transport motor trouble. Finisher upper side transport section motor abnormality
+Causes;Motor lock, control PWB trouble, encoder breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the upper transport motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-03
+Description;Lower transport motor trouble. Finisher lower side transport section motor abnormality
+Causes;Motor lock, control PWB trouble, encoder breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the lower transport motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-06
+Description;Shift paper exit motor trouble. Finisher shift paper exit section motor abnormality
+Causes;Motor harness short/open, control PWB trouble, connection harness/connector trouble.
+Remedy;Use Sim. 3-3 to check the operation of the shift paper exit motor. Check connection from the control PWB to the motor. Replace the control PWB.
+Code;F1-07
+Description;Tray shift motor trouble. Finisher offset tray shift motor abnormality
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble
+Remedy;Use Sim. 3-3 to check the operation of the tray shift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-08
+Description;Stapler front / rear motor trouble (finisher + saddle unit + inserter) Staple shift motor trouble (saddle finisher).
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the staple back/ forward shift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-09
+Description;Staple diagonal motor trouble (finisher + saddle unit + inserter) Staple diagonal motor trouble (saddle finisher)
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the stapler diagonal motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-10
+Description;Staple motor trouble (finisher + saddle unit + inserter) Staple motor 1 (edge binding) (saddle finisher)
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the staple motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-11
+Description;Discharge motor trouble. Abnormality of the discharge motor for staple bundle discharge of the finisher
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble
+Remedy;Use Sim. 3-3 to check the operation of the discharge motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-12
+Description;Proof select motor trouble. Finisher proof tray transport select motor abnormality
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the discharge motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-13
+Description;Paper exit port open / close motor trouble (finisher + saddle unit + inserter) Paper exit guide plate open / close motor trouble (saddle finisher). Abnormality of the paper exit port open / close motor in the shift tray paper exit section of the finisher
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the paper exit port open/close motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-15
+Description;Tray up / down motor trouble (finisher + saddle unit + inserter) Tray motor trouble (saddle finisher). Abnormality of the tray shift motor for moving up and down the shift tray of the finisher
+Causes;Motor lock, control PWB trouble, paper surface sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the tray shift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-16
+Description;Staple paper exit motor trouble. Finisher staple paper exit section transport motor abnormality
+Causes;Motor harness short / open, control PWB trouble, connection harness / connector trouble.
+Remedy;Use Sim. 3-3 to check the operation of the staple paper exit motor. Check connection from the control PWB to the motor. Replace the control PWB.
+Code;F1-17
+Description;Staple select motor trouble. Finisher staple transport path select motor abnormality
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the staple select motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-18
+Description;Holding motor trouble. Paper holding arm drive motor abnormality in the finisher staple compiler.
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the holding motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-19
+Description;Holding front motor trouble. Paper holding front arm drive motor abnormality in the finisher staple compiler.
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the holding front motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-20
+Description;Holding rear motor trouble. Paper holding rear arm drive motor abnormality in the finisher staple compiler.
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the holding rear motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-22
+Description;Proof paper exit motor trouble. Finisher proof paper exit section transport motor abnormality
+Causes;Motor harness short/open, control PWB trouble, connection harness/connector trouble.
+Remedy;Use Sim. 3-3 to check the operation of the proof paper exit motor. Check connection from the control PWB to the motor. Replace the control PWB.
+Code;F1-23
+Description;Bundle branch open / close motor trouble. Bundle branch open/close motor abnormality in the saddle section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 or Sim. 3-21 to check the operation of the bundle brunch open / close motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-24
+Description;Pre-stack select motor trouble. Finisher pre-stack section transport path select motor abnormality
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the pre-stack select motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-25
+Description;Pre-stack transport motor trouble. Finisher pre-stack section transport path select motor abnormality
+Causes;Motor lock, motor harness short/open, control PWB trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the pre-stack transport motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-26
+Description;Pre-stack pawl release motor trouble. Finisher pre-stack section lead edge alignment pawl drive motor abnormality
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the pre-stack pawl release motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-27
+Description;Tapping transport motor trouble. Tapping transport motor abnormality in the finisher staple compiler
+Causes;Motor lock, motor harness short/open, control PWB trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the pre-stack tapping transport motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-28
+Description;Tapping drive motor trouble. Tapping arm drive motor abnormality in the finisher staple compiler.
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the tapping drive motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-30
+Description;Communication trouble between peripheral devices (saddle unitdetection). Communication abnormality between the units connected to the lower stream of the saddle unit. No response is made to a command send from the saddle unit.
+Causes;Communication line noises, control PWB trouble, connection trouble, connection harness breakage.
+Remedy;Turn OFF /ON the power. Check the connection of the connector with the lower stream machine of the saddle unit. Replace the control PWB of the lower stream machine of the saddle unit.
+Code;F1-31
+Description;Folding plate motor trouble. Folding plate drive motor abnormality for folding in the saddle section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 or Sim. 3-21 to check the operation of the folding plate motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-33
+Description;Punch shift motor trouble. Abnormality of the punch shift motor for resist shifting of the punch unit in the finisher
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the punch shift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-34
+Description;Punch motor trouble. Abnormality of the punch staple drive motor of the punch unit in the finisher
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness /connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the punch motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-35
+Description;Horizontal resist detection motor trouble. Abnormality of the paper sensor shift motor for punch positioning of the punch unit in the finisher
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the horizontal resist detection motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-43
+Description;Saddle jogger motor trouble. Jogger shift motor abnormality in the stapler compiler of the saddle unit.
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-21 to check the operation of the saddle jogger motor. Check connection from the control PWB to the motor, and turn OFF/ON the power. Replace the control PWB and the sensor part.
+Code;F1-44
+Description;Center binding stapler rear trouble (finisher + saddle unit + inserter) Staple motor 3 (center binding rear) trouble (saddle finisher). Staple unit drive motor abnormality on the rear side of the saddle section.
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 and Sim. 3-21 to check the operation of the center binding rear side staple motor. Check connection from the control PWB to the motor, and turn OFF / ON the power. Replace the control PWB and the sensor part.
+Code;F1-45
+Description;Center binding stapler front trouble (finisher + saddle unit + inserter) Staple motor 2 (center binding front) trouble (saddle finisher). Staple unit drive motor abnormality on the front side of the saddle sectior
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 and Sim. 3-21 to check the operation of the center binding front side staple motor. Check connection from the control PWB to the motor, and turn OFF / ON the power. Replace the control PWB and the sensor part.
+Code;F1-46
+Description;Rear edge fence shift motor trouble (finisher + saddle unit + inserter) Rear edge fence motor trouble (saddle finisher). Staple compiler rear edge fence shift motor abnormality in the saddle section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 and Sim. 3-21 to check the operation of the rear edge fence motor. Check connection from the control PWB to the motor, and turn OFF /ON the power. Replace the control PWB and the sensor part.
+Code;F1-47
+Description;Drive collar oscillation motor trouble. Drive collar oscillation motor abnormality in the finisher staple compiler.
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 and Sim. 3-21to check the operation of the jogger motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-48
+Description;Saddle discharge motor trouble. Bundle paper transport / discharge drive motor abnormality in the saddle unit
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-21 to check the operation of the saddle discharge motor. Check connection from the control PWB to the motor, and turn OFF /ON the power. Replace the control PWB and the sensor part.
+Code;F1-50
+Description;Finisher incompatible trouble. An incompatible after-process unit is detected.
+Causes;An incompatible after-process unit is installed.
+Remedy;Install the proper option unit.
+Code;F1-60
+Description;Communication trouble between peripheral devices (inserter detection). Communication abnormality between the units connected to the lower stream of the inserter / No response is made to a command send from the inserter
+Causes;Communication line noises, control PWB trouble, connection trouble, connection harness breakage.
+Remedy;Turn OFF /ON the power. Check connection of the connector with the lower stream machine of the inserter. Replace the control PWB of the lower stream machine of the saddle unit.
+Code;F1-64
+Description;No. 1 pickup motor trouble. The paper feed roller drive motor abnormality in the inserter upper side paper feed section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-31 to check the operation of the No. 1 pickup motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-65
+Description;No. 2 pickup motor trouble. The paper feed roller drive motor abnormality in the inserter lower side paper feed section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-31 to check the operation of the No. 2 pickup motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-66
+Description;No. 1 lift motor trouble (finisher + saddle unit + inserter) Lift motor 1 trouble (booklet maker). The tray lift-up drive motor abnormality in the inserter upper side paper feed section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-31 to check the operation of the No. 1 lift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-67
+Description;No. 2 lift motor trouble (finisher + saddle unit + inserter) Lift motor 2 trouble (booklet maker). The tray lift-up drive motor abnormality in the inserter lower side paper feed section
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-31 to check the operation of the No. 2 lift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-70
+Description;Communication trouble between peripheral devices (Z-folding machine detection). Communication abnormality between the units connected to the lower stream of the Z-folding unit / No response is made to a command send from the Z-folding unit
+Causes;Communication line noises, control PWB trouble, connection trouble, connection harness breakage.
+Remedy;Turn OFF /ON the power. Check connection of the connector with the lower stream machine of the Zfolding machine. Replace the control PWB of the lower stream machine of the inserter.
+Code;F1-71
+Description;Varistor abnormality. Varistor abnormality is detected on the Z-folding unit control PWB
+Causes;A high voltage noise such as lighting surge has occurred, or PWB trouble.
+Remedy;Replace the PWB.
+Code;F1-72
+Description;Z-folding machine EEPROM abnormality. Data write error to the EEPROM on the Z-folding unit
+Causes;Control PWB trouble, garbles data due to line noise.
+Remedy;Use the simulation to rewrite the data and check again. If the trouble occurs after recheck, replace the PWB.
+Code;F1-73
+Description;Separation sensor adjustment abnormality. The sensor input value does not become the proper level in the automatic adjustment of the separation sensor.
+Causes;Trouble the sensor. Trouble the control PWB.
+Remedy;Replace the sensor. Replace the control PWB.
+Code;F1-74
+Description;Pressure sensor adjustment abnormality. The sensor input value does not become the proper level in the automatic adjustment of the pressure sensor.
+Causes;Trouble the sensor. Trouble the control PWB.
+Remedy;Replace the sensor. Replace the control PWB.
+Code;F1-75
+Description;Upper stopper motor trouble. Z-folding unit upper stopper drive motor abnormality
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-41 to check the operation of the upper stopper motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-76
+Description;Lower stopper motor trouble. Z-folding machine lower stopper drive motor abnormality
+Causes;Motor lock, control PWB trouble, home position sensor breakdown, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-41 to check the operation of the lower stopper motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-77
+Description;Folding motor trouble. Z-folding machine paper folding drive motor abnormality
+Causes;Motor lock, control PWB trouble, encoder sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-41 to check the operation of the folding motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-83
+Description;Lead edge stopper motor trouble. The paper lead edge stopper drive motor abnormality in the finisher compiler.
+Causes;Motor lock, control PWB trouble, encoder sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the lead edge stopper motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-84
+Description;Movable fence motor trouble. Movable fence motor abnormality in the finisher compiler
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the movable fence motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-85
+Description;Return transport motor trouble. Return transport motor abnormality in the finisher compiler
+Causes;Motor lock, motor harness short / open, control PWB trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the return transport motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-86
+Description;Return drive motor trouble (finisher + saddle unit + inserter) Return collar oscillation motor trouble (saddle finisher). Return drive motor abnormality in the finisher compiler
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the return drive motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-87
+Description;Shift jogger motor trouble. Finisher shift tray section jogger drive motor abnormality
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the shift jogger motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-88
+Description;Shift jogger retract motor trouble. Abnormality of the drive motor which retracts the jogger in the shift tray section of the finisher from the tray
+Causes;Motor lock, motor harness short / open, control PWB trouble, home position sensor trouble, connection harness / connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the shift jogger retracting motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F1-89
+Description;Shift motor trouble. Abnormality of the shift unit drive motor in the shift tray paper exit section of the finisher
+Causes;Motor lock, motor harness short/open, control PWB trouble, home position sensor trouble, connection harness/connector connection trouble.
+Remedy;Use Sim. 3-3 to check the operation of the shift motor. Check connection from the control PWB to the motor. Replace the control PWB and the sensor part.
+Code;F2-00
+Description;Toner control sensor open.
+Causes;Connector and harness trouble. Connector not connected. Developer empty, or abnormally little developer. Sensor abnormality.
+Remedy;Check connection of the harness of the toner control sensor. Check connection of the interface harness on the rear side of the developer tank. Check connection of the connector and the harness to the main PWB. Check for disconnection of the harness. If the trouble is not canceled, replace the sensor, or replace the developing unit.
+Code;F2-02
+Description;Toner supply abnormality. Toner end though the remaining quantity is not 0%. The count value of the toner cartridge motor rotation sensor exceeds the level 3 times greater than the specified level.
+Causes;Toner motor section connector harness trouble. Toner motor and toner density sensor trouble.
+Remedy;Check connection of the connector in the toner motor section. Check connection of the connector harness (TM) to the main PWB. Check the output of the toner density sensor (SIM 25-1). Replace the toner cartridge (CRUM). If the trouble still remains after replacement of the toner cartridge (CRUM), check the developing unit.
+Code;F2-04
+Description;An improper toner cartridge is detected. Improper data are found in the CRUM content when detection the normal CRUM of the cartridge
+Causes;An improper cartridge is inserted. Toner cartridge trouble.
+Remedy;Replace the toner cartridge.
+Code;F2-05
+Description;Toner cartridge CRUM error. Read/write operation of theCRUMcannot be performed
+Causes;CRUM trouble. Contact trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Control PWB (PCU) trouble.
+Remedy;Replace the toner cartridge. Check the connector and the harness between the PCU and the toner cartridge. Replace the PCU PWB.
+Code;F2-06
+Description;CRUMID error. Installed CRUMID trouble
+Causes;An improper cartridge is inserted. Toner cartridge trouble.
+Remedy;Replace the toner cartridge.
+Code;F2-31
+Description;Process control trouble (OPC drum surface reflection rate abnormality). Density sensor harness open or short, sensor detection trouble
+Causes;Density sensor dirt, density sensor trouble. Density sensor harness connection trouble. PCU PWB Trouble. Drum surface state abnormality. Drum charging state abnormality.
+Remedy;Check connection of the harness and the connector of the sensor. Check the PCU PWB. Check for dirt on the sensor section. Clean or replace as needed. Check the drum surface condition. Use Sim. 44-2 to check the operation. Execute DARK V0 of Sim. Sim. 44- 3 to check the operation.
+Code;F2-33
+Description;Surface potential sensor abnormality trouble. Front surface potential sensor open or short, sensor detection trouble
+Causes;Sensor dirt, sensor trouble. Surface potential sensor harness connection trouble. PCU PWB Trouble. Drum surface state abnormality. Grid high voltage output trouble. Drum charging abnormality due to dirt on the MC grid. The drum life is reached.
+Remedy;Check connection of the harness and the connector of the sensor. Check the PCU PWB. Check for dirt on the MC grid. Clean or replace as needed. Check the drum surface condition. Use Sim. 22-1 to check the drum life meter. If it is 100%, it means that the drum life is reached, and maintenance must be performed. Use Sim. 44-3 to execute DARK V0 and check the operation. Check the grid high voltage output.
+Code;F2-39
+Description;Process thermistor breakdown. Process thermistor open
+Causes;Process thermistor trouble. Process thermistor harness connection trouble. PCU PWB trouble.
+Remedy;Check connection of the harness and the connector in the process thermistor. Check the PCU PWB.
+Code;F2-47
+Description;Room temperature thermistor breakdown. Room temperature thermistor open or short
+Causes;Room temperature thermistor trouble, room temperature thermistor harness connection trouble, PCU PWB trouble.
+Remedy;Check connection of the room temperature harness / connector. Check the PCU PWB.
+Code;F2-58
+Description;Process humidity sensor breakdown. Process humidity sensor open
+Causes;Process humidity sensor trouble. Process humidity sensor harness connection trouble. PCU PWB trouble.
+Remedy;Check connection of the harness and the connector of the process humidity sensor. Check the PCU PWB.
+Code;F2-59
+Description;Room humidity thermistor trouble. Room temperature humidity sensor open
+Causes;Room temperature humidity sensor trouble, room temperature humidity sensor harness connection trouble, PCU PWB trouble.
+Remedy;Check connection of the room temperature humidity sensor harness/connector. Check the PCU PWB.
+Code;F3-12
+Description;Machine cassette 1 lift-up trouble. LUD1 is not turned ON within the specified time.
+Causes;LUD1 sensor trouble. Cassette 1 lift-up motor trouble. Harness connection trouble of PCU PWB, the lift-up unit, and the paper feed unit.
+Remedy;Check connection of the harness and the connector of LUD1. Check the lift-up unit.
+Code;F3-22
+Description;Machine cassette 2 lift-up trouble. LUD2 is not turned on within the specified time.
+Causes;LUD2 sensor trouble. Cassette 2 lift-up motor trouble. Harness connection trouble of PCU PWB, the lift-up unit, and the paper feed unit.
+Remedy;Check the harness and the connector of LDU2. Check the lift-up unit.
+Code;F3-32
+Description;Machine cassette 3 lift-up trouble. LUD3 is not turned ON within the specified time.
+Causes;LUD3 sensor trouble. Cassette 3 lift-up motor trouble. Harness connection trouble of PCU PWB, the lift-up motor, and the paper feed unit.
+Remedy;Check the harness and the connector of LUD3. Check the lift-up unit.
+Code;F3-42
+Description;Machine cassette 4 lift-up trouble. LUD4 is not turned ON within the specified time.
+Causes;LUD4 sensor trouble. Cassette 4 lift-up motor trouble. Harness connection trouble of PCU PWB, the lift-up motor, and the paper feed unit
+Remedy;Check LUD4 and the harness and the connector. Check the lift-up unit.
+Code;F4-38
+Description;38 (V) voltage trouble. 38V voltage fall or 38V disconnected.
+Causes;Connection failure or disconnection of the connector and the harness. PCU PWB trouble. Power unit trouble, or blown fuse. HL PWB trouble. (relay)
+Remedy;Check the connector and the harness of the power line. Check the power voltage of 38V in the power unit and the PCU PWB. Check for blown fuse in the power unit. (Main power: F208)
+Code;F5-10
+Description;Lamp thermistor open detection trouble (SCU detection). The thermistor open is detected.
+Causes;Thermistor abnormality, thermistor related harness and circuit trouble.
+Remedy;Check the thermistor related circuits (Thermistor PWB, SCNCNT PWB) and their harness and the connector.
+Code;F5-12
+Description;Lamp thermistor abnormality detection (SCU detection). An abnormal temperature is detected.
+Causes;Thermistor abnormality, thermistor related harness and circuit trouble, fan filter clogging.
+Remedy;Check the thermistor related circuits (thermistor PWB, SCNCNT PWB) and their harness and the connector.
+Code;F6-00
+Description;Communication trouble between the MFP and the FAX (MFP detection). Communication establishment error, framing error, parity error, protocol error
+Causes;FAX unit PWB connector connection trouble. FAX unit PWB - ICU PWB harness trouble. FAX unit PWB mother board connector pin breakage. FAX unit ROM trouble / No ROM/ Reverse insertion of ROM/ROM pin breakage.
+Remedy;Check connection of the connector and the harness between the FAX unit PWB and the ICU PWB. Check grounding of the machine. Check the ROM of the FAX unit PWB.
+Code;F6-01
+Description;FAX PWB EEPROM read / write error. Access error to EEPROM (read / write)
+Causes;EEPROM trouble. FAX PWB EEPROM access circuit trouble.
+Remedy;Check that no trouble occurs after replacement of the EEPROM. Check that access can be normally made with Sim. 66-3 Memory check. If the PWB is replaced, the adjustment is not required.
+Code;F6-04
+Description;FAX MODEM operation abnormality. FAX PWB MODEM chip operation trouble
+Causes;FAX PWB MODEM chip operation trouble. The MODEM chip in the FAX PWB cannot be accessed.
+Remedy;Replace the MODEM chip in the FAX PWB. Replace the FAX PWB.
+Code;F6-21
+Description;Combination error of the TEL / LIU PWB and the FAX soft switch
+Causes;The destination of the TEL / LIU PWB which is installed differs. The FAX PWB information (soft switch) differs. The TEL / LIU PWB abnormality.
+Remedy;Check the destination of the TEL / LIU PWB. Check the FAX PWB information (soft switch). Replace the TEL / LIU PWB.
+Code;F6-30
+Description;Access error to the power controller on the FAX PWB. (FAX detection). Access error to the power controller (read /write)
+Causes;Power controller trouble. FAX PWB power controller access circuit trouble. Power controller program write error. (Or, the power controller program is not written.)
+Remedy;Use Sim. 66-42 to rewrite the power controller program. Replace the chip. When replaced, rewrite of the power controller program with Sim. 66-42 is required. Replace the FAX PWB.
+Code;F6-97
+Description;FAX PWB skating trouble. The FAX PWB model identification does not match the machine model.
+Causes;The FAX PWB model does not match the machine model.
+Remedy;Replace the FAX PWB with one whose model matches the machine model.
+Code;F6-98
+Description;Combination error between the FAX PWB destination information and the machine destination information
+Causes;The destination information written in the EEPROM on the FAX PWB does not match the destination information of the machine (set with Sim. 26 - 6).
+Remedy;Check the FAX PWB destination. Check themachine destination setting. (SIM26-6 ) Use the proper combination between the machine and the FAX PWB.
+Code;F9-00
+Description;Communication trouble between the controller and the printer controller (FIERY).
+Causes;Printer controller ICU PWB cable trouble. Printer controller trouble. ICU PWB trouble.
+Remedy;Check connection of the printer controller cable. Repair or replace the printer controller. After checking, turn OFF /ON the power of the machine and the printer controller.
+Code;FF-00
+Description;Double feed detection trouble (PCU)
+Causes;Double feed sensor abnormality. Harness / circuit trouble related to the double feed sensor. Insertion failure of the drawer connector of the PS unit.
+Remedy;Check the circuit related to the double feed sensor and the harness and the connector. Replace the double feed detection PWB and the sensor.
+Code;FF-10
+Description;Double feed detection trouble (SCU)
+Causes;Double feed sensor abnormality. Harness/circuit trouble related to the double feed sensor.
+Remedy;Check the circuit related to the double feed sensor and the harness and the connector. Replace the double feed detection PWB and the sensor.
+Code;H2-00
+Description;Non-contact main thermistor (detection) open (RTH1-d_D)
+Causes;Thermistor trouble, control PWB trouble. Fusing section connector trouble. AC power source trouble. The fusing unit is not installed.
+Remedy;Check connection of the harness and the connector from the thermistor to the control PWB.
+Code;H2-01
+Description;Sub thermistor open (RTH2)
+Causes;Thermistor trouble, control PWB trouble Fusing section connector trouble AC power source trouble The fusing unit is not installed.
+Remedy;Check connection of the harness and the connector from the thermistor to the control PWB.
+Code;H2-02
+Description;Lower thermistor open (PRTH)
+Causes;Thermistor trouble, control PWB trouble. Fusing section connector trouble. AC power source trouble. The fusing unit is not installed.
+Remedy;Check connection of the harness and the connector from the thermistor to the control PWB.
+Code;H2-03
+Description;Non-contact main thermistor (reparation) open (RTH1-d_C)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power trouble. Fusing unit not installed.
+Remedy;Check the harness and the connector between the thermistor and the control PWB.
+Code;H3-00
+Description;Non-contact main thermistor high temperature trouble (RTH1_d). The fusing temperature in the PWB exceeds the specified level
+Causes;Thermistor trouble, control PWB trouble. Fusing section connector connection trouble. AT power source trouble
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the heater lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the control PWB. It the lamp keeps ON, check the AC PWB, the control PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H3-01
+Description;Sub thermistor high temperature trouble (RTH2). The fusing temperature in the PWB exceeds the specified level
+Causes;Thermistor trouble, control PWB trouble. Fusing section connector connection trouble. AT power source trouble
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the heater lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the control PWB. It the lamp keeps ON, check the AC PWB, the control PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H3-02
+Description;Lower thermistor high temperature trouble (PRTH). The fusing temperature in the PWB exceeds the specified level
+Causes;Thermistor trouble, control PWB trouble. Fusing section connector connection trouble. AT power source trouble.
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the heater lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the control PWB. It the lamp keeps ON, check the AC PWB, the control PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H4-00
+Description;Non-contact main thermistor low temperature trouble (RTH1-d). The set temperature is not reached with the specified time after turning on the power relay
+Causes;Thermistor trouble. Heater lamp trouble. PCU PWB trouble. Thermostat trouble. AC power source trouble. Interlock switch trouble
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the PCU PWB. If the lamp does not light up, check the heater lamp and the thermostat for breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H4-01
+Description;Sub thermistor low temperature trouble (RTH2). The set temperature is not reached with the specified time after turning on the power relay
+Causes;Thermistor trouble. Heater lamp trouble. PCU PWB trouble. Thermostat trouble. AC power source trouble. Interlock switch trouble.
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the PCU PWB. If the lamp does not light up, check the heater lamp and the thermostat for breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H4-02
+Description;Lower thermistor low temperature trouble (PRTH). The set temperature is not reached with the specified time after turning on the power relay
+Causes;Thermistor trouble. Heater lamp trouble. PCU PWB trouble. Thermostat trouble. AC power source trouble. Interlock switch trouble
+Remedy;Check blinking of the heater lamp with Sim. 5-2. If the lamp blinks normally, check the thermistor and the harness. Check the thermistor input circuit section of the PCU PWB. If the lamp does not light up, check the heater lamp and the thermostat for breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. Cancel the trouble with Sim. 14.
+Code;H4-30
+Description;Non-contact main thermistor differential input abnormality (RTH1-d). The differential value does not rise above the specified level within the specified time from turning ON the HL1.
+Causes;Thermistor trouble, heater lamp trouble, PCU PWB trouble, thermostat trouble, AC power trouble. Interlock switch trouble.
+Remedy;Use Sim. 5-2 to check the flashing operation of the heater lamp. If the heater lamp flashes normally, check the thermistor and the harness. Check the thermistor input circuit section of the PCU PWB. If the heater lamp does not light up, check for disconnection of the heater lamp or the thermostat. Check the interlock switch. Check the lamp control circuit of the AC PWB and the PCU PWB. Use Sim. 14 to cancel the trouble.
+Code;H5-01
+Description;POIND not-reached jam is detected 5 times continuously
+Causes;A fusing jam is not canceled completely. (Jam paper remains.) POD1 sensor trouble or harness connection trouble. Fusing unit instillation trouble.
+Remedy;Check the fusing section jam paper. (winding, etc.) Check the POD1 sensor harness. Check installation of the fusing unit. Cancel the trouble with Sim. 14.
+Code;H7-10
+Description;Low temperature detection in the reset operation of temperature adjustment after alarm stop in a job (Noncontactmain thermistor(RTH1-d)). When in fusing alarm stopping, the specified temperature is not reached within the specified time. * Alarm stop: When the fusing temperature lowers than the specified level in a print job, the job is interrupted temporarily and temperature reset is performed.
+Causes;Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power trouble, interlock switch trouble, connector and harness connection trouble.
+Remedy;Use Sim. 5-2 to check the ON operation of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB. Check connection of the connector and the harness.
+Code;H7-11
+Description;Low temperature detection in the reset operation of temperature adjustment after alarm stop in a job (Sub thermistor (RTH2)). When in fusing alarm stopping, the specified temperature is not reached within the specified time. * Alarm stop: When the fusing temperature lowers than the specified level in a print job, the job is interrupted temporarily and temperature reset is performed.
+Causes;Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power trouble, interlock switch trouble, connector and harness connection trouble.
+Remedy;Use Sim. 5-2 to check the ON operation of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB. Check connection of the connector and the harness.
+Code;H7-12
+Description;Low temperature detection in the reset operation of temperature adjustment after alarm stop in a job (Lower thermistor (RTH2)). When in fusing alarm stopping, the specified temperature is not reached within the specified time. * When in fusing alarm stopping, the specified temperature is not reached within the specified time.
+Causes;Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power trouble, interlock switch trouble, connector and harness connection trouble.
+Remedy;Use Sim. 5-2 to check the ON operation of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB. Check connection of the connector and the harness.
+Code;L1-00
+Description;Mirror feed trouble. Mirror feed is not completed within the specified time
+Causes;Mirror unit trouble. The mirror wire is disengaged. Circuit trouble.
+Remedy;Use Sim. 1-1 to check the operation of the mirror. Check the mirror motor related circuits (SCN-Mother PWB, SCNCNT PWB, MHP sensor PWB).
+Code;L2-10
+Description;CCD cooling fan motor trouble (SCU detection). The lock signal is detected during rotation of the fan / The non-lock state is detected when the motor is not rotated in booting
+Causes;Fan motor trouble, fan motor related harness and circuit trouble.
+Remedy;Check the fan motor related circuits (SCN-Mother PWB, SCNCNT PWB) and their harness and connector.
+Code;L2-11
+Description;Lamp cooling fan motor trouble (SCU detection). The lock signal is detected during rotation of the fan / The non-lock state is detected when the motor is not rotated in booting
+Causes;Fan motor trouble, fan motor related harness and circuit trouble.
+Remedy;Check the fan motor related circuits (SCN-Mother PWB, SCNCNT PWB) and their harness and connector.
+Code;L3-00
+Description;Mirror return trouble. Mirror return is not completed within the specified time
+Causes;Mirror unit trouble. The mirror wire is disengaged. Circuit trouble.
+Remedy;Use Sim. 1-1 to check the operation of the mirror. Check the mirror motor related circuits (SCN-Mother PWB, SCNCNT PWB, MHP sensor PWB).
+Code;L4-01
+Description;Main motor lock trouble. The motor lock signal is detected during rotation of the main motor (MM/MM2)
+Causes;Main motor (MM/MM2) lock trouble. Connection failure or disconnection of the connector and the harness. Control circuit trouble.
+Remedy;Use Sim. 6-1 to check the operation of the main motor (MM/MM2) lock. Check the harness and the connector. (between the PCU PWB and the motor, between the HL PWB and the motor)
+Code;L4-02
+Description;Drum motor lock trouble. When warming up, the paper feed motor is rotated when canceling a jam, the lock signal is not detected within 1sec.
+Causes;Paper feed motor trouble. Harness connection trouble between the PCU PWB and the paper feed motor. Control circuit trouble.
+Remedy;Check the paper feed motor operation with Sim. 6-1. Check connection of the connector and the harness between the PCU PWB and the paper feed motor.
+Code;L4-03
+Description;Fusing motor lock trouble. The motor lock signal is detected during rotation of the fusing motor
+Causes;Fusing motor trouble. Harness connection trouble between the PCU PWB and the developing motor. Control circuit trouble.
+Remedy;Check the fusing motor operation with Sim. 6-1. Check connection of the harness and the connector between the PCU PWB and the developing motor.
+Code;L4-04
+Description;Developing motor trouble. The motor lock signal is detected during rotation of the developing motor
+Causes;Developing motor trouble. Harness connection trouble between the PCU PWB and the developing motor. Control circuit trouble.
+Remedy;Check the developing motor operation with Sim. 25-1. Check connection of the connector and the harness between the PCU PWB and the developing motor.
+Code;L4-08
+Description;Waste toner transport pipe lock. Waste toner lock is detected during rotation of the drum motor.
+Causes;Waste toner transport pipe lock. (clogging) Waste toner lock sensor trouble. Waste toner lock detection mechanism trouble.
+Remedy;Use Sim. 6-1 to check the operations of the drum motor. Check for clogging in the waste toner transport pipe. Check the waste toner lock sensor.
+Code;L4-14
+Description;Toner cartridge motor lock trouble. Though the toner cartridge motor is rotated for a certain time, the toner cartridge motor rotation sensor count value does not exceed the threshold value
+Causes;Toner cartridge motor trouble. Toner cartridge motor rotation sensor trouble. Harness connection trouble between the PCU PWB and the toner cartridge motor. Harness trouble between the PCU PWB and the toner cartridge motor rotation sensor. Toner cartridge trouble.
+Remedy;Use Sim. 10-1 to check the operation of the toner cartridge motor. Use Sim. 10-3 to check the operation of the toner cartridge motor rotation sensor. Check the harness and the connector between the PCU PWB and the toner cartridge motor. Check the harness and the connector between the PCU PWB and the toner cartridge motor rotation sensor. Replace the toner cartridge.
+Code;L4-15
+Description;Fusing front PG control error. FPGHP is not changed over during the initializing operation of the fusing front PG motor
+Causes;Fusing front PG motor trouble. FPGHP sensor trouble. PCU PWB trouble. Harness connection trouble between the PCU PWB and the fusing front PG motor. Harness connection trouble between the PCU PWB and the FPGHP.
+Remedy;Use Sim. 6-1 to check the operation of the fusing front PG motor. Use Sim. 30-1 to check the FPGHP sensor. Check the harness and the connector between the PCU PWB and the fusing front PG motor. Check the harness and the connector between the PCU PWB and the FPGHP.
+Code;L4-29
+Description;HDD cooling fan motor trouble. The motor lock signal is detected during rotation of the HDD fan motor.
+Causes;Fan motor trouble. Harness connection trouble between the controller PWB and the fan motor. Control circuit trouble.
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the controller PWB and the fan motor.
+Code;L4-30
+Description;Controller fan motor trouble. The motor lock signal is detected during rotation of the controller fan motor. The motor lock signal is detected during rotation of the HDD fan motor.
+Causes;Fan motor trouble. Harness connection trouble between the controller. PWB and the fan motor. Control circuit trouble.
+Remedy;Check the fan motor operation with Sim. 6-2. Check connection of the harness and the connector between the controller PWB and the fan motor.
+Code;L4-31
+Description;Machine heat exhaust fan 1 trouble. The lock signal is detected during operation of the machine heat exhaust fan.
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-32
+Description;Power cooling fan 1 / 2 trouble. The lock signal is detected during operation of the power cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-34
+Description;Polygon cooling fan trouble. The lock signal is detected during the operation of the polygon cooling fan.
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-36
+Description;Toner suction fan trouble. The lock signal is detected during operation of the toner suction fan.
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-38
+Description;Reverse transport cooling fan trouble. The lock signal is detected during operation of the reverse transport cooling fan.
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-39
+Description;Reverse cooling fan trouble. The lock signal is detected during operation of the reverse cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-40
+Description;Ozone exhaust fan 1 trouble. The lock signal is detected during operation of the ozone exhaust fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-41
+Description;Ozone exhaust fan 2 trouble. The lock signal is detected during operation of the ozone exhaust fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-43
+Description;Paper cooling fan trouble. The lock signal is detected during operation of the paper cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-46
+Description;Development cooling fan 1 trouble. The lock signal is detected during operation of the developing cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-47
+Description;Power cooling fan 3 trouble. The lock signal is detected during operation of the power cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-48
+Description;ADU section paper cooling fan 1 trouble. The lock signal is detected during operation of the ADU section paper cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-49
+Description;ADU section paper cooling fan 2 trouble. The lock signal is detected during operation of the ADU section paper cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-50
+Description;Process cooling fan 1 trouble. The lock signal is detected during operation of the process cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-51
+Description;Process cooling fan 2 trouble. The lock signal is detected during operation of the process cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-52
+Description;Process cooling fan 3 trouble. The lock signal is detected during operation of the process cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-53
+Description;Process cooling fan 4 trouble. The lock signal is detected during operation of the process cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-54
+Description;PS cooling fan trouble. The lock signal is detected during operation of the PS cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L4-55
+Description;Process cooling fan trouble. The lock signal is detected during operation of the process cooling fan
+Causes;Harness connection trouble between the PCU PWB and the fan motor. PCU PWB trouble. Fan motor trouble. The fan is not rotating due to other trouble. (Power is not supplied to the fan motor.)
+Remedy;Use Sim. 6-2 to check the operation of the fan motor. Check the harness and the connector between the PCU PWB and the fan motor. Replace the PCU PWB. Replace the fan motor.
+Code;L6-10
+Description;Polygon motor trouble. It is judged that the lock signal of the LSU polygon motor is not outputted. When the lock signal is checked 7sec after starting the polygon motor rotation, it is judged that the polygon motor does not rotate normally.
+Causes;Disconnection or breakage of the LSU connector or the harness inside the LSU. Polygon motor trouble. LSU PWB trouble.
+Remedy;Check the polygon motor operation with Sim. 61-1. Check connection of the harness and the connector. If the trouble still remains, replace the LSUcnt PWB or replace the LSU PWB.
+Code;L8-01
+Description;NO full wave signal
+Causes;PCU PWB trouble. Power unit trouble. Harness trouble.
+Remedy;Replace the PCU PWB. Replace the power unit. Check connection of the connector and the harness.
+Code;L8-05
+Description;No full wave signal (PCU detection)
+Causes;Disconnection or breakage of the connector to the PCU PWB or the harness in the power unit. PCU PWB trouble. Power unit trouble.
+Remedy;Check connection of the harness and the connector. Replace the PCU PWB. Replace the power unit.
+Code;L8-20
+Description;Power controller communication trouble. Communication establishment error / framing / parity/ protocol error
+Causes;Connection trouble of the connector between the mother board and the MFPC PWB. MFPC PWB mother board connector pin breakage.
+Remedy;Check connection of the connector between the mother board and the MFPC PWB. Check grounding of the machine.
+Code;U1-01
+Description;Battery abnormality. Backup SRAM battery voltage fall
+Causes;Battery life. Battery circuit abnormality.
+Remedy;Check that the battery voltage is about 2.5V or above.
+Code;U2-00
+Description;EEPROM read / write error (ICU)
+Causes;EEPROM device trouble. EEPROM device connection trouble. Device access error due to noises
+Remedy;Replace the EEPROM device. Check installation of the EEPROM device. Replace the ICU PWB.
+Code;U2-05
+Description;HDD / SRAM Flash / EEPROM discrepancy. The HDD or the SRAM which differs from what was installed before turning off the power is installed
+Causes;HDD replacement or SRAM replacement
+Remedy;Initialize the authentication information with Sim. 16. Import the backup (export data by device cloning) if any.
+Code;U2-10
+Description;SRAM user authentication index check sum error. User index information (user authentication basic data) check sum error on the SRAM
+Causes;SRAM trouble. Control circuit malfunction. ISU PWB SRAM access circuit trouble.
+Remedy;Use Sim. 16 to develop the user index information save data from the HDD to the SRAM.
+Code;U2-11
+Description;Counter check sum error (ICU). A check sum error of the counter information on the EEPROM occurs
+Causes;EEPROM device trouble. EEPROM device contact trouble. Device access error due to noises.
+Remedy;Cancel the U2 trouble.
+Code;U2-22
+Description;SRAM memory check sum error (MFP)
+Causes;SRAM trouble. Control circuit malfunction due to noises. MFP PWB SRAM access circuit trouble.
+Remedy;Initialize the communication management table registered in the SRAM and the FAX soft switch setting. Since the registered contents are deleted, register the deleted contents again. Use Sim. 16 to cancel the U2 trouble. Replace the MFP PWB.
+Code;U2-23
+Description;SRAM memory individual data check sum error (MFP). MFP PWB SRAM memory individual data check sum error (communication management table, sender registration data, etc.)
+Causes;SRAM trouble. Control circuit malfunction due to noises. MFP PWB SRAM access circuit trouble.
+Remedy;Turn OFF / ON the power to initialize the data related to the content of check sum error. Since the registered content is deleted, register the deleted content again. All the SRAM contents are set to 0 (default) in production. In this case, it is not treated as the U2-22 trouble, but the SRAM contents are initialized by the software. (The default values of the software are set.) Use Sim. 16 to cancel the U2 trouble. Replace the MFP PWB.
+Code;U2-24
+Description;SRAM memory user authentication counter check sum error
+Causes;SRAM trouble. Control circuit malfunction due to noises. ICU PWB SRAM access circuit trouble.
+Remedy;Recheck the check sum of the user counter with Sim.16 and save the normal sum value.
+Code;U2-25
+Description;Flash memory user authentication counter check sum error
+Causes;Flash trouble. Control circuit malfunction due to noises. ICU PWB Flash access circuit malfunction.
+Remedy;Recalculate the user counter check sum with Sim.16, and save the normal sum value.
+Code;U2-30
+Description;Production number data discrepancy (ICU-PCU). The production number saved in the PCU differs from that saved in the ICU
+Causes;When replacing the PCU/ ICU PWB, the EEPROM is not changed.
+Remedy;Check that the EEPROM is properly set. When replacing the PWB, check that the EEPROM before replacement is inserted to the PWB after replacement.
+Code;U2-50
+Description;HD section individual data check sum error (MFP). W-ICU PWB HD individual data check sum error. (One touch, group, program, etc.)
+Causes;Read /write trouble from/ to HD. Control circuit malfunction due to line noise. W-ICU PWB HD access circuit trouble.
+Remedy;Turn OFF / ON the power to initialize the data related to the content of check sum error. Since the registered content is deleted, register the deleted content again. Use Sim. 16 to cancel the U2 trouble. Replace the HD. Replace the MFPC, W-ICU PWB.
+Code;U2-80
+Description;EEPROM read / write error (SCU detection)
+Causes;EEPROM trouble. Installation of non-initialized EEPROM. SCU PWB EEPROM access circuit trouble.
+Remedy;Check that the EEPROM is properly set. To keep the counter data and the adjustment values, use the simulation to save the counter data and the adjustment values. (When there is a printer option, execute Sim.22-1 to save the counter data and the adjustment values.) Replace the SCU PWB. Use Sim. 16 to cancel the trouble.
+Code;U2-81
+Description;EEPROM check sum error (SCU detection)
+Causes;EEPROM trouble. Control circuit malfunction due to line noise. SCU PWB EEPROM access circuit trouble.
+Remedy;Check that the EEPROM is properly set. To keep the counter data and the adjustment values, use the simulation to save the counter data and the adjustment values. (When there is a printer option, execute Sim. 22-1 to save the counter data and the adjustment values.) Replace the SCN PWB. Use Sim. 16 to cancel the trouble.
+Code;U2-90
+Description;EEPROM read / write error (PCU detection)
+Causes;EEPROM trouble. Installation of non-initialized EEPROM. PCU PWB EEPROM access circuit trouble.
+Remedy;Check that the EEPROM is properly set. To keep the counter data and the adjustment values, use the simulation to save the counter data and the adjustment values. (When there is a printer option, execute Sim. 22-1 to save the counter data and the adjustment values.) Replace the PCU PWB. Use Sim. 16 to cancel the trouble.
+Code;U2-91
+Description;EEPROM check sum error (PCU detection)
+Causes;EEPROM trouble. Control circuit malfunction due to noises. PCU PWB EEPROM access circuit trouble.
+Remedy;Check that the EEPROM is properly set. To keep the counter data and the adjustment values, use the simulation to save the counter data and the adjustment values. (When there is a printer option, execute Sim. 22-1 to save the counter data and the adjustment values.) Replace the PCU PWB. Use Sim. 16 to cancel the trouble.
+Code;U5-00
+Description;SPF communication trouble. SCU-DSPF communication error. Communication line test error when turning on the power or after canceling the exclusive simulation.
+Causes;Connector and harness contact trouble or disconnection. Control PWB (SCU) trouble or DSPF PWB trouble. Malfunction due to noises.
+Remedy;Turn OFF /ON the power to cancel. Check the connector and the harness of the communication line. Replace the SCU PWB or replace the DSPF PWB.
+Code;U5-11
+Description;DSPF random pick motor trouble (DSPF detection). Random pick motor trouble (SPURUD is not changed within the specified time) is detected
+Causes;Random pick unit trouble
+Remedy;Check the STLD and the harness and the connector. Check the random pick-up motor and the related circuits (DSPFcnt, DSPF-Driver).
+Code;U5-16
+Description;SPF fan motor trouble. The lock signal is detected during rotation of the fan / The non-lock state is detected when the motor is not rotated in booting
+Causes;Fan motor trouble. Trouble in the harness related to the fan. Circuit trouble.
+Remedy;Use Sim. 2-3 to check the operation. Check the fan motor related circuits (DSPFcnt, DSPFDriver) and their harness and connector.
+Code;U5-30
+Description;SPF tray lift-up trouble. The lift-up trouble (STUD is not turned ON within the specified time) is detected 5 times continuously. When lifting again, a trouble occurs from the first time.
+Causes;STUD/ STLD trouble
+Remedy;Check the STUD/ STLD and their harness and the connector. Check the lift-up related circuit (DSPFcnt, DSPF-Driver). Check the lift-up unit.
+Code;U5-31
+Description;SPF tray lift-down trouble. The lift-down trouble is detected (STLD is not turned OFF within the specified time.)
+Causes;STUD/ STLD trouble
+Remedy;Check the STUD/ STLD and the harness and the connector. Check the lift-up related circuit (DSPFcnt, DSPF-Driver). Check the lift-up unit.
+Code;U6-09
+Description;Side LCC lift motor trouble. • The encoder input value is not changed in 0.13sec (first time) / 0.5sec (2nd or later) after rotation of the motor • The motor is rotated for 18sec or more • The encoder is changed after a certain time of stopping the motor (2 sec, 10 count or more)
+Causes;Sensor trouble. LCC control PWB trouble. Gear breakage. Lift motor trouble.
+Remedy;Use Sim. 4-2 and 4-3 to check the operations of the sensor and the lift motor. Use Sim. 15 to cancel the trouble.
+Code;U6-20
+Description;LCC communication trouble. Communication error with the LCC. Communication line test error after turning on the power or canceling the exclusive simulation. The model code discrepancy with the machine model.
+Causes;Connection trouble or disconnection of the connector and the harness. LCC control PWB trouble. Control PWB (PCU) trouble. Malfunction due to noises.
+Remedy;Turn OFF / ON the power to cancel the trouble. Check the connector and the harness in the communication line.
+Code;U6-21
+Description;LCC transport motor trouble. • The encoder input value is not changed in 0.06sec after turning on the motor. • The encoder input is changed in a certain time after turning off the motor. (The count reaches 100 when counting for 0.1sec after 5 sec.)
+Causes;Motor lock, motor rpm abnormality, an overcurrent to the motor. LCC control PWB trouble.
+Remedy;Use Sim. 4-3 to check the operation of the transport motor.
+Code;U6-22
+Description;LCC 24V power abnormality. DC 24V is not supplied to the LCC
+Causes;Connection trouble or disconnection of the connector and the harness. LCC control PWB trouble. Power source unit trouble.
+Remedy;Check the connector and the harness in the power source line. Check that the power unit and the LCC control PWB is of 24V.
+Code;U6-23
+Description;A3LCC tray lock detection trouble (Reverse winding). The LCC tray wire is wound in reverse
+Causes;Reverse winding SW-ON. The wire is wound in reverse. Reverse winding detection SW trouble. Connection trouble of the connector and the harness. LCC control PWB trouble.
+Remedy;Check the wire. Replace the reverse winding SW and the LCC control PWB. Check connection of the connector and the harness.
+Code;U6-24
+Description;A3LCC tray lock detection trouble. The LCC tray lock function does not operate normally
+Causes;Tray lock mechanism trouble. Tray lock sensor trouble. Connection trouble of the connector and the harness. LCC control PWB trouble.
+Remedy;Check the tray lock mechanism. Replace the tray lock sensor and the LCC control PWB. Check connection of the connector and the harness.
+Code;U6-28
+Description;LCT1 paper feed position abnormality. When the lift-up operation is started, the upper limit sensor is turned OFF before the pick-up SOL is turned ON. (Normally the upper limit sensor is turned OFF only after turning ON the pick-up SOL.)
+Causes;Sensor abnormality, connector and harness connection trouble, PWB trouble. The pick-up roller is kept in the lower position mechanically.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring.
+Code;U6-29
+Description;LCT1 lift-up trouble. When lifting up, the upper limit is not detected within the specified time (A4 LCC: 10 sec, A3 LCC: 8 sec)
+Causes;Upper limit sensor abnormality, tray lift-up motor lock, connector/harness connection trouble, PWB trouble
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring. After making the countermeasure for the trouble section, use Sim. 15 to cancel the trouble.
+Code;U6-33
+Description;LCT2 lift-down trouble. The lower limit position (full state) of the LCT2 tray is not detected within the specified time (A4: 10sec, A3: 8sec) from starting lowering.
+Causes;Remaining quantity sensor abnormality, LCT2 tray lift-up motor lock, connector/harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the remaining quantity sensor and the LCT2 tray lift-up motor, and check the wiring.
+Code;U6-38
+Description;LCT2 paper feed position abnormality. When the lift-up operation is started, the upper limit sensor is turned OFF before the pick-up SOL is turned ON. (Normally the upper limit sensor is turned OFF only after turning ON the pick-up SOL.)
+Causes;Sensor abnormality, connector and harness connection trouble, PWB trouble. The pick-up roller is kept in the lower position mechanically.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring.
+Code;U6-39
+Description;LCT2 lift-up trouble. When lifting up, the upper limit is not detected within the specified time (A4 LCC: 10 sec, A3 LCC: 8 sec)
+Causes;Upper limit sensor abnormality, tray lift-up motor lock, connector/harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring. After making the countermeasure for the trouble section, use Sim. 15 to cancel the trouble.
+Code;U6-43
+Description;LCT3 lift-down trouble. The lower limit position (full state) of the LCT3 tray is not detected within the specified time (A4: 10sec, A3: 8sec) from starting lowering
+Causes;Remaining quantity sensor abnormality, LCT3 tray liftup motor lock, connector / harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the remaining quantity sensor and the LCT3 tray lift-up motor, and check the wiring.
+Code;U6-48
+Description;LCT3 paper feed position abnormality. When the lift-up operation is started, the upper limit sensor is turned OFF before the pick-up SOL is turned ON. (Normally the upper limit sensor is turned OFF only after turning ON the pick-up SOL.)
+Causes;Sensor abnormality, connector and harness connection trouble, PWB trouble. The pick-up roller is kept in the lower position mechanically.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring.
+Code;U6-49
+Description;LCT3 lift-up trouble. When lifting up, the upper limit is not detected within the specified time (A4 LCC: 10 sec, A3 LCC: 8 sec)
+Causes;Upper limit sensor abnormality, tray lift-up motor lock, connector/harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring. After making the countermeasure for the trouble section, use Sim. 15 to cancel the trouble.
+Code;U6-51
+Description;LCC incompatible trouble. Error of model code mismatch between the LCC and the main unit
+Causes;Mismatch between the LCC and the main unit
+Remedy;Check the combination of the LCC and the main unit. When connecting to the main unit, the LCC firmware must be changed to the firmware corresponding to the machine.
+Code;U6-63
+Description;Manual feed tray lift-down trouble. The lower limit position is not detected within the specified time (10 sec) from starting the lowering operation of the manual feed tray
+Causes;Lower position sensor abnormality, manual tray lift-up motor lock, connector/harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the lower limit sensor, and the manual feed tray lift-up motor, and check the wiring. After making the countermeasure for the trouble section, use Sim. 15 to cancel the trouble.
+Code;U6-68
+Description;Manual feed tray paper feed position abnormality. When the lift-up operation is started, the upper limit sensor is turned OFF before the pick-up SOL is turned ON. (Normally the upper limit sensor is turned OFF only after turning ON the pick-up SOL.)
+Causes;Sensor abnormality, connector and harness connection trouble, PWB trouble. The pick-up roller is kept in the lower position mechanically.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring.
+Code;U6-69
+Description;Manual feed tray lift-up trouble. When lifting up, the upper limit is not detected within the specified time (10 sec)
+Causes;Upper limit sensor abnormality, tray lift-up motor lock, connector/harness connection trouble, PWB trouble.
+Remedy;Use Sim. 4-2 and Sim. 4-3 to check the operation of the upper limit sensor and the lift-up operation, and check the wiring. After making the countermeasure for the trouble section, use Sim. 15 to cancel the trouble.
+Code;U7-50
+Description;Serial vendor communication trouble. Communication error between the ICU and the serial vendor Section ICU
+Causes;Cable disconnection or breakage.
+Remedy;Check connection between the ICU and the serial vendor, and turn OFF /ON the power of the machine and the vendor.
+Code;U7-51
+Description;Serial vendor operation trouble. Serial vendor breakdown
+Causes;Serial vendor breakdown3
+Remedy;"""Err.XX"" (XX: Section code) is displayed on the vendor operation panel. The error generating condition and the cancel method differ depending on the detail code. Refer to the operation manual of the vendor."
+Code;U9-00
+Description;Communication trouble between the controller and the operation. Communication establishment error / Framing / Parity / Protocol error
+Causes;Slave unit PWB connector connection trouble. Harness trouble between the slave unit PWB and the ICU PWB. Connector pin breakage of the mother board of the slave unit PWB.
+Remedy;Check connection of the connector and the harness between the slave unit PWB and the ICU PWB. Check the earth wire of the machine.
+Code;UC-02
+Description;CPT-ASIC abnormality. Access error to the CPT-ASIC (The ASIC does not operate normally)
+Causes;B to B connector connection abnormality. SCU PWB abnormality. CPT-ASIC abnormality.
+Remedy;Check the B to B connector. Replace the SCU PWB, or replace the option PWB.
+Code;UC-12
+Description;CPT-ASIC abnormality (DSPF detection)
+Causes;B to B connector connection abnormality. DSPF PWB abnormality. CPT-ASIC abnormality
+Remedy;Check the B to B connector. Replace the DSPF PWB, or replace the option PWB.
+Code;UC-20
+Description;Anti copy module trouble. Communication error between the SCU and the DOCC. Communication test error when turning on the power or after canceling the exclusive simulation.
+Causes;Contact trouble or disconnection of the connector and the harness. Control PWB (SCU) trouble or DOCC PWB trouble. Malfunction due to noises.
+Remedy;Turn OFF /ON the power to cancel. Check the connector and the harness of the communication line. Replace the SCU PWB or replace the DOCC PWB.
+Code;UC-21
+Description;The DOCC (Document control) PWB is not detected
+Causes;The DOCC (Document control) PWB is not installed in the DSK model. Connection detection signal trouble.
+Remedy;Check the connection detection signal of the DOCC (Document control) PWB, or replace the PWB.
+Code;UC-22
+Description;CPT PWB is not detected. The CPT PWB is not detected under the color kit enable state
+Causes;The CPT PWB is not installed under the color kit enable state, or the connection detection signal trouble.
+Remedy;Check the connection detection signal of the CPT PWB, or replace the PWB.
+Code;UC-30
+Description;Anti copy module trouble (DSPF detection)
+Causes;B to B connector connection abnormality. DSPF PWB abnormality, DOCC-ASIC abnormality.
+Remedy;Check the B to B connector. Replace the DSPF PWB, or replace the option PWB.
+Code;UC-31
+Description;The DOCC (Document control) PWB is not detected. (DPSF PWB side). DOCC (document control) PWB cannot be detected in the DSK model
+Causes;DOCC (document control) PWB is not installed in the DSK model, or the connection detection signal trouble.
+Remedy;Check the connection detection signal of the DOCC (document control) PWB, or replace the PWB.
+Code;UC-32
+Description;The CPT PWB is not detected. (DSPF PWB side). The CPT PWB is not detected under the color kit enable state
+Causes;The CPT PWB is not installed under the color kit enable state, or the connection detection signal trouble.
+Remedy;Check the connection detection signal of the CPT PWB, or replace the PWB.

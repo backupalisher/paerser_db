@@ -1,0 +1,288 @@
+Code;201
+Description;Polygon motor error . The polygon motor starts operating. - The lock signal is not detected within 20 seconds. . The polygon motor starts operating. - The lock signal is detected within 20 seconds. - After a 3-second waiting time, no lock signal is detected within 20 seconds. . The polygon motor strops operating. - The lock signal is not detected within 20 seconds. . The polygon motor is operating. - The lock signal remains undetected for 0.5 seconds.
+Causes;• Defective polygon motor • Defective harness
+Code;220
+Description;"1st beam synchronization error A polygon motor lock is detected; the LD door is closed; the LD remains on. - The LD error (1st beam synchronization error) continues for 0.5 seconds."
+Causes;• Disconnected synchronization detector board • Defective LD unit • Defective BCU
+Code;221
+Description;"2nd beam synchronization error A polygon motor lock is detected; the LD door is closed; the LD remains on. - The LD error (2nd beam synchronization error) continues for 0.5 seconds."
+Causes;• Disconnected synchronization detector board • Defective LD unit • Defective BCU
+Code;230
+Description;FGATE on error A transfer belt mark is detected. - No FGATE on signal is detected within 175+50 milliseconds.
+Causes;• Defective BCU
+Code;231
+Description;FGATE off error A FGATE assert signal is detected. - The FGATE negate signal is not detected within 30 seconds.
+Causes;• Defective BCU
+Code;241
+Description;LD error An LD error continues for 0.5 seconds. (After an LD error is detected, an LD error release is written to the GAVD chip during monitoring.)
+Causes;• Defective LD unit
+Code;280
+Description;Image transfer belt mark detection error . An imaging process starts. - No belt mark is detected in 1 revolution. . A color imaging process starts. - A mono color image is transferred. - FGATE becomes active. - No belt mark is detected in 1 revolution. . Thick paper or OHP film is used. - The belt slows down. - No belt mark is detected in 1 revolution.
+Causes;• Defective BCU • Poor electrical connection • Noise
+Code;281
+Description;GAPCI communication error Data is transferred. - The CPU does not detect the communication ACK signal from GAPCI.
+Causes;• Defective BCU
+Code;282
+Description;GAVD communication error Data is transferred. - The CPU does not detect the communication ACK signal from GAVD.
+Causes;• Defective BCU
+Code;300
+Description;"Charge corona unit electrical leak The charge corona unit keeps outputting; the unit is operating at the minimum PWM duty value. - 4.5 Volt (or more) is returning for 60 milliseconds."
+Causes;• Short circuit in the charge corona unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;301
+Description;Charge corona unit disconnection The charge corona unit keeps outputting. - The unit is operating at the maximum PWM duty value for 60 milliseconds.
+Causes;• Defective PCU installation • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;302
+Description;Charge grid electrical leak The charge grid keeps outputting. - The returning voltage exceeds the target by 0.5 Volt or more for 120 milliseconds.
+Causes;• Short circuit in the charge grid • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;305
+Description;Charge corona unit cleaner error . Cleaning starts. - The lock signal is not detected within 30 seconds. . Cleaning starts. - The cleaner turns. - The lock signal is detected within 6 seconds. . The lock signal is detected while the unit is moving away from the HP. - The next lock signal is detected within 6 seconds after the unit has turned toward the HP.
+Causes;• Defective cleaner
+Code;350
+Description;Development error 1 (K/Y) A development process starts. - The returning voltage exceeds the target by 0.5 Volt or more for 60 milliseconds.
+Causes;• Short circuit in the development unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;351
+Description;Development error 2 (C/M) A development process starts. - The returning voltage exceeds the target by 0.5 Volt or more for 60 milliseconds.
+Causes;• Short circuit in the development unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;352
+Description;Development motor error . The development motor starts or changes speed. - The motor does not detect a 1-second lock signal within 3 seconds. . The development motor starts. - The lock signal is detected during normal operation. - The lock signal is interrupted for 1 second or more.
+Causes;• Defective development motor
+Code;400
+Description;1st transfer 400 D (image transfer) electric leakage (+) Image transfer starts. - The process operates at the minimum PWM duty value. The returned current exceeds 1.8 V for 180 milliseconds.
+Causes;• Short circuit in the image transfer unit • Defective image transfer belt • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;401
+Description;1st transfer (image transfer) electric leakage (.) Image transfer starts. - The negative (.) output is at the maximum PWM duty value for 60 milliseconds.
+Causes;• Short circuit in the image transfer belt • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;410
+Description;2nd transfer (paper transfer) electric leakage (+) Paper transfer starts. - The positive (+) output is at the minimum PWM duty value. - The returning voltage stays at 2.7 V or more for 60 milliseconds.
+Causes;• Short circuit in the paper transfer unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;411
+Description;2nd transfer (paper transfer) electric leakage (.) Paper transfer starts. - The negative (.) output is at the minimum PWM duty value. - The returning voltage stays at 4.5 V or more for 60 milliseconds.
+Causes;• Short circuit in the paper transfer unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;412
+Description;2nd transfer (paper transfer) disconnection (+) Paper transfer starts. - The positive (+) output is at the maximum PWM duty value for 60 milliseconds.
+Causes;• Right cover not closed • Defective transfer roller contact mechanism • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;413
+Description;2nd transfer (paper transfer) disconnection (.) Paper transfer starts. - The negative (.) output is at the maximum PWM duty value for 60 milliseconds.
+Causes;• Right cover not closed • Defective transfer roller contact mechanism • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;420
+Description;Discharge error (fusing bias) The discharge circuit is operating at the maximum PWM duty value for 60 milliseconds.
+Causes;• Discharge pin short circuit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board) • Scratched fusing belt
+Code;421
+Description;Discharge plate error During discharging, the leakage detection signal is low for 60 milliseconds.
+Causes;• Short circuit in the discharge plate • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;430
+Description;Transfer belt cleaning error Cleaning is operating at the maximum PWM duty value for 60 milliseconds.
+Causes;• Short circuit in the transfer belt cleaning unit • Defective high voltage supply board • Defective harness (BCU - high voltage supply board)
+Code;440
+Description;Main motor error . The main motor starts or changes speed. - The lock signal does not continue for 1 second within 3 seconds. . The main motor starts. - The lock signal is detected and operation proceeds normally. - The lock signal is interrupted for 1 second.
+Causes;• Defective main motor
+Code;460
+Description;Temperature sensor error The output is 4.5 V (or higher) or 0.3 V (or lower) for 12 seconds.
+Causes;• Short circuit in the temperature sensor • Defective circuit • Defective connector
+Code;461
+Description;Humidity sensor error The output is 4.5 V (or higher) or 0.3 V (or lower) for 12 seconds.
+Causes;• Short circuit in the humidity sensor • Defective circuit • Defective connector
+Code;480
+Description;ID sensor error The ID sensor is being calibrated (process control, step 1) - While the LED is off, the output voltage is 0.5 V or lower.
+Causes;• Defective ID sensor • Defective connector
+Code;481
+Description;"Transfer belt mark detection error The main motor is operating; and the lock signal is detected. - The belt mark sensor signal does not change for 120 milliseconds."
+Causes;• Defective main motor • Image transfer belt out of position • Belt mark blurred or absent
+Code;502
+Description;2nd tray error . The tray lift motor turns on. - The top of the paper stack is not detected for 13 seconds. . The tray is set. - The top of the paper stack is detected. - The bottom plate is lowered. - The stack detection is not cleared within 5 seconds. - These steps are repeated 4 times.
+Causes;• Defective paper height sensor • Defective tray lift motor
+Code;503
+Description;3rd tray error . The tray lift motor turns on. - The top of the paper stack is not detected for 13 seconds. . The tray is set. - The top of the paper stack is detected. - The bottom plate is lowered. - The stack detection is not cleared within 5 seconds. - These steps are repeated 4 times.
+Causes;• Defective paper height sensor • Defective tray lift motor
+Code;515
+Description;Duplex unit communication error • A connection error occurs. • The signal is sent from the printer to the duplex unit every 3 seconds while paper is not transported by the unit. However, the duplex unit does not respond within 5 seconds.
+Causes;• Defective duplex unit board • Defective BCU • Defective IOB • Defective connection (Main unit - Duplex unit)
+Code;520
+Description;Paper feed motor error . The motor starts or changes speed. - The lock signal does not continue for 1 second within a 3-second interval. . The motor starts. - The lock signal is detected and operation proceeds normally. - The lock signal is interrupted for 1 second.
+Causes;• Defective paper feed motor
+Code;541
+Description;Thermistor disconnection (heating roller) The fusing unit starts warm up to the print ready temperature. - The temperature does not reach 7‹C for 10 seconds.
+Causes;• Defective thermistor • Thermistor loose connection • Defective connector
+Code;542
+Description;Fusing warm-up timeout (heating roller) The main switch is turned on or a cover is closed. - The heating roller does not reach the warm-up temperature within 50 seconds.
+Causes;• Defective lamp (loose connection, thermostat failure, PSU, thermostat) • Incorrect detection (loose thermistor connection, fusing - drawer loose connection)
+Code;543
+Description;Overheat error (heating roller) The heating roller thermistor detects 220°C for 5 seconds.
+Causes;• Short circuit • Defective BCU board • Defective PSU
+Code;544
+Description;Low temperature error (heating roller) During standby or operation, the heating roller thermistor detects 100 °C or less for 5 seconds.
+Causes;• Defective lamp (loose connection, thermostat failure, PSU, thermostat) • Incorrect detection (loose thermistor connection, fusing - drawer loose connection)
+Code;545
+Description;Full power error (heating roller) Fusing unit warm-up is complete. - The heating roller stops turning. - The heating roller lamp keeps outputting the maximum power for 30 seconds.
+Causes;• Thermistor loose connection • Fusing - drawer loose connection
+Code;546
+Description;Unstable temperature (heating roller) • The heating roller thermistor detects unstable temperature increases or decreases within 60 seconds.
+Causes;• Thermistor loose connection • Fusing - drawer loose connection
+Code;551
+Description;Thermistor disconnection (pressure roller) The pressure roller thermistor detects7°C or lower for 30 seconds.
+Causes;• Thermistor loose connection • Defective harness • Defective connector
+Code;552
+Description;Warm-up time over (pressure roller) The main switch is turned on or a cover is closed. - The fusing pressure roller does not reach the ready temperature within 200 seconds.
+Causes;• Defective lamp (loose connection, thermostat failure, PSU, thermostat) • Incorrect detection (thermistor loose connection, fusing - drawer loose connection)
+Code;553
+Description;Overheat error (pressure roller) The pressure roller thermistor detects 220°C for 5 seconds.
+Causes;• Loose connection • Defective BCU board • Defective PSU
+Code;554
+Description;Low temperature error (pressure roller) During standby or operation, the pressure roller thermistor detects 80°C or less for 5 seconds.
+Causes;• Defective lamp (loose connection, thermostat failure, PSU, thermostat) • Incorrect detection (thermistor loose connection, fusing - drawer loose connection)
+Code;555
+Description;Full power error (pressure roller) Fusing unit warm-up is complete.- The fusing pressure roller stops turning. - The pressure roller lamp keeps outputting the maximum power for 200 seconds.
+Causes;• Thermistor loose connection • Fusing - drawer loose connection
+Code;556
+Description;Unstable temperature (pressure roller) • The pressure roller thermistor detects unstable temperature increases or decreases within 60 seconds.
+Causes;• Thermistor loose connection • Fusing - drawer loose connection
+Code;560
+Description;"Zero cross error The main switch is turned on; the fusing relay turns on. - 50 Hz or 60 Hz is not detected within 5 seconds."
+Causes;• Defective relay circuit • Defective PSU • Incorrect power supply
+Code;640
+Description;BCU – Controller communication error (no response)
+Causes;Turn the main switch off and on. Replace the controller. Replace the BCU.
+Code;641
+Description;BCU – Controller communication error (no response)
+Causes;Turn the main switch off and on. Check the connection between BCU and controller. Replace the controller. Replace the BCU.
+Code;670
+Description;No response from BCU at power on
+Causes;• Loose connection • Defective controller • Defective BCU
+Code;680
+Description;EEPROM error The main switch is turned on.- EEPROM is not connected.
+Causes;• Incorrect EEPROM connection
+Code;687
+Description;PER command error . Some image data is transferred. - The controller does not report the necessary memory address. . The PES command is issued. - The controller does not issue the necessary memory report (PER) command within 6 seconds.
+Causes;• Poor connection between BCU and controller • Defective BCU • Defective controller
+Code;730
+Description;Four-bin mail box communication error • A connection error occurs. • The UART reports a communication error. • In other cases than paper transport, after an every-3- second command is sent, the mail box does not respond within 5 seconds.
+Causes;• Defective mail box control board • Defective BCU • Defective IOB • Incorrect installation
+Code;740
+Description;Finisher communication error • A connection error occurs. • The UART reports a communication error. • In other cases than paper transport, after an every-3- second command is sent, the finisher does not respond within 5 seconds.
+Causes;• Defective finisher control board • Defective board • Defective BCU • Defective IOB • Incorrect installation
+Code;741
+Description;Finisher jogger motor error The jogger home position sensor (on/off) is not detected in a given time.
+Causes;• Defective jogger motor • Defective jogger home position sensor
+Code;742
+Description;Finisher stapler unit error • The stapler does not return to home position within 1 second.
+Causes;• Defective stapler unit
+Code;743
+Description;Finisher output tray motor error The stack height and lever sensors do not detect paper.
+Causes;
+Code;744
+Description;Finisher output tray motor lock The tray is locked for 10 seconds.
+Causes;• Defective motor
+Code;745
+Description;Finisher paper detection error The stack height and lever sensors do not correctly detect paper.
+Causes;
+Code;750
+Description;1st paper tray unit communication error • A connection error occurs. • The UART reports a communication error. • In other cases than paper transport, after an every-3- second command is sent, the paper tray unit does not respond within 5 seconds.
+Causes;• Defective paper tray unit control board • Defective BCU • Defective IOB • Defective connection (Paper tray - main unit)
+Code;751
+Description;2nd paper tray unit communication error • After the 1st paper tray has recognized the 2nd paper tray, the trays cannot communicate with each other. • After the 1st paper tray has recognized the 2nd paper tray, an ATM (CPU reset) is sent from the 2nd paper tray.
+Causes;• Defective paper tray unit control board • Defective connection (1st - 2nd paper tray
+Code;800
+Description;Video output error (K)
+Causes;Data transfer starts to the BCU, but the transfer completion command does not return to the controller within the required time. Defective controller board
+Code;801
+Description;Video output error (Y)
+Causes;Data transfer starts to the BCU, but the transfer completion command does not return to the controller within the required time. Defective controller board
+Code;802
+Description;Video output error (M)
+Causes;Data transfer starts to the BCU, but the transfer completion command does not return to the controller within the required time. Defective controller board
+Code;803
+Description;Video output error (C)
+Causes;Data transfer starts to the BCU, but the transfer completion command does not return to the controller within the required time. Defective controller board
+Code;818
+Description;Watchdog error
+Causes;Turn the main switch off and on. Replace the controller. See NOTE at the end of this table
+Code;819
+Description;Fatal error
+Causes;Turn the main switch off and on. Check and/or replace the RAM DIMM. Check and/or replace the ROM DIMM. Replace the controller. See NOTE at the end of this table
+Code;820
+Description;Self-diagnostics error: CPU [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Reinstall the controller system firmware. Replace the controller.
+Code;821
+Description;Self-diagnostics error: ASIC
+Causes;Turn the main switch off and on. Reinstall the controller system firmware. Replace the RAM DIMM. Replace the controller board.
+Code;822
+Description;Self-diagnostics error: HDD (Hard Disk Drive) [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Check that the HDD is properly connected to the controller. Replace the HDD. Replace the controller.
+Code;823
+Description;Self-diagnostics error: NIB [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Replace the controller.
+Code;824
+Description;Self-diagnostics error: Standard NVRAM
+Causes;Turn the main switch off and on. Check that the standard NVRAM is firmly inserted into the socket. Replace the NVRAM. Replace the controller.
+Code;827
+Description;Self-diagnostics error: Standard SRAM DIMM [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Replace the SRAM DIMM. Replace the controller.
+Code;828
+Description;Self-diagnostics error : ROM [XXXX]: Detailed error code
+Causes;Turn the main switch on and off. Replace the ROM DIMM Replace the controller.
+Code;829
+Description;Self-diagnostics error: optional RAM [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Replace the RAM DIMM. Replace the controller board.
+Code;835
+Description;Self-diagnostics error: Centronics interface [XXXX]: Detailed error code
+Causes;Turn the main switch off and on. Check the connection between the Centronics connector and loop-back connector. Reconnect the loop-back connector. Replace the controller.
+Code;836
+Description;Self-diagnostics error: Font ROM (standard)
+Causes;Turn the main switch off and on. Replace the standard ROM-DIMM.
+Code;838
+Description;Self-diagnostics error: Font ROM (clock generator)
+Causes;Replace the controller.
+Code;850
+Description;Network interface error
+Causes;Turn the main switch off and on. Replace the controller.
+Code;851
+Description;IEEE1394 interface error
+Causes;Turn the main switch off and on. Replace the IEEE1394 interface board. Replace the controller.
+Code;853
+Description;IEEE802.11b error - card not detected (power-on)
+Causes;Check the wireless LAN card connection. Replace the wireless LAN card.
+Code;854
+Description;IEEE802.11b error - card not detected (during operation)
+Causes;Check the wireless LAN card connection. Replace the wireless LAN card.
+Code;855
+Description;IEEE802.11b error
+Causes;Check the wireless LAN card connection. Replace the wireless LAN card.
+Code;856
+Description;IEEE802.11b interface board error
+Causes;Check the wireless LAN interface board connection. Replace the interface board.
+Code;857
+Description;USB interface error detected.
+Causes;Check the USB connections, make sure that they are securely connected. Replace the controller board.
+Code;860
+Description;HDD: Error detected at power up (partition error, unformatted disk, incorrect disk type)
+Causes;Turn the main switch off and on. Reformat the HDD (SP 5-832-1 [HDD Init]). Replace the HDD.
+Code;861
+Description;HDD: Reboot error
+Causes;Turn the main switch off and on. Check the connection between HDD and controller. Check and replace the cables. Replace the HDD. Replace the controller.
+Code;862
+Description;Defective sector management maximum
+Causes;Replace the HDD.
+Code;863
+Description;HDD: Read error
+Causes;Turn the main switch off and on. Replace the HDD. Replace the controller.
+Code;864
+Description;HDD: CRC error
+Causes;Turn the main switch off and on. Replace the HDD.
+Code;865
+Description;HDD: Access error
+Causes;Turn the main switch off and on. Replace the HDD.
+Code;900
+Description;Electrical counter error
+Causes;Turn the main switch off and on. Check the connection between NVRAM and controller. Replace the NVRAM. Replace the controller.
+Code;990
+Description;Software performance error
+Causes;Turn the main switch off and on. Reinstall the controller and/or engine main firmware. See NOTE at the end of this table.
+Code;991
+Description;Unexpected software error
+Causes;The machine does not stop and the SC code is not displayed. The machine automatically recovers. However, the SC code is logged in the engine summary sheet (SMC).
+Code;998
+Description;Application start error
+Causes;Turn the main switch off and on. Check that the RAM DIMM and ROM DIMM are properly connected. Reinstall the controller system firmware. Replace the controller.
+Code;999
+Description;Program installation error
+Causes;Controller DIP SW1 setting incorrect. Defective software on IC card. Controller software download error. Replace the controller.

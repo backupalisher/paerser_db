@@ -1,0 +1,325 @@
+Code;-01
+Display;SDRAM ERROR
+Description;PU board SRAM error
+Causes;Does error reoccur?
+Remedy;Turn on the printer again. Replace the PU board (PRF).
+Code;-02
+Display;XXXXXXXXXXXXXXXX CRC CHECK NG
+Description;A PU download data CRC check error.
+Causes;After PU data (PU firmware, custom media data and LED head adjustment data) downloading, a CRC check error was detected.
+Remedy;Turn on the printer again and redownload the data (during usual printer operation, the downloading is not performed and the error does not occur).
+Code;-03
+Display;LOADER VERSION XX XX
+Description;PU board Flash ROM hash check error
+Causes;Does error reoccur?
+Remedy;Turn on the printer again. Replace the PU board (PRF).
+Code;-04
+Display;WDT ERROR
+Description;PU firmware went haywire.
+Causes;Does error reoccur?
+Remedy;Turn on the printer again. Replace the PU board (PRF).
+Code;-05
+Display;COMMUNICATION ERROR
+Description;An error in a PUCU interface.
+Causes;Is the CU assy installed properly? Does the printer recover from the error by replacing the SP1 /TBH board.
+Remedy;Reinstall the assy properly. Replace the TBR board. Replace the PU board (PRF).
+Code;001
+Display;Service call 001:Error(C5900)
+Description;Machine Check Exception Hardware fault detected. (Board defectiveness or Shortage of power supply volume)
+Causes;
+Remedy;Replace TBH PCB.
+Code;002 ... 007
+Display;Power off/on 002:Error ~ 005:Error 006:Error 007:Error
+Description;CPU Exception
+Causes;Is the error issued again?
+Remedy;If RAM DIMM is installed, remove it, and turn the power off and on again. Replace the TBR PCB. Install the RAM DIMM again. Replace the RAM DIMM.
+Code;020
+Display;Service 020:Error
+Description;CU ROM Hash Check Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace TBR PCB.
+Code;025
+Display;Service call 025:Error
+Description;CU Font ROM Hash Check Error
+Causes;A font ROM hash check error was detected. (On printers for domestic market only)
+Remedy;Power OFF/ON Replace TBR PCB.
+Code;030
+Display;Service call 030:Error
+Description;CU RAM Check Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace TBR PCB.
+Code;031
+Display;Service call 031:Error
+Description;CU Optional RAM Check Error
+Causes;Is RAM DIMM set properly? Is error recovered by replacing RAM DIMM?
+Remedy;Reset RAM DIMM. Replace RAM DIMM. Replace TBR PCB.
+Code;036
+Display;Service call 036:Error(C5900)
+Description;RAM Spec Error Unsupported DIMM specification of the CU RAM
+Causes;Is a genuine RAM DIMM in use? Is the RAM DIMM installed properly? Is the fault recovered when the RAM DIMM is replaced?
+Remedy;Use genuine RAM DIMM. Reset RAM DIMM. Replace RAM DIMM. Replace TBR PCB
+Code;040
+Display;Service call 040:Error
+Description;CU EEPROM Error
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace TBR PCB
+Code;041
+Display;Service call 041:Error
+Description;CU Flash Error Flash ROM Error on the CU board.
+Causes;Does error display reappear?
+Remedy;Power OFF/ON Replace TBR PCB
+Code;042 ... 045
+Display;Service call 042:Error ~ 043:Error 045:Error
+Description;Flash File System Error
+Causes;Access to the Flash ROM directly mounted on the CU PCB failed.
+Remedy;"Flash File System Error Access to the Flash ROM directly mounted on the CU PCB failed. Conduct forced initialization of the Flash (Notice that NIC-F/ W will also be erased. It needs to be written with the Maintenance Utility after the initialization.) Execute FLASH FORMAT of MAINTENANCE MENU of the System Maintenance Menu. When ""FLASH FORMAT"" is displayed, release the key and wait till ""ONLINE"" (approx. 2 min.). If the symptom does not change, replace the TBR PCB."
+Code;051
+Display;Service call 051:Error(C5900)
+Description;CU Fan Error Abnormal CPU cooling fan on CU board.
+Causes;Is CU Fan connector set properly? Is error recovered by replacing fan?
+Remedy;Connect properly. Replace fan. Replace TBR PCB
+Code;052
+Display;Service call 052:Error(C5900)
+Description;DMA Abort Error detected in Image processor.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON. Replace TBR PCB.
+Code;070
+Display;Power off/on 070:Error(C5900)
+Description;PSE firmware fault detected.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON. Replace TBR PCB.
+Code;072
+Display;Power off/on 072:Error xx
+Description;Engine I/F Error I/F error between PU-CU.
+Causes;Is CU assembly set properly? Is error recovered by replacing SP1 /TBH board?
+Remedy;Set properly. Replace SPI PCB. Replace PU PCB (PRF)
+Code;073
+Display;Power off/on 073:Error xxxxxxxx
+Description;Video Error. A trouble was detected during image data development. (Illegal data received)
+Causes;[On the C5800] Is the CU Assy installed properly? Is the error issued again? [On the C5900] Is the CU Assy installed properly? [Common]
+Remedy;Redo the installation properly.Change the PC for another of higher grade, or execute print again after reducing the resolution. Replace the SP1 PCB. Redo the installation properly. Replace the TBR PCB. Reinstall or replace the optional RAM DIMM. Replace the interface cable.Redo the installation of the PC printer driver.
+Code;074, 075
+Display;Power off/on 074:Error xxxxxxxx 075:Error xxxxxxxx
+Description;Video Error Fault detected when image data is extended.
+Causes;Is CU assembly set properly?
+Remedy;Set properly. Replace SP1/TBH PCB
+Code;081
+Display;Service call 081: ERROR
+Description;Parameterconsistency check error
+Causes;EEPROM or FLASH has become incapable of reading or writing.
+Remedy;Replace the CU board if the problem remains after cycling the power.
+Code;104
+Display;Service call 104:Error
+Description;Engine EEPROM setting check is OK when power ON. Then detect read/ write error.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU PCB(PRF)
+Code;105
+Display;Service call 105:Error
+Description;An error detected by checking, at printer's powerom, EEPROM installation.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU PCB (PRF)
+Code;106
+Display;Service call 106:Error
+Description;Abnormal engine control logic.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace PU PCB (PRF)
+Code;111
+Display;Service call 111:Error
+Description;Detected illegal Duplex Unit.
+Causes;Is Duplex Unit of C5300/C5100 installed?
+Remedy;Install Duplex Unit of C5400/C5200.
+Code;112
+Display;Service call 112:Error
+Description;Detected illegal 2nd Tray.
+Causes;Is 2nd Tray of C5300/C5100 installed?
+Remedy;Install 2nd Tray of C5400/ C5200.
+Code;120
+Display;Service call 120: ERROR
+Description;PU unit FAN motor error
+Causes;1) Is the FAN in the PU unit working? 2) Does the same error occur after replacement of the FAN motor?
+Remedy;Replace the FAN motor. Replace the PU board (PRF). Replace the PU board (PRF).
+Code;121
+Display;Service call 121:Error
+Description;High-voltage power supply I/F error.
+Causes;Is cable between PU board and high-voltage power unit connected properly? Is there no improperly connections?
+Remedy;Connect properly. Check improper connections for highvoltage. Replace high-voltage power supply.
+Code;122
+Display;Service call 122:Error
+Description;Low-voltage power supply fan error. Low-voltage power supply temperature error.
+Causes;Is fan in low-voltage power supply unit operating? Is fan connector connected properly?
+Remedy;Check connections for connector of fan. Replace low-voltage power supply. Replace fan motor. Replace low-voltage power supply.
+Code;123
+Display;Service call 123:Error
+Description;Abnormal environment humidty /Not connected humidity sensor.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace the operator panel PCB (PRP)
+Code;124
+Display;Service call 124:Error
+Description;Abnormal environment temperature.
+Causes;Does error reoccur?
+Remedy;Power OFF/ON Replace the operator panel PCB(PRF)
+Code;126
+Display;Service call 126:Error
+Description;Condensation in the printer was detected.
+Causes;Condensation iss likely to occur in printers carried from the outside. Turn on the printer again after it is exposed to room temperature for two hours to half a day. Does the error reoccur?
+Remedy;Turn on the printer again after it is left alone. Replace the operator panel PCB (PRP)
+Code;127
+Display;Service call 127:Error
+Description;Error detected at the fuser unit cooling fan.
+Causes;Is fan connector connected properly? Does error reoccur?
+Remedy;Connect properly again. Replace fan motor Replace PU PCB (PRF)
+Code;131 ... 134
+Display;Service call 131:Error ~ 134:Error
+Description;LED head fault detected. (131 = Y, 132 = M, 133 = C, 134 = K)
+Causes;Is LED head properly set? Is the LED head fuse blown out? Does error reoccur?
+Remedy;Install the LED head unit properly. Check the LED head fuse. Change the fuse. Turn on the power again. Replace the LED head unit.
+Code;140 ... 142
+Display;Service call 140:Error ~ 142:Error
+Description;Error detected at ID position of Up/ Down(140= Y, 141 = M, 142 = C)
+Causes;Is ID unit set properly? Does error reoccur?
+Remedy;Reset ID unit. Turn power ON again. Replace ID Up/Down sensor.
+Code;150 ... 153
+Display;Service call 150:Error ~ 153:Error
+Description;ID unit fuse cannot be disconnected. (150 = Y, 151 = M, 152 = C, 153 = K)
+Causes;Is ID unit setting proper? Does error reoccur? Is error recovered by replacing PRT board?
+Remedy;Reset ID unit. Turn power ON again. After check connections of cable between PRT board and PU PCB, replace PRT PCB. Replace PU PCB (PRF)
+Code;154
+Display;Service call 154:Error
+Description;Belt unit fuse cannot be disconnected.
+Causes;Is belt unit setting proper? Does error reoccur?
+Remedy;Reset belt unit. Turn power ON again. Check cable connections and, replace PU PCB(PRF)
+Code;155
+Display;Service call 155:Error
+Description;Fuser unit fuse cannot be disconnected.
+Causes;Is fuser unit set properly? Does error reoccur?
+Remedy;After cleaning for fuser connector, reset. Turn power ON again. Check cable connections and replace PU PCB (PRF)
+Code;160 ... 163
+Display;Service call 160:Error ~ 163:Error
+Description;Error detected by toner sensor. (160 = Y, 161 = M, 162 = C, 163 = K) It does not occure in factory default setting.
+Causes;Is toner cartridge setting? Is toner lock lever setting? Does error reoccur?
+Remedy;Set toner cartridge. Turn a lock lever of toner to a fixed position. Replace toner sensor or assembly.
+Code;167
+Display;Service call 167:Error
+Description;Thermistor Slope Error
+Causes;Is an error message indicated? Is the error issued again?
+Remedy;Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;168
+Display;Service call 168:Error
+Description;Compensation Thermistor Error
+Causes;Is an error message indicated? Is the error issued again?
+Remedy;Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;169
+Display;Service call 169:Error
+Description;Upper Side Thermistor Error
+Causes;Is an error message indicated? Is the error issued again?
+Remedy;Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;170, 171
+Display;Service call 170:Error 171:Error
+Description;Short circuit in fuser thermistor or open detected.
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;172, 173
+Display;Service call 172:Error 173:Error
+Description;Abnormal temperature detected by fuser thermistor (hightemp or low temp.)
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;174
+Display;Service call 174:Error
+Description;Short circuit in back up roller thermistor detected (at high temperature).
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;175
+Display;Service call 175:Error
+Description;Open of back up roller thermistor detected (at low temperature).
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;176, 177
+Display;Service call 176:Error 177:Error
+Description;Abnormal (high) temperature of back up roller thermistor detected.
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Replace fuser unit.
+Code;181, 182
+Display;Service call 181:Error 182:Error
+Description;Option unit I/F error. (181 = Duplex Unit, 182 = Option Tray)
+Causes;Does error reoccur?
+Remedy;Turn power ON again. After checking connection parts of connector, replace option unit.
+Code;190
+Display;Power off/on 190:Error
+Description;System Memory Overflow.
+Causes;Does error reoccur?
+Remedy;Turn power ON again. Add option RAM DIMM.
+Code;200 ... 202
+Display;Service call 200:Error ~ 202:Error
+Description;PU Firmware download Error.
+Causes;Error occurered while writing over the PU firmware.
+Remedy;Turn the printer OFF/ON, and retry to download the PU firmware again. (Usually, the procedure (PU firmware download) which isn’t done, so this is not occur.)
+Code;203 ... 214
+Display;Power off/on 203:Error 204:Error 207:Error 208:Error 214:Error F0C:Error F0D:Error(C5900) FFE:Error(C5900) FFF:Error
+Description;An error was detected of the CU program. (203~214 is not occure in usual operating.)
+Causes;Reinstall the CU board. Is the error message displayed again?
+Remedy;After turn power OFF, check connections between CU board and PU board. Then turn power ON again.
+Code;209
+Display;Power off/on 209:Download Error
+Description;Media Table download Error.
+Causes;Downloading Media Table to PU has failure.(Related to Custom Media Type)
+Remedy;Turn the printer OFF/ON, and retry to download the PU firmware, again. (Usually, the procedure isn’t done, so this is not occur.)
+Code;220
+Display;Service call 220:Error
+Description;False setting of a record medium detected by a print statistics.
+Causes;Take off the HDD or replaced?
+Remedy;Reset original HDD.
+Code;230
+Display;Service call 230:Error
+Description;RFID Reader not Installed
+Causes;RFID read device error Is the error issued again?
+Remedy;Check the connection of the RFID R/W board. Replace the RFID R/W board.
+Code;231
+Display;Service call 231:Error
+Description;RFID Reader I/F Error
+Causes;An interface error was detected with the RFID reader device. 01: communication error between the RFID reader and the engine PCB. 02: the transceiver circuit error of the RFID reader. 03: communication error between the RFID reader and the Tag chip. 04: the RFID Tag detection error(more than 4 chips).
+Remedy;01: Same as Error 230 02: Replace RFID R/W board. 03: Check the antenna cable connection. 04: Check to see if the quantity of RFID Tags is correct.
+Code;250
+Display;Service call 250:Error
+Description;Secure File Erasing Error
+Causes;An erasing error of an encrypted file was detected. Did the user agree to execute HDD ERASE?
+Remedy;Notify the user that Disk ERASE needs to be executed to erase the encrypted file, so that the HDD is restored to the original state as at the time of purchase. ADMIN MENU HDD ERASE
+Code;251
+Display;Service call 251:Error
+Description;Secure Disk Erasing Error
+Causes;An error was detected during Disk ERASE. Can the error indication be reproduced?
+Remedy;Turn the power off and on again. Replace the HDD.
+Code;901, 902
+Display;Power off/on 901:Error 902:Error
+Description;Short or open in belt thermistor detected.
+Causes;Is belt thermistor cable setting proper? Does error reoccur?
+Remedy;Connect cable set properly again. Turn power ON again. Replace belt thermistor.
+Code;903, 904
+Display;Power off/on 903:Error 904:Error
+Description;Abnormal temperature detected by belt thermistor (hightemp or low temp.)
+Causes;Is belt thermistor cable setting proper? Does error reoccur?
+Remedy;Connect cable set properly again. Turn power ON again. Replace belt thermistor and leave aside for 30 min. Then turn power ON again.
+Code;918
+Display;Service call 918:Error
+Description;Duplex FANO Alarm Detection
+Causes;FAN error inside the Duplex. Is the error issued again when the power is turned on again?
+Remedy;Check to see if the Duplex is properly installed. Check to see if the FAN is properly connected. Replace the FAN.
+Code;923
+Display;Power off/on 923:Error
+Description;Black Image Drum Lock Error
+Causes;The black image drum (K-ID) does not rotate properly. Is the error message issued again when the power is turned on?
+Remedy;Check to see if the K-ID is properly installed. Replace the K-ID. Replace the K-ID motor.
+Code;928
+Display;Service call 928:Error
+Description;Fuser MotorLock Error
+Causes;The fuser unit does not rotate properly. Does the error reoccur after power cycling?
+Remedy;Check to see if the fuser unit is properly installed. Replace the fuser unit. Replace the fuser motor.
+Code;980
+Display;Service call 980:Error
+Description;Error by media clinging to the fuser
+Causes;Media has clung to the fuser.
+Remedy;Power OFF Replace the fuser unit.
+Code;F0C, F0D, FFE, FFF
+Display;Power off/on 203:Error 204:Error 207:Error 208:Error 214:Error F0C:Error F0D:Error(C5900) FFE:Error(C5900) FFF:Error
+Description;An error was detected of the CU program. (203~214 is not occure in usual operating.)
+Causes;Reinstall the CU board. Is the error message displayed again?
+Remedy;After turn power OFF, check connections between CU board and PU board. Then turn power ON again.

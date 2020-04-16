@@ -1,0 +1,132 @@
+Code;13.0
+Display;13.0 Jam
+Description;Media is jammed in the front part of the printer immediately after it is picked up.
+Remedy;"1. Check to see if the white plastic tabs (located inside the front of the trays under the separation tabs) have fallen off in Tray 2 or Tray 3. (Note the position of the springs.) 2. Make sure that the correct media is loaded properly in Tray 3, and that it is not overloaded. 3. Make sure that the two shipping locks have been removed from the back of Tray 3. 4. Inspect the pick-up rollers for Tray 2; the flat side of the “D” on the rollers should be parallel to the paper. 5. Make sure that the roller spring underneath the front of Tray 2 is secure."
+Code;13.1
+Display;13.1 Jam
+Description;A jam has occurred inside the ITB drawer area. (The ITB drawer is also referred to as the middle front drawer for end users.) The jam might be located in the fuser area or between the transfer area and the fuser.
+Remedy;1. Open the ITB drawer and carefully inspect for any media. 2. Be sure to inspect the fusing area. You might need to access the fusing area through the rear door. 3. Remove any jammed media. 4. Make sure that the transfer roller is securely in place.
+Code;20
+Display;20 INSUFFICIENT MEMORY
+Description;More data has been received from the computer than fits in the printer’s internal memory.
+Remedy;1. To continue printing, press [Go]. Only the amount of data that fits in the printer’s internal memory is printed. 2. To cancel the job, press [Cancel Job]. 3. Add more memory to resolve the problem.
+Code;22
+Display;22 EIO X BUFFER OVERFLOW
+Description;The EIO buffer for the EIO card in slot “X” has overflowed during a busy state.
+Remedy;1. The current data in the print buffer will be lost. 2. Press [Go] to resume printing and then resend the job.
+Code;22
+Display;22 PARALLEL I/O BUFFER OVERFLOW
+Description;1. The current data in the print buffer will be lost. 2. Press [Go] to resume printing and then resend the job.
+Remedy;1. The current data in the print buffer will be lost. 2. Press [Go] to resume printing and then resend the job
+Code;40
+Display;40 EIO X DATA ERROR -or- 40 EIO BAD TRANSMISSION
+Description;A connection with the card in the specified slot has been broken.
+Remedy;1. Check that all cables are connected to the EIO ports and that the EIO board is seated properly. 2. If possible, print to another network printer to verify the network is working properly. Note All data in the print buffer will be lost.
+Code;40
+Display;40 EIO X DATA ERROR -or- 40 EIO BAD TRANSMISSION
+Description;A connection with the card in the specified slot has been broken
+Remedy;1. Check that all cables are connected to the EIO ports and that the EIO board is seated properly. 2. If possible, print to another network printer to verify the network is working properly. Note All data in the print buffer will be lost
+Code;41.3
+Display;41.3 UNEXPECTED PAPER SIZE -or- 41.3 UNEXPECTED PAPER SIZE
+Description;A tray is configured for a specific paper size, but the sheet loaded is a different size. This error often occurs when the printer is multifeeding.
+Remedy;Load the requested size media in tray.
+Code;41.5
+Display;41.5 UNEXPECTED PAPER TYPE
+Description;A tray is configured for a specific media type, but the printer detects a different media type loaded. The most common cause for this error is a jam at registration plate (under the ITB) where the customer does not remove the paper. The engine tries to check the OHT sensor and receives an error message.
+Remedy;1. Verify that the correct media type is loaded in the input tray and the printer control panel is configured correctly. 2. Clean the detection windows of OHT sensors 1 and 2
+Code;49
+Display;49.ERROR XXXX
+Description;Indicates that a firmware error occurred that caused the processor on the formatter to abort operation. This type of error can be caused by invalid print commands, corrupt data, or invalid operations. In some cases, electrical noise in the cable can corrupt data during transmission to the printer. Other causes include poor quality parallel cables, poor connections, or home-grown applications. On rare occasions, the formatter is at fault, which is usually indicated by a 79 Service Error
+Remedy;1. Turn the printer off and on to reset the printer. 2. Verify that all cables are connected. 3. Cancel all print jobs then resend. Try to isolate any offending print job. 4. Delete the print job from the Windows spooler or from the print server. 5. If the formatter pan assembly or DC controller was removed, make sure the ribbon cable between the DC controller and the interconnect PCB is connected. Note The printer control panel will display 49 (FFFF) and the display will be dark if the ribbon cable is not connected. 6. To verify that the formatter is functioning properly, run the formatter tests available in the diagnostics mode (see page 300). If the formatter passes, the formatter is not defective. DO NOT replace the formatter.
+Code;50.7
+Display;50.7 FUSER ERROR
+Description;The fusing motor (M1) drives the fusing assembly, the paper transport (web) assembly, ITB lift mechanism, transfer roller, transfer roller lift mechanism, and the face down output delivery drive assembly. A 50.7 fuser error appears when PS6 detects no motion within the fuser. Photosensor PS6 is the fusing unit pressure switch
+Remedy;1. Power cycle the printer to try to clear the message. 2. Remove the left-side cover of the printer. Verify that the fusing motor (M1) connector is seated firmly into J102 of the feed PCB. 3. Ensure that the connector at J110 of the feed PCB is firmly seated (this connector contains the wiring for PS6, which provides fuser-motion feedback). Note Closely inspect the mechanical linkage. The gears along the gear “drive” path can bind the gears, which will prevent M1 from rotating. 4. If the error persists, Observe the drive shaft of M1 while powering on the printer. If this shaft DOES NOT rotate, your failure is related to the motor drive circuitry. Referring to the printer’s wiring diagram, verify that connectors J102 and J106 of the feed PCB are firmly seated. If the error still persists, replace the fusing motor and the feed PCB in sequence. 5. If the shaft rotates (both forward and reverse), and the 50.7 fuser error appears, the cause of the error is related to the motion feedback circuitry. Remove the fusing assembly and verify the sensor flag (see Figure 7-27) is in good condition and functional. Verify the connector at sensor PS6 is firmly seated. Clean the sensor of dust and debris. If the error persists replace sensor PS6
+Code;50.x
+Display;50.x Fuser Error
+Description;The fusing assembly contains two heating bulbs, two thermo-switches, and two thermistors. AC power is provided to the fusing assembly via the DC power supply, which is controlled by the DC controller PCB. The thermistors monitor the temperature of the fusing assembly and provide feedback to the DC controller PCB to regulate the fusing temperature. The two thermo-switches are wired in series with the fusing bulbs, and “open” if the temperature exceeds 240° C (464° F). X  1 Low temperature error 2 Fuser warm-up service 3 High fuser temperature 4 Faulty fuser 5 Fuser voltage mismatch (verify that you have NOT installed a 110V fuser in a 220V printer or vice-versa). 6 Fuser heater cutoff 7 Fuser motor malfunction (see recommended action for 50.7 Fuser error)
+Remedy;1. Turn the printer off and on to reset the printer. If the error persists, try re-installing the fusing assembly. If the error continues to persist, proceed to step 2. 2. Turn the power off and remove the fusing assembly. Measure the resistance between pin 3 and pin 4. The resistance should be between 6+/-2 ohms. If there is no continuity between pins, it can be assumed that either a heating bulb and/or a thermo-switch is “open.” Replace the fusing assembly. If resistance limits are acceptable, proceed to step 3. 3. Referring to Figure 7-36, measure the resistance for both the upper and lower thermistors. The resistance should be between 430K ohms and 310K ohms at room temperature (25° C, 77° F). If the resistance exceeds limits, replace the fusing assembly. If resistance is within limits proceed to step 4. 4. Verify the connectors at J1011 of the DC controller PCB and J1 of the DC power supply assembly are firmly seated. 5. Replace the power supply assembly.
+Code;51
+Display;51 LASER ERROR (4500) -or- 51.X PRINTER ERROR (4550)
+Description;Indicates a beam detect error or laser failure.
+Remedy;1. Turn the printer off and on to reset the printer. 2. Verify connectors J1102 on the laser driver PCB and J1008 on the DC controller are seated properly. 3. Verify connectors J551 on the beam detect PCB and J1006 on the DC controller are seated properly. 4. Replace the laser/scanner unit.
+Code;52
+Display;52 SCANNER ERROR (4500) -or- 52 PRINTER ERROR (4550)
+Description;Indicates that a scanner error has occurred.
+Remedy;1. Turn the printer off and on to reset the printer. 2. Verify connectors J551 on the beam detect PCB, J1103 on the scanner motor, and J1006 on the DC controller are fully seated and connected correctly. 3. Replace the laser/scanner unit.
+Code;53.XY.ZZ
+Display;53.XY.ZZ PRINTER ERROR
+Description;"Indicates a memory error. If a DIMM caused the error, the DIMM will not be recognized (configured). 
+ X = MemoryType 0 = ROM 1 = RAM Y = Device Location 0 = Onboard 1 = DIMM slot 1 2 = DIMM slot 2 3 = DIMM slot 3
+ ZZ = Error Number 0 = Unsupported memory 1 = Unrecognized memory 3 = Failed RAM test"
+Remedy;1. Verify that the DIMM is installed correctly. 2. Turn the printer off and on to reset the printer. 3. Remove and replace the DIMM that caused the error.
+Code;54.1
+Display;54.1 PRINTER ERROR
+Description;Indicates that an internal power failure has occurred
+Remedy;1. Turn the printer off, and then turn the printer back on. 2. Replace the high-voltage power supply. 3. Check the fuser to ensure jams have not occurred. CAUTION 54.1 errors can be caused by damaging the thermistor while clearing fuser jams. 4. Make sure there is not a fluctuation in the power supply to the printer. Check that the electrical specifications (see Chapter 1) are met. 5. Replace the low-voltage power supply.
+Code;54.2
+Display;54.2 PRINTER ERROR
+Description;Indicates that a problem exists with the carousel assembly. Either the carousel is not rotating or the sensor has failed. Drive motor (M3) provides drive for the toner cartridge carousel. If motion is not detected, a 54.2 error appears. M3 is a 6-phase stepping motor and receives its drive signal from J203 of the developing PCB. Photosensor PS10 monitors “movement” (and the position) of the toner cartidge carousel. Different width tabs (four tabs, one for each cartridge) on the left-end of the carousel housing pass through PS10 to provide positioning information. The black toner cartridge tab is the home position. Toner cartridge position within the carousel is monitored by PS11. If PS11 fails or is improperly connected, a 54.2 error appears. Another indicator of this is that the carousel starts to rotate then stops immediately. A 54.2 error message can also occur if the sensor is installed backwards.
+Remedy;1. Turn the printer off and then on to reset the printer. 2. Open the color toner door and look for an obstruction. If necessary, remove the toner cartridges individually by manually releasing the carousel brake and rotating the carousel around to each cartidge position and removing the cartridges. Turn the printer off and on to reset the printer. Note The printer CANNOT operate with the top cover removed unless the carousel brake has been released or removed. 3. Verify the carousel drive motor wiring harness is firmly seated into connector J203 of the developing PCB (see Figure 7-38). 4. Verify PS10 (refer to Figure 7-31) is working correctly and not excessively dirty (clean if necessary) and that the wiring harness is firmly seated into both the sensor assembly and connector J206 of the developing PCB. 5. Verify PS11 is connected and functioning properly. 6. Verify all connectors to the developing PCB and the DC controller PCB are firmly seated. 7. Verify that the rotary drive assembly is working. Replace it on older units with more than 50K of life.
+Code;54.3
+Display;54.3 PRINTER ERROR
+Description;The printer is not receiving data back from the density sensor (PS14). PS14 is located in the bottom of the imaging drum drawer (refer to Figure 7-30). During calibration routines, a series of images are written on the imaging drum and the densitometer measures the density of the image (e.g. amount of toner that is placed into the drum). These measurements provide the feedback to ensure image quality is consistent throughout the life of the consumable.
+Remedy;"1. Verify the densitometer is clean; perform the toner density sensor cleaning procedure in Chapter 7 of the online user guide. 2. Inspect the density sensor wiring harness for damage. The harness runs from the density sensor through the left-side upper control arm of the imaging drum drawer to J1010 of the DC controller PCB. Verify that the cable is firmly seated into the J1010 of the DC controller PCB. 3. If the error persists, replace the density sensor assembly."
+Code;54.4
+Display;54.4 PRINTER ERROR
+Description;Optional equipment is not recognized.
+Remedy;Turn the printer off and on to reset the printer.
+Code;54.5
+Display;54.5 PRINTER ERROR
+Description;Indicates a waste toner sensor malfunction.
+Remedy;1. Turn the printer off and on to reset the printer. 2. Remove the drum cartridge and clean the waste toner detection window with a dry cloth. 3. Clean the waste toner sensor unit at the printer side with a dry cloth. 4. Check the light guide and clean it if necessary. Replace the light guide if the ends are scarred. 5. Reconnect the waste toner sensor unit connector and the DC controller PCB connector (J1009) correctly. 6. Replace the waste toner sensor (PS13).
+Code;54.6
+Display;54.6 PRINTER ERROR
+Description;The OHT sensor has reported an error condition. This can be caused by contamination in the connectors, a blocked sensor, or a defective sensor.
+Remedy;1. Remove the ITB and verify that the OHT sensor prism is in place. 2. Lift the registration flap and verify that the OHT sensor is not blocked. 3. Remove the ITB drawer and inspect the drawer connectors for contamination such as a piece of paper. 4. If the error persists, verify that all connectors are firmly seated. 5. Replace ITB drawer.
+Code;55
+Display;55 DC CONTROLLER ERROR
+Description;The print engine is not communicating with the formatter. The communication link between the formatter and DC controller was lost. This can occur due to a timing error or intermittent connection between the formatter and DC controller
+Remedy;1. Turn the printer off and on to reset the printer. 2. Reseat the connectors between the formatter and DC controller. 3. Only if the error persists, replace the DC controller making sure to perform the calibration and color plane alignment procedures.
+Code;57.1
+Display;57.1 FAN FAILURE
+Description;The printer detected that the fan (an exhaust fan located in the upper, left rear corner of the printer, refer to Figure 7-34) was not rotating. This fan operates off +24Vdc and is enabled by the DC controller PCB’s microprocessor.
+Remedy;1. Turn the printer off and on to reset the printer. Visually check to see if the fan is rotating (if you cannot see any rotation, place your hand over the outlet vents to see if exhaust air is moving). 2. Remove the printer’s left-side cover. Check to see if anything is preventing the fan from rotating freely. 3. Verify that the fan’s connector is firmly seated into connector J208 of the developing PCB. 4. If the error persists, replace the fan.
+Code;57.2
+Display;57.2 FAN FAILURE
+Description;The printer detected that the fan (an exhaust fan located in the upper, right rear corner of the printer, refer to Figure 7-34) was not rotating. This fan, operates off +24Vdc and is enabled by the DC controller PCB’s micro-processor.
+Remedy;1. Turn the printer off and on to reset the printer. Visually check to see if the fan is rotating (if you cannot see any rotation, place your hand over the outlet vents to see if exhaust air is moving). 2. Remove the printer’s left-side cover. Check to see if anything is preventing the fan from rotating freely. 3. Verify that the fan’s connector is firmly seated into connector J208 of the developing PCB. 4. If the error persists, replace fan.
+Code;57.3
+Display;57.3 FAN ERROR
+Description;The intake fan is located in the front, center of the drum drawer. (The drum drawer is referred to as the upper front drawer for end users.) Fan rotation stops when the drawer is opened. A fan error message appears when fan motion is NOT detected by the DC controller’s micro-processor if the drawer is closed and the printer is not in PowerSave mode
+Remedy;1. Turn the printer off and on to reset the printer. Due to the difficulty of observation, listen to hear if the fan is rotating. 2. Verify FM3 connector 27 is not damaged or broken. 3. Verify the fan connector is firmly seated into connector J1022 of the DC controller PCB. 4. If the error persists, replace the fan.
+Code;62
+Display;62 NO SYSTEM
+Description;Indicates there is a printer firmware problem. Either there is no firmware DIMM installed or the DIMM has failed. If the formatter was just replaced, make sure all DIMMs have been moved from the old formatter to the new one.
+Remedy;"1. Turn the printer off and on to reset the printer. 2. Reseat the firmware DIMM, making sure it is in the slot surrounded by a white line with the text ""ROM ONLY IN THIS SLOT""."
+Code;62
+Display;62.M BAD MPTR
+Description;The firmware ran out of memory trying to build the static entity directory.
+Remedy;1. Check printer settings to determine which values have been changed. 2. Clear the message by pressing [Go].
+Code;62.X
+Display;62.X PRINTER ERROR
+Description;"Indicates that a problem exists with the internal memory.
+ X = Description 0 = Internal memory 1-3 = DIMM slots 1 through 3."
+Remedy;1. Turn the printer off and on to reset the printer. 2. Reseat and then replace the DIMM. 3. Replace the formatter board.
+Code;68
+Display;68 NVRAM ERROR CHECK SETTINGS
+Description;One or more settings saved in the non-volatile storage device are invalid. Some settings might have been reset to factory defaults.
+Remedy;1. Check printer settings to determine which values have been changed. 2. Clear the message by pressing [Go].
+Code;68
+Display;68 NVRAM FULL CHECK SETTINGS
+Description;Indicates that a non-volatile storage device is full. Some settings might have been reset to factory defaults.
+Remedy;1. Check printer settings to determine which values have been changed. 2. Clear the message by pressing [Go].
+Code;79
+Display;79 SERVICE (XXXX) PRINTER ERROR
+Description;"A hardware error has occurred.
+ X=Description 01XX = IO ASIC register error 02XX = video ASIC register error 03XX = IDE ASIC register error"
+Remedy;1. Reseat the formatter. 2. Reseat the firmware DIMM. 3. Run formatter diagnostics. 4. Replace the firmware DIMM. 5. Replace the formatter.
+Code;80
+Display;80 SERVICE (XXXX) EIO ERROR
+Description;A critical EIO failure has occurred. X indicates the slot number of the device. XXXX indicates the error type.
+Remedy;1. Turn the printer off and on to reset the printer. 2. Reseat the EIO card. 3. Replace the EIO card.

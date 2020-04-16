@@ -1,0 +1,82 @@
+Code;01
+Display;"OFF
+ Blinking
+ Blinking
+ Blinking"
+Description;"Initialization/Startup
+ While in the Startup state, the Go, Ready, and Attention lights cycle (at the rate of 500 ms) one after another"
+Remedy;During the Initialization and Job Cancel processes, pressing buttons has no effect.
+Code;02
+Display;"OFF
+ OFF
+ OFF
+ OFF"
+Description;Blank Display
+Remedy;Verify the formatter connection to the Engine Controller PCA is seatted and secure (J531).
+Code;03
+Display;"OFF
+ OFF
+ ON
+ OFF"
+Description;"Ready 
+ The device is ready with no job activity."
+Remedy;To print a Configuration page, press and release the Go button.
+Code;04
+Display;"OFF
+ OFF
+ Blinking
+ OFF"
+Description;"Processing Data 
+ The device is processing or receiving data."
+Remedy;To cancel the current job, press the Cancel button.
+Code;05
+Display;"OFF
+ Blinking
+ ON
+ OFF"
+Description;"Manual Feed or Continuable Error
+ This state occurs in the following circumstances:
+ - Manual feed
+ - General continuable error"
+Remedy;"To recover from the error and print the available data, press the Go button. 
+ If the recovery is successful, the device continues to the Processing Data state and completes the job.
+ If the recovery is unsuccessful, the device continues to the Continuable Error state. Try removing any media from the media path and cycling the device power."
+Code;06
+Display;"OFF
+ Blinking
+ OFF
+ OFF"
+Description;"Attention
+ - Print-cartridge door is open
+ - Paper jam
+ - Paper out"
+Remedy;Close the print-cartridge door, remove the paper jam, install the cartridge, or add paper.
+Code;07
+Display;"OFF
+ ON
+ ON
+ ON"
+Description;"Fatal Error
+ The device has encountered a nonrecoverable error."
+Remedy;"Turn off the device, wait 10 seconds, and turn on the device.
+ - Verify that all connectors to the Engine Controller PCB are securely seated.
+ - Verify that the motor rotates for approximately six seconds during power up.
+ - If the motor does not rotate during power up, check all motor drive PCB connections.
+ - If the motor only rotates for approximately three seconds, check the laser/scanner unit connections.
+ - If the motor runs for 30 or more seconds during power up, verify all connections in the fusing assembly circuitry are connected correctly."
+Code;08
+Display;"ON
+ OFF
+ ON
+ OFF"
+Description;"Toner Low
+ The Go, Ready, and Attention lights act independently of the Toner Low state (HP LaserJet P1500 Series only)."
+Remedy;Order a new print cartridge and have it ready.
+Code;09
+Display;"Blinking
+ OFF
+ OFF
+ OFF"
+Description;"Toner Missing
+ The print cartridge has been removed from the device (HP LaserJet P1500 Series only)."
+Remedy;Reinsert the print cartridge in the device.

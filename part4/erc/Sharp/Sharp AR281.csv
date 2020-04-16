@@ -1,0 +1,348 @@
+Code;C1 00
+Description;MC trouble. Main charger output error (output released) Trouble signal from high-voltage transformer
+Causes;Main charger improperly installed Main charger improperly assembled High-voltage transformer connector removed High-voltage harness removed or wire broken
+Remedy;Check main charger output with SIM8-2. Check main charger connector for disconnection. Replace high-voltage unit.
+Code;C2 00
+Description;TC trouble. Transfer charger output error (output short-circuiting) Trouble signal from high-voltage transformer
+Causes;Transfer charger contaminated with foreign matter Transfer charger wire broken High-voltage transformer connector disconnected
+Remedy;Check transfer charger output with SIM8-6. Replace high-voltage unit.
+Code;E7 00
+Description;ICU communication trouble (ICU detection). Communication setup error, framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Connector pin breakage of the motor PWB of the slave unit PWB Slave unit ROM trouble. no ROM, ROM reverse insertion, ROM pin breakage
+Remedy;Connect the connector of the slave unit PWB and the ICU PWB. Check the connection and the harness. Check the grounding of the copier. Check the ROM of the slave unit PWB.
+Code;E7 01
+Description;Image data memory trouble. The ICU image data memory (SIMM) is detected only as 8MB or less. The SIMM capacity is insufficient for the model.
+Causes;The ICU PWB SIMM is not installed. The ICU PWB SIMM does not work properly. The ICU PWB SIMM is not installed properly. ICU PWB abnormality
+Remedy;Check installation of the ICU PWB SIMM. Check the SIMM capacity with SIM 22-10. Replace the ICU PWB SIMM.
+Code;E7 02
+Description;Laser trouble. BD signal from LSU kept at OFF or ON
+Causes;Connector to LSU or harness inside LSU disconnected or wire broken Polygon motor improperly rotating Laser home position sensor improperly positioned inside LSU Laser power supply line does not have proper voltage Laser LED improperly lighting ICU PWB error
+Remedy;Check LSU connector for disconnection. Check LSU operation with SIM61-1. Check polygon motor for rotation. Check laser LED for lighting. Replace LSU unit. Replace ICU PWB.
+Code;E7 03
+Description;HDD trouble. HDD is not recognized in the model with HDD installed.
+Causes;The HDD is not installed to the ICU PWB. The HDD does not work properly in the ICU PWB. The HDD is not installed to the ICU PWB properly. ICU PWB abnormality
+Remedy;Check installation of the HDD to the ICU PWB. Check connection of the HDD harness to the ICU. Replace the HDD. Replace the ICU PWB.
+Code;E7 10
+Description;Shading trouble (black correction). Improper CCD black reading level for copy lamp going out
+Causes;Improper installation of flat cable to CCD unit CCD unit error ICU PWB error
+Remedy;Check flat cable to CCD unit for installation. Check CCD unit. Check ICU PWB.
+Code;E7 11
+Description;Shading trouble (white correction). Improper CCD white reference plate reading level for copy lamp lighting
+Causes;Improper installation of flat cable to CCD unit Mirror, lens or reference white plate contaminated Copy lamp operation error Improperly installed CCD unit CCD unit error ICD PWB error
+Remedy;Clean mirror, lens, or reference white plate. Check copy lamp for light amount (SIM5-3) and lighting. Check CCD unit. Check ICU PWB.
+Code;E7 13
+Description;CCD light quantity check error. Copy lamp light amount adjustment in shading cannot be made
+Causes;Copy lamp does not light (broken wire, improper installation) Improper installation of flat cable to CCD unit Improper connection of copy lamp CL lead wire Mirror, lens, or reference white plate Dirt or dew Improper output of copy lamp power supply Improper installation of CCD unit CCD unit error ICU PWB error
+Remedy;Clean mirror, lens, reference white plate. Check copy lamp for light amount (SIM5-3) and lighting. Check CCD unit. Check ICU PWB.
+Code;E7 90
+Description;ICU communication trouble (PCU detection). Communication setup error/framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Slave unit PWB mother board connector pin breakage
+Remedy;Check the slave unit PWB and the ICU PWB connector connection. Check the copier earth.
+Code;EE EL
+Description;Auto developing adjustment trouble (overtoner). A sample data is less than 0 when auto developing adjustment is executed.
+Causes;Toner density sensor defective Charging voltage or developing voltage improper. Toner density improper Developing unit defective PCU PWB defective
+Remedy;Make auto developing adjustment with SIM25-2.
+Code;EE EU
+Description;Auto developing adjustment trouble (undertoner). A sample data is less than 99 when auto developing adjustment is executed.
+Causes;Toner density sensor defective Charging voltage or developing voltage improper Toner density improper Unit defective PCU PWB defective
+Remedy;Make auto developing adjustment with SIM25-2.
+Code;F1 00
+Description;Finisher communication trouble. Communication line test error occurs when power is turned on or after the exit of a simulation mode. Improper communication with sorter
+Causes;Improper connection or broken wire of connector or harness between copier and sorter Finisher control PWB defective Control PWB (PCU) defective Malfunction due to noise
+Remedy;Clear by turning the power supply OFF/ON. Check communication line connector and harness. Replace Finisher control PWB or PCU PWB.
+Code;F1 01
+Description;Finisher1 jogger shift trouble / Finisher 2 alignment section abnormality. ogger shift trouble / Alignment plate shift trouble
+Causes;Motor lock Motor rpm abnormality Motor overcurrent Finisher control PWB trouble
+Remedy;Check the jogger motor operation with SIM 3-3.
+Code;F1 02
+Description;Finisher transport motor abnormality. Transport motor drive trouble
+Causes;Motor lock
+Remedy;Check transport motor operation with SIM3-3.
+Code;F1 03
+Description;Sorter guide bar oscillation motor trouble. Sorter guide bar oscillation motor drive abnormality
+Causes;Motor lock. Motor rotation abnormality. Overcurrent to motor Sorter control PWB abnormality
+Remedy;Check the guide bar motor operation with SIM3-3.
+Code;F1 04
+Description;Finisher 1 elevator lower limit detection/ Finisher 2 stack tray lower limit detection. When the bin is shifted, the upper limit or the lower limit sensor is detected. / The elevator exceeds the lower limit.
+Causes;Sensor defective Sorter/finisher control PWB abnormality
+Remedy;Check sensor with SIM3-2.
+Code;F1 05
+Description;Finisher 1 elevator home / Finisher 2 stack tray sensor abnormality. The elevator does not detect the home position. / Stack tray sensors are turned on in the abnormal combination.
+Causes;Sensor defective Sorter/finisher control PWB abnormality
+Remedy;Check sensor with SIM3-2.
+Code;F1 06
+Description;Finisher shift motor abnormality. 1) Bin shift is not completed within 2.5 seconds after bin shift request
+Causes;Motor lock Improper motor speed Overcurrent to motor Finisher control PWB defective
+Remedy;Check bin shift motor operation with SIM3-4.
+Code;F1 08
+Description;Finisher staple shift motor trouble. Staple motor drive trouble
+Causes;Motor lock Motor rpm abnormality Overcurrent to motor Finisher control PWB trouble
+Remedy;Check the operation of the staple motor with SIM 3-3.
+Code;F1 10
+Description;Finisher staple unit operation trouble. Staple operation trouble
+Causes;Motor lock Motor rpm abnormality Motor overcurrent Finisher control PWB trouble
+Remedy;Check the staple motor operation with SIM 3-3.
+Code;F1 11
+Description;Finisher 1 pusher motor trouble / Finisher 2 boomerang rotation abnormality. Pusher motor trouble / Paddle solenoid abnormality
+Causes;Motor lock / paddle solenoid operation abnormality / boomerang rotation sensor abnormality Motor rpm abnormality Motor overcurrent Finisher control PWB abnormality
+Remedy;Check the finisher motor operation, the paddle solenoid operation with SIM 3-3 or check the boomerang rotation sensor with SIM 3-2.
+Code;F1 14
+Description;Finisher 2 stack tray abnormality. Stack tray control sensor abnormality
+Causes;The paper surface sensor and the full stack sensor do not turn on even when a certain time is passed after starting the tray.
+Remedy;Check the sensor operation with SIM 3-2.
+Code;F1 15
+Description;Finisher 1 elevator motor trouble / Finisher 2 stack tray motor lock. Elevator motor trouble
+Causes;Motor lock Motor rpm abnormality Motor overcurrent Finisher control PWB trouble
+Remedy;Check the elevator motor operation with SIM 3-3.
+Code;F1 16
+Description;Staple sorter holding motor trouble. During rotation of the holding motor, the rotation pulse is not detected for 0.05sec or more.
+Causes;Motor lock. Motor rotation abnormality. Overcurrent to motor Sorter control PWB abnormality
+Remedy;Check the holding motor operation with SIM3-3.
+Code;F1 17
+Description;ST pressure release HP trouble. ST paper exit roller pressure release trouble when turning on the power/initializing
+Causes;ST paper exit roller pressure release clutch abnormality ST paper exit roller pressure release clutch HP sensor abnormality
+Remedy;Stop the transport motor in SIM 3-3, turn on the STORCL to check that the pressure release roller operates. Check the STORHP sensor with SIM 3-2.
+Code;F1 18
+Description;Tray 3 paper exit paddler operation trouble. Tray 3 paper exit paddler operation trouble when turning on the power/initializing
+Causes;Tray 3 paper exit paddler solenoid abnormality Tray 3 paper exit paddler HP sensor abnormality Finisher control PWB trouble
+Remedy;Operate the transport motor with SIM 3-3 and turn on T3PDSL to check that tray 3 paddler operates. Check T3PDHP sensor with SIM 3-2.
+Code;F1 50
+Description;Non-support trouble in automatic detection of option connection (Sorter, finisher). In automatic detection of option connection, a non-support finisher or a sorter is detected.
+Causes;A non-support finisher or a sorter is connected to the copier.
+Remedy;Check the finisher or the sorter.
+Code;F1 80
+Description;Finisher power not supplied. 24V power is not supplied to the finisher PWB.
+Causes;Connector harness improper connection or disconnection Finisher control PWB trouble Power unit trouble
+Remedy;Check the sensor operation with SIM 3-2.
+Code;F2 00
+Description;Toner control sensor output open
+Causes;Connector harness trouble Connector unconnected.
+Remedy;Check connection of the toner control sensor. Check connection of the connector harness with the main PWB. Check for disconnection of the harness.
+Code;F2 02
+Description;Toner motor connector unconnected. Connection detection signal with toner motor is OFF
+Causes;Connector harness defective Connector disconnected
+Remedy;Check toner motor connector for connection. Check connector harness to main PWB for connection. Check harness for broken wire.
+Code;F2 31
+Description;Process control trouble (OPC drum surface reflection rate abnormality) Detail Usually the sensor gain is adjusted so that the output is a certain value, by reading the drum base surface with the image density sensor before starting process control. However, a certain output is not obtained by adjusting the sensor gain.
+Causes;Image density sensor defective
+Remedy;Check process control sensor output with SIM44-2. (Do not adjust) If the result is far different from the specified value, it suggests the sensor is defective. Check the sensor and harness. If the deviation is relatively small, check the sensor and drum surface for contamination.
+Code;F2 32
+Description;Process control trouble (Drum marking scanning trouble). Usually the sensor gain is adjusted so that the output is a certain value, by reading the drum base surface with the drum marking sensor before starting process control. However, a certain output is not obtained by adjusting the sensor gain.
+Causes;Drum marking sensor defective Improper connection of harness between PCU PWB and drum marking sensor Drum marking sensor contaminated OPC drum cleaning improper Charging voltage improper
+Remedy;Check process control output with SIM44-02. (Do not adjust.) If the result is far different from the specified value, it suggests the sensor is defective. Check the sensor and harness. If the deviation is relatively small, check the sensor and drum surface for contamination.
+Code;F2 37
+Description;Drum marking sensor gain adjustment error. When the drum marking area surface is scanned with the drum marking sensor before starting process control and the sensor gain is adjusted until a constant output is provided, the output is not constant though the sensor gain is changed.
+Causes;Drum marking sensor trouble Improper connection between PCU PWB and drum marking sensor Drum marking sensor is dirty OPC drum cleaning trouble
+Remedy;Perform the gain adjustment of process control sensor with SIM 44-2. If ERROR is displayed, it may be a breakdown. Check the sensor and the harness. When the adjustment is completed, check the drum surface conditions.
+Code;F2 39
+Description;Process thermistor breakdown. The process thermistor is open.
+Causes;Process thermistor abnormality Improper connection of the process thermistor bar PCU PWB abnormality
+Remedy;Check connection of the process thermistor harness and connector. Check the PCU PWB.
+Code;F3 12
+Description;Copier top stage CS lift up trouble. UPED does not turn on within the specified time. ULUD does not turn on within the specified time.
+Causes;UPED or ULUD defective Upper cassette lift-up motor defective Improper connection of harness between PCU PWB, lift-up unit, and paper feed unit.
+Remedy;Check UPED, ULUD and their harness and connector. Check lift-up unit.
+Code;F3 22
+Description;Copier bottom stage CS lift up trouble. LPED does not turn on within the specified time. LLUD does not turn on within the specified time.
+Causes;LPED or LLUD defective Lower cassette lift-up motor defective Improper connection of harness between PCU PWB, lift-up unit, and paper feed unit.
+Remedy;Check LPED, LLUD, their harnesses and connectors. Check lift-up unit.
+Code;F9 00
+Description;Printer communication trouble (ICU detection). Communication setup error, framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Connector pin breakage of the motor PWB of the slave unit PWB Slave unit ROM trouble. no ROM, ROM reverse insertion, ROM pin breakage
+Remedy;Connect the connector of the slave unit PWB and the ICU PWB. Check the connection and the harness. Check the grounding of the copier. Check the ROM of the slave unit PWB.
+Code;F9 01
+Description;PRT DRAM trouble. Option printer PWB DRAM trouble (Check when turning on the power.)
+Causes;DRAM module is broken and access cannot be made. DRAM module improper installation
+Remedy;Check with SIM 67-1.
+Code;F9 03
+Description;Network card trouble. Network card self test trouble.
+Causes;Network card defecft. Printer PWB defect. Network card connector connection defect.
+Remedy;Check the Network card connector. Replace the printer PWB. Replace the Network card.
+Code;F9 04
+Description;Printer program error. Program data trouble in the option printer board.
+Causes;Flash memory data is destroied.
+Remedy;Replace or rewrite the Flash memory. Replace the printer PWB.
+Code;F9 10
+Description;PRT SCSI LSI abnormality. An error occurred in SCSI communication with the option printer board.
+Causes;SCSI LSI abnormality ISU PWB abnormality SCSI connector improper connection
+Remedy;Replace the printer PWB. Check the SCSI connector. Replace the ISU PWB.
+Code;F9 90
+Description;Printer communication trouble (PRT detection). Communication setup error/framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Slave unit PWB mother board connector pin breakage
+Remedy;Check the slave unit PWB and the ICU PWB connector connection. Check the copier earth.
+Code;FC 00
+Description;ASK/IrDA modulation LSI reset error. Though the RESET signal pulse is sent to the ASK/IrDA modulation LSI, the power signal is not turned ON.
+Causes;1) ICU main PWB defect 2) ASK/IrDA modulation LSI/Clock oscillator defect
+Remedy;Perform the self diag with SIM 68-01. Replace the ICU main PWB.
+Code;FC 01
+Description;ASK/IrDA switch error. Though the ASK/IrDA switch command is sent to the ASK/IrDA modulation LSI, the AI signal is not changed.
+Causes;1) ICU main PWB defect 2) ASK/IrDA modulation LSI/Clock oscillator defect
+Remedy;Perform the self diag with SIM 68-01. Replace the ICU main PWB.
+Code;H2 00, H2 HL1
+Description;Thermister open Fusing unit not installed. Thermister is open (more than 4.6-V input voltage is detected). Fusing unit not installed
+Causes;Thermister defective Control PWB defective Improper connection of fusing connector AC power supply defective Fusing unit not installed
+Remedy;Check harness and connector between thermister and control PWB. Clear the display of self-diagnostics with SIM14.
+Code;H2 01, H2 HL2
+Description;Thermister open Fusing unit not installed. Thermister is open (more than 4.6-V input voltage is detected). Fusing unit not installed
+Causes;Thermister defective Control PWB defective Improper connection of fusing connector AC power supply defective Fusing unit not installed
+Remedy;Check harness and connector between thermister and control PWB. Clear the display of self-diagnostics with SIM14.
+Code;H3 00, H3 HL1
+Description;Heat roller high temperature detection. The fusing temperature is over 241.5°C (less than 1.3-V input voltage is detected.)
+Causes;Thermister defective Control PWB defective Improper connection of fusing unit connector AC power supply defective
+Remedy;Check heater lamp operation with SIM5-2. If lamp blinks properly: Check thermister and its harness. Check thermister input circuit of control PWB. If lamp lights and stays lit: Check lamp control circuits of AC PWB and control PWB. Clear the trouble with SIM14.
+Code;H3 01, H3 HL2
+Description;Heat roller high temperature detection. The fusing temperature is over 241.5°C (less than 1.3-V input voltage is detected.)
+Causes;Thermister defective Control PWB defective Improper connection of fusing unit connector AC power supply defective
+Remedy;Check heater lamp operation with SIM5-2. If lamp blinks properly: Check thermister and its harness. Check thermister input circuit of control PWB. If lamp lights and stays lit: Check lamp control circuits of AC PWB and control PWB. Clear the trouble with SIM14.
+Code;H4 00, H4 HL1
+Description;"Heat roller low temperature detection. The temperature does not reach the preset value within the specified time (3 min. in usual modes; 5 min. in curl correction mode.) after the power relay is turned on."
+Causes;Thermister defective Heater lamp defective Control PWB defective Thermostat defective AC power supply defective Interlock switch defective
+Remedy;Check heater lamp for blinking with SIM5-2. If lamp blinks properly: Check thermister and its harness. Check thermister input circuit of control PWB. If lamp does not light: Check heater lamp for broken wire and thermostat for operation. Check interlock switch. Check lamp control circuit of AC PWB and control PWB. Clear the trouble with SIM14.
+Code;H4 01, H4 HL2
+Description;"Heat roller low temperature detection. The temperature does not reach the preset value within the specified time (3 min. in usual modes; 5 min. in curl correction mode.) after the power relay is turned on."
+Causes;Thermister defective Heater lamp defective Control PWB defective Thermostat defective AC power supply defective Interlock switch defective
+Remedy;Check heater lamp for blinking with SIM5-2. If lamp blinks properly: Check thermister and its harness. Check thermister input circuit of control PWB. If lamp does not light: Check heater lamp for broken wire and thermostat for operation. Check interlock switch. Check lamp control circuit of AC PWB and control PWB. Clear the trouble with SIM14.
+Code;H5 01
+Description;3 continuous POD1 not-reaching JAM detection. 3 continuous POD1 not-reaching JAM detection
+Causes;Check that the fusing JAM is completely cancelled. (Jam paper may be remained.) POD1 sensor trouble or improper harness connection Improper installation of the fusing harness.
+Remedy;Check JAM paper in the fusing section. (Winding, etc.) Check POD1 sensor harness. Check the fusing unit installation. Cancel the trouble with SIM 14.
+Code;H5 02
+Description;Fusing thermistor abnormality. Fusing thermistor temperature transient abnormality (Paper winding)
+Causes;Paper winding to fusing roller Fusing pawl abnormality Fusing unit installation abnormality
+Remedy;Check for jam (winding) paper in the fusing section. Check for installation of the fusing unit. Check the fusing pawl. Cancel the trouble with SIM 14.
+Code;L1 00
+Description;Scanner feed trouble. Scanner feed is not finished within the specified time. (timer is change by magnification)
+Causes;Mirror unit defective Scanner wire disconnected
+Remedy;Check scanning operation with SIM1-1.
+Code;L3 00
+Description;Scanner return trouble. Scanner return is not finished within the specified time. (timer is change by magnification)
+Causes;Mirror unit defective Scanner wire disconnected
+Remedy;Check scanning operation with SIM1-1.
+Code;L4 01
+Description;Main motor lock detection. Motor lock signal is detected for 1.5 seconds during main motor rotation
+Causes;Main motor defective Improper connection of harness between PCU PWB and main motor Control circuit defective
+Remedy;Check main motor operation with SIM25-1. Check harness and connector between PCU PWB and main motor.
+Code;L6 10
+Description;Polygon motor lock detection. It was judged that there is no output of polygon motor lock signal of LSU. The lock signal was checked at about 10-second intervals after the polygon motor started rotating. As result, it was judged that the polygon motor failed to operate normally.
+Causes;Disconnected connecter to LSU or detached harness inside LSU or broken wire. Polygon motor defective
+Remedy;Check polygon motor operation with SIM61-1. Check harness and connector for connection. Replace LSU if needed.
+Code;L8 01
+Description;No full-wave signal. Full-wave signal is not detected.
+Causes;PCU PWB trouble Power unit trouble
+Remedy;Check connection of the harness and the connector. Replace the PCU PWB. Replace the power unit.
+Code;L8 02
+Description;Full-wave signal frequency abnormality detected. (The detected frequency: 69Hz or above or 42.5Hz or below)
+Causes;Check for disconnection or improper connection of the connector of the PCU PWB and the power PWB harness. PCU PWB trouble Power unit trouble
+Remedy;Check connection of the harness and connector. Replace the power unit.
+Code;PF 00
+Description;RIC copy inhibition command reception. Copy inhibition command received from RIC (host)
+Causes;Judged by the host.
+Remedy;Notice to the host
+Code;U2 00
+Description;EEPROM version error. Error in writing into EEPROM.
+Causes;EEPROM defective Uninitialized EEPROM is installed Defective EEPROM access circuit on PCU PWB
+Remedy;Check EEPROM for proper set-up To prevent the erasure of counter data and adjustment values, write down the counter data and adjustment values by simulation. (If there is a printer option, execute SIM23-1 and note counter data/adjustment values.) Clear U2 trouble with SIM16. Replace PCU PWB.
+Code;U2 11
+Description;Counter check sum error (EEPROM). Checksum error in counter data area
+Causes;EEPROM defective Control circuit hung up due to noise Defective EEPROM access circuit on PCU PWB
+Remedy;Check EEPROM for proper set-up To prevent the erasure of counter data and adjustment values, write down the counter data and adjustment values by simulation. (If there is a printer option, execute SIM23-1 and note counter data/adjustment values.) Clear U2 trouble with SIM16. Replace PCU PWB.
+Code;U2 12
+Description;Adjustment value check sum error (EEPROM). Checksum error in adjustment value data area
+Causes;EEPROM defective Control circuit hung up due to noise. Defective EEPROM access circuit on PCU PWB
+Remedy;Check EEPROM for proper set-up To prevent the erasure of counter data and adjustment values, write down the counter data and adjustment values by simulation. (If there is a printer option, execute SIM23-1 and note counter data/adjustment values.) Clear U2 trouble with SIM16. Replace PCU PWB.
+Code;U4 02
+Description;ADU alignment plate operation abnormality. The plate won’t move from home position more than 1 second after sending the command to leave home position. Or the plate won’t return to home position within 5 seconds after sending the command to return to home position.
+Causes;Home position sensor defective Alignment shift motor defective Improper connection of harness between PCU PWB, motor and sensor. Control PWB (PCU) defective Alignment plate driving belt or gear damaged or improperly adjusted
+Remedy;Check home position sensor detection with SIM9-2. Check alignment plate operation with SIM9-4. Check connection between PCU, motor and sensor. Remove ADU and check gear and belt for damage.
+Code;U4 03
+Description;ADU rear edge plate operation abnormality. When the plate is not shifted from the home position for 1 sec or more or when returning to the home position is not detected for 5 sec or more.
+Causes;Home position sensor defect Rear edge plate shift motor defect Control PWB (PCU) defect Rear edge plate operation belt/gear damage or adjustment error
+Remedy;Check the home position sensor operation with SIM 9-21. Check the rear edge plate operation with SIM 9-31. Check between the PCU PWB, the motor, and the sensor. Remove the ADU and check the gear and the belt.
+Code;U5 00
+Description;RADF/SPF/RSPF communication trouble. Communication line test error occurs when power is turned on or after the exit of a simulation mode. Improper communication with RADF
+Causes;Improper connection or broken wire of connector or harness RADF control PWB defective Control PWB (PCU) defective Malfunction due to noise
+Remedy;Check communication line connector and harness. Clear the trouble by turning power supply On/Off.
+Code;U5 01
+Description;RADF resist sensor detection trouble
+Causes;Sensor defective Improper connection of sensor harness inside RADF. RADF control PWB defective
+Remedy;Check resist sensor detection with SIM2-2. Check sensor harness inside RADF.
+Code;U5 02
+Description;RADF eject/inversion sensor detection trouble
+Causes;Defective sensor Improper connection of sensor harness inside RADF. RADF control PWB defective
+Remedy;Check eject/inversion sensor detection with SIM2-2. Check sensor harness inside RADF.
+Code;U5 03
+Description;RADF timing sensor detection trouble
+Causes;Defective sensor Improper connection of sensor harness inside RADF RADF control PWB defective
+Remedy;Check timing sensor detection with SIM2-2. Check sensor harness inside RADF.
+Code;U5 06
+Description;RSPF post-separation sensor detection trouble (in auto adjustment).
+Causes;Sensor trouble. Bad connection of sensor harness in RSPF. RSPF control PWB trouble. Erroneous detection by paper dust.
+Remedy;Check detection of post-separation sensor with SIM2-2. Check RSPF sensor harness. Clean and remove paper dust.
+Code;U5 07
+Description;RSPF read sensor detection trouble (in auto adjustment)
+Causes;Sensor trouble. Bad connection of sensor harness in RSPF. RSPF control PWB trouble. Erroneous detection by paper dust.
+Remedy;Check detection of read sensor with SIM2-2. Check RSPF sensor harness. Clean and remove paper dust.
+Code;U5 08
+Description;RSPF SB sensor detection trouble (in auto adjustment)
+Causes;Sensor trouble. Bad connection of sensor harness in RSPF. RSPF control PWB trouble. Erroneous detection by paper dust.
+Remedy;Check detection of SB sensor with SIM2-2. Check RSPF sensor harness. Clean and remove paper dust.
+Code;U5 11
+Description;RADF paper feed motor operation abnormality. Paper feed motor driving error
+Causes;Motor lock Improper motor speed Overcurrent to motor RADF control PWB defective
+Remedy;Check paper feed motor operation with SIM2-3,4.
+Code;U5 16
+Description;RSPF fan motor operation abnormality. An abnormality is detected by the input of RSPF fan motor alarm signal.
+Causes;Motor lock. RSPF control PWB trouble. Bad connection of RSPF motor harness.
+Remedy;Check the fan motor operation with SIM2-2.
+Code;U6 00
+Description;Desk communication trouble. Failed communication with desk Communication line test error occurs when power is turned on or after the exit of a simulation mode.
+Causes;Improper connection or broken wire of connector or harness Desk control PWB defective Control PWB (PCU) defective Malfunction due to noise.
+Remedy;Clear the trouble by turning the power supply On/Off. Check communication line connector and harness.
+Code;U6 01, U6 02, U6 03
+Description;Desk 1, 2, 3 CS lift-up trouble. Desk cassette lift-up trouble (1st - 3rd cassettes).
+Causes;Defective sensor RADF control PWB defective Broken gear Lift-up motor defective
+Remedy;Check lift-up sensor detection with SIM4-2. Check lift-up motor with SIM4-3.
+Code;U6 08
+Description;Desk 24-V power abnormality. No supply of DC24V to desk
+Causes;Improper connection or broken wire of connector or harness Desk control PWB defective Power supply unit defective
+Remedy;Check power supply line connector and harness. Check 24-V voltage on power supply unit and desk control PWB.
+Code;U6 09
+Description;LCC lift motor trouble
+Causes;Sensor trouble LCC control PWB trouble Gear breakage Lift motor trouble
+Remedy;Check the sensor detection with SIM 4-2. Check the lift motor operation with SIM 4-3.
+Code;U6 10
+Description;Desk transport motor operation trouble
+Causes;Motor lock Improper motor speed Overcurrent to motor RADF control PWB defective
+Remedy;Check transport motor operation with SIM4-6.
+Code;U6 20
+Description;LCC communication trouble Error when power is turned on or in communication line test after exiting SIM.
+Causes;Connector harness improper connection or disconnection LCC control PWB trouble Control PWB (PCU) trouble Malfunction by noise
+Remedy;Canceled by turning on the power. Check the connector and harness of the communication line.
+Code;U6 21
+Description;LCC transport motor operation trouble
+Causes;Motor lock Motor rpm abnormality Motor overcurrent LCC control PWB trouble
+Remedy;Check the transport motor operation with SIM 4-3.
+Code;U6 22
+Description;LCC 24V power abnormality. DC24V not supplied to LCC
+Causes;Connector harness improper connection or disconnection LCC control PWB trouble Power unit trouble
+Remedy;Check the connector and harness of power line. Check 24V power in the power unit and the LCC control PWB.
+Code;U6 50
+Description;Non-support trouble in automatic detection of option connection (Desk unit). In automatic detection of option connection, a non-support desk unit is detected.
+Causes;A non-support desk unit is connected to the copier.
+Remedy;Check the desk unit.
+Code;U6 51
+Description;Non-support trouble in automatic detection of option connection (LCC unit). In automatic detection of option connection, a non-support LCC unit is detected.
+Causes;A non-support LCC unit is connected to the copier.
+Remedy;Check the LCC unit.
+Code;U7 00
+Description;RIC communication trouble. Communication error with RIC Error in communication line test after turning on the power or exiting from SIM.
+Causes;Improper connection or disconnection of connector and harness RIC control PWB trouble Control PWB (ICU) trouble Malfunction caused by noises
+Remedy;Turn off/on the power to cancel the trouble.
+Code;U9 00
+Description;Operation control communication trouble (ICU detection). Communication setup error, framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Connector pin breakage of the motor PWB of the slave unit PWB Slave unit ROM trouble. no ROM, ROM reverse insertion, ROM pin breakage
+Remedy;Connect the connector of the slave unit PWB and the ICU PWB. Check the connection and the harness. Check the grounding of the copier. Check the ROM of the slave unit PWB.
+Code;U9 90
+Description;Operation control communication trouble (OPE detection). Communication setup error/framing/parity/protocol error
+Causes;Slave unit PWB connector improper connection Slave unit PWB – ICU PWB harness trouble Slave unit PWB mother board connector pin breakage
+Remedy;Check the slave unit PWB and the ICU PWB connector connection. Check the copier earth.

@@ -1,0 +1,528 @@
+Code;000
+Display;SYSTEM HALT (*) 000 : UNNOWN ERR
+Description;Unnown error
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;000
+Display;SYSTEM HALT (*) 000 : UNNOWN ERR
+Description;Unnown error
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;04
+Display;ERROR 04 PARAM ROM
+Description;Access Error of the PARAMETER ROM 1.The state that cannot access “FROM” on the MAIN PCB. 2.The state that cannot access “EEPROM” on the Central-IO PCB. 3.Parameter data is abnormal.
+Remedy;1. Replace the FFC and cable located between the HDC PCB and the MAIN PCB. 2. Replace the FFC and cable located between the HDC PCB and the MAIN PCB. 3. Initialize parameter data. 4. Replace the Central-IO PCB with a new one. 5. Replace the MAIN PCB with a new one.
+Code;104
+Display;SYSTEM HALT (*) 104 : +35V RECVR
+Description;35 V Power recovery error
+Remedy;1.Replace the DC Power Supply(36V) PCB with a new one. 2. Replace the MAIN PCB with a new one.
+Code;108
+Display;ERROR 108 HD CONNECT[12345678]
+Description;Head connection error (Head connection can not be confirmed)
+Remedy;1. Check the setting of loading number of the head in the parameter. (System parameter No.41 HEAD NO=3) 2. Check connection between the HDC PCB from the Print Head 3. Replace the HDC PCB with a new one. 4. Replace the Print Head with a new one.
+Code;108
+Display;ERROR 108 HD THERMIS[12345678]
+Description;Head thermistor (Head temperature can not be measured)
+Remedy;1. Check the setting of loading number of the head in the parameter. (System parameter No.41 HEAD NO=3) 2. Check connection between the HDC PCB from the Print Head 3. Replace the HDC PCB with a new one. 4. Replace the Print Head with a new one.
+Code;108
+Display;ERROR 108 HD TYPE[12345678]
+Description;Head kinds error
+Remedy;1. There are not the movement restrictions, but early replace the Print Head.
+Code;10e
+Display;SYSTEM HALT (*) 10e :FROM CLEAR
+Description;F-ROM CLEAR error (F-ROM clear unable) F-ROM is not clearable on Parameter writing, FW down loading and Log clearing. (fls_secclr)
+Remedy;1. Execute the memory check (F-ROM) of [#TEST]. 2. Upload the parameter and initialize all parameters with [#PARAMETER]. 3. Replace the MAIN PCB with a new one.
+Code;10f
+Display;SYSTEM HALT (*) 10f : FROM WRITE
+Description;FROM WRITE error (F-ROM writing unable) F-ROM is not clearable on Parameter writing, FW down loading and Log clearing. (fls_secclr)
+Remedy;1. Execute the memory check (F-ROM) of [#TEST]. 2. Upload the parameter and initialize all parameters with [#PARAMETER]. 3. Replace the MAIN PCB with a new one.
+Code;110
+Display;SYSTEM HALT (*) 110 : PCB KEY
+Description;No Keyboard PCB
+Remedy;1. Check the connections between the Keyboard PCB and the MAIN PCB and then disconnect and connect the FFCs. 2. Replace the FFCs of the above routes. 3. Replace the Keyboard PCB with a new one. 4. Replace the MAIN PCB with a new one.
+Code;120
+Display;SYSTEM HALT (*) 120 : LCD THERM.
+Description;LCD thermistor IC RW error
+Remedy;1. Check the connections between the Keyboard PCB and the MAIN PCB, and then disconnect and connect the FFCs. 2. Replace the FFCs and the cabeles of the above routes. 3. Replace the Keyboard PCB with a new one. 4. Replace the MAIN PCB with a new one. 5. Replace the DC Power Supply(5V) with a new one.
+Code;122
+Display;ERROR 122 CHECK:SDRAM
+Description;PRAM size is not sufficient at FW upgrading (fw_updmsg).
+Remedy;1. Update F/W. 2. Replace the MAIN PCB with a new one. 3. Replace the PRAM PCB with a new one.
+Code;122
+Display;SYSTEM HALT (*) 122 : PRAM NONE
+Description;No PRAM
+Remedy;1. Update F/W. 2. Replace the PRAM PCB with a new one. 3. Replace the MAIN PCB with a new one.
+Code;123
+Display;SYSTEM HALT (*) 123 : PRAM DATA
+Description;PRAM data error
+Remedy;1. Update F/W. 2. Replace the PRAM PCB with a new one. 3. Replace the MAIN PCB with a new one.
+Code;124
+Display;SYSTEM HALT (*) 124 : PRAM ADDR
+Description;PRAM address error
+Remedy;1. Update F/W. 2. Replace the PRAM PCB with a new one. 3. Replace the MAIN PCB with a new one.
+Code;125
+Display;SYSTEM HALT (*) 125 : EEPROM READ
+Description;EEPROM read trouble CIO Register (EER:Address 74) bit6
+Remedy;1. Update F/W. 2. Upload the parameter and initialize parameter with #PARAMETER. 3. Check the connection state between MAIN PCB - Central-IO PCB. 4. Replace the MAIN PCB with a new one. 5. Replace the Central-IO PCB with a new one.
+Code;126
+Display;SYSTEM HALT (*) 126 : EEPROM WR
+Description;EEPROM write trouble CIO Register (EER:Address 74) bit7
+Remedy;1. Update F/W. 2. Upload the parameter and initialize parameter with #PARAMETER. 3. Check the connection state between MAIN PCB - Central-IO PCB. 4. Replace the MAIN PCB with a new one. 5. Replace the Central-IO PCB with a new one.
+Code;127
+Display;SYSTEM HALT (*) 127 : POWER OFF
+Description;Power OFF detection error (Not to OFF) Power OFF process is conducted in the Power ON/OFF control without pushing down the sub-power SW.
+Remedy;1. Check the connection state between sub-power SW and Keyboard PCB. 2. Check the connections between the Keyboard PCB and the MAIN PCB, and then disconnect and connect the FFCs. 3. Check the connector connection of DC Power Supply (36V). 4. Check if there is no error on the power path from the AC Inlet. 5. Replace the DC Power Supply(36V) with a new one. ( ) 6. Replace the Keyboard PCB with a new one. 7. Replace the MAIN PCB with a new one.
+Code;128
+Display;ERROR 128 HDC FIFO OVER
+Description;HDC FIFO OVER error (Data transmission speed is too fast Control PCB trouble) HDC FIFO OVERRUN is detected at the scan slider process (ScanSlider)
+Remedy;1. Check the parameter. (Is the scan parameter the default value?) 2. Update F/W. 3. Check if there is no data error from RIP. 4. To make sure, repeat RIP. 5. Disconnect and connect the FFC located between the MAIN PCB and the HDC PCB. 6. Replace the FFC and cable located between the MAIN PCB and the HDC PCB. 7. Replace the HDC PCB with a new one. 8. Replace the MAIN PCB with a new one.
+Code;128
+Display;ERROR 128 HDC FIFO UNDER
+Description;HDC FIFO UNDER error (Data transmission speed is too slow Control PCB trouble) HDC FIFO UNDERRUN is detected at the scan slider process (ScanSlider)
+Remedy;1. Check the parameter. (Is the scan parameter the default value?) 2. Update F/W. 3. Check if there is no data error from RIP. 4. To make sure, repeat RIP. 5. Disconnect and connect the FFC located between the MAIN PCB and the HDC PCB. 6. Replace the FFC and cable located between the MAIN PCB and the HDC PCB. 7. Replace the HDC PCB with a new one. 8. Replace the MAIN PCB with a new one.
+Code;129
+Display;ERROR 129 BATTERY EXCHANGE
+Description;Battery dead (RTC battery dead is detected.) Proper information of Printer or Time (Dedicated IC) unusable on Printer initializing process (opinit).
+Remedy;1. Replace a battery equipped on the MAIN PCB with new one. (CR2032) * The new battery should be the same product or the equivalent. * Discard the old battery according to the instruction from the maker.
+Code;12e
+Display;ERROR 12e Head Faild[xxxx] (The details of [xxxx] are explained below this list.)
+Description;Abnormality of the Print head. Abnormality of the Driver of the Print head. COM overcurrent (HDC STAT4 bit2) (We did not see the current status.)
+Remedy;1. Update F/W. 2. Initialize a parameter. 3. Replace the Print Head with a new one. 4. Replace the HDC PCB with a new one.
+Code;130
+Display;ERROR 130 HD DATA SEQ
+Description;Head data transferring sequence error
+Remedy;1.Disconnect and connect the FFC located between the HDC PCB and the MAIN PCB. 2. Replace the FFC located between the HDC PCB and the MAIN PCB. 3. Replace the HDC PCB with a new one. 4. Replace the MAIN PCB with a new one.
+Code;146
+Display;ERROR 146 E-LOG SEQ
+Description;Sequential number abnormality of the event log
+Remedy;1. Initialize a Event log. 2. Replace the MAIN PCB with a new one.
+Code;147
+Display;SYSTEM HALT (*) 147 : DS-IC BUSY
+Description;DALLAS IC BUSY error
+Remedy;1. Check connection of the ID Contact PCB connection cable and damage of the cable. 2. Try to use a different cartridge. 3. Replace the ID Contact PCB Assy. with a new one. 4. Replace the INK SYSYTEM PCB with a new one.
+Code;151
+Display;ERROR 151 MAIN PCB V1R2
+Description;Main board 1.2V power supply is abnormal.
+Remedy;1. Replace the MAIN PCB with a new one.
+Code;152
+Display;ERROR 152 MAIN PCB V2R5
+Description;Main board 2.5V power supply is abnormal.
+Remedy;1. Replace the MAIN PCB with a new one.
+Code;153
+Display;ERROR 153 MAIN PCB V3R3
+Description;Main board 3.3V power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;154
+Display;ERROR 154 MAIN PCB V05
+Description;Main board 5V power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;155
+Display;ERROR 155 MAIN PCB V35-1
+Description;Main board 35-1V power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;156
+Display;ERROR 156 MAIN PCB V5B
+Description;Main board 5VB power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;157
+Display;ERROR 157 MAIN PCB VTT
+Description;Main board VTT power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;158
+Display;ERROR 158 MAIN PCB V352
+Description;Main board 35-2V power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;15d
+Display;SYSTEM HALT (*) 15d : MAIN FPC-1
+Description;30pin FPC 1 of MAIN PCB connect error
+Remedy;1. Check the connections between the HDC PCB and the MAIN PCB, and then disconnect and connect the FFCs. 2. Replace the FFCs of the above routes. 3. Replace the HDC PCB with a new one. 4. Replace the MAIN PCB with a new one.
+Code;15f
+Display;ERROR 15f HEAD DRIVE HOT
+Description;COM driver becomes the high temperature.
+Remedy;1. Check the operation of the HDC PCB cooling fan. 2. Disconnect and connect the FFC located between the HDC PCB and the MAIN PCB. 3. Replace the HDC PCB with a new one. 4. Replace the Print Head with a new one.
+Code;160
+Display;SYSTEM HALT (*) 160 : PCB MAIN-F5
+Description;MAIN PCB fuse (F5) disconnected. PDC IPORT Register bit20 : ON
+Remedy;Replace the MAIN PCB with a new one. Before MAIN PCB replace, do the following checks. 1. Check the connections between the Central-IO PCB and the MAIN PCB, and then disconnect and connect the FFC and cable. 2. Check short between 1 pin and 4 pin of CN1, and between 1 pin and 9 pin of CN11 of the Central-IO PCB. (If shorted out, replace also the Central-IO PCB.)
+Code;161
+Display;SYSTEM HALT (*) 161 : PCB MAIN-F6
+Description;MAIN PCB fuse (F6) disconnected. PDC IPORT Register bit21 : ON
+Remedy;Replace the MAIN PCB with a new one. Before MAIN PCB replace, do the following checks. 1. Check the connections between the Central-IO PCB and the MAIN PCB, and then disconnect and connect the FFC and cable. 2. Check short between 1 pin and 4 pin of CN1, and between 1 pin and 9 pin of CN11 of the Central-IO PCB. (If shorted out, replace also the Central-IO PCB.)
+Code;16e
+Display;ERROR 16e MAIN PCB V3R3B
+Description;Main board 3.3VÇa power supply is abnormal.
+Remedy;1. Check the output pressure of the DC power supply (36V) and the DC power supply (5V). 2. Replace the power supply above. 3. Replace the MAIN PCB with a new one.
+Code;171
+Display;ERROR 171 NEW HEAD CONNECT
+Description;New Print Head was recognized. Compare S/N written in the head memory with S/N stored in the machine.
+Remedy;It is normal that an error occurs only at the time of the first start after having connected a new head. It is abnormal that an error occurs at the time of start every time.. 1. Check connection between the HDC PCB from the Print Head 2. Replace the HDC PCB with a new one. 3. Replace the Print Head with a new one.
+Code;172
+Display;ERROR 172 MAIN PCB Q6 Check
+Description;The MAIN PCB Q6 is disabled (short mode). (Displayed only at startup in the maintenance open mode or other than SUPPORT=0.)
+Remedy;1. Replace the MAIN PCB with a new one.
+Code;17e
+Display;SYSTEM HALT (*) 17e : PCB IIO1
+Description;No INK SYSTEM PCB An error occurred at serial communication check after configuration.
+Remedy;1. Check the connections between the INK SYSTEM PCB and the Central-IO PCB and then disconnect and connect the FFC. 2. Replace the FFC of the above routes. 3. Replace the INK SYSTEM PCB with a new one. 4. Replace the Central-IO PCB with a new one.
+Code;181
+Display;SYSTEM HALT (*) 181 : PCB H21
+Description;No HDC PCB An error occurred at serial communication check after configuration.
+Remedy;1. Check the connections between the HDC PCB and the MAIN PCB and then disconnect and connect the FFC. 2. Replace the FFC and cable of the above routes. 3. Replace the HDC PCB with a new one. 4. Replace the MAIN PCB with a new one.
+Code;185
+Display;SYSTEM HALT (*) 185 : PCB LED
+Description;No INK LED PCB
+Remedy;1. Check the connections between the INK LED PCB and the INK SYSTEM PCB and then disconnect and connect the FFC. 2. Replace the FFC of the above routes. 3. Replace the INK LED PCB with a new one. 4. Replace the INK SYSTEM PCB with a new one.
+Code;186
+Display;ERROR 186 HDC OVERFLOW
+Description;Wave shape overflow Wave shape data is abnormal.
+Remedy;
+Code;186
+Display;ERROR 186 HDC UNDERFLOW
+Description;Wave shape underflow Wave shape data is abnormal.
+Remedy;
+Code;187
+Display;ERROR 187 HDC SLEW RATE
+Description;Wave shape slew rate error Wave shape data is abnormal.
+Remedy;
+Code;188
+Display;ERROR 188 HDC MEMORY
+Description;Wave shape memory error At wave shape memory writing, it cannot be written due to address conflict.
+Remedy;
+Code;189
+Display;SYSTEM HALT (*) 189 : COM VOLT
+Description;COM Voltage is abnormal
+Remedy;1. Replace the HDC PCB with a new one. 2. Replace the MAIN PCB with a new one. 3. Check the connections between the HDC PCB and the MAIN PCB and then disconnect and connect the FFC. 4. Replace the FFC and cable of the above routes.
+Code;201
+Display;ERROR 201 COMMAND
+Description;Command error Other data than commands is received
+Remedy;1. Check if the output set of the PC matches the set of the machine side? 2. Change the profile. 3. Check if there is no parameter error? 4. Check if there is no trouble on the USB Cable? 5. Replace the USB Cable. 6. Replace the MAIN PCB with a new one.
+Code;202
+Display;ERROR 202 PARAMETER
+Description;Parameter error Parameter out of the numeral value range is received
+Remedy;1. Check if the output set of the PC matches the set of the machine side? 2. Change the profile. 3. Check if there is no parameter error? 4. Check if there is no trouble on the USB Cable? 5. Replace the USB Cable. 6. Replace the MAIN PCB with a new one.
+Code;203
+Display;ERROR 203 Ment Command
+Description;Maintenance command Operation of a maintenance command fails *Non-disclosed command Parameter Up/Download and time setting (LcAeMent [M0xfe])
+Remedy;1. Check the PRM file. 2. Check the number of each parameter. (if PRM matches up to the machine.)
+Code;303
+Display;SYSTEM HALT (*) 303 : PCB MAIN ET
+Description;MAIN PCB Ethernet IC trouble
+Remedy;1.Replace the MAIN PCB with a new one.
+Code;304
+Display;ERROR 304 USB INIT ERR
+Description;USB initialization error (Failures in initializing USB device)
+Remedy;1. Check if there is no parameter error? 2. Replace the USB Cable. 3. Replace the MAIN PCB with a new one.
+Code;305
+Display;ERROR 305 USB TIME OUT
+Description;USB time-out (Occurrence of time-out error on USB device)
+Remedy;1. Check if there is no parameter error? 2. Replace the USB Cable. 3. Replace the MAIN PCB with a new one.
+Code;401
+Display;ERROR 401 MOTOR X
+Description;X Servo error (Excessive load to the X-motor)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if there is no trouble on the Timing Belt. 3. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 4. Check the FFC between each PCB and Shortconnectors connected on the PCB. 5. Replace the X-axis Motor with a new one.
+Code;402
+Display;ERROR 402 MOTOR Y
+Description;Y Servo error (Excessive load to the Y-motor)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the Y-direction smoothly in the power-off condition. 3. Check if there is no trouble on the Timing Belt. 4. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 5. Check the FFC between each PCB and Shortconnectors connected on the PCB. 6. Replace the Y-axis motor with a new one.
+Code;403
+Display;ERROR 403 X CURRENT
+Description;X-motor current (Over current error of X-motor is detected.)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if there is no trouble on the Timing Belt. 3. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 4. Check the FFC between each PCB and Shortconnectors connected on the PCB. 5. Replace the X-axis Motor with a new one.
+Code;404
+Display;ERROR 404 Y CURRENT
+Description;Y-motor current (Over current error of Y-motor is detected.)
+Remedy;1. Check if there is no error on the print data. (Check if the same error occurs on other data?) 2. Check if it moves to the Y-direction smoothly in the power-off condition. 3. Check if there is no trouble on the Timing Belt. 4. Check if there is no trouble on the Motor Cable. (disconnecting, burnout, or the like) 5. Check the FFC between each PCB and Shortconnectors connected on the PCB. 6. Replace the Y-axis motor with a new one.
+Code;406
+Display;SYSTEM HALT (*) 406 : WIPER ORG
+Description;Wiper origin undetectable
+Remedy;1. Execute and confirm [#TEST SENSOR TEST] -> [WIPER-ORG]. (Confirm that the ON/OFF display is switched by moving the wiper back and forth.) 2. Check that the wiper moves back and forth smoothly in manual. 3. Check the assembly and connector connection of Wiper Origin Sensor. 4. Check the connector connection of Y-origin Sensor 5. Check the connections between the Central-IO PCB and the MAIN PCB, and then disconnect and connect the FFC. 6. Replace the Wiper Back/Forth Origin Sensor with a new one. 7. Replace the Wiper Motor with a new one. 8. Replace the FFC located between the Central-IO PCB and the MAIN PCB. 9. Replace the Central-IO PCB with a new one.
+Code;40b
+Display;SYSTEM HALT (*) 40b : UN MAGNETIC
+Description;DC motor is driving without excited
+Remedy;1.Update F/W. 2. Upload the parameter and initialize parameter with #PARAMETER. 3. Replace the MAIN PCB with a new one.
+Code;502
+Display;SYSTEM HALT (*) 502 : Y ORGIN
+Description;Y Origin Sensor error
+Remedy;1. Execute and confirm [#TEST SENSOR TEST] -> [Y-ORG]. (Confirm that the ON/OFF display is switched by moving the carriage left and right.) 2. Check in manual if the carriage moves left and right smoothly. 3. Check the connector connection of Y-origin Sensor and then disconnect and connect the cabel. 4. Replace the Y Origin Sensor with a new one. 5. Check if there is no trouble on theY Motor Cable. (disconnecting, burnout, or the like) 6. Replace the Y-axis motor with a new one. 7. Replace the HDC PCB with a new one. 8. Replace the MAIN PCB with a new one.
+Code;505
+Display;ERROR 505 MEDIA JAM
+Description;The media jam sensor reacted.
+Remedy;1.Remove the media that hit it, and reset the media. 2. Execute [#TEST SENSOR] ->[MEDIA JAM].
+Code;509
+Display;ERROR 509 HDC POSCNT
+Description;HDC position counter error
+Remedy;1. Execute and confirm [#TEST SENSOR TEST]-> [Y-ORG].(Confirm that the ON/OFF display is switched by moving the carriage left and right.) 2. Execute [#TEST CHECK ENCODER]. 3. Check the assembly of Y-scale, and confirm that there is neither dirt nor scratch. 4. Check in manual if the Head Assy. (carriage) moves left and right smoothly. 5. Check the connector connection of Y-origin Sensor and Linear Encoder. 6. Replace the Y-origin Sensor or Linear Encoder with a new one. 7. Check the assembly and connector connection of Yaxis Motor.
+Code;509
+Display;SYSTEM HALT (*) 509 : HDC POSCNT
+Description;HDC position counter error
+Remedy;1. [Execute and confirm [#TEST SENSOR TEST]-> [Y-ORG].(Confirm that the ON/OFF display is switched by moving the carriage left and right.) 2. Execute [#TEST CHECK ENCODER]. 3. Check the assembly of Y-scale, and confirm that there is neither dirt nor scratch. 4. Check in manual if the Head Assy. (carriage) moves left and right smoothly. 5. Check the connector connection of Y-origin Sensor and Linear Encoder. 6. Replace the Y-origin Sensor or Linear Encoder with a new one. 7. Check the assembly and connector connection of Yaxis Motor. 8. Replace the Y-axis Motor with a new one. 9. Replace the HDC PCB with a new one. 10. Replace the MAIN PCB with a new one.
+Code;50a
+Display;ERROR 50a Y ORIGIN
+Description;Y-origin error (Origin of Y-axis can not be detected)
+Remedy;1. Execute and confirm [#TEST SENSOR TEST]-> [Y-ORG].(Confirm that the ON/OFF display is switched by moving the carriage left and right.) 2. Execute [#TEST CHECK ENCODER]. 3. Check in manual if the Head Assy. (carriage) moves left and right smoothly. 4. Check the connector connection of Y-origin Sensor and Linear Encoder. 5. Replace the Y-origin Sensor or Linear Encoder with a new one. 6. Check the assembly and connector connection of Yaxis Motor. 7. Replace the Y-axis Motor with a new one. 8. Replace the HDC PCB with a new one. 9. Replace the MAIN PCB with a new one.
+Code;50c
+Display;ERROR 50c MEDIA WIDTH SENSOR
+Description;The media width could not be read correctly.
+Remedy;1. Check the media setting position. 2. Perform cleaning of the media width sensor. 3. Execute [#TEST PAPER SENSOR].
+Code;50f
+Display;ERROR 50f L-SCALE BLACK
+Description;Liner Scale error
+Remedy;1. Check the assembly position of Linear Scale and Encoder PCB Assy.. 2. Check Linear Scale (scratches or dirtiness or so.) 3. Replace the Linear Scale with a new one. 4. Replace the Encoder PCB Assy. with a new one.
+Code;516
+Display;ERROR 516 MEDIA SET POSITION L
+Description;The media is set outside the range.
+Remedy;1. Check the media setting position. 2. Perform cleaning of the media width sensor. 3. Execute [#TEST PAPER SENSOR].
+Code;617
+Display;ERROR 617 DAMPER SENSOR:12345678
+Description;An error of the liquid level detection sensor of the damper has been detected.
+Remedy;1. Check the connection of the liquid level detection sensor. 2. From [#TEST SENSOR] -> [DAMPER], check the detection status of the liquid level detection sensor. 3. Replace the Liquid level detection sensor.
+Code;618
+Display;ERROR 618 DAMPER/HIGH:12345678
+Description;Even though a certain amount of ink has been consumed, there is no change in the liquid level detection sensor “High”.
+Remedy;1. Check the nozzle status. (If nozzle clogging is terrible, consumption difference may be generated.) 2. From [#TEST SENSOR], check the detection status of the liquid level detection sensor. If there is an error, replace the liquid level detection sensor. 3. Perform [MAINTENANCE DAMPER]. 4. Replace the damper.
+Code;61a
+Display;ERROR 61a INK OVER FLOW:12345678
+Description;Overflow from the damper has been detected.(Sensor detect the damper is distend.)
+Remedy;1. Perform [MAINTENANCE DAMPER]. Check that it has been discharged to the middle status. 2.With [#TEST SENSOR], check the detection status of the target sensor. 3. Replace the Liquid level detection sensor. 4. Replace the damper. 5. Check that the cartridge valve is not open. (Because ink flows into the damper due to head difference.)
+Code;61b
+Display;ERROR 61b SUPPLY INK:12345678
+Description;Ink filling into the damper has failed.
+Remedy;1.With [#TEST SENSOR], check the detection status of the target liquid level detection sensor. (Also, visually check the sensor position of the damper.) 2. From [#TEST AGEING] -> [PUMP MOTOR], discharge ink in the damper to collapse the damper. From [#TEST AGEING] -> [INK SUPPLY], check that sending ink is performed. *If sending ink cannot be performed: The supply pump, the cartridge valve and the UISS valve shall be replaced.
+Code;627
+Display;ERROR 627 INSERT CARTRIDGE
+Description;The cartridge has not been set for a certain amount of time.
+Remedy;Set the cartridge. 1. Check that the cartridge has been inserted correctly. 2. Check the sensor operation with [#TEST Cartridgesensor].
+Code;702
+Display;ERROR 702 THERMISTOR
+Description;Defective of the thermistor (disconnection or short)
+Remedy;1. Check each thermistor. 2. Replace the MAIN PCB with a new one.
+Code;707
+Display;ERROR 707 !HD HEATER BRK
+Description;Is the heater of the head disconnected? (The temperature does not rise after heating for over a certain period of time.)
+Remedy;1. Check the room temperature is not too low. 2. Replace the Print Head with a new one. 3. Replace the HDC PCB with a new one.
+Code;801
+Display;SYSTEM HALT (*) 801 : (C)OPCODE
+Description;System error (CPU exception: OP code error)
+Remedy;11.Check the peripheral temperature of MAIN PCB, and then check if the error is caused by the thermo runaway of CPU. 12. Make sure that there is no device generating strong radio wave in the vicinity. 13. Replace the MAIN PCB with a new one. 14. Replace the DC Power Supply(5V) with a new one.
+Code;802
+Display;SYSTEM HALT (*) 802 : (C)SLOT
+Description;System error (CPU exception: Slot instruction error)
+Remedy;11.Check the peripheral temperature of MAIN PCB, and then check if the error is caused by the thermo runaway of CPU. 12. Make sure that there is no device generating strong radio wave in the vicinity. 13. Replace the MAIN PCB with a new one. 14. Replace the DC Power Supply(5V) with a new one.
+Code;803
+Display;SYSTEM HALT (*) 803 : (C)CPU ADDR
+Description;System error (CPU exception: CPU address error)
+Remedy;11.Check the peripheral temperature of MAIN PCB, and then check if the error is caused by the thermo runaway of CPU. 12. Make sure that there is no device generating strong radio wave in the vicinity. 13. Replace the MAIN PCB with a new one. 14. Replace the DC Power Supply(5V) with a new one.
+Code;804
+Display;SYSTEM HALT (*) 804 : (C)DMA ADDR
+Description;System error (CPU exception: DMA address error)
+Remedy;11.Check the peripheral temperature of MAIN PCB, and then check if the error is caused by the thermo runaway of CPU. 12. Make sure that there is no device generating strong radio wave in the vicinity. 13. Replace the MAIN PCB with a new one. 14. Replace the DC Power Supply(5V) with a new one.
+Code;805
+Display;SYSTEM HALT (*) 805 : (C)ZERO DIV
+Description;System error (CPU exception: Division by 0)
+Remedy;11.Check the peripheral temperature of MAIN PCB, and then check if the error is caused by the thermo runaway of CPU. 12. Make sure that there is no device generating strong radio wave in the vicinity. 13. Replace the MAIN PCB with a new one. 14. Replace the DC Power Supply(5V) with a new one.
+Code;806
+Display;SYSTEM HALT (*) 806 : FW/SIO bit
+Description;FW error (Serial control F/W error (bit control)) The area where the registration data shall be cashed cannot be found. (It is not registered.) The errors of 800s below are “FW error”.
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;807
+Display;SYSTEM HALT (*) 807 : FW/SIO wbsy
+Description;FW error (Serial control F/W error (WR BUSY))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;808
+Display;SYSTEM HALT (*) 808 : FW/STP-MTR
+Description;FW error (Step Motor stop waiting)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;809
+Display;SYSTEM HALT (*) 809 : FW/XY param
+Description;FW error (XY-axis Motor resolution conversion parameter error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80a
+Display;SYSTEM HALT (*) 80a : FW/Y RANGE
+Description;FW error (Y movable range error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80b
+Display;SYSTEM HALT (*) 80b : FW/ctrltsk
+Description;FW error (Motor control task error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80c
+Display;SYSTEM HALT (*) 80c : FW/PUMP W
+Description;FW error (Suction Pump stop waiting time over at capping)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80d
+Display;SYSTEM HALT (*) 80d : FW/SERVO IT
+Description;FW error (Servo interruption error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80e
+Display;SYSTEM HALT (*) 80e : FW/FROM prm
+Description;FW error (FROM PARAM error (F/W BUG))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;80f
+Display;SYSTEM HALT (*) 80f : FW/SIO vch
+Description;FW error (Virtual serial CH setting error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;810
+Display;SYSTEM HALT (*) 810 : FW/KEY RDI
+Description;FW error (No keyboard RDI)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;811
+Display;SYSTEM HALT (*) 811 : FW/SIO read
+Description;FW error (Serial control F/W error (RD BUSY))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;812
+Display;SYSTEM HALT (*) 812 : FW/CRTRG NO
+Description;FW error (Cartridge number error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;813
+Display;SYSTEM HALT (*) 813 : FW/WIPER RN
+Description;FW error (Wiper operation range error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;814
+Display;SYSTEM HALT (*) 814 : FW/drivinfm
+Description;FW error (drivinfm() information obtaining error
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;815
+Display;SYSTEM HALT (*) 815 : FW/SIO rsrc
+Description;FW error (Serial control F/W error (material control))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;816
+Display;SYSTEM HALT (*) 816 : FW/FROM WRC
+Description;FW error (FROM write control error)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;817
+Display;SYSTEM HALT (*) 817 : FW/SaveArea
+Description;FW error (Save area error (size over))
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;818
+Display;SYSTEM HALT (*) 818 : FW/EEP SIZE
+Description;FW error (EEPROM size over)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;819
+Display;SYSTEM HALT (*) 819 : FW/HROM SIZ
+Description;FW error (HDROM size over)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;81a
+Display;SYSTEM HALT (*) 81a : FW/FROM SIZ
+Description;FW error (FROM size over)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;81b
+Display;SYSTEM HALT (*) 81b : FW/STACK OV
+Description;FW error (STACK OVER)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;829
+Display;SYSTEM HALT (*) 829 : FW/ERASE TIMEOV
+Description;FW error (Time over of erasing FROM sector.)
+Remedy;1. Update F/W. 2. Check and clear the parameter. 3. Replace the MAIN PCB with a new one.
+Code;902
+Display;ERROR 902 DATA REMAIN
+Description;Drawing data is remaining.
+Remedy;(Carry out the followings if the error still occurs when data is cleared.) 1. Check errors in the parameter. 2. Remove USB cable from the printer and execute data clear. -> If solved, it is a problem on USB cable or PC. 3. Replace the USB Cable with a new one. 4. Replace the MAIN PCB with a new one.
+Code;909
+Display;ERROR 909 PARAMETER VERSION
+Description;Parameter version which is downloaded is different from FW version.
+Remedy;
+Code;90d
+Display;ERROR 90d NO HEAD SELECT
+Description;Loaded number of the head is assumed zero.
+Remedy;Check the setting of loading number of the head in the parameter. (System parameter No.41 HEAD NO=3)
+Code;90f
+Display;ERROR 90f
+Description;Lacking printing area in printing the builtin pattern.
+Remedy;1. Move the Y origin. 2. Replace the media.
+Code;910
+Display;ERROR 910 ENVIRONMENT TEMP(LO)
+Description;The room temperature is low. It is possible that normal discharging cannot be performed.
+Remedy;Adjust the room temperature to the specified range (20 degrees C to 25 degrees C).
+Code;910
+Display;SYSTEM HALT (*) 910 : DEVICE CONST
+Description;Device configuration is wrong.
+Remedy;1. Check whether or not FW is correct for using device.
+Code;911
+Display;ERROR 911 ENVIRONMENT TEMP(HI)
+Description;The room temperature is high. It is possible that normal discharging cannot be performed.
+Remedy;Adjust the room temperature to the specified range (20 degrees C to 25 degrees C).
+Code;na01
+Display;<LOCAL> INK IC CAN'T READ
+Description;IC chip of Ink Cartridge unreadable properly
+Remedy;1. Check the attached status of the chip. 2. Perform #TEST/ Check the IC. 3.Replace the ID Contact PCB Assy. with a new one.
+Code;na02
+Display;<LOCAL> WRONG INK IC
+Description;IC chip of Ink Cartridge unreadable properly
+Remedy;1. Check the attached status of the chip. 2. Perform #TEST/ Check the IC. 3.Replace the ID Contact PCB Assy. with a new one.
+Code;na03
+Display;<LOCAL> INK TYPE
+Description;Type of inserted Ink Cartridge is different.
+Remedy;1. Check the type of the ink cartridge.
+Code;na04
+Display;<LOCAL> INK COLOR
+Description;The color of Ink Cartridge inserted is different from the color to be set.
+Remedy;1. Check the color of the ink cartridge.
+Code;na05
+Display;<LOCAL> WRONG CARTRIDGE
+Description;An error occurred in the IC chip information of the ink cartridge.
+Remedy;The chip was used too much (exceeding the specified times). 1. Check whether the chip was also replaced when the pack was replaced. 2. Check the W ink nozzle clogging and resolve it. 3. Replace the chip.
+Code;na06
+Display;<LOCAL> NO CARTRDG
+Description;No cartridge (Cartridge is not installed)
+Remedy;"(When the message is still displayed even after a Ink Cartridge is charged;) 1. Execute and confirm [#TEST SENSOR]->[INK CARTRIDGE](The number meets the cartridge No.). 2. Check the peripheral and the assembly of the Presence Sensor. 3. Check the connection of the Presence Sensor and the End Sensor 4. .Replace the Cartridge with a new one 5. Replace the Presence/Near End Sensor with a new one. 6. Replace the Ink System PCB with a new one. 7. Replace the MAIN PCB with a new one."
+Code;na07
+Display;<LOCAL> INK END
+Description;Ink end (No ink left)
+Remedy;"(When the message is still displayed even after a new Ink Cartridge or an empty Ink Cartridge is charged;) 1. Execute and confirm [#TEST SENSOR]->[INK END](The number meets the cartridge No.). 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the Near End Sensor. 4. Replace the Cartridge with a new one 5. Replace the Presence/Near End Sensor with a new one. 6. Replace the Ink System PCB with a new one. 7. Replace the MAIN PCB with a new one."
+Code;na08
+Display;<LOCAL> INK NEAREND
+Description;Ink near end (A small amount of ink left)
+Remedy;"(When the message is still displayed even after a new Ink Cartridge or an empty Ink Cartridge is charged;) 1. Execute and confirm [#TEST SENSOR]->[INK END](The number meets the cartridge No.). 2. Check the peripheral and the assembly of the End Sensor. 3. Check the connection of the Presence Sensor and the Near End Sensor. 4. Replace the Cartridge with a new one 5. Replace the Presence/Near End Sensor with a new one. 6. Replace the Ink System PCB with a new one. 7. Replace the MAIN PCB with a new one."
+Code;na09
+Display;<LOCAL> CHECK INK PACK
+Description;Even if there is enough amount of ink, ink end was detected.
+Remedy;Check the ink pack setting status in the eco case.
+Code;na10
+Display;<LOCAL> EXPIRATION
+Description;Some ink cartridges are expired.
+Remedy;1. 1. Check the expiration date of the ink. (If this message appears when a correct cartridge is set) 2. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 3. Check the connection of the ID Contact PCB. 4.Replace the Cartridge with a new one. 5. Replace the ID Contact PCB Assy. with a new one. 6. Replace the Ink System PCB with a new one.
+Code;na11
+Display;<LOCAL> EXPIRATION(1MONTH)
+Description;Some ink cartridges are expired. (One month has passed after the expiration date.)
+Remedy;1. Be careful that the expiration date is coming soon. You can use up to the next month. The red LED blinks. ((If this message appears when a correct cartridge is set) 2. Check the assembly of the ID Contact PCB and the shape of the contact plate, and execute the cleaning. 3. Check the connection of the ID Contact PCB. 4.Replace the Cartridge with a new one. 5. Replace the ID Contact PCB Assy. with a new one. 6. Replace the Ink System PCB with a new one.
+Code;na12
+Display;<LOCAL> EXPIRATION (2MONTH)
+Description;Some ink cartridges are expired. (Two months have passed after the expiration date.)
+Remedy;Replace the cartridge with the warning.
+Code;na13
+Display;<LOCAL> Can't PRINT/ CART.[ENT]
+Description;Multiple ink errors (unusable inks) occurred. Ink supply (printing, cleaning, etc.) cannot be performed.
+Remedy;Press the [ENTER] key, and check the relevant cartridge and the error contents. Then replace it with a usable one.
+Code;na14
+Display;<LOCAL> Check waste ink[MNT]
+Description;The count of the waste ink tank exceeded the specified amount.
+Remedy;Check the waste ink tank. Press the [MAINT] key, and correct the counter or reset it.
+Code;na15
+Display;<LOCAL> Replace WIPER [MNT]
+Description;The count of the wiper exceeded the specified amount.
+Remedy;Press the [MAINT] key, and replace the wiper.
+Code;na16
+Display;<LOCAL> ** NO MEDIA **
+Description;The media is not set. Or, the sensor has been broken.
+Remedy;1. Set the media. 2. Check the media sensor operation/ replace it.
+Code;na17
+Display;<LOCAL> DATA REMAIN
+Description;Data has already been received.
+Remedy;Press the REMOTE key and perform printing. Or, perform data clear.
+Code;na18
+Display;<LOCAL> INK NEAR END [ENT]
+Description;Ink near end (A small amount of ink left)
+Remedy;Press the [ENTER] key and check the relevant cartridge. (Be careful that ink end is coming soon.)
+Code;na19
+Display;<LOCAL> SUPPLY INK :MMCCYYKK
+Description;Ink filling into the damper has failed.
+Remedy;1. Perform [ MAINTENANCE DAMPER ]. 2. Also check the amount of remaining ink in the cartridge.
+Code;na20
+Display;<LOCAL> Damper Sens:MMCCYYKK
+Description;The liquid surface sensor abnormality of the damper has been detected.
+Remedy;1. Turn OFF the power supply once, and wait for a while. And then turn ON the power supply again (when it is displayed again). Same as ERROR617.
+Code;na21
+Display;<LOCAL> InkOverflow:MMCCYYKK
+Description;Overflow from the damper has been detected.
+Remedy;1. Perform [ MAINTENANCE DAMPER ] (when it is displayed again). Same as ERROR61a.
+Code;na22
+Display;<LOCAL> Damper HIGH:MMCCYYKK
+Description;Even though a certain amount of ink has been consumed, there is no change in the liquid level detection sensor “High”.
+Remedy;Perform [ MAINTENANCE DAMPER ] (when it is displayed again). Same as ERROR618,619.

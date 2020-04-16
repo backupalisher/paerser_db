@@ -1,0 +1,72 @@
+Code;01
+Description;Ready LED won't light up.
+Causes;1. No Power? 2. VCC(+5V)>= +4.5V? 3. U15-130(/POR) is HIGH? (+4.5V or over) 4. U15-153(/RST_OUT) is HIGH? (+4V or over)
+Remedy;1. Check power(SMPS). 1) Cord connection 2) Check each power channel. (+5V, +11.75V, +30V) 2. Check power. 3. Check the circuit around U16. 4. Check data bus of U15. Exchange the main PBA.
+Code;02
+Description;LF motor does not operate.
+Causes;1. Check control signal of U15-141 - 145. 2. Check driving output and input signal of U27 and U28.
+Remedy;1. Replace the main PBA if control signal is not generated though the other functions of the system are normal. 2. Replace U27 and U28 if driving output is defective though input signal is normal.
+Code;03
+Description;CR motor does not operate.
+Causes;1. Check control signal of U15-31 - 36. 2. Check driving output and input signal of U25 and U26.
+Remedy;1. Replace the main PBA if control signal is not generated though the other functions of the system are normal. 2. Replace U25 and U26 if driving output is defective though input signal is normal.
+Code;04
+Description;Paper Jam
+Causes;Check sheet feeder and ejector.
+Remedy;Get rid of jammed paper.
+Code;05
+Description;Document Jam
+Causes;Check manual document feeder.
+Remedy;Remove jammed documents and insert it again.
+Code;06
+Description;No Paper
+Causes;1. No paper? 2. U17-24 is HIGH? (+4V or over)
+Remedy;1. Feed paper. 2. If high, replace the paper empty sensor. If low, replace the main PBA.
+Code;07
+Description;No Document
+Causes;1. No document? 2. U15-125 is HIGH? (+4V or over)
+Remedy;1. Insert documents. 2. If high, check SEN1 and the surrounding circuit. If low, replace the main PBA.
+Code;08
+Description;No Cartridge
+Causes;1. Check if ink cartridge is mounted. 2. Check contacted part of the head. 3. Check head checking circuit and driver.: Check U15-8,9,10,128,154,156, U17-23 control signals and head data.
+Remedy;1. Mount ink cartridge. 2. Clean it. 3. Replace the main PBA.
+Code;09
+Description;Ink low
+Causes;Check the amount of ink.
+Remedy;Replace ink cartridge. After replacing it, press Oink replacement O key for over 3sec to inform the system of new ink.
+Code;10
+Description;Can't copy
+Causes;1. Refer to problems of scanner. 2. Poor quality of printed image : Print test pattern and check if nozzles have fallen out. 3. Can't print.: Check U17-34, 36 signals.( LOW ACTIVE)
+Remedy;1. Refer to problems of scanner. 2. 1) Check contact between ink cartridge and the head.: Clean it. 2) Check print control signals of U15- 1-10, U15-158 - 160, U15-12-19, and U15-21-28. Check input and output signals of U19,20,23, and 24. Replace the main PBA. 3. Replace the main PBA.
+Code;11
+Description;Can't PRINT
+Causes;1. Check centronics cable connection. 2. Is Standby LED of the system on? 3. Check how print driver has been installed. 4. Check I/F part of parallel port. 1) Check the initial state of print control signal of CON8.: No.1, 10 -14, 31, 32, 36 2) Check input and output signal of U14. 3) Check input and output signals of U15-43-51 and U15-53-61. 5. Refer to 2 and 3 of 6-4 PRINGTING QUALITY.
+Remedy;1. Connect it correctly. 2. Press OstandbyO key to keep the standby mode. 3. Install the print driver again and reboot the system. 4. Replace the main PBA. 5. Refer to 2 and 3 of 6-4 PRINGTING QUALITY.
+Code;12
+Description;Defective Transmission / Reception
+Causes;In case PC controls: 1. Check CON3(main PBA), main LIU harness, and P1(LIU PBA). 2. 1) Is external telephone hooked off? 2) Output of U2-4(LIU PBA) is LOW? 3. Check HOOK-OFF. (Line connection): U17-8(/CML1) is HIGH? 4. Check the signals of U15-122, 123. 5. Check transmission path: Check output of U21-44(main PBA) and input of U3-3(LIU PBA). 6. Check reception path: Check output of U3-40(LIU PBA) and input of U21-45(main PBA). In case you use external telephones: 1. Check CON3(main PBA), main LIU harness, and P1(LIU PBA). 2. Output of U2-4(LIU PBA) is HIGH? (+4V or over) 3. Refer to 3,4,5 and 6 of ODefective Transmission/Reception in In case PC controls.
+Remedy;1. Replace defective parts. 2. 1) Hook on external telephone correctly. 2) If low, replace LIU PBA. 3. If low, replace main PBA. If it is not hooked off though it is normal, replace LIU PBA. 4. If the signals of U15-122(LIU_TXD) are abnormal, replace main PBA. If the signals of U15-123(LIU_RXD) are abnormal, replace LIU PBA. 5. If it is abnormal, replace main PBA. 6. If the output of U3-40(LIU PBA) is not confirmed, replace LIU PBA. If the output of U3-40(LIU PBA) is confirmed but the input of U21-45(main PBA) is not confirmed, check the circuit around U6(main PBA). 1. Replace defective parts. 2. If high, check the surrounding circuit and replace LIU PBA. 3. Refer to 3,4,5 and 6 of Defective Transmission/ReceptionO in OIn case PC controls.
+Code;13
+Description;Automatic Reception Failure
+Causes;1. Can you check ring? Check ring pattern of U17-18(main PBA). 2. Refer to Defective Transmission/ Reception.
+Remedy;1. If not, replace LIU PBA. 2. Refer to Defective Transmission/ Reception.
+Code;14
+Description;MF dial is possible but not DP dial.
+Causes;1. Check the part around R2 and Q6 of LIU PBA. 2. Check connection of R43 of LIU PBA.
+Remedy;1. Replace LIU PBA. 2. Replace LIU PBA.
+Code;15
+Description;Ink Low continues to be displayed or warning voice sounds though ink has been replaced.
+Causes;- Check if you reset Ink Low Counter when you replaced ink.
+Remedy;- Reset Ink Low Counter by pressing Oink replacementO button for more than 3 seconds when you replace ink using the button. - Reset Ink Low Counter by pressing new cartridge replacement button when you replace ink using PC.
+Code;16
+Description;Printed color is extremely different from the color on the screen of PC.
+Causes;- Check by self diagnostic printing if specific color ink is used up.
+Remedy;- Replace color ink cartridge.
+Code;17
+Description;PC cannot check the status of the printer.
+Causes;- Check if device driver has not been installed or incorrectly installed.
+Remedy;- Add Device=C:  Myjet  Mjtsr.exe to Config.sys file and reboot the computer. - Optimize PC memory by running Memmaker.
+Code;18
+Description;Windows goes in error and the computer gets down after a diskette is installed.
+Causes;- Check virtual memory of control panel in the basic program group.
+Remedy;- Press the 386 expansion icon of control panel to change virtual memory from temporary to permanent.

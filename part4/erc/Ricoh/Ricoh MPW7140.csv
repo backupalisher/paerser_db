@@ -1,0 +1,480 @@
+Code;SC101
+Description;Lamp error Lamp does not light at power on.
+Causes;If cycling the machine power off/on does not solve the problem: • Clean the white plate • Clean the CIS glass • Lamp regulator connection loose broken, defective • CIS, IPU, BCU connection loose broken defective • Harness connection between Xenon lamp and lamp regulator loose broken defective • Harness between CIS and IPU loose, broken, defective • Harness between CIS and PSU loose, broken, defective • One or more defective: CIS, IPU, BCU, PSU, Xenon lamp
+Remedy;
+Code;SC144
+Description;CIS communication error A serial communication error occurred with the CIS due to a PCB malfunction or loose connection.
+Causes;If cycling the machine power off/on does not solve the problem: • Harness between CIS and IPU loose broken defective • Harness between CIS and PSU loose, broken, defective • CIS defective • IPU defective • BCU defective
+Remedy;
+Code;SC161
+Description;IPU Error Three attempts to configure the Cetus chip on the IPU board failed when the machine was switched on or when machine recovered from the energy save mode.
+Causes;• Replace the IPU
+Remedy;
+Code;SC180
+Description;Left scanner fan lock The BCU detected a left scanner fan lock signal 5 sec. after the machine was switched on.
+Causes;If cycling the machine power off/on does not solve the problem: • Left scanner fan harness connection to the IOB loose, broken, defective • Left scanner fan defective • IOB defective • BCU defective
+Remedy;
+Code;SC181
+Description;Right scanner fan lock The BCU detected a right scanner fan lock signal 5 sec. after the machine was switched on.
+Causes;If cycling the machine power off/on does not solve the problem: • Left scanner fan harness connection to the IOB loose, broken, defective • Left scanner fan defective • IOB defective • BCU defective
+Remedy;
+Code;SC186
+Description;Gray balance adjustment error
+Causes;The value for gray balance was detected out of range after gray adjustment.
+Remedy;If cycling the machine power off/on does not solve the problem: • Clean the white strip • Clean the CIS glass • Check the following harnesses for loose, broken, or defective connectors: 1. Xe lamp to lamp regulator 2. Lamp regulator to CIS 3. CIS to IPU 4. CIS to IPU 5. IPU to IOB • One of the following boards is defective 1. CIS 2. IPU 3. IOB 4. BCU
+Code;SC191
+Description;Original exit roller thermistor error The original exit roller thermistor reading was abnormal.
+Causes;• Thermistor connection loose, broken, defective • Thermistor short • Harness between thermistor and IOB loose, broken, defective • IOB defective • BCU defective
+Remedy;
+Code;SC300
+Description;Charge corona output error Charge corona feedback voltage less than 0.5 V was detected for more than 200 sec after power on.
+Causes;• TD power pack defective. • High voltage cable defective. • Dirty charge corona wire caused voltage leak
+Remedy;
+Code;SC303
+Description;Charge grid output error Control PWM duty value is higher than 1% (FB less than 1V) for more than 200 ms due to grid current leak.
+Causes;• CGB power pack is defective. • CGB power pack harness loose, broken, defective
+Remedy;
+Code;SC305
+Description;Charge corona wire cleaner error The wire cleaning pad did not return to its home position within 5 sec. after wire cleaning.
+Causes;• Wire cleaner motor harness loose, broken, defective • Wire cleaner motor defective • Charge corona wire defective
+Remedy;• This SC is not issued if SP2804 is set to zero (no cleaning). • If immediate repair is not possible, set SP2804 to zero to switch off the charge corona cleaner function.
+Code;SC347
+Description;Development drive motor lock error Development drive motor stopped (the lock signal remained HIGH longer than 5 sec. when the development was operating).
+Causes;• Motor or drive mechanism blocked • Motor harness loose, broken, defective • Motor defective
+Remedy;
+Code;SC392
+Description;Development bias error The PWM duty level was detected higher than 5% within 100 ms after high voltage output started, and the feedback voltage was detected less than 0.3 V for more than 200 ms.
+Causes;• Harness connection between CGB power pack and IOB loose, broken, defective • CGB power defective • High voltage cable damaged
+Remedy;
+Code;SC400
+Description;ID sensor error 1: automatic adjustment error During the process control self-check, the Vsg value (reflectivity of the bare drum surface) could not be adjusted to within 4.0±0.2V within 20 sec. after automatic adjustment began.
+Causes;• ID sensor dirty • ID sensor harness loose, broken, defective • ID sensor harness connection at IOB loose, broken, defective. • ID sensor defective • Exposure unit defective • Development unit defective • TD power pack defective
+Remedy;
+Code;SC401
+Description;ID sensor error 2: Vsg When the ID sensor was calibrated, Vsg (reflectivity of the bare drum surface) was detected less than 2.5V after two attempts. -or- After calibration, Vsg was detected as 5.0V at PWM adjustment and PWM=0.
+Causes;• Dirty ID sensor • ID sensor harness connection loose, broken, defective • TD power pack defective • IOB defective
+Remedy;
+Code;SC402
+Description;"ID sensor error 3: Vsp The Vsp (reflectivity of ID sensor pattern) value was detected at ""0"" or more than 2.5V when the ID sensor was calibrated during process control."
+Causes;• OPC drum gear Allen screw loose • ID sensor dirty • ID sensor harness loose, broken, defective • ID sensor defective • IOB defective • Exposure unit defective • Development unit defective • TD power pack defective
+Remedy;
+Code;SC403
+Description;ID sensor error 4: LED current error During Vsg adjustment (reflectivity of the bare drum surface) during process control, the averaged PWM output was zero or 255.
+Causes;• ID sensor dirty • ID sensor harness connection loose, broken, defective • ID sensor defective • IOB defective • Exposure unit defective • Development unit defective • TD power pack defective
+Remedy;
+Code;SC406
+Description;ID sensor error 5: edge detection error during calibration The voltage reading of the ID sensor pattern during process control remained less than 2.5V for more than 0.6 sec. during process control.
+Causes;• ID sensor dirty • ID sensor harness connection loose, broken, defective • ID sensor defective • IOB defective • Exposure unit defective • Development unit defective • TD power pack defective
+Remedy;
+Code;SC440
+Description;Transfer voltage output error 100 ms after the TD power pack started to output the transfer voltage, the feedback voltage was detected less than 0.5 V for more than 200 ms.
+Causes;• Defective high voltage cable caused a voltage leak • TD power pack defective
+Remedy;
+Code;SC460
+Description;Paper separation DC error 100 ms after the TD power pack started to output the separation charge, the feedback voltage was detected less than 0.5 V for more than 200 ms.
+Causes;• Defective high voltage cable • TD power pack defective
+Remedy;
+Code;SC503
+Description;Lift sensor 1 error After the upper paper cassette was closed, lift sensor 1 did not switch on within 20 s after tray lift motor 1 switched on. -or- Lift sensor 1 did not switch off within 1 sec. after the tray started to descend.
+Causes;• Tray lift motor 1 connector loose, disconnected, broken. • Paper or other foreign object has jammed tray lift motor 1. • Pickup solenoid 1 connector is loose, disconnected, damaged. • Paper or other foreign object has jammed pickup solenoid 1 • Lift sensor 1 defective
+Remedy;
+Code;SC504
+Description;Lift sensor 2 error After the lower paper cassette was closed, lift sensor 2 did not switch on within 20 s after tray lift motor 2 switched on. -or- Lift sensor 2 did not switch off within 1 sec. after the tray started to descend.
+Causes;• Tray ift motor 2 connector loose, disconnected, broken. • Paper or other foreign object has jammed tray lift motor 2. • Pickup solenoid 2 connector is loose, disconnected, damaged. • Paper or other foreign object has jammed pickup solenoid 2 • Lift sensor 2 defective
+Remedy;
+Code;SC506
+Description;Cassette feed motor error The cassette feed motor lock signal remained HIGH longer than 2 sec. during operation. Note: When this SC occurs, paper feed from the cassette is not possible. However, roll paper can feed from tray 1 and tray 2.
+Causes;• Cassette feed motor harness loose, broken, defective • Drive mechanism overload due to physical obstruction • Motor driver PCB or motor defective
+Remedy;
+Code;SC507
+Description;Main motor lock: registration The registration motor lock signal remained high longer than 5 sec. during motor operation.
+Causes;• Motor harness loose, broken, defective • Drive mechanism overloaded due to obstruction • Motor driver PCB or motor defective
+Remedy;
+Code;SC521
+Description;Drum motor error The main motor lock signal remained HIGH for 5 sec. after the motor started.
+Causes;• Motor harness loose, broken, defective • Motor driver PDB or motor defective
+Remedy;
+Code;SC531
+Description;Fusing drive motor error The fusing drive motor lock signal remained HIGH for 5 sec.
+Causes;• Fusing motor drive mechanism overloaded. • Motor defective
+Remedy;
+Code;SC532
+Description;Left fusing pressure motor home position error 1 The left pressure motor did not arrive at the home position within 23 sec. after the left pressure motor started.
+Causes;• Left fusing pressure motor home position sensor loose, broken, defective. • Sensor defective. • Motor drive mechanism overloaded • Motor defective.
+Remedy;
+Code;SC533
+Description;Left fusing pressure motor home position error 2 The left pressure motor remained at the home position for 3 sec. after the motor switched on.
+Causes;• Left fusing pressure motor home position sensor loose, broken, defective. • Left fusing pressure motor drive mechanism overloaded • Sensor defective. • Motor defective.
+Remedy;
+Code;SC534
+Description;Right fusing pressure motor home position error 1 The right pressure motor did not arrive at the home position 23 sec. after the right pressure motor switched on.
+Causes;• Right fusing pressure motor home position sensor loose, broken, defective. • Right fusing pressure motor drive mechanism overloaded • Sensor defective. • Motor defective.
+Remedy;
+Code;SC535
+Description;Right fusing pressure motor home position error 2 The right pressure motor remained at the home position 3 sec. after motor switched on.
+Causes;• Right fusing pressure motor home position sensor loose, broken, defective. • Right fusing pressure motor drive mechanism overloaded • Sensor defective. • Motor defective.
+Remedy;
+Code;SC541
+Description;Fusing thermistor open The fusing temperature detected by the thermistor remained below 5°C (41°F) for 30 sec.
+Causes;• Thermistor cable disconnected, broken, defective • Thermistor defective
+Remedy;
+Code;SC542
+Description;Fusing temperature warm-up error During warm-up after switching on the machine, or after opening and closing the machine, hot roller did not attain the ready temperature within 5 minutes (the temperature was detected below 3°C (37.4°F) 5 times within 5 sec.).
+Causes;• Fusing lamp defective • Thermistor floating, out of position • Thermistor cable disconnected, broken • Fusing thermistor defective
+Remedy;
+Code;SC543
+Description;Fusing overheat error 1: Software A fusing temperature of over 230°C (446°F) was detected for 2 sec.
+Causes;• PSU defective • TRIAC short, IOB board defective • BCU board defective
+Remedy;
+Code;SC544
+Description;Fusing overheat error 2: Hardware The backup circuit detected fusing temperature over 235°C (455°F) for longer than the time prescribed for high temperature fluctuation.
+Causes;• TRIAC short, IOB board defective • PSU board defective • Fusing unit defective
+Remedy;
+Code;SC545
+Description;Fusing lamp overheat error 3 After reaching the ready temperature, the hot roller does not start to rotate and the fusing lamp stays on at full power for 50 sec.
+Causes;• Fusing lamp harness loose, broken, defective • IOB defective
+Remedy;
+Code;SC546
+Description;Unstable fusing temperature Fusing temperature fluctuated more than 20°C (68°F) within 1 sec. more than 7 times during the previous 60 sec. of fusing temperature control.
+Causes;• Thermistor disconnected • Thermistor out of position, not in contact with hot roller • Thermistor connection loose, broken, defective
+Remedy;
+Code;SC547
+Description;Zero-cross signal error One of the following conditions occurred: • No zero-cross signal detected within 50 ms after the machine was powered on with Relay 0 off, or abnormal zero-cross detected 3 times. • No zero-cross signal detected for 3 sec. after fusing relay turned on after power on. • Abnormal mains frequency was detected more than 10 times.
+Causes;• Electrical noise on the power line • PSU power relay defective.
+Remedy;
+Code;SC551
+Description;Pressure roller center thermistor error 1 The thermistor returned temperature readings less than 5°C (41°F) for 12 sec. during fusing temperature control while the hot roller and pressure rollers were rotating
+Causes;• Thermistor connection loose, broken, defective • Thermistor floating free, not positioned correctly • Thermistor defective • IOB defective
+Remedy;
+Code;SC553
+Description;Pressure roller center thermistor error During fusing temperature control the thermistor at the center of the pressure roller returned an abnormally low reading.
+Causes;• Thermistor has short circuited • Thermistor not positioned correctly • Thermistor harness loose, broken, defective • Thermistor defective • IOB defective
+Remedy;
+Code;SC557
+Description;Applied zero-cross waveform error The applied power ac frequency was detected less than 66 Hz more than 10 times.
+Causes;• Noise on the ac power supply line
+Remedy;
+Code;SC559
+Description;Three consecutive fusing paper jam errors Three consecutive paper jam errors occurred in the fusing unit. Note: This SC code is not issued unless SP1159 is switched on.
+Causes;• Paper jam in fusing unit • Pick-off pawl defective • Paper scraps in fusing unit • Exit sensor defective
+Remedy;
+Code;SC561
+Description;Pressure roller end thermistor error 1 The thermistor returned temperature readings less than 5°C (41°F) for 12 sec. during fusing temperature control while the hot roller and pressure rollers were rotating
+Causes;• Thermistor connection loose, broken, defective • Thermistor floating free, not positioned correctly • Thermistor defective • IOB defective
+Remedy;
+Code;SC563
+Description;Pressure roller end thermistor error 2 The thermistor returned digital readings for the pressure roller during fusing temperature control that were low (out of range).
+Causes;• Thermistor connection loose, broken, defective • Thermistor floating free, not positioned correctly • Thermistor defective • IOB defective
+Remedy;
+Code;SC571
+Description;Pressure roller end thermistor error 3 The thermistor returned 30 readings for the end of the pressure roller that were below 5°C (41°F) for 30 sec.
+Causes;• Thermistor connection loose, broken, defective • Thermistor floating free, not positioned correctly • Thermistor defective
+Remedy;
+Code;SC572
+Description;Pressure roller end thermistor error 4 The thermistor returned 5 readings for the end of the pressure roller that were below 3°C (37.4°F) for 5 sec.
+Causes;• Fusing lamp disconnected • Fusing lamp defective • IOB defective
+Remedy;
+Code;SC573
+Description;Fusing temperature error: Software Fusing temperature exceeded 230°C (446°F) for more than 2 sec.
+Causes;• TRIAC short, IOB defective
+Remedy;
+Code;SC591
+Description;Cutter 1 home position error 1: Upper Tray Both left and right cutter HP switches were on: Immediately after the machine was turned on. -or- After the upper tray was opened and closed.
+Causes;• Right or left cutter home position switch defective.
+Remedy;
+Code;SC592
+Description;Cutter 1 home position error 2: Upper Tray The left home position switch remained on 300 ms after the cutter motor switched on.
+Causes;• Cutter motor 1 harness loose, broken, defective • Cutter motor overload due to physical obstruction • Cutter motor 1 defective
+Remedy;
+Code;SC593
+Description;Cutter 1 home position error 3: Upper Tray The home position switch remains off for 1 sec. after cutter motor 1 switches on.
+Causes;• Cutter motor 1 harness loose, broken, defective • Cutter motor 1 overload due to physical obstruction • Cutter motor 1 defective
+Remedy;
+Code;SC594
+Description;Cutter 2 home position error 1: Lower Tray Both left and right cutter HP switches were on: Immediately after the machine was turned on. -or- After the upper tray was opened and close.
+Causes;• Right or left cutter home position switch defective.
+Remedy;
+Code;SC595
+Description;Cutter 2 home position error 2: Lower Tray The left home position switch remained on 300 ms after the cutter motor switched on.
+Causes;• Cutter motor 1 harness loose, broken, defective • Cutter motor overload due to physical obstruction • Cutter motor 1 defective
+Remedy;
+Code;SC596
+Description;Cutter 2 home position error 3: Upper Tray The home position switch remained off for 1 sec. after cutter motor 1 switched on.
+Causes;• Cutter motor 1 harness loose, broken, defective • Cutter motor 1 overload due to physical obstruction • Cutter motor 1 defective
+Remedy;
+Code;SC628
+Description;Fan folder communication error 1 The main machine issued a timeout three failed attempts to communicate with the fan folder unit. Possible causes: • There was no answer from the fan folder within 100 ms in response to data sent from the main machine. • The fan folder unit was switched off while folding was in progress. • The main machine received an illegal command from the fan folder. • 60 sec. after the main machine fed the document to the fan folder, the fan folder failed to notify the main machine that the folded document has exited the fan folder.
+Causes;• Fan folder not connected to main machine • Fan folder main control unit connector loose, broken, defective • Fan folder main control unit defective
+Remedy;
+Code;SC629
+Description;Fan folder communication error 2: Cross Folder There was no answer from the fan folder within 100 ms in response to data sent from the main machine.
+Causes;• Fan folder not connected to main machine • Fan folder main control unit connector loose, broken, defective • Fan folder main control unit defective
+Remedy;
+Code;SC632
+Description;Key/card counter device error 1 GW After 1 data frame is sent to the device, an ACK signal is not received within 100 ms, and is not received after 3 retries.
+Causes;• The serial line from the device to the copier is unstable, disconnected, or defective.
+Remedy;
+Code;SC633
+Description;Key/card counter device error 2 GW During communication with the device, the BCU received a break (Low) signal.
+Causes;• The serial line from the device to the copier is unstable, disconnected, or defective.
+Remedy;
+Code;SC635
+Description;Key/card counter device error 4 GW After installation of the device, a message alerts user to a battery voltage abnormal error.
+Causes;• Device control board defective • Device control board backup battery defective
+Remedy;
+Code;SC636
+Description;Expansion recognition module error GW An error has occurred while trying to access the file of the expansion recognition module.
+Causes;• DESS module does not exist on SD card • External expansion recognition module does not exist on SD card • SD card damaged • External expansion recognition file corrupted
+Remedy;
+Code;SC641
+Description;Engine-to-controller communication error: No response GW The controller sent a frame to the main machine engine but there was no response as demanded by RAPI protocol. The frame was sent 3 times at 100 ms intervals. This SC was issued after the 3rd attempt failed.
+Causes;• Examine the connection between the controller and the engine board. • Replace the engine board if the error is frequent.
+Remedy;
+Code;SC650
+Description;Cumin-M communication error GW An error occurred with the Cumin modem (dialup, modem port) when the machine was switched on.
+Causes;• The settings for @Remote SP5816 are incorrect • Modem disconnected from the phone line • Modem port disconnected • Wireless LAN card missing
+Remedy;
+Code;SC651
+Description;@Remote dial-up incorrect
+Causes;An unexpected error occurred while the machine was dialing up the @Remove service center via modem.
+Remedy;
+Code;SC670
+Description;Engine startup error GW The BCU failed to respond with the prescribed time when the machine was turned on.
+Causes;• Connections between BCU and controller board are loose, disconnected, or damaged • Replace the BCU • Replace the controller board
+Remedy;
+Code;SC671
+Description;Illegal engine board detected GW An illegal engine board was detected at power on by the firmware.
+Causes;• NIA
+Remedy;
+Code;SC672
+Description;Controller startup error GW After power on, the line between the controller and the operation panel did not open for normal operation. After normal startup, communication with the controller stopped.
+Causes;• Controller stalled • Controller installed incorrectly • Controller board defective • Operation panel harness disconnected or defective
+Remedy;
+Code;SC687
+Description;Per-command error The main machine received no per-command module from the GW controller.
+Causes;• Poor communication, cycle the machine power off/on
+Remedy;
+Code;SC690
+Description;VDB communication error An error occurred on the video drive board.
+Causes;• VDB harness loose, broken, defective • IOB harness loose, broken, defective • VDB to IPU harness loose, broken, defective
+Remedy;
+Code;SC720
+Description;Fan folder transport motor error A lock signal was detected at the transport motor for longer than 5 sec.
+Causes;• Transport motor harness loose, broken, defective • Transport motor drive mechanism overloaded due to physical obstruction • Transport motor defective • MCU defective
+Remedy;
+Code;SC722
+Description;Horizontal transport guide HP sensor error The home position sensor neither switched on nor switched off while the pressure release drive was operating.
+Causes;• Fan fold motor harness loose, broken, defective • Vertical transport clutch defective • HP sensor harness loose, broken, defective • HP sensor defective • MCU defective
+Remedy;
+Code;SC726
+Description;Cross folder jogger HP sensor error The jogger fence HP sensor neither switched on nor switched off during operation of the jogger fence.
+Causes;• Jogger fence HP sensor harness loose, broken, defective • Jogger motor harness loose, broken, defective • Motor drive overload due to physical obstacle • Jogger fence HP sensor defective • Jogger motor defective • MCU defective
+Remedy;
+Code;SC727
+Description;Cross folder horizontal transport guide HP sensor error The horizontal transport guide HP sensor did not switch on or switch off during operation of the horizontal transport press motor.
+Causes;• Horizontal transport guide HP sensor harness loose, broken, defective • Horizontal transport press motor harness loose, broken, defective • Motor drive overload due to physical obstacle • Horizontal transport guide HP sensor defective • Horizontal transport press motor defective • MCU defective
+Remedy;
+Code;SC750
+Description;Cross fold shift tray upper limit sensor error The sensor did not go on or off while the tray was being raised and lowered.
+Causes;• Tray lift motor harness loose, broken, defective • Tray lift motor overloaded due to physical obstacle • Tray upper limit sensor 1 harness loose, broken, defective • Tray lift motor defective • Tray upper limit sensor 1 defective • Main board defective
+Remedy;
+Code;SC762
+Description;Fan folder fan fold plate HP sensor (F) error The state (on/off) of the front fan fold plate HP sensor did not change within 1 sec. after the fan fold plate motor (F) switched on
+Causes;• Undetected paper or scraps have jammed the fold mechanism • HP sensor harness loose, broken, defective • Motor harness loose, broken defective • HP sensor defective • Motor defective • MCU defective
+Remedy;
+Code;SC763
+Description;Fan folder fan fold plate HP sensor (R) error The state (on/off) of the rear fan fold plate HP sensor did not change within 1 sec. after the fan fold plate motor (R) switched on
+Causes;• Undetected paper or scraps have jammed the fold mechanism • HP sensor harness loose, broken, defective • Motor harness loose, broken defective • HP sensor defective • Motor defective • MCU defective
+Remedy;
+Code;SC764
+Description;Cross folder fold plate HP sensor (U) error The state (on/off) of the upper fold plate HP sensor did not change within 1 sec. after the fold plate motor (U) switched on
+Causes;• Undetected paper or scraps have jammed the fold mechanism • HP sensor harness loose, broken, defective • Motor harness loose, broken defective • HP sensor defective • Motor defective • MCU defective
+Remedy;
+Code;SC765
+Description;Cross folder fold plate HP sensor (L) error The state (on/off) of the lower fold plate HP sensor did not change within 1 sec. after the fold plate motor (L) switched on
+Causes;• Undetected paper or scraps have jammed the fold mechanism • HP sensor harness loose, broken, defective • Motor harness loose, broken defective • HP sensor defective • Motor defective • MCU defective
+Remedy;
+Code;SC790
+Description;Fan folder PCB fan motor error A motor lock signal was detected at the PCB cooling fan for more than 20 sec. after the fan was switched on.
+Causes;• Fan overloaded due to physical obstruction • Fan motor harness loose, broken, defective • Fan motor defective • MCU defective
+Remedy;
+Code;SC816
+Description;Energy save I/O sub system error GW An error occurred in the energy save sub system. This error occurs only when energy sub system module such as ASIC Whistle is present.
+Causes;• Cycle the machine power off/on • If cycling the machine off/on does not restore normal operation, replace the IOB.
+Remedy;
+Code;SC818
+Description;Watchdog error While the system program is running, a bus hold or interrupt program goes into an endless loop, preventing any other programs from executing.
+Causes;"• System program defective; switch off/on, or change the controller firmware if the problem cannot be solved • Controller board defective • Replace the peripheral device"
+Remedy;
+Code;SC819
+Description;Fatal kernel error GW Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel.
+Causes;• System program defective • Controller board defective • Optional board defective • Replace controller firmware For more details about this SC code error, execute SP5990 to print an SMC report so you can read the error code. The error code is not displayed on the operation panel.
+Remedy;
+Code;SC820
+Description;Sellf-diagnostic error 1: CPU
+Causes;An unexpected error occurred, or the boot monitor program or self-diagnostic program generated an interrupt. In either case, this is a fatal error.
+Remedy;• Replace the controller board • Update (upload again) all firmware modules to restore the boot program and the self-diagnostics. This SC displays up to approximately 50 number codes. These codes are used to find design problems and have no meaning for service technicians. The procedure for solving the problem is the same in every case.
+Code;SC821
+Description;Self-diagnostic error 2: ASIC GW The ASIC provides the central point for the control of bus arbitration for CPU access, for option bus and SDRAM access, for SDRAM refresh, and for management of the internal bus gate.
+Causes;0B00 Error code 0xffff ffff is returned when the register Write & Verify check is executed on the ASIC mounted on the controller board. The ASIC controls the ROM and buses for other devices. • ASIC defective, replace the controller board 0D05 The interrupts of the ASIC and CPU are not timed correctly. • ASCI timing device defective, or CPU defective. Replace the controller board.
+Remedy;
+Code;SC833
+Description;Self-diagnostic error 8: Engine I/F ASIC
+Causes;0F30 0F31 ASIC (Mandolin) for system control could not be detected. After the PCI configuration, the device ID for the ASIC could not be checked. 0F41 The read/write check done for resident RAM on the mother board could not be done correctly. 50B1 Could not initialize or read the bus connection. 50B2 Value of the SSCG register is incorrect. • Check for loose connections at MB (Mother Board) • Replace MB
+Remedy;
+Code;SC853
+Description;Wireless LAN Error 1: Startup GW During machine start-up, the machine can access the board that holds the wireless LAN, but not the wireless LAN card.
+Causes;• Wireless LAN card missing from slot
+Remedy;
+Code;SC854
+Description;Wireless LAN Error 2: Operation
+Causes;During machine start-up, the machine can access the board that holds the wireless LAN, but not the wireless LAN card. • Wireless LAN card missing from slot
+Remedy;
+Code;SC855
+Description;Wireless LAN Error 3: Board Error GW During machine operation of the wireless connection, an error occurred on the wireless LAN board.
+Causes;• Wireless LAN board not installed properly • Wireless LAN board defective
+Remedy;
+Code;SC856
+Description;Wireless LAN error 5: Board Error GW An error was detected on the wireless LAN board.
+Causes;• Wireless LAN board defective • PCI connector (to the mother board) loose
+Remedy;
+Code;SC857
+Description;USB I/F Error GW The USB driver is not stable and caused an error.
+Causes;• Bad USB board connection • Replace the controller board
+Remedy;
+Code;SC858
+Description;Serious data encryption error GW A serious error occurred during data encryption due to corruption of USB Flash or other data, or the presence of a magnetic field.
+Causes;• Power the system off/on • If this does not solve the problem, replace the data encryption board
+Remedy;
+Code;SC859
+Description;Data encryption HDD error
+Causes;An error occurred while data encryption was in progress. • The update procedure for the data encryption key was started with no HDD installed in the main machine. • The machine was switched off while the data encryption key was being updated. • An HDD error occurred caused by the effect of spurious noise on the disk or harnesses.
+Remedy;• Check all the HDD harness connection points • Initialize the HDD with SP5832 • Replace the HDD
+Code;SC860
+Description;HDD startup error at main power on GW HDD is connected but a driver error is detected. The driver does not respond with the status of the HDD within 30 s.
+Causes;• HDD is not initialized • Level data is corrupted • HDD is defective
+Remedy;
+Code;SC861
+Description;HDD re-try failure GW At power on with the HDD detected, power supply to the HDD is interrupted, after the HDD is awakened from the sleep mode, the HDD is not ready within 30 s.
+Causes;• Harness between HDD and board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Remedy;
+Code;SC863
+Description;HDD data read failure GW The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Causes;• HDD defective
+Remedy;If the bad sectors are generated at the image partition, the bad sector information is written to NVRAM, and the next time the HDD is accessed, these bad sectors will not be accessed for read/write operation.
+Code;SC864
+Description;HDD data CRC error GW During HDD operation, the HDD cannot respond to an CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;• HDD defective
+Remedy;
+Code;SC865
+Description;HDD access error GW HDD responded to an error during operation for a condition other than those for SC863, 864.
+Causes;• HDD defective.
+Remedy;
+Code;SC866
+Description;SD card error 1: Recognition error GW The SD card mounted in the slot contains illegal program data.
+Causes;• Use only SD cards that contain the correct data.
+Remedy;
+Code;SC867
+Description;SD card error 2: SD card removed
+Causes;The SD card in the boot slot when the machine was turned on was removed while the machine was on.
+Remedy;• Insert the SD card, then turn the machine off and on.
+Code;SC868
+Description;SD card error 3: SC card access GW An error occurred while an SD card was used.
+Causes;• SD card not inserted correctly • SD card defective • Controller board defective
+Remedy;If you want to try to reformat the SC card, use SD Formatter Ver 1.1.
+Code;SC870
+Description;Address book data error GW Address book data on the hard disk was detected as abnormal when it was accessed from either the operation panel or the network. The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective.
+Causes;• Software defective. Turn the machine off/on. If this is not the solution for the problem, then replace the controller firmware. • HDD defective.
+Remedy;1. Do SP5846 050 (UCS Settings – Initialize all Directory Info.) to reset all address book data. 2. Reset the user information with SP5832 006 (HDD Formatting– User Information). 3. Replace the HDDs. 4. Boot the machine from the SD card.
+Code;SC872
+Description;HDD mail RX data error GW An HDD error was detected immediately after power on. The HDD may be defective or the machine was accidentally powered off while the HDD was being accessed.
+Causes;• Reformat the HDD with SP5832-7 (Mail RX Data) • Replace the HDD
+Remedy;
+Code;SC873
+Description;HDD mail send data error
+Causes;An error was detected on the HDD immediately after the machine was turned on, or power was turned off while the machine used the HDD.
+Remedy;• Do SP5832-007 (Format HDD – Mail TX Data) to initialize the HDD. • Replace the HDD
+Code;SC874
+Description;Delete All error 1: HDD
+Causes;A data error was detected for the HDD/NVRAM after the Delete All option was used. Note: The source of this error is the Data Overwrite Security Unit running from an SD card.
+Remedy;"• Turn the main switch off/on and try the operation again. • Install the Data Overwrite Security Unit again. For more, see section “MFP Options” in ""Installation"". • HDD defective"
+Code;SC875
+Description;Delete All error 2: Data area
+Causes;An error occurred while the machine deleted data from the HDD. Note: The source of this error is the Data Overwrite Security Unit running from an SD card.
+Remedy;• Turn the main switch off/on and try the operation again.
+Code;SC876
+Description;Log data errors GW These errors occur when the machine tries to acquire the log data immediately after power on or upon leaving the energy save mode.
+Causes;SC876-1 D Log data error 1 Log data file corrupted • Do SP5832-4 (HDD Formatting - Job Log). SC876-2 D Log data error 2 There was no data encryption module available when there was an attempt to set up data encryption. This error can occur at power on, while the machine is operating, or when the data encryption settings are set up or changed. • Replace the data encryption board • Do the set up procedure again SC876-3 D Log data error 3 NVRAM error. The log encryption key was disabled when the machine was turned on. • Do SP5832-4 (HDD Formatting - Job Log) • Disable the log encryption settings SC876-4 D Log data error 4 NVRAM error 2. One of the following occurred: • Although log encryption has been disabled, the log data file was encrypted. • Although the log encryption has been enabled, the log data file was not encrypted. • Do SP5832-4 (HDD Formatting - Job Log) SC876-5 B Log data error 5 NVRAM, HDD switch error. This error can occur when the NVRAM or the HDD is removed and installed in another machine. • Remove the NVRAM and replace it with the original NVRAM. • Remove the HDD and replace it with the original HDD. • With the SC code displayed, do SP5832-4 (HDD Formatting - Job Log) SC876-99 B Log data error 99 Other errors. . • Contact the service center if this SC appears
+Remedy;"If only the HDD is replaced: 1. Switch off the machine. 2. Remove the HDD, switch the machine on again. 3. Do SP5801-19 (Memory Clear - LCS). 4. Switch off the machine. 5. Reinstall the original HDD and switch on the machine. 6. Do SP5832-4 (HDD Formatting - Job Log). 7. Cycle the machine off/on. 8. Do SP9730-2 and switch it ON (set to ""1""). 9. Do SP9730-3 and switch it ON (set to ""1""). 10. Do SP9730-4 and switch it ON (set to ""1""). 11. Cycle the machine off/on."
+Code;SC877
+Description;Data Overwrite Security SD card error GW An error occurred, preventing successful execution of the Data Overwrite Security function, even though it has been set up and enabled.
+Causes;• DOS card is not inserted completely into the SD card slot • DOS card has been removed from the SD card slot • DOS card is damaged.
+Remedy;• If the SD card has been removed (or was not installed correctly), switch the machine off, insert the SD card, then switch on the machine again. • If the SD card has been damaged, procure a new SD card, replace the NVRAM, then do the DOS option installation.
+Code;SC878
+Description;TPM electronic authentication error
+Causes;The attempt by the main machine to electronically authenticate TPM failed. When the machine was switched on the value registered by TPM did not match the value stored in the USB Flash Memory
+Remedy;• Replace the IOB.
+Code;SC880
+Description;File Format Converter (MLB) error GW A request to get access to the MLB was not answered within the specified time.
+Causes;• MLB defective, replace the MLB
+Remedy;
+Code;SC900
+Description;Electrical total counter error GW The total counter contains something that is not a number.
+Causes;• NVRAM incorrect type • NVRAM defective • NVRAM data scrambled • Unexpected error from external source
+Remedy;
+Code;SC901
+Description;Mechanical counter error At the beginning of a count, the machine detected that the mechanical was not connected. Note: This function is provided only in EXP machines.
+Causes;• Mechanical counter disconnected • Mechanical counter connector loose or defective
+Remedy;
+Code;SC910 ... SC914
+Description;SC910 B External controller error 1 GW SC911 External controller error 2 GW SC912 External controller error 3 GW SC913 External controller error 4 GW SC914 External controller error 5 GW An external application sent an error notice.
+Causes;• VLB defective • I/F cable defective
+Remedy;
+Code;SC919
+Description;External controller down GW The EAC received an interrupt signal from the FLUTE serial driver during print jobs in progress and the connection between the copier and external controller was broken. Note: The EAC is the External API Converter.
+Causes;1. Turn the machine off. 2. Check the I/F cable to determine if it became disconnected during operation. 3. Turn the machine on.
+Remedy;
+Code;SC920
+Description;Printer error 1 GW An internal application error was detected and operation cannot continue.
+Causes;"• Software defective; turn the machine off/on, or change the controller firmware • Insufficient memory"
+Remedy;
+Code;SC921
+Description;Printer error 2 GW When the application started, the necessary font was not on the SD card.
+Causes;• Font not on the SD card
+Remedy;
+Code;SC954
+Description;Printer Image Setting Error The IPU did not issue the signal required to start image processing for the printing mode within 60 s after the paper stops for registration.
+Causes;• Software defective • Replace the software (all firmware modules). • IPU defective
+Remedy;
+Code;SC965
+Description;Print start signal error 1 The printer received another print start signal after print job has already started.
+Causes;• Main machine firmware defective • Replace all firmware modules on the main machine
+Remedy;
+Code;SC967
+Description;Print start signal error 2 The printer received another print start signal after print job has already started.
+Causes;• Main machine firmware defective • Replace all firmware modules on the main machine • IOB defective
+Remedy;
+Code;SC984
+Description;Print image data send error No data was sent within 1 sec. after the print image data stream started.
+Causes;• Harness from IPU to controller board loose, broken, defective • IPU defective
+Remedy;
+Code;SC990
+Description;Software error 1 GW The software performs an unexpected function and the program cannot continue.
+Causes;• Software defective, re-boot
+Remedy;"1. Execute SP7403 or print an SMC Report (SP5990) to read the history of the 10 most recent logged errors. 2. If you press the ""0"" key on the operation panel with the SP selection menu displayed, you will see detailed information about the recently logged SC990 or SC991 error, including the software file name, line number, and so on. 3. The first method ""1"" is because another SC could write over the information for the previous SC."
+Code;SC991
+Description;Software error 2 GW The software performs an unexpected function. However, unlike SC990, recovery processing allows the program to continue.
+Causes;• Software defective, re-boot
+Remedy;"1. Execute SP7403 or print an SMC Report (SP5990) to read the history of the 10 most recent logged errors. 2. If you press the ""0"" key on the operation panel with the SP selection menu displayed, you will see detailed information about the recently logged SC990 or SC991 error, including the software file name, line number, and so on. 3. The first method ""1"" is because another SC could write over the information for the previous SC. 5. Appendix: Service Call Conditions"
+Code;SC992
+Description;Software error 3: Undefined GW An error not controlled by the system occurred (the error does not come under any other SC code).
+Causes;• Software defective • Turn the machine power off and on. The machine cannot be used until this error is corrected.
+Remedy;
+Code;SC997
+Description;Software Error 4: Cannot select application function GW An application does not start after the user pushed the correct key on the operation panel.
+Causes;• Software bug • A RAM or DIMM option necessary for the application is not installed or not installed correctly.
+Remedy;
+Code;SC998
+Description;Software Error 5: Application cannot start GW Register processing does not operate for an application within 60 s after the machine power is turned on. No applications start correctly, and all end abnormally.
+Causes;• Software bug • A RAM or DIMM option necessary for the application is not installed or not installed correctly.
+Remedy;

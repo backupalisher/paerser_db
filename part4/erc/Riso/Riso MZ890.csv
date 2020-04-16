@@ -1,0 +1,592 @@
+Code;A01
+Description;Master feed error
+Causes;201 During master settings, cutting, or making, the master positioning sensor does not switch ON, even after the master is sent. 202 During master setting or at the start of the master-making operation, the master positioning sensor does not switch OFF, even when the master is rewound for the set time. 206 Time-out error generated during master-making operation. 211 The master positioning sensor is ON during standby. 214 The master positioning sensor is ON at the start of the master-making operation. 215 Although the write pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control).
+Remedy;Master-making unit sensor: OFF -> ON and Master positioning sensor: OFF << Reset the master to cancel the error. >> (Or switch power OFF, then ON.)
+Code;A02
+Description;Master loading error on first print drum side
+Causes;509 The master loading sensor was OFF when the presence of master was checked at the specified angle during master-loading operation.
+Remedy;First print drum connection signal: ON -> OFF and first print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;A04
+Description;Master removal error on first print drum side
+Causes;303 Master removal error or removed master jam detected during the print drum check.
+Remedy;First print drum connection signal: ON -> OFF and first print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;A05
+Description;Master present in master removal section on first print drum side
+Causes;304 Master removal error or removed master jam detected during the master disposal box check. 312 The master disposal jam sensor was ON at the start of the master-making operation. 315 The master disposal jam sensor was ON at the completion of the recovery operation.
+Remedy;First master disposal box safety SW: OFF and first master disposal jam sensor: OFF << When the master disposal box is pulled out, the error is cancelled if the master has been removed. >> (Or switch power OFF, then ON.)
+Code;A06
+Description;Paper feed tray check
+Causes;403 The paper feed tray safety switch is OFF. 435 The paper feed tray interlock switch is OFF during operations.
+Remedy;Paper feed tray upper safety SW: ON or Paper feed tray lower safety SW: ON (Or switch power OFF, then ON.)
+Code;A07
+Description;Paper feed error
+Causes;409 The central transport sensor was OFF when the paper reached the central transport sensor, and the paper feed sensor was ON when the operation stopped (paper feed error). 412 The paper feed sensor switched OFF consecutively for n number of times at the time of the initial paper feed jam detection (no-paper feed error). 413 The paper feed sensor was ON when the paper left the paper feed sensor (extra-long paper error). 418 The paper feed sensor was ON at the start of the operation. 429 Paper feed error (for recovery). 432 The paper feed sensor was already ON at the time of paper feed retry after no-paper feed. 443 The registration sensor was OFF at the time the paper reached the registration sensor. 444 The registration sensor was ON although there was no paper.
+Remedy;
+Code;A08
+Description;Paper jam on first print drum
+Causes;410 The central transport (paper ejection) sensor was OFF at the time the paper reached the central transport (paper ejection) sensor, and the paper feed (central transport) sensor was OFF when the operation stopped (paper jam on print drum). 421 The paper feed sensor was ON when extra-long paper left the paper feed sensor in the extra-long paper mode (paper length longer than 555 mm). 430 Paper jam on print drum (for recovery).
+Remedy;
+Code;A09
+Description;Paper ejection error
+Causes;411 The paper ejection sensor was ON when the paper left the paper ejection sensor. 417 The paper ejection sensor was ON at the start of the operation. 431 Paper ejection error (for recovery).
+Remedy;
+Code;A10
+Description;AF original feed error
+Causes;102 Original jam error resulting from pulled-out original. • The original IN sensor switched OFF while the original registration sensor and the original IN sensor were ON during scanning. • The paper ejection sensor switched OFF before completion of scanning (prior to SIG_C output). • The original registration sensor switched OFF from the time of completion of leading edge insertion operation to the time of scanning start. * Issued by AF. 103 Original jam at the AF registration sensor (extra-long paper error). The original registration sensor fails to switch OFF after the original IN sensor switched ON (max: movement of 486 mm). * Issued by AF. 105 Original jam at the original IN sensor The original IN sensor fails to switch OFF after the original registration sensor switched OFF (max: movement of 84 mm). * Issued by AF. 106 Original jam at the original OUT sensor The original OUT sensor fails to switch OFF after the original IN sensor switched OFF (max: movement of 86 mm). * Issued by AF. 107 Original registration sensor non-arrival jam Paper fails to reach the original registration sensor after the feed operation started (max.: movement of 103 mm). * Issued by AF. 108 Original IN sensor non-arrival jam Paper fails to reach the original IN sensor after the scanning operation started (max.: movement of 42 mm). * Issued by AF. 109 Original OUT sensor non-arrival jam Paper fails to reach the original OUT sensor after the original IN sensor switched ON (max.: movement of 86 mm). * Issued by AF. 169 The AF opens and triggers an error while a master is in the AF.
+Remedy;
+Code;A16
+Description;Awaiting removal of master from first print drum side
+Causes;525 Waiting for master to be removed.
+Remedy;First print drum connection signal: ON -> OFF and first print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;A17
+Description;A17 [Cutter error]
+Causes;209 The cutter home position switch is OFF when the machine enters standby, at the start of the mastermaking operation, or when the master material is set.
+Remedy;Master-making unit sensor: OFF -> ON and Master detection sensor: OFF << When the master making unit cover is closed without a master, the error is cancelled. >>
+Code;A25
+Description;Central transport error
+Causes;419 The central transport sensor was ON at the start of the operation. 440 The central transport sensor was OFF at the time the paper reached the central transport sensor (central transport error). 441 The central transport sensor was ON at the time the paper left the central transport sensor (central transport error). 447 The central transport sensor was ON when the paper reached the central transport sensor, and the central transport sensor was OFF when the operation stopped (central transport error).
+Remedy;
+Code;A34
+Description;Awaiting master reset
+Causes;218 Requesting the reset of master material.
+Remedy;Master-making unit sensor: OFF -> ON and Master positioning sensor: OFF << When the master material is re-inserted, the error is cancelled. >>
+Code;A42
+Description;Master loading error on second print drum side
+Causes;509 The master loading sensor was OFF when the presence of master was checked at the specified angle during master-loading operation.
+Remedy;Second print drum connection signal: ON -> OFF and second print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;A44
+Description;Master removal error on second print drum side
+Causes;303 Master removal error or removed master jam detected during the print drum check.
+Remedy;Second print drum connection signal: ON -> OFF and second print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;A45
+Description;Master present in master removal section on second print drum side
+Causes;304 Master removal error or removed master jam detected during the master disposal box check. 312 The master disposal jam sensor was ON at the start of the master-making operation. 315 The master disposal jam sensor was ON at the completion of the recovery operation.
+Remedy;Second master disposal box safety SW: OFF and second master disposal jam sensor: OFF << When the master disposal box is pulled out, if the master has been removed, the error is cancelled. >> (Or switch power OFF, then ON.)
+Code;A48
+Description;Paper jam on second print drum
+Causes;410 The central transport (paper ejection) sensor was OFF at the time the paper reached the central transport (paper ejection) sensor, and the paper feed (central transport) sensor was OFF when the operation stopped (paper jam on print drum).
+Remedy;
+Code;A56
+Description;Awaiting removal of master from second print drum side
+Causes;525 Wait for the master to be removed.
+Remedy;Second print drum connection signal: ON -> OFF and second print drum safety SW: ON -> OFF << Pull out the print drum to cancel the error. >> * If the print drum is at position B when this error occurs, the print drum lock is automatically released.
+Code;B01
+Description;Card counter: No card
+Causes;730 Card counter: No card
+Remedy;Insert the card.
+Code;B21
+Description;Storage memory: Read/write error
+Causes;715 Storage memory access error.
+Remedy;Switch power OFF, then ON.
+Code;B22
+Description;Job separator: Power OFF
+Causes;721 With the tape separation setting switched ON, the job separator is in a Power OFF state when the Start key is pressed. 727 The BUSY signal remains at <L> (powe is switches OFF during job separator tape output) for more than 7 seconds after the cluster-A signal switches ON.
+Remedy;Press the Reset key. (Confirm that the job separator is switched ON.)
+Code;B23
+Description;Job separator: No-tape error
+Causes;722 With the BUSY signal at <H> (Power ON) and the tape separation setting switched ON, the tape detection signal is at <H> (no tape) when the Start key is pressed. 723 The tape detection signal is at <H> (no tape) after the tape output command is issued, and the BUSY signal changed from <L> to <H> (after completion of operation).
+Remedy;Press the Reset key. (Confirm that the job separator is switched ON.)
+Code;B24
+Description;Job separator: Jam error
+Causes;724 With the BUSY signal at <H> (Power ON) and the tape separation setting switched ON, the tape detection signal is at <L> (tape remaining) when the Start key is pressed. 725 The tape jam detection signal remains at <H> for more than 1.2 seconds after cluster-A signal switched ON (tape transport error). 726 The tape jam detection signal was at <L> when the BUSY signal changed from <L> to <H> or it remains at <L> for more than 7 seconds after the cluster-A signal switched ON (tape ejection error).
+Remedy;Press the Reset key. (Confirm that the job separator jam is reset.)
+Code;B31
+Description;Network cable not connected
+Causes;916 The network cable was not connected when the machine starts up. 920 Error detected by NET-D (NAK received). * No response from communication destination, interruption by communication destination, TCP/IP not operating in the NET-D, unauthorized interrupt received from the main unit, etc.
+Remedy;Press the Reset key.
+Code;B32
+Description;NIC: External communication error
+Causes;914 MIB information request error. * Transmission not possible after waiting 3 seconds (WAK), no response from communication destination, interruption by communication destination, TCP/IP not operating in the NET-D, unauthorized interrupt received from the main unit, etc. 915 No MIB information returned. * No response from the NET-D (communication destination) for 50 seconds (error detected in main unit). 917 Network communication error.
+Remedy;Press the Reset key. << Remove the cause of the error in the printer to cancel the error. >>
+Code;B33
+Description;ID address setup error
+Causes;931 The DHCP is ON, but the DHCP server cannot be found.
+Remedy;Press the Reset key.
+Code;B34
+Description;RLP: No-toner error
+Causes;919 No toner in the Prioa (linked printer).
+Remedy;Press the Reset key.
+Code;B35
+Description;RLP: Service error
+Causes;970 Service error in Prioa (linked printer).
+Remedy;Press the Reset key.
+Code;C01
+Description;First ink cartridge replacement
+Causes;512 The ink sensor does not switch ON when the inking operation is conducted for the set time (inkless). 563 The remaining volume information in the ink tag reached the default value. 574 Inkless error was generated 5 times for the same ink cartridge.
+Remedy;First ink cartridge set SW: OFF -> ON << Install a new ink cartridge to cancel the error. >> Or first print drum safety SW: OFF, first print drum connection signal: OFF, and first print drum lock sensor: OFF << Pull out the print drum to cancel the error. >>
+Code;C02
+Description;Master roll replacement
+Causes;200 The 10-ms-interval master end check detected 2 consecutive times during the master transport. 240 The remaining volume information in the master tag reached the maximum value. 253 No-master error was generated twice for the same master.
+Remedy;Master-making unit sensor: OFF -> ON << Open and close the master-making unit to cancel the error. >>
+Code;C03
+Description;First master disposal box full
+Causes;308 After the master compression motor activates in the compressing direction, the compression detection switches ON before the FG count exceeds the specified volume.
+Remedy;Switch OFF the first master disposal box sensor OFF, then turn ON after waiting at least 5 seconds.
+Code;C04
+Description;No-paper error
+Causes;402 The paper detection sensor is OFF.
+Remedy;The paper detection sensor is ON.
+Code;C05
+Description;Both master disposal boxes full
+Causes;317 After the master compression motor on the first print drum side or second print drum side begins to apply a compression force, the compression detection activates and the other disposal box exceeds 90% capacity before the FG count exceeds the specified volume (Expected disposal box full).
+Remedy;Switch OFF the first master disposal box sensor, then switch it back ON after waiting at least 5 seconds. Switch OFF the second master disposal box sensor, then switch ON after waiting at least 5 seconds.
+Code;C41
+Description;Second ink cartridge replacement
+Causes;512 The ink sensor does not turn ON when inking is performed for the set time (inkless). 563 The remaining volume information in the ink tag reached the specified value. 574 An inkless error was generated 5 consecutive times for the same ink cartridge.
+Remedy;Second ink cartridge set SW: OFF -> ON << Install a new ink cartridge to cancel the error. >> Or second print drum safety SW: OFF, second print drum connection signal: OFF, and second print drum lock sensor: OFF << Pull out the print drum to cancel the error. >>
+Code;C43
+Description;Second master disposal box full
+Causes;308 After the master compression motor begins to apply a compressive force, the compression detection switched ON before the FG count exceeds the specified volume.
+Remedy;Switch OFF the second master disposal box sensor, then switch back ON after waiting at least 5 seconds.
+Code;D01
+Description;First print drum not installed
+Causes;526 The print drum is removed. (The connection signal, safety SW, and lock sensor are OFF.) 527 The print drum connection signal is OFF after the print drum is installed. 528 The print drum safety switch is OFF after the print drum is installed. 529 The print drum lock sensor is OFF after the print drum is installed (time-out during insertion: 5 sec). 530 The print drum connection signal does not switch OFF within 5 seconds after the print drum safety switch switches OFF when the print drum is removed.
+Remedy;First print drum safety SW: ON, first print drum connection signal: ON, and first print drum lock sensor: ON << Install the print drum to clear the error. >>
+Code;D02
+Description;First print drum incompatibility
+Causes;532 The print drum is incompatible.
+Remedy;Replace with the correct print drum. (The print drum code must match the machine model.)
+Code;D03
+Description;First ink cartridge not installed
+Causes;533 The ink cartridge set switch is OFF.
+Remedy;First ink cartridge set SW: ON
+Code;D04
+Description;First ink cartridge incompatibility
+Causes;534 The ink cartridge is incompatible. 560 Error due to missing ink cartridge tag. 561 Ink tag communication error (tag communication error due to noise). 562 Abnormal ink tag information. Checksum error, verification error, storage of master information, etc. 564 Serial number mismatch detected during the periodic ink tag serial number check. 575 Software error involving ink tag. Antenna CH selection error, erroneous writing of data to write-protected area.
+Remedy;Replace with a correct ink cartridge.
+Code;D05
+Description;Master not installed
+Causes;210 The master detection sensor is OFF.
+Remedy;Master-making unit sensor: OFF << Open the master-making unit to clear the error. >>
+Code;D07
+Description;First master disposal box not installed
+Causes;310 The master disposal box safety switch is OFF.
+Remedy;First master disposal box safety SW: ON << Install the master disposal box to clear the error. >>
+Code;D08
+Description;Master-making unit not installed
+Causes;224 The master-making unit is in the pulled-out condition (safety switch, lock sensor OFF). 226 The master-making unit safety switch is OFF after the master-making unit is installed. 227 The master-making unit lock sensor is OFF after the master-making unit is installed (time-out during insertion: 5 sec). 228 The master-making unit lock sensor is ON after the master-making unit is removed (master-making unit safety switch is OFF).
+Remedy;With the master-making unit removed, the second master-loading sensor or the master-making unit pullout position sensor is ON, and the cover safety SW is OFF. << Install the master-making unit into the main unit to clear the error. >>
+Code;D09
+Description;Master-making unit not set into position
+Causes;212 The master-making unit sensor is OFF.
+Remedy;Master-making unit sensor: ON << Close the master-making unit to clear the error. >>
+Code;D11
+Description;Front cover not set into position
+Causes;535 The front cover safety switch is OFF.
+Remedy;Front cover safety SW: ON
+Code;D13
+Description;Main unit rear cover not set into position
+Causes;009 The rear cover of the main unit is not set into position. (The rear cover safety switch is OFF.)
+Remedy;Rear cover safety SW: ON
+Code;D17
+Description;Master incompatibility
+Causes;236 The master is incompatible. 237 Error due to missing master tag. 238 Master tag communication error (tag communication error due to noise). 239 Abnormal master tag information. Checksum error, verification error, storage of ink information, etc. 241 Serial number mismatch detected during the periodic master tag serial number check. 256 Software error involving master tag. Antenna CH selection error, erroneous writing of data to write-protected area.
+Remedy;Master-making unit safety SW: ON -> OFF and Master-making unit lock sensor: ON -> OFF << Pull out the master-making unit to clear the error. >>
+Code;D18
+Description;First print drum pull-out possible
+Causes;522 The print drum is in the pull-out position. (The print drum lock solenoid is ON.)
+Remedy;First print drum connection signal: ON -> OFF and first print drum safety SW: ON -> OFF << Pull out the print drum to clear the error. >> Or Front cover set SW: ON << Close the front cover to clear the error. >> Or master-making unit release button: ON << Press the master-making unit release button to clear the error. >>
+Code;D19
+Description;Master-making unit pull-out possible
+Causes;223 The master-making unit is in the pull-out position (solenoid ON).
+Remedy;"Second master-loading sensor: OFF; Master-making unit pull-out position sensor: OFF; and Cover safety SW: OFF Or master-making unit drawer cover safety SW: OFF -> ON"
+Code;D20
+Description;Master-making unit drawer cover not in position
+Causes;254 The master-making unit drawer cover is not in position. (Master-making unit removed (second master-loading position sensor: ON or master-making unit pullout position sensor: ON) and cover safety SW: OFF)
+Remedy;Master-making unit drawer cover safety SW: OFF -> ON
+Code;D21
+Description;Master-making unit drawer cover may now be opened
+Causes;255 The master-making unit drawer cover may now be opened. (Master-making unit pull-out position sensor: ON and Cover safety SW: ON)
+Remedy;Master-making unit drawer cover safety SW: ON -> OFF Or Pull-out position sensor: ON -> OFF
+Code;D22
+Description;First print drum pull-out command
+Causes;531 The print drum lock sensor is ON when the print drum lock solenoid is ON. (The check is performed 100 ms after the print drum lock solenoid switches ON.) 540 Data cannot be written to or read from the EEPROM inside the print drum. (EEPROM cannot be accessed.) 542 CRC error in the EEPROM inside the print drum (data error in the EEPROM). 577 The print drum is not set into position correctly (print drum radius difference).
+Remedy;"First print drum safety SW: OFF; first print drum connection signal: OFF; and first print drum lock sensor: OFF"
+Code;D28
+Description;DtoP cancellation due to missing first print drum
+Causes;573 The print drum required for DtoP is not installed.
+Remedy;Print drum detection.
+Code;D30
+Description;Front cover setting demand
+Causes;576 The front cover is not in position when a single print drum is set into place in position and the print drum removal button is pressed without the print drum at position B.
+Remedy;Front cover SW: ON
+Code;D41
+Description;Second print drum not installed
+Causes;526 The print drum has been pulled out. (The connection signal, safety SW, and lock sensor are OFF.) 527 The print drum connection signal is OFF after the print drum is installed. 528 The print drum safety switch is OFF after the print drum is installed. 529 The print drum lock sensor is OFF after the print drum is installed (time-out during insertion: 5 sec). 530 The print drum connection signal does not switch OFF within 5 seconds after the print drum safety switch switched OFF when the print drum is removed.
+Remedy;Second print drum safety SW: ON, second print drum connection signal: ON, and second print drum lock sensor: ON << Install the print drum to clear the error. >>
+Code;D42
+Description;Second print drum incompatibility
+Causes;532 The print drum is incompatible.
+Remedy;Replace with the correct print drum. (The print drum code must match the machine model.)
+Code;D43
+Description;Second ink cartridge not installed
+Causes;533 The ink cartridge set switch is OFF.
+Remedy;Second ink cartridge set SW: ON
+Code;D44
+Description;Second ink cartridge incompatibility
+Causes;534 The ink cartridge is incompatible. 560 Error due to missing ink cartridge tag. 561 Ink tag communication error (tag communication error due to noise). 562 Abnormal ink tag information. Checksum error, verification error, storage of master information, etc. 564 Serial number mismatch detected during periodic ink tag serial number check. 575 Software error involving ink tag. Antenna CH selection error, erroneous writing of data to write-protected area.
+Remedy;Replace with the correct ink cartridge.
+Code;D47
+Description;Second master disposal box not installed
+Causes;310 The master disposal box safety switch is OFF.
+Remedy;Second master disposal box safety SW: ON << Install the master disposal box to clear the error. >>
+Code;D58
+Description;Second print drum pull-out possible
+Causes;522 The print drum is in the pull-out position. (The print drum lock solenoid is ON.)
+Remedy;Second print drum connection signal: ON -> OFF and second print drum safety SW: ON -> OFF << Pull out the print drum to clear the error. >> Or front cover SW: ON << Close the front cover to clear the error. >> Or master-making unit release button: ON << Press the master-making unit release button to clear the error. >>
+Code;D62
+Description;Second print drum pull-out command
+Causes;531 The print drum lock sensor is ON when the print drum lock solenoid is ON. (The check is performed 100 ms after the print drum lock solenoid switches ON.) 540 Data cannot be written to or read from the EEPROM inside the print drum. (EEPROM cannot be accessed.) 542 CRC error in the EEPROM inside the print drum (data error in the EEPROM). 577 The print drum is not set into position correctly (print drum radius difference).
+Remedy;"Second print drum safety SW: OFF; second print drum connection signal: OFF; and second print drum lock sensor: OFF"
+Code;D68
+Description;DtoP cancellation due to missing second print drum
+Causes;573 The print drum required for DtoP is not installed.
+Remedy;Print drum detection.
+Code;E01
+Description;Battery replacement
+Causes;010 Battery voltage is below 2.1 V when power is switched ON (replacement of battery required). * Since the battery voltage detected by the software is 0.5 V below the actual battery voltage, error detection activates when the value set in the RTC is below 1.6 V. * Precautions for battery replacement Switch ON main power before replacing the battery. If the battery is replaced with the main unit OFF, the following two problems may occur: The internal clock data will be incorrect. -> Reset the clock. The <T25-026 No-battery> error will be issued once again when power is switched ON after battery replacement. -> Switch power OFF, then ON again, and confirm that no error is issued.
+Remedy;Press the Reset key.
+Code;E02
+Description;Maintenance call
+Causes;011 The master count reached the value set in the Test Mode at power ON, reset, or operation completion (maintenance call). 012 The copy count reached the value set in the Test Mode at power ON, reset, or operation completion (maintenance call). 022 The maintenance count in the print drum reached the value set in the Test Mode at power ON, reset, or operation completion (maintenance call).
+Remedy;Press the Reset key.
+Code;F01
+Description;No master on first print drum
+Causes;015 There is no master on the print drum at the start of printing.
+Remedy;Press the Reset key. Set an original and execute the master-making operation.
+Code;F02
+Description;Paper/master-making size incompatibility 1
+Causes;018 Paper and master-making sizes (master size on print drum) do not match at the start of printing.
+Remedy;Press the Continue button or Stop button (Check print paper size).
+Code;F03
+Description;Multi-up: Paper size error
+Causes;016 The multi-up operation was executed with nonstandard paper.
+Remedy;Press the Close button. Set standard-size paper on the paper feed tray.
+Code;F05
+Description;Minimum print quantity setting error
+Causes;019 In print or master-making modes with Auto-Print switched ON, the set number of prints failed to meet the minimum print quantity when the Start key was pressed.
+Remedy;Reset the print quantity.
+Code;F10
+Description;Paper/master-making size incompatibility 2
+Causes;021 Paper and master-making sizes (master size on print drum) do not match at the start of proof printing.
+Remedy;Press the Continue button or Stop button. (Check print paper size.)
+Code;F24
+Description;Auto size reproduction disabled (falls outside range of possible size reproduction)
+Causes;037 Size reproduction setting falls outside the permissible range when the operation started based on the auto size reproduction setting.
+Remedy;Press the Reset key. (Manually enter the size reproduction setting.)
+Code;F30
+Description;Multiple feed check
+Causes;420 Multiple feed detected during operation (when no paper jam error is generated). 425 Multiple feed occurred in the operation in which reference data was obtained in the sensor light emission level check. 426 Multiple feed occurred in the most recent operation in the sensor light emission level check.
+Remedy;Press the Multiple Feed Detection OFF button or Reset key.
+Code;F32
+Description;Storage memory: No space available
+Causes;713 Inadequate storage memory during data write.
+Remedy;Press the Reset key. (Check the available capacity.)
+Code;F37
+Description;Combined use of book mode and AF not possible
+Causes;050 With book mode set, an original was found on the AF at the start of the master-making operation.
+Remedy;Press the Close button.
+Code;F43
+Description;DtoP original/paper incompatibility
+Causes;902 Paper and original sizes do not correspond at the start of DtoP master-making.
+Remedy;Press the Continue button or Stop button. (Check print paper size.)
+Code;F44
+Description;Auto size reproduction disabled (exceeds original size detection range)
+Causes;901 The original size detection failed. (The original did not conform to the detection specification.)
+Remedy;Press the Reset key. (Manually enter the size reproduction setting.)
+Code;F45
+Description;Presence of original unknown/no original
+Causes;954 Master-making operation or RLP output was executed with the auto tray or auto size reproduction setting set to ON, and the presence of an original could not be detected. 959 Master-making operation or RLP output was executed without an original. 981 When the Next button was clicked on the multi-up count entry screen of Multi-up Wizard, no original was detected.
+Remedy;Reset the original. Press the Continue button or Stop button.
+Code;F46
+Description;Inconsistency of first print drum color between DtoP job and specified color
+Causes;903 The color of the print drum fails to match between the color specified for DtoP job and the color set for the specified print mode.
+Remedy;Press the Reset key or the Continue button. (Replace the print drum.)
+Code;F47
+Description;Combined use of AF and postcard size reproduction not possible
+Causes;904 Master-making operation or RLP output was performed with <A4 -> Postcard> size reproduction selected and original set on the AF.
+Remedy;Remove the original from the AF and press the Close button.
+Code;F48
+Description;Multi-up: Outside original size detection range
+Causes;955 If multi-up is set, the size of the original is nonstandard or falls outside the permissible range.
+Remedy;Press the Reset key.
+Code;F49
+Description;Multi-up: No original when Start key pressed
+Causes;989 No original is detected when the Enter key is pressed for the single original/multi-original multi-up setting.
+Remedy;Press the Stop button.
+Code;F52
+Description;Use of RLP mode not possible (RLP information not acquired)
+Causes;912 RLP mode cannot be used. (RLP information has not been acquired.)
+Remedy;Press the Close button.
+Code;F58
+Description;Use of RLP mode not possible (NET-D initialization in process)
+Causes;927 RLP mode cannot be used. (The NET-D is being initialized.)
+Remedy;Press the Close button.
+Code;F60
+Description;RLP auto-link/master-making continuation confirmation (when printing quantity is 0)
+Causes;929 Confirmation of auto-link operation/master-making continuation (when printing quantity is 0).
+Remedy;Press the Start key or Stop button.
+Code;F61
+Description;RLP paper/original size incompatibility
+Causes;930 RLP paper/original size is incompatible.
+Remedy;Select paper using Manual Feed or Paper Selection.
+Code;F62
+Description;RLP auto-link/RLP error
+Causes;956 Error generated on the RLP side during RLP auto-link operation.
+Remedy;Press the Stop button
+Code;F63
+Description;RLP auto tray selection/nonstandard-size original
+Causes;971 RLP output was performed with a nonstandard-size original and auto paper size selection.
+Remedy;Press the Reset key. (Manually select paper.)
+Code;F64
+Description;Specified function disabled, at job reception
+Causes;964 An instruction involving an exclusive function (scan mode, overlay, name insertion, digitizer, hold, simplified separation) was issued for DtoP job reception, development, or awaiting-output status.
+Remedy;Press the Close button.
+Code;F65
+Description;Scan mode auto-saving size selection/nonstandard-size original
+Causes;965 The size selected in auto size (storage data) selection at the start of scanning operation was nonstandard.
+Remedy;Press the Reset key. (Manually select storage size.)
+Code;F66
+Description;RLP saddle stitching not possible
+Causes;962 The paper in the specified paper feed tray was not A3, B4, or A4 (landscape) at the time of RLP output with saddle stitching function switched ON.
+Remedy;Press the Close button.
+Code;F67
+Description;RLP rotation sorting not possible
+Causes;963 No paper of the size specified by the RLP Paper Tray is set in either portrait or landscape orientation at the time of RLP output with rotation sorting function switched ON.
+Remedy;Press the Close button.
+Code;F68
+Description;Specified area/traced color separation: Excess number of specified areas
+Causes;173 The number of specified areas for specified area/traced color separation exceeded the maximum value.
+Remedy;Press the Reset key.
+Code;F69
+Description;Specified area/traced color separation: Distance of border for specified area longer than master-making size
+Causes;174 The distance of the border of the specified area for specified area/traced color separation exceeds the value corresponding to the master being made.
+Remedy;Press the Reset key.
+Code;F70
+Description;Specified area/traced color separation: Image processing time-out error
+Causes;175 Image processing time-out error during specified area/traced color separation.
+Remedy;Press the Reset key.
+Code;F71
+Description;No master on second print drum
+Causes;015 No master is found on the print drum at the start of printing.
+Remedy;Press the Reset key. Set an original and execute the master-making operation.
+Code;F72
+Description;Hand-written/red-color separation: Image processing time-out error
+Causes;176 Image processing time-out error during hand-written/hand-written (ink)/red-color separation.
+Remedy;Press the Reset key.
+Code;F73
+Description;Auto tray selection not possible, RLP tray designation disabled
+Causes;975 The specified fixed size reproduction and the detected original size do not match at the start of RLP. Or zoom/independent size reproduction was specified.
+Remedy;Select paper using Manual Feed or Paper Selection. Press the Reset key.
+Code;F74
+Description;Turbo not possible due to low temperature
+Causes;980 Turbo print was used at temperatures below 15°C while using the second print drum.
+Remedy;Press the Stop button or Continue button.
+Code;F75
+Description;Combined use of specified area separation and AF not possible
+Causes;982 With specified area separation set, an original was on the AF at the start of master-making.
+Remedy;Press the Reset key.
+Code;F76
+Description;Second print drum color not matching with DtoP job color
+Causes;903 The color of the print drum to be used fails to match for the DtoP job and the specified print mode.
+Remedy;Press the Reset key or Continue button. (Replace the print drum.)
+Code;F77
+Description;Print drum color not matching with DtoP job color
+Causes;903 The color of the print drum to be used fails to match for the DtoP job and the specified print mode.
+Remedy;Press the Reset key or Continue button. (Replace the print drum.)
+Code;F78
+Description;Digitizer: Stage cover open
+Causes;731 The stage cover was opened during the digitizing operation.
+Remedy;Close the stage cover. Press the Close button.
+Code;F79
+Description;Digitizer: No original during rescanning
+Causes;732 No original was detected at the start of digitizer rescanning.
+Remedy;Press the Start key or Stop button.
+Code;F80
+Description;Paper not compatible with dual-color printing
+Causes;966 The paper size is smaller than the minimum paper size for dual-color printing.
+Remedy;Press the Reset key. (Use paper larger than the minimum size.)
+Code;F81
+Description;Dual-color printing: Ink-saving setting only for one print drum
+Causes;967 At the start of dual-color printing operation, the master was made with one print drum in ink-saving master-making mode and the other in normal master-making mode.
+Remedy;Press the Stop button or Continue button.
+Code;F82
+Description;Paper not compatible with printing by second print drum
+Causes;974 The paper size is smaller than the minimum paper size for printing with the second print drum.
+Remedy;Press the Reset key.
+Code;F83
+Description;Use of second print drum mode not possible
+Causes;973 There is no confidential master on the first print drum at the start of printing/proof-printing operation with the second print drum.
+Remedy;Press the Reset key.
+Code;F85
+Description;Scanning not possible: External CI not connected
+Causes;995 The PS7R is not connected.
+Remedy;Press the Close button or Start key.
+Code;F90
+Description;Supply stock management (ink)
+Causes;957 Stock management counter for the relevant color ink . Specified quantity (setting value).
+Remedy;Press the Close button.
+Code;F91
+Description;Supply stock management (master)
+Causes;958 Stock management counter for the master . Specified quantity (setting value).
+Remedy;Press the Close button.
+Code;H01
+Description;General supply parameter input (first print drum)
+Causes;566 Enter parameters, since first ink tag color information, steady-state viscosity information, and FP viscosity information are unreliable.
+Remedy;Enter the parameters and press the Start key.
+Code;H04
+Description;General supply parameter input (master)
+Causes;242 Enter parameters, since master tag sensitivity information, steady-state viscosity information, and FP viscosity information are unreliable.
+Remedy;Enter the parameters and press the Start key.
+Code;H07
+Description;General supply parameter input (second print drum)
+Causes;571 Enter parameters, since second ink tag color information, steady-state viscosity information, and FP viscosity information are unreliable.
+Remedy;Enter parameters and press the Start key.
+Code;T01
+Description;Main motor lock
+Causes;520 Main motor lock detected. The main motor FG sensor does not switch on within 10 msec after the main motor switches ON. 521 The position B sensor does not change status within 2910 pulses while the main motor is ON. 524 The clamp unit is not at the home position while the print drum operates (except during master disposal). 537 The print drum fails to stop at position B. 538 The print drum is not locked during operations.
+Remedy;Press the Reset key.
+Code;T02
+Description;Elevator motor lock
+Causes;400 The elevator upper-limit position detection and the elevator lower-limit detection are switches ON simultaneously. 401 Elevator motor overload detected. The elevator motor overcurrent port was activated 20 consecutive times (polling at 10-msec intervals). 404 The elevator lower-limit sensor does not switch OFF within 2 seconds after the elevator motor applies a lifting force from the elevator lower-limit position. 405 The elevator upper-limit sensor does not switch ON within 12 seconds after the elevator motor applies a lifting force. 406 The elevator upper-limit sensor does not switch OFF within 2 seconds after the elevator motor applies a lowering force from the elevator upper-limit position. 407 The elevator lower-limit sensor does not switch ON within 12 seconds after the elevator motor applies a lowering force. 408 The elevator upper-limit sensor remained OFF for more than 2 seconds during elevator servo action. 436 Printing began with the elevator upper-limit sensor in the OFF state in custom paper feed mode.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T03
+Description;Clamp motor lock
+Causes;500 The clamp sensor A is OFF at the end of the home positioning action during clamp unit initialization. 501 The clamp sensor B does not change status within 1 second after the clamp motor operates in the forward direction. 502 The clamp sensor B does not change status within 1 second after the clamp motor operates in the reverse direction. 503 The clamp sensor A does not switch ON within 3 seconds during clamp unit initialization. 504 The logical values of the clamp sensors A and B do not match at the start of the clamp releasing operation. 505 The logical values of the clamp sensors A and B do not match at the start of the print drum position-A compensation operation. 506 The logical values of the clamp sensors A and B do not match at the start of the clamp unit home positioning operation. 507 The clamp sensor A is ON after completion of the clamp releasing operation. 508 The clamp sensor A is ON after completion of the print drum position-A compensation operation. 514 The print drum is not at the horizontal home position while the clamp unit operates. 545 The clamp unit is not at the specified position at the start of print drum rotation. 546 The clamp unit is not at the home position at the start of print drum horizontal movement. 547 The clamp unit is not at the home position when the master-making unit begins its motion.
+Remedy;Press the Reset key.
+Code;T04
+Description;Overflow
+Causes;513 The overflow sensor switches ON successively for the set number of times during the 10-ms-interval overflow sensor check.
+Remedy;Press the Reset key with the overflow sensor switched OFF.
+Code;T05
+Description;Print-positioning pulse-motor lock
+Causes;603 The Vertical Print Positioning Pulse Motor did not complete the movement within the set time when the motor rotated in the print image downward direction. 604 The Vertical Print Positioning Pulse Motor did not complete the movement within the set time when the motor rotated in the print image upward direction. 610 Time-out error generated during vertical print positioning. 612 The 1-step Vertical Print Positioning key was pressed with position information undefined. (This error may occur after a recovery operation.) 616 Step movement was invoked with vertical print positioning system information undefined.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T06
+Description;Horizontal pulse motor lock
+Causes;607 The horizontal home position sensor detects no light within xx seconds after the horizontal home positioning operation initiates movement toward the right during drive releasing operation. 608 The light path of the horizontal home position sensor is not blocked within xx seconds after the horizontal home positioning initiates movement toward the left during drive connecting operation. 609 Although the horizontal pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control). 611 Time-out error generated during horizontal movement. 617 Step movement was invoked with horizontal system information undefined. 618 The clamp unit is not at the home position during horizontal movement. 627 The light path of the drive release home position sensor is not blocked during drive connecting operation. 628 The drive release home position sensor detects no light during drive releasing operation.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T11
+Description;Print pressure pulse motor lock
+Causes;600 The print pressure control sensor does not change from OFF to ON within 3.9 seconds after the print pressure control motor activates to increase pressure during home positioning. 601 The print pressure control sensor does not change from ON to OFF within 4.6 seconds after the print pressure control motor activates to reduce pressure during home positioning. 602 Although the print pressure control pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control). 626 Time-out occurred during print pressure relative movement (movement based on pulse count only, without sensor check).
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T12
+Description;Master disposal area motor lock
+Causes;300 Overload current detected in master disposal motor. The master disposal motor overcurrent port was ON (polling at 10-msec intervals). 301 Master compression motor lock detected. The RMGA compression detection switches ON while lifting the compression plate. 305 The master compression sensor does not switch ON within 6.5 seconds after the master compression motor initiates reciprocal motion. 306 The master compression sensor does not switch OFF within 2 seconds after the master compression motor applies a force to begin compression. 307 The compression detection does not switch ON within 6.5 seconds after the master compression motor applies a force to begin compression. 309 The FG count value does not change when the master compression motor applies a force to begin compression, moving away from the home position sensor. (The master compression motor FG sensor does not change status.) 316 Master disposal motor lock detected. The master disposal motor FG sensor does not change status within 10 msec after the master disposal motor switches ON.
+Remedy;Press the Reset key.
+Code;T13
+Description;Cutter motor lock
+Causes;203 The cutter home position switch does not change from ON to OFF within 100 ms after the cutter unit moves from the home position. 204 The cutter home position switch does not switch ON within 300 ms after the cutter begins operating. 205 The master positioning sensor is ON even when the print drum rotates to the specified angle after cutting the master. 222 The cutter home position switch does not switch ON within 450 ms after the cutter returns to the home position.
+Remedy;Press the Reset key.
+Code;T14
+Description;Flatbed error
+Causes;112 The home position sensor does not switch OFF within the set time. 113 The home position sensor does not switch ON within the set time. 114 Faulty machine parameters. 115 The scanner operation fails to complete within the set time. 116 Time-out error generated during black shading (Black compensation fails to complete within the set time.) 117 Time-out error generated during white shading (White compensation fails to complete within the set time.) 118 The command to the Gate Array scanner was given before the scanner returned to the home position. 123 Time-out error generated during offset adjustment (Offset adjustment fails to complete within the set time.) 124 Time-out error generated during gain adjustment (Gain adjustment fails to complete within the set time.) 125 Offset adjustment processing not completed (Process fails to complete within the set times.) 126 Gain adjustment processing not completed (Process fails to complete within the set times.) 135 Device malfunction during offset adjustment. 136 Device malfunction during gain adjustment. 137 Device malfunction during black shading. 138 Device malfunction during white shading. 140 Scanner unit communication error (NAK generated twice, undefined command, etc.) 141 Scanner unit communication time-out error (time-out error generated during reception) 142 The scanner unit detected a sequence error in the main printer unit. 150 Time-out error for scanner command reception occurred in the main printer unit. 151 The main printer unit received an undefined command from the scanner. 152 The main printer unit detected a communication sequence error in the scanner unit. 153 Scanner communication error in the main printer unit (ACK, NAK, or reception channel error occurred.) 154 The main printer unit could not complete transmission to the scanner within the set time. 159 Scanner not connected. 170 Although the read pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control).
+Remedy;Press the Reset key.
+Code;T15
+Description;AF error
+Causes;004 Communication error with the AF-CPU. 100 Original IN sensor adjustment error in the AF. 101 AF-EEPROM error. 110 Time-out error generated at the ABC standby position. This error is issued if the original stops at the ABC standby position after the start of AF scanning operation (with ABC), and the original remains electrically charged for the set time. * Issued by AF. 111 The main unit transmitted an operation request command with AF in the 24V OFF state. * Issued by AF. 121 AF unit communication time-out error (time-out error generated during reception). 122 The AF unit detected a sequence error in the main printer unit. 130 AF command reception time-out error generated in the main printer unit. After a command is sent from the printer to the AF, if no response is transmitted within the set time, the same command is retransmitted. This error is generated if no response is made to this retransmitted command within the set time. 131 The main printer unit received an undefined command from the AF. 132 The main printer unit detected a communication sequence error in the AF unit. * Issued by AF. 133 AF communication error in the main printer unit (ACK or NAK error). 134 The main printer unit did not transmit a signal to the AF within the set time. After a command is sent from the AF to the printer, if no response is transmitted within the set time, the same command is retransmitted. This error is generated if no response is made to this retransmitted command within the set time. 143 Original width VR value error in the AF. 145 AF operation fails to complete within the set time. 146 AF unit communication error (NAK generated twice, undefined command, etc.) 160 The AF unit detection signal switched OFF while the AF unit was in operation. 161 AF unit not connected.
+Remedy;Switch power OFF, then ON.
+Code;T17
+Description;Solenoid counter not connected
+Causes;020 The solenoid counter is not connected.
+Remedy;Solenoid counter connection signal: ON
+Code;T19
+Description;Thermal-pressure motor lock
+Causes;207 The TPH pressure sensor does not change from ON to OFF within 2 seconds after the thermal pressure motor operates to reduce pressure (or during home positioning). 208 The TPH pressure sensor does not change from OFF to ON within 2 seconds after the thermal pressure motor operates to reduce pressure. 216 The TPH pressure sensor does not change from ON to OFF within 2 seconds after the thermal pressure motor applies a force to begin compression. 217 The TPH pressure sensor does not change from OFF to ON within 2 seconds after the thermal pressure motor applies a force to begin compression.
+Remedy;Press the Reset key.
+Code;T20
+Description;Paper-ejection-section motor lock
+Causes;414 The paper ejection wing home position sensor does not change status within the set time after the paper ejection wing pulse motor starts operation. 415 The paper ejection wing home position sensor does not switch OFF within the set time after the paper ejection wing pulse motor operates when the paper ejection wings are at the home position (home position sensor ON). 416 Paper ejection motor overload current detected. The motor overcurrent port switches ON 20 consecutive times after the paper ejection motor switches ON (polling at 10-msec intervals). 424 The paper ejection motor FG sensor detected 20 pulses or less within 100 ms. 437 Paper ejection motor lock detected. The paper ejection motor overcurrent port was ON (polling at 10-msec intervals). 442 Although the paper ejection wing pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control).
+Remedy;Press the Reset key.
+Code;T24
+Description;Inking motor lock
+Causes;539 Inking motor lock detected. The inking motor overcurrent port was ON (polling at 10-msec intervals).
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T25
+Description;No battery error
+Causes;026 No battery power. * Readjust the machine clock after resetting the error.
+Remedy;Replace the battery.
+Code;T27
+Description;Master-making unit motor lock
+Causes;249 The light path of the master-making unit pull-out position sensor was not blocked within the set time when the master-making unit moved to the pull-out position. 251 Although the master-making unit transport pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value. Or the operation fails to complete in counter stop mode within the specified time (faulty gate array control). 252 The pressure plate of the master-making unit opens at a location other than the master-making unit pullout position. 248 The master-making unit position sensor does not change status as specified within the set time after the master-making unit begins moving to the standby position. 250 The master-making unit position sensor does not change status as specified within the set time after the master-making unit begins moving to the master-making position.
+Remedy;Press the Reset key.
+Code;T29
+Description;Guide release motor lock
+Causes;438 The guide roller release home position sensor detects no light within 3.8 seconds after the guide roller begins operating. 439 The light path of the guide roller release home position sensor is not blocked within 3.8 seconds after the guide roller begins operating. 450 Overload current detected in the guide release motor. The guide release motor overcurrent port switches ON 20 consecutive times (polling at 10-msec intervals).
+Remedy;Press the Reset key.
+Code;T31
+Description;Central flap motor lock
+Causes;445 The central flap home position sensor detects no light within the set time after the central flap motor begins operating. 446 The light path of the central flap home position sensor is not blocked within the set time after the central flap motor begins operating. 451 Overload current detected in the central flap motor. The central flap motor overcurrent port switches ON 20 consecutive times (polling at 10-msec intervals).
+Remedy;Press the Reset key.
+Code;T41
+Description;Main motor lock
+Causes;521 The position-B sensor does not change status within 2910 pulses while the main motor is ON. 524 The clamp unit is not at the home position when the print drum operates (except in master disposal operation). 537 The position-B stop operation failed. 538 The print drum is not locked during print drum operation.
+Remedy;Press the Reset key.
+Code;T43
+Description;Clamp motor lock
+Causes;500 The clamp sensor A is OFF after the clamp unit initializes and completes home position operation. 501 The clamp sensor B does not change status within 1 second after the clamp motor begins rotating in the forward direction. 502 The clamp sensor B does not change status within 1 second after the clamp motor begins rotating in the reverse direction. 503 The clamp sensor A does not switch ON within 3 seconds during clamp unit initialization. 504 The logical values of the clamp sensors A and B do not match at the start of the clamp releasing operation. 505 The logical values of the clamp sensors A and B do not match at the start of the position-A compensation operation. 506 The logical values of the clamp sensors A and B do not match at the start of the clamp unit home positioning operation. 507 The clamp sensor A is ON after completion of the clamp releasing operation. 508 The clamp sensor A is ON after completion of the position-A compensation operation. 514 The print drum is not at the horizontal home position while the clamp unit is operating. 545 The clamp unit is not at the specified position when the print drum begins rotating. 546 The clamp unit is not at the home position when the print drum initiates horizontal movement. 547 The clamp unit is not at the home position when the master-making unit begins its motion.
+Remedy;Press the Reset key.
+Code;T44
+Description;Overflow
+Causes;513 The overflow sensor switches ON successively for the set number of times during the 10-ms-interval check.
+Remedy;With the overflow sensor switched OFF, press the Reset key.
+Code;T45
+Description;Print-positioning pulse motor lock
+Causes;610 Time-out error generated during vertical print positioning operation. 612 The 1-step Vertical Print Positioning key was pressed with position information undefined. (This error may occur after a recovery operation.) 616 Step movement was invoked with vertical print positioning system information undefined.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T46
+Description;Horizontal pulse motor lock
+Causes;607 The horizontal home position sensor detects no light within xx seconds after the horizontal home positioning operation initiates movement toward the right during drive releasing operation. 608 The light path of the horizontal home position sensor is not blocked within xx seconds after the horizontal home positioning operation initiates movement toward the left during drive connecting operation. 609 Although the horizontal pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control). 611 Time-out error generated during horizontal movement. 617 Step movement was invoked with horizontal system information undefined. 618 The clamp unit is not at the home position during horizontal movement. 627 The light path of the drive release home position sensor is not blocked during drive connecting operation. 628 The drive release home position sensor detects no light during drive releasing operation.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T51
+Description;Print pressure control pulse motor lock
+Causes;600 The print pressure control sensor does not change from OFF to ON within 3.9 seconds after the print pressure control pulse motor activates to increase pressure during home positioning. 601 The print pressure control sensor does not change from ON to OFF within 4.6 seconds after the print pressure control pulse motor activates to reduce pressure during home positioning. 602 Although the print pressure control pulse motor has completed the operation in sensor stop mode, the logical value of the sensor at the arrival point does not match the design value, or the operation fails to complete in counter stop mode within the specified time (faulty gate array control). 626 Time-out error generated in print pressure relative movement (movement based on pulse count only, without sensor check).
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T52
+Description;Master disposal section motor lock
+Causes;300 Overload current detected in master disposal motor. The master disposal motor overcurrent port was ON (polling at 10-msec intervals). 301 Master compression motor lock detected. The RMGA compression detection switches ON while lifting the compression plate. 305 The master compression sensor does not switch ON within 6.5 seconds after the master compression motor initiates reciprocal motion. 306 The master compression sensor does not switch OFF within 2 seconds after the master compression motor applies a force to begin compression. 307 The compression detection does not switch ON within 6.5 seconds after the master compression motor applies a force to begin compression. 309 The FG count value does not change when the master compression motor applies a force to begin compression, moving away from the home position. (The master compression motor FG sensor does not change status.)
+Remedy;Press the Reset key.
+Code;T64
+Description;Inking motor lock
+Causes;539 Inking motor lock detected. The inking motor FG sensor does not change status within 20 ms after the inking motor switches ON.
+Remedy;Press the Reset key or switch power OFF, then ON.
+Code;T67
+Description;Master-making unit motor lock
+Causes;248 The master-making unit position sensor does not change status as specified within the set time after the master-making unit begins moving to the standby position. 250 The master-making unit position sensor does not change status as specified within the set time after the master-making unit begins moving to the master-making position.
+Remedy;Press the Reset key.
+Code;T91
+Description;Panel EEPROM error
+Causes;013 The date information data is incorrect 968 Read error generated in the panel EEPROM. 969 Write error generated in the panel EEPROM. 976 Checksum error generated in the panel EEPROM. 977 Verification error generated in the panel EEPROM.
+Remedy;Press the Reset key.
+Code;T92
+Description;Print drum EEPROM write error
+Causes;570 The print drum EEPROM is being accessed while the print drum is performing a releasing action.
+Remedy;Press the Reset key.
+Code;T93
+Description;NET-D hardware error
+Causes;932 No response from the NIC when NIC is accessed. 933 No response for 90 seconds during NET-D initialization.
+Remedy;Switch power OFF, then ON.
+Code;T94
+Description;Call service error: TPH
+Causes;225 The TPH code does not correspond to the machine model code when the power is switched ON (only when the master-making unit is in the operating position) or when the master-making unit is inserted in the operating position.
+Remedy;Switch power OFF, then ON.
+Code;T95
+Description;FRAM error
+Causes;036 The size of the stored/acquired information does not correspond to the NVRAM-specified size for that information (mechanical unit). 059 The machine serial number information sent from the SH-PCB does not correspond to the machine serial number information in the mechanical control PCB.
+Remedy;Switch power OFF, then ON.
+Code;T96
+Description;Data not input
+Causes;171 TPH resistance not set. 172 Scanner adjustment not completed. 433 Paper width potentiometer (VR) not set. 569 Print drum color or ink category not set. 613 Print pressure compensation not set. 972 REv data storage area not initialized.
+Remedy;Enter parameters in Test Mode.
+Code;T97
+Description;PC card access error
+Causes;939 PC card access error: PC card not set. 940 PC card access error: Device information multiple-ID error (PCMCIA card information error). 941 PC card access error: Device error (incompatible CF card error). 942 PC card access error: File creation failed (File with the same name already exists). 943 PC card access error: Unformatted. 944 PC card access error: Media ID error. 945 PC card access error: Media error (CF card cannot be accessed). 946 PC card access error: Insufficient disc capacity (Not enough space available on the CF card to write data). 990 PC card access error: Specified file not found on the selected drive. 991 PC card access error: The file accessed is not currently open. 992 PC card access error: File information storage folder already in use. 993 PC card access error: Incorrect read address setting for data transfer to mechanical unit. 994 PC card access error: File deletion failed.
+Remedy;Press the Reset key.
+Code;T98
+Description;Hardware error
+Causes;002 No response from the SH4F PCB. Although SH4F PCB signal is detected at power ON, if no response is received from the SH4F PCB and an T98-069 error is detected, the detected error is rewritten to this error code. 005 Hardware error (Machine model code error). 006 FRAM checksum error. 025 Faulty tag RF PCB (initial communication with the tag RF PCB failed). 034 Unable to write data to the main unit EEPROM (EEPROM cannot be accessed). 035 CRC error generated in the main unit EEPROM (EEPROM data error). 038 The machine model information for the PCB and the EEPROM fail to match. 039 Incorrect EEPROM. 051 Communication error with touch-panel controller. 053 Unsuccessful attempt to read memory parameters (program, mode, user paper). 054 Unsuccessful attempt to write memory parameters (program, mode, user paper). 055 The machine model code sent from the SH-PCB does not correspond to the machine model information in the mechanical control PCB. 064 Communication between SH PCB and mechanical control PCB: Undefined command was issued. 065 Communication error between SH PCB and mechanical control PCB (01) (on mechanical control PCB side): Incorrect number of bytes in received command. 067 Communication error between SH PCB and mechanical control PCB (03) (on mechanical control PCB side): RNK received. 068 Communication error between SH PCB and mechanical control PCB (04) (on mechanical control PCB side): NAK received 3 times. 069 Communication error between SH PCB and mechanical control PCB (05) (on mechanical control PCB side): No ACK response. 070 Communication error between SH PCB and mechanical control PCB (06) (on mechanical control PCB side): Transmission prevented by SH PCB. 071 Communication error between SH PCB and mechanical control PCB (07) (on mechanical control PCB side): Command received while awaiting response. 072 Communication error between SH PCB and mechanical control PCB (08) (on mechanical control PCB side): FB command received in mode other than download mode. 073 Communication error between SH PCB and mechanical control PCB (09) (on mechanical control PCB side): FC/FD command received in mode other than download mode. 074 Communication error between SH PCB and mechanical control PCB (10) (on SH PCB side): FE command received (No mechanical control PCB program). 075 Communication error between SH PCB and mechanical control PCB (11) (on SH PCB side): Incorrect number of bytes in received command. 076 Communication error between SH PCB and mechanical control PCB (12) (on SH PCB side): Received ACK not specified in sequence. 077 Communication error between SH PCB and mechanical control PCB (13) (on SH PCB side): RNK received. 078 Communication error between SH PCB and mechanical control PCB (14) (on SH PCB side): NAK received 3 times. 079 Communication error between SH PCB and mechanical control PCB (15) (on SH PCB side): No ACK response. 080 Communication error between SH PCB and mechanical control PCB (16) (on SH PCB side): Transmission prevented by the mechanical control PCB (CTS = 1). 081 Communication error between SH PCB and mechanical control PCB (17) (on SH PCB side): Mechanical control download mode was transmitted in error. 082 Communication error between SH PCB and mechanical control PCB (18) (on SH PCB side): Mechanical CTS remained at <1> for 2 seconds. 083 Communication error between SH PCB and mechanical control PCB (19) (on SH PCB side): FA command received at time other than startup. 084 Communication error between SH PCB and mechanical control PCB (20) (on SH PCB side): <80> command not received within 10 seconds after power ON. 085 Unsuccessful attempt to read user parameters (administrator settings, Test Mode adjustment values). 086 Unsuccessful attempt to write user parameters (administrator settings, Test Mode adjustment values). 087 No values set for memory parameters (program, mode, user paper). 088 No values set for user parameters (administrator settings, Test Mode adjustment values). 089 The DIP-SW 1 on the SH4F PCB is switched ON (PCB check setting is switched ON). 090 The machine model code in memory parameters (program, mode, user paper) does not match. 091 The checksum for memory parameters (program, mode, user paper) does not match. 092 The machine model code in user parameters (administrator settings, Test Mode adjustment values) does not match. 093 The checksum for user parameters (administrator settings, Test Mode adjustment values) does not match. 094 Communication sequence error between SH PCB and mechanical control PCB. 095 The checksum for user parameters (administrator settings, Test Mode adjustment values) does not match during standby. 096 The checksum for memory parameters (program, mode, user paper) does not match during standby. 097 The Test Mode adjustment value set in the print drum memory lies outside the adjustment range. 098 The machine serial number information in the main unit EEPROM does not correspond to the machine serial number information in the FRAM. 099 SH4F PCB: Undefined interrupt processing was generated. 119 Faulty image PCB (Memory check of the image processing IC failed). (Image processing IC check timing: during initialization) 120 Time-out error generated while awaiting scanner serial communication interrupt command (The CPU failed to receive interrupt command from FORCE device within 100 ms). Scanner serial communication timing: Transmission of data to AK8412 (A/D converter). Transmission of data to scanner gate array. Reading of data from scanner gate array 129 Faulty scanner gate array PCB (Error generated in the memory check of the scanner gate array). 245 Time-out error (action other than sensor standard) for the write pulse motor during master transport in master-making operation. 246 Time-out error (action other than sensor standard) for the load pulse motor during master transport in master-making operation. 422 The DA setting for adjustment of the light-emitting section reached 423 The DA setting for adjustment of the light-emitting section reached the lower-limit value during automatic multiple paper feed sensor adjustment in Test Mode No. 705. 448 The DA setting for adjustment of the light-emitting section reached the upper-limit value during automatic registration sensor adjustment in Test Mode No. 709. 449 The DA setting for adjustment of the light-emitting section reached the lower-limit value during automatic registration sensor adjustment in Test Mode No. 709. 922 SH4F PCB system lock (image communication error). 934 Communication error between mechanical control PCB and tag RF PCB (detection on tag RF PCB side). 935 Communication error between mechanical control PCB and tag RF PCB (detection on mechanical control PCB side). 937 Serial number not set. 938 Old FRAM version. 947 24V-A does not switch ON (possibility of blown 24V-A fuse). 948 24V-B does not switch ON (possibility of blown 24V-B fuse). 949 24V-A does not switch OFF. 950 24V-B does not switch OFF. 952 Checksum error in SH4F PCB flash memory. 953 Error generated during attempt to write data to SH4F PCB flash memory. 960 Error generated during attempt to read data from SH4F PCB flash memory. 961 SH4F PCB flash memory not in use. 978 Illegal power ON command received from the mechanical control PCB at a time other than boot up or wake-up. 979 Abnormal setting value in SH4F PCB flash memory properties. 986 The software for the mechanical control PCB does not match the DSP (main, second) software. Download the DSP software version suitable for the software for the mechanical control PCB. 987 Communication error between DSP and mechanical control PCB. 988 The second paper feed motor parameter and the main motor parameter are <00h>. Main motor parameter acquisition mode and second paper feed motor parameter acquisition mode in Test Mode have not been executed.the upper-limit value during automatic multiple paper feed adjustment in Test Mode No. 705.
+Remedy;Switch power OFF, then ON.
+Code;T99
+Description;Software error
+Causes;900 Heart-beat lock error.
+Remedy;Switch power OFF, then ON.

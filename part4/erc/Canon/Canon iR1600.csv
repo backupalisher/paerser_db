@@ -1,0 +1,91 @@
+Code;E000
+Description;The main thermistor reading does not reach 40C 14 sec after the fixing heater goes ON (fixing low temperature error)
+Causes;
+Remedy;"1) Wiring Is the connection of the connector (CN8) on the power supply PCB and the connector (J103) on the DC controller PCB and the wiring to the fixing assembly normal? NO : Correct the connection and wiring. 2) Fixing assembly Try replacing the fixing assembly. Is the fault corrected? YES : End. 3) Power supply PCB, DC controller PCB Try repacking the power supply PCB. Is the fault corrected? YES : End. NO : Replace the DC controller PCB. 4) Error With the power switch ON, clear E000 through E004; then, turn off and then on the power switch."
+Code;E001
+Description;The main thermistor reading reaches 220°C or higher (fixing high temperature error)
+Causes;
+Remedy;"1) Wiring Is the connection of the connector (CN8) on the power supply PCB and the connector (J103) on the DC controller PCB and the wiring to the fixing assembly normal? NO : Correct the connection and wiring. 2) Fixing assembly Try replacing the fixing assembly. Is the fault corrected? YES : End. 3) Power supply PCB, DC controller PCB Try repacking the power supply PCB. Is the fault corrected? YES : End. NO : Replace the DC controller PCB. 4) Error With the power switch ON, clear E000 through E004; then, turn off and then on the power switch."
+Code;E002
+Description;"A start-up fault is detected under any of the following conditions of the main thermistor (start-up detection fault):
+ after exceeding 40°C, it fails to reach 60°C within 10 sec.
+ after exceeding 60°C, it fails to reach 80°C within 10 sec.
+ after exceeding 180°C, it fails to reach 195°C within 10 sec."
+Causes;
+Remedy;"1) Wiring Is the connection of the connector (CN8) on the power supply PCB and the connector (J103) on the DC controller PCB and the wiring to the fixing assembly normal? NO : Correct the connection and wiring. 2) Fixing assembly Try replacing the fixing assembly. Is the fault corrected? YES : End. 3) Power supply PCB, DC controller PCB Try repacking the power supply PCB. Is the fault corrected? YES : End. NO : Replace the DC controller PCB. 4) Error With the power switch ON, clear E000 through E004; then, turn off and then on the power switch."
+Code;E003
+Description;After the end of the WAIT period, the main thermistor reading is 100°C or lower. In standby, the sub thermistor reading is 50°C or lower. (low temperature error in fixing temperature control)
+Causes;
+Remedy;
+Code;E004
+Description;"At time of initialization, the ZEROXI* signal of the power supply is not detected.
+ During temperature control, the ZEROXI* signal does not arrive for 3 sec continuously.
+ A short circuit is detected in the triac (ASIC; fixing temperature control drive circuit error).
+ The power supply PCB is faulty. The DC controller PCB is faulty.)
+ Note: If E000 through E004 is indicated, the RAM on the image processor will retain the error memory of the fixing assembly after the power switch has been turned off an then on. Execute the following in service mode, and turn off and then on the power switch to clear the memory:
+ #7 PRINTER - #4 PRINTER RESET - YES=(*)"
+Causes;Fixing assembly is faulty. (The main thermistor has an open circuit. The sub thermistor has an open circuit. The fixing heater has an open circuit.
+Remedy;"1) Wiring Is the connection of the connector (CN8) on the power supply PCB and the connector (J103) on the DC controller PCB and the wiring to the fixing assembly normal? NO : Correct the connection and wiring. 2) Fixing assembly Try replacing the fixing assembly. Is the fault corrected? YES : End. 3) Power supply PCB, DC controller PCB Try repacking the power supply PCB. Is the fault corrected? YES : End. NO : Replace the DC controller PCB. 4) Error With the power switch ON, clear E000 through E004; then, turn off and then on the power switch."
+Code;E010
+Description;A specific revolution is not detected from the main motor rotation detection signal (MLOK*), causing the signal to go '1' (main motor fault)
+Causes;The main motor (M101) is faulty. The controller PCB is faulty.
+Remedy;"1) Connector Is the connection of the connector (J903) of the main motor and the connector (J06) on the DC controller PCB normal? NO : Correct the connection. 2) Main motor (M101), DC controller PCB Try replacing the main motor. Is the fault corrected? YES : Replace the main motor. NO : Check the wiring; if normal, replace the DC controller PCB."
+Code;E100
+Description;"When the scanner motor is started up, the BD input signal does not arrive within a specific period of time.
+ When the scanner motor is started up, the motor rotation is too fast, and fails to reach a specific revolution within 20 sec at time of deceleration.
+ While the scanner motor is rotating at a specific speed, the BD input signal cycle is not within a specific range (±2%) for an equivalent of 10 mm (print distance).
+ While the scanner motor is rotating at a specific speed, the BD input signal cycle is not as indicated (±2%).
+ During the WMUPR period after the power switch has been turned on or the front cover/left cover has been opened/closed, the drum unit is absent."
+Causes;The wiring is faulty (short circuit, open circuit). The laser scanner unit is faulty. The DC controller PCB is faulty. The drum unit is not installed.
+Remedy;1) Drum unit Is the drum unit installed in host machine? NO : Install the drum unit. 2) Connection Is the connection of the connector (J908) on the BD detection PCB, connector (J907) of the laser unit, and connector (J102) on the DC controller PCB normal? NO : Correct the connection. 3) Laser/scanner unit, DC controller PCB Try replacing the laser/scanner unit. Is the fault corrected? YES : End. NO : Replace the DC controller PCB.
+Code;E500
+Description;An error has occurred in the communication between the machine and the finisher twice continuously.
+Causes;The harness to the finisher is faulty (disconnected connector, open circuit). The finisher controller PCB or the DC controller PCB is faulty.
+Remedy;1) Power switch Try turning off and then on the power switch. Is the fault corrected? YES : End. 2) Wiring Is the wiring from the finisher controller PCB to the DC controller PCB normal? NO : Corrected the wiring. 3) Finisher controller PCB, DC controller PCB Try replacing the finisher controller PCB. Is the fault corrected? YES : End. NO : Replace the DC controller PCB.
+Code;E514
+Description;"The stack delivery belt does not reach home position when the stack handling motor (M2) is driven for a specific time (CW; if the same condition occurs during stack delivery, a jam will be identified)."
+Causes;The stack handling motor (M2) is faulty. The stack delivery home position sensor (S8) is faulty. The connector is disconnected or has an operation circuit. The stack handling motor relay harness is faulty. The stack delivery belt is faulty. The finisher controller PCB is faulty.
+Remedy;1) Stack handling motor drive belt Is the tension of the drive belt appropriate? NO : Loosen the screw on the tension to correct the tension. 2) Wiring Is the wiring between the finisher controller PCB and the harness handling motor (M2) normal? NO : Correct the wiring. 3) Sensor flag Are the sensor flag spring and the flag normal? NO : Correct the spring or the flag. 4) Stack delivery lever home position sensor (S8) Check the stack delivery lever home position sensor (S8). Is the sensor normal? NO : Replace the sensor. 5) Stack handling motor (M2), Finisher controller PCB Try replacing the stack handling motor (M2). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E530
+Description;"The rear aligning plate does not reach home position when the rear alignment motor (M4) has been driven for a specific time.
+ The rear aligning plate does not reach home position when the rear alignment motor (M4) has been driven for a specific time."
+Causes;The rear alignment motor (M4) is faulty. The rear aligning plate home position sensor (S7) is faulty. The sensor connector is disconnected or has an open circuit. The rear alignment motor relay harness is faulty. The rear aligning plate is subjected to an abnormal load. The finisher controller PCB is faulty.
+Remedy;1) Rear aligning plate home position sensor (S7) Check the rear aligning plate home position sensor (S7). Is the sensor normal? NO : Replace the sensor. 2) Wiring List the wiring between the finisher controller PCB and the rear alignment motor (M4). NO : Correct the wiring. 3) Rear aligning plate Is the rack riding cover the collar of the roll? YES : Correct it. 4) Rear alignment motor (M4), Finisher controller PCB Try replacing the rear alignment motor (M4). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E531
+Description;"The stapler does not leave the stapling home position sensor (S13) within 0.5 sec after the stapler motor (M6) is rotated CW.
+ The stapler does to return to the home position sensor (S13) within 0.5 sec after the stapler motor (M6) is driven CW and, in addition, it does not return to the sensor within 0.5 sec after the motor is driven CCW thereafter."
+Causes;The stapler motor (M6) is faulty. The stapler home position sensor (SW1) is faulty. The stapler harness is faulty. The finisher controller PCB is faulty.
+Remedy;1) Wiring It the wiring between the stapler unit and the finisher controller PCB normal? NO : Correct the wiring. 2) Stapler unit, Finisher controller PCB Try replacing the stapler unit. Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E537
+Description;"The front aligning plate does not reach home position when the front aligning motor (M3) is driven for a specific time.
+ The front aligning plate does not leave home position when the front alignment motor (M3) is driven for a specific time."
+Causes;The front alignment motor (M3) is faulty. The front aligning plate home position sensor (S6) is faulty. The sensor connector is disconnected or has an open circuit. The front alignment motor relay harness if faulty. The front aligning plate is subjected to an abnormal load. The finisher controller PCB is faulty.
+Remedy;1) Front aligning plate home position sensor (S6) Check the front aligning plate home position sensor (S6). Is the sensor normal? NO : Replace the sensor. 2) wiring Is the wiring between the finisher controller PCB and the front alignment motor (M3) normal? NO : Correct the wiring. 3) Front aligning plate Is the rack riding over the collar of the roll? YES : Correct it. 4) Front alignment motor (M3), Finisher controller PCB Try replacing the front alignment motor (M3). Is the problem corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E551
+Description;The delivery fan rotation signal (FNALCOK) does not arrive within 1 sec when the heat discharge fan drive signal (FANON) is sent.
+Causes;The heat discharge fan (FM1) is faulty. The heat discharge fan relay harness is faulty. The heat discharge fan is subjected to an abnormal load. The finisher controller PCB is faulty.
+Remedy;1) Wiring Is the wiring between the heat discharge fan and the finisher controller PCB normal? NO : Correct the wiring. 2) Heat discharge fan (FM1), Finisher controller PCB Try replacing the heat discharge fan (FM1). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E577
+Description;The return roller does not reach home position when the delivery motor (M1) is driven for a specific time. (If the same condition is detected while alignment takes place in the direction of feed, a jam will be identified)
+Causes;The delivery motor (M1) on the finisher controller PCB is faulty. The return roller home position sensor (S3) is faulty. The connector is discontented or has an open circuit. The delivery motor relay harness is faulty. The return roller is faulty. The finisher controller PCB is faulty.
+Remedy;1) Delivery motor (drive mechanism) Is the return roller rotation when the motor is rotating CCW? NO : Correcting the drive mechanism. Is the return roller displaced? NO : Correct the return roller spring. Is the tension of the delivery motor drive belt appropriate? NO : Loosen the screw, and correct the tension. 2) Return roller home position sensor (S3) Check the return roller home position sensor (S3). Is the sensor normal? NO : Replace the sensor. 3) Delivery motor (M1), Finisher controller PCB Try replacing the delivery motor (M1). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E580
+Description;"The stack tray upper limit sensor (S1) goes ON while the stack tray up/down motor (M5) is in operation.
+ The clock signal of the stack tray up/down clock sensor (S9) is not detected 15 times or more within 0.8 sec while the stack tray up/down motor (M5) is in operation.
+ It does not reach the stack tray paper height sensor (S10) 2 sec after the stack tray up/down motor (M5) rotates for ascent.
+ It does not leave the stack tray power height sensor (S10) 2 sec after the stack tray up/down motor (M5) starts to rotate for descent."
+Causes;The stack tray up/down motor (M5) is faulty. The stack tray paper height sensor (S10) is faulty. The sensor connector is disconnected or has an open circuit. The stack tray up/down clock sensor (SW9) is faulty. The sensor connector is disconnected or has an open circuit. The stack tray up/down motor is subjected to an abnormal load. The finisher controller PCB is faulty.
+Remedy;1) Stack tray up/down motor (encoder) Try turning the encoder of the stack tray up/down motor by hand. Does it rotate smoothly? NO : Correct the mechanical mechanism. 2) Wiring Is the wiring between the finisher controller PCB and the stack tray up/down motor (M5) normal? NO : Correct the wiring. 3) Tray phase Is the left/right phase of the stack tray normal? NO : Correct the phase. 4) Stack tray up/down lock sensor (S9) Check the stack tray up/down clock sensor (S9). Is the sensor normal? NO : Replace the sensor. 5) Stack tray paper height sensor (S10) Check the stack tray paper height sensor (S10). Is the sensor normal? NO : Replace the sensor. 6) Stack tray paper limited sensor (S1), Stack tray lower limit sensor (S12) Check the stack tray upper limit sensor (S1) and the stack tray lower limit sensor (S12). Are the sensors normal? NO : Replace the sensors. 7) Stack tray up/down motor (M5), Finisher controller PCB Try replacing the stack tray up/down motor (M5). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E585
+Description;The stack retaining lever does not reach home position when the stack handling motor (M2) has been driven for a specific time (at the start of motor CCW rotation). (If the same condition is detected during stack delivery, a jam will be identified)
+Causes;The stack handling motor (M2) is faulty. The stack delivery lever home position sensor (S8) is faulty. The sensor connector is disconnected or has an open circuit. The stack handling motor relay harness is faulty. The stack retaining lever is faulty. The finisher controller PCB is faulty.
+Remedy;1) Stack holding motor drive belt. Is the tension of the drive belt appropriate? NO : Loosen the screw, and correct the tension. 2) Stack handling motor (drive mechanism) Is the return roller rotating while the motor is rotating CCW? NO : Correct that drive mechanism. 3) Wiring Is the wiring between the finisher controller PCB and the stack handling motor (M2) normal? NO : Correct the wiring. 4) Stack retaining lever home position sensor (S4) Check the stack retaining lever home position sensor (S4). Is the sensor normal? NO : Replace the sensor. 5) Stack handling motor (M2), Finisher controller PCB Try replacing the stack handling motor (M2). Is the fault corrected? YES : End. NO : Replace the finisher controller PCB.
+Code;E719
+Description;"The communication between the card reader and the image processor PCB is disrupted.
+ Note: If E719 is indicated, the fault in communication is retained by the RAM on the image processor even when the power switch has been turned off and then on; be sure to execute #12 CLEAR - CARD in service mode before making corrections."
+Causes;The wiring is faulty (short circuit, open circuit). The card reader is faulty. The image processor PCB is faulty.
+Remedy;1) Connector Is the connection and the wiring for the connector (J1131) of the card reader and the connector (J210) on the image processor PCB normal? NO : Correct the connection. 2) Image processor PCB Try replacing the card reader. Is the fault corrected? YES : End. NO : Replace the image processor PCB.
+Code;E805
+Description;After the heat discharge fan drive signal is generated, the fan lock detection signal does not arrive for a specific period of time.
+Causes;The fan wiring is faulty (short circuit, open circuit). The heat discharge fan (FM101) is fautly. The DC controller PCB is faulty.
+Remedy;1) Foreign matter Is there foreign matter that prevents the rotation of the fan? YES : Remove the foreign matter. 2) Wiring, Connector Is the connection and wiring of the connector (J951) of the heat discharge fan (FM101) and the connector (J106) on the DC controller PCB normal? NO : Correct the wiring. 3) Heat discharge fan (FM101), DC controller PCB Try replacing the heat discharge fan (FM101). Is the fault corrected? YES : End. NO : Replace the DC controller PCB.

@@ -1,0 +1,306 @@
+Code;13.00.00
+Display;13.00.00
+Description;Paper jam
+Remedy;CLEAR PAPER JAM
+Code;13.00.03
+Display;13.00.03
+Description;Fusing delivery paper delay jam
+Remedy;CLEAR FUSER JAM LOWER LEFT DOOR
+Code;13.00.04
+Display;13.00.04
+Description;Fusing delivery stationary jam
+Remedy;CLEAR FUSER JAM LOWER LEFT DOOR
+Code;13.00.05
+Display;13.00.05
+Description;Delivery paper delay jam
+Remedy;CLEAR OUTPUT JAM UPPER LEFT DOOR
+Code;13.00.06
+Display;13.00.06
+Description;Delivery stationary jam
+Remedy;CLEAR OUTPUT JAM UPPER LEFT DOOR
+Code;13.00.07
+Display;13.00.07
+Description;Two-sided turnaround paper late jam
+Remedy;CLEAR DUPLEX JAM LOWER LEFT DOOR
+Code;13.00.08
+Display;13.00.08
+Description;Two-sided turnaround paper stopped jam
+Remedy;CLEAR DUPLEX JAM LOWER LEFT DOOR
+Code;13.00.09
+Display;13.00.09
+Description;Two-sided path paper late jam
+Remedy;CLEAR DUPLEX JAM LOWER LEFT DOOR
+Code;13.00.10
+Display;13.00.10
+Description;Transfer jam
+Remedy;CLEAR TRANSFER JAM
+Code;13.00.11
+Display;13.00.11
+Description;Tray 1 jam
+Remedy;CLEAR UNEXPECTED PAPER SIZE JAM THEN LOAD TRAY 1
+Code;13.11.11
+Display;13.11.11
+Description;Time-out at paper entry sensor (PS31)
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.1B
+Display;13.11.1B
+Description;Time-out at paper exit sensor (PS32)
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.21
+Display;13.11.21
+Description;Page stays too long at paper entry sensor (PS31)
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.2B
+Display;13.11.2B
+Description;Page stays too long at paper exit sensor (PS32)
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.31
+Display;13.11.31
+Description;At power on, paper entry sensor (PS31) in VTU is active.
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.31
+Display;13.11.31
+Description;At power on, paper entry sensor (PS31) in VTU is active.
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.11.3B
+Display;13.11.3B
+Description;At power on, paper exit sensor (PS32) in VTU is active.
+Remedy;CLEAR INPUT DEVICE JAM
+Code;13.22.01
+Display;13.22.01
+Description;Multi-bin mailbox jam
+Remedy;CLEAR MAILBOX JAM
+Code;13.22.02
+Display;13.22.02
+Description;Multi-bin mailbox jam
+Remedy;CLEAR MAILBOX JAM
+Code;13.22.03
+Display;13.22.03
+Description;Multi-bin mailbox jam
+Remedy;CLEAR MAILBOX JAM
+Code;13.22.04
+Display;13.22.04
+Description;Multi-bin mailbox jam
+Remedy;CLEAR MAILBOX JAM
+Code;13.22.05
+Display;13.22.05
+Description;Multi-bin mailbox jam
+Remedy;CLEAR MAILBOX JAM
+Code;20
+Display;20 INSUFFICIENT MEMORY
+Description;More data has been received from the computer than fits in the printer’s internal memory.
+Remedy;No action is required. Only the amount of data that fits in the printer’s internal memory is printed. If this error occurs frequently or if large or complex print jobs are often sent to the printer, add more memory to the printer. The optimum amount of memory is 128 MB.
+Code;22
+Display;22 EIO <n> BUFFER OVERFLOW
+Description;The EIO buffer has overflowed during a busy state. This might happen if several complex jobs are sent simultaneously via the network and are larger than the overflow will allow. <n> = EIO slot number: 1 = Bottom EIO slot 2 = Top EIO slot
+Remedy;No action is required. The current data in the print buffer will be lost.
+Code;22
+Display;22 PARALLEL I/O BUFFER OVERFLOW
+Description;Indicates the parallel buffer has overflowed. This might happen if several complex jobs are sent simultaneously via the parallel port and are larger than the overflow will allow.
+Remedy;No action is required. The current data in the print buffer will be lost.
+Code;30.00.01
+Display;30.00.01
+Description;Hard disk internal self-test routine failure detection
+Remedy;DISK DEVICE FAILURE
+Code;40
+Display;40.<n> HP EIO ERROR
+Description;An EIO accessory connection has been abnormally broken while transferring data from the computer to the printer. <n> = EIO slot number 1 = Bottom EIO slot 2 = Top EIO slot
+Remedy;1 Press GO. 2 Print an EIO configuration page to verify that the EIO accessories are installed properly. 3 Check that all cables are connected to the EIO ports and that the EIO accessory is seated properly. 4 Turn the printer off and on to reset it. 5 If possible, print to another network printer to verify the network is working properly. All data in the print buffer will be lost.
+Code;40.00.01
+Display;40.00.01
+Description;An EIO accessory is initializing.
+Remedy;EIO <n> INITIALIZING
+Code;41.2
+Display;41.2 PRINTER ERROR
+Description;Indicates that a beam detect laser scanner error has occurred on the previous page. The page will reprint and continue
+Remedy;1 Open and close the front door of the printer to remove any remaining pages from the printer. 2 Turn the printer off and on to reset the printer. 3 Reconnect connector J1001 on the laser driver PCA and connector J205 on the controller board. 4 Reconnect connector J2 on beam detect PCA, relay connector J40, and connector J211 on the controller board. 5 If the problem persists, replace the laser/ scanner unit. 6 If, after replacing the laser/scanner unit, the problem persists, replace the controller board.
+Code;41.3
+Display;41.3 UNEXPECTED PAPER SIZE LOAD TRAY 1
+Description;Tray 1 is configured for a specific media size, but the printer detects a different size being fed from tray 1. For example, the printer was expecting a lettersized page but detected that an 11-by-17 inch-sized page was fed instead. <width> = Media width specified in the printer driver or application <length> = Media length specified in the printer driver or application
+Remedy;1 Verify the correct size media (width and length) are loaded in tray 1. 2 Verify the paper guides are set correctly. 3 Load the requested size media in tray 1. Or, press GO to print on the default size. 4 Verify that the media width sensor on the paper guides are working properly. 5 Reconnect connector J1701 on the tray 1 width detection PCA, relay connector J33, and connector J208 on the controller board. 6 Replace the tray 1 pick-up assembly.
+Code;41.5
+Display;41.5 UNEXPECTED PAPER TYPE LOAD TRAY <x>
+Description;The printer was expecting one type of medium to be fed from an input tray and a different type was fed. For example, the printer was expecting transparencies and plain paper was fed. <x> = Input tray number (2, 3, or 4) <type> = Media type specified in the printer driver or application <size> = Media size specified in the printer driver or application Note: The size error in this message applies only to tray 1.
+Remedy;1 Open and close the front door to remove the page from the printer. 2 Verify that the correct media are loaded in the input tray and the printer control panel is configured correctly. 3 Clean the detection windows of OHT sensors 1 and 2. 4 Reconnect connectors J1801 and J1802 of OHT sensors 1 and 2, connector J214 on the controller board, and relay connector J17. 5 Replace OHT sensors 1 and 2. 6 Replace the controller board.
+Code;49
+Display;49.<xxxx> ERROR CYCLE POWER
+Description;Indicates that a software or data communications error has occurred, or corrupt data was sent to the printer. This can be caused during times of high network traffic or by incomplete or out-of-bounds print data. This error can also occur because of defective EIO devices.
+Remedy;1 Verify that all cables are connected. 2 Turn the printer off and on to reset the printer. 3 Remove all EIO cards and reinstall them to ensure they are seated correctly. 4 If using a parallel connection, verify that the cable is IEEE-1284 compliant. 5 If the error occurs frequently, try adding more memory.
+Code;50.00.05
+Display;50.00.05
+Description;An incompatible fuser is installed
+Remedy;INCORRECT FUSER LOWER LEFT DOOR
+Code;50.1
+Display;50.1 FUSER ERROR CYCLE POWER
+Description;Indicates that a low temperature error has occurred in the fuser.
+Remedy;1 Verify the fuser is completely seated inside the printer. 2 Turn the printer off and on to reset the printer. 3 Turn the printer off and remove the fuser. Measure the resistance across fuser connectors J26F-A4 (FXTHU) and J26F-A3 (GND). If it is not in the range of 250 kOhms to 600 kOhms (room temperature), check the wiring from the connector J222 on the controller board up to the upper thermistor. If the wiring is normal, replace the fuser kit. 4 Reconnect connector J222 on the controller board and connector J26 on the fuser. 5 Replace the fuser kit. 6 Replace the power supply.
+Code;50.2
+Display;50.2 FUSER ERROR CYCLE POWER
+Description;Indicates that a warmup error has occurred in the fuser.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Verify the fuser is completely seated inside the printer. 3 Check for media jams in the fuser. 4 Replace the fuser kit.
+Code;50.3
+Display;50.3 FUSER ERROR CYCLE POWER
+Description;Indicates that a high temperature error has occurred in the fuser. This error is saved in the controller board by an electrical charge in capacitor C259.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Turn the printer off and unplug it. Place a flat blade of a screwdriver between the two wires of C259 to short out the capacitor and clear the memory. 3 Replace the fuser kit. 4 Replace the power supply. 5 Replace the controller board.
+Code;50.4
+Display;50.4 FUSER ERROR CYCLE POWER
+Description;Indicates that a fuser drive or power unit error has occurred in the fuser.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Verify the fuser is completely seated inside the printer. 3 Replace the fuser kit. 4 Replace the power supply. 5 Replace the controller board.
+Code;50.6
+Display;50.6 FUSER ERROR CYCLE POWER
+Description;Indicates that a heater error has occurred in the fuser.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Verify the fuser is completely seated inside the printer. 3 Reconnect connector J222 on the controller board, connector J26 on the fuser, and connector J101 on the power supply. 4 Replace the fuser kit. 5 Replace the power supply. 6 Replace the controller board.
+Code;51
+Display;51 LASER ERROR CYCLE POWER
+Description;Indicates that a laser malfunction has occurred.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Reconnect connector J1001 on the laser driver PCA and connector J205 on the controller board. 3 Reconnect connector J2 on the beam detect PCA, relay connector J40, and connector J211 on the controller board. 4 If the problem persists, replace the laser/ scanner unit. 5 If, after replacing the laser/scanner unit, the problem persists, replace the controller board.
+Code;52
+Display;52 SCANNER ERROR CYCLE POWER
+Description;Indicates that the scanner motor is not turning properly.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Reconnect connector J901 on the scanner motor PCA, relay connector J40, and connector J211 on the controller board. 3 Measure the voltage across connector J647- B11 (+24UH) and J647-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the power supply. 4 Measure the voltage across connector J211-7 (SCND) and J211-6 (GND) on the controller board after the printer is turned on. If the voltage changes from 0 V to 17 V or more, replace the laser/scanner unit. 5 Replace the laser/scanner unit. 6 Replace the controller board.
+Code;53
+Display;53.<x><y>.<zz> ERROR DIMM SLOT <n>
+Description;"Indicates that a memory error occurred during the configuration and validation of DIMM memory.
+ <x> = Hardware type: 0 = ROM 1 = RAM 2 = Font DIMM
+ <y> = Hardware device: 0 = Onboard ROM/RAM 1 = DIMM slot 1 2 = DIMM slot 2 3 = DIMM slot 3 4 = DIMM slot 4 5 = DIMM slot 5 6 = DIMM slot 6 7 = DIMM slot 7 8 = DIMM slot 8
+ <zz> = Error: 00 = Unsupported memory 01 = Unrecognized memory 02 = Unsupported memory size 03 = Failed RAM test 04 = Exceeded maximum RAM size 05 = Exceeded maximum ROM size 06 = Invalid DIMM speed; check DRAM 07 = DIMM is reporting incorrect checksums 10 = DIMM address 11 = PDC XROM out of bounds 12 = Could not make temporary mapping 13 = Invalid RAM type 14 = DIMM not paired properly 15 = Bad firmware upgrade DIMM checksum 16 = More than one set of firmware upgrade DIMMs 17 = Not enough DRAM to run
+ <n> = EIO slot number: 1 = Bottom EIO slot 2 = Top EIO slot"
+Remedy;1 Verify that the DIMM board is installed correctly and the DIMMs are configured correctly. DRAM DIMMs must be installed in synchronous pairs in adjacent slots, with the same size and speed in both slots. Only SDRAM is supported. 2 Turn the printer off and on to reset the printer. 3 Remove and replace the DIMM that caused the error.
+Code;54.00.03
+Display;54.00.03
+Description;DUPLEX ERROR CHECK DUPLEXER
+Remedy;DUPLEX ERROR CHECK DUPLEXER
+Code;54.00.05
+Display;54.00.05
+Description;Sensor abnormality.
+Remedy;CLEAN DENSITY SENSOR CYCLE POWER
+Code;54.00.06
+Display;54.00.06
+Description;Out of range cyan.
+Remedy;CLEAN DENSITY SENSOR CYCLE POWER
+Code;54.00.07
+Display;54.00.07
+Description;Out of range magenta.
+Remedy;CLEAN DENSITY SENSOR CYCLE POWER
+Code;54.00.08
+Display;54.00.08
+Description;Out of range yellow.
+Remedy;CLEAN DENSITY SENSOR CYCLE POWER
+Code;54.00.09
+Display;54.00.09
+Description;Out of range black.
+Remedy;CLEAN DENSITY SENSOR CYCLE POWER
+Code;54.1
+Display;54.1 TEMPERATURE SENSOR ERROR CYCLE POWER
+Description;Indicates that the temperature/humidity sensor in the printer has malfunctioned. The temperature/ humidity sensor is located below tray 2.
+Remedy;1 Reconnect connector J801 and relay connector J55 on the temperature/humidity sensor, and connector J206 on the controller board. 2 Replace the cassette crossmember assembly which includes the temperature/humidity sensor. 3 Replace the controller board.
+Code;54.2
+Display;54.2 CAROUSEL ERROR CYCLE POWER
+Description;Indicates that the color toner carousel is not working correctly. This could be caused by an obstruction in the carousel path, such as a loose shutter or disengaged toner cartridge.
+Remedy;"1 Turn the printer off and on to reset the printer. 2 Open the carousel door and waste toner tray. Look for an obstruction, such as a toner cartridge shutter catching on the waste toner tray. Verify the toner lock lever is fully locked. If the message does not clear after closing the doors, turn the printer off and on to reset the printer. 3 Clean the carousel position sensor (PS3) with compressed air. If the problem persists, replace the sensor. 4 Reconnect connector J701 on carousel motor PCA; connectors J641, J642, J644, and J648 on the main relay PCA; connector J672 on the subrelay PCA; and connector J102 on the power supply. 5 Check operation of the carousel stopper arm. Replace the carousel stopper solenoid. 6 Check electrical continuity between connector J641-1 (+24 VB) and J642-3 (PMP) on the main relay PCA when the door switch (SW641) is turned on. If there is no electrical continuity, replace the main relay PCA. 7 Check electrical continuity between connector J644-1 (PBK) and J644-2 (PMP) on the main relay PCA when the door switch (SW644) is turned on. If there is no electrical continuity, replace the black toner cartridge on/off switch. 8 Check electrical continuity between connector J642-1 (PYMC) and J642-2 (PBK) on the subrelay PCA when the door switch (SW673) is turned on. If there is no electrical continuity, replace the toner cartridge cover switch in the subrelay PCA. 9 Check electrical continuity between connector J642-1 (PYMC) and J648-1 (+24 VAR) on the main relay PCA when the door switch (SW642) is turned on. If there is no electrical continuity, replace the main relay PCA. 10 Measure the voltage across connector J648-1 (+24 VAR) and J648-3 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the main relay PCA. 11 Reconnect connectors J704 and J706 on the carousel motor PCA, and connector J220 on the controller board. 12 Reconnect connector J43 on the carousel position sensor, relay connector J42 and connector J207 on the controller board. 13 Measure the voltage across connector J220- A6 (RLSROT) and J220-B5 (GND) on the controller board after the printer is turned on. If the voltage changes to about 3.5 V from 0 V, replace the carousel motor PCA. 14 Replace the carousel motor (M1). 15 Replace the controller board."
+Code;54.3
+Display;54.3 CALIBRATION WARNING PRESS GO TO CONTINUE
+Description;The process marks in the density sensing pattern are corrupted (see chapter 5 for more information).
+Remedy;1 Press GO. 2 Print a configuration page and troubleshoot as an image-quality problem. 3 Check the transfer guide for cracks and replace the transfer guide as needed.
+Code;54.4
+Display;54.4 WASTE TONER SENSOR ERROR CYCLE POWER
+Description;The waste toner sensor has failed. Printing cannot continue.
+Remedy;1 Replace the waste toner sensor assembly. 2 Replace the imaging drum.
+Code;55
+Display;55 PRINTER ERROR CYCLE POWER
+Description;Indicates a printer command error. The commands cannot be exchanged between the printer and its controller.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Verify the controller board is fully seated.
+Code;56.1
+Display;56.1 ERROR CYCLE POWER POWER
+Description;Indicates an input feed error (such as requesting to feed transparencies through the duplexer), or that the input tray is not installed.
+Remedy;1 If the input tray you are trying to print from is not installed, install the input tray. 2 Turn the printer off and on to reset the printer.
+Code;56.2
+Display;56.2 ERROR CYCLE POWER
+Description;Indicates an illegal output error. For example, the multi-bin mailbox is not installed and it was selected as the output destination, or there are transparencies in the duplexer.
+Remedy;1 Open the printer and remove media from the paper path. 2 Verify that the media type is set in the printer control panel. 3 Turn the printer off and on to reset the printer.
+Code;57.1
+Display;57.1 FAN FAILURE
+Description;One of the cooling fans failed or is obstructed. 1 = Fan 1 (FM 1)
+Remedy;Caution: Turn the printer off and do not operate the printer in this condition or it can be seriously damaged. 1 Turn the printer off and on to reset it. 2 Reconnect connectors J702 and J706 on the carousel motor PCA, and connector J220 on the controller board. 3 Reconnect connector J701 on the carousel motor PCA, connectors J648 and J641 on the main relay PCA, and connector J102 on the DC power supply. 4 Measure the voltage across J702-3 (FAN1ON) and J701-2 (GND) on the carousel motor PCA after the printer is turned on. If the voltage changes from 0 V to 24 V, replace fan 1. 5 Measure the voltage across connector J701-1 (+24 VB) and J701-2 (GND) on the carousel motor PCA after the printer is turned on. If the voltage is about 24 V, replace the carousel motor. 6 Measure the voltage across connector J641-1 (+24 VB) and J641-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the main relay PCA. 7 Check the AC power supply. 8 If the problem is not rectified after the printer is turned off and on again, find the cause of activation of the overcurrent/overvoltage detection circuit in the power supply. Wait more than two minutes before turning the power back on. 9 Replace the power supply.
+Code;57.2
+Display;57.2 FAN FAILURE
+Description;One of the cooling fans failed or is obstructed. 2 = Fan 2 (FM 2)
+Remedy;Caution: Turn the printer off and do not operate the printer in this condition or it can be seriously damaged. 1 Turn the printer off and on to reset it. 2 Reconnect connectors J703 and J706 on the carousel motor PCA and connector J220 on the controller board. 3 Reconnect connector J701 on the carousel motor PCA, connector J648 on the main relay PCA, and connector J102 on the DC power supply. 4 Measure the voltage across connector J703-3 (FAN2ON) and J703-1 (GND) on the carousel motor PCA after the printer is turned on. If the voltage changes from 0 V to 24 V, replace fan 2. 5 Measure the voltage across connector J701-1 (+24 VB) and J701-2 (GND) on the carousel motor PCA after the printer is turned on. If the voltage is about 24 V, replace the carousel motor. 6 Measure the voltage across connector J641-1 (+24 VB) and J641-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is 24 V, replace the main relay PCA. 7 Check the AC power supply. 8 If the problem is not rectified after the printer is turned off and on again, find the cause of activation of the overcurrent/overvoltage detection circuit in the power supply. Wait more than two minutes before turning the printer back on. 9 Replace the power supply.
+Code;57.3
+Display;57.3 FAN FAILURE
+Description;One of the cooling fans failed. 3 = Fan 3 (FM 3)
+Remedy;Caution: Turn the printer off and do not operate the printer in this condition or it can be seriously damaged. 1 Turn the printer off and on to reset it. 2 Reconnect connectors J645 and J647 on the main relay PCA, J18 and J74 relay connectors, and connector J227 on the controller board. 3 Reconnect connector J641 on the main relay PCA, and connector J102 on the power supply. 4 Measure the voltage across J645-3 (FAN3ON) and J645-1 (GND) on the main relay PCA after the printer is turned on. If the voltage changes from 0 V to 24 V, replace fan 3. 5 Measure the voltage across connector J641-1 (+24 VB) and J641-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the main relay PCA. 6 Measure the voltage across connector J641-1 (-24 VB) and J641-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the main relay PCA. 7 Check the AC power supply. 8 If the problem is not rectified after the printer is turned off and on again, find the cause of activation of the overcurrent/overvoltage detection circuit in the power supply. Wait more than two minutes before turning the printer back on. 9 Replace the controller board.
+Code;58.1
+Display;58.1 ERROR CYCLE POWER
+Description;Indicates that the paper diverter inside the right upper door is out of position, causing an error feeding media from tray 1.
+Remedy;1 Open the right upper door and check for a media jam or misfed media. 2 Turn the printer off and on to reset the printer.
+Code;59
+Display;59.<x> MOTOR ERROR CYCLE POWER
+Description;"Indicates that the main motor (M4) is not working properly.
+ <x> =  0 = General error 1 = Startup error 2 = Rotation error"
+Remedy;1 Turn the printer off and on to reset the printer. 2 Reconnect connector J219 and relay connector J1 on the controller board. 3 Replace the main motor (M4). 4 Reconnect connectors J641 to J643 and J647 on the main relay PCA, connectors J671 and J673 on the subrelay PCA, connector J102 on the power supply, and connector J227 on the controller board. 5 Check electrical continuity between connector J641-1 (+24 VB) and J642-3 (PMP) on the main relay PCA when the door switch (SW641) is turned on. If there is no electrical continuity, replace the main relay PCA. 6 Check electrical continuity between connector J671-2 (PMP) and J671-2 (PFUPR) on the subrelay PCA when the door switch (SW671) is turned on. If there is no electrical continuity, replace the subrelay PCA. 7 Measure the voltage across connector J647- B11 (+24 UH) and J647-4 (GND) on the main relay PCA after the printer is turned on. If the voltage is not 24 V, replace the main relay PCA. 8 Replace the controller board.
+Code;62
+Display;62.<x> SERVICE CYCLE POWER
+Description;Indicates that a problem exists with the internal memory. <x> =  0 = Internal ROM or RAM 1-8 = DIMM slots 1-8
+Remedy;1 Turn the printer off and on to reset the printer. 2 Perform DRAM DIMM test from the formatter diagnostics in the Service Menu. 3 If the problem persists, replace the bad DIMM.
+Code;63
+Display;63 SERVICE CYCLE POWER
+Description;Indicates that the internal RAM memory test failed.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Perform DRAM DIMM test from the formatter diagnostics in the Service Menu. 3 If the problem persists, replace the bad DIMM.
+Code;64
+Display;64 PRINTER ERROR CYCLE POWER
+Description;Indicates a scan buffer error.
+Remedy;Turn the printer off and on to reset the printer.
+Code;65
+Display;65 PRINTER ERROR CYCLE POWER
+Description;Indicates a DRAM controller error.
+Remedy;1 Turn the printer off and on to reset the printer. 2 Perform DRAM DIMM test from the formatter diagnostics in the Service Menu. 3 If the problem persists, replace the bad DIMM.
+Code;66
+Display;66.<x>0.<yy> C-LINK COMM ERROR CHECK CABLES AND CYCLE POWER
+Description;Indicates a communication error between the 2,000- sheet input unit or the multi-bin mailbox and the printer. <x> = Device number in the link <yy> = Error code from the optional device
+Remedy;1 Verify that the C-link and power cables are connected. 2 Turn the printer off and on to reset the printer.
+Code;66.11.0
+Display;66.11.01 INPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a 2,000-sheet input unit lifting motor error.
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Verify that there are no objects or paper stored in the left side of the tray. 4 Verify that the lifting plate moves freely by hand. 5 Verify that the paper size plates are installed correctly, and that they are not bent. 6 Replace the paper deck drive assembly bushing. 7 Replace the paper deck drive assembly. 8 Replace the paper tray (tray 4) for the 2,000- sheet input unit.
+Code;66.11.02
+Display;66.11.02 INPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a 2,000-sheet input unit feed motor error.
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Verify that there are no objects in the left side of the tray. 4 Verify that the paper tray raised sensor (PS34) is working properly (perform a sensor test). 5 Check for proper installation of the pick-up roller. 6 Check the pick-up assembly and the paper deck drive assembly cabling. 7 Replace the pick-up assembly. 8 Replace the paper deck drive assembly.
+Code;66.11.03
+Display;66.11.03 INPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a 2,000-sheet input unit lifting and feed motor error.
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Verify that there are no objects in the left side of the tray. 4 Verify that the lifting plate moves freely by hand. 5 Verify that the paper size plates are installed correctly, and that they are not bent. 6 Replace the paper deck drive assembly bushing. 7 Replace the paper deck drive assembly. 8 Check that the paper tray raised sensor (PS34) is working properly (perform a sensor test). 9 Check for proper installation of the pick-up roller. 10 Check pick-up assembly cabling. 11 Replace the pick-up assembly.
+Code;66.22
+Display;66.22.<xx> OUTPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a multi-bin mailbox error. <xx> = Error code from the optional device
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Replace the C-link cables. 4 Replace the multi-bin mailbox controller board PCA.
+Code;66.22.08
+Display;66.22.08 OUTPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a multi-bin mailbox flipper motor error.
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Check for jams in the flipper assembly area. 4 Replace the flipper assembly. 5 Replace the multi-bin mailbox controller board PCA.
+Code;66.22.09
+Display;66.22.09 OUTPUT DEVICE FAILURE CHECK CABLES AND CYCLE POWER
+Description;Indicates a multi-bin mailbox external memory error.
+Remedy;1 Verify that the c-link and power cables are connected. 2 Turn the printer off and on to reset the printer. 3 Replace the multi-bin mailbox controller board PCA.
+Code;67
+Display;67.<x> ERROR POWER CYCLE
+Description;Indicates an electronic controller error. <x> =  1 = Controller board error 2 = Controller board IC malfunction 3 = Internal communication malfunction
+Remedy;1 Turn the printer off and on to reset the printer. 2 Replace the controller board.
+Code;68
+Display;68 NVRAM ERROR SETTINGS CHANGED
+Description;Indicates that a recoverable error has been detected in the NVRAM. Values for some NVRAM settings were found to be illegitimate in form and were set back to their default value.
+Remedy;1 Verify the printer control panel settings. One or more fields have been reset to their factory defaults during the error recovery. 2 Perform a factory defaults reset. 3 Perform a cold reset
+Code;68
+Display;68 NVRAM FULL SETTINGS LOST
+Description;Indicates that the NVRAM is full, and the printer is unable to write new data to the NVRAM.
+Remedy;Verify the printer control panel settings. One or more fields might have been reset to their factory defaults during error recovery. The next time the printer is turned off and on, NVRAM will be cleared and all factory defaults will be restored.
+Code;79
+Display;79 SERVICE <xxxx> CYCLE POWER
+Description;"The firmware has detected a hardware failure within the formatter. This failure can be caused by defective EIO devices and communication ports
+ <xxxx>  01<xx> = IO ASIC register error 02<xx> = Video ASIC register error 03<xx> = IDE ASIC register error"
+Remedy;1 Turn the printer off. Disconnect all communication cables and EIO cards. Turn the printer back on. 2 Run extended formatter diagnostics from the Service Mode Menu to troubleshoot the failure. 3 If the problem persists without the communications connected, replace the formatter board
+Code;8n.xxx
+Display;8<n>.<xxx>
+Description;EIO card error
+Remedy;EIO <n> NOT FUNCTIONAL

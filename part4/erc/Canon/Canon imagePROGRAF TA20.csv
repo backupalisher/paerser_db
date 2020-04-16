@@ -1,0 +1,1268 @@
+Code;001112 2E3D
+Description;Paper feeding failure (support number: 1300)
+Causes;When the paper passes PAPER ENTRY SENSOR, the multi sensor fails to detect the paper edge*. *This error occurs when the LF roller is catching the paper.
+Remedy;1 Release the release lever. Reload the paper. (Check if there are stuck paper pieces and check the condition of the page top.) The error is removed Complete. The error is not removed Go to 2. 2 Check if the pinch roller is nipping the media. Nipping Replace PINCH ROLLER UNIT. Not nipping Replace PAPER ENTRY SENSOR. 3 Check other suspected cause. •Media related cause. (size, media type mismatch, paper curl at the page top) •Curly bottom tip of the roll paper. •Avoid the paper with strong stiffness or heavy roll paper.
+Code;001215 200D
+Description;Paper detection failure (at the tip of the paper) (support number: 1322)
+Causes;The multi sensor fails to detect the tip of the cut sheet.
+Remedy;1 Check each condition. •The paper loading position. •Loading of curled paper. •Pulling out of cut sheets just before printing. 2 Check other suspected cause. •When using clear film, paper size may not be detected if ink is stained on the platen. In this case, open the top cover and clean the whole platen.
+Code;001215 2016
+Description;Paper feeding failure (support number: 1300)
+Causes;The length of the cut paper in feed direction detected by PAPER ENTRY SENSOR during printing is different from that of which detected during paper feeding.* *The change of the cut paper feed amount due to some reasons such as paper jam may cause this error.
+Remedy;Remove the paper when it is jamming inside. •Reload papers when papers are not jammed inside.
+Code;001215 2E3C
+Description;Paper feeding failure (cut sheet) (support number: 1300, alarm code: -)
+Causes;PAPER ENTRY SENSOR detects no paper loaded on the printer when the printing starts.
+Remedy;1 Lift the release lever up, and reload the cut sheet.
+Code;002121 2010
+Description;Skew (support number: 1317)
+Causes;During the paper feeding, the multi sensor detects that the paper edge at home position side moved +/-1mm or more (for cut paper, +/-2mm or more) off the original edge position per 300mm feeding.
+Remedy;•Reload the paper. •Remove the roll holder. Put the roll paper into the spool until it hits the frange. Set the roll holder to the printer. •Select “OFF” or “Loose” in [Skew detection accuracy] in the printer menu.* *Skew printing causes paper jam, failure in image, or stain on the platen, which may cause ink smear on the reverse side of the paper in the next printing.
+Code;002221 200C
+Description;Paper detection failure (at the paper leading edge) (support number: 1322)
+Causes;The multi sensor fails to detect the tip of the roll paper.
+Remedy;1 Check each condition. •The paper loading position. •Loading of curled paper. •Pulling out of roll paper just before printing. 2 Check other suspected cause. •When using clear film, paper size may not be detected if ink is stained on the platen. In this case, open the top cover and clean the whole platen.
+Code;002221 2017
+Description;Paper detection failure (at the right edge of the paper) (support number: 1322)
+Causes;The multi sensor detected that the paper edge at home position side was off 5mm during paper feeding.* *Loading the paper being off the reference position may also cause this error.
+Remedy;1 Lift the lever up to release the error. Check the right edge position, and reload or replace the paper.
+Code;002221 2018
+Description;Paper detection failure (at the left edge of the paper) (support number: 1322)
+Causes;The multi sensor failed to detect the away side paper edge during paper feeding.* *Feeding clear films may cause this error.
+Remedy;1 Change [Detect paper width] in printer menu to “Disable”.
+Code;003130 201C
+Description;Sheet edge detection error during printing - cut sheet (support number: 1300)
+Causes;The paper width was changed +/-10mm or more at the home position side paper edge or away side paper edge during printing with border.* *The assumed situation is the folded paper during paper feeding.
+Remedy;1 Lift the lever up to remove the error, then reload or replace the paper
+Code;003130 201D
+Description;Paper edge detection error during printing - roll paper (support number: 1300)
+Causes;The paper width was changed +/-10mm or more at the home position side paper edge or away side paper edge during printing with border.* *The assumed situation is the folded paper during paper feeding.
+Remedy;1 Lift the lever up to remove the error, then reload or replace the paper.
+Code;004040 2019
+Description;Cut failure (support number: 4920) Memo: Job will be canceled when the error is removed.
+Causes;This error occurs in the following conditions. •Neither the number of cutter motor rotations nor rotation speed satisfy the specified rotation number and rotation speed during cutting. •The edge detection position is off +/-5mm or more from the reference position in edge detection after cutting.
+Remedy;1 •The cut paper is remaining on the ejection guide. => Remove the remaining paper. •The foreign substance around the ejection guide hits the cutter blade. => Remove the foreign substance. •The media is not used in the recommended use environment. => Use the media in the recommended environment..* •The paper in use does not support [Automatic cut]. => Select [User cut] for roll paper cut setting and cut the roll paper with scissors. •Replace the cutter blade, in the case other than above. *See the user manual for recommended use environment.
+Code;100x
+Description;Low ink in the ink tank (support number: 1500, alarm code: -)
+Causes;The ink level detection pin in the ink tank is detected as inactive.
+Remedy;Prepare for ink tank replacement. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;1012
+Description;Print head non-ejection (support number: 3001, alarm code: 0017)
+Causes;The number of non-ejection nozzles is zero to 100 after recovery cleaning of non-ejection detection. In addition, the number of non-ejection complementary disabled nozzles is 30 or more.
+Remedy;Check the print out. Perform head cleaning as required. When non-ejection still occurs, replace the print head.
+Code;1021
+Description;Media type mismatch (support number: 1051, alarm code: -)
+Causes;The media type selected in the printer driver does not match the media loaded into the printer.
+Remedy;Match the media type set in the printer driver with the media type set to the printer. Or reset the printer driver to match the media type set to the printer.
+Code;1051
+Description;Size clip warning (support number: 1054, alarm code: -)
+Causes;Loading of smaller media into the printer than the media selected in the printer driver.
+Remedy;Match the media type set in the printer driver with the media type set to the printer. Or reset the printer driver to match the media type set to the printer.
+Code;1052
+Description;Borderless printing disabled (borderless printing unsupported media (warning)) (support number: 1055 / alarm code: -)
+Causes;When the following conditions are satisfied. •[Detect paper setting mismatch] is set at other than “Pause”. •Loading of borderless printing unsupported media in borderless printing.
+Remedy;Set the paper with wide enough paper width for borderless printing.
+Code;1053
+Description;Borderless printing disabled (paper edge detection error at home position side (warning)) (support number: 1056 / alarm code: -)
+Causes;When the following conditions are satisfied. •[Detect paper setting mismatch] is set at other than “Pause”. •The multi sensor detects that the paper edge at the home position side is not positioned within +/-3mm from the reference paper position when borderless printing is started.
+Remedy;Reset the paper. When borderless printing is still disabled, replace the paper.
+Code;1054
+Description;Roll paper width mismatch (support number: 1052, alarm code: -)
+Causes;Mismatch of the roll paper width selected in [Fit Roll Paper Width] in the printer driver and the roll paper width loaded into the printer.
+Remedy;Match the roll paper width set in the printer driver with the roll paper width set to the printer. Or reset the printer driver to match the roll paper width set to the printer.
+Code;1055
+Description;Borderless printing disabled (three sides borderless printing disabled (warning)) (support number: 1057, alarm code: -)
+Causes;When the following conditions are satisfied. •[Detect paper setting mismatch] is set at “Display warning”. •The multi sensor detects that the paper feed position of the borderless printing supported paper is off 3mm or more from the tray for borderless printing at away position side during printing.
+Remedy;•Load the paper in wider width than the print job paper size. •Specify the shorter paper width in print job than the loaded paper size.
+Code;140x
+Description;No ink in the ink tank (support number: 1570, alarm code: 0020 to 0031)
+Causes;At the timing when ink level detection pin of sub ink tank is OFF.
+Remedy;Replace the ink tank. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;141x
+Description;Ink tank removed (support number: 1571, alarm code: -)
+Causes;The tank cover is opened and ink tank is removed during printing.
+Remedy;Reinstall the ink tank. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;1701
+Description;SGRaster general error: false number of parameters (support number: 3311/alarm code: -)
+Causes;The number of print data parameters is incorrect.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1702
+Description;SGRaster general error: omission of non-optional item (support number: 3312, alarm code: -)
+Causes;The omission prohibited parameter in the print data is omitted.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1703
+Description;SGRaster general error: unsupported data (support number: 3313, alarm code: -)
+Causes;The data out of setting range is set in the print data.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1706
+Description;SGRaster particular error: unsupported resolution value (support number: 3314, alarm code: -)
+Causes;The resolution setting in the print data is out of setting range.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1707
+Description;SGRaster particular error: unsupported pressure value (support number: 3315, alarm code: -)
+Causes;The compression method of the print data is inappropriate.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1708
+Description;SGRaster particular error: invalid format of data form (support number: 3316, alarm code: -)
+Causes;The format of print data form (color sequence, the number of bits) is inappropriate.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1709
+Description;SGRaster particular error: combination failure of resolution and image data format (support number: 3317, alarm code: -)
+Causes;The combination of print data resolution and image data format is inappropriate.
+Remedy;Check the print result. When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1800
+Description;Overflow during processing HP-GL/2 data - (1) (support number: 3300, alarm code: 0073)
+Causes;Memory overflows during processing HP-GL/2 data.
+Remedy;•Decrease drawing data. •Transform the data to HP RTL data which can be operated on-the-fly.* *On-The-Fly : the mechanism of sending data to the printer from the top of the papers in sequence. This an option setting of software that can create HP-GL/2. Selecting this option can reduce memory consumption.
+Code;1801
+Description;HP-GL/2 command out of support (support number: 3301, alarm code: 0076)
+Causes;The parameter which is not supported by HP-GL/2 is specified.
+Remedy;Check the data to print.
+Code;1802
+Description;HP-GL/2 command unsupported (support number: 3302, alarm code: 0077)
+Causes;The printer detects unsupported HP-GL/2 command.
+Remedy;Check the data to print.
+Code;1803
+Description;Overflow during processing HP-GL/2 data - (2) (support number: 3303, alarm code: 0074)
+Causes;Memory overflows during processing HP-GL/2 data.
+Remedy;•Decrease drawing data. •Transform the data to HP RTL data which can be operated on-the-fly.* *On-The-Fly : the mechanism of sending data to the printer from the top of the papers in sequence. The software that can create HP-GL/2 has an optional setting to select On-The-Fly. Selecting this option can reduce memory consumption.
+Code;1804
+Description;Overflow during processing HP-GL/2 data - (3) (support number: 3304, alarm code: 0075)
+Causes;Memory overflows during processing HP-GL/2 data.
+Remedy;•Decrease drawing data. •Transform the data to HP RTL data which can be operated on-the-fly.* *On-The-Fly : the mechanism of sending data to the printer from the top of the papers in sequence. The software that can create HP-GL/2 has an optional setting to select On-The-Fly. Selecting this option can reduce memory consumption.
+Code;1900
+Description;PDF/JPEG input output error (support number: 3330, alarm code: -)
+Causes;Read/Write of print job was disabled.
+Remedy;Check the print data.
+Code;1901
+Description;Converting PDF/JPEG into print data disabled (support number: 3331, alarm code: -)
+Causes;The memory capacity became insufficient in the middle of PDF or JPEG data conversion into print data.
+Remedy;•Delete the saved data in the shared box in the printer HDD*. •Print with smaller print size or lower print quality when printing PDF/JPEG. *Deleting the saved job data in the shared box may help avoiding HDD capacity shortage that occurs in conversion into print data.
+Code;1902
+Description;Invalid JPEG format (support number: 3332, alarm code: -)
+Causes;Unsupported JPEG format. The supported format is JPEG that complies with JFIF1.02.
+Remedy;Print from PC.
+Code;1903
+Description;JPEG decode error (support number: 3333, alarm code: -)
+Causes;Unsupported JPEG format. The supported format is JPEG that complies with JFIF1.02.
+Remedy;Print from PC.
+Code;1906
+Description;PDF font error (support number: 3336, alarm code: -)
+Causes;Font substitution occurs because neither the font is set in the PDF file nor included in the installed font.
+Remedy;Set and save embedding of the necessary fonts to PDF file.
+Code;1907
+Description;Image process parameter error (support number: 3340, alarm code: -)
+Causes;Image process parameter to follow the print setting does not exist at the print job processing.
+Remedy;When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1908
+Description;Image process table error (support number: 3341, alarm code: -)
+Causes;Image failure is found in image process table check when processing the print job.
+Remedy;When using print program such as RIP (Raster Image Processor), ask the manufacturer of the print program.
+Code;1910
+Description;Insufficient memory during processing JPEG printing (support number: 3307, alarm code: -)
+Causes;Insufficient memory is detected during processing JPEG printing.
+Remedy;•Make the image size of the JPEG data smaller and print it again. •Make the image quality of the JPEG data lower and print it again.
+Code;200E, 200F
+Description;Paper size out of standard (support number: 1323, alarm code: -)
+Causes;The width or length of the paper in set is shorter than the supported smallest size. (200E) The width or length of the paper in set is longer than the supported largest size. (200F) . Detection timing is at paper width detection for roll papers, and paper width detection and paper length detection for cut sheets.
+Remedy;Lift the lever up to release the error, then feed the supported size paper.
+Code;202B
+Description;Roll end error (due to strong adhesion) (support number: 1024, alarm code: -)
+Causes;During paper feeding, paper end detection error (the abnormal amount of rotation drive in ACTIVE ROLL BRAKE UNIT control) occurs due to strong adhesive on the roll end. . Assumed situaion of this error is that the roll paper end edge cannot be peeled off from the roll core during paper feeding or printing, or paper feeding is disabled due to the weight of the roll paper.
+Remedy;The roll paper run out. => Replace the roll paper. The roll paper has been loaded but feeding does not work. => Change print mode and print (change the amount of paper feeding.) => Replace the roll paper with less amount of windings. (light weight roll paper) . Loose roll paper can also cause this error infrequently. (Check if the roll paper is loose when this error occurs while the roll paper is remaining.)
+Code;2060
+Description;Running out of roll paper alart (support number: 1058, alarm code: -)
+Causes;The remaining roll paper is less than the amount set in [Roll amount warning setting].
+Remedy;Prepare for roll paper change.
+Code;231x
+Description;Sub-ink tank ink filling failure (support number: 1757, alarm code: 0321 to 0333)
+Causes;In initial ink filling, or in ink filling to sub ink tank after replacing the ink tank, the ink level detection pin in the sub ink tank is not turned ON even after a certain time has passed from ink tank installation.
+Remedy;Remove and reinstall the ink tank, or replace the ink tank with other ink tanks. . Ink may not be flowing from the ink tank to the sub ink tank. Ink color is identified with the last number of detail code. (Detail of the last numbers)
+Code;2405
+Description;Borderless printing disabled - off the loading position (support number: 4116, alarm code: -)
+Causes;Borderless printing is disabled due to the following reasons. The paper is loaded out of position. <When the printer driver is set at [Fit Roll Paper Width]> The multi sensor detects that the paper feed position of the borderless printing supported paper is off 3mm or more from paper edge at the home position side or from the tray for borderless printing at away position side. <When the printer driver is set at other than [Fit Roll Paper Width]> The multi sensor detects that the paper edge at the home position side is off 3mm or more from the reference position.
+Remedy;Print after replacing the paper, select “print with border,” or press “cancel” to stop printing.
+Code;2406
+Description;Borderless printing disabled - receiving borderless printing unsupported data (support number: 4117, alarm code: -)
+Causes;Besides receiving borderless print data at the start of the printing, at least a condition among the following conditions is satisfied. •The paper feeding slot specified in the data is the slot other than roll paper feeding. •The print mode set in the data does not support borderless printing. •Banner printing is selected in the data at the same time. •[Fit Roll Paper Width] is specified and the paper size that does not support borderless printing is specified in the job. •The amount of extra printing for borderless printing in the data is out of standard.
+Remedy;Print after replacing the paper, select “print with border,” or press “cancel” to stop printing.
+Code;2407
+Description;Borderless printing disabled - the paper end is off during printing (support number: 4114, alarm code: -)
+Causes;•The multi sensor detects that the paper edge at the home position side is not positioned within +3mm from the reference paper position. •The printer driver is set at [Fit Roll Paper Width]. Besides, the multi sensor detects that the paper edge at away position side is off 3mm or more from the tray for borderless printing during borderless printing.
+Remedy;Reload the paper.
+Code;2408
+Description;Borderless printing disabled - borderless printing unsupported paper (operator error) (support number: 4115, alarm code: -)
+Causes;When the following condition is satisfied. •The printer driver is set at [Fit Roll Paper Width]. •The printer fed the roll paper in borderless printing unsupported size.
+Remedy;Print after replacing the paper, select “print with border,” or press “cancel” to stop printing.
+Code;2409
+Description;Borderless printing disabled - after restarting the hold job (off the loading position) (support number: 4913, alarm code: -)
+Causes;When restarting the hold job after replacing the paper with [Replace paper] button, the following cause may disable borderless printing.* •The loaded paper position is off the reference position. *What is “Hold Job?” When “Hold Job?” is selected at [Device settings > Paper-related settings > Detect paper setting mismatch] from the operation panel, the printer saves the printing jobs in HDD without performing printing. These saved jobs are called “Hold Job”.
+Remedy;Reload the paper.
+Code;240A
+Description;Borderless printing disabled - after restarting the hold job (borderless printing unsupported paper) (support number: 4913, alarm code: -)
+Causes;When restarting the hold job after replacing the paper with [Replace paper] button, the following cause may disable borderless printing. •The loaded paper is not in the borderless printing supported size.
+Remedy;Print after replacing the paper, select “print with border,” or press “cancel” to stop printing.
+Code;250x
+Description;Ink empty (support number: 1752, alarm code: 0301 to 0314)
+Causes;During printing or cleaning, remaining ink dot count reaches to the value of empty.
+Remedy;Replace the ink tank.
+Code;252x
+Description;No ink tank (support number: 1660, alarm code: -)
+Causes;Ink tank is not detected when closing the tank cover.
+Remedy;Install the ink tank.
+Code;254x
+Description;Ink tank ID error (support number: 168B, alarm code: 0111 to 0124)
+Causes;At the timing when the ink tank that does not support the corresponding product is installed.
+Remedy;Install the ink tank that supports the corresponding products.
+Code;258x
+Description;Insufficient ink (support number: 1756, alarm code: -)
+Causes;Necessary ink amount is not left before cleaning.
+Remedy;Replace the ink tank.
+Code;25Bx
+Description;Ink level detection pin OFF when the tank cover is open (support number: 1201, alarm code: -)
+Causes;Ink level detection pin turns off when the tank cover is open.
+Remedy;Close the tank cover. Check the remaining ink amount. When ink is not left, replace the ink tank.
+Code;270x
+Description;Remaining ink amount unknown (genuine ink)(support number: 1730, alarm code: 0661 to 0793)
+Causes;The ink consumption amount used for status print, pattern adjustment printing, or print head cleaning exceeded the specified amount. . Refilling ink to the ink cartridge may cause this error.
+Remedy;Select [Cancel job] to remove the error temporarily or release [ink level detection]. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;271x
+Description;Remaining ink amount unknown (non-genuine ink)(support number: 1731, alarm code: 0701 to 0853)
+Causes;Installation of the non-genuine ink tank.
+Remedy;Select [Cancel job] to remove the error temporarily or release [ink level detection]. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;273x
+Description;Remaining ink amount unknown (no detection by ink level detection pin)(support number: 1753, alarm code: 0601 to 0613)
+Causes;Excess of the specified ink consumption amount in the ink cartridge during printing user's data. . Refilling ink to the ink cartridge may cause this error.
+Remedy;Select [Cancel job] to remove the error temporarily or release [ink level detection]. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;27Dx
+Description;Notification of new ink tank installation (support number: 1552, alarm code: -)
+Causes;The new ink tank installation is detected.
+Remedy;Press [OK] button to remove the error or the printer recovers when certain amount of time passed. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;27Ex
+Description;Notification of used ink tank installation (support number: 1551, alarm code: -)
+Causes;The used ink tank installation is detected.
+Remedy;Press [OK] button to remove the error or the printer recovers when certain amount of time passed. Ink colors are identified with the last number of detail codes. (Detail of the last numbers)
+Code;2800
+Description;No print head (support number: 1401, alarm code: 0181)
+Causes;The access cover is closed though no print head is detected.
+Remedy;Replace the print head when the printer does not recover by confirming installation or reinstalling the print head.
+Code;2802
+Description;Print head ID error (support number: 1485, alarm code: 0189)
+Causes;When installing the print head, incorrect ID is detected.
+Remedy;Replace the print head when the printer does not recover by confirming installation or reinstalling the print head.
+Code;280D
+Description;Non-ejection (support number: 1495, alarm code: 0192)
+Causes;Print head nozzle check by the head management sensor after cleaning for recovery resulted in either of the following condition. - The number of non-ejection nozzles is 100 to 639, and the number of non-ejection complement disabled nozzles is 30 or more. or - The number of non-ejection nozzles is 640 or more.
+Remedy;Check the printout and perform print head cleaning as required. Replace the print head when the error is not removed yet.
+Code;2812
+Description;Print head version error (support number: 1485, alarm code: 0194)
+Causes;Installation of inappropriate print head version.
+Remedy;Replace the print head when the printer does not recover by confirming installation or reinstalling the print head.
+Code;2816
+Description;Maintenance cartridge EEPROM error (support number: 1722, alarm code: 0197)
+Causes;At maintenance cartridge EEPROM accessing, communication error occurs.
+Remedy;Replace the maintenance cartridge when the printer does not recover by confirming installation or reinstalling the print head.
+Code;2817
+Description;Maintenance cartridge ID error (support number: 1722, alarm code: 0198)
+Causes;At maintenance cartridge EEPROM accessing, the maintenance cartridge that had been installed to the other model is detected.
+Remedy;Replace the maintenance cartridge.
+Code;2818
+Description;No maintenance cartridge (support number: 1721, alarm code: -)
+Causes;No maintenance cartridge is detected.
+Remedy;Check the maintenance cartridge installation or replace the maintenance cartridge.
+Code;2819
+Description;Maintenance cartridge full (support number: 1720, alarm code: 0063)
+Causes;At maintenance cartridge EEPROM accessing, the maintenance cartridge is detected to be full.
+Remedy;Check remaining capacity of the maintenance cartridge or replace the maintenance cartridge.
+Code;281A
+Description;Little remaining capacity of maintenance cartridge alert (support number: 3250, alarm code: -)
+Causes;At maintenance cartridge EEPROM accessing, the value indicates little capacity is left in the maintenance cartridge.
+Remedy;Check remaining capacity of the maintenance cartridge or replace the maintenance cartridge.
+Code;281B
+Description;Insufficient capacity of maintenance cartridge (support number: 1720, alarm code: -)
+Causes;Insufficient capacity in the maintenance cartridge for cleaning is detected when accessing to the maintenance cartridge EEPROM.
+Remedy;Check remaining capacity of the maintenance cartridge or replace the maintenance cartridge.
+Code;2829
+Description;Multi sensor optical axis correction error (support number: 4923, alarm code: 0209)
+Causes;The corrected value exceeds the threshold during optical axis adjustment. . If the optical axis of multi sensor is off the correct position, paper end detection by the multi sensor results in incorrect detection. With measuring the difference between the theoretical printing position of optical correction pattern and the actual printing position, the multi sensor detects and corrects the value gap of the optical axis.
+Remedy;Check if the printed optical adjustment pattern has blur. If it is blurry, perform print head cleaning. If it is not blurry, check the multi sensor installation and perform “GAP CALIB” in service mode.
+Code;2901
+Description;Hard disk capacity alert (support number: 3350, alarm code: -)
+Causes;The total capacity of the personal box in the printer hard disk became smaller than 1GB.
+Remedy;Delete the job saved in the personal box.
+Code;2902
+Description;Printing without saving to the hard disk (support number: 3352, alarm code: -)
+Causes;Printing starts without saving due to hard disk factors. (example: no blank capacity in the hard disk, etc.)
+Remedy;Delete the job saved in the personal box.
+Code;2905
+Description;Hard disk full (support number: 4900, alarm code: -)
+Causes;The value indicates capacity is full in the hard disk.
+Remedy;Delete the job saved in the personal box.
+Code;2906
+Description;Max. number of files saved to the hard disk (support number: 4903, alarm code: -)
+Causes;The number of files saved in the hard disk reaches the max.
+Remedy;Delete the job saved in the personal box.
+Code;2907
+Description;Almost the max. number of files saved to the hard disk (support number: 3351, alarm code: -)
+Causes;The number of files saved in the hard disk is almost reaching the max.
+Remedy;Delete the job saved in the personal box.
+Code;2D03
+Description;Incomplete print head alignment (support number: 3000, alarm code: -)
+Causes;At the initial installation or at the incomplete print head position adjustment after the print head replacement. (including cancel)
+Remedy;Perform print head alignment.
+Code;2D04
+Description;Print head alignment failure (support number: 4937, alarm code: -)
+Causes;The printer fails to adjust print head alignment toward the print head nozzle line direction.
+Remedy;Check the nozzle condition with the nozzle check pattern. Perform head cleaning if necessary. (Nozzle condition guide : print head alignment failure does not occur if the total number of non-ejection nozzles and dot misalignment nozzles is about ten nozzles per color.) When the error is not removed by the head cleaning, replace the print head.
+Code;2E02
+Description;No cut sheet (support number: 1005, alarm code: -)
+Causes;The cut sheet is not fed when receiving the job selecting cut sheet. Or “No sheets.” is detected after starting printing.
+Remedy;Load cut sheets on the paper feed slot.
+Code;2E08
+Description;Roll paper width mismatch (support number: 2130, alarm code: -)
+Causes;The paper roll width indicated in the print job and the roll paper width loaded on the printer are not matched.
+Remedy;Replace the paper. Or continue printing.
+Code;2E09
+Description;Insufficient roll paper left (support number: 1021, alarm code: -)
+Causes;The printer, which is selecting “Enable” at [Manage remaining roll amount], receives a print job that requires the longer paper size than the remaining paper length.
+Remedy;Select “Print with the loaded paper”, “Replace the paper and print”, or “cancel” to suspend printing.
+Code;2E0A
+Description;Cut sheet has been fed while received data is for roll paper (support number: 1306, alarm code: -)
+Causes;The printer receives roll paper print data while feeding has completed with cut sheet.
+Remedy;Remove the cut sheet, and load the roll paper.
+Code;2E0B
+Description;Roll paper has been fed while received data is for cut sheet (support number: 1324, alarm code: -)
+Causes;The printer receives cut sheet print data while feeding has completed with roll paper.
+Remedy;Remove the roll paper, and load the cut sheet.
+Code;2E10
+Description;Cut sheet is fed in roll paper mode (support number: 1041, alarm code: -)
+Causes;"While ""Roll Paper"" is set in [Media Settings], feeding of cut paper is detected."
+Remedy;Match the paper setting in [Media Settings] and the actual paper to feed.
+Code;2E11
+Description;Roll paper is fed in Cut sheet mode. (support number: 1041, alarm code: -)
+Causes;"While ""Cut Paper"" is set in [Media Settings], feeding of roll paper is detected."
+Remedy;Match the paper setting in [Media Settings] and the actual paper to feed.
+Code;2E15
+Description;Media type mismatch (support number: 1061, alarm code: -)
+Causes;The media type selected in the job is different from the actual fed media.
+Remedy;Confirm the media type selection of the print job and the printer.
+Code;2E1B
+Description;End of roll paper (support number: 1024, alarm code: -)
+Causes;PAPER ENTRY SENSOR detects the paper end during feeding the roll paper.
+Remedy;Replace the roll paper.
+Code;2E20
+Description;Inappropriate paper type or size for printing paper feeding system adjustment pattern (support number: 2132, alarm code: -)
+Causes;When adjusting feeding system with cut sheets, page2 or after with different media type or size from that of page1 is fed, and appropriate adjustment is considered to be disabled.
+Remedy;Check the size of the loaded cut sheet. Or reload the sheet.
+Code;2E21
+Description;Inappropriate paper type or size for printing print head position adjustment pattern (support number: 2132, alarm code: -)
+Causes;When adjusting the print head position with cut sheets, page2 or after with different media type or size from that of page1 is fed, and appropriate adjustment is considered to be disabled.
+Remedy;Check the size of the loaded cut sheet. Or reload the sheet.
+Code;2E30
+Description;Size clip error (support number: 2131, alarm code: -)
+Causes;The paper width loaded on the printer is shorter than the paper width in print job.
+Remedy;Confirm the media type of the print job and the printer.
+Code;2E33
+Description;Roll paper not loaded (support number: 100A, alarm code: -)
+Causes;•When receiving the roll paper specified print job, the roll paper has not been loaded. •The upper roll nor lower roll has not been loaded, and the specified paper feeding slot is set at “Auto.”
+Remedy;Load the roll paper.
+Code;2E38
+Description;Small paper size for status print. (support number: 2132 , alarm code: -)
+Causes;In printing the printer internal data, the smaller paper than the size specified by each printing data is loaded.
+Remedy;Load the specified size or larger paper.
+Code;2E40
+Description;Roll paper not loaded (support number: 100A, alarm code: -)
+Causes;After starting printing, “No roll sheets” is detected.
+Remedy;Load the roll paper.
+Code;2E42
+Description;Media type mismatch after resuming the held job (support number: 4911, alarm code: -)
+Causes;The size of the paper selected in the held job is different from the actual fed paper.
+Remedy;Select “Replace the paper and print” or press “cancel” to stop printing.
+Code;2E43
+Description;Media type unknown (support number: 4111, alarm code: -)
+Causes;The job is selecting an unregistered media type in the printer. . This error occurs under the following situation. 1. A print job that required a paper type which had been registered in the printer at some point of time was saved in the HDD. After that, this media type was deleted from the printer by MCT. However, this job was executed. 2. When printing from driver, media type data is not obtained from the printer until pressing gGet Information...h button. After deleting a media type from MCT, executing a print job that specifies this deleted media, without pressing gGet Information...h button, may generate this error.
+Remedy;Check the media type settings and print again.
+Code;2E45
+Description;Roll paper width mismatch after resuming the held job (support number: 4910, alarm code: -)
+Causes;The width of the roll paper selected in the held job is different from the width of actual fed roll paper.
+Remedy;Select “Replace the paper and print” or press “cancel” to stop printing.
+Code;2E75
+Description;Borderless printing (or three sides borderless printing) is disabled (operator error) (support number: 4113, alarm code: -)
+Causes;When the following condition is satisfied. •[Detect paper setting mismatch] in the operation panel is set at “Hold job” or “Pause”. •The printer driver is not set at [Fit Roll Paper Width]. •The multi sensor detects that the paper feed position is off +3mm or more from the tray for borderless printing at away position side when the printing starts.
+Remedy;•Select [Fit Roll Paper Width] for the printer driver setting. •Suspend the printing. Switch to [Print with border] and print again. •Replace the paper and print again.
+Code;2EA3
+Description;Print head alignment unavailable for the media (support number: 4932, alarm code: 0100)
+Causes;The media for films which has too high transparency to adjust the print head position is loaded.
+Remedy;When a highly transparent film media* is loaded, replace the media. *Tracing paper, semi-transparent matte film, Clear Films, etc.
+Code;2EA4
+Description;Blur printing of the print head alignment pattern (support number: 4934, alarm code: 0102)
+Causes;Print blur occurs when the density at the pattern edge is lower than prescribed value.
+Remedy;Check the print out by nozzle check. Perform cleaning as required. When the problem is not removed, replace the print head.
+Code;2EA5
+Description;Insufficient contrast in the print head alignment pattern (support number: 4933, alarm code: 0101)
+Causes;The difference of the density in the pattern is lower than the prescribed value.
+Remedy;Check the print out by nozzle check. Perform cleaning as required. When the problem is not removed, replace the print head.
+Code;2EA6
+Description;Abnormal print head alignment value (support number: 4935, alarm code: 0103)
+Causes;The print head alignment value is higher than the prescribed value.
+Remedy;Check the print out by nozzle check. Perform cleaning as required. When the problem is not removed, replace the print head.
+Code;2EA7
+Description;Hard disk format abnormal (support number: 4901, alarm code: 0524)
+Causes;The hard disk format type is different.
+Remedy;Format the hard disk.
+Code;2EA8
+Description;Automatic feeding adjustment error (support number: 4931, alarm code: 0206)
+Causes;Unreadable patches are six or more.
+Remedy;Check if smudge is on the pattern print sheet. Check if the environment has natural light. Perform print head cleaning.
+Code;2EA9
+Description;Eccentricity adjustment error (support number: 4936, alarm code: 0207)
+Causes;Eccentricity automatic adjustment value is out of the prescribed value.
+Remedy;Check if smudge is on the pattern print sheet. Check if the environment has natural light. Perform print head cleaning.
+Code;2EAA
+Description;Automatic feeding adjustment failure (support number: 4929, alarm code: 0211)
+Causes;In processing of automatic judgement for uneven paper feeding, multi sensor read value is out of the prescribed value.
+Remedy;Check if smudge is on the pattern print sheet. Check if the environment has natural light. Perform print head cleaning.
+Code;2EAB
+Description;Failure in automatic judgment of uneven printing in the carriage moving direction (support number: 4928, alarm code: 0278)
+Causes;In processing of automatic judgement for uneven printing toward carriage scanning direction, multi sensor read value is out of the prescribed value.
+Remedy;Check the print out by nozzle check. Perform cleaning the print head as required. When the problem is not removed, replace the print head.
+Code;2EBC
+Description;Carriage cogging correction failure (support number: 4930, alarm code: 0215)
+Causes;In the automatic judgement for carriage cogging adjustment process, the measured value is out of the specified range. . The detecting timing of carriage cogging adjustment is as follows EEAfter print head replacement. EEAfter print head alignment adjustment. EEAfter carriage related errors.
+Remedy;•Check if the linear scale is attached properly. Make sure that the linear scale is free from any scratch or dirt. •If the linear scale is in appropriate condition, replace the carriage encoder sensor.
+Code;2F6A
+Description;Installed print head model error (support number: 1480, alarm code: -)
+Causes;The print head which had been installed into a different model before was installed.
+Remedy;Install a print head that has been installed into the same model or install a new print head.
+Code;2F6B
+Description;Installed print head model error (ink system) (support number: 1481, alarm code: -)
+Causes;The print head which had been installed into the model that used a different ink set before was installed. . This error occurs in service mode only.
+Remedy;Install a print head that has been installed into the same model or install a new print head.
+Code;2F7C
+Description;Print head contact error at print head replacement (support number: 140B , alarm code: -)
+Causes;Despite of print head installation, the print head is not recognized.
+Remedy;Reinstall the print head. When the problem is not removed, replace the print head.
+Code;3000
+Description;WPSPIN timeout (support number: 4950, alarm code: -)
+Causes;WPS (PIN mode) processing terminates with error due to timeout.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3001
+Description;WPSPBC timeout (support number: 4950, alarm code: -)
+Causes;WPS (PBC mode) processing terminates with error due to timeout.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3002
+Description;WPSPBC session overlap (support number: 4950, alarm code: -)
+Causes;WPS (PBC mode) processing terminates with error due to session overlapping.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3003
+Description;WPS credential error (support number: 4950, alarm code: -)
+Causes;WPS (PBC mode) processing terminates with error due to false credential (encryption mode is WEP).
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3004
+Description;Other WPS errors (support number: 4950, alarm code: -)
+Causes;The failure of the reasons other than above WPS.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3005
+Description;AOSS multiple access points error (support number: 4951, alarm code: -)
+Causes;Multiple wireless LAN routers in AOSS mode are detected.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3006
+Description;AOSS timeout (support number: 4951, alarm code: -)
+Causes;Wireless LAN router in AOSS mode is not detected.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3007
+Description;AOSS connection error (support number: 4951, alarm code: -)
+Causes;The other device is connecting to the wireless router.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3008
+Description;AOSS security setting error (support number: 4951, alarm code: -)
+Causes;When confirming wireless LAN router and security information, the error occurs.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3009
+Description;Other AOSS errors (support number: 4951, alarm code: -)
+Causes;Wireless LAN set-up by AOSS fails.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3010
+Description;Access point connection failure (support number: 4952, alarm code: -)
+Causes;Connecting to the access point by setting wireless LAN manually fails.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3011
+Description;Access point not detected with the specified SSID (support number: 4952, alarm code: -)
+Causes;In set-up, AP detection of the input SSID fails.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3012
+Description;Connection alarm due to IP address obtaining failure (support number: 4953, alarm code: -)
+Causes;In wireless detail setting, despite selecting [WEP], obtaining IP address fails, and AutoIP is set.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3013
+Description;Cableless setup timeout (support number: 4954, alarm code: -)
+Causes;In cableless set-up, wireless LAN setting process was finished in error due to timeout.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3014
+Description;Cableless setup setting failure (support number: 4954, alarm code: -)
+Causes;In cableless set-up, wireless LAN setting fails.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3015
+Description;LAN invalid in IPv4/IPv6 setting (support number: 4955, alarm code: -)
+Causes;LAN is invalid when IPv4/IPv6 is selected.
+Remedy;“Enable” [Active wired LAN] or [Active wireless LAN].
+Code;3016
+Description;LAN setting unavailable (support number: 4956, alarm code: -)
+Causes;When changing LAN setting, the setting change was not available due to the following reasons. •The printer is in the middle of operation. •Remote UI is selecting the printer settings.
+Remedy;Terminate other operations and select settings again.
+Code;3017
+Description;[Raku Raku WLAN Start] timeout error (support number: 4957, alarm code: -)
+Causes;Connecting via [Raku Raku WLAN] fails.
+Remedy;Follow the message on the operation panel.
+Code;3018
+Description;[Raku Raku WLAN Start] other errors (support number: 4957, alarm code: -)
+Causes;The wireless LAN router in Raku Raku wireless mode is not detected.
+Remedy;Follow the message on the operation panel.
+Code;3022
+Description;Wi-Fi Direct connection request (support number: 4959, alarm code: -)
+Causes;Connection is requested from Wi-Fi Direct supported device.
+Remedy;Select “Yes (accept)” or “No (not accept).”
+Code;3023
+Description;SMTP server setting error (support number: 3414, alarm code: -)
+Causes;Connecting to SMTP server fails.
+Remedy;Check with the remote UI if the address and port number of the mail server for outgoing message (SMTP) in the mail server settings are correct.
+Code;3024
+Description;POP server setting error (support number: 3415, alarm code: -)
+Causes;Connecting to POP server fails.
+Remedy;Check with the remote UI if the address and port number of the mail server for incoming message (POP3) in the mail server settings are correct.
+Code;3025
+Description;SMTP SSL connection error (support number: 3416, alarm code: -)
+Causes;Connecting SMTP server with SSL fails.
+Remedy;Check with the remote UI if the secure connection (SSL) settings of the mail server and the printer are matching.
+Code;3026
+Description;POP SSL connection error (support number: 3417, alarm code: -)
+Causes;Connecting POP server with SSL fails.
+Remedy;Check with the remote UI if the secure connection (SSL) settings of the mail server and the printer are matching.
+Code;3027
+Description;SMTP command error (support number: 3418, alarm code: -)
+Causes;Sending command to SMTP server fails.
+Remedy;Check with the remote UI if the items related to the mail server for outgoing message (SMTP) in the mail server settings are correct.
+Code;3028
+Description;SMTP authorization error (support number: 3419, alarm code: -)
+Causes;SMTP authorization user name is not specified, SMTP authorization password is not specified, or SMTP authorization fails.
+Remedy;Check with the remote UI if the account and the password for outgoing message in the mail server settings are correct.
+Code;3029
+Description;POP command error (support number: 3420, alarm code: -)
+Causes;Sending command to POP server fails.
+Remedy;Check with the remote UI if the items related to the mail server for incoming message (POP3) in the mail server settings are correct.
+Code;3030
+Description;POP authorization error (support number: 3421, alarm code: -)
+Causes;POP authorization user name is not specified, POP authorization password is not specified, or POP authorization fails.
+Remedy;Check with the remote UI if the account and the password for incoming message in the mail server settings are correct.
+Code;3031
+Description;APOP authorization error (support number: 3422, alarm code: -)
+Causes;APOP authorization fails.
+Remedy;Check with the remote UI if the APOP settings are appropriate.
+Code;3032
+Description;Socket server connection error (support number: 3423, alarm code: -)
+Causes;Communication timeout occurs when connecting with SMTP server or Read/Write socket error occurs.
+Remedy;Check with the remote UI if the mail server settings are appropriate.
+Code;3033
+Description;Destination mail address error (support number: 3424, alarm code: -)
+Causes;Destination mail address is incorrect.
+Remedy;Select a correct e-mail address of destination with the remote UI and send again.
+Code;3034
+Description;Unsupported device connected (support number: 2001, alarm code: -)
+Causes;USB host unsupported device is connected.
+Remedy;Follow the message on the operation panel. . The only device that can print directly by connecting to this machine is USB flash memory.
+Code;3035
+Description;Hub not supported (support number: 2002, alarm code: -)
+Causes;USB hub is connected to USB host. . Connecting USB flash memory via USB hub is not supported.
+Remedy;Follow the message on the operation panel. (Check the setting and reset.)
+Code;3036
+Description;IPv4 address conflict alert (support number: 3306, alarm code: 3448)
+Causes;The IPv4 address set in the printer is conflicting with the address set in other devices.
+Remedy;Change the set IP address in the printer not to overlap with other devices.
+Code;3210
+Description;Parts counter Wia1 alert1 (support number: 3200, alarm code: 0901)
+Causes;The parts counter Wia1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3220
+Description;Parts counter Wia2 alert1 (support number: 3200, alarm code: 0902)
+Causes;The parts counter Wia2 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3250
+Description;Parts counter Wia5 alert1 (support number: 3200, alarm code: 0905)
+Causes;The parts counter Wia5 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3270
+Description;Parts counter Wia7 alert1 (support number: 3200, alarm code: 0907)
+Causes;The parts counter Wia7 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3280
+Description;Parts counter WF1 alert1 (support number: 3200, alarm code: 0941)
+Causes;The parts counter WF1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3290
+Description;Parts counter CR1 alert1 (support number: 3200, alarm code: 0911)
+Causes;The parts counter CR1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3291
+Description;Parts counter CR1 alert2 (support number: 3201, alarm code: 0961)
+Causes;The parts counter CR1 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;32A0
+Description;Parts counter CR2 alert1 (support number: 3200, alarm code: 0912)
+Causes;The parts counter CR2 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;32A1
+Description;Parts counter CR2 alert2 (support number: 3201, alarm code: 0962)
+Causes;The parts counter CR2 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;32B0
+Description;Parts counter CR3 alert1 (support number: 3200, alarm code: 0913)
+Causes;The parts counter CR3 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;32B1
+Description;Parts counter CR3 alert2 (support number: 3201, alarm code: 0963)
+Causes;The parts counter CR3 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;32C0
+Description;Parts counter CR4 alert1 (support number: 3200, alarm code: 0914)
+Causes;The parts counter CR4 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;32D0
+Description;Parts counter CR5 alert1 (support number: 3200, alarm code: 0915)
+Causes;The parts counter CR5 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;32D1
+Description;Parts counter CR5 alert2 (support number: 3201, alarm code: 0965)
+Causes;The parts counter CR5 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;32F0
+Description;Parts counter PG1 alert1 (support number: 3200, alarm code: 0921)
+Causes;The parts counter PG1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3305
+Description;Media update corruption (support number: 3306, alarm code: 0520)
+Causes;Recognizing the media data properly fails due to the broken media data of the printer.
+Remedy;Start up [Media Configuration Tool] and recover the printer media data.
+Code;3400
+Description;Parts counter PG2 alert1 (support number: 3200, alarm code: 0922)
+Causes;The parts counter PG2 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3410
+Description;Parts counter PG3 alert1 (support number: 3200, alarm code: 0923)
+Causes;The parts counter PG3 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3420
+Description;Parts counter HMa1 alert1 (support number: 3200, alarm code: 0926)
+Causes;The parts counter HMa1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3430
+Description;Parts counter MT1 alert1 (support number: 3200, alarm code: 0942)
+Causes;The parts counter MT1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3431
+Description;Parts counter MT1 alert2 (support number: 3201, alarm code: 0992)
+Causes;The parts counter MT1 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;3440
+Description;Parts counter LFS1 alert1 (support number: 3200, alarm code: 0931)
+Causes;The parts counter LFS1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3441
+Description;Parts counter LFS1 alert2 (support number: 3201, alarm code: 0981)
+Causes;The parts counter LFS1 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;3450
+Description;Parts counter PL1 alert1 (support number: 3200, alarm code: 0943)
+Causes;The parts counter PL1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3451
+Description;Parts counter PL1 alert2 (support number: 3201, alarm code: 0993)
+Causes;The parts counter PL1 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;3460
+Description;Parts counter Mi1 alert1 (support number: 3200, alarm code: 0934)
+Causes;The parts counter Mi1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3470
+Description;Parts counter WP1 alert1 (support number: 3200, alarm code: 0944)
+Causes;The parts counter WP1 reached the value that indicates level W1.
+Remedy;The part is available until the operation panel indicates [Part replacement needed].
+Code;3471
+Description;Parts counter WP1 alert2 (support number: 3201, alarm code: 0994)
+Causes;The parts counter WP1 reached the value that indicates level W2.
+Remedy;Replace the corresponding part, and clear the corresponding counter data in service mode.
+Code;EC01 2F90
+Description;Carriage overload (support number: 4801)
+Causes;The motor keeps 100% output. In addition, CARRIAGE UNIT scans more than a constant length.
+Remedy;1 Check stain on the carriage shaft. No stain Go to 2. Stain adheres Perform cleaning of the shaft. 2 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Replace CARRIAGE MOTOR. Failure in LONG FFC CHECK Replace CARRIAGE UNIT.
+Code;EC01 2F95
+Description;Carriage drive timeout (support number: 4801)
+Causes;CARRIAGE UNIT does not finish driving within the scheduled time.
+Remedy;1 Check the items below. a) Stain on the carriage shaft. b) Cable connection of the carriage motor. c) Looseness and abrasion of BELT, CARRIAGE. Appropriate Go to 2. Inappropriate a) Perform cleaning of the shaft. b) Connect the cable. c) Replace BELT, CARRIAGE. 2 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Replace CARRIAGE MOTOR. Failure in LONG FFC CHECK Replace CARRIAGE UNIT.
+Code;EC02 2F42
+Description;Complete non-ejection in one line of nozzles (support number: 1492)
+Causes;A complete non-ejection nozzle line in one of two print head nozzle lines of a color.
+Remedy;1 When the printer does not recover with restarting, check if the ink is filling into tubes. Ink is filled Go to 2. (Insufficient ink in the print head or print head defect is suspected.) Ink is not filled Replace INK SUPPLY UNIT. 2 Perform [DIAGNOSIS > HEAD CNT CHECK] and check the condition of print head contacting part. Proper condition Go to 3. Abnormal condition Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) 3 Perform deep cleaning and print nozzle check pattern. Proper nozzle pattern Complete. Improper nozzle pattern Replace the print head.
+Code;EC03 403A
+Description;Printer VH recognition failure (support number: B20A) Memo: Remove the error in service mode when handling is completed.
+Causes;The printer cannot confirm VH output.
+Remedy;1 Check the connection of flexible cables on MAIN PCB UNIT. If the connection is proper, replace CARRIAGE UNIT.
+Code;EC03 4061
+Description;Carriage unit for wrong model installed (support number: 5106) Memo: Remove the error in service mode when handling is completed.
+Causes;The CARRIAGE UNIT for a different printer model is connected.
+Remedy;1 Check the connection of FLEXIBLE CABLE. Proper connection Go to 2. Improper connection Connect FLEXIBLE CABLE again. 2 Replace the CARRIAGE UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC04 2F31
+Description;Accuracy error of carriage parking position in non-ejection detection (support number: 4801)
+Causes;The parked position of the carriage is slightly off when performing non-ejection detection or adjusting the head management sensor position.
+Remedy;1 Check the items below. a) Installation, scratch, and stain on SCALE, LINEAR. b) Stain on the carriage shaft. Fine condition Go to 2. Installation failure, scratch, or stain is found a) Perform cleaning or replace SCALE, LINEAR. b) Perform cleaning of shaft. 2 Replace INK SUPPLY UNIT. The problem is resolved Complete. The problem is not resolved Replace CARRIAGE UNIT.
+Code;EC05 2F92
+Description;Carriage movement disabled (support number: 4801)
+Causes;The motor keeps 100% output. In addition, CARRIAGE UNIT stops less than a constant scanning length.
+Remedy;1 Check the items below. a) Cable connection of the carriage motor. b) Looseness and abrasion of BELT, CARRIAGE. c) Obstacle. d) The position of SCALE, LINEAR. Appropriate without any obstacle Go to 2. Inappropriate or obstacles are blocking a) Connect the carriage motor cable. b) Replace BELT, CARRIAGE. c) Remove the obstacle. d) Attach it at the correct position. 2 Replace CARRIAGE MOTOR. The problem is resolved Complete. The problem is not resolved Replace CARRIAGE UNIT.
+Code;EC06 2F9A
+Description;Carriage lift motor error (support number: 4801)
+Causes;Overload on the lift motor.
+Remedy;1 Check the items below. a) Cable connection of LIFT MOTOR. b) While butting CARRIAGE UNIT at the the end wall of home position side, turn the gear of LIFT UNIT manually and check if the excessive load is applied. Appropriate Replace CARRIAGE UNIT. Inappropriate Go to 2. 2 Check any damages of the gears for driving LIFT UNIT. No damage found Replace LIFT MOTOR. The damage found Replace the damaged gear.
+Code;EC06 2F9B
+Description;Carriage lift sensor error (support number: 4801)
+Causes;Although the lift motor is rotating and generating larger torque than the certain amount, CARRIAGE LIFT SENSOR cannot detect ON/OFF.
+Remedy;1 Check the items below. a) Cable connection of CARRIAGE LIFT SENSOR. b) Execute [DIAGNOSIS > I/O DISPLAY] and check the CARRIAGE LIFT SENSOR operation. Appropriate Replace CARRIAGE UNIT. Inappropriate Go to 2. 2 Check any damages of the gears around LIFT MOTOR. No damage found Replace LIFT MOTOR. The damage found Replace the damaged gear.
+Code;EC06 2F9C
+Description;Carriage docking error (support number: 4801)
+Causes;- Although the lift motor is rotating, generated torque is smaller than a constant value. In addition, CARRIAGE LIFT SENSOR cannot detect ON/OFF. - CARRIAGE UNIT does not move to the home position during detecting home position.
+Remedy;1 Check the items below. a) Check if CARRIAGE UNIT is coupled with the coupling part when the error occurs. b) If CARRIAGE UNIT is coupled with the coupling part , check if the coupling part is damaged. Appropriate Go to EC05-2F92 error. Inappropriate a) Go to EC05-2F92 error. b) When the coupling at the lift unit side is damaged Replace COUPLING, CR LIFT DRIVE. When the coupling at CARRIAGE UNIT side is damaged Replace CARRIAGE UNIT.
+Code;EC07 4060
+Description;Carriage EEPROM error (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;EEPROM defect in the carriage PCB is detected.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Replace CARRIAGE UNIT. Abnormal Replace MAIN PCB UNIT.
+Code;EC0F 2F96
+Description;Carriage motor error (support number: 4801)
+Causes;While carriage system is in error status, operation is indicated from firmware.
+Remedy;1 Check the items below. a) Cable connection of the carriage motor. b) Looseness and abrasion of BELT, CARRIAGE. Appropriate Replace CARRIAGE UNIT. Inappropriate a) Connect the cable. b) Replace BELT, CARRIAGE.
+Code;EC11 2F2A
+Description;Paper feed home position error (support number: 4801)
+Causes;Paper feed home position adjustment is failed.
+Remedy;1 Check the items below. a) Driving condition of PAPER FEED MOTOR. b) Installation of FILM, TIMING SLIT DISK, scratches, circumference shaving, and smear. c) Looseness and abrasion of BELT, PAPER TRANSPORT. d) Cable connection. e) Perform [DIAGNOSIS > I/O DISPLAY] and check the operation of PAPER FEED HOME POSITION SENSOR. Inappropriate condition or improper operation a) Replace MAIN PCB UNIT or PAPER FEED MOTOR. b) Perform cleaning or replace FILM, TIMING SLIT DISK. c) Reattach or replace BELT, PAPER TRANSPORT, or replace the gear. d) Connect the cable. e) Replace PAPER FEED ENCODER UNIT.
+Code;EC12 2F29
+Description;Paper feed drive timeout (support number: 4801)
+Causes;Paper feed drive does not finish driving within the scheduled time.
+Remedy;1 Check the items below. a) Jam inside of the printer. b) Looseness and abrasion of BELT, PAPER TRANSPORT, and gear tooth skipping. Appropriate Go to 2. Inappropriate a) Remove jam. b) Replace BELT, PAPER TRANSPORT, or the gear. 2 Replace PAPER FEED MOTOR UNIT. The problem is resolved Complete. The problem is not resolved Replace PAPER FEED ENCODER UNIT.
+Code;EC12 2F2B
+Description;Paper feed overload (support number: 4801)
+Causes;Paper feed motor keeps 100% output for a certain period.
+Remedy;1 Check the items below. a) Jam inside of the printer. b) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. c) Smear or paper jam in the PAPER FEED ROLLER UNIT. Appropriate Go to 2. Inappropriate a) Remove jam. b) Change the paper to use. c) Perform cleaning or replace PAPER FEED ROLLER UNIT and HOLDER, LF BACK UP. 2 Replace FILM, TIMING SLIT DISK and PAPER FEED MOTOR UNIT. The problem is resolved Complete. The problem is not resolved Replace PAPER FEED ROLLER UNIT.
+Code;EC12 2F2C
+Description;PAPER FEED motor error (support number: 4801)
+Causes;The paper does not reach to the specified position while driving the paper feed motor.
+Remedy;1 Check the items below. a) Jam inside of the printer. b) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. c) Smear or paper jam in the PAPER FEED ROLLER UNIT. Appropriate Go to 2. Inappropriate a) Remove jam. b) Change the paper to use. c) Perform cleaning or replace PAPER FEED ROLLER UNIT and HOLDER, LF BACK UP. 2 Replace FILM, TIMING SLIT DISK and PAPER FEED MOTOR UNIT. The problem is resolved Complete. The problem is not resolved Replace PAPER FEED ROLLER UNIT.
+Code;EC13 2F17
+Description;Platen suction fan error (support number: 4801)
+Causes;SUCTION FAN UNIT lock signal is detected.
+Remedy;1 Replace SUCTION FAN UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC15 2E23
+Description;Cutter blade unit error (support number: 4801)
+Causes;- CUTTER HOME POSITION SENSOR cannot be detected. - Abnormal encoder value is detected when returning the cutter to the home position.
+Remedy;1 Check the items below. a) Foreign substances on CUTTER BLADE UNIT. b) Perform [DIAGNOSIS > I/O DISPLAY] and check CUTTER HOME POSITION SENSOR operation. c) Check the harness connection. No foreign substance and proper condition Go to 2. Foreign substance is adhering or improper condition a) Remove the foreign substance. b) Replace CUTTER HOME POSITION SENSOR. c) Connect the harness. 2 Replace CUTTER MOTOR UNIT, W/ENCODER. The problem is resolved Complete. The problem is not resolved Replace the cutter.
+Code;EC16 2021
+Description;Roll drive timeout (support number: 4801)
+Causes;The target value of operation command is not achieved when controlling ACTIVE ROLL BRAKE MOTOR.
+Remedy;1 Check the items below. a) Foreign substances or jam at paper feed part. b) Engagement of the spool with the gear of the printer side. c) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. Appropriate Go to 2. Inappropriate a) Remove the foreign substance and jam. b) Reset the spool. c) Change the paper to use. 2 Replace ACTIVE ROLL BRAKE MOTOR. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC16 2022
+Description;Roll drive overload (support number: 4801)
+Causes;Current value reaches to the maximum value when controlling ACTIVE ROLL BRAKE MOTOR.
+Remedy;1 Check the items below. a) Foreign substances or jam at paper feed part. b) Engagement of the spool with the gear of the printer side. c) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. Appropriate Go to 2. Inappropriate a) Remove the foreign substance and jam. b) Reset the spool. c) Change the paper to use. 2 Replace ACTIVE ROLL BRAKE MOTOR. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC16 2027
+Description;Role motor error (support number: 4801)
+Causes;The timing when roll drive timeout or upper roll drive overload occurs, operation instruction is indicated by firmware.
+Remedy;1 Check the items below. a) Foreign substances or jam at paper feed part. b) Engagement of the spool with the gear of the printer side. c) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. Appropriate Go to 2. Inappropriate a) Remove the foreign substance and jam. b) Reset the spool. c) Change the paper to use. 2 Replace ACTIVE ROLL BRAKE MOTOR. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC16 202A
+Description;Roll motor drive control abnormal (support number: 4801)
+Causes;Abnormity is detected at control IC on the main PCB during ACTIVE ROLL BRAKE MOTOR controlling.
+Remedy;1 Check the items below. a) Foreign substances or jam at paper feed part. b) Engagement of the spool with the gear of the printer side. c) Check if the paper in use has strong stiffness, is a heavy roll paper, or is easy to get curled. Appropriate Go to 2. Inappropriate a) Remove the foreign substance and jam. b) Reset the spool. c) Change the paper to use. 2 Replace ACTIVE ROLL BRAKE MOTOR. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC16 2038
+Description;Roll motor calibration error (support number: 4801)
+Causes;Calibration of ACTIVE ROLL BRAKE MOTOR fails.
+Remedy;1 Check if a spool is installed in the roll unit. With the spool Remove the spool from the roll unit and reboot the main unit.* Without the spool Replace ACTIVE ROLL BRAKE MOTOR. *The spool must be removed before calibrating the roll unit.
+Code;EC19 2F21
+Description;Release lever open error during printing (support number : 1214)
+Causes;Release lever is released during printing.
+Remedy;1 Start up the printer in service mode. Move the release lever back and forth in print waiting status. Perform [DIAGNOSIS > I/O DISPLAY] to check RELEASE LEVER SWITCH operation. Appropriate Replace RELEASE LEVER UNIT. Inappropriate Replace RELEASE LEVER SWITCH.
+Code;EC21 282D
+Description;Print head Si melting (reboot request) (support number: 140C)
+Causes;Si melting amount exceeds the specified melting amount.
+Remedy;1 Reboot the printer.
+Code;EC21 282E
+Description;Print head Si melting (print head replacement request) (support number: 1403)
+Causes;The printer does not recover by rebooting after print head Si solution error.
+Remedy;1 Replace the print head.
+Code;EC21 2F43
+Description;Print head 640 nozzles complete non-ejection (support number: 1494)
+Causes;Non-ejection in 640 nozzles is detected through non-ejection detection.
+Remedy;1 When the printer does not recover by rebooting, check if the ink is filled into tubes. Ink is filled Go to 2. Ink is not filled Replace the INK SUPPLY UNIT. 2 Perform deep cleaning, and print nozzle check pattern. Proper nozzle pattern Complete. Improper nozzle pattern Replace the print head.
+Code;EC21 2F44
+Description;Abnormal increase of non-ejection nozzles from last non-ejection detection (support number: 1492)
+Causes;At the rate of fifty or more non-ejection nozzles per one nozzle have increased since last non-ejection detection.
+Remedy;1 Perform deep cleaning and print nozzle check pattern. Proper nozzle pattern Complete. Improper nozzle pattern Replace the print head.
+Code;EC21 2F50
+Description;VH leak at print head replacement (support number: 1477)
+Causes;VH leak is detected at print head replacement.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F51
+Description;VH leak at starting up, cleaning, or print starting (support number: 4801)
+Causes;VH leak is detected at starting up, cleaning, and print starting.
+Remedy;1 Reboot the printer.
+Code;EC21 2F53
+Description;VH leak at rebooting (support number: 1478)
+Causes;The printer does not recover by rebooting after the VH leak error at starting up, cleaning, or print starting.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F54
+Description;Print head VH voltage abnormal (support number: 4801)
+Causes;Abnormal VH voltage of the print head is detected.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F56
+Description;VHTR leak at print head replacement (support number: 1477)
+Causes;VHTR leak is detected at print head replacement.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F57
+Description;VHTR leak error at starting up, cleaning, or print starting (support number: 4801)
+Causes;VHTR leakage is detected in starting up, cleaning, or print starting.
+Remedy;1 Reboot the printer.
+Code;EC21 2F58
+Description;VHTR leak at rebooting (support number: 1478)
+Causes;The printer does not recover by rebooting after the VHTR leak error occurred in starting up, cleaning, or print starting.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F59
+Description;Print head VHTR voltage abnormal (support number: 4801)
+Causes;Abnormal VHTR voltage of the print head is detected.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F60
+Description;H3V voltage abnormal at print head replacement (support number: 1477)
+Causes;Abnormal H3V voltage is detected at print head replacement.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F61
+Description;H3V voltage abnormal at starting up, cleaning, or print starting (support number: 4801)
+Causes;Abnormal H3V voltage is detected at starting up, cleaning, or print starting.
+Remedy;1 Reboot the printer.
+Code;EC21 2F62
+Description;H3V leak at rebooting (support number: 1478)
+Causes;The printer does not recover by rebooting after the H3V leak error at starting up, cleaning, or print starting.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F67
+Description;Print head H3V voltage abnormal during printing (support number: 4801)
+Causes;Abnormal H3V voltage of the print head is detected during printing.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK] to diagnose carriage system. No problem Go to 2. Problem in LONG FFC CHECK Replace CARRIAGE UNIT. 2 Remove the print head and check the condition of print head contacting part. Proper condition Replace the print head. Improper condition Go to 3. 3 Clean the surface of the print head contacting part. (The waste cloth without a nap must be used.) The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC21 2F6D
+Description;Print head EEPROM checksum error 2 (support number: 140F)
+Causes;Abnormity is detected in checksum judgement of EEPROM at print head installation and starting up.
+Remedy;1 Replace the print head.
+Code;EC21 2F70
+Description;Print head diode temperature abnormal (reboot request) (support number: 1408)
+Causes;Abnormal temperature of the diode is detected at diode correction.
+Remedy;1 Reboot the printer.
+Code;EC21 2F71
+Description;Print head diode temperature unstable (support number: 1409)
+Causes;Diode temperature is detected to be unstable at diode correction.
+Remedy;1 Reboot the printer.
+Code;EC21 2F72
+Description;Print head diode correction error (reboot request) (support number: 140A)
+Causes;Abnormal value is detected at diode correction.
+Remedy;1 Reboot the printer.
+Code;EC21 2F73
+Description;Print head diode temperature abnormal (print head replacement request) (support number: 1408)
+Causes;The printer does not recover by rebooting after this error.
+Remedy;1 Replace the print head.
+Code;EC21 2F74
+Description;Print head diode temperature unstable (print head replacement request) (support number: 1409)
+Causes;The printer does not recover by rebooting after this error.
+Remedy;1 Replace the print head.
+Code;EC21 2F75
+Description;Print head diode correction error (print head replacement request) (support number: 140A)
+Causes;The printer does not recover by rebooting after this error.
+Remedy;1 Replace the print head.
+Code;EC21 2F7E
+Description;Print head temperature abnormal (reboot request) (support number: 5200)
+Causes;Abnormal temperature of heater board is detected.
+Remedy;1 Reboot the printer.
+Code;EC21 2F7F
+Description;Print head temperature abnormal (print head replacement request) (support number: 1478)
+Causes;The printer detects print head abnormal temperature rising and does not recover by rebooting.
+Remedy;1 Replace the print head.
+Code;EC22 2F30
+Description;Head management sensor position adjustment error (support number: 4801)
+Causes;Adjusting head management sensor position is failed.
+Remedy;1 Check if the ink is filled into ink tubes. Ink is filled Go to 2. Ink is not filled Perform [DIAGNOSIS > PURGE CHECK] to diagnose ink vacuum of PURGE UNIT. PURGE UNIT ink vacuum diagnosis Proper operation Perform deep cleaning and fill the ink. When the ink vacuum does not recover, replace the print head. Abnormal operation Replace PURGE UNIT. 2 Print user nozzle check pattern or service nozzle check pattern to check the nozzle condition. (Check if blur or non-ejection appears at the top and bottom edge line of the nozzle check pattern.) Appropriate condition Replace HEAD MANAGEMENT SENSOR UNIT. Abnormal condition Perform deep cleaning and fill the ink. When the ink vacuum does not recover, replace the print head.
+Code;EC22 2F47
+Description;Head management sensor unit failure (support number: 4801)
+Causes;The head management sensor unit is detected to be faulty at starting up or nonejection detection.
+Remedy;1 Check the items below. a) Adherence of paper dust and hairs on the HEAD MANAGEMENT SENSOR UNIT. b) Adherence or laying-up of large amount of ink mist on the HEAD MANAGEMENT SENSOR UNIT. c) Connector condition. Appropriate condition and proper connection Go to 2. Inappropriate condition or improper connection a) Remove it. b) Perform cleaning or replace HEAD MANAGEMENT SENSOR UNIT. c) Connect the connector. 2 Check if the fuse (FU5202) on MAIN PCB UNIT is disconnected. Connected Replace HEAD MANAGEMENT SENSOR UNIT. Disconnected Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC22 4001
+Description;End-of-life of head management sensor unit (support number: 5B16) Memo : Remove the error in service mode after handling.
+Causes;Ink amount in the head management sensor exceeds the threshold.
+Remedy;1 Replace HEAD MANAGEMENT SENSOR UNIT.
+Code;EC23 260E
+Description;Gap adjustment error (support number: 4801)
+Causes;Abnormity is detected at GAP adjustment.
+Remedy;1 Check the cable connection of MULTI SENSOR UNIT. Proper connection Replace MULTI SENSOR UNIT. Improper connection Connect the cable.
+Code;EC23 2F11
+Description;Multi sensor bus communication error (support number: 4801)
+Causes;Communicating with multi sensor related hard ware, such as LED driver and multi sensor EEPROM, is failed.
+Remedy;1 Check the cable connection of MULTI SENSOR UNIT. Proper connection Replace MULTI SENSOR UNIT*. Improper connection Connect the cable. *This error is caused by multi sensor malfunction. Communication error of other ICs is indicated when communication failure occurs, since confirmation of communication with other ICs in the carriage is performed prior to confirmation of communication of the multi sensor.
+Code;EC23 2F18
+Description;Carriage board I2C bus communication error (support number: 4801)
+Causes;I2C writing and reading to ICs on the carriage board is failed.
+Remedy;1 Perform [DIAGNOSIS > CR SYSTEM CHECK], and check LONG FFC CHECK result and the CRC value change before and after turning off and on the power. (The value change is indicating broken wire.) Normal result Replace CARRIAGE UNIT. Abnormal result Replace MAIN PCB UNIT.
+Code;EC23 2F32
+Description;Multi sensor error (support number: 4801)
+Causes;Abnormity is detected in multi sensor EEPROM reading at each automatic adjustment, paper edge detection, GAP adjustment, and starting up.
+Remedy;1 Check the cable connection of MULTI SENSOR UNIT. Proper connection Replace MULTI SENSOR UNIT. Improper connection Connect the cable.
+Code;EC24 4049
+Description;Abnormal temperature by temperature and humidity sensor (support number: 8200) Memo: Remove the error in service mode after handling.
+Causes;Abnormity is detected at reading temperature
+Remedy;1 Check the cable connection of SENSOR, HUMIDITY. Proper connection Replace SENSOR, HUMIDITY. Improper connection Connect the cable.
+Code;EC24 404A
+Description;Abnormal humidity by temperature and humidity sensor (support number: 8200) Memo: Remove the error in service mode after handling.
+Causes;Abnormity is detected at reading humidity.
+Remedy;1 Check the cable connection of SENSOR, HUMIDITY. Proper connection Replace SENSOR, HUMIDITY. Improper connection Connect the cable.
+Code;EC24 404B
+Description;Temperature and humidity sensor non-connection (support number: 8200) Memo: Remove the error in service mode after handling.
+Causes;Abnormity is detected at reading temperature and humidity.
+Remedy;1 Check the cable connection of SENSOR, HUMIDITY. Proper connection Replace SENSOR, HUMIDITY. Improper connection Connect the cable.
+Code;EC25 2F16
+Description;Mist fan error (support number: 4801)
+Causes;Abnormity is detected at reading humidity.
+Remedy;1 Check the cable connection of MIST FAN. Proper connection Go to 2. Improper connection Connect the cable. 2 Replace EXHAUST MIST DUCT UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC25 4001
+Description;End-of-life of mist collecting duct (support number: 5B20) Memo: Remove the error in service mode after handling.
+Causes;Ink amount in the mist collecting duct exceeds the threshold.
+Remedy;1 Replace EXHAUST MIST DUCT UNIT.
+Code;EC31 2F1C
+Description;Purge main cam sensor error (support number: 4801)
+Causes;The following failure is detected. •Initialization of purge main cam position is failed. •Moving CARRIAGE UNIT to the specified position is disabled when capping.
+Remedy;1 Check the items below. a) The foreign substances such as paper debris are adhering around PURGE UNIT. b) Scratch or stain on SCALE, LINER. Without paper debris, scratch, or stain Go to 2. With paper debris, scratch, or stain a) Remove the foreign substance. b) Perform cleaning or replace SCALE, LINEAR. 2 After unlocking CARRIAGE UNIT with [FUNCTION > CR UNLOCK], perform [FUNCTION > CR LOCK] to check CARRIAGE UNIT lock operation. Proper operation Reboot and recheck the operation. Abnormal operation Replace PURGE UNIT.
+Code;EC31 2F1D
+Description;Purge motor error (support number: 4801)
+Causes;The motor does not operate.
+Remedy;1 Check if the foreign substances such as paper debris are adhering around PURGE UNIT. Without foreign substance Go to 2. With foreign substances Remove the foreign substance. 2 Perform [DIAGNOSIS > PURGE CHECK > INITIALIZE CHECK] to check purge unit operation. Proper operation Reboot and recheck the operation. Abnormal operation Replace PURGE UNIT.
+Code;EC31 2F1E
+Description;Purge motor overload (support number: 4801)
+Causes;The motor keeps 100% output, or PURGE MOTOR ENCODER cannot be read.
+Remedy;1 Check if the foreign substances such as paper debris are adhering around PURGE UNIT, and also check the connector connection. Proper connection without foreign substance Go to 2. With foreign substances or improper connection Remove the foreign substance or connect the connector properly. 2 Perform [DIAGNOSIS > PURGE CHECK > INITIALIZE CHECK] to check purge unit operation. Proper operation Reboot and recheck the operation. Abnormal operation Replace PURGE UNIT.
+Code;EC31 2F22
+Description;Purge motor drive timeout (support number: 4801)
+Causes;The purge motor drive does not complete the specified operation within the specified time.
+Remedy;1 Check if the foreign substances such as paper debris are adhering around PURGE UNIT. Without foreign substance Go to 2. With foreign substances Remove the foreign substance. 2 Perform [DIAGNOSIS > PURGE CHECK > INITIALIZE CHECK] to check purge unit operation. Proper operation Reboot and recheck the operation. Abnormal operation Replace the PURGE UNIT.
+Code;EC31 4001
+Description;End-of-life of purge unit (support number: 5C00) Memo : Remove the error in service mode after handling.
+Causes;The purge unit lifespan runs out.
+Remedy;1 Replace the PURGE UNIT.
+Code;EC32 4001
+Description;End-of-life of tube unit (support number: B510) Memo : Remove the error in service mode after handling.
+Causes;The amount of carriage scan time exceeds the threshold, and the tube unit lifespan runs out.
+Remedy;1 Replace the INK SUPPLY UNIT.
+Code;EC33 2601
+Description;Timeout of left or right ink supply choke valve driving (support number: 4801)
+Causes;The choke valve does not complete driving within the scheduled time.
+Remedy;1 Perform [DIAGNOSIS > I/O DISPLAY] to check the RIGHT CHOKE VALVE POSITION SENSOR and the LEFT CHOKE VALVE POSITION SENSOR operation. Proper operation Reboot and recheck the operation. When the printer does not recover, drive system overload is suspected. In this case, replace the INK SUPPLY UNIT. Abnormal operation Replace the INK SUPPLY UNIT.
+Code;EC33 2F3A
+Description;Left or right ink valve motor error (support number: 4801)
+Causes;Encoder value of the left and right ink valve motor is not detected.
+Remedy;1 Replace the INK SUPPLY UNIT.
+Code;EC33 2F3D
+Description;Operation error 1 in [Prepare to move] (support number: 4801)
+Causes;Ink tank removal at inappropriate timing is detected.
+Remedy;1 Perform [Prepare to move] again.
+Code;EC33 2F3E
+Description;Operation error 2 in [Prepare to move]
+Causes;Ink tank installation at inappropriate timing is detected.
+Remedy;1 Perform [Prepare to move] again.
+Code;EC34 2602
+Description;Right choke valve drive timeout (support number: 4801)
+Causes;The choke valve does not complete driving within the scheduled time.
+Remedy;1 Perform [DIAGNOSIS > I/O DISPLAY] to check the RIGHT CHOKE VALVE POSITION SENSOR operation. Proper operation Reboot and recheck the operation. When the printer does not recover, drive system overload is suspected. In this case, replace the INK SUPPLY UNIT. Abnormal operation Replace the INK SUPPLY UNIT.
+Code;EC34 2F3B
+Description;Right ink valve motor error (support number: 4801)
+Causes;Encoder value of the right ink valve motor is not detected.
+Remedy;1 Replace the INK SUPPLY UNIT.
+Code;EC35 2603
+Description;Left choke valve drive timeout (support number: 4801)
+Causes;The choke valve does not complete driving within the scheduled time.
+Remedy;1 Perform [DIAGNOSIS > I/O DISPLAY] to check the LEFT CHOKE VALVE POSITION SENSOR operation. Proper operation Reboot and recheck the operation. When the printer does not recover, drive system overload is suspected. In this case, replace the INK SUPPLY TANK UNIT L. Abnormal operation Replace the INK SUPPLY TANK UNIT L.
+Code;EC35 2F3C
+Description;Left ink valve motor error (support number: 4801)
+Causes;Encoder value of the left ink valve motor is not detected.
+Remedy;1 Replace the INK SUPPLY TANK UNIT L.
+Code;EC3F 2F40
+Description;Complete non-ejection in all colors through non-ejection detection (support number: 1492)
+Causes;Complete non-ejection in all colors through non-ejection detection.
+Remedy;1 Check the items below. a) Foreign substances such as paper debris around HEAD MANAGEMENT SENSOR UNIT. b) Tubes are filled by ink. No foreign substances and ink is filled Go to 2*. Foreign substances are adhering or tubes are not filled by ink. a) Remove the foreign substance. b) Go to 3. *There is little possibility of print head contact failure factor (because print head contact failure is checked by the automatic diagnosis at print head installation or before performing non-ejection detection). 2 Check the items below. a) Whether the service nozzle check pattern can be printed. b) Perform [DIAGNOSIS > CR SYSTEM CHECK] to check the result of LONG FFC CHECK. Printable without broken wires Replace HEAD MANAGEMENT SENSOR UNIT. Not printable or broken wires a) Replace the print head. b) Replace the CARRIAGE UNIT. 3 Perform [DIAGNOSIS > PURGE CHECK > PRESSURE CHECK] to check vacuum operation of PURGE UNIT. Proper operation Replace the INK SUPPLY UNIT. Abnormal operation Replace the PURGE UNIT.
+Code;EC3F 2F41
+Description;Complete non-ejection in one color (support number: 1492)
+Causes;Non-ejection in all nozzles of the one color is detected through non-ejection detection after cleaning.
+Remedy;1 Check if the ink is filling into tubes. Ink is filled Go to 2. (Insufficient ink in the print head or print head defect is suspected.) Ink is not filled Go to 3. 2 Perform deep cleaning and print nozzle check pattern. Appropriate condition Replace the ink supply tank unit that does not have ink filled in the tube. Abnormal condition Replace the print head.
+Code;EC41 4001
+Description;End-of-life of SUCTION FAN UNIT (support number: 5B20) Memo : Remove the error in service mode after handling.
+Causes;Ink filled up in SUCTION FAN UNIT is detected.
+Remedy;1 Replace the SUCTION FAN UNIT.
+Code;EC43 4001
+Description;End-of-life of WASTE INK BOX UNIT, HP (support number: 5B20) Memo : Remove the error in service mode after handling.
+Causes;Ink filled up in WASTE INK BOX UNIT, HP is detected.
+Remedy;1 Replace the WASTE INK BOX UNIT, HP.
+Code;EC44 4001
+Description;End-of-life of WASTE INK BOX UNIT, CENTER (support number: 5B20) Memo : Remove the error in service mode after handling.
+Causes;Ink filled up in WASTE INK BOX UNIT, CENTER is detected.
+Remedy;1 Replace the WASTE INK BOX UNIT, CENTER.
+Code;EC47 4001
+Description;End-of-life of WASTE INK BOX UNIT, BP (support number: 5B20) Memo : Remove the error in service mode after handling.
+Causes;Ink filled up in WASTE INK BOX UNIT, BP is detected.
+Remedy;1 Replace the WASTE INK BOX UNIT, BP.
+Code;EC48 4001
+Description;End-of-life of MCG GUIDE UNIT (support number: 5B21) Memo : Remove the error in service mode after handling.
+Causes;Ink full in the MCG GUIDE UNIT of the maintenance cartridge is detected.* *Without having the maintenance cartridge installed, when the waste ink flows into the maintenance cartridge, the counter counts. (This case is not usually happens.)
+Remedy;1 Replace the MCG GUIDE UNIT.
+Code;EC51 203C
+Description;Motor driver boot sequence failure (support number: 4803)
+Causes;Motor driver boot sequence was not completed properly in starting up.
+Remedy;1 When the printer does not recover by rebooting, replace MAIN PCB UNIT* . *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 2F07
+Description;USB Vbus overcurrent (support number: 9000)
+Causes;Vbus overcurrent is detected.
+Remedy;1 Reboot.
+Code;EC51 2F14
+Description;Main PCB I2C bus error (support number: 4801)
+Causes;Abnormal checksum value of the ink agitation timer or ink cleaning timer is detected, or accessing DA converter is disabled.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 2F15
+Description;Unable to allocate memory (support number: 4801)
+Causes;Acquisition of OS memory pool packet is disabled.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 2FDD
+Description;Left ink level detection error (support number: 4801)
+Causes;Inactivation of the ink level detection pin of the sub ink tank in INK SUPPLY TANK UNIT L is detected, while activation of the ink level detection pin of the ink tank is detected. (It occurs with cable connection failure. This state does not normally occur.)
+Remedy;1 Check the connection of the MAIN PCB UNIT. Proper connection Replace MAIN PCB UNIT*. Improper connection Connect the connector. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 2FDE
+Description;Right ink level detection error (support number: 4801)
+Causes;Inactivation of the ink level detection pin of the sub ink tank in INK SUPPLY UNIT is detected, while activation of the ink level detection pin of the ink tank is detected. (It occurs with cable connection failure. This state does not normally occur.)
+Remedy;1 Check the connection of the MAIN PCB UNIT. Proper connection Replace MAIN PCB UNIT*. Improper connection Connect the connector. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 2FDF
+Description;Left and right ink level detection error (support number: 4801)
+Causes;Inactivation of the ink level detection pin of the sub ink tank in the INK SUPPLY TANK UNIT L/R is detected, while activation of the ink level detection pin of the ink tank is detected. (It occurs with cable connection failure. This state does not normally occur.)
+Remedy;1 Check the connection of the MAIN PCB UNIT. Proper connection Replace MAIN PCB UNIT*. Improper connection Connect the connector. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3000
+Description;Network sub-system start-up error (support number: 6900)
+Causes;Starting up sequence of Network sub-system is failed.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware.
+Code;EC51 3001
+Description;Network sub-system timeout (support number: 6901)
+Causes;Network sub system does not respond.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware.
+Code;EC51 3002
+Description;Wireless LAN device non-connection (support number: 6910)
+Causes;Wireless LAN device is not recognized.
+Remedy;1 Check the WIRELESS LAN UNIT flexible cable connection. Proper connection Replace the WIRELESS LAN UNIT. Improper connection Connect the flexible cable.
+Code;EC51 3003
+Description;Wireless LAN hardware error (support number: 6911)
+Causes;The wireless LAN device is physically broken.
+Remedy;1 Check the WIRELESS LAN UNIT flexible cable connection Proper connection Replace the WIRELESS LAN UNIT. Improper connection Connect the flexible cable.
+Code;EC51 3004
+Description;Wired LAN driver error (support number: 6920)
+Causes;The fatal error occurs in the ethernet driver.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3005
+Description;Wired LAN hardware error (support number: 6921)
+Causes;Ethernet driver is physically broken.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the connection of the I/F PCB UNIT and the MAIN PCB UNIT. The problem is resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is not resolved Connect the I/F PCB UNIT to the MAIN PCB UNIT
+Code;EC51 3006
+Description;Other network sub-system errors (support number: 6902)
+Causes;Starting up sequence of network sub-system fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3100
+Description;USB control-out bus error (support number: 6930)
+Causes;Bus error occurs at USB control-out end point.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the cable connection and if the cable in use supports USB2.0. When proper connection and USB2.0 is supported, reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3101
+Description;USB control-in bus error (support number: 6931)
+Causes;USB control-in end point bus error occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the cable connection and if the cable in use supports USB2.0. When proper connection and USB2.0 is supported, reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3102
+Description;USB print bulk-out bus error (support number: 6932)
+Causes;Bus error occurs at print bulk-out end point.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the cable connection and if the cable in use supports USB2.0. When proper connection and USB2.0 is supported, reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3103
+Description;USB print bulk-in bus error (support number: 6933)
+Causes;Bus error occurs at print bulk-in end point.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the cable connection and if the cable in use supports USB2.0. When connection is proper and USB2.0 is supported, reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3104
+Description;USB sub-system firmware error (support number: 6940)
+Causes;USB firm error occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3105
+Description;USB sub-system command error (support number: 6941)
+Causes;USB command error occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Check the cable connection and if the cable in use supports USB2.0. When connection is proper and USB2.0 is supported, reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3106
+Description;USB sub-system timeout (support number: 6942)
+Causes;USB watchdog error occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3107
+Description;USB sub-system data copy error (support number: 6943)
+Causes;USB-Relax firmware data copy error occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3108
+Description;USB sub-system instruction error (support number: 6944)
+Causes;USB-Relax firmware instruction copy error is occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3109
+Description;USB sub-system not started properly (support number: 6945)
+Causes;Boot error of USB-Relax firmware occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3110
+Description;USB sub-system improper timeout setting (support number: 6946)
+Causes;Initial value set error of USB-Relax firmware watchdog occurs.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3301
+Description;Sub-chip connection error (support number: 4801)
+Causes;When starting up the printer or returning from power saving mode, connecting to sub-chip fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3302
+Description;Sub-chip initialization error (support number: 4801)
+Causes;When starting up the printer or returning from power saving mode, initialization of the sub-chip fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. Memo: If the error occurred after reseating the flexible cables, check the condition of flexible cable connection.
+Code;EC51 3303
+Description;Sub-chip firmware loading error (support number: 4801)
+Causes;When starting up the printer or returning from power saving mode, downloading sub-chip firmware fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3304
+Description;Media updating failure (support number: 4905)
+Causes;Updating the printer media information fails.
+Remedy;Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3306
+Description;NAND file system initialization error (support number: 4905)
+Causes;When starting up the printer or returning from power saving mode, initialization of NAND file system fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3307
+Description;NAND file system unformatted (support number: 4905)
+Causes;When starting up the printer or returning from power saving mode, formatting of NAND file system fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3308
+Description;Checksum error at firmware update (support number: 4905)
+Causes;Checksum of the firmware sent at firmware updating does not match.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 3309
+Description;Memory allocation failure at firmware update (support number: 4905)
+Causes;Securing the operation area in RAM during firmware updating fails.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 330A
+Description;Firmware size error (support number: 4905)
+Causes;The size information described in the received firmware data and the actual received size does not match at firmware updating.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4041
+Description;Deletion failure in main PCB SROM (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Deletion of the corresponding area in SROM during firmware updating fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4042
+Description;Writing failure in main PCB SROM (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Writing to SROM during firmware updating fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4045
+Description;Main PCB EEPROM error (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Abnormity is detected when information is written to the main PCB EEPROM.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4046
+Description;Deletion failure in main PCB NAND flash (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Deletion of the corresponding area in NAND flash during firmware updating fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4047
+Description;Writing failure in main PCB NAND flash (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Writing to NAND flash during firmware updating fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 404C
+Description;Serial number data mismatch (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Mismatch of Serial number data in the BACKUP PCB UNIT and the MAIN PCB UNIT is detected in start-up of the printer.
+Remedy;1 This error occurs after MAIN PCB UNIT replacement Go to 2. This error occurs without performing MAIN PCB UNIT replacement Go to 3. 2 Start up the printer in service mode. Perform PCB replacement mode. (Automatic transformation from service mode to PCB replacement mode in start-up.) 3 Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is resolved Complete. The problem is not resolved Put back the MAIN PCB UNIT, the one that has been installed before the replacement, and replace the BACKUP PCB UNIT.
+Code;EC51 404D
+Description;Model ID mismatch (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;When starting up the printer, model ID mismatch between MAIN PCB UNIT and BACKUP PCB UNIT is detected.
+Remedy;1 This error occurs after MAIN PCB UNIT replacement Go to 2. This error occurs without performing MAIN PCB UNIT replacement Go to 3. This error occurs after replacing to the BACKUP PCB UNIT that has been installed to the other model Replace with the new BACKUP PCB UNIT. 2 Start up the printer in service mode. Perform PCB replacement mode. (Automatic transformation from service mode to PCB replacement mode at starting up.) 3 Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is resolved Complete. The problem is not resolved Put back the MAIN PCB UNIT, the one that has been installed before the replacement, and replace the BACKUP PCB UNIT.
+Code;EC51 404E
+Description;Main PCB EEPROM error (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;Access to the main PCB EEPROM fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4070
+Description;Main PCB NAND flash ECC error (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;ECC error in NAND flash occurs during firmware updating.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4071
+Description;Initialization failure in main PCB NAND flash (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;When starting up the printer or returning from power saving mode, initialization of NAND flash fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 4072
+Description;Format failure in Main PCB NAND flash (support number: 6820) Memo: Remove the error in service mode when handling is completed.
+Causes;When starting up the printer or returning from power saving mode, formatting of NAND flash fails.
+Remedy;1 Reinstall the firmware. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC51 5001
+Description;Start-up disabled (support number: 7050) Memo: Remove the error in service mode when handling is completed.
+Causes;Starting up the printer fails.
+Remedy;1 Check cable connection to the MAIN PCB UNIT. Proper connection Go to 2. Improper connection Connect the cable. 2 Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is resolved Complete. The problem is not resolved Replace the ID PCB UNIT. (For how to order, ask sales companies in each region.)
+Code;EC51 5002
+Description;Start-up disabled (support number: 7051) Memo: Remove the error in service mode when handling is completed.
+Causes;Starting up the printer fails.
+Remedy;1 Check cable connection to the MAIN PCB UNIT. Proper connection Go to 2. Improper connection Connect the cable. 2 Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is resolved Complete. The problem is not resolved Replace the ID PCB UNIT. (For how to order, ask sales companies in each region.)
+Code;EC51 5003
+Description;Start-up disabled (support number: 7052) Memo: Remove the error in service mode when handling is completed.
+Causes;Starting up the printer fails.
+Remedy;1 Check cable connection to the MAIN PCB UNIT. Proper connection Go to 2. Improper connection Connect the cable. 2 Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments. The problem is resolved Complete. The problem is not resolved Replace the ID PCB UNIT. (For how to order, ask sales companies in each region.)
+Code;EC52 4038
+Description;Abnormal power supply voltage in standby or printing (support number: 9110) Memo: Remove the error in service mode when handling is completed.
+Causes;Power supply from the power supply unit stops in standby or printing.
+Remedy;1 Reconnect after unplugging the power cable from the AC outlet for ten seconds or longer. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Replace the POWER SUPPLY UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC52 4039
+Description;Abnormal power supply voltage in VH leak detection (support number: 9110) Memo: Remove the error in service mode when handling is completed.
+Causes;Power supply from the power supply unit stops in leak detection.
+Remedy;1 Reconnect after unplugging the power cable from the AC outlet for ten seconds or longer. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Replace the POWER SUPPLY UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC54 290A
+Description;Hard disk unconnected (support number: 4801)
+Causes;Hard disk detection at start-up fails.
+Remedy;1 Check if the hard disk cable is connected to the MAIN PCB UNIT. Connected Go to 2. Disconnected Connect the cable. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Replace the hard disk cable. The problem is resolved Complete. The problem is not resolved Go to 3. 3 Replace the POWER SUPPLY UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC54 401A
+Description;Hard disk reading/writing error (support number: 7001) Memo: Remove the error in service mode when handling is completed.
+Causes;Reading/writing to the hard disk is disabled.
+Remedy;1 Replace the hard disk cable. The problem is resolved Complete. The problem is not resolved Go to 2. 2 Replace the hard disk. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC54 405A
+Description;Hard disk capacity mismatch (support number: 7003) Memo: Remove the error in service mode when handling is completed.
+Causes;Hard disk capacity difference is detected at start-up.
+Remedy;1 Replace the hard disk.
+Code;EC54 405B
+Description;Hard disk model mismatch (support number: 7004) Memo: Remove the error in service mode when handling is completed.
+Causes;Hard disk model ID mismatch is detected at start-up.
+Remedy;1 Replace the hard disk.
+Code;EC55 2F20
+Description;Flexible cable connection error (support number: 4801)
+Causes;Abnormity, left connection, or inappropriate connection in flexible cable connection between MAIN PCB UNIT and CARRIAGE UNIT was detected.
+Remedy;1 Check the flexible cable connection. Proper connection Replace the CARRIAGE UNIT. Improper connection Connect the flexible cable properly. The problem is not resolved Go to 2. 2 Reconnect the power cable after unplugging from the AC outlet for ten seconds or longer. The problem is resolved Complete. The problem is not resolved Replace the POWER SUPPLY UNIT.
+Code;EC55 2F24
+Description;Flexible cable connected at an angle (support number: 1468)
+Causes;Flexible cable connection at an angle or non-connection is detected between MAIN PCB UNIT and CARRIAGE RELAY PCB UNIT.
+Remedy;1 Check the flexible cable connection. Proper connection Go to 2. Improper connection Connect the flexible cable properly. The problem is not resolved Go to 2. 2 Reconnect the power cable after unplugging from the AC outlet for ten seconds or longer. The problem is resolved Complete. The problem is not resolved Replace CARRIAGE UNIT. The problem is not resolved Replace POWER SUPPLY UNIT.
+Code;EC55 2F6C
+Description;Print head temperature reading error (support number: 4801)
+Causes;Temperature reading by the direct diode sensor failed.
+Remedy;1 Check the flexible cable connection. Proper connection Go to 2. Improper connection Connect the flexible cable properly. The problem is not resolved Go to 2. 2 Replace with CARRIAGE UNIT. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC56 2FE0
+Description;Sub-ink tank unit power supply error (support number: 6502)
+Causes;The power is not supplied to ink tank ROMs.
+Remedy;1 Check the MAIN PCB UNIT cable connection. Proper connection Go to 2. Improper connection Connect the cable. 2 Check if the ink tank is empty. Not empty Replace the ink tank unit (replacement procedure for INK SUPPLY UNIT). Empty Replace the ink tank.
+Code;EC57 4040
+Description;RTC time unknown (support number: 6702) Memo: Remove the error in service mode when handling is completed.
+Causes;Unset of GMT in RTC is detected at printer start-up in user mode.
+Remedy;1 Check if the battery is mounted in the MAIN PCB UNIT. Battery is mounted Replace the battery and set GMT time by [OTHERS>RTC SETTING] GMT. Battery is not mounted Remount the battery and set GMT time by [OTHERS>RTC SETTING]. GMT time = Greenwitch Mean Time
+Code;EC57 404F
+Description;RTC non-connection (support number: 6700) Memo: Remove the error in service mode when handling is completed.
+Causes;Reading / writing to RTC data is disabled.
+Remedy;1 Reboot. The problem is resolved Complete. The problem is not resolved Replace MAIN PCB UNIT*. *After replacement, perform PCB replacement mode and necessary adjustments.
+Code;EC58 2F12
+Description;Backup PCB EEPROM error (support number: 4801)
+Causes;Reading / writing to BACKUP PCB UNIT EEPROM is disabled.
+Remedy;1 Check the cable connection. Proper connection Replace the BACKUP PCB UNIT. Improper connection Connect the cable.
+Code;FF0000 2E3F
+Description;Paper feeding failure (other) (support number: 1300)
+Causes;Paper jam error other than above cases occurs.
+Remedy;1 Release the release lever. Reload the paper. (Remove left paper pieces and check the leading efge of the paper.) 2 Check other suspected cause. •Media related cause. (size, media type mismatch, turn-up at the tip of the paper) •Curly bottom tip of the roll paper. •Avoid the paper with strong stiffness or heavy roll paper.

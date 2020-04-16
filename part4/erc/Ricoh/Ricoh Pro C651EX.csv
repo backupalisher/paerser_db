@@ -1,0 +1,1472 @@
+Code;SC101
+Description;Exposure Lamp Error The white level peak did not reach the prescribed threshold when the white plate was scanned.
+Causes;• Condensation in scanner unit • Dirty lenses, mirrors dirty or positioned incorrectly • White plate dirty or installed incorrectly • Harness between lamp and lamp stabilizer disconnected or defective • Exposure lamp defective • Lamp stabilizer defective • High voltage line leak • SIOB defective • SBU defective
+Remedy;
+Code;SC120
+Description;Scanner Home Position Error 1 The scanner home position sensor did not detect the home position (did not go OFF) after the scanner moved forward 20 mm.
+Causes;• Scanner motor defective • Scanner HP sensor defective • Harness between scanner motor and SIOB disconnected or defective. • SIOB defective
+Remedy;
+Code;SC121
+Description;Scanner Home Position Error 2 The scanner home position sensor did not go ON after the scanner moved forward 6 mm and the feeler dropped into the HP sensor.
+Causes;• Scanner motor harness disconnected or defective • Scanner motor defective • Scanner HP sensor disconnected or defective • HP sensor feeler (actuator) not positioned correctly • SIOB defective
+Remedy;
+Code;SC141
+Description;Black Level Detection Error The black level value did not reach ±3 of the prescribed value for AGC (Automatic Gain Control) that executed immediately after the scanner unit powered on.
+Causes;• Cycle the machine off/on • Harness between SBU and IPU disconnected or defective • SBU defective • IPU defective • BCU defective
+Remedy;
+Code;SC142
+Description;White Level Detection Error The 2nd white level value did not reach the target range (-7 to 0) for AGC (Automatic Gain Control) that executed immediately after the scanner unit powered on.
+Causes;• Cycle the machine off/on • Condensation in the scanner unit • Dirty exposure glass, optics • White plate dirty, or set incorrectly • Harness between SBU-IPU disconnected or defective • Exposure lamp defective • SBU defective • IPU defective • BCU defective
+Remedy;
+Code;SC144
+Description;SBU Communication Error When the machine was switched on, or when the machine returned to full operation from the energy save mode, the machine could not access the SBU register, or the SBU register values are abnormal. Note: The ASIC IDs read during automatic adjustment of the SBU can be displayed with SP4600 (SBU Version Display).
+Causes;SBU-BCU harness loose, disconnected, defective SBU board defective SIOB board defective BCU board defective
+Remedy;
+Code;SC161-1
+Description;IPU Error 1: LSYNC An error occurred during the self-diagnostic test performed every time the machine is powered on, or returns to full operation from energy save mode.
+Causes;• Harness between IPU and SBU disconnected or defective • Defective BCU board • Defective IPU board
+Remedy;
+Code;SC161-2
+Description;IPU Error 2: Ri No Response The machine detected an error during Ri access
+Causes;• IPU board defective • BCU board defective • Controller board defective
+Remedy;
+Code;SC180
+Description;Scanner Unit Exhaust Fan Lock The scanner unit exhaust fan did not switch on within 10 sec. after the CPU issued the ON signal.
+Causes;• Foreign object interfering with operation of fan • Fan motor harness disconnected or defective • Fan defective • SIOB board defective • SBU board defective
+Remedy;
+Code;SC181
+Description;Lamp Regulator Cooling Fan The fan next to the lamp regulator board did not switch on within 10 sec. after the CPU issued the ON signal.
+Causes;• Fan motor harness disconnected or defective • SBU harness disconnected or defective • SIOB harness disconnected or defective • Fan defective • SBU board defective • SIOB board defective
+Remedy;
+Code;SC182
+Description;Scanner Unit Exhaust Fan Lock The scanner unit exhaust fan did not switch on within 10 sec. after the CPU issued the ON signal.
+Causes;• Fan motor harness disconnected or defective • SBU harness disconnected or defective • SIOB harness disconnected or defective • Fan defective • SBU board defective • SIOB board defective
+Remedy;
+Code;SC195
+Description;Machine serial number error The 11-digit number registered for the machine serial number does not match.
+Causes;• NVRAM defective • BCU replaced without original NVRAM • Check the serial number with SP5-811-002. • If the stored serial number is incorrect, contact your supervisor.
+Remedy;
+Code;SC202
+Description;Polygon Motor 1: ON Timeout Error After the C K polygon motor turned on, or within 10 sec. after the rpm’s changed, the motor did not enter READY status.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC203
+Description;Polygon Motor 1: OFF Timeout Error The C, K polygon motor lock signal (XSCRDY signal) failed to unlock (go HIGH) within 3 sec. after the C, K polygon motor went OFF.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC204
+Description;Polygon Motor 1: XCRDY Signal Error The C, K polygon motor left the lock status once the motor achieved normal rotation speed.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC206
+Description;Polygon Motor 2: ON Timeout Error After the Y,M polygon motor turned on, or within 10 sec. after the rpm’s changed, the motor did not achieve motor lock (READY) status.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC207
+Description;Polygon Motor 2: OFF Timeout Error The Y, M motor lock signal (XSCRDY signal) failed to unlock (go HIGH) within 3 sec. after the Y, M polygon motor went OFF.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC208
+Description;Polygon Motor 2: XCRDY Signal Error The Y,M polygon motor left the lock status once after the motor achieved regular rotation speed.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • Polygon motor defective (replace laser unit) • IPU defective
+Remedy;
+Code;SC210
+Description;Trailing Edge Beam Error (K) One of the following occurred: • When the K main scan magnification rate was measured, there was no output for the trailing edge beam detection signal • The K magnification rate could not be detected • The detected K magnification rate was not within specification.
+Causes;• Cycle the machine off/on • CK Laser unit defective
+Remedy;
+Code;SC211
+Description;Trailing Edge Beam Error (C) • When the C main scan magnification rate was measured, there was no output for the trailing edge beam detection signal • The C magnification rate could not be detected • The detected C magnification rate was not within specification.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC212
+Description;Trailing Edge Beam Error (M) • When the M main scan magnification rate was measured, there was no output for the trailing edge beam detection signal • The M magnification rate could not be detected • The detected M magnification rate was not within specification.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC213
+Description;Trailing Edge Beam Error (Y) • When the Y main scan magnification rate was measured, there was no output for the trailing edge beam detection signal • The Y magnification rate could not be detected • The detected Y magnification rate was not within specification.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC220
+Description;TE LD1 Laser Synchronization Detection Error (K) A signal was not output from the K LSDB after more than 100 ms (100 ms x2) after the LD fired.
+Causes;• Cycle the machine off/on • CK Laser unit defective
+Remedy;
+Code;SC222
+Description;TE LD1 Laser Synchronization Detection Error (C) A signal was not output from the C LSDB after more than 100 ms (100 ms x2) after the LD fired.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC224
+Description;TE LD1 Laser Synchronization Detection Error (M) A signal was not output from the M LSDB after more than 100 ms (100 ms x2) after the LD fired.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC226
+Description;TE LD1 Laser Synchronization Detection Error (Y) A signal was not output from the Y LSDB after more than 100 ms (100 ms x2) after the LD fired.
+Causes;• Cycle the machine off/on • YM Laser unit defective
+Remedy;
+Code;SC230
+Description;K FGATE Failed to go ON The K FGATE signal did not go ON within the prescribed time after printing started and the STTRIG single went ON.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK Laser unit defective
+Remedy;
+Code;SC231
+Description;K FGATE Failed to go OFF After the K FGATE signal went on, it failed to go OFF within the prescribed time.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK Laser unit defective
+Remedy;
+Code;SC232
+Description;C FGATE Failed to go ON The C FGATE signal did not go ON within the prescribed time after printing started and the STTRIG single went ON.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK Laser unit defective
+Remedy;
+Code;SC233
+Description;C FGATE Failed to go OFF After the C FGATE signal went on, it failed to go OFF within the prescribed time.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK Laser unit defective
+Remedy;
+Code;SC234
+Description;M FGATE Failed to go ON The M FGATE signal did not go ON within the prescribed time after printing started and the STTRIG signal went ON.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC235
+Description;M_FGATE Failed to go OFF After the M FGATE signal went on, it failed to go OFF within the prescribed time.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC236
+Description;Y FGATE Failed to go ON The Y FGATE signal did not go ON within the prescribed time after printing started and the STTRIG single went ON.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC237
+Description;Y FGATE Failed to go OFF After the Y FGATE signal went on, it failed to go OFF within the prescribed time.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC240
+Description;LD Error (K) The LD current exceeded the prescribed limit when the K LD fired.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC241
+Description;LD Error (C) The LD current exceeded the prescribed limit when the C LD fired.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC242
+Description;LD Error (M) The LD current exceeded the prescribed limit when the M LD fired.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC243
+Description;LD Error (Y) The LD current exceeded the prescribed limit when the Y LD fired.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC260
+Description;Laser Thermistor Error (CK) One of the following occurred: • The reading of the thermistor in the CK or YM laser unit was less than 10°C (50°F), indicating that the thermistor has disconnected. • The reading of the thermistor in the CK or YM laser unit was more than 80°C (176°F), indicating that the thermistor has shorted out.
+Causes;• Cycle the machine off/on • IOB harness loose, disconnected, broken, defective • CK or YM laser unit defective • IOB defective
+Remedy;
+Code;SC262
+Description;Laser Thermistor Error (YM) One of the following occurred: • The reading of the thermistor in the CK or YM laser unit was less than 10°C (50°F), indicating that the thermistor has disconnected. • The reading of the thermistor in the CK or YM laser unit was more than 80°C (176°F), indicating that the thermistor has shorted out.
+Causes;• Cycle the machine off/on • IOB harness loose, disconnected, broken, defective • CK or YM laser unit defective • IOB defective
+Remedy;
+Code;SC263
+Description;Laser Thermistor (Y) Error The laser thermistor in the YM laser unit is not functioning properly because it is disconnected or shorted out.
+Causes;• Replace the YM laser unit.
+Remedy;
+Code;SC265
+Description;Skew Control: Out of Range Error (C) The C skew control pulse total (SP2104-7) is not within range.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC266
+Description;Skew Control: Out of Range Error (M) The M skew control pulse total (SP2104-8) is not within range.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC267
+Description;Skew Control: Out of Range Error (Y) The Y skew control pulse total (SP2104-9) is not within range.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC270
+Description;Image Transfer Error (K) The image data that the K LDB received generated a fatal error.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK laser unit defective
+Remedy;
+Code;SC271
+Description;Image Transfer Error (C) The image data that the C LDB received generated a fatal error.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • CK laser unit defective
+Remedy;
+Code;SC272
+Description;Image Transfer Error (M) The image data that the M LDB received generated a fatal error.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC273
+Description;Image Transfer Error (Y) The image data that the Y LDB received generated a fatal error.
+Causes;• Cycle the machine off/on • IPU harness loose, disconnected, broken, defective • IPU defective • YM laser unit defective
+Remedy;
+Code;SC275
+Description;PC Communication Error (K) The K LDB is not functioning normally.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC276
+Description;PC Communication Error (C) The C LDB is not functioning normally.
+Causes;• Cycle the machine off/on • CK laser unit defective
+Remedy;
+Code;SC277
+Description;PC Communication Error (M) The M LDB is not functioning normally.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC278
+Description;PC Communication Error (Y) The Y LDB is not functioning normally.
+Causes;• Cycle the machine off/on • YM laser unit defective
+Remedy;
+Code;SC280
+Description;IPU Image Transfer Error An error occurred during data sending between components (GRIFFON, LEO) on the IPU board.
+Causes;• Cycle the machine off/on • If the problem persists, replace the IPU
+Remedy;
+Code;SC285
+Description;MUSIC Error The results of MUSIC pattern reading failed 4 times (SC496 issued 4 times).
+Causes;• A PCDU is set incorrectly • ITB is set incorrectly • Execute manual process control with SP3011-2 (Density Adjustment) • MUSIC sensor harness loose, disconnected, broken, defective • MUSIC sensor defective • ITB damaged • Laser unit defective
+Remedy;
+Code;SC300
+Description;Charge Roller Power Pack Output Error (K) The interrupt that checks the status of the PCU power pack every 10 ms detected a short at the high-voltage harness or charge leak at the charge roller. The highvoltage harness could be broken or defective, or the charge roller could be dirty.
+Causes;"• Disconnect the high voltage cable from Terminal C of the power pack. • Attach a voltmeter to the terminal. • If there is no output from the terminal, replace the power pack. -or- • If there is output from the terminal, test the resistance between the high voltage cable and the ground. • If resistance is nearly ""0"", check the high-voltage harness for defects and replace it if necessary. • Test the conductivity between the PCU and the ground. If there is no conductivity between the PCU and ground, replace the PCU. • If there is no charge PWM signal, replace the harness and/or BCU."
+Remedy;
+Code;SC301
+Description;Charge Roller Power Pack Output Error (C) The interrupt that checks the status of the PCU power pack every 10 ms detected a short at the high-voltage harness or charge leak at the charge roller. The highvoltage harness could be broken or defective, or the charge roller could be dirty.
+Causes;"• Disconnect the high voltage cable from Terminal C of the power pack. • Attach a voltmeter to the terminal. • If there is no output from the terminal, replace the power pack. -or- • If there is output from the terminal, test the resistance between the high voltage cable and the ground. • If resistance is nearly ""0"", check the high-voltage harness for defects and replace it if necessary. • Test the conductivity between the PCU and the ground. If there is no conductivity between the PCU and ground, replace the PCU. • If there is no charge PWM signal, replace the harness and/or BCU."
+Remedy;
+Code;SC302
+Description;Charge Roller Power Pack Output Error (M) The interrupt that checks the status of the PCU power pack every 10 ms detected a short at the high-voltage harness or charge leak at the charge roller. The highvoltage harness could be broken or defective, or the charge roller could be dirty.
+Causes;"• Disconnect the high voltage cable from Terminal C of the power pack. • Attach a voltmeter to the terminal. • If there is no output from the terminal, replace the power pack. -or- • If there is output from the terminal, test the resistance between the high voltage cable and the ground. • If resistance is nearly ""0"", check the high-voltage harness for defects and replace it if necessary. • Test the conductivity between the PCU and the ground. If there is no conductivity between the PCU and ground, replace the PCU. • If there is no charge PWM signal, replace the harness and/or BCU."
+Remedy;
+Code;SC303
+Description;Charge Roller Power Pack Output Error (Y) The interrupt that checks the status of the PCU power pack every 10 ms detected a short at the high-voltage harness or charge leak at the charge roller. The highvoltage harness could be broken or defective, or the charge roller could be dirty.
+Causes;"• Disconnect the high voltage cable from Terminal C of the power pack. • Attach a voltmeter to the terminal. • If there is no output from the terminal, replace the power pack. -or- • If there is output from the terminal, test the resistance between the high voltage cable and the ground. • If resistance is nearly ""0"", check the high-voltage harness for defects and replace it if necessary. • Test the conductivity between the PCU and the ground. If there is no conductivity between the PCU and ground, replace the PCU. • If there is no charge PWM signal, replace the harness and/or BCU."
+Remedy;
+Code;SC310 ... SC313
+Description;SC310 D Charge FB Voltage Error (K) SC311 D Charge FB Voltage Error (C) SC312 D Charge FB Voltage Error (M) SC313 D Charge FB Voltage Error (Y) Just before beginning to print, the charge FB (feed-back) voltage was detected less than 0.3V for 50 consecutive readings within 400 ms.
+Causes;• High-voltage harness disconnected or broken • Charge roller not installed correctly • Drum not installed correctly
+Remedy;
+Code;SC320 ... SC323
+Description;SC320 D Separation Power Pack Output Error (K) SC321 D Separation Power Pack Output Error (C) SC322 D Separation Power Pack Output Error (M) SC323 D Separation Power Pack Output Error (Y)
+Causes;The BCU detected an electrical short during development charge output for K,C,M, or Y. Possible causes for this are: • IOB harness disconnected or defective • High-voltage cable defective • Power pack defective • Development unit defective • IOB defective
+Remedy;"1. Disconnect the high voltage cable from Terminal B of the development power pack. 2. Attach a voltmeter to the terminal. 3. If there is no output from the terminal, replace the power pack. -or- 1. If there is output from the terminal, test the resistance between the highvoltage cable and the ground. 2. If resistance is ""0"" or nearly ""0"", check the high-voltage harness for defects and replace it if necessary. 3. If replacing the harness does not solve the problem, test the resistance between the development unit terminal and the ground. 4. If there is no resistance (0 ohms) between the development unit and the ground, replace the PCU. 5. If there is no development PWM signal, replace the IOB harness and/or IOB."
+Code;SC325 ... SC328
+Description;SC325 D Development Motor Error (K) SC326 D Development Motor Error (C) SC327 D Development Motor Error (M) SC328 D Development Motor Error (Y)
+Causes;The development motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Motor harness disconnected or defective • Motor shaft locked, blocked by obstruction • Motor defective
+Code;SC330 ... SC334
+Description;SC330 D Toner Supply Bottle Motor Error (K) SC331 D Toner Supply Bottle Motor Error (C) SC332 D Toner Supply Bottle Motor Error (M) SC333 D Toner Supply Bottle Motor Error (Y) SC334 D Toner Supply Bottle Motor Error (S)
+Causes;The machine detected that the toner supply motor was not operating.
+Remedy;• Toner bottle installed incorrectly • Toner bottle rotation blocked by an obstruction • Toner bottle damaged • Toner supply bottle motor defective
+Code;SC335 ... SC338
+Description;SC335 D Developer Set Error (K) SC336 D Developer Set Error (C) SC337 D Developer Set Error (M) SC338 D Developer Set Error (Y)
+Causes;Before the TD sensor control voltage (Vcnt = 4.75V) is adjusted when the TD sensor is initialized (SP3-030), the development unit is always checked for the presence of developer. The check revealed that the K, C, M, or Y development unit did not have a sufficient amount of toner. Vt (the TD sensor output) was less than 0.7V
+Remedy;• Replace the developer
+Code;SC345
+Description;Toner Supply Pump Motor Error (K, M, C, Y)
+Causes;The toner supply pump motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Motor harness disconnected or broken • Toner pump unit harness disconnected or broken • Toner pump unit panel mount connector broken • Check each toner supply unit (K, M, C, Y) for any obstructions that could be blocking operation of a pump or sub hopper • Toner supply pump motor defective
+Code;SC355
+Description;Toner Supply Error (K) • Amount of toner on the ID sensor pattern printed and read between sheets less than 0.100 (SP3300-1). • Accumulated toner clutch ON time in the K sub hopper of the toner supply unit greater than 5000 (SP3301-41)
+Causes;A small rectangular wire attached to the shaft of an augur in each toner supply unit scrapes the surface of the toner end sensor with each rotation of the augur. The cleaning wire may be bent or the toner end sensor is defective. If the toner end sensor is damaged or out of position, the toner end sensor will cease to function normally.
+Remedy;• Replace the affected toner supply unit.
+Code;SC356
+Description;Toner Supply Error (C) • Amount of toner on the ID sensor pattern printed and read between sheets less than 0.200 (SP3300-3). • Accumulated toner clutch ON time in the C sub hopper of the toner supply unit greater than 5000 (SP3301-43)
+Causes;A small rectangular wire attached to the shaft of an augur in each toner supply unit scrapes the surface of the toner end sensor with each rotation of the augur. The cleaning wire may be bent or the toner end sensor is defective. If the toner end sensor is damaged or out of position, the toner end sensor will cease to function normally.
+Remedy;• Replace the affected toner supply unit.
+Code;SC357
+Description;Toner Supply Error (M) • Amount of toner on the ID sensor pattern printed and read between sheets less than 0.200 (SP3300-3). • Accumulated toner clutch ON time in the M sub hopper of the toner supply unit greater than 5000 (SP3301-43)
+Causes;A small rectangular wire attached to the shaft of an augur in each toner supply unit scrapes the surface of the toner end sensor with each rotation of the augur. The cleaning wire may be bent or the toner end sensor is defective. If the toner end sensor is damaged or out of position, the toner end sensor will cease to function normally.
+Remedy;• Replace the affected toner supply unit.
+Code;SC358
+Description;Toner Supply Error (Y) • Amount of toner on the ID sensor pattern printed and read between sheets less than 0.200 (SP3300-4). • Accumulated toner clutch ON time in the Y sub hopper of the toner supply unit greater than 5000 (SP3301-43)
+Causes;A small rectangular wire attached to the shaft of an augur in each toner supply unit scrapes the surface of the toner end sensor with each rotation of the augur. The cleaning wire may be bent or the toner end sensor is defective. If the toner end sensor is damaged or out of position, the toner end sensor will cease to function normally.
+Remedy;• Replace the affected toner supply unit.
+Code;SC360
+Description;TD Sensor (Vt High) Error (K) The TD sensor output for the K development unit was greater than 4.7V (SP3210-1)
+Causes;These SC codes are issued if the TD sensor output is greater than 4.7V after 20 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • TD sensor defective on the affected development unit
+Code;SC361
+Description;TD Sensor (Vt High) Error (C) The TD sensor output for the C development unit was greater than 4.7V (SP3210-2)
+Causes;These SC codes are issued if the TD sensor output is greater than 4.7V after 20 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • TD sensor defective on the affected development unit
+Code;SC362
+Description;TD Sensor (Vt High) Error (M) The TD sensor output for the M development unit was greater than 4.7V (SP3210-3)
+Causes;These SC codes are issued if the TD sensor output is greater than 4.7V after 20 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • TD sensor defective on the affected development unit
+Code;SC363
+Description;TD Sensor (Vt High) Error (Y) The TD sensor output for the C development unit was greater than 4.7V (SP3210-4)
+Causes;These SC codes are issued if the TD sensor output is greater than 4.7V after 20 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • TD sensor defective on the affected development unit
+Code;SC365
+Description;TD Sensor (Vt Low) Error (K) The TD sensor output for the K development unit was less than 0.5V (SP3210-1)
+Causes;These SC codes are issued if the TD sensor output is less than 0.5V after 10 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC366
+Description;TD Sensor (Vt Low) Error (C) The TD sensor output for the C development unit was less than 0.5V (SP3210-2)
+Causes;These SC codes are issued if the TD sensor output is less than 0.5V after 10 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC367
+Description;TD Sensor (Vt Low) Error (M) The TD sensor output for the M development unit was less than 0.5V (SP3210-3)
+Causes;These SC codes are issued if the TD sensor output is less than 0.5V after 10 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC368
+Description;TD Sensor (Vt Low) Error (Y) The TD sensor output for the Y development unit was less than 0.5V (SP3210-4)
+Causes;These SC codes are issued if the TD sensor output is less than 0.5V after 10 consecutive readings.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC370
+Description;TD Sensor Initialization Error (K)
+Causes;The TD sensor of the affected development unit could not be initialized within 2.9±0.2V.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC371
+Description;TD Sensor Initialization Error (C)
+Causes;The TD sensor of the affected development unit could not be initialized within 2.9±0.2V.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC372
+Description;TD Sensor Initialization Error (M)
+Causes;The TD sensor of the affected development unit could not be initialized within 2.9±0.2V.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC373
+Description;TD Sensor Initialization Error (Y)
+Causes;The TD sensor of the affected development unit could not be initialized within 2.9±0.2V.
+Remedy;• TD sensor harness of the affected unit defective, disconnected, or broken. Replace the TD sensor. • Replace development unit
+Code;SC375
+Description;ID Sensor Calibration Error
+Causes;The voltage reading during process control for Vsg_reg was not within the correct range (4.0±0.5V). Vsg_reg is the voltage reading of the light reflected directly from the bare surface of the ITB.
+Remedy;• ID sensor harness disconnected or broken • ID sensor dirty. Check sensor window and clean with clean cloth moistened with alcohol. Do not use a dry cloth. • ID sensor defective • ITB deformed or out of position (replace damaged ITB) Note: • This error can occur as a result of cleaning the sensors with a dry cloth, which can cause a static charge to build up on the sensor and attract particles of paper dust. • Always clean the ID sensor with a clean cloth moistened with alcohol.
+Code;SC377
+Description;LED Error During Vsg Adjustment
+Causes;ID sensor (PWM) value is greater than the threshold value (Ifsg > 27 mA) set by SP3320-15 (Default: 0) This can be caused by one or more of these conditions: • ID sensor dirty • ID sensor defective • ITB dirty
+Remedy;• Clean the window of the ID sensor with a clean cloth moistened with alcohol. Do not use a dry cloth. • ITB belt dirty • ITB out of position • ID sensor defective Note: • This error can occur as a result of cleaning the sensors with a dry cloth, which can cause a static charge to build up on the sensor and attract particles of paper dust. • Always clean these with a clean cloth moistened with alcohol.
+Code;SC380 ... SC383
+Description;SC380 D ID Sensor Pattern Density High Error (K) The density of the Black reading in the ID sensor patterns created between pages (SP3300-1) is greater than the threshold value set by SP3301-21. SC381 D ID Sensor Pattern Density High Error (C) The density of the Cyan reading in the ID sensor patterns created between pages (SP3300-2) is greater than the threshold value set by SP3301-22. SC382 D ID Sensor Pattern Density High Error (M) The density of the Magenta reading in the ID sensor patterns created between pages (SP3300-3) is greater than the threshold value set by SP3301-22. SC383 D ID Sensor Pattern Density High Error (Y)
+Causes;The density of the Yellow reading in the ID sensor patterns created between pages (SP3300-4) is greater than the threshold value set by SP3301-22. -or- The ID sensor reading for the affected color was probably due to excessive toner.
+Remedy;• Replace the toner supply unit
+Code;SC385 ... SC388
+Description;SC385 D ID Sensor Pattern Density Low Error (K) The density of the Black reading in the ID sensor patterns created between pages (SP3300-1) is less than the threshold value set by SP3301-23. SC386 D ID Sensor Pattern Density Low Error (C) The density of the Cyan reading in the ID sensor patterns created between pages (SP3300-2) is less than the threshold value set by SP3301-24. SC387 D ID Sensor Pattern Density Low Error (M) The density of the Magenta reading in the ID sensor patterns created between pages (SP3300-3) is less than the threshold value set by SP3301-24. SC388 D ID Sensor Pattern Density Low Error (Y)
+Causes;The density of the Yellow reading in the ID sensor patterns created between pages (SP3300-4) is less than the threshold value set by SP3301-24.
+Remedy;• Dust shield glass dirty • Insufficient application of development bias • Check the ITB unit
+Code;SC390 ... SC393
+Description;SC390 D Drum Motor (K) Error SC391 D Drum Motor (C) Error SC392 D Drum Motor (M) Error SC393 D Drum Motor (Y) Error
+Causes;An error was detected at power on, when the affected motor started up, or during normal rotation of the motor. Excessive torque was detected on the motor, possibly caused by a jammed drum cleaning blade. A LOCK signal could not be detected after 1 sec.
+Remedy;• Disassemble the PCDU and inspect the drum and cleaning blade for damage. Replace is necessary. • Execute SP7988 for whichever unit was affected. • Reset the counter with 7987 for whichever unit was affected.
+Code;SC395 ... SC398
+Description;SC395 D Drum Motor Error (K) SC396 D Drum Motor Error (C) SC397 D Drum Motor Error (M) SC398 D Drum Motor Error (Y)
+Causes;A lock signal could not be detected within one sec. after the motor start signal was sent, or the LOCK signal was lost during normal operation of the motor.
+Remedy;• Motor harness disconnected or broken • Obstruction is blocking operation of the drum or motor • TDCU defective • Drum motor defective
+Code;SC400 ... SC403
+Description;SC400 D Development Gamma Error (K) SC401 D Development Gamma Error (C) SC402 D Development Gamma Error (M) SC403 D Development Gamma Error (Y)
+Causes;"Development gamma for the affected color is not within range: 0.3 < Development Gamma < 6.0 One of the following problems (identified by a process control error code) has occurred during the potential control phase of process control (ACC gamma correction); • Code 55, 56. Development gamma was not in the range 0.3 to 6.0. Process control halts and a process control code is issued: 55, 56. • Code 59. Development gamma calculation point error. • Code 61. LD did not fire and data array has all negative values. Note: To display the 2-digit process control error codes, do SP3012."
+Remedy;• Dust shield glass is dirty • ITB unit transfer power pack defective • LD unit inside laser unit defective If SP3012 returned a process control error code: • Code 55, 59. Replace developer. • Code 56. Clean the toner shield glass, or replace transfer power pack. • Code 61. Replace laser unit.
+Code;SC405 ... SC408
+Description;SC405 D Development Start Voltage (Vk) Error (K) SC406 D Development Start Voltage (Vk) Error (C) SC407 D Development Start Voltage (Vk) Error (M) SC408 D Development Start Voltage (Vk) Error (Y)
+Causes;The detected development start voltage was not within the range of ±150V. Process control error codes: 57, 58 (displayed with SP3012).
+Remedy;• Potential sensor dirty or defective (Process control error code 58) • Developer requires replacement (Process control error: 57, 58)
+Code;SC410 ... SC413
+Description;SC410 D Potential Sensor Vd Error (K) SC411 D Potential Sensor Vd Error (C) SC412 D Potential Sensor Vd Error (M) SC413 D Potential Sensor Vd Error (Y)
+Causes;The reading of the potential sensor above the drum of the affected color is incorrect. Specifically, Vd was out of range: 500 Vd (700) -800 Process control error codes: 15, 16 (displayed with SP3012) Note: Vd is the potential sensor reading of the unexposed surface of the OPC drum (no laser applied to the drum). This is read during the potential process control self-check.
+Remedy;Error Code 15 • Potential sensor probe dirty. • Clean area around potential sensor with a blower brush • Potential sensor defective Error Code16 • Potential sensor board defective
+Code;SC415 ... SC418
+Description;SC415 C Potential Sensor Vd Adjustment Error (K) SC416 C Potential Sensor Vd Adjustment Error (C) SC417 C Potential Sensor Vd Adjustment Error (M) SC418 C Potential Sensor Vd Adjustment Error (Y)
+Causes;The DC bias charge could not be adjusted to the target voltage Vd±8V Process control error code: 63 (displayed with SP3012). Note: Vd is the potential sensor reading of the unexposed surface of the OPC drum (no laser applied to this area of the drum). This is read during the potential process control self-check. Vd is adjusted with the charge roller.
+Remedy;Error Code 63 • Charge roller dirty • Charge roller defective
+Code;SC420 ... SC423
+Description;SC420 C Potential Sensor Vl Adjustment Error (K) SC421 C Potential Sensor Vl Adjustment Error (C) SC422 C Potential Sensor Vl Adjustment Error (M) SC423 C Potential Sensor Vl Adjustment Error (Y)
+Causes;The LD power could not be adjusted to the target for Vpl±5V. Process control error code: 64 (displayed with SP3012). Note: • Vl is the OPC drum potential after maximum laser exposure. The potential sensor measures Vl by reading the white patches of the potential sensor pattern. • To change Vl, the machine adjusts the input current (Vpl) of the laser diode.
+Remedy;Error Code 64 • Charge roller dirty • Charge roller defective • OPC drum is worn and needs to be replaced
+Code;SC430 ... SC433
+Description;SC430 C Potential Sensor Vr Adjustment Error (K) SC431 C Potential Sensor Vr Adjustment Error (C) SC432 C Potential Sensor Vr Adjustment Error (M) SC433 C Potential Sensor Vr Adjustment Error (Y)
+Causes;Potential sensor adjustment was out of range: Vr >-200V. Process control error code: 62 (displayed with SP3012). Note: Vr is residual voltage, the slight trace of voltage that remains after the QL neutralizes the surface of the drum. There is always some residual voltage after quenching, even on a new drum. Vr can cause dirty backgrounds on copies. The only way to compensate for Vr is to increase development bias.
+Remedy;Error Code 62: • OPC drum is worn, needs replacement
+Code;SC440 ... SC443
+Description;SC440 D Image Transfer Power Pack Voltage Leak (K) SC441 D Image Transfer Power Pack Voltage Leak (C) SC442 D Image Transfer Power Pack Voltage Leak (M) SC443 D Image Transfer Power Pack Voltage Leak (Y)
+Causes;The machine detected a problem with the image transfer power pack. An interrupt checks the status of the power pack every 10 ms. This SC is issued if a problem exists with 50 consecutive samplings (500 ms).
+Remedy;• Power pack high-voltage harness disconnected or broken • IOB defective • Image transfer power pack defective • ITB defective • PCU charge roller defective
+Code;SC446
+Description;Transfer Belt Drive Motor
+Causes;The transfer belt drive motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Motor harness disconnected or broken • Physical obstruction is blocking operation of the ITB unit • Motor or motor drive board defective
+Code;SC447
+Description;1st Lift Motor Sensor (YCM) Error
+Causes;The 1st lift motor (YCM) was operating but the 1st lift motor sensor failed to detect the position of the sensor feeler within the prescribed time.
+Remedy;• Sensor dirty • Sensor harness disconnected or broken • Sensor defective • Motor defective
+Code;SC448
+Description;ITB Unit Set Error (K)
+Causes;After the front door was closed, the ITB lift sensor (K) failed to detect the ITB at the correct position.
+Remedy;• Operator forgot to set lever before closing front cover • 2nd lift motor sensor (K) 1 or 2 dirty • Sensor harness disconnected or broken • Sensor defective
+Code;SC449
+Description;ITB Tray Lift (K) Error
+Causes;The 2nd lift motor (K) was operating but 2nd lift motor sensor 1 or 2 failed to detect the position of the sensor feeler for the 2nd lift tray (K) within the prescribed time. Note: There are two lift sensors for the 2nd lift tray below the K_PCDU. Sensor 1 is above the 2nd lift motor near the front of the ITB unit. Sensor 2 is at the rear left corner of the ITB unit below the ITB.
+Remedy;• Sensor 1 or 2 dirty • Sensor harness disconnected or broken • Sensor 1 or 2 defective • 2nd lift motor (K) defective
+Code;SC452 ... SC455
+Description;SC452 D ITB Unit Transfer Power Pack Low Voltage Error (K) SC453 D ITB Unit Transfer Power Pack Low Voltage Error (C) SC454 D I ITB Unit Transfer Power Pack Low Voltage Error (M) SC455 D ITB Unit Transfer Power Pack Low Voltage Error (Y)
+Causes;The machine detected a power pack voltage output at less than 0.1 kV due to a problem with the power pack power supply.
+Remedy;• Power pack power supply harness disconnected or broken • Replace the power pack
+Code;SC457
+Description;ITB Cleaning Unit Motor Error
+Causes;The ITB cleaning unit motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Motor harness disconnected or broken • Physical obstruction is blocking the operation of the ITB cleaning unit • ITB cleaning unit motor defective
+Code;SC458 ... SC461
+Description;SC458 C Image Transfer Roller Error (K) SC459 C Image Transfer Roller Error (C) SC460 C Image Transfer Roller Error (M) SC461 C Image Transfer Roller Error (Y)
+Causes;The machine detected that the electrical resistance of the roller exceeded the allowed limit, indicating that the service life of the roller has expired or there could be a problem with the transfer power pack.
+Remedy;• High-voltage harness disconnected or broken • Connection point at the roller broken • Image transfer roller worn out, needs replacement • Image transfer power pack defective
+Code;SC464
+Description;ITB Unit Transfer Power Pack Leak Error
+Causes;The machine detected a voltage leak at the paper transfer power pack
+Remedy;• Harness between power pack and IOB disconnected or broken • High-voltage harness defective • Power pack defective • IOB defective • ITB defective • PTR defective
+Code;SC465
+Description;PTR Motor Error
+Causes;The PTR motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• PTR motor harness disconnected or broken • Physical obstruction blocking operation of the PTR unit • Motor or motor drive board defective
+Code;SC466
+Description;PTR Separation Motor Error
+Causes;The PTR separation motor was operating but the PTR separation sensor failed to detect the feeler that triggers detection of the PTR separation sensor.
+Remedy;• Sensor dirty • Motor harness disconnected or broken • Sensor defective • Motor defective
+Code;SC468
+Description;ITB Unit Power Pack Error: Low Output
+Causes;During the execution of bias feedback control, the machine detected that the output of the paper transfer power pack was less than 0.1 kV.
+Remedy;• High-voltage harness disconnected or broken • Paper transfer power pack defective
+Code;SC469
+Description;ITB Bias Roller Service Expired
+Causes;The machine detected that the electrical resistance of the roller exceeded the allowed limit, indicating that the service life of the roller has expired or there could be a problem with the paper transfer power pack.
+Remedy;• High-voltage harness disconnected or broken • Connection point at the roller broken • ITB bias roller worn out, needs replacement • Paper transfer power pack defective
+Code;SC470
+Description;ITB Unit Power Pack Leak Error
+Causes;The machine detected a voltage leak at the separation power pack
+Remedy;• Harness between power pack and IOB disconnected or broken • High-voltage harness defective • Power pack defective • IOB defective • ITB defective • ITB bias roller defective
+Code;SC471
+Description;Belt Position Ready Timeout
+Causes;The machine could not center the belt correctly with 400 sec. after the ITB motor starting rotating the ITB. • Belt centering roller out of position • ITB encoder sensor defective • Belt centering roller sensor defective • Belt centering roller motor defective
+Remedy;1. Do the procedure to clear SC471 2. Replace ITB motor rotation sensor 3. Replace belt centering roller sensor 4. Replace belt centering roller motor
+Code;SC472
+Description;Belt Centering Roller HP Error
+Causes;The belt centering roller sensor did not detect the belt centering roller at HP during initialization, or the belt centering roller sensor still detected the belt centering roller at HP after the belt centering roller motor switched on
+Remedy;• Belt centering roller sensor detective • Belt centering roller motor defective
+Code;SC474
+Description;ITB Position Error 1
+Causes;The belt centering sensor detected the ITB out of position. • ITB not set correctly, re-set ITB. • Belt centering roller out of home position • ITB encoder sensor defective • Belt centering roller sensor defective • Belt centering roller motor defective
+Remedy;1. Re-set ITB correctly. 2. Do the procedure to clear SC474 3. Replace ITB motor rotation sensor 4. Replace belt centering roller sensor. 5. Replace belt centering roller motor.
+Code;SC475
+Description;ITB Position Error 2
+Causes;The front belt overrun sensor detected an ITB position error. • Front belt overrun sensor defective • ITB defective or worn • Belt centering roller out of home position • ITB motor rotation sensor defective • Belt centering roller sensor defective • Belt centering roller motor defective
+Remedy;1. Replace the belt overrun sensor (front). 2. Do the procedure to clear SC475 ( p.1020) 3. Replace ITB motor encoder 4. Replace belt centering roller sensor 5. Replace belt centering roller motor
+Code;SC476
+Description;ITB Position Error 3
+Causes;The rear belt overrun sensor detected an ITB position error. • Rear belt overrun sensor defective • ITB defective or worn • Belt centering roller out of home position • ITB motor rotation sensor defective • Belt centering roller sensor defective • Belt centering roller motor defective
+Remedy;1. Replace the belt overrun sensor (front). 2. Do the procedure to clear SC476 3. Replace ITB motor encoder 4. Replace belt centering roller sensor 5. Replace belt centering roller motor
+Code;SC477
+Description;Belt Centering Sensor Error
+Causes;The readings of the belt centering sensor dropped below one volt after 62 samples.
+Remedy;• Belt centering sensor connector loose, broken, defective • Belt centering sensor defective
+Code;SC480 ... SC483
+Description;SC480 D Drum Cleaning Motor Error (K) SC481 D Drum Cleaning Motor Error (C) SC482 D Drum Cleaning Motor Error (M) SC483 D Drum Cleaning Motor Error (Y)
+Causes;The drum cleaning motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Physical obstruction is blocking normal motor operation • Motor harness disconnected or broken • Motor defective
+Code;SC485
+Description;Used Toner Transport Motor Error
+Causes;The used toner transport motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Physical obstruction is blocking motor or used toner transport path • Motor harness disconnected or broken • Motor defective
+Code;SC486
+Description;Used Toner Bottle Motor Error
+Causes;The used toner bottle motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Physical obstruction is blocking motor or interfering with rotation of used toner bottle • Motor harness disconnected or broken • Used toner bottle motor defective
+Code;SC488
+Description;Used Toner Transport Blockage
+Causes;Used toner is not being moved to the used toner bottle.
+Remedy;• Blockage in the used toner transport path • Used toner motor (main machine) harness disconnected or broken • Used toner transport motor ensor defective • Used toner motor (main machine) defective
+Code;SC490 ... SC495
+Description;SC490 C Impending Failure Detection: Code 01 `SC491 C Impending Failure Detection: Code 02 SC492 C Impending Failure Detection: Code 03 SC493 C Impending Failure Detection: Code 04 SC494 C Impending Failure Detection: Code 05 SC495 C Impending Failure Detection: Code 99
+Causes;The TDCU (Transfer Drive Control Board) monitors the mechanisms. If the TDCU detects an impending failure in a system, it will notify the engine of the problem with an ASAP command. The main cause of such impending failures are: • Expiration of service life of components • Dirty sensors
+Remedy;• Clean the part • Replace the part
+Code;SC496
+Description;MUSIC Sensor Error
+Causes;This SC is issued if one or more of the following occurred: • MUSIC sensor sampling abnormal • Sensor LED adjustment abnormal • Number of patches abnormal • ITB scratched • Main scan registration abnormal • Sub scan registration abnormal • Main scan magnification abnormal • Main scan magnification error diffusion abnormal • Lens refraction abnormal
+Remedy;• A PCDU is set incorrectly • ITB is set incorrectly • Execute process control density adjustment • MUSIC sensor harness loose, disconnected, broken, defective • ITB damaged • PCDU defective • Laser unit defective
+Code;SC497
+Description;Temperature/Humidity Sensor Error (PCU)
+Causes;The machine detected one of these problems with the temperature/humidity sensor located under the rear end of the K PCDU: • The temperature sensor output was less than 0.5V or more than 2.8V three times in one minute, indicating a problem with the temperature detection. • The humidity sensor output was more than 2.4V for three times in one minute, indicating a problem with humidity detection.
+Remedy;• Sensor harness disconnected or broken • Sensor has slipped out of position • Sensor defective
+Code;SC498
+Description;Temperature/Humidity Sensor Error (Main)
+Causes;The machine detected one of these problems with the temperature/humidity sensor located under the rear end of the K PCDU: • The temperature sensor output was less than 0.5V or more than 2.8V three times in one minute, indicating a problem with the temperature detection. • The humidity sensor output was more than 2.4V for three times in one minute, indicating a problem with humidity detection.
+Remedy;• Sensor harness disconnected or broken • Sensor has slipped out of position • Sensor defective
+Code;SC499
+Description;Paper Transfer Control Error
+Causes;The ITB sensor that reads the encoded film strip on the edge of the image transfer belt was not operating correctly. (The TDCU constantly monitors operation of the ITB with transfer feed-back control.)
+Remedy;• ITB encoder sensor dirty • Sensor harness disconnected or damaged • Encoded scale on the edge of the ITB is damaged or dirty • ITB installed incorrectly • TDCU harness disconnected or broken • TDCU defective
+Code;SC501, SC502
+Description;SC501 B 1st Tray (Tandem Tray) Feed Error SC502 B 2nd Tray (Universal Cassette) Feed Error
+Causes;One of the following occurred at the start of the job: • The tray 1 lift sensor does not switch on 10 s after the tray lift motor switches on and starts lifting the bottom plate. • The tray lift sensor was on before the pick-up solenoid switched on. • When the tray lowered, the tray lift sensor did not go off within 1.5 sec. • The paper end sensor of the tandem tray did not detect the lower limit within 10 sec. Note: Another paper tray cannot be used until the problem is resolved.
+Remedy;• Remove and reset the paper tray • Tray lift motor harness disconnected or broken • Paper or other obstacle trapped between tray and motor • Pick-up solenoid disconnected or broken • Paper or other obstacle blocking operation of pick-up solenoid
+Code;SC503, SC504, SC505
+Description;SC503 B 3rd Tray Feed Error LCIT top tray SC504 B 4th Tray Feed Error LCIT middle tray SC505 B 5th Tray Feed Error LCIT bottom tray
+Causes;The tray lift motor, pick-up solenoid, or lift sensor did not operate correctly.
+Remedy;• Tray lift motor harness disconnected or broken • Pick-up solenoid harness disconnected or broken • Tray lift sensor harness disconnected or broken • Tray lift motor defective • Pick-up solenoid defective • Tray lift sensor defective
+Code;SC506
+Description;6th Tray Feed Error Bypass tray on top of LCIT
+Causes;The tray lift motor, pick-up solenoid, lift sensor, or lower limit sensor did not operate correctly.
+Remedy;• Tray lift motor harness disconnected or broken • Pick-up solenoid harness disconnected or broken • Tray lift sensor harness disconnected or broken • Lower limit sensor disconnected or broken • Tray lift motor defective • Pick-up solenoid defective • Tray lift sensor defective • Lower limit sensor defective
+Code;SC507
+Description;Tandem Tray Rear Fence Motor Error (1st Tray)
+Causes;One of the following occurred: • The return sensor does not switch on within 10 sec. after the rear fence motor switches on. • The HP sensor does not switch on 10 sec. after the rear fence motor switches on. • The HP sensor and return sensor switch on at the same time.
+Remedy;• Rear fence motor harness disconnected or broken • Paper or other obstacle interfering with operation of the sensors • Paper or other obstacle trapped between tray and motor • Motor mechanical overload due to obstruction • Return sensor or HP sensor harness disconnected or broken • Return sensor or HP sensor dirty • Rear fence motor defective • Return sensor or HP sensor defective
+Code;SC511
+Description;LCIT Exit Roller Lift Motor Error
+Causes;The exit roller lift motor of lift motor sensor is not operating.
+Remedy;• Motor harness disconnected or broken • Sensor harness disconnected or broken • Motor defective • Sensor defective
+Code;SC513
+Description;Registration Gate Position Error
+Causes;The registration gate could not be detected on or off within the prescribed time. Specifically: • The registration gate HP sensor did not switch off within 500 ms after the gate retract motor switched on. • After the registration HP sensor switched off, the HP sensor did not switch on within 500 ms.
+Remedy;• Gate retract motor harness disconnected or broken • Gate HP sensor harness disconnected or broken • Physical obstacle (paper, etc.) is blocking operation of the motor • Gate HP sensor actuator bent, broken, or out of position • Gate HP sensor defective • Gate retract motor or motor drive board defective
+Code;SC514
+Description;Registration Shift Position Error
+Causes;The HP sensor did not go on or off within the prescribed time. Specifically: • During normal homing operation, before the unit shift motor starting rotating clockwise, the unit was detected at the HP (on). Or, after the unit shift motor had rotated clockwise for 20 pulses, the unit could not be detected at the HP (on). • During homing operation with the unit out of HP, The unit could not be detected off or on within 1068 ms after the unit shift motor started rotating count-clockwise and the cam shaft had rotated twice.
+Remedy;• Shift motor harness disconnected or broken • Physical obstruction is blocking operation of the motor • HP sensor harness disconnected or broken • Sensor actuator bent, broken, or out of position • Motor or motor drive board defective
+Code;SC515
+Description;CIS Cleaning Fan Error
+Causes;The CIS cleaning fan motor in the right drawer failed to start within the prescribed time or failed during normal operation.
+Remedy;• Fan motor harness disconnected or broken • Physical obstruction is blocking operation of the fan
+Code;SC516
+Description;Transport Belt Drive Motor Error
+Causes;A LOW motor LOCK signal was not detected after the motor switched off after 10 consecutive attempts.
+Remedy;• Motor connector loose, broken, defective • Motor or motor drive board defective
+Code;SC520
+Description;Fusing Motor Error
+Causes;The fusing motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Fusing motor harness disconnected or broken • Physical obstruction is blocking the operation of the 1st fusing processing unit • Fusing motor defective • Blown fused on PSU 2 on the back of the main machine
+Code;SC521
+Description;Exit Motor Error
+Causes;The exit motor failed to start within the prescribed time or failed during normal operation.
+Remedy;• Exit motor harness disconnected or defective • Exit motor shaft locked, blocked by obstruction • Exit motor defective
+Code;SC525, SC526
+Description;SC525 D Cooling Unit Transport Motor 1 Error SC526 D Cooling Unit Transport Motor 2 Error
+Causes;A transport motor of the optional cooling unit failed to switch on within the prescribed time after startup.
+Remedy;• Motor harness disconnected or broken • Motor defective
+Code;SC527-001 ... SC527-004
+Description;SC527-001 D Cooling Fan Alarm 1 (Buffer Pass Unit D548) SC527-002 D Cooling Fan Alarm 2 (Buffer Pass Unit D548) SC527-003 D Cooling Fan Alarm 3 (Buffer Pass Unit D548) SC527-004 D Cooling Fan Alarm 4 (Buffer Pass Unit D548)
+Causes;The fan stopped during operation. This alarm is issued if the fan lock sensor detects that the fan has been off for 10 sec.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC527-005 ... SC527-008
+Description;SC527-005 D Exhaust Fan Alarm 1 (Buffer Pass Unit D548) SC527-006 D Exhaust Fan Alarm 2 (Buffer Pass Unit D548) SC527-007 D Exhaust Fan Alarm 3 (Buffer Pass Unit D548) SC527-008 D Exhaust Fan Alarm 4 (Buffer Pass Unit D548)
+Causes;The fan stopped during operation. This alarm is issued if the fan lock sensor detects that the fan has been off for 10 sec.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC530
+Description;Heat Sink Intake Fan Error
+Causes;The one of the fans in the heat sink duct stopped during operation. This alarm is issued if the fan lock sensor detects that the fan has been off for 5 sec.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC531
+Description;Paper Cooling Fan Error
+Causes;One of the fans in the paper cooling duct stopped during operation. This alarm is issued if the fan lock sensor detects that the fan has been off for 5 sec. The paper cooling duct surrounds the circular baffle at the back of the left drawer.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC532-01 ... SC534-02
+Description;SC532-01 B 3rd Tray Front Blower Fan Error LCIT Top Tray: Front SC532-02 B 3rd Tray Rear Blower Fan Error LCIT Top Tray: Rear SC533-01 B 4th Tray Front Blower Fan Error LCIT Middle Tray: Front SC533-02 B 4th Tray Rear Blower Fan Error LCIT Middle Tray: Rear SC534-01 B 5th Tray Front Blower Fan Error LCIT Bottom Tray: Front SC534-02 B 5th Tray Rear Blower Fan Error LCIT Bottom Tray: Rear
+Causes;The fan motor failed to start within the prescribed time or stopped during normal operation.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC535
+Description;ITB Belt Cleaning Cooling Fan Error
+Causes;This is the small fan to the left or the large pressure roller fan on the front of the left drawer.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC536
+Description;Drive Exhaust Fan Error
+Causes;The fan motor failed to start within the prescribed time or stopped during normal operation. The drive exhaust fan is located near the upper left corner of the machine at the rear.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC537
+Description;Toner Supply Cooling Fan Error
+Causes;The fan motor failed to start within the prescribed time or stopped during normal operation. The toner supply cooling fan is inside the duct at the upper right corner at the rear of the machine. It is inside the duct that runs past the YM laser unit and connects behind the toner supply units.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC538
+Description;Controller Box Intake Fan Error
+Causes;One of the fans at the bottom edge of the controller box failed to start within the prescribed time or stopped during normal operation.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC539
+Description;Development Unit Cooling Fan Error
+Causes;One of the three large fans that cool the liquid coolant through the radiator failed to start within the prescribed time or stopped during normal operation. These fans are located in the cooling box at the back of the machine.
+Remedy;• Fan motor harness disconnected or broken • Fan motor defective
+Code;SC541
+Description;Heating Roller Thermistor Error: Poor Connection
+Causes;Temperature (t1) detected at less than 0°C. Note: This is the contact thermistor at the front of the fusing unit that touches the core shaft of the hot roller.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of hot roller • Thermistor defective
+Code;SC542
+Description;Heating Roller Thermistor Error: Warm-up Temperature
+Causes;Fusing temperature control failed to achieve the warm-up temperature.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor deformed • Thermistor floating free, not in contact with hot roller surface • Input voltage incorrect • Fusing lamp disconnected
+Code;SC543
+Description;Heating Roller Thermistor Error: Software Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC544
+Description;Thermistor 1 Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC547
+Description;Zero Cross Error
+Causes;Zero cross signals, generated from the AC power supply, are used to generate trigger pulses to control the applied power accurately. When the main switch is turned on, the machine checks how many zero-cross signals are generated within a prescribed time. This SC code is issued if the number of zero-cross signals detected is not within specification.
+Remedy;• Do SP5810 to cancel the fatal error • A fuse has blown on the AC drive board • Electrical noise on the power supply line • Fusing relay damaged, replace AC drive board.
+Code;SC551
+Description;Pressure Roller Thermistor Error: Poor Connection
+Causes;Temperature detected at less than 0°C.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of pressure roller • Thermistor defective
+Code;SC552
+Description;Pressure Roller Thermistor Error: Warm-up Temperature
+Causes;Fusing temperature control failed to achieve the warm-up temperature.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor deformed • Thermistor floating free, not in contact with pressure roller surface • Input voltage incorrect • Fusing lamp disconnected
+Code;SC553
+Description;Pressure Roller Thermistor Error: Software Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC554
+Description;Pressure Roller Thermistor Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC555
+Description;Pressure Roller Fusing Lamp Error
+Causes;The fusing lamp reached the warm-up temperature and then attained fusing temperature (full power), but remained on after paper passed through the fusing unit (hot roller was not rotating).
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor damaged, or out of position • Fusing lamp disconnected, broken
+Code;SC557
+Description;Zero Cross Over Error
+Causes;At power-on the machine detected that the main power supply was unstable, probably due to electrical noise on the line.
+Remedy;• Logged SP, no action
+Code;SC558
+Description;Fusing Lamp 4 Error
+Causes;The fusing lamp reached the warm-up temperature and then attained fusing temperature (full power), but remained on after paper passed through the fusing unit (hot roller was not rotating). Note: Fusing lamp 4 is in the heating roller.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor damaged, or out of position • Fusing lamp disconnected, broken
+Code;SC559
+Description;Three consecutive fusing jams
+Causes;"This SC only occurs if SP1142 is on (Default: OFF), and paper jams occurred in the fusing unit for three consecutive feeds. With SP1142 set to ""1"" the machine operation can be restored only by the service technician after three consecutive jams occur."
+Remedy;• Remove jammed paper • Check inside the fusing unit for paper scraps • Make sure the paper path is clean and free
+Code;SC561
+Description;Heating Roller Thermistor Error: Poor Connection
+Causes;Temperature detected at less than 0°C. Note: These are the two NC sensors on the side of the fusing unit.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of heating roller • Thermistor defective
+Code;SC562
+Description;Heating Roller Thermistor Error: Warm-up Temperature
+Causes;Fusing temperature control failed to achieve the warm-up temperature. Note: These are the two NC sensors on the side of the fusing unit.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor deformed • Thermistor floating free, not in contact with heating roller surface • Input voltage incorrect • Fusing lamp disconnected
+Code;SC563
+Description;Heating Roller Thermistor Error: Software Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC564
+Description;Pressure Roller Thermistor Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC566
+Description;Thermistor 4 Error: Poor Connection
+Causes;Temperature detected at less than 0°C. Note: This is the contact thermistor at the top rear of the fusing unit.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of heating roller • Thermistor defective
+Code;SC567
+Description;Thermistor 4 Error: Software Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC568
+Description;Thermistor 4 Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC569
+Description;Pressure Roller Lift Error
+Causes;Pressure roller lift motor not operating correctly. No signal to indicate completion of operation.
+Remedy;• Pressure roller lift sensor harness disconnected or broken • Pressure roller lift sensor dirty • Pressure roller lift harness disconnected or broken • Pressure roller lift motor blocked by an obstruction • Pressure roller lift motor defective
+Code;SC570
+Description;Ozone Collection Fan Error
+Causes;The ozone collection fan is the large fan on the right end of the upper horizontal duct across the back of the machine.
+Remedy;• Fan harness disconnected or broken • Fan overload due to physical obstruction • Fan motor defective
+Code;SC571
+Description;Thermistor 6 Error: Poor Connection
+Causes;Temperature detected at less than 0°C. Note: This is the contact thermistor under the pressure roller at the front of the fusing unit.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of pressure roller • Thermistor defective
+Code;SC572
+Description;Thermistor 6 Error: Warm-up Temperature
+Causes;Fusing temperature control failed to achieve the warm-up temperature.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor deformed • Thermistor floating free • Input voltage incorrect • Fusing lamp disconnected
+Code;SC573, SC574
+Description;SC573 A Thermistor 6 Error: Software Error SC574 A Thermistor 6 Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC575
+Description;Fusing Lamp 6 Error
+Causes;The fusing lamp in the pressure roller reached the warm-up temperature and then attained fusing temperature (full power), but remained on after paper passed through the fusing unit (hot roller was not rotating).
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor damaged, or out of position • Fusing lamp disconnected, broken
+Code;SC576
+Description;Hot Roller NC Sensor (Sensor 7) Poor Connection
+Causes;The hot roller NC sensor (infrared thermistor) on top of the fusing unit detected temperature less than 0C for 75 sec.
+Remedy;• Do SP51810 to cancel the fatal error • Sensor disconnected • Sensor connector harness or connector broken or defective
+Code;SC577, SC578
+Description;SC577 A Thermistor 7 Error: Software Error SC578 A Thermistor 7 Error: Hardware Error
+Causes;Temperature incorrect due to a TRIAC short or other problem with IOB or AC drive board
+Remedy;• Do SP5810 to cancel the fatal error • IOB harness disconnected or broken • AC drive board harness disconnected or broken • AC drive board defective • IOB defective
+Code;SC579
+Description;Thermistor 8 Error: Poor Connection
+Causes;Temperature detected at less than 0°C. Note: This is the contact thermistor at the front of the fusing unit that touches the shaft of the hot roller.
+Remedy;• Do SP5810 to cancel the fatal error • Harness disconnected or broken • Poor contact with surface of hot roller shaft (thermistor blade out of position) • Thermistor defective
+Code;SC580
+Description;Thermistor 8 Error: Warm-up Temperature
+Causes;Fusing temperature control failed to achieve the warm-up temperature.
+Remedy;• Do SP5810 to cancel the fatal error • Thermistor deformed • Thermistor floating free, not in contact with the hot roller shaft surface. • Input voltage incorrect • Fusing lamp disconnected
+Code;SC581
+Description;Fusing Exit Exhaust Fan Error
+Causes;The fan motor failed to start within the prescribed time or stopped and remained off for one sec. This motor is the blower fan mounted flat on the rear side of the machine on the right.
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC582
+Description;Cooling Box Emission Exhaust, Cooling Box Heat Fan Error
+Causes;One of these fan motors failed to start within the prescribed time or stopped and remained off for one sec. These fans are inside the cooling box below the blower fan on the right.
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC583
+Description;Fusing Unit Transport Exhaust Fan
+Causes;The fan motor failed to start within the prescribed time or stopped and remained off for one sec. This is the lower blower fan mounted at a right angle on the rear of the machine behind the cooling box.
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC584
+Description;Cooling Box Ozone Exhaust Fan
+Causes;"The fan motor failed to start within the prescribed time or stopped and remained off for one sec. This is the blower fan inside the ""L"" duct inside the cooling box and below the air and ozone filters."
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC585
+Description;Stray Toner Exhaust Fan Error
+Causes;The fan motor failed to start within the prescribed time or stopped and remained off for one sec. This is the small fan on the right end of the third duct from the top at the rear side of the machine behind the cooling box.
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC586
+Description;ITB Intake Fan, Stray Toner Intake Fan Error
+Causes;One of these fan motors failed to start within the prescribed time or stopped and remained off for one sec. These are the two motors visible on the right side of the machine with the right cover removed.
+Remedy;• Fan motor harness disconnected or broken • Fan defective
+Code;SC587
+Description;YM Thermistor Error
+Causes;The YM thermistor is inside the YM laser unit. One of the following occurred: • The YM thermistor registered a reading of less than -10°C, indicating a disconnection. • The YM thermistor registered a reading of more than 80°C, indicating an electrical short circuit
+Remedy;• Thermistor harness disconnected or broken • Thermistor defective
+Code;SC588
+Description;Duplex Exhaust Fan, Exit Paper Exhaust Fan Error
+Causes;One of these fan motors failed to start within the prescribed time or stopped and remained off for one sec. These are the four large fans visible on the left side of the machine with the left cover removed.
+Remedy;• Fan motor harness disconnected or broken • Fan blocked by an obstruction • Fan defective
+Code;SC589
+Description;Drive Exhaust Fan Error
+Causes;The fan motor failed to start within the prescribed time or stopped and remained off for one sec. This is the small fan located at the upper rear corner on the left side of the machine.
+Remedy;• Fan motor harness disconnected or broken • Fan blocked by an obstruction • Fan defective
+Code;SC590-1 ... SC590-4
+Description;SC590-1 D Stepper Motor Error 1 A stepper motor controlled by the Relay Board (RYB) has failed. SC590-2 Stepper Motor Error 2 A stepper motor controlled by the DRB in the right drawer has failed. SC590-3 Stepper Motor Error 3 A stepper motor controlled by the TDCU on the back of the machine has failed. SC590-4 Stepper Motor Error 4 A stepper motor controlled by the DDRB in the decurler unit has failed.
+Causes;
+Remedy;• Motor connector loose, broken, defective • Motor drive board overheated • Motor shorted out • Motor or drive board defective Note: • Look at the Point-to-Point diagram to determine which motors the referenced board controls. • Go into the SP mode and use SP5804 to test the operation of the motors to determine which motor is not operating.
+Code;SC591
+Description;Double-Feed Sensor Error
+Causes;The strength of the double-feed sensor LED light could not be calibrated within the prescribed range after three attempts.
+Remedy;• Sensor harness disconnected or broken • Physical obstruction (paper scrap) between the sensor pair (emitter/receiver) • One or both of the sensors are dirty (paper dust)
+Code;SC593
+Description;Decurler Unit Over Limit Error
+Causes;The over-limit sensor went on because the decurler unit has moved farther than the allowed distance (±13.85 mm).
+Remedy;• Adjust the distance • Cycle the machine off/on
+Code;SC594
+Description;Decurler Unit HP Error
+Causes;The decurler unit was not detected at its home position within 6 sec.
+Remedy;• HP sensor disconnected or broken • Sensor defective
+Code;SC595
+Description;TDCU Hardware Error
+Causes;A command was received from the TDCU due to a stepper motor error, FPGA configuration error, or FPGA power source error.
+Remedy;• TDCU harness disconnected or broken • TDCU board defective • Stepper motor(s) defective Note: The stepper motors directly controlled by the TDCU include: fusing motor, drum cleaning motor, development motor, drum motor, PTR motor, transfer timing motor.
+Code;SC599
+Description;Paper Height Sensor Error
+Causes;One or more of the four paper height sensors in Tray 1 of the main machine is not functioning correctly.
+Remedy;• Condensation on one or more of the sensors • Sensor harness damaged, defective • Sensor connector loose, broken, defective • IOB defective
+Code;SC620
+Description;ADF Communication Error
+Causes;No response from the ADF after connection to the main machine or an error occurred after connection.
+Remedy;• ADF I/F cable disconnected or loose • Electrical noise on the line (noise filter required) • ADF defective • IPU board defective
+Code;SC621
+Description;Peripheral Communication Error
+Causes;The UART generated an error when the finisher was connected.
+Remedy;• Peripheral I/F cable disconnected or broken • Peripheral main board disconnected or defective • BCU defective • IOB defective
+Code;SC622
+Description;Paper Bank Communication Error
+Causes;The UART generated an error.
+Remedy;• Poor bank drawer connection • BCU harness disconnected or broken • IOB harness disconnected or broken • BCU defective • IOB defective
+Code;SC625, SC626
+Description;SC625 D TDCU Master Communication Error SC626 D TDCU Slave Communication Error
+Causes;An error was generated by ASAP protocol. ASAP (Aggregate Server Access Protocol) provides the high-availability data transfer mechanism over IP networks.
+Remedy;• TDCU harness disconnected or broken • IOB harness disconnected or broken • TDCU defective • IOB defective
+Code;SC641
+Description;Engine-Controller Communication Error: No Response
+Causes;There was no response to a frame sent from The Controller Board To the engine.
+Remedy;• Cycle the machine off/on.
+Code;SC652
+Description;@Remote Service ID2 Mismatch Error 1
+Causes;One of the following problems occurred with ID2 stored in NVRAM: • A control board from another machine where Cumin was set up was installed in this machine. • NVRAM was replaced with the NVRAM from another machine.
+Remedy;• If Cumin has already been installed, confirm that the NVRAM is compatible for use with Cumin. • If Cumin has just been installed, confirm that the NVRAM is compatible for use with Cumin, clear the Cumin setting, set the common authentication, then try again.
+Code;SC653
+Description;@Remote Service ID2 Mismatch Error 2
+Causes;One of the following problems exist with the ID2 stored in NVRAM: • ID2 has less than 17 digits • A non-printable character exists in ID2 • ID2 is all spaces • ID2 is NULL
+Remedy;• Replace NVRAM. • Clear the Cumin setting, set the common authentication, then try again.
+Code;SC669
+Description;EEPROM Communication Error
+Causes;After three re-tries there was still no response from the EEPROM on the BCU.
+Remedy;• Electrical noise • Cycle machine off/on • If problem persists, install a noise filter
+Code;SC670
+Description;Engine start failure
+Causes;The engine did not respond within 30s after power on, or the engine went down suddenly at power on or during warm up because a communication reset occurred between the BCU and the controller.
+Remedy;• A fused has blown on PSU 1 • BCU installed incorrectly • BCU defective
+Code;SC671
+Description;Incorrect board detected
+Causes;An illegal engine board was detected at power on.
+Remedy;• Replace BICU
+Code;SC678-01, SC678-02
+Description;SC678-01 D Transport Cooling Unit CTB+24V Power Supply Error SC678-02 D Transport Cooling Unit CTB+24VINT Power Supply Error
+Causes;The control board of the transport cooling unit detected that the power supply was off and not functioning.
+Remedy;• Unit PSU harness disconnected or broken • Unit main board harness disconnected or broken • Motor harness disconnected or broken • Fan harness disconnected or broken • Unit PSU defective • Main unit control board defective • Motor defective • Fan motor defective
+Code;SC681
+Description;Toner Cartridge RFID Communication Error
+Causes;A communication error occurred when the RFID tried to communicate with the RFID receptor on the toner cartridge. This SC was issued after the third attempt to communicate failed.
+Remedy;• RFID reader/writer defective • ASAP I/F disconnected • No ID chip on toner cartridge (replace toner cartridge) • Electrical noise
+Code;SC682
+Description;RFID ID Chip Communication Error: PCU
+Causes;RFID made three unsuccessful attempts to communicate with the ID chip on the PCU.
+Remedy;• ID chip data corrupted • ID chip installed incorrectly • ID chip missing • Electrical noise • Replace RFID controller board • Replace PCU
+Code;SC683
+Description;Toner Cartridge RFID Unit Check Error
+Causes;The RFID unit communication check failed regardless of whether toner cartridges have been installed or not.
+Remedy;• Electrical noise • Cycle the machine off/on
+Code;SC684
+Description;Fusing Unit ID Chip Error
+Causes;The machine made three unsuccessful attempts to communicate with the fusing unit ID chip.
+Remedy;• ID chip missing • ID chip data corrupted • ID chip disconnected or broken • Electrical noise
+Code;SC685
+Description;Power Supply Error 1
+Causes;PSU 2 failure.
+Remedy;• PSU 2 harness disconnected or broken • PSU 2 defective • Interlock relay board defective
+Code;SC686
+Description;Power Supply Error 2
+Causes;PSU 2 failure. A fuse has blown on PSU 2 on the back of the main machine.
+Remedy;• PSU 2 harness disconnected or broken • PSU 2 defective • Interlock relay board defective
+Code;SC687
+Description;Memory Address (PER) Command Error
+Causes;The BICU did not receive a memory address command from the controller within the prescribed time after the paper reached the registration sensor.
+Remedy;• BICU harness disconnected or broken • Controller board harness disconnected or broken • BICU defective • Controller board defective
+Code;SC690
+Description;GAVD Transmission Error (K)
+Causes;The machine cannot communicate (data read/write) normally with the K LDB (laser control ASIC).
+Remedy;• Cycle the machine off/on • Replace BCU harness or BCU • Laser unit defective
+Code;SC691
+Description;GAVD Transmission Error (C)
+Causes;The machine cannot communicate (data read/write) normally with the C LDB (laser control ASIC).
+Remedy;• Cycle the machine off/on • Replace BCU harness or BCU • Laser unit defective
+Code;SC692
+Description;GAVD Transmission Error (M)
+Causes;The machine cannot communicate (data read/write) normally with the M LDB (laser control ASIC).
+Remedy;• Cycle the machine off/on • Replace BCU harness or BCU • Laser unit defective
+Code;SC693
+Description;GAVD Transmission Error (Y)
+Causes;The machine cannot communicate (data read/write) normally with the Y LDB (laser control ASIC).
+Remedy;• Cycle the machine off/on • Replace BCU harness or BCU • Laser unit defective
+Code;SC701
+Description;ADF original pickup operation error
+Causes;Even though the pickup motor is rotating clock-wise, the pickup roller home position sensor cannot detect the position of the pickup roller.
+Remedy;• Pickup roller HP sensor harness loose, disconnected, defective • Pickup roller HP sensor defective • Pickup motor harness loose, disconnected, defective • Pickup motor defective • ADF control board defective
+Code;SC705
+Description;ADF bottom plate lift motor
+Causes;The bottom plate HP sensor did not detect the home position of the bottom plate after the bottom plate lift motor switches on and lowers the bottom plate. The bottom plate position sensor does not detect the position of the plate after the lift motor switches on and raises the bottom plate.
+Remedy;• ADF feed motor disconnected, defective • Bottom plate HP sensor disconnected, defective • ADF main board defective
+Code;SC719-1
+Description;Downstream CIT Communication Error
+Causes;The downstream Cover Interposer Tray (CIT) failed to respond to three attempts by the main machine to communicate.
+Remedy;• CIT I/F cable disconnected, loose, or broken • CIT main board harness disconnected or broken • Main machine controller harness disconnected or broken • CIT main board defective • Main machine controller board defective
+Code;SC719-2
+Description;Downstream MFU Communication Error
+Causes;The downstream Multi Folding Unit (MFU) failed to respond to communication from the main machine.
+Remedy;• MFU I/F cable disconnected, loose, or broken • MFU main board harness disconnected or broken • Main machine controller harness disconnected or broken • MFU main board defective • Main machine controller board defective
+Code;SC719-3
+Description;Downstream HCS Communication Error
+Causes;The unit installed immediately to the left of the HCS failed to respond.
+Remedy;• HCS I/F cable disconnected, loose, or broken • HCS main board harness disconnected or broken • Main machine controller harness disconnected or broken • HCS main board defective • Main machine controller board defective
+Code;SC719-5
+Description;Downstream FIN Communication Error
+Causes;The downstream Finisher (FIN) failed to respond to communication from the main machine.
+Remedy;• FIN I/F cable disconnected, loose, or broken • FIN main board harness disconnected or broken • Main machine controller harness disconnected or broken • FIN main board defective • Main machine controller board defective
+Code;SC719-6
+Description;Downstream RB Communication Error
+Causes;The downstream Ring Binder (RB) failed to respond to communication from the main machine.
+Remedy;• RB I/F cable disconnected, loose, or broken • RB main board harness disconnected or broken • Main machine controller harness disconnected or broken • RB main board defective • Main machine controller board defective
+Code;SC720-1
+Description;Entrance roller motor error Booklet Finisher (D512)
+Causes;Motor stopped operating, due to a physical obstruction or another problem.
+Remedy;• Check for and remove any physical obstructions around the motor and timing belts • Motor harness or connector disconnected or defective • Motor defective
+Code;SC720-2
+Description;Junction gate motor error Booklet Finisher (D512)
+Causes;One or both motors at the junction gates (stapler junction gate motor, proof tray junction gate motor) stopped operating, due to a physical obstruction or another problem.
+Remedy;• Check for and remove any physical obstructions around the motor and timing belt • Motor harness or connector disconnected or defective • Motor defective • Finisher main board defective
+Code;SC720-3
+Description;Punch roller motor (rear) error Booklet Finisher (D512)
+Causes;Motor stopped operating, due to a physical obstruction or another problem.
+Remedy;• Check for and remove any physical obstructions around the motor and timing belts • Motor harness or connector disconnected or defective • Motor defective • Finisher main board defective
+Code;SC720-4
+Description;Registration motor error Booklet Finisher (D512)
+Causes;Motor stopped operating, due to a physical obstruction or another problem.
+Remedy;• Check for and remove any physical obstructions around the motor and timing belts • Motor harness or connector disconnected or defective • Motor defective • Finisher main board defective
+Code;SC721-1
+Description;Front jogger fence motor Booklet Finisher (D512)
+Causes;The system did not detect the front jogger fence at its home position (or out of its home position) within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstructions around the jogger fence • Motor harness or connector disconnected or defective • Front jogger fence HP sensor dirty • Front jogger fence HP sensor harness or connector disconnected or defective • Front jogger fence HP sensor defective • Front jogger fence motor defective • Finisher main board defective
+Code;SC721-2
+Description;Rear jogger fence motor Booklet Finisher (D512)
+Causes;The system did not detect the rear jogger fence at its home position (or out of its home position) within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstructions around the jogger fence • Motor harness or connector disconnected or defective • Rear jogger fence HP sensor dirty • Rear jogger fence HP sensor harness or connector disconnected or defective • Rear jogger fence HP sensor defective • Rear jogger fence motor defective • Finisher main board defective
+Code;SC723
+Description;Positioning roller rotation motor error Finishers (D512/D513)
+Causes;The motor that drives the rotation of the positioning sponge roller is not operating.
+Remedy;• Cycle the machine off/on • Check for and remove any obstruction that blocks the operation of the roller or roller arm • Motor harness loose, defective • Positioning roller HP sensor dirty • Positioning roller HP sensor harness or connector disconnected or defective • Motor defective • Sensor defective • Finisher main board defective
+Code;SC724
+Description;Positioning roller motor Finishers (D512/D513)
+Causes;The motor that lowers and raises the positioning roller above the stapling tray not operating.
+Remedy;• Cycle the machine off/on • Check for and remove any obstruction that blocks the operation of the roller arm • Motor harness loose, defective • Positioning roller HP sensor dirty • Positioning roller HP sensor harness or connector disconnected or defective • Motor defective • Sensor defective • Finisher main board defective
+Code;SC725
+Description;Exit guide motor error Finishers (D512/D513)
+Causes;The motor that opens and closes the exit guide at the shift tray exit is not operating correctly.
+Remedy;• Motor harness or connector disconnected or defective • Check for and remove any obstruction that interferes with the operation of the exit guide • Exit guide plate HP sensor dirty • Exit guide plate HP sensor harness or connector disconnected or defective • Motor defective • Sensor defective • Finisher main board defective
+Code;SC726
+Description;Shift jogger retraction motor error 1 Finishers (D512/D513)
+Causes;The drag roller arm with the sponge roller did not return to its home position within the prescribed time.
+Remedy;• Arm blocked by an obstruction • Motor harness disconnected or defective • HP sensor harness disconnected or defective • Motor defective • HP sensor defective
+Code;SC728
+Description;Shift jogger retraction motor error 2 Finishers (D512/D513)
+Causes;The side fences at the exit of the finisher did not leave (or arrive at) their home positions within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;If the motor is rotating, positioning roller HP sensor disconnected or defective -or- If the motor is not rotating: • Remove any obstruction blocking movement • Positioning roller motor overloaded due to obstruction • Positioning roller motor disconnected, defective • Main board connectors disconnected or defective • Finisher main board defective
+Code;SC731
+Description;Proof (upper) tray exit motor error Finishers (D512/D513)
+Causes;Motor drive board output abnormal, or short circuit detected on the board. The 1st failure issues this SC code.
+Remedy;• Motor disconnected, defective • Finisher connection to motor loose, defective • Motor blocked by an obstruction • Motor defective
+Code;SC732
+Description;Shift tray exit motor error Finishers (D512/D513)
+Causes;The shift tray exit motor is not operating.
+Remedy;• Motor harness disconnected or defective • Motor is blocked by an obstruction • Motor defective • Finisher main board defective
+Code;SC733
+Description;Stapler exit motor error Finishers (D512/D513)
+Causes;The stapler exit motor is not operating.
+Remedy;• Motor harness disconnected or defective • Motor is blocked by an obstruction • Motor defective • Finisher main board defective
+Code;SC734
+Description;Proof tray junction gate motor error Finishers (D512/D513)
+Causes;The proof tray JG HP sensor did not detect the junction gate at (or out of) its home position within 2 s.
+Remedy;• Proof junction gate HP sensor dirty • Sensor harness or connector disconnected or defective • Proof junction gate motor harness or connector disconnected or defective • Sensor defective • Motor defective • Finisher main board defective
+Code;SC735
+Description;Stapler junction gate motor error Finishers (D512/D513)
+Causes;The stapler JG HP sensor did not detect the stapler junction gate at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Stapler junction gate HP sensor dirty • Sensor harness or connector disconnected or defective • Stapler junction gate motor harness or connector disconnected or defective • Sensor defective • Motor defective • Finisher main board defective
+Code;SC737
+Description;Pre-stack motor error Finishers (D512/D513)
+Causes;The pre-stack motor that moves the pre-stack roller is not operating.
+Remedy;• Motor harness disconnected or defective • Motor is blocked by an obstruction • Pre-stack roller HP sensor dirty • Pre-stack roller HP sensor harness or connector disconnected or defective • Motor defective • Sensor defective • Finisher main board defective
+Code;SC738
+Description;Pre-stack jg motor error Finishers (D512/D513)
+Causes;The pre-stack JG motor that operates the pre-stack junction gate is not operating. The pre-stack junction gate sensor did not detect the junction gate in (or out of) its home position within the prescribed time.
+Remedy;• Pre-stack JG motor harness or connector disconnected or defective • Pre-stack JG HP sensor dirty • Sensor harness or connector disconnected or defective • Motor defective • Sensor defective • Finisher main board defective
+Code;SC740
+Description;Finisher corner stapler motor error Finishers (D512/D513)
+Causes;The stapler motor did not switch off within the prescribed time. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Remedy;• Number of sheets in the stack exceeded the limit for stapling • If error occurred during stapling, stapler rotation sensor 1 defective (replace stapler) • If error did not occur during stapling: staple jam: 1. Motor blocked by an obstruction 2. Stapler motor harness disconnected or defective 3. Corner stapler motor defective 4. Finisher main board defective
+Code;SC741
+Description;Finisher Corner Stapler Rotation Motor Error Finishers (D512/D513)
+Causes;The stapler did not return to its home position (or did not leave its home position) within the specified time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is running, 1. Stapler rotation home position sensor harnesses are broken, loose, or defective 2. Stapler rotation home position sensors are defective • If the motor is not running: 1. Motor is blocked by an obstruction 2. Motor harness is disconnected or defective 3. Motor is defective
+Code;SC742
+Description;Corner stapler movement motor error Finishers (D512/D513)
+Causes;The stapler did not return to its home position (or leave its home position) within the specified time after stapling. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is running, 1. Stapler home position sensor harness is broken, loose, or defective 2. Stapler home position sensor is defective • If the motor is not running: 1. Motor is blocked by an obstruction 2. Motor harness is disconnected or defective 3. Motor is defective
+Code;SC743
+Description;Booklet Stapler Motor Error Booklet Finisher (D512)
+Causes;The booklet stapler motor did not start stapling within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Front motor harness disconnected or defective • Front motor overloaded due to obstruction • Front motor defective • Finisher main board defective
+Code;SC745
+Description;Feed-out belt motor error Finishers (D512/D513)
+Causes;The stack feed-out belt HP sensor did not activate within the specified time after the stack feed-out belt motor turned on. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating 1. Stack feed-out belt HP sensor harness disconnected or defective 2. Sensor defective • If the motor is not operating: 1. Feed-out belt motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC746
+Description;Stack plate motor error 1: front motor Finishers (D512/D513)
+Causes;The stack plate HP sensor (front) did not activate within the prescribed time after the motor turned on. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating 1. Front stack plate HP sensor harness disconnected or defective 2. Front stack plate HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Booklet finisher main board defective
+Code;SC747
+Description;Stack plate motor error 2: center motor Finishers (D512/D513)
+Causes;The stack plate HP sensor (center) did not activate within the prescribed time after the motor turned on. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating 1. Center stack plate HP sensor harness disconnected or defective 2. Center stack plate HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Booklet finisher main board defective
+Code;SC748
+Description;Stack plate motor error 3: rear motor Finishers (D512/D513)
+Causes;The stack plate HP sensor (rear) did not activate within the prescribed time after the motor turned on. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating 1. Rear stack plate HP sensor harness disconnected or defective 2. Rear stack plate HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Booklet finisher main board defective
+Code;SC750
+Description;Proof tray lift motor error Finishers (D512/D513)
+Causes;The shift tray paper height sensor did not change its status within the prescribed time after the tray was raised or lowered. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Lift motor disconnected, defective • Paper height sensor disconnected, defective • Finisher main board connection to motor loose • Finisher main board defective
+Code;SC753
+Description;Drag drive motor error Finishers (D512/D513)
+Causes;The drag roller HP sensor did not detect the drag roller in (or out of) its home position within the prescribed time. (The drag drive motor drives the timing belt that rotates the drag roller at the shift tray exit.)
+Remedy;• If the motor is operating 1. Drag roller HP sensor harness disconnected or defective 2. Drag roller HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC754
+Description;Drag roller motor error Finishers (D512/D513)
+Causes;The drag roller motor did not turn on. (The drag roller motor drives the shaft that moves the drag roller left and right at the shift tray exit.)
+Remedy;• Motor harness disconnected or defective • Motor defective • Finisher control board defective
+Code;SC755
+Description;Shift motor error Finishers (D512/D513)
+Causes;"The shift tray HP sensors did not detect the shift tray in (or out of) its home position within the prescribed times. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code. Note: In the Finisher SR5000 (B830), these sensors are the ""half-turn"" sensors."
+Remedy;• If the motor is operating 1. HP sensor harnesses disconnected or defective 2. HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC760
+Description;Punch motor error Finishers (D512/D513)
+Causes;The punch HP sensor did not detect the punch movement motor in (or out) of its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating: 1. Punch HP sensor disconnected or defective 2. Punch HP sensor defective • If the motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC761
+Description;Fold plate motor error Booklet Finisher (D512)
+Causes;The fold plate moves but: The fold plate HP sensor did not detect it at the home position within the specified time. -or- The plate remained at the home position longer than the specified time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the motor is operating: 1. Fold plate HP sensor dirty 2. Fold plate HP sensor harness or connector disconnected or defective 3. Fold plate HP sensor defective • If the motor is not operating: 1. Fold plate motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC762
+Description;Punch switch motor error Booklet Finisher (D512)
+Causes;The punch switch motor failed to turn on within the specified time.
+Remedy;• Check for and remove obstruction blocking the motor • Motor harness or connector disconnected or defective • Motor defective
+Code;SC763
+Description;Punch movement motor error Booklet Finisher (D512)
+Causes;The punch movement HP sensor did not detect the punch at its home position (or out of its home position) within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstructions that block the movement of the punch unit • Punch movement HP sensor dirty • Sensor harness or connector disconnected or defective • Sensor defective • Motor defective
+Code;SC764
+Description;Punch registration (CIS) error Booklet Finisher (D512)
+Causes;The system detected an error at the CIS (Contact Image Sensor) inside the punch unit during paper registration for paper punching.
+Remedy;• Check for and remove any obstructions that block the movement of the punch unit • Punch CIS unit harness or connectors disconnected or defective • CIS unit defective • Punch movement motor defective
+Code;SC765
+Description;Bottom fence lift motor error Booklet Finisher (D512)
+Causes;The bottom fence in the booklet fold unit did not return to the home position within the specified time.
+Remedy;• Bottom fence mechanism overloaded due to an obstruction • Bottom fence HP sensor connector disconnected or defective • Bottom fence HP sensor defective • Bottom fence lift motor connector disconnected or defective • Bottom fence lift motor defective • Main board defective
+Code;SC766
+Description;Clamp roller retraction motor Booklet Finisher (D512)
+Causes;The clamp roller did not return to the home position within the specified time.
+Remedy;• Clamp roller mechanism overloaded due to an obstruction • Clamp roller HP sensor connector disconnected or defective • Clamp roller HP sensor defective • Clamp roller retraction motor connector disconnected or defective • Clamp roller retraction motor defective • Main board defective
+Code;SC767-1
+Description;Stack JG motor Booklet Finisher (D512)
+Causes;The stack junction gate motor did not return to the home position within the prescribed time.
+Remedy;• Check junction gate for obstruction and remove it • Stack JG HP sensor connector disconnected or defective • Sensor defective • Stack JG motor connector disconnected or defective • Motor defective • Finisher main board defective
+Code;SC767-2
+Description;Stack transport unit motor Finishers D434
+Causes;The stack transport unit HP sensor did not detect the stack transport unit at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for any obstruction around the motor and remove it • Stack transport unit motor harness or connector disconnected or defective • Stack transport unit HP sensor dirty • Sensor harness connector disconnected or defective • Sensor defective • Motor defective • Finisher main board defective
+Code;SC770
+Description;Cover interposer lift motor 1 error CIT D518
+Causes;In the first tray: • The upper limit sensor did not detect the bottom plate within the specified time after the lift motor switched on to lift the bottom plate. • The lower limit sensor did not direct the bottom plate within the specified time after the lift motor switched on to lower the bottom plate. Note: In both cases, 1 error count indicates a jam, 2 error counts issue this SC code.
+Remedy;• Lift motor, upper limit sensor, lower limit sensor harnesses, connectors disconnected or defective • Lift motor defective • Upper limit sensor defective • Lower limit sensor defective
+Code;SC771
+Description;Cover interposer lift motor 2 error CIT D518
+Causes;In the second tray: • The upper limit sensor did not detect the bottom plate within the specified time after the lift motor switched on to lift the bottom plate. • The lower limit sensor did not direct the bottom plate within the specified time after the lift motor switched on to lower the bottom plate. Note: In both cases, 1 error count indicates a jam, 2 error counts issue this SC code.
+Remedy;• Lift motor, upper limit sensor, lower limit sensor harnesses, connectors disconnected or defective • Lift motor defective • Upper limit sensor defective • Lower limit sensor defective
+Code;SC772
+Description;Cover interposer pickup motor 1 error CIT D518
+Causes;In the first tray: • While the pick-up roller motor was on, the pick-up roller HP sensor did not detect the pick-up roller at the home position within the specified number of pulses. • While the pick-up roller motor was on, the pick-up roller HP sensor did not detect the pick-up roller at the home position above the specified number of pulses. Note: In both cases, 1 error count indicates a jam, 2 error counts issue this SC code.
+Remedy;• The pick-up motor, pick-up roller HP sensor harnesses, connectors were disconnected or defective • Pick-up motor overload due to an obstruction • Pick-up motor defective • Pick-up roller HP sensor defective
+Code;SC773
+Description;Cover interposer pickup motor 2 error CIT D518
+Causes;In the second tray: • While the pick-up roller motor was on, the pick-up roller HP sensor did not detect the pick-up roller at the home position within the specified number of pulses. • While the pick-up roller motor was on, the pick-up roller HP sensor did not detect the pick-up roller at the home position above the specified number of pulses. Note: In both cases, 1 error count indicates a jam, 2 error counts issue this SC code.
+Remedy;• The pick-up motor, pick-up roller HP sensor harnesses, connectors were disconnected or defective • Pick-up motor overload due to an obstruction • Pick-up motor defective • Pick-up roller HP sensor defective
+Code;SC775
+Description;Top Fence Motor Error Finishers D512/D513
+Causes;The top fence HP sensor did not detect the top fence at (or out of) the home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the top fence motor is operating: 1. Top fence HP sensor dirty 2. Sensor harness disconnected or defective 3. Sensor defective • If the jogger top fence motor is not operating: 1. Top fence motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC776
+Description;Bottom Fence Motor Error Finishers D512/D513
+Causes;The bottom fence HP senstor did not detect the bottom fence at (or out of) the home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• If the bottom fence motor is operating: 1. Bottom fence HP sensor dirty 2. Sensor harness disconnected or defective 3. Sensor defective • If the bottom fence motor is not operating: 1. Bottom fence motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC778-1
+Description;Horizontal transport motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC778-2
+Description;Top tray exit motor Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC778-3
+Description;Top tray jg motor Multi Folding Unit (D521)
+Causes;The top tray JG HP sensor did not detect the top tray junction gate at (or out of) its home position. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Top tray JG HP sensor dirty • Sensor harness or connector disconnected or defective • Top tray JG motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC778-4
+Description;Entrance jg motor Multi Folding Unit (D521)
+Causes;The entrance junction gate HP sensor did not detect the entrance junction gate at (or out of) its home position. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Entrance JG HP sensor dirty • Sensor harness or connector disconnected or defective • Entrance JG motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC779
+Description;1st Stopper motor error Multi Folding Unit (D521)
+Causes;The 1st stopper HP sensor did not detect the 1st stopper in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• 1st stopper HP sensor dirty • Sensor harness or connector disconnected or defective • 1st stopper motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-1
+Description;2nd Stopper motor error Multi Folding Unit (D521)
+Causes;The 2nd stopper HP sensor did not detect the 2nd stopper in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• 2nd stopper HP sensor dirty • Sensor harness or connector disconnected or defective • 2nd stopper motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-10
+Description;Fold plate motor error Multi Folding Unit (D521)
+Causes;The fold plate HP sensor did not detect the fold plate in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Fold plate HP sensor dirty • Sensor harness or connector disconnected or defective • Fold plate motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-11
+Description;Jogger Fence Motor Multi Folding Unit (D521)
+Causes;The jogger fence HP sensor did not detect the jogger fence in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Jogger fence HP sensor dirty • Sensor harness or connector disconnected or defective • Jogger fence motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-12
+Description;Positioning Roller Motor Error Multi Folding Unit (D521)
+Causes;The positioning roller HP sensor did not detect the positioning roller in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Positioning roller HP sensor dirty • Sensor harness or connector disconnected or defective • Positioning roller motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-13
+Description;FM2 Direct-send JG motor Multi Folding Unit (D521)
+Causes;The direct-send JG HP sensor did not detect the direct-send JG in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• FM2 direct-send JG HP sensor dirty • Sensor harness or connector disconnected or defective • FM2 direct-send JG motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-14
+Description;FM6 Pawl motor Multi Folding Unit (D521)
+Causes;The FM6 pawl HP sensor did not detect the FM6 pawl in (or out of) its home position. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• FM6 pawl HP sensor dirty • Sensor harness or connector disconnected or defective • FM6 pawl motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-2
+Description;3rd Stopper motor error Multi Folding Unit (D521)
+Causes;The 3rd stopper HP sensor did not detect the 3rd stopper in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• 3rd stopper HP sensor dirty • Sensor harness or connector disconnected or defective • 3rd stopper motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-3
+Description;1st Fold motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC783-4
+Description;2nd Fold motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC783-5
+Description;Crease motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC783-6
+Description;Dynamic roller transport motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC783-7
+Description;Reg. roller transport motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC783-8
+Description;Dynamic roller lift motor error Multi Folding Unit (D521)
+Causes;The dynamic roller HP sensor did not detect the dynamic roller in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Dynamic roller HP sensor dirty • Sensor harness or connector disconnected or defective • Dynamic roller lift motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC783-9
+Description;Registration roller release motor error Multi Folding Unit (D521)
+Causes;The registration roller HP sensor did not detect the registration roller in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Registration roller HP sensor dirty • Sensor harness or connector disconnected or defective • Registration roller release motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC786-10
+Description;Path junction gate error Ring Binder (D519)
+Causes;The path junction gate that directs paper to the punch unit below is not operating correctly.
+Remedy;• Physical obstruction interfering with the smooth operation of the path junction gate. • Path junction gate HP sensor dirty, disconnected, damaged, or out of position. • Path junction gate motor connection harness loose, disconnected, damaged • Path junction gate motor defective
+Code;SC787-1
+Description;Entrance motor error Stacker (D515)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC787-2
+Description;Shift JG Motor Error Stacker (D515)
+Causes;The shift tray JG HP sensor did not detect the shift junction gate in (or out of) its home position. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Shift tray JG HP sensor dirty • Sensor harness or connector disconnected or defective • Shift tray JG motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defectiv
+Code;SC787-3
+Description;Transport motor error Stacker (D515)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC787-4
+Description;Proof tray JG motor Stacker (D515)
+Causes;The proof tray JG HP sensor did not detect the proof tray junction gate in (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Proof tray JG HP sensor dirty • Sensor harness or connector disconnected or defective • Proof tray JG motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC787-5
+Description;Proof tray exit motor error Stacker (D515)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC789
+Description;Proof tray exit motor error Multi Folding Unit (D521)
+Causes;The motor drive PCB detected an error at the motor due to overload, overheating. Paper cannot exit at proof tray.
+Remedy;• Motor, motor drive board defective
+Code;SC790
+Description;Booklet stapler jogger motor error Booklet Finisher (D512)
+Causes;The jogger fence HP sensor failed to detect the jogger fence at the home position within the specified time.
+Remedy;• If the booklet stapler jogger motor is operating: 1. Jogger fence HP sensor harness disconnected or defective 2. Jogger fence HP sensor defective • If the jogger bottom fence motor is not operating: 1. Motor blocked by an obstruction 2. Motor harness disconnected or defective 3. Motor defective 4. Finisher main board defective
+Code;SC791
+Description;Booklet stapler bottom fence motor Booklet Finisher (D512)
+Causes;The bottom fence failed to return to home position or failed to leave the home position within the prescribed time.
+Remedy;• An obstruction is blocking the movement of the bottom fence • Motor harness disconnected or defective • Bottom fence HP sensor disconnected or defective • Motor defective • Sensor defective
+Code;SC792-1
+Description;Junction gate error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 36 pulses) (1 detection, jam, twice detected, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 22 pulses) (1 detection, jam, twice detected, SC error)
+Remedy;• Path JG motor (M201) defective • Motor connector disconnected or defective • Motor overload • Path JG sensor (S203) connector disconnected or defective • Sensor (S203) defective
+Code;SC792-10
+Description;Binder unit run-out error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Run-out press roller motor (M610) connector disconnected or defective • Motor defective • Motor overload • Run-out roller HP sensor (S614) connector disconnected or defective • Sensor defective
+Code;SC792-11
+Description;Clamp thickness error Ring Binder (D519)
+Causes;50-sheet detection sensor (S606) went OFF during pre-bind jogging when a 100-sheet thickness was detected. (1st detection jam, 2nd detection SC error) -or- 50-sheet detection sensor went OFF at initialization when the clamp moved to the open position.
+Remedy;• 50-sheet detection sensor (S606) connector disconnected or defective • Sensor defective
+Code;SC792-12
+Description;Alignment pin error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Alignment pin motor (M602) connector disconnected or defective • Motor overload • Motor defective • Alignment pin HP sensor (S604) connector disconnected or defective • Sensor defective
+Code;SC792-13
+Description;Pre-bind jogger shutter error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Shutter motor (M608) connector disconnected or defective • Motor overload • Motor defective • Shutter HP sensor (S605) connector disconnected or defective • Sensor defective
+Code;SC792-14
+Description;50/100 clamp adjustment error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• 50/100 adjustment motor (M702) connector disconnected or defective • Motor overload • Motor defective • Ring switch HP sensor (S706) connector disconnected or defective, or sensor defective • Ring switch timing sensor (S707) connector disconnected or defective, or sensor defective
+Code;SC792-15
+Description;Timing sensor interval error Ring Binder (D519)
+Causes;The bind timing sensor (S702) remained ON or OFF longer than the prescribed time (1500 ms) during initialization or ring binding (1st detection: jam, 2nd detection: SC error)
+Remedy;• Clamp unit motor (M701) connector disconnected or defective • Motor overload • Motor defective • Bind timing sensor (S702) connector disconnected or defective • Sensor defective
+Code;SC792-16
+Description;Clamp unit HP error Ring Binder (D519)
+Causes;At initialization or during ring binding, did not arrive at the home position within the prescribed time (1500 ms) (1st detection: jam, 2nd detection: SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 1500 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Clamp unit motor (M701) connector disconnected or defective • Motor overload • Motor defective • Clamp unit HP sensor (S701) connector disconnected or defective • Sensor defective
+Code;SC792-17
+Description;Spine alignment error Ring Binder (D519)
+Causes;During pin alignment operation, the pin did not reach the up position or return to the home position within the prescribed time (400 ms), and one retry failed within the same time limit.
+Remedy;• Alignment pin motor (M602) connector disconnected or defective • Motor overload • Motor defective • Alignment pin HP sensor (S604) connector disconnected or defective, or sensor defective • Alignment pin up sensor (S610) connector disconnected or defective, or sensor defective • Stack not jogged correctly, or not punched correctly
+Code;SC792-18
+Description;Binder unit not detected Ring Binder (D519)
+Causes;The binder unit could not be detected at initialization.
+Remedy;• Drawer connector disconnected or defective • Drawer connector defective
+Code;SC792-19
+Description;Output belt unit rotation error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 800 pulses) (1st detection, jam, 2nd detection, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 2300 pulses) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Output belt rotation motor (M403) connector disconnected or defective • Motor overload • Motor defective • Output belt rotation HP sensor (S403) connector disconnected or defective • Sensor defective
+Code;SC792-2
+Description;Pre-punch side fence HP error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 pulses) (1st detection, jam, 2nd detection, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 600 pulses) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Side jogger motor (M302) connector disconnected or defective • Motor overload • Motor defective • Pre-punch jogger HP sensor (S301) connector disconnected or defective • Sensor (S301) defective
+Code;SC792-20
+Description;Output belt 1 HP error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 200 pulses) (1st detection, jam, 2nd detection, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 2125 pulses) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Output belt 1 motor (M401) connector disconnected or defective • Motor overload • Motor defective • Output belt 1 HP sensor (S401) connector disconnected or defective • Sensor defective
+Code;SC792-21
+Description;Output belt 2 HP error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 200 pulses) (1st detection, jam, 2nd detection, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 3130 pulses) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Output belt 2 motor (M402) connector disconnected or defective • Motor overload • Motor defective • Output belt 2 HP sensor (S402) connector disconnected or defective • Sensor defective
+Code;SC792-22
+Description;Stack height error Ring Binder (D519)
+Causes;Stack height sensor remained ON while moving toward the top. -or- The sensor did not go ON within 6 sec. after the motor turned on.
+Remedy;• Stacker motor (M501) connector disconnected or defective • Motor overload • Stack height sensor (S502) connector disconnected or defective • Sensor defective
+Code;SC792-23
+Description;Stacker error Ring Binder (D519)
+Causes;Although the stacker was full at the start and end of stacker operation with the stacker full (stacker sensors ON together), no documents were detected (also when documents were leaning) -or- Although the stacker was detected full with the stacker stopped, no documents were detected within 2 sec. (1st detection jam, 2nd detection SC error)
+Remedy;• Stacker HP sensor (S501) connector disconnected or defective, or sensor defective • Stacker height HP sensor (S502) connector disconnected or defective, or sensor defective • Stacker detect sensor (S504) disconnected or defective, or sensor defective
+Code;SC792-3
+Description;Pre-punch jogger roller HP error Ring Binder (D519)
+Causes;Detected at HP after the time prescribed to leave the HP had elapsed (more than 36 pulses) (1st detection, jam, 2nd detection, SC error) -or- Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 22 pulses) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Jog roller lift motor (M305) connector disconnected or defective • Motor overload • Motor defective • Jog roller lift HP sensor (S309) connector disconnected or defective • Sensor defective
+Code;SC792-4
+Description;Ring binder punch defective Ring Binder (D519)
+Causes;One or more of the following occurred: Punch unit not detected at initialization. No motor rotation detected at HP at 30 ms after the DC motor turned on No encoder pulse detected at HP at 5 ms after the DC motor turned on Not detected at HP at 400 ms after the DC motor turned on
+Remedy;• Punch motor (M304) connector disconnected or defective • Motor overload • Motor defective • Punch HP sensor (S302) connector disconnected or defective, or sensor defective • Punch encoder sensor (S303) connector disconnected or defective, or sensor defective
+Code;SC792-5
+Description;Paddle roller HP error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Paddle roller lift motor (M603) connector disconnected or defective • Motor overload • Motor defective • Paddle roller HP sensor (S602) connector disconnected or defective • Sensor defective
+Code;SC792-6
+Description;Jogger fence 1 error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Jogger fence 1 motor (M604) connector, disconnected or defective • Motor defective • Motor overload • Side fence 1 HP sensor (S601) connector, disconnected or defective • Sensor defective
+Code;SC792-7
+Description;Jogger fence 2 error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Jogger fence 2 motor (M606) connector, disconnected or defective • Motor defective • Motor overload • Side fence HP sensor 1 (S611) connector disconnected or defective • Sensor defective
+Code;SC792-8
+Description;Stack tamper HP error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Stack tamper motor (M607) connector, disconnected or defective • Motor defective • Motor overload • Stack tamper HP sensor (S612) connector disconnected or defective • Sensor defective
+Code;SC792-9
+Description;Pre-bind jogger clamp HP error Ring Binder (D519)
+Causes;Not detected at HP after the time prescribed to arrive at the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error) -or- Detected at HP after the time prescribed to leave the HP had elapsed (more than 400 ms) (1st detection, jam, 2nd detection, SC error)
+Remedy;• Spine clamp motor (M605) connector disconnected or defective • Motor defective • Motor overload • Clamp HP sensor (S603) connector disconnected or defective • Sensor defective
+Code;SC793-1
+Description;Shift motor error Stacker (D515)
+Causes;The shift roller HP sensor did not detect the shift roller at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Shift roller HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Shift motor harness or connector disconnected or defective • Sensor defective • Motor or motor drive board defective
+Code;SC793-2
+Description;Front Jogger Fence Motor Error Stacker (D515)
+Causes;The front jogger fence HP sensor did not detect the front jogger fence at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Front jogger fence HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Motor harness or connector disconnected or defective • Sensor defective • Motor or shift motor drive board defective
+Code;SC793-3
+Description;Rear Jogger Fence Motor Error Stacker (D515)
+Causes;The rear jogger fence HP sensor did not detect the rear jogger fence at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Rear jogger fence HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Motor harness or connector disconnected or defective • Sensor defective • Motor or shift motor drive board defective
+Code;SC793-4
+Description;Jogger fence retraction motor error Stacker (D515)
+Causes;The jogger fence retraction HP sensor did not detect the jogger fences at (or out of) their home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Jogger fence retraction HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Motor harness or connector disconnected or defective • Sensor defective • Motor or shift motor drive board defective
+Code;SC793-5
+Description;Sub jogger motor error Stacker (D515)
+Causes;The sub jogger HP sensor did not detect the sub jogger fence at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Sub jogger fence HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Motor harness or connector disconnected or defective • Sensor defective • Motor or shift motor drive board defective
+Code;SC793-6
+Description;LE Stopper Motor Error Stacker (D515)
+Causes;The LE stopper HP sensor did not detect the leading edge stopper at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• LE stopper HP sensor dirty • Sensor harness or connector disconnected or defective • Check for and remove any obstructions that interfere with the operation of the motor • Motor harness or connector disconnected or defective • Sensor defective • Motor or shift motor drive board defective
+Code;SC793-7
+Description;Tray lift motor error Stacker (D515)
+Causes;When the tray was ascending (or descending), the state of the paper height sensor did not change at the prescribed time to detect the height of the stack and adjust the height of the tray. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstructions that interfere with the operation of the tray lift motor or paper height sensor actuator • Sensor actuator loose or broken • Sensor harness or connector disconnected or defective • Motor harness or connector disconnected or defective • Sensor defective • Motor defective
+Code;SC793-8
+Description;Shift tray exit motor error Stacker (D515)
+Causes;The motor drive PCB detected an error at the motor.
+Remedy;• Motor harness or connector disconnected or defective • Motor or motor drive board defective
+Code;SC799-1
+Description;Trimming blade motor error Trimmer (D520)
+Causes;The trimming blade HP sensor did not detect the blade at (or out of) its home position within the prescribed time during trimming. The 1st detection causes a jam signal if the error occurred during cutting. The 2nd detection causes this SC code if the error occurred at the start or end of cutting.
+Remedy;• Check for and remove any obstacles (jammed paper scraps) around the blade, motor, or sensor • Trimming blade HP sensor dirty • Sensor harness or connector disconnected or defective • Trimming blade motor harness or connector disconnected or defective • Motor defective • Trimming unit main board defective
+Code;SC799-2
+Description;Press roller motor error Trimmer (D520)
+Causes;The press roller HP sensor did not detect the press roller at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstacles around the motor and sensor • Press roller motor HP sensor dirty • Sensor harness or connector disconnected or defective • Press roller motor harness or connector disconnected or defective • Motor defective • Trimming unit main board defective
+Code;SC799-3
+Description;Cut Position Motor Error Trimmer (D520)
+Causes;The cut position HP sensor did not detect the cut position stopper at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstacles around the motor and sensor • Cut position HP sensor dirty • Sensor harness or connector disconnected or defective • Cut position motor harness or connector disconnected or defective • Motor defective • Trimming unit main board defective
+Code;SC799-4
+Description;Press stopper motor error Trimmer (D520)
+Causes;The press stopper HP sensor did not detect the press stopper at (or out of) its home position within the prescribed time. The 1st occurrence causes a jam, and the 2nd occurrence causes this SC code.
+Remedy;• Check for and remove any obstacles around the motor and sensor • Press stopper HP sensor dirty • Sensor harness or connector disconnected or defective • Press stopper motor harness or connector disconnected or defective • Motor defective • Trimming unit main board defective
+Code;SC816-5 ... SC816-90
+Description;SC816-5 SCS Machine attempted to enter STR mode before engine was OFF. SC816-39 Sub System Error occurred during system start up. SC816-50 Hardware Printer version only. Not used for this machine. SC816-67 NCS (Network Control Service) An error occurred in the access control port list: • Number of registrations exceeded 125 • Data notifications exceeded 12 • Data extension incorrect SC816-79 Sub System Message mismatch. SC816-90 Hardware/System A forced system reset (WDOG) occurred.
+Causes;An error was detected in the signal from the ASIC (controller board) which controls the STR (Suspend to RAM) function. Note: STR is a feature of this machine that minimizes energy consumption while the machine is in the energy saver mode.
+Remedy;• Reboot the machine. • Replace the controller board.
+Code;SC819
+Description;Fatal kernel error 0x5032 HAIC-P2 decompression error Error occurred in the compression/decompression module of ASIC Veena in HAIC-P2. If EFI (Fiery Controller) is connected, refer to the EFI manual. If EFI is not connected: • HDD defective • System memory defective 0x6261 HDD Defective There was no response from HDD. The power supply to the HDD may have been interrupted suddenly. • Re-format HDD. • Replace HDD 554C USB loader defect USB loader was detected as defective.
+Causes;Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel.
+Remedy;• System program defective • Controller board defective • Optional board defective • Replace controller firmware Note: For more details about these SC code errors, execute SP5990 to print an SMC report so you can read the error code list. The error code is not displayed on the operation panel.
+Code;SC820
+Description;Self-diagnostic Error: CPU: ASIC Interrupt Error GW
+Causes;
+Remedy;0612 One of the following occurred: • System program defective • Controller board defective • Optional board defective • Replace controller firmware Note: For more details about these SC code errors, execute SP5990 to print an SMC report so you can read the error code. The error code is not displayed on the operation panel.
+Code;SC833
+Description;Self-diagnostic error: Engine I/F ASIC GW 0F30 ASIC (Mandolin) for system control could not be detected. After the PCI configuration, the device ID for the ASIC could not be checked. 0F31 ASIC (Mandolin) for system control could not be detected. After the PCI configuration, the device ID for the ASIC could not be checked. 0F41 The read/write check done for resident RAM on the mother board could not be done correctly. 50B1 Could not initialize or read the bus connection. 50B2 Value of the SSCG register is incorrect.
+Causes;
+Remedy;• One or more MB (Motherboard) connections loose, damaged, defective • MB defective
+Code;SC842
+Description;"NAND-Flash Update Verify Error Detected. GW This SC can occur when the remote ROM and ROM is updated. SCS detected a verify error when a module was written into NAND-Flash. After the second attempt, the machine returns SC819 (Kernel Error). Note: SCS is the ""System Control Service"" or Service Resource Manager that performs processing between applications/ECS and the engine. It receives and delivers information about the engine, engine status, and job processing. It also exercises exclusive control of the operation panel and engine resources."
+Causes;
+Remedy;• Cycle the machine off/on.
+Code;SC851
+Description;IEEE 1394 I/F Error
+Causes;Driver setting incorrect and cannot be used by the 1394 I/F.
+Remedy;"• NIB (PHY), LINK module defective; change the Interface Board • Controller board defective"
+Code;SC853
+Description;Wireless LAN Error 1 GW
+Causes;During machine start-up, the machine can access the board that holds the wireless LAN (Bluetooth), but not access the wireless LAN card.
+Remedy;• Wireless LAN card missing (was removed)
+Code;SC854
+Description;Wireless LAN Error 2 GW
+Causes;The board that holds the wireless LAN card (Bluetooth) could be accessed, but the wireless LAN card could not be accessed while the machine was operating.
+Remedy;• Wireless LAN card has been removed.
+Code;SC855
+Description;Wireless LAN Error 3 GW
+Causes;An error was detected for the wireless LAN card (802.11b or Bluetooth).
+Remedy;• Wireless card not installed correctly. • Wireless LAN card defective
+Code;SC856
+Description;Wireless LAN Error 4 GW
+Causes;An error was detected for the wireless LAN board (Bluetooth).
+Remedy;• Wireless LAN card board defective. • PCI connector disconnected or defective.
+Code;SC857
+Description;USB I/F Error GW
+Causes;The USB driver is unstable and generated an error.
+Remedy;• USB board defective • Controller board defective
+Code;SC858
+Description;Data Encryption Error 1 GW 0 Key Acquisition Key could be acquired. • Replace the controller board 1 HDD Key Setting Error The key was acquired but the HDD could not be set. • Turn the machine power off/on several times. • Replace the controller board. 2 NVRAM Read Error NVRAM data conversion failed (mismatch with nvram.conf) • Replace the NVRAM 30 NVRAM Before Replace Error DFU. May occur during development. • Turn the machine power off/on several times. • Replace the controller board. 31 Other Error An unexpected error occurred while data was being converted. This error is the same as SC991. See SC991 below.
+Causes;These are errors of the HDD Data Encryption Option D377.
+Remedy;
+Code;SC859
+Description;Data Encryption Error 2 GW 8 HDD Check Error Data conversion was attempted with no HDD unit present. • Confirm that HDD unit installed correctly • Initialize HDD with SP5832-1 Note: After installation, a new HDD should be formatted with SP5832-1 9 Power Loss During Data Conversion Data conversion stopped before NVRAM/HDD data was converted. Format HDD with SP5832-1 10 Data Read Command Error More than two illegal DMAC communications were returned. • HDD defective • Format HDD with SP5832-1 Replace HDD
+Causes;These are errors of the HDD Data Encryption Option D377.
+Remedy;
+Code;SC860
+Description;HDD startup error at power on
+Causes;HDD is connected but a driver error is detected, or the driver did not respond with the status of the HDD within 30 s.
+Remedy;• HDD is not initialized • Level data is corrupted • HDD is defective (attempt to initialize the HDD with SP5832-001)
+Code;SC861
+Description;HDD re-try failure
+Causes;At power on with the HDD detected, power supply to the HDD is interrupted, after the HDD is awakened from the sleep mode, the HDD is not ready within 30 s.
+Remedy;• Harness between HDD and board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Code;SC863
+Description;HDD data read failure
+Causes;The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Remedy;• HDD defective Note: If the bad sectors are generated at the image partition, the bad sector information is written to NVRAM, and the next time the HDD is accessed, these bad sectors will not be accessed for read/write operation.
+Code;SC864
+Description;HDD data CRC error
+Causes;During HDD operation, the HDD cannot respond to an CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Remedy;• HDD defective
+Code;SC865
+Description;HDD access error
+Causes;HDD responded to an error during operation for a condition other than those for SC863, 864.
+Remedy;• HDD defective.
+Code;SC866
+Description;SD card error 1: Confirmation
+Causes;The machine detected an electronic license error in the application on the SD card in the controller slot immediately after the machine was turned on. Note: • The program on the SD card contains electronic confirmation license data. • If the program does not contain this license data, or if the result of the check shows that the license data in the program on the SD card is incorrect, then the checked program cannot execute and this SC code is displayed.
+Remedy;• Program missing from the SD card • Download the correct program for the machine to the SD card
+Code;SC867
+Description;SD card error 2: SD card removed
+Causes;The SD card was removed while the machine is on.
+Remedy;• Insert the SD card. • Turn the machine off and on.
+Code;SC868
+Description;SD card error 3: SD card access
+Causes;An error occurred while an SD card was in use.
+Remedy;• SD card not inserted correctly • SD card defective • Controller board defective Note: You can try to reformat the SD with the SD Formatter Ver. 1.1
+Code;SC870
+Description;Address book data error
+Causes;The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective.
+Remedy;• Cycle the machine off/on. • Software defective. • Replace controller firmware. • HDD defective.  More Details • Do SP5846-50 to reset all address book data. • Reset the user information with SP5832-6. • Replace the HDDs.
+Code;SC872
+Description;HDD mail receive data error
+Causes;An HDD error was detected immediately after power on, or the machine detected that the HDD was not operating correctly (data read or write) while receiving mail. The HDD may be defective or the machine was accidentally powered off while the HDD was being accessed.
+Remedy;• Reformat the mail RX data on the HDD with SP5832-7 • Replace the HDD
+Code;SC873
+Description;HDD mail send data error
+Causes;An error was detected on the HDD immediately after the machine was turned on, or power was turned of while the machine was using the HDD.
+Remedy;• Do SP5832-007 (Format HDD – Mail TX Data) to initialize the HDD. • Replace the HDD.
+Code;SC874
+Description;Delete All error 1: HDD
+Causes;A data error was detected for the HDD/NVRAM after the Delete All option was used. Note: The source of this error is the Data Overwrite Security Unit running from an SD card.
+Remedy;• Turn the main switch off/on and try the operation again. • Install the Data Overwrite Security Unit again.. • HDD defective
+Code;SC875
+Description;Delete All error 2: Data area
+Causes;An error occurred while the machine deleted data from the HDD. Note: The source of this error is the Data Overwrite Security Unit D377 running from an SD card.
+Remedy;• Cycle the machine off/on. • Try the operation again.
+Code;SC876
+Description;Log data errors
+Causes;876-1 Log data error 1 An error was detected in the handling of the log data at power on or during machine operation. This can be caused by switching the machine off while it is operating. • Initialize the HDD with SP5832-4 876-2 Log data error 2 HDD encryption unit not installed. • Install the HDD encryption unit. 876-3 Log data error 3 Invalid log encryption key due to defective NVRAM data. • Initialize the HDD with SP5832-4 • Request customer's system administrator to disable HDD encryption with the User Tool. 876-4 Log data error 4 Erratic HDD encryption due to defective NVRAM data. • Initialize HDD with SP5832-4 876-5 Log data error 5 • Re-install the previous NVRAM or HDD. • Initialize the HDD with SP5832-4. 876-99 Log data error 6 An error other than Log Data Errors 1 to 5 occurred. • Request assistance from your supervisor.
+Remedy;
+Code;SC877
+Description;Data Overwrite Security SD card error
+Causes;An error occurred, preventing successful execution of the Data Overwrite Security function, even though it has been set up and enabled.
+Remedy;• DOS card is not inserted completely into the SD card slot • DOS card has been removed from the SD card slot. • DOS card is damaged. Note: • If the SD card has been removed (or was not installed correctly), switch the machine off, insert the SD card, then switch on the machine again. • If the SD card has been damaged, procure a new SD card, replace the NVRAM, then do the DOS option installation.
+Code;SC878
+Description;TPM authentication error
+Causes;The system firmware could not be authenticated by the TMP security chip.
+Remedy;• System firmware updated incorrectly. • Flash ROM on controller board defective. • Replace controller board.
+Code;SC881
+Description;Management area error
+Causes;This is a software error than can occur: • At login • When a print job was received • When WEB browser was opened
+Remedy;• Cycle the machine off/on.
+Code;SC899
+Description;Software error
+Causes;A software error occurred in the GW controller.
+Remedy;• Cycle the machine off/on • Update controller firmware • Controller board defective
+Code;SC900
+Description;Electrical total counter error
+Causes;The total counter contains data that is not a number.
+Remedy;• NVRAM incorrect type • NVRAM defective or corrupted • Unexpected error from external source
+Code;SC910 ... SC914
+Description;External controller error
+Causes;The external controller alerted the machine about an error.
+Remedy;• Refer to the instructions for the external controller
+Code;SC919
+Description;External controller error 6
+Causes;While EAC (External Application Converter), the conversion module, was operating normally, the receipt of a power line interrupt signal from the FLUTE serial driver was detected, or BREAK signal from the other station was detected.
+Remedy;• Controller power outage • Controller rebooted • Connection to controller loose
+Code;SC920
+Description;Printer Error 1
+Causes;An internal application error was detected and operation cannot continue.
+Remedy;• Software defective, switch off/on, or change the controller firmware • Insufficient memory
+Code;SC921
+Description;Printer Error 2: Font error
+Causes;When the printer application started, the specified font could not be found on the SD card.
+Remedy;• The specified font is not on the SD card • SD card data corrupted
+Code;SC925
+Description;Net File function error
+Causes;The NetFile file management on the HDD cannot be used, or a NetFile management file is corrupted and operation cannot continue. The HDDs are defective and they cannot be debugged or partitioned, so the Scan Router functions (delivery of received faxes, document capture, etc.), Web services, and other network functions cannot be used. HDD status codes are displayed below the SC code:
+Remedy;• Refer to the four procedures below (Recovery from SC 925). Recovery from SC 925 Procedure 1 If the machine shows SC codes for HDD errors (SC860 to SC865) with SC 925, do the recovery procedures for SC860 to SC865. Procedure 2 1. If the machine does not show one of the five HDD errors (SC860 to SC865), turn the machine power off and on. 2. If this is not the solution for the problem, then initialize the NetFile partition on the HDD with SP5832-11 (HDD Formatting – Ridoc I/F). NetFiles: These are jobs printed from the document server using a PC and DeskTopBinder. Before you initialize the NetFile partition on the HDD, tell the customer: • Received faxes on the delivery server will be erased • All captured documents will be erased • Desk Top Binder/Print Job Manager/Desk Top Editor job history will be erased • Documents on the document server, and scanned documents, will not be erased. • The first time that the network gets access to the machine, the management information must be configured again (this will use a lot of time). 3. Before you initialize the Netfile partition with SP5832-11, do these steps: 4. Go into the User Tools mode and do “Delivery Settings” to print all received fax documents that are scheduled for delivery. Then erase them. 5. In the User Tools mode, do Document Management> Batch Delete Transfer Documents. 6. Do SP5832-11, and turn the machine off and on. Procedure 3 1. If “Procedure 2” is not the solution for the problem, do SP5832-1 (HDD Formatting – All) 2. Cycle the machine off/on. • SP5832-001 erases all document and address book data on the hard disks. Consult with the customer before you do this SP code. Procedure 4 If “Procedure 3” does not solve the problem, replace the HDD.
+Code;SC990
+Description;Software error 1
+Causes;An unexpected operation was encountered by the software.
+Remedy;• Software crash, reboot the machine • If the HDDs have just been replaced, be sure to download the stamp data (SP 5853). • With SP5990 004(SMC Report – Logging Data), print the most recent information for SC990. • The SC990 information displays the file name, line number, and value. Report this information to your technical supervisor. For example: Function.c LINE: 123 VAL: 0
+Code;SC991
+Description;Software Error 2
+Causes;The software peformed an unexpected function and the program cannot continue. Recovery processing allows the program to continue.
+Remedy;• Software defective, re-boot In order to get more details about SC991: 1. Execute SP7403 or print an SMC Report (SP5990) to read the history of the 10 most recent logged errors. 2. If you press the zero key on the operation panel with the SP selection menu displayed, you will see detailed information about the recently logged SC991, including the software file name, line number, and so on. Of these two methods, 1) is the recommended method, because another SC could write over the information for the previous SC.
+Code;SC992
+Description;Undefined Error (No SC Code)
+Causes;An error not controlled by the system occurred (the error does not come under any other SC code).
+Remedy;• Software defective • Turn the machine power off and on. The machine cannot be used until this error is corrected. • Re-install firmware
+Code;SC994
+Description;Operation Panel Management Records Exceeded
+Causes;An error occurred because the number of records exceeded the limit for images managed in the service layer of the firmware. This can occur if there if there are too many application screens open on the operation panel.
+Remedy;• No action required because this SC does not interfere with operation of the machine.
+Code;SC997
+Description;Application selection error 1
+Causes;An application did not start after pressing the appropriate key on the operation panel.
+Remedy;• Software bug (change the firmware for the application that failed) • A RAM or DIMM option required by the application is not installed or not installed correctly.
+Code;SC998
+Description;Application selection error 2
+Causes;Register processing did not execute for an application within 60 sec. after the machine was switched on. No applications start correctly, and all end abnormally.
+Remedy;• Software bug (change the firmware for the application that failed) • A RAM or DIMM option required by the application is not installed or not installed correctly.

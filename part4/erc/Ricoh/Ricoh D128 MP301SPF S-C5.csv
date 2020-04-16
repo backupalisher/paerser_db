@@ -1,0 +1,648 @@
+Code;101
+Description;"Exposure Lamp Error
+ The scanner has scanned the white plate, but cannot detect the white level."
+Causes;"• Defective exposure lamp 
+ • Defective exposure lamp stabilizer
+ • Defective exposure lamp connector
+ • Unclean scanner mirror
+ • Scanner mirror out of position
+ • Defective SBU board
+ • Defective SBU connector
+ • Lens block out of position
+ • Incorrect position or width of white plate scanning (* SP4-015)"
+Code;120
+Description;"Scanner home position error 1
+ The scanner home position sensor does not detect the scanner leaving the home position."
+Causes;"• Defective scanner home position sensor
+ • Defective scanner drive motor
+ • Defective scanner home position sensor connector
+ • Defective scanner drive motor connector
+ • Defective BICU board"
+Code;121
+Description;"Scanner home position error 2
+ The scanner home position sensor does not detect the scanner coming back to the home position."
+Causes;"• Defective scanner home position sensor
+ • Defective scanner drive motor
+ • Defective scanner home position sensor connector
+ • Defective scanner drive motor connector
+ • Defective BICU board"
+Code;141
+Description;"SBU black level correction error
+ • The automatic SBU adjustment has failed to correct the black level three times at the pre-offset adjustment.
+ • The automatic SBU adjustment has failed to correct the black level ten times at the PGA adjustment.
+ • The automatic SBU adjustment has failed to correct the black level ten times at the offset adjustment."
+Causes;• Defective SBU board
+Code;142
+Description;"SBU white/black level correction error
+ The automatic SBU adjustment has failed to correct the white level ten times at the PGA adjustment."
+Causes;"• Defective exposure lamp
+ • Unclean white plate
+ • Incorrect position or width of white plate scanning (* SP4-015)
+ • Defective SBU board"
+Code;144
+Description;"Communication Error between BICU and SBU
+ The BICU cannot correctly establish communication with the SBU."
+Causes;"• Loose connection of the flat cable between the BICU and the SBU
+ • Defective flat cable between the BICU and the SBU
+ • Defective BICU
+ • Defective SBU"
+Code;161-001
+Description;"IPU error: LSYNC error
+ Detecting an error from the result of the IPU self-check on startup."
+Causes;"• Defective the IPU or the BICU (or bad connection between the ASIC and the LEO, LSYNC Abnormal, etc) 
+ • Cable bad connection between the SBU and the IPU (or the BICU)."
+Code;161-002
+Description;"IPU error: RI response error
+ Detecting an error on access to the RI."
+Causes;• Defective the IPU (the BICU, the ICTL) or RI abnormal performance, etc
+Code;162-001
+Description;"IPC:PCIE error PCIE Communication error
+ Doesn’t occur insertion request of linking-up from the LYRA on startup. Or NOT the number of the connection lanes detected is two."
+Causes;• Defective IPU (BICU, IPU)
+Code;165
+Description;"Unauthorized copy protection Failed
+ Detecting the ICIB wrong or NOT attached on the copier under setting unauthorized copy protection on. Or detecting wrong with the ICIB on startup."
+Causes;"• NOT the ICIB attached firmly. 
+ • Defective the ICIB"
+Code;202
+Description;"Polygon motor error: Time out (On)
+ NOT detecting making the polygon motor be ready in certain time after start polygon motor up or change the spin speed."
+Causes;"• Harness and the polygon motor driver. 
+ • Defective the polygon motor or the polygon motor driver. 
+ • Defective polygon motor drive pulse output (Around polygon control part) 
+ • Unable to monitor XSCRDY signal (Around polygon control parts) 
+ • Bad connection or disconnection between the I/F"
+Code;203
+Description;"Polygon motor error: Time out (Off)
+ NOT XSCRDY signal becoming ""H"" (Inactive) within three seconds."
+Causes;"• Harness and the polygon motor driver. 
+ • Defective the polygon motor or the polygon motor driver. 
+ • Defective polygon motor drive pulse output (Around polygon control parts) 
+ • Unable to monitor XSCRDY signal (Around polygon control parts) 
+ • Bad connection or disconnection between the I/F"
+Code;204
+Description;"Polygon motor error: XSCRDY signal error
+ Detecting XSCRDY signal ""H"" (Inactive) while writing."
+Causes;"• Harness and the polygon motor driver. 
+ • Defective the polygon motor or the polygon motor driver. 
+ • Bad connection or disconnection between the I/F"
+Code;220
+Description;"LD synchro-detection error
+ NOT output certain syncro-detection signal within 200ms after LD lighting in steady-rotation."
+Causes;"• Bad connection or disconnection between the I/F harness and the syncro-detection Unit. 
+ • Defective the syncro-detection 
+ • NOT the beam going into the photo detector 
+ • Defective the GAVD related parts, the LD driver, the LDB, the BICU"
+Code;230
+Description;"FGATE: Fail to switch ""ON""
+ NOT switching FGATE signal on within one second after writing start-timing."
+Causes;"• Defective the GAVD, PCI bridge ASIC 
+ • BICU, the Controller board wrong or bad connection 
+ • Defective the harness between the BICU to the LDB"
+Code;231
+Description;"FGATE: Fail to switch ""OFF""
+ NOT switching FGATE signal off within nine seconds after writing end-timing."
+Causes;"• BICU, the Controller board wrong or bad connection 
+ • Defective the harness between the BICU to the LDB 
+ • Defective the GAVD, PCI bridge ASIC"
+Code;240
+Description;"LD error
+ Detecting two LD error flags in series when LD lighting after the LD initializing"
+Causes;"• Characteristic degradation of the LD (LD broken, electric current versus light output characteristic shift, etc)
+ • Bad connection or disconnection of the harness to the LD
+ • Defective the LD driver parts"
+Code;270
+Description;"GAVE communication error
+ Doesn't the value you set in a certain resister accord with the value of the same resister on reading."
+Causes;"• Defective the BICU 
+ • Defective the GAVD, the CPU"
+Code;302
+Description;"High-voltage charge error
+ The maximum rate of PWM duty (50%) occurs ten times in series (20msec x 10) This error doesn’t happen when the front door (the inter lock) opens."
+Causes;"• Defective the MD 
+ • Defective harness connected to the HVP"
+Code;355
+Description;"P sensor error
+ SC350~354 happen on normal operation. This error isn't displayed on panel but left on the history as a logging data."
+Causes;"• Disconnection of the harness to P sensor 
+ • Bad electrical contact of P sensor CN 
+ • Defective the BICU 
+ • Defective the writing section 
+ • Defective developer density 
+ • Defective high-voltage PP 
+ • Uncleanness of the P sensor 
+ • Defective the P sensor"
+Code;389
+Description;"T sensor error warning
+ Detected the following value T sensor output value < 0.2V T sensor output value > 4.0V 10 times in series."
+Causes;"• Defective the T sensor 
+ • Bad contact of the connector to the T sensor"
+Code;390
+Description;"T sensor error
+ After SC389 detection and executing SP2-992-001, This SC is displayed. In process flow, This SC occurs when two times of T sensor output value error are detected consecutively."
+Causes;"• Defective T sensor 
+ • Loose connection part"
+Code;391
+Description;"Development bias error
+ The maximum rate of PWM duty (50%) occurs 10 times in series (20msec x 10) This error doesn’t happen when the front door (the inter lock) opens."
+Causes;"• Defective the MD 
+ • Defective harness connected to the HVP"
+Code;392
+Description;"Developer initialization error
+ The P sensor does not detect a correct pattern during developer initialization (SP2-801-001). When Vsp output is more than 2.5V, SC appears in the case of not removing the heat seal or an absence of developer."
+Causes;"• Defective P sensor 
+ • Defective T sensor 
+ • NOT removing heat-seal 
+ • Defective drum operation 
+ • Defective development roller operation"
+Code;401
+Description;"Transfer roller leak error (positive electrode)
+ • The feedback voltage of the transfer roller has been more than the certain voltage for 200msec. (Open detecting condition) 
+ • The feedback voltage of the transfer roller has been insufficient for 200msec. (Leak detecting condition)
+ This error doesn’t happen when the front door (the inter lock) opens."
+Causes;"• Defective harness connected to HVP 
+ • Defective the MD"
+Code;402
+Description;"Transfer roller leak error (negative electrode)
+ The feedback voltage of the transfer roller has been more than the certain voltage (more than 4.5V) for 200msec. This error doesn’t happen when the front door (the inter lock) opens."
+Causes;"• Defective the MD 
+ • Defective harness connected to the HVP"
+Code;411
+Description;"Separation high-voltage error
+ The maximum rate of PWM duty (50%) occurs ten times in series (20msec x 10) This error doesn’t happen when the front door (the inter lock) opens."
+Causes;• Defective the MD, HVP Connection harness.
+Code;440
+Description;"Transfer electric plus current error
+ Detecting ""0"" (Abnormal) ten times in series (200ms) while monitoring ""HVP: T +: Output error detection signal"" every 20m seconds. (Reboot the machine to clear this SC)"
+Causes;
+Code;460
+Description;"Isolation voltage error
+ Detecting ""0"" (Abnormal) ten times in series (200ms) while monitoring ""HVP: D: Output error detection signal"" every 20m seconds. (Reboot the machine to clear this SC)"
+Causes;
+Code;490
+Description;"Toner bottle motor overcurrent
+ Detecting ""Low"" for more than 200msec while the motor on. Motor locked up due to overcurrent to the drive section."
+Causes;• Defective the motor drive.
+Code;500
+Description;"Main motor error
+ Detecting “High” condition twenty times in series during watching each lock signal after switching motor on."
+Causes;"• Overload 
+ • Defective main motor drive"
+Code;541
+Description;"Fusing thermistor disconnection
+ Detecting the temperature remains lower than 0 degrees Celsius for 5 seconds."
+Causes;"• Thermistor disconnection 
+ • Defective connector part"
+Code;542-001
+Description;"Fusing reload failed: Fusing temperature warm-up error
+ • The fusing temperature doesn’t rise by more than 7 degrees for two seconds; and this happens 5 times consecutively. 
+ The measure is start in 3.5 seconds after activation of the heater. This monitoring will stop in the case of reaching the reload temperature."
+Causes;"• Defective thermistor 
+ • Power source is out of warranty"
+Code;542-003
+Description;"Fusing reload failed: Time out error
+ (On the fusing roller inactive) NOT reaching the reload temperature in 25 seconds after starting heater control."
+Causes;• Disconnection of Heater After activation of the anti-overheat device
+Code;543
+Description;"Fusing overheat error 1
+ The fusing temperature detected by the thermistor is 230°C or higher for one second."
+Causes;"• Defective the triac (Semiconductor device) • Defective the IOB control board 
+ • Detective the BICU control board"
+Code;544
+Description;"Fusing overheat error 2
+ The fusing temperature detected by the monitor circuit is 250°C or higher."
+Causes;"• Defective the triac (Semiconductor device) 
+ • Defective the IOB control board 
+ • Defective the BICU control board 
+ • Uncontrollable fusing condition"
+Code;545
+Description;"Fusing lamp overheat error
+ The fusing lamp remains on for 12 seconds after starting the waiting mode."
+Causes;"• Defective thermistor 
+ • Disconnection of Heater 
+ • After activation of the anti-overheat device"
+Code;547-001
+Description;"Zero cross signal malfunction
+ Detecting fusing contact meltdown"
+Causes;"• Defective the fusing relay (Contact adhesion, Contact separation) 
+ • Defective the drive circuit in the fusing relay
+ • PSU fuse (24VS) meltdown 
+ • Unsteadiness in frequency of the commercial power source"
+Code;547-002
+Description;"Zero cross signal malfunction
+ Detecting wrong with fusing contact"
+Causes;"• Defective the fusing relay (Contact adhesion, Contact separation) 
+ • Defective the drive circuit in the fusing relay
+ • PSU fuse (24VS) meltdown 
+ • Unsteadiness in frequency of the commercial power source"
+Code;547-003
+Description;"Zero cross signal malfunction
+ Detecting low-frequency wave"
+Causes;"• Defective the fusing relay (Contact adhesion, Contact separation) 
+ • Defective the drive circuit in the fusing relay
+ • PSU fuse (24VS) meltdown 
+ • Unsteadiness in frequency of the commercial power source"
+Code;557
+Description;"Over zero cross frequency
+ The number of times Low-frequency wave detection is less than 1 time."
+Causes;• Interruption of power source line noise.
+Code;559
+Description;"Consecutive fusing jam
+ The paper jam counter for the fusing unit reaches 3 times. The paper jam counter is cleared if the paper is fed correctly. This SC is activated only when SP1159-001 is set to ""1"" (default ""0"")."
+Causes;• Paper jam in the fusing unit.
+Code;620
+Description;"ADF communication error
+ Disconnection after connection in normal."
+Causes;"• Defective the ADF 
+ • Defective the IPU board 
+ • Bad connection of the ADF"
+Code;622
+Description;"Bank communication error
+ 1. Malfunction occurs on line connection. 
+ 2. Receiving a communication error notice from the URAT."
+Causes;"• Defective the bank control board 
+ • Defective the BICU, the IOB 
+ • Bad connection between the bank and the main machine 
+ • Defective the bank control"
+Code;623
+Description;"Second bank communication error
+ Abnormal code is send from the bank unit."
+Causes;"• Bad connection between the first bank and the second bank 
+ • Defective the bank control board 
+ • NOT all connectors are in place"
+Code;632
+Description;"MF accounting device error 1
+ The machine sends a data frame. No normal end signal returns. This symptom happens three times."
+Causes;• Defective or broken line between machine and device
+Code;633
+Description;"MF accounting device error 2
+ The machine is communicating with the accounting device. The break signal returns."
+Causes;Defective or broken line between machine and device
+Code;634
+Description;"MF accounting device error 3
+ A backup RAM error is reported from the accounting device."
+Causes;"• Defective accounting device controller 
+ • Defective battery in the accounting device"
+Code;635
+Description;"MF accounting device error 4
+ A battery voltage error is reported from the accounting device."
+Causes;"• Defective accounting device controller 
+ • Defective battery in the accounting device"
+Code;636-001
+Description;"SD Card Error: Expanded authentication module error
+ There is no expanded authentication module in the machine. The SD card or the file of the expanded authentication module is broken. There is no DESS module in the machine."
+Causes;"1. Install the correct SD card or the file of the expanded authentication module. 
+ 2. Install the DESS module."
+Code;636-002
+Description;"SD Card Error:Version error
+ The version of the expanded authentication module is not correct."
+Causes;1. Install the correct file of the expanded authentication module.
+Code;636-011
+Description;"SD Card Error: OSM usercode file error
+ NOT found the ""usercode"" file in the rootfolder, in the SD card Or cannot read the usercode file correctly. *This SC occurs only for OSM IC card."
+Causes;"• No usercode file exists in the SD card • Irregular usercode file • The data in the usercode file is irregular • NOT coping the application with the ""usercode"" file to the SD card. 1. Make a customer usercode by the OSM usercode setting tool (IDissuer.exe) and put it in the rootfolder where IC card module (eccm.mod) is stored."
+Code;637-001
+Description;Tracking APP error: NOT found the tracking information
+Causes;"• Causes of failing to notice tracking SDK APP (e.g.: Defective tracking SDK APP, Abnormal internal communication) 
+ 1. Power source OFF/ON"
+Code;637-002
+Description;"Tracking APP error: Administration server error
+ NOT found the tracking information."
+Causes;"• Defective tracking administration server 
+ • Defective tracking SDK APP 
+ • Defective Network 
+ 1. Power source OFF/ON"
+Code;640
+Description;"Engine to controller communication error (Check Sum error)
+ Incorrect sum data."
+Causes;• Defective the PCI related hardware
+Code;641
+Description;"Engine to controller communication error (No response)
+ No response to the frame from the engine when frame sending according to RAPI protocol is done from the controller."
+Causes;
+Code;650-001
+Description;"Communication error of the remote service modem (Cumin-M): Authentication error
+ The authentication for the Embedded RCG-M fails at a dial up connection."
+Causes;1. Check and set the correct user name (SP5816-156) and password (SP5816-157).
+Code;650-004
+Description;"Communication error of the remote service modem (Cumin-M): Incorrect modem setting
+ Dial up fails due to the incorrect modem setting."
+Causes;1. Check and set the correct AT command (SP5819-160).
+Code;650-005
+Description;"Communication error of the remote service modem (Cumin-M): Communication line error
+ The supplied voltage is not sufficient due to the defective communication line or defective connection."
+Causes;1. Consult with the user's local telephone company.
+Code;651
+Description;"Incorrect dial up connection
+ An unexpected error occurs when the modem (RCG-M) tries to call the center with a dial up connection."
+Causes;• Software bug. 1. No action required because this SC does not interfere with operation of the machine.
+Code;669
+Description;"EEPROM communication error
+ Cannot return to be normal condition after retrying three times when the error on EEPROM communication occurs."
+Causes;"• Defective the EEPROM 
+ • Noise"
+Code;670
+Description;"Engine startup error
+ Just after the main power is turned on or the machine is recovering from auto off mode, the engine ready signal assertion fails. Just after the main power is turned on, the engine does not respond."
+Causes;"• Poor connection between the BICU and controller board 
+ • Defective BICU 
+ • Defective controller board"
+Code;672
+Description;"Controller-to-operation panel communication error at startup
+ After powering on the machine, communication between the controller and operation panel does not begin, or the communication is interrupted after a normal startup."
+Causes;"• Controller stalled • Controller board installed incorrectly 
+ • Defective controller board 
+ • Operation panel connector loose or defective 
+ • Poor connection of DIMM and optional boards on the controller board 1. Check the setting of SP5875-001. If the setting is set to ""1 (OFF)"", change it to ""0 (ON)""."
+Code;687
+Description;"Cannot receive RAPI-PER
+ Command (Ready for image transfer) in 120 seconds after RARI-PES (Request for image transfer) occurs."
+Causes;"• Defective the controller board 
+ • Noise"
+Code;790
+Description;"Over the number of the banks installed error
+ Receiving a code other than the following cord: For Model S-C5: 01H 02H"
+Causes;• More than 3 of the banks are installed. (Specific limitation for Model S-C5 is 2 at maximum)
+Code;817
+Description;"Monitor Error
+ This is a file detection and electronic file signature check error when the boot loader attempts to read the selfdiagnostic module, system kernel, or root system files from the OS Flash ROM, or the items on the SD card in the controller slot are false or corrupted."
+Causes;"• OS Flash ROM data defective; change the controller firmware 
+ • SD card data defective; use another SD card"
+Code;818
+Description;"Firmware update error
+ This error may occur while firmware update."
+Causes;1. Reboot the copier and complete the undone update.
+Code;819
+Description;"Kernel stop
+ Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel."
+Causes;"• System program defective
+ • Controller board defective
+ • Optional board defective
+ 1. Replace controller firmware"
+Code;820
+Description;"Self-Diagnostic Error: CPU
+ During the boot monitor program and self-diagnostic, any exception or cutin are not supposed to happen. If these happen, it is defined as SC."
+Causes;"• Defective CPU device 
+ • Defective boot monitor program or selfdiagnostic program"
+Code;821
+Description;"Self-Diagnostic Error: ASIC
+ ASIC error"
+Causes;• Defective controller board
+Code;822
+Description;"Self-diagnostic error: HDD (Hard Disk Drive)
+ When the main switch is turned on or starting the self-diagnostic, the HDD stays busy for the specified time or more."
+Causes;"• Loose connection 
+ • Defective HDD 
+ • Defective controller"
+Code;823
+Description;"Self-diagnostic Error: NIB
+ 6101 - MAC address check sum error
+ 6104 - PHY IC error
+ 6105 - PHY IC loop-back error"
+Causes;• Defective controller
+Code;824-1401
+Description;"Self-diagnostic Error: NVRAM
+ The controller cannot recognize the standard NVRAM installed or detects that the NVRAM is defective."
+Causes;"• Loose connection 
+ • Defective standard NVRAM 
+ • Defective controller"
+Code;826
+Description;"Self-diagnostic Error: RTC/Optional NVRAM
+ [1501]: Clock error
+ [15FF]: RTC not detected"
+Causes;"• RTC defective
+ • NVRAM without RTC installed
+ • Backup battery discharged"
+Code;827
+Description;"Self-diagnostic Error: RAM
+ [0201: ]Verification error
+ [0202]: Resident memory error"
+Causes;"• Loose connection
+ • Defective SDRAM DIMM
+ • Defective controller"
+Code;828
+Description;"Self-diagnostic Error: ROM
+ [0101]: Boost lap code error
+ The boot monitor and OS program stored in the ROM DIMM is checked. If the check sum of the program is incorrect, this SC code is displayed."
+Causes;"• Defective ROM DIMM 
+ • Defective controller"
+Code;829
+Description;"Self-diagnostic Error: Optional RAM
+ Verify error for optional RAM.
+ [0301] Verification error (Slot 1)
+ [0302] Composition error (Slot 1)"
+Causes;"• Make sure that the resident RAM is installed in the correct slot. 
+ • Make sure the optional RAM is installed in the correct slot (Slot 0)"
+Code;835
+Description;"Self-diagnostic error: Centronic device
+ [1102] Loopback connector is connected but check results in an error.
+ [110C] Loopback connector is connected but check results in an error.
+ [1120] Centronic loopback connector is not connected for detailed self-diagnostic test."
+Causes;"• IEEE1284 connector error 
+ • Centronic loopback connector defective"
+Code;838
+Description;"Self-diagnostic Error: Clock Generator
+ [2701] A verify error occurred when setting data was read from the clock generator via the I2C bus."
+Causes;"• Defective clock generator
+ • Defective I2C bus
+ • Defective I2C port on the CPU"
+Code;839
+Description;"USB NAND Flash ROM error
+ [9101] The ID of the USB NAND Flash ROM cannot be read.
+ [9110] The USB NAND Flash ROM is disconnected."
+Causes;• Defective controller board
+Code;853
+Description;"Wireless card startup error
+ The machine starts up. The IEEE802 11b card connection board is recognized. The wireless LAN card or bluetooth card is not recognized."
+Causes;• Loose connection between the wireless card and the connection board
+Code;854
+Description;"Wireless card access error
+ The machine has been reading the data from the card. The machine loses access to the card; the wireless LAN card or bluetooth card connection board is still recognized."
+Causes;• Loose connection between the wireless card and the connection board
+Code;855
+Description;"Wireless card error
+ Some illegal data is found in the card."
+Causes;• Defective wireless card
+Code;856
+Description;"Wireless card connection board error
+ An error is detected in the wireless LAN card or bluetooth card connection board."
+Causes;• Defective wireless card connection board
+Code;857
+Description;"USB I/F Error
+ USB interface error is detected."
+Causes;• Defective controller
+Code;858
+Description;"HDD Encryption unit error 1
+ A serious error occurs when data is encrypted to update an encryption key with the HDD encryption unit."
+Causes;
+Code;859
+Description;"HDD Encryption unit error 2
+ A serious error occurs when the HDD data is encrypted to update an encryption key with the HDD encryption unit."
+Causes;
+Code;860
+Description;"HDD: Initialization error
+ The controller detects that the hard disk fails."
+Causes;"• HDD not initialized 
+ • Defective HDD"
+Code;862
+Description;"Bad sector number error
+ The number of bad sectors in the HDD (image data area) goes over 101."
+Causes;• Defective HDD
+Code;863
+Description;"HDD: Read error
+ The data stored in the HDD cannot be read correctly."
+Causes;"• Defective HDD 
+ • Defective controller"
+Code;864
+Description;"HDD: CRC error
+ While reading data from the HDD or storing data in the HDD, data transmission fails."
+Causes;• Defective HDD
+Code;865
+Description;"HDD: Access error
+ An error is detected while operating the HDD."
+Causes;• Defective HDD
+Code;866
+Description;"SD card authentication error
+ A digital license error of an SD card application is detected."
+Causes;• SD card data has corrupted.
+Code;867
+Description;"SD card error
+ An application SD card is removed from the boot slot while an application is activated."
+Causes;• An application SD card is ejected.
+Code;868
+Description;"SD card access error (-13 to -3: File system error, other number: Device error)
+ An error report is sent from the SD card reader."
+Causes;"• SD card not inserted correctly
+ • SD card defective
+ • Controller board defective"
+Code;870
+Description;"Address book data error
+ The address book in the hard disk is accessed. An error is detected in the address book data; address book data is not read; or data is not written into the address book."
+Causes;"• Data corruption
+ • Defective hard disk
+ • Defective controller software"
+Code;876
+Description;"Log Data Error
+ An error was detected in the handling of the log data at power on or during machine operation. This can be caused by switching the machine off while it is operating."
+Causes;
+Code;878
+Description;"TPM system authentication error
+ The system firmware is not authenticated by TPM (security chip)."
+Causes;"• Incorrect updating for the system firmware
+ • Defective flash ROM on the controller board"
+Code;880
+Description;"File Format Converter (MLB) error
+ A request to get access to the MLB was not answered within the specified time."
+Causes;• MLB defective
+Code;881
+Description;"Administration area error
+ Defective the software. This error occurs in the following timing: 1. Giving a job to the printer 2. Login from the panel 3. Accessing from WEB browser"
+Causes;"• Caused by stored un-authentication information in the software (NOT caused by user operation) 
+ 1. Reboot the machine"
+Code;899
+Description;"Software operation error (Receiving signal end)
+ Abnormal operation occurs in the controller program (Hardware or Software)"
+Causes;"1. Reboot the machine 
+ 2. Update the firmware. 
+ 3. If this SC does not clear with No.1, 2 processes, replace the controller board."
+Code;900
+Description;"Electronic total counter error
+ The value of the total counter is out of the normal range."
+Causes;• Defective NVRAM
+Code;901
+Description;"Mechanical total counter error
+ The condition of the mechanical counter on the electric hard is disconnection on activating the counter when SP mode “Anti-tampering system” is ON."
+Causes;"• Defective harness between mechanical counter and BICU. 
+ • Defective BICU 
+ • Defective mechanical total counter 
+ • Loose connection of harness between mechanical counter and BICU. 
+ • Mechanical counter has been pulled out while accounting operation."
+Code;920
+Description;"Printer error
+ An application error that stops the machine operation is detected."
+Causes;• Defective software
+Code;921
+Description;"Printer font error
+ A necessary font is not found in the SD card when the printer application starts."
+Causes;"• A necessary font is not found in the SD card. 
+ • The SD card data is corrupted."
+Code;925
+Description;"Net file error
+ The management file for net files is corrupted; net files are not normally read. Netfiles: Jobs to be printed from the document server using a PC and the DeskTopBinder software"
+Causes;"• Defective hardware 
+ • Data corruption 
+ • Defective software"
+Code;954
+Description;"Printer application program error
+ The printer application program does not become ready when the printer application program is necessary."
+Causes;• Defective application program
+Code;955
+Description;"Image transfer error
+ The BICU requests the controller to transfer image data; but the controller does not become ready."
+Causes;• Defective application program
+Code;964
+Description;"Status error (laser optics housing unit)
+ The optics-housing unit does not become ready within 17 seconds after a request."
+Causes;• Defective software
+Code;980
+Description;"Controller-engine inconsistency
+ The controller is incompatible with the engine."
+Causes;"One of the following controllers is installed to the basic model:
+ • The controller of the MFP model
+ • The controller of the copier/facsimile model
+ • The controller of the printer/scanner/ copier model
+ The controller of the optional printer/ scanner is installed to one of the following models:
+ • The MFP model
+ • The copier/facsimile model
+ • The printer/scanner/copier model"
+Code;981
+Description;"NVRAM error
+ An error occurs during engine NVRAM check."
+Causes;"• Defective NVRAM
+ • Loose connection between the BICU and the NVRAM
+ • Incorrect installation of the NVRAM
+ • Defective BICU"
+Code;982
+Description;"Localization error
+ The localization information in the nonvolatile ROM and in the NVRAM is different"
+Causes;"• Localization setting not specified (The main power switch is turned on for the first time after the NVRAM is replaced.)
+ • Incorrect localization setting 
+ • Defective NVRAM"
+Code;984
+Description;"Print image transfer error
+ Print images are not transferred."
+Causes;"• Defective controller 
+ • Defective BICU 
+ • Loose connection between the controller and the BICU"
+Code;990
+Description;"Software performance error
+ The software attempted to perform an unexpected operation. 
+ • When this error occurs, the file name, address, and data will be stored in NVRAM. This information can be checked by using SP7-403. See the data and the situation in which this SC occurs. Then report the data and conditions to your technical control center."
+Causes;"• Software defective
+ • Internal parameter incorrect
+ • Insufficient working memory"
+Code;991
+Description;"Software continuity error
+ The software attempted to perform an unexpected operation. However, unlike SC990, the process can keep on running."
+Causes;"• Logged only; the machine can continue to operate"
+Code;992
+Description;"Undefined error
+ An error not controlled by the system occurred (the error does not come under any other SC code)."
+Causes;• Defective software program
+Code;995
+Description;"Model information error
+ NOT according manufacturing number (11 digits) with product identification code."
+Causes;"• Defective BICU 
+ • Defective NVRAM 
+ • Defective controller"
+Code;997
+Description;"Application function selection error
+ The application selected by a key press on the operation panel does not start or ends abnormally."
+Causes;"• Software for that application is defective 
+ • An option required by the application (RAM, DIMM, board) is not installed. 
+ • Too complicated nest of the fax group address"
+Code;998
+Description;"Application start error
+ After switching the machine on, the application does not start within 60 s. (No applications start or end normally.)"
+Causes;"• Software for that application is defective 
+ • An option required by the application (RAM, DIMM, board) is not installed."

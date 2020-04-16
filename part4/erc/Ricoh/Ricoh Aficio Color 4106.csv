@@ -1,0 +1,304 @@
+Code;901
+Description;Upper total counter error • Feedback signal stays LOW when the main switch turns on. • Feedback signal stays LOW just before the trigger signal goes ON. • Feedback signal stays HIGH just before the trigger signal goes off.
+Causes;
+Remedy;1. Check if the connectors are properly set. 2. Replace the total counter.
+Code;902
+Description;Lower total counter error • Feedback signal stays LOW when the main switch turns on. • Feedback signal stays LOW just before the trigger signal goes ON. • Feedback signal stays HIGH just before the trigger signal goes off.
+Causes;
+Remedy;1. Check if the connectors are properly set. 2. Replace the total counter.
+Code;SC101
+Description;Exposure lamp failure - Timing & Condition - • The lamp output check signal (LAMPDET) is still HIGH 250 ms after the lamp turns on (the ON check is canceled if the lamp goes off within 250 ms). • The lamp output check signal is still LOW 30ms after the lamp turns off (the OFF check is canceled if the lamp turns on within 30 ms).
+Causes;• Blown lamp • Blown thermostat • Blown fuse (FU103) • Defective lamp regulator • Poor connection of cables • Defective cables • Defective scanner IPU board • Defective PSU
+Remedy;1. Visually check the lamp element or check the continuity between both ends of the lamp terminals with a multimeter. 2. Check continuity at the ends of the thermostat terminals with a multi-meter. 3. Check if the connectors (CN1, CN2, and CN3) on the lamp regulator are properly connected. 4. Check the continuity of the 3 cables. 5. Replace the lamp regulator if 100Vac is present at the CN3-1 and 5 on the lamp regulator. 6. Replace the scanner IPU board - Signals to Check - • LAMPDET: CN502-2 on lamp regulator / CN403-12 on scanner IPU board • LAMPTRIG: CN403-11 on scanner IPU board / CN502- 3 on lamp regulator
+Code;SC120
+Description;Scanner HP sensor does not turn on - Timing & Condition - The scanner H.P. sensor does not turn on when the scanner moves back to the home position or at the home position check. The sensor output at CN406-7 stays HIGH (5V).
+Causes;• Scanner motor out of synchronization (drive error) • Poor connection of connectors • Defective scanner HP sensor • Defective scanner IPU board • Defective main control board
+Remedy;"1. In SP 5-804-104, stop supplying the current to the scanner motor. Check the output signal from the scanner H.P. sensor in SP 5-803-100 by moving the scanner manually. (0: Not actuated; 1: Actuated - at H.P.) 2. If the result of step 1 is OK; 1 Check the tension of the timing belt. 2 Check if the pulley is firmly secured. 3 Check if the scanner wire is properly wired 4 Check the connection of CN710, and CN731 on the scanner motor drive board. 5 Check continuity of cables. 6 Replace the scanner motor drive board. 7 Replace the scanner motor. 3. If the result of step 1 is not OK; 1 Check if the cable is properly connected. 2 Check the continuity of cable. 3 Replace the sensor. 4 Replace the scanner IPU board. 5 Replace the main control board. - Signals to Check - • Scanner HP: CN406-7 on scanner IPU board"
+Code;SC121
+Description;Scanner HP sensor does not turn off - Timing & Condition - The sensor does not turn off when the scanner moves to the home position after scanning an original. The sensor output at CN406- 7stays LOW (0V).
+Causes;• Scanner motor out of synchronization (drive error) • Poor connection of connectors • Defective scanner HP sensor • Defective scanner IPU board • Defective main control board
+Remedy;"1. In SP 5-804-104, stop supplying the current to the scanner motor. Check the output signal from the scanner H.P. sensor in SP 5-803-100 by moving the scanner manually. (0: Not actuated; 1: Actuated - at H.P.) 2. If the result of step 1 is OK; 1 Check the tension of the timing belt. 2 Check if the pulley is firmly secured. 3 Check if the scanner wire is properly wired 4 Check the connection of CN710, and CN731 on the scanner motor drive board. 5 Check continuity of cables. 6 Replace the scanner motor drive board. 7 Replace the scanner motor. 3. If the result of step 1 is not OK; 1 Check if the cable is properly connected. 2 Check the continuity of cable. 3 Replace the sensor. 4 Replace the scanner IPU board. 5 Replace the main control board. - Signals to Check - • Scanner HP: CN406-7 on scanner IPU board"
+Code;SC130
+Description;Scanner start error - Timing - • Scanning start • While the scanner motor is running - Condition - The scanning start signal is generated while the motor is moving. Total number of steps calculated based on the signal from the stepper motor is out of range. The H.P. sensor stays off when the scanner starts moving. A ‘scan start’ command was issued while the motor was active.
+Causes;• Scanner motor out of synchronization (drive error) • Poor connection of connectors • Defective scanner HP sensor • Defective scanner IPU board • Defective main control board
+Remedy;"1. In SP 5-804-104, stop supplying the current to the scanner motor. Check the output signal from the scanner H.P. sensor in SP 5-803-100 by moving the scanner manually. (0: Not actuated; 1: Actuated - at H.P.) 2. If the result of step 1 is OK; 1 Check the tension of the timing belt. 2 Check if the pulley is firmly secured. 3 Check if the scanner wire is properly wired 4 Check the connection of CN710, and CN731 on the scanner motor drive board. 5 Check continuity of cables. 6 Replace the scanner motor drive board. 7 Replace the scanner motor. 3. If the result of step 1 is not OK; 1 Check if the cable is properly connected. 2 Check the continuity of cable. 3 Replace the sensor. 4 Replace the scanner IPU board. 5 Replace the main control board. - Signals to Check - • Scanner HP: CN406-7 on scanner IPU board or Replace the sub and/or main scanner IPU board(s)."
+Code;SC150
+Description;Scanner ROM mismatch - Timing - After software installation or just after the main switch is turned on - Condition - The scanner IPU board detects that the software installed is not the correct one.
+Causes;• An invalid IC card used (such as a card for a different model) • Replace the scanner IPU board.
+Remedy;Try again with the correct IC card. Replace the scanner IPU board.
+Code;SC170
+Description;Video processing error 1 - Timing - Just after the main switch is turned on (after auto gain control on the scanner IPU board) - Condition - The corrected CCD odd/even pixel black level difference is not in the proper range.
+Causes;• Poor connection of CCD flat cable • Defective scanner IPU board • Defective CCD
+Remedy;1. Check if the flat cable is firmly connected at CN421 and CN404 on the SBU and scanner IPU board. 2. Check the continuity of the flat cable. 3. Replace the scanner IPU board. 4. Replace the SBU unit.
+Code;SC171
+Description;Video processing error 2 - Timing - Same as SC170 - Condition - The corrected black level is not in the proper range.
+Causes;• Poor connection of CCD flat cable • Defective scanner IPU board • Defective CCD
+Remedy;1. Check if the flat cable is firmly connected at CN421 and CN404 on the SBU and scanner IPU board. 2. Check the continuity of the flat cable. 3. Replace the scanner IPU board. 4. Replace the SBU unit.
+Code;SC172
+Description;Video processing error 3 - Timing - Same as SC170 - Condition - The corrected white level is not in the proper range.
+Causes;• Poor connection of CCD cable • Dirty optics • Defective lamp regulator • Defective scanner IPU board • Defective CCD
+Remedy;1. Check SP 4-426-001 to 006 (RGB Gain). If their values are near “255”, clean the optics section (exposure glass, white plate, mirrors, and lens). 2. Visually check if the exposure lamp turns on during warming-up after the main switch is turned on. If not, replace the lamp regulator. 3. Check if the CCD flat cable is firmly connected at CN421 and CN404 on the SBU and scanner IPU board. 4. Check the continuity of the flat cable. 5. Replace the scanner IPU board. 6. Replace the SBU unit.
+Code;SC191
+Description;Bar code scan error - Timing - Just after the main switch is turned on - Condition - The scanner IPU board detects that the bar code pattern scanned in is not appropriate.
+Causes;• Non-standard bar code label • Improper location of bar code • Dirty bar code • Defective scanner IPU board • Defective main control board
+Remedy;1. Check if the bar code is damaged or scratched. 2. Clean the optics section components, such as mirrors and lenses, and the bar code label. 3. Check if the mirrors are properly positioned on the 1st and 2nd scanners. If the spring plate which secures the mirrors is out of position, it causes the light axis to be changed. 4. Replace the scanner IPU board. 5. Replace the main control board.
+Code;SC192
+Description;Bar code number mismatch - Timing - Just after the main switch is turned on - Condition - The main control board detects that the bar code data scanned in does not match the machine identification number stored in the RAM.
+Causes;• Defective RAM board • Defective scanner IPU board • Defective main control board
+Remedy;1. Check if the serial number stored in the RAM is correct. NOTE:. Contact your product specialist for the detailed procedure. 2. Check the copier's serial number and the number defined in SP mode. 3. Garbled ROM data: Replace the NV-RAM. 4. Replace the scanner IPU board. 5. Replace the main control board.
+Code;SC193
+Description;IDU error - Timing - Just after the main switch is turned on or during a hardware reset - Condition - The IDU starts self-diagnosis at power-on and a hardware error was detected during this.
+Causes;• Defective IDU • Defective scanner IPU board
+Remedy;1. Test the scanner IPU board (SP 4-904-001 and 002). If not OK, replace the scanner IPU board. 2. Replace the IDU board.
+Code;SC195
+Description;Serial number error - Timing - Just after the main switch is turned on - Condition - The serial number entered or stored in RAM is not correct.
+Causes;• Incorrect serial number • RAM board is replaced. • Defective RAM
+Remedy;1. Check and re-enter the serial number properly. NOTE: Contact your product specialist for the detailed procedure.
+Code;SC301
+Description;Charge current leak - Timing - When the charge corona unit is on during printing or process control - Condition - The current leak was detected for 2 seconds.
+Causes;• Charge corona unit not installed properly • Poor connection of cables • Defective high voltage supply board (C,G) • Defective I/O control board • Defective main control board.
+Remedy;1. Reinstall the charge corona unit properly or replace the charge corona unit. 2. Reconnect the connectors on the high voltage supply board (C,G), I/O control board, and main control board, or check the cables. 3. Check and clean the charge corona unit receptacle. 4. Replace the high voltage supply board (C,G). 5. Replace the I/O control board. 6. Replace the main control board. - Signals to Check - • Leak detection: CN201-1 or TP224 on I/O control board or TP162 on main control board
+Code;SC302
+Description;Charge corona grid voltage error - Timing - When the charge corona unit grid is on during printing or process control - Condition - The feedback voltage is 4.8V or higher, or the PMW value is 50% or higher for 500 ms continuously.
+Causes;• Charge corona unit not installed properly • Poor connection of cables • Defective high voltage supply board (C,G) • Defective I/O control board • Defective main control board.
+Remedy;1. Reinstall the charge corona unit properly or replace the charge corona unit. 2. Reconnect the connectors on the high voltage supply board (C,G), I/O control board, and main control board, or check the cables. 3. Check and clean the charge corona unit receptacle. 4. Replace the high voltage supply board (C,G). 5. Replace the I/O control board. 6. Replace the main control board. - Signals to Check - • Leak detection: CN201-1 or TP224 on I/O control board or TP162 on main control board Signals to Check - • Feedback signal: CN201-3 or TP226 on I/O control board or CN302-A4 or TP160 on main control board • PWM: CN201-4 or TP237 on I/O control board
+Code;SC320
+Description;Polygon motor error - Condition - • The PMLOCK signal is not received by the LD main control board within a predetermined period of time.
+Causes;• Poor connection of connector • Defective polygon motor • Defective LD main control board • Defective scanner IPU board
+Remedy;1. Check that the connector (CN602-4) on the LD control board is properly connected. 2. Check the continuity of cable. 3. Replace the polygon motor. 4. Replace the LD main control board. 5. Replace the scanner IPU board.
+Code;SC322
+Description;Laser synchronizing signal error - Timing & Condition - While the polygon motor is running and the laser diode is on, the LD main control board does not receive the laser synchronizing signal.
+Causes;• Poor connection of connectors • Defective laser synchronizing detector board • Improper laser beam axis • Defective LD control board • Defective main control board • Defective optic housing unit
+Remedy;1. Check if the connectors (CN 604) are properly connected on the laser synchronizing detector board and LD main control board 2. Remove and clean the synchronizing detector board. 3. Check if anything such as the seal of the barrel toroidal lens in the optic housing unit interferes with the laser beam axis. 4. Replace the synchronizing detector board. 5. Check if the cable connectors (CN1 & CN605) on the LD drive board and LD main control board are properly connected or check the continuity of the cable. 6. Check if the cable connectors (CN601 & CN306) on the LD main control board and main control board are properly connected or check the continuity of the cable. 7. Replace the LD main control board. 8. Replace the main control board 9. Check the optical housing unit or replace it.
+Code;SC323
+Description;LD error - Timing - During LD writing - Condition - The LD main control board detects over-current or no feedback signal from the LD drive board.
+Causes;• Poor connection of connector • Defective LD drive board • Defective LD main control board • Defective main control board
+Remedy;1. Check if the connectors (CN1 & CN605) on the LD drive board and LD main control board are properly connected. 2. Check the continuity of the cable. 3. Check that the cable connectors (CN601 & CN306) on the LD control board and main control board are properly connected. 4. Replace the LD drive board. 5. Replace the LD main control board 6. Replace the main control board.
+Code;SC325
+Description;Magnification correction error The length of a line measured during main scan auto magnification correction does not fall within -0.1% to 0.1% of the center value. Detection timing: When three main scan magnification corrections failed successively.
+Causes;Dirty or incorrectly installed synch. detector board, or defective polygon motor
+Remedy;This SC is only logged, and not displayed, so no particular action is required (no adverse influence is exerted on copier operation). Take the following actions if the customer complains about excessive magnification errors. Dirty synchronizing detector board: Clean it Incorrect synchronizing detector board installation: Reinstall Defective polygon motor: Replace
+Code;SC326
+Description;FGATE1 error - Timing & Condition - The main control board does not receive the FGATE signal from the LD control board during 3 revolutions of the transfer belt.
+Causes;• Belt mark detection error • Electrical noise • Poor connection of connectors
+Remedy;1. Clean the belt mark located on the back side of the transfer belt or replace the belt if the belt mark is dirty or peeled off. 2. Clean the transfer belt home position sensor if it is dirty. 3. Clean the bias terminals of the development units if they are dirty. 4. Check if the cable connectors (CN606 & NC408) on the LD main control board and scanner IPU board are properly connected. 5. Check if the cable connectors (CN601 & CN306) on the LD main control board and main control board are properly connected. 6. Replace the LD main control board. 7. Replace the main control board. - Signals to Check - • FGATE: CN601-A2 or TP608 on LD main control board / CN306-A9 on main control board • Belt mark: CN218-B11, TP210, or CN233-A6 on I/O control board / CN303-B1, TP108, or CN306-B2 on main control board / CN601-B9 or TP606 on LD main control board If the machine is equipped with the controller, 1. Check if the connectors (CN609) on the LD control board and controller I/F board are properly set. 2. Check if the controller I/F board is properly connected. 3. Replace the interface board.
+Code;SC327
+Description;FGATE2 error - Timing & Condition - When two pages are to be written on the transfer belt at the same time, the main control board does not receive the 2nd FGATE signal from the LD main control board during 3 revolutions of the transfer belt.
+Causes;• Belt mark detection error • Electrical noise • Poor connection of connectors
+Remedy;1. Clean the belt mark located on the back side of the transfer belt or replace the belt if the belt mark is dirty or peeled off. 2. Clean the transfer belt home position sensor if it is dirty. 3. Clean the bias terminals of the development units if they are dirty. 4. Check if the cable connectors (CN606 & NC408) on the LD main control board and scanner IPU board are properly connected. 5. Check if the cable connectors (CN601 & CN306) on the LD main control board and main control board are properly connected. 6. Replace the LD main control board. 7. Replace the main control board. - Signals to Check - • FGATE: CN601-A2 or TP608 on LD main control board / CN306-A9 on main control board • Belt mark: CN218-B11, TP210, or CN233-A6 on I/O control board / CN303-B1, TP108, or CN306-B2 on main control board / CN601-B9 or TP606 on LD main control board If the machine is equipped with the controller, 1. Check if the connectors (CN609) on the LD control board and controller I/F board are properly set. 2. Check if the controller I/F board is properly connected. 3. Replace the interface board.
+Code;SC360
+Description;Development bias error - Timing - When the development DC bias is on during printing or process control - Condition - The feedback voltage is 4.8V or higher, or the PWM value becomes 80% or higher for 500 ms continuously.
+Causes;• Poor connection of connectors • Dirty terminals • Defective high voltage supply (B) • Defective I/O control board • Defective main control board
+Remedy;1. Clean the development roller shaft (terminal). 2. Clean the bias terminal if it is dirty. 3. Poor connection: Correct the leaf spring shape. 4. Replace the bias terminal if it does not move smoothly. 5. Check the connectors of high voltage supply cable and trigger lines are properly connected on the high voltage supply board (B), I/O control board, and main control board. 6. Replace the high voltage supply board (B) 7. Replace the I/O control board. 8. Replace the main control board. - Signals to Check - • Feedback signal: CN203-A12, TP228, or CN214-A5 on I/O control board / CN302-A5 or TP167 on main control board • PWM: CN203-A13 or TP234 on I/O control board
+Code;SC361
+Description;Revolver HP sensor error - Timing & Condition - The home position is not detected during 3 revolutions of the revolver unit after the revolver motor turns on.
+Causes;• Poor connection of connector • Dirty sensor • Defective sensor • Defective revolver motor • Defective revolver drive board • Defective I/O control board • Defective main control board
+Remedy;"1. Check if the sensor connector is properly connected. 2. Replace the revolver H.P. sensor if the voltage at CN203-A4 on the I/O control board does not change when covering the sensor with a piece of paper. NOTE: Make sure that the revolver unit is locked for this step. 3. If the revolver unit does not rotate; 1 Replace the revolver motor. 2 Replace the revolver motor drive board. 3 Replace the I/O control board. 4 Replace the main control board. - Signals to Check - • Revolver H.P.: CN203-A4 or TP211 on I/O control board"
+Code;SC385
+Description;ID sensor VSG adjustment error - Timing - During process control self check, the main control board detects that the Vsg signal fed back from the ID sensor is out of range.
+Causes;• Dirty ID sensor • Poor connection of connector • Defective ID sensor • Poor cleaning
+Remedy;1. Clean the ID sensor. 2. Check if the sensor connector is properly connected. 3. Replace the ID sensor. 4. Check the drum cleaning unit. - Signals to Check - • ID sensor LED: CN203-B9 or TP252 on I/O control board • ID sensor 1 (K ): CN203-B10 or TP227 on I/O control board / TP174 on main control board. • ID sensor 2 (CMY): CN203-B11 or TP229 on I/O control board / TP173 on main control board.
+Code;SC386
+Description;Amount of toner on sensor pattern too low during ID pattern measurement The amount of toner obtained during YCM ID pattern measurement was less than (target value for the amount of toner) minus (threshold value for detecting insufficient toner density) 5 consecutive times, even though there was no toner end condition - If ID sensor error (SC385) is detected before this SC, no detection is attempted unless Vsg is adjusted and the ID sensor error condition is reset. - This SC does not apply to black toner since the toner end sensor is not used for Bk.
+Causes;Defective toner end sensor, dirt in toner cartridge end sensor window
+Remedy;This SC is only logged in the memory (not displayed), so no particular action is required (no adverse influence is exerted on copier operation). Defective toner end sensor: SP5-803-010 (Input check: toner end sensor), replace if necessary. Dirty toner end sensor window: Clean. Toner supply seal peeled off: Remove the cartridge and check the seal in the hopper.
+Code;SC387
+Description;Drum potential error - Timing - During initial process control check or interval (number of copies) process control self check - Condition - While the revolver unit returns to the home position, the following condition is detected. VD < VG – 200V VD > VG + 200V
+Causes;• Uneven charge • Worn drum • Defective potential sensor
+Remedy;1. Clean the charge corona unit or replace the charge corona wire and grid plate. 2. Reinstall the drum. 3. Replace the drum if necessary. 4. Replace the potential sensor.
+Code;SC400
+Description;Image transfer belt bias error - Timing - When the image transfer belt bias is on during printing or a process control self check - Condition - The feedback voltage is 4.8V or higher, or the PWM value is 50% or higher (indicating a leak) for 500 ms continuously.
+Causes;• Poor connection of connectors • Defective high voltage supply board (T1,PCC) • Defective I/O control board • Defective main control board
+Remedy;1. Check if the connectors of high voltage cables and trigger lines are properly connected on the high voltage supply board, I/O control board, and main control board. 2. Clean the bias terminals. 3. Replace the high voltage supply board (T1,PCC). 4. Replace the I/O control board. 5. Replace the main control board. - Signals to Check - • Feedback signal: CN277-B3, TP221, or CN214-A4 on I/O control board / CN302-A6 or TP158 on main control board. • PWM: CN227-B4 or TP209 on I/O control board.
+Code;SC422
+Description;PCC leak - Timing & Condition - When the current leak is detected for 2 seconds, leak detection starts 1 second after the PCC turns on. The leak signal is monitored twice at 1 second intervals. When the leak condition is detected twice continuously, this SC is displayed.
+Causes;• PCC unit not properly set • Corona wire broken • Defective high voltage supply board (T1,PCC) • Defective I/O control board • Defective main control board
+Remedy;1. Check if the PCC unit is properly instaled. 2. Replace the corona wire if it is broken. 3. Check if the connectors on the terminal and high voltage supply board (T1,PCC) are properly connected and if the cables are damaged. 4. Clean the receptacle. 5. Replace the high voltage supply board (T1,PCC). 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Leak detection: CN227-B1 or TP294 on I/O control board.
+Code;SC440
+Description;Drum motor error - Timing & Condition - • The feedback signal from the motor is still out of range 1 second after the trigger signal is sent. • The feedback signal becomes out of range for 2 seconds while the trigger signal is on.
+Causes;• Poor connection of connector • Defective drum motor • Defective I/O control board • Defective main control board
+Remedy;1. Check if the drum is locked by the cleaning blade. If it is, replace the cleaning blade. 2. Check if the connector (CN223) on the I/O control board is properly connected. 3. Check if the drum motor works properly using SP 5- 804-001 to 004. If not, replace the drum motor. 4. Replace the I/O control board. 5. Replace the main control board. - Signals to Check - • Motor OK: CN223-B5 or TP295 on the I/O control board
+Code;SC450
+Description;Paper transfer bias current error - Timing - When the paper transfer bias is on during printing - Condition - The feedback voltage is 4.8V or higher (indicating a leak), or PWM value is 50% or higher for 500 ms continuously.
+Causes;• Defective high voltage supply (T2,D) • Defective I/O control board • Defective main control board
+Remedy;1. Check if the connectors of high voltage cables and trigger lines are properly connected on the high voltage supply board (T2,D), I/O control board, and main control board. 2. Replace the high voltage supply board (T2,D). 3. Replace the I/O control board. 4. Replace the main control board. - Signals to Check - • Feedback signal: CN227-A3, TP220, or CN214-A3 on I/O control board / CN302-A7 or TP105 on the main control board • PWM: CN227-A4 or TP208 on I/O control board
+Code;SC452
+Description;Transfer belt mark detection error - Timing & Condition- The main control board does not receive the belt mark detection signal from the transfer belt home position sensor for a certain period.
+Causes;• Dirty or damaged belt mark • Belt mark out of position • Defective sensor • Defective I/O control board • Defective main control board
+Remedy;1. Check if the transfer belt release lever is properly set. 2. Clean the belt mark if it is dirty. 3. Replace the transfer belt if a belt mark has peeled off or is damaged. 4. Clean the transfer belt home position sensor if it is dirty. 5. Replace the transfer belt home position sensor. 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Sensor: CN223-A6, TP210, or CN218-B11 on I/O control board / CN303-B1 or TP137 on the main control board.
+Code;SC456
+Description;Paper transfer unit position error - Timing & Condition • The paper transfer home position sensor does not detect the paper transfer unit moving into the contact position or the release position at the correct time.
+Causes;• Defective paper transfer positioning clutch • Defective I/O control board
+Remedy;1. Replace the paper transfer H.P. sensor. (Input Check: SP 5-803-11) 2. Replace the paper transfer positioning clutch. (Output Check: SP 5-804-23) 3. Replace the I/O control board. - Signals to Check - • H.P.: CN229-5 or TP286 on I/O control board
+Code;SC457
+Description;Image transfer belt cleaning unit position error - Timing & Condition • The belt cleaning home position sensor does not detect the transfer belt cleaning unit moving into the contact position or the release position at the correct time.
+Causes;• Dirty sensor • Defective sensor • Defective belt cleaning clutch • Defective I/O control board • Defective main control board
+Remedy;1. Pull out and re-insert the image transfer belt unit. 2. Clean the belt cleaning H.P. sensor if it is dirty. 3. Replace the sensor. (Input Check: 5-803-12) 4. Replace the belt cleaning clutch. (Output Check: SP 5- 804-36) 5. Replace the I/O control board. 6. Replace the main control board. - Signals to Check - • H.P.: CN202-2 or TP254 on I/O control board
+Code;SC495
+Description;Temperature sensor error - Timing & Condition - The temperature sensor output is out of range (2.75V or greater or less than 0.25V).
+Causes;• Poor connection of connector • Defective humidity sensor • Defective I/O control board • Defective main control board
+Remedy;1. Check that the connectors (CN236, 214 & CN302) are properly connected on the I/O control board and main control board. 2. Replace the humidity sensor. 3. Replace the I/O control board. 4. Replace the main control board. - Signals to Check - • Temperature: CN236-6, TP247, or CN214-A9 on I/O control board / CN302-A1 or TP223 on main control board
+Code;SC496
+Description;Humidity sensor error - Timing & Condition - The humidity sensor output is out of range (2.75V or greater or less than 0.25V)
+Causes;• Poor connection of connector • Defective humidity sensor • Defective I/O control board • Defective main control board
+Remedy;1. Check the connector is properly connected on the I/O board (CN236). 2. Replace the humidity sensor. 3. Replace the I/O control board. 4. Replace the main control board. - Signals to Check - • Humidity: CN236-3, TP222, or CN214-A8 on I/O control board / CN302-A2 or TP168 on main control board
+Code;SC500
+Description;Fusing motor error - Timing & Condition - • The feedback signal from the motor is still out of range 1 second after the trigger signal is sent. • The feedback signal becomes out of range for 2 seconds while the trigger signal is on.
+Causes;• Poor connection of connector • Defective fusing motor • Defective I/O control board • Defective main control board
+Remedy;1. Check if the connector (CN204) is properly connected on the I/O control board. 2. Replace the fusing motor. (Output check: SP 5-804- 05,-06,-07,-08) 3. Replace the I/O control board. 4. Replace the main control board. 5. Check if anything causes overload for the fusing unit drive. - Signals to Check - • Motor OK: CN204-7 on I/O control board
+Code;SC501
+Description;1st paper tray error - Timing & Condition - • The upper limit sensor does not turn on1.5 s after the tray bottom plate starts to go up.
+Causes;• Defective upper limit sensor • Defective tray bottom plate • Defective I/O control board • Defective main control board
+Remedy;1. Check if the spring of pick-up solenoid comes off. 2. Check if the sensor cable is properly connected. 3. Clean or replace the sensor and replace it if necessary (Input Check: SP 5-803-14 to 17). 4. Replace the tray bottom lever if it is broken. 5. Pull out the paper tray and check if the tray lift motor works properly (Output Check: SP 5-804-75 to 82). 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Limit sensor H.P.: CN226-2 or TP206 on I/O control board
+Code;SC502
+Description;2nd paper tray error - Timing & Condition - • The upper limit sensor does not turn on1.5 s after the tray bottom plate starts to go up.
+Causes;• Defective upper limit sensor • Defective tray bottom plate • Defective I/O control board • Defective main control board
+Remedy;1. Check if the spring of pick-up solenoid comes off. 2. Check if the sensor cable is properly connected. 3. Clean or replace the sensor and replace it if necessary (Input Check: SP 5-803-14 to 17). 4. Replace the tray bottom lever if it is broken. 5. Pull out the paper tray and check if the tray lift motor works properly (Output Check: SP 5-804-75 to 82). 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Limit sensor H.P.: CN226-2 or TP206 on I/O control board
+Code;SC503
+Description;3rd paper tray error - Timing & Condition - • The upper limit sensor does not turn on1.5 s after the tray bottom plate starts to go up.
+Causes;• Defective upper limit sensor • Defective tray bottom plate • Defective I/O control board • Defective main control board
+Remedy;1. Check if the spring of pick-up solenoid comes off. 2. Check if the sensor cable is properly connected. 3. Clean or replace the sensor and replace it if necessary (Input Check: SP 5-803-14 to 17). 4. Replace the tray bottom lever if it is broken. 5. Pull out the paper tray and check if the tray lift motor works properly (Output Check: SP 5-804-75 to 82). 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Limit sensor H.P.: CN226-2 or TP206 on I/O control board
+Code;SC504
+Description;4th paper tray error - Timing & Condition - • The upper limit sensor does not turn on1.5 s after the tray bottom plate starts to go up.
+Causes;• Defective upper limit sensor • Defective tray bottom plate • Defective I/O control board • Defective main control board
+Remedy;1. Check if the spring of pick-up solenoid comes off. 2. Check if the sensor cable is properly connected. 3. Clean or replace the sensor and replace it if necessary (Input Check: SP 5-803-14 to 17). 4. Replace the tray bottom lever if it is broken. 5. Pull out the paper tray and check if the tray lift motor works properly (Output Check: SP 5-804-75 to 82). 6. Replace the I/O control board. 7. Replace the main control board. - Signals to Check - • Limit sensor H.P.: CN226-2 or TP206 on I/O control board
+Code;SC510
+Description;Paper feed motor error - Timing & Condition - • The feedback signal from the motor is still out of range 1 second after the trigger signal is sent. • The feedback signal becomes out of range for 2 seconds while the trigger signal is on
+Causes;• Poor connection of connector • Defective paper feed motor • Defective I/O control board • Defective main control board • Mechanical overload
+Remedy;1. Check if the connector is properly connected on the I/O control board (CN224). 2. Replace the paper feed motor. (Output check: SP 5- 804-08 to 09) 3. Replace the I/O control board. 4. Replace the main control board. 5. Check the feed unit drive section and if anything causes overload. - Signals to Check - • Motor OK: CN224-B4 or TP297 on I/O control board
+Code;SC522
+Description;Duplex - Side fence jogger H.P. error - Timing & Condition - • The home position is still detected a few seconds after the side fence leaves from the home position. • The home position is not detected 12 seconds after the side fence moves back to the home position.
+Causes;• Duplex unit not set properly • Excessive load • Poor connection of connector • Defective side fence motor • Defective I/O control board
+Remedy;1. Pull out and re-insert the duplex unit. 2. Check the connector (CN485) is properly connected on the duplex control board. 3. Check if anything causes overload to the motor. 4. Replace the side fence motor (Output Check: SP 5-804 93 and 94). 5. Replace the I/O control board
+Code;SC524
+Description;Duplex - End fence jogger H.P. error - Timing & Condition - • The home position is still detected a few seconds after the end fence leaves from the home position. • The home position is not detected 13 seconds after the end fence moves back to the home position.
+Causes;• Duplex unit not set properly • Excessive load • Poor connection of connector • Defective end fence motor • Defective I/O control board
+Remedy;1. Pull out and re-insert the duplex unit. 2. Check the connector (CN486) is properly connected on the duplex control board. 3. Check if anything causes overload to the motor. 4. Replace the end fence motor (Output Check: SP 5-804 95 and 96). 5. Replace the I/O control board.
+Code;SC541
+Description;Hot roller thermistor open - Timing - Every 1 second when the fusing unit is installed - Condition - The hot roller thermistor output is almost close to 5V, which corresponds to 0 °C, for 6 seconds continuously.
+Causes;• Fusing unit not set properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board
+Remedy;1. Check if the fusing unit is properly set. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this table.) 5. Replace the I/O control board. 6. Replace the main control board. - Signals to Check - • Thermistor: CN206-B9, TP231, or CN214-B1 on I/O control board / CN302-B9 or TP154 on main control board.
+Code;SC542
+Description;Hot roller warm-up error - Timing & Condition - The hot roller thermistor does not output an analog value corresponding to the ready temperature within 12 minutes after the main switch is turned on.
+Causes;• Poor connection of connectors • Hot roller fusing lamp blown • Hot roller thermofuse opened • Power fluctuation • Defective main control board • Defective I/O control board • Defective AC drive board
+Remedy;1. Check if the following connectors are properly connected: • Hot roller fusing lamp connectors • CN303 on the main control board • CN206 and CN214 on the I/O control board • CN105 on the PSU 2. Replace the hot roller fusing lamp if it is opened. 3. Replace the hot roller thermofuse if it is opened. 4. Check if the power supplied from the outlet fluctuates. 5. Replace the main control board, I/O control board, or PSU (check the trigger signal at each pin and replace any defective boards). - Signals to Check - • Hot roller fusing lamp trigger: CN303-B6 on main control board / CN205-A4, TP267, or CN218-B6 on I/O control board / CN106-5 on PSU.
+Code;SC543
+Description;Hot roller fusing lamp overheat - Timing - Every 1 second when the fusing unit is installed - Condition - The hot roller thermistor output is lower than about 0.3V, which corresponds to 220 °C, for 3 seconds continuously.
+Causes;• Fusing unit not set properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly instaled. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B9, TP231, or CN214-B1 on I/O control board / CN302-B9 or TP154 on main control board. • Hot roller fusing trigger: CN303-B6 on main control board / CN205-A4, TP267, or CN218-B6 on I/O control board / CN106-5 on PSU.
+Code;SC544
+Description;Hot roller fusing lamp lower limit temperature detected - Timing - Every 1 second after warm-up is completed - Condition - The hot roller thermistor output is higher than about 3V, which corresponds to 87 °C, for 8 seconds continuously after warm-up is completed.
+Causes;• Fusing unit not set properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly instaled. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B9, TP231, or CN214-B1 on I/O control board / CN302-B9 or TP154 on main control board. • Hot roller fusing trigger: CN303-B6 on main control board / CN205-A4, TP267, or CN218-B6 on I/O control board / CN106-5 on PSU.
+Code;SC545
+Description;Hot roller ready temperature abnormal - Timing - Every 1 second after the temperature reaches the ready condition - Condition - The hot roller thermistor output does not reach the ready temperature within 7 minutes.
+Causes;• Fusing unit not set properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly instaled. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B9, TP231, or CN214-B1 on I/O control board / CN302-B9 or TP154 on main control board. • Hot roller fusing trigger: CN303-B6 on main control board / CN205-A4, TP267, or CN218-B6 on I/O control board / CN106-5 on PSU.
+Code;SC547
+Description;Hot roller temperature does not increase - Timing - Every 1 second, 2 minutes after the main switch turned on until the hot roller temperature reaches the ready condition - Condition - The hot roller temperature does not increase by more than 3 °C for a minute during warm-up.
+Causes;• Poor connection of connectors • Hot roller fusing lamp blown • Hot roller thermofuse opened • Defective main control board • Defective I/O control board • Defective PSU
+Remedy;"1. Check if the following connectors are properly connected; • Hot roller fusing lamp connectors • CN303 on the main control board • CN206 and CN214 on the I/O control board • CN105 on the PSU 2. Replace the hot roller fusing lamp if it is opened. 3. Replace the hot roller thermofuse if it is opened. 4. Replace the main control board, I/O control board, or AC drive board (check the trigger signal at each pin). - Signals to Check - • Hot roller fusing lamp trigger: CN303-B6 on main control board / CN205-A4, TP267, or CN218-B6 on I/O control board / CN106-5 on PSU."
+Code;SC551
+Description;Pressure roller thermistor open - Timing - Every 1 second after the fusing unit is installed - Condition - The pressure roller thermistor output is almost close to 5V, which corresponds to 0 °C, for 6 seconds continuously.
+Causes;• Fusing unit not installed properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board
+Remedy;1. Check if the fusing unit is properly installed. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the I/O control board. 6. Replace the main control board. - Signals to Check - • Thermistor: CN206-B4, TP230, or CN214-B2 on I/O control board / CN302-B8 or TP156 on main control board.
+Code;SC552
+Description;Pressure roller warm-up error - Timing & Condition - The pressure roller thermistor does not output an analog value corresponding to the ready temperature within 12 minutes after the main switch is turned on.
+Causes;• Poor connection of connectors • Pressure roller fusing lamp blown • Pressure roller thermofuse opened • Blown fuse • Power fluctuation • Defective main control board • Defective I/O control board • Defective PSU
+Remedy;"1. Check if the following connectors are properly connected; • Pressure roller fusing lamp connectors • CN303 on the main control board • CN206 and CN214 on the I/O control board • CN105 on the PSU 2. Replace the pressure roller fusing lamp if it is opened. 3. Replace the pressure roller thermofuse if it is opened. 4. Check if the power supplied from the outlet fluctuates. 5. Replace the main control board, I/O control board, or PSU (check the trigger signal at each pin). - Signals to Check - • Pressure roller fusing lamp trigger: CN303-B7 on main control board / CN218-B5, TP267, or CN205-A5 on I/O control board / CN106-4 on PSU."
+Code;SC553
+Description;Pressure roller overheat - Timing - Every 1 second when the fusing unit is installed - Condition - The pressure roller thermistor output is lower than about 0.3V, which corresponds to 220 °C, for 3 seconds continuously.
+Causes;• Fusing unit not installed properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly installed. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B4, TP230, or CN214-B2 on I/O control board / CN302-B8 or TP156 on main control board. • Pressure roller fusing trigger: CN303-B7 on main control board / CN218-B5, TP267, or CN205-A5 on I/O control board /CN106-4 on PSU.
+Code;SC554
+Description;Pressure roller low limit temperature detected - Timing - Every 1 second after warm-up is completed - Condition - The pressure roller thermistor output is higher than about 3 V, which corresponds to 87 °C, for 8 seconds continuously after warm-up is completed.
+Causes;• Fusing unit not installed properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly installed. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B4, TP230, or CN214-B2 on I/O control board / CN302-B8 or TP156 on main control board. • Pressure roller fusing trigger: CN303-B7 on main control board / CN218-B5, TP267, or CN205-A5 on I/O control board /CN106-4 on PSU.
+Code;SC555
+Description;Pressure roller ready temperature abnormal - Timing - Every 1 second after the temperature reaches the ready condition - Condition - The pressure roller thermistor output does not reach the ready temperature within 7 minutes continuously.
+Causes;• Fusing unit not installed properly • Poor connection of connector • Defective thermistor • Defective I/O control board • Defective main control board • Defective PSU
+Remedy;1. Check if the fusing unit is properly installed. 2. Check if the thermistor connector is properly connected. 3. Replace the thermistor if it is deformed. 4. Replace the thermistor if it is opened by measuring the resistance. (Refer to the Temperature/ Resistance Conversion Reference Table at the end of this SC code table.) 5. Replace the main control board, I/O control board, or PSU (check the output from the thermistor and the trigger signal at each pin). - Signals to Check - • Thermistor: CN206-B4, TP230, or CN214-B2 on I/O control board / CN302-B8 or TP156 on main control board. • Pressure roller fusing trigger: CN303-B7 on main control board / CN218-B5, TP267, or CN205-A5 on I/O control board /CN106-4 on PSU.
+Code;SC557
+Description;Pressure roller temperature does not increase - Timing - Every 1 second, 2 minutes after the main switch turned on until the roller temperature reaches the ready condition - Condition - The pressure roller temperature does not increase by more than 3 °C for a minute during warm-up.
+Causes;• Poor connection of connectors • Pressure roller fusing lamp brown • Pressure roller thermofuse opened • Defective main control board • Defective I/O control board
+Remedy;1. Check if the following connectors are properly connected: • Pressure roller fusing lamp connectors • CN303 on the main control board • CN206 and CN214 on the I/O control board 2. Replace the pressure roller fusing lamp if it is opened. 3. Replace the pressure roller thermofuse if it is opened. 4. Replace the main control board, I/O control board, or by checking the trigger signal at each pin. - Signals to Check - • Pressure roller fusing trigger: CN303-B7 on main control board / CN218-B5, or CN205-A5 on I/O control board.
+Code;SC558
+Description;Zero cross signal abnormal - Timing & Condition - Zero cross signals generated within a certain period do not reach a predetermined number.
+Causes;• Poor connection of connectors • Blown fuse • Defective PSU • Defective main control board • Defective I/O control board
+Remedy;"1. Check if the following connectors are properly connected; • CN205 and CN218 on the I/O control board • CN303 on the main control board • CN106 on the PSU 2. Check the continuity of the signal lines of the above cables. 3. Replace the PSU, I/O control board, or main control board by checking the signal line at each pin. - Signals to Check - • Zero cross: CN106-3 on PSU/ CN205-A6, TP250, or CN218-B8 on I/O control board / CN303-B4 or TP170 on main control board"
+Code;SC601
+Description;Scanner IPU communication error - Timing & Condition - After the main control board communicates successfully with the scanner IPU board once, a communication error is detected.
+Causes;• Poor connection of connectors • Defective scanner IPU board • Defective main control board
+Remedy;1. Turn the main power switch off/on. 2. Check if the connectors (CN412 and CN407) are properly connected on the sub control board and scanner IPU board. 3. Replace the scanner IPU board. 4. Replace the main control board.
+Code;SC604
+Description;IDU communication error - Timing & Condition - No response is received from the IDU within 200 ms after the scanner IPU board sends a command and this error is detected 3 times in total.
+Causes;• Poor connection between the IDU and scanner IPU board • Defective IDU board • Defective scanner IPU board
+Remedy;1. Check if the IDU board is properly connected to the scanner IPU board. 2. Replace the IDU board. 3. Replace the scanner IPU board.
+Code;SC620
+Description;ADF communication error - Timing & Condition - After the main control board communicates successfully with the ARDF once, a communication error is detected.
+Causes;• Poor connection or damaged cable • Defective ARDF main board • Defective main control board
+Remedy;1. Check that the cable is properly connected on the ADF main board and main control board or check if it is damaged. 2. Replace the ARDF main board. 3. Replace the main control board.
+Code;SC621
+Description;Sorter communication error - Timing - Just after the main switch is turned on or while the sorter is running - Condition - The main control board detected a communication error with the sorter main board.
+Causes;• Poor connection or damaged fibreoptic cable • Defective sorter main board • Defective main control board
+Remedy;1. Check that the fibre-optic cable is properly connected on the sorter main board and main control board or check if it is damaged. 2. Replace the sorter main board. 3. Replace the main control board.
+Code;SC625
+Description;FPU communication error - Timing & Condition - The scanner IPU board detected a communication error with the FPU while the FPU is operating or after the FPU completes the operation.
+Causes;• Poor connection or damaged fibreoptic cable • Defective FPU main board • Defective scanner IPU board
+Remedy;1. Check that the fibre-optic cable is properly connected on the FPU main board and main control board or check if it is damaged. 2. Replace the FPU main board. 3. Replace the scanner IPU board.
+Code;SC626
+Description;Paper tray unit communication error - Timing - Just after the main switch is turned on or while the paper tray unit is running - Condition - The main control board detected a communication error with the paper tray unit.
+Causes;• Poor connection or damaged cables • Defective CSS/bank interface board • Defective paper tray unit control board • Defective main control board
+Remedy;1. Check that the cables are properly connected on the main control board, CSS/bank interface board, and paper tray unit control board or check if the cables are is damaged. 2. Replace CSS/bank interface board. 3. Replace the paper tray unit control board. 4. Replace the main control board.
+Code;SC630
+Description;RDS communication error - Timing & Condition - The main control board receives no response from RDS when accessing it. Even when this error is detected, the copier does not show the SC code and this SC code is not logged. (Copier functions are still working.)
+Causes;• Poor connection or damaged cable • Defective line adapter • Defective CSS/bank interface board • Defective main control board
+Remedy;1. Check that the cables are properly connected on the CSS/bank interface board and main control board or check if the cables are damaged. 2. Check and/or change the setting of the line adapter or replace it. 3. Replace the CSS/bank interface board. 4. Replace the scanner IPU board.
+Code;SC690
+Description;Application selection error - Timing & Condition - When the main CPU communicates with CPUs on other PCBs, the main CPU does not receive response from the others.
+Causes;• Scanner IPU firmware upgrade • Poor connection of connectors • Defective scanner IPU board • Defective main control board • Main boards of options
+Remedy;• If this SC code is displayed after the scanner IPU firmware is changed, the IC card may still be in the slot. Turn the main switch off and on after removing the IC card. 1. Check if the connectors on the main control board, scanner IPU board, and the main board on each option are properly connected. 2. Replace the defective boards.
+Code;SC720
+Description;Sorter main motor error The main motor pulse output state remains unchanged for 300 ms at start time, or for 100 ms during operation.
+Causes;Defective motor
+Remedy;Defective motor: Test with SP5-804-120. Replace if necessary
+Code;SC721
+Description;Sorter bin motor error The bin HP sensor has not turned off 2,550 ms after the bin goes up from the home position.
+Causes;Defective sensor (including connectors), defective motor, or motor overload
+Remedy;Defective bin HP sensor: Check connections. Test using SP5-803-124/125 (input check: bin home/bin rotation). Replace the sensor if necessary. Overload: Check the mechanism, including the gears. Defective bin drive motor: Test with SP5-804-124. Replace if necessary.
+Code;SC722
+Description;Sorter jogger motor error The jogger does not return to its home position within the specified time. The jogger does not leave home position within the specified time.
+Causes;Defective jogger HP sensor (including connectors), defective jogger motor
+Remedy;Defective jogger HP sensor: Check the connections. Test with SP5-803-128. Replace if necessary. Defective jogger motor: Test with SP5-804-131. Replace if necessary.
+Code;SC724
+Description;Sorter grip motor error The grip HP sensor does not go off within 3,200 ms during travel out of home position. The grip HP sensor does not go on within 3,200 ms during return to home position.
+Causes;Defective grip HP sensor (including connectors), defective grip motor
+Remedy;Defective grip HP sensor: Check connections. Test with SP5-803-129. Replace if necessary. Defective grip motor: Test with SP5-804-127. Replace if necessary.
+Code;SC725
+Description;Sorter stapler motor error The stapler HP sensor cannot detect the home position within the specified time (700 ms) after the stapler motor is turned on.
+Causes;Staple jam, overload due to too many staples, or defective stapler motor
+Remedy;Staple jam: Check. Overload due to too many staples: Check. Defective stapler motor: Test with SP5-804-129. Replace if necessary.
+Code;SC731
+Description;Sorter tray shift motor error The sorter self-diagnostics detect a tray shift motor error and notify the main control board. Detection timing: Just after power is turned on or when the sorter is running
+Causes;Defective tray shift motor or overload
+Remedy;Motor overload: Check the mechanism, including the gears. Defective motor: Test with SP5-804-132. Replace if necessary.
+Code;SC732
+Description;Sorter tray lift motor error The sorter self-diagnostics detect a tray lift motor error and notify the main control board. Detection timing: Just after power is turned on or when the sorter is running
+Causes;Defective tray lift motor
+Remedy;Defective tray lift motor: Test with SP5-804-124. Replace if necessary. Defective sorter control board: Replace.
+Code;SC741
+Description;Optional paper tray unit error The paper tray unit selfdiagnostics detect an error and notify the main control board. Detection timing: Just after power is turned on or when the paper tray unit is running.
+Causes;Defective paper tray unit control board
+Remedy;Defective paper tray unit control board: Replace.
+Code;SC790
+Description;Projector lamp on error - Timing & Condition - The projector lamp does not turn on 100 ms after 5V is applied to it.
+Causes;• Poor connection of connector • Blown projector lamp • Defective projector main board
+Remedy;1. Check if the connector is properly connected. 2. Replace the projector lamp if it is blown. 3. Replace the projector main board.
+Code;SC791
+Description;Projector lamp off error - Timing & Condition - The projector lamp does not turn off 100 ms after it is turned off.
+Causes;• Defective projector main board • Defective scanner IPU board • Defective main control board
+Remedy;Replace the projector main board. Replace the scanner IPU board. Replace the main control board.
+Code;SC792
+Description;Projector lamp overheated - Timing & Condition - The projector lamp overheats during projector operation.
+Causes;• Poor connection of connector • Defective thermistor • Defective projector main board
+Remedy;1. Check if the connector of the fan is properly connected. 2. Replace the fan if it is defective. 3. Replace the thermistor if it is defective. 4. Replace projector main board.

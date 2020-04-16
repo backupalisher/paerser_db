@@ -1,0 +1,140 @@
+Code;01
+Display;
+Description;No LEDs light and no display.
+Causes;AC power source not live. Power cord not fully inserted into power source or power entry module. AC fuse blown. AC fuse blown. Power supply faulty. Main logic board failure.
+Remedy;Power cord not fully inserted into power source or power entry module. Plug power cord into a live AC source. Make sure that power cord is fully inserted into the AC receptacle and the power entry module. Replace AC fuse. Replace power supply. Replace main logic board.
+Code;02
+Display;
+Description;All LEDs light, but nothing displays on LCD and printer does not operate.
+Causes;Main logic board or Flash faulty.
+Remedy;Download new Flash or replace the main logic board.
+Code;03
+Display;
+Description;All LEDs flash on and off.
+Causes;No significant amount of DRAM tested good.
+Remedy;Replace the main logic board.
+Code;04
+Display;
+Description;Take Label LED flashing.
+Causes;Printer misconfigured for Peel-Off Mode.
+Remedy;If peel-off is desired, check take label sensor.
+Code;05
+Display;
+Description;Printer locks up while running Power-On Self Test.
+Causes;Main logic board failure.
+Remedy;Replace main logic board.
+Code;06
+Display;EEPROM CHECKSUM INVALID
+Description;
+Causes;EEPROM checksum is incorrect.
+Remedy;Replace the main logic board.
+Code;07
+Display;ERROR CONDITION PAPER OUT
+Description;Printer stops and ERROR LED flashes.
+Causes;No media loaded or incorrectly loaded. Misadjusted media sensor. Maximum label length set shorter than label length. Printer set for non-continuous media, but continuous media is loaded.
+Remedy;Load media correctly. Check media sensor position and sensitivity. Verify maximum label length setting is correct. Install proper media or reset printer for current media type.
+Code;08
+Display;ERROR CONDITION RIBBON OUT
+Description;Printer stops and ERROR LED flashes.
+Causes;For Thermal Transfer: Ribbon not loaded or incorrectly loaded. or Ribbon sensor not sensing ribbon that is correctly loaded.
+Remedy;1. Load ribbon correctly. 2. Ensure snap plate is properly installed. 3. Perform media and ribbon sensor calibration.
+Code;09
+Display;WARNING RIBBON IN
+Description;For Direct Thermal: Ribbon loaded unnecessarily.
+Causes;Remove ribbon. Verify snap plate is properly installed.
+Remedy;Remove ribbon. Verify snap plate is properly installed.
+Code;10
+Display;ERROR CONDITION HEAD OPEN
+Description;Printer stops and ERROR LED flashes.
+Causes;Printhead is not fully closed. Head open sensor not detecting position flag, or flag not in the proper position.
+Remedy;Close printhead completely. Check head open sensor and flag for proper operation.
+Code;11
+Display;WARNING HEAD TOO HOT
+Description;
+Causes;Printhead element is overheated.
+Remedy;Printer resumes printing when the printhead element cools to a normal operating temperature.
+Code;12
+Display;WARNING HEAD COLD
+Description;Printhead element is not hot enough to print properly.
+Causes;Printhead data cable not properly connected.
+Remedy;Environment too cold for proper printing. Relocate printer to warmer area. WARNING: The printhead can be very hot and can cause severe burns. Allow the printhead to cool. Disconnect and reconnect data cable to the printhead. Ensure that the cable connector is fully inserted into the printhead connector.
+Code;13
+Display;ERROR CONDITION CUTTER JAMMED
+Description;
+Causes;The cutter blade is in the media path.
+Remedy;Turn the power OFF. Remove the media, reload the media and turn power ON. If the error condition still exists, check cutter sensors and control board. Replace if necessary.
+Code;14
+Display;OUT OF MEMORY XXXXX XXXXX
+Description;Printer stops and PAUSE LED lights.
+Causes;Not enough memory to perform the function indicated in the second line of the display. It is possible that the printer is configured for continuous label stock with the maximum label length set too long. Functions: 1. Creating a bitmap — bitmap size is larger than the label length/width specified. 2. Storing a bitmap — not enough memory available to store the bitmap created. 3. Building a format — label is too complex. 4. Storing a format — format size is too large to fit in available memory. 5. Storing a graphic — graphic image is too large to fit in the available memory. 6. Storing a font — not enough memory to store the font.
+Remedy;You may do any of the following: A. STORING ERRORS - With PAUSE ON, use the -HM ZPL II command to display the amount of memory available. Then redesign the graphic/format to fit in the available memory or remove items from memory to create more space. Or Press PAUSE to skip that step in the process and continue to the next step. B. With PAUSE ON, press CANCEL and the printer skips that label formatting process and continues to the next label format. C. Turn power OFF to clear printer memory and start all over again.
+Code;15
+Display;
+Description;Poor Print Quality.
+Causes;1. Darkness set too low. 2. Incorrect media and ribbon. 3. Printhead just replaced. 4. Printhead adjustments incorrect. 5. Printhead resistance not configured to proper value.
+Remedy;1. Reconfigure darkness setting. 2. Replace media and ribbon. 3. Ensure printhead is installed properly with no wires or debris caught underneath. 4. Perform required adjustments. 5. Reconfigure printhead resistance.
+Code;16
+Display;
+Description;Truncated print, no print, or feed button operates incorrectly while using non-continuous media.
+Causes;Maximum label length parameter set less than the actual label length. Printer, that is in rewind or peel-off mode, was powered on without media or backing around the rewind spindle.
+Remedy;Set the correct label length. Load media correctly for rewind or peel-off mode.
+Code;17
+Display;
+Description;Long tracks of missing print on several labels.
+Causes;Wrinkled ribbon. Print element damaged.
+Remedy;See wrinkled ribbon in this table. Replace printhead.
+Code;18
+Display;
+Description;Fine gray lines on blank labels at angles.
+Causes;Wrinkled ribbon.
+Remedy;See Wrinkled Ribbon in this table.
+Code;19
+Display;
+Description;Wrinkled ribbon.
+Causes;"Ribbon fed through machine incorrectly. Incorrect darkness setting. Incorrect printhead pressure or balance. Media not feeding properly; it is walking from side to side. Strip plate needs adjusting. Ribbon supply spindle tension needs adjusting. Printhead needs realigning with platen roller. Ribbon take-up spindle tension needs adjusting. Three point mount for ribbon supply spindle needs adjusting. Ribbon supply core slipping; spindle blades need adjusting."
+Remedy;Load ribbon correctly. Set darkness to the lowest setting possible for good print quality. Set the pressure to the minimum needed. Refer to the printhead balance adjustment and printhead pressure adjustment procedures. Make sure the media is snug by adjusting the media guide. Perform adjustments.
+Code;20
+Display;
+Description;Light printing or no printing on the left or right side of the label.
+Causes;Printhead needs balancing.
+Remedy;Adjust balance. See printhead balance adjustment procedures.
+Code;21
+Display;
+Description;Misregistration/skips labels.
+Causes;Improper sensor type selected. Misadjusted media sensors. Improper spindle tensions.
+Remedy;Select proper sensor type through front panel programming. Adjust media sensors. Check and adjust spindle tension if necessary.
+Code;22
+Display;
+Description;Misregistration and misprint of 1 to 3 labels.
+Causes;Media was pulled when motor was not moving. Printer that is in rewind or peel-off mode was powered ON without media or backing around rewind spindle. Misadjusted media sensor.
+Remedy;Open and close the printhead so it calibrates to find the label length. Load media correctly for rewind or peel-off mode. Place media sensor in proper position.
+Code;23
+Display;
+Description;Vertical drift in top-of-form registration.
+Causes;A plus or minus 1 mm vertical drift is allowable due to the tolerances of the mechanical parts and printer modes.
+Remedy;Use top position setting to reposition the top-of-form. Calibrate if excessive.
+Code;24
+Display;
+Description;Label jam in rear area of the printhead.
+Causes;Upper media plate (snap plate) needs cleaning.
+Remedy;Clean upper media plate (snap plate).
+Code;25
+Display;
+Description;Print label feeds out and then backfeeds immediately resting under the printhead.
+Causes;Printer set for cutter mode with no cutter installed.
+Remedy;Set correct print mode.
+Code;26
+Display;
+Description;Changes in parameter settings did not take effect.
+Causes;Parameters are set incorrectly. If problem continues, there may be a problem with main logic board.
+Remedy;Cycle the power. Reload factory defaults. Then, set parameters and save permanently. Replace the main logic board.
+Code;27
+Display;
+Description;Missing LCD characters or parts of characters.
+Causes;LCD may need replacing.
+Remedy;Run the Power-On Self Test and confirm that LCD display is showing all characters.
+Code;28
+Display;
+Description;ZPL was sent to printer, but not recognized. Buffer light remains ON or flashes.
+Causes;Communications parameters are incorrect. Prefix and delimiter characters set in printer do not match the ones used in ZPL. Zebra protocol is on.
+Remedy;Print a communications diagnostic label. Check for format or overrun errors. Reset communication parameters. Set the characters in the printer to match ZPL format. If problem continues, check the ZPL format for changed

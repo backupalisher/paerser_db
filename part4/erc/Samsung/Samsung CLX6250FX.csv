@@ -1,0 +1,160 @@
+Code;01-000
+Display;Door is open or Check Transfer belt
+Description;Front cover or top cover is opened.
+Causes;1. Harness is defective, Connector is not connected properly. 2. Sensor is defective.
+Remedy;1. Ensure the Front and Top Covers are closed properly. 2. If the PTB [paper transfer belt] is not installed, install it. 3. Check the cover switch harness between Main PBA and HVPS. 4. Check the 24V enable signal on Main PBA. If the voltage is high(5V), replace the Main PBA. 5. Check the 24V1 on SMPS. If there is no output, replace the SMPS board.
+Code;01-004
+Display;Paper Jam in MP tray
+Description;The paper from the MP tray has not reached to the feed sensor within a predetermined period of time after pick up.
+Causes;1. Pickup roller rubber is worn out. 2. Pickup Clutch does not work. 3. Feed Sensor is defective.
+Remedy;1. Ensure the Front and Top Covers are closed properly. 2. If the PTB [paper transfer belt] is not installed, install it. 3. Check the cover switch harness between Main PBA and HVPS. 4. Check the 24V enable signal on Main PBA. If the voltage is high(5V), replace the Main PBA. 5. Check the 24V1 on SMPS. If there is no output, replace the SMPS board.
+Code;01-005
+Display;Paper jam in tray 1
+Description;The paper from the tray1 has not reached to a feed sensor within a predetermined period of time after pick up.
+Causes;1. Pickup roller rubber is worn out. 2. Pickup Clutch does not work. 3. Feed Sensor is defective.
+Remedy;1. Take out the cassette and remove the jammed paper. 2. Check the separator pad of the cassette. If it become loose or has reached its PM interval, replace it. * MEA Holder Pad (JC97-02892A) 3. If the pick up roller does not rotate, check the Gear Pick up(JC97-02895A) and solenoid. If it is defective, replace it. 4. If the pick up roller rotates but the paper is not feeding, replace the Feed motor (JC31-00112A). 5. Check the connectors are plugged in properly on CN4,5,9 on HVPS. 6. Check the connectors are plugged in properly on CN1,2 on HVPS and check the flat cable. 7. Check that the PM interval for Pick-up Roller has expired. If so, replace it. 8. Check the actuator on the Feed Sn. If it does not work correctly, replace the feed-sensor. 9. Check for proper positioning of the Knockup-Plate(JC97-02888A) 10. Check if the Guide-adjust is adjusted for paper entry properly.
+Code;01-006, 01-018
+Display;Paper jam in tray 2
+Description;The paper from the tray2 has not reached to a feed sensor within a predetermined period of time after pick up.
+Causes;1. Pickup roller rubber is worn out. 2. Pickup Clutch does not work. 3. Feed Sensor is defective.
+Remedy;1. Take out the 2nd cassette and remove the jammed paper. 2. If the pick up roller does not rotate, check the Gear Pick up(JC97-03228A). If it is defective, replace it. 3. If the pick up roller rotates but the paper is not feeding, replace the Clutch-Feed(JC97-03270A). 4. Check the connector is plugged in properly on CN9 connector on Main PBA 5. Check the sensor and connector in SCF.
+Code;01-009
+Display;Paper jam inside of machine
+Description;Paper jam inside of machine 1. At Power On, the paper is jamming at Regi sensor or Feed sensor. 2. At printing, the paper is detecting at Regi sensor or Feed sensor continuously. 3. At printing, the paper is not detected at exit sensor within a predetermined time.
+Causes;1. Feed sensor or Regi Sensor is defective. 2. Exit sensor is defective. 3. Feed Clutch is defective. 4. Regi Clutch is defective.
+Remedy;1. Check the Spring tension of the Regi. roller and Regi shaft. If the spring is defective, replace it. 2. Check and replace the exit sensor. 3. Check the connectors are plugged in properly on the flat cable / exit sensor harness / Feed sensor harness. 4. Check the OPC motor is working. / OPC lock. 5. Check PTB [paper transfer belt] working condition, if PTB-Belt is torn replace it.
+Code;01-010
+Display;Paper jam in exit area
+Description;Paper jam in exit area
+Causes;There is paper jammed under the Exit Sensor at Power ON, or the Fuser Actuator Arm, or Exit Sensor is defective.
+Remedy;1. If the actuator fuser sensing part is binding or broken, replace the Fuser Actuator [JC66-01404A] and exit sensor if required. 2. Check the connectors are plugged in properly on the flat cable / Exit sensor harness.
+Code;01-015
+Display;Paper jam at the top of duplex path
+Description;1. At Power On, if the Fuser Exit Sensor and/or Reverse Sensor detects paper. 2. At Printing, Fuser Exit sensor and Reverse Sensor is not on within a predetermined time after paper moves into the Reverse path.
+Causes;1. Check the Fuser Exit Sensor, Reverse Sensor Harness and Connector. 2. Check if the UI message is changed in the Fuser Exit Sensor and the Reverse Sensor operation (EDC Mode). 3. Check the Reverse Motor and Fuser Exit Motor. (EDC Mode).
+Remedy;1. Lift the Scan Unit and Open the Reverse Top Cover and the Middle Open Cover. Check for Paper in the Fuser and Reverse Unit. 2. If the paper is jammed, remove the paper in the Fuser. 3. If the paper is not present, check if the Fuser Exit and Reverse actuator’s return action as the EDC Mode just checks on/off. If so, check the actuator springs of the Fuser Exit and Reverse return spring tension is sufficient,. and sensor arm works smoothly. ( EDC Mode -> Test Routines -> Engine Diagnostic Test -> 102-370 / 102-xxx) 4. If the Actuator Arm in the Fuser and Reverse is Operating properly. Check if Reverse motor and Fuser Exit Motor is turning properly in EDC Mode. ( EDC Mode -> Test Routines -> Engine Diagnostic Test -> 100-xxx / 100-xxx)
+Code;01-017
+Display;Output bin Full Output bin Full. Remove printed paper
+Description;When the tray limit is reached, the out-bin full sensor is on for 600ms.
+Causes;1. Check the Out-Bin Full Sensor. 2. Check if the UI message is changed by the Out-Bin Full Sensor operation. 3. Check the Out-Bin Full Sensor Harness and Connector.
+Remedy;1. Check the BIN_FULL_SENSOR (picture’1’ below) by pushing the trigger (picture’2’ below) beneath the SCAN_ ASSY. Check if the UI message is changed by the Out-Bin Full Sensor operation 2. Check if the Harness is defective. Check if the connector is connected properly. 3. Replace the Main PBA or the Scan_Joint PBA or the Panel PBA. 4. Enter the EDC mode and follow the below sequence after the repair is done. ( EDC Mode - Test Routines - 101-Clutch - 0190-OutBin Full - Start - Status check - Stop )
+Code;02-000
+Display;Fuser Error :#02-000 Please turn off then on.
+Description;At Warm-up, this error has occurred. The machine does not work until power off/on. If the error code reoccurs, follow the Troubleshooting method below
+Causes;Fuser Unit is not installed and AC is not supplied to the Heat Lamp.
+Remedy;1. Turn off the power. And turn on the power. 2. If the problem persists, replace the fuser unit. 3. If the problem persists after replacing the fuser unit, reconnect the CN35 connector on Main-PBA. 4. If the problem persists, replace the Main-PBA.
+Code;02-001, 02-006
+Display;Fuser Error :#02-001 Please turn off then on. Fuser Error :#02-006 Please turn off then on.
+Description;At Warm-up, this error has occurred. The machine does not work until power off/on. If the error code reoccurs, follow the Troubleshooting method below.
+Causes;Fuser Unit is not installed and AC is not supplied to the Heat Lamp.
+Remedy;1. Turn off the power. And turn on the power. 2. Check the connection of the Fuser AC on FDB 3. Check the Fuser control harness 4. Check the resistance value of the thermostat. If the value is infinite, replace the thermostat. 5. If the problem persists, replace the Fuser unit. 6. Replace the SMPS board or FDB (Fuser drive board).
+Code;02-002
+Display;System Error :#02-002 Please turn off then on.
+Description;The fuser unit is overheated. The machine does not work until power off/on. If the error code reoccurs, follow the Troubleshooting method below.
+Causes;The machine can not control fuser temperature.
+Remedy;1. Turn off the power. And turn on the power. 2. Replace the Fuser unit. 3. Replace the FDB. 4. Replace the Main-PBA.
+Code;02-005
+Display;System Error :#02-005 Please turn off then on.
+Description;The ADC port is short.
+Causes;The machine can not control fuser temperature.
+Remedy;1. Turn the power off then on again. 2. If the problem persists, replace the Main PBA.
+Code;03-000
+Display;Motor error Error: #03-000 Turn off then on
+Description;Motor Signal is abnormal.
+Causes;1. Harness is defective, Connector is not connected properly. 2. Main BLDC Motor is defective. 3. Main Board is defective.
+Remedy;1. Replace Harness if defective. 2. Replace the Main BLDC Motor if defective. 3. Replace the Main Board if defective.
+Code;03-007, 03-008, 03-009
+Display;Motor error Error: #03-007/008/009 Turn off then on
+Description;Motor Signal is abnormal.
+Causes;1. Harness is defective, Connector is not connected properly. 2. Color OPC BLDC Motor is defective. 3. Main Board is defective.
+Remedy;1. Check the motor connector. Reconnect the harness. 2. If the problem persists, replace the BLDC motor. 3. If the problem persists after replacing BLDC motor, replace the Main PBA.
+Code;03-015
+Display;Motor error Error: #03-015 Turn off then on
+Description;Fan does not operate.
+Causes;Fan is defective.
+Remedy;1. Check the CN17 connector (FAN) on Main PBA. 2. If the FAN is defective, replace it. 3. If the problem persists, replace the Main PBA.
+Code;04-001, 04-002, 04-008
+Display;LSU error: #. Please turn off then on.A.
+Description;Laser beam detect signal has not occurred or is irregular. LSU motor does not operate.
+Causes;1. Harness is defective, Connector is not connected properly. 2. LSU is defective. 3. Main Board is defective.
+Remedy;1. Check the LSU connector on Main PBA. Reconnect it. If necessary, replace it. 2. If the problem persists, replace the LSU or Main PBA.
+Code;08-000, 08-001
+Display;Original paper Jam Original paper jam inside of scanner. Remove Jam
+Description;The lead edge of the document failed to actuate the Registration sensor within the predetermined time after initialization of Paper Pick up.
+Causes;1. Pick up roller is defective. 2. Scan sensor or actuator is defective. 3. Document paper path is contaminated.
+Remedy;"1. Check the paper path for a small piece of paper that may have been torn from an original; or foreign materials such as paper clips, extracted staples, etc. 2. Check the condition of the Pick-up, Paper Feed Roller and DADF Rubber, it may have reached its PM interval. 3. Registration Sensor change 4. Registration Sensor drive Board change 5. Pick-up Solenoid change"
+Code;08-002, 08-006
+Display;Original paper jam inside of scanner
+Description;The leadedge of the document has not reached to scan sensor after being sensed by the regi sensor.
+Causes;1. Gate sensor or actuator is defective. 2. Document paper path is contaminated. 3. WHITE BAR SHEET is not attached properly. 4. WHITE BAR is defective.
+Remedy;"1. Check the paper path for a small piece of paper that may have been torn from an original; or foreign materials such as paper clips, extracted staples, etc. 2. Check that the White bar sheet is properly set to the guide. 3. Check and clean the Registration Roller, replace as is necessary. 4. Check and clean the Exit Roller, replace as is necessary. 5. Check and clean the Scan Senor for paper dust, replace as is necessary. 6. Check the signals from the Scan Sensor Drive Board, replace as is necessary. 7. Check and clean the Exit Solenoid, replace as is necessary."
+Code;08-003, 08-010
+Display;Original paper Jam Original paper jam inside of scanner. Remove Jam
+Description;At duplex scan, the leadedge of the document has not reached to the duplex sensor after scanning the front side.
+Causes;1. Duplex sensor or actuator is defective. 2. There is the contamination on paper path or a defective assembly. 3. The Duplex Gate does not work properly. 4. Duplex motor is defective.
+Remedy;1. Check and clean the Duplex Solenoid, replace as is necessary. 2. Check and clean the Exit Roller, replace as is necessary. 3. Check the signals from the DADF Drive Board, replace as is necessary.
+Code;08-004, 08-006
+Display;Original paper Jam Original paper jam inside of scanner. Remove Jam
+Description;The bottom edge of the document failed to pass the scan sensor after the leadedge of the document has reached to the duplex sensor and scan sensor.
+Causes;1. Scan sensor or actuator is defective. 2. There is the contamination on paper path or a defective assembly.
+Remedy;"1. Check the paper path for a small piece of paper that may have been torn from an original; or foreign materials such as paper clips, extracted staples, etc. 2. Check and clean the Registration Roller, replace as is necessary. 3. Check and clean the Exit Roller, replace as is necessary. 4. Check and clean the Scan Sensor for paper dust, replace as is necessary. 5. Check the signals from the Scan Sensor Drive Board, replace as is necessary. 6. Check and clean the Exit Solenoid, replace as is necessary."
+Code;08-008
+Display;Scanner door Open Door of scanner is open. Close it
+Description;DADF door is opened.
+Causes;The cover open sensor is defective.
+Remedy;Check if the DADF cover is closed. If opened, close the DADF cover until it blocks the PHOTO-INTERRUPTER. If UI message is not changed, open the COVER-DADF REAR and replace the PHOTO-INTTERRUPTER.
+Code;11-003
+Display;Scanner locked Scanner locking switch is locked. Release it
+Description;Scanner locking switch is locked or Home checking is abnormal.
+Causes;Scanner locking switch is locked.
+Remedy;Check if the scanner locking switch is locked. If the scanner locking switch is locked, move the switch 1 to 2
+Code;12-000, 12-001
+Display;Paper mismatch Tray1/2 Load [A4] [Plain] Continue Cancel x
+Description;The paper in tray1 and/or tray 2 does not match the size selected.
+Causes;1. Check that the size selected matches the copy paper in the tray selected. 2. Check the harness and connector of the Trya1/2 Size Sensor. 3. Tray1/2 Size Sensors and it operation.
+Remedy;1. Pull out Tray1/2 Cassette. 2. Load [Letter] paper in Tray1/2 Cassette. 3. Install Tray1/2 Cassette. Check if Feed-Actuator works correctly. 1. Check the tension spring is properly loaded on the Actuator_Feed. 2. Check that the connector for the photo sensor is plugged in securely.
+Code;12-004
+Display;Paper mismatch MP. Load [A4] [Plain] Continue Cancel x
+Description;The paper in Manual Tray does not match the size selected.
+Causes;1. Check that the size selected matches the copy paper in the Manual Tray. 2. Check the harness and connector of the MP Size Sensor. 3. MP Size Sensor is defective.
+Remedy;1. Open MP Tray. 2. Load [Letter] paper in MP Tray. 3. If the problem persists, check if the MP_Paper_Detect_Actuator works correctly. a. Check the spring is put in the right place of the actuator b. Check the harness and the connector fit on the photo sensor. c. Check the connection of the Drawer_MP and screw points.
+Code;18-000, 18-001
+Display;Fax memory is almost full. Fax memory is full. Print or remove received fax Job Too many faxes are queued to be sent. Wait or remove queued job. Too many faxes are received. Print or remove job
+Description;Cannot execute the Fax function.
+Causes;There is not enough fax memory.
+Remedy;1. “Fax memory is almost full.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button. 2. “Fax memory is full. Print or remove receive fax job.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button. 3. “Too many faxes are queued to be sent. Wait or remove queued job.” message case : 1) Check the delayed Fax job. (Reserved delay send job) 2) If the number of reserved send jobs is reached Max Job Count, reservation of send job is denied. 3) So, remove the delayed job . (Fax mode > Menu > Fax Feature > Cancel job) 4. “Too many faxes are received. Print or remove job.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button.
+Code;18-002, 18-003
+Display;Fax memory is almost full. Fax memory is full. Print or remove received fax Job Too many faxes are queued to be sent. Wait or remove queued job. Too many faxes are received. Print or remove job
+Description;Cannot execute the Fax function.
+Causes;There is not enough fax memory.
+Remedy;1. “Fax memory is almost full.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button. 2. “Fax memory is full. Print or remove receive fax job.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button. 3. “Too many faxes are queued to be sent. Wait or remove queued job.” message case : 1) Check the delayed Fax job. (Reserved delay send job) 2) If the number of reserved send jobs is reached Max Job Count, reservation of send job is denied. 3) So, remove the delayed job . (Fax mode > Menu > Fax Feature > Cancel job) 4. “Too many faxes are received. Print or remove job.” message case : 1) Check the printing condition of machine. (Toner or Paper of tray) 2) Even though the printing condition of machine is normal, if this message is displaying, check the Secure Receive option. (Fax mode > Menu > Fax Feature > Secure Receive > Off) 3) Even though the option of Secure Receive is off, if this message is displaying, remove the job using the STOP button.
+Code;21-002
+Display;Paper Empty in tray1 Paper is empty in tray1. Load paper
+Description;There is the paper in tray1 but error message is displayed.
+Causes;1. Tray1 empty sensor harness is not connected properly. . 2. Empty Sensor is defective.
+Remedy;1. Check the paper empty sensor connector. Reconnect it. 2. Check the paper empty sensor. If it is defective, replace it. 3. Check if the actuator is broken.
+Code;21-003
+Display;Tray 1 cassette is pulled out. Insert it properly
+Description;Tray1 cassette is inserted in machine but error message is displayed.
+Causes;1. The connector of the Tray1 Home Position Sensor is not connected properly. 2. Tray1 Home Position Sensor is defective.
+Remedy;1. Reinstall the tray1 cassette. 2. Reconnect the / Feed sensor harness. 6p Feed/Tray empty 3.Check the CST Draw connector. Reconnect it.
+Code;21-010
+Display;Paper is empty in MP tray. Load paper
+Description;There is the paper in MP tray but error message is displayed.
+Causes;1. MP Paper Empty Sensor harness is not connected properly. 2. MP Paper Empty Sensor is defective.
+Remedy;1. Check the MP paper empty sensor connector. Reconnect it. 2. Check the MP paper empty sensor. If it is defective, replace it. 3. Check if the MP Empty actuator is broken.
+Code;21-018
+Display;Paper Empty in tray2 Paper is empty in tray2. Load paper
+Description;There is the paper in tray2 but error message is displayed.
+Causes;1. Tray2 empty sensor harness is not connected properly. . 2. Empty Sensor is defective.
+Remedy;1. Check the paper Tray2 empty sensor connector. Reconnect it. 2. Check the paper Tray2 empty sensor. If it is defective, replace it. 3. Check if the Tray2 actuator is broken.
+Code;21-019
+Display;Tray2 cassette is pulled out. Insert it properly
+Description;Tray2 cassette is inserted in machine but error message is displayed.
+Causes;1. The connector of the Tray2 Home Position Sensor is not connected properly. 2. Tray2 Home Position Sensor is defective.
+Remedy;1. Reinstall the tray2 cassette. 2. Check the Tray2 Open micro sensor connector. Reconnect it. 3. Check the Tray2 Open micro sensor. If it is defective, replace it.
+Code;28-001, 28-002, 28-003
+Display;Transfer belt is not installed. Install it. Transfer belt is not compatible for this machine. Check user’s guide.
+Description;The red LED is turning on and the machine does not operate.
+Causes;The transfer belt unit is installed in the machine but the machine could not read the information from the CRUM. CRUM information is different from machine.
+Remedy;1.Check if transfer belt unit is properly installed. 2. Check CRUM PBA connector pins. Replace the CRUM PBA with normal thing and test it. If the CRUM PBA is defective, replace the transfer belt unit or CRUM PBA. 3. Check if the Transfer Belt CRUM Harness is defective and check that the connector is properly plugged into the Engine Board. 4. Replace the Main Board with a known good one and test it. If it works replace Main Board.

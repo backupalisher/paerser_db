@@ -1,0 +1,292 @@
+Code;11-2T01, 11-2T11, 11-2T21
+Display;Tray paper mismatch Tray 1 paper mismatch Tray 2 paper mismatch Tray 3 paper mismatch Tray 4 paper mismatch MP tray paper mismatch
+Description;Paper in tray is not matched to the machine paper setting.
+Remedy;1) Check and change the paper setting of the corresponding tray properly.
+Code;11-2T31, 11-2T41, 11-2T61
+Display;Tray paper mismatch Tray 1 paper mismatch Tray 2 paper mismatch Tray 3 paper mismatch Tray 4 paper mismatch MP tray paper mismatch
+Description;Paper in tray is not matched to the machine paper setting.
+Remedy;1) Check and change the paper setting of the corresponding tray properly.
+Code;61–1111
+Display;Booting Failure: #61-1111. Turn off then on. Call for service if the problem persists
+Description;Hibernation image creation is failed.
+Remedy;1) Turn the machine on with a normal booting. 2) Enter the SVC mode. Select “Hibernation On” again.
+Code;A1–1112, A1–1113
+Display;Motor Failure: #A1-1112. Turn off then on. Call for service if the problem persists Motor Failure: #A1-1113. Turn off then on. Call for service if the problem persists
+Description;Main(Feed/Fuser) motor operation is abnormal.
+Remedy;"• A1–1112 : Main motor is not operated for print-job. • A1–1113 : Main motor is operating but machine recognizes status as ""Stopped"". 1) Turn the machine off. Check if there are any foreign substances or paper around the paper path. 2) Remove the right cover. 3) Check if the main motor connector is connected correctly. 4) If the connection is OK, turn the machine on. Enter SVC mode. Select the main motor test. (Diagnostics > Engine Diagnostics > Engine Test Routines) Check the motor operation. a) If the motor is not operational, • Check the signal and power with the DVM. • If the checked result is normal, replace the main(feed/fuser) motor(JC31–00144B) • If the checked result is abnormal, check the following. - If 24V power is not generated, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). - If the control signal is abnormal, replace the main board(JC92–02722A). b) If the motor is operational, • Check the Pin No 8. If the value is abnormal, replace the main board. If the value is normal, replace the harness. 5) If the main motor operation is normal, remove the fuser unit. Check if the fuser unit has any problem. Replace the fuser unit(JC91–01177A (220V) / JC91–01176A (110V))."
+Code;A1–2112, A1–2113
+Display;Motor Failure: #A1-1112. Turn off then on. Call for service if the problem persists Motor Failure: #A1-1113. Turn off then on. Call for service if the problem persists
+Description;OPC/Deve motor operation is abnormal.
+Remedy;"• A1–2112 : OPC/Deve motor is not operated for print-job. • A1–2113 : OPC/Deve motor is operating but machine recognizes status as ""Stopped"". 1) Turn the machine off. Check if there are any foreign substances or paper around the paper path. 2) Remove the right cover. 3) Check if the OPC/Deve motor connector is connected correctly. 4) If the connection is OK, turn the machine on. Enter SVC mode. Select the OPC/Deve motor test. (Diagnostics > Engine Diagnostics > Engine Test Routines) Check the motor operation. a) If the OPC/Deve motor is not operational, • Check the signal and power with the DVM. • If the checked result is normal, replace the OPC/Deve motor(JC31–00075C). • If the checked result is abnormal, check the following. - If 24V power is not generated, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). - If the control signal is abnormal, replace the main board(JC92–02722A). b) If the OPC/Deve motor is operational, • Check the Pin No 8. If the value is abnormal, replace the main board. If the value is normal, replace the harness. 5) If the OPC/Deve motor operation is normal, remove the imaging unit. Check if the imaging unit has any problem. Replace the imaging unit."
+Code;A1-5110
+Display;Motor Failure: #A1-5110. Turn off then on. Call for service if the problem persists
+Description;Supply motor operation is abnormal.
+Remedy;1) Turn the machine off. 2) Remove the right cover. 3) Check if the DC motor (toner supply motor) connector in the main drive unit is connected correctly. 4) If the connection is OK, turn the machine on. Enter SVC mode. Select the DC motor test. (Diagnostics > Engine Diagnostics > Engine Test Routines) Check the motor operation. a) If the DC motor is not operational, • Check the signal and power with the DVM. • If the checked result is normal, replace the DC motor(JC31-00078A) or the main drive unit(JC93–00923A). • If the checked result is abnormal, check the following. - If 24V power is not generated, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). - If the control signal is abnormal, replace the main board(JC92–02722A). b) If the DC motor is operational, • If the value on the main board is abnormal, replace the main board. If the value is normal, replace the harness.
+Code;A2–1210, A2–2110
+Display;Fan Failure: #A2-xxxx. Turn off then on. Call for service if the problem persists
+Description;SMPS or Fuser or LSU or Deve fan is not operational.
+Remedy;NOTE • SMPS fan error : A2–1210 • Main(Fuser) fan error : A2–2110 • LSU fan error : A2–2410 • Deve fan error : A2–2610 1) Turn the machine off. 2) Check if the corresponding fan connector is connected correctly 3) If the connection is OK, Enter SVC mode and execute fan test. (Diagnostics > Engine Diagnostics > Engine Test Routines) 4) If the fan is not operational, measure the fan power. a) If 24V power is generated, replace the defective fan. • SMPS fan : JC31–00153A • Main(Fuser) fan : JC31–00088A • LSU fan : JC31–00086A • Deve fan : JC31–00086A b) If 24V power is not generated, • Measure the 24V power on the SMPS board. If the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)) is defective, replace it. • If the SMPS board is normal, replace the main board(JC92–02722A). 5) If the fan operation is normal but the error persists, a) Check the yellow line signal with DVM. b) Check fan operation as connected or disconnected. • If the Lock signal is 0V continually, check the harness. If the harness is OK, replace the main board. • If the signal value is different from the table above, replace the fan.
+Code;A2–2410, A2–2610
+Display;Fan Failure: #A2-xxxx. Turn off then on. Call for service if the problem persists
+Description;SMPS or Fuser or LSU or Deve fan is not operational.
+Remedy;NOTE • SMPS fan error : A2–1210 • Main(Fuser) fan error : A2–2110 • LSU fan error : A2–2410 • Deve fan error : A2–2610 1) Turn the machine off. 2) Check if the corresponding fan connector is connected correctly 3) If the connection is OK, Enter SVC mode and execute fan test. (Diagnostics > Engine Diagnostics > Engine Test Routines) 4) If the fan is not operational, measure the fan power. a) If 24V power is generated, replace the defective fan. • SMPS fan : JC31–00153A • Main(Fuser) fan : JC31–00088A • LSU fan : JC31–00086A • Deve fan : JC31–00086A b) If 24V power is not generated, • Measure the 24V power on the SMPS board. If the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)) is defective, replace it. • If the SMPS board is normal, replace the main board(JC92–02722A). 5) If the fan operation is normal but the error persists, a) Check the yellow line signal with DVM. b) Check fan operation as connected or disconnected. • If the Lock signal is 0V continually, check the harness. If the harness is OK, replace the main board. • If the signal value is different from the table above, replace the fan.
+Code;A3–3212
+Display;Sensor Failure: #A3-3212. Turn off then on. Call for service if the problem persists
+Description;Inner temperature sensor is defective.
+Remedy;1) Enter SVC mode. Execute sensor test to check its operation. (Diagnostics > Engine Diagnostics > Engine Test Routines) 2) Measure the resistance value of the connector at both ends. If the value is not in 47.5K - 52.5K (@ 25C), replace the inner temp sensor(1404-001417). 3) If the sensor is normal, replace the main board(JC92.02722A).
+Code;A3–3312, A3–3320
+Display;Sensor Failure: #A3-3312. Turn off then on. Call for service if the problem persists The room temperature is not suitable for this set use. Please adjust room temperature
+Description;Outer temperature/humidity sensor is defective.
+Remedy;1) Enter SVC mode. Execute sensor test to check its operation. (Diagnostics > Engine Diagnostics > Engine Test Routines > Outer Temperature) 2) Measure the resistance value of the connector at both ends. If the value is not in 47.5K - 52.5K(@ 25C), replace the outer temperature/humidity sensor(JC32-00005A). 3) If the harness and sensor are normal, replace the main board(JC92.02722A).
+Code;A4-1110
+Display;Lamp Failure: #A4-1110. Open the door, then close it. Call for service if the problem persists
+Description;Erase Lamp does not turn on.
+Remedy;1) Enter SVC mode. Execute the erase lamp test. (Diagnostics > Engine Diagnostics > Engine Test Routines > Erase Lamp) 2) If the erase lamp does not turn on, replace it(JC92-02373A).
+Code;C1–1110, C1–111A
+Display;Prepare new toner cartridge Shake toner cartridge and then install. Replace toner cartridge if the problem persists
+Description;Toner cartridge is almost empty.
+Remedy;1) Open the front cover. 2) Remove the toner cartridge. 3) Shake the toner cartridge horizontally to distribute the toner evenly inside the cartridge. 4) Reinstall the toner cartridge. 5) Close the front cover. 6) Prepare new toner cartridge because it will be exhausted soon.
+Code;C1–1120, C1–1140
+Display;Replace with new toner cartridge. End of life, Replace with new toner cartridge.
+Description;Toner cartridge is at the end of its life.
+Remedy;1) Open the front cover. 2) Remove the toner cartridge. 3) Install the new toner cartridge. 4) Close the front cover.
+Code;C1–1160, C1–1170
+Display;Replace with new toner cartridge. End of life, Replace with new toner cartridge.
+Description;Toner cartridge is at the end of its life.
+Remedy;1) Open the front cover. 2) Remove the toner cartridge. 3) Install the new toner cartridge. 4) Close the front cover.
+Code;C1–1311, C1–1313, C1–1314
+Display;Toner Cartridge Failure: #C1-1311. Install toner cartridge again. Shake toner cartridge and then install.
+Description;The toner supply is abnormal.
+Remedy;1) Turn the machine off then on. 2) Open the front cover. 3) Remove the toner cartridge. Thoroughly roll the cartridge three or four times to distribute the toner evenly inside the cartridge. And reinstall the toner cartridge. 4) Try to print out the sample page more than 20 pages. 5) Check the toner cartridge. • Check if the toner cartridge is installed correctly. • Check if the toner seal is removed perfectly. • Check if the toner supply shutter between the toner cartridge and the imaging unit works normally. 6) Replace the toner cartridge. Print out the sample page. 7) Check the toner supply motor operation. • Check the signal and power with the DVM. • If the checked result is normal, replace the DC motor(JC31-00078A) or the main drive unit(JC93–00923A).
+Code;C1–1411
+Display;Toner cartridge is not installed. Install the cartridge.
+Description;The toner cartridge is not installed properly.
+Remedy;1) Open the front cover. 2) If the toner cartridge is not installed, install it. Try to test the machine again. 3) If the toner cartridge is installed, remove it. Check if the modular jack is contaminated or broken. 4) Clean the modular jack or replace the toner cartridge. 5) If it is OK, check the CN22 harness connection on the main board. 6) If the harness is defective, replace it. 7) Turn the machine off then on. Try to test the machine.
+Code;C1–1512
+Display;Toner cartridge is not compatible. Check users guide.
+Description;Toner cartridge is not compatible.
+Remedy;1) Open the front cover. Remove the toner cartridge. 2) Check if the label information of the toner cartridge is same with the machine’s one. (ex. /SEE) 3) If label information is different from the machine or the toner cartridge is not a samsung genuine, replace it with a new one.
+Code;C1–1712
+Display;Toner Cartridge Failure: #C1-1712. Call for service
+Description;The data of CRUM is not detected. / CRUM is defective.
+Remedy;1) Open the front cover. Check if the toner cartridge is installed. 2) Remove and reinstall the toner cartridge. 3) If the problem persists, check if the toner cartridge modular jack is contaminated or deformed. 4) Replace the toner cartridge with new one.
+Code;C3–1110
+Display;Prepare new imaging unit.
+Description;Imaging unit has almost reached the end of its life.
+Remedy;1) Prepare the new imaging unit because it will be exhausted soon.
+Code;C3–1120, C3–1140
+Display;Replace with new imaging unit End of life, Replace with new imaging unit.
+Description;Imaging unit is at the end of its life.
+Remedy;1) Open the front cover. 2) Remove the imaging unit and replace it with new one. 3) Close the front cover.
+Code;C3–1150, C3–1170
+Display;Replace with new imaging unit End of life, Replace with new imaging unit.
+Description;Imaging unit is at the end of its life.
+Remedy;1) Open the front cover. 2) Remove the imaging unit and replace it with new one. 3) Close the front cover.
+Code;C3–1312
+Display;Imaging Unit Failure: #C3-1312. Install imaging unit again.
+Description;Toner sensor is defective. The machine can’t detect the sensor signal in the imaging unit normally.
+Remedy;1) Install the genuine samsung imaging unit. 2) If the imaging unit is already installed, check the following. • Reinstall the toner cartridge and imaging unit. • Check if the CRUM connector is normal. • Turn the machine off then on.
+Code;C3–1330, C3–1411, C3–1414
+Display;Imaging Unit Failure: #C3-1330. Install imaging unit again. Imaging unit is not installed. Install the unit Imaging Unit Failure: #C3-1414. Install imaging unit again.
+Description;The imaging unit is not installed properly.
+Remedy;1) Open the front cover. 2) If the imaging unit is not installed, install it. Try to test the machine again. 3) If the imaging unit is installed, remove it. Check if the modular jack is contaminated or broken. 4) Clean the modular jack or replace the imaging unit. 5) If it is OK, check the CN22 harness connection on the main board. 6) If the harness is defective, replace it. 7) Turn the machine off then on. Try to test the machine.
+Code;C3–1512
+Display;Imaging unit is not compatible. Check users guide.
+Description;Imaging unit is not compatible.
+Remedy;1) Open the front cover. 2) Remove and reinstall the imaging unit. 3) Close the front cover. 4) If the problem persists, replace the imaging unit with new one.
+Code;C3–1712
+Display;Imaging unit Failure: #C3-1712. Call for service.
+Description;The data of CRUM is not detected.
+Remedy;1) Open the front cover. 2) Remove the imaging unit check that its modular jack is contaminated or deformed. 3) If it is defective, replace it with new one. 4) Close the front cover.
+Code;C6–1120
+Display;Replace with new fuser unit
+Description;Fuser unit is at the end of its life.
+Remedy;1) Turn the machine off. 2) Open and remove the rear cover. 3) Remove the fuser unit(JC91–01177A (220V) / JC91–01176A (110V)) and replace it with new one. 4) Close the rear cover.
+Code;H1-1210, H1-1211
+Display;Paper jam in Tray 2.
+Description;Paper jam has occurred in tray2.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray2 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray2 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 6) Check if the AS-SPRING_ES is deformed or assembled properly. 7) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 8) If the problem persists, replace the Drop connector harness.
+Code;H1-1212, H1-1213
+Display;Paper jam in Tray 2.
+Description;Paper jam has occurred in tray2.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray2 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray2 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 6) Check if the AS-SPRING_ES is deformed or assembled properly. 7) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 8) If the problem persists, replace the Drop connector harness.
+Code;H1-1222
+Display;Tray 2 cassette is pulled out. Insert it properly.
+Description;Tray 2 is pulled out or the cassette detection sensor connector is not connected or broken.
+Remedy;1) Remove and insert tray2 correctly. 2) If the problem persists, remove tray2 again. 3) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 4) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 5) If the problem persists, replace the SCF board(JC92-02754A).
+Code;H1-1230, H1-1240
+Display;Input System Failure: #H1-1230. Check tray 2 connection. Tray 2 is not installed. Install the tray.
+Description;The communication error between the tray 2 and the main machine has occurred.
+Remedy;1) Turn the machine off. 2) Check the connection on SCF board. Reconnect the harness. 3) If the drawer connector is deformed or broken, replace it. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)) 4) If the problem persists, replace the SCF main board(JC92-02754A).
+Code;H1-1251, H1-1252, H1-1254
+Display;Paper is low in Tray 2. Load paper. Paper is empty in tray 2. Load paper.
+Description;Paper in the tray2 is less than 10% of specification. / The photo sensor is defective.
+Remedy;1) Remove tray2. Load the paper in tray2. 2) If paper is loaded but error message has not disappeared, check the following. a) Check if the paper empty sensor is contaminated. If so, clean it. b) If the paper empty sensor(0604-001325) is defective, replace it. c) If the empty actuator(JC66–02613A) is defective, replace it.
+Code;H1-1253
+Display;Input System Failure #H1-1253 : Pull Tray 2 out and insert it.
+Description;The paper is not fed from tray2.
+Remedy;1) Check if the Gear-Idle Lift is broken. 2) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 3) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 4) Check if the Lift-Motor connector is connected properly. 5) If the problem persists, replace the Lift-Motor(JC81-08705A).
+Code;H1-1310, H1-1311
+Display;Paper jam in Tray 3.
+Description;Paper jam has occurred in tray3.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray3 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray3 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 7) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 8) If the problem persists, replace the Drop connector harness.
+Code;H1-1312, H1-1313
+Display;Paper jam in Tray 3.
+Description;Paper jam has occurred in tray3.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray3 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray3 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 7) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 8) If the problem persists, replace the Drop connector harness.
+Code;H1-1322
+Display;Tray 3 cassette is pulled out. Insert it properly.
+Description;Tray 3 is pulled out or the cassette detection sensor connector is not connected or broken.
+Remedy;1) Remove and insert tray3 correctly. 2) If the problem persists, remove tray3 again. 3) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 4) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 5) If the problem persists, replace the SCF board(JC92-02754A).
+Code;H1-1330, H1-1340
+Display;Input System Failure: #H1-1330. Check tray 3 connection. Tray 3 is not installed. Install the tray.
+Description;The communication error between the tray 3 and the main machine has occurred.
+Remedy;1) Turn the machine off. 2) Check the connection on SCF board. Reconnect the harness. 3) If the drawer connector is deformed or broken, replace it. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)) 4) If the problem persists, replace the SCF main board(JC92-02754A).
+Code;H1-1351, H1-1352, H1-1354
+Display;Paper is low in Tray 3. Load paper. Paper is empty in tray 3. Load paper.
+Description;Paper in the tray3 is less than 10% of specification. / The photo sensor is defective.
+Remedy;1) Remove tray2. Load the paper in tray3. 2) If paper is loaded but error message has not disappeared, check the following. a) Check if the paper empty sensor is contaminated. If so, clean it. b) If the paper empty sensor(0604-001325) is defective, replace it. c) If the empty actuator(JC66–02613A) is defective, replace it.
+Code;H1-1353
+Display;Input System Failure #H1-1353 : Pull Tray 3 out and insert it.
+Description;The paper is not fed from tray3.
+Remedy;1) Check if the Gear-Idle Lift is broken. 2) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 3) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 4) Check if the Lift-Motor connector is connected properly. 5) If the problem persists, replace the Lift-Motor(JC81-08705A).
+Code;H1-1410, H1-1411
+Display;Paper jam in Tray 4.
+Description;Paper jam has occurred in tray4.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray4 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray4 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 6) Check if the AS-SPRING_ES is deformed or assembled properly. 7) Check if the Press D-cut of the Gear-Lifting(JC81-08478A) is broken. 8) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 9) If the problem persists, replace the Drop connector harness.
+Code;H1-1412, H1-1413
+Display;Paper jam in Tray 4.
+Description;Paper jam has occurred in tray4.
+Remedy;1) Remove the jammed paper. If the problem persists, check the followings. 2) Check if the paper is loaded in the tray4 properly. 3) Check if the pick up/forward/reverse rollers(JC97–02259A) of the tray2 are defective or worn out. 4) Check if the Empty/ Pick up/ Regi-Act sensor of the tray4 is working properly. 5) Check the connection between the motor/clutch and the SCF board. Reconnect the harness. 6) Check if the AS-SPRING_ES is deformed or assembled properly. 7) Check if the Press D-cut of the Gear-Lifting(JC81-08478A) is broken. 8) If the problem persists after checking No. 1-7, replace the SCF board(JC92-02754A). 9) If the problem persists, replace the Drop connector harness.
+Code;H1-1422
+Display;Tray 4 cassette is pulled out. Insert it properly.
+Description;Tray 4 is pulled out or the cassette detection sensor connector is not connected or broken.
+Remedy;1) Remove and insert tray4 correctly. 2) If the problem persists, remove tray4 again. 3) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 4) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 5) If the problem persists, replace the SCF board(JC92-02754A).
+Code;H1-1430, H1-1440
+Display;Input System Failure: #H1-1430. Check tray 4 connection. Tray 4 is not installed. Install the tray.
+Description;The communication error between the tray 4 and the main machine has occurred.
+Remedy;1) Turn the machine off. 2) Check the connection on SCF board. Reconnect the harness. 3) If the drawer connector is deformed or broken, replace it. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)) 4) If the problem persists, replace the SCF main board(JC92-02754A).
+Code;H1-1451, H1-1452, H1-1454
+Display;Paper is low in Tray 4. Load paper. Paper is empty in tray 4. Load paper.
+Description;Paper in the tray4 is less than 10% of specification. / The photo sensor is defective.
+Remedy;1) Remove tray2. Load the paper in tray4. 2) If paper is loaded but error message has not disappeared, check the following. a) Check if the paper empty sensor is contaminated. If so, clean it. b) If the paper empty sensor(0604-001325) is defective, replace it. c) If the empty actuator(JC66–02613A) is defective, replace it.
+Code;H1-1453
+Display;Input System Failure #H1-1453 : Pull Tray 4 out and insert it.
+Description;The paper is not fed from tray4.
+Remedy;1) Check if the Gear-Idle Lift is broken. 2) Check if the cassette detection sensor cable is connected correctly. Unplug and reconnect it. 3) If the connection is OK, replace the cassette detection sensor(JC34-00001A). 4) Check if the Lift-Motor connector is connected properly. 5) If the problem persists, replace the Lift-Motor(JC81-08705A).
+Code;M1–1110
+Display;Paper jam in Tray 1.
+Description;Paper jam has occurred in tray1.
+Remedy;1) Remove the tray1. Remove the jammed paper. And install the tray. 2) If the problem persists, check the followings. 3) Check if the proper paper is loaded in the tray. If not, replace the paper. 4) Check if the pick up/forward/reverse roller(JC97–02259A) are contaminated or worn out. Replace these rollers. 5) Check if the cassette lifting is working normally. If not, check the feed drive unit(JC93–00350A). 6) Check if the main(feed/fuser) motor connector is connected correctly. 7) If the connection is OK, enter SVC mode. Select the main(feed/fuser) motor test. (Diagnostics > Engine Diagnostics > Engine Test Routines) Check the motor operation. a) If the main(feed/fuser) motor is not operational, • Check the signal and power with the DVM. • If the checked result is normal, replace the main(feed/fuser) motor(JC31–00144B). • If the checked result is abnormal, check the following. - If 24V power is not generated, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). - If the control signal is abnormal, replace the main board(JC92–02722A). b) If the main(feed/fuser) motor is operational, • Check the Pin No 8. If the value is abnormal, replace the main board. If the value is normal, replace the harness. 8) Check the pick up clutch connection. If the pick up clutch(JC47-00033E) is defective, replace it.
+Code;M1–1610
+Display;Paper jam in MP Tray.
+Description;Paper jam has occurred in MP tray.
+Remedy;1) Remove the jammed paper from the MP tray. 2) If the problem persists, check the followings. 3) Check if the proper paper is loaded in the tray. If not, replace the paper. 4) Check if the MP pick up roller is contaminated or worn out. Replace the MP pick up roller Assy. 5) Check the MP pick up clutch connection. If the MP pick up clutch is defective, replace it. 6) Check if the main(feed/fuser) motor connector is connected correctly. 7) If the connection is OK, enter SVC mode. Select the main(feed/fuser) motor test. (Diagnostics > Engine Diagnostics > Engine Test Routines) Check the motor operation. a) If the main(feed/fuser) motor is not operational, • Check the signal and power with the DVM. • If the checked result is normal, replace the main(feed/fuser) motor(JC31–00144B).• If the checked result is abnormal, check the following. - If 24V power is not generated, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). - If the control signal is abnormal, replace the main board(JC92–02722A). b) If the main(feed/fuser) motor is operational, • Check the Pin No 8. If the value is abnormal, replace the main board. If the value is normal, replace the harness.
+Code;M1–3122
+Display;Tray 1 cassette is pulled out. Insert it properly.
+Description;Tray1 is not installed properly.
+Remedy;1) Install the tray1. If the tray1 is already installed, remove and reinstall it. 2) Check if the harness connection for cassette detection is normal. Reconnect it. If the harness is defective, replace it. 3) Check if the cassette detection sensor(JC34-00001A) is defective, replace it.
+Code;M1–4111
+Display;Tray Failure: #M1-4111. Pull tray 1 out and insert it. Call for service if the problem persists.
+Description;The paper has jammed in the path or can’t be fed.
+Remedy;1) Check if the pick up/ forward/ retard roller(JC97–02259A) are contaminated or worn out. Replace the defective roller. 2) Check the feed drive unit for cassette lifting. • Check if the gear is worn out or broken. • Check if the DC motor is working normally. • If any part is defective, replace it or the feed drive unit(JC93–00350A). 3) Check the pick up clutch connection. If the pick up clutch(JC47-00033E) is defective, replace it.
+Code;M1–5111, M1–5112, M1–5113
+Display;Paper is low in tray 1. Load paper Paper is empty in tray 1. Load paper.
+Description;Paper is low (M1–5111) or empty(M1–5112, M1–5113) in Tray1.
+Remedy;1) Check if the paper is loaded in tray1. Load the paper. 2) Check if the empty actuator(JC66-02905A) of the pick up Assy is assembled correctly. If it is broken or deformed, replace it. 3) If the empty sensor harness is connected correctly. If the harness is defective, replace it. 4) If the empty sensor(0604-001325) is defective, replace it.
+Code;M1–5120
+Display;Paper is empty in all tray. Load paper
+Description;Paper is empty in all tray.
+Remedy;1) Check if the paper is loaded in tray1 and MP tray. Load the paper. 2) Check if the empty actuator is assembled correctly. If it is broken or deformed, replace it. 3) If the empty sensor harness is connected correctly. If the harness is defective, replace it. 4) If the empty sensor is defective, replace it
+Code;M1–5612
+Display;Paper is empty in all tray. Load paper
+Description;Paper is empty in MP tray.
+Remedy;1) Check if the paper is loaded in MP tray. Load the paper. 2) Check if the MP empty actuator is assembled correctly. If it is broken or deformed, replace it. 3) If the MP empty sensor harness is connected correctly. If the harness is defective, replace it. 4) If the MP empty sensor is defective, replace it.
+Code;M2–1110, M2–1111, M2–1210
+Display;Paper jam in tray. Paper jam inside of machine.
+Description;The paper has jammed at the feed sensor.
+Remedy;1) Remove the tray1. Remove the jammed paper. And install the tray. 2) If the problem persists, check the followings. 3) Check if the feed sensor connector is connected correctly. 4) Check if the regi. roller is contaminated or worn out. 5) Check the regi. clutch connection. If the regi. clutch(JC47-00033E) is defective, replace it. 6) Check the pick up clutch connection. If the pick up clutch(JC47-00033E) is defective, replace it.
+Code;M2–2211, M2–2212
+Display;Paper jam inside of duplex path Paper jam at the top of duplex path Paper jam at the bottom of duplex path
+Description;The paper did not enter the duplex path and has jammed.
+Remedy;1) Remove the jammed paper. If the same error occurs continually, check the following. 2) Check if there are any obstacles or contamination in the duplex path. 3) Check if the exit actuator(JC66-02850A) of the fuser unit works normally. 4) Check if the exit motor works normally and its connector is connected properly. 5) If the exit motor is defective, replace it or exit drive unit(JC93-00349A). 6) Check if the duplex clutch works normally and its connector is connected properly. 7) If the duplex clutch(JC47-00033E) is defective, replace it.
+Code;M2–2214, M2–2310
+Display;Paper jam inside of duplex path Paper jam at the top of duplex path Paper jam at the bottom of duplex path
+Description;The paper did not enter the duplex path and has jammed.
+Remedy;1) Remove the jammed paper. If the same error occurs continually, check the following. 2) Check if there are any obstacles or contamination in the duplex path. 3) Check if the exit actuator(JC66-02850A) of the fuser unit works normally. 4) Check if the exit motor works normally and its connector is connected properly. 5) If the exit motor is defective, replace it or exit drive unit(JC93-00349A). 6) Check if the duplex clutch works normally and its connector is connected properly. 7) If the duplex clutch(JC47-00033E) is defective, replace it.
+Code;M3–1110, M3–1111, M3–1112
+Display;Paper jam in exit area. Paper jam inside of machine
+Description;Paper jam has occurred around the exit area.
+Remedy;1) Remove the jammed paper. If the same error occurs continually, check the following. 2) Check if there are any obstacles or contamination in the duplex path. 3) Check if the exit actuator(JC66-02850A) of the fuser unit works normally. 4) Check if the exit motor works normally and its connector is connected properly. 5) If the exit motor is defective, replace it or exit drive unit(JC93-00349A). 6) Remove the exit drive unit. Check if the gear is worn out or broken. If necessary, replace the exit drive unit. 7) Remove the fuser unit. If there is any broken or defective part of the fuser unit. Replace it or fuser unit(JC91–01177A (220V) / JC91–01176A (110V)).
+Code;M3–2130
+Display;Too much paper in output bin tray. Remove printed paper
+Description;There are too much paper in output bin tray.
+Remedy;1) Remove the paper on exit tray. 2) If this error occurs continually, check the following. a) Check if the bin-full sensor and actuator is assembled correctly. b) Check if the bin-full sensor is defective.
+Code;S2–1110
+Display;Engine Failure: #S2-1110. Call for service if the problem persists
+Description;The CPU in main board has some problem. (Booting error, Communication error etc.)
+Remedy;1) Turn the machine off then on. 2) If the problem persists, replace the main board(JC92–02722A).
+Code;S2–331C, S2–331D, S2–3321
+Display;Calibrating... Please Wait Wait delay time for lower fixing temperature… Supplying and mixing toner to developer unit. Please wait...
+Description;These errors show the engine status.
+Remedy;1) Please wait until this error will disappear.
+Code;S2–4210
+Display;Front door is open. Close it
+Description;Front cover is opened.
+Remedy;1) Open the front cover and close it correctly. 2) Open the front cover. 3) Check if the switch contact of the front cover is deformed. 4) Remove the right cover. 5) Check the connection between the cover open sensor and the joint board. Reconnect the harness. If the harness is defective, replace it. 6) Open the front cover. Check if the message is changed when pushing the micro switch(cover open sensor). 7) If the cover open sensor is defective, replace it.
+Code;S2–4310
+Display;Rear door is open. Close the door
+Description;Rear cover is opened.
+Remedy;1) Open the rear cover and close it correctly. 2) Open the rear cover. 3) Check if the switch contact of the rear cover is deformed. 4) Remove the left cover. 5) Check the connection between the cover open sensor and HVPS board. Reconnect the harness. If the harness is defective, replace it. 6) Open the rear cover. Check if the message is changed when pushing the micro switch(cover open sensor). 7) If the cover open sensor is defective, replace it.
+Code;S3–3121
+Display;Scanner is locked
+Description;Scanner module does not move. / Scanner lock error has occurred.
+Remedy;1) Check if the CIS unit is moving when power on. 2) Check if the flat cable is connected to the CIS unit properly. Reconnect or replace the cable. 3) If the CIS(0609-001573) is defective, replace it. 4) Check if there is any defective part in the scanner unit. (Gear, Belt, Motor etc.) • Gear-Belt (6602-003602) • Scan drive unit (JC97-04170A)
+Code;S7–1110
+Display;Engine System Failure: #S7-1110. Turn off then on
+Description;Power 24V line is abnormal.
+Remedy;1) Check the 24V pin on SMPS board. If it is abnormal, replace the SMPS board(JC44-00092C (220V) / JC44-00091C (110V)). 2) Check the related cable. 3) If the SMPS is normal, replace the main board(JC92–02722A).
+Code;S7–2110
+Display;Fuser Failure: #S7-2110. Turn off then on
+Description;Heater control relay is abnormal.
+Remedy;1) Turn the machine off. Re-install the fuser unit, then turn the machine on. 2) If the problem persists, replace the fuser drive board(FDB). 3) If the problem persists, replace the fuser unit(JC91–01177A (220V) / JC91–01176A (110V)).
+Code;U1–2115, U1–2116
+Display;Fuser unit Failure: #U1-2115. Turn off then on. Call for service if the problem persists Fuser unit Failure: #U1-2116. Turn off then on. Call for service if the problem persists
+Description;The pressure control unit(Cam unit)of the fuser is abnormal.
+Remedy;"CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) Remove the fuser side cover L/R. Check if the Actuator cam, Gear cam are assembled correctly. 6) If there is no problem for above steps, assemble and reinstall fuser unit. Then turn the machine on. 7) If the same error persists, perform a Memory Clear (backup data in SWS first); if that does not work try reinstalling the firmware. 8) If the same error persists, replace the fuser unit(JC91–01177A (220V) / JC91–01176A (110V)) with new one. 9) If the same error persists, replace the main board(JC92–02722A)."
+Code;U1–2117
+Display;Fuser unit Failure: #U1-2117. Turn off then on.
+Description;The machine can’t detect that the fuser unit is installed.
+Remedy;CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) If there is no problem for above steps, assemble and reinstall fuser unit. Then turn the machine on. 6) If the same error persists, execute the memory clear. 7) If the same error persists, replace the fuser unit(JC91–01177A (220V) / JC91–01176A (110V)) with new one. 8) If the same error persists, replace the main board(JC92–02722A).
+Code;U1–2316, U1–2317, U1–2320
+Display;Fuser unit Failure: #U1-2xxx. Turn off then on. Call for service if the problem persists
+Description;The temperature control of fuser unit is abnormal. (Open Heat Error or Low Heat Error or Over Heat Error) / Thermistor is defective. / Fuser unit connection is bad.
+Remedy;CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) Remove the Frame-cover-upper after removing 2 screws. And measure the thermostat continuity. Check if the thermostat is opened. 6) Measure the LAMP-HALOGEN resistance value from the center and both sides. Check if it has the continuity. 7) Check if the Draw-connector harness is correct. Check its color. 8) Check if 2 thermistor connectors are connected properly. 9) Measure the Thermistor resistance value from the center and both sides. Check if it has the continuity. (3 Red Circles) 10)Check if the thermistor connector on the main board is connected properly. 11) Check if the FDB connector is connected properly. 12)Check if the voltage in user environment is in this range (80V - 140V, 160V - 260V). 13)If there is no problems for above steps, update the firmware. 14)Replace the FDB(JC44-00204A(220V)/JC44-00203A(110V)). If the problem persists, replace the SMPS(JC44-00092C(220V)/JC44-00091C(110V)) If the problem persists, replace the main board(JC92-02722A)
+Code;U1–2321, U1–2323, U1–2332
+Display;Fuser unit Failure: #U1-2xxx. Turn off then on. Call for service if the problem persists
+Description;The temperature control of fuser unit is abnormal. (Open Heat Error or Low Heat Error or Over Heat Error) / Thermistor is defective. / Fuser unit connection is bad.
+Remedy;CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) Remove the Frame-cover-upper after removing 2 screws. And measure the thermostat continuity. Check if the thermostat is opened. 6) Measure the LAMP-HALOGEN resistance value from the center and both sides. Check if it has the continuity. 7) Check if the Draw-connector harness is correct. Check its color. 8) Check if 2 thermistor connectors are connected properly. 9) Measure the Thermistor resistance value from the center and both sides. Check if it has the continuity. (3 Red Circles) 10)Check if the thermistor connector on the main board is connected properly. 11) Check if the FDB connector is connected properly. 12)Check if the voltage in user environment is in this range (80V - 140V, 160V - 260V). 13)If there is no problems for above steps, update the firmware. 14)Replace the FDB(JC44-00204A(220V)/JC44-00203A(110V)). If the problem persists, replace the SMPS(JC44-00092C(220V)/JC44-00091C(110V)) If the problem persists, replace the main board(JC92-02722A)
+Code;U1–2339, U1–2341, U1–2342
+Display;Fuser unit Failure: #U1-2xxx. Turn off then on. Call for service if the problem persists
+Description;The temperature control of fuser unit is abnormal. (Open Heat Error or Low Heat Error or Over Heat Error) / Thermistor is defective. / Fuser unit connection is bad.
+Remedy;CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) Remove the Frame-cover-upper after removing 2 screws. And measure the thermostat continuity. Check if the thermostat is opened. 6) Measure the LAMP-HALOGEN resistance value from the center and both sides. Check if it has the continuity. 7) Check if the Draw-connector harness is correct. Check its color. 8) Check if 2 thermistor connectors are connected properly. 9) Measure the Thermistor resistance value from the center and both sides. Check if it has the continuity. (3 Red Circles) 10)Check if the thermistor connector on the main board is connected properly. 11) Check if the FDB connector is connected properly. 12)Check if the voltage in user environment is in this range (80V - 140V, 160V - 260V). 13)If there is no problems for above steps, update the firmware. 14)Replace the FDB(JC44-00204A(220V)/JC44-00203A(110V)). If the problem persists, replace the SMPS(JC44-00092C(220V)/JC44-00091C(110V)) If the problem persists, replace the main board(JC92-02722A)
+Code;U1–2343, U1–234H
+Display;Fuser unit Failure: #U1-2xxx. Turn off then on. Call for service if the problem persists
+Description;The temperature control of fuser unit is abnormal. (Open Heat Error or Low Heat Error or Over Heat Error) / Thermistor is defective. / Fuser unit connection is bad.
+Remedy;CAUTION The temperature gets hot around the fuser unit. To prevent burns, make sure the fuser unit area is cool before performing this procedure. 1) After checking the fuser installation, turn the machine off then on. 2) Open the rear cover. Lift up the right side and release the rear cover. 3) If there is no problem, remove 4 screws. 4) Lift up the both levers. Then take off the fuser unit. 5) Remove the Frame-cover-upper after removing 2 screws. And measure the thermostat continuity. Check if the thermostat is opened. 6) Measure the LAMP-HALOGEN resistance value from the center and both sides. Check if it has the continuity. 7) Check if the Draw-connector harness is correct. Check its color. 8) Check if 2 thermistor connectors are connected properly. 9) Measure the Thermistor resistance value from the center and both sides. Check if it has the continuity. (3 Red Circles) 10)Check if the thermistor connector on the main board is connected properly. 11) Check if the FDB connector is connected properly. 12)Check if the voltage in user environment is in this range (80V - 140V, 160V - 260V). 13)If there is no problems for above steps, update the firmware. 14)Replace the FDB(JC44-00204A(220V)/JC44-00203A(110V)). If the problem persists, replace the SMPS(JC44-00092C(220V)/JC44-00091C(110V)) If the problem persists, replace the main board(JC92-02722A)
+Code;U2–1111, U2–1112
+Display;LSU Failure: #U2-1111. Please turn off then on. LSU Failure: #U2-1112. Please turn off then on. LSU Failure: #U2-1113. Please turn off then on. LSU Failure: #U2-1114. Please turn off then on.
+Description;LSU motor does not operate or it operates abnormally. / LSU Motor ready signal is abnormal.
+Remedy;1) Turn the machine off then on. Check for the LSU motor operation sound during warm-up. 2) Print a demo page to check that the machine operates normally. 3) If the problem persists, check the following : • If the LSU motor makes a sound, a) Enter SVC mode to check the LSU motor ready signal. (Diagnostics > Engine Diagnostics > Engine Test Routines) b) Select “LSU Motor1 Run Ready”. ( Diagnostics > Engine Diagnostics > Engine Test Routines > 110-0000) c) Press ‘Start’ button. Check that the status has changed to ‘Executing -> Low -> High’. d) If the status has not changed, the motor ready signal is abnormal. Replace the LSU. • If the LSU motor does not makes a sound, a) Turn the machine off and open the side cover. Unplug and reconnect the LSU cable. Check that the LSU motor make a sound after turning the machine on. b) If the LSU cable is defective, replace it. Check that the LSU motor make a sound after turning the machine on. c) If the problem persists, replace the LSU(JC97-03877A).
+Code;U2–1113, U2–1114
+Display;LSU Failure: #U2-1111. Please turn off then on. LSU Failure: #U2-1112. Please turn off then on. LSU Failure: #U2-1113. Please turn off then on. LSU Failure: #U2-1114. Please turn off then on.
+Description;LSU motor does not operate or it operates abnormally. / LSU Motor ready signal is abnormal.
+Remedy;1) Turn the machine off then on. Check for the LSU motor operation sound during warm-up. 2) Print a demo page to check that the machine operates normally. 3) If the problem persists, check the following : • If the LSU motor makes a sound, a) Enter SVC mode to check the LSU motor ready signal. (Diagnostics > Engine Diagnostics > Engine Test Routines) b) Select “LSU Motor1 Run Ready”. ( Diagnostics > Engine Diagnostics > Engine Test Routines > 110-0000) c) Press ‘Start’ button. Check that the status has changed to ‘Executing -> Low -> High’. d) If the status has not changed, the motor ready signal is abnormal. Replace the LSU. • If the LSU motor does not makes a sound, a) Turn the machine off and open the side cover. Unplug and reconnect the LSU cable. Check that the LSU motor make a sound after turning the machine on. b) If the LSU cable is defective, replace it. Check that the LSU motor make a sound after turning the machine on. c) If the problem persists, replace the LSU(JC97-03877A).
+Code;U3–3313, U3–3314
+Display;Original paper jam inside the scanner
+Description;Original jam has occurred on the paper path.
+Remedy;1) Check if the pick up motor operates normally. 2) Open the DSDF cover. Check if the paper jam is occurred. 3) Remove the jammed paper. 4) Check if there are any obstacles or contamination on the paper path. Remove it. 5) If the problem persists, check the followings. a) Separate the DSDF Unit. b) Remove the screw. Check the sensor connection. If the connection is OK, replace the sensor. 6) Push the white bar. Check if it returns in original condition. 7) Close the DSDF unit.
+Code;U3-4210
+Display;Top door of scanner is open
+Description;DSDF cover is open.
+Remedy;1) Close the DSDF cover properly. 2) If this error occurs continually, check the following: a) Check the DSDF cover open sensor and its harness. If there is a defective part, replace it. b) If both of them are normal, check the Cover-Open Rib. If it is broken, replace the Cover-Open. Copyright

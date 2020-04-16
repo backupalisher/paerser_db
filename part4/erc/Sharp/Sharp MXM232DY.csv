@@ -1,0 +1,228 @@
+Code;CE-00
+Description;General network errors Other network errors
+Causes;
+Remedy;Turn OFF and ON the power. Consult the network administrator to check the network server status. If the error still remains, turn OFF the power of the machine, and immediately contact the sales agent.
+Code;CE-01
+Description;NIC error  An error occurs in the network protocol stack level.
+Causes;
+Remedy;Turn OFF and ON the power. Consult the network administrator to check the network server status. If the error still remains, turn OFF the power of the machine, and immediately contact the sales agent.
+Code;CE-02
+Description;Server not found  The specified sever is not found.
+Causes;
+Remedy;"Since connection to the server is not established, the scan data cannot be sent. Check to confirm that the SMTP server setting and the destination registration of file server send scan are properly made. For the setting procedure of the SMTP server, refer to ""Various servers setting."" For the changing procedure of the destination of file server send scan, refer to ""How to change or delete the registered destinations."" For the input items of each setting, refer to the help menu of the Web screen."
+Code;CE-04
+Description;FTP account error An account error occurs when logging in the FTP server.
+Causes;
+Remedy;"Since connection to the server is not established, the scan data cannot be sent. Check to confirm that the destination registration of file server send scan is properly made. For the changing procedure of the destination of file server send scan, refer to ""How to change or delete the registered destinations."" For the input items of each setting, refer to the help menu of the Web screen."
+Code;CE-05
+Description;FTP directory error  The designation of the directory in the FTP server is improper.
+Causes;
+Remedy;Since the directory of the FTP server registered as the destination of file server send scan is improper, the scan data cannot be sent. Check to confirm that the registration of the destination is correct.
+Code;CE-06
+Description;Email address error  Improper email address
+Causes;
+Remedy;Since the email address registered as the destination of the email send scan is improper, scan data cannot be sent. Check to confirm that the registered destination information is correct.
+Code;CE-09
+Description;Email over size limit  The size of an email to be sent exceeds the limit.
+Causes;
+Remedy;"The size of the scan data exceeds the upper limit of the file size set on the Web screen. Reduce the number of sheets of documents or change the upper limit value in ""Send data upper limit"" of the Web screen."
+Code;CE-11
+Description;Scanner memory shortageM emory shortage in scanner process of MX NB12.
+Causes;
+Remedy;The memory becomes full during scanning documents Reduce the number of sheets of documents, or change the resolution and the color mode in order to reduce the file size of the scan data, then retry sending again.
+Code;CE-12
+Description;LDAP number over  The number of LDAP exceeds the specification.
+Causes;
+Remedy;The number of destinations which are the targets of the global address search exceeds the max. number. Use a longer set of characters for search to narrow the area of search.
+Code;CE-18
+Description;RTC battery error  The battery for RTC is low.
+Causes;
+Remedy;Replace the battery for RTC.
+Code;CH-Blink
+Description;Developing cartridge not installedThe developing cartridge is not installed. Communication with the CRUM cannot be made in initial check of the CRUM.
+Causes;Developing unit disconnection MCU PWB abnormality CRUM chip abnormality
+Remedy;Check installation of the developing unit. Replace the MCU PWB.
+Code;CH-ON
+Description;Side door openThe side door is open.
+Causes;Side door sensor abnormality MCU PWB abnormality
+Remedy;Check that all the side doors are closed. Replace the MCU PWB.
+Code;E7-01
+Description;Duplex model memory error/ Image data error 1. The memory capacity for the duplex model machine is wrong. Insufficient memory capacity. 2. Duplex setting is set for a single surface model.
+Causes;1. The memory capacity on the MCU PWB is wrong. 2. Setting for a single surface model is wrong.
+Remedy;1. Use SIM26-39 to check to confirm that the memory capacity is 128MB. If it is not 128MB, replace the MCU PWB. 2. If SIM26-04 is set to 1, change the setting to 0. If it is 0, replace the MCU PWB.
+Code;E7-02
+Description;LSU trouble The BD signal from the LSU cannot be detected in a certain cycle. (Always OFF or always ON)
+Causes;LSU connector or LSU harness defect or disconnection Polygon motor rotation abnormality Laser beams are not generated. MCU PWB abnormality.
+Remedy;Check connection of the LSU connector. Execute SIM 61-03 to check the LSU operations. Check that the polygon motor rotates normally. Replace the LSU unit. Replace the MCU PWB.
+Code;E7-06
+Description;Image data decode error
+Causes;MCU PWB abnormality USB cable trouble
+Remedy;Replace the MCU PWB. Replace the USB cable.
+Code;E7-10
+Description;Shading trouble (Black correction) The CCD black scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable CCD unit abnormality MCU PWB abnormality.
+Remedy;Check connection of the CCD unit flat cable. Check the CCD unit.
+Code;E7-11
+Description;Shading trouble (White correction) The CCD white scan level is abnormal when the shading.
+Causes;Improper connection of the CCD unit flat cable Dirt on the mirror, the lens, and the reference white plate Copy lamp lighting abnormality CCD unit abnormality MCU PWB abnormality (When occurred in the SPF scan position.) Improper installation of the mirror unit
+Remedy;Clean the mirror, the lens, and the reference white plate. Check lighting and the light quantity of the copy lamp (SIM05-03). Check the CCD unit. Check the MCU PWB.
+Code;E7-16
+Description;Abnormal laser output When the laser output is stopped, HSYNC is detected.
+Causes;Laser abnormality MCU PWB abnormality.
+Remedy;Replace the LSU. Replace the MCU PWB.
+Code;E7-91
+Description;Decode error (FAX print) When image data sent from the FAX board to the machine are judged as decode error
+Causes;Connector connection trouble MCU PWB abnormality
+Remedy;Turn OFF/ON the power. Connect the connector again. Replace the MCU PWB.
+Code;E7-93
+Description;Data communication error (FAX scan) When data transmission from the machine to the FAX board fails 5 times
+Causes;Connector connection trouble FAX PWB abnormality
+Remedy;Turn OFF/ON the power. Connect the connector again. Replace the FAX PWB.
+Code;F2-40
+Description;ATC sensor abnormality ATC sensor value abnormality
+Causes;Connector connection trouble Toner cartridge installation trouble Sensor breakdown
+Remedy;Connect the connector again. Install the developing unit again. Replace the developing unit with a normal one
+Code;F2-64
+Description;Toner supply abnormality When toner near end is detected with the toner supply time of 50% or less. When the toner supply time exceeds 300%.
+Causes;ATC sensor abnormality Toner supply abnormality
+Remedy;Replace the toner cartridge. Replace the developing unit.
+Code;F2-70
+Description;•Improper cartridge (Destination error, life cycle error) •Identific t ion error •Model error •Type error •Destination error •Data abnormality •Misc error•The destination of the machine differs from that of the CRUM. •The trade mark code of the CRUM differs. •The company code of the CRUM differs. •The boot program model code does not coincide with the CRUM model code. •When the CRUM type is other than genuine/ conversion/production rotation. •The machine destination differs from the CRUM destination.
+Causes;CRUM chip defect Improper toner cartridge.
+Remedy;Replace the toner cartridge.
+Code;F2-74
+Description;CRUM chip communication errorAn error occurs during communication between the MCU and the CRUM chip. The CRUM identification error occurs.
+Causes;CRUM chip abnormality Developing unit disconnection MCU PWB abnormality
+Remedy;Replace the toner cartridge. Check installation of the developing unit. Use SIM16 to cancel. Replace the MCU PWB.
+Code;F5-02
+Description;Copy lamp lighting abnormalityThe copy lamp does not turn on.
+Causes;Copy lamp abnormality Copy lamp harness abnormality CCD PWB harness abnormality.
+Remedy;Use SIM 5-3 to check the copy lamp operations. When the copy lamp lights up. Check the harness and the connector between the CCD unit and the MCU PWB. When the copy lamp does not light up. Check the harness and the connector between the copy lamp unit and the MCU PWB. Replace the copy lamp unit. Replace the MCU PWB.
+Code;F6-00
+Description;FAX board communication trouble.FAX board communication error.
+Causes;No command can be sent from the MCU to the FAX.
+Remedy;Check connection of the FAX board. Replace the FAX board.
+Code;F6-10
+Description;FAX board trouble.FAX board abnormality detection.
+Causes;FAX controller and FAX board memory abnormality.
+Remedy;Replace the FAX board.
+Code;F6-80
+Description;FAX board communication trouble (Protocol).A break error occurs in communication between the MCU and the FAX board.
+Causes;MCU PWB connector connection failure/ Garbled data.
+Remedy;Check connection of the FAX board. Replace the FAX board. Reset the machine (Power OFF/ON).
+Code;F6-81
+Description;FAX board communication trouble (Parity).A parity error occurs in communication between the MCU and the FAX board.
+Causes;MCU PWB connector connection failure/ Garbled data.
+Remedy;Check connection of the FAX board. Replace the FAX board. Reset the machine (Power OFF/ON).
+Code;F6-82
+Description;FAX board communication trouble (Overrun).An overrun error occurs in communication between the MCU and the FAX board.
+Causes;MCU PWB connector connection failure/ Garbled data
+Remedy;Check connection of the FAX board. Replace the FAX board. Reset the machine. (Power OFF/ON).
+Code;F6-84
+Description;FAX board communication trouble (Framing).A framing error occurs in communication between the MCU and the FAX board.
+Causes;MCU PWB connector connection failure/ Garbled data.
+Remedy;Check connection of the FAX board. Replace the FAX board. Reset the machine (Power OFF/ON).
+Code;F6-88
+Description;FAX board communication trouble (Time out).FAX board communication error.
+Causes;There is no respond command from the FAX for 30sec or more.
+Remedy;Check connection of the FAX board. Replace the FAX board. Reset the machine (Power OFF/ON).
+Code;F6-99
+Description;Machine - FAX language error.Discrepancy of the destination of the machine and the FAX board.
+Causes;The destination of the machine differs from that of the FAX board. When installing to the machine that can install only MX-FX13.
+Remedy;Change the destination setting with SIM26-6. Replace the FAX board with one which. conforms to the destination of the machine.
+Code;F9-00
+Description;MX-NB12 board communication trouble.MX-NB12 print data reception error.
+Causes;Print data cannot be received from the MXNB12 for 3 min or more.
+Remedy;Reset the machine (Power OFF/ON).
+Code;H2-00
+Description;Thermistor open (MAIN)The thermistor is open. The fusing unit is not installed.
+Causes;Thermistor abnormality Control PWB abnormality Fusing section connector disconnection The fusing unit is not installed.
+Remedy;Check the harness and the connector between the thermistor and the PWB. Cancel the trouble with SIM 14.
+Code;H2-01
+Description;Thermistor open (SUB)The sub thermistor is open. The fusing unit is not installed.
+Causes;Sub thermistor abnormality Heater lamp abnormality Thermostat abnormality Main PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When normally lighting. Check the sub thermistor and its harness. Check the sub thermistor input circuit on the MAIN PWB. When not normally lighting. Check the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H3-00
+Description;Heat roller high temperature detection (MAIN)The fusing temperature exceeds 245C°.
+Causes;Thermistor abnormality Control PWB abnormality Fusing section connector disconnection.
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp keeps ON. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H3-01
+Description;Heat roller high temperature detection (SUB)The fusing temperature exceeds 245°C.
+Causes;Sub thermistor abnormality Heater lamp abnormality Thermostat abnormality Main PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When normally lighting. Check the sub thermistor and its harness. Check the sub thermistor input circuit on the MAIN PWB. When not normally lighting. Check the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H4-00
+Description;Heat roller low temperature detectionWhen the fusing temperature is 150C° or less in 55 sec from starting warming-up. When the warm-up complete temperature is not reached in 30 sec from reaching 150C°. When the fusing temperature is less than 100C° in 20 sec from the ready state. When the fusing temperature is less than 80C° for more than 300ms in the ready state or in printing. When the fusing temperature is less than 80C° for more than 300ms in the standby mode at a low temperature.
+Causes;Thermistor abnormality Heater lamp abnormality Thermostat abnormality Control PWB abnormality
+Remedy;Use SIM 5-02 to check the heater lamp blinking operation. When the lamp blinks normally. Check the thermistor and its harness. Check the thermistor input circuit on the control PWB. When the lamp does not light up. Check for disconnection of the heater lamp and the thermostat. Check the interlock switch. Check the power PWB and the lamp control circuit on the MCU PWB. Cancel the trouble with SIM 14.
+Code;H5-01
+Description;5 continuous POUT not-reached errorWhen 5 continuous not-reached jams to the paper exit sensor (POUT) occur. The jam counter is backed up and it is used in a job after turning on the power.
+Causes;Jam paper is not removed from the fusing unit. (Jam paper remains.) Paper exit sensor breakdown or harness connection trouble Fusing unit installation trouble
+Remedy;Check for jam paper remaining in the fusing unit. (winding, etc.) Check the POUT sensor harness, and check installation of the fusing unit. Use SIM14 to clear the self diag display.
+Code;L1-00
+Description;Scanner feed troubleThough the specified steps of motor pulses are outputted, the mirror home position sensor remains ON.
+Causes;Mirror unit abnormality The scanner wire is disconnected. The origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not feed. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L3-00
+Description;Scanner return troubleThough the specified steps of motor pulses are outputted, the mirror home position sensor does not turn ON.
+Causes;Mirror unit abnormality Scanner wire disconnection Origin detection sensor abnormality Mirror motor harness abnormality
+Remedy;Use SIM 1-1 to check the mirror reciprocating operations. When the mirror does not return. Check for disconnection of the scanner wire. Check the harness and the connector between the mirror motor and the MCU PWB. Replace the mirror unit. Replace the MCU PWB. When the mirror does feed. Use SIM 1-2 to check the mirror home position sensor.
+Code;L4-01
+Description;Main motor lock detectionThe main motor does not rotate. After rotation of the main motor, the motor lock signal is detected for 1 sec or more. During rotation of the main motor, the motor lock signal is detected for 1 sec. When the main motor is stopped, the motor lock signal is not detected for 5sec or more. (Though the motor is stationary, it is judged as stable rotation.)
+Causes;Main motor unit abnormality Improper connection or disconnection the main motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 25-01 to check the main motor operations. Check connection of the main motor harness/ connector. Replace the main motor. Replace the MCU PWB.
+Code;L4-11
+Description;Shifter motor trouble.The shifter home position detection signal is not detected when initializing the shifter.
+Causes;Shifter motor abnormality, improper connection or disconnection of the harness, shifter home position sensor abnormality.
+Remedy;Use SIM 03-11 to check the shifter motor operations. Check connection of the harness/connector of the shifter motor. Replace the shifter motor. Replace the MCU PWB.
+Code;L4-32
+Description;PSFAN lock detectionThe PSFAN does not rotate. Sampling is performed in 50msec interval, and the normal signal cannot be detected 5 times continuously in 1 sec.
+Causes;Fan trouble or harness contact trouble and disconnection
+Remedy;Check connection of the fan harness and the connector. Replace the fan. Replace the MCU PWB.
+Code;L6-10
+Description;Polygon motor lock detectionThe polygon motor does not rotate After beginning to rotate the polygon motor, the motor lock signal is detected for 20sec or more. During rotation of the polygon motor, the motor lock signal is detected for 1sec.
+Causes;Polygon motor unit abnormality Improper connection or disconnection of the polygon motor and the harness. MCU PWB abnormality
+Remedy;Use SIM 61-3 to check the polygon motor operations. Check connection of the polygon motor harness/connector. Replace the LSU unit. Replace the MCU PWB.
+Code;L8-01
+Description;No full wave signal.The zero cross signal is not detected.
+Causes;Power unit abnormality. MCU PWB abnormality
+Remedy;Check connection of the harness and connectors. Replace the MCU PWB. Replace the power unit.
+Code;U1-03
+Description;FAX board battery error.FAX board backup battery error.
+Causes;The voltage of the backup battery of SRAM which is installed to the FAX board falls below a certain level.
+Remedy;Replace the battery.
+Code;U2-04
+Description;EEPROM read/write error (Serial communication error)EEPROM access process error
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U2-11
+Description;Counter check sum error (EEPROM)Check sum error of the counter area in the EEPROM
+Causes;EEPROM abnormality
+Remedy;Check that the EEPROM is properly set. Use SIM 16 to cancel the trouble. Replace the MCU PWB.
+Code;U9-00
+Description;Panel board communication trouble.Communication trouble with the panel board.
+Causes;No command can be sent from the MCU to the panel.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-80
+Description;Panel board communication trouble (Protocol).An error occurs in communication between MCU -Panel PWB.
+Causes;MCU PWB - Panel PWB harness trouble/ Garbled data.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-81
+Description;Panel board communication trouble (Parity).A parity error occurs in communication between the MCU and the Panel PWB.
+Causes;MCU PWB - Panel PWB harness trouble/ Garbled data.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-82
+Description;Panel board communication trouble (Overrun).An overrun error occurs in communication between the MCU and the panel board.
+Causes;MCU PWB - Panel PWB harness trouble/ Garbled data.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-84
+Description;Panel board communication trouble (Framing).A framing error occurs in communication between the MCU and the Panel PWB.
+Causes;MCU PWB - Panel PWB harness trouble/ Garbled data.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-88
+Description;Panel board communication trouble (Time out).A time-out error occurs in communication between the MCU and the Panel PWB.
+Causes;A command is completely sent from the MCU to the panel.
+Remedy;MCU PWB - Panel PWB harness trouble. Replace the panel or the MCU PWB. Machine reset (Power OFF/ON).
+Code;U9-99
+Description;Panel language error.Language discrepancy error.
+Causes;Discrepancy between the machine language and the panel language.
+Remedy;Replace the panel or the MCU PWB. Reset the machine. (Power OFF/ON).

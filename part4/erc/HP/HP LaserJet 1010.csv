@@ -1,0 +1,80 @@
+Code;01
+Display;"Go: Cycling
+ Ready: Cycling
+ Attention: Cycling"
+Description;"Initialization/startup
+ During Initialization/startup, the lights cycle one after another in a front-to-back pattern (the ""landing lights"" pattern). Pressing buttons has no effect when this is the printer status."
+Code;02
+Display;"Go: Cycling
+ Ready:Cycling 
+ Attention: Cycling"
+Description;"Reconfig initialization
+ When a power-on function is activated (for example, during a cold reset or NVRAM initialization) the lights cycle as in the startup state. Pressing buttons has no effect when this is the printer status."
+Code;03
+Display;"Go: OFF
+ Ready: ON
+ Attention: OFF"
+Description;"Ready (The printer is ready, with no job activity.)
+ In the Ready state, the READY light is on and the GO and ATTENTION lights are off. In this state, the printer has no errors and is ready to receive data. Pressing the GO button prints a demo page."
+Code;04
+Display;"Go: OFF
+ Ready: Blinking
+ Attention: OFF"
+Description;"Processing data (The printer is processing or receiving data.)
+ During data processing, the READY light is blinking and the GO and ATTENTION lights are off. Pressing the GO button cancels the current job without printing another page. The printer returns to the Ready state after the job has been canceled."
+Code;05
+Display;"Go: Cycling
+ Ready: Cycling
+ Attention: Cycling"
+Description;"Job cancellation
+ During job-cancellation, all of the lights cycle. Pressing the GO button has no effect. After the job-cancel process is complete, the printer returns to the Ready state."
+Code;06
+Display;"Go: ON
+ Ready: OFF
+ Attention: Blinking"
+Description;"Continuable error
+ When a continuable error exists, the GO light is on, the READY light is off, and the ATTENTION light is blinking. Press the GO button to attempt to recover from the error and continue printing. If the printer recovers from the error, it will start to process data and will complete the job. If the recovery fails, the device will return to the continuable-error state. The following actions and events cause continuable errors:
+ - Manual feeding 
+ - Out of paper for the specified tray 
+ - General continuable error 
+ - Memory overflow (error 20) or memory full (PCL only) 
+ - Temporary engine error (41.x errors) 
+ - I/O error (22 error) / buffer flow error (only with parallel connections) 
+ - I/O data error (40 error) (bad connection) (only with parallel connections) 
+ - Memory configuration error 
+ - Personality/job-related error 
+ - Fuser high temperature (50.011 error)"
+Code;07
+Display;"Go: OFF
+ Ready: OFF
+ Attention: Blinking"
+Description;"Attention state
+ In the Attention state, the ATTENTION light is blinking and the GO and READY lights are off. The following conditions create the attention state:
+ - A tray is empty.
+ - A door is open.
+ - The print cartridge is missing. 
+ - A jam exists, or a tray has misfeed. 
+ Press the GO button to attempt to reset the printer after a jam is cleared. Pressing the GO button has no effect in the other error cases. You might need to clear the error manually and then press the GO button or close the top cover. If the error persists, the printer will return to the attention state."
+Code;08
+Display;"Go: ON
+ Ready: ON
+ Attention: ON"
+Description;"Fatal error
+ All three LEDs are on continuously in the fatal-error state. Press the GO button to see the secondary error information for the fatal error. When you release the button the printer returns to the initial Fatal-error state.
+ 1 If the ATTENTION light illuminates as the secondary error pattern, the formatter and engine are not communicating.
+ - Check the ribbon cable between the formatter and ECU, and check all other connections.
+ - If the error persists, replace the ECU.
+ - If the error persists, replace the printer. 
+ 2 If the GO and READY lights illuminate as the secondary error pattern, the fuser (fixing assembly) has failed and must be replaced"
+Code;09
+Display;"Go: Cycling
+ Ready: Cycling
+ Attention: Cycling"
+Description;"Cleaning page
+ Use the HP Toolbox to initiate the cleaning function. Pressing the GO button has no effect during the cleaning mode."
+Code;10
+Display;"Go: OFF
+ Ready: ON
+ Attention: OFF"
+Description;"Sleep mode
+ From the customer's perspective, sleep mode is the same as Ready mode."

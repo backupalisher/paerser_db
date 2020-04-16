@@ -1,0 +1,324 @@
+Code;202
+Description;Polygon motor error 1: ON timeout The polygon mirror motor does not reach the targeted operating speed within 10 sec. after turning on or changing speed
+Causes;• Polygon motor/driver board harness loose or broken • Polygon motor/driver board defective • Laser optics unit defective • IPU defective
+Code;203
+Description;Polygon motor error 2: OFF timeout The polygon mirror motor does not leave the READY status within 3 sec. after the polygon motor switched off.
+Causes;• Polygon motor/driver board harness loose or broken • Polygon motor/driver board defective • Laser optics unit defective • IPU defective
+Code;204
+Description;Polygon motor error 3: XSCRDY signal error The SCRDY_N signal remains HIGH for 200 ms while the LD unit is firing.
+Causes;• Polygon motor/driver board harness loose or broken • Polygon motor/driver board defective • Laser optics unit defective • IPU defective
+Code;220
+Description;Laser synchronizing detection error: start position LD0 The laser synchronizing detection signal for the start position of the LDB is not output for two seconds after LDB unit turns on while the polygon motor is rotating normally
+Causes;• Disconnected cable from the laser synchronizing detection unit or defective connection • Defective laser synchronizing detector • Defective LD board • Defective BCU
+Code;221
+Description;Laser synchronizing detection error: start position LD1 The laser synchronizing detection signal for the start position of the LDB is not output for two seconds after LDB unit turns on while the polygon motor is rotating normally.
+Causes;• Disconnected cable from the laser synchronizing detection unit or defective connection • Defective laser synchronizing detector • Defective LD board • Defective BCUa
+Code;230
+Description;FGATE ON error The FGATE signal does not assert within the prescribed time. (The BCU generates the FGATE signal and sends it to the LD unit when the registration sensor switches on.)
+Causes;• BCU defective • BCU, Controller board harness loose or broken • Controller board defective.
+Code;231
+Description;FGATE OFF error The FGATE signal does not assert within the prescribed time. (The BCU generates the FGATE signal and sends it to the LD unit when the registration sensor switches on.)
+Causes;• BCU defective • BCU, Controller board harness loose or broken • Controller board defective
+Code;240
+Description;LD error The IPU detected a problem at the LD unit.
+Causes;• Worn-out LD • Disconnected or broken harness of the LD.
+Code;302
+Description;Charge roller bias leak The charge roller bias leak signal is detected.
+Causes;• Charge roller damaged • High voltage supply board defective • PCDU harness defective or disconnected
+Code;304
+Description;Charge roller bias correction leak The charge roller bias correction is performed twice even if the maximum charge roller bias (-2000V) is applied to the roller.
+Causes;• ID sensor defective • Worn charge roller • Charge roller damaged
+Code;320
+Description;Development roller bias leak A development roller bias leak is detected for 60 ms after the high voltage has been supplied to the development unit.
+Causes;• Development bias leak • Broken harness • Defective high voltage power supply, voltage supply • Defective high voltage supply unit
+Code;324
+Description;Development paddle motor error The machine detects a lock signal error from the development puddle motor for 2 seconds after the drum motor has turned on.
+Causes;• Overload on the development puddle motor • Defective development puddle motor • Defective harness • Defective IOB
+Code;350
+Description;ID sensor pattern test error One of the following readings occurred 10 times in the ID sensor output when the ID sensor pattern was checked: 1) Vsp . 2.5V 2) Vsg . 2.5V 3) Vsp =0V 4) Vsg = 0V
+Causes;• ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Poor writing of ID sensor pattern on the drum • High voltage supply board defective
+Code;351
+Description;ID sensor Vsg test error When the ID sensor was checked, the ID sensor output voltage is 5.0V while the LED current value is 0.
+Causes;• ID sensor defective or dirty • ID sensor connector defective • Poor ID sensor connection • I/O board (IOB) defective • Defect at the ID sensor pattern writing area of the drum
+Code;355
+Description;Grayscale measurement error When the grayscale control result is the maximum and it does not operate correctly and these cases are detected 15 times.
+Causes;• ID sensor defective or dirty • The life of ID sensor or photo conductor • Shield glass dirty
+Code;360
+Description;TD sensor (Vt) error 1 The following condition occurs thirty times consecutively during printing. Vt is less than 0.5V or 4.8V or more
+Causes;• TD sensor disconnected • Harness between TD sensor and PCDU defective • Defective TD sensor
+Code;372
+Description;TD sensor adjustment error Vts is less than 1.8V or 4.8V or more during TD sensor initialization
+Causes;• Heat seal not removed from a new developer pack • TD harness sensor disconnected, loose or defective • TD sensor defective • Harness between TD sensor and drawer disconnected, defective
+Code;396
+Description;Drum motor error The machine detects a lock signal error from the drum motor for 2 seconds after the drum motor turned on.
+Causes;• Overload on the motor • Defective drum motor • Defective harness • Defective IOB
+Code;400
+Description;Vsg adjustment error Vsg is more than 4.2V or 3.8V or less when the machine adjusts Vsg value.
+Causes;• Dirty or defective ID sensor • Defective ID sensor shutter
+Code;440
+Description;Transfer belt bias error The feed back bias from the transfer belt is more than 4V for 60 msec while the transfer belt bias is output. The A/D conversion level is 20 or less for 60 msec. The PWM duty is 24% or more for 60 msec.
+Causes;• Power pack broken • Defective harness • Disconnected connector
+Code;441
+Description;Transfer/Development motor error The machine detects a lock signal error from the transfer/development motor for 2 seconds after the transfer/development motor turned on.
+Causes;• Overload on the motor • Defective transfer/development motor • Defective harness • Defective IOB
+Code;442
+Description;Transfer belt contact motor error The transfer belt HP sensor detects incorrect movement of the transfer belt after the transfer belt contact motor has turned on.
+Causes;• Dirty transfer belt HP sensor • Defective transfer belt contact motor • Disconnected connector of the transfer belt HP sensor or motor • Disconnected cable • Defective IOB
+Code;501
+Description;1st tray lift malfunction The tray lift sensor is not activated after the tray lift motor has been on for 10 seconds. If the main power switch is turned on when the paper is already at the feed height, the paper height position is detected again. At this time, the tray lift sensor should de-activate within 1.5 sec after the paper bottom plate starts to drop. If it does not deactivate within 1.5 sec., a message will prompt the user to reset Tray 1. After two attempts to release the error by re-setting the paper tray, if this does not solve the problem then this SC is displayed.
+Causes;• An obstruction (jammed paper, paper scraps, etc.) has blocked the motor drive and caused an overload. • Tray lift sensor connection loose, disconnected, or damaged • Tray lift sensor defective • Tray lift motor connection loose, disconnected, or damaged • Tray lift motor defective
+Code;502
+Description;2nd tray lift malfunction The tray lift sensor is not activated after the tray lift motor has been on for 10 seconds. If the main power switch is turned on when the paper is already at the feed height, the paper height position is detected again. At this time, the tray lift sensor should de-activate within 1.5 sec. after the paper bottom plate starts to drop. If it does not deactivate within 1.5 sec., a message will prompt the user to reset Tray 2. After two attempts to re-set the paper tray, if this does not solve the problem then this SC is displayed.
+Causes;• An obstruction (jammed paper, paper scraps, etc.) has blocked the motor drive and caused an overload. • Tray lift sensor connection loose, disconnected, or damaged • Tray lift sensor defective • Tray lift motor connection loose, disconnected, or damaged • Tray lift motor defective
+Code;503
+Description;3rd tray lift malfunction (optional paper feed unit or LCT)
+Causes;-1 B For the paper feed unit: • SC 503-01 occurs if the lift sensor does not turn on within 10 seconds after the tray lift motor has turned on. For the LCT: • SC 503-01 occurs if the lift sensor does not turn on or turn off within 8 seconds after the tray lift motor has turned on to lift or lower the tray. For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection For the LCT: • Defective stack transport clutch or connector disconnection • Defective tray motor or connector disconnection • Defective end fence home position sensor or connector disconnection • Defective upper limit sensor or connector disconnection • Defective tray lift motor or connector disconnection -2 B This SC is generated if the following condition occurs 3 consecutive times. For the paper feed unit: • When the tray lowers, the tray lift sensor does not go off within 1.5 sec. For the LCT: • When the main switch is turned on or when the LCT is set, if the end fence is not in its position (home position sensor ON), the tray lift motor stops. • If the upper limit does not go off for 1.5 seconds even the tray lift motor turns on to lower the tray after the upper limit has been detected at power on. For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection For the LCT: • Defective stack transport clutch or connector disconnection • Defective tray motor or connector disconnection • Defective end fence home position sensor or connector disconnection
+Code;504
+Description;4th tray lift malfunction (optional paper feed unit)
+Causes;-1 B For the paper feed unit: • When the tray lift motor turns on, the upper limit is not detected within 10 seconds. If this condition occurs three consecutive times, the SC is generated. For the paper feed unit: • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection -2 B For the paper feed unit: When the tray lift motor is turned on, the upper limit is not detected within 10 seconds. If this condition occurs three consecutive times, the SC is generated. • Defective tray lift motor or connector disconnection • Defective lift sensor or connector disconnection
+Code;505
+Description;5th tray lift malfunction (optional LCT)
+Causes;-1 B This SC is generated if the following condition occurs: • When the tray lift sensor of the LCT 1200-sheet does not go on after the tray lift motor has turned on to lift the paper tray. • When the tray lift sensor of the LCT 1200-sheet does not go off after the tray lift motor has turned on to lower the paper tray. • When the tray lift sensor of the LCT 1200-sheet does not go on after the pick-up roller solenoid has turned on at power on. • Tray lift motor defective or disconnected • Tray lift sensor defective or disconnected -2 B Both tray lift sensor and lower limit sensor are turned on at the same time when the main power is turned on or the right door is closed. • Tray lift motor defective or disconnected • Tray lift sensor defective or disconnected • Lowe limit sensor defective or disconnected
+Code;530
+Description;Fusing exhaust fan motor error The IOB does not receive the lock signal for10 seconds after turning on the fusing exhaust fan.
+Causes;• Defective fusing exhaust fan motor or connector disconnection • Defective IOB • Disconnected harness
+Code;531
+Description;Exhaust fan motor error The IOB does not receive the lock signal for 10 seconds after turning on the exhaust fan motor.
+Causes;• Defective exhaust fan motor or connector disconnection. • Defective IOB • Disconnected harness
+Code;532
+Description;Cooling fan motor error The machine does not detect the fan motor lock signal for 10 seconds after turning on the cooling fan motor.
+Causes;• Defective cooling fan motor or connector disconnection. • Disconnected harness • Defective IOB
+Code;533
+Description;Paper exit cooling fan motor error The machine does not detect the fan motor lock signal for 10 seconds after turning on the paper exit cooling fan motor.
+Causes;• Defective paper exit cooling fan motor or connector disconnection. • Defective IOB • Disconnected harness
+Code;540
+Description;Fusing motor error The IOB does not receive the lock signal for 2 seconds after turning on the fusing motor.
+Causes;• Motor overload • Defective fusing motor or connector disconnection. • Defective IOB • Disconnected harness
+Code;541
+Description;Fusing thermistor open (center) The thermistor (center) detects 0C or less for 5 sec.
+Causes;• Fusing thermistor disconnected • Fusing thermistor connector defective
+Code;542
+Description;Fusing temperature warm-up error(center) This SC is generated if the following condition occurs: • The thermistor (center) does not detect an 8°C increment in the fusing temperature for 7.5 sec. just after the fusing temperature reached 45C. • The temperature of the center thermistor does not reach the target temperature for 28 seconds after the fusing lamps turned on.
+Causes;• Thermistor warped or broken
+Code;543
+Description;Fusing overheat error 1 (software detection) A fusing temperature (at the center) of over 230°C (446°F) is detected for 1 second by the fusing thermistors at the center or at either end of the fusing roller.
+Causes;• Power supply unit defective • I/O board (IOB) defective • BICU defective • TRIAC short on PSU (PSU defective)
+Code;544
+Description;Fusing overheat error 1 (hardware detection) A fusing temperature (at the center) over 250°C is detected by the fusing temperature monitor circuit in the BICU board.
+Causes;• I/O board (IOB) defective • BICU defective
+Code;545
+Description;Fusing lamp consecutive full power 1 After warm-up the fusing lamp remains at full power for 15 seconds without the hot roller rotating.
+Causes;• Disconnected or defective thermistors (center) • Defective fusing lamp
+Code;547
+Description;Zero cross error • The zero cross signal is detected three times even though the heater relay is off when turning on the main power. • The zero cross signal is not detected for 2 seconds even though the heater relay is on after turning on the main power or closing the front door. • The detection error occurs twice or more in the 11 zero cross signal detections. This error is defined when the detected zero cross signal is less than 45.
+Causes;• Defective fusing lamp relay • Defective fusing lamp relay circuit • Unstable power supply
+Code;551
+Description;Fusing thermistor open (end) The thermistor (end) detects 0°C or less for 5 sec.
+Causes;• Fusing thermistor (end) disconnected • Fusing thermistor (end) connector defective
+Code;552
+Description;Fusing temperature warm-up error (end) This SC is generated if the following condition occurs: • The thermistor (end) does not detect an 8°C increment in the fusing temperature for 7.5 sec. just after the fusing temperature reached 45°C. • The temperature of the end thermistor does not reach the target temperature for 31 seconds after the fusing lamps turned on.
+Causes;Thermistor warped or broken
+Code;553
+Description;Fusing overheat error 1 (software detection) A fusing temperature (at the end) of over 230°C (446°F) is detected for 1 second by the fusing thermistors at the center or at either end of the fusing roller.
+Causes;• Power supply unit defective • I/O board (IOB) defective • BICU defective • TRIAC short on PSU (PSU defective)
+Code;554
+Description;Fusing overheat error 1 (hardware detection) A fusing temperature (at the end) over 250°C is detected by the fusing temperature monitor circuit in the BICU board.
+Causes;• I/O board (IOB) defective • BICU defective
+Code;555
+Description;Fusing lamp consecutive full power 1 After warm-up, the fusing lamp remains at full power for 15 seconds without the hot roller rotating.
+Causes;• Disconnected or defective thermistors (ends) • Defective fusing lamp
+Code;557
+Description;Zero cross frequency error When the zero cross signal is 66 or more and it is detected 10 times or more in 11 detections, the machine determines that input 60 Hz and SC557 occurs.
+Causes;• Noise (High frequency)
+Code;559
+Description;Fusing unit jam The fusing sensor detected a fusing unit paper late jam three times. The paper was late and the fusing exit sensor could not detect the paper three times.
+Causes;• Remove the paper that is stopped in the fusing unit. • Check that the fusing unit is clean and has no obstacles in the paper feed path. • If the error persists, replace the fusing unit.
+Code;610
+Description;Mechanical counter error: BK This SC is only for NA models. The machine detects the mechanical counter error when SP5987-001 is set to 1
+Causes;• Disconnected mechanical counter • Defective mechanical counter
+Code;621
+Description;Communication timeout error between IOB and finisher or mailbox A break (low) signal is received from the finisher or the mailbox.
+Causes;• Disconnected cable • Defective IOB • Defective main board in the peripherals
+Code;622
+Description;Paper feed unit communication error While the IOB communicates with a peripheral, an SC code is displayed if one of following conditions occurs. • The IOB receives the break signal which is generated by the peripheral only just after the main switch is turned on. • The IOB receives the break signal which is generated by URAT.
+Causes;• Defective main control board of the peripheral • Defective BCU or IOB • Disconnected peripheral
+Code;623
+Description;2nd Paper Bank communication error This SC is not issued for this machine. When a communication error signal between the 1st paper bank and 2nd paper bank is received.
+Causes;• Loose connector • Defective controller of the MF accounting device • Battery error
+Code;641
+Description;BCU communication error The BCU does not respond to the frame transmitted from the controller.
+Causes;• Defective controller • Detective BCU
+Code;669
+Description;EEPROM error Retry of EEPROM communication fails three times after the machine has detected the EEPROM error.
+Causes;• Caused by noise
+Code;670
+Description;Engine startup error The BCU fails to respond with the prescribed time when the machine is turned on.
+Causes;• Connections between BCU and controller board are loose, disconnected, or damaged 1. Replace the BCU 2. Replace the controller board
+Code;671
+Description;BCU error The model code from the BCU is not correct when the machine is turned on.
+Causes;Install the correct BCU for this model.
+Code;687
+Description;Memory address (PER) command error The BCU does not receive a memory address command from the controller for the prescribed time after the paper has reached the registration sensor.
+Causes;• Harness Disconnection at BCU • Controller board loose or broken • Defective BCU • Defective Controller Board
+Code;721
+Description;Finisher jogger motor error this model. The jogger fences move out of the home position but the HP sensor output does not change within the specified number of pulses. The 1st failure issues an original jam message, and the 2nd failure issues this SC code.
+Causes;• Jogger HP sensor disconnected, defective • Jogger motor disconnected, defective • Jogger motor overloaded due to obstruction • Finisher main board and jogger motor
+Code;723
+Description;Stack feed-out motor error • The stack feed-out HP sensor does not detect the home position of the stack feed-out belt 3000ms after the stack feed-out belt has moved to its home position. • The stack feed-out HP sensor does not turn off 200 ms after the stack feed-out belt has moved from its home position. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;• Defective stack feed-out HP sensor • Overload on the stack feed-out motor • Defective stack feed-out motor • Defective main board • Disconnected or defective harness
+Code;725
+Description;Finisher exit guide plate motor error After moving away from the guide plate position sensor, the exit guide is not detected at the home position within the prescribed time. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Guide plate motor disconnected, defective • Guide plate motor overloaded due to obstruction • Guide plate position sensor disconnected, defective
+Code;726
+Description;Shift jogger motor 1 error The side fence does not retract within the prescribed time after the shift jogger motor 1 switches on. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Shift jogger motor 1 disconnected, defective • Shift jogger motor 1 overloaded due to obstruction • Shift jogger 1 HP sensor disconnected, defective
+Code;727
+Description;Shift jogger motor 2 error The side fence does not retract within the prescribed time after the shift jogger motor 2 switches on. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Shift jogger motor 2 disconnected, defective • Shift jogger motor 2 overloaded due to obstruction • Shift jogger 2 HP sensor disconnected, defective
+Code;728
+Description;Shift jogger retraction motor error The side fences do not retract within the prescribed time after the retraction motor switches on. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Shift jogger retraction motor broken • Shift jogger retraction motor connection loose • Shift jogger retraction motor overloaded • Defective shift jogger retraction HP sensor
+Code;730
+Description;Finisher Tray 1 shift motor error The shift roller HP sensor of the upper tray does not activate within the prescribed time after the shift tray starts to move toward or away from the home position. The 1st detection failure issues a jam error, and the 2nd failure issues this SC code.
+Causes;• Shift tray HP sensor of the upper tray disconnected, defective • Shift tray motor of the upper tray disconnected, defective • Shift tray motor of the upper tray overloaded due to obstruction
+Code;740
+Description;Finisher corner stapler motor error The 1st detection failure causes a jam error, and the 2nd failure causes this SC code. For the 3000-sheet finisher • Staple movement is not finished after a certain time. For the 1000-sheet finisher • The stapler motor does not switch off within the prescribed time after operating. • The HP sensor of the staple unit does not detect the home position after the staple unit moves to its home position. • The HP sensor of the staple unit detects the home position after the staple unit moves from its home position.
+Causes;• Staple jam • Motor overload • Defective stapler motor
+Code;741
+Description;Finisher corner stapler rotation motor error The stapler does not return to its home position within the specified time after stapling. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;• Defective stapler rotation motor • Overload to the stapler rotation motor • Defective stapler rotation HP sensor
+Code;742
+Description;Finisher stapler movement motor error Staple movement is not finished within a certain time. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;• Motor overload • Loose connection of the stapler home position sensor • Loose connection of the stapler movement motor • Defective stapler home position sensor • Defective stapler movement motor
+Code;750
+Description;1000/3000-sheet finisher: Tray lift motor error The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;The upper tray paper height sensor does not change its status with the specified time after the tray raises or lowers.
+Code;753
+Description;Return roller motor error This occurs during the operation of the lower tray pressure motor
+Causes;• Motor harness disconnected, loose, defective • Motor overloaded • Home position sensor harness disconnected, loose, defective • Home position defective
+Code;760
+Description;Finisher punch motor error The punch HP sensor is not activated within the specified time after the punch motor turned on. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;• Punch HP sensor disconnected, defective • Punch motor disconnected or defective • Punch motor overload due to obstruction
+Code;763
+Description;Punch movement motor error The punch unit moves but is not detected at the home position within the specified time. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.SC code.
+Causes;• Motor harness disconnected, loose, defective • Defective motor
+Code;764
+Description;Paper position sensor slide motor error The paper position sensor moves but is not detected at the home position within the specified time. The 1st detection failure causes a jam error, and the 2nd failure causes this SC code.
+Causes;• Motor harness disconnected, loose, defective • Defective motor
+Code;791
+Description;Bridge unit error The machine recognizes the finisher, but does not recognize the bridge unit.
+Causes;• Defective connector • Broken harnessf
+Code;792
+Description;Finisher error The machine does not recognize the finisher, but recognizes the bridge unit.
+Causes;• Defective connector • Defective harness • Incorrect installation
+Code;817
+Description;Monitor Error This is a file detection and electronic file signature check error when the boot loader attempts to read the self-diagnostic module, system kernel, or root system files from the OS Flash ROM, or the items on the SD card in the controller slot are false or corrupted.
+Causes;"• OS Flash ROM data defective; change the controller firmware • SD card data defective; use another SD card"
+Code;819
+Description;Fatal kernel error Due to a control error, a RAM overflow occurred during system processing. One of the following messages was displayed on the operation panel.
+Causes;• System program defective • Controller board defective • Optional board defective • Replace controller firmware
+Code;821
+Description;Self-diagnostics error: ASIC. [0B06] ASIC detection error The I/O ASIC for system control is not detected.
+Causes;• Defective ASIC • Defective North Bridge and PCI I/F Replace the controller board.
+Code;822
+Description;Self-diagnostic error: HDD
+Causes;[3003] Check performed only when HDD is installed: • HDD device busy for over 31 s. • After a diagnostic command is set for the HDD, but the device remains busy for over 6 s. • HDD defective • HDD harness disconnected, defective • Controller board defective [3004] No response to the self-diagnostic command from the ASIC to the HDDs. • HDD defective
+Code;824
+Description;Self-diagnostic error : NVRAM NVRAM device does not exist, NVRAM device is damaged, or NVRAM socket damaged.
+Causes;• NVRAM defective • Controller board defective • NVRAM backup battery exhausted • NVRAM socket damaged
+Code;839
+Description;USB NAND Flash ROM error
+Causes;[9101] The ID of the USB NAND Flash ROM cannot be read. • Defective controller board [9110] The USB NAND Flash ROM controller is disconnected. • Defective controller baord
+Code;851
+Description;IEEE 1394 I/F error Driver setting incorrect and cannot be used by the 1394 I/F.
+Causes;"Not supported by this machine • NIB (PHY), LINK module defective; change the Interface Board • Controller board defective"
+Code;853
+Description;Wireless LAN Error 1 During machine start-up, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (Bluetooth).
+Causes;• Wireless LAN card missing (was removed)
+Code;854
+Description;Wireless LAN Error 2 During machine operation, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (Bluetooth).
+Causes;Wireless LAN card missing (was removed)
+Code;855
+Description;Wireless LAN error 3 An error is detected on the wireless LAN card (802.11a/g, g or Bluetooth).
+Causes;• Wireless LAN card defective • Wireless LAN card connection incorrect
+Code;856
+Description;Wireless LAN error 4 An error was detected on the wireless LAN card (Bluetooth).
+Causes;• Wireless LAN card defective • PCI connector (to the mother board) loose
+Code;857
+Description;USB I/F Error The USB driver is not stable and caused an error.
+Causes;• Bad USB card connection
+Code;858
+Description;HDD Encryption unit error 1 A serious error occurs when data is encrypted to update an encryption key with the HDD encryption unit.
+Causes;[0] Encryption key acquisition error: The controller fails to get a new encryption key. • Defective controller board Replace the controller board. [1] Encryption key setting for HDD error: The controller fails to copy a new encryption key to the HDD. • Defective SATA chip on the controller board Replace the controller board. [2] NVRAM data encryption error 1: An error occurs while the NVRAM data is encrypted. • Defective NVRAM on the controller board Replace the NVRAM. [30] NVRAM data encryption error 2: An error occurs before the NVRAM data is encrypted. • Defective controller board Replace the controller board. [31] Other error: A serious error occurs while the data is encrypted. • Same as SC991
+Code;859
+Description;HDD Encryption unit error 2 A serious error occurs when the HDD data is encrypted to update an encryption key with the HDD encryption unit.
+Causes;[8] HDD check error: The HDD is not correctly installed. • No HDD installed • Unformatted HDD • The encryption key on the controller is different from the one on the HDD 1. Install the HDD correctly. 2. Initialize the HDD. [9] Power failure during the data encryption: The data encryption (NVRAM and HDD) has not been completed. • Power failure during the data encryption Initialize the HDD. [10] Data read/write error: The DMAC error is detected twice or more. • Same as SC863
+Code;860
+Description;HDD startup error at main power on • HDD is connected but a driver error is detected. • The driver does not respond with the HDD within 30 s.
+Causes;• HDD is not initialized • Label data is corrupted • Defective HDD Initialize the HDD with SP5832-001.
+Code;861
+Description;HDD re-try failure At power on, the HDD is detected. Power supply to the HDD is interrupted after the system has entered the energy save mode, but after the HDD has been awakened from the energy save mode, it does not return to the ready status within 30 sec.
+Causes;• Harness between HDD and controller board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Code;863
+Description;HDD data read failure The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Causes;• HDD defective Note: If the bad sectors are generated at the image partition, the bad sector information is written to NVRAM, and the next time the HDD is accessed, these bad sectors will not be accessed for read/write operation.
+Code;864
+Description;HDD data CRC error During HDD operation, the HDD cannot respond to a CRC error query. Data transfer does not execute normally while data is being written to the HDD.
+Causes;• HDD defective
+Code;865
+Description;HDD access error HDD responded to an error during operation for a condition other than those for SC863, 864.
+Causes;• HDD defective
+Code;866
+Description;SD card error 1: Confirmation The machine detects an electronic license error in the application on the SD card in the controller slot immediately after the machine is turned on. The program on the SD card contains electronic confirmation license data. If the program does not contain this license data, or if the result of the check shows that the license data in the program on the SD card is incorrect, then the checked program cannot execute and this SC code is displayed.
+Causes;• Program missing from the SD card • Download the correct program for the machine to the SD card
+Code;867
+Description;SD card error 2: SD card removed The SD card in the slot is removed while the machine is on.
+Causes;Insert the SD card, then turn the machine off and on.
+Code;868
+Description;SD card error 3: SC card access An error occurs while an SD card is used.
+Causes;SD card not inserted correctly • SD card defective • Controller board defective Note: If you want to try to reformat the SC card, use SD Formatter Ver 1.1.
+Code;870
+Description;Address book data error The address book data cannot be read from the HDD, SD card or flash ROM on the controller where it is stored, or the data read from the media is defective.
+Causes;• Software defective: Turn the machine off/on. If this is not the solution for the problem, then replace the controller firmware. • HDD defective.
+Code;872
+Description;HDD mail receive data error • The machine detects that the HDD is not operating correctly at power on. • The machine detects that the HDD is not operating correctly (can neither read nor write) while processing incoming email.
+Causes;• HDD defective • The machine is turned off while the HDD is being accessed. Do SP5832-001 to format the all data on the HDD.
+Code;873
+Description;HDD mail send data error An error is detected on the HDD immediately after the machine has been turned on, or power has been turned off while the machine has used the HDD.
+Causes;1. Do SP5832-001 (HDD – Formatting (All)) to initialize the HDD. 2. Replace the HDD
+Code;874
+Description;Delete All error 1: HDD A data error is detected for the HDD/NVRAM after the Delete All option has been used. Note: The source of this error is the DataOverwriteSecurity Unit (M345) running from an SD card.
+Causes;1. Turn the main switch off/on and try the operation again. 2. Install the DataOverwriteSecurity Unit again. For more, see “Installation”. 3. HDD defective
+Code;875
+Description;Delete All error 2: Data area An error occurs while the machine deletes data from the HDD.
+Causes;Turn the main switch off/on and try the operation again
+Code;876
+Description;Log Data Error An error is detected in the handling of the log data at power on or during machine operation. This can be caused by switching the machine off while it is operating.
+Causes;-001 Log Data Error 1 • Damaged log data file in the HDD Initialize the HDD with SP5832-001. -002 Log Data Error 2 • HDD encryption unit not installed 1. Ask the customer’s administrator to disable the HDD encryption setting with a user tool. 2. Install the HDD encryption unit. -003 Log Data Error 3 • Invalid log encryption key due to defective NVRAM data 1. Initialize the HDD with SP5832-001. 2. Ask the customer’s administrator to disable the HDD encryption setting with a user tool. -004 Log Data Error 4 • Unusual HDD encryption function due to defective NVRAM data Initialize the HDD with SP5832-001. -005 Log Data Error 5 • Installed a NVRAM or HDD which was used in another machine 1. Reinstall the previous NVRAM or HDD. 2. Initialize the HDD with SP5832-001. -099 Log Data Error 99 • Other than the above causes Ask your supervisor
+Code;877
+Description;HDD DataOverwriteSecurity SD card error The 'all delete' function cannot be executed but the DataOverwriteSecurity Unit (M345) is installed and activated.
+Causes;• Defective SD card (M345) • SD card (M345) not installed 1. Replace the NVRAM and then install the new SD card (M345). 2. Check and reinstall the SD card (M345).
+Code;878
+Description;TPM system authentication error The system firmware is not authenticated by TPM (security chip)
+Causes;• Incorrect updating for the system firmware • Defective flash ROM on the controller board Replace the controller board.
+Code;900
+Description;Electrical total counter error The total counter contains something that is not a number.
+Causes;• NVRAM incorrect type • NVRAM defective • NVRAM data scrambled • Unexpected error from external source
+Code;920
+Description;Printer error 1 An internal application error was detected and operation cannot continue.
+Causes;"• Software defective; turn the machine off/on, or change the controller firmware • Insufficient memory"
+Code;921
+Description;Printer font error A necessary font is not found in the SD card.
+Causes;• A necessary font is not found in the SD card. • The SD card data is corrupted.
+Code;990
+Description;Software error 1 The software performs an unexpected function and the program cannot continue.
+Causes;• Software defective, re-boot
+Code;991
+Description;Software error 2 The software performs an unexpected function. However, unlike SC990, recovery processing allows the program to continue.
+Causes;• Software defective, re-boot
+Code;992
+Description;Undefined error Defective software program
+Causes;• An error undetectable by any other SC code occurred
+Code;998
+Description;Software Error 4: Application cannot start Register processing does not operate for an application within 60 s after the machine power is turned on. No applications start correctly, and all end abnormally.
+Causes;• Software bug • A RAM or DIMM option necessary for the application is not installed or not installed correctly.

@@ -1,0 +1,120 @@
+Code;900
+Description;RIP Software
+Remedy;Contact your customer service center, or the Lexmark Customer Support Center.
+Code;910
+Description;DC Motor (1) Locking error - the motor did not stabilize.
+Remedy;A The print cartridge fails to increment the OPC in the cartridge. 1 Print Cartridge(s) Check the print cartridge for correct installation and signs of wear or damage to the cartridge coupling/drive gear. If no problems are found, try a new print cartridge. 2 Coupling Shaft Coupling Coupling Shaft Coupling Spring OPC/Coupling Drive Block Check the operation of the coupling system. If correct, verify the coupling shaft coupling spring is not broken and the coupling is operating properly. If problems are found, repair or replace the OPC/coupling block assembly, or parts. If the coupling system is not operating properly, go to the “Coupling Unit Service Check”. B Error Code 910 displays 1 OPC Drive Motor (M 1) Engine Board MK1 Cable Check the OPC drive motor for proper operation. If incorrect replace the following FRUs in the order shown. 1. OPC drive motor assembly 2. Engine board 3. Cable MK 1
+Code;911, 912
+Description;911 DC Motor (2) Locking error - the motor did not stabilize. 912 DC Motor The motor stabilized then locking was released.
+Remedy;1 Fuser Block Assembly Check the paper feed parts in the fuser drive assembly for excessive noise or vibration. Look for loose or worn paper feed parts. • If problems exist, repair or replace the fuser block assembly. • If excessive noise or vibrations exis2 Developer/Paper Feed Motor Assembly (M2) Developer/Paper Feed Motor Cable Engine Board Check the voltages on connector CON 1 on the developer/paper feed motor board. All voltages are approximate values: Pin # Voltage Motor Running Motor Static 1 CS 0 V dc +5 V dc 2 ROIR 0 V dc 0 V dc 3 GND 0 V dc 0 V dc 4 +5 V dc +5 V dc +5 V dc 5 Lo 0 V dc +5 V dc 6 P/S 0 V dc +5 V dc 7 PGND 0 V dc 0 V dc 8 PGND 0 V dc 0 V dc 9 +24 V dc +24 V dc +24 V dc 10 +24 V dc +24 V dc +24 V dc If the voltage on pin 4, 9 or 10 are incorrect, check continuity of the cable. • If correct, disconnect CON 1 from the board assembly and check the voltages on the cable connector. • If incorrect, check continuity of the cable. • If incorrect, replace the cable. • If correct, replace the engine board. • If the voltages on the cable connector are correct, replace the developer/ paper feed motor assembly. If the voltages on pins 1, 5 and 6 always measure approximately +5 V dc, replace the developer/paper feed motor assembly. If the voltages always measure approximately 0 V dc, check the continuity of the cable. • If incorrect, replace the cable. • If correct, replace the engine board assembly.t in the motor assembly, replace the developer/ paper feed motor assembly. • If no problem is located for paper feed parts, the problem may be the engine board assembly.
+Code;917
+Description;Transfer Belt
+Remedy;A 84 Transfer Belt Exhausted message displays and the OPC/ITM drive gear is not turning.  1 Gear A10 Transfer Belt Connecting Shaft Dowel Pin Gears A6, A71 OPC Motor (M x) Check gear A10 for proper operation and signs of wear or breakage. Be sure the transfer belt connecting shaft dowel pin is correctly located in the back of gear A10. If a problem is found, repair as necessary. Check gears A6 (2 each) and gear A71 for signs of wear or breakage. Be sure the OPC drive motor gear is properly contacting gears A6 in the motor mounting stay A assembly. Be sure the motor is operating correctly. Repair or replace as necessary. B 84 Transfer Belt Exhausted or 917 Error Code displays, the OPC/ ITM drive gear is turning and a new ITM does not fix the problem.1 Transfer Belt Position Sensor (PS200) Engine Board MSN Cable The transfer belt sensor is a LED Optotransistor pair that detects the belt by sensor (PS200) reflecting light from the LED to the belt in the ITM and back to the phototransistor. The sensor checks when the transfer belt has reached home position. Check the transfer belt sensor for correct operation. If the sensor is not operating properly, replace the FRU's in the following order. 1. Belt position sensor 2. Engine board 3. MSN cable C The waste toner bottle is not detected, and a new ITM does not fix the problem. 1 Waste Toner Sensor Board (PQ350) Engine Board MSN Cable Check the waste toner sensor board cable and MSN cable connections. • If correct, check the waste toner sensor for proper operation. • If the sensor is not operating correctly, replace the following FRU's, in the order shown: 1. Waste toner sensor board 2. Engine board 3. MSN cable
+Code;918
+Description;Fan Stalled The main fan has stalled, or locked up.
+Remedy;1 Main Fan Cable Be sure the fan cable in-line connector is connected properly to the CRF cable from the engine board. 2 Main Fan Engine Board Cable (CRF) Engine Board Manually spin the fan and verify it rotates freely. • If incorrect, replace the engine board (CRF) to fan cable. • If the fan turns freely, turn the printer off and check the voltages below from the fan connector to the printer board cable (CRF), as you turn the printer on. Fan cable connector: • Pin 1 (Green) 0 V dc (running and not running) • Pin 2 (Yellow) 0 V dc (fan not running) +5 V dc (fan running) • Pin 3 (Red) 0 V dc (fan not running) +24 V dc (fan running) If any of the voltages are incorrect, disconnect the fan cable from the engine board cable and check the voltages on the engine board cable connector. • If correct, replace the main fan. • If incorrect, check the engine board cable (CRF). • If incorrect, replace the cable. • If correct, replace the engine board.
+Code;920, 921
+Description;920 Fuser Error Indicates that the fuser is below temperature when printing. 921 Fuser Error Indicates that the fuser is below temperature and the system is detecting a thermistor short
+Remedy;1 Thermistor Be sure the thermistor is clean and positioned properly. Check the following resistances of the thermistor: • Hot: (CN18-1 and CN18-2) (engine board) should be approximately 2.0 - 2.5 k ohms. • Cold: Should be approximately 150k to 250k ohms. If incorrect, replace the thermistor. 2 Engine Board HCU Cable Check the HCU cable and fuser to engine board cable, to be sure the contacts in the HCU cable (the autoconnect) are not bent or damaged. • If damaged, replace the HCU cable. • If the no damage is detected, be sure the cable is installed correctly at CN18 on the engine board. If the cable is good, replace the engine board. Error codes 923 and 924 may display for a hot fuser failure.
+Code;922
+Description;922 Fuser Error Indicates that the fuser temperature failed to increase.
+Remedy;1 Fuser Assembly Fuser Lamp Circuit Be sure the fuser assembly is correctly installed and locked down. Disconnect the AC power cord from the printer. Disconnect CN406 from the LVPS board and check for continuity between pins 1 and 2 on the CN406 cable connector. • If incorrect, go to step 2. • If correct, check the voltage between CN406 Pin 1 and 2. The voltage should read the same as the AC line voltage. • If incorrect replace the LVPS. 2 Fuser Lamp Thermostat Fuser Lamp Contacts Remove the fuser assembly from the printer. Note: Take care not to damage any pins when checking continuity. Check continuity between the two outer fuser lamp contacts of the autoconnector (HCU cable) located on the bottom of the fuser assembly. • If correct, go to step 3. • If incorrect, check the fuser lamp, thermostat, fuser lamp contacts and HCU cable, replacing any defective parts. 3 Interlock Switches Go to the “Cover Interlock Service Check”.
+Code;923, 924
+Description;923 Fuser Error Fuser is too hot during printing or when printer is idle. 924 Fuser Error Indicates that the system has detected that the thermistor is open.
+Remedy;1 Fuser: • Assembly • Hot Roll • Backup Roll Bearings Check the fuser assembly for signs of overheating or damage, especially the hot roll and backup roll. Also check for contaminants such as label glue or excessive toner buildup. • If contaminants are found, repair as necessary or replace the fuser assembly. • If damage from overheating is found, replace the fuser. 2 Thermistor Assembly Engine Board Check for a shorted thermistor by measuring across the connector located in the cable guide. • If the thermistor is shorted, replace the thermistor. • If replacing the failing thermistor does not fix the problem, replace the engine board. Check for signs of damage or contamination to the thermistor assembly. If no problem is found, check the resistance of the thermistor. Hot: CN18-1 to CN18-2: Approximately 2.0k - 2.5k ohms Cold: Approximately 150k to 250k ohms If incorrect, replace the thermistor. Check for an open in the thermistor circuit in the fuser assembly. Be sure the thermistor is properly connected to the thermistor cable in the bottom of the cable guide.
+Code;925
+Description;Fuser Error
+Remedy;Indicates that the fuser is below temperature when printing.
+Code;926
+Description;Fuser Error
+Remedy;Indicates that the fuser is below temperature and the system is detecting a thermistor short.
+Code;927
+Description;Fuser Error
+Remedy;Indicates that the fuser temperature failed to increase.
+Code;928
+Description;Fuser Error
+Remedy;Indicates that the fuser is too hot during printing, or when the printer is idling.
+Code;929
+Description;Fuser Error
+Remedy;Indicates that the system has detected that the thermistor is open.
+Code;930, 931, 934, 935
+Description;Printhead Error
+Remedy;A 931 Error Code 1 Interlock Switches S3, S4 (+5 V dc interlock) The +5 V dc interlock for the printhead prevents the printhead from powering on by the engine board if the cartridge door, fuser door or front cover are open. Check the voltage on the orange lead to interlock switch S4 at the switch. It should read approximately +5 V dc. • If incorrect, disconnect the switch and check the voltage on the cable connect and go to step 2. • If correct, check the voltage on the blue lead attached to interlock switch S3. It should read +5 V dc. • If correct, check the switches for continuity and correct operation. • If a problem is found, replace the failing switch. 2 S3, S4 Interlock Switch Cables. Printhead to Engine Board Cable Check the cable from the interlock microswitch S3 Pin 1 (orange lead) to connector CNLS2 on the printhead and the yellow jumper from S3 Pin 2 to S4 Pin 2. Be sure these cables are connected properly and are not damaged. Be sure to note the interlock switch cable connector mounted to the left side frame. If a problem is found with any of these cables, replace the failing cable. Check the printhead to engine board cable for correct installation and damage. • If correct, check the continuity of the cable. • If incorrect, replace the cable and go to B. B 934 and 935 Error Codes 1 Engine Board to Printhead Cable Check the cable for damage and correct installation. Check continuity of the cable. If not correct, replace the cable. 2 Engine Board to Printhead Check the following voltages: Engine board CN14 Pin # Signal Voltage Voltage Pin 5 +24 V dc +24 V dc Pin 6 +5 V dc +5 V dc Pin 19 +5 V dc +5 V dc All voltages are approximate. • If any voltage is incorrect, replace the engine board. • If voltages are correct, replace the printhead first. • If this does not fix the problem, replace the engine board.
+Code;939
+Description;RIP Engine Communications Error
+Remedy;Indicates that the RIP board and the engine board cannot communicate. The RIP board, engine board or cabling may be defective. Check each board for correct installation and be sure all grounds are secure. If no problem exists, replace the following FRUs in the order shown: • Engine board • Controller board • Interconnect board Note: It is possible that the RIP software can also cause a 929 error. Contact your next level for software support.
+Code;941
+Description;• 941 Controller Code CRC • Controller Font CRC
+Remedy;Replace the controller board.
+Code;943
+Description;RIP Font Version
+Remedy;Indicates that the font ROM and RIP code are incompatible.
+Code;948
+Description;Engine Board
+Remedy;Indicates that the engine board microprocessor has stopped. Replace the engine board assembly.
+Code;953
+Description;NVRAM Failure
+Remedy;Indicates the NVRAM failed the CRC check. Replace the engine board assembly.
+Code;954
+Description;NVRAM CRC Failure
+Remedy;Indicates the engine board NVRAM failed the CRC check. Replace the engine board assembly.
+Code;955
+Description;Font CRC
+Remedy;Indicates that the font ROM failed the CRC check. Replace the code overlay SIMM.
+Code;956
+Description;System Board
+Remedy;Indicates that there was a microprocessor failure on the controller board. Replace the controller board assembly.
+Code;957
+Description;ASIC Failure (Controller Board)
+Remedy;Indicates that there was an ASIC failure on the controller board. Replace the controller board assembly.
+Code;958
+Description;ASIC Failure (Engine Board)
+Remedy;Indicates that there was an ASIC failure on the controller board. Replace the controller board assembly.
+Code;959
+Description;SRAM Failure
+Remedy;Indicates that there was an SRAM failure on the controller board. Replace the controller board assembly.
+Code;960
+Description;RAM Memory Error
+Remedy;Indicates that the RAM soldered on the controller board is defective. Replace the controller board assembly.
+Code;961
+Description;RAM Memory Error
+Remedy;Indicates that the DRAM installed in slot 1 on the controller board is defective. Replace the DRAM SIMM. If this does not fix the problem, replace the controller board assembly.
+Code;962
+Description;RAM Memory Error
+Remedy;Indicates that the DRAM installed in slot 2 on the controller board is defective. Replace the DRAM SIMM. If this does not fix the problem, replace the controller board assembly
+Code;963
+Description;Memory Error
+Remedy;Indicates that the DRAM installed in slot 3 on the controller board is defective. Replace the DRAM SIMM. If this does not fix the problem, replace the controller board assembly.
+Code;964
+Description;Emulation Error
+Remedy;Indicates that the download emulation CRC has failed. A checksum failure was detected in the emulation header or emulation file. Replace the code overlay SIMM.
+Code;965
+Description;Emulation Error
+Remedy;Indicates that the download emulation is outdated. Time stamps indicate that the download emulation and controller code are incompatible. • Disable the download emulation. • Program the download emulation into the code overlay SIMM. • If the above steps do not fix the problem, replace the code overlay SIMM and re-download the emulation.
+Code;975
+Description;Network Card X
+Remedy;Indicates that a failure has occurred with the network card installed in slot x (x=1, 2 or 3).
+Code;976
+Description;Network Card X
+Remedy;Indicates an unrecognizable network card x. Replace network card x.
+Code;978
+Description;Network Card X
+Remedy;Indicates that a bad checksum has been detected while programming network card x. Replace network card x.
+Code;979
+Description;Network Card X
+Remedy;Indicates that flash parts failed while programming network card x. If this is a network model printer, replace the controller board.
+Code;990
+Description;Coupling Operation Error
+Remedy;A 990 Service Engine Error. The coupling does not turn. 1 Coupling Motor Cable MK2 Engine Board Disconnect the coupling motor at the inline connector and measure the resistance of the motor on the motor connector. It should measure between 9 and 15 ohms. If incorrect, replace the motor. The motor may be binding due to a problem in the motor mounting stay assembly. Remove the stay assembly and check for problems with the motor and coupling unit. Repair as necessary. If no problem is found and the motor does not turn, check cable MK2. • If incorrect, replace the cable. • If correct, replace the engine board. B 990 Service Engine Error - Motor turns. 1 Motor Mounting Stay A Assembly Coupling parts Check the parts associated with the coupling operation for signs of excessive wear, breakage or looseness. Check the coupling arm, coupling shaft and cam. • If a problem exists, repair or replace the complete motor mounting stay A assembly. • If no problem is found with the stay A assembly, check the detent arm, detent spring, coupling arm and coupling shaft for signs of binding, wear, breakage or looseness. Repair as necessary.
+Code;991
+Description;Coupling Sensor Error. Coupling sensor 1 and 2 have turned on simultaneously.
+Remedy;C 991 Service - Engine error. Note: This error displays when a problem exists with the coupling on and off sensors. The same error displays for either sensor. 1 Coupling On/Off Sensors Engine Board SN Cable Engine Board Turn the printer on and observe how long it takes for the error to display. If the coupling On sensor is failing, the warm-up will be shorter than the coupling Off sensor. Check the sensors by manually positioning the coupling cam disk over the coupling on (upper) sensor while turning the printer on. If the disk moves out of coupling, and the error displays, there is a problem with the coupling On sensor. If you manually position the coupling cam disk over the coupling Off (lower) sensor, while turning the printer on and the disk moves out of the Off sensor and then moves back into the sensor, there is a problem with the Off sensor. Coupling On sensor Pin # Signal Voltage Voltage Voltage Cam Disk in Cam Disk Out 1 +5 V dc +5 V dc +5 V dc 2 CUPON +5 V dc 0 V dc 3 DGND 0 V dc 0 V dc Coupling Off sensor Pin # Signal Voltage Voltage Voltage Cam Disk in Cam Disk Out 1 +5 V dc +5 V dc +5 V dc 2 CUPOFF +5 V dc 0 V dc 3 DGND 0 V dc 0 V dc If a problem cannot be isolated with the sensors, check the SN cable. • If incorrect, replace the cable. • If correct, replace the engine board. 2 Coupling Cam Check the coupling cam and associated parts for correct operation. If a problem is found, repair or replace the motor mounting stay A assembly.
+Code;992
+Description;High Voltage Leakage. The high voltage leakage detection circuit has detected leakage in the high voltage system. • This symptom may require replacement of one or more customer replaceable units, designated as supplies or maintenance items, which are the responsibility of the customer. With the customer’s permission, if available, try new print cartridges. • Before proceeding with this service check, turn the printer off, wait a few minutes and turn the printer back on. If the error remains, proceed with the remainder of this service check.
+Remedy;1 Print Cartridge Open the cartridge cover and remove the cartridge in the top position of the carriage assembly. Try a new cartridge and the printer again. Verify that a 992 error check continues to display, for the cartridge replaced. • If it is not the same cartridge, try a new cartridge for each time the 992 error code displays, until you find the failing cartridge. • If the new cartridge still fails, continue to the next step. 2 HVPS Grid Block 1 Grid Block 2 Remove the HVPS from the printer. Reinstall the HVPS verifying the HVPS board touches all the appropriate contacts on grid blocks 1 and 2, and is mounted securely. • If a 992 error displays, remove the HVPS and check the contacts on grid blocks 1 and 2 for any signs of pitting, bending, deformed contacts, or contamination. Repair or replace parts as necessary. • If the source of the problem cannot be isolated, replace the following FRU's in the following order given: 1. HVPS 2. Grid block 1 3. Grid block 2
+Code;993
+Description;Cam Sensor does not turn on The cam sensor did not activate.
+Remedy;Error Code 993: Indicates the cam sensor has not been activated. The sensor activates when the fuser drive motor turns the cam disk. If the fuser drive motor does not turn on, or the drive parts are not operating, go to A. If the fuser drive motor turns and appears to be operating properly, and the cam is turning, go to B. If the fuser drive motor turns and appears to be operating properly, and the cam is not turning, go to C. A The fuser drive system is not operating properly. 1 Fuser Assembly Fuser Drive Motor Fuser Motor/Paper Feed Motor Carriage Unit Motor Cable Engine Board Check the fuser assembly internal drive gears for binding, or broken or worn teeth. If a problem exists, repair or replace the fuser assembly. Remove the fuser drive motor from the stay assembly, leaving the motor cable connected to the motor. Turn the printer on, but do not allow the motor to touch other areas of the printer. Verify the motor turns during POR. If it does, the problem is most likely in the motor mounting stay assembly. Go to step 2. Check the motor for shorts between the case and each motor winding. If a short is found, replace the motor. Note: Damage to the engine board may result from a shorted motor. Check the motor for open windings. If found, replace the motor. Check continuity of the fuser motor/paper feed motor/carriage unit motor cable. • If incorrect, replace the cable. • If correct, replace the engine board. 2 Motor Mounting Stay Assembly (Fuser Drive Parts) Check the fuser drive gears, gears C3-1, C3- 2, the clutch spring, motor drive gear, gear C2 and C4 for signs of chipped gear teeth, worn parts, or improper operation. If problems are found, repair as necessary. Check the cam gears and solenoid for proper operation and signs of broken or worn gear teeth or damaged parts. If found, repair or replace the motor mounting stay assembly. B The fuser drive system is operating properly and the cam disk is turning. 1 Cam Sensor (PH16) Engine Board (M4) SN Cable Be sure the cam sensor is mounted correctly and locked into place. Check the following voltages on the cam sensor: Pin # Signal Voltage Voltage Voltage Disc in Disc Out 1 (Orange) +5 V dc +5 V dc +5 V dc 2 (Brown) -CCSENS +5 V dc 0 V dc 3 (Green) GND 0 V dc 0 V dc Note: The voltage on pin 2 should vary, as the cam turns from approximately 0 V to +5 V dc. • If the voltage on Pin 1 is incorrect, check the cable. If incorrect, replace the cable. • If the cable is good, replace the following FRU's in the order shown: 1. Cam sensor 2. Engine board 3. SN cable C The fuser drive system is operating properly and the cam disk is not turning. 1 Contact Cam Solenoid CRF Cable Engine Board Check the solenoid for proper operation, making sure it picks during POR cycle. Disconnect the solenoid and check the resistance on the solenoid cable. It should measure approximately 65 ohms. If incorrect, replace the solenoid. Check the voltages on the solenoid cable connector. Check the following voltages on the contact cam solenoid cable connector: Pin # Signal Voltage Voltage Voltage Static Picked 1 (Red) +24 V dc +24 V dc +24 V dc 2 (Black) -SL2ON +24 V dc 0 V - +24 V dc Note: All voltages are approximate. If the voltage on Pin 1 is incorrect, check continuity of the CRF cable to the cam solenoid. • If incorrect, replace the cable. • If correct, replace the engine board. 2 Motor Mounting Stay Assembly Check the clutch spring, clutch boss, clutch disk and gear C4 for signs of wear, broken teeth or binds. Repair or replace the motor mounting stay assembly if a problem is found.
+Code;994
+Description;Engine EEPROM Error
+Remedy;An engine EEPROM error has been detected.

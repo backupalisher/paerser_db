@@ -1,0 +1,596 @@
+Code;C0002
+Description;Paper feed communication error. When the MFP board (MFPB) is receiving data, a communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware.
+Code;C0106
+Description;Tray 3/LCT paper feed motor turning at abnormal timing (When PC-113, PC-213 or PC-413 is installed) • The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning. • The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;<When PC-113 or PC-213 is installed> • Tray 3 paper feed motor (M111) • PC control board (PCCB) <When PC-413 is installed> • Paper feed motor (M131) • PC control board (PCCB)
+Remedy;(a) When PC-113 or PC-213 is installed 1. Check the connector between M111-PCCB CN5 for proper connection and correct as necessary. 2. Check the connector of M111 for proper drive coupling and correct as necessary. 3. M111 operation check • Control signal: PCCB CN5-5 (CW/CCW) • Location of electrical component: PC-113/PC-213 4-C 4. Replace M111. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.2 PC-113) • Link to the wiring diagram (N.2.3 PC-213) (b) When PC-413 is installed 1. Check the connector between M131-PCCB CN5 for proper connection and correct as necessary. 2. Check the connector of M131 for proper drive coupling and correct as necessary. 3. M131 operation check • Control signal: PCCB CN5-5 (CW/CCW) • Location of electrical component: PC-413 5-J 4. Replace M131. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.4 PC-413)
+Code;C0107
+Description;Tray 3/LCT vertical transport motor turning at abnormal timing (When PC-113, PC-213 or PC-413 is installed) • The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning. • The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;<When PC-113 or PC-213 is installed> • Tray 3 vertical transport motor (M112) • PC control board (PCCB) <When PC-413 is installed> • Vertical transport motor (M132) • PC control board (PCCB)
+Remedy;(a) When PC-113 or PC-213 is installed 1. Check the connector between M112-PCCB CN5 for proper connection and correct as necessary. 2. Check the connector of M112 for proper drive coupling and correct as necessary. 3. M112 operation check • Control signal: PCCB CN5-13 (CW/CCW) • Location of electrical component: PC-113/PC-213 3 to 4-C 4. Replace M112. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.2 PC-113) • Link to the wiring diagram (N.2.3 PC-213) (b) When PC-413 is installed 1. Check the connector between M132-PCCB CN5 for proper connection and correct as necessary. 2. Check the connector of M132 for proper drive coupling and correct as necessary. 3. M132 operation check • Control signal: PCCB CN5-13 (CW/CCW) • Location of electrical component: PC-413 4 to 5-J 4. Replace M132. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.4 PC-413)
+Code;C0108
+Description;Tray 4 paper feed motor turning at abnormal timing (When PC-213 is installed) • The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning. • The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Tray 4 paper feed motor (M121) • PC control board (PCCB)
+Remedy;1. Check the connector between M121-PCCB CN9 for proper connection and correct as necessary. 2. Check the connector of M121 for proper drive coupling and correct as necessary. 3. M121 operation check • Control signal: PCCB CN9-5 (CW/CCW) • Location of electrical component: PC-213 6-K 4. Replace M121. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.3 PC-213)
+Code;C0109
+Description;Tray 4 vertical transport motor turning at abnormal timing (When PC-213 is installed) • The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning. • The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Tray 4 vertical transport motor (M122) • PC control board (PCCB)
+Remedy;1. Check the connector between M122-PCCB CN9 for proper connection and correct as necessary. 2. Check the connector of M122 for proper drive coupling and correct as necessary. 3. M122 operation check • Control signal: PCCB CN9-13 (CW/CCW) • Location of electrical component: PC-213 6-K 4. Replace M122. 5. Replace PCCB. NOTICE • Link to the wiring diagram (N.2.3 PC-213)
+Code;C0202
+Description;Tray 1 feeder up/down abnormality. The tray 1 upper limit sensor (PS22) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 1 lift-up motor (M12) • Tray 1 upper limit sensor (PS22) • MFP board (MFPB)
+Remedy;1. Check the connector between M12-MFPB CN7E for proper connection and correct as necessary. 2. Check the connector of M12 for proper drive coupling and correct as necessary. 3. Check the connector between PS22-relay CN48-MFPB CN10E for proper connection and correct as necessary. 4. PS22 I/O check, sensor check • Control signal: MFPB CN10E-8 (ON) • Location of electrical component: 4-C 5. M12 operation check • Control signal:MFPB CN7E-1 to 2 • Location of electrical component: 7-C 6. Replace M12. 7. MFPB F5E conduction check 8. Replace MFPB. NOTICE • Link to the wiring diagram (N.1. bizhub 367/287/227)
+Code;C0204
+Description;Tray 2 feeder up/down abnormality The tray 2 upper limit sensor (PS25) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 2 lift-up motor (M13) • Tray 2 upper limit sensor (PS25) • MFP board (MFPB)
+Remedy;1. Check the connector between M13-MFPB CN8E for proper connection and correct as necessary. 2. Check the connector of M13 for proper drive coupling and correct as necessary. 3. Check the connector between PS25-relay CN49-MFPB CN11 for proper connection and correct as necessary. 4. PS25 I/O check, sensor check • Control signal: MFPB CN11E-13 (ON) • Location of electrical component: 6-C 5. M13 operation check • Control signal: MFPB MFPB CN8E-1 to 2 • Location of electrical component: 10-C 6. Replace M13. 7. MFPB F5E conduction check 8. Replace MFPB. NOTICE • Link to the wiring diagram (N.1. bizhub 367/287/227)
+Code;C0206
+Description;Tray 3 lift-up failure (When PC-113 or PC-213 is installed) The tray 3 upper limit sensor (PS116) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 3 lift-up motor (M113) • Tray 3 upper limit sensor (PS116) • PC control board (PCCB) • MFP board (MFPB)
+Remedy;1. Check the connector between M113-PCCB CN6 for proper connection and correct as necessary. 2. Check the connector of M113 for proper drive coupling and correct as necessary. 3. Check the connector between PS116-relay CN24-PCCB CN4 for proper connection and correct as necessary. 4. PS116 I/O check, sensor check • Control signal: PCCB CN4-3 (ON) • Location of electrical component: PC-113/PC-213 7-C 5. M113 operation check • Control signal: PCCB CN6-8 to 9 • Location of electrical component: PC-113/PC-213 2-C 6. Replace M113. 7. Replace PCCB. 8. MFPB F4E conduction check 9. Replace MFPB. NOTICE • Link to the wiring diagram (N.2.2 PC-113) • Link to the wiring diagram (N.2.3 PC-213)
+Code;C0208
+Description;Tray 4 lift-up failure (When PC-213 is installed) The tray 4 upper limit sensor (PS126) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 4 lift-up motor (M123) • Tray 4 upper limit sensor (PS126) • PC control board (PCCB) • MFP board (MFPB)
+Remedy;1. Check the connector between M123-PCCB CN8 for proper connection and correct as necessary. 2. Check the connector of M123 for proper drive coupling and correct as necessary. 3. Check the connector between PS126-relay CN47-PCCB CN7 for proper connection and correct as necessary. 4. PS126 I/O check, sensor check • Control signal: PCCB CN7-3 (ON) • Location of electrical component: PC-213 8-K 5. M123 operation check • Control signal: PCCB CN8-8 to 9 • Location of electrical component: PC-213 5-K 6. Replace M123. 7. Replace PCCB. 8. MFPB F4E conduction check 9. Replace MFPB. NOTICE • Link to the wiring diagram (N.2.3 PC-213)
+Code;C0210
+Description;LCT lift failure (When PC-413 is installed) • The main tray upper limit sensor (PS136) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began. • The shifter stop / lower limit position sensor (PS138) is not turned OFF (unblocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began. • The main tray upper limit sensor (PS136) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operating. • The main tray upper limit sensor (PS136) is not turned OFF (unblocked) even after the set period of time has elapsed after the paper lift-down operation began. • The shifter stop / lower limit position sensor (PS138) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-down operation began.
+Causes;• Elevator motor (M134) • Main tray upper limit sensor (PS136) • Shifter stop / lower limit position sensor (PS138) • PC control board (PCCB) • MFP board (MFPB)
+Remedy;1. Check the connector between M134-PCCB CN10 for proper connection and correct as necessary. 2. Check the connector of M134 for proper drive coupling and correct as necessary. 3. Check the connector between PS136-relay CN1-PCCB CN4 for proper connection and correct as necessary. 4. Check the connector between PS138-relay CN16-PCCB CN14 for proper connection and correct as necessary. 5. PS136 I/O check, sensor check • Control signal: PCCB CN4-3 (ON) • Location of electrical component: PC-413 8-J 6. PS138 I/O check, sensor check • Control signal: PCCB CN14-6 (ON) • Location of electrical component: PC-413 4-J 7. M134 operation check • Control signal: PCCB CN10-1 to 2 • Location of electrical component: PC-413 6-J 8. Replace M134. 9. Replace PCCB. 10. MFPB F4E conduction check 11. Replace MFPB.
+Code;C0211
+Description;Manual feed up/down abnormality • Paper is not turned OFF (unblock) the bypass tray position sensor (PS28) even after the transport motor (M1) rotates for a given period of time after the position is switched from stand by position at lift-up plate to the feed position. • The bypass tray position sensor (PS28) is not turned ON (blocked) even after the transport motor (M1) rotates for a given period of time after the position is switched from stand by position at lift-up plate to the feed position
+Causes;• Transport motor (M1) • Bypass pick-up solenoid (SD1) • Bypass tray position sensor (PS28) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN19E for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS28-relay CN91 (bizhub 367), CN34 (bizhub 287), CN90 (bizhub 227)-MFPB CN9 for proper connection and correct as necessary. 4. SD1-relay CN41- relay CN91 (bizhub 367), CN34 (bizhub 287), CN90 (bizhub 227)-MFPB CN9E for proper connection and correct as necessary. 5. PS28 I/O check, sensor check • Control signal: MFPB CN9E-3 (ON) • Location of electrical component: 3-J 6. SD1 operation check • Control signal: MFPB CN9E-12 (ON) • Location of electrical component: 4-J 7. M1 operation check • Control signal: MFPB CN19E-3 to 7 • Location of electrical component: 26-C 8. Replace M1. 9. MFPB F5E conduction check 10. Replace MFPB.
+Code;C0214
+Description;LCT shift failure (When PC-413 is installed) • The shifter stop / lower limit position sensor (PS138) is not turned ON (blocked) even after the set period of time has elapsed after the shift operation began (shift to the right). • The shifter home sensor (PS139) is not turned OFF (unblocked) even after the set period of time has elapsed after the shift operation began (shift to the right). • The shifter stop / lower limit position sensor (PS138) is not turned OFF (unblocked) even after the set period of time has elapsed after the return operation began (shift to the left). • The shifter home sensor (PS139) is not turned ON (blocked) even after the set period of time has elapsed after the return operation began (shift to the left).
+Causes;• Shifter motor (M133) • Shifter stop / lower limit position sensor (PS138) • Shifter home sensor (PS139) • PC control board (PCCB)
+Remedy;1. Check the connector between M133-PCCB CN10 for proper connection and correct as necessary. 2. Check the connector of M133 for proper drive coupling and correct as necessary. 3. Check the connector between PS138-relay CN16-PCCB CN14 for proper connection and correct as necessary. 4. Check the connector between PS139-relay CN16-PCCB CN14 for proper connection and correct as necessary. 5. PS138 I/O check, sensor check • Control signal: PCCB CN14-6 (ON) • Location of electrical component: PC-413 4-J 6. PS139 I/O check, sensor check • Control signal: PCCB CN14-3 (ON) • Location of electrical component: PC-413 4-J 7. M133 operation check • Control signal: PCCB CN10-3 to 4 • Location of electrical component: PC-413 6-J 8. Replace M133. 9. Replace PCCB.
+Code;C1004
+Description;FNS communication error (When FS-533, FS-534, FS-534SD or JS-506 is installed) <When FS-533, FS-534 or FS-534SD is installed> • When the FS control board (FSCB) is receiving data, a communication error is detected.
+Causes;<When FS-533, FS-534 or FS-534SD is installed> • FS control board (FSCB) <When JS-506 is installed> • JS control board (JSCB)
+Remedy;(a) When FS-533, FS-534 or FS-534SD is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB. (FS-533/FS-534/FS-534SD) (b) When JS-506 is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace JSCB.
+Code;C1081
+Description;SD communication error (When FS-534SD is installed) When a communication error is detected between the FS control board (FSCB) and the SD control board (SDDB).
+Causes;• SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace SDDB. 4. Replace FSCB.
+Code;C1102
+Description;Main tray up/down motor drive malfunction (When FS-533, FS-534 or FS-534SD is installed) <When FS-533 is installed> • While the exit tray is being lifted, the paper exit tray home sensor (PS107) is not turned OFF (unblocked) after the set period of time has elapsed after the tray lift up motor (M109) is turned ON. • While the exit tray is being lowered, the paper exit tray home sensor (PS107) is not turned ON (blocked) after the set period of time has elapsed after the tray lift up motor (M109) is turned ON. <When FS-534 or FS-534SD is installed> • While the exit tray is being lifted, the main tray upper position sensor (PS26/PS27) is not turned ON (blocked) and the main tray upper position detect switch (SW2) is not turned ON, even after the main tray up/down motor (M11) turns by the set number of times. • While the exit tray is being lowered, the main tray full detection sensor (PS29) is not turned ON (blocked) after the set period of time has elapsed after the main tray up/down motor (M11) is turned ON.
+Causes;<When FS-533 is installed> • Tray lift up motor (M109) • Paper exit tray home sensor (PS107) • FS control board (FSCB) <When FS-534 or FS-534SD is installed> • Main tray up/down motor (M11) • Main tray upper position sensor/R (PS26) • Main tray upper position sensor/F (PS27) • Main tray full detection sensor (PS29) • Main tray upper position detect switch (SW2) • FS control board (FSCB)
+Remedy;(a) When FS-533 is installed 1. Check the connector between M109-FSCB CN108 for proper connection and correct as necessary. 2. Check the connector of M109 for proper drive coupling, and correct as necessary. 3. Check the connector between PS107-FSCB CN110 for proper connection and correct as necessary. 4. PS107 I/O check, sensor check • Control signal: FSCB CN110 • Location of electrical component: FS-533 7-D to E 5. M109 operation check • Control signal: FSCB CN108 • Location of electrical component: FS-533 10-E 6. Replace M109. 7. FSCB CP109 conduction check 8. Replace FSCB. NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534 or FS-534SD is installed 1. Check the motor, sensor and switch connectors for proper connection, and correct as necessary. 2. Check the connector of M11 for proper drive coupling, and correct as necessary. 3. PS26 I/O check, sensor check • Control signal: FSCB J14<A>-5 (ON) • Location of electrical component: FS-534 2-C 4. PS27 I/O check, sensor check • Control signal: FSCB J14<B>-8 (ON) • Location of electrical component: FS-534 3-C 5. PS29 I/O check, sensor check • Control signal: FSCB J14<A>-8 (ON) • Location of electrical component: FS-534 4-C 6. SW2 operation check • Control signal: FSCB J10-1 to 2 • Location of electrical component: FS-534 8-K 7. M11 operation check • Control signal: FSCB J9<A>-9 to 10 • Location of electrical component: FS-534 10-C to D 8. Replace M11. 9. Replace FSCB.
+Code;C1103
+Description;Alignment plate motor/Fr malfunction (When FS-533, FS-534 or FS-534SD is installed) <When FS-533 is installed> • The alignment plate home sensor/F (PS108) is not turned OFF (unblocked) after the set period of time has elapsed after the plate drive starts from the home position. • The alignment plate home sensor/F (PS108) is not turned ON (blocked) after the set period of time has elapsed after the alignment motor/F (M105) is turned ON to return the plate to the home position. <When FS-534 or FS-534SD is installed> • The alignment plate/F home sensor (PS12) is not turned OFF (unblocked) after the set period of time has elapsed after the plate drive starts from the home position. • The alignment plate/F home sensor (PS12) is not turned ON (blocked) after the set period of time has elapsed after the alignment motor/Front (M7) is turned ON to return the plate to the home position. • The alignment plate/F does not reach the specified position within the set period of time.
+Causes;<When FS-533 is installed> • Alignment motor/F (M105) • Alignment plate home sensor/F (PS108) • FS control board (FSCB) <When FS-534 or FS-534SD is installed> • Alignment motor/Front (M7) • Alignment plate/F home sensor (PS12) • FS control board (FSCB)
+Remedy;(a) When FS-533 is installed 1. Check the connector between M105-FSCB CN102 for proper connection and correct as necessary. 2. Check the connector of M105 for proper drive coupling, and correct as necessary. 3. Check the connector between PS108-FSCB CN102 for proper connection and correct as necessary. 4. PS108 I/O check, sensor check • Control signal: FSCB CN102 • Location of electrical component: FS-533 7-J 5. M105 operation check • Control signal: FSCB CN102 • Location of electrical component: FS-533 7-J 6. Replace M105. 7. FSCB CP105 conduction check 8. Replace FSCB. NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534 or FS-534SD is installed 1. Check the connector between M7-FSCB J4 for proper connection and correct as necessary. 2. Check the connector of M7 for proper drive coupling and correct as necessary. 3. Check the connector between PS12-FSCB J4 for proper connection and correct as necessary. 4. PS12 I/O check, sensor check • Control signal: FSCB J4<B>-4 (ON) • Location of electrical component: FS-534 13-C 5. M7 operation check • Control signal: FSCB J4<A>-5 to 8 • Location of electrical component: FS-534 11-C to D 6. Replace M7. 7. Replace FSCB.
+Code;C1105
+Description;Bundle eject motor drive malfunction (When FS-534 or FS-534SD is installed) • The gripper home position sensor (PS18) is not turned ON (blocked) even after the set period of time has elapsed after the gripper position detection sensor (PS19) is turned OFF (unblocked). • The gripper position detection sensor (PS19) is not turned OFF (unblocked) even after the set period of time has elapsed after it is turned ON (blocked). • The gripper position detection sensor (PS19) is not turned ON (blocked) even after the set period of time has elapsed after the gripper home position sensor (PS18) is turned OFF (unblocked). • The gripper home position sensor (PS18) is not turned OFF (unblocked) even after the set period of time has elapsed after the bundle eject motor (M10) is energized. • The gripper home position sensor (PS18) and the gripper position detection sensor (PS19) is turned ON (blocked) at the same time.
+Causes;• Bundle eject motor (M10) • Gripper home position sensor (PS18) • Gripper position detection sensor (PS19) • FS control board (FSCB)
+Remedy;1. Check the motor and sensor connectors for proper connection, and correct as necessary. 2. Check the connector of M10 for proper drive coupling, and correct as necessary. 3. PS18 I/O check, sensor check • Control signal: FSCB J13-13 (ON) • Location of electrical component: FS-534 7-C 4. PS19 I/O check, sensor check • Control signal: FSCB J12-3 (ON) • Location of electrical component: FS-534 7-C 5. M10 operation check • Control signal: FSCB J13-1 to 2 • Location of electrical component: FS-534 8-C to D 6. Replace M10. 7. Replace FSCB.
+Code;C1106
+Description;Stapler movement motor malfunction (When FS-533, FS-534 or FS-534SD is installed) <When FS-533 is installed> • The stapler home sensor (PS110) is not turned OFF (unblocked) after the laps of given time after it started operating from the home position. • The stapler home sensor (PS110) is not turned ON (blocked) after the laps of give time after the stapler movement motor (M107) turned ON when it returned to the home position. <When FS-534 or FS-534SD is installed> • The stapler home position sensor (Rear) (PS23) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the side stapler movement motor (M13) turned ON. • The stapler does not reach the specified position within the set period of time.
+Causes;<When FS-533 is installed> • Stapler movement motor (M107) • Stapler home sensor (PS110) • Stapler relay board (STREYB) • FS control board (FSCB) <When FS-534 or FS-534SD is installed> • Side stapler movement motor (M13) • Stapler home position sensor (Rear) (PS23) • FS control board (FSCB)
+Remedy;(a) When FS-533 is installed 1. Check the connector between M107-STREYB CN123 for proper connection, and correct as necessary. 2. Check the connector of M107 for proper drive coupling, and correct as necessary. 3. Check the connector between PS110-FSCB CN110 for proper connection, and correct as necessary. 4. PS110 I/O check, sensor check • Control signal: FSCB CN110 • Location of electrical component: FS-533 8-D to E 5. M107 operation check • Control signal: STREYB CN123-5 to 8 • Location of electrical component: FS-533 5-L 6. Replace M107. 7. Replace STREYB. 8. FSCB CP107 conduction check 9. Replace FSCB. NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534 or FS-534SD is installed 1. Check the connector between M13-relay CN3-FSCB J11 for proper connection, and correct as necessary. 2. Check the connector of M13 for proper drive coupling and correct as necessary. 3. Check the connector between PS23-relay CN3-FSCB J11 for proper connection, and correct as necessary. 4. PS23 I/O check, sensor check • Control signal: FSCB J11<B>-3 (ON) • Location of electrical component: FS-534 4-C 5. M13 operation check • Control signal: FSCB J11<A>-1 to 4 • Location of electrical component: FS-534 4-C to D 6. Replace M13. 7. Replace FSCB.
+Code;C1109
+Description;Stapler motor drive malfunction (When FS-533, FS-534 or FS-534SD is installed) <When FS-533 is installed> • The stapler home sensor (PS110) is not turned ON (blocked) even after the set period of time has elapsed after the stapler motor turned ON. <When FS-534 or FS-534SD is installed> • The stapler home position sensor (Rear) (PS23) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the stapler motor (M14) turned ON. • The stapler position sensor (Center) (PS24) is turned ON (blocked), when the stapler motor (M14) is running.
+Causes;<When FS-533 is installed> • Stapler home sensor (PS110) • Stapler unit • Stapler relay board (STREYB) • FS control board (FSCB) <When FS-534 or FS-534SD is installed> • Stapler home position sensor (Rear) (PS23) • Stapler unit • Stapler position sensor (Center) (PS24) • FS control board (FSCB)
+Remedy;(a) When FS-533 is installed 1. Check the connector between the stapler unit-STREYB CN122 and CN123 for proper connection and correct as necessary. 2. Check the connector of the stapler unit for proper drive coupling and correct as necessary. 3. Check the connector between PS110-FSCB CN110 for proper connection and correct as necessary. 4. PS110 I/O check, sensor check • Control signal: FSCB CN110 • Location of electrical component: FS-533 8-D to E 5. Replace the stapler unit. 6. Replace STREYB. 7. Replace FSCB. NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534 or FS-534SD is installed 1. Check the connector between the stapler unit-relay CN4-FSCB J11 for proper connection and correct as necessary. 2. Check the connector of the stapler unit for proper drive coupling and correct as necessary. 3. Check the connector between PS23-relay CN3-FSCB J11 for proper connection, and correct as necessary. 4. Check the connector between PS24-relay CN3-FSCB J11 for proper connection and correct as necessary. 5. PS23 I/O check, sensor check • Control signal: FSCB J11<B>-3 (ON) • Location of electrical component: FS-534 4-C 6. PS24 I/O check, sensor check • Control signal: FSCB J11<B>-6 (ON) • Location of electrical component: FS-534 4 to 5-C 7. Replace the stapler unit. 8. Replace FSCB.
+Code;C1112
+Description;Stapler motor malfunction (When FS-534SD is installed) • The stapler home sensor is not turned ON even after the set period of time has elapsed while the stapler motor is energized. • The stapler home sensor is not turned OFF even after the set period of time has elapsed after the stapler home sensor is turned ON.
+Causes;• Staple unit • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between the staple unit-SDDB J4 for proper connection and correct as necessary. 2. Check the connector of the staple unit for proper drive coupling and correct as necessary. 3. Replace the staple unit. 4. Replace SDDB. 5. Replace FSCB.
+Code;C1113
+Description;Center-staple lead edge stopper motor malfunction (When FS-534SD is installed) The stopper home sensor (PS6) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the stopper drive motor (M4) is turned ON.
+Causes;• Stopper drive motor (M4) • Stopper home sensor (PS6) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M4-SDDB J10 for proper connection and correct as necessary. 2. Check the connector of M4 for proper drive coupling and correct as necessary. 3. Check the connector between PS6-SDDB J10 for proper connection and correct as necessary. 4. PS6 I/O check, sensor check • Control signal: SDDB J10-5 (ON) • Location of electrical component: SD-511 2-G 5. M4 operation check • Control signal: SDDB J10-6 to 9 • Location of electrical component: SD-511 1 to 2-F to G 6. Replace M4. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1114
+Description;Center-staple front adjust drive motor malfunction (When FS-534SD is installed) The alignment home sensor (PS4) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the alignment motor (M3) is turned ON.
+Causes;• Alignment motor (M3) • Alignment home sensor (PS4) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M3-relay CN10-SDDB J7 for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. Check the connector between PS4-relay CN10-SDDB J7 for proper connection and correct as necessary. 4. PS4 I/O check, sensor check • Control signal: SDDB J7-6 (ON) • Location of electrical component: SD-511 6-F 5. M3 operation check • Control signal: SDDB J7-7 to 10 • Location of electrical component: SD-511 5-F to G 6. Replace M3. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1115
+Description;Center-staple knife drive motor malfunction (When FS-534SD is installed) The center fold knife home sensor (PS8) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the center fold knife motor (M9) is turned ON.
+Causes;• Center fold knife motor (M9) • Center fold knife home sensor (PS8) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M9-SDDB J11 for proper connection and correct as necessary. 2. Check the connector of M9 for proper drive coupling and correct as necessary. 3. Check the connector between PS8-relay CN10-SDDB J7 for proper connection and correct as necessary. 4. PS8 I/O check, sensor check • Control signal: SDDB J7-3 (ON) • Location of electrical component: SD-511 6-G 5. M9 operation check • Control signal: SDDB J11-11 to 20 • Location of electrical component: SD-511 1 to 2-B 6. Replace M9. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1132
+Description;Punch drive motor malfunction (When FS-533+PK-519, FS-534+PK-520 or FS-534SD+PK-520 is installed) <When FS-533+PK-519 is installed> • The puncher drive cam sensor (PS203) or puncher home sensor (PS204) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the punch motor (M201) is energized. • The punch motor sensor (PS202) is not turned ON when the punch motor (M201) driven. • The holes with other marketing area is set in [Service Mode] -> [Finisher] -> [Punch Option Setting]. <When FS-534+PK-520 or FS-534SD+PK-520 is installed> • The punch home sensor (PS1) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the punch drive motor (M1) is energized. • Thick paper is loaded and a punch operation is performed with [Plain Paper] left set for the paper type.
+Causes;<When FS-533+PK-519 is installed> • Punch motor (M201) • Punch motor sensor (PS202) • Puncher drive cam sensor (PS203) • Puncher home sensor (PS204) • PK control board (PKCB) • FS control board (FSCB) <When FS-534+PK-520 or FS-534SD+PK-520 is installed> • Punch drive motor (M1) • Punch home sensor (PS1) • FS control board (FSCB)
+Remedy;1. Check the number of the holes in [Service Mode] -> [Finisher] -> [Punch Option Setting]. 2. Check the connector between M201-PKCB CN203 for proper connection and correct as necessary. 3. Check the connector of M201 for proper drive coupling and correct as necessary. 4. Check the connector between PS202-PKCB CN204 for proper connection and correct as necessary. 5. Check the connector between PS203-PKCB CN204 for proper connection and correct as necessary. 6. Check the connector between PS204-PKCB CN204 for proper connection and correct as necessary. 7. PS202 I/O check, sensor check • Control signal: PKCB CN204 • Location of electrical component: FS-533 (PK-519) 5-C 8. PS203 I/O check, sensor check • Control signal: PKCB CN204 • Location of electrical component: FS-533 (PK-519) 6-C 9. PS204 I/O check, sensor check • Control signal: PKCB CN204 • Location of electrical component: FS-533 (PK-519) 6-C 10. M201 operation check • Control signal: PKCB CN203-1 to 2 • Location of electrical component: FS-533 (PK-519) 4-C 11. Replace M201. 12. PKCB F201 conduction check 13. Replace PKCB. 14. Replace FSCB. NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534+PK-520 or FS-534SD+PK-520 is installed 1. Check that the correct paper type is set. To print on thick paper, change the paper type to [Thick]. 2. If the trouble occurs even when [Paper Type] is set to the correct paper type, select [Service Mode] -> [Security Settings] -> [Engine FW DipSW] and flip SW No. 17 to the ON. NOTE • Changing the setting of Engine FW DipSW results in a longer perforating time and greater punch perforating noise regardless of the paper type. 3. Check the connector between M1-relay CN351-FSCB J7 for proper connection and correct as necessary. 4. Check the connector of M1 for proper drive coupling and correct as necessary. 5. Check the connector between PS1-FSCB J7 for proper connection and correct as necessary. • Control signal: FSCB J7-5 (ON) • Location of electrical component: FS-534 (PK-520) 7-K 6. PS1 I/O check, sensor check • Control signal: FSCB J7-7 to 8 • Location of electrical component: FS-534 (PK-520) 7-K 7. M1 operation check 8. Replace M1. 9. Replace FSCB.
+Code;C1140
+Description;Alignment plate motor/Rr malfunction (When FS-533, FS-534 or FS-534SD is installed) <When FS-533 is installed> • The alignment plate home sensor/R (PS109) is not turned OFF (unblocked) after the set period of time has elapsed after the plate drive starts from the home position. • The alignment plate home sensor/R (PS109) is not turned ON (blocked) after the set period of time has elapsed while the alignment motor/R (M106) is energized when the plate returns to the home position. <When FS-534 or FS-534SD is installed> • The alignment plate/R home sensor (PS13) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the alignment motor/Rear (M8) is energized.
+Causes;<When FS-533 is installed> • Alignment motor/R (M106) • Alignment plate home sensor/R (PS109) • FS control board (FSCB) <When FS-534 or FS-534SD is installed> • Alignment motor/Rear (M8) • Alignment plate/R home sensor (PS13) • FS control board (FSCB)
+Remedy;(a) When FS-533 is installed 1. Check the connector between M106-FSCB CN102 for proper connection and correct as necessary. 2. Check the connector of M106 for proper drive coupling and correct as necessary. 3. Check the connector between PS109-FSCB CN102 for proper connection and correct as necessary. 4. PS109 I/O check, sensor check • Control signal: FSCB CN102 • Location of electrical component: FS-533 7-J 5. M106 operation check • Control signal: FSCB CN102 • Location of electrical component: FS-533 8-J 6. Replace M106 7. FSCB CP105 conduction check 8. Replace FSCB NOTICE • Link to the wiring diagram (N.2.5 FS-533) (b) When FS-534 or FS-534SD is installed 1. Check the connector between M8-FSCB J12 for proper connection and correct as necessary. 2. Check the connector of M8 for proper drive coupling and correct as necessary. 3. Check the connector between PS13-FSCB J9 for proper connection and correct as necessary. 4. PS13 I/O check, sensor check • Control signal: FSCB J9<B>-9 (ON) • Location of electrical component: FS-534 9-C 5. M8 operation check • Control signal: FSCB J12-13 to 16 • Location of electrical component: FS-534 5 to 6-C to D 6. Replace M8. 7. Replace FSCB.
+Code;C1141
+Description;Paddle motor drive malfunction (When FS-534 or FS-534SD is installed) The upper paddle home position detection sensor (PS14) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the FNS paddle motor (M5) is turning.
+Causes;• FNS paddle motor (M5) • Upper paddle home position detection sensor (PS14) • FS control board (FSCB)
+Remedy;1. Check the connector between M5-FSCB J4 for proper connection and correct as necessary. 2. Check the connector of M5 for proper drive coupling and correct as necessary. 3. Check the connector between PS14-FSCB J4 for proper connection and correct as necessary. 4. PS14 I/O check, sensor check • Control signal: FSCB J4<B>-7 (ON) • Location of electrical component: FS-534 13-C 5. M5 operation check • Control signal: FSCB J4<A>-5 to 8 • Location of electrical component: FS-534 12-C to D 6. Replace M5. 7. Replace FSCB.
+Code;C1144
+Description;Pre-eject drive motor malfunction (When FS-534 or FS-534SD is installed) • The pre-eject home sensor (PS21) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the pre-eject drive motor (M9) is turned ON. • The pre-eject away sensor (PS22) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the pre-eject drive motor (M9) is turned ON.
+Causes;• Pre-eject drive motor (M9) • Pre-eject home sensor (PS21) • Pre-eject away sensor (PS22) • FS control board (FSCB)
+Remedy;1. Check the connector between M9-relay CN7<A>-FSCB J13 for proper connection, and correct as necessary. 2. Check the connector of M9 for proper drive coupling and correct as necessary. 3. Check the connector between PS21-relay CN8-relay CN7<B>-FSCB J12 for proper connection, and correct as necessary. 4. Check the connector between PS22-relay CN8-relay CN7<B>-FSCB J12 for proper connection, and correct as necessary. 5. PS21 I/O check, sensor check • Control signal: FSCB J12-6 (ON) • Location of electrical component: FS-534 6-C 6. PS22 I/O check, sensor check • Control signal: FSCB J12-9 (ON) • Location of electrical component: FS-534 6-C 7. M9 operation check • Control signal: FSCB J13-3 to 4 • Location of electrical component: FS-534 8-C to D 8. Replace M9. 9. Replace FSCB.
+Code;C1145
+Description;Trailing edge stopper motor malfunction (When FS-534 or FS-534SD is installed) The trailing edge stopper home position detection sensor (PS20) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the trailing edge stopper motor (M6) is turned ON.
+Causes;• Trailing edge stopper motor (M6) • Trailing edge stopper home position detection sensor (PS20) • FS control board (FSCB)
+Remedy;1. Check the connector between M6-FSCB J5 for proper connection and correct as necessary. 2. Check the connector of M6 for proper drive coupling and correct as necessary. 3. Check the connector between PS20-relay CN22-FSCB J5 for proper connection and correct as necessary. 4. PS20 I/O check, sensor check • Control signal: FSCB J5-9 (ON) • Location of electrical component: FS-534 9-K 5. M6 operation check • Control signal: FSCB J5-13 to 16 • Location of electrical component: FS-534 9-K 6. Replace M6. 7. Replace FSCB.
+Code;C1156
+Description;SD paddle motor malfunction (When FS-534SD is installed) The paddle home sensor (PS5) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the SD paddle motor (M7) is energized.
+Causes;• SD paddle motor (M7) • Paddle home sensor (PS5) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M7-SDDB J8 for proper connection and correct as necessary. 2. Check the connector of M7 for proper drive coupling and correct as necessary. 3. Check the connector between PS5-SDDB J8 for proper connection and correct as necessary. 4. PS5 I/O check, sensor check • Control signal: SDDB J8-3 (ON) • Location of electrical component: SD-511 3 to 4-G 5. M7 operation check • Control signal: SDDB J8-4 to 7 • Location of electrical component: SD-511 3-F to G 6. Replace M7. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1182
+Description;Shift motor drive malfunction (When JS-506 is installed) • The tray shift home sensor (PS1) is not turned ON (blocked) after the set period of time has elapsed after the tray shift motor (M1) is turned ON (start of moving to the home position.) • The tray shift home sensor (PS1) is not turned OFF (unblocked) after the set period of time has elapsed after the tray shift motor (M1) is turned ON (start of moving to the shift position.)
+Causes;• Tray shift motor (M1) • Tray shift home sensor (PS1) • JS control board (JSCB)
+Remedy;1. Check the connector between M1-JSCB CN208 for proper connection and correct as necessary. 2. Check the connector of M1 for proper drive coupling and correct as necessary. 3. Check the connector between PS1-JSCB CN208 for proper connection and correct as necessary. 4. PS1 I/O check, sensor check • Control signal: JSCB CN208-5 (ON) • Location of electrical component: JS-506 5-C 5. M1 operation check • Control signal: JSCB CN208-1 (DRV) • Location of electrical component: JS-506 4 to 5-C 6. Replace M1. 7. JSCB ICP3 conduction check 8. Replace JSCB.
+Code;C1184
+Description;Paper discharge control motor malfunction (When FS-534 or FS-534SD is installed) The paper delivery control sensor (PS28) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the paper receiving control motor (M12) is energized.
+Causes;• Paper receiving control motor (M12) • Paper delivery control sensor (PS28) • FS control board (FSCB)
+Remedy;1. Check the connector between M12-relay CN1-FRCB J14 for proper connection and correct as necessary. 2. Check the connector of M12 for proper drive coupling and correct as necessary. 3. Check the connector between PS28-relay CN1-FRCB J14 for proper connection and correct as necessary. 4. PS28 I/O check, sensor check • Control signal: FSCB J14<B>-3 (ON) • Location of electrical component: FS-534 2 to 3-C 5. M12 operation check • Control signal: FSCB J14<A>-9 to 12 • Location of electrical component: FS-534 2-C to D 6. Replace M12. 7. Replace FSCB.
+Code;C1195
+Description;Paper discharge control motor malfunction (When FS-534SD is installed) The curl cover detection sensor (PS2) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the paper discharge control motor (M2) is turned ON.
+Causes;• Paper discharge control motor (M2) • Curl cover detection sensor (PS2) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M2-relay CN3-relay CN2-SDDB J5 for proper connection and correct as necessary. 2. Check the connector of M2 for proper drive coupling and correct as necessary. 3. Check the connector between PS2-relay CN3-relay CN2-SDDB J5 for proper connection and correct as necessary. 4. PS2 I/O check, sensor check • Control signal: SDDB J5-3 (ON) • Location of electrical component: SD-511 3-B 5. M2 operation check • Control signal: SDDB J5-4 to 7 • Location of electrical component: SD-511 3-B 6. Replace M2. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1196
+Description;Center fold roller motor malfunction (When FS-534SD is installed) The guide home sensor (PS7) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the center fold roller motor (M8) is turned ON.
+Causes;• Center fold roller motor (M8) • Guide home sensor (PS7) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M8-SDDB J8 for proper connection and correct as necessary. 2. Check the connector of M8 for proper drive coupling and correct as necessary. 3. Check the connector between PS7-SDDB J9 for proper connection and correct as necessary. 4. PS7 I/O check, sensor check • Control signal: SDDB J9-6 (ON) • Location of electrical component: SD-511 4-G 5. M8 operation check • Control signal: SDDB J8-11 to 14 • Location of electrical component: SD-511 2 to 3-F to G 6. Replace M8. 7. Replace SDDB. 8. Replace FSCB.
+Code;C1197
+Description;Tri-folding guide motor malfunction (When FS-534SD is installed) The tri-folding gate home sensor (PS11) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed while the tri-folding guide motor (M6) is energized.
+Causes;• Tri-folding guide motor (M6) • Tri-folding gate home sensor (PS11) • SD drive board (SDDB) • FS control board (FSCB)
+Remedy;1. Check the connector between M6-SDDB J9 for proper connection and correct as necessary. 2. Check the connector of M6 for proper drive coupling and correct as necessary. 3. Check the connector between PS11-SDDB J8 for proper connection and correct as necessary. 4. PS11 I/O check, sensor check • Control signal: SDDB J8-10 (ON) • Location of electrical component: SD-511 3-G 5. M6 operation check • Control signal: SDDB J9-7 to 10 • Location of electrical component: SD-511 4-F to G 6. Replace M6. 7. Replace SDDB. 8. Replace FSCB.
+Code;C11A1
+Description;Exit roller pressure/ retraction malfunction (When FS-533 is installed) The pick up roller position sensor (PS105) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the exit roller lift up motor (M104) is turned ON.
+Causes;• Exit roller lift up motor (M104) • Pick up roller position sensor (PS105) • FS control board (FSCB)
+Remedy;1. Check the connector between M104-FSCB CN109 for proper connection and correct as necessary. 2. Check the connector of M104 for proper drive coupling and correct as necessary. 3. Check the connector between PS105-FSCB CN110 for proper connection and correct as necessary. 4. PS105 I/O check, sensor check • Control signal: FSCB CN110 • Location of electrical component: FS-533 7-D to E 5. M104 operation check • Control signal: FSCB CN109 • Location of electrical component: FS-533 9-D to E 6. Replace M104. 7. FSCB CP104 conduction check 8. Replace FSCB.
+Code;C11A2
+Description;Accommodation roller pressure/ retraction malfunction (When FS-534 or FS-534SD is installed) The receiving roller retraction sensor (PS11) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the receiving roller retraction motor (M4) is turned ON.
+Causes;• Receiving roller retraction motor (M4) • Receiving roller retraction sensor (PS11) • FS control board (FSCB)
+Remedy;1. Check the connector between M4-FSCB J4 for proper connection and correct as necessary. 2. Check the connector of M4 for proper drive coupling and correct as necessary. 3. Check the connector between PS11-FSCB J4 for proper connection and correct as necessary. 4. PS11 I/O check, sensor check • Control signal: FSCB J4<B>-16 (ON) • Location of electrical component: FS-534 13-C 5. M4 operation check • Control signal: FSCB J4<A>-1 to 4 • Location of electrical component: FS-534 11-C to D 6. Replace M4. 7. Replace FSCB.
+Code;C11E1
+Description;Paper exit switching drive malfunction (When FS-534 or FS-534SD is installed) The exchange folded knife home position sensor (PS30) is not turned ON (blocked) or OFF (unblocked) even after the set period of time has elapsed after the FNS entry transport motor (M2) is turned ON.
+Causes;• FNS entry transport motor (M2) • Exchange folded knife home position sensor (PS30) • FS control board (FSCB)
+Remedy;2. Check the connector of M2 for proper drive coupling and correct as necessary. 3. Check the connector between PS30-FSCB J4 for proper connection and correct as necessary. 4. PS30 I/O check, sensor check • Control signal: FSCB J4<A>-15 (ON) • Location of electrical component: FS-534 12-C 5. M2 operation check • Control signal: FSCB J9<A>-1 to 4 • Location of electrical component: FS-534 10 to 11-B to C 6. Replace M2. 7. Replace FSCB.
+Code;C1402
+Description;FS nonvolatile memory error (When FS-533 is installed) When the main power switch is turned ON, malfunctioning of the nonvolatile memory on the FS control board (FSCB) is detected.
+Causes;FS control board (FSCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB.
+Code;C2253
+Description;Main motor failure to turn. The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Main motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN19E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN19E-10 to 14 • Location of electrical component: 26-C 4. Replace M3. 5. MFPB F11E conduction check 6. Replace MFPB.
+Code;C2254
+Description;Main motor turning at abnormal timing. The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Main motor (M3) • MFP board (MFPB)
+Remedy;1. Check the connector between M3-MFPB CN19E for proper connection and correct as necessary. 2. Check the connector of M3 for proper drive coupling and correct as necessary. 3. M3 operation check • Control signal: MFPB CN19E-10 to 14 • Location of electrical component: 26-C 4. Replace M3. 5. MFPB F11E conduction check 6. Replace MFPB.
+Code;C2350
+Description;Toner suction fan failure to turn The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Toner suction fan (FM4) • MFP board (MFPB)
+Remedy;1. Check the connector between FM4-relay CN46-MFPB CN15E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM4 operation check • Control signal: MFPB CN15E-1 (REM), MFPB CN15E-3 (LOCK) • Location of electrical component: 16 to 17-C 4. Replace FM4. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C2414
+Description;Developing unit/K new article release. The status with the new unit is not cleared after the new developing unit is set.
+Causes;• Developing unit/K • MFP board (MFPB)
+Remedy;1. Reinstall developing unit/K. 2. Check the connector between the developing unit-relay CN15-MFPB CN17E for proper connection and correct as necessary. 3. Replace the developing unit/K. 4. Replace MFPB.
+Code;C2557
+Description;Abnormally low toner density detected black TCR sensor. When sampling data is determined in TC ratio calculation control, TCR sensor output is higher than a predetermined value for a predetermined number of times in a row even though there is toner in the toner hopper.
+Causes;• Developing unit/K • Toner cartridge/K • Toner empty sensor/K (PS31) • Toner cartridge motor (M10) • Toner supply motor/K (M6) • MFP board (MFPB)
+Remedy;1. Perform image troubleshooting procedure if image density is low. 2. Reinstall developing unit/K. 3. Reinstall toner cartridge/K. 4. Check the connector between the developing unit-relay CN15-MFPB CN17E for proper connection and correct as necessary. 5. M10 operation check • Control signal: MFPB CN22E-5 to 8 • Location of electrical component: 20-J 6. M6 operation check • Control signal: MFPB CN22E-1 to 4 • Location of electrical component: 20-J 7. If the toner empty sensor and its surroundings inside the toner hopper are dirtied with toner, clean them. 8. Replace the developing unit/K. 9. MFPB F13E, F14E conduction check 10. Replace MFPB.
+Code;C2558
+Description;Abnormally high toner density detected black TCR sensor. The TC ratio of the toner determined by the toner replenishment control is detected to be the predetermined value or over for consecutive times.
+Causes;• Developing unit/K • Toner cartridge/K • MFP board (MFPB)
+Remedy;1. Reinstall developing unit/K. 2. Reinstall toner cartridge/K. 3. Check the connector between the developing unit-relay CN15-MFPB CN17E for proper connection and correct as necessary. 4. Replace the developing unit/K. 5. Replace MFPB.
+Code;C255C
+Description;Black TCR sensor adjustment failure. TCR sensor automatic adjustment does not function properly, failing to adjust to an appropriate value.
+Causes;• Developing unit/K • Toner cartridge motor (M10) • Toner supply motor/K (M6) • MFP board (MFPB)
+Remedy;1. Reinstall developing unit/K. 2. Check the connector between the developing unit-relay CN15-MFPB CN17E for proper connection and correct as necessary. 3. M10 operation check • Control signal: MFPB CN22E-5 to 8 • Location of electrical component: 20-J 4. M6 operation check • Control signal: MFPB CN22E-1 to 4 • Location of electrical component: 20-J 5. Replace the developing unit/K. 6. Replace MFPB.
+Code;C2564
+Description;Black TCR sensor failure. The TCR sensor input is 0. This detection is used for detecting disconnection of TCR sensor connector.
+Causes;• Developing unit/K • MFP board (MFPB)
+Remedy;1. Reinstall developing unit/K. 2. Check the connector between the developing unit-relay CN15-MFPB CN17E for proper connection and correct as necessary. 3. Replace the developing unit/K. 4. Replace MFPB.
+Code;C2650
+Description;Main backup media access error. • The re-written data, which has been read out, checked and founded as error, is read out again and found as error. • The error was found when reading out the counter value. • The main body detects that the backup board (ERB) is not mounted.
+Causes;• Backup board (ERB) • MFP board (MFPB)
+Remedy;1. Check the connector from ERB CN1-MFPB CN20E for proper connection and correct as necessary. 2. Replace ERB. 3. Replace MFPB. 4. If the above actions do not solve the problem, contact KM.
+Code;C2A14
+Description;Drum unit/K new release failure. The status with the new unit is not cleared after the new drum unit is set.
+Causes;• Drum unit/K • MFP board (MFPB)
+Remedy;1. Clean the connection between the drum unit and the machine if dirty. 2. Reinstall the drum unit/K. 3. Check the connector between the drum unit-relay CN13-MFPB CN17E for proper connection and correct as necessary. 4. Replace the drum unit/K. 5. Replace MFPB.
+Code;C3421
+Description;Fusing warm-up trouble (Middle of the heating roller). Detected temperature of the thermistor/1 (TH1) or thermistor/2 (TH2) does not go up a given range of temperature even after a lapse of given period of time at warm up.
+Causes;• Fusing unit • Thermistor/1 (TH1) • Thermistor/2 (TH2) • DC power supply (DCPU) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN7AC-DCPU CN2 for proper connection and correct as necessary. 5. Check the connector between MFPB CN2E-DCPU CN7 for proper connection and correct as necessary. 6. Replace the fusing unit. 7. Replace MFPB. 8. Replace DCPU.
+Code;C3721
+Description;Fusing abnormally high temperature detection (Middle of the heating roller). Detected temperature of the thermistor/1 (TH1) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3721: Thermistor/1 (TH1) • C3722: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C3722
+Description;Fusing abnormally high temperature detection (Edge of the heating roller). Detected temperature of the thermistor/2 (TH2) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3721: Thermistor/1 (TH1) • C3722: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C3731
+Description;Fusing abnormally high temperature detection (Hard protector). The hard protector signal error is detected for a given period of time consecutively.
+Causes;• Fusing unit • Thermistor/1 (TH1) • Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. MFPB F3E conduction check 6. Replace MFPB.
+Code;C3821
+Description;Fusing abnormally low temperature detection (Middle of the heating roller). Detected temperature of the thermistor/1 (TH1) goes below a given temperature for a given period of time consecutively after warm up is completed.
+Causes;• Fusing unit • C3821: Thermistor/1 (TH1) • C3822: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C3822
+Description;Fusing abnormally low temperature detection (Edge of the heating roller) Detected temperature of the thermistor/2 (TH2) goes below a given temperature for a given period of time consecutively after warm up is completed.
+Causes;• Fusing unit • C3821: Thermistor/1 (TH1) • C3822: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C3921
+Description;Fusing sensor wire breaks detection (Middle of the heating roller) The maximum value and minimum value of detected temperature of the thermistor/2 (TH2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature.
+Causes;• Fusing unit • C3921: Thermistor/1 (TH1) • C3922: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C3922
+Description;Fusing sensor wire breaks detection (Edge of the heating roller) The maximum value and minimum value of detected temperature of the thermistor/2 (TH2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below a given temperature.
+Causes;• Fusing unit • C3921: Thermistor/1 (TH1) • C3922: Thermistor/2 (TH2) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN19-MFPB CN18E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. Replace MFPB.
+Code;C40A1
+Description;Mechanical controller sub-CPU communication error. A CPU communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C40A2
+Description;Mechanical controller PF communication data error. A CPU communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C40A3
+Description;Mechanical controller PF transmission timeout. A CPU communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C40A4
+Description;Mechanical controller PF communication pulse error. A CPU communication error is detected.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C4101
+Description;Polygon motor rotation trouble. • The polygon motor fails to turn stably even after the lapse of a given period of time after activating and changing rotation speed the polygon motor. • Motor lock signal detects HIGH for a given period time consecutively during the polygon motor is rotating.
+Causes;• PH unit • MFP board (MFPB)
+Remedy;1. Check the connector between the PH unit-MFPB CN18 for proper connection and correct as necessary. 2. Replace the PH unit. 3. MFPB F15E conduction check 4. Replace MFPB.
+Code;C4501
+Description;Laser malfunction. • SOS signal is not detected even after the lapse of a given period of time after starting the laser output. • SOS signal is not detected for a given period of time during printing.
+Causes;• PH unit • MFP board (MFPB)
+Remedy;1. Check the connector between the PH unit-MFPB CN18 for proper connection and correct as necessary. 2. Replace the PH unit. 3. Replace MFPB.
+Code;C5102
+Description;Transport motor failure to turn. The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;• Transport motor (M1) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN19E for proper connection and correct as necessary. 2. Check the loading status of the transfer roller drive, and correct the error as necessary. 3. M1 operation check • Control signal: MFPB CN19E-3 to 7 • Location of electrical component: 26-C 4. Replace M1. 5. MFPB F10E conduction check 6. Replace MFPB.
+Code;C5103
+Description;Transport motor turning at abnormal timing. The motor lock signal remains LOW for a predetermined continuous period of time while the motor remains stationary.
+Causes;• Transport motor (M1) • MFP board (MFPB)
+Remedy;1. Check the connector between M1-MFPB CN19E for proper connection and correct as necessary. 2. Check the loading status of the transfer roller drive, and correct the error as necessary. 3. M1 operation check • Control signal: MFPB CN19E-3 to 7 • Location of electrical component: 26-C 4. Replace M1. 5. MFPB F10E conduction check 6. Replace MFPB.
+Code;C5354
+Description;Paper exit cooling fan failure to turn. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Paper exit cooling fan (FM3) • MFP board (MFPB)
+Remedy;1. Check the connector between FM3-MFPB CN41E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM3 operation check. • Control signal: MFPB CN41E-1 (REM), MFPB CN41E-3 (LOCK) • Location of electrical component: 12-I 4. Replace FM3. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C5356
+Description;Main cooling fan failure to turn. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Main cooling fan (FM2) • MFP board (MFPB)
+Remedy;1. Check the connector between FM2-relay CN21-relay CN27-MFPB CN29E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM2 operation check • Control signal: MFPB CN29E-6 (REM), MFPB CN29E-8 (LOCK) • Location of electrical component: 20-C 4. Replace FM2. 5. MFPB F12E conduction check 6. Replace MFPB.
+Code;C5359
+Description;Reverse cooling fan failure to turn. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Reverse cooling fan (FM5) • MFP board (MFPB)
+Remedy;1. Check the connector between FM5-relay CN88-relay CN20-MFPB CN25E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM5 operation check. • Control signal: MFPB CN25E-11 (REM), MFPB CN25E-13 (LOCK) • Location of electrical component: 18-C 4. Replace FM5. 5. Replace MFPB.
+Code;C5370
+Description;Power supply cooling fan failure to turn. The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Power supply cooling fan (FM1) • MFP board (MFPB)
+Remedy;1. Check the connector betweenFM1-relay CN45-MFPB CN15E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM1 operation check • Control signal: MFPB CN15E-4 (REM), MFPB CN15E-6 (LOCK) • Location of electrical component: 17-C 4. Replace FM1. 5. MFPB F7E conduction check 6. Replace MFPB.
+Code;C5372
+Description;MFP control board CPU temperature failure. Temperature failure of CPU on the MFP board was detected.
+Causes;MFP board (MFPB)
+Remedy;1. Reboot the machine. 2. Check for clogging in the ventilation path between the MFPB and the power supply cooling fan, and correct as necessary. 3. Replace MFPB.
+Code;C5501
+Description;AC signal abnormality. The zero cross signal is not input during fusing phase control.
+Causes;• Fusing unit • DC power supply (DCPU) • MFP board (MFPB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the fusing unit-DCPU CN2 for proper connection and correct or change as necessary. 3. Check the connector between DCPU CN7-MFPB CN2E for proper connection and correct as necessary. 4. Replace the fusing unit. 5. MFPB F1E conduction check 6. Replace MFPB. 7. Replace DCPU.
+Code;C5601
+Description;Engine control malfunction. Engine control malfunction is detected with port monitor control.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C5605
+Description;Engine communication data error. A communication error is detected between CPUs.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C5606
+Description;Engine transmission timeout. A communication error is detected between CPUs.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;C6102
+Description;Drive system home sensor malfunction. • The scanner home sensor (PS105) is unable to detect the scanner located at its home position. • The scanner home sensor (PS105) is unable to detect a scanner even when the scanner motor (M101) has been driven to move the scanner over the maximum travelling distance. • The scanner home sensor (PS105) detects the scanner when the scanner has moved the maximum travelling distance from the position, at which it blocks the scanner home sensor (PS105).
+Causes;• Scanner home sensor (PS105) • Scanner motor (M101) • MFP board (MFPB)
+Remedy;1. Correct or change the scanner drive (pulley, gear, belt) if it is faulty. 2. Correct the scanner motor set screw if loose. 3. Adjust [Image Position: Leading Edge] and [Sub Scan Zoom Adj.]. 4. Check the connector between M101-relay CN6IR-MFPB CN26E for proper connection and correct as necessary. 5. Check the connector between PS105-MFPB CN27E for proper connection and correct as necessary. 6. PS105 I/O check, sensor check • Control signal: MFPB CN27E-15 (ON) • Location of electrical component: 5-V 7. M101 operation check • Control signal: MFPB CN26E-1 to 4 • Location of electrical component: 6-W 8. Replace MFPB.
+Code;C6103
+Description;Slider over running. The scanner home sensor (PS105) detects the scanner at its home position during a period of time that begins with the time when a prescan command and a scan preparation command are executed and ends when a home return command is executed.
+Causes;• Scanner home sensor (PS105) • Scanner motor (M101) • MFP board (MFPB)
+Remedy;1. Correct or change the scanner drive (pulley, gear, belt) if it is faulty. 2. Correct the scanner motor set screw if loose. 3. Adjust [Image Position: Leading Edge] and [Sub Scan Zoom Adj.]. 4. Check the connector between M101-relay CN6IR-MFPB CN26E for proper connection and correct as necessary. 5. Check the connector between PS105-MFPB CN27E for proper connection and correct as necessary. 6. PS105 I/O check, sensor check • Control signal: MFPB CN27E-15 (ON) • Location of electrical component: 5-V 7. M101 operation check • Control signal: MFPB CN26E-1 to 4 • Location of electrical component: 6-W 8. Replace MFPB.
+Code;C6704
+Description;Image input time out. Image data is not input from the scanner to the MFP board (MFPB).
+Causes;• CCD unit • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Bus Check] -> [Scanner -> Memory], and conduct the memory bus function. 2. Check the connector between CCDB PJ1-MFPB CN7 for proper connection and correct as necessary. 3. Replace MFPB. 4. Replace the CCD unit.
+Code;C6751
+Description;CCD gain adjustment failure. • The adjustment value is 0 or 255 during a CCD clamp adjustment. • The peak value of the output data is 64 or less during a CCD gain adjustment.
+Causes;• LED exposure unit • CCD unit • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Check the connector between CCDB PJ1-MFPB CN7 for proper connection and correct as necessary. 2. Check for possible extraneous light and correct as necessary. 3. Clean the lens, mirrors, CCD surface, and shading sheet if dirty. 4. Correct reflective mirror of the scanner if faulty. 5. Replace the CCD unit. 6. MFPB F8E conduction check 7. Replace MFPB.
+Code;C6752
+Description;ASIC clock input error (front side). When starting the machine, verification on reading and writing the predetermined value for image processing ASIC on CCD board (CCDB) was conducted, and verification failure was detected.
+Causes;• CCD unit • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Correct the harness connection of CCDB if faulty. 2. Replace the CCD unit. 3. MFPB F8E conduction check 4. Replace MFPB.
+Code;C6756
+Description;CCD power-supply voltage malfunction. Power is not supplied to CCD after the lapse of a given period of time after the main power switch or power key is turned ON or the machine recovers from the sleep mode.
+Causes;• CCD unit • CCD board (CCDB) • DC power supply (DCPU)
+Remedy;1. Correct the harness connection between CCDB and DCPU if faulty. 2. Replace the CCD unit. 3. Replace DCPU.
+Code;C6F01
+Description;Scanner sequence trouble 1. The original transport interval becomes shorter than the predetermined value due to an original transport control error in original reading in DF.
+Causes;• MFP board (MFPB) • DF control board (DFCB)
+Remedy;1. Correct the harness connection between MFPB CN31E-DFCB J21 if faulty. 2. Replace DFCB. 3. Replace MFPB.
+Code;C8101
+Description;Before reading pressure welding alienation . mechanism (When DF-628 is installed). • During a pressure motion being performed, the original reading sensor (PS4) output does not change from H to L. • During a retraction motion being performed, the original reading sensor (PS4) output does not change from L to H.
+Causes;• Reading roll release motor (M5) • Original reading sensor (PS4) • DF control board (DFCB)
+Remedy;1. Check the connector between M5-DFCB J18 for proper connection and correct as necessary. 2. Check the connector of M5 for proper drive coupling and correct as necessary. 3. Check the connector between PS4-DFCB J10 for proper connection and correct as necessary. 4. PS4 I/O check, sensor check • Control signal: DFCB J10-3 (ON) • Location of electrical component: DF-628 2-G 5. M5 operation check • Control signal: DFCB J18-4 to 5 • Location of electrical component: DF-628 2-G 6. Replace M5. 7. DFCB F9 conduction check. 8. Replace DFCB.
+Code;C8107
+Description;Glass cleaning mechanism trouble (When DF-628 is installed). The original reading glass cleaning sensor (PS12) is not turned OFF (unblocked) after the set period of time has elapsed after the glass cleaning motor (M4) is turned ON.
+Causes;• Glass cleaning motor (M4) • Original reading glass cleaning sensor (PS12) • DF control board (DFCB)
+Remedy;1. Check the connector between M4-DFCB J8 for proper connection and correct as necessary. 2. Check the connector of M4 for proper drive coupling and correct as necessary. 3. Check the connector between PS12-DFCB J15 for proper connection and correct as necessary. 4. PS12 I/O check, sensor check • Control signal: DFCB J15-5 (ON) • Location of electrical component: DF-628 3-G 5. M4 operation check • Control signal: DFCB J8-1 to 4 • Location of electrical component: DF-628 1 to 2-B 6. Replace M4. 7. Replace DFCB.
+Code;C8401
+Description;Data flash failure (When DF-628 is installed). Data flash does not access normally.
+Causes;DF control board (DFCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Check the DFCB connector for proper connection and correct as necessary. 3. Rewrite the firmware. 4. Replace DFCB.
+Code;C9401
+Description;Exposure LED lighting failure. The output from the CCD sensor is a predetermined value or less during CCD sensor gain adjustment.
+Causes;• LED exposure unit • CCD unit • Flat cable (CCD unit) • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Check the connector between LEDB CN1-CCDB PJ7 for proper connection and correct as necessary. 2. Check the connector between CCDB PJ1-MFPB CN7 for proper connection and correct as necessary. 3. Replace the LED exposure unit. 4. Replace the CCD unit. 5. MFPB F8E conduction check 6. Replace MFPB.
+Code;C9402
+Description;Exposure LED lighting abnormally. The average output value of the CCD sensor with the scanner at its standby position is a predetermined value or more at the end of a scan job.
+Causes;• LED exposure unit • CCD unit • Flat cable (CCD unit) • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Check the connector between LEDB CN1-CCDB PJ7 for proper connection and correct as necessary. 2. Check the connector between CCDB PJ1-MFPB CN7 for proper connection and correct as necessary. 3. Replace the LED exposure unit. 4. Replace the CCD unit. 5. MFPB F8E conduction check 6. Replace MFPB.
+Code;CA051
+Description;Standard controller configuration failure. The controller of the MFP board (MFPB) is faulty.
+Causes;MFP board (MFPB)
+Remedy;1. Check to see if [Service Mode] -> [System 2] -> [Image Controller Setting] has been set to “Controller 0.” If changing the setting, turn OFF the main power switch and turn it ON again after 10 seconds or more. 2. Check the connectors of the MFPB for proper connection and correct as necessary. 3. Replace MFPB.
+Code;CA052
+Description;Controller hardware error. A controller hardware error is detected in the network interface.
+Causes;MFP board (MFPB)
+Remedy;1. Check to see if [Service Mode] -> [System 2] -> [Image Controller Setting] has been set to “Controller 0.” If changing the setting, turn OFF the main power switch and turn it ON again after 10 seconds or more. 2. Check the connectors of the MFPB for proper connection and correct as necessary. 3. Replace MFPB.
+Code;CA053
+Description;Controller start failure. A controller start failure is detected in the controller interface.
+Causes;MFP board (MFPB)
+Remedy;1. Check to see if [Service Mode] -> [System 2] -> [Image Controller Setting] has been set to “Controller 0.” If changing the setting, turn OFF the main power switch and turn it ON again after 10 seconds or more. 2. Check the connectors of the MFPB for proper connection and correct as necessary. 3. Replace MFPB.
+Code;CC140
+Description;Trouble related to security
+Causes;
+Remedy;• Contact the responsible people of KM before taking some countermeasures.
+Code;CC151, CC152
+Description;• CC151: ROM contents error upon startup (MSC) • CC152: ROM contents error upon startup (IR) A fault is detected in a sequence of ROM contents check of the MFPB during starting.
+Causes;MFP board (MFPB)
+Remedy;1. Check the ROM version. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CC155
+Description;Finisher ROM error (When FS-533, FS-534, FS-534SD or JS-506 is installed). Data of flash ROM of the finishing options is determined to be faulty when the main power switch is turned ON.
+Causes;<When FS-533, FS-534 or FS-534SD is installed> • FS control board (FSCB) <When JS-506 is installed> • JS control board (JSCB)
+Remedy;(a) When FS-533, FS-534 or FS-534SD is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB (FS-533/FS-534/FS-534SD) (b) When JS-506 is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace JSCB.
+Code;CC156
+Description;DF ROM error (When DF-628 is installed). Upgrade of the firmware has not been successful.
+Causes;DF control board (DFCB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace DFCB.
+Code;CC15B
+Description;Flash ROM error (saddle) (When FS-534SD is installed). Data of flash ROM of the saddle is determined to be faulty when the main power switch is turned ON.
+Causes;SD drive board (SDDB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace SDDB.
+Code;CC163
+Description;ROM contents error (PRT). The wrong model of firmware is detected in the engine during the initial connection to the engine is being checked.
+Causes;• Backup board (ERB) • MFP board (MFPB)
+Remedy;1. Rewrite the firmware. 2. Replace MFPB NOTE • When taking the above steps, check whether MFPB is defective or not without replacing the ERB. 1. Turn OFF the main power switch and replace the current MFPB with a new one. 2. Update the firmware. 3. After completing the firmware update, turn OFF and ON the main power switch and check to see that warm-up is started. 4. When the trouble cannot be solved, reinstall the removed MFPB to the original board. 3. Replace ERB. 4. If the above actions do not solve the problem, contact KM.
+Code;CC164
+Description;ROM contents error (MSC). • The wrong model of firmware is detected in the MFP board when the main power switch is turned ON. • The machine type information (Machine, Type) registered to the machine differs from the actual machine type.
+Causes;• MFP board (MFPB) • eMMC board (eMMC)
+Remedy;1. Check the ROM version. 2. Check the machine type information registered and reenter as necessary. For details the machine information. 3. Rewrite the firmware. 4. Replace MFPB. 5. Replace eMMC. 6. If the above actions do not solve the problem, contact KM.
+Code;CC170 ... CC186
+Description;• CC170: Dynamic link error during starting (AP0) • CC171: Dynamic link error during starting (AP1) • CC172: Dynamic link error during starting (AP2) • CC173: Dynamic link error during starting (AP3) • CC174: Dynamic link error during starting (AP4) • CC180: Dynamic link error during starting (LDR) • CC181: Dynamic link error during starting (IBR) • CC182: Dynamic link error during starting (IID) • CC183: Dynamic link error during starting (IPF) • CC184: Dynamic link error during starting (IMY) • CC185: Dynamic link error during starting (SPF) • CC186: Dynamic link error during starting (OAP) A dynamic link error occurs in the program on the MFP board due to an insufficient memory space available, a ROM fault, or other reason when the main power switch is turned ON.
+Causes;MFP board (MFPB)
+Remedy;"1. If the malfunction code “C-C172” has occurred, access [Service Mode] -> [System 2] -> [Image Controller Setting] and check to see if “Controller 1,” or “Others” is set for [Image Controller Setting]. If any of these is set, select “Controller 0”. 2. If the malfunction code ""C-C180"" has occurred, check to install the appropriate loadable device driver for an authentication unit which is installed to the MFP. When the appropriate loadable device driver is not installed, reinstall the appropriate loadable device driver. 3. Replace MFPB. 4. If the above actions do not solve the problem, contact KM."
+Code;CC190
+Description;Outline font load error. An error occurred while loading the outline font.
+Causes;• MFP board (MFPB) • SATA board (SATAB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-SATAB PJ2 for proper connection and correct as necessary. 2. Check the connector between SATAB PJ1-MFPB CN1 for proper connection and correct as necessary. 3. Format the hard disk. 4. Replace the hard disk. 5. Replace SATAB. 6. Replace MFPB.
+Code;CC191
+Description;Setting parameter load error (LDR). Upon startup, the processing of the loadable device driver setting data file failed. • RAM disk file creation failed. • Reading from the flash ROM failed. • An error occurred in API of the authentication module.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Reinstall the loadable device driver. 3. Rewrite the firmware. 4. Replace MFPB.
+Code;CC211
+Description;Authentication device general error. When using the authentication device, authentication data is not to meet the specifications.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC212
+Description;User validation error • An error occurred while validating the user authentication information. • The loadable device driver is not successfully installed.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. When this trouble code is generated after installing the loadable device driver, check to see if there is any file other than loadable device driver in USB memory used. If there is any file, reinstall the loadable device driver. 2. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 4. Re-register the user authentication information. 5. Replace authentication device.
+Code;CC213
+Description;User registration error/Card information setting error. • IC card advanced settings data is not correct when starting-up the authentication device. • Authentication information data is not correct when starting-up the authentication device. • IC card advanced settings data is not correct when setting the IC card advanced settings. • Authentication information data is not correct when setting the IC card advanced settings. • IC card advanced settings data is not correct when registering the authentication information. • Authentication information data is not correct when registering the authentication information. • IC card advanced settings data is not correct when editing the authentication information. • Authentication information data is not correct when editing the authentication information
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 3. Reset the authentication settings. (card type, IC card advanced settings, and etc.) 4. Re-register the user authentication information.
+Code;CC214
+Description;User information deletion error. The deletion of the user information is uncompleted.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC216
+Description;Acquisition failure of the number of trials/Initialize error of number of authentication. An error occurred during user authentication using optional authentication unit AU-102.
+Causes;• MFP board (MFPB) • Authentication device
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 3. Reset the number of authentication trials.
+Code;CD002
+Description;JOB RAM save error. The error in save of job data to the memory/ hard disk and its read error are detected.
+Causes;• MFP board (MFPB) • SATA board (SATAB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-SATAB PJ2 for proper connection and correct as necessary. 2. Check the connector between SATAB PJ1-MFPB CN1 for proper connection and correct as necessary. 3. Format the hard disk. 4. Replace the hard disk. 5. Replace MFPB.
+Code;CD004, CD00F, CD020
+Description;• CD004: Hard disk access error (connection failure) • CD00F: Hard disk data transfer error • CD020: Hard disk verify error. • CD004: Unable to communicate between the hard disk and MFP board (MFPB). • CD00F: Data transfer from the hard disk is faulty. • CD020: The data abnormality is detected by the hard disk verify check.
+Causes;• MFP board (MFPB) • SATA board (SATAB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-SATAB PJ2 for proper connection and correct as necessary. 2. Check the connector between SATAB PJ1-MFPB CN1 for proper connection and correct as necessary. 3. Reinstall the hard disk. 4. Replace the hard disk. 5. Replace MFPB.
+Code;CD010
+Description;Hard disk unformat. Unformatted hard disk is connected.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format], and conduct the HDD format function. 2. Replace the hard disk. 3. Replace MFPB.
+Code;CD011
+Description;Hard disk out of specifications mounted. A hard disk that falls outside the specifications is connected.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Replace the hard disk.
+Code;CD012
+Description;Mount error due to hard disk being unformatted. • The hard disk is not logically formatted after the whole data in the hard disk has been deleted by overwriting. • The hard disk that has replaced an old one is not logically formatted.
+Causes;Hard disk (HDD)
+Remedy;1. Logically format the hard disk and then upgrade the firmware. 2. Replace the hard disk.
+Code;CD030
+Description;Hard disk management information reading error. The machine fails to read administrative information data saved in the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD041 ... CD046
+Description;HDD command execution error. The error occurred inside the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD047 ... CD04B
+Description;HDD SCSI library error. The error occurred inside the hard disk.
+Causes;Hard disk (HDD)
+Remedy;1. Check the hard disk specifications. 2. Format the hard disk. 3. Replace the hard disk.
+Code;CD050
+Description;Hard disk recovery timeout. The hard disk fails to recover from the power save mode within the predetermined period of time.
+Causes;• MFP board (MFPB) • SATA board (SATAB) • Hard disk (HDD)
+Remedy;1. Check the connector between hard disk-SATAB PJ2 for proper connection and correct as necessary. 2. Check the connector between SATAB PJ1-MFPB CN1 for proper connection and correct as necessary. 3. Reinstall the hard disk. 4. Format the hard disk. 5. Replace the hard disk.
+Code;CD110
+Description;Wireless LAN destination initialization error. When an initialization error occurred on the settings of the wireless LAN in the upgrade kit (UK-212).
+Causes;
+Remedy;1. Check the UK-212 connector for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Reinstall the UK-212.
+Code;CD201, CD202, CD203
+Description;• CD201: File memory mounting error • CD202: Memory capacity discrepancy • CD203: Memory capacity discrepancy 2 CD201: • The file memory is not mounted. • The file has any abnormality. CD202: • File memory capacity on the MFP board (MFPB) is not enough. • File memory capacity necessary for duplex printing is not enough. CD203: • File memory capacity on the MFP board (MFPB) is not enough.
+Causes;• MFP board (MFPB) • DIMM (DIMM: UK-211)
+Remedy;1. Check DIMM for proper connection and correct as necessary. 2. Replace the DIMM. 3. Replace MFPB.
+Code;CD211, CD212
+Description;• CD211: PCI-SDRAM DMA operation failure • CD212: Compression/extraction timeout detection • CD211: Hardware related to the transfer of memory image of the MFP board (MFPB) fails to respond. • CD212: Hardware related to the BTC compression function of the MFP board (MFPB) fails to respond.
+Causes;MFP board (MFPB)
+Remedy;1. Replace MFPB.
+Code;CD241, CD242
+Description;• CD241: Encryption ASIC setting error • CD242: Encryption ASIC mounting error • CD241: Initialization error of the encrypted ASIC is detected during the machine is starting. • CD242: The faulty of the installation of encrypted ASIC is detected during the machine is starting.
+Causes;MFP board (MFPB)
+Remedy;1. Check the MFP board connector for proper connection and correct as necessary. 2. Replace MFPB
+Code;CD261
+Description;USB host board failure. • When a failure is detected in USB board included in the local interface kit. • Non-standard USB device is connected.
+Causes;• MFP board (MFPB) • USB board (EK-608)
+Remedy;1. Check the operation with another USB device. 2. Check the USB board connector for proper connection and correct as necessary. 3. Replace the USB board. 4. Replace MFPB.
+Code;CD262
+Description;Extension network adapter installation error. • When the 2nd network card settings is set to “Set” but the upgrade kit (UK-212) is not installed. • Upgrade Kit (UK-212) is faulty.
+Causes;
+Remedy;1. Check the settings of [Service Mode] -> [Network Settings] -> [2nd Network Setting] -> [2nd network card settings]. 2. Check the UK-212 connector for proper connection and correct as necessary. 3. Rewrite the firmware. 4. Reinstall the UK-212.
+Code;CD271
+Description;i-Option activated and additional memory not installed. While the i-Option is activated, the additional memory (DIMM) included in UK-211 is not installed.
+Causes;• MFP board (MFPB) • DIMM (DIMM: UK-211)
+Remedy;1. Check DIMM for proper connection and correct as necessary. 2. Replace the DIMM. 3. Replace MFPB.
+Code;CD272
+Description;i-Option activated and additional memory and HDD not installed. While the i-Option is activated, the additional memory (DIMM) included in UK-211 and the HDD are not installed.
+Causes;• MFP board (MFPB) • Hard disk (HDD) • DIMM (DIMM: UK-211)
+Remedy;1. Check DIMM for proper connection and correct as necessary. 2. Access [Service Mode] -> [System 2] -> [HDD] and check to see if “Installed” is selected. 3. Replace the DIMM. 4. Replace the hard disk. 5. Replace MFPB.
+Code;CD300 ... CD370
+Description;CD3##: Nonvolatile data error CD370: Nonvolatile data multiple errors. CD3##: Abnormality is detected by the abnormal check of each nonvolatile data. CD370: Multiple errors (over 5) are detected by the abnormal check of each nonvolatile data.
+Causes;
+Remedy;NOTE • Trouble code [C-D370] will be displayed when multiple errors (over 5) of nonvolatile data are detected, which can be restored with one restoration command. • Data backup will be automatically performed every hour. Backup can also be performed manually with the following setting. [Service Mode] -> [Enhanced Security] -> [Memory Data Backup] 1. When a trouble caused by nonvolatile data error occurs, the screen below appears. 2. Select [Yes]. 3. The screen will be shifted to the data restoration screen to perform data restoration. NOTE • When the restoration is performed in a short time, data restoration screen may not be displayed. 4. Check the message which indicates that the data restoration was successfully conducted. Turn OFF the main power switch and turn it ON again more than 10 seconds after. NOTE • In case it failed to restore data, return to the trouble code screen.
+Code;CD390
+Description;Nonvolatile data checksum error. C-D390 code is normally shown when the MFP board (MFPB) is replaced with a new one.
+Causes;
+Remedy;1. Wait until “Recover Data” appears. (MFP will reboot maximum 2 times by itself, it may take 5 minutes.) Touch the “Recover Data” button and follow the instructions that appear on the control panel to restore (backup) data.
+Code;CD3A0
+Description;Counter error. The total counter values provided by the MFP board (MFPB) and the eMMC board (eMMC) are different.
+Causes;• MFP board (MFPB) • eMMC board (eMMC)
+Remedy;1. If this error occurs temporarily due to the use of the board removed from another machine, reinstall the original board. 2. Replace the current MFPB with a new one. 3. Replace the current eMMC with a new one.
+Code;CD401 ... CD413
+Description;• CD401: NACK command incorrect • CD402: ACK command incorrect • CD403: Checksum error • CD404: Receiving packet incorrect • CD405: Receiving packet analysis error • CD406: ACK receiving timeout • CD407: Retransmission timeout • CD411: Touch panel board error • CD412: Touch panel type mismatch • CD413: Electrostatic touch panel operation mode error. When abnormality is found in the communication of controller.
+Causes;MFP board (MFPB)
+Remedy;1. Check whether there is a strong electromagnetic noise source near the main body. 2. Check the connectors on MFPB for proper connection and correct as necessary. 3. Replace MFPB.
+Code;CD601, CD602, CD603
+Description;Trouble related to security
+Causes;
+Remedy;1. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. If the above actions do not solve the problem, contact KM.
+Code;CD701, CD702, CD703
+Description;• CD701: Mechanical controller flash ROM writing error • CD702: Mechanical controller flash ROM device error • CD703: FW download communication fault. CD701: A mechanical controller flash ROM writing sequence is interrupted in its mid-operation due to, for example, power being shut off. CD702: An erase error or other device fault occurs during mechanical controller flash ROM writing. CD703: Irregular data is received during FW downloading. • Places are changed in the order of write completion pulses. • A write completion pulse is received for a memory for which binary writing is not permitted. • Final checksum mismatch in FW download • Two-minute timeout (no response from CTL, the number of transfer data items less than the specified)
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CD704
+Description;Finisher Flash ROM device error (When FS-533, FS-534, FS-534SD or JS-506 is installed). An erase error or other device fault occurs during the finisher flash ROM writing.
+Causes;<When FS-533, FS-534 or FS-534SD is installed> • FS control board (FSCB) <When JS-506 is installed> • JS control board (JSCB)
+Remedy;(a) When FS-533, FS-534 or FS-534SD is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace FSCB. (FS-533/FS-534/FS-534SD) (b) When JS-506 is installed 1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace JSCB.
+Code;CD705, CD706
+Description;• CD705: Mechanical controller sub-CPU flash ROM device error • CD706: Mechanical controller sub-CPU flash ROM error. • CD705: An erase error or other device fault occurs during mechanical controller sub-CPU flash ROM writing. • CD706: A data error is determined to exist in the mechanical controller sub-CPU flash ROM during starting.
+Causes;MFP board (MFPB)
+Remedy;1. Turn OFF the main power switch, disconnect and then connect the power cord. Wait for 10 sec. or more after connect the power cord, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace MFPB.
+Code;CDF50, CDF70, CDFA0
+Description;• CDF50: ASIC image version failure • CDF70: ASIC image access failure • CDFA0: ASIC image error. Communication error is detected between the MFP board (MFPB) and the CCD board (CCDB).
+Causes;• CCD unit • CCD board (CCDB) • MFP board (MFPB)
+Remedy;1. Check the connector between MFPB CN7-CCDB PJ1 for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Replace the CCD unit. 4. Replace MFPB.
+Code;CE001 ... CE007
+Description;• CE001: Abnormal message queue • CE003: Task error • CE004: Event error • CE005: Memory access error • CE006: Header access error • CE007: DIMM initialize error. MFP board (MFPB) is faulty.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE002
+Description;Message and method parameter failure. MFP board (MFPB) is faulty.
+Causes;• MFP board (MFPB) • Hard disk (HDD)
+Remedy;1. Turn OFF the main power switch and turn it ON again, and conduct the following setting. [Service Mode] -> [System 1] -> [Initialization] -> [Clear All Data]. 2. Format the hard disk. 3. Replace the hard disk. 4. Replace MFPB.
+Code;CE101
+Description;Browser finish detected. • The browser is automatically recovered (restarted) after the main body detected that the browser (separate process) has stopped with fault. • When the “Malfunction finish is detected over predetermined number of times” or “the browser task process is except in idle (printing, etc)”.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE201
+Description;Transmission operation log storage fault. When the transmission log storage failed, it repeats retrial until transmission operation log is stored. The trouble is detected when the retrial failed for predetermined number of times.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CE301 ... CE305
+Description;• CE301: Referring incorrect memory • CE302: Incorrect command • CE303: Finished due to error inside Qt library • CE304: Finished due to error outside Qt library • CE305: Program forced to stop. Error occurred with the process inside the MFP controller.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB. 3. Acquire the debug logs in [Service Mode] -> [Debug Settings] and analyze them.
+Code;CED01
+Description;The authentication application information does not exist in the hard disk/eMMC board in the enhanced server authentication state. With “Enhanced Server Authentication” set, no authentication application registration information is found in the hard disk (HDD) or the eMMC board (eMMC).
+Causes;• eMMC board (eMMC) • Hard disk (HDD)
+Remedy;1. Turn OFF and ON the main power switch. 2. Check the connector from MFPB CN1-SATAB PJ1 for proper connection and correct as necessary. 3. Check the connector between SATAB PJ2-hard disk for proper connection and correct as necessary. 4. Check eMMC for proper connection and correct as necessary. 5. Logically format the hard disk. 6. Replace the hard disk. 7. If the above actions do not solve the problem, contact KM.
+Code;CEEE1, CEEE3
+Description;• CEEE1: MFP board (MSC) malfunction • CEEE3: MFP board (EMG) malfunction. MFP board (MFPB) is faulty.
+Causes;MFP board (MFPB)
+Remedy;1. Check the connectors on MFPB for proper connection and correct as necessary. 2. Replace MFPB.
+Code;CEEE2
+Description;Scanner section malfunction. A scanner part is faulty.
+Causes;• LED exposure unit • CCD unit • CCD board (CCDB)
+Remedy;1. Check the connectors on CCDB for proper connection and correct as necessary. 2. Replace the LED exposure unit. 3. Replace the CCD unit.
+Code;CF0xx
+Description;An exceptional instance occurred due to the unexpected parameter in the system F/W.
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF1xx
+Description;Compression malfunctions
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF2xx
+Description;An exceptional instance occurred due to the unexpected parameter in the system F/W.
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF3xx
+Description;Image transfer error on IR input bus
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF4xx
+Description;Communication error (between IR-systems)
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF5xx
+Description;Communication error (IR detected)
+Causes;MFP board (MFPB)
+Remedy;
+Code;CF6xx
+Description;An exceptional instance occurred due to the unexpected parameter in the system F/W.
+Causes;• MFP board (MFPB) • Engine
+Remedy;
+Code;CF7xx
+Description;An exceptional instance occurred due to the unexpected parameter in the system F/W.
+Causes;MFP board (MFPB) • Engine • Control panel
+Remedy;
+Code;CF8xx
+Description;
+Causes;• MFP board (MFPB) • Engine
+Remedy;
+Code;CF9xx
+Description;
+Causes;• MFP board (MFPB) • Engine
+Remedy;
+Code;CFAxx
+Description;An exceptional instance occurred due to the unexpected parameter in the system F/W.
+Causes;MFP board (MFPB) • DIMM (UK-211) • Hard disk (HDD)
+Remedy;
+Code;CFB00 ... CFFBD
+Description;Abort code
+Causes;• MFP board (MFPB) • Hard disk (HDD) • DIMM (UK-211)
+Remedy;

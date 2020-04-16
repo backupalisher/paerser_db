@@ -1,0 +1,175 @@
+Code;01
+Display;ERROR CONDITION RIBBON OUT
+Description;"Print engine stops; RIBBON light ON, ERROR light flashes."
+Causes;In thermal transfer mode, ribbon is not loaded or incorrectly loaded. In thermal transfer mode, the ribbon sensor is not detecting ribbon that is loaded incorrectly. In thermal transfer mode, media is blocking the ribbon sensor.
+Remedy;Load ribbon correctly 1. Load ribbon correctly 2. Calibrate the sensors 1. Load media correctly. 2. Calibrate the sensors
+Code;02
+Display;WARNING RIBBON IN
+Description;RIBBON light ON, ERROR light flashes.
+Causes;Ribbon is loaded, but the print engine is set for direct thermal mode.
+Remedy;Ribbon is not required with direct thermal media. Remove ribbon unless you are using it to protect the printhead. This error message will not affect printing.
+Code;03
+Display;ERROR CONDITION PAPER OUT
+Description;"Print engine stops; MEDIA light ON, ERROR light flashes."
+Causes;Media is not loaded or is loaded incorrectly. Misadjusted media sensor. The print engine is set for noncontinuous media, but continuous media is loaded.
+Remedy;Load media correctly. Check position of the media sensor. Install proper media type, or reset print engine for current media type and perform calibration.
+Code;04
+Display;ERROR CONDITION HEAD OPEN
+Description;Print engine stops and ERROR light flashes.
+Causes;The head open sensor is not working properly.
+Remedy;Call a service technician.
+Code;05
+Display;WARNING HEAD TOO HOT
+Description;Print engine stops and ERROR light flashes.
+Causes;The printhead is over temperature. Caution • The printhead may be hot enough to cause severe burns. Allow the printhead to cool. Caution • Observe proper electrostatic safety precautions when handling any static-sensitive components such as circuit boards and printheads.
+Remedy;Printing automatically resumes when the printhead elements cool to an acceptable operating temperature.
+Code;06
+Display;WARNING HEAD COLD
+Description;Print engine stops and ERROR light flashes.
+Causes;The printhead is under temperature. The printhead data cable is not properly connected.
+Remedy;Continue printing while the printhead reaches the correct operating temperature. If the error remains, the environment may be too cold for proper printing. Relocate the print engine to a warmer area. Caution • You must turn off the print engine before performing this procedure. Failure to do so can damage the printhead. 1. Turn off (O) the print engine. 2. Disconnect and reconnect the data cable to the printhead. 3. Ensure that the cable connector is fully inserted into the printhead connector. 4. Turn on (I) the print engine.
+Code;07
+Display;OUT OF MEMORY CREATING BITMAP
+Description;
+Causes;Creating Bitmap The bitmap size (label length/width) does not fit in available memory.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;08
+Display;OUT OF MEMORY STORING BITMAP
+Description;
+Causes;Storing Bitmap Not enough memory is available to store the bitmap created.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;09
+Display;OUT OF MEMORY BUILDING FORMAT
+Description;
+Causes;Building Format Label is too complex.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;10
+Display;OUT OF MEMORY STORING FORMAT
+Description;
+Causes;Storing Format Format is too large to fit in available memory.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;11
+Display;OUT OF MEMORY STORING GRAPHIC
+Description;
+Causes;Storing Graphic The graphic image is too large to fit in available memory.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;12
+Display;OUT OF MEMORY STORING FONT
+Description;
+Causes;Storing Font Not enough memory available to store the font.
+Remedy;You may do any of the following: 1. With PAUSE on, send a -HM ZPL command to the print engine to display the amount of free memory. Then do one of the following: • Redesign graphic/format to fit available memory or remove items from memory to create more space. • Press PAUSE to skip the formatting step in process and proceed to the next step. 2. With PAUSE on, press CANCEL. The print engine skips the current label formatting process and goes to the next label. 3. Turn the print engine OFF (O) and then ON (I) to clear the print engine’s memory. 4. Upgrade the print engine to a larger memory size.
+Code;13
+Display;
+Description;General print quality issues
+Causes;You are using an incorrect combination of labels and ribbon for your application. The print engine is set at the incorrect print speed. The print engine is set at an incorrect darkness level. The printhead is dirty.
+Remedy;Consult your authorized Zebra reseller or distributor for information and advice. For optimal print quality, set the print speed to the lowest possible setting for your application via ZPL II, the driver, or the software. For optimal print quality, set the darkness to the lowest possible setting for your application via the front panel, the driver, or the software. Clean the printhead according to the instructions in Cleaning the Printhead and Rollers
+Code;14
+Display;
+Description;Wrinkled ribbon
+Causes;"Ribbon fed through the machine incorrectly. Incorrect burn temperature. Incorrect or uneven pressure. Media not feeding properly; walking from side to side. The strip plate needs adjusting. The printhead needs vertical adjustment. The printhead and platen roller need to be realigned."
+Remedy;See Load Ribbon. Set the darkness to the lowest possible setting for good print quality. Set the pressure to the minimum needed for good print quality. Make sure that media is snug by adjusting the media guide, or call a service technician. Perform adjustment (see Section 4 for strip plate adjustment). Perform adjustment (see Section 4 for printhead adjustment). Perform adjustment (see Section 4 for printhead adjustment).
+Code;15
+Display;
+Description;Long tracks of missing print on several labels
+Causes;Wrinkled ribbon. Print element damaged.
+Remedy;See wrinkled ribbon causes and solutions in this table. Replace printhead (see Section 4 for printhead removal).
+Code;16
+Display;
+Description;Fine, angular gray lines on blank labels
+Causes;Wrinkled ribbon.
+Remedy;See wrinkled ribbon causes and solutions in this table.
+Code;17
+Display;
+Description;Light printing or no printing on the left or right side of the label
+Causes;Printhead pressure needs adjustment, printhead out of alignment, or toggle in incorrect position.
+Remedy;See Toggle Positioning and Printhead Pressure Adjustment. Call a service technician.
+Code;18
+Display;
+Description;Printing too light or too dark over the entire label
+Causes;Media or ribbon is not designed for high-speed operation. Incorrect or uneven printhead pressure.
+Remedy;Replace supplies with those recommended for high-speed operation. Set the pressure to the minimum needed. See Printhead Pressure Adjustment
+Code;19
+Display;
+Description;Smudge marks on labels
+Causes;Media or ribbon not designed for high-speed operation.
+Remedy;Replace supplies with those recommended for high-speed operation.
+Code;20
+Display;
+Description;Misregistration/skips labels
+Causes;Media sensor not positioned correctly. The print engine not calibrated. Improper label format.
+Remedy;Perform media sensor position adjustment. Recalibrate the print engine. Use correct label format.
+Code;21
+Display;
+Description;Misregistration and misprint of one to three labels
+Causes;Media sensor is not positioned correctly. The platen roller is dirty. Media does not meet specifications.
+Remedy;Place media sensor in proper position. Clean the platen roller according to the instructions in Cleaning the Printhead and Rollers. Use media that meets specifications.
+Code;22
+Display;
+Description;Vertical drift in top-of-form position
+Causes;A plus or minus 4 to 6 dot row (approximately 0.5 mm) vertical drift is acceptable due to different tolerances of mechanical parts and print engine modes. The print engine is out of calibration. The platen roller is dirty.
+Remedy;1. Calibrate print engine. 2. Adjust the label top position setting. See Adjust Label Top Position on page 75. Recalibrate the print engine. Clean the platen roller according to the instructions in Cleaning the Printhead and Rollers on page 115.
+Code;23
+Display;
+Description;Vertical image or label drift
+Causes;Print engine using noncontinuous labels but configured in continuous mode. Incorrectly positioned media sensor. Improperly calibrated media sensor. The platen roller is dirty. Improper printhead pressure settings (toggles). Improperly loaded ribbon or media. Incompatible media.
+Remedy;Configure the print engine for non-continuous and run calibration routine, if necessary. Ensure the media sensor is properly positioned to read a single/consistent interlabel gap. See Calibrating Media and Ribbon Sensor Sensitivity on page 84. Clean the platen roller. Adjust the printhead pressure to ensure proper functionality. Verify that the ribbon and media are properly loaded. Ensure that the interlabel gaps or notches are 2 to 4 mm and consistently placed. Media must not exceed minimum specifications for mode of operation.
+Code;24
+Display;
+Description;A label format was sent to the print engine but was not recognized. The DATA light does not flash.
+Causes;The communication parameters are incorrect.
+Remedy;Check the print engine driver or software communications settings (if applicable). If you are using serial communication, check the serial port setting in the front panel menu. Make sure you are using the correct communication cable. Using the front panel controls, check the protocol setting. It should be set to NONE. See Set Protocol on page 71. If a driver is used, check the driver communication settings for your connection.
+Code;25
+Display;
+Description;A label format was sent to the print engine. Several labels print, then the print engine skips, misplaces, misses, or distorts the image on the label.
+Causes;The serial communication settings are incorrect.
+Remedy;Ensure that the flow control settings match. Check the communication cable length. See Data Cable Requirements on page 41 for requirements. Check the print engine driver or software communications settings (if applicable).
+Code;26
+Display;
+Description;A label format was sent to the print engine but was not recognized. The DATA light flashes but no printing occurs.
+Causes;The prefix and delimiter characters set in the print engine do not match the ones in the label format. Incorrect data is being sent to the print engine.
+Remedy;Ensure that ZPL II is being used. Check the communication settings on the computer. Ensure that they match the print engine settings. If the problem continues, check the ZPL II format for changed
+Code;27
+Display;
+Description;Broken or melted ribbon
+Causes;Darkness setting too high.
+Remedy;1. Reduce the darkness setting. 2. Clean the printhead thoroughly.
+Code;28
+Display;
+Description;Ribbon tension dancer(s) oscillate erratically
+Causes;Ribbon core is not standard size and is slipping on the spindle.
+Remedy;Replace ribbon with one that has a standard core size.
+Code;29
+Display;
+Description;Missing LCD characters or parts of characters
+Causes;The LCD may need replacing.
+Remedy;Run Power-On Self Test and check that LCD display shows all characters. If not, replace LCD.
+Code;30
+Display;
+Description;Changes in parameter settings did not take effect
+Causes;Parameters are set incorrectly. A ZPL command has turned off the ability to change the parameter. A ZPL command has changed the parameter back to the previous setting. If the problem continues, there may be a problem with the main logic board.
+Remedy;1. Set parameters and save permanently. 2. Turn the print engine power Off (O) and then On (I). Refer to the ZPL Programming Guide or call a service technician. Refer to the ZPL Programming Guide or call a service technician. Replace the main logic board (see Section 4, Corrective Maintenance).
+Code;31
+Display;
+Description;The print engine fails to calibrate or detect the top of the label.
+Causes;The print engine was not calibrated for the label being used. The print engine is configured for continuous media. The driver or software configuration is not set correctly.
+Remedy;Perform the calibration procedure in Calibrating Media and Ribbon Sensor Sensitivity on page 84. Set the media type to noncontinuous media. See Set Media Type on page 62. Driver or software settings produce ZPL commands that can overwrite the print engine configuration. Check the driver or software media-related setting.
+Code;32
+Display;
+Description;Non-continuous labels are being treated as continuous labels.
+Causes;The print engine is configured for continuous media. The print engine was not calibrated for the label being used.
+Remedy;Set the media type to noncontinuous media. See Set Media Type on page 62. Perform the calibration procedure in Calibrating Media and Ribbon Sensor Sensitivity on page 84.
+Code;33
+Display;
+Description;The ribbon light is on even though ribbon is loaded correctly.
+Causes;The print engine was not calibrated for the label being used.
+Remedy;Perform the calibration procedure in Calibrating Media and Ribbon Sensor Sensitivity on page 84.
+Code;34
+Display;
+Description;All lights on, but nothing displays on the LCD, and the print engine locks up.
+Causes;Internal electronic or firmware failure.
+Remedy;Turn the print engine power Off (O) and then On (I). If the print engine locks up again, replace the main logic board (see Main Logic Board on page 235).
+Code;35
+Display;
+Description;Print engine locks up while running the Power-On Self Test.
+Causes;Main Logic Board failure.
+Remedy;Replace the main logic board (see Main Logic Board on page 235).

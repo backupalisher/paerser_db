@@ -1,0 +1,492 @@
+Code;0030
+Description;FAX control PWB system error Processing with the fax software was disabled due to a software problem.
+Causes;FAX control PWB
+Remedy;1. Turn the main power swtch off and after 5 seconds, re-mount the FAX controller PWB, then turn power on. 2. Reinstall the fax software. 3. Replace the FAX control PWB.
+Code;0060
+Description;Mainboad type mismatch
+Causes;Engine PWB
+Remedy;Replace the engine PWB
+Code;0070
+Description;FAX control PWB incompatible detection error Abnormal detection of FAX control PWB incompatibility In the initial communication with the FAX control PWB, any normal communication command is not transmitted.
+Causes;FAX control PWB (The FAX PWB installed will not be the one designed for the machine.)
+Remedy;1. Install the FAX system designed for the model. 2. Reinstall the fax software.
+Code;0100
+Description;Backup memory device error
+Causes;Flash memory (Main PWB)
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Replace the main PWB
+Code;0120
+Description;MAC address data error For data in which the MAC address is invalid.
+Causes;Flash memory (Main PWB)
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Check the MAC address on the network status page. 3. If it is blank, obtain the data with its MAC address written from the service support and install. 4. Replace the main PWB
+Code;0130
+Description;Backup memory read/write error (main PWB) Mismatch between writing data and reading data successively.
+Causes;Main PWB
+Remedy;Replace the main PWB and check for correct operation
+Code;0140
+Description;Backup memory data error (main PWB) When the data read from NAND is abnormalities
+Causes;Main PWB
+Remedy;Replace the main PWB and check for correct operation
+Code;0150
+Description;Backup memory read/write error (engine PWB) No response is issued from the device in reading/writing for 5 ms or more and this problem is repeated 5 times successively. Mismatch of reading data from 2 locations occurs 8 times successively. Mismatch between writing data and reading data occurs 8 times successively.
+Causes;EEPROM (Engine PWB)
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Check that the EEPROM is peroperly installed on the engine PWB and reinstall it. 3. Replace the engine PWB . 4. Check the EEPROM and if the data are currupted, contact the service support.
+Code;0160
+Description;Backup memory data error (engine PWB) Reading data from EEPROM is abnormal.
+Causes;EEPROM
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Execute U021 - memory initializing. 3. If the EEPROM data are currupted, contact the service support.
+Code;0170
+Description;Billing counting error The values on the main circuit PWB and on the engine do not match for any of charging counter, life counter, and scanner counter.
+Causes;EEPROM, Main PWB, Engine PWB
+Remedy;EEPROM 1. Check that the EEPROMs installed in the main PWB and the engine PWB are correct and, if not, use the correct EEPROM for the model. 2. If the EEPROM data are currupted, contact the service support. Main PWB Replace the main PWB. Engine PWB Replace the engine PWB.
+Code;0180
+Description;Machine number mismatch Machine number of main and engine does not match.
+Causes;Data damage of EEPROM.
+Remedy;1. Confirm the machine data for the main and engine units by using U004. 2. If the serial number data of different models is alternately displayed, install the correct EEPROM in the PWB of the wrong serial number data. 3. Contact the Service Support.
+Code;0350
+Description;Panel PWB communication error (electronic volume I2C communication error) NACK is received during I2C communication -> retried 5 times -> rebooting command sent -> retried 5 times If NACK is still received.
+Causes;Operation PWB Main PWB
+Remedy;Operation PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Operation panel PWB 1 (YC10) and Main PWB (YC12) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the operation panel PWB 1. Main PWB Replace the main PWB.
+Code;0640
+Description;Hard disk error The hard disk cannot be accessed.
+Causes;HDD, Main PWB
+Remedy;HDD 1. If an abnormal noise is heard from the HDD, replace the HDD. 2. Check the SATA wiring between the HDD and the main circuit PWB for loose connection, disconnection and damages, and that it is connected into the correct terminal. Main PWB: YC2,YC32 3. Replace the SATA cable. 4. Execute U024 to initialize (FULL) the HDD. 5. If an error is detected after executing U024, replace the HDD. Main PWB Replace the main PWB.
+Code;0650
+Description;FAX image storage paircheck error The SSD used in the other main unit was installed.
+Causes;SSD, Main PWB
+Remedy;SSD 1. When installing the SSD used once, replace with the correct SSD. 2. When installing the SSD used once, execute [FAX Data CLEAR] at U671. 3. Be sure to install the SSD to the connector on the main PWB. 4. Replace with the new SSD. Main PWB Replace the main PWB.
+Code;0660
+Description;Hard disk encryption key error
+Causes;EEPROM, HDD, Main PWB
+Remedy;EEPROM 1. Execute U004 if this occurs after the EEPROM has been changed. HDD 1. If an abnormal noise is heard from the HDD, replace the HDD. 2. Check the SATA wiring between the HDD and the main circuit PWB for loose connection, disconnection and damages, and that it is connected into the correct terminal. Main PWB: YC2,YC32 3. Replace the SATA cable. 4. Execute U024 to initialize (FULL) the HDD. 5. If an error is detected after executing U024, replace the HDD. Main PWB Replace the main PWB.
+Code;0670
+Description;Hard disk overwriting erasure error
+Causes;HDD, Main PWB
+Remedy;HDD 1. If an abnormal noise is heard from the HDD, replace the HDD. 2. Check the SATA wiring between the HDD and the main circuit PWB for loose connection, disconnection and damages, and that it is connected into the correct terminal. Main PWB: YC2,YC65 3. Replace the SATA cable. 4. Execute U024 to initialize (FULL) the HDD. 5. If an error is detected after executing U024, replace the HDD. Main PWB Replace the main PWB.
+Code;0680
+Description;SSD error The SSD cannot be accessed, or the error occurs when accessing to the SSD.
+Causes;SSD, Main PWB
+Remedy;SSD 1. Turn the power switch and the main power switch off. After 5s passes, turn the main power switch and the power switch on. 2. Reinstall the SSD on the main PWB. 3. Retrieve the SSD storage data at U026, and then initialize the SSD at U024. 4. Replace the SSD. Main PWB Replace the main PWB.
+Code;0800
+Description;Image processing error JAM010X is detected twice.
+Causes;Main PWB
+Remedy;Replace the main PWB.
+Code;0830
+Description;FAX control PWB flash program area checksum error A checksum error occurred with the program of the FAX control PWB.
+Causes;FAX software, FAX control PWB
+Remedy;FAX software 1. Reinstall the fax software. FAX control PWB 1. Execute initializing by U600. 2. Replace the FAX control PWB.
+Code;0840
+Description;Faults of RTC (“Time for maintenance T” is displayed) [Check at power up] The RTC setting has reverted to a previous state. The machine has not been powered for 5 years (compared to the settings stored periodically in the EEPROM). The RTC setting is older than 00:01 on January 1, 2000. [Checked periodically (in 5- minute interval) after powered up] The RTC setting has reverted to a state older than the last time it was checked. 10 minutes have been passed since the previous check. After C840 is detected, the machine enters in disconnection mode after the main power switch has been switched on and off and indicates ‘Maintenance T.’
+Causes;Battery ( main PWB), Main PWB
+Remedy;Battery ( main PWB) 1. Make sure that the back-up batteries on the main PWB are not short-circuited. 2. Reset Maintenance T by executing U906. 3. If the same C call is displayed when power is switched on and off, replace the back up battery. 4. If communication error (due to a noise, etc.) is present with the RTC on the main circuit PWB, check the PWB is properly grounded. Main PWB Replace the main PWB.
+Code;0870
+Description;PCFAX control PWB to main PWB high capacity data transfer error High-capacity data transfer between the FAX control PWB and the main PWB of the machine was not normally performed even if the data transfer was retried the specified times.
+Causes;FAX control PWB, HDD, Main PWB
+Remedy;FAX control PWB 1. Turn the main power swtch off and after 5 seconds, re-mount the FAX controller PWB, then turn power on. 2. Replace the FAX control PWB. HDD Execute U024 to initialize the HDD. Main PWB Replace the main PWB.
+Code;0920
+Description;Fax file system error The backup data is not retained for file system abnormality of flash memory of the FAX control PWB.
+Causes;FAX control PWB
+Remedy;1. Execute initializing by U600 (Refer to the FAX service manual). 2. Replace the FAX control PWB.
+Code;0980
+Description;24 V power down detect If a 24V power disconnection signal is observed and a 12V power disconnection signal is observed simultaneously for one second.
+Causes;Power source PWB
+Remedy;1. Check the +24V output is given at YC5 of the power circuit PWB. 2. Replace the power source PWB
+Code;1010
+Description;Lift motor 1 error Lift error that occurs when the lock signal does turn off 510 msec in succession after turning on the cassette lift motor 1 has occurred five times in succession.
+Causes;Cassette lift base elevating mechanism. Lift motor 1. Lift sensor 1. Engine PWB
+Remedy;Cassette lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. Lift motor 1 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Lift motor 1 and Engine PWB (YC13) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the lift motor 1. Lift sensor 1 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Lift sensor 1 and Engine PWB (YC17) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the lift sensor1. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;1020
+Description;Lift motor 2 error Lift error that occurs when the lock signal does turn off 510 msec in succession after turning on the cassette lift motor 2 has occurred five times in succession.
+Causes;Cassette lift base elevating mechanism. Lift motor 2. Lift sensor 2. Engine PWB
+Remedy;Cassette lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. Lift motor 2 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Lift motor 2 and Engine PWB (YC17) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the lift motor 2. Lift sensor 2 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Lift sensor 2 and Engine PWB (YC17) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the lift sensor 2. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;1030
+Description;PF lift motor 1 error (paper feeder) After cassette 3 is inserted, PF lift sensor 1 does not turn on within 12 s. This error is detected 5 times successively. During driving the motor, the lift overcurrent protective monitor signal is detected for 1 s or more 5 times successively. However, the first 1 s after motor is turned on is excluded from detection.
+Causes;Cassette lift base elevating mechanism. PF Lift motor 1. PF Lift sensor 1. PF main PWB
+Remedy;Cassette lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. PF Lift motor 1 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift motor 1 and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF lift motor 1. PF Lift sensor 1 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift sensor 1 and PF main PWB 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the PF lift sensor 1. PF main PWB Replace the PF main PWB.
+Code;1040
+Description;PF lift motor 2 error (paper feeder) After cassette 4 is inserted, PF lift sensor 2 does not turn on within 15 s. This error is detected 5 times successively. During driving the motor, the lift overcurrent protective monitor signal is detected for 1 s or more 5 times successively. However, the first 1 s after motor is turned on is excluded from detection.
+Causes;Cassette lift base elevating mechanism. PF Lift motor 2. PF Lift sensor 2. PF main PWB
+Remedy;Cassette lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. PF Lift motor 2 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift motor 2 and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF Lift motor2. PF Lift sensor 2 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift sensor 2 and PF main PWB 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the PF Lift sensor 2. PF main PWB Replace the PF main PWB (Refer to the service manual for the paper feeder).
+Code;1100
+Description;PF lift motor 1 error (large capacity feeder) After cassette 3 is inserted, PF lift sensor 1 does not turn on within 23 s. This error is detected 5 times successively. (Time to detect is 2 seconds at the second time and later.) During driving the motor, the lift overcurrent protective monitor signal is detected for 1 s or more 5 times successively. However, the first 1 s after PF lift motor 1 is turned on is excluded from detection.
+Causes;Paper feeder lift base elevating mechanism. PF Lift motor1. PF Lift sensor1. PF main PWB
+Remedy;Paper feeder lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. PF Lift motor1 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift motor 1 and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF lift motor1. PF Lift sensor1 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift sensor 1 and PF main PWB 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the PF lift sensor1. PF main PWB Replace the PF main PWB (Refer to the service manual for the paper feeder).
+Code;1110
+Description;PF lift motor 2 error (large capacity feeder) After cassette 4 is inserted, PF lift sensor 2 does not turn on within 23 s. This error is detected 5 times successively. (Time to detect is 2 seconds at the second time and later.) During driving the motor, the lift overcurrent protective monitor signal is detected for 1 s or more 5 times successively. However, the first 1 s after PF lift motor 2 is turned on is excluded from detection.
+Causes;Paper feeder lift base elevating mechanism. PF Lift motor 2. PF Lift sensor2. PF main PWB
+Remedy;Paper feeder lift base elevating mechanism Check that the cassette base can be manipulated smoothly, if not, repair or replace. PF Lift motor 2 1. Check that the cassette base has been ascended. 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift motor 2 and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF Lift motor2. PF Lift sensor2 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF Lift sensor 2 and PF main PWB 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the PF Lift sensor 2. PF main PWB Replace the PF main PWB (Refer to the service manual for the paper feeder).
+Code;1800
+Description;Paper feeder communication error A communication error from paper feeder is detected 10 times in succession.
+Causes;Paper feeder. PF main PWB. Engine PWB
+Remedy;Paper feeder Check the wiring connection status with the main unit and, if necessary, try connecting it again. PF main PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF main PWB and Engine PWB (YC20) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the PF main PWB (Refer to the service manual for the paper feeder). Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;1900
+Description;Paper feeder EEPROM error When writing the data, read and write data does not match 4 times in succession.
+Causes;PF main PWB (EEPROM)
+Remedy;PF main PWB (EEPROM) 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. 2. Replace the PF main PWB (Refer to the service manual for the paper feeder).
+Code;2000
+Description;Main motor steady-state error After main motor is stabilized, the ready signal is at the H level for 2 s continuously.
+Causes;Main motor. Engine PWB
+Remedy;Main motor 1. To check the motor operation execute U030 Main (main motor). 2. Check the drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Main motor and Engine PWB (YC13) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the main motor. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;2010
+Description;Main motor startup error Main motor is not stabilized within 1 s since the motor is activated.
+Causes;Main motor. Engine PWB
+Remedy;Main motor 1. To check the motor operation execute U030 Main (main motor). 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Main motor and Engine PWB (YC13) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the main motor. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;2500
+Description;Paper feed motor steadystate error The rated speed signal detected the stability OFF continuously for 2 s after the paper feed motor stabilizes.
+Causes;Paper feed motor. Engine PWB
+Remedy;Paper feed motor 1. To check the motor operation execute U030 Feed (paper feed motor). 2. Check the paper feed roller and drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Paper feed motor and Engine PWB (YC13) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the paper feed motor. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;2510
+Description;Paper feed motor startup error Paper feed motor is not stabilized within 1 s since the motor is activated.
+Causes;Paper feed motor. Engine PWB
+Remedy;Paper feed motor 1. To check the motor operation execute U030 Feed (paper feed motor). 2. Check the paper feed roller and drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Paper feed motor and Engine PWB (YC13) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the paper feed motor. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;2600
+Description;PF drive motor error (paper feeder) After PF drive motor is driven, the ready signal does not turn to L within 2 s.
+Causes;PF drive motor. PF main PWB
+Remedy;PF drive motor 1. To check the feed unit operation, execute U247 2PF- Motor ON. 2. Check the paper feed roller and drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF drive motor and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF drive motor. PF main PWB Replace the PF main PWB.
+Code;2610
+Description;PF drive motor error (large capacity feeder) After PF drive motor is driven, the ready signal does not turn to L within 2 s.
+Causes;PF drive motor. PF main PWB
+Remedy;PF drive motor 1. To check the feed unit operation, execute U247 LCF- Motor ON. 2. Check the paper feed roller and drive gear can rotate or they are not unusually loaded and, if necessary, replace. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. PF drive motor and PF main PWB 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the PF drive motor. PF main PWB Replace the PF main PWB.
+Code;3100
+Description;Scanner carriage error ON/OFF of the HP sensor doesn't change after a prescribed pulse passes from power supply ON.
+Causes;The scanner mirror frame is being locked after setup. Scanner motor. Home position sensor. Engine PWB. Main PWB
+Remedy;The scanner mirror frame is being locked after setup. Check whether the scanner mirror frame has been unlocked and unlock if necessary. Scanner motor 1. To check the scanner motor, execute U073. 2. Move the scanner by the hand to check whether it is unusually difficult to move. 3. Check that the optical wire rope is not disengaged and engage the wire. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Scanner motor and Engine PWB (YC34) Engine PWB (YC37) and Main PWB (YC65) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the scanner motor. Home position sensor 1. Check that the sensor is correctly positioned. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Home position sensor and Engine PWB (YC34) 3. Replace the home position sensor. Engine PWB Replace the Engine PWB and execute U411. Main PWB Replace the main PWB.
+Code;3200
+Description;LED lamp startup error The white reference data acquired by lighting the lamp at the initial operation is at the specified value or less. (Over 2 LED lamps do not light.)
+Causes;LED PWB. Engine PWB. Main PWB
+Remedy;LED PWB Check if the LED lamp lights by executing [CCD] at U061. If it does not light, replace the lamp unit and execute [Table(ChartA)] at U411. Engine PWB Replace the engine PWB. Main PWB Replace the main PWB.
+Code;3210
+Description;CIS lamp error When input value at the time of CIS illumination does not exceed the threshold value between 5 s.
+Causes;CIS. DPSHD PWB. DP relay PWB
+Remedy;CIS 1. Execute U906 Separating Operation Release. 2. Execute CIS of U061 lamp check. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. CIS and DPSHD PWB (YC2) DPSHD PWB (YC3) and DP relay PWB (YC2) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the CIS and execute U091 and U411. DPSHD PWB Replace the DPSHD PWB. DP relay PWB Replace the DP relay PWB.
+Code;3300
+Description;Optical system (AGC) error When the value of a gain becomes more than FF or 89 or less at least one at the AGC processing instruction execution time for CCD lamps.
+Causes;LED lamp PWB. CCD PWB. Engine PWB. Main PWB
+Remedy;LED lamp PWB 1. To check the lamp, execute U061 CCD. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. LED lamp PWB and CCD PWB (YC2) CCD PWB (YC1) and Engine PWB (YC29) Engine PWB (YC3) and Main PWB (YC64) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. If the LED lamp won’t light, replace the LED PWB and execut U411. CCD PWB Replace the ISU and execute U411. Engine PWB Replace the Engine PWB and execute U411. Main PWB Replace the main PWB.
+Code;3310
+Description;CIS AGC error One of the gains is FF during the CCD lamp AGC is being processed.
+Causes;CIS. DPSHD PWB
+Remedy;CIS 1. Execute U906 Separating Operation Release. 2. To check the lamp, execute U061 CIS. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP CIS and DPSHD PWB (YC2) DPSHD PWB (YC3) and DP relay PWB (YC2) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the CIS and execute U091 and U411. DPSHD PWB Replace the DPSHD PWB.
+Code;3500
+Description;Communication error between scanner and ASIC A wrong read-back value.
+Causes;Engine PWB. Main PWB
+Remedy;Engine PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Engine PWB (YC3) and Main PWB (YC64) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the Engine PWB and execute U411. Main PWB Replace the main PWB.
+Code;3600
+Description;Scanner sequence error
+Causes;Engine PWB
+Remedy;1. Execute U021 memory initializing. 2. Replace the Engine PWB and execute U411.
+Code;3800
+Description;AFE error When writing the data, read and write data does not match 3 times in succession.
+Causes;Engine PWB. CCD PWB
+Remedy;Engine PWB 1. Confirm that the FCC wiring connector is not distorted and connect the FCC wiring all the way in. CCD PWB (YC1) and Engine PWB (YC29) 2. If the FCC wiring is disconnected, replace the FCC wiring. 3. Replace the Engine PWB and execute U411. CCD PWB Replace the ISU and execute U411.
+Code;3900
+Description;Backup memory read/write error (Engine PWB) Read and write data does not match.
+Causes;Backup memory (Engine PWB PWB)
+Remedy;1. Turn the main power switch off and after 5 seconds, turn it on. 2. Replace the Engine PWB and execute U411.
+Code;4001
+Description;Polygon motor synchronization error After polygon motor is driven, the ready signal does not turn to L within 10 s.
+Causes;Polygon motor (Laser scanner unit). Engine PWB.
+Remedy;Polygon motor (Laser scanner unit) 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Polygon motor and Engine PWB (YC28) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the laser scanner unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;4011
+Description;Polygon motor steady-state error After Polygon motor is stabilized, the ready signal is at the H level for 1 s continuously.
+Causes;Polygon motor (Laser scanner unit). Engine PWB
+Remedy;Polygon motor (Laser scanner unit) 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Polygon motor and Engine PWB (YC5) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the laser scanner unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;4101
+Description;BD initialization error After Polygon motor is driven, the BD signal is not detected for 1 s.
+Causes;PD PWB (Laser scanner unit). Engine PWB
+Remedy;PD PWB (Laser scanner unit) 1. Confirm that the FCC wiring connector is not distorted and connect the FCC wiring all the way in. APC PWB (YC1) and Engine PWB (YC4) 2. If the FCC wiring is disconnected, replace the FCC wiring. 3. Replace the laser scanner unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;4201
+Description;BD steady-state error The BD signal is not detected.
+Causes;PD PWB (Laser scanner unit). Engine PWB
+Remedy;PD PWB (Laser scanner unit) 1. Confirm that the FCC wiring connector is not distorted and connect the FCC wiring all the way in. APC PWB (YC1) and Engine PWB (YC5) 2. If the FCC wiring is disconnected, shorted or grounded, replace the FCC wiring. 3. Replace the laser scanner unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;4700
+Description;VIDEO_ASIC device error Communication with the video ASIC has failed 10 times successively.
+Causes;Engine PWB. Main PWB
+Remedy;Engine PWB 1. Unplug the power cord from the wall outlet, and wait five seconds. Then plug in the power cord and then turn on the power switch. 2. Check that the connectors on the engine PWB are properly connected, and if not, re-connect them. 3. Replace the engine PWB. Main PWB 1. Check that the connectors on the main PWB are properly connected, and if not, re-connect them. 2. Replace the main PWB.
+Code;5101
+Description;Main high-voltage error Measure the inflowing current when Vpp is varied in 3 steps and verify if the difference of the currents of 0 and step 2 is less than 5.
+Causes;Drum unit. Charger roller unit. High voltage PWB. Engine PWB
+Remedy;Drum unit 1. Confirm that the drum or the drum screw can rotate. 2. If it won’t rotate, replace the drum unit. 3. Check that the discharger lamp is properly connected. Charger roller unit 1. Check that the high-voltage contacts are not distorted or adhered with foreign objects. 2. Reinstall the chrager roller unit.Or, replace the charger roller unit. High voltage PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. High voltage PWB (CN1) and Engine PWB (YC19) 2. If the FCC wiring is disconnected, shorted or grounded, replace the FCC wiring. 3. Replace the High voltage PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;6020
+Description;Abnormally high fuser thermistor 2 temperature Input from fuser thermistor 2 is abnormal value continuously for 1 s.
+Causes;Fuser unit. Fuser thermistor 2. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Fuser thermistor 2 and Engine PWB (YC9) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermistor 2 Replace the Fuser unit. Engine PWB Replace the engine PWB.
+Code;6030
+Description;Broken fuser thermistor 2 wire The center thermistor A/D value is 4/1024 bit (19°C) or less, even if the main heater is turned on 10[sec] in succession.
+Causes;Fuser unit. Fuser thermistor 2. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Fuser thermistor 2 and Engine PWB (YC9) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermistor 2 Replace the Fuser unit. Engine PWB Replace the engine PWB.
+Code;6200
+Description;Broken fuser edge heater wire Even if 50 seconds pass after a warm-up start, when it will not be in a stable state. When the difference in temperature 4 seconds and 12 seconds after heater lighting is less than 45 °C. Even if 8 seconds pass during test mode operation, when change of AD is less than three.
+Causes;Fuser unit. Fuser thermostat. Fuser heater. Powe source PWB. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Power source PWB (YC7) and Engine PWB (YC10) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermostat Fuser heater. Replace the Fuser unit. Powe source PWB Replace the power source PWB. Engine PWB Replace the engine PWB.
+Code;6220
+Description;Abnormally high fuser edge thermistor temperature Input from fuser thermistor 1 is abnormal value continuously for 1 s.
+Causes;Fuser unit. Fuser thermistor 1. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Fuser thermistor 1 and Engine PWB (YC9) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermistor 1 Replace the Fuser unit. Engine PWB Replace the engine PWB.
+Code;6230
+Description;Broken fuser edge thermistor wire A/D value of the fuser thermistor 1 exceeds 252 bit (10 °C) continuously for 4 s during warming up.
+Causes;Fuser unit. Fuser thermistor 1. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Fuser thermistor 1 and Engine PWB (YC9) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermistor 1 Replace the Fuser unit. Engine PWB Replace the engine PWB.
+Code;6250
+Description;Abnormally low fuser edge thermistor temperature When the detection temperature of the fixing thermistor 1 is falling target temperature by 100 °C or more for 1 second after secondary stable temperature attainment.
+Causes;Fuser unit. Fuser thermostat. Fuser heater. Engine PWB
+Remedy;Fuser unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Fuser thermistor 1 and Engine PWB (YC9) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. If the I/F connector pins of the fuser unit and the main unit are deformed owing to foreign matters, such as paper dusts, replace the connectors or the units including the connectors. Fuser thermostat Fuser heater. Replace the Fuser unit. Engine PWB Replace the engine PWB.
+Code;6400
+Description;Zero-cross signal error While fuser heater ON/OFF control is performed, the zerocross signal is not input within 3 s.
+Causes;Fuser unit
+Remedy;1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Power source PWB (YC7) and engine PWB (YC10) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the fuser heater PWB.
+Code;6910
+Description;Engine software ready error The device won’t engage in ready state in 60 minutes after warming-up has began. (A previous timeout process has not been cancelled.)
+Causes;Engine PWB
+Remedy;1. Turn the main power switch off and after 5 seconds, turn it on. 2. Reinstall the engine software. 3. Replace the engine PWB.
+Code;7200
+Description;Broken outer temperature sensor 2 wire The sensor input sampling is greater than 818.
+Causes;APC PWB. Engine PWB
+Remedy;APC PWB 1. Confirm External Temp is displayed by U139 temperature and humidity. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. APC PWB (YC1) and Engine PWB (YC4) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the BD PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;7210
+Description;Short-circuited outer temperature sensor The temperature sensor input sampling is less than 353.
+Causes;APC PWB. Engine PWB
+Remedy;APC PWB 1. Confirm External Temp is displayed by U139 temperature and humidity. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. APC PWB (YC1) and Engine PWB (YC4) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the BD PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;7800
+Description;Broken outer temperature sensor wire The temperature sensor input sampling is more than 244.
+Causes;Thermistor PWB. Engine PWB
+Remedy;Thermistor PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Thermistor PWB and Engine PWB (YC12). 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the thermistor PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;7810
+Description;Short-circuited external thermistor wire The temperature sensor input sampling is less than 11.
+Causes;Thermistor PWB, Engine PWB
+Remedy;Thermistor PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Thermistor PWB and Engine PWB (YC6) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the thermistor PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;7901
+Description;Drum EEPROM error No response is issued from the device in reading/writing for 5 ms or more and this problem is repeated five times successively. Mismatch of reading data from two locations occurs 8 times successively. Mismatch between writing data and reading data occurs 8 times successively.
+Causes;Drum unit. Engine PWB
+Remedy;Drum unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Durm unit and Drum relay PWB (YC2) Drum relay PWB (YC1) and Engine PWB (YC12) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the Drum unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;7911
+Description;Developer unit EEPROM error No response is issued from the device in reading/writing for 5 ms or more and this problem is repeated five times successively. Mismatch of reading data from two locations occurs 8 times successively. Mismatch between writing data and reading data occurs 8 times successively.
+Causes;Developer unit. Engine PWB
+Remedy;Developer unit 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Developer unit and developer relay PWB (YC1) Developer relay PWB (YC2) and Engine PWB (YC11) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the Developer unit. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;8010
+Description;Punch motor 1 error When the punch motor is driven, punch home position sensor does not turn on within 200 ms.
+Causes;Punch motor. Punch home position sensor. Punch PWB. DF main PWB
+Remedy;Punch motor 1. Execute U240 Motor - Punch to check the finisher operation. 2. Manipulate the punch up and down to check it can smoothly move up and down. 3. Check that the drive from the motor reaches the punch cam. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch motor and Punch PWB (YC4) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the punch motor. Punch home position sensor 1. Execute U241 Punch - Punch HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch home position sensor and Punch PWB (YC8) 4. Replace the Punch home position sensor. Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7) (3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8) (1000-sheet finisher) 2. Replace the punch PWB. DF main PWB Replace the DF main PWB.
+Code;8020
+Description;Punch motor 2 error Home position is not obtained in 3 s after home position is initialized or in standby.
+Causes;Punch motor. Punch PWB. DF main PWB
+Remedy;Punch motor 1. Execute U240 Motor - Punch to check the finisher operation. 2. Manipulate the punch up and down to check it can smoothly move up and down. 3. Check that the drive from the motor reaches the punch cam. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch motor and Punch PWB (YC4) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the punch motor. Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7)(3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8)(1000-sheet finisher) 2. Replace the punch PWB. DF main PWB Replace the DF main PWB.
+Code;8030
+Description;Punch motor 3 error Home position does not turn from On to Off in 50 ms after home position has been initialized.
+Causes;Punch motor. Punch PWB. DF main PWB
+Remedy;Punch motor 1. Execute U240 Motor - Punch to check the finisher operation. 2. Manipulate the punch up and down to check it can smoothly move up and down. 3. Check that the drive from the motor reaches the punch cam. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch motor and Punch PWB (YC4) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the punch motor. Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7) (3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8) (1000-sheet finisher) 2. Replace the punch PWB. DF main PWB Replace the DF main PWB.
+Code;8090
+Description;DF paddle motor error When the DF paddle motor is driven, DF paddle sensor does not turn on within 1 s.
+Causes;DF paddle motor. DF paddle sensor. DF main PWB
+Remedy;DF paddle motor 1. Execute U240 Motor - Beat to check the finisher operation. 2. Check that the paddle can rotate. 3. Check that the drive from the motor reaches the paddle. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF paddle motor and DF main PWB (YC15) (3000-sheet finisher) DF paddle motor and DF main PWB (YC11) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF paddle motor. DF paddle sensor 1. Execute U241 Finisher - Lead Paddle to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF paddle sensor and DF main PWB (YC22) (3000-sheet finisher) DF paddle sensor and DF main PWB (YC20) (1000-sheet finisher) 4. Replace the DF paddle sensor. DF main PWB Replace the DF main PWB.
+Code;8100
+Description;DF eject release motor error When the DF eject release motor is driven, DF bundle discharge sensor does not turn on within 1 s.
+Causes;DF eject release motor DF bundle discharge unit sensor. DF bundle discharge unit sensor. DF main PWB
+Remedy;DF eject release motor DF bundle discharge unit sensor 1. Execute U240 Motor - Eject Unlock (Full) to check the finisher operation. 2. Check that the eject guide of the process tray is opened and, if not, correct the guide. 3. Check that the drive from the motor reaches the eject guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF bundle discharge unit sensor and DF main PWB (YC22)(3000-sheet finisher) DF bundle discharge unit sensor and DF main PWB (YC20)(1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF eject release motor. DF bundle discharge unit sensor 1. Execute U241 Finisher - Bundle Eject HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF bundle discharge unit sensor and DF main PWB (YC22)(3000-sheet finisher) DF bundle discharge unit sensor and DF main PWB (YC20)(1000-sheet finisher) 4. Replace the DF bundle eject unit sensor. DF main PWB Replace the DF main PWB.
+Code;8110
+Description;DF shift motor 1 error (3000-sheet finisher) DF shift sensor 1 won’t turn on when it has travelled 160 mm after DF shift motor 1 is driven.
+Causes;DF shift motor 1 front. DF shift sensor 1 front. DF main PWB
+Remedy;DF shift motor 1 front 1. Execute U240 Motor - Sort Test to check the finisher operation. 2. Manipulate the front shift guide back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the front shift guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift motor 1 front and DF main PWB (YC14) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF shift motor 1 front. DF shift sensor 1 front 1. Execute U241 Finisher - Shift Front HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift sensor 1 front and DF main PWB (YC23) 4. Replace the DF shift sensor 1 front. DF main PWB Replace the DF main PWB.
+Code;8120
+Description;DF shift motor 2 error (3000-sheet finisher) DF shift sensor 2 won’t turn on when it has travelled 160 mm after DF shift motor 2 is driven.
+Causes;DF shift motor 2 rear. DF shift sensor 2 rear. DF main PWB
+Remedy;DF shift motor 2 rear 1. Execute U240 Motor - Sort Test to check the finisher operation. 2. Manipulate the rear shift guide back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the rear shift guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift motor 2 rear and DF main PWB (YC14) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF shift motor 2 rear. DF shift sensor 2 rear 1. Execute U241 Finisher - Shift Tail HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift sensor 2 rear and DF main PWB (YC23) 4. Replace the DF shift set sensor2 rear. DF main PWB Replace the DF main PWB.
+Code;8130
+Description;DF shift release motor error (3000-sheet finisher) When the DF shift release motor is driven, DF shift release sensor does not turn on within 1 s.
+Causes;DF shift release motor. DF shift release sensor. DF main PWB
+Remedy;DF shift release motor 1. Check that cancelling the maintenance mode after executing U240 Motor - Sort for the finisher operation check lets the rear and forth cursors returns to the home position. 2. Manipulate the front and rear shift guide to check it is smoothly operable. 3. Check that the drive from the motor reaches the shift guide front and rear. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift release motor and DF main PWB (YC14) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF shift release motor. DF shift release sensor 1. Execute U241 Finisher - Shift Unlock HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF shift release sensor and DF main PWB (YC23) 4. Replace the DF shift release sensor. DF main PWB Replace the DF main PWB.
+Code;8140
+Description;DF tray error 1 When the main tray has ascended, DF tray sensor 1 or DF tray upper surface sensor does not turn on within 30 s.
+Causes;DF tray motor. DF tray sensor 1 DF tray upper surface sensor. DF main PWB
+Remedy;DF tray motor 1. Execute U240 Motor - Tray to check the finisher operation. 2. Manipulate the main tray up and down to check it is smoothly operable. 3. Check that the drive from the motor reaches the main tray. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray motor and DF Main PWB(YC16) (3000-sheet finisher) DF tray motor and DF Main PWB(YC14) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF tray motor. DF tray sensor 1 DF tray upper surface sensor 1. Execute U241 Finisher - Tray U-Limit, Tray Top to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray sensor 1 and DF Main PWB(YC22) (3000-sheet finisher) DF tray upper surface sensor and DF Main PWB(YC21,YC13) (3000-sheet finisher) DF tray sensor 1 and DF main PWB (YC20) (1000-sheet finisher) DF tray upper surface sensor and DF main PWB (YC18) (1000-sheet finisher) 4. Replace the DF tray sensor 1 or DF tray upper surface sensor. DF main PWB Replace the DF main PWB.
+Code;8150
+Description;DF tray error 2 When the main tray has descended, DF tray sensor 1 or DF tray upper surface sensor does not turn off within 5 s.
+Causes;DF tray motor. DF tray sensor 1 DF tray upper surface sensor. DF main PWB
+Remedy;DF tray motor 1. Execute U240 Motor - Tray to check the finisher operation. 2. Manipulate the main tray up and down to check it is smoothly operable. 3. Check that the drive from the motor reaches the main tray. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray motor and DF main PWB (YC16) (3000-sheet finisher) DF tray motor and DF main PWB (YC14) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF tray motor. DF tray sensor 1 DF tray upper surface sensor 1. Execute U241 Finisher - Tray U-Limit, Tray Top to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray sensor 1 and DF main PWB (YC22) (3000-sheet finisher) DF tray upper surface sensor and DF main PWB (YC21,YC13) (3000-sheet finisher) DF tray sensor 1 and DF main PWB (YC20) (1000-sheet finisher) DF tray upper surface sensor and DF main PWB (YC18) (1000-sheet finisher) 4. Replace the DF tray sensor 1 or DF tray upper surface sensor. DF main PWB Replace the DF main PWB.
+Code;8160
+Description;DF tray error 3 When the main tray has descended, DF tray sensor 4 does not turn on within 20 s.
+Causes;DF tray motor. DF tray sensor 4. DF main PWB
+Remedy;DF tray motor 1. Execute U240 Motor - Tray to check the finisher operation. 2. Manipulate the main tray up and down to check it is smoothly operable. 3. Check that the drive from the motor reaches the main tray. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray motor and DF main PWB (YC16) (3000-sheet finisher) DF tray motor and DF main PWB (YC14) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF tray motor. DF tray sensor 4 1. Execute U241 Finisher - Tray Middle to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF tray sensor 4 and DF main PWB (YC23) (3000-sheet finisher) DF tray sensor 4 and DF main PWB (YC20) (1000-sheet finisher) 4. Replace the DF tray sensor 4. DF main PWB Replace the DF main PWB.
+Code;8170
+Description;DF side registration motor 1 error 1 When initial operation, DF side registration sensor 1 does not turn on within 3 s.
+Causes;DF side registration motor 1. DF side registration sensor 1. DF main PWB
+Remedy;DF side registration motor 1 1. Execute U240 Motor - Width Test to check the finisher operation. 2. Manipulate the front side registration guide to check it is smoothly operable. 3. Check that the drive from the motor reaches the front side registration guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration motor 1 and DF main PWB (YC15) (3000-sheet finisher) DF side registration motor 1 and DF main PWB (YC11) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF side registration motor 1. DF side registration sensor 1 1. Execute U241 Finisher - Width Front to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration sensor 1. and DF main PWB (YC22) (3000-sheet finisher) DF side registration sensor 1. and DF main PWB (YC20) (1000-sheet finisher) 4. Replace the DF side registration sensor 1. DF main PWB Replace the DF main PWB.
+Code;8180
+Description;DF side registration motor 1 error 2 JAM6810 ( jam in front of width alignment) is detected twice
+Causes;DF side registration motor 1. DF side registration sensor 1. DF main PWB
+Remedy;DF side registration motor 1 1. Execute U240 Motor - Width Test to check the finisher operation. 2. Manipulate the front side registration guide back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the front side registration guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration motor 1 and DF main PWB (YC15) (3000-sheet finisher) DF side registration motor 1 and DF main PWB (YC11) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF side registration motor 1. DF side registration sensor 1. 1. Execute U241 Finisher - Width Front to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration sensor 1 and DF main PWB (YC22) (3000-sheet finisher) DF side registration sensor 1 and DF main PWB (YC20) (1000-sheet finisher) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the DF side registration sensor 1. DF main PWB Replace the DF main PWB.
+Code;8190
+Description;DF side registration motor 2 error 1 When initial operation, DF side registration sensor 2 does not turn on within 3 s.
+Causes;DF side registration motor 2. DF side registration sensor 2. DF main PWB
+Remedy;DF side registration motor 2 1. Execute U240 Motor - Width Test to check the finisher operation. 2. Manipulate the rear side registration guide back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the rear side registration guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration motor 2 and DF main PWB (YC15) (3000-sheet finisher) DF side registration motor 2 and DF main PWB (YC11) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF side registration motor 2. DF side registration sensor 2 1. Execute U241 Finisher - Width tail HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration sensor 2 and DF main PWB (YC22) (3000-sheet finisher) DF side registration sensor 2 and DF main PWB (YC20) (1000-sheet finisher) 4. Replace the DF side registration sensor 2. DF main PWB Replace the DF main PWB.
+Code;8200
+Description;DF side registration motor 2 error 2 JAM6910 ( jam in rear of width alignment) is detected twice
+Causes;DF side registration motor 2. DF side registration sensor 2. DF main PWB
+Remedy;DF side registration motor 2 1. Execute U240 Motor - Width Test to check the finisher operation. 2. Manipulate the rear side registration guide back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the rear side registration guide. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration motor 2 and DF main PWB (YC15) (3000-sheet finisher) DF side registration motor 2 and DF main PWB (YC11) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DF side registration motor 2. DF side registration sensor 2 1. Execute U241 Finisher - Width tail HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF side registration sensor 2 and DF main PWB (YC22) (3000-sheet finisher) DF side registration sensor 2 and DF main PWB (YC20) (1000-sheet finisher) 4. Replace the DF side registration sensor 2. DF main PWB Replace the DF main PWB.
+Code;8210
+Description;DF slide motor error When initial operation, DF staple sensor does not turn on within 3 s.
+Causes;DF slide motor. DF staple sensor. DF main PWB
+Remedy;DF slide motor 1. Execute U240 Motor - Staple Move to check the finisher operation. 2. Manipulate the staple unit back and forth to check it is smoothly operable. 3. Check that the drive from the motor reaches the staple unit. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF slide motor and DF main PWB (YC12) (3000-sheet finisher) DF slide motor and DF main PWB (YC10) (1000-sheet finisher) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. DF staple sensor 1. Execute U241 Finisher - Width Staple HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF staple sensor and DF main PWB (YC22) (3000-sheet finisher) DF staple sensor and DF main PWB (YC20) (1000-sheet finisher) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the DF staple sensor. DF main PWB Replace the DF main PWB.
+Code;8230
+Description;DF staple motor error 1 Staple JAM (DF) has been detected twice in a row. (The second JAM detection condition fullfilled with the home position did not detected in 600 ms after the motor was driven.)
+Causes;DF staple motor. DF staple sensor. DF main PWB
+Remedy;DF staple motor 1. Remove the staple unit and check that stapling is possible without a jam. 2. Confirm that the FCC wiring connector is not distorted and connect the FCC wiring all the way in. Staple unit and DF main PWB (YC17) (3000-sheet finisher) Staple unit and DF main PWB (YC11) (1000-sheet finisher) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the staple unit. (Refer to the service manual for the document finisher). DF staple sensor Replace the staple unit. DF main PWB Replace the DF main PWB.
+Code;8240
+Description;DF staple motor error 2 (3000-sheet finisher) Staple JAM (DF) has been detected twice in a row. (The second JAM detection condition fullfilled with a lock detection signal maintained 1 V for 500 ms continuously, while the stapler motor was driven.)
+Causes;DF staple motor. DF main PWB
+Remedy;DF staple motor 1. Remove the staple unit and check that stapling is possible without a jam. 2. Confirm that the FCC wiring connector is not distorted and connect the FCC wiring all the way in. Staple unit and DF main PWB (YC17) (3000-sheet finisher) Staple unit and DF main PWB (YC11) (1000-sheet finisher) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the staple unit. (Refer to the service manual for the document finisher). DF main PWB Replace the DF main PWB.
+Code;8250
+Description;Main tray error 4 In case the lock signal is 0.7V or less for 10 s in succession during the DF tray motor drive. (35/40 ppm model only)
+Causes;DF tray motor. DF main PWB
+Remedy;DF tray motor 1. Execute [Motor] > [Tray] in U240 Checking the operation of the finisher. 2. Check if the main tray can be moved up and down manually without getting caught. 3. Check if the motor drive is delivered to the main tray. 4. Confirm that the wiring connector is firmly connected, and if necessary, connect the connector all the way in. DF tray motor - DF main PWB(YC11) 5. If the wiring is disconnected, short-circuited or has a ground fault, replace the wire. 6. Replace the DF tray motor. DF main PWB Replace the DF main PWB.
+Code;8260
+Description;DF middle motor error When the DF middle motor is driven, DF paddle sensor does not turn on within 1s.
+Causes;DF middle motor. DF paddle sensor. DF main PWB
+Remedy;DF middle motor 1. Execute U240 Motor - Middle(L) to check the finisher operation. 2. Check that the drive from the motor reaches the middle roller. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF middle motor and DF main PWB (YC12) 4. If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the DF middle motor. DF paddle sensor 1. Execute U241 Finisher - Lead Paddle to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF paddle sensor and DF main PWB (YC19) 4. Replace the DF paddle sensor. DF main PWB Replace the DF main PWB.
+Code;8410
+Description;Punch slide motor error 1 The punch slide sensor won’t turn On when home position has been moved by 30 mm.
+Causes;Punch slide motor. Punch slide sensor. Punch PWB. DF main PWB
+Remedy;Punch slide motor 1. Execute U240 Booklet - Punch Move to check the finisher operation. 2. Manipulate the punch slide part of the punch unit back and forth to check it can smoothly move. 3. Check that the drive from the motor reaches punch part. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch slide motor and Punch PWB (YC3) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the punch slide motor. Punch slide sensor 1. Execute U241 Punch - Punch HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch slide sensor and Punch PWB (YC6) 4. Replace the punch slide sensor. Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7) (3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8) (1000-sheet finisher) 2. Replace the punch PWB. DF main PWB Replace the DF main PWB
+Code;8420
+Description;Punch slide motor error 2 In detection of paper edges, the paper edge cannot be detected in 30 mm move
+Causes;Punch slide motor. Punch paper edge sensor 1,2. Punch PWB. DF main PWB
+Remedy;Punch slide motor 1. Execute U240 Booklet - Punch Move to check the finisher operation. 2. Manipulate the punch slide part of the punch unit back and forth to check it can smoothly move. 3. Check that the drive from the motor reaches punch part. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch slide motor and Punch PWB (YC3) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the punch slide motor. Punch paper edge sensor 1,2 1. Execute U241 Punch - Edge Face 1,2,3,4 to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch paper edge sensor 1,2 and Punch PWB (YC5,YC7) 4. Replace the punch paper edge sensor 1,2. Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7) (3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8) (1000-sheet finisher) 2. Replace the Punch PWB. DF main PWB Replace the DF main PWB
+Code;8430
+Description;Punch unit communication error Communication with the punch unit is not possible
+Causes;Punch PWB. DF main PWB
+Remedy;Punch PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Punch PWB (YC1) and DF main PWB (YC7) (3000-sheet finisher) Punch PWB (YC1) and DF main PWB (YC8) (1000-sheet finisher) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the Punch PWB. DF main PWB Replace the DF main PWB
+Code;8500
+Description;Mailbox communication error (3000-sheet finisher) Communication failed to be established after the mailbox was hooked up.
+Causes;MB main PWB. DF main PWB
+Remedy;MB main PWB 1. Turn the main power switch off and after 5 seconds, turn it on. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. MB main PWB (YC3) and DF main PWB (YC6) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the MB main PWB DF main PWB Replace the DF main PWB
+Code;8510
+Description;MB conveying motor error 1 (3000-sheet finisher) When initial operation, MB home position sensor does not turn on within 5 s.
+Causes;MB conveying motor. MB home position sensor. MB main PWB
+Remedy;MB conveying motor 1. If the transfer roller won’t rotate smoothly, repair its mechanism. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. MB conveying motor and MB main PWB (YC5) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the MB conveying motor. MB home position sensor 1. Execute U241 Mail Box - Motor HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. MB home position sensor and MB main PWB (YC2) 4. Replace the MB home position sensor. MB main PWB Replace the MB main PWB
+Code;8520
+Description;MB conveying motor error 2 (3000-sheet finisher) When standby operation, MB home position sensor does not turn off within 1 s.
+Causes;MB conveying motor. MB home position sensor. MB main PWB
+Remedy;MB conveying motor 1. Execute Mail Box - Conv of U240 finisher operation check. 2. Manipulate the conveying roller of the mailbox to check it can smoothly rotate. 3. Check that the drive from the motor reaches the conveying roller. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. MB conveying motor and MB main PWB (YC5) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the MB conveying motor. MB home position sensor 1. Execute U241 Mail Box - Motor HP to check the finisher switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. MB home position sensor and MB main PWB (YC2) 4. Replace the MB home position sensor. MB main PWB Replace the MB main PWB
+Code;8800
+Description;Document finisher main program error Document finisher main program error at power up
+Causes;DF main PWB. Engine PWB
+Remedy;DF main PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF main PWB (YC4) and Engine PWB (YC18) (3000-sheet finisher) DF main PWB (YC7) and Engine PWB (YC18) (1000-sheet finisher) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the DF main PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;8900
+Description;Document finisher backup error Read and write data does not match 3 times in succession
+Causes;DF main PWB
+Remedy;1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF main PWB (YC4) and Engine PWB (YC18) (3000-sheet finisher) DF main PWB (YC7) and Engine PWB (YC18) (1000-sheet finisher) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the DF main PWB.
+Code;8990
+Description;DF Setup error When a bridge unit is undetectable in the state where DF is connected. When a bridge unit is detected in the state where DF is not connected.
+Causes;Bridge unit Document finisher. DF main PWB. Engine PWB
+Remedy;Bridge unit Document finisher 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DF main PWB (YC4) and Engine PWB (YC18) (3000-sheet finisher) DF main PWB (YC7) and Engine PWB (YC18) (1000-sheet finisher) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. DF main PWB Replace the DF main PWB. Engine PWB Replace the engine PWB.
+Code;9000
+Description;Document processor communication error Communication with the document processor is not possible.
+Causes;DP main PWB. Engine PWB
+Remedy;DP main PWB 1. Check that the versions of the main unit firmware and the DP firmware are identical. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP main PWB(YC1) and Engine PWB(YC33) Engine PWB (YC3) and Main PWB (YC64) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the DP main PWB Engine PWB Replace the engine PWB.
+Code;9010
+Description;Coin vender communication error A communication error from coin vender is detected 10 times in succession
+Causes;U206 setting. Coin vender control PWB. Engine PWB
+Remedy;U206 setting Set maintenance mode U206 to off when a coin vender is not installed. Coin vender control PWB 1. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. Coin vender control PWB and Engine PWB (YC22) 2. If the wiring is disconnected, shorted or grounded, replace the wiring. 3. Replace the Coin vender control PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB.
+Code;9040
+Description;DP lift motor going up error When the DP lift motor is driven, DP lift sensor 1 does not turn on within 1500 pulse. (Three recovery times.) The above has been detected 5 times. * : The number of detection should be weighted with one for the rise at job start and two for the irregular rise during transpoting. The accumulated number must be cleared at completion of a normal rise. The default threshold is 5.
+Causes;DP lift motor. DP lift sensor 1. DP main PWB
+Remedy;DP lift motor 1. Execute U906 Separating Operation Release. 2. Execute U243 Lift Motor to check the DP motor operation. 3. Check that the original document lift guide can move upwards. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP lift motor and DP main PWB (YC5) 5. If the wiring is disconnected, shorted or grounded, replace the wiring. 6. Replace the DP lift motor. DP lift sensor 1 1. Execute U244 Lift L-Limit to check DP switch. 2. Check that the sensor and its mounting bracket are correctly positioned. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP lift sensor 1 and DP main PWB (YC4) 4. Replace the DP lift sensor 1. DP main PWB Replace the DP main PWB
+Code;9050
+Description;DP lift motor going down error When the DP lift motor is driven, DP lift sensor 2 does not turn on within 1500 pulse. (Three recovery times.) The above has been detected 5 times.
+Causes;DP lift motor. DP lift sensor 2. DP main PWB
+Remedy;DP lift motor 1. Execute U906 Separating Operation Release. 2. Execute U243 Lift Motor to check the DP motor operation. 3. Check that the original document lift guide can move downwards. 4. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP lift motor and DP main PWB (YC5) If the wiring is disconnected, shorted or grounded, replace the wiring. 5. Replace the DP lift motor. DP lift sensor 2 1. Execute U244 Lift L-Limit to check DP switch. 2. Confirm that the DP lift sensor 2 has been firmly fitted. 3. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP lift sensor 2 and DP main PWB (YC2) 4. Replace the DP lift sensor2. DP main PWB Replace the DP main PWB
+Code;9060
+Description;DP EEPROM error Mismatch of reading data from two locations occurs 3 times successively. Mismatch between writing data and reading data occurs 3 times successively.
+Causes;DP main PWB. Device damage of EEPROM
+Remedy;DP main PWB 1. Execute U906 Separating Operation Release. 2. Confirm that the EEPROM has been properly installed. 3. Replace the DP main PWB Device damage of EEPROM Contact the Service Support.
+Code;9070
+Description;Communication error between DP and SHD A communication error is detected
+Causes;DP SHD PWB
+Remedy;DP SHD PWB 1. Execute U906 Separating Operation Release. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. DP SHD PWB (YC1) and DP main PWB (YC10) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the DP SHD PWB.
+Code;9080
+Description;LED fault detection A block is existent below a peak which was obtained by activating the LEDs in the four CIS blocks at power on, which is less than 80hex.
+Causes;DP CIS. DP SHD PWB
+Remedy;DP CIS 1. Execute CIS automatic original document alignment by U411. 2. Confirm that the wiring connector is firmly connected and, if necessary, connect the connector all the way in. CIS and DP SHD PWB (YC2) DP SHD PWB (YC1) and DP main PWB (YC10) 3. If the wiring is disconnected, shorted or grounded, replace the wiring. 4. Replace the CIS and execute U411. DP SHD PWB Replace the DP SHD PWB.
+Code;9100
+Description;Coin vender control PWB error Communication error has been detected at the coin mec of the coin vender control PWB.
+Causes;Coin vender control PWB
+Remedy;Replace the coin mec.
+Code;9110
+Description;Coin vender rejector error Communication error has been detected in connection with the coin mec and the rejector.
+Causes;Rejector
+Remedy;1. Check that the rejector is firmly installed and, if not, install firmly. 2. Replace the rejector.
+Code;9120
+Description;Sensor error in coin vender change (Yen 10) Change is empty despite change is enough
+Causes;Coin jam in the change tube. Contact in the connector. Change empty sensor. Coin vender control PWB
+Remedy;Coin jam in the change tube Check visually and remedy. Contact in the connector Check the connection of the empty change sensor. Change empty sensor Replace the coin mec. Coin vender control PWB Replace the coin mec.
+Code;9130
+Description;Sensor error in coin vender change (Yen 50) Change is empty despite change is enough
+Causes;Coin jam in the change tube. Contact in the connector. Change empty sensor. Coin vender control PWB
+Remedy;Coin jam in the change tube Check visually and remedy. Contact in the connector Check the connection of the empty change sensor. Change empty sensor Replace the coin mec. Coin vender control PWB Replace the coin mec.
+Code;9140
+Description;Sensor error in coin vender change (Yen 100) Change is empty despite change is enough
+Causes;Coin jam in the change tube. Contact in the connector. Change empty sensor. Coin vender control PWB
+Remedy;Coin jam in the change tube Check visually and remedy. Contact in the connector Check the connection of the empty change sensor. Change empty sensor Replace the coin mec. Coin vender control PWB Replace the coin mec.
+Code;9150
+Description;Sensor error in coin vender change (Yen 500) Change is empty despite change is enough.
+Causes;Change tube. Contact in the connector. Change empty sensor. Coin vender control PWB
+Remedy;Change tube Check no exchange jam is observed at the outlet and, if necessary, repair it. Contact in the connector Check the connection of the empty change sensor. Change empty sensor Replace the coin mec. Coin vender control PWB Replace the coin mec.
+Code;9160
+Description;Coin vender pay-out error Coin is paid out despite the pay-out motor is determined not active.
+Causes;Pay-out motor
+Remedy;Pay-out motor Replace the coin mec.
+Code;9170
+Description;Coin vender pay-out sensor error Coin is paid out despite the pay-out motor is determined not active.
+Causes;Pay-out area. Pay-out motor. Pay-out sensor
+Remedy;Pay-out area Check no exchange jam is observed at the outlet and, if necessary, repair it. Pay-out motor Replace the coin mec. Pay-out sensor Replace the coin mec.
+Code;9180
+Description;DP feed-shift motor error The HP cannot be detected even after executing the HP detection retrial 3 consecutive times. HP detection: when the DP feed-shift motor is driven to move to the HP, the HP is not detected after it is rotated once.
+Causes;DP feed-shift motor. DP feed-shift sensor
+Remedy;DP feed-shift motor 1. Unplug the power cord from the wall outlet, and wait five seconds. Then plug in the power cord and then turn on the power switch. 2. Confirm that the connector of the DP feed-shift motor is firmly connected, and if necessary, push the unit all the way in. 3. Confirm that the wiring connector is firmly connected, and if necessary, connect the connector all the way in. 4. If the wire is disconnected, short-circuited or has a ground fault, or the connector pin is deformed, replace the wire. 5. Replace the DF feed-shift motor. DP feed-shift sensor 1. Rotate the DP feed-shift motor manually to check that it is not unusually difficult to rotate. 2. Check if the DP feed-shift sensor is out of position because it has dropped off and if the sensor light is interrupted by the actuator. 3. Confirm that the wiring connector is firmly connected, and if necessary, connect the connector all the way in. 4. If the wiring is disconnected, short-circuited or has a ground fault, replace the wire. 5. Replace the DP feed-shift sensor.
+Code;9500
+Description;Image processing circuit fault (Platen side)
+Causes;Main PWB. Engine PWB
+Remedy;1. Reinsert the connector if its connection is loose. Main PWB (YC65 and Engine PWB (YC37) 2. Replace the main PWB. 3. Replace the Engine PWB 4. Contact the Service Support.
+Code;9510
+Description;Image processing circuit fault (DP side)
+Causes;Main PWB. DP SHD PWB
+Remedy;1. Reinsert the connector if its connection is loose. DP relay PWB (YC2) and DP SHD PWB (YC3) 2. Replace the main PWB. 3. Replace the DP SHD PWB. 4. Contact the Service Support.
+Code;F000
+Description;Communication error between main PWB and operation PWB
+Causes;Main PWB. Operation PWB
+Remedy;Main PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Check that the wirings and connetors between the main circuit PWB and the operation circuit PWB and between the main circuit PWB and the HDD are normal. Main PWB (YC12,YC6) and Operation PWB (YC5,YC8) 3. Check that the DDR memories in the main circuit PWB are well conducted and, if not, replace. 4. Execute U024 to initialize (FULL) the HDD. 5. Execute U021 to initialize memory. 6. Replace the Main PWB. 7. Copy the log File saved in the HDD by U964 in USB memory and contact the service support. Operation PWB Replace the operation PWB.
+Code;F010
+Description;Main PWB checksum error
+Causes;Defective main PWB.
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. If not corrected, replace the main PWB.
+Code;F020
+Description;System memory error Controller detection error
+Causes;Defective main PWB
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. If not corrected, replace the main PWB.
+Code;F021
+Description;System memory error Controller detection error
+Causes;Defective main PWB
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. If not corrected, replace the main PWB.
+Code;F022
+Description;System memory error Controller detection error
+Causes;Defective main PWB
+Remedy;1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. If not corrected, replace the main PWB.
+Code;F040
+Description;Communication error between Main PWB and Print engine
+Causes;Main PWB. Engine PWB. HDD
+Remedy;Main PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Repair or replace the wire from the engine PWB, that may be grounded. (Check short-circuit between 5V and 3.3V.) 3. Check that the FCC wire connecting between the main PWB (YC3) and the engine PWB (YC46) is normal and, if necessary, re-insert.Or, replace the FCC wire. 4. If not corrected, replace the main PWB. Engine PWB 1. Check the engine software and upgrade to the latest, if necessary. 2. Replace the engine PWB. HDD Replace the HDD.
+Code;F041
+Description;Communication error between Main PWB and Scanner engine
+Causes;Main PWB. Engine PWB
+Remedy;Main PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Check that the wires between the main PWB and the engine PWB are normal. 3. If not corrected, replace the main PWB. Engine PWB Replace the Engine PWB.
+Code;F050
+Description;Print engine ROM checksum error
+Causes;Engine software. Engine PWB
+Remedy;Engine software Install the latest engine software. Engine PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Confirm that the EEPROM has been properly installed. 3. If not corrected, Replace the engine PWB.
+Code;F051
+Description;Scanner engine ROM checksum error
+Causes;Scanner software. Engine PWB
+Remedy;Scanner software Install the latest scanner software. Engine PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Confirm that the EEPROM has been properly installed. 3. If not corrected, Replace the Engine PWB.
+Code;F052
+Description;Panel ROM checksum error
+Causes;Panel software. Main PWB
+Remedy;Panel software Install the latest panel software. Main PWB 1. Turn the main power swtch off and after 5 seconds, then turn power on. 2. Repair or replace the wire from the engine PWB, that may be grounded. (Check short-circuit between 5V and 3.3V.) 3. Check that the FCC wire connecting between the main PWB (YC64, YC65) and the engine PWB (YC3, YC37) is normal and, if necessary, re-insert.Or, replace the FCC wire. If not corrected, replace the main PWB.

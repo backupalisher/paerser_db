@@ -1,0 +1,356 @@
+Code;300
+Description;Charge Corona Output Error After sampling at 10 ms intervals, the charge-corona feedback voltage remained less than 0.5 V for more than 200 ms.
+Causes;• Charge corona unit defective • High voltage cable defective • Corona wire dirty or defective • CGB power pack fuse, connections loose, broken, or defective • CGB power pack defective
+Remedy;
+Code;305
+Description;Charge Corona Wire Cleaner Error The charge wire cleaner did not: (1) come from the home position within 5 s, or (2) did return to the home position within 3.75 s due to wire cleaner overload.
+Causes;"• Cleaner unit blocked or damaged • Until replacement parts become available, set SP2804 to ""0"" to disable the charge-corona cleaning function so the machine can operate."
+Remedy;
+Code;392
+Description;Development Bias Error The development bias feedback voltage was less than 0.3 V for longer than 200 ms while the PWM duty value was more than 5% (indicating a development bias leak).
+Causes;• Bias terminal damaged • High voltage cable damaged, defective • CGB power pack defective
+Remedy;
+Code;400
+Description;ID Sensor Auto Adjustment Error. Vsg did not reach 4 ±0.2 V when the ID sensor was initialized with SP3001-2.
+Causes;• ID sensor dirty • ID sensor harness, connector loose, disconnected, damaged, defective • ID sensor defective • MCU defective • Development unit defective • CGB power pack defective
+Remedy;
+Code;401
+Description;ID Sensor Vsg Error The Vsg level was twice detected lower than 2.5 V. -or- The Vsg level was once detected higher than 4.8V.
+Causes;• ID sensor dirty • ID sensor harness, connector loose, disconnected, damaged, defective • ID sensor defective • MCU defective • CGB power pack defective
+Remedy;
+Code;402
+Description;ID Sensor Vsp Error The Vsp level was twice detected at 0V or at more than 2.5 V.
+Causes;• Under the left upper cover, make sure that the hex screw of the main drum drive gear is tight • ID sensor dirty • ID sensor harness, connector loose, disconnected, damaged, defective • ID sensor defective • MCU defective • Development unit defective • CGB power pack defective
+Remedy;
+Code;440
+Description;Transfer Output Error. A high voltage feedback voltage of less than 0.5 V was detected for 200 ms.
+Causes;• High voltage cable disconnected, damaged • T/S power pack defective
+Remedy;
+Code;460
+Description;DC Separation Corona Output Error A dc separation feedback voltage of less than 0.5 V was detected after more than 200 ms.
+Causes;• High voltage cable disconnected, damaged • T/S power pack defective
+Remedy;
+Code;508
+Description;Cutter Error The left and right cutter HP sensors remained on or off more than 2 sec.
+Causes;• HP sensors on the left and right side loose, disconnected, defective • Cutter motor harness damaged, defective • HP sensors defective • Cutter motor defective Note: Paper can be fed from the bypass table if the roll feeder or paper cassette is not operationg.
+Remedy;
+Code;520
+Description;Main Motor Error After the motor started, the main motor lock signal remained HIGH for 5 sec.
+Causes;• Physical obstruction blocking motor • Motor harness damaged, defective • Motor defective
+Remedy;
+Code;521
+Description;Drum Motor Error After the motor started, the drum motor lock signal remained HIGH for 5 sec.
+Causes;• Physical obstruction blocking motor • Motor harness damaged, defective • Motor defective
+Remedy;
+Code;522
+Description;Fusing Unit Drive Motor Error. After the motor started, the fusing motor lock signal remained HIGH for 5 sec.
+Causes;• Physical obstruction blocking motor • Motor harness damaged, defective • Motor defective
+Remedy;
+Code;530
+Description;Fusing Unit Ventilation Fan Error After the motor started, the fan motor lock signal remained HIGH for 5 sec.
+Causes;• Physical obstruction blocking motor • Motor harness damaged, defective • Motor defective
+Remedy;
+Code;541
+Description;Fusing Thermistor Errors The thermistor measured the hot roller temperature every 1 sec. for 30 sec. and the temperature remained below 5C (54F).
+Causes;• Thermistor positioned incorrectly • Thermistor cable loose, disconnected, damaged • Thermistor defective
+Remedy;
+Code;542
+Description;Fusing Temperature Warm-up Error The hot roller did not reach the ready temperature within 4 min. 30 sec. after power on. -or- After 5 sec. and 5 rotations of the hot roller, the machine detected that the temperature rise was less than 3oC .
+Causes;• Fusing lamp connections loose, broken, defective • Fusing lamp defective • Thermistor not touching the hot roller • Thermistor defective • MCU defective
+Remedy;The ready temperature is determined by the state of the machine at recovery: • Ready Temp. = Target Fusing Temp. (if power on or recovery starts when the hot roller is 80°C or higher). • Ready Temp. = Target Fusing Temp. – 10°C (SP1105-1 default) if power on or recovery starts when the hot roller is less that 80°C. • Ready Temp. = Target Fusing Temp. – 20°C (SP1937-3 default) if power on or recovery starts with pressure roller inching control on.
+Code;543
+Description;Fusing Lamp Temperature: Error 1 (Software Detection). The circuit on the MCU that monitors the temperature of the board detected a fusing temperature of 230oC (446oF) for longer than 2 sec.
+Causes;• MCU defective
+Remedy;
+Code;544
+Description;Fusing Temperature: Error 2 (Hardware Detection) The fusing thermistor that monitors the temperature of the hot roller detected a fusing temperature of 235oC (455oF), due to a Triac short which interfered with fusing temperature control.
+Causes;• MCU defective • PSU defective • Fusing unit defective
+Remedy;
+Code;545
+Description;Fusing Temperature: Error 3 After the hot roller reached the ready temperature, the fusing lamp stayed on at full power for 50 sec. while the hot roller was not rotating.
+Causes;• Hot roller thermistor not positioned correctly • Fusing lamp harness loose, disconnected, defective • MCU defective
+Remedy;
+Code;546
+Description;Fusing Temperature: Error 4 The machine detected that the fusing temperature was fluctuating out of range for more than 60 sec. (7 readings detected temperature fluctuating more than ±20C)
+Causes;• Thermistor connection loose, disconnected, defective • Hot roller thermistor not positioned correctly • Fusing lamp connections loose, disconnected, defective • MCU defective
+Remedy;
+Code;547
+Description;Zero-Cross Signal Errors This error occurs if the machine fails to detect 50/60 Hz on the power supply line. Note: The zero-cross signal from the ac power supply generates a trigger pulse to control the power supply of power. (It automatically detects 50/60 Hz.)
+Causes;• Check that the frequency of the power supply to the machine is correct • PSU defective • MCU defective
+Remedy;
+Code;551
+Description;Pressure roller center thermistor error 1. During the hot roller temperature control sequence, or while the hot roller and pressure roller were rotating, the pressure roller center thermistor measured a value higher than 3.3V 10 consecutive times at 600 ms intervals.
+Causes;• Pressure roller center thermistor not positioned properly • Pressure roller center thermistor connector loose, broken, defective • Pressure roller center thermistor defective • MCU defective
+Remedy;
+Code;553
+Description;Pressure roller center thermistor error 2 During the hot roller temperature control sequence, the pressure roller center thermistor measures a value lower than 0.2V.
+Causes;• Pressure roller center thermistor not positioned properly • Pressure roller center thermistor connector loose, broken, defective • Pressure roller center thermistor defective • MCU defective
+Remedy;
+Code;557
+Description;Applied zero-cross waveform error The applied power ac frequency was detected less than 66 Hz more than 10 times.
+Causes;• Noise on the ac power supply line
+Remedy;
+Code;559
+Description;Fusing paper jam errors Three consecutive paper jam errors occurred in the fusing unit. Note: This SC code is not issued unless SP1159 is switched on.
+Causes;• Paper jam in fusing unit • Pick-off pawl defective • Paper scraps in fusing unit • Exit sensor defective
+Remedy;
+Code;561
+Description;Pressure roller end thermistor error 1 During the hot roller temperature control sequence, or while the hot roller and pressure roller were rotating, the end thermistor on the pressure roller returned a digital reading of more than 3.3V.
+Causes;• Pressure roller end thermistor not positioned properly • Pressure roller end thermistor connector loose, broken, defective • Pressure roller end thermistor defective • MCU defective
+Remedy;
+Code;563
+Description;Pressure roller end thermistor error 2 During the hot roller temperature control sequence, the end thermistor on the pressure roller returned a digital reading of less than 0.2V.
+Causes;• Pressure roller end thermistor connector loose • Pressure roller end thermistor short circuit, defective • MCU defective
+Remedy;
+Code;628
+Description;Fan fold unit communication error 1 The machine failed to detect within 100 ms a response to a data frame sent to the fan fold unit. Three consecutive retries failed, resulting in a timeout.
+Causes;• Cable harness between the main machine and fan fold unit broken or defective • Connector loose, disconnected, or defective
+Remedy;
+Code;632
+Description;Key/card counter device error 1 After 1 data frame is sent to the device, an ACK signal is not received within 100 ms, and is not received after 3 retries.
+Causes;• Serial line from the device to the main machine is unstable, disconnected, or defective
+Remedy;
+Code;633
+Description;Key/card counter device error 2 During communication with the device, the MCU received a break (Low) signal.
+Causes;• Serial line from the device to the main machine is unstable, disconnected, or defective
+Remedy;
+Code;634
+Description;Key/card counter device error 3 The backup battery of the counter device RAM is low.
+Causes;• RAM backup battery exhausted • Counter device defective
+Remedy;
+Code;635
+Description;Key/card counter device error 4. After installation of the device a message alerts user to a battery voltage abnormal error.
+Causes;• Device control board defective • Device control board backup battery defective
+Remedy;
+Code;636
+Description;"OSM User Code File Error The correct ""usercode"" file could not be found in the root folder of the SD card because the file is not present, or the existing file is corrupted or the wrong type file."
+Causes;"• Make sure the eccm.mod file is in the root folder of the SD card. Note: The usercode files are created with the User Setting Tool ""IDissuer.exe""."
+Remedy;
+Code;650
+Description;@Remote communication error 1 A dial-up or modem error occurred during @Remote operation. (This error occurs only during @Remote operation.)
+Causes;• Modem line disconnected • Modem board missing or not properly installed
+Remedy;
+Code;651
+Description;@Remote communication error 2 An illegal dial-up to the service center was attempted by @Remote.
+Causes;• Software bug
+Remedy;
+Code;670
+Description;Engine startup error The MCU failed to respond within the prescribed time when the machine was turned on.
+Causes;• Connections between MCU and controller board are loose, disconnected, or damaged • MCU defective • Controller board defective
+Remedy;
+Code;672
+Description;Controller startup error After power on, the line between the controller and the operation panel did not open for normal operation. -or- After normal startup, communication with the controller stopped.
+Causes;• Controller installed incorrectly • Controller board defective • Operation panel harness disconnected or defective
+Remedy;
+Code;690
+Description;VDB communication error There was no serial communication with the VDB within 1 sec. after power on.
+Causes;• VDB-to-MCU harness or connectors broken, loose, defective • VDB defective • MCU defective
+Remedy;
+Code;720
+Description;Fan folder transport motor error A transport motor lock signal was detected for more than 5 sec. while the motor was running.
+Causes;• Transport motor harness connector loose, disconnected, broken • Motor overload due to an obstruction • Transport motor defective • Fan folder unit MCU defective
+Remedy;
+Code;762
+Description;Front fold plate HP sensor error The state (on/off, off/on) of the front fold plate HP sensor in the fan fold unit did not change 1 sec. after the plate started to move.
+Causes;• Fold plate motor (F) harness connector loose, disconnected, broken • Front fold plate HP sensor harness connector loose, disconnected, broken • Fold plate motor (F) defective • Front fold plate HP sensor defective • Undetected paper is jamming the action of the motor or fold plate • Fan folder unit MCU defective
+Remedy;
+Code;763
+Description;Rear fold plate HP sensor error The state (on/off, off/on) of the rear fold plate HP sensor in the fan fold unit did not change 1 sec. after the plate started to move.
+Causes;• Fold plate motor (R) harness connector loose, disconnected, broken • Rear fold plate HP sensor harness connector loose, disconnected, broken • Fold plate motor (R) defective • Rear fold plate HP sensor defective • Undetected paper is jamming the action of the motor or fold plate • Fan folder unit MCU defective
+Remedy;
+Code;790
+Description;PCB fan error: Folder Unit The machine detected a continuous lock signal from the PCB cooling fan on the PSU for 20 sec.
+Causes;• Fan harness connector loose, disconnected, broken • Overload on the fan motor due to physical obstruction such has undetected paper, etc. • Fan defective • MCU folder unit defective
+Remedy;
+Code;819
+Description;Fatal kernel error Due to a control error, a RAM overflow occurred during system processing.
+Causes;• Controller board defective • Insufficient memory • Expanded memory defective
+Remedy;
+Code;820
+Description;Self-Diagnostic Error: CPU The CPU returned an unexpected error during the self-diagnostic test.
+Causes;• Controller board defective • Insufficient memory • Expanded memory defective
+Remedy;
+Code;821
+Description;Self-diagnostic error 2: ASIC The ASIC provides the central point for the control of bus arbitration for CPU access, for option bus and SDRAM access, for SDRAM refresh, and for management of the internal bus gate.
+Causes;• Controller board defective
+Remedy;For more details about this SC code error, execute SP5990 to print an SMC report so that you can read the error code. The error code is not displayed on the operation panel.
+Code;822
+Description;Self-diagnostic error 3: HDD An error occurred when the self-check was performed when the machine was switched on after the HDD was replaced. (The diagnostic command was issued to the HDD device but the result was an error).
+Causes;• HDD defective • HDD harness disconnected, defective • Controller board defective
+Remedy;
+Code;823
+Description;Self-diagnostic Error: NIB The network interface board returned an error during the self-diagnostic test.
+Causes;• Network interface board defective • Controller board defective
+Remedy;
+Code;824
+Description;Self-diagnostic error 4: NVRAM Error occurred because: • NVRAM device does not exist • NVRAM device is damaged • NVRAM socket damaged
+Causes;• NVRAM defective
+Remedy;
+Code;826
+Description;Self-diagnostic Error 5: RTC/Optional NVRAM The NVRAM or optional NVRAM returned an error during the self-diagnostic test.
+Causes;• Make sure NVRAM is seated correctly in its socket • Replace the NVRAM on the controller board
+Remedy;
+Code;827
+Description;Self-diagnostic error 6: Resident RAM The resident RAM returned a verify error during the self-diagnostic test.
+Causes;• Controller board defective • Replace RAM DIMM
+Remedy;
+Code;828
+Description;Self-diagnostic error 8: ROM. Measuring the CRC for the boot monitor and operating system program resulted in an error.
+Causes;• Software defective • Controller board defective
+Remedy;
+Code;829
+Description;Self-diagnostic Error 9: Optional RAM The optional RAM returned an error during the self-diagnostic test.
+Causes;• Replace the optional memory board • Controller board defective
+Remedy;
+Code;838
+Description;Self-diagnostic Error 10: Clock Generator A verify error occurred when setting data was read from the clock generator via the I2C bus.
+Causes;• Replace the controller board
+Remedy;
+Code;851
+Description;IEEE 1394 I/F Error IEEE1394 cannot be used due to a faulty driver setting or poor I/F connection.
+Causes;• Faulty PCI connection • IEEE1394 board defective • Controller board defective
+Remedy;
+Code;853
+Description;Wireless LAN Error 1 During machine start-up, the machine can access the board that holds the wireless LAN, but not to the wireless LAN card.
+Causes;• Wireless LAN card missing (was removed)
+Remedy;
+Code;854
+Description;Wireless LAN Error 2 During machine operation, the machine can get access to the board that holds the wireless LAN, but not to the wireless LAN card (802.11b or Bluetooth).
+Causes;• Wireless LAN card missing (was removed)
+Remedy;
+Code;855
+Description;Wireless LAN error 3 An error was detected on the wireless LAN card.
+Causes;• Wireless LAN card defective • Wireless LAN card connection incorrect
+Remedy;
+Code;856
+Description;Wireless LAN error 4. An error was detected on the wireless LAN board.
+Causes;• Wireless LAN board defective • PCI connector to MB loose
+Remedy;
+Code;857
+Description;USB I/F Error The USB driver is not stable and caused an error.
+Causes;• Poor USB card connection • Replace the controller board
+Remedy;
+Code;860
+Description;HDD startup error at power on HDD is connected but a driver error is detected. -or- The driver does not respond with the status of the HDD within 30 s.
+Causes;• HDD is not initialized • Level data corrupted • HDD is defective
+Remedy;
+Code;861
+Description;HDD re-try failure At power on the HDD was detected. Power supply to the HDD was interrupted after the system entered the energy save mode, but after the HDD was awakened from the energy save mode it did not return to the ready status within 30 sec.
+Causes;• Harness between HDD and controller board disconnected, defective • HDD power connector disconnected • HDD defective • Controller board defective
+Remedy;
+Code;863
+Description;HDD data read failure The data written to the HDD cannot be read normally, due to bad sectors generated during operation.
+Causes;• HDD defective
+Remedy;• If the bad sectors are generated at the image partition, the bad sector information is written to NVRAM. • The next time the HDD is accessed, these bad sectors will not be accessed for read/write operation. The HDD will probably require replacement soon.
+Code;864
+Description;HDD data CRC error. During HDD operation, the HDD cannot respond to a CRC error query. Data transfer did not execute normally while data was being written to the HDD.
+Causes;• HDD defective
+Remedy;
+Code;865
+Description;HDD access error HDD responded to an error during operation for a condition other than those for SC863, 864.
+Causes;• HDD defective
+Remedy;
+Code;866
+Description;SD card error 1: Confirmation error The machine detected an electronic license error in the application on the SD card in the controller slot immediately after the machine was turned on.
+Causes;• Program missing from the SD card
+Remedy;
+Code;867
+Description;SD card error 2: SD card removed The SD card in the boot slot when the machine was turned on was removed while the machine was on.
+Causes;• Insert the SD card • Turn the machine’s power off/on
+Remedy;
+Code;868
+Description;SD card error 3: SD card access An error occurred while an SD card was used.
+Causes;• SD card not inserted correctly • SD card defective • Controller board defective • To reformat the SC card, use SD Formatter Ver 1.1.
+Remedy;
+Code;870
+Description;Address book data error Address book data on the hard disk was detected as abnormal when it was accessed from either the operation panel or the network. The address book data cannot be read from the HDD or SD card where it is stored, or the data read from the media is defective.
+Causes;• Turn the machine power off/on. If this does not solve the problem, do the Procedure below. • HDD defective
+Remedy;1. Do SP5846-50 (UCS Settings – Initialize all Directory Info.) to reset all address book data. 2. After 3 sec. reformat the HDD with SP5821-1. 3. Turn the main power switch off/on.
+Code;872
+Description;HDD Mail Receive Error At power on the HDD unit was detected as defective. Data can be neither read nor written to the HDD. Note: This problem can occur if the machine is switched off while the HDD is being accessed.
+Causes;• Format the HDD with SP5832. • HDD defective, replace HDD (be sure to format the new HDD).
+Remedy;
+Code;873
+Description;HDD mail send data error An error was detected on the HDD immediately after the machine was turned on, or power was turned off while the machine used the HDD.
+Causes;• Do SP5832-1 to format the HDD • Replace the HDD
+Remedy;
+Code;874
+Description;Delete All error 1: HDD A data error was detected for the HDD/NVRAM after the Delete All option was used. Note: The source of this error is the Data Overwrite Security Unit B735 running from the DOS SD card.
+Causes;• Turn the main switch off/on, do the operation again. • Install the Data Overwrite Security Unit again. • HDD defective
+Remedy;
+Code;875
+Description;Delete All error 2: Data area An error occurred when the machine deleted data from the HDD. Note: The source of this error is the Data Overwrite Security Unit B735 running from the DOS SD card.
+Causes;• Turn the main switch off/on and try the operation again.
+Remedy;
+Code;876
+Description;Log Data Errors A problem occurred with the log data at power on or while the machine was operating.
+Causes;1 Log Data Error 1 Log data file corrupted. Occurs at power on or during machine operation. • Format the HDD with SP5832 2 Log Data Error 2 Log data encryption has been enabled but the encryption module has not been installed. Occurs at power on, during machine operation, or after enabling encryption of log data. • Replace the encryption module, reset • Enable encryption 3 Log Data Error 3 Log encryption key has not been enabled (NVRAM malfunction). Occurs at power on. • Format the HDD with SP5832 • Disable log data encryption 4 Log Data Error 4 Occurs at power on. Log data has been encrypted but encryption has been disabled (NVRAM malfunction). -or- Log data has not been encrypted but encryption is enabled (NVRAM malfunction). • Format the HDD with SP5832 5 Log Data Error 5 Occurs at power on. NVRAM has been replaced with the NVRAM from another machine. -or- HDD has been replaced with an HDD unit from another machine. • Replace the NVRAM with the original NVRAM • Replace the HDD with original the HDD • Format the HDD with SP5832 99 Log Data Error 99 Other errors. Occurs at power on or during machine operation. • Contact the machine design section
+Remedy;
+Code;877
+Description;HDD Data Erase Error The Data Overwrite Security option cannot scramble and erase data on the HDD because the DOS SD card has been corrupted or has
+Causes;• If the DOS SD card has been removed, switch the machine off, install the SD card, then switch on the machine. (If this does not been removed from the SD card slot.
+Remedy;• If the DOS SD card has been removed, switch the machine off, install the SD card, then switch on the machine. (If this does not solve the problem, the SD card has been damaged.) • Install a new NVRAM • Install a new Data Overwrite Security option with a new SD card
+Code;880
+Description;File Format Converter (MLB) error A request to access the MLB was not answered within the specified time (60 sec.).
+Causes;• File format converter board defective
+Remedy;
+Code;900
+Description;Electrical total counter error The total counter contains something that is not a number.
+Causes;• NVRAM incorrect type • NVRAM defective • NVRAM data scrambled • Unexpected error from external source
+Remedy;
+Code;901
+Description;Mechanical Total Counter The mechanical counter is not connected.
+Causes;• Mechanical counter connection loose, broken, defective • Replace the mechanical counter
+Remedy;
+Code;910 ... 914
+Description;910 B External controller error 1 911 B External controller error 2 912 B External controller error 3 913 B External controller error 4 914 B External controller error 5 The external controller alerted the machine about an error.
+Causes;• Refer to the instructions for the external controller
+Remedy;
+Code;919
+Description;External controller error 6 While EAC (External Application Converter), the conversion module, was operating normally, the receipt of a power line interrupt signal from the FLUTE serial driver was detected, or BREAK signal from the other station was detected.
+Causes;• Controller RW3600 power outtage • Controller RW3600 rebooted • Connection to Controller RW3600 loose
+Remedy;
+Code;920
+Description;Printer error 1 An internal application error was detected and operation cannot continue.
+Causes;• Software defective • Turn the machine power off/on, or change the controller firmware • Insufficient memory
+Remedy;
+Code;921
+Description;Printer Error 2 When the printer application started, the font designated for use could not be found on the SD card.
+Causes;• The font is not on the SD card
+Remedy;
+Code;954
+Description;Printer Image Setting Error The settings that are required for image processing using the printer controller are not sent from the IPU.
+Causes;• Firmware bug • IPU defective
+Remedy;
+Code;955
+Description;Memory Setting Error The settings that are required for image processing using the memory are not sent from the IPU.
+Causes;• Firmware bug • Hard disk unit defective • Controller defective • MCU defective • IPU defective
+Remedy;
+Code;965
+Description;Print Start Error During print processing, another command to start printing was received.
+Causes;• Printer firmware defective • Update printer firmware
+Remedy;
+Code;967
+Description;Image write start error The paper stopped at the registration sensor and roller for buckle adjustment but the signal to start image writing was not received within 60 sec.
+Causes;• Printer firmware defective • Update printer firmware • Check the connections between the LPH sections (x3) and the VDB • LPH defective • VDB defective • MCU defective
+Remedy;
+Code;990
+Description;Software error 1 The software performs an unexpected function and the program cannot continue.
+Causes;• Firmware defective: re-boot • Update firmware
+Remedy;For more information about SC990 and SC991: 1. Execute SP7403 or print an SMC Report (SP5990) to read the history of the 10 most recent logged errors. 2. If you press [0] on the operation panel with the SP selection menu displayed, you will see detailed information about the recently logged SC990 or SC991 errors, including the software file name, line number, and so on. (1) above is the recommended method, because another SC could write over the information for the previous SC.
+Code;991
+Description;Software error 2 The software performs an unexpected function. However, unlike SC990, recovery processing allows the program to continue.
+Causes;Software defective, re-boot
+Remedy;For more information about SC990 and SC991: 1. Execute SP7403 or print an SMC Report (SP5990) to read the history of the 10 most recent logged errors. 2. If you press [0] on the operation panel with the SP selection menu displayed, you will see detailed information about the recently logged SC990 or SC991 errors, including the software file name, line number, and so on. (1) above is the recommended method, because another SC could write over the information for the previous SC.
+Code;992
+Description;Erratic SC error There was an unusual operation by the software because of: • An incorrect argument in the program. • An incorrect internal parameter. • Work memory not sufficient. • An error occurred that could not be detected by other SC codes.
+Causes;• Turn the main power switch off/on. • Go into the SP mode. Do SP7901 to display details about SC992 (software file name, line number, and variable), and inform your supervisor of the results.
+Remedy;
+Code;997
+Description;Cannot select application function An application did not start after the user pushed the correct key on the operation panel.
+Causes;• Software bug • A RAM or DIMM option required for the application is not installed or not installed correctly.
+Remedy;
+Code;998
+Description;Application cannot start Register processing does not operate for an application within 60 s after the machine power is turned on. No applications start correctly, and all end abnormally.
+Causes;• Software bug • A RAM or DIMM option needed for the application not installed, or not installed correctly • Controller board defective
+Remedy;

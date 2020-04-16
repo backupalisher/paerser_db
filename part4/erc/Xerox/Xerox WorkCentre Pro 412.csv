@@ -1,0 +1,100 @@
+Code;01
+Description;White copy
+Causes;• Check the scan-cover is not open. • Check shading profile. • Check white/black reference voltage in Main PBA. • Check the CCD lamp is on when scanning.
+Remedy;• Ambient light can cause image problems • Remake shading profile in the Tech mode. • Replace Main PBA if it is defective. - U16-97 = 3.3V - U16-98 = 3.3V - U16-99 = 1.5V • If the CCD is defective, replace it. - CN3-19 is 5.8V when white original copying for R, B and 3.5V for G.
+Code;02
+Description;Black copy
+Causes;• Check for CCD problem in Main PBA. • Check shading profile. • Check the CCD problem in Main PBA
+Remedy;• Check the CCD harness contacts. • Remake shading profile in the Tech mode. • If the CCD is defective, install a new ELEC/MECH-SCANNER MODULE, PL 2-2-21. - Cn3-19 is 7.3V when idle for R, B, and 5V for G.
+Code;03
+Description;Defective image quality
+Causes;• Check shading profile. • Check the gap between original and scanner glass. • Check printing quality.
+Remedy;• Remake shading profile in the Tech mode. • A gap greater than 0.5mm can cause a blurred image. • See “Print” troubleshooting.
+Code;04
+Description;Abnormal noise
+Causes;• Check the scanner glass and any mechanical disturbance. • Check the motor driver in Driver PBA.
+Remedy;• Check the scanner glass is correctly located and clean, check that the CCD carriage moves smoothly. • If any driver is defective, replace the main PBA. - U55 or U55-1, 15 = 0V to 24V swing signal when operating.
+Code;05
+Description;Scanning error
+Causes;• Check the printer cable. • Check how TWAIN driver is installed. • Check harness contact. • Check the IEEE1284 signal level.
+Remedy;• Check correct installation, and use standard IEEE1284 cable. • Remove any other scanner driver. • Reboot after reinstallation of the TWAIN driver. • Check CN14 contact in Main PBAl. • If any signal level is defective, install a new Main PBA. - U36-66-74 in Main PBA = 0.8V to 2.4V TTL signal. • If necessary, install a new PBA MAIN MAIN, PL 1-19
+Code;06
+Description;Defective image quality
+Causes;• Check shading profile. • Check the gap between original and scanner glass.
+Remedy;• Remake shading profile in the Tech mode. • A gap greater than 0.5mm can cause a blurred image.
+Code;07
+Description;Abnormal noise
+Causes;• Check the scanner glass and any mechanical disturbance. • Check the motor driver in Driver PBA.
+Remedy;• Check the scanner glass is correctly located and clean, check that the CCD carriage moves smoothly. • If any driver is defective, replace the Main PBA. - U55 or U56-19 = 0V to 24V swing signal when operating.
+Code;08
+Description;TEL LINE CANNOT BE ENGAGED (NO DIAL TONE)
+Causes;• When you press the “OHD” key: a) Check line cord connection. b) Check MAIN LIU harness, and CN1(LIU PBA). c) Check relay operation of LIU PBA: Is the control signal of CN20-7(main) low?
+Remedy;a) Insert plug into the socket named “line”. b) Replace defective parts. c) Replace main PBA IF the control signal of CN20-7(main) is high. Replace LIU PBA if high but phone line cannot be connected.
+Code;09
+Description;Cannot MF dial
+Causes;• Check CN20 (main PBA), main- LIU harness, and CN1 (LIU PBA)
+Remedy;• Replace defective parts.
+Code;10
+Description;MF dial is possible but not DP dial.
+Causes;• Check DP control signal of CN20-11 of MAIN PBA and the circuit around R15. U6 and Q2 of LIU PBA.
+Remedy;• Replace LIU PBA.
+Code;11
+Description;Defective FAX transmission
+Causes;• Check CN20 (main PBA), main LIU harness, and CN1(LIU PBA). • Is the external phone off the hook? • Check ‘hook off’: Refer to ‘TEL LINE CANNOT BE ENGAGED’ above. • Check the control signals of CN20-11. • Check transmission path: Check output of CN20-3.4 and T2-4(LIU PBA). • Check reception path: Check output CN1-1 (LIU PBA) and input of CN20-1(main PBA).
+Remedy;• Replace defective parts. • Replace LIU PBA if low. • Refer to ‘TEL LINE CANNOT BE ENGAGED’ above. • Replace main PBA, if the signals of CN8-11 (MAIN PBA) is low. • Replace main PBA, if abnormal. • Replace LIU PBA if CN1-1(LIU PBA) is not confirmed. Replace main PBA if CN20- 1(MAIN PBA) is not confirmed.
+Code;12
+Description;Defective automatic FAX reception
+Causes;• Is the ring checked? Check ring pattern at CN1-9 (LIU PBA). • Refer to ‘Defective FAX Transmission.’
+Remedy;• Replace LIU PBA if it cannot be checked. • Refer to ‘Defective FAX Transmission’.
+Code;13
+Description;Vertical black line and band.
+Causes;1. Bad blade in toner cartridge. 2. LSU.
+Remedy;1. Install a new toner cartridge. 2. Install a new LSU.
+Code;14
+Description;Vertical white line.
+Causes;1. LSU window contamination. 2. Toner cartridge.
+Remedy;1. Clean LSU window. 2. If not LSU contamination, install a new toner cartridge.
+Code;15
+Description;No image.
+Causes;1. Has the seal tape been removed? 2. Is the GND OPC well grounded? 3. LSU running well? 4. Is the bias voltage normal? 5. Low toner? 6. Is there video data from Main PBA
+Remedy;1. Remove the seal tape. 2. Measure the resistance between. frame ground and the ground spring attached to the frame. If necessary clean the components to achieve a good earth. 3. Adjust LSU or install a new LSI. 4. Normal Dev bias = -350V. 5. If necessary install a new toner cartridge. 6. Test engine test pattern, if necessary, install a new Main PBA
+Code;16
+Description;Light image.
+Causes;1. Has the seal tape been removed? 2. LSU light power normal? 3. Enough toner? 4. High charger voltage? 5. Lower bias voltage 6. Contamination of high voltage contact 7. Transfer voltage and roller.
+Remedy;1. Remove the seal tape 2. LSU light power check is difficult. Compare with new one and check. 3. Check toner and developer counter 4 and 5. Check all high voltage outputs 6. Leakage of toner cause bad contacts and increases contact resistance. Clean the contaminated area.
+Code;17
+Description;Dark image.
+Causes;1. LSU light power normal? 2. Bias voltage output is high? 3. Video data is always supplied?
+Remedy;1. Check the rated level and replace. 2. Set to correct voltage. 3. Replace defected board.
+Code;18
+Description;Background.
+Causes;1. High voltage output is normal? 2. C/R of toner cartridge is contaminated?
+Remedy;1. Set to correct voltage. 2. Install a new toner cartridge.
+Code;19
+Description;Ghost.
+Causes;1. High voltage output. 2. Pre-transfer lamp. 3. Bad high voltage contact.
+Remedy;1. Check all high voltage outputs. 2. Check the operation of the pre-transfer lamp. 3. Clean the contaminated contact.
+Code;20
+Description;Stains on back of paper
+Causes;1. Contamination of transfer roller 2. Stains of paper path 3. Pressure roller’s contamination
+Remedy;1. Clean the transfer roller with vacuum cleaner 2. Clean the area of paper path with cloth or air cleaner. 3. Install a new fuser.
+Code;21
+Description;Poor Fusing
+Causes;1. Check the paper quality. 2. Check fusing temperature. 3. The machine has been in a low temperature for a long period of time?
+Remedy;1. Try alternative paper. 2. Check engine controller board. Measure the thermistor voltage to CPU, 2.62V±5% will be measured if the system is working correctly. Check the thermistor contact and thermistor. 3. Re-check the fusing after placing the machine in a warm place for an hour or more.
+Code;22
+Description;Partial blank image (not periodic)
+Causes;1. Toner is low? 2. The toner cartridge is out of position?
+Remedy;1. Install a new toner cartridge. 2. Ensure the toner cartridge is correctly installed.
+Code;23
+Description;Partial blank image (periodic)
+Causes;1. Damaged developer unit 2. Defect repeated every 94 mm. 3. Defect repeated every 47 mm.
+Remedy;1 and 2. Install a new toner cartridge. 3. Install a new transfer roller.
+Code;24
+Description;Different image density (left and right)
+Causes;1. Charge roller’s pressure is uneven along it’s length. 2. Dev. roller and OPC or Dev. roller and blade’s pressure is uneven along it’s length. 3. Transfer roller’s pressure is uneven along it’s length.
+Remedy;1 and 2. Install a new toner cartridge 3. Check left and right spring of transfer roller and the developer spring inside the unit.
+Code;25
+Description;Horizontal band
+Causes;1. Poor high voltage contact. 2. Charge roller contamination. 3. Heat roller contamination. 4. Malfunction of LSU.
+Remedy;1. Clean each contact and check good contact. 2. Clean charge roller. 3. Install a new fuser. 4. Check Main PBA.

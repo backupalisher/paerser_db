@@ -1,0 +1,812 @@
+Code;10-01, 10-02, 10-40
+Description;Misfeed at manual bypass paper feed section. 10-01 The leading edge of the paper is not turned ON (blocked) the registration sensor (PS9) even after the lapse of a given period of time after the manual bypass tray starts to feed paper. 10-02 For paper fed from the manual bypass tray, loop forming has not been complete before a sheet enters the registration roller because the rise timing of load to perform registration is earlier than the rise timing of load to form a loop. 10-40 For paper fed from the manual bypass tray, the image write start signal permit continues to be disabled for a predetermined period of time after the timing of the image write start signal output.
+Causes;• Main motor (M1) • Bypass tray paper feed clutch (CL2) • Registration clutch (CL4) • Registration sensor (PS9) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 CL2 load check • Check code: 20 • Multi code: 4 BASEB CN23E-10 (ON) 9-K 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 6 Replace BASEB.
+Code;11-01, 11-02, 11-40
+Description;Misfeed at tray 1 paper feed section. 11-01 The leading edge of the paper is not turned ON (blocked) the registration sensor (PS9) even after the lapse of a given period of time after the tray 1 starts to feed paper. 11-02 For paper fed from the tray 1, loop forming has not been complete before a sheet enters the registration roller because the rise timing of load to perform registration is earlier than the rise timing of load to form a loop. 11-40 For paper fed from the tray 1, the image write start signal permit continues to be disabled for a predetermined period of time after the timing of the image write start signal output. - Paper jam of a sheet of paper left at the tray 1 paper feed section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Tray 1 paper feed clutch (CL3) • Registration clutch (CL4) • Registration sensor (PS9) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 CL3 load check • Check code: 20 • Multi code: 1 BASEB CN22EA-1 (ON) 12-C 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 6 Replace BASEB.
+Code;12-01, 12-40
+Description;Misfeed at tray 2 paper feed section (When PF-P20 or PF-P21 is installed). 12-01 The leading edge of the paper is not turned ON (unblocked) the tray 2 transport sensor (PS6/2) even after the lapse of a given period of time after the tray 2 starts to feed paper. 12-40 For paper fed from the tray 2, the image write start signal permit continues to be disabled for a predetermined period of time after the timing of the image write start signal output. - Paper jam of a sheet of paper left at the tray 2 paper feed section results, if the tray 2 transport sensor (PS6/2) is turned ON (unblocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the tray 2 paper feed section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Tray 2 drive motor (M1/2) • Tray 2 paper feed clutch (CL1/2) • Tray 2 transport clutch (CL2/2) • Tray 2 transport sensor (PS6/2) • Tray 2 PC control board (PCCB/2) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS6/2 I/O check, sensor check PCCB/2 CN3-3 (ON) 17-X 3 CL1/2 load check • Check code: 20 • Multi code: 2 PCCB/2 CN5-3 (ON) 16-P 4 CL2/2 load check • Check code: 21 • Multi code: 1 PCCB/2 CN5-1 (ON) 15-P 5 M1/2 load check • Check code: 28 • Multi code: 1, 2 PCCB/2 CN4-1 to 7 18-P 6 Replace PCCB/2. - - 7 Replace BASEB.
+Code;13-01, 13-40
+Description;Misfeed at tray 3 paper feed section (When PF-P20 or PF-P21 is installed) (bizhub C4050i only). 13-01 The leading edge of the paper is not turned ON (unblocked) the tray 3 transport sensor (PS6/3) even after the lapse of a given period of time after the tray 3 starts to feed paper. 13-40 For paper fed from the tray 3, the image write start signal permit continues to be disabled for a predetermined period of time after the timing of the image write start signal output. - Paper jam of a sheet of paper left at the tray 3 paper feed section results, if the tray 3 transport sensor (PS6/3) is turned ON (unblocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the tray 3 paper feed section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Tray 3 drive motor (M1/3) • Tray 3 paper feed clutch (CL1/3) • Tray 3 transport clutch (CL2/3) • Tray 3 transport sensor (PS6/3) • Tray 3 PC control board (PCCB/3)
+Remedy;1 Initial check items - - 2 PS6/3 I/O check, sensor check PCCB/3 CN3-3 (ON) 17-X 3 CL1/3 load check • Check code: 20 • Multi code: 3 PCCB/3 CN5-3 (ON) 16-P 4 CL2/3 load check • Check code: 21 PCCB/3 CN5-1 (ON) 15-P • Multi code: 2 5 M1/3 load check • Check code: 28 • Multi code: 3, 4 PCCB/3 CN4-1 to 7 18-P 6 Replace PCCB/3.
+Code;20-02, 20-10, 20-11
+Description;Misfeed at vertical transport section (When PF-P20 or PF-P21 is installed). 20-02 For paper fed from the tray 2/3, loop forming has not been complete before a sheet enters the registration roller because the rise timing of load to perform registration is earlier than the rise timing of load to form a loop. 20-10 The leading edge of the paper is not turned OFF (blocked) the tray 2 transport sensor (PS6/2) even after the lapse of a given period of time after the tray 2 starts to feed paper. 20-11 The leading edge of the paper is not turned OFF (blocked) the tray 3 transport sensor (PS6/3) even after the lapse of a given period of time after the tray 3 starts to feed paper. (bizhub C4050i only) - Paper jam of a sheet of paper left at the vertical transport section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Tray 2 drive motor (M1/2) • Tray 3 drive motor (M1/3) • Registration clutch (CL4) • Tray 2 transport clutch (CL2/2) • Tray 3 transport clutch (CL2/3) • Registration sensor (PS9) • Tray 2 transport sensor (PS6/2) • Tray 3 transport sensor (PS6/3) • Base board (BASEB) • Tray 2 PC control board (PCCB/2) • Tray 3 PC control board (PCCB/3)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 PS6/2, PS6/3 I/O check, sensor check PCCB/2 CN3-3 (ON) PCCB/3 CN3-3 (ON) 17-X 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 CL2/2, CL2/3 load check • Check code: 21 • Multi code: 1, 2 PCCB/2 CN5-1 (ON) PCCB/3 CN5-1 (ON) 15-P 6 M1 load check (Main body) • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 7 M1/2, M1/3 load check • Check code: 28 • Multi code: 1, 2, 3, 4 PCCB/2 CN4-1 to 7 PCCB/3 CN4-1 to 7 18-P 8 Replace PCCB/2 or PCCB/3. - - 9 Replace BASEB.
+Code;20-12, 20-21, 20-26
+Description;Misfeed at vertical transport section (When PF-P20 or PF-P21 is installed). 20-12 The leading edge of the paper is not turned OFF (blocked) the tray 2 transport sensor (PS6/2) even after the lapse of a given period of time after the tray 3 starts to feed paper. (bizhub C4050i only) 20-21 The leading edge of the paper is not turned ON (unblocked) the tray 2 transport sensor (PS6/2) even after the lapse of a given period of time after the tray 3 starts to feed paper. (bizhub C4050i only) 20-26 The leading edge of the paper is not turned ON (blocked) the registration sensor (PS9) even after the lapse of a given period of time after the tray 2/3 starts to feed paper. - Paper jam of a sheet of paper left at the vertical transport section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Tray 2 drive motor (M1/2) • Tray 3 drive motor (M1/3) • Registration clutch (CL4) • Tray 2 transport clutch (CL2/2) • Tray 3 transport clutch (CL2/3) • Registration sensor (PS9) • Tray 2 transport sensor (PS6/2) • Tray 3 transport sensor (PS6/3) • Base board (BASEB) • Tray 2 PC control board (PCCB/2) • Tray 3 PC control board (PCCB/3)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 PS6/2, PS6/3 I/O check, sensor check PCCB/2 CN3-3 (ON) PCCB/3 CN3-3 (ON) 17-X 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 CL2/2, CL2/3 load check • Check code: 21 • Multi code: 1, 2 PCCB/2 CN5-1 (ON) PCCB/3 CN5-1 (ON) 15-P 6 M1 load check (Main body) • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 7 M1/2, M1/3 load check • Check code: 28 • Multi code: 1, 2, 3, 4 PCCB/2 CN4-1 to 7 PCCB/3 CN4-1 to 7 18-P 8 Replace PCCB/2 or PCCB/3. - - 9 Replace BASEB.
+Code;30-01, 30-03
+Description;Misfeed at 2nd transfer section 30-01 The registration sensor (PS9) is not turned OFF (unblocked) even after the lapse of a given period of time after the leading edge of the paper has turned ON (blocked) PS9. 30-03 The leading edge of the paper is not turned ON (unblocked) the paper exit sensor (PS13) even after the lapse of a given period of time after a paper feed starts to feed paper. - Paper jam of a sheet of paper left at the 2nd transfer section results, if the registration sensor (PS9) is turned ON (blocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the 2nd transfer section results, if the fusing loop sensor (PS10) is turned ON (blocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the 2nd transfer section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Fusing motor (M3) • Registration clutch (CL4) • Registration sensor (PS9) • Fusing loop sensor (PS10) • Paper exit sensor (PS13) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 PS10 I/O check, sensor check BASEB CN23E-9 (ON) 9-K 4 PS13 I/O check, sensor check BASEB CN16E-3 (ON) 11-K 5 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 6 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 7 M3 load check • Check code: 45 • Multi code: 1, 2, 3 BASEB CN17E-6 to 10 1-C 8 Replace BASEB.
+Code;32-05, 32-06, 32-31
+Description;Misfeed at paper exit section 32-05 The paper exit sensor (PS13) is not turned OFF (blocked) even after the lapse of a given period of time after the leading edge of the paper has turned ON (unblocked) PS13. 32-06 The fusing loop sensor (PS10) is not turned OFF (unblocked) even after the lapse of a given period of time after the leading edge of the paper has turned ON (blocked) PS10. 32-31 The paper exit sensor (PS13) is turned OFF (blocked) before the trailing edge of the paper moves past the fusing pad. - Paper jam of a sheet of paper left at the paper exit section results, if the paper exit sensor (PS13) is turned ON (unblocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the paper exit section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Fusing motor (M3) • Fusing loop sensor (PS10) • Paper exit sensor (PS13) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS10 I/O check, sensor check BASEB CN23E-9 (ON) 9-K 3 PS13 I/O check, sensor check BASEB CN16E-3 (ON) 11-K 4 M3 load check • Check code: 45 • Multi code: 1, 2, 3 BASEB CN17E-6 to 10 1-C 5 Replace BASEB.
+Code;66-02
+Description;Misfeed at DF document feed section 66-02 The after separate sensor (PS16) is not turned ON even after the lapse of a given period of time after the document main motor (M8) has turned ON. - Paper jam of a sheet of paper left at the DF document feed section results, if the after separate sensor (PS16) is turned ON when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Document main motor (M8) • Document paper feed clutch (CL8) • After separate sensor (PS16) • DF control board (DFCB)
+Remedy;1 Initial check items - - 2 PS16 I/O check, sensor check DFCB CN3-2 (ON) 21-P 3 CL8 load check • Check code: 60 • Multi code: 145 DFCB CN4-2 (ON) 21-X 4 M8 load check • Check code: 60 • Multi code: 1, 5 DFCB CN5-1 to 4 21-X 5 Replace DFCB.
+Code;66-05
+Description;Misfeed at DF document reading section 66-05 • The document before read sensor (PS18) is not turned OFF even after the lapse of a given period of time after the document registration sensor (PS17) has turned OFF (blocked). • During transporting document, the paper information is not cleared even after the lapse of a given period of time. • The timing of start of scanning the front side of a document is not notified even after the lapse of a given period of time after the document before read sensor (PS18) has turned ON. • The timing of end of scanning the front side of a document is not notified even after the lapse of a given period of time after the document before read sensor (PS18) has turned OFF. • The timing of start of scanning the back side of a document is not notified even after the lapse of a given period of time after the document before read sensor (PS18) has turned ON. • The timing of end of scanning the back side of a document is not notified even after the lapse of a given period of time after the document before read sensor (PS18) has turned OFF. - Paper jam of a sheet of paper left at the DF document reading results, if the document before read sensor (PS18) is turned ON when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Document main motor (M8) • Document registration sensor (PS17) • Document before read sensor (PS18) • DF control board (DFCB)
+Remedy;1 Initial check items - - 2 Make the adjustment of original stop position. - - 3 PS17 I/O check, sensor check DFCB CN2-8 (ON) 23-P 4 PS18 I/O check, sensor check DFCB CN6-2 (ON) 21-P 5 M8 load check • Check code: 60 • Multi code: 1, 5 DFCB CN5-1 to 4 21-X 6 Replace DFCB.
+Code;66-07
+Description;Misfeed at DF document feed/transport/reading section. Due to a remaining sheet of paper that has not been detected by sensors, before the start of a job, a sensor detects the sheet at an unexpected timing.
+Causes;• Document registration sensor (PS17) • Document before read sensor (PS18) • DF control board (DFCB)
+Remedy;1 Initial check items - - 2 Make the adjustment of original stop position. - - 3 PS17 I/O check, sensor check DFCB CN2-8 (ON) 23-P 4 PS18 I/O check, sensor check DFCB CN6-2 (ON) 21-P 5 Replace DFCB.
+Code;66-08
+Description;Double feed detection jam (When UK-P19 is installed) 66-08 The double feed of document is detected within a given period of time after the leading edge of the paper has turned ON (unblocked) the document registration sensor (PS17).
+Causes;• Multi feed detection board/TX (MFDB/TX) • Multi feed detection board/RX (MFDB/RX) • DF control board (DFCB)
+Remedy;1 Initial check items - - 2 Replace MFDB/TX. - - 3 Replace MFDB/RX. - - 4 Replace DFCB.
+Code;66-13, 66-33
+Description;Misfeed at DF document transport section 66-13 The document registration sensor (PS17) is not turned ON (unblocked) even after the lapse of a given period of time after the leading edge of the paper has turned ON the after separate sensor (PS16). 66-33 The document before read sensor (PS18) is not turned ON even after the lapse of a given period of time after the leading edge of the paper has turned ON (unblocked) the document registration sensor (PS17). - Paper jam of a sheet of paper left at the DF document transport section results, if the document registration sensor (PS17) is turned ON (unblocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Document main motor (M8) • Document paper feed clutch (CL8) • Document registration clutch (CL9) • After separate sensor (PS16) • Document registration sensor (PS17) • Document before read sensor (PS18) • DF control board (DFCB)
+Remedy;1 Initial check items - - 2 PS16 I/O check, sensor check DFCB CN3-2 (ON) 21-P 3 PS17 I/O check, sensor check DFCB CN2-8 (ON) 23-P 4 PS18 I/O check, sensor check DFCB CN6-2 (ON) 21-P 5 CL8 load check • Check code: 60 • Multi code: 145 DFCB CN4-2 (ON) 21-X 6 CL9 load check • Check code: 60 • Multi code: 146 DFCB CN4-4 (ON) 21-X 7 M8 load check • Check code: 60 • Multi code: 1, 5 DFCB CN5-1 to 4 21-X 8 Replace DFCB.
+Code;92-01, 92-02
+Description;Misfeed at duplex pre-registration section 92-01 The leading edge of the paper is not turned ON (blocked) the registration sensor (PS9) even after the lapse of a given period of time after a duplex paper feed sequence has been started. 92-02 After the start of the second-side feed of paper in the duplex mode, loop forming has not been complete before the second side of a sheet enters the registration roller because the rise timing of load to perform registration is earlier than the rise timing of load to form a loop. - Paper jam of a sheet of paper left at the duplex pre-registration section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Registration clutch (CL4) • ADU transport clutch (CL5) • Registration sensor (PS9) • ADU transport sensor (PS11) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 PS11 I/O check, sensor check BASEB CN23E-6 (ON) 9-K 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 CL5 load check • Check code: 81 BASEB CN23E-12 (ON) 9-K • Multi code: 1 6 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 7 Replace BASEB.
+Code;92-03, 92-04
+Description;Misfeed at duplex pre-registration section. 92-03 For the second-side feed of paper in the duplex mode, the image write start signal permit continues to be disabled for a predetermined period of time after the timing of the image write start signal output. 92-04 The leading edge of the paper is not turned OFF (blocked) the ADU transport sensor (PS11) even after the lapse of a given period of time after a duplex paper feed sequence has been started. - Paper jam of a sheet of paper left at the duplex pre-registration section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Registration clutch (CL4) • ADU transport clutch (CL5) • Registration sensor (PS9) • ADU transport sensor (PS11) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS9 I/O check, sensor check BASEB CN22EA-13 (ON) 13-C 3 PS11 I/O check, sensor check BASEB CN23E-6 (ON) 9-K 4 CL4 load check • Check code: 21 • Multi code: 3 BASEB CN22EA-3 (ON) 12-C 5 CL5 load check • Check code: 81 BASEB CN23E-12 (ON) 9-K • Multi code: 1 6 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 7 Replace BASEB.
+Code;93-03
+Description;Misfeed at duplex transport section 93-03 The leading edge of the paper is not turned ON (unblocked) the ADU transport sensor (PS11) even after the lapse of a given period of time after the paper has turned OFF (blocked) the paper exit sensor (PS13). - Paper jam of a sheet of paper left at the duplex transport section results, if the ADU transport sensor (PS11) is turned ON (unblocked) when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset. - Paper jam of a sheet of paper left at the duplex transport section results, if a sheet of paper is determined to exist at a position detected when the main power switch is turned ON, a door is opened and closed, or a misfeed or malfunction is reset.
+Causes;• Main motor (M1) • Fusing motor (M3) • ADU transport clutch (CL5) • ADU forward rotation clutch (CL6) • ADU reverse rotation clutch (CL7) • ADU transport sensor (PS11) • Paper exit sensor (PS13) • Base board (BASEB)
+Remedy;1 Initial check items - - 2 PS11 I/O check, sensor check BASEB CN23E-6 (ON) 9-K 3 PS13 I/O check, sensor check BASEB CN16E-3 (ON) 11-K 4 CL5 load check • Check code: 81 • Multi code: 1 BASEB CN23E-12 (ON) 9-K 5 CL6 load check • Check code: 80 • Multi code: 1 BASEB CN18E-6 (ON) 2-C 6 CL7 load check • Check code: 80 • Multi code: 2 BASEB CN18E-8 (ON) 3-C 7 M1 load check • Check code: 40 • Multi code: 1, 2 BASEB CN17E-1 to 5 1-C 8 M3 load check • Check code: 45 • Multi code: 1, 2, 3 BASEB CN17E-6 to 10 1-C 9 Replace BASEB.
+Code;99-01
+Description;"Controller JAM (paper size error) 99-01 • As a result of a paper size error, the controller transmits a forced stop command to the printer engine and the printer engine is internally processing the size error. • As a result of a paper size error, the controller transmits a forced stop command to the printer engine; but the paper causing the size error cannot be fed out."
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;99-02
+Description;Controller JAM (controller forced stop command) 99-02 The controller transmits a forced stop command under a condition other than a paper size error during a print cycle.
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;99-03
+Description;Controller JAM (image processing) 99-03 Image stabilization not completing a job.
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;99-04
+Description;Controller JAM (a job reservation in the main body is not released) 99-04 A job reservation is not released after a lapse of a given time after that a print start command has been received.
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;99-05
+Description;Controller JAM (main body not starting a job) 99-05 A waiting status is not released even with a print start command received.
+Causes;
+Remedy;1 Initial check items 2 Open and close the front door of the main body.
+Code;99-06
+Description;Controller JAM (print control on the main body is not completed) 99-06 Print control is not completed even after a job has been completed.
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;99-07
+Description;Controller JAM (main body not completing a job) 99-07 The engine does not stop after a lapse of a given time after that a print has finished.
+Causes;
+Remedy;1 Initial check items - - 2 Open and close the front door of the main body.
+Code;C0103
+Description;Tray 2 drive motor malfunction (When PF-P20 or PF-P21 is installed) The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;<When PF-P20 or PF-P21 is installed> • Tray 2 drive motor (M1/2) • Tray 2 PC control board (PCCB/2) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M1/2-PCCB/2 CN4 for proper connection and correct as necessary. 2. Check the connector between PCCB/2 CN1-relay CN24-BASEB CN21E for proper connection and correct as necessary. 3. Check the connector of M1/2 for proper drive coupling and correct as necessary. 4. Check CPUB for proper installation and correct as necessary. 5. M1/2 load check • Check code: 28 • Multi code: 1, 2 • Control signal: PCCB/2 CN4-1 to 7 • Location of electrical component: 18-P 6. Replace M1/2. 7. PCCB/2 F1 conduction check 8. Replace PCCB/2. 9. Replace CPUB. 10. Replace BASEB.
+Code;C0104
+Description;Tray 3 drive motor malfunction (When PF-P20 or PF-P21 is installed) (bizhub C4050i only) The motor lock signal remains HIGH for a predetermined continuous period of time while the motor is turning.
+Causes;<When PF-P20 or PF-P21 is installed> • Tray 3 drive motor (M1/3) • Tray 3 PC control board (PCCB/3) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M1/3-PCCB/3 CN4 for proper connection and correct as necessary. 2. Check the connector between PCCB/3 CN1-relay CN2PC-PCCB/2 CN2 for proper connection and correct as necessary. 3. Check the connector between PCCB/2 CN1-relay CN24-BASEB CN21E for proper connection and correct as necessary. 4. Check the connector of M1/3 for proper drive coupling and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. M1/3 load check • Check code: 28 • Multi code: 3, 4 • Control signal: PCCB/3 CN4-1 to 7 • Location of electrical component: 18-P 7. Replace M1/3. 8. PCCB/3 F1 and F2 conduction check 9. Replace PCCB/3. 10. Replace CPUB. 11. Replace BASEB.
+Code;C0202
+Description;Tray 1 feeder up/down abnormality The tray 1 upper limit sensor (PS7) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 1 lift-up motor (M6) • Tray 1 upper limit sensor (PS7) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Remove the tray and check to see if a piece of paper is not left inside the machine. 2. Check the connector between M6-BASEB CN19E for proper connection and correct as necessary. 3. Check the connector of M6 for proper drive coupling and correct as necessary. 4. Check the connector between PS7-BASEB CN22E for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. PS7 I/O check, sensor check • Control signal: BASEB CN22EA-7 (ON) • Location of electrical component: 12-C 7. M6 load check • Check code: 23 • Multi code: 4 • Control signal: BASEB CN19E-7 to 8 • Location of electrical component: 10-C 8. Replace M6. 9. Replace CPUB. 10. BASEB F11E conduction check 11. Replace BASEB.
+Code;C0204
+Description;Tray 2 feeder up/down abnormality (When PF-P20 or PF-P21 is installed) The tray 2 upper limit sensor (PS2/2) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 2 lift-up motor (M2/2) • Tray 2 upper limit sensor (PS2/2) • Tray 2 PC control board (PCCB/2) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Remove the tray and check to see if a piece of paper is not left inside the machine. 2. Check the connector between M2/2-PCCB/2 CN4 for proper connection and correct as necessary. 3. Check the connector of M2/2 for proper drive coupling and correct as necessary. 4. Check the connector between PS2/2-PCCB/2 CN3 for proper connection and correct as necessary. 5. Check the connector between PCCB/2 CN1-relay CN24-BASEB CN21E for proper connection and correct as necessary. 6. Check CPUB for proper installation and correct as necessary. 7. PS2/2 I/O check, sensor check • Control signal: PCCB/2 CN3-9 (ON) • Location of electrical component: 18-X 8. M2/2 load check • Check code: 23 • Multi code: 5 • Control signal: PCCB/2 CN4-8 to 9 • Location of electrical component: 18-P 9. Replace M2/2. 10. Replace PCCB/2. 11. Replace CPUB. 12. Replace BASEB.
+Code;C0206
+Description;Tray 3 feeder up/down abnormality (When PF-P20 or PF-P21 is installed) (bizhub C4050i only) The tray 3 upper limit sensor (PS2/3) is not turned ON (blocked) even after the set period of time has elapsed after the paper lift-up operation for the drawer began.
+Causes;• Tray 3 lift-up motor (M2/3) • Tray 3 upper limit sensor (PS2/3) • Tray 3 PC control board (PCCB/3) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Remove the tray and check to see if a piece of paper is not left inside the machine. 2. Check the connector between M2/3-PCCB/3 CN4 for proper connection and correct as necessary. 3. Check the connector of M2/3 for proper drive coupling and correct as necessary. 4. Check the connector between PS2/3-PCCB/3 CN3 for proper connection and correct as necessary. 5. Check the connector between PCCB/3 CN1-relay CN2PC-PCCB/2 CN2 for proper connection and correct as necessary. 6. Check the connector between PCCB/2 CN1-relay CN24-BASEB CN21E for proper connection and correct as necessary. 7. Check CPUB for proper installation and correct as necessary. 8. PS2/3 I/O check, sensor check • Control signal: PCCB/3 CN3-9 (ON) • Location of electrical component: 18-X 9. M2/3 load check • Check code: 23 • Multi code: 6 • Control signal: PCCB/3 CN4-8 to 9 • Location of electrical component: 18-P 10. Replace M2/3. 11. PCCB/3 F2 conduction check 12. Replace PCCB/3. 13. Replace CPUB. 14. Replace BASEB.
+Code;C2152, C2153, C2154
+Description;• C2152: Transfer belt fault at initial position return • C2153: Transfer belt spacing fault at K pressure switching • C2154: Transfer belt contact fault at all pressure switching • C2153: The 1st transfer pressure switch (SW4) is not turned ON even after the lapse of a given period of time after the retraction operation started. • C2154: The 1st transfer pressure switch (SW4) is not turned OFF even after the lapse of a given period of time after the pressure operation started.
+Causes;• Color motor (M2) • 1st transfer pressure clutch (CL1) • 1st transfer pressure switch (SW4) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M2-BASEB CN17E for proper connection and correct as necessary. 2. Check the connector of M2 for proper drive coupling and correct as necessary. 3. Check the connector between SW4-BASEB CN18E for proper connection and correct as necessary. 4. Check the connector between CL1-relay CN13-BASEB CN18E for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. SW4 I/O check, sensor check • Control signal: BASEB CN18E-3 (ON) • Location of electrical component: 2-C 7. CL1 load check • Check code: 24 • Multi code: 1 • Control signal: BASEB CN18E-4 (ON) • Location of electrical component: 2-C 8. M2 load check • Check code: 41 • Multi code: 1, 2 • Control signal: BASEB CN17E-11 to 15 • Location of electrical component: 1-C 9. Replace M2. 10. Replace CPUB. 11. Replace BASEB.
+Code;C2155, C2156
+Description;• C2155: Transfer belt contact fault after K pressure established • C2156: Transfer belt spacing fault after all pressure established • C2155: The 1st transfer pressure sensor (SW4) is turned OFF after the lapse of given time after the retraction operation is finished. • C2156: The 1st transfer pressure sensor (SW4) is turned ON after the lapse of given time after the pressure operation is finished.
+Causes;• Color motor (M2) • 1st transfer pressure clutch (CL1) • 1st transfer pressure switch (SW4) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M2-BASEB CN17E for proper connection and correct as necessary. 2. Check the connector of M2 for proper drive coupling and correct as necessary. 3. Check the connector between SW4-BASEB CN18E for proper connection and correct as necessary. 4. Check the connector between CL1-relay CN13-BASEB CN18E for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. SW4 I/O check, sensor check • Control signal: BASEB CN18E-3 (ON) • Location of electrical component: 2-C 7. CL1 load check • Check code: 24 • Multi code: 1 • Control signal: BASEB CN18E-4 (ON) • Location of electrical component: 2-C 8. M2 load check • Check code: 41 • Multi code: 1, 2 • Control signal: BASEB CN17E-11 to 15 • Location of electrical component: 1-C 9. Replace M2. 10. Replace CPUB. 11. Replace BASEB.
+Code;C2253, C2254
+Description;• C2253: Color motor failure to turn • C2254: Color motor turning at abnormal timing • C2253: The control circuit detects motor failure to turn while the motor is turning. • C2254: The control circuit detects motor turning while the motor remains stationary.
+Causes;• Color motor (M2) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M2-BASEB CN17E for proper connection and correct as necessary. 2. Check the connector of M2 for proper drive coupling and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. M2 load check • Check code: 41 • Multi code: 1, 2 • Control signal: BASEB CN17E-11 to 15 • Location of electrical component: 1-C 5. Replace M2. 6. Replace CPUB. 7. BASEB F20E conduction check 8. Replace BASEB.
+Code;C2350
+Description;Toner suction fan failure to turn The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Toner suction fan (FM2) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between FM2-relay CN10-BASEB CN18E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. FM2 load check • Check code: 42 • Multi code: 3 • Control signal: BASEB CN18E-12 (REM), BASEB CN18E-14 (LOCK) • Location of electrical component: 3-C 5. Replace FM2. 6. Replace CPUB. 7. Replace BASEB.
+Code;C2411 ... C2414
+Description;• C2411: Imaging unit/C new article release • C2412: Imaging unit/M new article release • C2413: Imaging unit/Y new article release • C2414: Imaging unit/K new article release The status with the new unit is not cleared after the new imaging unit is set.
+Causes;• Imaging unit/C,M,Y,K • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reinstall the imaging unit. 2. Check the connector between the imaging unit/C-relay CN5-BASEB CN14E for proper connection and correct as necessary. (C2411) 3. Check the connector between the imaging unit/M-relay CN8-BASEB CN14E for proper connection and correct as necessary. (C2412) 4. Check the connector between the imaging unit/Y-relay CN7-BASEB CN14E for proper connection and correct as necessary. (C2413) 5. Check the connector between the imaging unit/K-relay CN6-BASEB CN14E for proper connection and correct as necessary. (C2414) 6. Check CPUB for proper installation and correct as necessary. 7. Replace the corresponding imaging unit. 8. Replace CPUB. 9. Replace BASEB.
+Code;C2551 ... C2557
+Description;• C2551: Abnormally low toner density detected cyan TCR sensor • C2553: Abnormally low toner density detected magenta TCR sensor • C2555: Abnormally low toner density detected yellow TCR sensor • C2557: Abnormally low toner density detected black TCR sensor When sampling data is determined in TC ratio calculation control, TCR sensor output is lower than a predetermined value for a predetermined number of times in a row even though there is toner in the toner cartridge.
+Causes;• Imaging unit/C,M,Y,K • Toner supply motor/YM (M4) • Toner supply motor/CK (M5) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Perform image troubleshooting procedure if image density is low. 2. Reinstall the imaging unit. 3. Check the connector between the imaging unit/C-relay CN5-BASEB CN14E for proper connection and correct as necessary. (C2551) 4. Check the connector between the imaging unit/M-relay CN8-BASEB CN14E for proper connection and correct as necessary. (C2553) 5. Check the connector between the imaging unit/Y-relay CN7-BASEB CN14E for proper connection and correct as necessary. (C2555) 6. Check the connector between the imaging unit/K-relay CN6-BASEB CN14E for proper connection and correct as necessary. (C2557) 7. Check the connector between M4-BASEB CN13E for proper connection and correct as necessary. 8. Check the connector between M5-BASEB CN13E for proper connection and correct as necessary. 9. Check CPUB for proper installation and correct as necessary. 10. M4, M5 operation check • Control signal: BASEB CN13E-1 to 4 (M4), BASEB CN13E-5 to 8 (M5) • Location of electrical component: 4-C 11. Replace the corresponding imaging unit. 12. Replace CPUB. 13. Replace BASEB.
+Code;C2552 ... C2558
+Description;• C2552: Abnormally high toner density detected cyan TCR sensor • C2554: Abnormally high toner density detected magenta TCR sensor • C2556: Abnormally high toner density detected yellow TCR sensor • C2558: Abnormally high toner density detected black TCR sensor TC ratio in the imaging unit, which is determined by toner replenishing amount control mechanism, is a predetermined value or more for a given number of times consecutively.
+Causes;• Imaging unit/C,M,Y,K • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reinstall the imaging unit. 2. Check the connector between the imaging unit/C-relay CN5-EXCB CN14E for proper connection and correct as necessary. (C2552) 3. Check the connector between the imaging unit/M-relay CN8-EXCB CN14E for proper connection and correct as necessary. (C2554) 4. Check the connector between the imaging unit/Y-relay CN7-EXCB CN14E for proper connection and correct as necessary. (C2556) 5. Check the connector between the imaging unit/K-relay CN6-EXCB CN14E for proper connection and correct as necessary. (C2558) 6. Check CPUB for proper installation and correct as necessary. 7. Replace the corresponding imaging unit. 8. Replace CPUB. 9. Replace BASEB.
+Code;C2559 ... C255C
+Description;• C2559: Cyan TCR sensor adjustment failure • C255A: Magenta TCR sensor adjustment failure • C255B: Yellow TCR sensor adjustment failure • C255C: Black TCR sensor adjustment failure TCR sensor automatic adjustment does not function properly, failing to adjust to an appropriate value.
+Causes;• Imaging unit/C,M,Y,K • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reinstall the imaging unit. 2. Check the connector between the imaging unit/C-relay CN5-BASEB CN14E for proper connection and correct as necessary. (C2559) 3. Check the connector between the imaging unit/M-relay CN8-BASEB CN14E for proper connection and correct as necessary. (C255A) 4. Check the connector between the imaging unit/Y-relay CN7-BASEB CN14E for proper connection and correct as necessary. (C255B) 5. Check the connector between the imaging unit/K-relay CN6-BASEB CN14E for proper connection and correct as necessary. (C255C) 6. Check CPUB for proper installation and correct as necessary. 7. Replace the corresponding imaging unit. 8. Replace CPUB. 9. Replace BASEB.
+Code;C2561 ... C2564
+Description;• C2561: Cyan TCR sensor failure • C2562: Magenta TCR sensor failure • C2563: Yellow TCR sensor failure • C2564: Black TCR sensor failure • Alarm signals for each TCR sensor is detected more than the predetermined number of times. • This detection is used for detecting disconnection of TCR sensor connector.
+Causes;• Imaging unit/C,M,Y,K • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reinstall the imaging unit. 2. Check the connector between the imaging unit/C-relay CN5-BASEB CN14E for proper connection and correct as necessary. (C2561) 3. Check the connector between the imaging unit/M-relay CN8-BASEB CN14E for proper connection and correct as necessary. (C2562) 4. Check the connector between the imaging unit/Y-relay CN7-BASEB CN14E for proper connection and correct as necessary. (C2563) 5. Check the connector between the imaging unit/K-relay CN6-BASEB CN14E for proper connection and correct as necessary. (C2564) 6. Check CPUB for proper installation and correct as necessary. 7. Replace the corresponding imaging unit. 8. Replace CPUB. 9. Replace BASEB.
+Code;C2650
+Description;Main backup media access error • The error was found when reading out the data. • The re-written data, which has been read out, checked and founded as error, is read out again and found as error. • The error was found when reading out the counter value. • The main body detects that the backup board is not mounted.
+Causes;• Backup board (ERB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between ERB CN1-BASEB CN20E for proper connection and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Replace CPUB. 4. Replace BASEB. 5. Replace ERB. 1. Replace the current ERB with a new one. 2. Replace the following components with new ones. When the transfer belt unit, transfer roller and the fusing unit have been replaced with new ones, perform [Service Mode] -> [Counter] -> [Life] -> [New Release]. • Imaging unit • Transfer belt unit • Fusing unit • Transfer roller • Feed roller, pick-up roller, separation roller (including options) • Separation pad • Toner filter 3. Turn ON the main power switch and check to see that warm-up is started. Make sure that trouble codes other than C2650 or improper IU/TC placement is not detected. 4. Make the specified readjustments. 6. If the above actions do not solve the problem, contact KM.
+Code;C2A21 ... C2A24
+Description;• C2A21: Toner cartridge/C new release failure • C2A22: Toner cartridge/M new release failure • C2A23: Toner cartridge/Y new release failure • C2A24: Toner cartridge/K new release failure. The status with the new unit is not cleared after the new toner cartridge is set.
+Causes;• Toner cartridge/C,M,Y,K • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reinstall the toner cartridge. 2. Clean the connection between the toner cartridge and the main body if dirty. 3. Check the connector between the toner cartridge/C-relay CN102-BASEB CN11E for proper connection and correct as necessary. (C2A21) 4. Check the connector between the toner cartridge/M-relay CN101-BASEB CN11E for proper connection and correct as necessary. (C2A22) 5. Check the connector between the toner cartridge/Y-relay CN100-BASEB CN11E for proper connection and correct as necessary. (C2A23) 6. Check the connector between the toner cartridge/K-relay CN103-BASEB CN11E for proper connection and correct as necessary. (C2A24) 7. Check CPUB for proper installation and correct as necessary. 8. Replace the corresponding toner cartridge. 9. Replace CPUB. 10. Replace BASEB.
+Code;C3201, C3202
+Description;• C3201: Fusing motor failure to turn • C3202: Fusing motor turning at abnormal timing • C3201: The control circuit detects motor failure to turn while the motor is turning. • C3202: The control circuit detects motor turning while the motor remains stationary.
+Causes;• Fusing motor (M3) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M3-BASEB CN17E for proper connection and correct as necessary. 2. Check the loading status of the fusing unit drive, and correct the error as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. M3 load check • Check code: 45 • Multi code: 1, 2, 3 • Control signal: BASEB CN17E-6 to 10 • Location of electrical component: 1-C 5. Replace M3. 6. Replace CPUB. 7. BASEB F19E conduction check 8. Replace BASEB.
+Code;C3425
+Description;Fusing warm-up trouble • Detected temperature of the heating roller temperature sensor (TEMS) does not go up a given range of temperature even after a lapse of given period of time at warm up. • The temperature detected by the heating roller temperature sensor (TEMS) does not shift from the prestandby state even after the lapse of a predetermined period of time after the completion of warm-up.
+Causes;• Fusing unit • Heating roller temperature sensor (TEMS) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. DCPS F102 or FU181 conduction check. 10. Replace DCPS.
+Code;C3722, C3725, C3726
+Description;• C3722: Fusing abnormally high temperature detection (Edge of the heating roller) • C3725: Fusing abnormally high temperature detection (Main of the heating roller) • C3726: Fusing abnormally high temperature detection (Center of the heating roller) • C3722: Detected temperature of the heating roller thermistor/Edg (TH1) goes beyond a given temperature for a given period of time consecutively. • C3725: Detected temperature of the heating roller temperature sensor (TEMS) goes beyond a given temperature for a given period of time consecutively. • C3726: Detected temperature of the heating roller thermistor/Ctr (TH2) goes beyond a given temperature for a given period of time consecutively.
+Causes;• Fusing unit • C3722: Heating roller thermistor/Edg (TH1) • C3725: Heating roller temperature sensor (TEMS) • C3726: Heating roller thermistor/Ctr (TH2) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. Replace DCPS.
+Code;C3731
+Description;Fusing abnormally high temperature detection (hard protector) The hard protector signal malfunction is detected for a predetermined continuous period of time or more.
+Causes;• Fusing unit • Heating roller thermistor/Edg (TH1) • Heating roller temperature sensor (TEMS) • Heating roller thermistor/Ctr (TH2) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. Replace DCPS.
+Code;C3825, C3826
+Description;• C3825: Fusing abnormally low temperature detection (Main of the heating roller) • C3826: Fusing abnormally low temperature detection (Center of the heating roller) • C3825: The heating roller temperature sensor (TEMS) continues to detect a temperature lower than a predetermined one for a predetermined period of time. • C3826: The heating roller thermistor/Ctr (TH2) continues to detect a temperature lower than a predetermined one for a predetermined period of time.
+Causes;• Fusing unit • C3825: Heating roller temperature sensor (TEMS) • C3826: Heating roller thermistor/Ctr (TH2) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. DCPS F102 or FU181 conduction check. 10. Replace DCPS.
+Code;C3922, C3925, C3926
+Description;• C3922: Fusing sensor wire breaks detection (Edge of the heating roller) • C3925: Fusing sensor wire breaks detection (Main of the heating roller) • C3926: Fusing sensor wire breaks detection (Center of the heating roller) • C3922: The maximum value and minimum value of detected temperature of the heating roller thermistor/Edg (TH1) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below or above given temperatures. • C3925: The maximum value and minimum value of detected temperature of the heating roller temperature sensor (TEMS2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below or above given temperatures. • C3926: The maximum value and minimum value of detected temperature of the heating roller thermistor/Ctr (TH2) is compared after a lapse of given time from starting of warm up and the gap between the value of maximum and minimum is below or above given temperatures.
+Causes;• Fusing unit • C3922: Heating roller thermistor/Edg (TH1) • C3925: Heating roller temperature sensor (TEMS) • C3926: Heating roller thermistor/Ctr (TH2) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. DCPS F102 or FU181 conduction check. 10. Replace DCPS.
+Code;C392B
+Description;Fusing sensor wire breaks detection (difference of temperature) The difference between the temperature corrected by the heating roller thermistor/Edg (TH1) and the temperature detected by the heating roller thermistor/Ctr (TH2) exceeds a predetermined value.
+Causes;• Fusing unit • Heating roller thermistor/Edg (TH1) • Heating roller thermistor/Ctr (TH2) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the open/close operation of the right door. 3. Check the connector between the fusing unit-relay CN3-BASEB CN10E for proper connection and correct as necessary. 4. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace the fusing unit. 7. Replace CPUB. 8. Replace BASEB. 9. DCPS F102 or FU181 conduction check. 10. Replace DCPS.
+Code;C4091
+Description;Engine communication error. Communication with the CTL is interrupted for one min. or longer during a stabilization sequence.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reboot the machine. 2. Replace CPUB. 3. Replace BASEB.
+Code;C40A2 ... C40C5
+Description;• C40A2: Mechanical controller PF communication data error • C40A3: Mechanical controller PF transmission timeout • C40A4: Mechanical controller PF communication pulse error • C40A5: QSPI communication clock switching error • C40A6: Mechanical controller ASIC communication error • C40C3: CTL PF transmission timeout 1 • C40C5: CTL PF transmission timeout 2 A CPU communication error is detected.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Replace CPUB. 5. BASEB F15E and PTC2E conduction check 6. Replace BASEB.
+Code;C4101
+Description;Polygon motor rotation trouble. • The polygon motor fails to turn stably even after the lapse of a given period of time after activating and changing rotation speed the polygon motor. • Motor lock signal detects HIGH for a given period time consecutively during the polygon motor is rotating.
+Causes;• PH unit • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between the PH unit-BASEB CN5E for proper connection and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Polygon motor load check • Check code: 32 • Multi code: 1, 3 4. Replace the PH unit. 5. Replace CPUB. 6. Replace BASEB.
+Code;C4501
+Description;Laser malfunction • SOS signal is not detected even after the lapse of a given period of time after starting the laser output. • SOS signal is not detected for a given period of time during printing or IDC sensor adjustment.
+Causes;• PH unit • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between the PH unit-BASEB CN13 for proper connection and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Replace the PH unit. 4. Replace CPUB. 5. Replace BASEB.
+Code;C5102, C5103
+Description;• C5102: Main motor failure to turn • C5103: Main motor turning at abnormal timing • C5102: The control circuit detects motor failure to turn while the motor is turning. • C5103: The control circuit detects motor turning while the motor remains stationary.
+Causes;• Main motor (M1) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between M1-BASEB CN17E for proper connection and correct as necessary. 2. Check the loading status of the main drive, and correct the error as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. M1 load check • Check code: 40 • Multi code: 1, 2 • Control signal: BASEB CN17E-1 to 5 • Location of electrical component: 1-C 5. Replace M1. 6. Replace CPUB. 7. BASEB F18E conduction check 8. Replace BASEB.
+Code;C5357
+Description;Machine cooling fan failure to turn The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Machine cooling fan (FM1) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between FM1-relay CN23-BASEB CN19E for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. FM1 load check • Check code: 42 • Multi code: 1, 2 • Control signal: BASEB CN19E-4 (REM), BASEB CN19E-6 (LOCK) • Location of electrical component: 9-C 5. Replace FM1. 6. Replace CPUB. 7. Replace BASEB.
+Code;C5360
+Description;Clean unit fan failure to turn (When CU-202 is installed) (Europe models only) The fan lock signal remains HIGH for a predetermined continuous period of time while the fan is turning.
+Causes;• Exhaust fan/1 (FM1) • Exhaust fan/2 (FM2) • Exhaust fan/3 (FM3) • Clean unit drive board (CUDB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between CUDB CN1-relay CN35-BASEB CN25E for proper connection and correct as necessary. 2. Check the connector between FM1-relay CN101-CUDB CN2 for proper connection and correct as necessary. 3. Check the connector between FM2-relay CN102-CUDB CN2 for proper connection and correct as necessary. 4. Check the connector between FM3-relay CN103-CUDB CN2 for proper connection and correct as necessary. 5. Check the fan for possible overload and correct as necessary. 6. Check CPUB for proper installation and correct as necessary. 7. FM1 load check • Check code: 42 • Multi code: 9, 10 • Control signal: CUDB CN2-1 (REM), CUDB CN2-3 (LOCK) • Location of electrical component: 27-L 8. FM2 load check • Check code: 42 • Multi code: 9, 10 • Control signal: CUDB CN2-4 (REM), CUDB CN2-6 (LOCK) • Location of electrical component: 28-L 9. FM3 load check • Check code: 42 • Multi code: 9, 10 • Control signal: CUDB CN2-7 (REM), CUDB CN2-9 (LOCK) • Location of electrical component: 28-L 10. Replace the defective fan. (FM1 / FM2 / FM3) 11. Replace CUDB. 12. Replace CPUB. 13. Replace BASEB.
+Code;C5372
+Description;MFP control board CPU temperature failure Temperature failure of CPU on the CPU board was detected.
+Causes;• CPU cooling fan (FM3) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between FM3-BASEB CN17 for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. FM3 operation check • Control signal: BASEB CN17-1 to 2 • Location of electrical component: 21-I 5. Replace CPUB. 6. BASEB ICP1 conduction check 7. Replace BASEB.
+Code;C5501
+Description;AC signal abnormality The zero cross signal is not input.
+Causes;• Fusing unit • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the fusing unit for correct installation (whether it is secured in position). 2. Check the connector between DCPS CN6-BASEB CN1E for proper connection and correct as necessary. 3. Check the connector between the fusing unit-relay CN2-DCPS CN2 for proper connection and correct as necessary. 4. Check CPUB for proper installation and correct as necessary. 5. Replace the fusing unit. 6. Replace CPUB. 7. Replace BASEB. 8. Replace DCPS.
+Code;C5601
+Description;Engine control malfunction. Engine control malfunction is detected with port monitor control.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Replace CPUB. 4. Replace BASEB.
+Code;C5605, C5606
+Description;• C5605: Engine communication data error • C5606: Engine transmission timeout. A communication error is detected between CPUs.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Replace CPUB. 5. Replace BASEB.
+Code;C5610
+Description;PH LD drive communication error. • LD drive write data and read data disagree with each other a predetermined number of consecutive times. • Different PH unit is installed.
+Causes;• PH unit • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Reboot the machine. 2. Check the connector between the PH unit-BASEB CN13 for proper connection and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Replace the PH unit. 5. Replace CPUB. 6. Replace BASEB.
+Code;C5620
+Description;Mechanical controller WDT error. Communication error is detected in mechanical controller ASIC.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Replace CPUB. 5. Replace BASEB.
+Code;C5701
+Description;Power supply malfunction. A condition is detected in which no power is being supplied to the base board (BASEB).
+Causes;• Front door sensor (PS1) • Right door sensor (PS2) • Front door switch (SW2) • Right door switch (SW5) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between PS1, PS2-BASEB CN16E for proper connection and correct as necessary. 2. Check the connector between SW2, SW5-relay CN36-DCPS CN3 for proper connection and correct as necessary. 3. Check the connector between DCPS CN4-BASEB CN3E for proper connection and correct as necessary. 4. Check the connector between DCPS CN6-BASEB CN1E for proper connection and correct as necessary. 5. Check CPUB for proper installation and correct as necessary. 6. Replace CPUB. 7. BASEB F5E conduction check 8. Replace BASEB. 9. Replace DCPS.
+Code;C6001
+Description;DF related configuration error 1. Inconsistency in the configuration with the installed DF is detected on the main body.
+Causes;• DF control board (DFCB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the type of the installed DF and replace it if it is a wrong one. 2. Check to see the [Service mode] -> [System 2] -> [ADF Settings] is correct. It corrects, when a model is different. 3. Check the connector between DFCB CN9-BASEB CN6E for proper connection and correct as necessary. 4. Check CPUB for proper installation and correct as necessary. 5. Replace DFCB. 6. Replace CPUB. 7. Replace BASEB.
+Code;C6002
+Description;DF related configuration error 2. Inconsistency in the configuration with the installed DF is detected on the main body.
+Causes;• DF control board (DFCB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the type of the installed DF and replace it if it is a wrong one. 2. Correct the harness connection between DFCB CN9-BASEB CN6E if faulty. 3. Check CPUB for proper installation and correct as necessary.
+Code;C6102
+Description;Drive system home sensor malfunction. • The scanner home sensor (PS21) is unable to detect the scanner located at its home position. • The scanner home sensor (PS21) is unable to detect a scanner even when the scanner motor (M9) has been driven to move the scanner over the maximum travelling distance. • The scanner home sensor (PS21) detects the scanner when the scanner has moved the maximum travelling distance from the position, at which it blocks the scanner home sensor (PS21).
+Causes;• Scanner home sensor (PS21) • Scanner motor (M9) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Correct or change the scanner drive (pulley, gear, belt) if it is faulty. 2. Correct the scanner motor set screw if loose. 3. Adjust [Image Position: Leading Edge] and [Sub Scan Zoom Adj.]. 4. Check the connector between M9-BASEB CN9E for proper connection and correct as necessary. 5. Check the connector between PS21-BASEB CN8E for proper connection and correct as necessary. 6. Check CPUB for proper installation and correct as necessary. 7. PS21 I/O check, sensor check • Control signal: BASEB CN8E-6 (ON) • Location of electrical component: 23-K 8. M9 operation check • Control signal: BASEB CN9E-1 to 4 • Location of electrical component: 22-K 9. Replace CPUB. 10. BASEB F10E or F16E conduction check. 11. Replace BASEB.
+Code;C6704
+Description;Image input time out. Image data is not input from the scanner to the CPU board (CPUB).
+Causes;• CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Bus Check] -> [Scanner -> Memory], and conduct the memory bus function. 2. Check CPUB for proper installation and correct as necessary. 3. Replace IR CIS. 4. Replace CPUB. 5. Replace BASEB.
+Code;C6751
+Description;CCD clamp/gain adjustment failure. • The adjustment value is 0 or 255 during a CCD clamp adjustment. • The peak value of the output data is 64 or less during a CCD gain adjustment.
+Causes;• CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between IR CIS-BASEB CN6 for proper connection and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Check for possible extraneous light and correct as necessary. 4. Replace IR CIS. 5. Replace CPUB. 6. Replace BASEB.
+Code;C6752
+Description;ASIC clock input error (front side) When starting the machine, verification on reading and writing the predetermined value for CPU (image processing section) on CPU board (CPUB) was conducted, and verification failure was detected.
+Causes;• CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace IR CIS. 3. Replace CPUB. 4. Replace BASEB.
+Code;C6753
+Description;ASIC clock input error (back side) When starting the machine, verification on reading and writing the predetermined value for CPU (image processing section) on CPU board (CPUB) was conducted, and verification failure was detected.
+Causes;• DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace the DF CIS module assy. 3. Replace CPUB. 4. Replace BASEB.
+Code;C6754, C6755
+Description;• C6754: CIS clamp adjustment failure • C6755: CIS gain adjustment failure • C6754: After the gain adjustment is performed at the start-up, the CIS clamp adjustment value is too high or too low. • C6755: After the gain adjustment is performed at the start-up, the peak value of the output data is lower than a given value.
+Causes;• DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Check for possible extraneous light and correct as necessary. 3. Clean the back side reading glass and the shading sheet if dirty. 4. Replace the DF CIS module assy. 5. Replace CPUB. 6. Replace BASEB.
+Code;C6756
+Description;CIS power-supply voltage malfunction. Power is not supplied to CIS after the lapse of a given period of time after the main power switch or power key is turned ON or the machine recovers from the sleep mode.
+Causes;• CIS module (IR CIS) • DC power supply (DCPS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connector between BASEB CN2E-DCPS CN5 for proper connection and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Replace IR CIS. 4. Replace CPUB. 5. Replace BASEB. 6. Replace DCPS.
+Code;C6902, C6903
+Description;• C6902: Bus check NG1-1• C6903: Bus check NG1-2 • C6902, C6903: When bus check (front side) detects an error.
+Causes;• CIS module (IR CIS) • DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;C6912, C6913
+Description;• C6912: Bus check NG2-1 • C6913: Bus check NG2-2 • C6912, C6913: When bus check (back side) detects an error.
+Causes;• CIS module (IR CIS) • DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;C6F01 ... C6FDD
+Description;• C6F01: Scanner sequence trouble 1 • C6F02: Scanner sequence trouble 2 • C6F03: Scanner sequence trouble 3 • C6F04: Scanner sequence trouble 4 • C6F05: Scanner sequence trouble 5 • C6F06: Scanner sequence trouble 6 • C6F07: Scanner sequence trouble 7 • C6F08: Scanner sequence trouble 8 • C6F09: Scanner sequence trouble 9 • C6F0A: Scanner sequence trouble 10 • C6FDC: Scanner sequence trouble DC • C6FDD: Scanner sequence trouble DD The original transport interval becomes shorter than the predetermined value due to an original transport control error in original reading in DF.
+Causes;• CPU board (CPUB) • Base board (BASEB) • DF control board (DFCB)
+Remedy;1. Correct the cable connection between BASEB CN6E-DFCB CN9 if faulty. 2. Check CPUB for proper installation and correct as necessary. 3. Replace DFCB. 4. Replace CPUB. 5. Replace BASEB.
+Code;C7111
+Description;Tray 1 lift-up motor failure. After starting the motor, an error is detected for the malfunction detection signal.
+Causes;• Tray 1 lift-up motor (M6) • Base board (BASEB)
+Remedy;1. Check the connector between M6-BASEB CN19E for proper connection and correct as necessary. 2. Check the connector of M6 for proper drive coupling and correct as necessary. 3. M6 conduction check • Control signal: BASEB CN19E-7 to 8 • Location of electrical component: 10-C 4. Replace M6. 5. Replace BASEB.
+Code;C7131
+Description;Toner supply motor/CK failure. After starting the motor, an error is detected for the malfunction detection signal.
+Causes;• Toner supply motor/CK (M5) • Base board (BASEB)
+Remedy;1. Check the connector between M5-BASEB CN13E for proper connection and correct as necessary. 2. Check the connector of M5 for proper drive coupling and correct as necessary. 3. M5 conduction check • Control signal: BASEB CN13E-5 to 8 • Location of electrical component: 4-C 4. Replace M5. 5. Replace BASEB.
+Code;C7133
+Description;Toner supply motor/YM failure. After starting the motor, an error is detected for the malfunction detection signal.
+Causes;• Toner supply motor/YM (M4) • Base board (BASEB)
+Remedy;1. Check the connector between M4-BASEB CN13E for proper connection and correct as necessary. 2. Check the connector of M4 for proper drive coupling and correct as necessary. 3. M4 conduction check • Control signal: BASEB CN13E-1 to 4 • Location of electrical component: 4-C 4. Replace M4. 5. Replace BASEB.
+Code;C7201
+Description;Tray 1 paper feed clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• Tray 1 paper feed clutch (CL3) • Base board (BASEB)
+Remedy;1. Check the connector between CL3-relay CN44-BASEB CN22E for proper connection and correct as necessary. 2. Check the connector of CL3 for proper drive coupling and correct as necessary. 3. CL3 conduction check • Control signal: BASEB CN22EA-1 (ON) • Location of electrical component: 12-C 4. Replace CL3. 5. Replace BASEB.
+Code;C7206
+Description;Bypass tray paper feed clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• Bypass tray paper feed clutch (CL2) • Base board (BASEB)
+Remedy;1. Check the connector between CL2-relay CN46-BASEB CN23E for proper connection and correct as necessary. 2. Check the connector of CL2 for proper drive coupling and correct as necessary. 3. CL2 conduction check • Control signal: BASEB CN23E-10 (ON) • Location of electrical component: 9-K 4. Replace CL2. 5. Replace BASEB.
+Code;C720A
+Description;Registration clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• Registration clutch (CL4) • Base board (BASEB)
+Remedy;1. Check the connector between CL4-relay CN45-BASEB CN22E for proper connection and correct as necessary. 2. Check the connector of CL4 for proper drive coupling and correct as necessary. 3. CL4 conduction check • Control signal: BASEB CN22EA-3 (ON) • Location of electrical component: 12-C 4. Replace CL4. 5. Replace BASEB.
+Code;C720B
+Description;1st transfer pressure clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• 1st transfer pressure clutch (CL1) • Base board (BASEB)
+Remedy;1. Check the connector between CL1-relay CN13-BASEB CN18E for proper connection and correct as necessary. 2. Check the connector of CL1 for proper drive coupling and correct as necessary. 3. CL1 conduction check • Control signal: BASEB CN18E-4 (ON) • Location of electrical component: 2-C 4. Replace the main drive unit. 5. Replace BASEB.
+Code;C720D
+Description;ADU transport clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• ADU transport clutch (CL5) • Base board (BASEB)
+Remedy;1. Check the connector between CL5-relay CN47-BASEB CN23E for proper connection and correct as necessary. 2. Check the connector of CL5 for proper drive coupling and correct as necessary. 3. CL5 conduction check • Control signal: BASEB CN23E-12 (ON) • Location of electrical component: 9-K 4. Replace CL5. 5. Replace BASEB.
+Code;C720E
+Description;ADU forward rotation clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• ADU forward rotation clutch (CL6) • Base board (BASEB)
+Remedy;1. Check the connector between CL6-relay CN11-BASEB CN18E for proper connection and correct as necessary. 2. Check the connector of CL6 for proper drive coupling and correct as necessary. 3. CL6 conduction check • Control signal: BASEB CN18E-6 (ON) • Location of electrical component: 2-C 4. Replace CL6. 5. Replace BASEB.
+Code;C720F
+Description;ADU reverse rotation clutch failure. After starting the clutch, an error is detected for the malfunction detection signal.
+Causes;• ADU reverse rotation clutch (CL7) • Base board (BASEB)
+Remedy;1. Check the connector between CL7-relay CN39-BASEB CN18E for proper connection and correct as necessary. 2. Check the connector of CL7 for proper drive coupling and correct as necessary. 3. CL7 conduction check • Control signal: BASEB CN18E-8 (ON) • Location of electrical component: 3-C 4. Replace CL7. 5. Replace BASEB.
+Code;C7243
+Description;Exit path switch solenoid failure. After starting the solenoid, an error is detected for the malfunction detection signal.
+Causes;• Exit path switch solenoid (SD1) • Base board (BASEB)
+Remedy;1. Check the connector between SD1-relay CN12-BASEB CN18E for proper connection and correct as necessary. 2. Check the connector of SD1 for proper drive coupling and correct as necessary. 3. SD1 conduction check • Control signal: BASEB CN18E-10 (ON) • Location of electrical component: 3-C 4. Replace SD1. 5. Replace BASEB.
+Code;C7311
+Description;Machine cooling fan failure. After starting the fan, an error is detected for the malfunction detection signal.
+Causes;• Machine cooling fan (FM1) • Base board (BASEB)
+Remedy;1. Check the connector between FM1-relay CN23-BASEB CN19E for proper connection and correct as necessary. 2. Check the connector of FM1 for proper drive coupling and correct as necessary. 3. FM1 conduction check • Control signal: BASEB CN19E-4 (REM), BASEB CN19E-6 (LOCK) • Location of electrical component: 9-C 4. Replace FM1. 5. Replace BASEB.
+Code;C7312
+Description;Toner suction fan failure. After starting the fan, an error is detected for the malfunction detection signal.
+Causes;• Toner suction fan (FM2) • Base board (BASEB)
+Remedy;1. Check the connector between FM2-relay CN10-BASEB CN18E for proper connection and correct as necessary. 2. Check the connector of FM2 for proper drive coupling and correct as necessary. 3. FM2 conduction check • Control signal: BASEB CN18E-12 (REM), BASEB CN18E-14 (LOCK) • Location of electrical component: 3-C 4. Replace FM2. 5. Replace BASEB.
+Code;C7502
+Description;Tray 1 upper limit sensor failure. The tray 1 upper limit sensor (PS7) does not change even after the lapse of a predetermined period of time after tray 1 is opened and closed, after C0202 (Tray 1 feeder up/down abnormality) is detected.
+Causes;• Tray 1 upper limit sensor (PS7) • Base board (BASEB)
+Remedy;1. Check the connector between PS7-BASEB CN22E for proper connection and correct as necessary. 2. Replace PS7. 3. Replace BASEB.
+Code;C7601
+Description;Power line A1 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Main motor (M1) • Base board (BASEB)
+Remedy;1. BASEB F18E conduction check 2. Check the connector between M1-BASEB CN17E for proper connection and correct as necessary. 3. M1 load check • Check code: 40 • Multi code: 1, 2 • Control signal: BASEB CN17E-1 to 5 • Location of electrical component: 1-C 4. Replace M1. 5. Replace BASEB.
+Code;C7602
+Description;Power line A2 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Color motor (M2) • Base board (BASEB)
+Remedy;1. BASEB F20E conduction check 2. Check the connector between M2-BASEB CN17E for proper connection and correct as necessary. 3. M2 load check • Check code: 41 • Multi code: 1, 2 • Control signal: BASEB CN17E-11 to 15 • Location of electrical component: 1-C 4. Replace M2. 5. Replace BASEB.
+Code;C7604
+Description;Power line A4 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Fusing motor (M3) • Base board (BASEB)
+Remedy;1. BASEB F19E conduction check 2. Check the connector between M3-BASEB CN17E for proper connection and correct as necessary. 3. M3 load check • Check code: 45 • Multi code: 1, 2, 3 • Control signal: BASEB CN17E-6 to 10 • Location of electrical component: 1-C 4. Replace M3. 5. Replace BASEB.
+Code;C7605
+Description;Power line A5 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• High voltage unit (HVPS) • Base board (BASEB)
+Remedy;1. BASEB F6E conduction check 2. Check the connector between HVPS-BASEB CN4E for proper connection and correct as necessary. 3. Replace HVPS. 4. Replace BASEB.
+Code;C7607
+Description;Power line A7 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• 1st transfer pressure clutch (CL1) • Bypass tray paper feed clutch (CL2) • Tray 1 paper feed clutch (CL3) • Registration clutch (CL4) • ADU transport clutch (CL5) • ADU forward rotation clutch (CL6) • ADU reverse rotation clutch (CL7) • Exit path switch solenoid (SD1) • Base board (BASEB)
+Remedy;1. BASEB F4E conduction check 2. Check the connector between CL1-relay CN13-BASEB CN18E for proper connection and correct as necessary. 3. Check the connector between CL2-relay CN46-BASEB CN23E for proper connection and correct as necessary. 4. Check the connector between CL3-relay CN44-BASEB CN22E for proper connection and correct as necessary. 5. Check the connector between CL4-relay CN45-BASEB CN22E for proper connection and correct as necessary. 6. Check the connector between CL5-relay CN47-BASEB CN23E for proper connection and correct as necessary. 7. Check the connector between CL6-relay CN11-BASEB CN18E for proper connection and correct as necessary. 8. Check the connector between CL7-relay CN39-BASEB CN18E for proper connection and correct as necessary. 9. Check the connector between SD1-relay CN12-BASEB CN18E for proper connection and correct as necessary. 10. CL1 conduction check • Control signal: BASEB CN18E-4 (ON) • Location of electrical component: 2-C 11. CL2 conduction check • Control signal: BASEB CN23E-10 (ON) • Location of electrical component: 9-K 12. CL3 conduction check • Control signal: BASEB CN22E<A>-1 (ON) • Location of electrical component: 12-C 13. CL4 conduction check • Control signal: BASEB CN22E<A>-3 (ON) • Location of electrical component: 12-C 14. CL5 conduction check • Control signal: BASEB CN23E-12 (ON) • Location of electrical component: 9-K 15. CL6 conduction check • Control signal: BASEB CN18E-6 (ON) • Location of electrical component: 2-C 16. CL7 conduction check • Control signal: BASEB CN18E-8 (ON) • Location of electrical component: 3-C 17. SD1 conduction check • Control signal: BASEB CN18E-10 (ON) • Location of electrical component: 3-C 18. Replace the main drive unit. (CL1) 19. Replace CL2. 20. Replace CL3. 21. Replace CL4. 22. Replace CL5. 23. Replace CL6. 24. Replace CL7. 25. Replace SD1. 26. Replace BASEB.
+Code;C760A
+Description;Power line A10 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• PC control board (PCCB) • Base board (BASEB)
+Remedy;1. BASEB F8E conduction check 2. Check the connector between PCCB CN1-relay CN24-BASEB CN21E for proper connection and correct as necessary. 3. Replace PCCB. 4. Replace BASEB.
+Code;C760F
+Description;Power line A15 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Clean unit drive board (CUDB) • Base board (BASEB)
+Remedy;1. BASEB F11E conduction check 2. Check the connector between CUDB CN1-relay CN35-BASEB CN25E for proper connection and correct as necessary. 3. Replace CUDB. 4. Replace BASEB.
+Code;C7613
+Description;Power line A19 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Machine cooling fan (FM1) • Toner suction fan (FM2) • Base board (BASEB)
+Remedy;1. BASEB F2E conduction check 2. Check the connector between FM1-relay CN23-BASEB CN19E for proper connection and correct as necessary. 3. Check the connector between FM2-relay CN10-BASEB CN18E for proper connection and correct as necessary. 4. Replace FM1. 5. Replace FM2. 6. Replace BASEB.
+Code;C7615
+Description;Power line A20 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• PH unit • Base board (BASEB)
+Remedy;1. BASEB F3E conduction check 2. Check the connector between the PH unit-BASEB CN5E for proper connection and correct as necessary. 3. Replace the PH unit. 4. Replace BASEB.
+Code;C7616
+Description;Power line A21 error. The fuse detection unit detected an error for a predetermined time.
+Causes;• Toner supply motor/YM (M4) • Toner supply motor/CK (M5) • Base board (BASEB)
+Remedy;1. BASEB F5E conduction check 2. Check the connector between M4-BASEB CN13E for proper connection and correct as necessary. 3. Check the connector between M5-BASEB CN13E for proper connection and correct as necessary. 4. Replace M4. 5. Replace M5. 6. Replace BASEB.
+Code;C7631
+Description;Supply power line 1 error. All of the fuse detection units of the same supply power line (24V10) detected an error for a predetermined time.
+Causes;• DC power supply (DCPS) • Base board (BASEB)
+Remedy;1. BASEB F1E, F2E, F3E, F4E conduction check 2. Check the connector between DCPS CN4-BASEB CN3E for proper connection and correct as necessary. 3. Check the connector between DCPS CN6-BASEB CN1E for proper connection and correct as necessary. 4. Replace DCPS. 5. Replace BASEB.
+Code;C7632
+Description;Supply power line 2 error. All of the fuse detection units of the same supply power line (24V21) detected an error for a predetermined time.
+Causes;• DC power supply (DCPS) • Base board (BASEB)
+Remedy;1. BASEB F5E, F6E, F20E conduction check 2. Check the connector between DCPS CN4-BASEB CN3E for proper connection and correct as necessary. 3. Check the connector between DCPS CN6-BASEB CN1E for proper connection and correct as necessary. 4. Check the connector between SW2, SW5-relay CN36-DCPS CN3 for proper connection and correct as necessary. 5. Replace DCPS. 6. Replace BASEB.
+Code;C7633
+Description;Supply power line 3 error. All of the fuse detection units of the same supply power line (24V20) detected an error for a predetermined time.
+Causes;• DC power supply (DCPS) • Base board (BASEB)
+Remedy;1. BASEB F8E, F11E, F18E, F19E conduction check 2. Check the connector between DCPS CN4-BASEB CN3E for proper connection and correct as necessary. 3. Check the connector between DCPS CN6-BASEB CN1E for proper connection and correct as necessary. 4. Check the connector between SW2, SW5-relay CN36-DCPS CN3 for proper connection and correct as necessary. 5. Replace DCPS. 6. Replace BASEB.
+Code;C8302
+Description;DF cooling fan trouble. The lock signal continues to detect H during a given time while the DF cooling fan motor (FM4) is spinning.
+Causes;• DF cooling fan motor (FM4) • DF control board (DFCB)
+Remedy;1. Check the connector between FM4-relay CN112-DFCB CN4 for proper connection and correct as necessary. 2. Check the fan for possible overload and correct as necessary. 3. FM4 load check • Check code: 60 • Multi code: 113 • Control signal: DFCB CN4-5 (REM), DFCB CN4-7 (LOCK) • Location of electrical component: 22-X 4. Replace FM4. 5. Replace DFCB.
+Code;C8401
+Description;Data flash failure. Data flash does not access normally.
+Causes;DF control board (DFCB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check the connectors on DFCB for proper connection and correct as necessary. 3. Rewrite the firmware. 4. Replace DFCB.
+Code;C8402
+Description;Multi feed detection board failure (When UK-P19 is installed) When the main power switch ON or when the original is being conveyed, the AD value there is no paper loaded state is out of the predetermined range.
+Causes;• Multi feed detection board/TX (MFDB/TX) • Multi feed detection board/RX (MFDB/RX) • DF control board (DFCB)
+Remedy;1. Check the connector between MFDB/TX CN111-relay CN114-DFCB CN7 for proper connection and correct as necessary. 2. Check the connector between MFDB/RX CN110-relay CN115-DFCB CN7 for proper connection and correct as necessary. 3. MFDB/TX operation check • Control signal: DFCB CN7-6 • Location of electrical component: 23-X 4. MFDB/RX operation check • Control signal: DFCB CN7-3 • Location of electrical component: 23-X 5. MFDB/TX ICP1 conduction check 6. Replace MFDB/TX. 7. Replace MFDB/RX. 8. Replace DFCB.
+Code;C8403
+Description;Initial data failure. No initial data available for the shading repair function is stored in the storage board (STRGB) and the CPU board (CPUB).
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Select [Service Mode] -> [ADF] -> [Shading Repair] -> [Init. Data Input] and perform the function. 2. Check STRGB for proper installation and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Replace STRGB. 5. Replace CPUB. 6. Replace BASEB.
+Code;C9401, C9402
+Description;• C9401: CIS LED lighting failure (front side) • C9402: CIS LED lighting abnormally (front side) • C9401: At the CIS gain adjustment, the machine detected that the output of the CIS LED is lower than the specified value. • C9402: The average output value of the CIS LED with the scanner at its standby position is a predetermined value or more at the end of a scan job.
+Causes;• Flat cable • CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace the flat cable. 3. Replace IR CIS. 4. Replace CPUB. 5. Replace BASEB.
+Code;C9403, C9404
+Description;• C9403: CIS LED lighting failure (back side) • C9404: CIS LED lighting abnormally (back side) • C9403: At the CIS gain adjustment, the machine detected that the output of the CIS LED is lower than the specified value. • C9404: After a scan job is completed, the machine detected that the average output of the CIS LED is greater than the specified value.
+Causes;• Flat cable • DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace the flat cable. 3. Replace the DF CIS module assy. 4. Replace CPUB. 5. Replace BASEB.
+Code;C9701
+Description;Front side reading device cable break detection. The cable between the CIS module (IR CIS) and the base board (BASEB) is break.
+Causes;• Flat cable • CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace the flat cable. 3. Replace IR CIS. 4. Replace CPUB. 5. Replace BASEB.
+Code;C9702
+Description;Back side reading device cable break detection. The cable between the DF CIS module (DF CIS) and the base board (BASEB) is break.
+Causes;• Flat cable • DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace the flat cable. 3. Replace the DF CIS module assy. 4. Replace CPUB. 5. Replace BASEB.
+Code;CA051, CA052, CA053
+Description;• CA051: Standard controller configuration failure • CA052: Controller hardware error • CA053: Controller start failure • CA051: The controller of the CPU board (CPUB) is faulty. • CA052: A controller hardware error is detected in the network interface. • CA053: A controller start failure is detected in the controller interface.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CC002
+Description;Vendor internal error. Error occurs inside the vendor.
+Causes;• Vendor • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check the connector between the vendor-BASEB CN30E for proper connection and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Replace CPUB. 5. Replace BASEB. 6. Replace the vendor.
+Code;CC151
+Description;ROM contents error upon startup (MSC) A fault is detected in a sequence of ROM contents check of the CPU board (CPUB) during starting.
+Causes;• Backup board (ERB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the ROM version. 2. Rewrite the firmware. 3. Check the connector between ERB CN1-BASEB CN20E for proper connection and correct as necessary. 4. Check CPUB for proper installation and correct as necessary. 5. Replace ERB. 1. Replace the current ERB with a new one. 2. Replace the following components with new ones. When the transfer belt unit, transfer roller and the fusing unit have been replaced with new ones, perform [Service Mode] -> [Counter] -> [Life] -> [New Release]. • Imaging unit • Transfer belt unit • Fusing unit • Transfer roller • Feed roller, pick-up roller, separation roller (including options) • Separation pad • Toner filter 3. Turn ON the main power switch and check to see that warm-up is started. Make sure that trouble codes other than C2650 or improper IU/TC placement is not detected. 4. Make the specified readjustments. 6. Replace CPUB. 7. Replace BASEB.
+Code;CC152
+Description;ROM contents error upon startup (IR) A fault is detected in a sequence of ROM contents check of the CPU board (CPUB) during starting.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the ROM version. 2. Rewrite the firmware. 3. Check CPUB for proper installation and correct as necessary. 4. Replace CPUB. 5. Replace BASEB.
+Code;CC156
+Description;DF ROM error. Upgrade of the firmware has not been successful.
+Causes;DF control board (DFCB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Rewrite the firmware. 3. Replace DFCB.
+Code;CC163
+Description;ROM contents error (PRT) The wrong model of firmware is detected in the engine during the initial connection to the engine is being checked.
+Causes;• Backup board (ERB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Rewrite the firmware. 2. Replace CPUB. NOTE . When taking the above steps, check whether CPUB is defective or not without replacing the ERB. 1. Turn OFF the main power switch and replace the current CPUB with a new one. 2. Update the firmware. 3. After completing the firmware update, turn OFF and ON the main power switch and check to see that warm-up is started. 4. When the trouble cannot be solved, reinstall the removed CPUB to the original board. 3. Replace BASEB. 4. If the above actions do not solve the problem, contact KM.
+Code;CC164
+Description;ROM contents error (MSC) • The wrong model of firmware is detected in the CPU board when the main power switch is turned ON. • The machine type information (Machine, Type) registered to the machine differs from the actual machine type.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the ROM version. 2. Check the machine type information registered and reenter as necessary. For details the machine information, see “Entering the machine type information”. 3. Rewrite the firmware. 4. Replace CPUB. 5. Replace STRGB. 6. Replace BASEB. 7. If the above actions do not solve the problem, contact KM.
+Code;CC170 ... CC186
+Description;• CC170: Dynamic link error during starting (AP0) • CC171: Dynamic link error during starting (AP1) • CC172: Dynamic link error during starting (AP2) • CC173: Dynamic link error during starting (AP3) • CC174: Dynamic link error during starting (AP4) • CC180: Dynamic link error during starting (LDR) • CC181: Dynamic link error during starting (IBR) • CC182: Dynamic link error during starting (IID) • CC183: Dynamic link error during starting (IPF) • CC184: Dynamic link error during starting (IMY) • CC185: Dynamic link error during starting (SPF) • CC186: Dynamic link error during starting (OAP) A dynamic link error occurs in the program on the CPU board due to an insufficient memory space available, a ROM fault, or other reason when the main power switch is turned ON.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;"1. If the trouble code ""C-C180"" has occurred, check to install the appropriate loadable device driver for an authentication unit which is installed to the MFP. When the appropriate loadable device driver is not installed, reinstall the appropriate loadable device driver. 2. Check CPUB for proper installation and correct as necessary. 3. Replace CPUB. 4. Replace BASEB. 5. If the above actions do not solve the problem, contact KM."
+Code;CC190
+Description;Outline font load error. An error occurred while loading the outline font.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 4. Replace STRGB. 5. Replace CPUB. 6. Replace BASEB.
+Code;CC191
+Description;Setting parameter load error (LDR) Upon startup, the processing of the loadable device driver setting data file failed. • RAM disk file creation failed. • Reading from the flash ROM failed. • An error occurred in API of the authentication module.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch, wait for 10 sec., then turn the switch ON. 2. Check CPUB for proper installation and correct as necessary. 3. Reinstall the loadable device driver. 4. Rewrite the firmware. 5. Replace CPUB. 6. Replace BASEB.
+Code;CC211
+Description;Authentication device general error. When using the authentication device, authentication data is not to meet the specifications.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC212
+Description;User validation error • An error occurred while validating the user authentication information. • The loadable device driver is not successfully installed.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. When this trouble code is generated after installing the loadable device driver, check to see if there is any file other than loadable device driver in USB memory used. If there is any file, reinstall the loadable device driver. 2. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 5. Re-register the user authentication information. 6. Replace the authentication unit.
+Code;CC213
+Description;User registration error/Card information setting error • IC card advanced settings data is not correct when starting-up the authentication device. • Authentication information data is not correct when starting-up the authentication device. • IC card advanced settings data is not correct when setting the IC card advanced settings. • Authentication information data is not correct when setting the IC card advanced settings. • IC card advanced settings data is not correct when registering the authentication information. • Authentication information data is not correct when registering the authentication information. • IC card advanced settings data is not correct when editing the authentication information. • Authentication information data is not correct when editing the authentication information.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 4. Reset the authentication settings. (card type, IC card advanced settings, and etc.) 5. Re-register the user authentication information.
+Code;CC214
+Description;User information deletion error. The deletion of the user information is uncompleted.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch.
+Code;CC216
+Description;Acquisition failure of the number of trials/Initialize error of number of authentication. An error occurred during user authentication using optional authentication unit AU-102.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check the USB cable for proper connection. Reconnect the USB cable as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. 4. Reset the number of authentication trials.
+Code;CC301
+Description;Authentication customize data error. • The master authentication customize data is corrupted upon startup. • Registration of authentication customize data in the main body has failed upon startup.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Reinstall the authentication customize data. 3. Rewrite the firmware. 4. Replace CPUB. 5. Replace BASEB.
+Code;CC302
+Description;Authentication customize data version mismatch error. The authentication customize data version is later than the firmware version of the machine.
+Causes;• CPU board (CPUB) • Base board (BASEB) • Authentication unit
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Rewrite the main body firmware with the latest one and reinstall the authentication customize data. 3. Replace CPUB. 4. Replace BASEB.
+Code;CCC00
+Description;Public user account track information error. At the first time of startup, the nonvolatile status is reset incompletely due to any trouble (such as a shut off of the main power).
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Replace STRGB. 2. Replace CPUB. 3. Replace BASEB.
+Code;CD002
+Description;JOB RAM save error. The error in save of job data to the memory / storage and its read error are detected.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 4. Replace STRGB. 5. Replace CPUB. 6. Replace BASEB.
+Code;CD004, CD00F
+Description;• CD004: Storage access error (connection failure) • CD00F: Storage data transfer error • CD004: Unable to communicate between the storage and CPU board (CPUB). • CD00F: Data transfer from the storage is faulty.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Replace STRGB. 4. Replace CPUB. 5. Replace BASEB.
+Code;CD010
+Description;Storage unformat. Unformatted storage is connected.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 4. Replace STRGB. 5. Replace CPUB. 6. Replace BASEB.
+Code;CD011
+Description;Storage out of specifications mounted. A storage that falls outside the specifications is connected.
+Causes;Storage board (STRGB)
+Remedy;1. Check the storage specifications. 2. Replace STRGB.
+Code;CD012
+Description;Mount error due to storage being unformatted • The storage is not logically formatted after the whole data in the storage has been deleted by overwriting. • The storage that has replaced an old one is not logically formatted.
+Causes;Storage board (STRGB)
+Remedy;1. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. Then, rewrite the firmware. 2. Replace STRGB.
+Code;CD030
+Description;Storage management information reading error. The machine fails to read administrative information data saved in the storage.
+Causes;Storage board (STRGB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Physical Format] and perform the function. 4. Replace STRGB.
+Code;CD041 ... CD046
+Description;CD041, CD042, CD043, CD044, CD045, CD046: Storage command execution error. The error occurred inside the storage.
+Causes;Storage board (STRGB)
+Remedy;1. Check the storage specifications. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 3. Replace STRGB.
+Code;CD047 ... CD04B
+Description;CD047, CD048, CD049, CD04A, CD04B: Storage SCSI library error. The error occurred inside the storage.
+Causes;Storage board (STRGB)
+Remedy;1. Check the storage specifications. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 3. Replace STRGB.
+Code;CD050
+Description;Storage recovery timeout. The storage fails to recover from the power save mode within the predetermined period of time.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check STRGB for proper installation and correct as necessary. 2. Check CPUB for proper installation and correct as necessary. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 4. Replace STRGB.
+Code;CD110
+Description;Wireless LAN destination initialization error. When an initialization error occurred on the settings of the wireless LAN in the upgrade kit (UK-221).
+Causes;
+Remedy;1. Check the UK-221 connector for proper connection and correct as necessary. 2. Rewrite the firmware. 3. Replace UK-221.
+Code;CD201, CD202, CD203
+Description;• CD201: File memory mounting error • CD202: Memory capacity discrepancy • CD203: Memory capacity discrepancy 2 CD201: • The file memory is not mounted. • The file has any abnormality. CD202: • File memory capacity on the CPU board (CPUB) is not enough. • File memory capacity necessary for duplex printing is not enough. CD203: File memory capacity on the CPU board (CPUB) is not enough.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CD211, CD212
+Description;• CD211: PCI-SDRAM DMA operation failure • CD212: Compression/extraction timeout detection • CD211: Hardware related to the transfer of memory image of the CPU board (CPUB) fails to respond. • CD212: Hardware related to the BTC compression function of the CPU board (CPUB) fails to respond.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CD241, CD242
+Description;• CD241: Encryption ASIC setting error • CD242: Encryption ASIC mounting error • CD241: Initialization error of the encrypted ASIC is detected during the machine is starting. • CD242: The faulty of the installation of encrypted ASIC is detected during the machine is starting.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Check BASEB connector for proper connection and correct as necessary. 3. Replace CPUB. 4. Replace BASEB.
+Code;CD261
+Description;USB hub board failure • When a failure is detected in USB hub board included in the local interface kit. • Non-standard USB device is connected.
+Causes;• CPU board (CPUB) • Base board (BASEB) • USB hub board (USBHB: EK-P08 or EK-P09)
+Remedy;1. Check the operation with another USB device. 2. Check USBHB for proper connection and correct as necessary. 3. Replace USBHB. 4. Replace CPUB. 5. Replace BASEB.
+Code;CD262
+Description;Extension network adapter installation error • When the 2nd network card settings is set to “Set” but the upgrade kit (UK-221) is not installed. • Upgrade Kit (UK-221) is faulty.
+Causes;
+Remedy;1. Check the settings of [Service Mode] -> [Network Settings] -> [2nd Network Setting] -> [2nd network card settings]. 2. Check the UK-221 connector for proper connection and correct as necessary. 3. Rewrite the firmware. 4. Replace UK-221.
+Code;CD2D1
+Description;VLAN setting configuration error. At start up of the MFP, the reception condition of VLAN setting activation is not satisfied.
+Causes;• Storage board (STRGB) • Backup board (ERB)
+Remedy;"1. Check if all VLAN setting reception conditions are satisfied. • If the IC card reader is connected, the LDD of AU-201S has been installed. • The software SW12 (bit1) has been set to ""PKI unsupported"" (0x00). (PKI mode setting unavailable) • Service Mode -> [Billing Setting] -> [Management Function Choice] is set to ""Unset"". • ""TCP/IP” of Utility -> [Administrator] -> [Network] -> [TCP/IP Setting] -> [TCP/IP Setting1] is set to ""ON”. • ""Network I/F Configuration” of Utility -> [Administrator] -> [Network] -> [Network I/F Configuration] is set to other than ""Wireless Only”."
+Code;CD3##
+Description;Nonvolatile data error. Abnormality is detected by the abnormal check of each nonvolatile data.
+Causes;
+Remedy;1. Touch [Recover Data] displayed at the lower right portion on the trouble screen. 2. A screen confirming whether to recover data appears. 3. Select [Yes]. 4. The screen will be shifted to the data restoration screen to perform data restoration. NOTE . When the restoration is performed in a short time, data restoration screen may not be displayed. 5. Check the message which indicates that the data restoration was successfully conducted. Turn OFF the main power switch and turn it ON again more than 10 seconds after. NOTE . In case it failed to restore data, return to the trouble code screen. NOTE . Nonvolatile data backup will be automatically performed every hour. Backup can also be performed manually with the following setting. [Service Mode] -> [Enhanced Security] -> [Memory Data Backup]
+Code;CD313
+Description;TPM key data error. A fault occurs in the TPM key data.
+Causes;
+Remedy;1. Touch [Recover Data] displayed at the lower right portion on the trouble screen. 2. A screen confirming whether to recover data appears. 3. Select [Yes]. 4. The screen will be shifted to the data restoration screen to perform data restoration. NOTE . When the restoration is performed in a short time, data restoration screen may not be displayed. 5. Check the message which indicates that the data restoration was successfully conducted. Turn OFF the main power switch and turn it ON again more than 10 seconds after. NOTE . In case it failed to restore data, return to the trouble code screen. 6. Replace the current TPMB with a new one. 7. Replace the current CPUB with a new one. 8. Replace the current BASEB with a new one. NOTE . Nonvolatile data backup will be automatically performed every hour. Backup can also be performed manually with the following setting. [Service Mode] -> [Enhanced Security] -> [Memory Data Backup]
+Code;CD38E
+Description;"Nonvolatile data save error (SPI-Flash) The ""ISW download flag"" saved in the SPI-Flash has an illegal value."
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Rewrite the firmware. 2. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch.
+Code;CD390
+Description;Nonvolatile data checksum error. C-D390 code is normally shown when the CPU board (CPUB) is replaced with a new one.
+Causes;
+Remedy;1. Wait until “Recover Data” appears. (MFP will reboot maximum 2 times by itself, it may take 5 minutes.) Touch the “Recover Data” button and follow the instructions that appear on the control panel to restore (backup) data.
+Code;CD391
+Description;Nonvolatile data save error (Storage)
+Causes;
+Remedy;Contact the responsible people of KM before taking some countermeasures.
+Code;CD392
+Description;Nonvolatile data save error (EEPROM) The backup board (ERB) is replaced with a new one.
+Causes;Backup board (ERB)
+Remedy;1. Replace the following components with new ones. Configure [New Release] in Service Mode before replacing the image transfer belt unit, transfer roller and the fusing unit. • Imaging unit • Transfer belt unit • Fusing unit • Transfer roller • Feed roller, pick-up roller, separation roller (including options) • Separation pad • Toner filter 2. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 3. Set the various setting values in the service mode again. 4. If the above actions do not solve the problem, contact KM.
+Code;CD3B1, CD3B3
+Description;• CD3B1: DB server startup failure • CD3B3: DB access failure • CD3B1: When starting the MFP, PostgreSQL server startup has not been successful. • CD3B3: When starting the MFP, SQL DB access fails in PostgreSQL server startup processing.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Rewrite the firmware. 3. Replace CPUB. 4. Replace BASEB.
+Code;CD3B4, CD3B5
+Description;• CD3B4: No DB definition file • CD3B5: DB definition file error • CD3B4: When starting the MFP, SQL DB definition file does not exist in PostgreSQL server startup processing. • CD3B5: When starting the MFP, there is an error in SQL DB definition file in PostgreSQL server startup processing.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Rewrite the firmware. 3. Replace CPUB. 4. Replace BASEB.
+Code;CD3C0
+Description;New board detection. The board is replaced with a new one.
+Causes;
+Remedy;1. Wait until “Recover Data” appears. (MFP will reboot maximum 2 times by itself, it may take 5 minutes.) Touch the “Recover Data” button and follow the instructions that appear on the control panel to restore (backup) data.
+Code;CD401 ... CD413
+Description;• CD401: NACK command incorrect • CD402: ACK command incorrect • CD403: Checksum error • CD404: Receiving packet incorrect • CD405: Receiving packet analysis error • CD406: ACK receiving timeout • CD407: Retransmission timeout • CD411: Touch panel board error • CD412: Touch panel type mismatch • CD413: Electrostatic touch panel operation mode error. When abnormality is found in the communication of controller.
+Causes;• Control panel • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check whether there is a strong electromagnetic noise source near the main body. 2. Check the connector between the control panel-BASEB CN7 for proper connection and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Replace CPUB. 5. Replace BASEB.
+Code;CD601, CD602, CD603
+Description;Trouble related to security
+Causes;
+Remedy;1. Turn OFF the main power switch, wait for 10 sec. or more, and turn ON the main power switch. If the above actions do not solve the problem, contact KM.
+Code;CD701, CD702, CD703
+Description;• CD701: Mechanical controller flash ROM writing error • CD702: Mechanical controller flash ROM device error • CD703: FW download communication fault CD701: A mechanical controller flash ROM writing sequence is interrupted in its mid-operation due to, for example, power being shut off. CD702: An erase error or other device fault occurs during mechanical controller flash ROM writing. CD703: Irregular data is received during FW downloading. • Places are changed in the order of write completion pulses. • A write completion pulse is received for a memory for which binary writing is not permitted. • Final checksum mismatch in FW download • Two-minute timeout (no response from CTL, the number of transfer data items less than the specified)
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Replace CPUB. 5. Replace BASEB.
+Code;CDF50, CDF70, CDFA0
+Description;• CDF50: ASIC image version failure • CDF70: ASIC image access failure • CDFA0: ASIC image error. Communication error is detected between the CPU board (CPUB) and the CIS module (IR CIS).
+Causes;• CIS module (IR CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Rewrite the firmware. 3. Replace IR CIS. 4. Replace CPUB. 5. Replace BASEB.
+Code;CDF51, CDF71, CDFA1
+Description;• CDF51: ASIC image version failure (back side) • CDF71: ASIC image access failure (back side) • CDFA1: ASIC image error (back side) Communication error is detected between the CPU board (CPUB) and the DF CIS module (DF CIS).
+Causes;• DF CIS module (DF CIS) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check CPUB for proper installation and correct as necessary. 2. Rewrite the firmware. 3. Replace the DF CIS module assy. 4. Replace CPUB. 5. Replace BASEB.
+Code;CE001
+Description;Abnormal message queue. CPU board (CPUB) is faulty.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CE002
+Description;Message and method parameter failure. CPU board (CPUB) is faulty.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and turn it ON again, and conduct the following setting. [Service Mode] -> [System 1] -> [Initialization] -> [Clear All Data]. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] and perform the function. 3. Replace STRGB. 4. Replace CPUB. 5. Replace BASEB.
+Code;CE003 ... CE011
+Description;• CE003: Task error • CE004: Event error • CE005: Memory access error • CE006: Header access error • CE007: DIMM initialize error • CE009: Memory resource shortage error • CE011: Config. file access error at startup of FW CPU board (CPUB) is faulty.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CE013
+Description;Virus scan engine startup failure (8 GB storage) When the virus scan settings are effective, change from storage board (STRGB) to microSD (8GB).
+Causes;microSD
+Remedy;1. Replace the microSD (16GB) or STRGB. 2. Reboot the machine.
+Code;CE014
+Description;Virus scan engine startup failure (storage error). The file or data that is necessary to start the virus scan has been lost.
+Causes;Storage board (STRGB)
+Remedy;1. Reboot the machine. (MFP will reboot maximum 2 times by itself.) 2. Replace STRGB.
+Code;CE101
+Description;Browser finish detected. • The browser is automatically recovered (restarted) after the main body detected that the browser (separate process) has stopped with fault. • When the “Malfunction finish is detected over predetermined number of times” or “the browser task process is except in idle (printing, etc.)”.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CE201
+Description;Transmission operation log storage fault. When the transmission log storage failed, it repeats retrial until transmission operation log is stored. The trouble is detected when the retrial failed for predetermined number of times.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CE202
+Description;PDL interpreter error. An error inside the CPU board (CPUB) is detected during converting the PDL information.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 3. Select [System 1] -> [Initialization] -> [Clear All Data] and perform the function. 4. Replace CPUB. 5. Replace BASEB.
+Code;CE203
+Description;Unrecoverable error. An error does not recover even after an auto recovery.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 3. Select [System 1] -> [Initialization] -> [Clear All Data] and perform the function. 4. Update the firmware. 5. Perform the self-diagnostic function. 6. Replace CPUB. 7. Replace BASEB.
+Code;CE301 ... CE305
+Description;• CE301: Referring incorrect memory • CE302: Incorrect command • CE303: Finished due to error inside Qt library • CE304: Finished due to error outside Qt library • CE305: Program forced to stop. Error occurred with the process inside the MFP controller.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB. 4. Acquire the debug logs in [Service Mode] -> [Debug Settings] and analyze them.
+Code;CED01
+Description;The authentication application information does not exist in the storage in the enhanced server authentication state. With “Enhanced Server Authentication” set, no authentication application registration information is found in the storage.
+Causes;• Storage board (STRGB) • CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Turn OFF and ON the main power switch. 2. Check STRGB for proper installation and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 5. Replace STRGB. 6. If the above actions do not solve the problem, contact KM.
+Code;CEEE1, CEEE3
+Description;• CEEE1: CPU board (MSC) malfunction • CEEE3: Base board (ENG) malfunction • CEEE1: CPU board is faulty. • CEEE3: Base board is faulty.
+Causes;• CPU board (CPUB) • Base board (BASEB)
+Remedy;1. Check the connectors on BASEB for proper connection and correct as necessary. 2. Replace CPUB. 3. Replace BASEB.
+Code;CEEE2
+Description;Scanner section malfunction. A scanner part is faulty.
+Causes;CIS module (IR CIS)
+Remedy;1. Replace IR CIS.
+Code;CFA1#
+Description;CFA1#: Abort code
+Causes;CFA14, CFA17 • CPU board (CPUB) • Storage board (STRGB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check STRGB for proper installation and correct as necessary. 3. Check CPUB for proper installation and correct as necessary. 4. Rewrite the firmware. 5. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 6. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Storage R/W Check], and check that no abnormalities. When ""NG"" is displayed, replace STRGB. 7. Replace CPUB."
+Code;CFB0# ... CFB3#
+Description;CFB0# - CFB3#: Abort code
+Causes;CPU board (CPUB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 5. Replace CPUB."
+Code;CFBC# ... CFC2#
+Description;CFBC# - CFC2#: Abort code
+Causes;CPU board (CPUB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 5. Replace CPUB."
+Code;CFD7# ... CFDA#
+Description;CFD7# - CFDA#: Abort code
+Causes;CPU board (CPUB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 5. Replace CPUB."
+Code;CFE3# ... CFE6#
+Description;CFE3# - CFE6#: Abort code
+Causes;CPU board (CPUB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 5. Replace CPUB."
+Code;CFEF# ... CFF2#
+Description;CFEF# - CFF2#: Abort code
+Causes;CPU board (CPUB)
+Remedy;"1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Check CPUB for proper installation and correct as necessary. 3. Rewrite the firmware. 4. Execute [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Memory Check] -> [Rough Check], and check that no abnormalities. When ""NG"" is displayed, replace the appropriate memory or PWB. • WORK0: CPU board (CPUB) LPDDR4 main memory ChA • WORK1: CPU board (CPUB) LPDDR4 main memory ChB 5. Replace CPUB."
+Code;E1-1
+Description;Target device NVMeSSD Diagnosis item Device recognition  Reason of error Engagement failure Mounting failure
+Causes;Storage board (STRGB) CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of STRGB if faulty. 3. Correct the mounting of CPUB if faulty. 4. Replace STRGB. 5. Replace CPUB.
+Code;E1-2
+Description;Target device NVMeSSD Diagnosis item R/W check Reason of error STRGB error (data failure)
+Causes;Storage board (STRGB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of STRGB if faulty. 3. Replace STRGB.
+Code;E1-3
+Description;Target device NVMeSSD  Diagnosis item S.M.A.R.T diag.  Reason of error STRGB error (data failure)
+Causes;Storage board (STRGB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of STRGB if faulty. 3. Replace STRGB.
+Code;E1-4
+Description;Target device NVMeSSD  Diagnosis item MFP FW checksum  Reason of error STRGB error (data failure)
+Causes;MFP firmware
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Perform re-installation of the firmware.
+Code;E1-5
+Description;Target device NVMeSSD  Diagnosis item Partition check Reason of error STRGB error (data failure)
+Causes;Storage board (STRGB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of STRGB if faulty. 3. Select [Service Mode] -> [State Confirmation] -> [Memory/Storage Adjustment] -> [Format] -> [Logical Format] and perform the function. 4. Replace STRGB.
+Code;E11-1, E11-2
+Description;Target device CPU board Diagnosis item E11-1 Compress/exp check E11-2 O/P image bus check Reason of error E11-1 S800 error E11-2 S800 error
+Causes;CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Replace CPUB.
+Code;E12-1, E12-2
+Description;Target device PCIe Diagnosis item E12-1 PCIe device check IRIS(0) E12-2 PCIe device check IRIS(1) Reason of error PCIe device error
+Causes;E12-1, E12-2 CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Replace CPUB.
+Code;E12-3
+Description;Target device PCIe Diagnosis item E12-3 PCIe device check NVMeSSD Reason of error PCIe device error
+Causes;Storage board (STRGB) CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of STRGB if faulty. 3. Correct the mounting of CPUB if faulty. 4. Replace STRGB. 5. Replace CPUB.
+Code;E3-1
+Description;Target device I2C  Diagnosis item TPM  Reason of error Connection failure Parts defect
+Causes;TPM board (TPMB) CPU board (CPUB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of TPMB if faulty. 3. Correct the mounting of CPUB if faulty. 4. Correct the mounting of BASEB or the connection of connectors if faulty. 5. Replace TPMB. 6. Replace CPUB. 7. Replace BASEB.
+Code;E3-2
+Description;Target device I2C Diagnosis item AUDIO (control) Reason of error Connection failure Parts defect
+Causes;CPU board (CPUB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace CPUB. 5. Replace BASEB.
+Code;E3-3
+Description;Target device I2C Diagnosis item PS-CPU Reason of error Connection failure Parts defect
+Causes;CPU board (CPUB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace CPUB. 5. Replace BASEB.
+Code;E4-1, E4-2
+Description;NOTE . When executing the Self-diag. (Full) after the trouble code (CE301, CE304) is displayed, the self-diagnosis may not complete. In that case, finish the Self-diag. (Full) forcibly, and perform the troubleshooting against each trouble code. . Turning OFF the main power switch will finish the Self-diag. (Full) forcibly. Target device System/image memory Diagnosis item E4-1 WORK0 (Main memory ch.A) E4-2 WORK1 (Main memory ch.B) Reason of error Engagement failure Mounting failure DRAM failure
+Causes;CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Replace CPUB.
+Code;E5-1
+Description;Target device Various USB devices Diagnosis item IRIS0 Reason of error Connection failure Parts defect
+Causes;CPU board (CPUB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Replace CPUB.
+Code;E5-11
+Description;Target device Various USB devices Diagnosis item Upgrade kit (UK-221) Reason of error Connection failure Parts defect
+Causes;Wireless LAN board (WLANB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of the upgrade kit (UK-221) or the connection of connectors if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace WLANB. 5. Replace BASEB.
+Code;E5-12
+Description;Target device Various USB devices Diagnosis item Authentication unit Reason of error Connection failure Parts defect
+Causes;Authentication unit Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting and connection of the authentication unit if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace the authentication unit. 5. Replace BASEB.
+Code;E5-2
+Description;Target device Various USB devices Diagnosis item USB3.0-HUB chip (base board) Reason of error Connection failure Parts defect
+Causes;CPU board (CPUB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace CPUB. 5. Replace BASEB.
+Code;E5-3
+Description;Target device Various USB devices Diagnosis item USB2.0-HUB chip (base board) Reason of error Connection failure Parts defect
+Causes;Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of BASEB or the connection of connectors if faulty. 3. Replace BASEB.
+Code;E5-4
+Description;Target device Various USB devices Diagnosis item USB device HUB chip (USB hub board) Reason of error Connection failure Parts defect
+Causes;USB hub board (USBHB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of USBHB or the connection of connectors if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace USBHB. 5. Replace BASEB.
+Code;E5-5
+Description;Target device Various USB devices Diagnosis item DAC-IC Reason of error Connection failure Parts defect
+Causes;USB hub board (USBHB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of USBHB or the connection of connectors if faulty. 3. Replace USBHB.
+Code;E5-7
+Description;Target device Various USB devices Diagnosis item E5-7 FAX board (line 1) Reason of error Connection failure Parts defect
+Causes;FAX board (FAXB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of the FAX board or the connection of connectors if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace the FAX board. 5. Replace BASEB.
+Code;E6-1, E6-2
+Description;NOTE . When executing the Self-diag. (Full) after the trouble code (C6###, C91##) is displayed, the self-diagnosis may not complete. In that case, finish the Self-diag. (Full) forcibly, and perform the troubleshooting against each trouble code. . Turning OFF the main power switch will finish the Self-diag. (Full) forcibly. Target device CIS module Diagnosis item E6-1 I/P image bus check (front side) E6-2 Line RAM comparison (front side) Reason of error E6-1 Image bus failure E6-2 CIS sensor failure
+Causes;E6-1 CIS cable CIS module (IR CIS) CPU board (CPUB) Base board (BASEB) E6-2 CIS module (IR CIS)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace the CIS cable. 5. Replace IR CIS. 6. Replace CPUB. 7. Replace BASEB.
+Code;E7-1, E7-2
+Description;NOTE . When executing the Self-diag. (Full) after the trouble code (C6###, C91##) is displayed, the self-diagnosis may not complete. In that case, finish the Self-diag. (Full) forcibly, and perform the troubleshooting against each trouble code. . Turning OFF the main power switch will finish the Self-diag. (Full) forcibly. Target device DF CIS module Diagnosis item E7-1 I/P image bus check (back side) E7-2 Line RAM comparison (back side) Reason of error E7-1 Image bus failure E7-2 CIS sensor failure
+Causes;E7-1 CIS cable DF CIS module (DF CIS) CPU board (CPUB) Base board (BASEB) E7-2 DF CIS module (DF CIS)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of CPUB if faulty. 3. Correct the mounting of BASEB or the connection of connectors if faulty. 4. Replace the CIS cable. 5. Replace the DF CIS module assy. 6. Replace CPUB. 7. Replace BASEB.
+Code;E8-1
+Description;Target device DF control board Diagnosis item MINET communication check Reason of error ADF microcomputer communication failure
+Causes;Connection cable DF control board (DFCB) CPU board (CPUB) Base board (BASEB)
+Remedy;1. Turn OFF the main power switch and unplug the power cord. Connect the power cord after 15 sec. or more, and turn ON the main power switch. 2. Correct the mounting of DFCB or the connection of connectors if faulty. 3. Correct the mounting of CPUB if faulty. 4. Correct the mounting of BASEB or the connection of connectors if faulty. 5. Correct the connection of the connection cable if faulty. 6. Replace the connection cable. 7. Replace DFCB. 8. Replace CPUB. 9. Replace BASEB.
+Code;P-21
+Description;Color regist test pattern failure • During pre-pattern detection, pre-pattern edge (start/ end point of effective area) is not detected within the pre-pattern search area. • During detection of regist pattern at vertical/horizontal direction, pattern edge (start/end point of effective area) is not detected within the pattern search area of each unit.
+Causes;• Transfer belt unit • PH unit • Base board (BASEB)
+Remedy;1. Wipe clean the surface of the transfer belt with a soft cloth, if it is dirty. 2. Replace the transfer belt unit if the transfer belt is damaged. 3. Replace the PH unit. 4. Replace BASEB.
+Code;P-22
+Description;Color regist adjust failure • The gap between maximum and minimum value of deviations among each color (the values before averaging) is over the predetermined value. • Average deviation exceeds the predetermined value. • In case the final value of the deviation after stabilization exceeds the predetermined value, it is regarded as failure even if the average deviation is within tolerance.
+Causes;• IDC sensor (IDCS1) • Base board (BASEB)
+Remedy;1. Slide out the imaging unit and reinstall it in position. 2. Reinstall or reconnect IDCS1, connectors connecting between IDCS1-relay CN70-BASEB CN22E, if any of the foregoing parts is installed or connected improperly. 3. Check the vertical transport guide for installed position and correct as necessary. 4. Replace BASEB.
+Code;P-33
+Description;LD malfunction The DETOUT signal of the LD drive detected malfunction consecutively for the predetermined frequency.
+Causes;• PH unit • Laser diode/Y (LD/Y) • Laser diode/M (LD/M) • Laser diode/C (LD/C) • Laser diode/K (LD/K) • LD drive board (LASDB) • Base board (BASEB)
+Remedy;1. Replace the PH unit. 2. Replace BASEB.
+Code;P-5
+Description;IDC sensor failure • During IDC sensor light intensity correction, IDC sensor output is uncompleted. • During IDC base surface detective control, sensor output voltage detected is under 0.7 V or over 3.35V. • During image stabilization (gamma correction control), detected output value for IDC sensor did not go below threshold (half the value of what is detected by IDC sensor on the belt surface) for three consecutive times (position of the pattern end is not detected).
+Causes;• Transfer belt unit • IDC sensor (IDCS1) • High voltage unit (HVPS) • Base board (BASEB)
+Remedy;1. Wipe clean the surface of the transfer belt with a soft cloth, if it is dirty. 2. Replace the transfer belt unit if the transfer belt is damaged. 3. Reinstall or reconnect IDCS1, connectors connecting between IDCS1-relay CN70-BASEB CN22E, if any of the foregoing parts is installed or connected improperly. 4. Clean IDCS1, if it is dirty. 5. Check the connector between HVPS CN1-BASEB CN4E for proper connection. 6. Open/close the front door, run an image stabilization sequence, and select [Service Mode] -> [State Confirmation] -> [Level History 1] to check the IDC value. IDC1: IDCS1 If the value is 1.0 V or less, replace IDCS1. 7. Replace BASEB.
+Code;P-6 ... P-9
+Description;Imaging unit (C) failure, Imaging unit (M) failure, Imaging unit (Y) failure, Imaging unit (K) failure All density readings taken from the density pattern produced on the transfer belt are 1.0 g/m2 (IDC sensor photo receiver output) or less during max. density adjustment (Vg/Vdc adjustment).
+Causes;• Imaging unit/Y,M,C,K • Transfer belt unit • IDC sensor (IDCS1) • Base board (BASEB) • High voltage unit (HVPS)
+Remedy;1. Check the setting value in [Max Image Density Adj] of [Service Mode] -> [Imaging Process Adjustment] and, if it is negative, readjust. 2. Check the drive transmission portion of the imaging unit and correct as necessary. 3. Clean IDCS1 window if dirty. 4. Clean the contact of the imaging unit connector if dirty. 5. Check the connector between HVPS CN1-BASEB CN4E for proper connection. 6. Replace the imaging unit. 7. Replace the transfer belt unit. 8. Replace HVPS. 9. Replace BASEB.
+Code;S-1
+Description;Light adjustment failure It is detected that the LED duty adjustment value of CIS is faulty.
+Causes;• CIS module (IR CIS) • CIS relay board (CISRYB) • Base board (BASEB)
+Remedy;Procedure 1. Correct the harness connection between IR CIS-CISRYB CN1 if faulty. 2. Correct the harness connection between CISRYB CN2-BASEB CN6 if faulty. 3. Check for possible extraneous light and correct as necessary. 4. Replace IR CIS. 5. Replace CISRYB. 6. Replace BASEB.

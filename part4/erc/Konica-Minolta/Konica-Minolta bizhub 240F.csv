@@ -1,0 +1,40 @@
+Code;08
+Description;"RX Motor Error
+ The machine checks the motor error signal in one second the motor starts driving. When the error signal is detected for continuous 300ms, this message will be displayed."
+Remedy;1. Check the connection between RX motor and main control board. 2. Verify the RX motor rotates when the power is on. If OK, see step 5. 3. Check that power is supplied to the Rx motor. If it does not, see step 5. 4. Replace the RX motor if it doesn’t rotate. 5. If the problem is not solved, replace the main control board.
+Code;0B
+Description;"Fan Error
+ The machine checks the fan error signal for three seconds in one second after the motor starts driving. When the error signal is detected for continuous 400ms, this message will be displayed."
+Remedy;1. Verify the inside fan rotates when the power is on. 2. Check the connection between the fan and Connect A PCB(P87), Connect A PCB (P80C) and the main board. 3. Replace the fan motor if it doesn’t rotate. 4. Replace the Connect A PCB. 5. Replace the main control board.
+Code;18
+Description;"Fuser Error
+ (The number indicates the detailed error code) 0 The fuser did not become to the main motor driving temperature in 50 seconds after printing started. 1 The fuser did not become to the paper pick-up temperature in 50 seconds after printing started. 2 The fuser did not become to the main motor driving temperature in 30 seconds after warming up started. 3 The fuser did not become to the warm-up finishing temperature in 30 seconds after the motor started driving. 4 A temperature of 250°C or higher is detected in a mode other than sleep mode. 5 The fuser does not warm after fuser error is solved and the power is turned OFF/ON. 6 A low temperature of 10°C is detected in 10 seconds after printing started. 7 A temperature of 190°C is detected in ready mode after printing finished."
+Remedy;1. Turn on the power again, and verify the fuser warms up. If it does not, see step 4. 2. Check the contact between Fusing thermistor and Connect A PCB(P89). 3. Check the contact between Connect A PCB (P80C) and the main board. 4. Replace the Fuser. 5. After replacing the Fuser, verify the fuser warms up when the power is on. 6. Replace the main control PCB.
+Code;1E
+Description;"Drum Cartridge Fuse Error
+ The machine could not blow the fuse."
+Remedy;1. Verify the drum cartridge is set correctly. 2. Check the point of contacts between drum cartridge and Connect A PCB (P86)?D 3. Check the contact between Connect A PCB (P80C) and the main board. 4. Replace the drum cartridge. 5. Replace the Connect A PCB. 6. Replace the main control PCB.
+Code;1XXYY
+Description;"System error: XX and YY are function returned values
+ - This error occurs with firmware or hardware defect. Firmware defect will be recovered by updating it, but hardware defect needs its replacement."
+Remedy;1. Update the ROM using the USB memory automatically. 2. Replace the network board. 3. Replace the main control board.
+Code;2XXYY
+Description;"Setting data initialize error: XX and YY are function returned values
+ - Occurs mainly when the data stored on the CF memory card is corrupted. You may recover it by updating the firmware, if that does not work, clear the data."
+Remedy;1. Update the ROM using the USB memory automatically. 2. Perform “All RAM Clear”. 3. Replace the storage (HDD/CF card). 4. Replace the network board.
+Code;300
+Description;"Eternal reboot is detected.
+ - The firmware detected an incorrect status, and machine rebooted to recover them automatically. When this status is detected twice, this error occurs. You may better the auto-recover process by updating the firmware. The detail will be printed on the service report with developer's code."
+Remedy;1. Update the ROM using the USB memory automatically. 2. Replace the storage (HDD/CF card).
+Code;400
+Description;"System data clearing error
+ - This error occurs with firmware or hardware defect. This error occurs when the machine reboots from “User data clear” or “All RAM clear”, and an incorrect status is detected."
+Remedy;1. Update the ROM using the USB memory automatically. 2. Replace the storage (HDD/CF card). 3. Replace the network board.
+Code;47
+Description;"Developer Cartridge Fuse Error
+ The machine could not blow the fuse."
+Remedy;1. Verify the toner cartridge is set correctly. 2. Check the point of contacts between toner cartridge and Connect A PCB (P86). 3. Check the contact between Connect A PCB (P80C) and the main board. 4. Replace the toner cartridge. 5. Replace the Connect A PCB. 6. Replace the main control PCB.
+Code;5XX
+Description;"Version mismatching error
+ - This error occurs when an optional CF memory card is attached to the network board, and the firmware version on the CF memory card and network board do not match."
+Remedy;1. Update the ROM using the USB memory automatically. 2. Replace the storage (HDD/CF card).

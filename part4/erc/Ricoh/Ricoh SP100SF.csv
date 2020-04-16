@@ -1,0 +1,76 @@
+Code;SC101
+Description;CIS Lamp/Scanner Motor Error
+Causes;A problem occurred with the CIS or scanner motor in the flatbed scanner: • After CIS power check • After shading • After CIS failed to return to home position
+Remedy;• Flatbed scanner motor connector (main board) loose, broken, or defective • CIS flat film connector at main board loose, broken or defective • CIS flat film connector at CIS loose, broken, or defective • Scanner motor defective • CIS defective
+Code;SC202
+Description;Polygon Motor On Timeout Error
+Causes;No lock signal was received within 10 sec. after the polygon motor turned on. • Polygon motor driver I/F harness loose, broken, defective • Polygon motor broken or defective
+Remedy;• Cycle the machine off/on • Replace I/F harness • Replace polygon motor • Replace laser unit
+Code;SC203
+Description;Polygon Motor Off Timeout Error
+Causes;The lock signal did not go HIGH (inactive) within 20 sec. after the polygon motor turned off. • Polygon motor I/F harness loose, broken, defective • Motor driver board defective • Motor defective
+Remedy;• Cycle the machine off/on • Replace I/F harness • Replace polygon motor • Replace laser unit
+Code;SC204
+Description;Polygon Motor Lock Signal Error
+Causes;Four samplings within 200 ms revealed that the polygon motor lock signal remained HIGH beyond the prescribed number of revolutions. • I/F harness between the motor and driver board is loose, broken, defective • Driver board defective • Motor defective
+Remedy;• Cycle the machine off/on • Replace I/F harness • Replace polygon motor • Replace laser unit
+Code;SC220
+Description;Beam Synchronization Error
+Causes;Top cover (or maintenance cover) is down and locked, and the polygon motor is locked, but laser synchronization could not be achieved within 40 msec. • The I/F harness of the LDB is loose, broken defective • Polygon motor is locked • The angle of incidence of the laser beam and photo-detector is not correct
+Remedy;• Cycle the machine off/on • Replace the I/F harness • Replace polygon motor • Replace laser unit • Replace main board
+Code;SC491
+Description;Bias Leak
+Causes;A bias leak has occurred for the drum charge, development charge, or transfer charge. PWM signals are sampled at 20 msec. intervals. This SC is issued if 10 PWM samplings within 200 msec. are abnormal. • HVPS harness loose, broken, defective • HVPS board defective • AIO terminal defective
+Remedy;• Cycle the machine off/on • Check all the harness connections of the HVPS • Check spring-loaded AIO terminal installation behind the HVPS. • Replace HVPS
+Code;SC500
+Description;Main Motor Error
+Causes;One of the following problems occurred: • The machine failed to detect a LOCK signal within two sec. after the main motor was turned on. • The machine failed to detect a LOCK release signal with 2 sec. after the main motor was turned off.
+Remedy;• Cycle the machine off/on • Check the areas around motor and main drive train for a physical obstruction (paper scraps, etc.) • Clean the main motor drive train • AIO defective • Main motor defective
+Code;SC541
+Description;Fusing Unit Thermistor Error (Fatal Error)
+Causes;No temperature was detected within 5 sec. after the machine was turned on (temperature was less than 0°C).
+Remedy;"• Fusing unit thermistor disconnected, broken or not set correctly • Fusing lamp disconnected, broken or not set correctly. • Fusing unit defective • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated."
+Code;SC542
+Description;Fusing Reload Temperature Error (Fatal Error)
+Causes;After starting up or during operation he machine detected after 5 readings at 1.5 sec. intervals that the hot roller was 5°C below the reload (operating) temperature.
+Remedy;"• Fusing thermistor deformed or out of position • Fusing lamp harness loose, broken, defective • Fusing unit defective • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated."
+Code;SC543
+Description;High Temperature Error - Software (Fatal Error)
+Causes;The temperature inside the fusing unit exceeded 225°C (437°F) for more than 1 sec.
+Remedy;"• After this error has occurred three times, the machine will shut down and must be released with the Smart Organizing Monitor and serviced by a service technician. • Main board defective • PSU defective (TRIAC short) • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated."
+Code;SC544
+Description;High Temperature Error- Hardware (Fatal Error)
+Causes;The machine detected the CPU port LOW twice at 100 ms intervals and issued this SC. This check is always done to check for overheating, even if SC543 does not detect the problem.
+Remedy;"• Fusing unit defective • Main board defective • PSU defective (TRIAC short) • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated"
+Code;SC545
+Description;Fusing Lamp Remains ON Error (Fatal Error)
+Causes;The heating element of the fusing lamp remained at full power longer than 9 sec. after the reload temperature was detected.
+Remedy;"• Fusing thermistor harness connector loose, broken, defective • Fusing thermistor warped or positioned incorrectly • Fusing lamp harness connector loose, broken, defective • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated"
+Code;SC559
+Description;Fusing Unit Third Jam Error (Fatal Error)
+Causes;The exit sensor failed to detect the leading edge of the paper within the prescribed time and triggered a jam alert.
+Remedy;"• After this error has occurred three times, the machine will shut down automatically and cannot be re-started until the machine has been serviced by a service technician. • Check the paper transport path for any physical obstructions (paper scraps, etc.) • Make sure the fusing unit has been installed correctly • After servicing the machine to solve the problem, the service technician must execute a ""Fuser SC Reset"". Otherwise, the machine will continue to issue this SC code and cannot be operated"
+Code;SC650
+Description;Modem Error (M103 only)
+Causes;Modem chip defective.
+Remedy;• Replace fax board.
+Code;SC669
+Description;EEPROM Communication Error
+Causes;A read/write error occurred with the EEPROM on the main board.
+Remedy;• EEPROM missing or not set correctly. • Cycle the machine off, check the EEPROM installation, re-start the machine. • EEPROM defective, replace EEPROM or main board.
+Code;SC670
+Description;Engine Communication Error
+Causes;The engine failed to communicate with the firmware.
+Remedy;• Update the firmware • Main board defective
+Code;SC688
+Description;No CTL_PRREQ_N Signal
+Causes;Paper failed to feed after the machine reached the reload temperature because the main board did not issue a PRREQ signal.
+Remedy;• Main board harness connector loose, broken, defective • Main board defective
+Code;SC828
+Description;ROM Checksum or Data Lost Error
+Causes;A firmware type error or checksum error occurred.
+Remedy;• Update firmware
+Code;SC871
+Description;Flash ROM Write Error
+Causes;The flash memory is defective or there is a problem with the fax board cable.
+Remedy;• The fax cable between the fax board and the main control board and fax board is loose, broken, or defective • Main control board defective

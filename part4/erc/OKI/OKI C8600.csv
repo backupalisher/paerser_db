@@ -1,0 +1,228 @@
+Code;-
+Display;SDRAM ERROR
+Description;PU board SRAM error
+Remedy;Does error reoccur? Yes Turn on the printer again. Replace the PU board.
+Code;-
+Display;CRC CHECK NG
+Description;A PU download data CRC check error. After PU data (PU firmware, custom media data and LED head adjustment data) downloading, a CRC check error was detected.
+Remedy;Turn on the printer again and redownload the data (during usual printer operation, the downloading is not performed and the error does not occur).
+Code;-
+Display;LOADER VERSION
+Description;PU board Flash ROM hash check error
+Remedy;Does error reoccur? Yes Turn on the printer again. Replace the PU board.
+Code;-
+Display;WDT ERROR
+Description;PU firmware went haywire.
+Remedy;Does error reoccur? Yes Turn on the printer again. Replace the PU board.
+Code;-
+Display;COMMUNICATION ERROR
+Description;An error in a PUCU interface.
+Remedy;Is the CU assy installed properly? Does the printer recover from the error by replacing the CU board. Reinstall the assy properly. Remove the CU option(s) as a trial. Replace the CU board. Replace the PU board.
+Code;002 ... 005
+Display;POWER OFF/ON 002:Error ~ 005:Error
+Description;CPU Exception
+Remedy;Does error display reappear? Yes Replace the CU PCB.
+Code;020
+Display;service call 020:Error
+Description;CU ROM Hash Check Error
+Remedy;Does error display reappear? Yes Power OFF/ON Replace CU PCB. Is program ROM DIMM set properly? Is error recovered by replacing program ROM DIMM? (the case of a device which program ROM is set to DIMM Slot.) Reset ROM DIMM. Peplace program ROM DIMM. Replace CU board.
+Code;030
+Display;SERVICE CALL 030:Error
+Description;CU RAM Check Error
+Remedy;Does error display reappear? Yes Power OFF/ON Replace CU PCB.
+Code;031
+Display;SERVICE CALL 031:Error
+Description;CU Optional RAM Check Error
+Remedy;Is RAM DIMM set properly? Is error recovered by replacing RAM DIMM? Reset RAM DIMM. Replace RAM DIMM. Replace CU PCB.
+Code;040
+Display;SERVICE CALL 040:Error
+Description;CU EEPROM Error
+Remedy;Does error display reappear? Yes Power OFF/ON Replace CU PCB.
+Code;041
+Display;SERVICE CALL 041:Error
+Description;CU Flash Error Flash ROM Error on the CU board. (GDI Only)
+Remedy;Does error display reappear? Yes Power OFF/ON Replace CU PCB.
+Code;042 ... 045
+Display;SERVICE CALL 042:Error ~ 043:Error 045:Error
+Description;Flash File System Error
+Remedy;"Access to the Flash ROM directly mounted on the CU PCB failed. Flash File System Error Access to the Flash ROM directly mounted on the CU PCB failed. Conduct forced initialization of the Flash (Notice that NIC-F/W will also be erased. It needs to be written with the Maintenance Utility after the initialization.) Execute FLASH FORMAT of MAINTENANCE MENU of the System Maintenance Menu. When ""FLASH FORMAT"" is displayed, release the key and wait till ""ONLINE"" (approx. 2 min.). If the symptom does not change, replace the CU PCB."
+Code;051
+Display;SERVICE CALL 051:Error(C8800)
+Description;CU Fan Error Abnormal CPU cooling fan on CU board.
+Remedy;Is CU Fan connector set properly? Is error recovered by replacing fan? Connect properly. Replace fan. Replace CU PCB.
+Code;052
+Display;SERVICE CALL 052:Error(C8800)
+Description;DMA Abort Error detected in Image processor.
+Remedy;Does error reoccur? Yes Power OFF/ON. Replace CU PCB.
+Code;070
+Display;POWER OFF/ON 070:Error(C8800)
+Description;PSE firmware fault detected.
+Remedy;Does error reoccur? Yes Power OFF/ON. Replace CU PCB.
+Code;072
+Display;POWER OFF/ON 072:Error xx
+Description;Engine I/F Error I/F error between PU-CU.
+Remedy;Is CU assembly set properly? Is error recovered by replacing CU board? Set properly. Replace CU PCB. Replace PU PCB.
+Code;073
+Display;POWER OFF/ON 073:Error xxxxxxxx
+Description;Video Error. A trouble was detected during image data development. (Illegal data received)
+Remedy;[On the C8600] Is the CU Assy installed properly? Is the error issued again? Redo the installation properly. Change the PC for another of higher grade, or execute print again after reducing the resolution. Replace the CU PCB. [On the C8800] Is the CU Assy installed properly? Redo the installation properly. Replace the CU PCB.
+Code;074
+Display;POWER OFF/ON 074:Error xxxxxxxx 075:Error xxxxxxxx
+Description;Video Error Fault detected when image data is extended.
+Remedy;Is CU assembly set properly? Set properly. Replace CU PCB.
+Code;081
+Display;SERVICE CALL 081: ERROR
+Description;Parameterconsistency check error
+Remedy;EEPROM or FLASH has become incapable of reading or writing. Replace the CU board if the problem remains after cycling the power.
+Code;104
+Display;SERVICE CALL 104:Error
+Description;Engine EEPROM setting check is OK when power ON. Then detect read/ write error.
+Remedy;Does error reoccur? Yes Power OFF/ON Replace PU PCB.
+Code;106
+Display;SERVICE CALL 106:Error
+Description;Abnormal engine control logic.
+Remedy;Does error reoccur? Yes Power OFF/ON Replace PU PCB.
+Code;111
+Display;SERVICE CALL 111:Error
+Description;Detected illegal Duplex Unit.
+Remedy;Is different Duplex Unit installed? Yes Install Duplex Unit of C8600dn.
+Code;112
+Display;SERVICE CALL 112:Error
+Description;Detected illegal 2nd Tray.
+Remedy;Is different 2nd Tray installed? Yes Install 2nd Tray of C8600dn
+Code;121
+Display;SERVICE CALL 121:Error
+Description;High-voltage power supply I/F error.
+Remedy;Is cable between PU board and high-voltage power unit connected properly? Is there no improperly connections? Connect properly. Check improper connections for highvoltage. Replace high-voltage power supply.
+Code;122
+Display;SERVICE CALL 122:Error
+Description;Low-voltage power supply fan error. Low-voltage power supply temperature error.
+Remedy;Is fan in low-voltage power supply unit operating? Is fan connector connected properly? Check connections for connector of fan. Replace low-voltage power supply. Replace fan motor. Replace low-voltage power supply.
+Code;123
+Display;SERVICE CALL 123:Error
+Description;Abnormal environment humidty /Not connected humidity sensor.
+Remedy;Does error reoccur? Yes Power OFF/ON Replace the operator panel PCB (PRP).
+Code;124
+Display;SERVICE CALL 124:Error
+Description;Abnormal environment temperature.
+Remedy;Does error reoccur? Yes Power OFF/ON Replace the operator panel PCB (PRN).
+Code;126
+Display;SERVICE CALL 126:Error
+Description;Condensation in the printer was detected.
+Remedy;Condensation iss likely to occur in printers carried from the outside. Turn on the printer again after it is exposed to room temperature for two hours to half a day. Does the error reoccur? Yes Turn on the printer again after it is left alone. Replace the operator panel PCB (PRP).
+Code;127
+Display;SERVICE CALL 127:Error
+Description;Error detected at the fuser unit cooling fan.
+Remedy;Is fan connector connected properly? Does error reoccur? Connect properly again. Replace fan motor. Replace PU PCB.
+Code;128
+Display;SERVICE CALL 128:Error
+Description;Error detected at the fuser-end cooling fan.
+Remedy;Is fan connector connected properly? Does error reoccur? Connect properly again. Replace fan motor. Replace PU PCB.
+Code;131 ... 134
+Display;SERVICE CALL 131:Error ~ 134:Error
+Description;LED head fault detected. (131 = Y, 132 = M, 133 = C, 134 = K)
+Remedy;Is LED head properly set? Is the LED head fuse blown out? Does error reoccur? Install the LED head unit properly. Check the LED head fuse on the CU PCB. Change CU PCB. Turn on the power again. Replace the LED head unit.
+Code;142
+Display;SERVICE CALL 142:Error
+Description;Error detected at ID position of Up/Down(142 )
+Remedy;Is ID unit set properly? Does error reoccur? Reset ID unit. Turn power ON again. Replace ID Up/Down sensor.
+Code;150 ... 153
+Display;SERVICE CALL 150:Error ~ 153:Error
+Description;ID unit fuse cannot be disconnected. (150 = Y, 151 = M, 152 = C, 153 = K)
+Remedy;Is ID unit setting proper? Does error reoccur? Is error recovered by replacing PRT board? Reset ID unit. Turn power ON again. After check connections of cable between PRT board and PU PCB, replace PRT PCB. Replace PU PCB.
+Code;154
+Display;SERVICE CALL 154:Error
+Description;Belt unit fuse cannot be disconnected.
+Remedy;Is belt unit setting proper? Does error reoccur? Reset belt unit. Turn power ON again. Check cable connections and, replace PU PCB.
+Code;155
+Display;SERVICE CALL 155:Error
+Description;Fuser unit fuse cannot be disconnected.
+Remedy;Is fuser unit set properly? Does error reoccur? After cleaning for fuser connector, reset. Turn power ON again. Check cable connections and replace PU PCB.
+Code;160 ... 163
+Display;SERVICE CALL 160:Error ~ 163:Error
+Description;Error detected by toner sensor. (160 = Y, 161 = M, 162 = C, 163 = K) It does not occure in factory default setting.
+Remedy;Is toner cartridge setting? Is toner lock lever setting? Does error reoccur? Set toner cartridge. Turn a lock lever of toner to a fixed position. Replace toner sensor or assembly.
+Code;167
+Display;SERVICE CALL 167:Error
+Description;Thermistor Slope Error
+Remedy;Is an error message indicated? Is the error issued again? Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;168
+Display;SERVICE CALL 168:Error
+Description;Compensation Thermistor Error
+Remedy;Is an error message indicated? Is the error issued again? Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;169
+Display;SERVICE CALL 169:Error
+Description;Upper Side Thermistor Error
+Remedy;Is an error message indicated? Is the error issued again? Turn on the power again. Leave the printer as is for 30 minutes, and turn on the power again.
+Code;170, 171
+Display;SERVICE CALL 170:Error 171:Error
+Description;Short circuit in fuser thermistor or open detected.
+Remedy;Does error reoccur? Yes Turn power ON again. Replace fuser unit.
+Code;172, 173
+Display;SERVICE CALL 172:Error 173:Error
+Description;Abnormal temperature detected by fuser thermistor (hightemp or low temp.)
+Remedy;Does error reoccur? Turn power ON again. Replace fuser unit. Replace the low-voltage power supply.
+Code;174
+Display;SERVICE CALL 174:Error
+Description;Short circuit in back up roller thermistor detected (at high temperature).
+Remedy;Does error reoccur? Yes Turn power ON again. Replace fuser unit.
+Code;175
+Display;SERVICE CALL 175:Error
+Description;Open of back up roller thermistor detected (at low temperature).
+Remedy;Does error reoccur? Yes Turn power ON again. Replace fuser unit.
+Code;176, 177
+Display;SERVICE CALL 176:Error 177:Error
+Description;Abnormal (high) temperature of back up roller thermistor detected.
+Remedy;Does error reoccur? Turn power ON again. Replace fuser unit. Replace the low-voltage power supply.
+Code;181, 182
+Display;SERVICE CALL 181:Error 182:Error
+Description;Option unit I/F error. (181 = Duplex Unit, 182 = Option Tray)
+Remedy;Does error reoccur? Yes Turn power ON again. After checking connection parts of connector, replace option unit.
+Code;190
+Display;POWER OFF/ON 190:Error
+Description;System Memory Overflow.
+Remedy;Does error reoccur? Yes Turn power ON again. Add option RAM DIMM.
+Code;200, 201, 202
+Display;SERVICE CALL 200:Error ~ 202:Error
+Description;PU Firmware download Error. Error occurered while writing over the PU firmware.
+Remedy;Error occurered while writing over the PU firmware. Turn the printer OFF/ON, and retry to download the PU firmware again. (Usually, the procedure (PU firmware download) which isn’t done, so this is not occur.)
+Code;203, 204, 207, 208, 214, F0C, FFF
+Display;POWER OFF/ON 203:Error  204:Error 207:Error 208:Error  214:Error F0C:Error FFF:Error
+Description;An error was detected of the CU program. (203~214 is not occure in usual operating.)
+Remedy;Reinstall the CU board. Is the error message displayed again? After turn power OFF, check connections between CU board and PU board. Then turn power ON again.
+Code;209
+Display;POWER OFF/ON 209:Download Error
+Description;Media Table download Error. Downloading Media Table to PU has failure. (Related to Custom Media Type)
+Remedy;Downloading Media Table to PU has failure. (Related to Custom Media Type) Turn the printer OFF/ON, and retry to download the PU firmware, again. (Usually, the procedure isn’t done, so this is not occur.)
+Code;230
+Display;SERVICE CALL 230:Error
+Description;RFID Reader not Installed
+Remedy;RFID read device error Is the error issued again? Yes Yes Check the connection of the RFID R/W board. Replace the RFID R/W board. Replace the S2V PCB.
+Code;231
+Display;SERVICE CALL 231:Error
+Description;RFID Reader I/F Error An interface error was detected with the RFID reader device.  01: communication error between the RFID reader and the engine PCB.  02: the transceiver circuit error of the RFID reader.  03: communication error between the RFID reader and the toner cartridge.  04: the toner cartridge detection error(more than 4).
+Remedy;01: Same as Error 230 02: Replace RFID R/W board. 03: Check the antenna cable connection. 04: Check to see if the quantity of toner cartridge is correct.
+Code;901, 902
+Display;POWER OFF/ON 901:Error 902:Error
+Description;Short or open in belt thermistor detected.
+Remedy;Is belt thermistor cable setting proper? Does error reoccur? Connect cable set properly again. Turn power ON again. Replace belt thermistor.
+Code;903, 904
+Display;POWER OFF/ON 903:Error 904:Error
+Description;Abnormal temperature detected by belt thermistor (hightemp or low temp.)
+Remedy;Is belt thermistor cable setting proper? Does error reoccur? Connect cable set properly again. Turn power ON again. Replace belt thermistor and leave aside for 30 min. Then turn power ON again.
+Code;918
+Display;POWER OFF/ON 918:Error
+Description;Duplex FANO Alarm Detection
+Remedy;FAN error inside the Duplex. Is the error issued again when the power is turned on again? Check to see if the Duplex is properly installed. Check to see if the FAN is properly connected. Replace the FAN.
+Code;923
+Display;POWER OFF/ON 923:Error
+Description;Black Image Drum Lock Error
+Remedy;The black image drum (K-ID) does not rotate properly. Is the error message issued again when the power is turned on? Check to see if the K-ID is properly installed. Replace the K-ID. Replace the K-ID motor.
+Code;928
+Display;POWER OFF/ON 928:Error
+Description;Fuser MotorLock Error
+Remedy;The fuser unit does not rotate properly. Does the error reoccur after power cycling? Check to see if the fuser unit is properly installed. Replace the fuser unit. Replace the fuser motor.
+Code;980
+Display;SERVICE CALL 980:Error
+Description;Error by media clinging to the fuser
+Remedy;Media has clung to the fuser. Power OFF Replace the fuser unit.

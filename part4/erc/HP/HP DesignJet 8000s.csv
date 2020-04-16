@@ -1,0 +1,114 @@
+Code;1010
+Description;ATG/RSM Loading Error The program load from the Flash ROM on the Main PCA to the ASIC on the Main PCA or sum-check was not performed correctly and an error occurred.
+Remedy;• Reinstall the Firmware. • Replace the Main PCA.
+Code;1011
+Description;PTC/PDD Loading Error The program load from the Flash ROM on the Main PCA to the ASIC on the Carriage PCA or sum-check was not performed correctly and an error occurred.
+Remedy;• Reinstall the Firmware. • Make sure that the Carriage Cable is NOT damaged and is correctly connected to the Carriage PCA and the Main PCA. • Replace the Carriage PCA. • Replace the Main PCA. • If the error continues, replace the Trailing Cable
+Code;1100
+Description;Flash ROM Error The program area in the Flash ROM is sum-checked, and it could not be read, causing an error.
+Remedy;• Reinstall the Firmware. • Replace the Main PCA.
+Code;1101
+Description;ATG/RSM Error The read/write of the ATG/RSM registers and RSM Mask Memory Data on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA.
+Code;1102
+Description;Trailing Cable Error The Trailing Cable between the Main PCA and the Carriage PCA is not connected.
+Remedy;• Reconnect the Trailing Cable to the Carriage PCA and the Main PCA. • Make sure that the Trailing Cable is not damaged. • Replace the Carriage PCA. • If the error continues, replace the Main PCA. • If the error continues after replacing the Main PCA and the Carriage PCA, replace the Trailing Cable.
+Code;1103
+Description;Heater Relay Board Connection Error The Cable between the Main PCA and the Heater Relay Board is not connected.
+Remedy;• Reconnect the Cable to the Heater Relay Board and the Main PCA. • Make sure that the Cable is not damaged. • Replace the Heater Relay Board. • If the error continues, replace the Main PCA.
+Code;1104
+Description;ISS PCA Connection Error The Cable between the Main PCA and the ISS PCA is not connected.
+Remedy;• Reconnect the Cable to the ISS PCA and the Main PCA. • Make sure that the Cable is not damaged. • Replace the ISS PCA. • If the error continues, replace the Main PCA.
+Code;1105
+Description;PTC/PDD Error The PTC/PDD registers cannot be read or written correctly.
+Remedy;• Make sure that the Carriage Cable is NOT damaged and is correctly connected to the Carriage PCA and the Main PCA. • Replace the Carriage PCA. • Replace the Main PCA. • If the error continues, replace the Trailing Cable.
+Code;1106
+Description;Power Error The power supplies of +36, +24 and +12 V were diagnosed and could not be detected. This error is checked when the Printer is booted up.
+Remedy;• Check the Window Sensors to make sure they are installed/connected correctly. Make sure that the Window lips (that activate the Window Sensors) are not bent and that the Window is closed correctly. • Check that the sensor cables are correctly connected to connector CN4 on the Main PCA and connector CN3 on the Heater Relay Board. • Check the lighting status of LED 35 (12V), LED 36 (36V), LED 37 (VDD2), and LED 38 (12V) on the Main PCA. If any LED is OFF, it mean the power is not generated properly. In that case, perform general troubleshooting according to the table below, and check whether there is a short-circuit in any of the parts or cables. • If the error continues, replace the Main PCA.
+Code;1107
+Description;Carriage Interface Error The Carriage Interface is not connect correctly.
+Remedy;• Reconnect the Trailing Cable to the Carriage PCA and the Main PCA. • Make sure that the Trailing Cable is not damaged. • Replace the Carriage PCA. • If the error continues, replace the Main PCA. • If the error continues after replacing the Main PCA and the Carriage PCA, replace the Trailing Cable.
+Code;1108
+Description;USB Error USB communication is not performed correctly.
+Remedy;• Replace the Main PCA.
+Code;1109
+Description;EEPROM Error The parameters saved in the EEPROM on the Main PCA cannot be read correctly.
+Remedy;• Replace the EEPROM. • Replace the Main PCA.
+Code;110A
+Description;Band Memory Error The read/write of the SDRAM (band memory) on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA.
+Code;110B
+Description;Cap Horizontal Position Error The Cap horizontal position is defined as 0.0 mm.
+Remedy;"• Power On the Printer in the POC skip mode (Cancel key and Power On button together). • Enter into the Maintenance Mode. • Enter into the ""Cap Position"" option (inside the Adjust menu) and define a correction value other than 0.0 mm."
+Code;1110
+Description;Data Path Time-out Error The data transfer via USB from the host does not finish even when a specified time period has passed.
+Remedy;• Replace the Main PCA.
+Code;112x
+Description;Vacuum Fan Error. x = 0: The Vacuum Fan 1 (extreme right of the printer) has failed. x = 1: The Vacuum Fan 2 (center right of the printer) has failed. x = 2: The Vacuum Fan 3 (center left of the printer) has failed. x = 3: The Vacuum Fan 4 (extreme left of the printer) has failed.
+Remedy;• Check that the failing Vacuum Fan is correctly connected. • Replace the failing Vacuum Fan. • If the error continues, replace the Main PCA.
+Code;1130
+Description;DMA Controller Error. An error occurs when the DMA of the printing data cannot be completed.
+Remedy;• Replace the Main PCA.
+Code;1140
+Description;Flash ROM Write Error A time-out error occurs when the flash ROM contents are being saved and erasing does not end.
+Remedy;• Replace the Main PCA.
+Code;1150
+Description;Home Position Sensor Error The Carriage cannot be moved to it’s home position.
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Printer Sensors"". Then execute the ""Home Position"" option, which will display the state of the home position sensor. If the home position is detected, ""1"" will be displayed on the Front Panel. If the home position is not detected, manually move the Carriage and check the Front Panel to see if the ""1"" is displayed. • Make sure the Home Position Sensor Cable is connected correctly and is not damaged. • Replace the Home Position Sensor. • Replace the ISS PCA. • Replace the Main PCA."
+Code;1160
+Description;Wiping Error When the Wiping Motor has been running for a while, the sensor fails to detect that the Motor has made one turn.
+Remedy;Check whether the Wiper Blade turns once and the Wiper Blade Position Sensor detects the turn when the Printer is initializing when it is powered On. • If the Wiper does not turn once: – Check manually by turning the Wiper Gears to see if the Wiper Blade turns. If it does not turn then replace the Wiping Station. – Check whether +24 V (LED 38) is supplied to the Main PCA by checking that LED 38 is lit on the Main PCA. If the Wiper Motor does not turn even though the +24 V is supplied, there is a possibility of a failure in the Wiper Motor. Replace the Wiping Station. – Make sure the Wiper Blade Position Sensor Cable is connected correctly and is not damaged. – If the error continues, replace the Main PCA. • If the Wiper does turn once: – Check whether the Wiper Blade Position Sensor can be switched ON and OFF by manually rotating the Wiper Blade. Check whether the lever type switch is not loose. – Make sure the Wiper Blade Position Sensor is connected correctly and is not damaged. – Make sure that the Wiper Blade Position Sensor is clean. – Replace the ISS PCA. – If the error continues, replace the Main PCA.
+Code;1170
+Description;Temperature Sensor Error The Temperature Sensor detects abnormal temperatures (-10C or lower or 85C or higher).
+Remedy;• Make sure that the Printer is in an environment where the temperature is between -10oC and 85oC. • Make sure the Ambient Temperature Sensor Cable is connected correctly and is not damaged. • Replace the ISS PCA. • Replace the Main PCA.
+Code;1180
+Description;Pump/Wipe Motor Error Over current is detected in the pump/wipe motor drive circuit.
+Remedy;"• When the ambient temperature is very low, the Pump Motor Tube becomes hard and the load on the Capping Motor is increased. Make sure that the Printer is in an environment where the temperature is not below -10oC or higher than +85oC. • Enter the Motors Menu (in Maintenance Mode) and select ""Forwards"" to activate the Pump/Wipe Motor. Access the Pump Motor and check whether the Motor Drive Circuit and Motor work correctly. • Make sure that the Capping Station cables are connected correctly and are not damaged • If the Capping Motor cannot be rotated, replace the Capping Station Motor. • Make sure the Cap Sensor Cable is connected correctly and is not damaged. • Replace the Main PCA."
+Code;119x
+Description;Printhead Drive Voltage Error The Printhead drive voltages generated on the Carriage PCA do not reach the expected values.
+Remedy;• Check whether VDD2 power is generated on the Main PCA. If not, then: – Make sure that the Window is closed. – Replace the Power Supply Unit. • If the power is supplied, it means that the voltage check circuit is defective. Replace the Main PCA. • Make sure the Trailing Cable is connected correctly and is not damaged. • If the error continues, replace the Trailing Cable.
+Code;11A0
+Description;EEPROM I/O Error The read/write of the EEPROM on the Main PCA was diagnosed and an error was detected.
+Remedy;• Replace the Main PCA.
+Code;11D0
+Description;Printhead Cooling Fan Error The Printhead temperature does not drop even after the printhead Cooling Fan rotates for more than a specified time.
+Remedy;• Make sure the Printhead Cooling Fan Cable is connected correctly and is not damaged • Make sure that the Printhead Cooling Fan is working correctly. If the Printhead Cooling Fan is not working correctly, replace it. • Replace the Carriage PCA. • Replace the Trailing Cable. • If the error continues, replace the Main PCA.
+Code;11E0
+Description;Long Term Storage Error This error is displayed when the Printer has been left switched OFF for more than 31 days.
+Remedy;"• This error can be avoided if the ""Store Ink System"" procedure is performed before turning the Printer OFF for long periods. • To clear this error: – Turn the Printer ON in error skip mode by holding down the Cancel and Shift keys and pressing the ON button. – Enter the Password to clear the internal error flag: •, •, Shift and OK. – Switch the Printer OFF and then ON again."
+Code;120x
+Description;Printhead Drive IC Error The Piezo Drive IC on a Printhead is either too hot (85C or higher) or too low (-10C or lower).
+Remedy;• Check whether the temperature of the Printhead voltage circuit on the Carriage PCA is extremely hot. If it is extremely high, check the short-circuit of the Printhead and the Printhead Cable using a tester. The Short-circuit may have been caused by the incorrect insertion of the Printhead Cable, internal failure of the Printhead or by a foreign object attached to the Carriage PCA. • Replace the Carriage PCA.
+Code;1220
+Description;Line Sensor Error The Printer has problems detecting the edge of the Media.
+Remedy;"• Enter the Sensors Menu (in Maintenance Mode) and select ""Printer Sensors"". Then execute the ""Line Sensor"" option, and check if the Line Sensor is functioning correctly by inserting a white piece of paper underneath it. If the Line Sensor responds, then it is functioning correctly. • If the Line Sensor does not respond to the white piece of paper, then replace the Line Sensor. • Replace the Carriage PCA. • Replace the Main PCA."
+Code;126x
+Description;Trailing Cable Connection Error The Trailing Cable connected to the one of the following connectors on the Carriage PCA is faulty. x = 0: Connector 9. x = 1: Connector 10. x = 2: Connector 11. x = 3: Connector 12.
+Remedy;• Reconnect the Trailing Cable to the Carriage PCA and the Main PCA. • Make sure that the Trailing Cable is not damaged. • Replace the Carriage PCA. • If the error continues, replace the Main PCA. • If the error continues after replacing the Main PCA and the Carriage PCA, replace the Trailing Cable.
+Code;1290
+Description;End of Life of Part Reached The end of life of the Prime Assembly has been reached since it has been working for more than 43 hours.
+Remedy;• Replace the Prime Assembly.
+Code;1310
+Description;Cap Sensor Error The cap home position cannot be found.
+Remedy;• Make sure that the Cap Home Position Sensor is correctly connected. • Replace the ISS PCA. • Replace the Capping Station. • Replace the Main PCA
+Code;1320
+Description;Scan-Axis Motor Heating Error The Scan-Axis Motor Temperature Sensor has detected a temperature over 100C
+Remedy;• Make sure that the Scan-Axis Motor Cooling Fan, Scan-Axis Motor Temperature Sensor and the Scan-Axis Motor are connected correctly. • Replace the Scan-Axis Motor Cooling Fan. • Replace the Scan-Axis Motor. • Replace the Main PCA.
+Code;1330
+Description;Scan-Axis Motor Temperature Sensor Error The Scan-Axis Motor Temperature Sensor has detected abnormal temperatures (-22.5C or lower or 150C or higher).
+Remedy;• Make sure that the Scan-Axis Motor Temperature Sensor is connected correctly and the cable is not damaged. • Replace the Scan-Axis Motor Cooling Fan. • Replace the Main PCA.
+Code;140x
+Description;Heater Temperature Error Temperature read by the Heater Temperature Sensor is abnormal (lower than -20C or higher than 200C). x = 1: Front heater. x = 2: Center Platen. x = 3: Rear Heater.
+Remedy;• Make sure that the failing Heater is connected correctly to the Main PCA. Make sure that the cables are not damaged. • Replace the failing Heater. • Replace the Main PCA.
+Code;141x
+Description;Heater Error (High Temperature) Temperature read by the Heater Temperature Sensor is above 65C). x = 1: Front heater. x = 2: Center Platen. x = 3: Rear Heater.
+Remedy;• If the Printer is installed in a high temperature environment, move the Printer to an area where the operating temperature is much lower. • Make sure that the failing Heater is connected correctly to the Main PCA. Make sure that the cables are not damaged. • Replace the failing Heater. • Replace the Main PCA.
+Code;143x
+Description;Heater Error (Insufficient Heating) The Heater is not heated to a specified temperature even after 30 minutes have passed. x = 1: Front heater. x = 2: Center Platen. x = 3: Rear Heater.
+Remedy;• If the Printer is installed in a low temperature environment, move the Printer to an area where the operating temperature is much higher. • Check that the AC Voltage being used is the one selected on the Heater Voltage Setting Switch. • Make sure that the failing Heater is connected correctly to the Main PCA. Make sure that the cables are not damaged. • Replace the Heater Relay Board. • Replace the failing Heater. • Replace the Main PCA.
+Code;144x
+Description;Heater Error No heater sequence interrupt.
+Remedy;• Make sure that all the cables are correctly connected to the Heater Relay Board. Make sure that the cables are not damaged. • Replace the Heater Relay Board. • Replace the Main PCA.
+Code;2000 ... 6000
+Description;Firmware Logic Error A logic error has occurred in the Firmware program.
+Remedy;• Reinstall the Firmware or upgrade to the latest version (if available). • Replace the Main PCA.

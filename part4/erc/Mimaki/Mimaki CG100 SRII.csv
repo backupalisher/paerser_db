@@ -1,0 +1,292 @@
+Code;01
+Display;ERR 01 MAIN ROM
+Description;Partially damaged flash ROM data Error detected by hash check of program data in flash ROM on which the firmware is written.
+Remedy;1. Reinstall the firmware on the Main PCB if a debug board is available on which the original firmware is written. 2. Execute Memory Check ([#TEST] -> [ROM/RAM CHECK]) 3. Check/clear Parameters. 4. Replace the Main PCB.
+Code;02
+Display;ERR 02 MAIN RAM
+Description;Defective SD-RAM Error was detected by read/write check of the program execution area of the SDRAM on the Main PCB.
+Remedy;1. Reinstall the firmware on the Main PCB if a debug board is available on which the original firmware is written. 2. Execute Memory Check ([#TEST] -> [ROM/RAM CHECK]) 3. Check/clear Parameters. 4. Replace the Main PCB.
+Code;04
+Display;ERR 04 FLASH ROM
+Description;Partial damage to saved parameters (This message appears momentarily before the plotter starts normally.) An error was detected by hash check but it was corrected automatically with backup data.
+Remedy;1. Check the following parameters. No measures are required if in normal. • Setup parameters • Pen parameters • Communication parameters • Pointer offset • System parameters (Set parameters as needed if a problem occurs in initial state.) 2. Execute Memory Check ([#TEST] -> [ROM/RAM CHECK]) 3. Check/clear Parameters. 4. Replace the Main PCB.
+Code;04
+Display;ERR 04 FLASH ROM
+Description;Partial damage to saved parameters (This message appears momentarily and the plotter starts normally after displaying “PRMchk NG RETRY!”.) An error was detected by hash check but it was corrected by initializing the relevant parameter.
+Remedy;1. Check the following parameters. No measures are required if in normal. • Setup parameters • Pen parameters • Communication parameters • Pointer offset • System parameters (Set parameters as needed if a problem occurs in initial state.) 2. Execute Memory Check ([#TEST] -> [ROM/RAM CHECK]) 3. Check/clear Parameters. 4. Replace the Main PCB.
+Code;04
+Display;ERR 04 FLASH ROM
+Description;Partial damage to saved parameters (This message appears momentarily and then “RECOVER = ENTER key” appears.) An error was detected by hash check and the system is waiting for recovery operation with backup data.
+Remedy;1. Press [ENTER] key to restore the system to normal operation. No corrective action is needed if the plotter starts normally. Check parameters and set parameters as needed if a problem occurs in initial state. 2. Press [..] / [..] key to restore the system to normal operation. Execute the following measures if “RECOVER FAILURE” is displayed. 1)Turn power on while holding [ENTER] down to activate system parameter setting mode. 2)Write down all the system parameters. 3) Initialize the system parameters. 4) For the parameters whose values written down are normal, set those values. For the parameters whose values written down are not normal, rewrite the saved values. Alternatively, adjust the pen pressure, landing, distance compensation, right angle compensation, and make cutting position adjustment, photo-sensor adjustment, pointer offset adjustment.
+Code;04
+Display;ERR 04 FLASH ROM
+Description;Partial damage to saved parameters (The system freezes with this message displayed.) An error was detected by write data check during storage of parameters.
+Remedy;1. Turn power on again. No corrective action is needed if the plotter starts and works normally even after performing the same operation as was followed by the error. Perform RAM check if the same error recurs. 2. Execute the following measures if the RAM check results in “OK” since Flash ROM is assumable to be defective. 1)Update FW 2) Initialize Parameters. 3) Replace the Main PCB.
+Code;04
+Display;ERR 04 FLASH ROM
+Description;Partial damage to saved parameters (The above phenomenon occurs, and then is repeated frequently even after recovered.)
+Remedy;1. Defective flash ROM Replace the flash ROM or Main PCB.
+Code;06
+Display;ERR 06 BUFFER
+Description;Defective SD-RAM Error was detected by read/write check of the received data storage area of the SDRAM on the Main PCB.
+Remedy;1. Execute Memory Check ([#TEST] -> [ROM/RAM CHECK]) 2. Update FW 3. Check/clear Parameters. 4. Replace the Main PCB.
+Code;08
+Display;ERR 08 POWER
+Description;Defective power supply or Main PCB (Motor control gate array shut down.) Damaged power supply or damaged Main PCB.
+Remedy;1. Replace the Power supply PCB. 2. Replace the Main PCB.
+Code;10
+Display;ERR 10 COMMAND
+Description;Received command was not recognized (Communication condition setting error in RS-232C connection)
+Remedy;1. Check Communication conditions of Host PC and set the plotter setting to the host PC. 2. Check Communication conditions by using Line analyzer if available.
+Code;10
+Display;ERR 10 COMMAND
+Description;Received command was not recognized (Command type setting error)
+Remedy;1. Check the output command on the application on the host computer or the plotter driver and select the plotter command type that is supported by the host computer. If both MGL_Ic1 and MGL_IIc are selectable, choose MGL_IIc with which the mark detect function is available. 2. If the command type is unknown, receive the command in AUTO to identify the command type. 3. If the command type is not recognized automatically in AUTO, identify the command type with the data monitor or the dump function.
+Code;10
+Display;ERR 10 COMMAND
+Description;Received command was not recognized (The application or the plotter driver does not support the CG-SRII command.)
+Remedy;1. Install a Mimaki plotter driver that is compatible with the application. 2. If the application has an output model selection function, select CG-SRII or any other Mimaki model (FX, EX, LX, ST, etc) and check. 3. Consult the application provider if a more recent version or a substitutable application (HP-GL or graphic command compatible) is available.
+Code;10
+Display;ERR 10 COMMAND
+Description;Phenomenon: Received command was not recognized (Error is very rarely displayed.)
+Remedy;Data garbled due to noise on the cable (Neither always nor the same way) • Replace the cable, if not genuine, with a genuine type (recommended cable). • Replace the cable with a highly shielded one. • Replace with a shorter cable. • Ground the equipment. Error occurs in the middle when the large sized data is sent. (Repeatable) In case of RS-232C connection, check the handshake setting and set the handshake setting of Plotter to the host PC. Repeatable error occurs at the specific part of specific data. • Upgrade the firmware to the latest version. • Upgrade the version since the application or driver may be defective. • Analyze the failing command using the data monitor or dump function. No repeatability. Error occurs very rarely. 1. Execute Memory Check (The possibility of RAM failure) ([#TEST] -> [ROM/RAM CHECK]-> [W/R LOOP]) 2. Check Cables. (the possibility of static electricity or noise) • Replace the cable, if not genuine, with a genuine type (recommended cable). • Replace the cable with a highly shielded one. • Replace with a shorter cable. • Ground the equipment. 3. Replace Main PCB if the error occurs in the RAM check.
+Code;10
+Display;ERR 10 COMMAND
+Description;Received command was not recognized (In USB connection, the escape command of MGL_IIc used.)
+Remedy;1. Change to RS-232C interface connection. 2. Generally, the escape instruction is located only at the beginning of data and thus rarely causes any problem. Ignore this error display if cutting result is acceptable.
+Code;11
+Display;ERR 11 PARAMETER
+Description;Analyzed parameter was found improper The application or the plotter driver is not compatible with the CG-SRII command specifications.
+Remedy;1. Upgrade the application or the plotter driver. (If the plotter driver is not genuine, install the genuine plotter driver of MIMAKI.) 2. Analyze the parameter in question using the dump function. 3. If the application has an output model selection function, select CG-SRII or any other Mimaki model (FX, EX, LX, ST, etc) and check.
+Code;11
+Display;ERR 11 PARAMETER
+Description;Phenomenon: Analyzed parameter was found improper (Error is very rarely displayed.)
+Remedy;Data garbled due to noise on the cable (No repeatability) • Replace the cable, if not genuine, with a genuine type (recommended cable). • Replace the cable with a highly shielded one. • Replace with a shorter cable. • Ground the equipment. Repeatable error occurs at the specific part of specific data. • Upgrade the firmware to the latest version. • Upgrade the version since the application or driver may be defective. • Analyze the failing command using the data monitor or dump function. No repeatability. Error occurs very rarely. 1. Execute Memory Check (The possibility of RAM failure) ([#TEST] -> [ROM/RAM CHECK] -> [W/R LOOP]) 2. Check Cables. (the possibility of static electricity or noise) • Replace the cable, if not genuine, with a genuine type (recommended cable). • Replace the cable with a highly shielded one. • Replace with a shorter cable. • Ground the equipment. 3. Replace Main PCB if the error occurs in the RAM check.
+Code;12
+Display;ERR 12 DEVICE
+Description;Undefined device instruction <esc. instruction> was received The application or the plotter driver is not compatible with the MGL_IIc command specifications of CG-SRII.
+Remedy;1. Install a Mimaki plotter driver that is compatible with the application. 2. If the application has an output model selection function, select CG-SRII or any other Mimaki model (FX, EX, LX, ST, etc) and check. 3. Consult the application provider if a more recent version or a substitutable application (HP-GL compatible) is available. 4. Generally, the device instruction is located only at the beginning of data. Check the data consistency using the dump function. Upgrade the firmware if the data meets the command specifications but the error occurs. 5. Switch the output port to USB and check it since the device command may not be used in the setting.
+Code;13
+Display;ERR 13 PM OVER
+Description;Insufficient buffer on Polygon buffer command. Polygon data was received in excess of the polygon buffer capacity. (CG buffer size is fixed at 18KB and cannot be increased or decreased.)
+Remedy;When the use of polygon command is settable to ON/OFF at the application side, set it in unused. The polygon command is required to be set in unused at the application side since it is not possible to set it at the CG side.
+Code;15
+Display;ERR 15 AUTO FEED
+Description;Sheet length is too short With auto feed enabled for sorting, feeding by the detected data size could not be achieved.
+Remedy;The sheet length is too short. Set a sheet with an enough length.
+Code;16
+Display;ERR 16 AUTO I/F
+Description;Command type auto-recognizing failure. When the command type is at “AUTO”, Auto-recognizing is not executable since the communication cannot be interrupted due to the unable of Handshake.
+Remedy;1. If the handshake setting in Host PC is known, set the plotter setting to the setting again. 2. If the application or the driver command type is known, set the command type directly, not by using “AUTO”. 3. When the command type is not known, check the command type by using the dump function then switch the command type directly.
+Code;20
+Display;ERR 20 I/O
+Description;RS-232C communication error RS-232C interface condition (setting) incorrect.
+Remedy;1. Check the application or the interface condition of Plotter driver then set the plotter setting to the host PC. 2. Use USB I/F.
+Code;20
+Display;ERR 20 I/O
+Description;RS-232C communication error The use cable incorrect
+Remedy;1. Replace the cable, if not genuine, with a genuine type. 2. Check Cable disconnecting or shorting.
+Code;20
+Display;ERR 20 I/O
+Description;RS-232C communication error PC circuit failure
+Remedy;If the error occurs successively when Plotter is connected and the power is turned to ON in the condition that any application is not started, it may cause a problem on the circuit of PC. (This may be corrected when BIOS is upgraded.)
+Code;20
+Display;ERR 20 I/O
+Description;RS-232C communication error Main PCB defect
+Remedy;Replace Main PCB. If the error occurs when “LOOP BACK” test is executed.
+Code;25
+Display;ERR 25 BUFFERdump
+Description;Phenomenon: In Buffer dumping, Data transmitting failure to PC. Even after 10 seconds, PC in connecting is not in the data receivable condition.
+Remedy;The use cable incorrect Replace the cable, if not genuine, with a genuine type. Main PCB defect Replace Main PCB. If the error occurs when “LOOP BACK” test is executed.  RS-232C cable unconnected. Connect RS-232C cable. (Genuine cable recommended) The port is in the condition occupied or closed by the application of the host PC side. Close all applications of the host side so that the application for receiving Dump data from Plotter is only in the activated condition.
+Code;26
+Display;ERR 26 I/F TEST n
+Description;Error in Loop-back test Failure on Main PCB. (disconnection or the like) n=1 RS - CD loop fault Loop-back connector unconnected. n=2 ER - CS, DR loop fault n=3 TX time-out n=4 Conveyor error (data jam) n=5 Error interruption detected
+Remedy;Replace Main PCB since PCB failure such as a wire disconnected on Main PCB, malfunction of Serial controller built in CPU or the like is assumable.
+Code;27
+Display;ERR 27 BUFFERover
+Description;Data receiving buffer overflow At the use of RS-232C I/F, Handshake setting incorrect.
+Remedy;1. Check the application or the handshake setting of Plotter driver, and set the plotter communication condition setting to the setting. 2. Use USB I/F.
+Code;27
+Display;ERR 27 BUFFERover
+Description;Data receiving buffer overflow At Hardware handshake, Cable incompatible.
+Remedy;1. Replace the cable, if not genuine, with a genuine type. 2. Check Cable disconnecting or shorting.
+Code;27
+Display;ERR 27 BUFFERover
+Description;Data receiving buffer overflow At Hardware handshake, Cable incompatible.
+Remedy;1. Replace the cable, if not genuine, with a genuine type. 2. Check Cable disconnecting or shorting.
+Code;27
+Display;ERR 27 BUFFERover
+Description;Data receiving buffer overflow Handshake inexecutable due to Main PCB failure
+Remedy;Replace Main PCB if the error occurs when the handshake testing is executed by using the loop-back connector. (at the use of RS-232C)
+Code;30
+Display;ERR 30 OPERATION
+Description;Prohibited operation was attempted (The followings are the forbidden items) •Setting the origin outside the cutting area • Cut area setting to the area where Origin is out of Cut area. • Axis compensation exceeding ±45 degrees • Executing a function that cannot be executed without a sheet (a function requiring motor operation) • Dumping or parameter plotting with a tool other than the pen • Distance compensation when there are data on the plotter • Execution of each Adjust function at no sheet set. • Pen pressure adjustment under Stroke adjustment unexecuted. • Landing adjustment under Stroke adjustment unexecuted. • “TEST PATTERN” at no sheet set • In function operating, start of the identical function. (For example, starting the dump function during temporary stoppage of the already started dumping)
+Remedy;Perform proper operations.
+Code;31
+Display;ERR 31 NO DATA
+Description;Not executable as the receiver buffer is empty The “No. COPIES” or “BUFFER DUMP” operation was attempted when there was no data in the receiver buffer.
+Remedy;The function of “No.COPIES” is to cut the data stored in the receiving buffer continuously. “BUFFER DUMP” is not executable if the buffer is empty since the function is to draw or send the data stored in the receiving buffer.
+Code;32
+Display;ERR 32 DATAtooBIG
+Description;Data size exceeds the receiver buffer The “No. COPIES” operation was started after receiving data whose size was larger than the capacity of the receiver buffer.
+Remedy;1. If SORTING is set to ON, switch it to OFF and send the data again and then start “No. COPIES” operation. 2. If the error occurs even when the sorting is set to OFF, this means that the sending data exceeds the cutting size of “No.COPIES”. Explain this matter to a user.
+Code;33
+Display;ERR 33 SHEET SIZE
+Description;Sheet length is too short At Leaf sheet detection, the drawing area in the feeding direction is too short to reserve it. (Distance from Pen line sheet to Sheet sensor + Dead space)
+Remedy;Replace the sheet with a sheet whose size ensures a sufficient cutting area. (About 150 mm or longer)
+Code;34
+Display;ERR 34 DAT REMAIN
+Description;Not executable as the receiver buffer is occupied One of the following operations was started during a temporary stoppage of the cutting operation activated in remote mode. • Setting an origin • Setting the cutting area • Two point axis alignment • SQUAR CUT • SAMPLE CUT • No. COPIES • DIVISION CUT • ASCII DUMP • Parameter plotting • LIST • BUFFER DUMP plotting, transmission • LOOP BACK • HANDSHAKE • 2 m cutting • 10 m cutting
+Remedy;These operations execute the data writing or reading from the receiving buffer. The operations are prohibited since the data stored in the receiving buffer become invalid if the operations listed in the left are executed in the middle. As for the countermeasure, execute the operation after the cut of data in cutting is completed. If it is allowable to interrupt the cutting, clear the data then execute the operation.
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (Operation procedure is not proper.) The sheet setting position is improper for full-auto detection.
+Remedy;Correct the position of the sheet as described in the Operation Manual.
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (Settings in operation setup are not proper.)
+Remedy;The number of printed registration marks and the number of set registration marks do not agree with each other. Set the number of registration marks to be detected to a number equal to or smaller than that of the printed registration marks. The shape of the printed registration marks and the shape of set registration marks do not agree with each other. Correct the shape setting of registration marks so that it agrees with the shape of the printed registration marks. The size of the printed registration marks and the size of set registration marks differ from each other substantially. Measure the size of printed registration marks and set the measured value as the registration mark size. Scale compensation was performed by “BEFORE” setting but the input value does not agree with the distance between the printed registration marks. Measure the distance between the printed registration marks accurately and enter that value, or use “AFTER”setting. (Set DIST.REVI. to OFF if FineCut is to be used.)
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (The printed registration marks are inappropriate.)
+Remedy;Registration marks are printed in some color other than black. Use Black ink as far as possible since non-black colors may be undetected. The line is too thin (less than 0.3 mm), too thick (over 1.0 mm) or smeared. Or, thicker due to blurring. Select the line width within the proper range (0.3 mm to 1.0 mm) as far as possible since others than the proper widths may be undetected. Do not use an easily blurred sheet. Printed registration marks are blurred. Reprint, if necessary, since significantly blurred registration marks cannot be detected. The distance between registration marks is too short (less than 50 mm) or too long (9000 mm or more). Reprint so that the distance between registration marks is within the allowable range. The registration mark size is too small for the distance between the registration marks. When the distance between registration marks is large, small registration marks may not be recognized if the sheet is skewed. Enlarge the registration mark size to prevent this problem. (Select appropriate values based on the example given in the Operation Manual.) Smears, print data or outer frames are found near registration marks. It is unable to detect if there are any prints or smears other than the mark within a square area being twice the mark size from the mark corner as the center. Correct or reprint it. Registration marks are printed outside the moveable range. Reset the sheet, or use Expand Mode so that the marks are located inside the movable area. Printed data or smears were found between registration marks when the setting for DIST.REVI was “AFTER”. Detect in “BEFORE”, or turn DIST.REVI to OFF if “FineCut” is used.
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (The printer sheet is inappropriate.)
+Remedy;Sheet color not in white. Use white sheets as far as possible since it may not be detected when sheets other than white are used. The sheet material is heavy and slippery. Execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less The back of the sheet is slippery. Execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less
+Code;36
+Display;ERR 36 MARKdetect
+Description;The sheet is soft and can easily bend.
+Remedy;Execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less • Use all of Pinch rollers
+Code;36
+Display;ERR 36 MARKdetect
+Description;The leading edge of the sheet is in contact with the floor and the sheet is floating during the registration mark detection.
+Remedy;Execute again under the following conditions. • Use all of Pinch rollers • Use Sheet basket. (Be sure to use.)
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (Improper operations)
+Remedy;Only two Pinch rollers used at wide sheet printing. Increase the number of pinch rollers depending on the sheet width. Pinch rollers are used in Low Mode for a heavy sheet. Use the end pinch rollers in High Mode and, if necessary, use the inner pinch roller also in High Mode. The first registration mark to be detected is set at the front right when the sheet is set in the front. With the sheet having been set in the front, the coordinates are turned 180 degrees. Operate the plotter so that the rear left registration mark is detected first.
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (Improper adjustment)
+Remedy;POINTER OFS is not adjusted properly. Adjust POINTER OFS as described in the Operation Manual. Photo-sensor sensitivity of Mark PCB improper Adjust the sensitivity.
+Code;36
+Display;ERR 36 MARKdetect
+Description;Phenomenon: Sensor is not able to detect Mark. (Defective hardware.)
+Remedy;The LED does not light up. Check the connections or disconnections on the following PCBs and connectors. Replace it in case of defect. • Main PCB • Mark PCB H • Mark PCB M  The sensor does not operate. 1. Execute the Mark sensor check according to the Operation Manual. Check the connections or disconnections on the following PCBs and connectors. Replace it in case of defect. • Main PCB • Mark PCB H • Mark PCB M
+Code;36
+Display;ERR 36 MARKdetect
+Description;Sensor is not able to detect Mark. (Mechanical trouble)
+Remedy;Drive fails because of the loose installation of power transmission components of the drive system (loose screws or belts, belt tooth skipping, etc.). Check the mechanism for loose pulley screws, belt tension or belt tooth skipping. Adjust or replace components as needed. Sensor is not able to detect Mark. (Mechanical trouble) Mark sensor height adjustment improper. Adjust the height of Mark sensor.
+Code;36
+Display;ERR 36 MARKdetect <-> JOG & ENT or END (Displayed alternately)
+Description;Registration mark detection failure
+Remedy;
+Code;37
+Display;ERR 37 MARK ORG
+Description;The origin was found outside the allowable range by registration mark detection The origin of the printed registration marks is located inside the dead space.
+Remedy;1. Check if it is possible by any of the following settings. • Expand Mode: ON • Sheet sensor: OFF (Paper jammed, the sheet may shift out of the cutting area.) 2. Reprint the registration marks in consideration of the dead space.
+Code;37
+Display;ERR 37 MARK ORG
+Description;The origin was found outside the allowable range by registration mark detection The sheet skewed gradually and registration marks moved out of the plotting area.
+Remedy;Correct the setting of the sheet.
+Code;38
+Display;ERR 38 MARK SCALE <-> JOG & ENT or END (Displayed alternately)
+Description;Wrong recognition of registration marks in adjacent patterns The number of copies that was set was larger than the number of actually printed graphic patterns. As a result, registration mark detection was performed after all copies were made.
+Remedy;Operation has been completed normally. Press the [END] key to end Copy Mode.
+Code;38
+Display;ERR 38 MARK SCALE <-> JOG & ENT or END (Displayed alternately)
+Description;
+Remedy;Phenomenon: Wrong recognition of registration marks in adjacent patterns In continuous copying, the mark detection failed over 6 consecutive patterns or more. (At this time, the LED pointer lights up and the light spot is indicating the detection start position.) Press the [ENTER] key to perform detection again, and press the [END] key to end the operation. The detection start position can be finely adjusted in steps using the jog keys. The number of printed registration marks and the number of registration marks specified by the command do not agree with each other. Stop detection with the [END] key. Set the number of registration marks to be detected to a number not larger than the number of the printed registration marks. Printed registration marks are blurred. Heavily blurred registration marks are undetectable. Stop detection and reprint. As an emergency measure, the blur may be repaired with an ink pen or the like and detection may be performed again (the cutting accuracy may drop). Smears, print data or outer frames are found near registration marks. It is unable to detect if there are any prints or smears other than the mark within a square area being twice the mark size from the mark corner as the center. Correct or reprint it. (the cutting accuracy may drop). Or, stop by [END] then reprint. Registration marks are printed outside the moveable range. Stop by [END] then set sheets again. Or, reducing the number of copies in the width direction or the like, reprint. The sheet material is heavy and slippery. Stop by [END] then execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less The back of the sheet is slippery. Stop by [END] then execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less The sheet is soft and can easily bend. Stop by [END] then execute again under the following conditions. • Sheet type: HEAVY • SPD LIMIT (Registration mark setting): 20cm/s or less • Paper hold: Ineffective • Pinch roller: Use all The leading edge of the sheet is in contact with the floor and the sheet is floating during the registration mark detection. Stop by [END] then execute again under the following conditions. • Paper hold: Ineffective • Pinch roller: Use all • Use Sheet basket. (Be sure to use.) Only two Pinch rollers used at wide sheet printing. Stop by [END] then print again, increasing Pinch rollers used according to the sheet width. Pinch rollers are used in Low Mode for a heavy sheet. Use the end pinch rollers in High Mode and, if necessary, use the inner pinch roller also in High Mode. Correct the detection start position by the Jog key then reprint.
+Code;38
+Display;ERR 38 MARK SCALE <-> JOG & ENT or END (Displayed alternately)
+Description;
+Remedy;The registration mark size is too small for the distance between the registration marks. When the distance between registration marks is large, small registration marks may not be recognized if the sheet is skewed. Stop detection with the [END] key and print enlarged registration marks. (Select appropriate values based on the example given in the Operation Manual.) If the sheet is found skew significantly, the problem can be corrected by setting the sheet staight. The distance is too short between the adjacent registration marks that belong to different patterns. Smears, print data or outer frames are found near registration marks. Stop detection with the [END] key, and print the registration marks with larger gaps.
+Code;40
+Display;ERR 40 A MOTOR (in the sheet feed direction)
+Description;A-axis motor overloaded Abnormal load is applied to the sheet feed drive motor. n=1 : Position error n=2 : Position counter over error
+Remedy;Paper jamming Remove the sheet, and then restart. Roll sheet was cut at a high speed while it was not fed. Turn the power to OFF once then restart. Check in the same cutting way after feeding. Very heavy sheet was cut in high-speed mode and at a high cutting speed. Set the sheet type to “HEAVY”, or in the high quality mode, cut in the reduced cutting speed. Improper mechanical adjustment Check then adjust the X-axis belt tension.  Improper electric adjustment Adjust and check the current.  Damaged motor Replace the X-axis motor Assy..  Main PCB is damaged Replace the Main PCB.  Abnormal servo parameters Set the system parameter “No.62 SUPPORT” to “4” and check the servo parameters. Correct them if necessary. Roll stopper is in the fixing position. Disengage the roller stopper. Roll bars do not turn due to use of an excessively heavy sheet or for some other reason. Check that the roll bars turn smoothly. Check that the roll sheet is wound properly, without looseness. Do not use any excessively heavy sheet. Foreign matters (sheet, etc) on grit rollers Check that Grid rollers rotate smoothly. Remove the foreign matters so as to rotate smoothly if the rollers are not rotatable due to the matters. Surrounding conditions cause an abrupt change in supply voltage Check the supply voltage with a circuit tester. Ask the user to improve the voltage conditions if significant voltage fluctuation is found.
+Code;41
+Display;ERR 41 B MOTOR (in the width direction)
+Description;Phenomenon: B-axis motor overloaded Abnormal load is applied to the head drive motor. n=1 : Position error n=2 : Position counter over error
+Remedy;Paper jamming Remove the sheet, and then restart. Interference with Side panel due to incorrect model size setting Turn the power on again then correct the model size setting in the system parameters. Improper mechanical adjustment Check then adjust the Y-axis belt tension.  Improper electric adjustment Adjust and check the current.  Damaged motor Replace the Y-axis motor Assy..  Main PCB is damaged Replace the Main PCB.  Abnormal servo parameters Set the system parameter to “Maintenance =4” then check the servo parameters. Correct the parameters if the values are in abnormal.
+Code;42
+Display;ERR 42 A CURRENT
+Description;Phenomenon: Overcurrent flowed in the A-axis motor An overcurrent was detected in the sheet feed drive motor. n=1: The allowable maximum current exceeded n=2: The allowable average current exceeded
+Remedy;Paper jamming Remove the sheet, and then restart. Roll sheet was cut at a high speed while it was not fed. Turn the power to OFF once then restart. Check in the same cutting way after feeding. Very heavy sheet was cut in high-speed mode and at a high cutting speed. Set the sheet type to “HEAVY”, or in the high quality mode, cut in the reduced cutting speed. Improper mechanical adjustment Check then adjust the X-axis belt tension.  Improper electric adjustment Adjust and check the current.  Damaged motor Replace the X-axis motor Assy..  Main PCB is damaged Replace the Main PCB.  Abnormal servo parameters Set the system parameter “No.62 SUPPORT” to “4” and check the servo parameters. Correct them if necessary. Roll stopper is in the fixing position. Disengage the roller stopper. Roll bars do not turn due to use of an excessively heavy sheet or for some other reason. Check that the roll bars turn smoothly. Check that the roll sheet is wound properly, without looseness. Do not use any excessively heavy sheet. Foreign matters (sheet, etc) on grit rollers Check that Grid rollers rotate smoothly. Remove the foreign matters so as to rotate smoothly if the rollers are not rotatable due to the matters. Surrounding conditions cause an abrupt change in supply voltage Check the supply voltage with a circuit tester. Ask the user to improve the voltage conditions if significant voltage fluctuation is found.
+Code;43
+Display;ERR 43 B CURRENT
+Description;Phenomenon: Overcurrent flowed in the B-axis motor An overcurrent was detected in the head drive motor. n=1: The allowable maximum current exceeded n=2: The allowable average current exceeded
+Remedy;Paper jamming Remove the sheet, and then restart. Interference with Side panel due to incorrect model size setting Turn the power on again then correct the model size setting in the system parameters. Check then adjust the Y-axis belt tension.  Improper electric adjustment Adjust and check the current.  Damaged motor Replace the Y-axis motor Assy..  Main PCB is damaged Replace the Main PCB.  Abnormal servo parameters Set the system parameter to “Maintenance =4” then check the servo parameters. Correct the parameters if the values are in abnormal.
+Code;50
+Display;ERR 50 ORIGIN
+Description;Phenomenon: The plotter could not detect the sheet The head drive shaft cannot be driven (the motor runs normally, however).
+Remedy;Drive belt is broken or loose. Check the drive belt and replace it if broken. Adjust the tension if necessary. Syncro belt is broken or loose. Check the synchro belt and replace it if broken. Adjust the tension if necessary. Pulley retaining screw is loose. Check the screw and tighten it up if necessary.
+Code;50
+Display;ERR 50 ORIGIN
+Description;Phenomenon: The plotter could not detect the sheet Defective sheet width sensor or related component
+Remedy;Damaged sensor Perform sensor check and replace the sensor if necessary.
+Code;50
+Display;ERR 50 ORIGIN
+Description;The plotter could not detect the sheet Incorrect model size setting
+Remedy;This error may occur when the model size is set to a smaller size than the original. Check the setting then correct it if necessary.
+Code;51
+Display;ERR 51 PINCH POS
+Description;Incorrect Pinch roller position Incorrect Origin sensor assembling position
+Remedy;Check the Origin sensor assembling position then correct it if necessary.
+Code;51
+Display;ERR 51 PINCH POS
+Description;Incorrect Pinch roller position Origin sensor light shielding plate is damaged
+Remedy;Check the light shielding plate of pinch roller then replace it if damaged.
+Code;60
+Display;ERR 60 PenEncoder
+Description;Pen height undetectable
+Remedy;1. Execute the sensor testing, and check if the value on LCD varies when the penholder is moved up and down by hand. 2. Check the connector and cable connections and no disconnection. 3. Replace the Pen encoder. 4. Replace the Main PCB.
+Code;61
+Display;ERR 61 Pen Stroke
+Description;Incorrect pen height Unless 2.5 ~ 3.5 mm, normal cutting impossible.
+Remedy;1. Check no foreign matters stuck to the Pen line rubber. 2. When a penholder available on the market is used, use the pen cap and assemble it with the cap at the proper position. 3. When the pen cannot down surely due to sheet floating, set the sheet again with using the hold function. 4. Check no worn, no floating and no deformed on the Pen line rubber, or replace it. 5. Check the head height then adjust it. 6. If any trouble occurs in the head up/down motion, adjust or replace it. 7. Replace the Y-bar if any extreme torsion, distortion or deformation occurs on the Y-bar.
+Code;n01
+Display;illegal ipt ***
+Description;Abnormal interruption The firmware does not function due to an abnormal interruption.
+Remedy;No error message displayed nor started. Replace Main PCB due to the PCB defect. Error message displayed and function stopped (no repeatability) Replace Main PCB since the possibility of PCB defect is assumable highly. Occurrence repeatable, such as at particular operations, or particular data cut. 1. Upgrade to the latest F/W version. 2. Replace the Main PCB.
+Code;n02
+Display;** OFFSCALE **
+Description;Instruction to move to the outside of the plotting area The sheet is too small for the cutting data.
+Remedy;Use a sheet that is large enough for the cutting data.
+Code;n03
+Display;** OFFSCALE **
+Description;Instruction to move to the outside of the plotting area The cutting area is set improperly.
+Remedy;Correct the cutting area setting.
+Code;n04
+Display;** OFFSCALE **
+Description;Instruction to move to the outside of the plotting area Incorrect settings
+Remedy;ORGN SELECT setting does not match the data. Switch to LOWERrightORIGIN or CENTER ORIGIN so that it match the data. ROTATION setting does not match the data. Enable or disable Rotation so that it match the data. Expand-based data was cut without the Expand function turned ON. Set Expand to ON.
+Code;n05
+Display;** OFFSCALE **
+Description;Instruction to move to the outside of the plotting area Moving to the outside of the cutting area was instructed as a result of various compensation settings (for example, distance compensation or axis compensation)
+Remedy;1. On the assumption that compensation will be made, select an appropriate sheet size and create data with the origin selected at an appropriate location. 2. Do not fill the cutting area with data up to the boarders when axial compensation is to be made for registration mark detection or for any other purpose.
+Code;n06
+Display;** NO SHEET **
+Description;The sheet having been set is a transparent sheet or a sheet with black backing, which the sheet sensor does not react to.
+Remedy;Set the sheet sensor to OFF. Perform sheet width detection only and manually set the cutting area.
+Code;n07
+Display;** NO SHEET **
+Description;Defective sheet sensor
+Remedy;If the error is still displayed even after the sheet setting, execute the sensor testing and check the responsibility of sheet sensor. In case of no response, check the connection of sheet sensor then replace it.
+Code;n08
+Display;*SHEET sensor OFF*
+Description;Sheet sensor is disabled This message appears momentarily during sheet detection with the sheet sensor set to OFF.
+Remedy;1. When the sheet detection is performed on detectable sheets, lift the lever up and set the sheet sensor to OFF. 2. When the sheet detection only for the width detection is allowable in keeping the sheet sensor to OFF, no action is required. (in this case, the width detection is only executed.)
+Code;n09
+Display;PRMchk NG RETRY!
+Description;Hash check error at startup The hash check of saved parameters failed at startup. Parameter other than system parameters: Initialize the relevant parameter, and perform hash check again. System parameter: Replace the parameters with the backed up parameters, and perform hash check again.
+Remedy;It is no problem if displayed temporally then started without any error. However, check each parameter (Settings/Communication/ Pen/Distance compensation/System) since a part or all of the parameters may be back to the initial values. If displayed whenever the power is turned on, the flash ROM is considered to be defective. Check according to the following procedure. 1. Update the F/W to the latest version. 2. Execute the ROM/ RAM Check 3. Clear all parameters. 4. Replace the Main PCB.
+Code;n10
+Display;MEDIA SKEW <ENT>
+Description;The sheet meandered The amount of sheet skew exceeded the skew check setting value when SKEW CHECK was set to ON by the registration mark setting function. The message suggests that the sheet should be reset.
+Remedy;Raise the lever, reset the sheet straight and press the [ENTER] key. Adjust the LED pointer to the mark detection start point as the LED pointer lights up and the step feeding is enabled with the Jog key. Press the [ENTER] key to resume registration mark detection.
+Code;n11
+Display;COPY SKIP
+Description;Registration mark detection failed Registration mark detection failed during registration mark detection and continuous copy operation. CG-SRII places priority on continuous operation and, therefore, does not display an error even when registration mark detection fails during copy operation. It simply skips one pattern and enters registration mark detection of the next pattern.
+Remedy;This error message appears only momentarily when one pattern is skipped. Therefore, no corrective action is needed. If skip occurs frequently, however, verify the registration mark detection operation as described at “ERR36 MARKdetect”.

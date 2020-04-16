@@ -1,0 +1,56 @@
+Code;C0000
+Description;"Main Motor’s failure to turn
+ • The Lock signal does not go LOW within 1 s after the motor has been energized. • The Lock signal remains HIGH for continuous 0.1 s or more while the motor remains energized."
+Remedy;1 Main Motor turns after the malfunction has been reset. NO Correct drive. 2 Main Motor operation: the voltage across PJ6A-3 on the Master Board and GND is DC5 V (motor deenergized) and DC0 V (motor energized) after the malfunction has been reset. NO Change Master Board. 3 The voltage across PJ6A-4 on the Master Board and GND is DC5 V (motor deenergized) and DC0 V (motor energized) after the malfunction has been reset. YES Change Master Board. NO Change motor.
+Code;C0045
+Description;"Fusing Section Cooling Fan Motor’s failure to turn
+ A voltage of 0.3 V or less is detected for a continuous 1 s period while the motor remains energized."
+Remedy;1 Fusing Section Cooling Fan Motor operation: the voltage across CN7-2 on the Power Supply Board and GND is DC24 V after the malfunction has been reset. NO Change Power Supply Board. 2 Fusing Section Cooling Fan Motor operation: the voltage across CN7-1 on the Power Supply Board and GND is DC1.2 V (during high-speed rotation) and DC12 V (during low-speed rotation) after the malfunction has been reset. YES Change motor. NO Change Power Supply Board. Change Master Board.
+Code;C0049
+Description;"PH Section Cooling Fan Motor’s failure to turn
+ A voltage of 0.35 V or less is detected for a continuous 0.5 s period while the motor remains energized."
+Remedy;1 PH Section Cooling Fan Motor operation: the voltage across PJ13A-2 on the Master Board and GND is DC24 V after the malfunction has been reset. NO Change Master Board. 2 PH Section Cooling Fan Motor operation: the voltage across PJ13A-1 on the Master Board and GND is DC1 V (motor energized) and DC24 V (motor deenergized) after the malfunction has been reset. YES Change motor. NO Change Master Board.
+Code;C0200
+Description;"HV output failure
+ • The drum charge monitor voltage is lower than 4.5 V when the power switch is turned ON. • The drum charge monitor voltage remains 4.5 V or more when the drum charge output is turned ON. • The image transfer monitor voltage is 0.5 V or more immediately before the image transfer output is turned ON. • The image transfer monitor voltage does not increase 0.5 V or more within 40 ms after the image transfer output is turned ON."
+Remedy;1 High Voltage Unit operation: the voltage across PJ4A-4 on the Master Board and GND is DC24 V after the malfunction has been reset. YES Change High Voltage Unit. 2 Proper connection between the High Voltage Unit and Master Board. YES Change Master Board. NO Correct connection.
+Code;C0500
+Description;"Warm-up failure
+ • During the period from 12 s to 30 s after the start of the warm-up cycle, a condition of small temperature difference from the temperature at the start of the warm-up cycle is detected for a 50 ms period. • The temperature detected by the Thermistor does not reach the set level within 120 s after the start of the warm-up cycle."
+Remedy;1 Fusing Heater Lamp turns ON after the malfunction has been reset. YES Correct Thermistor for mounting position and/or clean. 2 Thermistor operation: resistance across CN1-1 and 2 on the Fusing Unit side is infinite, as measured with CN1 disconnected. YES Change Thermistor. 3 Thermoswitch and Fusing Heater Lamp operation: there is continuity across CN14-1 and 2 on the Fusing Unit side, as measured with CN14 disconnected. NO Change Thermoswitch. Change Fusing Heater Lamp. 4 The voltage across PJ14A-3 on the Master Board and GND is DC0 V (Fusing Heater Lamp ON) and DC24 V (Fusing Heater Lamp OFF) after the malfunction has been reset. YES Change Power Supply Board. Change Fuse 2 of Power Supply Board. NO Change Master Board.
+Code;C0510
+Description;"Abnormally low fusing temperature
+ • The temperature detected by the Thermistor remains lower than 94 °C for a continuous 50 ms period while the copier is in the standby state. • The temperature detected by the Thermistor remains lower than 110 °C for a continuous 50 ms period during a copy cycle."
+Remedy;1 Fusing Heater Lamp turns ON after the malfunction has been reset. YES Correct Thermistor for mounting position and/or clean. 2 Thermistor operation: resistance across CN1-1 and 2 on the Fusing Unit side is infinite, as measured with CN1 disconnected. YES Change Thermistor. 3 Thermoswitch and Fusing Heater Lamp operation: there is continuity across CN14-1 and 2 on the Fusing Unit side, as measured with CN14 disconnected. NO Change Thermoswitch. Change Fusing Heater Lamp. 4 The voltage across PJ14A-3 on the Master Board and GND is DC0 V (Fusing Heater Lamp ON) and DC24 V (Fusing Heater Lamp OFF) after the malfunction has been reset. YES Change Power Supply Board. Change Fuse 2 of Power Supply Board. NO Change Master Board.
+Code;C0520
+Description;"Abnormally high fusing temperature
+ The temperature detected by the Thermistor remains higher than 240 °C for a continuous 50 ms period while fusing temperature control is in progress."
+Remedy;1 Thermistor installed at the correct position. NO Correct. 2 Thermistor contaminated. YES Clean. 3 The circuit across CN1-1 and 2 on the Fusing Unit side is shorted as checked with CN1 disconnected. YES Change Thermistor. NO Change Master Board. Change Power Supply Board.
+Code;C0650
+Description;"Scanner Motor’s failure to turn, Scanner Home Position Sensor malfunction
+ The Scanner Home Position Sensor is not activated within a given period of time after the Scanner Motor has been energized."
+Remedy;1 Scanner movement after the malfunction has been reset YES To step 4 2 Scanner motion as it is moved manually NO Correct drive coupling. Install belt. 3 Proper JP9 connector connection of Control Board YES Change Scanner Motor. Change Control Board. NO Correct connections. 4 Scanner Home Position Sensor operation: the voltage across JP14-1 on the Control Board and GND is DC0 V (sensor unblocked) and DC3 V (sensor blocked) after the malfunction has been reset. YES Change Control Board. NO Change sensor.
+Code;C1200
+Description;"System memory failure
+ A memory test error is detected during the power-on initialization procedure."
+Remedy;1. Reset the malfunction. 2. If the malfunction is detected again, check the Control Board and Memory Board for proper connections. 3. If connections are okay, change the Control Board and/or Memory Board.
+Code;C1300
+Description;"Polygon Motor malfunction
+ • During the period 6 s after the Polygon Motor has been energized, a cluster of 56 or more SOS signals output for a 20 ms period is detected five consecutive times. • After the lapse of 6 s after the Polygon Motor has been energized, a cluster of below 43 or above 56 SOS signals output for a 20 ms period is detected five consecutive times. • No SOS signal is detected during the period from the start of laser emission to the deenergization of the Polygon Motor."
+Remedy;1. Reset the malfunction. 2. If the malfunction is detected again, check the harness between, and PJ connections on, the PH Unit and Master Board. 3. If connections are okay, change the PH Unit and Master Board.
+Code;C133B
+Description;"Option communications error
+ The Controller Board is not detected within 5 s after the start of a print cycle."
+Remedy;1. Reset the malfunction. 2. If the malfunction is detected again, check the Control Board and the controller board. 3. If connections are okay, change the Control Board and the controller board.
+Code;C13F0
+Description;"SOS detection failure
+ • During the period 6 s after the Polygon Motor has been energized, a cluster of 56 or more SOS signals output for a 20 ms period is detected five consecutive times. • After the lapse of 6 s after the Polygon Motor has been energized, a cluster of below 43 or above 56 SOS signals output for a 20 ms period is detected five consecutive times. • No SOS signal is detected during the period from the start of laser emission to the deenergization of the Polygon Motor."
+Remedy;1. Reset the malfunction. 2. If the malfunction is detected again, check the harness between, and PJ connections on, the PH Unit and Master Board. 3. If connections are okay, change the PH Unit and Master Board.
+Code;C1468
+Description;"Hardware (EEPROM) malfunction
+ An EEPROM read/write error occurs during the power-on initialization procedure."
+Remedy;1. Run “FA” of Function. 2. If it has not been checked okay (“FF” appears on the display), change the EEPROM on the Control Board. If it has been checked okay (“00” appears on the display), change the Control Board itself.
+Code;C14A3
+Description;"Exposure Lamp malfunction
+ The intensity level of the Exposure Lamp does not stabilize within a given period of time."
+Remedy;1 Proper connections between the Scanner, Scanner Interface Board, and Control Board YES Change Scanner Interface Board. Change Control Board. Change Scanner. NO Correct connections.

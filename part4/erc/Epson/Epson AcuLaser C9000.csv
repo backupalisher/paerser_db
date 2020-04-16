@@ -1,0 +1,184 @@
+Code;C0017 ... C0800
+Description;C0017 CPU error (Undefined interrupt occurrence) C0088 CPU error (SYSCALL exception) C0089 CPU error (Break exception) C0091 CPU error (Coprocessor unused exception) C0300 CPU error (Reserved (undefined) exception) C0301 CPU error (Machine check exception) C0302 CPU error (Data access exception) C0303 CPU error (Instruction access exception) C0304 CPU error (Alignment exception) C0305 CPU error (Program exception) C0306 CPU error (Trace exception) C0307 CPU error (Performance exception) C0308 CPU error (System administration interrupt exception) C0309 CPU error (Temperature management interrupt exception) C0800 CPU error (Controller defective)
+Causes;Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;C0998, C0999
+Description;C0998 Engine communication error (Only at power-on) C0999 No Engine Flash ROM program data
+Causes;Control Board (PWB-A)
+Remedy;1 Replace the PWB-A.
+Code;C1002
+Description;Standard RAM error (e.g. when there is no free space for standard size)
+Causes;• SDRAM • Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Check whether the RAM DIMM is installed correctly or not. 3 Replace the RAM DIMM. 4 Replace the Controller (C495MAIN).
+Code;C1010
+Description;Verify error
+Causes;• Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;C1020, C1021
+Description;C1020 RAM error (Slot 0) C1021 RAM error (Slot 1)
+Causes;• SDRAM • Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Check whether the RAM DIMM is installed correctly or not. 3 Replace the RAM DIMM. 4 Replace the Controller (C495MAIN).
+Code;C1100 ... C1185
+Description;C1100 ROM checksum error (bit 0 to 15) (Font) C1101 ROM checksum error (bit 16 to 31) (Font) C1120 ROM checksum error (bit 0 to 7) (Program) C1121 ROM checksum error (bit 8 to 15) (Program) C1122 ROM checksum error (bit 16 to 23) (Program) C1123 ROM checksum error (bit 24 to 31) (Program) C1180 Optional ROM Module A checksum error C1181 Optional ROM Module B checksum error C1185 Unsupported ROM module p 142
+Causes;• CODE ROM (C309PROG) • Controller (C495MAIN) • Optional ROM
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Check whether the Code ROM (Optional ROM) is installed correctly or not. 3 Replace the Code ROM (C309PROG) (Optional ROM). 4 Replace the Controller (C495MAIN).
+Code;C1200, C1210
+Description;C1200 EEPROM write error C1210 EEPROM write count limit
+Causes;• Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;C1400
+Description;Engine initialization malfunction
+Causes;• Control Board (PWB-A)
+Remedy;1 Replace the PWB-A.
+Code;C1500
+Description;CCNV hardware error
+Causes;• Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;C1550
+Description;Compression SRAM initialization hardware error
+Causes;
+Remedy;
+Code;C1600
+Description;Video related hardware error (including PWM IC calibration error)
+Causes;• Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;C1800
+Description;SPD error of DIMM
+Causes;
+Remedy;
+Code;C1999, C2000
+Description;C1999 Other hardware error C2000 Software error
+Causes;• Controller (C495MAIN)
+Remedy;1 After powering the printer OFF, then ON again, check whether the same error status will occur or not. (Repeatability check) 2 Replace the Controller (C495MAIN).
+Code;E010
+Description;Process Motor YMC error • When the printer is not put in a ready status if the predetermined time has elapsed at motor-on. • When the printer is put out of the ready status continuously for the predetermined time during motor rotation.
+Causes;• PU Drive Motor Y/M/C (M4) • PU Drive Motor Bk (M5) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M4. p115 PWB-A CNPM-A-5A(REM) 9-C 4 Replace the PWB-A.
+Code;E017
+Description;Process Motor K error • When the printer is not put in a ready status if the predetermined time has elapsed at motor-on. • When the printer is put out of the ready status continuously for the predetermined time during motor rotation.
+Causes;• PU Drive Motor Y/M/C (M4) • PU Drive Motor Bk (M5) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M5. p115 PWB-A CNPM-A-5B(REM) 12-H 4 Replace the PWB-A.
+Code;E040
+Description;Suction Fan Motor error When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M13. p115 PWB-A CNF1-A-10(REM) 12-A 4 Replace the PWB-A.
+Code;E042
+Description;Ozone Fan Motor error When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M9. p115 PWB-A CNF4-A-1(REM) 9-E 4 Replace the PWB-A.
+Code;E044
+Description;PS Fan Motor error. When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M6. p115 PWB-A CNF3-A-1(REM) 17-C 4 Replace the PWB-A.
+Code;E060
+Description;Fuser Motor error. When the fire check detection signal is detected as High during motor rotation.
+Causes;• Paper Loading Drive Motor (M1) • PF Drive Motor (M2) • Duplex Unit Drive Motor (M10) • Duplex Feeding Unit Motor (M11) • Fuser Drive Motor (M3) • Manual Feed Detection Board (PWB-Y) • Duplex Unit Control Board (PWB-X) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M5. p115 PWB-A CNPM-A-5B(ON) 12-H 4 Replace the PWB-A.
+Code;E094
+Description;Transfer Roll Operating/Setting Error, or not installed. When the Secondary Transfer Sensor does not turn ON at separation of the Secondary Transfer Roller.
+Causes;• Primary Transfer Sensor (PC24) • Secondary Transfer Sensor (PC25) • Control Board (PWB-A)
+Remedy;1 Check the operation of PC25. p113 PWB-A CNF1-A-3(ON) 3-G 2 Replace the PWB-A.
+Code;E096
+Description;Primary transfer roller pressing/separation error. When the Primary Transfer Sensor does not turn ON at separation of the Primary Transfer Roller.
+Causes;• Primary Transfer Sensor (PC24) • Secondary Transfer Sensor (PC25) • Control Board (PWB-A)
+Remedy;1 Check the operation of PC25. p113 PWB-A CNF1-A-3(ON) 3-G 2 Replace the PWB-A.
+Code;E250
+Description;Power (24V) error. When a power supply alarm is detected continuously for longer than the predetermined time with 24V remote ON and hard alarm OFF.
+Causes;• Front Cover Switch (S1) • Front Cover Open/Close Sensor Switch (S2) • Right Cover Switch (S3) • Right Cover Open/Close Sensor (PC27) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Check the operation of PC27. p113 PWB-A CNF1-A-9(ON) 6-I 2 Check the operation of S1. p114 PWB-A CNFC0-A-1(ON) 17-B 3 Check the operation of S2. p114 PWB-A CNPWC-A-1(ON) 17-A 4 Check the operation of S3. p114 PWB-A CNPWC-A-1(ON) 17-A 5 Replace the PWB-T. 6 Replace the PWB-A. 7 Replace the PU1.
+Code;E300
+Description;Polygon Motor error • When the spindle alarm signal (SPALM) is not cleared the predetermined time after the Polygon Motor has started. • When the spindle alarm signal is detected for longer than the predetermined time during steady rotation of the Polygon Motor.
+Causes;• P/H Assy • Flat Cable • Control Board (PWB-A)
+Remedy;1 Check the cable connection status, and correct if it is improper. 2 Replace the P/H Assy. 3 Replace the PWB-A.
+Code;E310
+Description;Laser error. When the Low of the ready signal is detected for longer than the predetermined time during laser emission.
+Causes;• P/H Assy • Flat Cable • Control Board (PWB-A)
+Remedy;1 Check the cable connection status, and correct if it is improper. 2 Replace the P/H Assy. 3 Replace the PWB-A.
+Code;E408
+Description;New transfer belt unit release error. When a new product status is not cleared after a new Transfer Belt Unit has been set.
+Causes;• Control Board (PWB-A)
+Remedy;1 Remove the Unit and set it again. 2 Replace the PWB-A.
+Code;E500
+Description;Fuser warm-up error (Heat Roll Lamp). When warm-up is not completed since the Heat Roller Thermistor does not detect the specified temperature if the predetermined has elapsed time after a start of warm-up.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E501
+Description;Fuser warm-up error (Pressure Roll Lamp). When warm-up is not completed since the Pressure Roller Thermistor does not detect the specified temperature if the predetermined time has elapsed after a start of warm-up.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E510
+Description;Extremely low fuser temperature (Heat Roll Lamp). When the temperature detected by the Heat Roller Thermistor drops below the specified temperature for longer than the predetermined time.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E511
+Description;Extremely low fuser temperature (Pressure Roll Lamp). When the temperature detected by the Pressure Roller Thermistor drops below the specified temperature for longer than the predetermined time.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E520
+Description;Extremely high fuser temperature (Heat Roll Lamp). When the temperature detected by the Heat Roller Thermistor rises above the specified temperature for longer than the predetermined time.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E521
+Description;Extremely high fuser temperature (Pressure Roll Lamp). When the temperature detected by the Pressure Roller Thermistor rises above the specified temperature for longer than the predetermined time.
+Causes;• Fuser Unit • Heater Lamp Control Board (PWB-T) • Power Supply (PU1) • Control Board (PWB-A)
+Remedy;1 Replace the Fuser Unit. 2 Replace the PWB-T. 3 Replace the PWB-A. 4 Replace the PU1.
+Code;E530
+Description;New Fuser Unit release error. When a new product status is not cleared after a new Fuser Unit has been set.
+Causes;• Control Board (PWB-A)
+Remedy;1 Remove the Unit and set it again. 2 Replace the PWB-A.
+Code;E600
+Description;EEPROM error (main unit). When a write error occurs in the Main Unit EEPROM check.
+Causes;• Control Board (PWB-A)
+Remedy;1 Replace the PWB-A.
+Code;E605
+Description;EEPROM error (optical unit). When the printer is not put in a ready status if the predetermined time has elapsed after execution of access control to the EEPROM of the P/H Assy at power-on.
+Causes;• P/H Assy • Control Board (PWB-A)
+Remedy;1 Check the P/H Assy connector connection status, and correct if it is improper. 2 Replace the P/H Assy. 3 Replace the PWB-A.
+Code;E610
+Description;EEPROM error 2
+Causes;
+Remedy;
+Code;E711
+Description;Color matching LSI error (R/W error). When a read or write error is detected at access to the Color Matching LSI.
+Causes;• Correction Board • Control Board (PWB-A)
+Remedy;1 Check the Correction Board connection status, and correct if it is improper. ¯ ¯ ¯ 2 Replace the Correction Board. ¯ ¯ ¯ 3 Replace the PWB-A.
+Code;E720
+Description;Pick Motor error. When the fire check detection signal is detected as High during motor rotation.
+Causes;• Paper Loading Drive Motor (M1) • PF Drive Motor (M2) • Duplex Unit Drive Motor (M10) • Duplex Feeding Unit Motor (M11) • Fuser Drive Motor (M3) • Manual Feed Detection Board (PWB-Y) • Duplex Unit Control Board (PWB-X) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M1. p115 PWB-A CNSTM-A-5~8 (Pulse) 14-B 4 Replace the PWB-A.
+Code;E721
+Description;Register Motor error. When the fire check detection signal is detected as High during motor rotation.
+Causes;• Paper Loading Drive Motor (M1) • PF Drive Motor (M2) • Duplex Unit Drive Motor (M10) • Duplex Feeding Unit Motor (M11) • Fuser Drive Motor (M3) • Manual Feed Detection Board (PWB-Y) • Duplex Unit Control Board (PWB-X) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M2. p115 PWB-A CNSTM-A-1~4 (Pulse) 12-A 4 Replace the PWB-A.
+Code;E722
+Description;Duplex Motor error. When the fire check detection signal is detected as Low during motor rotation.
+Causes;• Paper Loading Drive Motor (M1) • PF Drive Motor (M2) • Duplex Unit Drive Motor (M10) • Duplex Feeding Unit Motor (M11) • Fuser Drive Motor (M3) • Manual Feed Detection Board (PWB-Y) • Duplex Unit Control Board (PWB-X) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M10. p115 PWB-X PJ2-X-1~4 (Pulse) 22-H 4 Replace the PWB-X. 5 Replace the PWB-A.
+Code;E723
+Description;Duplex Feeding Unit Motor error. When the fire check detection signal is detected as Low during motor rotation.
+Causes;• Paper Loading Drive Motor (M1) • PF Drive Motor (M2) • Duplex Unit Drive Motor (M10) • Duplex Feeding Unit Motor (M11) • Fuser Drive Motor (M3) • Manual Feed Detection Board (PWB-Y) • Duplex Unit Control Board (PWB-X) • Control Board (PWB-A)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the motor drive coupling status, and correct if it is improper. 3 Check the operation of M11. p115 PWB-Y PJ2-Y-1~4 (Pulse) 22-F 4 Replace the PWB-Y. 5 Replace the PWB-A.
+Code;E746
+Description;Fuser Fan Motor error. When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M7. p115 PWB-A CNF1-A-10(REM) 10-G 4 Replace the PWB-A.
+Code;E747
+Description;Optical Fan Motor error. When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M8. p115 PWB-A CNF2-A-1(REM) 5-G 4 Replace the PWB-A.
+Code;E748
+Description;Internal cooling fan motor error. When the lock signal is detected continuously for the predetermined time during fan rotation.
+Causes;• Fuser Fan Motor (M7) • PH Fan Motor (M8) • Suction Fan Motor (M13) • Ozone Fan Motor (M9) • PS Fan Motor (M6) • PU Fan Motor (M12)
+Remedy;1 Check the motor connector connection status, and correct if it is improper. 2 Check the load status of the fan section, and correct if it is improper. 3 Check the operation of M12. p115 PWB-A CNF3-A-1(REM) 7-C 4 Replace the PWB-A.
+Code;E805
+Description;AIDC sensor (front) error. Image quality correction control is performed when an AIDC Sensor error is received from the Engine. When the AIDC Sensor error is then received again, this error occurs.
+Causes;• AIDC Sensor • Registration Sensor • Photoconductor Unit
+Remedy;1 Clean the AIDC Sensor. 2 Replace the Photoconductor Unit. 3 Replace the AIDC Sensor.
+Code;E810
+Description;AIDC sensor (back) error. Image quality correction control is performed when an AIDC Sensor error is received from the Engine. When the AIDC Sensor error is then received again, this error occurs.
+Causes;• AIDC Sensor • Registration Sensor • Photoconductor Unit
+Remedy;1 Replace the Photoconductor Unit. 2 Replace the Registration Sensor.
+Code;E998
+Description;Engine communication error. When an error occurs in communication between the Controller and MCU via the Video I/F.
+Causes;• Controller (C495MAIN) • Control Board (PWB-A)
+Remedy;1 Check the connection status between the Controller and PWB-A. ¯ ¯ ¯ 2 Replace the Controller (C495MAIN). ¯ ¯ ¯ 3 Replace the PWB-A.

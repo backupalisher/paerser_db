@@ -1,0 +1,64 @@
+Code;0001 ... 0999
+Description;System equipment (PMS, other (power supply unit, H/W, S/W, operation panel))
+Causes;
+Remedy;
+Code;1000 ... 1999
+Description;Engine equipment (standard equipped paper transport)
+Causes;
+Remedy;
+Code;2000 ... 2499
+Description;Print head equipment (print head, ink)
+Causes;
+Remedy;
+Code;2500 ... 2999
+Description;Optional paper feed equipment (compact envelope feeding unit)
+Causes;
+Remedy;
+Code;3000 ... 3999
+Description;Optional paper ejection equipment (multifunction finisher, face down finisher, autocontrol stacking tray, RP stacking tray)
+Causes;
+Remedy;
+Code;4000 ... 4999
+Description;Scanner equipment (AF, FB)
+Causes;
+Remedy;
+Code;5000 ... 5499
+Description;Postscript option equipment (PS)
+Causes;
+Remedy;
+Code;5500 ... 5999
+Description;Optional device other than paper feed/output tray equipment (IC card authentication kit, card reader, coin vendor, card vendor)
+Causes;
+Remedy;
+Code;7000 ... 7499
+Description;External linkage device equipment (printer driver, console, utility app)
+Causes;
+Remedy;
+Code;I
+Description;Information
+Causes;Guide for user
+Remedy;[Definition] Guide for user (*) * Guides when a job is being executed and it is not necessary to stop the job. [Releasing Conditions] The user closes the [Information] window. While it is possible to release the error, maintenance by a service engineer is required to permanently resolve the error. [Processing] <When an error occurs> Continue operation and processing (no effect on operation or processing). Continue operation and processing but display the error on the panel until the error is released. As operation and processing are continued, for example if a print job is received, the job is printed as during normal operation (in the same manner as when an error is not in occurrence). <Prior to releasing error> None (It is possible to execute operation modes which possibly may use the section where the information is generated.) <After error is released> None (There is no restarting process as the jobs are not stopped even upon occurrence of the error.)
+Code;S
+Description;Service engineer call
+Causes;An error that affects the entire system Actions to permanently resolve the error cannot be taken by user operations
+Remedy;[Definition] An error that affects the entire system (*) Actions (to permanently resolve the error) cannot be taken by user operations * Even if the place where an error occurs in one part of the system, in cases when the error affects the entire system (the printer itself becomes unavailable for use), the error shall be subject to a service engineer call (S). When it is not possible to print, the error shall be subject to a service engineer call (S). [Releasing Conditions] Turn OFF the printer (Sub power key OFF) While it is possible to release the error by shutting off the power supply unit (OFF with sub-power switch), repair by a service engineer is required to permanently resolve the error. Although the error basically cannot be released by pressing the reset key, as an exception, with error types where the cause of a hardware error can possibly be resolved without shutting off the power supply unit (= repair), it shall be possible to release the error by pressing the reset key. [Processing] <When an error occurs> If the unit is in action, promptly stop operations while taking care not to trigger other failures. <Prior to releasing error> Set operation modes other than the test mode to be not available for execution. (Even while a service engineer call is occurring, it is possible to transition to the test mode. After executing the test mode for clearing the error, it is possible to execute test modes for other than clearing the error.) <After error is released> As it is necessary to shut off the power supply unit (OFF with sub-power key) in order to release the error, it is not possible to restart the job that is stopped due to the occurrence of the error.
+Code;U
+Description;Unit Error
+Causes;An error that affects part of the system Actions to permanently resolve the error cannot be taken by user operations
+Remedy;"[Definition] An error that affects part of the system (*1) Actions (to permanently resolve the error) cannot be taken by user operations (*2) *1 In the event that an error for which ""Actions to permanently resolve the error cannot be taken by user operations"" occurs, the error is to be subject to a unit error (U). When it is possible to print, the error is to be subject to a unit error (U). *2 In cases when the place where an error occurs can be operated without shutting off the power supply unit, the error is to be subject to a unit error (U). [Releasing Conditions] Press the Reset key, or turn OFF the power supply. (Turn OFF the sub power key.) While it is possible to release the error by pressing the reset key or shutting off the power supply unit (OFF with sub-power switch), repair by a service engineer is required to permanently resolve the error. However, when there are jobs of the following error, as it is possible to continue the job by changing the paper feed source or output tray, add changes of the paper feed source and output tray to the clearing conditions. - Error with Tray 1, Tray 2 - Error with standard paper feed tray of F units - FU paper output error - FD paper output error when the FU paper output OP is connected [Processing] <When an error occurs> If the unit is in operation, promptly stop operations while taking care not to trigger other failures. <Prior to releasing error> Operation modes that does not use the section where an error occurs are to be made available for execution. (Even during the occurrence of a unit error, it shall be possible to transition to the test mode and execute the test mode.) <After error is released> It is not possible to restart the job that is stopped due to the occurrence of the error."
+Code;W
+Description;Warning
+Causes;Caution or warning for user
+Remedy;"[Definition] Caution or warning for user(*) * Cautions or warnings when a job is being executed and it is necessary to stop the job. [Releasing Conditions] The user closes the [Warning] window. Actions (to permanently resolve the error) can be taken by user operations. [Processing] <When an error occurs> Continue processing the job in progress as much as possible and stop processing at a timing where processing is least affected. <Prior to releasing error> None (It is possible to execute operation modes which possibly may use the section where the warning occurs. For example, even in a state where a warning regarding the AF occurs in the copy mode, it is possible to execute the scan mode.) <After error is released> * As the process for restarting a job that is stopped due to the occurrence of an error differs for every error type, list details on the restarting of jobs in the [Remarks] in the chapter for each error type in the ""Error Types Edition""."
+Code;X
+Description;Jam error
+Causes;Printing paper transport error
+Remedy;"[Definition] An error occurs with paper feed, transport, or output of printing paper. [Releasing Conditions] Remove the printing paper and perform operations for clearing the jam after removal of the printing paper (opening and closing the cover, etc.). Actions (to permanently resolve the error) can be taken by user operations. [Processing] <When an error occurs> If the unit is in operation, promptly stop operations while taking care not to trigger other failures. When an object to transport is remaining inside the system, notify the position thereof to the user to urge the user to remove the item. <Prior to releasing error> Operation modes that does not use the section where an error occurs are to be made available for execution. (Even during the occurrence of a jam error, it shall be possible to transition to the test mode and execute the test mode.) <After error is released> After the user performs operations to resolve the jam, drive the transport path to confirm that all jammed items are removed. Automatically restart the job that is stopped due to the occurrence of the error. (*) * As exceptions, error types for which jobs do not automatically restart are to be listed in the [Remarks] in the chapter for each error type in the ""Error Types Edition""."
+Code;Y
+Description;Supply error
+Causes;Shortage of a consumable The box for waste is full
+Remedy;[Definition] Shortage of a consumable The box or tank for waste is full [Releasing Conditions] Remove the consumable or box/tank for waste with which an error occurs. Actions (to permanently resolve the error) can be taken by user operations. [Processing] <When an error occurs> Continue processing the job in progress as much as possible and stop processing at a timing where processing is least affected. <Prior to releasing error> Operation modes that do not use the consumable or box for waste where the error occurs are to be made available for execution. (Even during the occurrence of a supply error, it shall be possible to transition to the test mode and execute the test mode.) <After error is released> Automatically restart the job that is stopped due to the occurrence of the error.
+Code;Z
+Description;Set check error
+Causes;The interlocking SW is ON (detected) Release of cover which can be operated by the user
+Remedy;"[Definition] The interlocking SW is ON (detected) and the cover operable by the user is released [Releasing Conditions] Turn the interlocking SW OFF (release) or close the cover. Actions (to permanently resolve the error) can be taken by user operations. [Processing] <When an error occurs> If the unit is in operation, promptly stop operations while taking care not to trigger other failures. <Prior to releasing error> Operation modes that does not use the section where an error occurs are to be made available for execution. (Even during the occurrence of a set check error, it shall be possible to transition to the test mode and execute the test mode.) <After error is released> Automatically restart the job that is stopped due to the occurrence of the error. (*) * As exceptions, error types for which jobs do not automatically restart are to be listed in the [Remarks] in the chapter for each error type in the ""Error Types Edition""."

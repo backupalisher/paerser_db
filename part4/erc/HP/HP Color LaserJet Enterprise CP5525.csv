@@ -1,0 +1,585 @@
+Code;10.0X.Y0
+Display;10.0X.Y0 Supply memory error
+Description;"The product cannot read or write to at least one print cartridge memory tag or a memory tag is missing from a print cartridge.
+ Memory error • 10.00.00 Black print cartridge • 10.01.00 Cyan print cartridge • 10.02.00 Magenta print cartridge • 10.03.00 Yellow print cartridge
+ E-label missing • 10.00.10 Black print cartridge • 10.01.10 Cyan print cartridge • 10.021.10 Magenta print cartridge • 10.03.10 Yellow print cartridge"
+Remedy;1. Remove, and then reinstall the indicated print cartridge. 2. If the error reappears, turn the power off, and then on. 3. Check the cartridge e-label. If it is damaged, replace the cartridge. 4. If the error persists, replace the indicated print cartridge.
+Code;10.22.50
+Display;10.22.50
+Description;The transfer kit life was reset above the order threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.22.51
+Display;10.22.51
+Description;The transfer kit life was reset above the replace threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.22.52
+Display;10.22.52
+Description;The transfer kit life was reset above the reset threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.23.50
+Display;10.23.50
+Description;The fuser kit life was reset above the order threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.23.51
+Display;10.23.51
+Description;The fuser kit life was reset above the replace threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.23.52
+Display;10.23.52
+Description;The fuser kit life was reset above the reset threshold. A new ITB was installed.
+Remedy;No action necessary.
+Code;10.23.70
+Display;10.23.70 Printing past very low
+Description;The product indicates when fuser kit is very low. The actual remaining fuse kit life might vary. You do not need to replace the fuser kit at this time unless print quality is no longer acceptable.
+Remedy;If print quality is no longer acceptable, replace the fuser kit. See the parts chapter in the service manual for the fuser kit part number.
+Code;10.XX.34
+Display;10.XX.34 Used supply in use
+Description;"The indicated cartridge is used.
+ • 10.00.34 Black print cartridge • 10.01.34 Cyan print cartridge • 10.02.34 Magenta print cartridge • 10.03.34 Yellow print cartridge"
+Remedy;NOTE: Removing a cartridge from one product and then installing it in a different product (for testing functionality) will cause this event code.
+Code;10.XX.40
+Display;10.XX.40 Genuine HP supplies installed
+Description;"More than one genuine HP print cartridge has been installed.
+ • 10.00.40 Black print cartridge • 10.01.40 Cyan print cartridge • 10.02.40 Magenta print cartridge • 10.03.40 Yellow print cartridge"
+Remedy;No action necessary.
+Code;10.XX.41
+Display;10.XX.41 Unsupported supply in use
+Description;"The indicated print cartridge is for a different product.
+ • 10.00.41 Black print cartridge • 10.01.41 Cyan print cartridge • 10.020.41 Magenta print cartridge • 10.03.41 Yellow print cartridge"
+Remedy;Remove the indicated print cartridge, and then install the correct cartridge for this product.
+Code;10.XX.70
+Display;10.XX.70 Printing past very low
+Description;"The product indicates when a supply level is very low. The actual remaining print cartridge life might vary. You do not need to replace the print cartridge at this time unless print quality is no longer acceptable.
+ • 10.00.7010.00.70 Black print cartridge • 10.01.70 Cyan print cartridge • 10.02.70 Magenta print cartridge • 10.03.70 Yellow print cartridge"
+Remedy;If print quality is no longer acceptable, replace the indicated print cartridge. See the parts chapter in the service manual for the correct cartridge part number.
+Code;13.00.00
+Display;13.00.00
+Description;Generic jam event code.
+Remedy;Check the product for a jam.
+Code;13.A3.FF
+Display;13.A3.FF
+Description;Power on jam at the Tray 3 feed sensor.
+Remedy;Check the product for a jam.
+Code;13.B2.9Z
+Display;13.WX.YZ Jam below control panel
+Description;Page at duplex switchback jam. Z = the source tray number
+Remedy;Check the product for a jam
+Code;13.B9.CZ
+Display;13.WX.YZ Fuser wrap jam
+Description;Fuser wrap jam This jam occurs when the paper disappears from the fuser output sensor before a designated amount of time after the paper reached the fuser output sensor (It is determined that the paper is being wrapped around the fuser roller). Z = fuser mode • 1 = Normal auto sense • 2 = Normal non-auto sense • 3 = Light 1 to 3 • 4 = Heavy 1 • 5 = Heavy 2 • 6 = Heavy 3 • 7 = Glossy 1 • 8 = Glossy 2 • 9 = Glossy 3 • A = Glossy film • B = Transparency • C = Label • D = Envelope 1 to 3 • E = Rough • 0 = Photo 1 to 3‚
+Remedy;Clear the jam
+Code;13.D3.DZ
+Display;13.D3.DZ
+Description;Late to duplex re-feed jam Z = fuser mode
+Remedy;Check the product for a jam.
+Code;13.WX.EE
+Display;13.WX.EE
+Description;"This jam occurs when a door is opened during printing.
+ • 13.AA.EE Tray 3, 4, or 5 door open • 13.AB.EE Tray 4, 5, or 6 door open • 13.BA.EE Front door open • 13.BB.EE Right door open"
+Remedy;Make sure that the doors are fully closed.
+Code;13.WX.FF
+Display;13.WX.FF
+Description;"Power on residual paper jam This jam occurs when the paper exists at any of the paper path jam sensors at power on or door close. Due to the current FW timing requirements, the displayed jam code is always 13.FF.FF, only the event log will have 13.WX.FF
+ • 13.B2.FF Registration sensor - PS5 • 13.B4.FF Loop sensor - PS7 and PS8 • 13.B9.FF Fuser output sensor - PS6 • 13.A3.FF Tray 3 feed sensor - SR1 • 13.A4.FF Tray 4 feed sensor - SR1 • 13.A5.FF Tray 5 feed sensor - SR81 • 13.A6.FF Tray 6 feed sensor - SR91 • 13.FF.FF Multiple sensors"
+Remedy;Clear the jam.
+Code;13.WX.YZ
+Display;13.WX.YZ Fuser area jam
+Description;"• 13.B9.AZ Stopped at fuser jam This jam occurs when the paper stays at the fuser output sensor for a designated amount of time after it has reached the fuser output sensor. Z = fuser mode • 1 = Normal auto sense • 2 = Normal non-auto sense • 3 = Light 1 to 3 • 4 = Heavy 1 • 5 = Heavy 2 • 6 = Heavy 3 • 7 = Glossy 1 • 8 = Glossy 2 • 9 = Glossy 3 • A = Glossy film • B = Transparency • C = Label • D = Envelope 1 to 3 • E = Rough • 0 = Photo 1 to 3
+ • 13.B9.DZ Z = the source tray number This jam occurs when the paper does not reach the fuser output sensor in the designated amount of time. • 13.E1.DZ Z = fuser mode This jam occurs when the paper stays at the fuser output sensor for a designated amount of time after it has reached the fuser output sensor."
+Remedy;Clear the jam. See the clear jams section in the service manual. For a 13.B9.DZ jam: Make sure media is within specifications, check for obstructions in the fuser, check that the T2 roller is installed properly.
+Code;20.00.00
+Display;20.00.00 Insufficient memory
+Description;The product has experienced a memory error. You might have tried to transfer too many fonts or macros.
+Remedy;Press the OK button to print the transferred data (some data might be lost), and then simplify the print job or install additional memory.
+Code;21.00.00
+Display;21.00.00 Page too complex
+Description;The page decompression process was too slow for the printer.
+Remedy;Press the OK button to continue printing (some data might be lost).
+Code;32.1C.XX
+Display;32.1C.XX
+Description;NVRAM backup/restore error
+Remedy;
+Code;32.21.00
+Display;32.21.00
+Description;Corrupt firmware in external accessory
+Remedy;Turn the product off, then on, and retry. If the error persists, clear the firmware image from the active partition by using the Partial Clean item in the Preboot menu
+Code;40.00.01
+Display;40.00.01 USB I/O buffer overflow
+Description;The USB buffer has overflowed.
+Remedy;Press the OK button to print the transferred data (some data might be lost). Check the host configuration.
+Code;40.00.02
+Display;40.00.02 Embedded I/O buffer overflow
+Description;The product has experienced a JetDirect buffer overflow.
+Remedy;Press the OK button to print the transferred data (some data might be lost). Check the host configuration.
+Code;40.00.03
+Display;40.00.03 EIO buffer overflow
+Description;Too much data was sent to the EIO card in the specified slot (x). An incorrect communications protocol might be in use.
+Remedy;Press the OK button to print the transferred data (some data might be lost).
+Code;40.00.04
+Display;40.00.04 Unsupported USB accessory detected
+Description;The connection between the product and the USB device has been broken.
+Remedy;Press the OK button to clear the error message and continue printing. Remove, and then reinstall the USB device.
+Code;40.00.05
+Display;40.00.05 Embedded I/O bad transmission
+Description;The USB device has been removed.
+Remedy;Press the OK button to clear the error message. (Data will be lost.) Install the USB device.
+Code;41.02.00
+Display;41.02.00 Error
+Description;A beam detected misprint error.
+Remedy;Turn the product off, and then on. If the error persists, replace the laser/scanner assembly.
+Code;41.03.YZ
+Display;41.03.YZ Unexpected size in tray <X>
+Description;"The product detected a different paper size than expected.
+ • Y = 0 Size mismatch. Detected media is longer or shorter than expected. • Y = A Size mismatch. Detected media too long. • Y = B Size mismatch. Detected media too short. • Z = 1 Source is Tray 1 • Z = 2 Source is Tray 2 • Z = 3 Source is Tray 3 • Z = 4 Source is Tray 4 • Z = 5 Source is Tray 5 • Z = 6 Source is Tray 6"
+Remedy;Make sure that the tray is loaded with the correct paper size and that the sliding paper guides are correctly adjusted. Use the Manual/tray bin sensor test to verify that the cassette media switch is correctly functioning. If the error persists, replace the lifter assembly.
+Code;41.05.YZ
+Display;41.05.YZ Unexpected type in tray <X>
+Description;"The product detected a different paper type than expected.
+ • Y = 0 (expected type) Unknown • Y = 1 (expected type) Normal media • Y = 3 (expected type) LBP OHT • Y = 4 (expected type) Glossy media • Y = 5 (expected type) Gloss film • Y = 6 (expected type) Non-assured OHT • Y = 7 (expected type) Heavy media • Y = 8 (expected type) Light media • Y = 9 (expected type) Rough media • Y = A (expected type) Extra heavy glossy media (glossy media 3) • Y = B (expected type) Heavy glossy media (glossy media 2) • Y = C (expected type) Heavy media 3 • Y = D (expected type) Heavy media 2 • Z = 1 (detected type) Normal media • Z = 3 (detected type) LBP OHT • Z = 4 (detected type) Glossy media • Z = 5 (detected type) Gloss film • Z = 6 (detected type) Non-assured OHT • Z = 7 (detected type) Heavy media • Z = 8 (detected type) Light media • Z = 9 (detected type) Rough media • Z = A (detected type) Extra heavy glossy media (glossy media 3) • Z = B (detected type) Heavy glossy media (glossy media 2) • Z = C (detected type) Heavy media 3 • Z = D (detected type) Heavy media 2"
+Remedy;Load the tray with the size and type of paper indicated, or use another tray if available. If this message appears and the tray is loaded with the correct paper type, check the print driver settings to make sure they match the tray type settings. Clean the Media Sensor. If the error persists, replace the paper pickup assembly.
+Code;41.07.YZ
+Display;41.07.YZ Error To continue
+Description;"A media transportation error has occurred.
+ • Y = 0 Photo media 1, Photo media 2, Photo media 3, Designated media 2, Designated media 3, or N/ A, typed or AutoSense • Y = 1 AutoSense (Normal): special case distinguished from typed Normal • Y = 2 Normal: typed (not AutoSense) • Y = 3 Light media 1, 2, or 3: typed or AutoSense • Y = 4 Heavy media 1: typed or AutoSense • Y = 5 Heavy media 2: typed or AutoSense • Y = 6 Heavy media 3: typed or AutoSense • Y = 7 Glossy media 1: typed or AutoSense • Y = 8 Glossy media 2: typed or AutoSense • Y = 9 Glossy media 3: typed or AutoSense • Y = A Glossy film: typed or AutoSense • Y = B OHT: typed or AutoSense • Y = C Label • Y = D Envelope 1, Envelope 2, or Envelope 3 • Y = E Rough (designated media 1): typed or AutoSense • Z = 1 Tray 1 • Z = 2 Tray 2 • Z = 3 Tray 3 • Z = 41 Tray 4 • Z = 5 Tray 5 • Z = 6 Tray 6 • Z = D Duplexer"
+Remedy;Turn the product off, and then on. If the error persists, replace the DC controller PCA.
+Code;42.XX.YY
+Display;42.XX.YY
+Description;Internal system failure
+Remedy;Turn the product of,f then on, and retry. If the error persists, clear the firmware image from the active partition by using the Partial Clean item in the Preboot menu.
+Code;47.00.XX
+Display;47.00.XX
+Description;Backchannel internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.01.XX
+Display;47.01.XX
+Description;Image transformer internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.02.XX
+Display;47.02.XX
+Description;Job parser internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.03.XX
+Display;47.03.XX
+Description;Print job internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.04.XX
+Display;47.04.XX
+Description;Print spooler 9100 internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.05.00
+Display;47.05.00
+Description;Print spooler framework internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.06.XX
+Display;47.06.XX
+Description;Print App internal error
+Remedy;Turn the product off, and then on again. Resend the print job. If the error persists, execute the Partial Clean item in the Preboot menu.
+Code;47.WX.YZ
+Display;47.WX.YZ Printer calibration error
+Description;The device is unable to access or implement one of the image patterns files.
+Remedy;Turn the product off, and then on. If the error persists, reload the firmware.
+Code;50.1
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Low fuser temperature and fuser warm-up failure"
+Remedy;1. Remove and then reseat the fuser. Make sure there is no residual paper in the fuser. Make sure the device is not located in front of a vent or window where cool air may interfere with the ability of the fuser to heat up. 2. Check the product power source. Make sure the power source meets product requirements. Make sure this is the only device using the circuit. 3. Replace the fuser. 4. Check the connector (J704) between the fuser and the printer. If it is damaged, replace the fuser drive assembly or fuser. 5. If the error persists, replace the low-voltage power supply. 6. If this product has been previously serviced, check the connector (J131) on the DC controller PCA and the connectors (J109 and J110) on the power line between the low-voltage power supply assembly and the fuser.
+Code;50.2
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Low fuser temperature and fuser warm-up failure"
+Remedy;1. Remove and then reseat the fuser. Make sure there is no residual paper in the fuser. Make sure the device is not located in front of a vent or window where cool air may interfere with the ability of the fuser to heat up. 2. Check the product power source. Make sure the power source meets product requirements. Make sure this is the only device using the circuit. 3. Replace the fuser. 4. Check the connector (J704) between the fuser and the printer. If it is damaged, replace the fuser drive assembly or fuser. 5. If the error persists, replace the low-voltage power supply. 6. If this product has been previously serviced, check the connector (J131) on the DC controller PCA and the connectors (J109 and J110) on the power line between the low-voltage power supply assembly and the fuser.
+Code;50.3
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ High fuser temperature"
+Remedy;1. Remove and then reseat the fuser. 2. Check the paper type setting using the product menus and in the printer driver. Make sure that they match and are correct for the type of media being used. 3. Replace the fuser. 4. If the error persists, replace the low-voltage power supply. 5. If this product has been previously serviced, check the connector (J131) on the DC controller PCA.
+Code;50.4
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Drive circuit fault"
+Remedy;1. Check the power source. Make sure the power source meets product requirements. NOTE: If the power source does not meet the power frequency requirement of 43 to 67Hz, the fuser temperature control does not work properly and causes this error. 2. If the error persists, replace the low-voltage power supply. 3. If this product has been previously serviced, check the connector (J21) on the DC controller PCA.
+Code;50.7
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Fuser pressure-release mechanism failure"
+Remedy;1. Remove and then reseat the fuser. Make sure there is no residual paper in the fuser. 2. Check the fuser pressure-release sensor flag. If it is damaged, replace the fuser. 3. Use the sensor test in the Manual sensor test to verify that the fuser pressure-release sensor (PS9) is properly functioning. If it is not, replace the fuser gear assembly. 4. Use the fuser pressure-release drive test in the component test to verify that the fuser motor (M4) is properly functioning. If it is not, replace the fuser motor. 5. If the error persists, replace the low-voltage power supply. 6. If this product has been previously serviced, check the connector (J181) on the DC controller PCA.
+Code;50.8
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Low fuser temperature 2"
+Remedy;1. Remove and then reseat the fuser. Make sure there is no residual paper in the fuser. Make sure the device is not located in front of a vent or window where cool air may interfere with the ability of the fuser to heat up. 2. Check the product power source. Make sure the power source meets product requirements. Make sure this is the only device using the circuit. 3. Replace the fuser. 4. Check the connector (J704) between the fuser and the printer. If it is damaged, replace the fuser drive assembly or fuser. 5. If the error persists, replace the low-voltage power supply. 6. If this product has been previously serviced, check the connector (J131) on the DC controller PCA and the connectors (J109 and J110) on the power line between the low-voltage power supply assembly and the fuser.
+Code;50.9
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ High fuser temperature 2"
+Remedy;1. Remove and then reseat the fuser. 2. Check the paper type setting using the product menus and in the printer driver. Making sure that they match and are correct for the type of media being used. 3. Replace the fuser. 4. If this product has been previously serviced, check the connector (J131) on the DC controller PCA.
+Code;50.A
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ Low fuser temperature 3"
+Remedy;1. Remove and then reseat the fuser. Make sure there is no residual paper in the fuser. Make sure the device is not located in front of a vent or window where cool air may interfere with the ability of the fuser to heat up. 2. Check the product power source. Make sure the power source meets product requirements. Make sure this is the only device using the circuit. 3. Replace the fuser. 4. Check the connector (J704) between the fuser and the printer. If it is damaged, replace the fuser drive assembly or fuser. 5. If this product has been previously serviced, check the connector (J131) on the DC controller PCA and the connectors (J109 and J110) on the power line between the low-voltage power supply assembly and the fuser.
+Code;50.B
+Display;50.WX.YZ Fuser error To continue
+Description;"The fuser has experienced an error. W = fuser error code, X = fuser mode, Y = previous printer sleep state, Z = next printer sleep state
+ High fuser temperature 3"
+Remedy;1. Remove and then reseat the fuser. 2. Check the paper type setting using the product menus and in the printer driver. Making sure that they match and are correct for the type of media being used. 3. Replace the fuser. 4. Check the connector (J704) between the fuser and the printer. If it is damaged, replace the fuser drive assembly or fuser. 5. If this product has been previously serviced, check the connector (J131) on the DC controller PCA.
+Code;51.00.20
+Display;51.00.YY Error
+Description;"Laser/scanner error
+ Black laser/scanner error"
+Remedy;Turn the product off, and then on. If the error persists, replace the laser/scanner assembly.
+Code;51.00.21
+Display;51.00.YY Error
+Description;"Laser/scanner error
+ Cyan laser/scanner error"
+Remedy;Turn the product off, and then on. If the error persists, replace the laser/scanner assembly.
+Code;51.00.22
+Display;51.00.YY Error
+Description;"Laser/scanner error
+ Magenta laser/scanner error"
+Remedy;Turn the product off, and then on. If the error persists, replace the laser/scanner assembly.
+Code;51.00.23
+Display;51.00.YY Error
+Description;"Laser/scanner error
+ Yellow laser/scanner error"
+Remedy;Turn the product off, and then on. If the error persists, replace the laser/scanner assembly.
+Code;52.00.00
+Display;52.XX.00 Error
+Description;"Laser/scanner errorer error
+ laser/scanner motor startup error"
+Remedy;Use the scanner motor (M10) drive test in the component test to test the motor. If the motor does not run, replace the laser/scanner assembly. NOTE: Listen for a high pitched whine from the motor. If the laser/scanner assembly has been removed or replaced, check the connectors (J831 and J832) on the laser-driver PCA and the connectors (J61 and J62) on the DC controller PCA.
+Code;52.20.00
+Display;52.XX.00 Error
+Description;"Laser/scanner errorer error
+ Laser/scanner rotation error"
+Remedy;Use the scanner motor (M10) drive test in the component test to test the motor. If the motor does not run, replace the laser/scanner assembly. NOTE: Listen for a high pitched whine from the motor. If the laser/scanner assembly has been removed or replaced, check the connectors (J831 and J832) on the laser-driver PCA and the connectors (J61 and J62) on the DC controller PCA.
+Code;54.00.03
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Environmental sensor failure"
+Remedy;1. Turn the product off, and then on. 2. If the error persists, replace the environment sensor assembly. 3. If the environment sensor has been removed or replaced check the connector (J502) on the environment sensor and the connector (J33) on the DC controller PCA.
+Code;54.00.06
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Registration density sensor failure"
+Remedy;1. Open and close the right door (or turn on and then off the power switch) to perform the color plane registration. 2. If the error persists, replace the registration density sensor assembly.
+Code;54.00.14
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Registration density sensor failure"
+Remedy;1. Open and close the right door (or turn on and then off the power switch) to perform the color plane registration. 2. If the error persists, replace the registration density sensor assembly.
+Code;54.00.19
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Registration density sensor failure"
+Remedy;1. Open and close the right door (or turn on and then off the power switch) to perform the color plane registration. 2. If the error persists, replace the registration density sensor assembly.
+Code;54.01.05
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Media sensor is out of calibration range"
+Remedy;1. Turn the product off, and then clean the media sensor with a lint-free cloth. Turn the product on. 2. If the error persists, replace the paper pickup assembly.
+Code;54.06.21
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Primary laser/scanner beam detect abnormality"
+Remedy;1. Turn the product off, and then on. 2. If the error persists, replace the laser/scanner assembly. 3. If the product has had parts removed or replace, check the connector (J61) on the DC controller PCA.
+Code;54.0X.07
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Drum home position sensor failure
+ X = 5 black, X = 6 cyan, X = 7 magenta, X = 8 yellow"
+Remedy;1. Turn the product off, and then on. 2. If the error persists, replace the main drive assembly. 3. If the product has had parts removed or replace, check the connector (J181) on the DC controller PCA.
+Code;54.0X.0B
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Density sensor out of range error or Dhalf calibration failure
+ X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0B
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Density sensor out of range error or Dhalf calibration failure X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0C
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Density sensor out of range error or Dhalf calibration failure
+ X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0C
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Optical memory element abnormal or CPR sensor out of range
+ X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0C
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Density sensor out of range error or Dhalf calibration failure X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0D
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Optical memory element abnormal or CPR sensor out of range
+ X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.0X.0D
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Optical memory element abnormal or CPR sensor out of range X = 0 black, X = 1 cyan, X = 2 magenta, X = 3 yellow"
+Remedy;1. Check the supplies status page to make sure the toner cartridges are not past their useful life. 2. Check the ITB for damage. 3. Make sure the CPR sensor is not contaminated with toner or paper dust. Clean the sensor with compressed air and soft brush. 4. If error persists, replace the registration sensor assembly.
+Code;54.11.05
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Media Sensor is not functioning properly"
+Remedy;1. Clean the media sensor with a lint-free cloth and then turn the product off and then on. 2. 54.11.05: If the error persists replace the paper pickup assembly. The threshold level for the media sensor (Media Sensor Value) is located on a label on the paper pickup assembly. Use the Service menu to input this value into the product memory after replacing the paper pickup assembly. -or- 54.12.05: If the error persists replace the right door assembly. 3. 54.11.05: If the product has had parts removed or replace check the connector (J542) on the media sensor and the connector (J112) on the DC controller PCA. -or- 54.12.05: If the product has had parts removed or replace check the connector (J114) on the media sensor and the connector (J152) on the DC controller PCA.
+Code;54.12.05
+Display;54.XX.YY Error
+Description;"A sensor error has occurred.
+ Media Sensor is not functioning properly"
+Remedy;1. Clean the media sensor with a lint-free cloth and then turn the product off and then on. 2. 54.11.05: If the error persists replace the paper pickup assembly. The threshold level for the media sensor (Media Sensor Value) is located on a label on the paper pickup assembly. Use the Service menu to input this value into the product memory after replacing the paper pickup assembly. -or- 54.12.05: If the error persists replace the right door assembly. 3. 54.11.05: If the product has had parts removed or replace check the connector (J542) on the media sensor and the connector (J112) on the DC controller PCA. -or- 54.12.05: If the product has had parts removed or replace check the connector (J114) on the media sensor and the connector (J152) on the DC controller PCA.
+Code;55.00.YY
+Display;55.00.YY DC controller errormal
+Description;DC controller PCA error • 55.00.01 (event code) DC controller memory error • 55.00.03 (event code DC controller no engine response • 55.00.04 (event code DC controller communications timeout
+Remedy;Turn the product off, and then on. If the error persists, replace the DC controller PCA.
+Code;55.0X.YY
+Display;55.0X.YY DC controller error
+Description;"DC controller PCA error
+ • 55.01.06 (event code) NVRAM memory data error warning • 55.02.06 (event code) NVRAM memory access error warning"
+Remedy;Turn the product off, and then on. If the error persists, replace the DC controller PCA.
+Code;56.00.YY
+Display;56.00.YY Error
+Description;Optional paper trays communication error
+Remedy;Turn the product off, and then on. If the error persists, reseat the optional paper trays (1 x 500-sheet feeder and/or 3 x 500-sheet feeder). Check the input connectors for damage. If a connector is damaged, replace the connector.
+Code;57.00.01
+Display;57.00.0Y Error
+Description;"Fan error
+ Power supply fan (FM1) failure"
+Remedy;1. Turn the product off, and then on. Listen for fan noise at the front lower-left corner of the product. If no noise is heard, replace the power supply fan (FM1). 2. If this part has been removed or replace, check the connector (J21) on the DC controller PCA and the connector (J106) on the low-voltage power supply assembly.
+Code;57.00.02
+Display;57.00.0Y Error
+Description;"Fan error
+ Fuser fan (FM2) faliure"
+Remedy;1. Turn the product off, and then on. Listen for fan noise at the front lower-right corner of the product. If no noise is heard, replace the fuser fan (FM2). 2. If this part has been removed or replace, check the connector (J121) on the DC controller PCA and the intermediate connector (J524).
+Code;57.00.03
+Display;57.00.0Y Error
+Description;"Fan error
+ Formatter fan (FM3) failure"
+Remedy;1. Turn the product off, and then on. Listen for fan noise at the lower back-center of the product. If no noise is heard, replace the formatter fan (FM3). 2. If this part has been removed or replace, check the connector (J142) on the intermediate connect board.
+Code;59.00.04
+Display;59.00.YY Error
+Description;"Printing error
+ Fuser motor (M4) start up error or fuser motor (M4) rotational error"
+Remedy;1. Use the fuser motor (M4) drive test in the component test to verify that the fuser motor is properly functioning. If it is not, replace the fuser motor assembly. 2. If the product has been serviced, check the connector (J516) on the fuser motor and the connector (J81) on the DC controller PCA.
+Code;59.00.30
+Display;59.00.YY Error
+Description;"Printing error
+ Fuser motor (M4) start up error or fuser motor (M4) rotational error"
+Remedy;1. Use the fuser motor (M4) drive test in the component test to verify that the fuser motor is properly functioning. If it is not, replace the fuser motor assembly. 2. If the product has been serviced, check the connector (J516) on the fuser motor and the connector (J81) on the DC controller PCA.
+Code;59.00.90
+Display;59.00.YY Error
+Description;"Printing error
+ ITB motor (M1) start up error or ITB motor (M1) abnormal rotational error"
+Remedy;1. Use the ITB motor (M1) drive test in the component test to verify that the ITB motor is properly functioning. If it is not, replace the ITB motor assembly. 2. If the product has been serviced, check the connector (J517) on the ITB motor and the connector (J81) on the DC controller PCA.
+Code;59.00.A0
+Display;59.00.YY Error
+Description;"Printing error
+ ITB motor (M1) start up error or ITB motor (M1) abnormal rotational error"
+Remedy;1. Use the ITB motor (M1) drive test in the component test to verify that the ITB motor is properly functioning. If it is not, replace the ITB motor assembly. 2. If the product has been serviced, check the connector (J517) on the ITB motor and the connector (J81) on the DC controller PCA.
+Code;59.00.C0
+Display;59.00.YY Error
+Description;"Printing error
+ Developer alienation motor (M6) error"
+Remedy;1. Use the developer engagement and disengagement drive test in the component test to verify that the disengagement mechanism is properly functioning. If it is not, replace the ITB motor assembly. 2. Use the sensor test in the Manual sensor test to verify that the developer disengagement sensor (PS11) is properly functioning. If it is not, replace the main drive assembly. 3. If the product has been serviced, check the connector (J518) on the developer disengagement motor, the connector (J1005) on the driver PCA and the connector (J91) on the DC controller PCA.
+Code;59.00.F0
+Display;59.00.YY Error
+Description;"Printing error
+ T1 alienation mechanism failure"
+Remedy;1. Make sure that the ITB is correctly installed. 2. Use the T1 roller alienation switch (SW5) test in the Manual sensor test to verify that the switch is properly functioning. If it is not, replace the main drive assembly. 3. Use the T1 roller engagement and disengagement drive test in the component test to verify that the T1 roller disengagement mechanism is properly functioning. If it is not, replace the fuser drive assembly. 4. If the product has been serviced, check the connector (J181) on the DC controller PCA.
+Code;59.05.50
+Display;59.0X.50 Error
+Description;"Motor startup error
+ Black image drum start up error (ITB motor; M1)"
+Remedy;1. Use the ITB drum motor (M1) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the ITB motor assembly. 2. If the product has been serviced, check the connector (J517) on the ITB motor and the connector (J81) on the DC controller PCA.
+Code;59.05.70
+Display;59.0X.70 Error
+Description;"Motor abnormal rotation
+ Black developer motor abnormal start up error (ITB motor; M1)"
+Remedy;1. Use the ITB drum motor (M1) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the ITB motor assembly. 2. If the product has been serviced, check the connector (J517) on the ITB motor and the connector (J81) on the DC controller PCA.
+Code;59.05.80
+Display;59.0X.80 Error
+Description;"Developer motor failure
+ Black developer motor failure error (ITB motor; M1)"
+Remedy;1. Use the ITB drum motor (M1) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the ITB motor assembly. 2. If the product has been serviced, check the connector (J517) on the ITB motor and the connector (J81) on the DC controller PCA.
+Code;59.06.50
+Display;59.0X.50 Error
+Description;"Motor startup error
+ CMY drum motor (M2) start up error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.06.60
+Display;59.0X.60 Error
+Description;"Motor rotational error
+ CMY drum motor (M2) rotation error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.06.70
+Display;59.0X.70 Error
+Description;"Motor abnormal rotation
+ CMY developer motor (M3) abnormal start up error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;59.06.80
+Display;59.0X.80 Error
+Description;"Developer motor failure
+ CMY developer motor (M3) failure error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;59.07.50
+Display;59.0X.50 Error
+Description;"Motor startup error
+ CMY drum motor (M2) start up error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.07.60
+Display;59.0X.60 Error
+Description;"Motor rotational error
+ CMY drum motor (M2) rotation error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.07.70
+Display;59.0X.70 Error
+Description;"Motor abnormal rotation
+ CMY developer motor (M3) abnormal start up error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;59.07.80
+Display;59.0X.80 Error
+Description;"Developer motor failure
+ CMY developer motor (M3) failure error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;59.08.50
+Display;59.0X.50 Error
+Description;"Motor startup error
+ CMY drum motor (M2) start up error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.08.60
+Display;59.0X.60 Error
+Description;"Motor rotational error
+ CMY drum motor (M2) rotation error"
+Remedy;1. Use the drum motor (M2) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the drum motor assembly. 2. If the product has been serviced, check the connector (J515) on the drum motor and the connector (J81) on the DC controller PCA.
+Code;59.08.70
+Display;59.0X.70 Error
+Description;"Motor abnormal rotation
+ CMY developer motor (M3) abnormal start up error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;59.08.80
+Display;59.0X.80 Error
+Description;"Developer motor failure
+ CMY developer motor (M3) failure error"
+Remedy;1. Use the developer motor (M3) drive test in the Component test to verify that the motor is properly functioning. If it is not, replace the developer motor assembly. 2. If the product has been serviced, check the connector (J514) on the developer motor and the connector (J81) on the DC controller PCA.
+Code;60.00.02
+Display;60.00.0Y Tray <Y> lifting error
+Description;"Tray lift motors error
+ Media input Tray 2 lift-up motor (M9) failure"
+Remedy;1. Use the Tray 2 paper surface sensor (PS4) test in the Tray/Bin manual sensor test to verify that the sensor is properly functioning. If it is not, replace the lifter drive assembly. 2. Open and close Tray 2 and listen at the back of the product for the sound of the lifer motor (M9) operating. If it does not operate, replace the lifter drive assembly. 3. If the product has been serviced, check the intermediate connector (J742) and the connector (J151) on the DC controller PCA. 4. If the error persists, replace the cassette tray.
+Code;60.00.03
+Display;60.00.0Y Tray <Y> lifting error
+Description;"Tray lift motors error
+ Media input Tray 3 lift-up motor (M2) failure or media input Tray 4 lift-up motor (M2) failure"
+Remedy;1. Use the Tray 3 paper surface sensor (SR2) or Tray 4 paper surface sensor (SR2) test in the Tray/ Bin manual sensor test to verify that the sensor is properly functioning. If it is not, replace the lifter drive assembly. NOTE: Both the Tray 3 and Tray 4 paper surface sensors are designated as SR2. The first one listed in the Tray/Bin manual test is Tray 3, the second one listed is for Tray 4. 2. Open and close Tray 3 or Tray 4 and listen at the back of the product for the sound of the lifer motor (M2) operating. If it does not operate, replace the lifter drive assembly. NOTE: Both the Tray 3 and Tray 4 lifter motors are designated as M2. Listen for the appropriate motor to operate. 3. If the product has been serviced, check the connector (J2003) on the paper feeder controller PCA, the intermediate connector (J702) and the connector (J2006) on the paper feeder controller PCA. TIP: Check the connector (J2006) on the paper feeder controller PCA associated with the tray. 4. If the error persists, replace the cassette tray.
+Code;60.00.05
+Display;60.00.0Y Tray <Y> lifting error
+Description;"Tray lift motors error
+ Media input Tray 5 lift-up motor (M82) failure or media input Tray 6 lift-up motor (M92) failure"
+Remedy;1. Use the Tray 5 paper surface sensor (SR82) or Tray 6 paper surface sensor (SR92) test in the Tray/Bin manual sensor test to verify that the sensor is properly functioning. If it is not, replace the lifter drive assembly. 2. Open and close Tray 5 or Tray 6 and listen at the back of the product for the sound of the lifer motor (M82 or M92) operating. If it does not operate, replace the lifter drive assembly. 3. If the product has been serviced, check the connector (J2003) on the paper feeder controller PCA, the intermediate connector (J702) and the connector (J2006) on the paper feeder controller PCA. TIP: Check the connector (J2006) on the paper feeder controller PCA associated with the tray. 4. If the error persists, replace the cassette tray.
+Code;60.00.06
+Display;60.00.0Y Tray <Y> lifting error
+Description;"Tray lift motors error
+ Media input Tray 5 lift-up motor (M82) failure or media input Tray 6 lift-up motor (M92) failure"
+Remedy;1. Use the Tray 5 paper surface sensor (SR82) or Tray 6 paper surface sensor (SR92) test in the Tray/Bin manual sensor test to verify that the sensor is properly functioning. If it is not, replace the lifter drive assembly. 2. Open and close Tray 5 or Tray 6 and listen at the back of the product for the sound of the lifer motor (M82 or M92) operating. If it does not operate, replace the lifter drive assembly. 3. If the product has been serviced, check the connector (J2003) on the paper feeder controller PCA, the intermediate connector (J702) and the connector (J2006) on the paper feeder controller PCA. TIP: Check the connector (J2006) on the paper feeder controller PCA associated with the tray. 4. If the error persists, replace the cassette tray.
+Code;61.00.01
+Display;61.00.01
+Description;Color table read failure
+Remedy;Turn the product off, and then on. If the error persists, reload the firmware. If the error still persists, perform a firmware upgrade. If the firmware upgrade does not resolve the problem, replace the hard disk.
+Code;62.00.00
+Display;62.00.00 No system
+Description;Internal system failure
+Remedy;Turn the product off, and then on. If the error persists, reload the firmware. If the error still persists, perform a firmware upgrade. If the firmware upgrade does not resolve the problem, replace the hard disk.
+Code;70.00.00
+Display;70.00.00 Error
+Description;DC controller failure
+Remedy;Turn the product off, and then on. If the error persists, replace the DC controller.
+Code;80.0X.YY
+Display;80.0X.YY Embedded JetDirect error
+Description;Embedded HP JetDirect print server critical error
+Remedy;Turn the product off, and then on. If the error persists, replace the formatter.
+Code;98.00.01
+Display;98.00.01 Corrupt data in firmware volume
+Description;Data corruption has occurred in the firmware volume
+Remedy;Turn the product off, and then on. Use the Clean Disk item in the Preboot menu. Reload the firmware
+Code;98.00.02
+Display;98.00.02 Corrupt data in solutions volume
+Description;Data corruption has occurred in the solutions volume
+Remedy;Turn the product off, and then on. Use the Clean Disk item in the Preboot menu. Reload the firmware
+Code;98.00.03
+Display;98.00.03 Corrupt data in configuration volume
+Description;Data corruption has occurred in the configuration volume
+Remedy;Turn the product off, and then on. Use the Clean Disk item in the Preboot menu. Reload the firmware.
+Code;98.00.04
+Display;98.00.04 Corrupt data in job data volume
+Description;Data corruption has occurred in the job data volume
+Remedy;Turn the product off, and then on. Rerun the file erase function.
+Code;99.00.01
+Display;99.00.01 Upgrade not performed file is corrupt
+Description;A remote firmware upgrade (RFU) was not performed. CRC error in the firmware image (bad image).
+Remedy;Download the RFU file and attempt the upgrade again.
+Code;99.00.02
+Display;99.00.02 Upgrade not performed timeout during receive
+Description;A remote firmware upgrade (RFU) was not performed. I/O timeout when reading header number and size. Indicates a problem with the network environment, not the device.
+Remedy;The most common cause is an issue with the network environment. Make sure that there is a good connection to the device and attempt the upgrade again, or upgrade using the USB walk-up port.
+Code;99.00.03
+Display;99.00.03 Upgrade not performed error writing to disk
+Description;A remote firmware upgrade (RFU) was not performed. Disk error. May indicate a problem or a hard disk failure. It might be necessary to check the connection to the hard disk or replace the hard disk.
+Remedy;1. Download the RFU file and attempt the upgrade again. 2. If the error persists, perform the Clean Disk process. You will then need to download firmware from the Preboot menu. 3. If the error persists, replace the hard disk.
+Code;99.00.04
+Display;99.00.04 Upgrade not performed timeout during receive
+Description;A remote firmware upgrade (RFU) was not performed. I/O timeout when reading rest of header.
+Remedy;The most common cause is an issue with the network environment. Make sure that there is a good connection to the device and attempt the upgrade again, or upgrade using the USB walk-up port.
+Code;99.00.05
+Display;99.00.05 Upgrade not performed timeout during receive
+Description;A remote firmware upgrade (RFU) was not performed. I/O timeout when reading image data.
+Remedy;The most common cause is an issue with the network environment. Make sure that there is a good connection to the device and attempt the upgrade again, or upgrade using the USB walk-up port.
+Code;99.00.06
+Display;99.00.06 Upgrade not performed error reading upgrade
+Description;A remote firmware upgrade (RFU) was not performed. Unexpected read error when reading header number and size.
+Remedy;1. Download the RFU file and attempt the upgrade again. 2. If the error persists, replace the hard disk.
+Code;99.00.07
+Display;99.00.07 Upgrade not performed error reading upgrade
+Description;A remote firmware upgrade (RFU) was not performed. Unexpected read error when reading rest of header.
+Remedy;1. Download the RFU file and attempt the upgrade again. 2. If the error persists, replace the hard disk.
+Code;99.00.08
+Display;99.00.08 Upgrade not performed error reading upgrade
+Description;A remote firmware upgrade (RFU) was not performed. Unexpected read error when reading image data.
+Remedy;1. Download the RFU file and attempt the upgrade again. 2. If the error persists, replace the hard disk.
+Code;99.00.09
+Display;99.00.09 Upgrade canceled by user
+Description;A remote firmware upgrade (RFU) was not performed. The RFU was canceled by the user.bad image).
+Remedy;Resend the RFU.
+Code;99.00.10
+Display;99.00.10 Upgrade canceled by user
+Description;A remote firmware upgrade (RFU) was not performed. Job canceled when reading header number and size.
+Remedy;Resend the RFU.
+Code;99.00.11
+Display;99.00.11 Upgrade canceled by user
+Description;A remote firmware upgrade (RFU) was not performed. Job canceled when reading rest of header.
+Remedy;Resend the RFU.
+Code;99.00.12
+Display;99.00.12 Upgrade not performed the file is invalid
+Description;A remote firmware upgrade (RFU) was not performed. Header number is 1 but header size doesn’t match version 1 size.
+Remedy;Download the RFU file again. Make sure that you download the file for the correct product model. Resend the RFU.
+Code;99.00.13
+Display;99.00.13 Upgrade not performed the file is invalid
+Description;A remote firmware upgrade (RFU) was not performed. Header number is 2 but header size doesn’t match version 2 size.
+Remedy;Download the RFU file again. Make sure that you download the file for the correct product model. Resend the RFU.
+Code;99.00.14
+Display;99.00.14 Upgrade not performed the file is invalid
+Description;A remote firmware upgrade (RFU) was not performed. The file is invalid.
+Remedy;Download the RFU file again. Make sure that you download the file for the correct product model. Resend the RFU.
+Code;99.XX.YY
+Display;99.XX.YY
+Description;Firmware installation error
+Remedy;Reload the firmware.

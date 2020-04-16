@@ -1,0 +1,559 @@
+Code;SC101
+Description;"Exposure lamp error
+ The standard white level was not detected properly when scanning the white plate."
+Causes;• Exposure lamp defective • Lamp regulator defective • Exposure lamp connector defective • Dirty standard white plate • Dirty scanner mirror or scanner mirror out of position • SBU board defective • SBU connector defective • Lens block out of position
+Code;SC120
+Description;"Scanner home position error 1
+ The scanner home position sensor does not detect the on condition during initialization or copying."
+Causes;• Scanner home position sensor defective • Scanner motor defective • Scanner motor drive board defective • Scanner home position sensor connector defective • Scanner drive motor connector defective
+Code;SC121
+Description;"Scanner home position error 2
+ The scanner home position sensor does not detect the off condition during initialization or copying."
+Causes;• Scanner home position sensor defective • Scanner drive motor defective • Scanner motor drive board defective • Scanner home position sensor connector defective • Scanner drive motor connector defective
+Code;SC124
+Description;"Scanner motor encoder signal error
+ No encoder signal from the scanner motor"
+Causes;• Scanner motor connector defective • Scanner motor defective • MCU defective • Scanner wire, timing belt, pulley out of position • PSU defective
+Code;SC125
+Description;"Scanner motor speed error 1
+ The scanner stops before the scanner HP sensor is on when returning. The scanner speed when the scanner HP sensor turns on is slower than the specified speed."
+Causes;• Scanner motor defective • MCU defective • Too much load on scanner drive
+Code;SC126
+Description;"Scanner motor speed error 2
+ The scanner overruns the scanner HP sensor by more than 10 mm when returning."
+Causes;• Scanner motor defective • MCU defective • Too small load on scanner drive
+Code;SC127
+Description;"Scanner motor encoder rotating direction error
+ The scanner moves in the opposite direction from the instructed direction when initializing."
+Causes;• Scanner motor defective • MCU defective
+Code;SC128
+Description;"Scanner motor start error
+ The scanner motor speed does not reach the target speed until starting to read the original."
+Causes;• Scanner motor defective • MCU defective • PSU defective • Too much load on scanner drive
+Code;SC129
+Description;"Scanner motor speed control error
+ The scanner speed is out of standard during scanning."
+Causes;• Scanner motor defective • PSU defective • MCU defective • Scanner drive defective
+Code;SC130
+Description;"SBU error
+ When the main switch is turned on, the BICU cannot receive the correct signal from the SBU."
+Causes;• SBU defective • BICU defective • Cable between SBU and BICU defective
+Code;SC300
+Description;"Charge corona output error 1
+ The feedback voltage from the charge corona unit is too high."
+Causes;• Charge P.P. defective • Poor charge corona unit connection
+Code;SC301
+Description;"Charge corona output error 2
+ The control PWM for the charge corona unit is too high."
+Causes;• Charge P.P. defective • Poor charge corona unit connection
+Code;SC302
+Description;"Charge corona output error 3
+ The control PWM for the charge grid is too high."
+Causes;• Charge P.P. defective • Poor charge corona unit connection
+Code;SC303
+Description;"Charge corona output error 4
+ The feedback voltage from the charge grid is too high."
+Causes;• Charge P.P. defective • Poor charge corona unit connection
+Code;SC305
+Description;"Charge corona wire cleaner error 1
+ The charge corona wire cleaner does not return to its home position."
+Causes;• Charge corona wire cleaner motor defective • Charge P.P. defective • IOB defective
+Code;SC306
+Description;"Charge corona wire cleaner error 2
+ The charge corona wire cleaner motor connector is not connected."
+Causes;• The charge corona wire cleaner motor connector is not connected.
+Code;SC310
+Description;"Potential sensor error 1
+ When calibrating the drum potential sensor at the process control initial setting, the drum potential sensor output voltage is out of specification."
+Causes;• Potential sensor defective • Poor connection between the potential sensor and the I/O board (IOB) • IOB defective • Poor connection between the drum unit and the I/O board (IOB) • Development power pack defective
+Code;SC311
+Description;"Potential sensor error 2
+ When calibrating the drum potential sensor at the process control initial setting, the rate of change of drum potential sensor output with voltage on the drum is out of specification."
+Causes;• Potential sensor defective • Poor connection between the potential sensor and the I/O board (IOB) • IOB defective • Poor connection between the drum unit and the I/O board (IOB) • Development power pack defective
+Code;SC312
+Description;"Potential sensor error 4
+ When adjusting the drum potential (VD) at the process control initial setting, the drum potential sensor detects that VD is more than VG (grid voltage)."
+Causes;• Potential sensor defective • Poor connection between the potential sensor and the I/O board (IOB) • IOB defective • Poor connection between the drum unit and the I/O board (IOB) • Development power pack defective • Dirty or worn charge corona wire
+Code;SC314
+Description;"Potential sensor error 5
+ When adjusting the drum potential (VH) for LD power adjustment during the process control initial setting, the first time the VH pattern is made, the drum potential sensor detects that VH is more than 500V."
+Causes;• Potential sensor defective • Poor connection between the potential sensor and the I/O board (IOB) • IOB defective • Poor connection between the drum unit and the I/O board (IOB) • LD unit defective
+Code;SC321
+Description;"No laser writing signal (F-GATE) error 1
+ The laser writing signal (F-GATE) does not go to LOW for more than 15 seconds after the copy paper reaches the registration sensor."
+Causes;• BICU board defective • Poor connection of the printer controller • Printer controller defective
+Code;SC322
+Description;"1st laser synchronization error
+ The 1st laser synchronization signal cannot be detected by the main scan synchronization detector board even if the laser diodes are activated."
+Causes;• Poor connection between the laser synchronization detector board and the LD unit • Laser synchronization detector board out of position • Laser synchronization detector board defective • LD unit defective
+Code;SC323
+Description;"LD drive current over
+ The LD drive board applies more than 110 mA to the LD."
+Causes;• LD unit defective (not enough power, due to aging) • Poor connection between the LD unit and the BICU board • BICU defective
+Code;SC326
+Description;"2nd laser synchronization error
+ The 2nd laser synchronization signal cannot be detected by the main scan synchronization detector board even if the laser diodes are activated."
+Causes;• Poor connection between the laser synchronization detector board and the LD unit • Laser synchronization detector board out of position • Laser synchronization detector board defective • LD unit defective
+Code;SC327
+Description;"LD unit home position error 1
+ The LD unit home position sensor does not detect an on condition when the LD unit moves to its home position."
+Causes;• LD unit home position sensor defective • LD positioning motor defective
+Code;SC328
+Description;"LD unit home position error 2
+ The LD unit home position sensor does not detect an off condition when the LD unit moves from its home position."
+Causes;• LD unit home position sensor defective • LD positioning motor defective • LD unit movement blocked because of incorrect connector routing
+Code;SC329
+Description;"LD unit home position error 3
+ When the LD unit moves to switch the laser beam pitch (except for initial movement at adjustment), the LD unit HP sensor turns on before the movement reaches the adjusted value"
+Causes;• When the main switch is on: SP2-109-3 or SP2-109-4 is not done after SP5- 801 is performed. • While printing: The LD unit does not move so well because of an unexpected failure, such as the cable being pinched somewhere. • LD unit defective
+Code;SC330
+Description;"LD unit no initial setting
+ The main switch is on or a printing/copying job starts without doing SP2-109-3 or SP2-109-4 after SP5-801 is performed."
+Causes;• SP2-109-3 or SP2-109-4 is not done after SP5-801 is performed.
+Code;SC331
+Description;"LD unit home position error 4
+ When the LD unit moves to switch the laser beam pitch, the LD unit HP sensor does not turn on, even when the expected time for reaching the home position comes, according to the data for the present position stored in NVRAM."
+Causes;• The LD unit does not move so well because of an unexpected failure, such as the cable being pinched somewhere. • LD unit defective • HP sensor defective • NVRAM defective
+Code;SC332
+Description;"LD unit present position error
+ When the LD unit moves to switch the laser beam pitch, the data for the present position stored in NVRAM is out of the adjustment range."
+Causes;• The LD unit does not move so well because of an unexpected failure, such as the cable being pinched somewhere. • LD unit defective • HP sensor defective • NVRAM defective
+Code;SC335
+Description;"Polygonal mirror motor error 1
+ The XSCRDY signal does not become low within 20 seconds after the polygonal mirror motor turns on or the polygon motor speed is changed."
+Causes;• Poor cable connection to the polygonal mirror motor driver. • Polygonal mirror motor (driver) defective • BICU defective
+Code;SC336
+Description;"Polygonal mirror motor error 2
+ The XSCRDY signal does not become high within 20 seconds after the polygonal mirror motor turns off."
+Causes;• Poor cable connection to the polygonal mirror motor driver. • Polygonal mirror motor (driver) defective • BICU defective
+Code;SC337
+Description;"Polygonal mirror motor error 3
+ The XSCRDY signal becomes high while the polygonal mirror motor turns on, even though there was no demand for either turning off the motor or changing the motor speed."
+Causes;• Poor cable connection to the polygonal mirror motor driver. • Polygonal mirror motor (driver) defective • BICU defective
+Code;SC338
+Description;"Polygonal mirror motor error 1
+ The XSCRDY signal does not become stable within 20 seconds after the polygonal mirror motor turns on or off or the polygon motor speed is changed."
+Causes;• Poor cable connection to the polygonal mirror motor driver. • Polygonal mirror motor (driver) defective • BICU defective
+Code;SC340
+Description;"TD sensor output error
+ The TD sensor output voltage (Vt), which is measured during each copying process, is one of the following 10 times consecutively. 1) Vt = 0.5 volts or lower 2) Vt = 4.0 volts or higher"
+Causes;• TD sensor defective • Poor connection between the TD sensor and the I/O board. • I/O board defective NOTE: In this error condition, the toner supply is controlled using pixel count and Vsp/Vsg.
+Code;SC341
+Description;"TD sensor adjustment error 1
+ During the TD sensor auto adjustment, the TD sensor output voltage (Vt) is 2.5 volts or higher even though the control voltage is set to the minimum value (PWM = 0)"
+Causes;• TD sensor defective • Poor connection between the TD sensor and the I/O board. • I/O board defective NOTE: In this error condition, the toner supply is controlled using pixel count and Vsp/Vsg.
+Code;SC342
+Description;"TD sensor adjustment error 2
+ During the TD sensor auto adjustment, the TD sensor output voltage (Vt) does not come in the target range (2.5 ± 0.1V) within 20 seconds."
+Causes;• TD sensor defective • Poor connection between the TD sensor and the I/O board. • I/O board defective NOTE: In this error condition, the toner supply is controlled using pixel count and Vsp/Vsg.
+Code;SC345
+Description;"Development bias leak
+ A development bias leak signal is detected."
+Causes;• Poor connection between the development bias terminal and the development P.P. • Development P.P. defective
+Code;SC350
+Description;"ID sensor error 1
+ One of the following ID sensor output voltages was detected twice consecutively when checking the ID sensor pattern. 1) Vsp ≥ 2.5V 2) Vsp = 0V"
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Charge or development power pack defective • Dirty ID sensor • Defect at ID sensor pattern writing area of the drum
+Code;SC351
+Description;"ID sensor error 2
+ One of the following ID sensor output voltages was detected twice consecutively when checking the ID sensor pattern. 1) Vsg< 2.5V 2) Vsg = 0V 3) The ID sensor output voltage is 5.0V and the PWM signal input to the ID sensor is 0 when checking the ID sensor pattern"
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Charge or development power pack defective • Dirty ID sensor • Defect at the ID sensor pattern writing area of the drum
+Code;SC352
+Description;"ID sensor error 3
+ For 2 s during the ID sensor pattern check, the ID sensor pattern edge voltage is not 2.5V."
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Charge or development power pack defective • Dirty ID sensor • Defect at the ID sensor pattern writing area of the drum
+Code;SC353
+Description;"ID sensor error 4
+ One of the following ID sensor output voltages is detected at ID sensor initialization. 1) Vsg < 4.0V when the maximum PWM input (255) is applied to the ID sensor. 2) Vsg . 4.0V when the minimum PWM input (0) is applied to the ID sensor."
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Charge or development power pack defective • Dirty ID sensor • Defect at the ID sensor pattern writing area of the drum
+Code;SC354
+Description;"ID sensor error 5
+ Vsg falls out of the adjustment target (4.0 ± 0.2V) during Vsg checking."
+Causes;• ID sensor defective • ID sensor connector defective • Poor ID sensor connector connection • I/O board (IOB) defective • Charge or development power pack defective • Dirty ID sensor • Defect at the ID sensor pattern writing area of the drum
+Code;SC360
+Description;"Hard disk detection error 1
+ When the main switch turns on, the machine does not detect the connection signal from the HDD."
+Causes;• Poor connection between the HDD and BICU • Poor connection on the dc power connector to the HDD • HDD defective • BICU defective
+Code;SC362
+Description;"Hard disk detection error 2
+ When the power switch on the operation panel turns on, the machine does not detect the connection signal from the HDD."
+Causes;• Poor connection between the HDD and BICU • Poor connection on the dc power connector to the HDD • HDD defective • BICU defective
+Code;SC364
+Description;Hard disk drive errorThe image data stored in the HDD cannot be output properly.
+Causes;• When this SC occurs only once, this problem will be solved after turning the main power switch off and on. • When this SC occurs while performing SP4-911-1 (HDD media check), it can be cured by doing SP4-911-2 (HDD formatting). • HDD defective
+Code;SC366
+Description;"Hard disk bad sector maximum
+ The number of bad sectors on the HDD is over the maximum number."
+Causes;• HDD defective • NVRAM defective
+Code;SC367
+Description;"Hard disk (HDD:R) bad sector maximum
+ The number of bad sectors on the HDD is over the maximum number."
+Causes;• HDD defective • NVRAM defective
+Code;SC370
+Description;"IMAC (image compression IC) input FIFO error
+ An input FIFO error occurs while inputting image processing in the ASIC (IMACB), which handles image compression and image data transmission."
+Causes;• BICU defective
+Code;SC372
+Description;"IMAC (image compression IC) output FIFO error
+ An output FIFO error occurs while outputting image processing in the ASIC (IMACB), which handles image compression and image data transmission."
+Causes;• BICU defective
+Code;SC374
+Description;"IMAC (image compression IC) modes setting error
+ A mode setting error occurs by changing settings during image processing in the ASIC (IMACB), which handles image compression and image data transmission."
+Causes;• BICU defective
+Code;SC376
+Description;"Data transmission error
+ A data transmission error occurred at the ASIC which controls data transmission and compression during connecting mode."
+Causes;• Defective connection board • Defective or disconnected interface cable • Defective SBICU
+Code;SC380
+Description;"Data transmission time out (video input)
+ Data input to the IC which controls data transfer and compression is not completed within 20 seconds."
+Causes;• BICU defective • SBU defective • Printer controller defective
+Code;SC382
+Description;"Data transmission time out (video output)
+ Data output from the IC which controls the data transfer and compression is not completed within 20 seconds."
+Causes;• BICU defective • LD board defective
+Code;SC384
+Description;"Data transmission time out (connect copy)
+ Data transmission to the memory does not finish properly within 20 seconds after the start of data transmission."
+Causes;• Defective connection board • Defective or disconnected interface cable • Defective SBICU
+Code;SC386
+Description;"Data transmission time out (Hard disk write)
+ Data input to the IC which controls the data transfer and compression is not completed with in 20 seconds."
+Causes;• BICU defective • SBU defective • Printer controller defective
+Code;SC390
+Description;"CRC error
+ Electrical noise causes sent data and received data to differ. A CRC check can detect this error."
+Causes;• Defective connection board • Defective or disconnected interface cable
+Code;SC391
+Description;"Image storage address error
+ The SBICU receives an image data output request signal for data that is not stored in memory."
+Causes;• SBICU defective
+Code;SC400
+Description;"Transfer roller leak error
+ A transfer roller current leak signal is detected."
+Causes;• Transfer P.P. defective • Poor connection between the transfer current terminal and the transfer P.P.
+Code;SC401
+Description;"Transfer roller open error
+ The transfer roller current feedback signal is not detected"
+Causes;• Transfer P.P. defective • Poor connection between the transfer current terminal and the transfer P.P.
+Code;SC430
+Description;"Quenching lamp error
+ When finishing the process control initial setting, the drum potential which is detected by the drum potential sensor is out of the normal range"
+Causes;• Quenching lamp defective • Poor connection between quenching lamp and charge power pack
+Code;SC440
+Description;"Main motor lock
+ The main motor lock signal remains low for 2 seconds while the main motor is on."
+Causes;• Too much load on the drive mechanism • Main motor defective
+Code;SC441
+Description;"Development motor lock
+ The development motor lock signal remains low for 2 seconds while the development motor is on."
+Causes;• Too much load on the drive mechanism • Development motor defective
+Code;SC493
+Description;"Exhaust fan motor lock
+ The exhaust fan motor lock signal remains high for 5 seconds while the exhaust fan motor is on."
+Causes;• Exhaust fan motor defective • Too much load on the fan
+Code;SC494
+Description;"Fusing exhaust fan motor lock
+ The fusing exhaust fan motor lock signal remains high for 5 seconds while the fusing exhaust fan motor is on."
+Causes;• Exhaust fan motor defective • Too much load on the fan
+Code;SC495
+Description;"Toner recycling unit error
+ The toner recycling sensor output signal does not change within 500 ms after the main motor turns on."
+Causes;• Too much load on the drive mechanism • Toner end sensor detective • Poor connection on the sensor connector
+Code;SC496
+Description;"Toner collection bottle error
+ The toner collection bottle set switch remains off when the front door is closed."
+Causes;• No toner collection bottle • Poor connection on the switch connector
+Code;SC497
+Description;"Toner recycling motor error
+ The toner recycling motor connector set signal remains off for 1 second."
+Causes;• Toner recycling motor defective • Poor connection on the motor connector
+Code;SC501
+Description;"1st tray lift malfunction
+ • The lift sensor is activated before the pick-up solenoid is activated when the tray is pushed in. • The lift sensor is not activated within 10 seconds after the tray lift motor starts lifting the bottom plate. • The lift sensor remains activated for 1.5 seconds after the tray lift motor starts lowering the bottom plate. • The tray down sensor is not activated within 10 seconds after the tray lift motor starts lowering the bottom plate because of a paper end condition."
+Causes;• Tray lift motor defective or poor connection • Lift sensor defective or poor connection • Tray down sensor defective or poor connection • Pick-up solenoid defective or poor connection
+Code;SC502
+Description;"2nd tray lift malfunction
+ • The lift sensor is activated before the pick-up solenoid is activated when the tray is pushed in. • The lift sensor is not activated within 10 seconds after the tray lift motor starts lifting the bottom plate. • The lift sensor remains activated for 1.5 seconds after the tray lift motor starts lowering the bottom plate. • The tray down sensor is not activated within 10 seconds after the tray lift motor starts lowering the bottom plate because of a paper end condition."
+Causes;• Tray lift motor defective or poor connection • Lift sensor defective or poor connection • Tray down sensor defective or poor connection • Pick-up solenoid defective or poor connection
+Code;SC503
+Description;"3rd tray lift malfunction
+ • The lift sensor is activated before the pick-up solenoid is activated when the tray is pushed in. • The lift sensor is not activated within 10 seconds after the tray lift motor starts lifting the bottom plate. • The lift sensor remains activated for 1.5 seconds after the tray lift motor starts lowering the bottom plate. • The tray down sensor is not activated within 10 seconds after the tray lift motor starts lowering the bottom plate because of a paper end condition."
+Causes;• Tray lift motor defective or poor connection • Lift sensor defective or poor connection • Tray down sensor defective or poor connection • Pick-up solenoid defective or poor connection
+Code;SC505
+Description;"LCT tray malfunction (optional LCT)
+ • The lift sensor is not activated within 60 seconds after the tray lift motor starts lifting the bottom plate. • The tray down sensor is not activated within 60 seconds after the tray lift motor starts lowering the bottom plate. • The lift sensor and tray down sensor are activated at the same time. • The lift sensor is not activated even when the pick-up roller is still lifted up by the top of paper."
+Causes;• Tray lift motor defective or poor connection • Lift sensor defective or poor connection • Pick-up solenoid defective or poor connection • Paper end sensor defective
+Code;SC510
+Description;"Paper feed motor locks
+ • The lock signal from the paper feed motor is detected for 3,000 ms during rotation. • Poor connection is checked once when the main switch is on."
+Causes;• Paper feed motor defective or poor connection • Too much load on the drive mechanism • Lower front door safety switch defective • Lower front door safety switch bracket deformation
+Code;SC511
+Description;"LCT motor lock (optional LCT)
+ • The lock signal from the LCT transport motor is detected for 50 ms during rotation. (The detection period does not include 300 ms of the starting up.) • Poor connection is checked once when the main switch is on."
+Causes;• LCT transport motor defective or poor connection • Too much load on the drive mechanism
+Code;SC515
+Description;"Tandem rear fence motor error
+ • When the tray is pushed in, the rear fence return sensor and the rear fence HP sensor are already on. • The rear fence return sensor is not on within 10 seconds after the rear fence motor starts. • The rear fence HP sensor is not on within 10 seconds after the rear fence starts moving to the home position."
+Causes;• Rear fence motor defective or poor connection • Too much load on the drive mechanism <Note> The other trays are still available to use.
+Code;SC516
+Description;"Tandem side fence motor error
+ Japanese version only"
+Causes;
+Code;SC520
+Description;"Duplex jogger motor error 1
+ When the jogger fence moves to the home position, the jogger HP sensor does not turn on even if the jogger fence motor has moved the jogger fence 153.5 mm."
+Causes;• Jogger fence motor defective or poor connection • Too much load on the drive mechanism
+Code;SC521
+Description;"Duplex jogger motor error 2
+ When the jogger fence moves from the home position, the jogger fence HP sensor does not turn off even if the jogger motor has moved the jogger fence 153.5 mm."
+Causes;• Jogger fence motor defective or poor connection • Too much load on the drive mechanism
+Code;SC530
+Description;"By-pass feed motor lock
+ A by-pass feed motor lock signal is detected for more than 2 seconds during rotation."
+Causes;• By-pass feed motor defective or poor connection • Too much load on the drive mechanism
+Code;SC531
+Description;"Fusing/duplex motor lock
+ A fusing/duplex motor lock signal is detected for more than 2 seconds during rotation."
+Causes;• Fusing/duplex motor defective or poor connection • Too much load on the drive mechanism
+Code;SC541
+Description;"Fusing thermistor open
+ The fusing temperature detected by the thermistor is below 7°C for 35 seconds."
+Causes;• Fusing thermistor defective or out of position • Poor thermistor terminal connection
+Code;SC542
+Description;"Fusing temperature warming-up error
+ The fusing temperature does not reach the fusing standby temperature within 5 minutes after the main power switch is turned on."
+Causes;• Fusing thermistor defective or out of position • Fusing lamp open • Fusing thermofuse open • BICU defective • Power supply board defective • Poor fusing unit connection
+Code;SC543
+Description;"Fusing overheat error 1 (software)
+ A fusing temperature of over 230°C is detected for 5 seconds by the fusing thermistor."
+Causes;• Fusing thermistor defective • BICU defective • I/O board (IOB) defective
+Code;SC544
+Description;"Fusing overheat error 1 (hardware)
+ The BICU detects an overheat error even if the protection in the software does not work."
+Causes;• Fusing thermistor defective • BICU defective • I/O board defective
+Code;SC545
+Description;"Fusing overheat error 2
+ The fusing lamp stays on at full power for 45 seconds while in the stand-by condition after warming-up is completed."
+Causes;• Fusing thermistor out of position
+Code;SC546
+Description;"Fusing ready temperature malfunction
+ • A change in the fusing temperature by 20°C or more compared with the temperature of 1 second ago occurs 2 times consecutively. • A change in the fusing temperature by 20°C or more compared with the temperature of 1 second ago occurs 3 times consecutively for 1 minute."
+Causes;• Poor connection on the thermistor • Poor connection on the fusing unit connector
+Code;SC547
+Description;"Zero cross signal malfunction
+ • When the main switch is on, the frequency measured by the number of zero cross signals for 500 ms is larger than 66Hz or smaller than 45Hz. • It is measured 3 times consecutively for 500 ms that the interval between a zero cross signal and the next one is 7.5 ms or shorter."
+Causes;• Power supply unit defective • Noise on the ac power line
+Code;SC590
+Description;"Toner collection motor error
+ The toner collection motor sensor output does not change for 3 seconds while the toner collection motor is on."
+Causes;• Toner collection motor defective • Too much load on the drive mechanism • Poor toner collection motor connector connection • IOB defective • Toner collection motor sensor defective
+Code;SC601
+Description;"Communication error between BICU and MCU
+ The BICU cannot communicate with the MCU board properly."
+Causes;• Poor connection between the BICU and MCU • MCU defective • BICU defective
+Code;SC602
+Description;"Communication error between BICU and HDD controller
+ The BICU cannot communicate with the HDD controller properly."
+Causes;• Poor connection between the BICU board and HDD control board • BICU board defective
+Code;SC620
+Description;"Communication error between BICU and ADF 1
+ The TXD and RXD signals between BICU and ADF main board do not stabilize."
+Causes;• Poor connection between the BICU board and ADF main board • Noise on interface cable
+Code;SC621
+Description;"Communication error between BICU and ADF 2
+ The TXD and RXD signals between BICU and ADF main board do not stabilize."
+Causes;• Poor connection between the BICU board and ADF main board • ADF main board defective • BICU board defective
+Code;SC622
+Description;"Communication error between BICU and ADF 3
+ Software error after abnormal user operation."
+Causes;• Software error
+Code;SC625
+Description;"Communication error between BICU and finisher 1
+ The acknowledge signal does not come back from the finisher or mailbox to the BICU board 3 times consecutively."
+Causes;• Finisher or mailbox main board defective • BICU board defective • Poor connection between BICU board and finisher or mailbox main board • Noise on the interface cable
+Code;SC626
+Description;"Communication error between BICU and finisher 2
+ The BICU board receives a low signal even when the communication line is connected between the BICU board and the finisher or mailbox."
+Causes;• Finisher or mailbox main board defective • BICU board defective • Poor connection between BICU board and finisher or mailbox main board • Noise on the interface cable • Finisher or mailbox is installed with B098
+Code;SC630
+Description;"CSS (RSS) communication error between line adapter and CSS center
+ Japan only"
+Causes;
+Code;SC635
+Description;"Communication error between BICU and paper feed board 1
+ The acknowledge signal does not come back from the paper feed board to the BICU board 3 times consecutively."
+Causes;• Paper feed board defective • BICU board defective • Poor connection between BICU board and paper feed board • Noise on the interface cable
+Code;SC636
+Description;"Communication error between BICU and paper feed board 2
+ The BICU board receives a low signal even when the communication line is connected between the BICU board and the paper feed board."
+Causes;• Paper feed board defective • BICU board defective • Poor connection between BICU board and paper feed board • Noise on the interface cable
+Code;SC700
+Description;"ADF original pick-up malfunction 1
+ The pick-up roller H.P sensor signal does not change after the pick-up motor has turned on."
+Causes;• Pick-up roller H.P sensor defective • Pick-up motor defective • Timing belt out of position • ADF main board defective
+Code;SC701
+Description;"ADF original pick-up malfunction 2
+ The pick-up roller HP sensor is not activated even after the pick-up motor turns on."
+Causes;• Pick-up roller HP sensor defective • Pick-up motor defective • ADF main board defective
+Code;SC702
+Description;"ADF feed-in motor lock
+ 1) The encoder signal cannot be detected within a specific time when the feedin motor is on. 2) The pulse signal from the length sensor is not detected within a specific time when the feed-in motor is on."
+Causes;• Feed-in motor defective • Length sensor defective • Cable for length sensor or feed-in motor defective • Main board defectived.
+Code;SC703
+Description;"ADF transport motor lock
+ The encoder signal cannot be detected within a specific time when the transport motor is on."
+Causes;• Transport motor defective • Cable for transport motor defective • Main board defective
+Code;SC704
+Description;"ADF feed-out motor lock
+ The encoder signal cannot be detected within a specific time when the feed-out motor is on."
+Causes;• Feed-out motor defective • Cable for feed-out motor defective • Main board defective
+Code;SC705
+Description;"ADF bottom plate motor error
+ 1) The bottom plate position sensor does not turn on when the bottom plate motor lifts the bottom plate. 2) The bottom plate HP sensor does not turn on when the bottom plate motor lowers the bottom plate."
+Causes;• Bottom plate position sensor defective • Bottom plate HP sensor defective • Bottom plate motor defective • Main board defective
+Code;SC720
+Description;"Finisher transport motor error
+ The encoder pulse of the transport motor does not change state (high/low) within a certain period of time."
+Causes;• Finisher transport motor defective or poor connection • Finisher main board defective • Too much load on drive mechanism
+Code;SC722
+Description;"Finisher jogger motor error
+ 1) The finisher jogger H.P sensor remains de-activated for more than a certain time when returning to home position. 2) The finisher jogger H.P sensor remains activated for more than a certain time when moving away from home position."
+Causes;• Jogger H.P sensor defective • Jogger motor defective
+Code;SC724
+Description;"Finisher staple hammer motor error
+ Stapling does not finish within a certain time after the staple hammer motor turned on."
+Causes;• Staple hammer motor defective • Staple jam
+Code;SC725
+Description;"Finisher stack feed-out motor error
+ The stack feed-out belt H.P sensor does not activate within a certain time after the stack feed-out motor turned on."
+Causes;• Stack feed-out H.P sensor defective • Stack feed-out motor defective
+Code;SC726
+Description;"Finisher shift/lift motor error
+ Tray shift does not finish within a certain time after the shift motor turned on. 2) The stack height sensor does not activate within a certain time after the shift tray lift motor turned on."
+Causes;• Shift motor defective • Shift tray lift motor defective
+Code;SC727
+Description;"Finisher stapler rotation motor error
+ 1) Stapler rotation does not finish within a certain time after the stapler rotation motor turned on. 2) The stapler does not return to its home position within a certain time after stapling finished."
+Causes;• Stapler rotation motor defective • Poor stapler rotation motor connection
+Code;SC729
+Description;"Finisher punch motor error
+ The punch H.P sensor does not activate within a certain time after the punch motor turned on."
+Causes;• Punch motor defective • Punch H.P sensor defective • Poor punch motor connection
+Code;SC730
+Description;"Finisher stapler position motor error
+ 1) The stapler H.P. sensor stays on for longer than normal when the stapler motor turns on to return the stapler to its home position. 2) The stapler H.P sensor does not turn on within a certain time after the stapler motor turned on to move the stapler away from home position."
+Causes;• Stapler motor defective • Stapler H.P sensor defective • Poor stapler motor connection
+Code;SC731
+Description;"Finisher paper exit guide plate motor lock
+ The exit plate HP sensor does not turn on within 800 ms when the exit plate returns to its home position."
+Causes;• Exit plate motor defective • Too much load to exit plate motor • Exit plate motor connector defective • Exit plate HP sensor defective • Main board defective
+Code;SC735
+Description;"Finisher pre-stack motor error
+ It occurs 2 times consecutively that the pre-stack HP sensor is not activated within 400 pulses after the pre-stack motor starts."
+Causes;• Pre-stack HP sensor defective or poor connection • Pre-stack motor defective • Finisher main board defective • Too much load on the drive mechanism
+Code;SC736
+Description;"Finisher paper exit guide plate motor error
+ It occurs 2 times consecutively that the paper exit guide plate HP sensor is not activated within 750 ms after the paper exit guide plate motor starts."
+Causes;• Paper exit guide plate sensor defective or poor connection • Paper exit guide plate motor defective • Finisher main board defective • Too much load on the drive mechanism
+Code;SC737
+Description;"Finisher staple waste full
+ The box for staple waste becomes full."
+Causes;• Box is full of staple waste • Staple waste sensor defective
+Code;SC738
+Description;"Finisher shift tray lift motor error
+ It occurs 2 times consecutively that; 1) The stack height sensor is not activated within 50 seconds after the motor starts lifting the tray. 2) The stack height sensor is still activated 5 seconds after the motor starts lowering the tray."
+Causes;• Stack height sensor defective or poor connection • Shift tray lift motor defective • Finisher main board defective • Too much load on the drive mechanism
+Code;SC740
+Description;"1,000-sheet finisher error in finisher area
+ NOTE: When this SC is displayed, check SP7-902 (SC detail). The first 2 digits indicate the type of error. Example: 740 0100000000000000"
+Causes;
+Code;SC741
+Description;"1000 sheet finisher error in saddle stitching area
+ NOTE: When this SC is displayed, check SP7-902 (SC detail). The first 2 digits indicate the type of error. Example: 741 0100000000000000"
+Causes;
+Code;SC900
+Description;"Electrical total counter error
+ The total counter contains something that is not a number."
+Causes;• NVRAM defective
+Code;SC901
+Description;"Mechanical total counter error
+ The mechanical counter is not connected."
+Causes;• Mechanical total counter defective • Mechanical total counter connector not connected
+Code;SC951
+Description;"F-gate signal error 2
+ When the IPU has already received the F-gate signal (laser writing start trigger signal), the IPU receives another F-gate signal."
+Causes;• SBICU defective
+Code;SC953
+Description;"Scanner image setting error
+ The settings that are required for image processing using the scanner are not sent from the IPU."
+Causes;• Software defective
+Code;SC954
+Description;"Printer image setting error
+ The settings that are required for image processing using the printer controller are not sent from the IPU."
+Causes;• Software defective
+Code;SC955
+Description;"Memory setting error
+ The settings that are required for image processing using the memory are not sent from the IPU."
+Causes;• Software defective
+Code;SC956
+Description;"Scanner setting ID error
+ The ID that is sent from the IPU for scanner parameter setting is different from expected."
+Causes;• Software error
+Code;SC957
+Description;"Scanner return ID error
+ The ID that is sent from the IPU for the scanner return signal is different from expected."
+Causes;• Software error
+Code;SC958
+Description;"Scanner ready ID error
+ The ID that is sent from the IPU for the scanner ready signal is different from expected."
+Causes;• Software error
+Code;SC959
+Description;"Printer setting ID error
+ The ID that is sent from the IPU for the printer setting signal is different from expected."
+Causes;• Software error
+Code;SC960
+Description;"Printer return ID error
+ The ID that is sent from the IPU for the printer return signal is different from expected."
+Causes;• Software error
+Code;SC961
+Description;"Printer ready ID error
+ The ID that is sent from the printer controller in the printer controller printing ready condition is incorrect."
+Causes;• Software defective
+Code;SC962
+Description;"Memory setting ID error
+ The ID that is sent from the memory when the IPU sent the memory ready signal is incorrect."
+Causes;• Software defective
+Code;SC963
+Description;"Memory finishing ID error
+ The ID that is sent from the memory when the IPU sent the memory finish signal is incorrect."
+Causes;• Software defective
+Code;SC964
+Description;"Printer ready error
+ The print ready signal is not generated for more than 17 seconds after the IPU received the print start signal."
+Causes;• Software defective
+Code;SC966
+Description;"No laser writing signal (F-GATE) error 2
+ The level of the laser writing signal (F-GATE) fails to reach LOW for more than 15 seconds after the copy paper reaches the registration sensor."
+Causes;• Poor cable connection with the polygon mirror motor driver • Polygon mirror motor (driver) defective • BICU defective
+Code;SC970
+Description;"Scanner ready error
+ The MCU does not send the ready signal for 10 seconds after the scanning start command is sent to the MCU."
+Causes;• Communication error between BICU and MCU • MCU software defective • Buffer is full
+Code;SC980
+Description;"HDD access error
+ Incorrect parameter is sent from the BICU to the HDD controller."
+Causes;• Software defective • BICU defective
+Code;SC982
+Description;"HDD construction error
+ A HDD that does not have the correct specifications has been installed."
+Causes;• Insufficient memory • Incorrect hard disk type
+Code;SC984
+Description;"HDD response error
+ The HDD controller does not generate any response when the BICU sends a read/write signal to the HDD controller."
+Causes;• Software defective • HDD defective or poor connection
+Code;SC990
+Description;"Software performance error
+ The software performs an unexpected function."
+Causes;• Software defective NOTE: When this SC occurs, the file name, address, and data will be stored in the NVRAM. These data can be checked by entering SP mode then pressing “0”.

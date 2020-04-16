@@ -1,0 +1,812 @@
+Code;A0-01
+Description;PCU ROM abnormality
+Causes;Firmware upgrade is not made properly due to power OFF, etc.
+Remedy;Use SIM49-1 to upgrade the firmware.
+Code;A0-02
+Description;SCU ROM abnormality
+Causes;Some part of SFU is not upgraded during upgrading of the firmware.
+Remedy;Use SIM49-1 to execute the firmware.
+Code;A0-10
+Description;Controller ROM error
+Causes;SFU upgrade was not properly made when upgrading the firmware.
+Remedy;Controller firmware upgrade
+Code;A0-11
+Description;IF version discrepancy (CTL-PCU)
+Causes;Combination error between CTL and PCU
+Remedy;Check the firmware combination between CTL and PCU.
+Code;A0-12
+Description;IF version discrepancy (CTL-SCU)
+Causes;Combination error between CTL and SCU
+Remedy;Check the firmware combination between CTL and SCU.
+Code;A0-20
+Description;Machine level error (CTL detection)
+Causes;Combination error between the machine production/remodeling and the firmware
+Remedy;Check the combination between the machine production/remodeling and the firmware.
+Code;A0-21
+Description;Machine level error (PCU detection)
+Causes;Combination error between the machine production/remodeling and the firmware
+Remedy;Check the combination between the machine production/remodeling and the firmware.
+Code;A0-22
+Description;Machine level error (SCU detection)
+Causes;Combination error between the machine production/remodeling and the firmware
+Remedy;Check the combination between the machine production/remodeling and the firmware.
+Code;C1-01
+Description;Charger cleaner trouble
+Causes;The charger cleaner does not complete shift operation during the specified time.
+Remedy;Case 1 Cause Charger unit trouble Check and remedy Check the charger unit Case 2 Cause RE sensor, HP sensor, charger cleaner motor, and PCU PWB troubles, harness connection trouble Check and remedy 1) Check the sensor, the motor, and the PCU PWB. 2) Check the harness connection between the sensor, the motor and the PCU PWB.
+Code;C1-02
+Description;Charger cleaner motor lock
+Causes;When the charger cleaner motor is rotating, an excess motor current over the specified level is detected.
+Remedy;Case 1 Cause Charger cleaner motor trouble Check and remedy Check the charger cleaner motor Case 2 Cause PCU PWB trouble, harness connection trouble Check and remedy 1) Check the PCU PWB. 2) Check harness connection between the motor and the PCU PWB.
+Code;C4-00
+Description;PTC (Pre-Transfer Charger) high voltage output trouble
+Causes;A trouble signal is detected during PTC high voltage output.
+Remedy;Case 1 Cause Charger wire breakage Check and remedy Check the charger unit. Case 2 Cause PTC high voltage PWB trouble Check and remedy Replace the PTC high voltage PWB. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB. Case 4 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness.
+Code;C4-01
+Description;PTC (Pre-Transfer Charger) cleaner trouble
+Causes;Shifting the PTC cleaner is not completed within the specified time.
+Remedy;Case 1 Cause Cleaner mechanism trouble Check and remedy Check the cleaner mechanism. Case 2 Cause HP sensor trouble Check and remedy Replace the HP sensor. Case 3 Cause Cleaner motor trouble Check and remedy Replace the cleaner motor. Case 4 Cause PCU PWB trouble Check and remedy Replace the PCU PWB. Case 5 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness.
+Code;CE-00
+Description;Communication error other than CE-01 – 08
+Causes;Network cable connection trouble
+Remedy;Check to insure that the network cable is securely connected.
+Code;CE-01
+Description;Network controller trouble
+Causes;Network controller and its peripheral circuit trouble
+Remedy;1) Check the network controller and its peripheral circuit. 2) Output the NIC Config Page and check the NIC version. 3) Replace the MFPcnt PWB.
+Code;CE-02
+Description;Not-specified mail/FTP server error
+Causes;The specified mail server, FTP server, and SMB server are not found
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause Network setup trouble Check and remedy 1) Check that the connected network supports TCP/IP protocol. 2) Check from Web page that the Primary/ Secondary E-mail Server Address or the FTP server/Desktop PC/SMB server address as the destination is properly set. 3) When the above address is described with the Hostname, check that the DNS server is properly set or not. Case 3 Cause SMTP server/FTP server/NST/SMB server trouble Check and remedy Check the SMTP server/FTP server/NST/SMB server for any trouble.
+Code;CE-03
+Description;Communication error in image send
+Causes;The specified server does not respond during image send.
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause SMTP server/FTP server/NST/SMB server trouble Check and remedy Check the SMTP server/FTP server/NST/SMB server for any trouble.
+Code;CE-04
+Description;FTP server account name or authentication password input error
+Causes;The entered FTP server account name or the authentication password is invalid. The entered SMB server log-in name or the password is invalid.
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause The FTP server account name registered as the destination or the password for the account is incorrect. Check and remedy Check to insure that the FTP server account name registered as the destination or the password for the account is correct. Case 3 Cause The SMB server account name registered as the destination or the password for the account is incorrect. Check and remedy Check to insure that the SMB server account name registered as the destination or the password for the account is correct.
+Code;CE-05
+Description;FTP server directory input error
+Causes;The entered FTP server directory is invalid. The entered SMB server folder is invalid.
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause The FTP server account name registered as the destination or the password for the account is incorrect. Check and remedy Check to insure that there exits the FTP server directory registered as the destination. Case 3 Cause The SMB server account name registered as the destination or the password for it is incorrect. Check and remedy Check to insure that there exists the SMB server folder registered as the destination.
+Code;CE-06
+Description;POP3 server access error
+Causes;The specified mail server (POP3) is not found. (POP3 server access error)
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause Network setup error Check and remedy 1) Check that the connected network supports TCP/IP protocol. 2) Check the Web page to insure that the POP3 server address is correctly set. 3) If the above address is described in Hostname, check to insure that the DNS server is correctly set. Case 3 Cause POP3 server trouble Check and remedy Check the POP3 server for any trouble.
+Code;CE-07
+Description;POP3 server authentication check error
+Causes;The entered POP3 server account name or the authentication password is invalid. (POP3 server authentication check error)
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause The POP3 server account name or the password registered for the account is incorrect. Check and remedy Check to insure that the POP3 server account name or the password for the account is correct.
+Code;CE-08
+Description;POP3 server timeout error
+Causes;The specified mail server (POP3) does not respond. (POP3 server timeout error)
+Remedy;Case 1 Cause Network cable connection trouble Check and remedy Check to insure that the network cable is securely connected. Case 2 Cause POP3 server trouble Check and remedy Check the POP3 server for any trouble.
+Code;E6-10
+Description;Back-face shading trouble (Black correction) (DSPF)
+Causes;CCD black scan level abnormality when the copy lamp is turned off.
+Remedy;Case 1 Cause Installation error of the CCD unit flat cable Check and remedy Check the installing state of the flat cable to the CCD unit. Case 2 Cause CCD unit abnormality Check and remedy Check the CCD unit. Case 3 Cause DSPF PWB abnormality Check and remedy Check the DSPF PWB.
+Code;E6-11
+Description;Shading trouble (White correction) (DSPF)
+Causes;CCD white scan level abnormality when the copy lamp is on.
+Remedy;Case 1 Cause Installation error of the CCD unit flat cable Check and remedy Check the installing state of the flat cable to the CCD unit. Case 2 Cause Dirt on the mirror, the lens, or the reference white plate. Check and remedy Clean the mirror, the lens, or the reference white plate. Case 3 Cause Copy lamp lighting trouble Check and remedy Check the installing state of the flat cable to the copy lamp unit. Case 4 Cause CCD unit abnormality Check and remedy Check the CCD unit. Case 5 Cause DSPF PWB abnormality Check and remedy Check the DSPF PWB.
+Code;E6-14
+Description;Back-face SCAN-ASIC trouble (DSPF)
+Causes;DSPF PWB abnormality
+Remedy;Check the DSPF PWB.
+Code;E7-00
+Description;System memory access error
+Causes;System memory trouble (Tandem memory cannot be guaranteed.) Access to system memory cannot be made.
+Remedy;Case 1 Cause Expansion memory installation error Check and remedy Check installation of the system expansion memory. Case 2 Cause Garbled data Check and remedy 1) Use SIM60-01 to check memory read/write 2) Replace the expansion memory (if installed.) 3) Replace the MFPcnt PWB. Case 3 Cause Dirt on the memory pin Check and remedy Clean the memory pin with alcohol.
+Code;E7-01
+Description;System data trouble
+Causes;MFP image transfer trouble
+Remedy;1) Check the connection state of the MFPcnt PWB connector. 2) Replace the MFPcnt PWB.
+Code;E7-03
+Description;HDD trouble
+Causes;HDD connection trouble File control area data trouble (when FAT is broken)
+Remedy;Case 1 Cause The HDD is not properly installed to the MFPcnt PWB Check and remedy 1) Check installation of the HDD of the MFPcnt PWB. 2) Check connection of the harness of the MFPcnt PWB. 3) Use SIM62-2 and -3 to check read/write from/ to the HDD. Case 2 Cause The HDD does not work properly. Check and remedy Replace the HDD. Case 3 Cause MFPcnt PWB trouble Check and remedy Replace the MFPcnt PWB.
+Code;E7-04
+Description;HDD-ASIC trouble (DSK model only)
+Causes;HDD-ASIC abnormality
+Remedy;Check installation of the HDD-ASIC on the MFPcnt PWB. Replace the MFPcnt PWB.
+Code;E7-05
+Description;Local memory access error
+Causes;Local memory cannot be accessed.
+Remedy;Case 1 Cause Local memory installation abnormality Check and remedy Check the installing state of the local memory. Case 2 Cause Dirt on local memory pin Check and remedy Clean the local memory pin with alcohol. Case 3 Cause Garbled data Check and remedy 1) Use SIM60-01 to check memory read/write. 2) Replace the local memory. 3) Replace the MFPcnt PWB.
+Code;E7-06
+Description;Decode error trouble: Compression decode error (A compression file cannot decompressed.)
+Causes;A decode error occurs when forming an image.
+Remedy;Case 1 Cause Compression data abnormality Check and remedy 1) Check the installing state of the PWB. (PCI bus) 2) When an error occurs during a FAX job, check the installation of the FAX PWB. In the other cases, check the installation of the MFPcnt PWB and HDD. 3) Replace the MFPcnt PWB. Case 2 Cause HDD connection abnormality Check and remedy Check the HDD connection. Case 3 Cause Data are garbled in image compression/send. Check and remedy 1) Check the installation of the PWB. (PCI bus) 2) When an error occurs during a FAX job, check the installation of the FAX PWB. In the other cases, check the installation of the MFPcnt PWB and HDD. 3) Replace the MFPcnt PWB. Case 4 Cause MFPcnt PWB abnormality Check and remedy Replace the MFPcnt PWB. Case 5 Cause Local memory access error Check and remedy Check and execute remedy similarly to E7-05.
+Code;E7-09
+Description;Local memory combination error
+Causes;DIMM of other than 1GB is installed to the slot.
+Remedy;Check the combination of installed DIMM.
+Code;E7-10
+Description;Shading trouble (Black correction)
+Causes;CCD black scan level abnormality when the copy lamp is turned off.
+Remedy;Case 1 Cause Installation error of the CCD unit flat cable Check and remedy Check the installing state of the flat cable to the CCD unit. Case 2 Cause CCD unit abnormality Check and remedy Check the CCD unit. Case 3 Cause SCU PWB abnormality Check and remedy Check the SCU PWB.
+Code;E7-11
+Description;Shading trouble (White correction)
+Causes;CCD white reference plate scan level abnormality when the copy lamp is on.
+Remedy;Case 1 Cause Installation error of the CCD unit flat cable Check and remedy Check the installing state of the flat cable to the CCD unit. Case 2 Cause Dirt on the mirror, the lens, or the reference white plate. Check and remedy Clean the mirror, the lens, or the reference white plate. Case 3 Cause Copy lamp lighting trouble Check and remedy Check the installing state of the flat cable to the copy lamp unit. Case 4 Cause CCD unit abnormality Check and remedy Check the CCD unit. Case 5 Cause SCU PWB abnormality Check and remedy Check the SCU PWB.
+Code;E7-14
+Description;SCAN-ASIC trouble
+Causes;SCU PWB abnormality
+Remedy;Check the SCU PWB.
+Code;E7-20
+Description;LSU BD detection trouble
+Causes;LSU BD signal is not detected.
+Remedy;Case 1 Cause Disconnection or improper connection of harness and connector between LD/BD PWB and LSUcnt PWB Check and remedy Check connection of the harness of each PWB inside the LSU. Case 2 Cause 1) Optical axis shift 2) BK laser deterioration, power reduction 3) BD PWB trouble Check and remedy 1) Use SIM61-1 to check the LSU operation. 2) Replace the LSUcnt/BD PWB. 3) If the trouble cannot be removed by the above 1) to 2), replace the LSU.
+Code;E7-21
+Description;LSU LD deterioration trouble
+Causes;The color laser does not light up normally.
+Remedy;Case 1 Cause Disconnection or improper connection of harness and connector between LD PWB and LSUcnt PWB Check and remedy Check connection of the harness of each PWB inside the LSU. Case 2 Cause Y/M/C laser deterioration Check and remedy 1) Use SIM61-1 to check the LSU operation. 2) Replace the LSUcnt PWB. 3) If the trouble cannot be removed by the above 1) to 2), replace the LSU.
+Code;E7-28
+Description;LSU control ASIC connection abnormality
+Causes;Access error between the CPU of the PCU PWB and the LSU control ASIC
+Remedy;Case 1 Cause Communication connector connection trouble between the PCU PWB and the LSUcnt PWB (interface PWB), or harness trouble Check and remedy Check the connector connection between the PCU PWB and the LSUcnt PWB (interface PWB), or check the harness. Case 2 Cause PCU PWB or LSUcnt PWB (interface PWB) trouble Check and remedy Replace the PCU PWB or the LSUcnt PWB (interface PWB).
+Code;E7-29
+Description;LSU-ASIC frequency abnormality
+Causes;Trouble of the oscillator on the LSU-ASIC PWB, the resistor and capacitor for the oscillation circuit, and the LSU-ASIC itself.
+Remedy;Replace the LSUcnt PWB.
+Code;E7-50
+Description;Engine connection trouble
+Causes;Unknown PWB identification information is detected in the PCU PWB.
+Remedy;Case 1 Cause A PWB which is incompatible with the machine specifications is connected. Check and remedy 1) Replace the PCU PWB. 2) Replace the LSU PWB. Case 2 Cause A firmware which is incompatible with the machine specifications is used. Check and remedy Check the kind and the version of the firmware. Case 3 Cause LSU PWB connection trouble Check and remedy Check the LSU PWB connection. Case 4 Cause LSU PWB trouble Check and remedy Replace the LSU PWB.
+Code;E7-60
+Description;Controller connection trouble (Engine detection)
+Causes;Unknown PWB kind information is detected in the MFPcnt PWB.
+Remedy;Case 1 Cause A PWB which is not compatible with the machine specifications is connected. Check and remedy Replace the controller PWB. Case 2 Cause A firmware which is not compatible with the machine specifications is applied. Check and remedy Check the kind and the version of the firmware.
+Code;E7-61
+Description;Controller connection trouble (Engine)
+Causes;Combination trouble of the controller PWB and the engine
+Remedy;Check the controller PWB. Check the combination between the controller PWB and the engine.
+Code;E7-62
+Description;Controller connection trouble (Scanner)
+Causes;Combination trouble between the controller PWB and the scanner
+Remedy;Replace the controller PWB. Check the combination between the controller PWB and the scanner.
+Code;E7-65
+Description;PWB information sum error (Controller detection)
+Causes;1) EEPROM device trouble 2) EEPROM device contact failure 3) Device access error due to electrical noises
+Remedy;Replace the MFPcnt PWB.
+Code;E7-70
+Description;Scanner connection trouble
+Causes;Unknown PWB identification information is detected in the SCU PWB.
+Remedy;Case 1 Cause SCU PWB trouble Check and remedy Replace the SCU PWB. Case 2 Cause A firmware which is incompatible with the machine specifications is connected. Check and remedy Check the kind and the version of the firmware.
+Code;E7-75
+Description;PWB information sum error (Scanner detection)
+Causes;1) EEPROM device trouble 2) EEPROM device contact failure 3) Device access error due to electrical noises
+Remedy;Replace the scanner control PWB.
+Code;E7-80
+Description;Communication trouble between the MFP and the scanner (MFP detection)
+Causes;Communication establishment error/Framing/ Parity/Protocol error
+Remedy;Case 1 Cause SCU PWB connector connection trouble Check and remedy Check the connector connection between the SCU PWB and the MFPcnt PWB. Case 2 Cause Harness trouble between the SCU PWB and the MFPcnt PWB Check and remedy Check the harness between the SCU PWB and the MFPcnt PWB. Case 3 Cause Broken connector pin of the SCU PWB mother board Check and remedy Check grounding of the machine.
+Code;E7-90
+Description;Communication trouble between the MFP and the PCU (MFP detection)
+Causes;Communication establishment error/Framing/ Parity/Protocol error
+Remedy;Case 1 Cause PCU PWB connector connection trouble Check and remedy Check the connector connection between the PCU PWB and the MFPcnt PWB. Case 2 Cause Harness trouble between the PCU PWB and the MFPcnt PWB Check and remedy Check the harness between the PCU PWB and the MFPcnt PWB. Case 3 Cause Broken connector pin of the PCU PWB mother board Check and remedy Check grounding of the machine.
+Code;EE-EC
+Description;Auto developer adjustment trouble (The sample level for every rotation is other than 128 ± 10.)
+Causes;Toner density sensor trouble, charging voltage/ developing voltage trouble, toner density trouble, developing unit trouble, PCU PWB trouble
+Remedy;Use SIM25-2 to execute the auto developer adjustment.
+Code;EE-EL
+Description;Auto developer adjustment trouble (Overtoner abnormality)
+Causes;Toner density sensor trouble, charging voltage/ developing voltage trouble, toner density trouble, developing unit trouble, PCU PWB trouble
+Remedy;Use SIM25-2 to execute the auto developer adjustment.
+Code;EE-EU
+Description;Auto developer adjustment trouble (Under-toner abnormality)
+Causes;Toner density sensor trouble, charging voltage/ developing voltage trouble, toner density trouble, developing unit trouble, PCU PWB trouble
+Remedy;Use SIM25-2 to execute the auto developer adjustment.
+Code;F1-00
+Description;Finisher communication trouble (Machine side detection)
+Causes;Communication line test error when turning on the power or after canceling an exclusion simulation. Communication error with the finisher
+Remedy;Case 1 Cause Malfunction due to electrical noises Check and remedy Turn OFF/ON the power to cancel. Case 2 Cause PCU finisher connector or harness connection error or disconnection Check and remedy Check the connector and harness in the communication line. Case 3 Cause Finisher control PWB trouble Check and remedy Replace the finisher control PWB. Case 4 Cause Control (PCU) PWB trouble Check and remedy Replace the PCU PWB.
+Code;F1-03
+Description;Finisher oscillation motor trouble
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the motor (FSWM). Replace the finisher control PWB.
+Code;F1-08
+Description;Finisher stapler shift motor trouble
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the staple motor (FSM). Replace the finisher control PWB.
+Code;F1-10
+Description;Finisher staple motor abnormality
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the staple motor (FFSM). Replace the finisher control PWB.
+Code;F1-15
+Description;Finisher tray lift motor abnormality
+Causes;Lift motor trouble
+Remedy;Case 1 Cause Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble Check and remedy Use SIM3-3 to check the operation of the tray lift motor (FTLM). Replace the finisher control PWB. Case 2 Cause Interlock switch (black bar-shape switch under the upper tray) operation Check and remedy Check that there is nothing on the interlock switch. If there is, remove it.
+Code;F1-19
+Description;Finisher pre-alignment motor abnormality
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the prealignment motor (FFJM). Replace the finisher control PWB.
+Code;F1-20
+Description;Finisher after-alignment motor abnormality
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the afteralignment motor (FRJM). Replace the finisher control PWB.
+Code;F1-21
+Description;Finisher interface fan motor abnormality
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the fan motor (FJFM). Replace the finisher control PWB.
+Code;F1-22
+Description;Finisher rear edge assist motor trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the rear edge assist motor. Replace the finisher control PWB.
+Code;F1-23
+Description;Shutter trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the bundle paper exit motor. Replace the finisher control PWB.
+Code;F1-30
+Description;Communication trouble between the finisher and the saddle
+Causes;Communication error between the finisher and the saddle unit
+Remedy;Case 1 Cause Malfunction due to electrical noises. Check and remedy Turn ON/OFF the power to cancel the error. Case 2 Cause Connection trouble or disconnection of the connector and the harness between the finisher and the saddle unit. Check and remedy Check the connector and harness in the communication line. Case 3 Cause Finisher control PWB trouble. Saddle control PWB trouble. Check and remedy Replace the finisher control PWB. Replace the saddle control PWB.
+Code;F1-31
+Description;Finisher folding motor trouble
+Causes;Sensor breakage, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-2 to check the operation of the bookbinding position sensor (FFPD). Replace the finisher control PWB.
+Code;F1-32
+Description;Communication trouble between the finisher and the punch unit
+Causes;Finisher and punch unit communication error
+Remedy;Case 1 Cause Malfunction due to electrical noises Check and remedy Cancel by turning OFF/ON the power. Case 2 Cause Connector/harness connection error or disconnection between the finisher and the punch unit Check and remedy Check the connector and the harness in the communication line. Case 3 Cause Finisher control PWB trouble Check and remedy Replace the finisher control PWB. Case 4 Cause Control (PCU) PWB trouble Check and remedy Replace the control (PCU) PWB
+Code;F1-33
+Description;Finisher punch shift motor trouble
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble, punch control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the punch shift motor (FPSM). Replace the finisher punch unit (Replace the punch control PWB.).
+Code;F1-34
+Description;Finisher punch motor trouble
+Causes;Motor lock, motor RPM abnormality, motor overvoltage, finisher control PWB trouble, punch control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the punch motor (FPNW). Replace the finisher punch unit (Replace the punch control PWB.).
+Code;F1-37
+Description;Finisher backup RAM trouble
+Causes;Finisher control PWB trouble, malfunction due to electrical noises
+Remedy;Replace the finisher control PWB.
+Code;F1-38
+Description;Finisher punch backup RAM trouble
+Causes;Punch control PWB trouble, malfunction due to electrical noises
+Remedy;Replace the punch control PWB.
+Code;F1-41
+Description;Positioning plate motor trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the paper positioning plate motor. Replace the finisher control PWB.
+Code;F1-42
+Description;Guide motor trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the guide motor. Replace the finisher control PWB.
+Code;F1-43
+Description;Side alignment motor trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the alignment motor. Replace the finisher control PWB.
+Code;F1-44
+Description;Stitch motor rear trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the rear stitch motor. Replace the finisher control PWB.
+Code;F1-45
+Description;Stitch motor front trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the front stitch motor. Replace the finisher control PWB.
+Code;F1-46
+Description;Paper pushing motor trouble
+Causes;Motor trouble, HP sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-3 to check the operation of the paper pushing motor. Replace the finisher control PWB.
+Code;F1-50
+Description;Finisher incompatibility trouble
+Causes;Connection of the AR-F13, etc. which is incompatible with MX-5500N/6200N/7000N is detected.
+Remedy;Connect the MX-FNX3/MX-FNX4.
+Code;F1-51
+Description;Sensor connector connection trouble
+Causes;Sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-2 to check the operation of the guide HP sensor, the paper pushing plate HP sensor, and the paper pushing plate lead edge sensor. Replace the finisher control PWB.
+Code;F1-52
+Description;Micro SW trouble
+Causes;Sensor trouble, harness disconnection, finisher control PWB trouble
+Remedy;Use SIM3-2 to check the operation of the inlet port cover open/close sensor and the paper exit cover open/close sensor. Replace the finisher control PWB.
+Code;F1-60
+Description;Communication trouble between the finisher and the inserter
+Causes;Communication error between the finisher and the inserter
+Remedy;Case 1 Cause Malfunction due to electrical noises. Check and remedy Turn ON/OFF the power to cancel the error. Case 2 Cause Connection trouble or disconnection of the connector and the harness between the finisher and the inserter. Finisher control PWB trouble, inserter control PWB trouble Check and remedy Check the connector and the harness in the communication line. Replace the finisher control PWB. Replace the inserter control PWB.
+Code;F1-61
+Description;Inserter EEPROM trouble
+Causes;EEPROM trouble, finisher control PWB trouble, inserter control PWB trouble
+Remedy;Replace the finisher control PWB. Replace the inserter control PWB.
+Code;F1-62
+Description;Inserter reverse sensor trouble
+Causes;Sensor trouble, harness disconnection, finisher control PWB trouble, inserter control PWB trouble
+Remedy;Use SIM3-2 to check the operation of the inlet port cover open/close sensor and the paper exit cover open/close sensor. Replace the finisher control PWB. Replace the inserter control PWB.
+Code;F2-02
+Description;Toner supply abnormality (K2)
+Causes;Toner end with the remaining quantity of 25% or more. The toner supply time exceeds 5 times as much as the specified time.
+Remedy;Case 1 Cause Toner motor section connector harness trouble Check and remedy Check the connector connection of the toner motor section. Check the connector harness (TM) connection to the main PWB. Case 2 Cause Toner motor and toner density sensor trouble. Piezoelectric sensor abnormality Check and remedy 1) Check the toner density sensor output. (SIM25-1) 2) Check that the toner transport pipe is not clogged between the toner cartridge and the developing unit. Replace the toner cartridge (CRUM) if necessary. Intermediate hopper replacement 3) If replacement of the toner cartridge (CRUM) does not clear the trouble, check the developing unit.
+Code;F2-04
+Description;Toner cartridge improper (K2)
+Causes;An improper cartridge is inserted. Toner cartridge trouble
+Remedy;Replace the toner cartridge.
+Code;F2-05
+Description;Toner cartridge CRUM error (K2)
+Causes;CRUM cannot be read or written.
+Remedy;Case 1 Cause Connection trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Check and remedy Check the connector and the harness between the PCU and the toner cartridge. Case 2 Cause CRUM trouble Check and remedy Replace the toner cartridge. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB.
+Code;F2-39
+Description;Process thermistor trouble
+Causes;Process thermistor open
+Remedy;Case 1 Cause Process thermistor harness connection trouble Check and remedy Check the connection of the harness and connector of the process thermistor. Case 2 Cause Process thermistor trouble Check and remedy Check the connection of the harness and connector of the process thermistor. Case 3 Cause PCU PWB trouble Check and remedy Check the PCU PWB.
+Code;F2-40
+Description;Toner empty sensor abnormality (K)
+Causes;Toner empty sensor output abnormality. Sample level 25 or less or 231 or above.
+Remedy;Case 1 Cause The connector is not installed. Check and remedy Check the connection of the connector harness to the PCU PWB. Check the connection of the toner empty sensor. Case 2 Cause Connector harness trouble Check and remedy Check the harness disconnection. Case 3 Cause Cartridge trouble Check and remedy Check the cartridge connection.
+Code;F2-41
+Description;Toner empty sensor abnormality (C)
+Causes;Toner empty sensor output abnormality. Sample level 25 or less or 231 or above.
+Remedy;Case 1 Cause The connector is not installed. Check and remedy Check the connection of the connector harness to the PCU PWB. Check the connection of the toner empty sensor. Case 2 Cause Connector harness trouble Check and remedy Check the harness disconnection. Case 3 Cause Cartridge trouble Check and remedy Check the cartridge connection.
+Code;F2-42
+Description;Toner empty sensor abnormality (M)
+Causes;Toner empty sensor output abnormality. Sample level 25 or less or 231 or above.
+Remedy;Case 1 Cause The connector is not installed. Check and remedy Check the connection of the connector harness to the PCU PWB. Check the connection of the toner empty sensor. Case 2 Cause Connector harness trouble Check and remedy Check the harness disconnection. Case 3 Cause Cartridge trouble Check and remedy Check the cartridge connection.
+Code;F2-43
+Description;Toner empty sensor abnormality (Y)
+Causes;Toner empty sensor output abnormality. Sample level 25 or less or 231 or above.
+Remedy;Case 1 Cause The connector is not installed. Check and remedy Check the connection of the connector harness to the PCU PWB. Check the connection of the toner empty sensor. Case 2 Cause Connector harness trouble Check and remedy Check the harness disconnection. Case 3 Cause Cartridge trouble Check and remedy Check the cartridge connection.
+Code;F2-44
+Description;Black exclusive image density sensor trouble (Transfer belt surface reflection ratio abnormality)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble, calibration plate solenoid operation trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor, the harness and the calibration plate solenoid operation for any trouble. If the adjustment is completed, check the transfer belt surface state."
+Code;F2-45
+Description;Color exclusive image density sensor trouble (Calibration plate surface reflection ratio abnormality)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and the image density sensor, image density sensor dirt, calibration plate dirt, calibration plate solenoid operation trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness operation for any trouble. If the adjustment is completed, check the calibration plate solenoid operation."
+Code;F2-49
+Description;LSU thermistor trouble
+Causes;The detection temperature is out of the range of -28°C to 78°C.
+Remedy;Case 1 Cause LSU thermistor harness connection trouble Check and remedy Check the connection of the LSU thermistor harness and connector. Case 2 Cause LSU thermistor trouble, PCU PWB trouble Check and remedy Replace the LSU thermistor. Replace the PCU PWB.
+Code;F2-50
+Description;K phase sensor sensing trouble
+Causes;Detection is made by interruption of light in the sensor section of the projection rib on the drum drive gear to control the BK drum phase. The detection signal cannot be acquired and phase control cannot be made.
+Remedy;"Case 1 Cause Sensor connector connection trouble Check and remedy Check the sensor connector connection. Case 2 Cause Dirt on the sensor light emitting section, or installation trouble Check and remedy Check for dirt on the sensor or check the installation state. Case 3 Cause Drum drive gear upper rib breakage, sensor trouble Check and remedy If there is no trouble in the rib, replace the sensor. (Use SIM30-1 ""DHPD_K"" to check interruption or transmission of light.)"
+Code;F2-51
+Description;CL phase sensor sensing trouble (C)
+Causes;Detection is made by interruption of light in the sensor section of the projection rib on the drum drive gear to control the color drum (C) phase. The detection signal cannot be acquired and phase control cannot be made.
+Remedy;"Case 1 Cause Sensor connector connection trouble Check and remedy Check the sensor connector connection. Case 2 Cause Dirt on the sensor light emitting section, or installation trouble Check and remedy Check for dirt on the sensor or check the installation state. Case 3 Cause Drum drive gear upper rib breakage, sensor trouble Check and remedy If there is no trouble in the rib, replace the sensor. (Use SIM30-1 ""DHPD_C"" to check interruption or transmission of light.)"
+Code;F2-52
+Description;CL phase sensor sensing trouble (M)
+Causes;Detection is made by interruption of light in the sensor section of the projection rib on the drum drive gear to control the color drum (M) phase. The detection signal cannot be acquired and phase control cannot be made.
+Remedy;"Case 1 Cause Sensor connector connection trouble Check and remedy Check the sensor connector connection. Case 2 Cause Dirt on the sensor light emitting section, or installation trouble Check and remedy Check for dirt on the sensor or check the installation state. Case 3 Cause Drum drive gear upper rib breakage, sensor trouble Check and remedy If there is no trouble in the rib, replace the sensor. (Use SIM30-1 ""DHPD_M"" to check interruption or transmission of light.)"
+Code;F2-53
+Description;CL phase sensor sensing trouble (Y)
+Causes;Detection is made by interruption of light in the sensor section of the projection rib on the drum drive gear to control the color drum (Y) phase. The detection signal cannot be acquired and phase control cannot be made.
+Remedy;"Case 1 Cause Sensor connector connection trouble Check and remedy Check the sensor connector connection. Case 2 Cause Dirt on the sensor light emitting section, or installation trouble Check and remedy Check for dirt on the sensor or check the installation state. Case 3 Cause Drum drive gear upper rib breakage, sensor trouble Check and remedy If there is no trouble in the rib, replace the sensor. (Use SIM30-1 ""DHPD_Y"" to check interruption or transmission of light.)"
+Code;F2-58
+Description;Process humidity sensor trouble
+Causes;Process humidity sensor open
+Remedy;Case 1 Cause Process humidity sensor harness connection trouble Check and remedy Check the harness and connector connection of the process humidity sensor. Case 2 Cause Process humidity sensor trouble Check and remedy Check the process humidity sensor. Case 3 Cause PCU PWB trouble Check and remedy Check the PCU PWB.
+Code;F2-64
+Description;Toner supply abnormality (K)
+Causes;Toner end with the remaining quantity of 25% or more. The toner supply time exceeds 5 times as much as the specified time.
+Remedy;Case 1 Cause Toner motor section connector harness trouble Check and remedy Check the connector connection of the toner motor section. Check the connector harness (TM) connection to the main PWB. Case 2 Cause Toner motor and toner density sensor trouble. Piezoelectric sensor abnormality Check and remedy 1) Check the toner density sensor output. (SIM25-1) 2) Check that the toner transport pipe is not clogged between the toner cartridge and the developing unit. Replace the toner cartridge (CRUM) if necessary. Intermediate hopper replacement 3) If replacement of the toner cartridge (CRUM) does not clear the trouble, check the developing unit.
+Code;F2-65
+Description;Toner supply abnormality (C)
+Causes;Toner end with the remaining quantity of 75% or more. The toner supply time exceeds 3 times as much as the specified time.
+Remedy;Case 1 Cause Toner motor section connector harness trouble Check and remedy Check the connector connection of the toner motor section. Check the connector harness (TM) connection to the main PWB. Case 2 Cause Toner motor and toner density sensor trouble Check and remedy 1) Check the toner density sensor output. (SIM25-1) 2) Check that the toner transport pipe is not clogged between the toner cartridge and the developing unit. Replace the toner cartridge (CRUM) if necessary. 3) If replacement of the toner cartridge (CRUM) does not clear the trouble, check the developing unit.
+Code;F2-66
+Description;Toner supply abnormality (M)
+Causes;Toner end with the remaining quantity of 75% or more. The toner supply time exceeds 3 times as much as the specified time.
+Remedy;Case 1 Cause Toner motor section connector harness trouble Check and remedy Check the connector connection of the toner motor section. Check the connector harness (TM) connection to the main PWB. Case 2 Cause Toner motor and toner density sensor trouble Check and remedy 1) Check the toner density sensor output. (SIM25-1) 2) Check that the toner transport pipe is not clogged between the toner cartridge and the developing unit. Replace the toner cartridge (CRUM) if necessary. 3) If replacement of the toner cartridge (CRUM) does not clear the trouble, check the developing unit.
+Code;F2-67
+Description;Toner supply abnormality (Y)
+Causes;Toner end with the remaining quantity of 75% or more. The toner supply time exceeds 3 times as much as the specified time.
+Remedy;Case 1 Cause Toner motor section connector harness trouble Check and remedy Check the connector connection of the toner motor section. Check the connector harness (TM) connection to the main PWB. Case 2 Cause Toner motor and toner density sensor trouble Check and remedy 1) Check the toner density sensor output. (SIM25-1) 2) Check that the toner transport pipe is not clogged between the toner cartridge and the developing unit. Replace the toner cartridge (CRUM) if necessary. 3) If replacement of the toner cartridge (CRUM) does not clear the trouble, check the developing unit.
+Code;F2-70
+Description;Toner cartridge improper (K)
+Causes;An improper cartridge is inserted. Toner cartridge trouble
+Remedy;Replace the toner cartridge.
+Code;F2-71
+Description;Toner cartridge improper (C)
+Causes;An improper cartridge is inserted. Toner cartridge trouble
+Remedy;Replace the toner cartridge.
+Code;F2-72
+Description;Toner cartridge improper (M)
+Causes;An improper cartridge is inserted. Toner cartridge trouble
+Remedy;Replace the toner cartridge.
+Code;F2-73
+Description;Toner cartridge improper (Y)
+Causes;An improper cartridge is inserted. Toner cartridge trouble
+Remedy;Replace the toner cartridge.
+Code;F2-74
+Description;Toner cartridge CRUM error (K)
+Causes;CRUM cannot be read or written.
+Remedy;Case 1 Cause Connection trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Check and remedy Check the connector and the harness between the PCU and the toner cartridge. Case 2 Cause CRUM trouble Check and remedy Replace the toner cartridge. Case 3 Cause Control (PCU) PWB trouble Check and remedy Replace the PCU PWB.
+Code;F2-75
+Description;Toner cartridge CRUM error (C)
+Causes;CRUM cannot be read or written.
+Remedy;Case 1 Cause Connection trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Check and remedy Check the connector and the harness between the PCU and the toner cartridge. Case 2 Cause CRUM trouble Check and remedy Replace the toner cartridge. Case 3 Cause Control (PCU) PWB trouble Check and remedy Replace the PCU PWB.
+Code;F2-76
+Description;Toner cartridge CRUM error (M)
+Causes;CRUM cannot be read or written.
+Remedy;Case 1 Cause Connection trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Check and remedy Check the connector and the harness between the PCU and the toner cartridge. Case 2 Cause CRUM trouble Check and remedy Replace the toner cartridge. Case 3 Cause Control (PCU) PWB trouble Check and remedy Replace the PCU PWB.
+Code;F2-77
+Description;Toner cartridge CRUM error (Y)
+Causes;CRUM cannot be read or written.
+Remedy;Case 1 Cause Connection trouble or disconnection of the connector and the harness between the PCU and the toner cartridge. Check and remedy Check the connector and the harness between the PCU and the toner cartridge. Case 2 Cause CRUM trouble Check and remedy Replace the toner cartridge. Case 3 Cause Control (PCU) PWB trouble Check and remedy Replace the PCU PWB.
+Code;F2-78
+Description;Registration exclusive image density sensor trouble (Transfer belt surface reflection ratio abnormality)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble, calibration plate solenoid operation trouble
+Remedy;Check the sensor and the harness. Check the calibration plate solenoid operation and the transfer belt surface state. If the trouble is not cleared, replace the image sensor exclusively used for registration, replace the transfer belt, replace the calibration plate solenoid, or replace the PCU PWB according to the check result.
+Code;F2-80
+Description;Half tone process control 1st patch reference value trouble (K)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-81
+Description;Half tone process control 1st patch reference value trouble (C)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-82
+Description;Half tone process control 1st patch reference value trouble (M)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-83
+Description;Half tone process control 1st patch reference value trouble (Y)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-84
+Description;Half tone process control 2nd patch reference value trouble (K)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-85
+Description;Half tone process control 2nd patch reference value trouble (C)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-86
+Description;Half tone process control 2nd patch reference value trouble (M)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-87
+Description;Half tone process control 2nd patch reference value trouble (Y)
+Causes;Image density sensor trouble, harness connection trouble between PCU sub PWB and the image density sensor, image density sensor dirt, transfer belt cleaning trouble
+Remedy;"Use SIM44-2 to execute the process control sensor gain adjustment. If ""ERROR"" is displayed, check the sensor and the harness. If the adjustment is completed, check the drum surface state and the belt surface state."
+Code;F2-92
+Description;High-density process control density correction error (C)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and image density sensor, dirt on image density sensor, transfer belt cleaning trouble
+Remedy;1) Use SIM44-2 to execute the process control sensor gain adjustment. 2) If an error occurs, check the sensors and the harnesses. 3) If the adjustment of 1) is completed, check the drum surface state, the belt surface state, etc.
+Code;F2-93
+Description;High-density process control density correction error (M)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and image density sensor, dirt on image density sensor, transfer belt cleaning trouble
+Remedy;1) Use SIM44-2 to execute the process control sensor gain adjustment. 2) If an error occurs, check the sensors and the harnesses. 3) If the adjustment of 1) is completed, check the drum surface state, the belt surface state, etc.
+Code;F2-94
+Description;High-density process control density correction error (Y)
+Causes;Image density sensor trouble, harness connection trouble between PCU PWB and image density sensor, dirt on image density sensor, transfer belt cleaning trouble
+Remedy;1) Use SIM44-2 to execute the process control sensor gain adjustment. 2) If an error occurs, check the sensors and the harnesses. 3) If the adjustment of 1) is completed, check the drum surface state, the belt surface state, etc.
+Code;F3-12
+Description;Tray 1 lift-up trouble
+Causes;T1LUD does not turn ON within the specified time.
+Remedy;Case 1 Cause T1LUD sensor trouble. Harness connection trouble between PCU PWB, the lift-up unit, and the paper feed unit. Check and remedy Check the harness and the connector of T1LUD. Case 2 Cause Tray 1 lift-up motor trouble Check and remedy Check the lift-up unit.
+Code;F3-22
+Description;Tray 2 lift-up trouble
+Causes;T2LUD does not turn ON within the specified time.
+Remedy;Case 1 Cause T2LUD sensor trouble. Harness connection trouble between PCU PWB, the lift-up unit, and the paper feed unit. Check and remedy Check the harness and the connector of T2LUD. Case 2 Cause Tray 2 lift-up motor trouble Check and remedy Check the lift-up unit.
+Code;F3-32
+Description;Tray 3 lift-up trouble
+Causes;LUD3 does not turn ON within the specified time.
+Remedy;Case 1 Cause LUD3 sensor trouble. Harness connection trouble between PCU PWB, the lift-up unit, and the paper feed unit. Check and remedy Check the harness and the connector of LUD3. Case 2 Cause Tray 3 lift-up motor trouble Check and remedy Check the lift-up unit.
+Code;F3-42
+Description;Tray 4 lift-up trouble
+Causes;LUD4 does not turn ON within the specified time.
+Remedy;Case 1 Cause LUD4 sensor trouble. Harness connection trouble between PCU PWB, the lift-up unit, and the paper feed unit. Check and remedy Check the harness and the connector of LUD4. Case 2 Cause Tray 4 lift-up motor trouble Check and remedy Check the lift-up unit.
+Code;F9-00
+Description;Communication trouble between the controller and the printer controller (FIERY option)
+Causes;A communication error is detected during initial establishment or after establishment of communication with the controller (FIERY option).
+Remedy;Case 1 Cause Printer controller MFPcnt PWB cable trouble Check and remedy Check the printer controller MFPcnt PWB cable. Case 2 Cause MFPcnt PWB trouble, printer controller PWB trouble Check and remedy Replace the MFPcnt PWB. Repair or replace the printer controller PWB. After completion of check, turn OFF/ON the machine and the printer controller.
+Code;H2-00
+Description;Detection thermistor open (TH1_AD2) of the non-contact thermistor
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power source trouble, fusing unit not-installed
+Remedy;Check the harness and the connector from the thermistor to the control PWB.
+Code;H2-01
+Description;Lower thermistor open (TH_LM)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power source trouble, fusing unit not-installed
+Remedy;Check the harness and the connector from the thermistor to the control PWB.
+Code;H2-02
+Description;Sub thermistor open (TH_US)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power source trouble, fusing unit not-installed
+Remedy;Check the harness and the connector from the thermistor to the control PWB.
+Code;H2-03
+Description;Non-contact thermistor compensation thermistor open (TH1_AD1)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power source trouble
+Remedy;Check the harness and the connector from the thermistor to the control PWB.
+Code;H2-04
+Description;External heating thermistor open (TH_EX1)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection trouble, AC power source trouble
+Remedy;Check the harness and the connector from the thermistor to the control PWB.
+Code;H2-05
+Description;Fusing external heating thermistor open (TH_EX2)
+Causes;Thermistor open
+Remedy;Case 1 Cause Fusing section connector and harness connection trouble Check and remedy Check the harness and the connector from the thermistor to the PCU PWB. Case 2 Cause Thermistor trouble, PCU PWB trouble Check and remedy Replace the thermistor or the PCU PWB.
+Code;H3-00
+Description;Fusing section high temperature trouble (TH_UM)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection error, AC power source trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the control PWB thermistor input circuit section. 3) If the heater lamp keep lighting, check the AC PWB and the control PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H3-01
+Description;Fusing section high temperature trouble (TH_LM)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection error, AC power source trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the control PWB thermistor input circuit section. 3) If the heater lamp keep lighting, check the AC PWB and the control PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H3-02
+Description;Sub thermistor fusing section high temperature trouble (TH_US)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection error, AC power source trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the control PWB thermistor input circuit section. 3) If the heater lamp keep lighting, check the AC PWB and the control PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H3-04
+Description;External heating thermistor high temperature trouble (TH_EX1)
+Causes;Thermistor trouble, control PWB trouble, fusing section connector connection error, AC power source trouble
+Remedy;1) Use Sim44-14 to check if the thermistor (TH_EX1) shows an abnormal temperature. If the display is normal, use Sim5-2 to check the blinking operation of the heater lamp. a) If it blinks normally, check the thermistor and the harness. Check the control PWB thermistor input circuit section. b) If the heater lamp keep lighting, check the AC PWB and the control PWB lamp control circuit. 2) Use SIM14 to cancel the trouble.
+Code;H3-05
+Description;Fusing external thermistor high temperature trouble (TH_EX2)
+Causes;It is detected that the fusing temperature exceeds the specified temperature.
+Remedy;Case 1 Cause Fusing section connector and harness connection trouble Check and remedy Check the harness and the connector from the thermistor to the PCU PWB. Use SIM14 to cancel the trouble. Case 2 Cause Thermistor trouble, PCU PWB trouble Check and remedy Replace the thermistor or the PCU PWB. Use SIM14 to cancel the trouble.
+Code;H4-00
+Description;Fusing section low temperature trouble (TH_UM_AD2)
+Causes;Thermistor trouble, heater lamp trouble, PCU PWB trouble, thermostat trouble, AC power source trouble, interlock switch trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the PCU PWB thermistor input circuit section. 3) If it is not lighted, check for the heater lamp disconnection and the thermostat breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H4-01
+Description;Fusing section low temperature trouble (TH_LM)
+Causes;Thermistor trouble, heater lamp trouble, PCU PWB trouble, thermostat trouble, AC power source trouble, interlock switch trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the PCU PWB thermistor input circuit section. 3) If it is not lighted, check for the heater lamp disconnection and the thermostat breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H4-02
+Description;Sub thermistor fusing section low temperature trouble (TH_US)
+Causes;Thermistor trouble, heater lamp trouble, PCU PWB trouble, thermostat trouble, AC power source trouble, interlock switch trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the PCU PWB thermistor input circuit section. 3) If it is not lighted, check for the heater lamp disconnection and the thermostat breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H4-04
+Description;External heating thermistor fusing section low temperature trouble (TH_EX1)
+Causes;Thermistor trouble, heater lamp trouble, PCU PWB trouble, thermostat trouble, AC power source trouble, interlock switch trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the PCU PWB thermistor input circuit section. 3) If it is not lighted, check for the heater lamp disconnection and the thermostat breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H4-30
+Description;Detection thermistor input abnormality (TH_UM)
+Causes;HL_UM does not turn on. Thermistor trouble, harness trouble, PCU PWB trouble
+Remedy;1) Use SIM5-2 to check blinking of the heater lamp. 2) If it blinks normally, check the thermistor and the harness. Check the PCU PWB thermistor input circuit section. 3) If it is not lighted, check for the heater lamp disconnection and the thermostat breakage. Check the interlock switch. Check the AC PWB and the PCU PWB lamp control circuit. 4) Use SIM14 to cancel the trouble.
+Code;H5-01
+Description;5 continuous detection of POD1 notreached jam
+Causes;5 continuous detection of POD1 not-reached jam
+Remedy;Case 1 Cause The fusing jam is not removed completely. (Jam paper remains.) Check and remedy Check the fusing section for jam paper. (winding, etc.) Case 2 Cause POD1 sensor trouble or harness connection trouble Check and remedy Check the POD1 sensor harness. Use SIM14 to cancel the trouble. Case 3 Cause Fusing unit installation trouble Check and remedy Check the fusing unit installation.
+Code;H7-10
+Description;Low temperature detection during the temperature control reset operation after stopping the alarm in a JOB (HL_UM)
+Causes;When the alarm is stopped, the set temperature is not reached within the specified time. * Alarm stop: When the fusing temperature falls below the specified level in a print JOB, printing is interrupted temporarily and the temperature is reset.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power source trouble, interlock switch trouble Check and remedy Use SIM 5-2 to check lighting of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB.
+Code;H7-11
+Description;Low temperature detection during the temperature control reset operation after stopping the alarm in a JOB (HL_LM)
+Causes;When the alarm is stopped, the set temperature is not reached within the specified time. * Alarm stop: When the fusing temperature falls below the specified level in a print JOB, printing is interrupted temporarily and the temperature is reset.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power source trouble, interlock switch trouble Check and remedy Use SIM 5-2 to check lighting of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB.
+Code;H7-12
+Description;Low temperature detection during the temperature control reset operation after stopping the alarm in a JOB (HL_US)
+Causes;When the alarm is stopped, the set temperature is not reached within the specified time. * Alarm stop: When the fusing temperature falls below the specified level in a print JOB, printing is interrupted temporarily and the temperature is reset.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power source trouble, interlock switch trouble Check and remedy Use SIM 5-2 to check lighting of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB.
+Code;H7-14
+Description;Low temperature detection during the temperature control reset operation after stopping the alarm in a JOB (HL_EX1)
+Causes;When the alarm is stopped, the set temperature is not reached within the specified time. * Alarm stop: When the fusing temperature falls below the specified level in a print JOB, printing is interrupted temporarily and the temperature is reset.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Thermistor trouble, thermostat trouble, heater lamp trouble, PCU PWB trouble, AC power source trouble, interlock switch trouble Check and remedy Use SIM 5-2 to check lighting of the heater lamp. Check conduction of the thermostat. Replace the heater lamp, the PCU PWB, and the AC PWB.
+Code;L1-00
+Description;Mirror feed trouble
+Causes;Mirror unit trouble, mirror wire disengagement
+Remedy;Use SIM1-1 to check the mirror operation.
+Code;L3-00
+Description;Mirror return trouble
+Causes;Mirror unit trouble, mirror wire disengagement
+Remedy;Use SIM1-1 to check the mirror operation.
+Code;L4-02
+Description;Paper feed motor lock trouble
+Causes;Paper feed motor trouble, harness connection trouble between PCU PWB and paper feed motor, control circuit trouble
+Remedy;Use SIM6-1 to check the paper feed motor operation. Check the harness and the connector between the PCU PWB and the paper feed motor.
+Code;L4-03
+Description;Fusing motor lock trouble
+Causes;The motor lock signal is detected during rotation of the fusing motor.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the fusing motor. Check and remedy Check the harness and the connector between the PCU PWB and the fusing motor. Case 2 Cause Fusing motor trouble, control circuit trouble Check and remedy Use SIM6-1 to check the operation of the fusing motor.
+Code;L4-04
+Description;Developing motor trouble (BK)
+Causes;The motor lock signal is detected during rotation of the developing motor.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the developing motor. Check and remedy Check the harness and the connector between the PCU PWB and the developing motor. Case 2 Cause Developing motor trouble, control circuit trouble Check and remedy Use SIM25-1 to check the operation of the developing motor.
+Code;L4-05
+Description;Developing motor trouble (CL)
+Causes;The motor lock signal is detected during rotation of the developing motor.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the developing motor. Check and remedy Check the harness and the connector between the PCU PWB and the developing motor. Case 2 Cause Developing motor trouble, control circuit trouble Check and remedy Use SIM25-1 to check the operation of the developing motor.
+Code;L4-06
+Description;Transfer belt separation position sensor trouble
+Causes;When separating the primary transfer belt unit, change in the separation position sensor characteristics is not detected within the specified time.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the separation position sensor Check and remedy Check the harness between the PCU PWB and the separation position sensor. Case 2 Cause The belt position sensor is not interrupted or it is always interrupted. Belt separation clutch operation trouble Check and remedy Use SIM6-3 to check the belt separation operation. Check to insure that the sensor is interrupted from lighting when the belt is separated. Case 3 Cause The primary transfer belt unit is not installed. Check and remedy Install the primary transfer belt unit.
+Code;L4-08
+Description;Waste toner motor lock
+Causes;The motor lock signal is detected during rotation of the waste toner motor.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the waste toner motor. Check and remedy Check the harness and the connector between the PCU PWB and the waste toner motor. Case 2 Cause Waste toner motor trouble, control circuit trouble Check and remedy Use SIM6-1 to check the operation of the waste toner motor.
+Code;L4-09
+Description;Resist motor lock
+Causes;When the resist motor is rotation, the motor lock signal is detected.
+Remedy;Case 1 Cause Harness connection trouble between the PCU PWB and the resist motor Check and remedy Check the harness and the connector between the PCU PWB and the resist motor. Case 2 Cause Resist motor trouble, control circuit trouble Check and remedy Use SIM6-1 to check the operation of the resist motor.
+Code;L4-12
+Description;Secondary transfer separation trouble
+Causes;When the secondary transfer unit is separated, the separation sensor status change is not detected within the specified time.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Separation mechanism trouble, separation motor trouble, separation sensor trouble Check and remedy Check the separation mechanism. Replace the separation motor and the separation sensor. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB.
+Code;L4-13
+Description;Fusing external heating separation trouble
+Causes;When the fusing external heating unit is separated, the separation sensor status change is not detected within the specified time.
+Remedy;Case 1 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 2 Cause Separation mechanism trouble, separation motor trouble, separation sensor trouble Check and remedy Check the separation mechanism. Replace the separation motor and the separation sensor. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB.
+Code;L4-30
+Description;Controller fan motor trouble
+Causes;1) The motor lock signal is detected during rotation of the controller fan motor. 2) The motor lock signal is detected during rotation of the HDD fan motor.
+Remedy;Case 1 Cause Fan motor trouble Check and remedy Use SIM6-2 to check the operation of the fan motor. Case 2 Cause Harness connection trouble between the mother PWB and the fan motor. Check and remedy Check the harness and the connector between the mother PWB and the fan motor. Case 3 Cause Control circuit trouble Check and remedy Replace the MFPcnt PWB. Case 4 Cause Mother PWB trouble. Check and remedy Replace the mother PWB.
+Code;L4-31
+Description;Paper exit cooling fan F lock
+Causes;When the paper exit cooling fan F is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-32
+Description;Power cooling fan 1 lock
+Causes;When the power cooling fan 1 is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Power cooling fan 1 connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-34
+Description;LSU cooling fan trouble
+Causes;When the LSU cooling fan is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the LSU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble Check and remedy Use SIM6-2 to check that the fan is actually rotating. If the trouble is not canceled, replace the LSU fan and the LSU cnt PWB.
+Code;L4-35
+Description;Fusing exhaust fan lock
+Causes;When the fusing exhaust fan is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-36
+Description;Fusing suction fan lock
+Causes;When the fusing suction fan is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-38
+Description;Machine ventilation fan center lock
+Causes;When the machine ventilation fan center is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-39
+Description;Machine ventilation fan right lock
+Causes;When the machine ventilation fan right is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-40
+Description;Ozone fan 1 lock
+Causes;When the ozone fan 1 is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-41
+Description;Ozone fan 2 lock
+Causes;When the ozone fan 2 is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-42
+Description;Ozone fan 3 lock
+Causes;When the ozone fan 3 is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-43
+Description;Paper exit cooling fan center lock
+Causes;When the paper exit cooling fan center is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L4-44
+Description;Power cooling fan 2 lock
+Causes;When the power cooling fan 2 is operated, the fan operation signal is not detected within the specified time.
+Remedy;Case 1 Cause Fan connector disconnection Check and remedy Check the harness and the connector between the PCU PWB and the fan. Case 2 Cause Fan does not rotate because of other trouble. Check and remedy Use SIM6-2 to check that the fan is actually rotating.
+Code;L6-10
+Description;Polygon motor lock detection
+Causes;It is judged that the LSU polygon motor lock signal is not outputted, and the lock signal is checked after 15 sec from starting rotation of the polygon motor and it is judged that the polygon motor does not rotate properly.
+Remedy;Case 1 Cause Disconnection of the LSU connector or the LSU inside harness, or breakage Check and remedy Check connection of the harness and the connector. Case 2 Cause Polygon motor trouble, LSU PWB trouble Check and remedy Use SIM61-1 to check the operation of the polygon motor. Replace the LSUcnt PWB. Replace the LSU.
+Code;L8-01
+Description;No full wave signal
+Causes;No full wave signal is detected.
+Remedy;Case 1 Cause Harness trouble Check and remedy Check connection of the harness and the connector. Case 2 Cause Power unit trouble Check and remedy Replace the power unit. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB.
+Code;L8-02
+Description;Full wave signal width abnormality
+Causes;The full wave signal is judged as frequency abnormality. (The detection frequency is judged as 65Hz or above or 45Hz or less.)
+Remedy;Case 1 Cause Harness trouble Check and remedy Check the harness and the connector connection. Case 2 Cause Power unit trouble Check and remedy Replace the power unit. Case 3 Cause PCU PWB trouble Check and remedy Replace the PCU PWB.
+Code;L8-20
+Description;Power controller communication trouble
+Causes;Communication establishment error/Framing/ Parity/Protocol error
+Remedy;Case 1 Cause Connector connection trouble between the mother board PWB and the MFPcnt PWB. MFPcnt PWB mother board connector pin breakage Check and remedy Check the connector connection between the mother board PWB and the MFPcnt PWB. Check grounding of the machine. Case 2 Cause Mother PWB trouble Check and remedy Replace the mother PWB. Case 3 Cause Mother PWB jumper error Check and remedy Set the mother PWB jumper to the Default side.
+Code;PC---
+Description;Personal counter not installed
+Causes;The personal counter is not installed.
+Remedy;Install the personal counter.
+Code;U1-01
+Description;Battery trouble
+Causes;1) Battery life 2) Battery circuit abnormality
+Remedy;Check that the battery voltage is about 2.5V or above.
+Code;U2-00
+Description;EEPROM read/write error (MFP detection)
+Causes;EEPROM device read/write error
+Remedy;Case 1 Cause EEPROM device trouble Check and remedy Replace the EEPROM device. Case 2 Cause EEPROM device contact failure Check and remedy Check that EEPROM device is properly inserted. Case 3 Cause Device access error due to electrical noises Check and remedy Replace the MFPcnt PWB.
+Code;U2-05
+Description;HDD/SRAM/EEPROM data discrepancy
+Causes;HDD replacement or SRAM memory replacement
+Remedy;Initialize the authentication information with SIM16, and import the backup data (exported data by device cloning) if any.
+Code;U2-10
+Description;SRAM user authentication index check sum error
+Causes;1) SRAM trouble 2) Hang-up of the control circuit due to electrical noises 3) MFPcnt PWB SRAM access circuit trouble
+Remedy;Use SIM16 to cancel U2 trouble.
+Code;U2-11
+Description;EEPROM check sum error (MFP detection)
+Causes;1) EEPROM device trouble 2) EEPROM device contact failure 3) Device access error due to electrical noises
+Remedy;Use SIM16 to cancel U2 trouble.
+Code;U2-22
+Description;SRAM memory check sum error
+Causes;MFPcnt PWB SRAM memory check sum error
+Remedy;Case 1 Cause SRAM trouble Check and remedy 1) Initialize the communication management table registered in SRAM and the FAX soft switch. 2) Since the registered contents have been deleted, register them again. Case 2 Cause Control circuit hang-up due to electrical noises Check and remedy Use SIM16 to cancel U2 trouble. Case 3 Cause MFPcnt PWB SRAM access circuit trouble Check and remedy Replace the MFPcnt PWB.
+Code;U2-23
+Description;MFPC section SRAM memory individual data check sum error
+Causes;MFPcnt PWB SRAM memory individual data check sum error (Communication management table, sender registration data, etc.)
+Remedy;Case 1 Cause SRAM trouble Check and remedy 1) Turn OFF/ON the power to initialize the data related to the check sum error contents automatically. 2) Since the registered contents have been deleted, register them again. Case 2 Cause Control circuit hang-up due to electrical noises Check and remedy Use SIM16 to cancel U2 trouble. Case 3 Cause MFPcnt PWB SRAM access circuit trouble Check and remedy Replace the MFPcnt PWB.
+Code;U2-24
+Description;SRAM memory user authentication counter check sum error
+Causes;1) SRAM trouble 2) Control circuit hang-up due to electrical noises 3) MFPcnt PWB SRAM access circuit trouble
+Remedy;Use SIM16 to cancel U2 trouble.
+Code;U2-25
+Description;Flash memory user authentication counter check sum error
+Causes;Flash trouble. Control circuit hang-up due to electrical noises MFPcnt PWB FLASH access circuit trouble.
+Remedy;Use SIM16 to recalculate the check sum of the user counter and save the normal sum value.
+Code;U2-30
+Description;Serial number data discrepancy (MFP-PCU)
+Causes;EEPROM is not changed when the PCU/MFPcnt PWB is replaced.
+Remedy;1) Check that EEPROM is properly set. 2) Check that EEPROM on the previous PWB is inserted to the newly installed PWB.
+Code;U2-50
+Description;HDD section individual data check sum error (MFP)
+Causes;MFPcnt HDD individual data check sum error (One-touch, group, program, etc.)
+Remedy;Case 1 Cause Write/read error to/from HDD Check and remedy 1) Turn OFF/ON the power to initialize the data related to the check sum error contents automatically. 2) Since the registered contents have been deleted, register them again. 3) If the trouble is not canceled, replace the HDD. Case 2 Cause Control circuit hang-up due to electrical noises Check and remedy Use SIM16 to cancel U2 trouble. Case 3 Cause MFPcnt PWB HDD access circuit trouble Check and remedy Replace the MFPcnt PWB.
+Code;U2-80
+Description;EEPROM read/write error (SCU detection)
+Causes;1) EEPROM version error 2) Write error to EEPROM
+Remedy;Case 1 Cause EEPROM trouble, installation of EEPROM which is not initialized Check and remedy Check that EEPROM is properly set. Case 2 Cause SCU PWB EEPROM access circuit trouble Check and remedy To avoid deletion of the counter data/adjustment values, use the simulation to save the counter/ adjustment values. (If there is a printer option, execute SIM22-1 to save the counter data and the adjustment values.) Replace the SCU PWB. Use SIM16 to cancel the trouble.
+Code;U2-81
+Description;Adjustment value check sum error (SCU detection)
+Causes;EEPROM (SCU) check sum error
+Remedy;Case 1 Cause Control circuit hang-up due to electrical noises Check and remedy Use SIM16 to cancel U2 trouble. Case 2 Cause EEPROM trouble Check and remedy To avoid deletion of the counter data/adjustment values, use the simulation to save the counter/ adjustment values. (If there is a printer option, execute SIM22-1 to save the counter data and the adjustment values.) Replace the SCU PWB. Use SIM16 to cancel the trouble. Case 3 Cause SCU PWB EEPROM access circuit trouble Check and remedy Check that EEPROM is properly set.
+Code;U2-90
+Description;EEPROM read/write error (PCU detection)
+Causes;EEPROM version error, write error to EEPROM
+Remedy;Case 1 Cause EEPROM trouble, installation of EEPROM which is not initialized. Installation of 64KBit EEPROM Check and remedy Check that EEPROM is properly set. Check to insure that 256KBit EEPROM is installed. Case 2 Cause PCU PWB EEPROM access circuit trouble Check and remedy To avoid deletion of the counter data/adjustment values, use the simulation to save the counter/ adjustment values. (If there is a printer option, execute SIM22-1 to save the counter data and the adjustment values.) Replace the PCU PWB. Use SIM16 to cancel the trouble.
+Code;U2-91
+Description;Adjustment value check sum error (PCU detection)
+Causes;EEPROM (PCU) check sum error
+Remedy;Case 1 Cause Control circuit hang-up due to electrical noises Check and remedy Use SIM16 to cancel the trouble. Case 2 Cause EEPROM trouble. Check and remedy Check that EEPROM is properly set. Use SIM16 to cancel the trouble. Case 3 Cause PCU PWB EEPROM access circuit trouble Check and remedy To avoid deletion of the counter data/adjustment values, use the simulation to save the counter/ adjustment values. (If there is a printer option, execute SIM22-1 to save the counter data and the adjustment values.) Replace the PCU PWB. Use SIM16 to cancel the trouble.
+Code;U5-00
+Description;SPF communication trouble
+Causes;Communication error between the SCU and the DSPF, communication line test error after turning on the power or canceling the exclusive simulation
+Remedy;Case 1 Cause Malfunction due to electrical noises Check and remedy Cancel the trouble by turning OFF/ON. Case 2 Cause Connector and harness connection trouble or disconnection Check and remedy Check the connector and the harness of the communication line. Case 3 Cause Control (SCU) PWB trouble. DSPF PWB trouble Check and remedy Replace the control (SCU) PWB. Replace the DSPF PWB.
+Code;U5-16
+Description;SPF fan motor trouble
+Causes;Fan motor trouble, harness of the fan motor related, circuit trouble
+Remedy;Use SIM2-3 to check the operation. Check harness, connector and fan motor related circuit.
+Code;U5-30
+Description;SPF tray lift-up trouble
+Causes;STUD/STLD trouble
+Remedy;Check STUD/STLD and its harness and connector. Check the lift-up unit.
+Code;U5-31
+Description;SPF tray lift-down trouble
+Causes;STUD/STLD trouble
+Remedy;Check STUD/STLD and its harness and connector. Check the lift-up unit.
+Code;U6-09
+Description;LCC lift motor trouble
+Causes;Sensor trouble, LCC control PWB trouble, gear breakage, lift motor trouble
+Remedy;Use SIM4-2 and 4-3 to check the operation of the sensor and the lift motor. Use SIM15 to cancel the trouble.
+Code;U6-20
+Description;LCC communication trouble
+Causes;Connector and harness connection trouble or disconnection, LCC control PWB trouble, control (PCU) PWB trouble, malfunction due to electrical noises
+Remedy;Turn OFF/ON the power to cancel the trouble. Check the connector and the harness of the communication line.
+Code;U6-21
+Description;LCC transport motor trouble
+Causes;Motor lock, motor RPM abnormality, an overcurrent to the motor, LCC control PWB trouble
+Remedy;Use SIM4-3 to check the operation of the transport motor.
+Code;U6-22
+Description;LCC 24V power abnormality
+Causes;Connector and harness connection trouble or disconnection, LCC control PWB trouble, power unit trouble
+Remedy;Check the connector and the harness of the power line. Check that the power unit and the LCC control PWB is of 24V.
+Code;U6-23
+Description;LCC tray descending trouble (reverse winding detection)
+Causes;Reverse winding of the LCC tray wire is detected.
+Remedy;Case 1 Cause Reverse winding of the wire Check and remedy Check the wire. Case 2 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 3 Cause Reverse winding detection SW-ON, reverse winding detection SW trouble, LCC control PWB trouble Check and remedy Replace the reverse winding SW and the LCC control PWB.
+Code;U6-24
+Description;LCC tray lock detection trouble
+Causes;Malfunction of the LCC tray lock mechanism is detected.
+Remedy;Case 1 Cause Tray lock mechanism trouble Check and remedy Check the tray lock mechanism. Case 2 Cause Connector and harness connection trouble Check and remedy Check connection of the connector and the harness. Case 3 Cause Tray lock detection sensor trouble, LCC control PWB trouble Check and remedy Replace the tray lock detection sensor and the LCC control PWB.
+Code;U6-51
+Description;LCC incompatibility trouble
+Causes;Connection of the LCC,
+Remedy;Connect the MX-LCX2/MX-LCX3.
+Code;UC-02
+Description;CPT-ASIC trouble
+Causes;1) CPT-ASIC abnormality 2) SCU PWB abnormality
+Remedy;Turn OFF/ON the power several times. If the trouble still occurs, replace the SCU PWB or the CPT-ASIC.
+Code;UC-20
+Description;Document control module trouble
+Causes;Communication error between SCU and DOCC Communication line test error when turning on the power or after canceling an exclusion simulation.
+Remedy;Case 1 Cause Connector or harness connection error or disconnection Check and remedy Check the connector and harness in the communication line. Case 2 Cause Control (SCU) PWB trouble. DOCC PWB trouble. Check and remedy Replace the SCU PWB or the DOCC PWB. Case 3 Cause Malfunction due to electrical noises. Check and remedy Turn OFF/ON the power to electrical cancel the trouble.
+Code;UC-21
+Description;DOCC (Document Control) PWB not-detected (DSK model only)
+Causes;When the data security kit ROM (BOOT, PROG1, 2) is installed, the DOCC PWB is not detected.
+Remedy;Case 1 Cause Connector or harness connection error or disconnection Check and remedy Check the connector and harness in the communication line. Case 2 Cause Control (SCU) PWB trouble. DOCC PWB trouble. Check and remedy Replace the SCU PWB or the DOCC PWB. Case 3 Cause DOCC PWB not-installed Check and remedy Install the DOCC PWB.

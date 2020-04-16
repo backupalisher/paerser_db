@@ -1,0 +1,568 @@
+Code;10.32.00
+Display;10.32.00 Unauthorized Supply
+Description;An unauthorized print cartridge has been installed.
+Remedy;1. Press the checkmark button to continue with this print cartridge.
+Code;10.90.XY
+Display;10.90.XY REPLACE <COLOR> CARTRIDGE
+Description;A toner replenishment malfunction has occurred.
+Remedy;Replace the print cartridge. If replacing the print cartridge does not fix the problem, replace the corresponding image drum.
+Code;10.91.00
+Display;10.91.00 PRINT CARTRIDGE ERROR
+Description;There is an error with the black-toner feed motor.
+Remedy;The black print cartridge is defective and needs to be replaced. Please record message and contact support. After replacing the defective cartridge turn the power off then on to continue. 1. Reconnect the connectors for the blacktoner feed-motor rotational-count sensor (J2024), intermediate (J1930), and the DC controller PCA (J131). 2. Reconnect the connectors for the color/ black I/F PCA (J2201B), cartridge driver PCA (J403, J404, and J405), and the DC controller PCA (J141). 3. Replace the black-toner feed motor.
+Code;10.91.09
+Display;10.91.09 PRINT CARTRIDGE ERROR
+Description;There is an error with the color-toner feed motor.
+Remedy;One of the cyan, magenta, or yellow print cartridges is defective and needs to be replaced. Please record the message and contact support. After replacing the defective cartridge, turn the power off then on to continue. 1. Reconnect the connectors for the colortoner feed-motor rotational-count sensor (J2023), intermediate (J1929), and the DC controller PCA (J131). 2. Reconnect the connectors for the yellow/magenta cartridge I/F PCA (J2201A), the cyan/black cartridge I/F PCA (J2201B), the cartridge driver PCA (J402, J403, J406, and J408), and the DC controller PCA (J142). 3. Replace the color-toner feed motor.
+Code;10.XX.YY
+Display;10.XX.YY SUPPLY MEMORY ERROR
+Description;The product cannot read or write to at least one print cartridge e-label or an e-label is missing from a print cartridge.
+Remedy;Reinstall the print cartridge, or install a new print cartridge.
+Code;10.XX.YY
+Display;10.XX.YY SUPPLY MEMORY ERROR
+Description;The product cannot read or write to at least one image drum. 10.10.00-10.10.03 = Missing e-label on print cartridge 10.10.05-10.10.08 = Missing e-label on image drum 10.00.00-10.00.03 = Defective e-label on print cartridge 10.00.05-10.00.08 = Defective e-label on image drum
+Remedy;1. Open the front door. 2. Replace the specified image drum. 3. Close the front door.
+Code;11.XX
+Display;11.XX Internal clock error
+Description;The product real time clock has experienced an error.
+Remedy;Whenever the product is turned off and then turned on again, set the time and date at the control panel.
+Code;13.12.11
+Display;13.12.11
+Description;Finisher stay jam at either PI33 or PI34 when engine powered on. When the engine is powered on, the finisher's upper-feed-path-entry sensor (PI33) or the upper-feed-path-exit sensor (PI34) is activated suggesting that there is paper in the upper paper path of the finisher at sensors PI33 or PI34.
+Remedy;Signal generated from PI33 (upper-feedpath- entry sensor) and PI34 (upper-feedpath- exit sensor) 1. Open the top door and remove any media in the paper path (media detected at PI33). 2. Raise the upper paper path (exit) delivery rollers and remove any media in the paper path (media detected at PI34). 3. Check these sensors for obstructions. Verify that the sensor flags are not damaged, move freely, and are correctly aligned with the sensor body and properly mounted. Also check wiring and connectors for damage or loose connections. 4. Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. 5. Verify that the sensor connectors (J708 and J707) are fully seated on the stacker controller PCA. 6. Replace sensor PI33 and PI34. 7. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.12
+Display;13.12.12
+Description;Finisher delay jam at PI33. The engine signals the finisher that paper is about to enter the finisher from the IPTU. The finisher's upper-feed-path-entry sensor (PI33), which detects paper entering the finisher, does not detect the paper within the expected time period triggering the error.
+Remedy;Open the IPTU and the finisher top door and check the following items: • If media is found in the IPTU but has not reached the finisher, perform the following steps: • Remove and then reinstall the IPTU. Make sure that the connector is fully seated and that the IPTU is securely fastened. • If the error persists, replace the IPTU. • If media is jammed at the exit point of the IPTU (prior to entering the finisher), perform the following steps: • Verify that the finisher is securely fastened to the engine. • Make sure that the finisher and IPTU are correctly aligned. Adjust the finisher castors to obtain a uniform gap between the finisher and the engine. The engine-tofinisher gap must be the same at the bottom and the top so that the finisher is parallel to the engine. With the engine-to-finisher gap correct, make sure that the finisher paper path entry point is aligned with the IPTU exit point. • Check the finisher entry point guides for damage. • Verify that the finisher rollers are turning before the media leaves the IPTU. If the rollers are not turning, test motor M9 by using the finisher component test from the controlpanel display. If the motor does not activate during the test, check the connectors for motor M9 (inlet motor). Make sure that connector J705 is fully seated on the stacker controller PCA. If the error persists, replace motor M9 or the saddle paper-feeder assembly. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA. • If media is found in the finisher but has not reached sensor PI33, perform the following steps: • Check the upper and lower guides and rollers in the paper path for damage. • Make sure that the media diverter gate (saddle-stitch flapper) is not blocking the paper path. • If media is found in the finisher covering sensor PI33 (the sensor is not detecting the media), perform the following steps: • Check the sensor for obstructions. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body• Make sure that the lower end of the flag is not damaged and is correctly positioned to activate the sensor. • Make sure that the sensor is securely fastened to the chassis. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that the wiring at the sensor is not damaged and that the intermediate connector J1007 and connector J708 on the stacker controller PCA are fully seated. Replace the sensor if necessary. • Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.13
+Display;13.12.13
+Description;Finisher stay jam at PI33. Finisher's upper-feed-path-entry sensor (PI33) is remaining activated longer than expected, suggesting that paper has jammed at the sensor.
+Remedy;Control panel diagnostics: none 1. Remove any media in the upper paper path that might be activating sensor PI33. 2. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. 3. Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. 4. Verify that the wiring at the sensor is not damaged and that the connector J708 on the stacker controller PCA is fully seated.
+Code;13.12.14
+Display;13.12.14
+Description;Finisher delay jam at PI34. Upper-paper-path-entry sensor (PI33) has signaled that paper has passed but upperpaper- path exit sensor PI34 does not actuate within the expected time, suggesting that the paper has jammed between PI33 and PI34 in the upper paper path.
+Remedy;Control panel diagnostics: none 1. Remove any media jammed in the upper paper path between sensor PI33 and sensor PI34. 2. Check the paper path between sensor PI33 and sensor PI34 for obstructions that may be preventing the media from reaching PI34. 3. Verify that the PI34 sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. 4. Make sure that sensor PI34 is securely fastened to the chassis and wiring is properly connected to sensor. NOTE: Sensor PI34 is located on the front frame of the finisher, directly over the primary stapler. 5. Verify that the wiring at the sensor is not damaged and that the connector J707 on the stacker controller PCA is fully seated. 6. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.15
+Display;13.12.15
+Description;Finisher stay jam at PI34 Finisher's upper-paper-path-exit sensor (PI34) remains activated longer than expected suggesting that paper has jammed at the sensor.
+Remedy;Control panel diagnostics: M31 (entrance motor), SL32 (buffer roller solenoid), and SL33 (output roller solenoid) 1. Remove any media in the upper paper path that might be activating sensor PI34. 2. Carefully clean the sensor body, by gently blowing clean air across the sensor to remove dust and debris. 3. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. 4. Lift-swing-guide assembly at the paperexit area to output bins and inspect for jammed paper, obstructions, or damage. 5. Run a diagnostic through the engine control panel and turn on M31 (entrance motor) to observe gear rotations on the upper-rear frame of the finisher. Ensure that the first-delivery rollers and buffer rollers that pass paper to and from PI34 are rotating. 6. Test SL32 (buffer-roller solenoid) and SL33 (output-roller solenoid) using the control panel diagnostics. 7. Check wiring from sensor PI34 to stacker-control board connector J707 for damage. 8. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.16
+Display;13.12.16
+Description;Finisher jam: door opened during staple/ stacking operation While the machine is printing, upper-door (open/close) sensor (PI31) or front-door (open/close) sensor (PI32) or the front-door (open/close) switch (MSW31) has signaled that one of the doors has been opened, suggesting that there may now be paper found in the upper paper path.
+Remedy;Control panel diagnostics: PI31 (top-door sensor), PI32 (front door sensor) Booklet maker only: check PI3 (Booklet Door 1 Sensor) (booklet-delivery door) 1. Make sure that the doors properly open and close and stay in the fully closed position. If the front door is not closing tightly at the top, it will not activate the door switch. If necessary, adjust the alignment of the front door by opening the door and carefully twisting it. 2. Verify that the sensor-activation arms on the doors are not damaged. 3. Make sure that the front-door sensor PI32 and switch MSW31 and top-door sensor PI31 are not obstructed. 4. Make sure that the arm on front-door switch MSSW31 is not bent or damaged. 5. Make sure that sensor PI32 and switch MSSW31 are securely fastened to the chassis. 6. Test sensor PI31 (upper-door sensor) and sensor PI32 (front-door sensor) by using the finisher component tests from the control-panel display. NOTE: For finishers with a booklet maker, also test sensor PI3 (bookletdoor- 1 sensor).
+Code;13.12.17
+Display;13.12.17
+Description;Engine to finisher timing jam: unexpected arrival of paper to finisher Upper-paper-path entry sensor (PI33) has detected paper before a signal from the engine has been received, indicating that paper is being delivered from the IPTU to the finisher.
+Remedy;Control panel diagnostics: none 1. Verify that the latest firmware updates are installed for the engine and finisher. 2. Remove any media in the upper paper path that might be activating sensor PI33. If no media is found at PI33, proceed to step 3. If media is found at PI33, perform the following steps: • Make sure that the power/ communication cable from the IPTU to the finisher is properly connected. • Make sure that the IPTU is properly connected to the engine and that the mounting screws are tight. • Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door. • Ensure that the groundingframe assembly (the bar with the wheel located between the engine and the finisher) is in the ?gdown?h position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The groundingframe assembly is in the ?gup?h position when the finisher is shipped. It must be lowered when the finisher is installed. • If the error persists, replace the IPTU. 3. Check for media at the finisher entrance point and at sensor PI33. If no media is found at PI33, perform the following steps: • Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door. • Ensure that the groundingframe assembly (the bar with the wheel located between the engine and the finisher) is in the down position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The groundingframe assembly is in the up position when the finisher is shipped. It must be lowered when the finisher is installed. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. • Verify that the wiring at the sensor is not damaged and that the connector J708 on the stacker controller PCA is fully seated. 4. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.21
+Display;13.12.21
+Description;Finisher upper stapler (stapler 1) staple jam. When the staple motor (M41) is rotated forward, the staple home-position sensor (PI5) does not turn back on after the prescribed time has elapsed after it goes off, and the staple home-position sensor (PI50) turns on within the prescribed time after the staple motor (M41) is rotated backwards.
+Remedy;Control panel diagnostics: none 1. Check the stapler unit for jammed staples. 2. Check the stapler unit for loose staples and paper dust. 3. Inspect the stapler unit for damage. 4. Remove the stapler cartridge and make sure HP-approved staples are being used. 5. Verify that the wiring at the stapler unit and the connector are not damaged. 6. Install new staple cartridge and retest. 7. If the error persists, replace the stapler unit.
+Code;13.12.41
+Display;13.12.41
+Description;Finisher: Paper detected in the bookletmaking portion of the finisher at engine power on. Occurs when paper is detected by one of the sensors on the paper-sensor board (PI18, PI19, PI20), vertical-path-paper sensor (PI17), booklet-delivery sensor (PI11), paperpositioning- plate-paper sensor (PI8), or booklet-making paper-entry sensor (PI22) when engine is turned on.
+Remedy;Control panel diagnostics: none 1. Remove media from the booklet-maker paper path. 2. Verify that the sensor flags are not damaged, move freely, and are correctly aligned with the sensor bodies. 3. Carefully clean each sensor body by gently blowing clean air across each sensor to remove dust and debris. 4. Make sure that connectors J6, J9, J10, J13, and J21 are fully seated on the saddle-stitcher controller PCA. 5. Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stitcher controller PCA.
+Code;13.12.42
+Display;13.12.42
+Description;Finisher delay jam at booklet-making paperentry sensor (PI22) Occurs when booklet making function is selected and after the engine signals the finisher that it is delivering paper to the finisher. The booklet-making-paper entry sensor (PI22) is not activated within the expected time period after receiving the engine's delivery signal, suggesting that a paper jam has occurred somewhere between the output accessory bridge (IPTU) and sensor PI22.
+Remedy;Control panel diagnostics: M9 (inlet motor), SL5 (inlet-switch solenoid) Signal generated from: PI22 (bookletmaking- paper entry sensor) Open the IPTU and the finisher top door and locate the media jam. Check the following items: • If media is found in the IPTU but has not reached the finisher entrance point, perform the following steps: • Remove and then reinstall the IPTU. Make sure that the connector is fully seated and that the IPTU is securely fastened. • If the error persists, replace the IPTU. • If media is jammed at the entrance point of the finisher, perform the following steps: • Verify that the finisher is securely fastened to the engine. • Make sure that the finisher and IPTU are correctly aligned. Adjust the finisher castors to obtain a uniform gap between the finisher and the engine• The engine-tofinisher gap must be the same at the bottom and the top so that the finisher is parallel to the engine. With the engine-to-finisher gap correct, make sure that the finisher paper path entry point is aligned with the IPTU exit point. • Check the finisher entry point guides for damage. • Verify that the finisher rollers are turning before the media leaves the IPTU. If the rollers are not turning, test motor M9 by using the finisher component test from the controlpanel display. If the motor does not activate during the test, check the connectors for motor M9 (inlet motor). Make sure that connector J705 is fully seated on the stacker controller PCA. If the error persists, replace motor M9 or the saddle paper-feeder assembly for the type finisher you are working on. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA. • If media is found in the finisher but has not reached sensor PI22, perform the following steps: • Check the upper and lower guides and rollers in the paper path for damage. • Make sure that the media diverter gate (saddle-stitch flapper) is functioning properly. • Test solenoid SL5 (inlet-switch solenoid) by using the finisher component test from the controlpanel display. SL5 should be opening and closing the media diverter gate (saddle stitch flapper) • If media is found in the finisher cover sensor PI22 (the sensor is not detecting the media), perform the following steps: • Check the sensor for obstructions. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. Make sure that the lower end of the flag is not damaged and is correctly positioned to activate the sensor. • Make sure that the sensor is securely fastened to the chassis. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that the wiring at the sensor is not damaged and that the intermediate connectors between the sensor and connector J21 on the saddle-stitcher controller PCA are fully seated. Replace the sensor if necessary. If PI22 is determined to be the failure point, replace the saddle paper-feeder assembly, which includes PI22. • Only if the error persists and the previous steps fail to correct the problem, replace the saddlestitcher controller PCA.
+Code;13.12.43
+Display;13.12.43
+Description;Finisher stay jam at booklet-making paper entry sensor (PI22) Occurs when the booklet-making paper entry sensor (PI22) remains activated longer than expected, suggesting that there is a paper jam at the sensor.
+Remedy;Control panel diagnostics: none 1. Remove any media in the upper paper path that might be activating sensor PI22. 2. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. 3. Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. 4. Verify that the wiring at the sensor is not damaged. Check the intermediate connectors between sensor PI22 and connector J21 on saddle-stitcher controller PCA for damage and proper connections. Replace the sensor if necessary.
+Code;13.12.44
+Display;13.12.44
+Description;Finisher delay jam at booklet making first paper sensor (PI18) Occurs when the first-paper sensor (PI18) is not activated within the expected time following the activation of the bookletmaking- paper entry sensor (PI22), suggesting that there is a paper jam in the area between PI22 and PI18.
+Remedy;Control panel diagnostics: M1 (Delivery Motor) Open the IPTU and the finisher top door and locate the media jam. Check the following items: • If media is found at sensor PI18, perform the following steps: • Check the sensor PI18 for damage. Replace the sensor if necessary. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that the wiring from sensor PI18 to connector J10 on the saddle-stitcher controller PCA is undamaged and the connectors are fully seated. • If media is found at the roller prior to sensor PI18 in the paper path, perform the following steps: • Test motor M1 (delivery motor) by using the finisher component test from the control-panel display. • Remove the finisher rear cover. Activate motor M1 and verify that the drive gears and belts are moving. • If motor M1 does not rotate, verify that connector J5 on the saddlestitcher controller PCA is fully seated. If the error persists, replace motor M1. If motor M1 still does not rotate, replace the saddle-stitcher controller PCA. • If motor M1 does rotate but the gears and belts connected to motor M1 do not move, check for damaged components. Replace damaged components as necessary.
+Code;13.12.45
+Display;13.12.45
+Description;Finisher stay jam at booklet making first paper sensor (PI18), flapper-1 paper sensor (PI19) or flapper-2 paper sensor (PI20) Occurs when PI18, PI19 or PI20 remain activated longer than expected, suggesting that there is a paper jam in the flapper 1 and 2 area of the booklet-maker section of the finisher.
+Remedy;Control-panel diagnostics: PI19 (flapper 1), PI20 (flapper 2), M1 (delivery motor), SL1 (flapper 1 solenoid), SL2 (flapper 2 solenoid) 1. Remove any media in the area around flapper 1 and flapper 2. 2. Check the flappers for damage. 3. Test sensor PI19 and sensor PI20 by using the finisher component test from the control-panel display. • If the sensors are faulty, perform the following steps: • Verify that the sensor flags are not damaged, move freely, and are correctly aligned with the sensor bodies. • Verify that the wiring at the sensors is not damaged and that the connector J10 on the saddle-stitcher controller PCA is fully seated. • If the error persist, replace the paper sensor PCA (which contains PI118, PI119, and PI20). 4. Test flapper 1 and flapper 2 by using the finisher component test from the controlpanel display. NOTE: To verify the proper movement of the flappers, activate SL1 and SL2 in the finisher component test.
+Code;13.12.46
+Display;13.12.46
+Description;Finisher jam: door was opened during booklet-making operation. Occurs while the machine is booklet making and the booklet delivery door sensor (PI3) or the booklet paper path open/close sensor (PI3) detects that the door or paper path has been opened. Also occurs when the finisher's front-door sensor (PI32) has been opened with paper remaining in the processing tray of the main stapler while the finisher is not operating.
+Remedy;Control-panel diagnostics: PI31 (top-door sensor), PI32 (front-door sensor), PI3 (booklet door 1 sensor) (booklet-delivery door) 1. Test sensor PI31, sensor PI32, and sensor PI3 by using the finisher component test from the control-panel display. 2. Make sure that the front door, top door, and booklet-delivery door properly open and close and stay in the fully closed position. If the front door is not closing tightly at the top, it will not activate the door switch. If necessary, adjust the alignment of the front door by opening the door and carefully twisting it into proper alignment. 3. Verify that the sensor-activation arms on the doors are not damaged. 4. Make sure that the sensors and frontdoor switch MSW31 are not obstructed. 5. Make sure that the arm on switch MSW31 is not bent or damaged. 6. Make sure that sensors PI31, PI32, PI9, and switch MSW31 are securely fastened to the chassis. 7. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;13.12.51
+Display;13.12.51
+Description;Finisher jam: rear booklet stapler (SW5) When the rear-staple motor (M6) is rotated forward, the staple-home-position sensor (SW5) does not turn back on after the prescribed time has elapsed after it goes off (0.4 seconds).
+Remedy;Control panel diagnostics: none 1. Check the rear booklet-stapler unit for jammed staples. 2. Check the rear booklet-stapler unit for loose staples. 3. Inspect the rear booklet-stitch-stapler unit for damage. 4. Verify that HP approved staples for this stapler are being used. 5. Verify that the wiring at the stapler unit and the connector are not damaged. 6. Replace the staple cartridge. NOTE: Replace both the front and rear staple cartridges at the same time so that the staple low sensors will properly detect the level of staples in the cartridges. 7. Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stapler assembly.
+Code;13.12.52
+Display;13.12.52
+Description;Finisher jam: front-booklet stapler (SW7) When the rear-staple motor (M7) is rotated forward, the staple home-position sensor (SW7) does not turn back on after the prescribed time has elapsed after it goes off (0.4 seconds).
+Remedy;Control panel diagnostics: none 1. Check the front booklet-stapler unit for jammed staples. 2. Check the front booklet-stapler unit for loose staples. 3. Inspect the front booklet-stapler unit for damage. 4. Verify that HP approved staples for this stapler are being used. 5. Verify that the wiring at the stapler unit and the connector are not damaged. 6. Replace the staple cartridge. NOTE: Replace both the front and rear cartridges at the same time so that the staple low sensors will properly detect the level of staples in the cartridges. 7. Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stapler assembly.
+Code;13.12.61
+Display;13.12.61
+Description;Finisher delay jam at the booklet-delivery sensor (PI11) Occurs when the folded booklet exits the folding rollers and does not reach the bookletdelivery sensor (PI11) within the expected time.
+Remedy;Control panel diagnostics: none 1. Check the folder roller area for a jam or media wrapped around the rollers. 2. Check sensor PI11 for damage. 3. Make sure that the sensor is not obstructed. 4. Make sure that sensor PI11 is securely fastened to the chassis.
+Code;13.12.62
+Display;13.12.62
+Description;Finisher stay jam at the booklet-delivery sensor (PI11) or the vertical-paper-path sensor (PI17) Occurs when the booklet-delivery sensor (PI11) remains activated longer than expected after sensing the arrival of the new booklet from the folding rollers. Also occurs when the vertical-paper-path sensor (PI17) remains activated longer than expected after the paper has already passed through the folding rollers and is now detected by the booklet-delivery sensor (PI11).
+Remedy;Control panel diagnostics: M2 (Folding motor) 1. Check the folder roller area for a jam. 2. Test the folding motor (M2) by using the finisher component test from the control-panel display. • Remove the finisher rear cover before starting the test and make sure that the folding rollers are rotating when motor M2 is on. 3. Check sensor PI11 and PI17 for damage. 4. Make sure that the sensors are not obstructed. 5. Make sure that sensor PI11 and sensor PI17 are securely fastened to the chassis.
+Code;13.12.XX
+Display;13.12.XX JAM IN LEFT ACCESSORY
+Description;There is a paper jam in the output accessory.
+Remedy;1. Follow the onscreen instructions to find and remove the jammed paper.
+Code;13.JJ.NT
+Display;13.JJ.NT FUSER AREA JAM
+Description;A jam has occurred in the duplex and feed area.
+Remedy;CAUTION: The fuser can be hot while the product is in use. Wait for the fuser to cool before handling it. 1. Open the right door. 2. Turn the blue levers on the fuser to unlock position. 3. Clear all paper. 4. Turn the blue levers to lock position. 5. Close the right door.
+Code;13.JJ.NT
+Display;13.JJ.NT FUSER WRAP JAM
+Description;A jam has occurred in the fuser.
+Remedy;CAUTION: The fuser can be hot while the product is in use. Wait for the fuser to cool before handling it. 1. Open the right door. 2. Turn the blue levers on the fuser to unlock position. 3. Clear all paper. 4. Turn the blue levers to lock position. 5. Close the right door.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM ABOVE TOP OUTPUT BIN
+Description;A jam has occurred in the duplex area.
+Remedy;1. Clear all paper found in the duplex area above the output bin. 2. Press the checkmark button.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN LOWER RIGHT DOOR
+Description;A jam has occurred in the lower-right door.
+Remedy;1. Open the lower-right door. 2. Clear all paper. 3. Close the lower-right door.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN RIGHT DOOR
+Description;A jam has occurred in the duplex and feed area inside the right door.
+Remedy;1. Open the right door. 2. Clear all paper. 3. Close the right door.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN TOP COVER
+Description;A jam has occurred in the top cover.
+Remedy;1. Open the top cover. 2. Clear all paper. 3. Close the top cover.
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN TRAY 1
+Description;A jam has occurred in Tray 1.
+Remedy;1. Clear all paper from Tray 1. 2. Press the checkmark button
+Code;13.JJ.NT
+Display;13.JJ.NT JAM IN TRAY <X>
+Description;A jam has occurred in the indicated tray.
+Remedy;1. Open the indicated tray. 2. Clear all paper. 3. Press the checkmark button
+Code;13.JJ.NT
+Display;13.JJ.NT TRANSFER AND FUSER JAM
+Description;A jam has occurred inside the right door in the transfer or fuser area.
+Remedy;CAUTION: The fuser can be hot while the product is in use. Wait for the fuser to cool before handling it. 1. Open the right door. 2. Open the transfer-access panel and clear all paper found. 3. Remove the fuser and clear all paper found. 4. Reinstall the fuser and close the transfer-access panel. 5. Close the right door.
+Code;13.JJ.NT
+Display;13.JJ.NT TRANSFER AREA JAM
+Description;A jam has occurred inside the right door in the image transfer area.
+Remedy;1. Open the right door. 2. Open the transfer-access panel. 3. Clear all paper found. 4. Close the transfer-access panel. 5. Close the right door.
+Code;20
+Display;20 INSUFFICIENT MEMORY
+Description;The product received more data than can fit in the available memory. You might have tried to transfer too many macros, soft fonts, or complex graphics.
+Remedy;Press the checkmark button to print the transferred data (some data might be lost), and then simplify the print job or install additional memory.
+Code;22
+Display;22 EIO X BUFFER OVERFLOW
+Description;Too much data was sent to the EIO card in the specified slot (x). An incorrect communications protocol might be in use.
+Remedy;Press the checkmark button to print the transferred data. (Some data might be lost.)
+Code;22
+Display;22 EMBEDDED I/O BUFFER OVERFLOW
+Description;Too much data was sent to the embedded HP Jetdirect print server.
+Remedy;Press the checkmark button to print the transferred data. (Some data might be lost.)
+Code;22
+Display;22 USB I/O BUFFER OVERFLOW
+Description;The product's USB buffer has overflowed.
+Remedy;Press the checkmark button to print the transferred data. (Some data might be lost.) Check the host configuration.
+Code;40
+Display;40 BAD EIO X TRANSMISSION
+Description;The connection between the product and the EIO card in the specified slot has been broken
+Remedy;Press the checkmark button to clear the error message and continue printing. Try to reinstall the EIO card.
+Code;40
+Display;40 BAD SERIAL TRANSMISSION
+Description;A serial data error (parity, framing, or line overrun) occurred as data was being sent by the computer.
+Remedy;Press the checkmark button to clear the error message. (Data will be lost.)
+Code;40
+Display;40 EMBEDDED I/O BAD TRANSMISSION
+Description;A temporary printing error has occurred.
+Remedy;Press the checkmark button to clear the error message. (Data will be lost.)
+Code;41.3
+Display;41.3 UNEXPECTED SIZE IN TRAY <XX>
+Description;The product detected a different paper size than expected.
+Remedy;Following the instructions on the screen, load the tray with the size and type of paper indicated, or use another tray. To use another tray press the checkmark button.
+Code;41.3
+Display;41.3 UNEXPECTED SIZE IN TRAY <XX>
+Description;The product detected a different paper size than expected.
+Remedy;Load the tray with the size and type of paper indicated, or use another tray.
+Code;41.5
+Display;41.5 UNEXPECTED TYPE IN TRAY <XX>
+Description;The product detected a different paper type than expected.
+Remedy;Load the tray with the size and type of paper indicated, or use another tray if available. If the error persists: 1. Reinstall the ITB unit. 2. Reconnect the connectors for the media sensor (J901), intermediate-transfer belt (J1962, J2701, and J2702), and the DC controller PCA (J116). 3. Replace the ITB unit.
+Code;41.7
+Display;41.7 ERROR
+Description;Paper was late arriving at the registration area and almost caused a paper jam. If this error reappears, use different media.
+Remedy;Press the Help button to see details. To clear, press the checkmark button . If the error persists, turn the product off then on.
+Code;41.X
+Display;41.<X> ERROR
+Description;A temporary printing error has occurred
+Remedy;Press the Help button to see details
+Code;48.01
+Display;48.01 TRANSFER UNIT ERROR
+Description;The transfer belt has dislocated during printing.
+Remedy;Turn product off then on.
+Code;49.XXXX
+Display;49.XXXX
+Description;A critical firmware error has occurred that caused the processor on the formatter to abort operation. This type of error can be caused by invalid print commands. corrupt data, or invalid operations. In some cases, electrical noise in the cable can corrupt data during transmission to the printer. Other causes include poor-quality USB cables, poor connections, or home-grown programs. On rare occasions, the formatter is at fault, which is usually indicated by a 79 Service Error.
+Remedy;1. Turn the product off then on. 2. Press Stop to clear the print job from the printer memory. 3. Turn the product off then on. 4. Try printing a job from a different software program. If the job prints, go back to the first program and try printing a different file. If the message displays only with a certain software program or print job, contact the software vendor for assistance. 5. If the message persists with different software programs and print jobs, disconnect all of the cables to the printer that connect it to the network or computer. 6. Turn the product off. 7. Remove all memory DIMMs or thirdparty DIMMs from the product. 8. Remove all EIO devices from the product. 9. Turn the product on. 10. If the error no longer exists, install each DIMM and EIO device one at a time, making sure to turn the printer off and on again as you install each device. 11. Replace a DIMM or EIO device if you determine that it causes the error.
+Code;50.1
+Display;50.1 FUSER ERROR
+Description;The fuser has experienced a lowtemperature error.
+Remedy;1. Remove any paper jams from the fuser area. 2. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 3. Reconnect the connectors of the thermopile (J1990), fuser control PCA (J302, J305, J306, J309) and the DC controller PCA (J107). 4. Replace the fuser. 5. Replace the fuser power-supply unit.
+Code;50.10
+Display;50.10 FUSER ERROR
+Description;The fuser has experienced a lowtemperature error.
+Remedy;1. Remove any paper jams from the fuser area. 2. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 3. Reconnect the connectors of the fixing control PCA (J302, J303, J305) and the DC controller PCA (J107). 4. Replace the fuser. 5. Replace the fuser power-supply unit.
+Code;50.11
+Display;50.11 FUSER ERROR
+Description;The fuser has experienced a hightemperature error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 2. Reconnect the connectors of the fixing control PCA (J302, J303, J305) and the DC controller PCA (J107). 3. Replace the fuser. 4. Replace the fuser power-supply unit.
+Code;50.2
+Display;50.2 FUSER ERROR
+Description;The fuser has experienced a warm-up error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 2. Reconnect the connectors of the thermopile (J1990), fuser control PCA (J302, J305, J306, J309) and the DC controller PCA (J107). 3. Replace the fuser. 4. Replace the fuser power-supply unit.
+Code;50.3
+Display;50.3 FUSER ERROR
+Description;The fuser has experienced a hightemperature error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 2. Reconnect the connectors of the thermopile (J1990), fuser control PCA (J302, J305, J306, J309) and the DC controller PCA (J107). 3. Replace the fuser. 4. Replace the fuser power-supply unit.
+Code;50.4
+Display;50.4 FUSER ERROR
+Description;The fuser driver circuit has experienced an error.
+Remedy;1. Reconnect the connectors of the fuser control PCA (J305) and the DC controller PCA (J107). 2. Check the power source. If a power generator is used, improve the situation. NOTE: If the product does not meet the power requirement of 40 to 70Hz frequency, the fuser temperature control will not work properly, which will cause a malfunction. 3. Replace the fuser power-supply unit.
+Code;50.5
+Display;50.5 FUSER ERROR
+Description;The fuser has experienced a type-mismatch error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 2. Reconnect the connectors of the fuser control PCA (J303, J305), low-voltage power-supply unit (J6), and the DC controller PCA (J102, J207). 3. Replace the fuser.
+Code;50.7
+Display;50.7 FUSER ERROR
+Description;The fuser has experienced a pressure release mechanism error.
+Remedy;1. Reconnect the connectors of the fuser motor (J1720), fuser unit home-position sensor (J1965), intermediate (J1964), and the DC controller PCA (J105, J121). 2. Test the fuser pressure-release sensor by performing the paper-path test or the manual sensor test in the DIAGNOSTICS menu. 3. Check the sensor flag of the fuser pressure-release sensor. If the sensor flag is damaged, Replace the fuser. 4. Perform the fuser motor and fuser pressure-release-motor component tests in the DIAGNOSTICS menu. 5. Replace the fuser motor. 6. Replace the fuser.
+Code;50.8
+Display;50.8 FUSER ERROR
+Description;The fuser has experienced a lowtemperature error.
+Remedy;1. Remove any paper jams from the fuser area. 2. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 3. Reconnect the connectors of the fixing control PCA (J302, J303, J305) and the DC controller PCA (J107). 4. Replace the fuser. 5. Replace the fuser power-supply unit.
+Code;50.9
+Display;50.9 FUSER ERROR
+Description;The fuser has experienced a hightemperature error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and the product. Replace the cable or fuser if the connector is damaged. 2. Reconnect the connectors of the fixing control PCA (J302, J303, J305) and the DC controller PCA (J107). 3. Replace the fuser. 4. Replace the fuser power-supply unit.
+Code;50.X
+Display;50.X FUSER ERROR
+Description;A fuser error has occurred.
+Remedy;Make sure you have the correct fuser. Reseat the fuser. Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider
+Code;51.20
+Display;51.20 ERROR
+Description;The black laser (51.20) or cyan laser (51.21) has experienced an error.
+Remedy;1. Reconnect the connectors of the laser driver PCA (J501B) and the DC controller PCA (J127). 2. Replace the cyan/black laser-scanner unit.
+Code;51.21
+Display;51.21 ERROR
+Description;The black laser (51.20) or cyan laser (51.21) has experienced an error.
+Remedy;1. Reconnect the connectors of the laser driver PCA (J501B) and the DC controller PCA (J127). 2. Replace the cyan/black laser-scanner unit.
+Code;51.22
+Display;51.22 ERROR
+Description;The magenta laser (51.22) or yellow laser (51.23) has experienced an error.
+Remedy;1. Reconnect the connectors of the laser driver PCA (J501A) and the DC controller PCA (J126). 2. Replace the yellow/magenta laserscanner unit.
+Code;51.XY
+Display;51.<XY> ERROR
+Description;A printer error has occurred.
+Remedy;Turn power off then on.
+Code;52.00
+Display;52.00 ERROR
+Description;The scanner has experienced a startup error.
+Remedy;1. Perform the laser scanner component tests in the DIAGNOSTICS menu. 2. Depending on the test results, perform one of the following steps: • If the cyan or black component tests showed a startup failure, reconnect the connectors of the cyan/black scanner motor (J1702) and the DC controller PCA (J129). • If the yellow or magenta component tests showed a startup failure, reconnect the connectors of the yellow/magenta scanner motor (J1701) and the DC controller PCA (J129). 3. Replace the cyan/black laser-scanner unit or the yellow/magenta laserscanner unit.
+Code;52.20
+Display;52.20 ERROR
+Description;The scanner has experienced a rotational error.
+Remedy;1. Perform the laser scanner component tests in the DIAGNOSTICS menu. 2. Depending on the test results, perform one of the following steps: • If the cyan or black component tests showed a rotational failure, reconnect the connectors of the cyan/black scanner motor (J1702) and the DC controller PCA (J129). • If the yellow or magenta component tests showed a rotational failure, reconnect the connectors of the yellow/magenta scanner motor (J1701) and the DC controller PCA (J129). 3. Replace the cyan/black laser-scanner unit or the yellow/magenta laserscanner unit.
+Code;52.XY
+Display;52.<XY> ERROR
+Description;A printer error has occurred.
+Remedy;Turn power off then on.
+Code;53.XY.ZZ
+Display;53.XY.ZZ CHECK RAM DIMM SLOT <X>
+Description;A RAM DIMM error has occurred. X=1 slot toward the outside of the formatter board. X=2 is the slot closest to the hard disc.
+Remedy;Reseat the RAM DIMM in slot <X>. Replace the RAM DIMM if the error persists.
+Code;54.01
+Display;54.01 ERROR
+Description;The environment sensor has experienced an error.
+Remedy;1. Reconnect the connector of the DC controller PCA (J115). 2. Replace the environment sensor.
+Code;54.15
+Display;54.15 ERROR
+Description;The yellow-toner-level sensor has experienced an error.
+Remedy;1. Reconnect the connectors of the yellow/ magenta-cartridge I/F PCA (J2201A), the cartridge driver PCA (J402), and the DC controller PCA (J109). 2. Replace the yellow/magenta-cartridge I/ F PCA.
+Code;54.16
+Display;54.16 ERROR
+Description;The magenta-toner-level sensor has experienced an error.
+Remedy;1. Reconnect the connectors of the yellow/ magenta-cartridge I/F PCA (J2201A), the cartridge driver PCA (J402), and the DC controller PCA (J109). 2. Replace the yellow/magenta-cartridge I/ F PCA.
+Code;54.17
+Display;54.17 ERROR
+Description;The cyan-toner-level sensor has experienced an error.
+Remedy;1. Reconnect the connectors of the cyan/ black-cartridge I/F PCA (J2201B), the cartridge driver PCA (J403), and the DC controller PCA (J109). 2. Replace the cyan/black-cartridge I/F PCA.
+Code;54.18
+Display;54.18 ERROR
+Description;The black-toner-level sensor has experienced an error.
+Remedy;1. Reconnect the connectors of the cyan/ black-cartridge I/F PCA (J2201B), the cartridge driver PCA (J403), and the DC controller PCA (J109). 2. Replace the cyan/black-cartridge I/F PCA.
+Code;54.XX
+Display;54.<XX> ERROR
+Description;Error requires that the product be turned off then on.
+Remedy;Turn the product off, and then turn the product on.
+Code;55.00.00
+Display;55.00.00 DC CONTROLLER ERROR
+Description;The DC controller has experienced a communication error.
+Remedy;1. Turn the product off, and then turn the product on. 2. If this message persists, replace the DC controller PCA.
+Code;55.01.YY
+Display;55.01.YY DC CONTROLLER ERROR
+Description;The DC controller has experienced a memory error.
+Remedy;1. Turn the product off, and then turn the product on. 2. If this message persists, replace the DC controller PCA.
+Code;55.XX.YY
+Display;55.XX.YY DC CONTROLLER ERROR
+Description;The print engine is not communicating with the formatter.
+Remedy;Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider.
+Code;56.02
+Display;56.02 ERROR
+Description;The product has experienced an output error.
+Remedy;1. Follow the solutions for BAD DUPLEXER CONNECTION or BAD OPTIONAL TRAY CONNECTION.
+Code;56.X
+Display;56.X ERROR
+Description;A temporary printing error has occurred
+Remedy;Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider
+Code;57.01
+Display;57.01 ERROR
+Description;The laser/scanner-unit cooling fan (FM1) has experienced an error.
+Remedy;1. Reconnect the connectors of the laser/ scanner-unit cooling fan (J1916) and the DC controller PCA (J132). 2. Measure the voltage between the connector J132-4 and J132-6 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the laser/scanner-unit cooling fan.
+Code;57.02
+Display;57.02 ERROR
+Description;The VOC fan (FM4) has experienced an error.
+Remedy;1. Reconnect the connectors of the VOC fan (J1921) and the DC controller PCA (J103). 2. Measure the voltage between the connector J103-4 and J103-6 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the VOC fan.
+Code;57.03
+Display;57.03 ERROR
+Description;The fuser cooling fan (FM2) has experienced an error.
+Remedy;1. Reconnect the connectors of the fuser cooling fan (J1917) and the DC controller PCA (J132). 2. Measure the voltage between the connector J132-7 and J132-9 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the cartridge area cooling fan.
+Code;57.04
+Display;57.04 ERROR
+Description;The cartridge area cooling fan (FM3) has experienced an error.
+Remedy;1. Reconnect the connectors of the cartridge area cooling fan (J1915) and the DC controller PCA (J132). 2. Measure the voltage between the connector J132-1 and J132-3 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the cartridge area cooling fan.
+Code;57.05
+Display;57.05 ERROR
+Description;The low-voltage power supply cooling fan (FM5) has experienced an error.
+Remedy;1. Reconnect the connectors of the lowvoltage power supply cooling fan (J2), low-voltage power supply (J6) and the DC controller PCA (J102). 2. Measure the voltage between the connector J2-1 and J2-3 on the lowvoltage power supply cooling fan right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the lowvoltage power supply cooling fan.
+Code;57.06
+Display;57.06 ERROR
+Description;The cartridge front area cooling fan (FM6) has experienced an error.
+Remedy;1. Reconnect the connectors of the cartridge front area cooling fan (J1934) and the DC controller PCA (J103). 2. Measure the voltage between the connector J103-1 and J103-3 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the cartridge front area cooling fan.
+Code;57.07
+Display;57.07 ERROR
+Description;The laser/scanner-unit cooling fan (FM1) has experienced an error.
+Remedy;1. Reconnect the connectors of the laser/ scanner-unit cooling fan (J1916) and the DC controller PCA (J132). 2. Measure the voltage between the connector J132-4 and J132-6 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the laser/scanner-unit cooling fan.
+Code;57.08
+Display;57.08 ERROR
+Description;The delivery-unit cooling fan (FM7) has experienced an error.
+Remedy;1. Reconnect the connectors of the delivery-unit cooling fan (J1910) and the DC controller PCA (J103). 2. Measure the voltage between the connector J103-7 and J103-9 on the DC controller PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the delivery-unit cooling fan.
+Code;57.09
+Display;57.09 ERROR
+Description;The IPTU feed-unit cooling fan (FM8) has experienced an error.
+Remedy;1. Reconnect the connectors of the IPTU media-feed-unit cooling fan (J7008), IPTU driver PCA (J7001), and the DC controller PCA (J130). 2. Reinstall the IPTU. 3. Measure the voltage between the connector J7008-1 and J7008-3 on the IPTU driver PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the IPTU media-feed-unit cooling fan.
+Code;57.0A
+Display;57.0A ERROR
+Description;The duplexing-unit cooling fan (FM1) has experienced an error.
+Remedy;1. Reconnect the connector (J4106) on the duplexing driver PCA. 2. Measure the voltage between the connector J4106-1 and J4106-3 on the duplexing driver PCA right after the product is turned on. If the voltage changes from 0V to approximately 24V, replace the duplexing-unit cooling fan 1.
+Code;57.XX
+Display;57.XX ERROR
+Description;A temporary printing error has occurred.
+Remedy;Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider.
+Code;58.04
+Display;58.04 ERROR
+Description;The low-voltage power supply has experienced an error.
+Remedy;1. Reinstall the fuser. Check the connector (J1901) between the fuser and product. Replace the cable or fixing unit if the connector is damaged. 2. Reconnect the connectors of the fuser control PCA (J303, J305) and the DC controller PCA (J107). 3. Replace the fuser.
+Code;58.XX
+Display;58.XX ERROR
+Description;A temporary printing error has occurred.
+Remedy;Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider.
+Code;59.10
+Display;59.10 ERROR
+Description;The ITB motor has experienced a startup error.
+Remedy;1. Perform the transfer motors and beltonly component tests in the DIAGNOSTICS menu. 2. Reconnect the connectors for the ITB motor (J1710) and the DC controller PCA (J105). 3. Replace the ITB unit.
+Code;59.20
+Display;59.20 ERROR
+Description;The ITB motor has experienced a rotational error.
+Remedy;1. Perform the transfer motors and beltonly component tests in the DIAGNOSTICS menu. 2. Reconnect the connectors of the ITB motor (J1710) and the DC controller PCA (J105). 3. Replace the ITB unit.
+Code;59.30
+Display;59.30 ERROR
+Description;The fuser motor has experienced a startup error.
+Remedy;1. Perform the fuser motor component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the fixing motor (J1711), intermediate (J1720) and the DC controller PCA (J105). 3. Replace the fuser motor.
+Code;59.40
+Display;59.40 ERROR
+Description;The fuser motor has experienced a rotational error
+Remedy;1. Perform the fuser motor component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the fixing motor (J1711), intermediate (J1720) and the DC controller PCA (J105). 3. Replace the fuser motor.
+Code;59.50
+Display;59.50 ERROR
+Description;The black-image-drum motor has experienced a startup error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the blackimage- drum motor (J1715) and the DC controller PCA (J139). 3. Replace the black-image-drum motor.
+Code;59.51
+Display;59.51 ERROR
+Description;The cyan-image-drum motor has experienced a startup error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the cyanimage- drum motor (J1714) and the DC controller PCA (J139). 3. Replace the cyan-image-drum motor.
+Code;59.52
+Display;59.52 ERROR
+Description;The magenta-image-drum motor has experienced a startup error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the magenta-image-drum motor (J1713) and the DC controller PCA (J138). 3. Replace the magenta-image-drum
+Code;59.53
+Display;59.53 ERROR
+Description;The yellow-image-drum motor has experienced a startup error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the yellowimage- drum motor (J1712) and the DC controller PCA (J138). 3. Replace the yellow-image-drum motor.
+Code;59.60
+Display;59.60 ERROR
+Description;The black-image-drum motor has experienced a rotational error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the blackimage- drum motor (J1715) and the DC controller PCA (J139). 3. Replace the black-image-drum motor.
+Code;59.61
+Display;59.61 ERROR
+Description;The cyan-image-drum motor has experienced a rotational error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the cyanimage- drum motor (J1714) and the DC controller PCA (J139). 3. Replace the cyan-image-drum motor.
+Code;59.62
+Display;59.62 ERROR
+Description;The magenta-image-drum motor has experienced a rotational error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the magenta-image-drum motor (J1713) and the DC controller PCA (J138). 3. Replace the magenta-image-drum motor.
+Code;59.63
+Display;59.63 ERROR
+Description;The yellow-image-drum motor has experienced a rotational error.
+Remedy;1. Perform the image-drum-motors component test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the yellowimage- drum motor (J1712) and the DC controller PCA (J138). 3. Replace the yellow-image-drum motor.
+Code;59.C0
+Display;59.C0 ERROR
+Description;The developer-alienation motor has experienced a rotational error.
+Remedy;1. Perform the alienation-motor component tests in the DIAGNOSTICS menu. 2. Reconnect the connectors of the yellow/ magenta-developing disengagement motor (J1719), cyan/black-developing disengagement motor (J1718), print cartridge PCA (J404, J405, J406, J408), and the DC controller PCA (J141, J142). 3. Check the print-cartridge drive unit if the adjustment pin sticks in. 4. Check the main drive unit if the lever locks. 5. Replace the developer-alienation motor.
+Code;59.F0
+Display;59.F0 ERROR
+Description;The transfer-roller alienation motor has experienced an error.
+Remedy;1. Check the ITB-alienation sensor (m) by performing either the manual sensor test or the paper-path sensors test in the DIAGNOSTICS menu. 2. Reconnect the connectors of the ITB home-position sensor (J2010), the cartridge driver PCA (J406, J407), and the DC controller PCA (J142). 3. Perform the ITB-contact/alienation component test in the DIAGNOSTICS menu. 4. Reconnect the connectors of the primary-transfer-roller disengagement motor (J1709) and the DC controller PCA (J110). 5. Replace the primary-transfer-rolleralienation motor.
+Code;59.XY
+Display;59.XY ERROR
+Description;A temporary printing error has occurred.
+Remedy;Turn the product off, and then turn the product on. If this message persists, contact an HPauthorized service or support provider.
+Code;60.03
+Display;60.03 ERROR
+Description;The Tray-2 lifter motor has experienced an error.
+Remedy;1. Check the Tray-2 paper-surface sensor (u) in the MANUAL SENSOR TEST 2 submenu in the DIAGNOSTICS menu. 2. Reconnect the connectors of the lifter motor (J1920) and the DC controller PCA (J112). 3. Replace the lifter drive unit.
+Code;60.04
+Display;60.04 ERROR
+Description;The Tray-3 lifter motor has experienced an error.
+Remedy;1. Check the Tray-3 paper-surface sensor (y) in the MANUAL SENSOR TEST 2 submenu in the DIAGNOSTICS menu. 2. Reconnect the connector of the upper- PD driver PCA (J8105A). 3. Replace the upper-PD-cassette-lifter drive unit.
+Code;60.05
+Display;60.05 ERROR
+Description;The Tray-4 lifter motor has experienced an error.
+Remedy;1. Check the Tray-4 paper-surface sensor (c) in the MANUAL SENSOR TEST 2 submenu in the DIAGNOSTICS menu. 2. Reconnect the connector of the middle- PD driver PCA (J8105B). 3. Replace the middle-PD-cassette-lifter drive unit.
+Code;60.06
+Display;60.06 ERROR
+Description;The Tray-5 lifter motor has experienced an error.
+Remedy;1. Check the Tray-5 paper-surface sensor (g) in the MANUAL SENSOR TEST 2 submenu in the DIAGNOSTICS menu. 2. Reconnect the connector of the lower- PD driver PCA (J8105C). 3. Replace the lower-PD-cassette-lifter drive unit.
+Code;60.X
+Display;60.X ERROR
+Description;The tray specified by X is not lifting correctly.
+Remedy;Follow the instructions on the product control panel.
+Code;66.12.01
+Display;66.12.01
+Description;Finisher-to-engine communication error The communication between the print engine and the finisher has been interrupted or lost.
+Remedy;Control panel diagnostics: none 1. Verify that the latest firmware updates are installed for the engine and finisher. 2. Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door. • Ensure that the grounding-frame assembly (the bar with the wheel located between the engine and the finisher) is in the down position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The grounding-frame assembly is in the up position when the finisher is shipped. It must be lowered when the finisher is installed. 3. Make sure that the communication cable from the engine to the finisher is correctly installed. 4. Verify that connectors J701 and J726 on the stacker controller PCA are fully seated and not damaged. 5. Remove and inspect the electrical connections for damage and then reinstall the IPTU. Make sure that the connector is fully seated and that the IPTU is securely fastened. 6. If the error persists, replace the IPTU. 7. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.02
+Display;66.12.02
+Description;Finisher board communication error Occurs when the finisher's stacker controller board has had a internal communication problem between the two processors on the board.
+Remedy;Control panel diagnostics: none 1. Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door. • Ensure that the grounding-frame assembly (the bar with the wheel located between the engine and the finisher) is in the down position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The grounding-frame assembly is in the up position when the finisher is shipped. It must be lowered when the finisher is installed. 2. Verify that the latest firmware updates are installed for the engine and finisher. 3. If the error persists, replace the stacker controller PCA.
+Code;66.12.03
+Display;66.12.03
+Description;Finisher-control-board RAM error The checksum for the finisher stacker controller PCA has an error when the power is turned on.
+Remedy;Control panel diagnostics: none 1. Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door • Ensure that the grounding-frame assembly (the bar with the wheel located between the engine and the finisher) is in the down position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The grounding-frame assembly is in the up position when the finisher is shipped. It must be lowered when the finisher is installed. 2. Turn the engine power off and then on to try clearing this error. 3. If the error persists, replace the stacker controller PCA
+Code;66.12.11
+Display;66.12.11
+Description;Finisher error: swing motor (M36) and the swing-guide home-position sensor (PI35) Occurs when the swing guide does not leave its home position (swing-guide home-position sensor: PI35) after the swing motor (M36) is activated for 3 seconds. Also occurs when the swing guide does not return to its home position (swing-guide home-position sensor: PI35) after the swing motor (M36) is activated for 3 seconds.
+Remedy;Control panel diagnostics: M36 (Swing Motor) and PI35 (Swing Guide Home Position Sensor) 1. Test the swing motor M36 by using the finisher component test from the controlpanel display. NOTE: When activated during the component test, the motor should rotate for about five seconds. While the motor is rotating, make sure that the swing guide is moving up or down at the exit area for stapling and stacking. • If the swing guide freely moves up and down, proceed to the next step (testing the swing-guide sensor PI35). • If the swing guide does not freely move up and down, remove the finisher rear cover and use your hand to turn the gear located to the right of motor M36 clockwise. • If the swing guide moves upward, the gears are properly working. Replace motor M36. If after replacing the motor the motor still does not turn on, replace the stacker controller PCA. • If the swing guide does not move, inspect the gears and replace damaged components as necessary. 2. Test the swing-guide sensor PI35 by using the finisher component test from the control-panel display. NOTE: Manually lift the swing guide to the highest position, and then look at the control-panel display and verify a change in state for the sensor. • If the sensor state does not change, perform the following steps: • Verify that the connector J707 on the stacker controller PCA is fully seated and not damaged. • Manually activate the sensor PI35 at the sensor body. If the control panel does not indicate a change of state, replace the sensor. • If raising the swing guide does not activate the sensor but it can be manually activated at the sensor body, replace the swing-guide assembly. • If the PI35 sensor state does change, check the drive gears for damage or obstructions. Replace components as necessary.
+Code;66.12.12
+Display;66.12.12
+Description;Finisher error - shutter movement malfunction Normal operation: When the shutter clutch (CL31) and stack ejection lower roller clutch (CL32) are on, the shutter moves up (closed) when the stack ejection motor (M32) turns forward and moves down (open, delivery enabled) when the motor turns backwards. Error occurs when the shutter home position sensor (PI45) indicates no change when the stack ejection motor (M32) is activated for 3 seconds, indicating that the shutter is not moving.
+Remedy;Control panel diagnostics: none 1. Inspect the shutter for damage. If the shutter cannot freely move, replace the shutter assembly. 2. Remove the lower guide (grate-shaped) and check sensor PI45 for damage. Make sure that the sensor is securely fastened to the chassis. 3. Check for proper alignment of the shutter mounted on the back of the grate-shaped lower guide and the lift mechanism on the finisher chassis. 4. Verify that connector J721 on the stacker controller PCA is fully seated and not damaged. 5. Check CL31 during operation, and verify that it is correctly functioning by activating prior to the error. Replace CL31 if necessary. 6. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.13
+Display;66.12.13
+Description;Finisher error - stack trailing-edge motor (M39) In order to improve stacking performance when ejecting copies, a trailing edge assist guide is used in addition to the stack ejection roller to support the rear end of the stack during stack ejection. Error occurs when the stacker trailing-edge guide does not leave its home position (PI39) after the stack trailing-edge motor (M39) has been turned on for 3 seconds.
+Remedy;Control panel diagnostics: M39 process motor (stack trailing-edge assist motor) Test the swing motor M39 by using the finisher component test from the controlpanel display. • If the trailing-edge assist guide does not move, perform the following steps: • Verify that connector J722 on the stacker controller PCA is fully seated and not damaged. Also check the wiring at motor M39 and sensor PI39. • Replace the operation-tray assembly (processing tray). • Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA. • If the trailing-edge assist guide does move, perform the following steps: • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. • Verify that connector J722 on the stacker controller PCA is fully seated and not damaged. Also check the wiring at sensor PI39. • Replace the operation-tray assembly (processing tray).
+Code;66.12.14
+Display;66.12.14
+Description;Finisher stapling and offsetting front-aligningplate motor failure In order to neatly align the paper stack for either stapling or offsetting to take place, the front and rear-aligning plates move to align each sheet when it enters the processing tray. The error occurs when the aligning plate either does not leave or when it does not return to the aligning-plate front-homeposition sensor (PI36) when the frontaligning- plate motor (M33) has been driven for 4 seconds.
+Remedy;Control panel diagnostics: none 1. Verify that Offsetting is turned On in the Device Behavior menu. 2. Verify that connector J722 on the stacker controller PCA is fully seated and not damaged. Also check the wiring at sensor PI39 and motor M33. 3. Replace the operation-tray assembly (processing tray). 4. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.15
+Display;66.12.15
+Description;Finisher stapling or offsetting rear aligning plate motor failure (M34) In order to neatly align the paper stack for either stapling or offsetting to take place, the front and rear aligning plates move to align each sheet when it enters the processing tray. The error occurs when the aligning plate either does not leave or when it does not return to the aligning-plate-rear-homeposition sensor (PI37) when the alignment plate rear motor (M34) has been driven for 4 seconds.
+Remedy;Control panel diagnostics: none 1. Verify that Offsetting is turned On in the Device Behavior menu. 2. Verify that connector J722 on the stacker controller PCA is fully seated and not damaged. Also check the wiring at sensor PI37 and motor M34. 3. Replace the operation-tray assembly (processing tray). 4. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.16
+Display;66.12.16
+Description;Finisher error - speed change motor (M40) The speed change motor M40 and sensor PI49 associated with this error have been removed from the output device prior to introduction to the field. This error message should never be seen in the field.
+Remedy;If error message appears, contact HP Support and report the error. HP Support: Report error to Technical Marketing.
+Code;66.12.21
+Display;66.12.21
+Description;Finisher upper-stapler-motor failure (M41) Error occurs either when the stapler does not leave stapler home position (PI50) after staple motor (M41) is driven for 0.4 seconds or when it does not return to stapler home position after the staple motor has detected a motor lock condition and the motor is driven backwards for 0.4 seconds, attempting to reach home position. NOTE: PI50 and M41 are located on the stapler assembly and can only be replaced by replacing entire stapler assembly. M41 (staple motor) drives the insertion and crimping of the staple only (not location of the staple on paper). PI50 senses the home position of the stapler as it is inserting and crimping a staple only (not location of the staple on the paper). The stapler-safety switch (MS34) that assures that stapler motor (M41) is disabled when it senses a finger may be in the stapler.
+Remedy;Control panel diagnostics: none 1. Check the stapler unit for jammed staples. 2. Check the stapler unit for loose staples and paper dust. 3. Make sure that the stapler unit is fully seated. 4. Verify that connector J717 on the stacker controller PCA is fully seated and not damaged. Check the wiring at the stapler unit and the stapler PCA. 5. Replace the stapler.
+Code;66.12.22
+Display;66.12.22
+Description;Finisher upper stapler shift motor failure (M35) Error occurs when the stapler does not leave the stapler-shift home-position sensor (PI40) after the stapler-shift motor (M35) has driven for 5 seconds. Also occurs when the stapler fails to return to the stapler-shift home-position sensor (PI40) after the stapler-shift motor (M35) has been driven for 20 seconds.
+Remedy;Control panel diagnostics: M35 staple motor (stapler-shift motor) and PI140 stapler home sensor (stapler home-position sensor) 1. Test the upper-stapler-shift motor M35 by using the finisher component test from the control-panel display. • If the stapler unit moves properly, proceed to the next step in this section. • If the stapler unit does not move properly or moves erratically, perform the following steps:• Check the flat-flexible cable (FFC) for damage (dents, folds, and/or tears). Replace the FFC if necessary.• Check the FFC connectors and cable mounting areas.• If the error persists, replace the stapler assembly 2. Test the stapler-shift home position sensor PI40 by using the finisher component test from the control-panel display. • If the sensor does not change state when the stapler unit is moved from the home position, perform the following steps: • Make sure that the sensor is securely fastened to the chassis. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that connector J1040 on the stacker controller PCA is fully seated and not damaged. Check the wiring at the sensor. • If the error persists, replace the stapler assembly. NOTE: The stapler assembly includes the stapler-shift home position sensor PI40, stapler unit, shift-position-plate assembly, and the flat-flexible cable (FFC).
+Code;66.12.23
+Display;66.12.23
+Description;Finisher upper-stapler failure Occurs when stapler alignment interference sensor (PI46) is activated, signaling that the stapler unit is not in its proper position for stapling to occur. This is to prevent damage to stapler from occurring when stapler is positioned over one of the three stoppers when the signal to staple has been sent.
+Remedy;Control-panel diagnostics: none 1. If the stapler unit does not move properly or moves erratically, check the flat-flexible cable (FFC) for damage (dents, folds, and/or tears). Replace the FFC if necessary. 2. If the stacker controller PCA was recently replaced, use the steps in this manual to adjust the staple alignment and staple position. 3. If the stapler is not positioned over a stopper when this error occurs, perform the following steps. • Make sure that the stapler unit is correctly mounted and securely fastened to the base. • Make sure that the sensor is not obstructed or damaged. Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. • If the error persists, replace the stapler subassembly. NOTE: The stapler subassembly includes the stapler unit and base
+Code;66.12.31
+Display;66.12.31
+Description;Finisher error - 1st tray lift/lower motor (M37) Occurs when the output bin 1 does not activate the home-position sensor (PI41) when the output-bin-1 shift motor (M37) is driven for 20 seconds. Also occurs when output bin 1 does not move when output-bin-1 shift motor (M37) is driven for 4 seconds. Also occurs when output-bin-1 switch (MSW33) is activated while output bin 1 is operating. NOTE: Output-bin-1 home position is detected using the top sheet of paper on the bin when paper is present and the edge of the bin itself when there is no paper on the bin.
+Remedy;Control panel diagnostics: M37 tray 1 (output bin 1 motor) NOTE: M37 moves both output bin 1 and the upper-output bin that is attached to output bin 1 on the stapler/stacker finisher, but only output bin 1 on the booklet-maker finisher. 1. Manually release output bin 1, and position it at the mid point of its travel area. Test the output-bin-1 shift motor M37 by using the finisher component test from the control-panel display. • If output bin 1 moves during the test, perform the following steps. • If the paper-surface sensor flag was recently removed or replaced, make sure that it is installed correctly. NOTE: The four tabs under the clips must be inserted into the slots behind the roller shaft of the lower-stack ejection roller. • Verify that the paper-surface sensor flag is not damaged, moves freely, and is correctly aligned with the PI41 sensor body. Also verify that when the top edge of the output bin engages the sensor arm that the sensor flag moves into sensor PI41. • Make sure that the sensor is securely fastened to the chassis. • Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. • Verify that intermediate connector J1040 and J721 on the stacker controller PCA are fully seated and not damaged. Check the wiring at the sensor. • If the error persist, replace sensor PI41. • If the error persist, replace the output-bin-1 assembly. NOTE: The output-bin-1 assembly includes the output-bin-1 shift motor (M37), output-bin-1 switch (MSW33), output-bin-1 area sensors, and the output-bin-1 driver PCA. 2. If output bin 1 does not move during the test, perform the following steps. • Check the output-bin tracks for damage. • Replace the output-bin-1 assembly NOTE: The output-bin-1 assembly includes the output-bin-1 shift motor (M37), output-bin-1 switch (MSW33), output-bin-1 area sensors, and the output-bin-1 driver PCA. • Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.32
+Display;66.12.32
+Description;Finisher error: second-tray-lift/lower motor (M38) Occurs when the output bin 2 does not activate the home-position sensor (PI48) when the output-bin-1 shift motor (M38) is driven for 20 seconds. Also occurs when output bin 2 does not move when output-bin-1 shift motor (M38) is driven for 4 seconds. Also occurs when bin-2 upper limit is detected by PS983, PS982, PS981 on the Tray-2 shift PCA when no paper has been sensed by the output-bin-2 paper sensor (PI43). NOTE: Output-bin-2 home position is detected using the top sheet of paper on the bin when paper is present and the edge of the bin itself when there is no paper on the bin.
+Remedy;Control-panel diagnostics: M38 (output-bin-2 motor) and PI48 output-bin-2-paper-surface sensor 1. Manually release output bin 2, and position it at the mid point of its travel area. Test the output-bin-2 shift motor M38 by using the finisher component test from the control-panel display. • If output bin 2 moves during the test, perform the following steps. • Verify that the paper-surface sensor flag is not damaged, moves freely, and is correctly aligned with the PI48 sensor body. Also verify that when the top edge of the output bin engages the sensor arm that the sensor flag moves into sensor PI41. • Make sure that the sensor is securely fastened to the chassis. • Carefully clean by gently blowing clean air across the sensor to remove dust and debris. • Verify that intermediate connector J1040 and J721 on the stacker controller PCA are fully seated and not damaged. Check the wiring at the sensor. • If the error persist, replace sensor PI48. • If the error persist, replace the output-bin-2 assembly. NOTE: The output-bin-2 assembly includes the output-bin-2 shift motor (M38), output-bin-2 area sensors, and the output-bin-2 driver PCA. 2. If output bin 2 does not move during the test, perform the following steps. • Check the output-bin tracks for damage. • Replace the output-bin-2 assembly. NOTE: The output-bin-2 assembly includes the output-bin-2 shift motor (M38), output-bin-2 area sensors, and the output-bin-2 driver PCA. • Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.41
+Display;66.12.41
+Description;Finisher: folding-paper-positioning-plate motor (M4) The paper-positioning-plate motor (M4), located in the booklet-making area of the finisher, controls the up and down positioning of the stacked paper for stitch stapling and for folding. An error occurs when the paper-positioningplate home-position sensor (PI7) does not turn on when the paper-positioning-plate motor (M4) has been driven for 1500 pulses. Also occurs when the paper-positioning-plate home-position sensor (PI7) does not turn off when the paper-positioning-plate motor (M4) has been driven for 300 pulses.
+Remedy;Control-panel diagnostics: M4-guide-plate motor (paper-positioning-plate motor) 1. Test the paper-position-plate motor M4 by using the finisher component test from the control-panel display. During the test, observe the movement of the booklet-maker-guide plate, and make sure it is not obstructed or damaged. 2. Remove the booklet-maker output bin to gain access to the paper-position-plate home-position sensor PI7 and delivery door. Remove the plate that holds PI7, and carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. 3. Make sure that the sensor is securely fastened to the plate. 4. Check the wiring at the sensor. 5. If the error persists, replace sensor PI7 and the positioning-plate assembly together. 6. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.42
+Display;66.12.42
+Description;Finisher error: folding-guide motor (M3) The guide motor (M3), located in the bookletmaking area of the finisher, controls the position of the guide plate. The guide plate is positioned in front of the folding rollers as the paper stack is being stapled, allowing the bottom edge of the paper to smoothly pass by the folding rollers. When the stacked paper is lowered to the folding position, the guide motor (M3) lowers the guide plate out of the way to allow the paper stack to be pushed into the folding rollers. Error occurs when The guide-home-position sensor (PI13) does not turn on when the guide motor (M3) has been driven for 700 pulses. Also occurs when the guide-home-position sensor (PI13) does not turn off when the guide motor (M3) has been driven for 50 pulses.
+Remedy;Control panel diagnostics: M3 guide motor 1. Carefully clean the sensor body by gently blowing clean air across the sensor to remove dust and debris. 2. Make sure that the sensor is securely fastened to the plate. 3. Check the wiring at the sensor. 4. Check sensor PI13 for damage. 5. Check the guide, gears, and gear tracks on the front and rear frame for damage. Replace components as necessary. 6. If the error persists, replace the guide motor M3 and the guide home position sensor PI13 together.
+Code;66.12.43
+Display;66.12.43
+Description;Finisher error: paper-fold motor (M2) M2: paper-fold motor, located in the booklet making area of the finisher, drives the rotation of the folding rollers to create the desired fold in the paper. The error occurs when the number of pulses by the paper-fold-motor clock sensor (PI4) is less than expected standard value. Also occurs when the status of the paper-fold home-position sensor (PI21) does not change when the paper-fold motor (M2) has been driven for 3 seconds.
+Remedy;Control panel diagnostics: M2 folding motor (paper-fold motor) 1. Check the area around the folding rollers for a jam. 2. Test the paper-fold motor M2 by using the finisher component test from the control-panel display. • If the folding rollers rotate properly, perform the following steps: • Check sensor PI4 and sensor PI21 for damage. • Verify that the sensor flags are not damaged, move freely, and are correctly aligned with the PI48 and PI21 sensor bodies. • Make sure that the sensors are securely fastened to the chassis. • Carefully clean each sensor body with a clean, lint-free cloth, or gently blow clean air across each sensor to remove dust and debris. • Verify that connector J3 on the saddle-stitcher controller PCA is fully seated and not damaged. Check the wiring at the PI4 sensor. • Verify that connector J18 on the saddle-stitcher controller PCA is fully seated and not damaged. Check the wiring at the PI21 sensor. • If the error persists, replace sensor PI4 or PI21. • Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stitcher controller PCA. • If the folding rollers do not rotate properly, perform the following steps: • Check the folding-roller gears and connecting gears between the paper-fold motor M2 and the folding rollers for damage. Replace components as necessary. • Check the folding rollers for wear and damage. Replace components as necessary. • Replace the motor-mount assembly. NOTE: The motor-mount assembly includes the paperfold motor M2 and the paperfold motor-clock sensor PI4. • Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stitcher controller PCA.
+Code;66.12.44
+Display;66.12.44
+Description;Finisher - folding-paper-alignment motor (M5) M5: The alignment motor, located in the booklet making area of the finisher, drives the two alignment plates that adjust the side edges of the stacked paper so that the paper in the stack is perfectly aligned with one another. Error occurs when the aligning-plate homeposition sensor (PI5) does not turn on when the aligning plate motor (M5) has been driven for 500 pulses. Also occurs when the aligning-plate homeposition sensor (PI5) does not turn off when the aligning-plate motor (M5) has been driven for 50 pulses.
+Remedy;Control panel diagnostics: none Observe the alignment plates during a booklet-maker stacking operation. • If the alignment plates move during the operation, perform the following steps: • Check sensor PI5 for damage. • Verify that the sensor flag is not damaged, moves freely, and is correctly aligned with the sensor body. • Make sure that the sensor is securely fastened to the chassis. • Carefully clean the sensor body by gently blowing clean air across the sensors to remove dust and debris. • If the alignment plates or the alignment-plates drive gear has been removed or replaced, make sure that the plates are correctly aligned with each other on the drive gear. • If the alignment plates do not move during the operation, perform the following steps: • Remove motor M5 and check the gears between the motor and alignment plates for damage. Replace components as necessary. • Verify that connector J7 on the saddle-stitcher controller PCA is fully seated and not damaged. Check the wiring at the M5 motor. • Replace the alignment motor M5. • Only if the error persists and the previous steps fail to correct the problem, replace the saddlestitcher controller PCA.
+Code;66.12.45
+Display;66.12.45
+Description;Finisher: paper-pushing-plate motor (M8) Error occurs when the paper-pushing-plate home-position sensor (PI14) does not turn on when the paper-pushing-plate motor (M8) has been driven for 0.3 seconds. Also occurs when the paper-pushing-plate home-position sensor (PI14) does not turn off when the paper-pushing-plate motor (M8) has been driven for 80 ms. Also occurs when the paper pushing-plate leading-edge-position sensor (PI15) does not turn off when the paper-pushing-plate motor (M8) has been driven for 80 ms. Also occurs when the number of pulses detected by the paper-pushing-plate motor clock sensor (PI1) is less than expected standard value. Also occurs when the paper pushing-plateleading- edge-position sensor (PI15) does not turn on when the paper-pushing-plate motor (M8) has been driven for 0.3 seconds.
+Remedy;Control panel diagnostics: none 1. Open the front-finishing door, and activate the front-door switch (MSW31) and front-door sensor (PI32) so that the finisher will operate with the front door open. Turn the engine and finisher power off to clear the error, and then turn the power on. WARNING! Operating the finisher with the front door open exposes moving parts that can cause serious injury. Be very careful operating the finisher with the front door open. 2. Use the control-panel menus to begin a booklet making operation. Observe the paper-pushing plate motor M8 (located in the lower-right front corner of the finisher), associated gears, and the paper-pushing plate for proper motion. • If motor M8 does not rotate, replace the motor-mount assembly. NOTE: The motor-mount assembly includes the paperpushing plate motor M8. • If motor M8 does rotate but the paper-pushing plate does not move or moves erratically, check the drive gears and paper-pushing plate for wear or damage. Replace components as necessary. • If motor M8 does rotate and the paper-pushing plate moves properly, the plate movement sensors might have failed. • Inspect the paper-pushing plate home position sensor PI14, pushing-plate leadingedge position sensor PI15, and paper-pushing motorclock sensor PI1. Make sure that the sensors are securely fastened to the chassis. Check sensor PI4, sensor PI15, and sensor PI1 for damage. • Verify that connectors J6, J9, and J23 on the saddlestitcher controller PCA are fully seated and not damaged. Check the wiring at the sensors. • Only if the error persists and the previous steps fail to correct the problem, replace the saddle-stitcher controller PCA.
+Code;66.12.46
+Display;66.12.46
+Description;Finisher: communication lost with stitcher controller PCA Error occurs when communication between the stacker-controller board and the saddlestitcher- controller board has been lost or interrupted.
+Remedy;Control-panel diagnostics: none 1. Make sure that the finisher is properly grounded. • Ensure that the finisher is latched and locked to the engine by tightening the thumbscrew inside the front door. • Ensure that the grounding-frame assembly (the bar with the wheel located between the engine and the finisher) is in the down position with the wheel touching the floor and that the grounding plate is not damaged. NOTE: The grounding-frame assembly is in the up position when the finisher is shipped. It must be lowered when the finisher is installed. 2. Verify that connector J730 on the stacker controller PCA and the wiring between connector J22 on the saddlestitcher controller PCA are fully seated and not damaged. 3. Replace the saddle-stitcher controller PCA. 4. Only if the error persists and the previous steps fail to correct the problem, replace the stacker controller PCA.
+Code;66.12.47
+Display;66.12.47
+Description;Finisher error: micro switches and doors There are three switches in the bookletmaker finisher: SW1 (saddle-guide switch also known as the inlet-door switch), SW3 the booklet-ejection door switch, and MS31 the front-door switch. The stapler/stacker finisher only has one switch, MS31 for the front door of the finisher. All three switches detect if the associated door or guide plate is open or closed. Each of the switches also have a sensor (SW1/PI9, SW3/PI3, and MS31/PI32) that acts as a backup and detects the same information as the switches. The error occurs when all the doors and guides are closed and there is a mismatch in readings between the sensors and the switches. For example, the front-finisher door is closed, PI32 senses the door is closed and MS31 senses the door is still open. Associated finisher door and guide switches and sensors are as follows: • Saddle-guide switch SW1 and saddleguide sensor PI9 • Booklet-ejection-door switch SW3 and booklet-ejection-door sensor PI3 • Front-door switch MS31 and front-door sensor PI32
+Remedy;Control-panel diagnostics: PI32 (front-door-1 sensor), PI3 (booklet-door-1 sensor, also known as booklet-delivery door sensor), PI9 (front-door-2 sensor, also known as the saddle-guide-door sensor or inlet-door sensor), SW3 (booklet door 2) 1. Using the control-panel diagnostics, try to isolate which door or guide switch and sensor is causing the error. 2. Make sure that the sensors are securely fastened to the chassis. 3. Check the switches and sensors for damage and clean the sensors by gently blowing clean air into the sensor to remove dust and debris. 4. Check the wiring at the switches and sensors. 5. Check the tabs that activate the switches and sensors on the doors and guides for damage. Make sure that the tabs are aligned with the switches and sensors. Replace the doors and guides as necessary. 6. Verify that the following connectors are fully seated and not damaged: • Stacker controller PCA. • J719 (MS31) • J707 (PI32) • Saddle-stitcher controller PCA. • J4 (SW1) • J10 (PI9) • J4 (SW3) • J11 (PI3) 7. Only if the error persists and the previous steps fail to correct the problem, replace the PCA that is associated with the failed switch/sensor (stacker controller PCA or saddle-stitcher controller PCA).
+Code;66.12.51
+Display;66.12.51
+Description;Finisher error- rear-booklet-stapler motor (M6) The booklet-maker stitch staplers do not move to different locations in relation to the paper like the main stapler. The only movement is through the movement of the rotary cam located on the stapler unit itself, during the actual stapling of the booklet. The stitch-home-position switch (SW5) is part of the rear stitch stapler unit and senses the stapler opening and closing during stapling by the motion of the rotary drive cam. Like SW5, the stitch motor (M6) is also part of the overall stitch-stapler unit and replacement requires the replacement of saddle-stapler assembly. Error occurs when the front booklet-makerstapler stitching-home-position sensor (SW5) does not turn on when the stitch motor (rear) (M6) has been driven forward for 0.5 seconds. Also occurs when the front booklet-makerstapler stitching-home-position sensor (SW5) does not turn off when the stitch motor (rear) (M6) has been driven forward for 0.5 seconds.
+Remedy;Control panel diagnostics: none 1. Check the rear-stitch stapler for jammed staples, and then perform the following steps: • Clear jammed staples, and then check the staple unit for damage. Retest the stapler. • If the error continues, check the following items: Make sure that HP-approved staples are used. Replace the staple cartridge with one containing HPapproved staples. If the error continues, replace the saddle-stapler assembly • If the error persists, but no damage is found, proceed to the next step. 2. If the error persists and no jammed staples are found, perform the following steps: • Verify that connector J8 on the saddle-stitcher controller PCA is fully seated and not damaged. Check the wiring at the rearsaddle- stitch stapler and the saddle-stapler assembly for damage and proper seating• Also inspect the connector that the saddle-stitch stapler assembly engages inside finisher, for damage and foreign material in the connector as well as for proper seating with the saddle-stitch stapler assembly. • Only if the error persists and the previous steps fail to correct the problem, replace the saddlestitcher controller PCA.
+Code;66.12.52
+Display;66.12.52
+Description;Finisher error - front booklet-stapler motor (M7) The booklet-maker stitch staplers do not move to different locations in relation to the paper like the main stapler. The only movement is through the movement of the rotary cam located on the stapler unit itself, during the actual stapling of the booklet. The stitch-home-position switch (SW7) is part of the front stitch stapler unit and senses the stapler opening and closing during stapling by the motion of the rotary drive cam. Like SW7, the stitch motor (M7) is also part of the overall stitch stapler unit and replacement requires the replacement of saddle-stapler assembly. Error occurs when the front booklet-maker stapler stitching home position sensor (SW7) does not turn on when the stitch motor (front) (M7) has been driven forward for 0.5 seconds. Also occurs when the front booklet-maker stapler-stitching home-position sensor (SW7) does not turn off when the stitch motor (front) (M7) has been driven forward for 0.5 seconds.
+Remedy;Control panel diagnostics: none 1. Check the front-stitch stapler for jammed staples, and then perform the following steps: • Clear jammed staples, and then check the staple unit for damage. Retest the stapler. • If the error continues, check the following items: Make sure that HP-approved staples are used. Replace the staple cartridge with one containing HPapproved staples. If the error continues, replace the saddle-stapler assembly. • If the error persists, but no damage is found, proceed to the next step. 2. If the error persists and no jammed staples are found, perform the following steps: • Verify that connector J8 on the saddle-stitcher controller PCA is fully seated and not damaged. Check the wiring at the rearsaddle- stitch stapler and the saddle-stapler assembly for damage and proper seating. Also inspect the connector that the saddle-stitch stapler assembly engages inside finisher, for damage and foreign material in the connector as well as for proper seating with the saddle-stitch stapler assembly. • Only if the error persists and the previous steps fail to correct the problem, replace the saddlestitcher controller PCA.
+Code;66.XY.ZZ
+Display;66.XY.ZZ OUTPUT DEVICE FAILURE
+Description;An error occurred in an external paperhandling accessory.
+Remedy;• Turn the product power off. • Check that the accessory is properly seated on and connected to the product, without any gaps between the product and the accessory. If the accessory uses cables, disconnect and reconnect them. • Verify that there is no packaging material in or around the output device. • Turn the product power on. • If this message persists, contact an HPauthorized service or support provider.
+Code;66.XY.ZZ
+Display;66.XY.ZZ SERVICE ERROR
+Description;The external paper-handling controller has detected a failure.
+Remedy;1. Turn power off. 2. Disconnect cables to external paper handling devices, then reconnect them. 3. Turn power on. 4. Make sure there are no obstructions near the paper handling device that could prevent the output bins from raising or lowering.
+Code;68.X
+Display;68.X PERMANENT STORAGE FULL
+Description;The product NVRAM is full. Some settings saved in the NVRAM might have been reset to the factory defaults. Printing can continue, but some unexpected functions might occur if an error occurred in permanent storage.
+Remedy;Press the checkmark button to clear the message. If the message is not cleared, turn the product off, and then turn the product on.
+Code;68.X
+Display;68.X PERMANENT STORAGE WRITE FAIL
+Description;The product NVRAM is failing to write. Printing can continue, but some unexpected functions might occur if an error occurred in permanent storage.
+Remedy;Press the checkmark button to clear the message. If the message is not cleared, turn the product off, and then turn the product on.
+Code;68.X
+Display;68.X STORAGE ERROR SETTINGS CHANGED
+Description;One or more product settings are invalid and have been reset to the factory-default settings. Printing can continue, but some unexpected functions might occur if an error occurred in permanent storage.
+Remedy;Press the checkmark button to clear the message. If the message is not cleared, turn the product off, and then turn the product on.
+Code;69.X
+Display;69.X ERROR
+Description;A temporary printing error occurred.
+Remedy;Turn the product off, and then turn the product on.
