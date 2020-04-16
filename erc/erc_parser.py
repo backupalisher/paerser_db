@@ -9,23 +9,28 @@ def insert_erc(model_id, fn):
     erc_code_id = 0
     for d in data:
         if d[0] == 'Code':
-            erc_code_id = get_erc_id(d[0], d[1])
-            if erc_code_id < 1:
-                erc_code_id = erc_db.insert_error_code(d[1])
-                erc_data.append({
-                    'id': erc_code_id,
-                    'Code': d[1]
-                })
+            try:
+                erc_code_id = get_erc_id(d[0], d[1])
+                if erc_code_id < 1:
+                    erc_code_id = erc_db.insert_error_code(d[1])
+                    erc_data.append({
+                        'id': erc_code_id,
+                        'Code': d[1]
+                    })
+            except:
+                erc_code_id = 0
 
         elif d[0] == 'Display':
-            erc_code_display_id = get_erc_id(d[0], d[1])
-
-            if erc_code_display_id < 1:
-                erc_code_display_id = erc_db.update_code_display(erc_code_id, re.sub('\'', '`', d[1]))
-                erc_data.append({
-                    'id': erc_code_display_id,
-                    'Code': d[1]
-                })
+            try:
+                erc_code_display_id = get_erc_id(d[0], d[1])
+                if erc_code_display_id < 1:
+                    erc_code_display_id = erc_db.update_code_display(erc_code_id, re.sub('\'', '`', d[1]))
+                    erc_data.append({
+                        'id': erc_code_display_id,
+                        'Code': d[1]
+                    })
+            except:
+                pass
 
         elif d[0] == 'Image':
             spr_image_id = get_erc_id(d[0], d[1])
