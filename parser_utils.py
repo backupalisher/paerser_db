@@ -35,9 +35,8 @@ def insert_models(data):
         g_data.append({
             brand: brand_id,
             model: model_id,
-            'partcode_id': None,
-            'module': None,
-            'spr_details_id': spr_details_id,
+            'brand_id': brand_id,
+            'model_id': model_id,
             'details_id': details_id,
         })
 
@@ -45,6 +44,7 @@ def insert_models(data):
 
 
 def data_analysis(data):
+    old_brand = ''
     for d in data:
         model = d[1]
         print(model)
@@ -56,6 +56,12 @@ def data_analysis(data):
                 model_id = key[model]
                 details_id = key['details_id']
                 break
+        brand = d[0]
+        if brand != old_brand:
+            g_data.erc_data = []
+            g_data.parts_data = []
+            g_data.detail_options_data = []
+            g_data.spr_details_options_data = []
 
         if d[2]:
             spec_parser.insert_options(model_id, details_id, d[2])
