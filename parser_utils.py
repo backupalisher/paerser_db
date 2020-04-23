@@ -1,5 +1,5 @@
 from db import db_utils
-from global_data import g_data
+from global_data import g_data, erc_data, parts_data, detail_options_data, spr_details_options_data
 from erc import erc_parser
 from spec import spec_parser, spec_db_utils as sdbu
 from parts import parts_utils
@@ -62,6 +62,7 @@ def data_analysis(data):
             g_data.parts_data = []
             g_data.detail_options_data = []
             g_data.spr_details_options_data = []
+            old_brand = brand
 
         if d[2]:
             spec_parser.insert_options(model_id, details_id, d[2])
