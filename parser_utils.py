@@ -1,5 +1,5 @@
 from db import db_utils
-from global_data import g_data, erc_data, parts_data, detail_options_data, spr_details_options_data
+import global_data as gd
 from erc import erc_parser
 from spec import spec_parser, spec_db_utils as sdbu
 from parts import parts_utils
@@ -32,7 +32,7 @@ def insert_models(data):
         # линкуем model и spr_details в таблице link_models_spr_details
         details_id = sdbu.link_models_spr_details(model_id, spr_details_id)
 
-        g_data.append({
+        gd.g_data.append({
             brand: brand_id,
             model: model_id,
             'brand_id': brand_id,
@@ -40,7 +40,7 @@ def insert_models(data):
             'details_id': details_id,
         })
 
-    fu.save_process(g_data)
+    fu.save_process(gd.g_data)
 
 
 def data_analysis(data):
@@ -51,17 +51,18 @@ def data_analysis(data):
 
         model_id = 0
         details_id = 0
-        for key in g_data:
+        for key in gd.g_data:
             if model in key.keys():
                 model_id = key[model]
                 details_id = key['details_id']
                 break
+
         brand = d[0]
         if brand != old_brand:
-            g_data.erc_data = []
-            g_data.parts_data = []
-            g_data.detail_options_data = []
-            g_data.spr_details_options_data = []
+            gd.erc_data = []
+            gd.parts_data = []
+            gd.detail_options_data = []
+            gd.spr_details_options_data = []
             old_brand = brand
 
         if d[2]:
