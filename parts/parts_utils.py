@@ -13,6 +13,7 @@ def insert_parts(model_id, fn):
         pc_id = 0
         pn_id = 0
         try:
+            print(f'\r ', end='')
             print(f'\rpart code: {d[0]} - {d[1]}', end='')
         except:
             pass
@@ -62,7 +63,7 @@ def insert_parts(model_id, fn):
             parts_db_utils.link_model_module_image(model_id, module_id, img_id)
 
         parts_db_utils.link_part_model_module_spr(pc_id, model_id, module_id, pn_id)
-    print()
+    print(f'\r ', end='')
 
 
 def get_id(name, value):

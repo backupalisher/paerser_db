@@ -10,6 +10,7 @@ def insert_erc(model_id, fn):
     for d in data:
         if d[0] == 'Code':
             try:
+                print(f'\r ', end='')
                 print(f'\rerror code: {d[1]}', end='')
             except:
                 pass
@@ -72,7 +73,7 @@ def insert_erc(model_id, fn):
                 erc_db.insert_link_model_error_code(model_id, erc_code_id)
         except:
             continue
-    print()
+    print(f'\r ', end='')
 
 def get_erc_id(name, value):
     result = 0

@@ -16,6 +16,7 @@ def insert_options(model_id, detail_id, fn):
     for d in data:
         if d:
             try:
+                print(f'\r ', end='')
                 print(f'\rspecifications: {d[0]} - {d[0]}', end='')
             except:
                 pass
@@ -65,7 +66,7 @@ def insert_options(model_id, detail_id, fn):
 
             if detail_option_id > 0 and detail_id > 0:
                 sdbu.link_detail_options(detail_id, detail_option_id)
-    print()
+    print(f'\r ', end='')
 
 
 def set_convert(s):
