@@ -11,7 +11,7 @@ def insert_parts(model_id, fn):
         pc_id = 0
         pn_id = 0
         try:
-            print(f'\rpart code: {d[1]} - {d[2]}', end='')
+            print(f'\rpart code: {d[0]} - {d[1]}', end='')
         except:
             pass
         if d[0]:
