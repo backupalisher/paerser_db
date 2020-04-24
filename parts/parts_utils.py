@@ -6,6 +6,8 @@ from global_data import parts_data
 
 def insert_parts(model_id, fn):
     data = fu.load_file(fn, 'utf-8')
+    old_module = ''
+    old_module_id = 0
     for d in data:
         module_id = 0
         pc_id = 0
@@ -15,13 +17,18 @@ def insert_parts(model_id, fn):
         except:
             pass
         if d[0]:
-            module_id = get_id('module', d[0])
-            if module_id < 1:
-                module_id = parts_db_utils.insert_spr_modules(re.sub('\'', '`', d[0]))
-                parts_data.append({
-                    'id': module_id,
-                    'module': d[0]
-                })
+            if old_module != d[0]:
+                old_module = d[0]
+                module_id = get_id('module', d[0])
+                if module_id < 1:
+                    module_id = parts_db_utils.insert_spr_modules(re.sub('\'', '`', d[0]))
+                    parts_data.append({
+                        'id': module_id,
+                        'module': d[0]
+                    })
+                old_module_id = module_id
+            else:
+                module_id = old_module_id
 
         if d[1]:
             pc_id = get_id('pc', d[1])

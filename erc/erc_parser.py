@@ -48,23 +48,23 @@ def insert_erc(model_id, fn):
 
         elif d[0] == 'Description':
             if erc_code_id > 0:
-                spr_erc_code_id = get_erc_id(d[0], d[1])
-                if spr_erc_code_id < 1:
-                    spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
+                # spr_erc_code_id = get_erc_id(d[0], d[1])
+                # if spr_erc_code_id < 1:
+                spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
                 erc_db.update_code(erc_code_id, 'description_id', spr_erc_code_id)
 
         elif d[0] == 'Causes':
             if erc_code_id > 0:
-                spr_erc_code_id = get_erc_id(d[0], d[1])
-                if spr_erc_code_id < 1:
-                    spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
+                # spr_erc_code_id = get_erc_id(d[0], d[1])
+                # if spr_erc_code_id < 1:
+                spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
                 erc_db.update_code(erc_code_id, 'causes_id', spr_erc_code_id)
 
         elif d[0] == 'Remedy':
             if erc_code_id > 0:
-                spr_erc_code_id = get_erc_id(d[0], d[1])
-                if spr_erc_code_id < 1:
-                    spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
+                # spr_erc_code_id = get_erc_id(d[0], d[1])
+                # if spr_erc_code_id < 1:
+                spr_erc_code_id = add_spr_data(d[0], 'spr_error_code', 'text', d[1])
                 erc_db.update_code(erc_code_id, 'remedy_id', spr_erc_code_id)
 
         try:
