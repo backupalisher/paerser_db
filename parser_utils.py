@@ -4,6 +4,7 @@ from erc import erc_parser
 from spec import spec_parser, spec_db_utils as sdbu
 from parts import parts_utils
 import file_utils as fu
+from datetime import datetime
 
 
 def insert_brands(data):
@@ -47,7 +48,7 @@ def data_analysis(data):
     old_brand = ''
     for d in data:
         model = d[1]
-        print(model)
+        print(model, datetime.now().strftime("%X"))
 
         model_id = 0
         details_id = 0
