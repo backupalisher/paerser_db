@@ -8,6 +8,7 @@ def insert_parts(model_id, fn):
     data = fu.load_file(fn, 'utf-8')
     old_module = ''
     old_module_id = 0
+    old_img = ''
     for d in data:
         module_id = 0
         pc_id = 0
@@ -53,14 +54,10 @@ def insert_parts(model_id, fn):
             parts_db_utils.update_partcode_desc(pc_id, re.sub('\'', '`', d[3]))
 
         if d[4]:
-            img_id = get_id('img', d[4])
-            if img_id < 1:
+            if old_img != d[4]:
                 img_id = parts_db_utils.insert_spr_module_image(d[4])
-                parts_data.append({
-                    'id': img_id,
-                    'img': d[3]
-                })
-            parts_db_utils.link_model_module_image(model_id, module_id, img_id)
+                parts_db_utils.link_model_module_image(model_id, module_id, img_id)
+                old_img = d[4]
 
         parts_db_utils.link_part_model_module_spr(pc_id, model_id, module_id, pn_id)
     print(f'\r ', end='')
