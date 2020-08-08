@@ -1,7 +1,7 @@
 import psycopg2
 
 con = psycopg2.connect(
-    database="part4",
+    database="part4_new",
     user="part4",
     password="part4_GfhjkzYtn321",
     # user="zapchasty",
