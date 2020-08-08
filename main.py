@@ -6,6 +6,7 @@ import parser_utils as pu
 def main():
     data = fu.load_file('res/db_file_list.csv', 'utf-8')
 
+    # commit
     pu.insert_brands(data)
     pu.insert_models(data)
     pu.data_analysis(data)
